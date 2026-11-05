@@ -1,0 +1,22 @@
+{
+  "n": 7,
+  "allComplexAmplitudes": true,
+  "floatingPointUsed": false,
+  "coordinateConvention": "c_r=sqrt(binomial(7,r))*x_r; y_r=conjugate(x_r)",
+  "normConvention": "q=sum_r binomial(7,r)*x_r*y_r",
+  "identity": "P2+P4+P6=63*q^2",
+  "normalizedIdentity": "S2+S4+S6=63",
+  "identityVerifiedExactly": true,
+  "nonzeroResidualCoefficients": 0,
+  "equalityFamily": "alpha D7^0+beta D7^7, |alpha|^2+|beta|^2=1, arbitrary complex alpha,beta",
+  "evenSectorVector": {
+    "S0": "1",
+    "S2": "21",
+    "S4": "35",
+    "S6": "7"
+  },
+  "familyValuesVerifiedExactly": true,
+  "equivalentSharpTradeoff": "S2+S4<=56 iff S6>=7",
+  "globalBoundProvedByThisScript": false,
+  "note": "The separate global SOS certificate establishes the bound; these identities make the tradeoff a sharp corollary. No full equality-state classification is asserted."
+}

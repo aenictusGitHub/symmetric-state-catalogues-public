@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\begin{document}
+\title{Nineteen qubits cannot be sixth-order anticoherent}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+There is no pure sixth-order anticoherent state in
+$V_{19/2}=\Sym^{19}(\mathbb C^2)$. Consequently
+\[
+ \boxed{K(19,t)=0\quad(t\ge6).}
+\]
+\end{theorem}
+The exclusion is a finite exact certificate proof for arbitrary complex
+states. Its final contradiction involves only the trace and six nonnegative
+total-spin probabilities of a three-copy moment. No Majorana symmetry,
+reality condition, or restricted Dicke support is assumed.
+
+\section*{1. A necessary three-copy moment}
+Suppose a normalized pure state $\psi\in V_{19/2}$ is sixth-order AC. Average its
+three-copy projector over collective rotations:
+\[
+ X=\int_{\mathrm{SU}(2)}D_{19/2}(g)^{\otimes3}
+ (|\psi\rangle\langle\psi|)^{\otimes3}
+ D_{19/2}(g)^{\dagger\otimes3}\,dg.
+\]
+Then $X\succeq0$, $\Tr X=1$, and $X$ is invariant and supported on
+\[
+ W=\Sym^3(V_{19/2}),\qquad \dim W=\binom{22}{3}=1540.
+\]
+Before averaging, contraction of the first factor with any tensor of ranks
+one through six gives zero, because its expectation in $\psi$ vanishes.
+Rotation mixes components of a fixed tensor rank and preserves this zero
+condition. Thus, in particular,
+\begin{equation}\label{contractions}
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes2})X]=0,
+ \qquad \ell=1,\ldots,6.
+\end{equation}
+These are necessary conditions; it is not asserted that every invariant
+positive operator satisfying them is a physical three-copy state.
+
+\section*{2. Complete exact invariant coordinates}
+Decompose
+\[
+ W=\bigoplus_J V_J\otimes\mathbb C^{m_J}.
+\]
+There are 27 nonempty total-spin sectors. The accompanying certificate gives
+complete integer highest-weight bases, with the multiplicities verified
+independently from occupation-word weight counts. They satisfy
+\[
+ \sum_J(2J+1)m_J=1540,\qquad
+ \sum_J\frac{m_J(m_J+1)}2=94.
+\]
+The coupled bases and the component-zero contraction equations are real.
+For complex Hermitian multiplicity matrices, replacing each matrix by its
+real part preserves positivity, the trace, and every selected equation.
+Therefore it suffices to work with 94 real symmetric invariant coordinates.
+This reduction does not assume that the original state has real amplitudes.
+
+Here are the physical conventions needed to reconstruct these coordinates.
+Use $b_i=\sqrt{\binom{19}{i}}|D_{19}^{(i)}\rangle$, $0\le i\le19$, and
+the averaged symmetric words
+\[
+ E_{abc}=\frac1{3!}\sum_{\sigma\in S_3}
+ b_{i_{\sigma(1)}}\otimes b_{i_{\sigma(2)}}\otimes b_{i_{\sigma(3)}},
+ \qquad (i_1,i_2,i_3)=(a,b,c),\quad a\le b\le c.
+\]
+For occupation numbers $o_i$, their mutually orthogonal metric is
+\[
+ \|E_{abc}\|^2=\frac{\prod_i\binom{19}{i}^{o_i}o_i!}{3!}.
+\]
+Let $H_J$ be the certificate's full-column-rank integer highest-weight
+matrix, orthogonal in this physical metric, and define
+\[
+ U_{J,M}=\frac{J_-^{J-M}}{(J-M)!}H_J,\qquad
+ U_{J,M}^{\dagger}U_{J,M}=\binom{2J}{J-M}G_J,
+ \quad G_J=H_J^{\dagger}H_J\succ0.
+\]
+For the supplied positive denominator scales $d_J$, every real invariant
+operator has the unique form
+\[
+ X(B)=\sum_J d_J\sum_{M=-J}^{J}
+ \frac{U_{J,M}B_JU_{J,M}^{\dagger}}{\binom{2J}{J-M}},
+ \qquad B_J=B_J^T.
+\]
+Positivity is equivalent to $B_J\succeq0$ for every block. The upper
+triangular entries of the $B_J$ form the 94 coordinates $b$; an off-diagonal
+coordinate contributes both transposed entries.
+
+The diagonal tensors $T_{\ell0}$ are represented by the degree-$\ell$
+polynomials in $2i-19$ orthogonal to every smaller degree under the uniform
+sum over $i=0,\ldots,19$. Selected matrix entries of
+\eqref{contractions}, divided by each row's positive integer gcd, give
+\[
+ A b=0,\qquad A\in\mathbb Z^{88\times94}.
+\]
+The verifier reconstructs every selected row from the physical tensor
+words. It checks $\operatorname{rank}A=88$ by elimination modulo the prime
+$1000003$. The certificate's integer matrix $K$ satisfies
+\[
+ AK=0,\qquad K\in\mathbb Z^{94\times6},\qquad
+ \operatorname{rank}K=6.
+\]
+The exact matrix product and the latter modular rank establish that $K$
+spans the complete rational kernel. Hence every real solution is $b=Kz$.
+Completeness of the selected contraction equations is not needed: every
+hypothetical state satisfies this necessary subset.
+
+\section*{3. A positive trace--probability identity}
+Let $\Pi_J$ project onto the total-spin-$J$ sector of the three-copy space,
+including all multiplicities, and put
+\[
+ p_J=\Tr(\Pi_JX).
+\]
+For a normalized positive moment, $p_J\ge0$ and $\sum_Jp_J=1$.
+In the above exact coordinates these physical functionals are
+\[
+ p_J=d_J(2J+1)\Tr(G_JB_J),\qquad \Tr X=\sum_Jp_J.
+\]
+They can also be reconstructed by summing the physical trace over every
+descendant $U_{J,M}$; the independent verifier checks the normalization.
+
+Substitution of the complete kernel $b=Kz$ gives the following identity
+for every solution of the selected necessary equations:
+\begin{align*}
+ 0={}&1413987969381349416781077855914791923\,\Tr X\\
+ &+9858033828239721287105637920113568802000\,p_{3/2}\\
+ &+7713415871370069955275107921621388912000\,p_{5/2}\\
+ &+1538043828417702353592041548624293431250\,p_{15/2}\\
+ &+1482076991122688830274198406278368150000\,p_{17/2}\\
+ &+683439424711170559646778746197339968000\,p_{19/2}\\
+ &+1122458021446107869346053838715358328000\,p_{39/2}.
+\end{align*}
+The identity is checked coefficientwise in all six kernel parameters with
+exact rational arithmetic. Every displayed coefficient is strictly
+positive. Since $\Tr X=1$ and the six probabilities are nonnegative, its
+right side is strictly positive, a contradiction. Thus the assumed
+sixth-order AC state cannot exist. Higher orders are excluded by nesting.
+
+\paragraph{Reproducibility.}
+The proof data are \texttt{certificate.json}. The independent verifier
+reconstructs the representation, every selected contraction row, both
+exact ranks, the full kernel, and the physical trace/probability identity.
+Numerical searches were used only during discovery; no optimization
+status or floating-point sign is a premise of this proof.
+\end{document}

@@ -1,0 +1,61 @@
+[
+  {
+    "n": 5,
+    "zeroFactorDegree": 0,
+    "degree": 8,
+    "coefficients": {
+      "0": "-1",
+      "4": "-6*sqrt(3)",
+      "8": "1"
+    },
+    "polynomial": "z**8 - 6*sqrt(3)*z**4 - 1",
+    "squareFree": true,
+    "gcdDegree": 0
+  },
+  {
+    "n": 7,
+    "zeroFactorDegree": 0,
+    "degree": 15,
+    "coefficients": {
+      "0": "-1",
+      "3": "94/3 + 2*sqrt(41)*I/3",
+      "6": "92 + 11*sqrt(41)*I",
+      "9": "-92 - 11*sqrt(41)*I",
+      "12": "-94/3 - 2*sqrt(41)*I/3",
+      "15": "1"
+    },
+    "polynomial": "z**15 + z**12*(-94/3 - 2*sqrt(41)*I/3) + z**9*(-92 - 11*sqrt(41)*I) + z**6*(92 + 11*sqrt(41)*I) + z**3*(94/3 + 2*sqrt(41)*I/3) - 1",
+    "squareFree": true,
+    "gcdDegree": 0
+  },
+  {
+    "n": 8,
+    "zeroFactorDegree": 4,
+    "degree": 10,
+    "coefficients": {
+      "0": "-1",
+      "5": "-46*sqrt(21)/21",
+      "10": "1"
+    },
+    "polynomial": "z**10 - 46*sqrt(21)*z**5/21 - 1",
+    "squareFree": true,
+    "gcdDegree": 0
+  },
+  {
+    "n": 9,
+    "zeroFactorDegree": 0,
+    "degree": 24,
+    "coefficients": {
+      "0": "-1",
+      "4": "270*sqrt(35)/11 - 84*I/11",
+      "8": "8013/11 - 1080*sqrt(35)*I/11",
+      "12": "-1620*sqrt(35)/11 + 28840*I/11",
+      "16": "-8013/11 + 1080*sqrt(35)*I/11",
+      "20": "270*sqrt(35)/11 - 84*I/11",
+      "24": "1"
+    },
+    "polynomial": "z**24 + z**20*(270*sqrt(35)/11 - 84*I/11) + z**16*(-8013/11 + 1080*sqrt(35)*I/11) + z**12*(-1620*sqrt(35)/11 + 28840*I/11) + z**8*(8013/11 - 1080*sqrt(35)*I/11) + z**4*(270*sqrt(35)/11 - 84*I/11) - 1",
+    "squareFree": true,
+    "gcdDegree": 0
+  }
+]

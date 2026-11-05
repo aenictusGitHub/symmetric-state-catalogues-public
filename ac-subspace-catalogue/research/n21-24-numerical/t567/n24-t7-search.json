@@ -1,0 +1,179 @@
+{
+  "n": 24,
+  "t": 7,
+  "dimension": 1,
+  "threshold": 1e-10,
+  "status": "candidate-found",
+  "analyticJacobianDirectionalError": 9.842154868877628e-12,
+  "seed": 213510,
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 213510,
+      "initialization": "local-library",
+      "functionEvaluations": 1,
+      "jacobianEvaluations": 1,
+      "solverStatus": 1,
+      "tensorResidualL2": 1.2538464743417576e-13,
+      "maximumReductionFrobeniusResidual": 8.346477915401609e-15,
+      "normalizationBeforeFinalScaling": 0.9999999999999999,
+      "elapsedSeconds": 0.0006879579741507769
+    }
+  ],
+  "best": {
+    "attempt": 0,
+    "seed": 213510,
+    "initialization": "local-library",
+    "functionEvaluations": 1,
+    "jacobianEvaluations": 1,
+    "solverStatus": 1,
+    "tensorResidualL2": 1.2538464743417576e-13,
+    "maximumReductionFrobeniusResidual": 8.346477915401609e-15,
+    "normalizationBeforeFinalScaling": 0.9999999999999999,
+    "elapsedSeconds": 0.0006879579741507769,
+    "reductions": [
+      {
+        "order": 1,
+        "frobeniusResidual": 3.192352274679499e-16,
+        "maxEntryResidual": 2.2207033894997576e-16
+      },
+      {
+        "order": 2,
+        "frobeniusResidual": 4.734598366315283e-16,
+        "maxEntryResidual": 3.3306710645164836e-16
+      },
+      {
+        "order": 3,
+        "frobeniusResidual": 4.113036405379371e-16,
+        "maxEntryResidual": 2.220446777631079e-16
+      },
+      {
+        "order": 4,
+        "frobeniusResidual": 5.684988045571234e-16,
+        "maxEntryResidual": 2.2204472250632173e-16
+      },
+      {
+        "order": 5,
+        "frobeniusResidual": 1.1298390234016694e-15,
+        "maxEntryResidual": 3.203833108129761e-16
+      },
+      {
+        "order": 6,
+        "frobeniusResidual": 2.0556608587354447e-15,
+        "maxEntryResidual": 4.920215362108717e-16
+      },
+      {
+        "order": 7,
+        "frobeniusResidual": 8.346477915401609e-15,
+        "maxEntryResidual": 2.426965231029058e-15
+      }
+    ],
+    "coefficients": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.3815006063956647,
+        -9.253117401426032e-18
+      ],
+      [
+        -0.010872509005157094,
+        -0.00765834657419337
+      ],
+      [
+        0.004522212606486514,
+        0.011180970479812428
+      ],
+      [
+        0.07349818428571667,
+        0.06656951951157472
+      ],
+      [
+        0.14667477267862347,
+        0.11394674535359545
+      ],
+      [
+        -0.021068683801609582,
+        0.24426963872791627
+      ],
+      [
+        0.09861447913788239,
+        -0.3489804766786426
+      ],
+      [
+        -0.11304739506650877,
+        -0.11889963216536525
+      ],
+      [
+        0.04777395243906211,
+        -0.11111697291930878
+      ],
+      [
+        0.1281379494674702,
+        -0.1362954251870289
+      ],
+      [
+        0.020098583106321587,
+        0.002167332076468627
+      ],
+      [
+        -0.11488938769937565,
+        -0.0860912167019558
+      ],
+      [
+        0.20862039728816434,
+        -0.027713451959729178
+      ],
+      [
+        0.11101435123476229,
+        0.2242421432714056
+      ],
+      [
+        0.2172570685752661,
+        -0.07335801793092916
+      ],
+      [
+        -0.24431937538230672,
+        -0.16122059101964017
+      ],
+      [
+        0.046430087473193604,
+        -0.12697578816329222
+      ],
+      [
+        0.0007712352618679115,
+        -0.11979426078961972
+      ],
+      [
+        -0.10728118675711609,
+        -0.16766162232980947
+      ],
+      [
+        0.18840657698513785,
+        -0.02974354357744843
+      ],
+      [
+        0.0627719745678212,
+        0.17999967359192917
+      ],
+      [
+        0.1266466636755098,
+        -0.17053020045390607
+      ],
+      [
+        -0.14098359546606504,
+        -0.18500370745058378
+      ],
+      [
+        0.14030514181935883,
+        -0.10758051555979004
+      ]
+    ]
+  },
+  "elapsedSeconds": 0.0008156248368322849,
+  "scope": "Full-complex finite multistart search. Numerical residuals do not certify exact existence; unsuccessful searches do not prove nonexistence.",
+  "requestedRestarts": 1,
+  "maxFunctionEvaluationsPerAttempt": 450,
+  "method": "scipy.optimize.least_squares, trust-region reflective, analytic Jacobian"
+}

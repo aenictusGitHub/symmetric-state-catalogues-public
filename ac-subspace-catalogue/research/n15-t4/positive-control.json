@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "exactN17AC4MomentChecks": [
+    {
+      "raisingPower": 0,
+      "diagonalPower": 0,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 1,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 2,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 3,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 4,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 0,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 1,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 2,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 3,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 2,
+      "diagonalPower": 0,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 2,
+      "diagonalPower": 1,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 2,
+      "diagonalPower": 2,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 3,
+      "diagonalPower": 0,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 3,
+      "diagonalPower": 1,
+      "identityVerifiedExactly": true
+    },
+    {
+      "raisingPower": 4,
+      "diagonalPower": 0,
+      "identityVerifiedExactly": true
+    }
+  ],
+  "sourceSubspaceId": "radical-n17-k1-t4",
+  "controls": [
+    {
+      "label": "generic complex non-AC state",
+      "n": 2,
+      "copies": 4,
+      "symmetricInputDimension": 15,
+      "outputDimension": 30,
+      "weightBlocks": 9,
+      "sameWeightMatrixEntriesChecked": 128,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 1.1188630228279524e-16,
+      "maximumSameWeightMapError": 2.8519411066332024e-17,
+      "maximumCrossWeightMapError": 4.1777673608052095e-17,
+      "outputTrace": 0.9999999999999999,
+      "outputEqualsPositiveRankOneProjector": true
+    },
+    {
+      "label": "generic complex non-AC state",
+      "n": 15,
+      "copies": 4,
+      "symmetricInputDimension": 3876,
+      "outputDimension": 13056,
+      "weightBlocks": 61,
+      "sameWeightMatrixEntriesChecked": 4901650,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 1.6365348541700844e-17,
+      "maximumSameWeightMapError": 5.221131556567482e-18,
+      "maximumCrossWeightMapError": 4.6317137111987765e-19,
+      "outputTrace": 1.0,
+      "outputEqualsPositiveRankOneProjector": true
+    },
+    {
+      "label": "generic rotation of known exact N17 AC4 state",
+      "n": 17,
+      "copies": 4,
+      "symmetricInputDimension": 5985,
+      "outputDimension": 20520,
+      "weightBlocks": 69,
+      "sameWeightMatrixEntriesChecked": 10806144,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 1.0444418402013022e-17,
+      "maximumSameWeightMapError": 4.599880250050123e-19,
+      "maximumCrossWeightMapError": 2.299940125025061e-19,
+      "outputTrace": 1.0000000000000007,
+      "outputEqualsPositiveRankOneProjector": true
+    }
+  ],
+  "algebraicIdentity": "The normalized symmetric embedding has E[(i,a),o]=sqrt((count_a(i)+1)/4) when o=sort(i,a). Applying first-leg transpose and U|i>=(-1)^i|N-i> gives the stated map exactly. For every pure input rho^tensor4 the output is |Theta psi tensor psi^tensor3><Theta psi tensor psi^tensor3|; it is positive, with trace1. Convexity gives positivity for rotationally averaged product moments.",
+  "scope": "Checks the complete 1|3 transpose/time-reversal formula and half-integer signs. This validates the positive-map constraint; it does not itself prove nonexistence."
+}

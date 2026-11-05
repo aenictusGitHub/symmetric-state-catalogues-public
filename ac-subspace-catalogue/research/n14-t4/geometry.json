@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "convention": {
+    "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r))*c_r*z^r",
+    "sphere": "(2Re(z), -2Im(z), |z|^2-1)/(1+|z|^2); infinity is north."
+  },
+  "records": {
+    "radical-n14-k1-t4-basis-1": {
+      "id": "radical-n14-k1-t4-basis-1",
+      "n": 14,
+      "label": "Exact fourth-order AC state \u00b7 positive branch",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7600410238045638,
+          "y": -0.5744845507793965,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8775387269589306,
+          "y": -0.3709725591433871,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11749770315436714,
+          "y": 0.9454571099227838,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7600410238045637,
+          "y": 0.5744845507793965,
+          "z": -0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11749770315436672,
+          "y": -0.9454571099227838,
+          "z": -0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8775387269589306,
+          "y": 0.37097255914338684,
+          "z": -0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7680161792590582,
+          "y": -0.23936385816974623,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5913032715523845,
+          "y": -0.5454395926709348,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.176712907706674,
+          "y": 0.7848034508406807,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7680161792590584,
+          "y": 0.23936385816974629,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1767129077066736,
+          "y": -0.7848034508406807,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5913032715523846,
+          "y": 0.5454395926709347,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact radical Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "factorizationField": "QQ(sqrt(7), I*sqrt(5633))",
+        "reducedPolynomialGcdWithDerivative": "1",
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + y**3*(-351*sqrt(7)/244 + 13*sqrt(5633)*I/244) + y**2*(38337/4270 + 351*sqrt(39431)*I/4270) + y*(-351*sqrt(7)/244 + 13*sqrt(5633)*I/244) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0350216988101953e-15,
+        "exactFormulaVsSavedCoefficientsError": 6.675713630693488e-19,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.8640766563151551,
+        "rootPrecisionDecimalDigits": 50,
+        "noNumericalRootClustering": true
+      },
+      "sourceExactCoefficients": [
+        "0",
+        "7*sqrt(110)/220 + sqrt(4337410)*I/5940",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "-sqrt(2730)/300 + sqrt(2196870)*I/2700",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "7*sqrt(110)/220 + sqrt(4337410)*I/5940",
+        "0"
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coordinateMethod": "Explicit quartic algebraic field, exact square-free factorization and 50-digit numerical roots.",
+      "multiplicityEvidence": "Exact gcd and sparse homogeneous polynomial support."
+    },
+    "radical-n14-k1-t4-conjugate-basis-1": {
+      "id": "radical-n14-k1-t4-conjugate-basis-1",
+      "n": 14,
+      "label": "Exact fourth-order AC state \u00b7 conjugate branch",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7600410238045638,
+          "y": 0.5744845507793965,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11749770315436675,
+          "y": -0.9454571099227838,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8775387269589308,
+          "y": 0.37097255914338695,
+          "z": 0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7600410238045637,
+          "y": -0.5744845507793965,
+          "z": -0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8775387269589305,
+          "y": -0.37097255914338706,
+          "z": -0.30381761477884306,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11749770315436711,
+          "y": 0.9454571099227836,
+          "z": -0.30381761477884295,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7680161792590582,
+          "y": 0.23936385816974623,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.17671290770667364,
+          "y": -0.7848034508406808,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5913032715523846,
+          "y": 0.5454395926709347,
+          "z": -0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7680161792590584,
+          "y": -0.23936385816974629,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5913032715523847,
+          "y": -0.5454395926709349,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.17671290770667397,
+          "y": 0.7848034508406806,
+          "z": 0.59401691204747,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact radical Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "factorizationField": "QQ(sqrt(7), I*sqrt(5633))",
+        "reducedPolynomialGcdWithDerivative": "1",
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + y**3*(-351*sqrt(7)/244 - 13*sqrt(5633)*I/244) + y**2*(38337/4270 - 351*sqrt(39431)*I/4270) + y*(-351*sqrt(7)/244 - 13*sqrt(5633)*I/244) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.701340475688369e-16,
+        "exactFormulaVsSavedCoefficientsError": 6.675713630693488e-19,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.8640766563151553,
+        "rootPrecisionDecimalDigits": 50,
+        "noNumericalRootClustering": true
+      },
+      "sourceExactCoefficients": [
+        "0",
+        "7*sqrt(110)/220 - sqrt(4337410)*I/5940",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "-sqrt(2730)/300 - sqrt(2196870)*I/2700",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "7*sqrt(110)/220 - sqrt(4337410)*I/5940",
+        "0"
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coordinateMethod": "Explicit quartic algebraic field, exact square-free factorization and 50-digit numerical roots.",
+      "multiplicityEvidence": "Exact gcd and sparse homogeneous polynomial support."
+    }
+  },
+  "verification": {
+    "passed": true,
+    "sourceBasisSha256": "70dac3f16b72917528e5024ae6bdf4df23a0f81686ed49e8f0c8bf75272c375a",
+    "recordsChecked": 2,
+    "exactCoefficientIdentitiesChecked": 30,
+    "exactSquareFreeQuarticsChecked": 2,
+    "allFourteenRootsSimpleExactly": true,
+    "maximumProjectiveDickeReconstructionError": 1.0350216988101953e-15,
+    "scope": "Multiplicities are exact. Sphere coordinates are numerical renderings, independently checked by reconstruction; roots are never clustered."
+  }
+}

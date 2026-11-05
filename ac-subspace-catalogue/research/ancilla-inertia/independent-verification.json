@@ -1,0 +1,329 @@
+{
+  "passed": true,
+  "domain": "Every integer N>=8; every AC order t>=2",
+  "bound": "4k<=N-2",
+  "proof": "Compression of W vanishes on the 4k-dimensional code tensor auxiliary-spin space. W has no zero eigenvalues and positive index N-2. Projection onto its positive spectral space is injective on a totally isotropic subspace.",
+  "auxiliarySpin": "3/2",
+  "polynomial": "W=X^2-(N-4)X/2-5N(N+2)I/16",
+  "symbolicEigenvalues": [
+    "(n + 2)*(5*n - 3)/8",
+    "-n*(n - 7)/8",
+    "-(3*n**2 + n + 6)/8",
+    "-n*(n - 7)/8"
+  ],
+  "symbolicSectorDimensions": [
+    "n - 2",
+    "n",
+    "n + 2",
+    "n + 4"
+  ],
+  "universalStrictSignCheck": true,
+  "wholeSubspaceCompressionIdentityVerified": true,
+  "finiteExactTotalMagneticBlocksChecked": 232,
+  "finiteSpinControls": [
+    {
+      "n": 3,
+      "sectorDimensions": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "WSigns": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "sectorDimensions": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "WSigns": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "sectorDimensions": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "WSigns": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "sectorDimensions": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "WSigns": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 7,
+      "sectorDimensions": [
+        5,
+        7,
+        9,
+        11
+      ],
+      "WSigns": [
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "sectorDimensions": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 9,
+      "sectorDimensions": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 10,
+      "sectorDimensions": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 11,
+      "sectorDimensions": [
+        9,
+        11,
+        13,
+        15
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 12,
+      "sectorDimensions": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 13,
+      "sectorDimensions": [
+        11,
+        13,
+        15,
+        17
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 14,
+      "sectorDimensions": [
+        12,
+        14,
+        16,
+        18
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 15,
+      "sectorDimensions": [
+        13,
+        15,
+        17,
+        19
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 16,
+      "sectorDimensions": [
+        14,
+        16,
+        18,
+        20
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 17,
+      "sectorDimensions": [
+        15,
+        17,
+        19,
+        21
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "n": 18,
+      "sectorDimensions": [
+        16,
+        18,
+        20,
+        22
+      ],
+      "WSigns": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    }
+  ],
+  "n13MaximumDimension": 2,
+  "newlySettledExactExamples": [
+    {
+      "n": 13,
+      "t": 2,
+      "dimension": 2
+    },
+    {
+      "n": 16,
+      "t": 2,
+      "dimension": 3
+    },
+    {
+      "n": 17,
+      "t": 2,
+      "dimension": 3
+    }
+  ],
+  "catalogueSha256": "e3b08f075fcc209e4163217840a3839b8f59a196ddf69ece1fec3b117e5b9aba",
+  "exactWitnessContradictions": [],
+  "upperImprovementsStillToApply": [],
+  "tightCatalogueSecondOrderCells": [
+    {
+      "n": 8,
+      "dimension": 1
+    },
+    {
+      "n": 9,
+      "dimension": 1
+    },
+    {
+      "n": 10,
+      "dimension": 2
+    },
+    {
+      "n": 11,
+      "dimension": 2
+    },
+    {
+      "n": 12,
+      "dimension": 2
+    },
+    {
+      "n": 13,
+      "dimension": 2
+    },
+    {
+      "n": 14,
+      "dimension": 3
+    },
+    {
+      "n": 15,
+      "dimension": 3
+    },
+    {
+      "n": 16,
+      "dimension": 3
+    },
+    {
+      "n": 17,
+      "dimension": 3
+    }
+  ],
+  "runtimeSeconds": 0.3294677734375
+}

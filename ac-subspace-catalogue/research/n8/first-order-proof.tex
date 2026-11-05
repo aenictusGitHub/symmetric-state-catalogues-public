@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\vecop}{\operatorname{vec}}
+\begin{document}
+\title{A saturation obstruction for first-order anticoherent subspaces}
+\author{Catalogue calculation}
+\date{}
+\maketitle
+Write $\mathcal H_N=\Sym^N(\mathbb C^2)$, the spin-$N/2$ space, and let $R_m$ denote the partial trace onto $m$ of the symmetric qubits. All reduced identities below refer to the identity on the appropriate symmetric subspace.
+
+\begin{theorem}[Saturation produces a highly anticoherent pure state]
+Let $N\ge2$ be even. If a first-order anticoherent subspace of $\mathcal H_N$ has dimension $N/2$, then there exists a pure symmetric state on $2N$ qubits of anticoherence order at least $N-1$.
+\end{theorem}
+\begin{proof}
+Put $k=N/2$ and let $P=\sum_{a=1}^k|u_a\rangle\langle u_a|$ be the orthogonal projector onto such a subspace. Its orthonormal basis satisfies
+\[
+ R_1(|u_a\rangle\langle u_b|)=\frac{\delta_{ab}}2 I_2.
+\]
+In the bipartition $1\mid N-1$, write
+\[
+ |u_a\rangle=|0\rangle|v_{a0}\rangle+|1\rangle|v_{a1}\rangle.
+\]
+The cross-reduction condition gives
+\[
+ \langle v_{b\beta}|v_{a\alpha}\rangle
+ =\frac12\delta_{ab}\delta_{\alpha\beta}.
+\]
+Thus the $2k=N$ vectors $\sqrt2\,v_{a\alpha}$ form an orthonormal basis of $\mathcal H_{N-1}$, whose dimension is $N$. Therefore
+\begin{equation}\label{eq:complement}
+ R_{N-1}(P)=\frac12 I_N.
+\end{equation}
+
+Take Hilbert--Schmidt orthonormal spin tensors $T^{(N)}_{LM}$ on $\mathcal H_N$, with $T^{(N)}_{00}=I_{N+1}/\sqrt{N+1}$. The one-qubit partial trace is rotation covariant and satisfies
+\[
+ R_{N-1}(T^{(N)}_{LM})
+ =\frac{\sqrt{(N-L)(N+L+1)}}{N}\,T^{(N-1)}_{LM}
+ \quad(0\le L\le N-1),
+\]
+and annihilates the rank-$N$ tensors. The displayed coefficients are strictly positive. Equation~\eqref{eq:complement} consequently forces
+\[
+ P=\alpha I_{N+1}+X,\qquad
+ \alpha=\frac{N}{2(N+1)},\qquad
+ X\in\operatorname{span}\{T^{(N)}_{NM}: -N\le M\le N\}.
+\]
+Here $X=X^\dagger$ and $\Tr X=0$. Since $P^2=P$,
+\begin{equation}\label{eq:X2}
+ X^2=\frac{X}{N+1}+\frac{N(N+2)}{4(N+1)^2}I_{N+1},
+ \qquad \Tr X^2=\frac{N(N+2)}{4(N+1)}>0.
+\end{equation}
+
+Set $j=N/2$ and, in the magnetic basis, define the unitary matrix
+\[
+ F_{mn}=(-1)^{j-m}\delta_{m,-n}.
+\]
+It is the linear part of spin time reversal and obeys $D^{(j)}(g)F D^{(j)}(g)^{\mathsf T}=F$. With the convention
+$\vecop(A)=\sum_{m,n}A_{mn}|j,m\rangle\otimes|j,n\rangle$,
+\[
+ (D^{(j)}(g)\otimes D^{(j)}(g))\vecop(XF)
+ =\vecop(D^{(j)}(g)X D^{(j)}(g)^\dagger F).
+\]
+Therefore the map $X\mapsto\vecop(XF)$ intertwines operator tensor rank with coupled total spin. Since $X$ has only rank $N=2j$, $\vecop(XF)$ lies in the maximal total-spin-$N$ summand of $\mathcal H_N\otimes\mathcal H_N$. This summand is precisely $\mathcal H_{2N}=\Sym^{2N}(\mathbb C^2)$.
+
+Normalize this nonzero vector:
+\[
+ |\Psi\rangle=\frac{\vecop(XF)}{\sqrt{\Tr X^2}}\in\mathcal H_{2N}.
+\]
+Its $N$-qubit reduction, using $FF^\dagger=I$, is
+\[
+ R_N(|\Psi\rangle\langle\Psi|)
+ =\frac{XF(XF)^\dagger}{\Tr X^2}
+ =\frac{X^2}{\Tr X^2}
+ =\frac{I_{N+1}}{N+1}+\frac{4}{N(N+2)}X.
+\]
+Tracing one more qubit annihilates $X$ and maps the normalized symmetric identity to the normalized symmetric identity. Hence
+\[
+ R_{N-1}(|\Psi\rangle\langle\Psi|)=\frac{I_N}{N}.
+\]
+The pure symmetric state $\Psi$ is therefore $(N-1)$-anticoherent.
+\end{proof}
+
+\begin{corollary}[Even sizes at least ten]
+For every even $N\ge10$, the dimension of a first-order AC subspace is at most $N/2-1$.
+\end{corollary}
+\begin{proof}
+The elementary Schmidt bound gives $k\le N/2$. If equality held, the theorem would give a pure $(N-1)$-AC state in the $(2N+1)$-dimensional spin-$N$ space. Put $r=N/2$. The tensor descendants of ranks $0,1,\ldots,r-1$ are orthogonal: the product of two such tensors has rank at most $2r-2=N-2$, and all its nonscalar expectations vanish. They have nonzero norms, and their number is
+\[
+ \sum_{L=0}^{r-1}(2L+1)=r^2=\frac{N^2}{4}.
+\]
+Consequently $N^2/4\le2N+1$, which fails for every even $N\ge10$. Equality in the Schmidt bound is impossible, yielding the asserted integer upper bound.
+\end{proof}
+
+\begin{corollary}[Eight qubits]
+There is no four-dimensional first-order AC subspace on eight symmetric qubits. Combined with an explicit three-dimensional construction, this proves $k_{\max}(8,1)=3$.
+\end{corollary}
+\begin{proof}
+Saturation at $N=8$ would produce a pure sixteen-qubit 7-AC state. For such a hypothetical state define the nonnegative multipole lengths
+\[
+ a_L=\sum_{M=-L}^L\bigl|\langle\Psi|T^{(16)}_{LM}|\Psi\rangle\bigr|^2,
+\]
+and the nonnegative two-copy singlet probability
+\[
+ p_0=\|\Pi_0(|\Psi\rangle\otimes|\Psi\rangle)\|^2.
+\]
+For a pure spin-eight state, only the even total spins $J=0,2,\ldots,16$ occur in two identical copies. The exact recoupling relation is
+\[
+ a_L=\sum_{J\in\{0,2,\ldots,16\}}(2L+1)
+ \begin{Bmatrix}8&8&J\\8&8&L\end{Bmatrix}p_J,
+ \qquad \sum_Jp_J=1.
+\]
+Substitution of these rational coefficients gives, for every pure sixteen-qubit state,
+\[
+ 0=100+136p_0+115a_9+\sum_{L=1}^7c_La_L,
+\]
+where
+\[
+ (c_1,\ldots,c_7)=\left(\frac{2567}2,\frac{969}2,-323,-969,-\frac{28747}{26},-\frac{22287}{26},-\frac{4370}{13}\right).
+\]
+This is checked coefficient by coefficient in all nine even total-spin sectors. Under seventh-order anticoherence the seven low-rank terms vanish, leaving
+\[
+ 0=100+136p_0+115a_9>0,
+\]
+a contradiction. The accompanying certificate and verifier independently reconstruct the recoupling coefficients using rational highest-weight sums. A second certificate, using only spin probabilities, yields $0=205620+24871p_2+1292646p_{12}$ under the same anticoherence assumptions.
+\end{proof}
+Combining the eight-qubit exclusion with the general corollary proves
+\[
+ k_{\max}(N,1)\le N/2-1\qquad\text{for every even }N\ge8.
+\]
+This result is restricted to even $N$. A matching three-dimensional first-order AC subspace at $N=8$ is spanned by
+\[
+ |D_8^{(4)}\rangle,\quad
+ \sqrt{\tfrac35}|D_8^{(2)}\rangle+\sqrt{\tfrac25}|D_8^{(7)}\rangle,\quad
+ \sqrt{\tfrac25}|D_8^{(1)}\rangle-\sqrt{\tfrac35}|D_8^{(6)}\rangle.
+\]
+Their supports are disjoint, their magnetic means vanish, and the only nonzero possible ladder cross term cancels exactly. Existing exact first-order constructions at $N=10,12$ attain dimensions $4,5$, respectively, so the new upper bounds also establish $k_{\max}(10,1)=4$ and $k_{\max}(12,1)=5$.
+\end{document}

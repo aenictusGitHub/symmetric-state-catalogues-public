@@ -1,0 +1,1753 @@
+{
+  "scope": "Exact representatives attaining maximal Majorana-point multiplicity at orders1 and2 for all applicable n2..12, plus two N12 order3 examples with different multiplicity partitions. No 2-AC state exists at n2,3,5.",
+  "basisConvention": "Normalized Dicke coefficients; r counts excitations. Source spin coefficients use r=j-m. Majorana polynomial P(z)=sum_r (-1)^r sqrt(C(n,r)) c_r z^r, with n-degree(P) roots at infinity. Multiplicity is unaffected by the pole convention.",
+  "states": [
+    {
+      "id": "gmax-n2-t1",
+      "n": 2,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 1,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        1
+      ],
+      "probabilities": {
+        "1": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "1",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{2}^{(1)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 1,
+          "infinity": 1
+        }
+      }
+    },
+    {
+      "id": "gmax-n3-t1",
+      "n": 3,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 1,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        2
+      ],
+      "probabilities": {
+        "0": "1/4",
+        "2": "3/4"
+      },
+      "exactCoefficients": [
+        "1/2",
+        "0",
+        "sqrt(3)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8660254037844386,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{1}{2}|D_{3}^{(0)}\\rangle + \\frac{\\sqrt{3}}{2}|D_{3}^{(2)}\\rangle",
+      "construction": "Two-term odd-N family",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 1
+        }
+      }
+    },
+    {
+      "id": "gmax-n4-t1",
+      "n": 4,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        2
+      ],
+      "probabilities": {
+        "2": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{4}^{(2)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 2,
+          "infinity": 2
+        }
+      }
+    },
+    {
+      "id": "gmax-n5-t1",
+      "n": 5,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3
+      ],
+      "probabilities": {
+        "0": "1/6",
+        "3": "5/6"
+      },
+      "exactCoefficients": [
+        "sqrt(6)/6",
+        "0",
+        "0",
+        "sqrt(30)/6",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.408248290463863,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9128709291752769,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{6}}{6}|D_{5}^{(0)}\\rangle + \\frac{\\sqrt{30}}{6}|D_{5}^{(3)}\\rangle",
+      "construction": "Two-term odd-N family",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 2
+        }
+      }
+    },
+    {
+      "id": "gmax-n6-t1",
+      "n": 6,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 3,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        3
+      ],
+      "probabilities": {
+        "3": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{6}^{(3)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 3,
+          "infinity": 3
+        }
+      }
+    },
+    {
+      "id": "gmax-n7-t1",
+      "n": 7,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 3,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        4
+      ],
+      "probabilities": {
+        "0": "1/8",
+        "4": "7/8"
+      },
+      "exactCoefficients": [
+        "sqrt(2)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(14)/4",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.3535533905932738,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9354143466934853,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{2}}{4}|D_{7}^{(0)}\\rangle + \\frac{\\sqrt{14}}{4}|D_{7}^{(4)}\\rangle",
+      "construction": "Two-term odd-N family",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 3
+        }
+      }
+    },
+    {
+      "id": "gmax-n8-t1",
+      "n": 8,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 4,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        4
+      ],
+      "probabilities": {
+        "4": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{8}^{(4)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 4,
+          "infinity": 4
+        }
+      }
+    },
+    {
+      "id": "gmax-n9-t1",
+      "n": 9,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 4,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        5
+      ],
+      "probabilities": {
+        "0": "1/10",
+        "5": "9/10"
+      },
+      "exactCoefficients": [
+        "sqrt(10)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(10)/10",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.31622776601683794,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9486832980505138,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{10}}{10}|D_{9}^{(0)}\\rangle + \\frac{3 \\sqrt{10}}{10}|D_{9}^{(5)}\\rangle",
+      "construction": "Two-term odd-N family",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 4
+        }
+      }
+    },
+    {
+      "id": "gmax-n10-t1",
+      "n": 10,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 5,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        5
+      ],
+      "probabilities": {
+        "5": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{10}^{(5)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 5,
+          "infinity": 5
+        }
+      }
+    },
+    {
+      "id": "gmax-n11-t1",
+      "n": 11,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 5,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        6
+      ],
+      "probabilities": {
+        "0": "1/12",
+        "6": "11/12"
+      },
+      "exactCoefficients": [
+        "sqrt(3)/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(33)/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.28867513459481287,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9574271077563381,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{3}}{6}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{33}}{6}|D_{11}^{(6)}\\rangle",
+      "construction": "Two-term odd-N family",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 5
+        }
+      }
+    },
+    {
+      "id": "gmax-n12-t1",
+      "n": 12,
+      "t": 1,
+      "achievedOrder": 1,
+      "maxMultiplicity": 6,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        6
+      ],
+      "probabilities": {
+        "6": "1"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "1|D_{12}^{(6)}\\rangle",
+      "construction": "Balanced Dicke state",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 6,
+          "infinity": 6
+        }
+      }
+    },
+    {
+      "id": "gmax-n4-t2",
+      "n": 4,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 1,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3
+      ],
+      "probabilities": {
+        "0": "1/3",
+        "3": "2/3"
+      },
+      "exactCoefficients": [
+        "sqrt(3)/3",
+        "0",
+        "0",
+        "sqrt(6)/3",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5773502691896257,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.816496580927726,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{3}}{3}|D_{4}^{(0)}\\rangle + \\frac{\\sqrt{6}}{3}|D_{4}^{(3)}\\rangle",
+      "construction": "Two-term tetrahedral representative",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), g=1"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 1
+        }
+      }
+    },
+    {
+      "id": "gmax-n6-t2",
+      "n": 6,
+      "t": 2,
+      "achievedOrder": 3,
+      "maxMultiplicity": 1,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        1,
+        5
+      ],
+      "probabilities": {
+        "1": "1/2",
+        "5": "1/2"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{6}^{(1)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{6}^{(5)}\\rangle",
+      "construction": "Octahedral representative",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (61); also 3-anticoherent"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 1,
+          "infinity": 1
+        }
+      }
+    },
+    {
+      "id": "gmax-n7-t2",
+      "n": 7,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        5
+      ],
+      "probabilities": {
+        "0": "3/10",
+        "5": "7/10"
+      },
+      "exactCoefficients": [
+        "sqrt(30)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(70)/10",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5477225575051661,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8366600265340756,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{30}}{10}|D_{7}^{(0)}\\rangle + \\frac{\\sqrt{70}}{10}|D_{7}^{(5)}\\rangle",
+      "construction": "Published two-term family (also a special case of the general construction)",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), g=2"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 2
+        }
+      }
+    },
+    {
+      "id": "gmax-n8-t2",
+      "n": 8,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "probabilities": {
+        "0": "7/27",
+        "3": "4/27",
+        "6": "16/27"
+      },
+      "exactCoefficients": [
+        "sqrt(21)/9",
+        "0",
+        "0",
+        "2*sqrt(3)/9",
+        "0",
+        "0",
+        "4*sqrt(3)/9",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5091750772173156,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3849001794597505,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.769800358919501,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{21}}{9}|D_{8}^{(0)}\\rangle + \\frac{2 \\sqrt{3}}{9}|D_{8}^{(3)}\\rangle + \\frac{4 \\sqrt{3}}{9}|D_{8}^{(6)}\\rangle",
+      "construction": "General extremal-degeneracy family for all N\u22657",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 2
+        }
+      }
+    },
+    {
+      "id": "gmax-n9-t2",
+      "n": 9,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3,
+        7
+      ],
+      "probabilities": {
+        "0": "3/14",
+        "3": "1/4",
+        "7": "15/28"
+      },
+      "exactCoefficients": [
+        "sqrt(42)/14",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "sqrt(105)/14",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.4629100498862757,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7319250547113999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{42}}{14}|D_{9}^{(0)}\\rangle + \\frac{1}{2}|D_{9}^{(3)}\\rangle + \\frac{\\sqrt{105}}{14}|D_{9}^{(7)}\\rangle",
+      "construction": "General extremal-degeneracy family for all N\u22657",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 2
+        }
+      }
+    },
+    {
+      "id": "gmax-n10-t2",
+      "n": 10,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 3,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        7
+      ],
+      "probabilities": {
+        "0": "2/7",
+        "7": "5/7"
+      },
+      "exactCoefficients": [
+        "sqrt(14)/7",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(35)/7",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5345224838248488,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8451542547285166,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{14}}{7}|D_{10}^{(0)}\\rangle + \\frac{\\sqrt{35}}{7}|D_{10}^{(7)}\\rangle",
+      "construction": "Published two-term family (also a special case of the general construction)",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), g=3"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 3
+        }
+      }
+    },
+    {
+      "id": "gmax-n11-t2",
+      "n": 11,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 3,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3,
+        8
+      ],
+      "probabilities": {
+        "0": "17/72",
+        "3": "11/90",
+        "8": "77/120"
+      },
+      "exactCoefficients": [
+        "sqrt(34)/12",
+        "0",
+        "0",
+        "sqrt(110)/30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2310)/60",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.485912657903775,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.34960294939005054,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.801040989379861,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{34}}{12}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{110}}{30}|D_{11}^{(3)}\\rangle + \\frac{\\sqrt{2310}}{60}|D_{11}^{(8)}\\rangle",
+      "construction": "General extremal-degeneracy family for all N\u22657",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 3
+        }
+      }
+    },
+    {
+      "id": "gmax-n12-t2",
+      "n": 12,
+      "t": 2,
+      "achievedOrder": 2,
+      "maxMultiplicity": 3,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        0,
+        3,
+        9
+      ],
+      "probabilities": {
+        "0": "5/27",
+        "3": "2/9",
+        "9": "16/27"
+      },
+      "exactCoefficients": [
+        "sqrt(15)/9",
+        "0",
+        "0",
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "4*sqrt(3)/9",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.43033148291193524,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.769800358919501,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{15}}{9}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{2}}{3}|D_{12}^{(3)}\\rangle + \\frac{4 \\sqrt{3}}{9}|D_{12}^{(9)}\\rangle",
+      "construction": "General extremal-degeneracy family for all N\u22657",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 0,
+          "infinity": 3
+        }
+      }
+    },
+    {
+      "id": "gmax-n12-t3",
+      "n": 12,
+      "t": 3,
+      "achievedOrder": 3,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        2,
+        6,
+        10
+      ],
+      "probabilities": {
+        "2": "7/16",
+        "6": "1/8",
+        "10": "7/16"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(7)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(7)/4",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3535533905932738,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{7}}{4}|D_{12}^{(2)}\\rangle + \\frac{\\sqrt{2}}{4}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{7}}{4}|D_{12}^{(10)}\\rangle",
+      "construction": "Double octahedron: six distinct points, each of multiplicity two",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 2,
+          "infinity": 2
+        },
+        "exactPolynomialFactorization": true
+      },
+      "majoranaPolynomialLatex": "\\frac{\\sqrt{462}}{4}z^2(z^4+1)^2",
+      "multiplicityPartition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "gmax-n12-t3-phase-i",
+      "n": 12,
+      "t": 3,
+      "achievedOrder": 3,
+      "maxMultiplicity": 2,
+      "maxMultiplicityVerified": "An exact pole multiplicity g and matching universal moment upper bound.",
+      "support": [
+        2,
+        6,
+        10
+      ],
+      "probabilities": {
+        "2": "7/16",
+        "6": "1/8",
+        "10": "7/16"
+      },
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(7)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)*I/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(7)/4",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.3535533905932738
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{7}}{4}|D_{12}^{(2)}\\rangle + \\frac{\\sqrt{2} i}{4}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{7}}{4}|D_{12}^{(10)}\\rangle",
+      "construction": "Phase variant with two double points and eight simple points",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "verification": {
+        "normalization": "exact",
+        "rho_t": "I/(t+1), verified exactly for every order1,...,achievedOrder",
+        "poleMultiplicities": {
+          "zero": 2,
+          "infinity": 2
+        },
+        "exactPolynomialFactorization": true,
+        "nonzeroRootPolynomialSquarefree": true
+      },
+      "majoranaPolynomialLatex": "\\frac{\\sqrt{462}}{4}z^2(z^8+2iz^4+1)",
+      "multiplicityPartition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

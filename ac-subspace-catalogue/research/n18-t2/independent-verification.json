@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "n": 18,
+  "t": 2,
+  "dimension": 4,
+  "maximumDimension": 4,
+  "orthonormalityVerified": true,
+  "physicalComplexMomentEntriesChecked": 96,
+  "operators": [
+    {
+      "raisingPower": 0,
+      "zPower": 0,
+      "scalarExpectation": "1"
+    },
+    {
+      "raisingPower": 0,
+      "zPower": 1,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 0,
+      "zPower": 2,
+      "scalarExpectation": "30"
+    },
+    {
+      "raisingPower": 1,
+      "zPower": 0,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 1,
+      "zPower": 1,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 2,
+      "zPower": 0,
+      "scalarExpectation": "0"
+    }
+  ],
+  "complexCrossEntriesExactlyVerified": 144,
+  "fullCrossReductionEntriesChecked": 144,
+  "basisSHA256": "f322cabb4e257a1191ed49d60fd55cb23db00e4e2036920bf7a44fe938cbe3e2",
+  "maximumDisplayCoefficientError": 2.7755575615628914e-17,
+  "method": "Independently construct physical Jz and J+ matrices and check every ordered basis-pair compression of J+^q Jz^p for q+p<=t. These operators and their adjoints span all spin-tensor ranks zero through t; their scalar compressions are equivalent to every ordered t-qubit cross reduction. No primary verifier or constructor is imported.",
+  "coefficientType": "Explicit finite radical expressions, with no free parameters."
+}

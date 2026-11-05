@@ -1,0 +1,87 @@
+{
+  "schema": "spin3-quartic-ac4-inertia-v1",
+  "auxiliarySpin": 3,
+  "minimumN": 16,
+  "minimumACOrder": 4,
+  "generalBound": "7 K(N,t) <= N-5",
+  "generalPolynomialFactors": [
+    "X+2*j+5",
+    "X+6",
+    "X-j+5",
+    "X-3*j"
+  ],
+  "generalCenteringCoefficientsAscending": [
+    0,
+    -150,
+    94,
+    -72,
+    8
+  ],
+  "positiveCenteringShift8CoefficientsAscending": [
+    45,
+    239,
+    60,
+    4
+  ],
+  "positiveIndex": "N-5",
+  "negativeIndex": "6*(N+2)",
+  "n18": {
+    "n": 18,
+    "spin": 9,
+    "dimension": 133,
+    "totalSpins": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "multiplicities": [
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25
+    ],
+    "dotProductEigenvalues": [
+      -30,
+      -23,
+      -15,
+      -6,
+      4,
+      15,
+      27
+    ],
+    "quarticRoots": [
+      -23,
+      -6,
+      4,
+      27
+    ],
+    "centeringConstant": 6264,
+    "polynomialCoefficientsAscending": [
+      8640,
+      -1146,
+      -653,
+      -2,
+      1
+    ],
+    "witnessEigenvalues": [
+      319320,
+      -6264,
+      -63720,
+      -6264,
+      -6264,
+      -111600,
+      -6264
+    ],
+    "positiveIndex": 13,
+    "negativeIndex": 120,
+    "maximumDimensionUpper": 1
+  },
+  "scope": "Arbitrary complex AC subspaces. Zero compression and inertia, not a restricted-state search."
+}

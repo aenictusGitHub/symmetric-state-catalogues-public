@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\title{A direct nested construction of second-order AC subspaces}
+\author{}\date{}\maketitle
+Let $j=N/2$ and $c=j(j+1)/3$. Consider reflected first-order AC module
+vectors
+\[
+ v_x=\sqrt{\frac{x+1}{2x+1}}\,|x\rangle+
+     \sqrt{\frac{x}{2x+1}}\,|-x-1\rangle,
+\]
+where $|m\rangle=|D_N^{(j-m)}\rangle$ is the normalized spin/Dicke basis.
+Choose positive module labels $x$ such that all magnetic support positions
+of the selected $v_x$ are separated by at least three. In the canonical
+reflection-pair construction, it suffices to choose its positive labels
+spaced by three and omit any central block.
+
+The vectors $v_x$ are orthonormal, have zero first magnetic moment, and
+have second magnetic moment
+\[
+ h_x=x(x+1).
+\]
+Because every pair of occupied magnetic levels is separated by at least
+three, all compressed ladder operators of shifts one and two vanish on
+$\mathcal V=\operatorname{span}\{v_x\}$. Consequently a subspace
+$\mathcal C\subseteq\mathcal V$ is second-order AC if and only if
+\[
+ P_{\mathcal C}\,\operatorname{diag}(h_x-c)\,P_{\mathcal C}=0.
+\]
+If $n_-,n_0,n_+$ count the negative, zero, and positive diagonal entries,
+the largest dimension within this particular $\mathcal V$ is exactly
+\[
+ n_0+\min(n_-,n_+).
+\]
+Indeed, the inertia bound gives this upper bound. For existence, retain
+all $v_x$ with $h_x=c$, pair disjoint labels with $h_x<c<h_y$, and use
+\[
+ u_{xy}=\sqrt{\frac{h_y-c}{h_y-h_x}}\,v_x+
+         \sqrt{\frac{c-h_x}{h_y-h_x}}\,v_y.
+\]
+Disjoint supports make all cross moments diagonal, and every displayed
+vector has the required second moment. Arbitrary relative phases in each
+pair are permitted. This is an exact construction prescription, not a
+classification of general first-order parents or an unrestricted
+second-order optimality theorem.
+
+\section*{An explicit eighteen-qubit example}
+The canonical first-order parent for $N=18$ has dimension seven and includes
+modules $x=2,5,8$. Their second moments are $6,30,72$, whereas $c=30$.
+Thus
+\[
+ \mathcal C=\operatorname{span}\left\{v_5,
+       \sqrt{\frac7{11}}v_2+\sqrt{\frac4{11}}v_8\right\}
+\]
+is second-order AC. In normalized Dicke coordinates, writing
+$D_r=|D_{18}^{(r)}\rangle$, an orthonormal basis is
+\[
+ \psi_0=\sqrt{\frac6{11}}D_4+\sqrt{\frac5{11}}D_{15},
+\]
+\[
+ \psi_1=\frac6{\sqrt{187}}D_1+
+     \sqrt{\frac{21}{55}}D_7+
+     \sqrt{\frac{14}{55}}D_{12}+
+     \frac{4\sqrt2}{\sqrt{187}}D_{18}.
+\]
+The accompanying verifier checks orthonormality, all three compressed
+first-spin matrices, all nine ordered second-spin products, and every
+entry of all four two-qubit reduced cross matrices:
+\[
+ M_2(\psi_a)M_2(\psi_b)^\dagger=\frac{\delta_{ab}}3 I_3,
+ \qquad a,b\in\{0,1\}.
+\]
+There are $4\times9=36$ scalar cross-reduction identities. The construction
+is deliberately small: the unrestricted optimal dimension at $N=18$ is
+four, so this example does not improve that catalogue entry.
+\end{document}

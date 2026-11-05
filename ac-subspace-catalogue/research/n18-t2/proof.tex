@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{An analytical optimal second-order AC subspace of eighteen qubits}
+\author{Catalogue calculation}\date{30 October 2026}\maketitle
+Use normalized Dicke states $D_r=|D_{18}^{(r)}\rangle$ with
+$J_zD_r=(9-r)D_r$. We construct a four-dimensional subspace for which every
+normalized complex vector has two-qubit reduction $I_3/3$.
+
+\section{Explicit radical basis}
+\[
+\begin{aligned}|u_1\rangle={}&a(D_0+D_{18})+b(D_3+D_{15})\\&+c(D_6+D_{12})+dD_9,\end{aligned}
+\]
+\[
+\begin{aligned}a&=\frac{\sqrt{905}}{81}\\b&=- \frac{7 \sqrt{507705}}{49232} - \frac{9925 \sqrt{9231} i}{3987792}\\c&=\frac{1081 \sqrt{4200105}}{90722268} + \frac{145 \sqrt{9240231} i}{1120028}\\d&=\frac{99 \sqrt{40001}}{160004} - \frac{4481 \sqrt{2200055} i}{12960324}\end{aligned}
+\]
+\[
+|u_2\rangle=e(D_0-D_{18})+f(D_3-D_{15})+g(D_6-D_{12}),
+\]
+\[
+\begin{aligned}e&=\frac{1}{3}\\f&=\frac{5 \sqrt{561}}{816} + \frac{41 \sqrt{255} i}{2448}\\g&=\frac{\sqrt{4641}}{13923} - \frac{5 \sqrt{255255} i}{4641}\end{aligned}
+\]
+\[
+|u_3\rangle=\sum_{j=0}^5h_jD_{1+3j},
+\]
+\[
+\begin{aligned}h_0&=\frac{4 \sqrt{5}}{27}\\h_1&=- \frac{7 \sqrt{374}}{816} + \frac{263 \sqrt{170} i}{7344}\\h_2&=- \frac{1249 \sqrt{2210}}{190944} + \frac{95 \sqrt{4862} i}{21216}\\h_3&=- \frac{11 \sqrt{1105}}{1768} + \frac{175 \sqrt{2431} i}{47736}\\h_4&=- \frac{473 \sqrt{595}}{51408} - \frac{25 \sqrt{1309} i}{5712}\\h_5&=- \frac{\sqrt{1870}}{102} - \frac{55 \sqrt{34} i}{918}\end{aligned}
+\]
+\[
+|u_4\rangle=\sum_{j=0}^5h_jD_{17-3j}.
+\]
+
+Every unlisted coefficient is zero. The first vector is reflection-even,
+the second reflection-odd, and the fourth is the reversed third vector.
+These support and reflection conventions are chosen for a compact basis;
+they are not assumptions in the upper-bound theorem.
+
+\section{Exact whole-subspace verification}
+For any coefficient vector $c$, define its Dicke splitting matrix
+\[
+ (M_t(c))_{ab}=c_{a+b}
+ \sqrt{\frac{\binom ta\binom{18-t}b}{\binom{18}{a+b}}},
+ \qquad 0\le a\le t,\quad0\le b\le18-t.
+\]
+The ordered reduction of $|u_i\rangle\langle u_j|$ is
+$M_t(u_i)M_t(u_j)^\dagger$. Substitution of the displayed radical
+coefficients gives, with exact arithmetic,
+\[
+ \langle u_i,u_j\rangle=\delta_{ij},\qquad
+ M_2(u_i)M_2(u_j)^\dagger=\frac{\delta_{ij}}3 I_3
+ \quad(1\le i,j\le4).
+\]
+The bundled verifier reconstructs all sixteen ordered cross matrices and
+checks all 144 complex entries, including every off-diagonal basis pair.
+These explicit radical identities prove the claim independently of the
+numerical search that suggested the coefficients.
+Consequently, for arbitrary complex $\alpha_i$ satisfying
+$\sum_i|\alpha_i|^2=1$, the vector
+$|\psi\rangle=\sum_i\alpha_i|u_i\rangle$ has
+$\rho_2=I_3/3$.
+
+A useful way to check the diagonal reductions is to note the exact
+probability lists, in ascending order on the respective supports:
+\[
+\begin{aligned}
+ u_1:&\quad (1810,885,2040,3652,2040,885,1810)/13122,\\
+ u_2:&\quad (6,5,16,16,5,6)/54,\\
+ u_3:&\quad (80,179,140,55,55,220)/729,\\
+ u_4:&\quad (220,55,55,140,179,80)/729.
+\end{aligned}
+\]
+Each has the required first and second spin moments, and support spacing
+three eliminates its first- and second-step self coherences. The cross
+conditions require the displayed phases as well; diagonal moments alone
+would not certify the whole subspace.
+
+The third-qubit reduced purities are
+\[
+ \Tr\rho_3(u_1)^2=\frac{39467}{147968},\quad
+ \Tr\rho_3(u_2)^2=\frac{37267}{147968},\quad
+ \Tr\rho_3(u_3)^2=\Tr\rho_3(u_4)^2=\frac{86707}{332928}.
+\]
+Each exceeds $1/4$, so every displayed basis vector has exactly AC order
+two. This does not classify the orders of all their superpositions.
+
+\section{Why the dimension is maximal}
+Let $P$ project onto any second-order AC subspace of spin $j=9$, with
+dimension $k$. Its polarized moment identities give
+\[
+ PJ_aP=0,\qquad P\frac{J_aJ_b+J_bJ_a}{2}P=30\delta_{ab}P.
+\]
+Couple to an auxiliary spin $s=3/2$, and let $X=\mathbf J\cdot\mathbf S$.
+The compression of $X$ to $\mathcal C\otimes\mathbb C^4$ is zero, while
+that of $X^2$ is $(225/2)I$. Hence the Hermitian operator
+\[
+ W=X^2-7X-\frac{225}{2}I
+\]
+has zero compression to this $4k$-dimensional subspace.
+On total spins $L=15/2,17/2,19/2,21/2$, its eigenvalues are respectively
+\[
+ \frac{435}{2},\quad-\frac{99}{4},\quad-\frac{249}{2},\quad-\frac{99}{4}.
+\]
+There are sixteen positive and sixty negative eigenvalues, and no zeros.
+Projection of a totally isotropic subspace into the positive eigenspace
+is injective: a vector with zero positive component would have strictly
+negative quadratic form unless it vanished. Therefore
+\[
+ 4k\le16,\qquad k\le4.
+\]
+The radical basis attains four, proving
+\[
+ \boxed{K(18,2)=4.}
+\]
+This is the specialization of the general auxiliary-spin bound
+$4k\le N-2$, and applies to arbitrary complex subspaces.
+
+\section{Reconstruction and scope}
+The starting numerical example is John Martin's
+\texttt{\(\Pi\)\_18\_4\_2} in the supplied \texttt{ACLiege.jl}, line 966.
+The source span nearly commutes with the residue-three decomposition.
+Its components have dimensions two, one and one in Dicke residues zero,
+one and two. A common rotation aligns a half-turn with coefficient reversal;
+a unitary basis change then selects the even and odd vectors in residue
+zero and the reflected pair in residues one and two.
+
+The rational probability lists above allow refinement of the ten remaining
+phases. Their real and imaginary parts reconstruct as square roots of
+rational numbers. The displayed radicals are certified by the exact
+whole-subspace identities, without interpreting decimal phase matching
+as a proof.
+
+For the coefficient multiplier $c_r\mapsto e^{-ir\beta/2}c_r$, with
+$\beta\simeq0.734100176590464$, the original numerical subspace projector
+matches the analytical projector within $8.62\times10^{-8}$ in Frobenius
+norm. This is approximate association to the numerical source; literal
+componentwise equality to its basis is not asserted. No classification of
+all optimal subspaces or claim of literature priority is made.
+\end{document}

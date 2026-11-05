@@ -1,0 +1,45 @@
+{
+  "n": 6,
+  "sector": 4,
+  "minimum": "45/7",
+  "invariantOrder": [
+    "q^2",
+    "|F|^2",
+    "|theta|^2",
+    "tr(Q^2)"
+  ],
+  "scalarCovariantRows": [
+    [
+      "0",
+      "0",
+      "1/4",
+      "0"
+    ],
+    [
+      "-3",
+      "-11/12",
+      "-5",
+      "3/10"
+    ],
+    [
+      "49/5",
+      "-1309/20",
+      "-769/5",
+      "469/150"
+    ]
+  ],
+  "coefficientMinorDeterminant": "-3773/900",
+  "rank": 3,
+  "normalizedNullVector": [
+    "1",
+    "36/49",
+    "0",
+    "600/49"
+  ],
+  "spinMomentIdentityVerifiedAgainstRDM": true,
+  "scalarCovariantIdentitiesVerified": true,
+  "scalarGramPositiveDefinite": true,
+  "equalityNecessaryUsingGlobalSOSCertificate": true,
+  "equalitySufficientUsingMomentIdentity": true,
+  "equalityCondition": "For normalized states: theta=0, |<J>|^2=36/49, tr(Q^2)=600/49, where Qij=<{Ji,Jj}/2>-4 deltaij. This does not classify states up to rotations."
+}

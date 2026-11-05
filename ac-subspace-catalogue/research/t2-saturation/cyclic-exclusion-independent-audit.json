@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "arithmetic": "Exact rational and symbolic trigonometric identities",
+  "scope": "All second-order AC subspaces of dimension k=floor(N/5)+1 invariant under rotation through 2pi/k about any axis",
+  "allNConclusion": "No such code for N>=420; on N=5k-1 already no such code for k>=62",
+  "unrestrictedExclusion": false,
+  "sectorRankLemma": {
+    "description": "A dimension-two AC2 subspace on five step-k magnetic nodes would have c<=2k^2. In the stated ranges c>2k^2, so each cyclic sector has rank at most one. Dimension k then forces one dimension in every sector.",
+    "checks": [
+      {
+        "deficit": 1,
+        "gapAfterK85Substitution": "zeta**2/12 + 85*zeta/6 + 602",
+        "positiveForAllK85": true
+      },
+      {
+        "deficit": 2,
+        "gapAfterK85Substitution": "zeta**2/12 + 40*zeta/3 + 2125/4",
+        "positiveForAllK85": true
+      },
+      {
+        "deficit": 3,
+        "gapAfterK85Substitution": "zeta**2/12 + 25*zeta/2 + 1382/3",
+        "positiveForAllK85": true
+      },
+      {
+        "deficit": 4,
+        "gapAfterK85Substitution": "zeta**2/12 + 35*zeta/3 + 1561/4",
+        "positiveForAllK85": true
+      },
+      {
+        "deficit": 5,
+        "gapAfterK85Substitution": "zeta**2/12 + 65*zeta/6 + 320",
+        "positiveForAllK85": true
+      }
+    ],
+    "subsequenceGap": "(k^2-1)/12>0 for k>1"
+  },
+  "windowIdentities": [
+    {
+      "a": 0,
+      "trigonometricMargin": "3/8 - sqrt(2)/4",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 1,
+      "trigonometricMargin": "sqrt(2)/8 + 1/4",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 2,
+      "trigonometricMargin": "1/8 + sqrt(2)/2",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 3,
+      "trigonometricMargin": "1",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 4,
+      "trigonometricMargin": "1/8 + sqrt(2)/2",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 5,
+      "trigonometricMargin": "sqrt(2)/8 + 1/4",
+      "coefficientIdentity": true
+    },
+    {
+      "a": 6,
+      "trigonometricMargin": "3/8 - sqrt(2)/4",
+      "coefficientIdentity": true
+    }
+  ],
+  "nodalExcesses": [
+    "0",
+    "0",
+    "8/25",
+    "24/25",
+    "48/25"
+  ],
+  "thresholds": [
+    {
+      "deficitMaximum": 5,
+      "thresholdN": 420,
+      "linearErrorCoefficient": "584/5",
+      "quadraticErrorCoefficient": "1176",
+      "B_at_threshold": "3153/844",
+      "U_at_threshold": "550903/1655325",
+      "oneThirdMinusU": "872/1655325",
+      "positiveGap": true
+    },
+    {
+      "deficitMaximum": 1,
+      "thresholdN": 309,
+      "linearErrorCoefficient": "424/5",
+      "quadraticErrorCoefficient": "3384/5",
+      "B_at_threshold": "4641/1244",
+      "U_at_threshold": "246088487/738545535",
+      "oneThirdMinusU": "93358/738545535",
+      "positiveGap": true
+    }
+  ],
+  "monotonicity": "U(N)=-3/5+A(N)/B(N), where A is positive decreasing and B is positive increasing; hence U decreases above either stated threshold.",
+  "projectorPremise": "AC2 makes C, Jx C, Jy C, Jz C mutually orthogonal; E=P+sum Ja P Ja/c is a projection, so every diagonal entry is <=1. Reindexing its weighted seven-residue sum yields the independently checked coefficient identity."
+}

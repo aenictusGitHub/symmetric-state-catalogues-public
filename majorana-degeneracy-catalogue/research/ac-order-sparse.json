@@ -1,0 +1,332 @@
+{
+  "method": "Exact normalized-Dicke reduced matrices and algebraic squarefree factorization. No numerical optimization is used as proof.",
+  "allVerifiedExactly": true,
+  "states": [
+    {
+      "id": "partition-n8-single-double-t2-sparse",
+      "n": 8,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Phase-shifted three-term state with one double point",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": [
+        "sqrt(21)/9",
+        "0",
+        "0",
+        "2*sqrt(3)*I/9",
+        "0",
+        "0",
+        "4*sqrt(3)/9",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5091750772173156,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.3849001794597505
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.769800358919501,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "Exact normalization and reduced matrices, independently recomputable.",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [],
+      "provenance": "Independent catalogue construction, 2026-10-28.",
+      "notes": "Support gaps of at least three kill every off-diagonal condition through order two. The probabilities match the first two moments of the uniform Dicke distribution. Exact squarefree factorization proves one double point and all remaining points simple."
+    },
+    {
+      "id": "partition-n10-single-double-t2-sparse",
+      "n": 10,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Three-term state with one double point",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(6)/6",
+        "0",
+        "0",
+        "sqrt(3)/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.408248290463863,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5773502691896257,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "Exact normalization and reduced matrices, independently recomputable.",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [],
+      "provenance": "Independent catalogue construction, 2026-10-28.",
+      "notes": "Support gaps of at least three kill every off-diagonal condition through order two. The probabilities match the first two moments of the uniform Dicke distribution. Exact squarefree factorization proves one double point and all remaining points simple."
+    }
+  ],
+  "checks": [
+    {
+      "id": "partition-n8-single-double-t2-sparse",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "AC": {
+        "id": "partition-n8-single-double-t2-sparse",
+        "n": 8,
+        "achievedOrder": 2,
+        "normalizationVerifiedExactly": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerifiedExactly": true,
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerifiedExactly": true,
+            "purity": "1/3"
+          }
+        ]
+      },
+      "multiplicity": {
+        "stateId": "partition-n8-single-double-t2-sparse",
+        "n": 8,
+        "achievedOrder": 2,
+        "label": "Phase-shifted three-term state with one double point",
+        "partition": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "maxMultiplicity": 2,
+        "distinctPoints": 7,
+        "status": "exact",
+        "homogeneousPolynomial": "X**8/8 - sqrt(2)*I*X**5*Y**3/2 + X**2*Y**6",
+        "homogeneousPolynomialLatex": "\\frac{X^{8}}{8} - \\frac{\\sqrt{2} i X^{5} Y^{3}}{2} + X^{2} Y^{6}",
+        "affinePolynomial": "z**6 - sqrt(2)*I*z**3/2 + 1/8",
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootSubstitution": {
+          "formula": "z^3",
+          "step": 3,
+          "polynomial": "y**2 - sqrt(2)*I*y/2 + 1/8",
+          "polynomialLatex": "y^{2} - \\frac{\\sqrt{2} i y}{2} + \\frac{1}{8}"
+        },
+        "squarefreeFactors": [
+          {
+            "polynomial": "y**2 - sqrt(2)*I*y/2 + 1/8",
+            "degree": 2,
+            "multiplicity": 1,
+            "nonzeroProjectiveRoots": 6
+          }
+        ],
+        "gcdCertificate": {
+          "polynomial": "1",
+          "degree": 0,
+          "domain": "QQ<sqrt(2) + I>",
+          "verifiedReconstruction": true,
+          "verifiedSquarefreeFactors": true,
+          "verifiedPairwiseCoprime": true
+        },
+        "references": [],
+        "runtimeSeconds": 0.01447296142578125
+      },
+      "probabilities": {
+        "0": "7/27",
+        "3": "4/27",
+        "6": "16/27"
+      },
+      "previousLowerBound": 1,
+      "newLowerBound": 2,
+      "rigorousUpperBound": 2
+    },
+    {
+      "id": "partition-n10-single-double-t2-sparse",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "AC": {
+        "id": "partition-n10-single-double-t2-sparse",
+        "n": 10,
+        "achievedOrder": 2,
+        "normalizationVerifiedExactly": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerifiedExactly": true,
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerifiedExactly": true,
+            "purity": "1/3"
+          }
+        ]
+      },
+      "multiplicity": {
+        "stateId": "partition-n10-single-double-t2-sparse",
+        "n": 10,
+        "achievedOrder": 2,
+        "label": "Three-term state with one double point",
+        "partition": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "maxMultiplicity": 2,
+        "distinctPoints": 9,
+        "status": "exact",
+        "homogeneousPolynomial": "sqrt(15)*X**10/45 - 4*X**7*Y**3/3 + X**2*Y**8",
+        "homogeneousPolynomialLatex": "\\frac{\\sqrt{15} X^{10}}{45} - \\frac{4 X^{7} Y^{3}}{3} + X^{2} Y^{8}",
+        "affinePolynomial": "z**8 - 4*z**3/3 + sqrt(15)/45",
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootSubstitution": {
+          "formula": "z^1",
+          "step": 1,
+          "polynomial": "y**8 - 4*y**3/3 + sqrt(15)/45",
+          "polynomialLatex": "y^{8} - \\frac{4 y^{3}}{3} + \\frac{\\sqrt{15}}{45}"
+        },
+        "squarefreeFactors": [
+          {
+            "polynomial": "y**8 - 4*y**3/3 + sqrt(15)/45",
+            "degree": 8,
+            "multiplicity": 1,
+            "nonzeroProjectiveRoots": 8
+          }
+        ],
+        "gcdCertificate": {
+          "polynomial": "1",
+          "degree": 0,
+          "domain": "QQ<sqrt(15)>",
+          "verifiedReconstruction": true,
+          "verifiedSquarefreeFactors": true,
+          "verifiedPairwiseCoprime": true
+        },
+        "references": [],
+        "runtimeSeconds": 0.013053178787231445
+      },
+      "probabilities": {
+        "0": "1/6",
+        "3": "1/3",
+        "8": "1/2"
+      },
+      "previousLowerBound": 1,
+      "newLowerBound": 2,
+      "rigorousUpperBound": 2
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "arithmetic": "exact symbolic radicals; no numerical tolerance",
+  "sourceSubspaces": [
+    "acliege-\u03a0_4_2_1",
+    "acliege-\u03a0_6_3_1",
+    "paper-e1"
+  ],
+  "complementIdentity": "P6 = I7 - 2 Tr_1(P7)",
+  "normalizedReducedCode": "Tr_1(P7/2) = (I7-P6)/4",
+  "kernelDimension": 3,
+  "outputStates": [
+    {
+      "n": 8,
+      "t": 3,
+      "nonzeroDickeCoefficients": {
+        "0": "sqrt(30)/12",
+        "4": "sqrt(21)/6",
+        "8": "sqrt(30)/12"
+      }
+    },
+    {
+      "n": 12,
+      "t": 5,
+      "nonzeroDickeCoefficients": {
+        "1": "-sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "sqrt(7)/5"
+      }
+    }
+  ],
+  "checks": [
+    "all source orthonormalities and ordered AC cross reductions",
+    "all source and reduced projector idempotencies",
+    "exact complement and kernel identities",
+    "rank-four and rank-six tensor Casimir equations",
+    "centered projector quadratic identities",
+    "highest-spin vectorization entry by entry",
+    "both explicit output coefficient formulas",
+    "all entries of rho_3=I4/4 and rho_5=I6/6"
+  ]
+}

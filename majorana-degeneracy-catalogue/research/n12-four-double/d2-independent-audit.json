@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "sourceSHA256": "42afcec0d556b353472596eddbc27dc26586f75230a2bbc700997af9a162265e",
+  "scope": "Independent audit that no target-partition 3-AC state can have a D2 proper rotational subgroup. The general C1/C2 cases remain unresolved.",
+  "normalFormAndAllFourCharactersReviewed": true,
+  "directSchmidtReductionRecomputed": true,
+  "recoveryDeterminantMatchesUpToSign": true,
+  "rankOnePositivityCertificates": [
+    {
+      "powerOfBSquared": 12,
+      "positiveAtZero": "2",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 11,
+      "positiveAtZero": "195",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 10,
+      "positiveAtZero": "7968",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 9,
+      "positiveAtZero": "206304",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 8,
+      "positiveAtZero": "4507776",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 7,
+      "positiveAtZero": "92507904",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 6,
+      "positiveAtZero": "1498079232",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 5,
+      "positiveAtZero": "16736219136",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 4,
+      "positiveAtZero": "122828783616",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 3,
+      "positiveAtZero": "568711839744",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 2,
+      "positiveAtZero": "1518886453248",
+      "nonnegativeHalfLineRoots": 0
+    },
+    {
+      "powerOfBSquared": 1,
+      "positiveAtZero": "1800190033920",
+      "nonnegativeHalfLineRoots": 0
+    }
+  ],
+  "betaZeroBranchRetained": true,
+  "survivingBetaNonzeroCases": [
+    {
+      "a": -6,
+      "gamma": "2",
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "a": 6,
+      "gamma": "-2",
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "nontrivialCharacters": [
+    {
+      "residual": "z**4 - 1",
+      "necessaryEquations": [
+        "-A**4 - 2*A**2*B**2 + 4*A**2 - B**4 + 8*B**2 + 1088",
+        "A**3 + A*B**2 + 12*A",
+        "-3*A**2*B - 3*B**3 - 52*B"
+      ],
+      "groebnerBasis": [
+        "1"
+      ]
+    },
+    {
+      "residual": "z*(z**2 - 1)",
+      "necessaryEquations": [
+        "-13*A**4 + 52*A**3 - 26*A**2*B**2 - 176*A**2 + 52*A*B**2 + 176*A - 13*B**4 - 72*B**2 + 656",
+        "-7*A**4 + 76*A**3 - 14*A**2*B**2 - 176*A**2 + 76*A*B**2 + 464*A - 7*B**4 - 72*B**2 - 208",
+        "-A**2*B + A*B - B**3 - 10*B"
+      ],
+      "groebnerBasis": [
+        "1"
+      ]
+    },
+    {
+      "residual": "z*(z**2 + 1)",
+      "necessaryEquations": [
+        "-13*A**4 - 52*A**3 - 26*A**2*B**2 - 176*A**2 - 52*A*B**2 - 176*A - 13*B**4 - 72*B**2 + 656",
+        "7*A**4 + 76*A**3 + 14*A**2*B**2 + 176*A**2 + 76*A*B**2 + 464*A + 7*B**4 + 72*B**2 + 208",
+        "-A**2*B - A*B - B**3 - 10*B"
+      ],
+      "groebnerBasis": [
+        "1"
+      ]
+    }
+  ],
+  "dependency": "The doubled set consisting of two size2 orbits is excluded by the separately verified antipodal obstruction.",
+  "globalComplexPartitionExclusionProved": false,
+  "runtimeSeconds": 7.653943042038009
+}

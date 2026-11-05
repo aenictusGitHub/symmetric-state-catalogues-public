@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "n": 19,
+  "t": 6,
+  "copies": 3,
+  "inputMomentDimension": 1540,
+  "realInvariantVariables": 94,
+  "constraintRank": 88,
+  "kernelDimension": 6,
+  "inputHighestWeightVectorsChecked": 55,
+  "physicalCrossGramChecks": 2436,
+  "selectedRowsReconstructed": 88,
+  "totalSpinProbabilitiesReconstructed": 27,
+  "certificateSHA256": "0d3c38f2ecaa7085752a64cd498b2e455136e771ec677aba63d4ddb8116bc3d1",
+  "method": "Independent full ordered-word reconstruction of the complete input representation, every selected contraction row, exact complete kernel and all physical total-spin traces; rational positive trace-versus-probabilities identity. Standard library only; no discovery imports.",
+  "arbitraryComplexStatesCovered": true,
+  "probabilityCertificate": {
+    "spins2": [
+      3,
+      5,
+      15,
+      17,
+      19,
+      39
+    ],
+    "traceWeight": "1413987969381349416781077855914791923",
+    "strictlyPositiveWeights": [
+      "9858033828239721287105637920113568802000",
+      "7713415871370069955275107921621388912000",
+      "1538043828417702353592041548624293431250",
+      "1482076991122688830274198406278368150000",
+      "683439424711170559646778746197339968000",
+      "1122458021446107869346053838715358328000"
+    ],
+    "allDescendantTraceReconstructionsExact": true,
+    "kernelIdentityExact": true,
+    "contradiction": "Trace one and nonnegative total-spin probabilities make the certified expression strictly positive, but the necessary AC6 equations force it to zero."
+  },
+  "scope": "Universal exclusion of pure sixth-order AC states on 19 qubits.",
+  "statement": "K(19,t)=0 for every t>=6.",
+  "elapsedSeconds": 0.4297621250152588
+}

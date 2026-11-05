@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "result": {
+    "n": 12,
+    "order": 2,
+    "maximumDimension": 2,
+    "dimension3Excluded": true,
+    "dimension2ExactlyAttained": true
+  },
+  "certificateSha256": "fca4812d0ef509c26608324f97910aaf200f596c1488e7348ddd171e1e8beaff",
+  "rationalRecouplingEntriesChecked": 91,
+  "channelIdentities": [
+    {
+      "J": 0,
+      "left": "306907743/13744225",
+      "right": "306907743/13744225",
+      "exactlyEqual": true
+    },
+    {
+      "J": 2,
+      "left": "-116296701/13744225",
+      "right": "-116296701/13744225",
+      "exactlyEqual": true
+    },
+    {
+      "J": 4,
+      "left": "-79029803/27488450",
+      "right": "-79029803/27488450",
+      "exactlyEqual": true
+    },
+    {
+      "J": 6,
+      "left": "9318813/1099538",
+      "right": "9318813/1099538",
+      "exactlyEqual": true
+    },
+    {
+      "J": 8,
+      "left": "91602789/27488450",
+      "right": "91602789/27488450",
+      "exactlyEqual": true
+    },
+    {
+      "J": 10,
+      "left": "12701869/27488450",
+      "right": "12701869/27488450",
+      "exactlyEqual": true
+    },
+    {
+      "J": 12,
+      "left": "92613/2498950",
+      "right": "92613/2498950",
+      "exactlyEqual": true
+    }
+  ],
+  "casimirHighestWeightsChecked": 13,
+  "lowerBoundExactCrossEntriesChecked": 36,
+  "contradictionLatex": "0=9015+1031316a_3+3936270p_0+20020p_2+728365p_6>0",
+  "nonnegativeQuantities": [
+    "a_3: squared Hilbert\u2013Schmidt norm of the rank3 multipole component of a pure complement state",
+    "p_J: total-spin-J probabilities of two identical copies of that state"
+  ],
+  "scope": "The upper bound applies to every complex pure-state subspace; no support, reality, Majorana multiplicity, symmetry or numerical-search assumption is used."
+}

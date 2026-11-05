@@ -1,0 +1,26 @@
+{
+  "theorem": "5k <= N+5 for N>=4 and AC order t>=2",
+  "combinedUpper": "min(floor((N-2)/4),floor((N+5)/5)) for N>=8",
+  "generalAttainmentProved": false,
+  "improvements": [
+    {
+      "n": 20,
+      "t": 2,
+      "previousLower": 2,
+      "previousUpper": 4,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 42,
+      "t": 2,
+      "previousLower": 4,
+      "previousUpper": 10,
+      "lower": 4,
+      "upper": 9,
+      "status": "range"
+    }
+  ],
+  "catalogueSha256": "57589155142af874f0adae354b93650ffd5794a47f17c8d21f968cfb94331530"
+}

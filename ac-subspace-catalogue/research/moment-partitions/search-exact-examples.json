@@ -1,0 +1,662 @@
+{
+  "schemaVersion": 1,
+  "scope": "Exact analytical witnesses; no new unrestricted maximum or improved lower bound is asserted.",
+  "subspaces": [
+    {
+      "id": "moment-compression-n12-k2-t2",
+      "n": 12,
+      "t": 2,
+      "order": 2,
+      "dimension": 2,
+      "label": "Real radical basis from a five-level moment compression",
+      "evidence": "exact",
+      "basis": [
+        {
+          "id": "moment-compression-n12-k2-t2-basis-1",
+          "n": 12,
+          "label": "Exact moment-construction basis vector 1",
+          "support": [
+            0,
+            3,
+            6,
+            9,
+            12
+          ],
+          "exactCoefficients": [
+            "sqrt(462)/54",
+            "0",
+            "0",
+            "sqrt(105)/27",
+            "0",
+            "0",
+            "4*sqrt(2)/9",
+            "0",
+            "0",
+            "sqrt(105)/27",
+            "0",
+            "0",
+            "sqrt(462)/54"
+          ],
+          "coefficients": [
+            [
+              0.3980404677815681,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3795166950355407,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6285393610547089,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3795166950355407,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3980404677815681,
+              0.0
+            ]
+          ],
+          "stateLatex": "\\begin{aligned}|u_1\\rangle&=\\sqrt{\\frac{77}{486}}\\bigl(|D_{12}^{(0)}\\rangle+|D_{12}^{(12)}\\rangle\\bigr)\\\\&\\quad+\\sqrt{\\frac{35}{243}}\\bigl(|D_{12}^{(3)}\\rangle+|D_{12}^{(9)}\\rangle\\bigr)+\\frac{4\\sqrt2}{9}|D_{12}^{(6)}\\rangle.\\end{aligned}"
+        },
+        {
+          "id": "moment-compression-n12-k2-t2-basis-2",
+          "n": 12,
+          "label": "Exact moment-construction basis vector 2",
+          "support": [
+            0,
+            3,
+            9,
+            12
+          ],
+          "exactCoefficients": [
+            "sqrt(30)/18",
+            "0",
+            "0",
+            "-sqrt(33)/9",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(33)/9",
+            "0",
+            "0",
+            "-sqrt(30)/18"
+          ],
+          "coefficients": [
+            [
+              0.3042903097250923,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6382847385042254,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6382847385042254,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.3042903097250923,
+              0.0
+            ]
+          ],
+          "stateLatex": "\\begin{aligned}|u_2\\rangle&=\\sqrt{\\frac5{54}}\\bigl(|D_{12}^{(0)}\\rangle-|D_{12}^{(12)}\\rangle\\bigr)\\\\&\\quad-\\sqrt{\\frac{11}{27}}\\bigl(|D_{12}^{(3)}\\rangle-|D_{12}^{(9)}\\rangle\\bigr).\\end{aligned}"
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "allCrossReductionsVerified": true,
+        "exactArithmetic": true,
+        "checks": [
+          {
+            "i": 0,
+            "j": 0,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "allEntriesExactlyZero": true
+          }
+        ],
+        "scalarEntriesChecked": 36
+      },
+      "derivation": "On m=+/-6,+/-3,0, combine even and odd reflection vectors. Their second moment is 14 and their mixed first moment cancels exactly. The global Dicke spacing is three, so all rank-one and rank-two shift terms vanish. The supports overlap: this is a joint compression, not a disjoint convex partition. It attains the already-known dimension two."
+    },
+    {
+      "id": "moment-partition-n22-k3-t2",
+      "n": 22,
+      "t": 2,
+      "order": 2,
+      "dimension": 3,
+      "label": "Real radical basis from two moment pairs and one triangle",
+      "evidence": "exact",
+      "basis": [
+        {
+          "id": "moment-partition-n22-k3-t2-basis-1",
+          "n": 22,
+          "label": "Exact moment-construction basis vector 1",
+          "support": [
+            0,
+            15
+          ],
+          "exactCoefficients": [
+            "2*sqrt(15)/15",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(165)/15",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.5163977794943222,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8563488385776753,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "stateLatex": "|u_{1}\\rangle=\\frac{2 \\sqrt{15}}{15}\\,|D_{22}^{(0)}\\rangle+\\frac{\\sqrt{165}}{15}\\,|D_{22}^{(15)}\\rangle"
+        },
+        {
+          "id": "moment-partition-n22-k3-t2-basis-2",
+          "n": 22,
+          "label": "Exact moment-construction basis vector 2",
+          "support": [
+            7,
+            22
+          ],
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(165)/15",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2*sqrt(15)/15"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8563488385776753,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5163977794943222,
+              0.0
+            ]
+          ],
+          "stateLatex": "|u_{2}\\rangle=\\frac{\\sqrt{165}}{15}\\,|D_{22}^{(7)}\\rangle+\\frac{2 \\sqrt{15}}{15}\\,|D_{22}^{(22)}\\rangle"
+        },
+        {
+          "id": "moment-partition-n22-k3-t2-basis-3",
+          "n": 22,
+          "label": "Exact moment-construction basis vector 3",
+          "support": [
+            3,
+            10,
+            18
+          ],
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "sqrt(3885)/105",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(42)/14",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(390)/30",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5936168397046637,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.4629100498862757,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6582805886043833,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "stateLatex": "|u_{3}\\rangle=\\frac{\\sqrt{3885}}{105}\\,|D_{22}^{(3)}\\rangle+\\frac{\\sqrt{42}}{14}\\,|D_{22}^{(10)}\\rangle+\\frac{\\sqrt{390}}{30}\\,|D_{22}^{(18)}\\rangle"
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "allCrossReductionsVerified": true,
+        "exactArithmetic": true,
+        "checks": [
+          {
+            "i": 0,
+            "j": 0,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "allEntriesExactlyZero": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "allEntriesExactlyZero": true
+          }
+        ],
+        "scalarEntriesChecked": 81
+      },
+      "derivation": "Partition the globally three-separated Dicke support {0,3,7,10,15,18,22} into {0,15}, {7,22}, {3,10,18}. The displayed positive rational probabilities have first spin moment zero and second spin moment 44. Orthogonality and all non-diagonal rank-one and rank-two conditions follow from the disjoint supports and global spacing. This simplifies the earlier dimension-three witness and does not increase the catalogue lower bound."
+    }
+  ]
+}

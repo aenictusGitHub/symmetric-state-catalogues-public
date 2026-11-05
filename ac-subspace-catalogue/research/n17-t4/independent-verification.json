@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "n": 17,
+  "t": 4,
+  "branches": [
+    {
+      "sign": 1,
+      "normalizationExact": true,
+      "rho4": "I_5/5",
+      "rho4EntriesChecked": 25,
+      "rho5EntriesChecked": 36,
+      "rho5Purity": "5443/32487",
+      "exactACOrder": 4,
+      "properRotationGroup": "D3",
+      "axisNormalizerInvariant": "-71*I*v/49392 + sqrt(20995)*I*v/54880 - 71*sqrt(20995)/2744 + 278063/98784",
+      "sourceRelationship": "An independent symmetric construction; identity or rotation equivalence to the numerical Julia state is not asserted."
+    },
+    {
+      "sign": -1,
+      "normalizationExact": true,
+      "rho4": "I_5/5",
+      "rho4EntriesChecked": 25,
+      "rho5EntriesChecked": 36,
+      "rho5Purity": "5443/32487",
+      "exactACOrder": 4,
+      "properRotationGroup": "D3",
+      "axisNormalizerInvariant": "-sqrt(20995)*I*v/54880 + 71*I*v/49392 - 71*sqrt(20995)/2744 + 278063/98784",
+      "sourceRelationship": "An independent symmetric construction; identity or rotation equivalence to the numerical Julia state is not asserted."
+    }
+  ],
+  "arithmetic": "Exact rational and radical arithmetic, with v^2 reduced by its defining positive radicand.",
+  "independentMethod": "No primary verifier or builder is imported. Full Dicke reductions, six-j channel eigenvalues, time reversal and highest-rank partial trace are independently reconstructed.",
+  "upperBound": {
+    "passed": true,
+    "hypotheticalDimension": 2,
+    "packingSaturation": "9*2=18",
+    "channelEigenvalues": [
+      {
+        "L": 0,
+        "eigenvalue": "1/2"
+      },
+      {
+        "L": 1,
+        "eigenvalue": "315/646"
+      },
+      {
+        "L": 2,
+        "eigenvalue": "63/136"
+      },
+      {
+        "L": 3,
+        "eigenvalue": "65/152"
+      },
+      {
+        "L": 4,
+        "eigenvalue": "987/2584"
+      },
+      {
+        "L": 5,
+        "eigenvalue": "847/2584"
+      },
+      {
+        "L": 6,
+        "eigenvalue": "345/1292"
+      },
+      {
+        "L": 7,
+        "eigenvalue": "261/1292"
+      },
+      {
+        "L": 8,
+        "eigenvalue": "175/1292"
+      },
+      {
+        "L": 9,
+        "eigenvalue": "91/1292"
+      },
+      {
+        "L": 10,
+        "eigenvalue": "27/2584"
+      },
+      {
+        "L": 11,
+        "eigenvalue": "-105/2584"
+      },
+      {
+        "L": 12,
+        "eigenvalue": "-203/2584"
+      },
+      {
+        "L": 13,
+        "eigenvalue": "-15/152"
+      },
+      {
+        "L": 14,
+        "eigenvalue": "-31/323"
+      },
+      {
+        "L": 15,
+        "eigenvalue": "-21/323"
+      },
+      {
+        "L": 16,
+        "eigenvalue": "0"
+      },
+      {
+        "L": 17,
+        "eigenvalue": "2/19"
+      }
+    ],
+    "channelKernelRanks": [
+      16
+    ],
+    "channelNumeratorFactorization": "10*(x-272)*(x-114), x=L*(L+1)",
+    "SchmidtPartnerRank": 4,
+    "SchmidtPartnerAmbientDimension": 17,
+    "trY2": "52/17",
+    "liftedRho16": "I_17/17+(9/52)*Y_16",
+    "liftedPureState": {
+      "n": 32,
+      "t": 15,
+      "rho15": "I_16/16"
+    },
+    "GramContradiction": "64<=33",
+    "timeReversalIntertwiningExact": true,
+    "highestRankPartialTraceZeroExact": true,
+    "conclusion": "K(17,4)<=1 for arbitrary complex subspaces."
+  },
+  "maximumDimension": 1,
+  "sourceCoefficientAssociation": true,
+  "classificationScope": "Two displayed construction branches; not an exhaustive classification of pure states."
+}

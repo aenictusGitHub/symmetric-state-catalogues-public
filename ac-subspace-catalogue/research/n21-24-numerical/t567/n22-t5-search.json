@@ -1,0 +1,161 @@
+{
+  "n": 22,
+  "t": 5,
+  "dimension": 1,
+  "threshold": 1e-10,
+  "status": "candidate-found",
+  "analyticJacobianDirectionalError": 9.097722575290845e-12,
+  "seed": 213308,
+  "attempts": [
+    {
+      "attempt": 0,
+      "seed": 213308,
+      "initialization": "local-library",
+      "functionEvaluations": 1,
+      "jacobianEvaluations": 1,
+      "solverStatus": 1,
+      "tensorResidualL2": 2.850828065006373e-14,
+      "maximumReductionFrobeniusResidual": 5.1581648071437336e-15,
+      "normalizationBeforeFinalScaling": 1.0,
+      "elapsedSeconds": 0.00024308310821652412
+    }
+  ],
+  "best": {
+    "attempt": 0,
+    "seed": 213308,
+    "initialization": "local-library",
+    "functionEvaluations": 1,
+    "jacobianEvaluations": 1,
+    "solverStatus": 1,
+    "tensorResidualL2": 2.850828065006373e-14,
+    "maximumReductionFrobeniusResidual": 5.1581648071437336e-15,
+    "normalizationBeforeFinalScaling": 1.0,
+    "elapsedSeconds": 0.00024308310821652412,
+    "reductions": [
+      {
+        "order": 1,
+        "frobeniusResidual": 2.487655307695094e-16,
+        "maxEntryResidual": 2.220446075662731e-16
+      },
+      {
+        "order": 2,
+        "frobeniusResidual": 2.8656803753556126e-16,
+        "maxEntryResidual": 1.6657053678103938e-16
+      },
+      {
+        "order": 3,
+        "frobeniusResidual": 4.956999729269623e-16,
+        "maxEntryResidual": 2.7755603765243015e-16
+      },
+      {
+        "order": 4,
+        "frobeniusResidual": 1.4218206473084322e-15,
+        "maxEntryResidual": 5.45483077627809e-16
+      },
+      {
+        "order": 5,
+        "frobeniusResidual": 5.1581648071437336e-15,
+        "maxEntryResidual": 1.933812164788687e-15
+      }
+    ],
+    "coefficients": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.38264088351348435,
+        1.4188162224619604e-18
+      ],
+      [
+        0.0641083478689756,
+        0.0034923002923928164
+      ],
+      [
+        -0.04898046165512447,
+        -0.05293749540039768
+      ],
+      [
+        0.023697271837427026,
+        0.24421803292739233
+      ],
+      [
+        -0.09072974109363581,
+        -0.15848637956527395
+      ],
+      [
+        0.09060913524191527,
+        0.08384985609786198
+      ],
+      [
+        0.3150580441315469,
+        0.07128049451649028
+      ],
+      [
+        0.18085984397457772,
+        0.10474282156473479
+      ],
+      [
+        0.06268393738641304,
+        -0.029697214689179446
+      ],
+      [
+        -0.04346432379029585,
+        -0.1642358893651447
+      ],
+      [
+        0.07134191115911777,
+        0.3530940739988924
+      ],
+      [
+        -0.054809476377595374,
+        -0.050448883966659155
+      ],
+      [
+        0.016263771152398077,
+        -0.12938641625289038
+      ],
+      [
+        -0.10261220218505376,
+        -0.08846124362224168
+      ],
+      [
+        0.1473182492255382,
+        -0.24194514549739202
+      ],
+      [
+        -0.0821652411497267,
+        -0.24243557314161446
+      ],
+      [
+        0.029129406829264504,
+        0.14020406113568915
+      ],
+      [
+        -0.23503457703176422,
+        0.024956909884657714
+      ],
+      [
+        0.046165874587819226,
+        -0.0781085953445525
+      ],
+      [
+        0.12041953338313131,
+        -0.182383158393722
+      ],
+      [
+        -0.21916327081031983,
+        -0.17921271227330723
+      ],
+      [
+        0.13105460951226913,
+        -0.08739611726681812
+      ]
+    ]
+  },
+  "elapsedSeconds": 0.00033083301968872547,
+  "scope": "Full-complex finite multistart search. Numerical residuals do not certify exact existence; unsuccessful searches do not prove nonexistence.",
+  "requestedRestarts": 1,
+  "maxFunctionEvaluationsPerAttempt": 700,
+  "method": "scipy.optimize.least_squares, trust-region reflective, analytic Jacobian"
+}

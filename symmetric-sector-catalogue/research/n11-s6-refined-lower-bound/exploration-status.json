@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-04",
+  "n": 11,
+  "sector": 6,
+  "globalOptimalityProven": false,
+  "rigorousLowerBound": "113108919331/1000000000",
+  "attainedUpperBound": "113.1090435663466909908720436191490453102178363250599475907754402671327202767183434246072334240921061",
+  "upperBoundDefinition": "../algebraic-s6/n11/exact-algebraic.json",
+  "experimentalDegreeTenSearch": {
+    "status": "numerical evidence only; not an exact certificate",
+    "randomSeed": 829,
+    "trainingStates": 1050,
+    "totalValidationAndTrainingStates": 1250,
+    "gramVariables": 22779,
+    "observedImageRank": 851,
+    "scaledPositiveDefinitenessMargin": 0.027907493555458827,
+    "maximumScaledEvaluationResidual": 4.04343225568482e-13,
+    "completeInvariantSpaceDimension": 992,
+    "verifiedExactIdentity": false,
+    "obstacle": "The numerical image has rank 851, while candidate value and first-derivative functionals have rank 48. These do not yet give an injective family of functionals on the full 992-dimensional invariant space. A complete exact compatibility check is still required.",
+    "conclusion": "No global optimality claim follows from this numerical search."
+  },
+  "nextProofTask": "Certify compatibility of the degree-ten Gram identity in the full invariant polynomial space, or derive an independently exact near-sharp rational certificate.",
+  "historicalRecord": true,
+  "supersededBy": "../n11-s6-minimum/index.html",
+  "resolution": "The exact averaged degree-ten identity is now proved in the 290-dimensional physical/Kramers invariant space. The earlier unaveraged rank deficit is resolved."
+}

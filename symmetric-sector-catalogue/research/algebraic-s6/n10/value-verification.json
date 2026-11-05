@@ -1,0 +1,75 @@
+{
+  "n": 10,
+  "sector": 6,
+  "globalOptimalityProven": false,
+  "valuePolynomialDegree": 14,
+  "valuePolynomialVerifiedInNumberField": true,
+  "directQuarticIdentityVerified": true,
+  "stationarityIdentitiesVerified": true,
+  "shortValueStationarityIdentityVerified": true,
+  "positiveRealRecoveryBranchVerified": true,
+  "rootParameterInterval": [
+    "157602396772412237320074564845135628995525411397757191977250117082529426814791306798808477166596247/463106564101088491894213972669602945770144253756628000000000000000000000000000000000000000000000000",
+    "249226665434426622163665751653753213808169440512704338738096604472171964775041927814692871985628971/732339780837092219423237922859392295315430377387258250000000000000000000000000000000000000000000000"
+  ],
+  "zInterval": [
+    "40176895136073118738829107336488579808901626877828514740323234374548239063713551/25000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "32141516108858494991063285869190863847121301502262811792258587499638591250970841/20000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "uInterval": [
+    "12982813464103358789793077879370834752612751151865085542428769336887835822725533/100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "6491406732051679394896538939685417376306375575932542771214384668443917911362767/50000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "normalizationInterval": [
+    "276584556719811120540824673413604014352795571661721814792426748850326746348891659/6250000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "885070581503395585730638954923532845928945829317509807335765596321045588316453309/20000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "mappedValueInterval": [
+    "3652312590571641431327963263838340466258038307665810397348503289763360892704953971/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "7304625181143282862655926527676680932516076615331620794697006579526721785409907943/100000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "isolatingValueInterval": [
+    "7304625181143282862655926527676680932516076615331620794697/100000000000000000000000000000000000000000000000000000000",
+    "3652312590571641431327963263838340466258038307665810397349/50000000000000000000000000000000000000000000000000000000"
+  ],
+  "valueRootCount": 1,
+  "modularFactorizations": {
+    "59": {
+      "factorDegrees": [
+        14
+      ],
+      "monicFactors": [
+        "v**14 - 27*v**13 - 25*v**12 + 23*v**11 + 27*v**10 + 8*v**9 - 27*v**8 + 16*v**7 + 2*v**6 + 9*v**5 + 20*v**4 + 17*v**3 - 19*v**2 - 25*v - 3"
+      ],
+      "squarefree": true
+    },
+    "83": {
+      "factorDegrees": [
+        1,
+        2,
+        11
+      ],
+      "monicFactors": [
+        "v + 34",
+        "v**2 + 19*v + 37",
+        "v**11 + 8*v**10 + 10*v**9 + 31*v**8 + 27*v**7 - 6*v**6 + 17*v**5 - 38*v**4 - 2*v**3 - 16*v**2 + 3*v - 9"
+      ],
+      "squarefree": true
+    },
+    "151": {
+      "factorDegrees": [
+        1,
+        13
+      ],
+      "monicFactors": [
+        "v - 58",
+        "v**13 + 20*v**12 + 62*v**11 - 20*v**10 + 41*v**9 - 16*v**8 + 30*v**7 + 71*v**6 - 41*v**5 + 21*v**4 + 73*v**3 + v**2 + 23*v - 21"
+      ],
+      "squarefree": true
+    }
+  },
+  "irreducibleOverRationals": true,
+  "galoisGroup": "S14",
+  "expressibleByRadicalsOverRationals": false,
+  "galoisProof": "Irreducibility modulo 59 makes the rational polynomial irreducible and its Galois group transitive. The squarefree modulo-151 factorization gives a 13-cycle. A nontrivial block system in degree 14 would have 2 or 7 blocks, each of size 7 or 2. The 13-cycle fixes each block setwise, which cannot accommodate its orbit of length 13. Hence the group is primitive. The modulo-83 cycle type (1,2,11), raised to the 11th power, is a transposition. A primitive permutation group containing a transposition is the full symmetric group: the graph of all conjugate transpositions is a nonempty invariant graph, its connected components are blocks, and connected edge transpositions generate the full symmetric group. Thus the Galois group is S14, which is not solvable. For an irreducible polynomial in characteristic zero, a root expressible by radicals over Q would lie in a solvable normal extension after adjoining the needed roots of unity; its conjugates and splitting field would then also lie there. This contradicts the S14 Galois group. No root, including the specified exact sector value, is expressible by radicals over Q."
+}

@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\section*{Necessary moment conditions from the rank-two error complement}
+Let $P$ be a rank-three second-order AC projector in spin $j=13/2$, and put $c=j(j+1)/3=65/4$. The twelve vectors obtained by acting on an orthonormal code basis with $I,J_x/\sqrt c,J_y/\sqrt c,J_z/\sqrt c$ are orthonormal. Therefore
+\[
+ Q=I-P-\frac{\Phi(P)}c,\qquad \Phi(A)=\sum_aJ_aAJ_a,
+\]
+is a rank-two orthogonal projector. In particular,
+\[
+ PQ=0,\qquad PJ_aQ=0\quad(a=x,y,z).
+\]
+These are matrix identities, not only trace conditions.
+
+Decompose operators into orthonormal irreducible tensor ranks. Let $\mathcal L$ be the covariant real linear map acting by
+\[
+ \beta_0=\frac32,\qquad
+ \beta_L=\frac{65}{2L(L+1)-260}\quad(1\le L\le13).
+\]
+All denominators are nonzero, and $P=\mathcal L(Q)$. Since $P_1=P_2=0$, also $Q_1=Q_2=0$. This last assertion concerns the averaged state $Q/2$; it does not say that the range of $Q$ is an AC subspace.
+
+Choose an orthonormal basis $q_1,q_2$ of the range of $Q$, and let
+$|q\rangle=q_1\wedge q_2$, $\rho=|q\rangle\langle q|$. Then
+\[
+ Q=2\Tr_2\rho.
+\]
+The collective rotation average
+\[
+ X=\int D(g)^{\otimes4}(\rho\otimes\rho)D(g)^{\dagger\otimes4}\,dg
+\]
+is positive, has trace one, and is supported on
+$\mathbb S_{(2,2)}\mathbb C^{14}$, of dimension
+$14^2(14^2-1)/12=3185$.
+
+For Hilbert--Schmidt-normalized spin tensors $T_{L0}$, the multipole lengths of the unnormalized rank-two projector are recovered linearly:
+\[
+ a_L(Q)=4(2L+1)\Tr\!\left[X\,T_{L0}^{(1)}T_{L0}^{(3)}\right].
+\]
+If a differently scaled tensor is used, the right-hand side must be divided by $\Tr(T_{L0}^2)$. In particular $a_0=2/7$, and $\sum_La_L=\Tr Q^2=2$.
+The necessary scalar equalities include
+\[
+ a_1=a_2=0,\qquad
+ \sum_L\beta_La_L=\Tr(PQ)=0,\qquad
+ \sum_L\beta_L^2a_L=\Tr(P^2)=3.
+\]
+Writing
+\[
+ M_{LK}=(-1)^{13+L+K}(2L+1)
+ \begin{Bmatrix}13/2&13/2&L\\13/2&13/2&K\end{Bmatrix},
+\]
+the complete compressed-code conditions imply the further scalar equalities
+\[
+ B_L(P)=\sum_KM_{LK}\beta_K^2a_K=0\qquad(L=1,2).
+\]
+
+\paragraph{Averaged-AC matrix equations.}
+Before twirling,
+\[
+ \Tr_{12}[(T_{Lq}^{(1)}\otimes I^{\otimes3})(\rho\otimes\rho)]
+ =\tfrac12\Tr(QT_{Lq})\rho=0\quad(L=1,2).
+\]
+They therefore remain zero for $X$. For invariant $X$, the $q=0$ component suffices by covariance.
+
+\paragraph{Additional orthogonality matrix equations.}
+Define $\Lambda(\rho)=\mathcal L(2\Tr_2\rho)=P$. For an operator $A$ on the spin space, extend the bilinear rule
+\[
+ \mathfrak M_A(\rho_1\otimes\rho_2)
+ =\bigl[\Lambda(\rho_1)A\otimes I\bigr]\rho_2
+\]
+linearly to four-copy operators. The true identical-copy moment obeys
+\[
+ \mathfrak M_I(X)=0,\qquad
+ \mathfrak M_{J_a}(X)=0\quad(a=x,y,z),
+\]
+because $PQ=0$ and $PJ_aQ=0$, and both legs of $q$ lie in the range of $Q$. Covariance makes these valid after twirling. These are operator equations on $V\otimes V$, and retain information discarded by the scalar trace equations.
+
+\paragraph{Positive matrix localizers.}
+The following three-copy operators must be positive:
+\begin{align*}
+ \mathfrak L_P(X)&=(2\mathcal L\otimes\mathrm{id})(\Tr_2X)
+ =\int P_g\otimes\rho_g\,dg\succeq0,\\
+ \mathfrak L_E(X)&=I_{14}\otimes\Tr_{12}X
+ -2[(\mathcal L+\mathrm{id})\otimes\mathrm{id}](\Tr_2X)\succeq0,
+\end{align*}
+where $E=I-P-Q$ is a rank-nine projector. Let $\mathcal R$ trace two physical qubits from spin $13/2$ to spin $11/2$. The complementary Schmidt projector is
+\[
+ H=I_{12}-3\mathcal R(P),\qquad \operatorname{rank}H=3,
+\]
+so its localizer also satisfies
+\[
+ \mathfrak L_H(X)=I_{12}\otimes\Tr_{12}X
+ -6[(\mathcal R\mathcal L)\otimes\mathrm{id}](\Tr_2X)\succeq0.
+\]
+These localizers are stronger than positivity of only their reduced two-copy total-spin probabilities. None of the displayed necessary constraints is itself an exclusion certificate; an exact infeasibility identity or positive-semidefinite dual is still required.
+\end{document}

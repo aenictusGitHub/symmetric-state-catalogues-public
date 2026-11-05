@@ -1,0 +1,1762 @@
+{
+  "schemaVersion": "1.0",
+  "allVerifiedExactly": true,
+  "stateCount": 7,
+  "method": "Exact algebraic moment identities and full root multiplicities; decimals are display-only.",
+  "states": [
+    {
+      "id": "ac-order-c3-n9-a0-b0",
+      "n": 9,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 6,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{0,3,6,9\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{9}{r}}}|D_{9}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{9}{r}}",
+      "polynomialLatex": "P(z)=(z^3-u)^{2}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          -0.47789599240489855,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.38494102751375403,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7200604641301465,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.32395795063043364,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "-0.477895992404898558406264624777409071238926687757240332278660",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.384941027513754048622064584225664586999990834875627085349568",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.720060464130146445022576878498621949091103368835641598800391",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.323957950630433629293678988344701544226678431771186063310359",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.9130472145839675,
+          "y": -0.0,
+          "z": -0.40785387572077597,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4565236072919836,
+          "y": -0.7907220826843375,
+          "z": -0.40785387572077597,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.45652360729198416,
+          "y": 0.7907220826843372,
+          "z": -0.40785387572077597,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.6501965521145698,
+          "y": -0.0,
+          "z": 0.7597660453181134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3250982760572848,
+          "y": -0.5630867315842701,
+          "z": 0.7597660453181134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.32509827605728514,
+          "y": 0.5630867315842699,
+          "z": 0.7597660453181134,
+          "multiplicity": 1
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: 72.68<k<72.69; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-c3-n10-a0-b1",
+      "n": 10,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 7,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{0,3,6,9\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{10}{r}}}|D_{10}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{10}{r}}",
+      "polynomialLatex": "P(z)=(z^3-u)^{2}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          -0.46157677878311665,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.37231493341307587,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6457067027011354,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.48103151843995234,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "-0.461576778783116663147592532674987562916925853087936704038770",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.372314933413075880741893815060788706258937157050198267595093",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.645706702701135377226318988254537096633876294075646660799035",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.481031518439952360138343843173873453449101806967118037350304",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.8914845377215938,
+          "y": -0.0,
+          "z": -0.4530511218431274,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4457422688607967,
+          "y": -0.7720482567479269,
+          "z": -0.4530511218431274,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.44574226886079726,
+          "y": 0.7720482567479265,
+          "z": -0.4530511218431274,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.8527428794889933,
+          "y": -0.0,
+          "z": 0.5223309118564783,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4263714397444965,
+          "y": -0.7384969965337603,
+          "z": 0.5223309118564783,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.426371439744497,
+          "y": 0.7384969965337601,
+          "z": 0.5223309118564783,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: 24.63<k<24.64; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-c3-n11-a1-b1",
+      "n": 11,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 8,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{1,4,7,10\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{11}{r}}}|D_{11}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{11}{r}}",
+      "polynomialLatex": "P(z)=z^{1}(z^3-u)^{2}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5321350645431432,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4330517940016314,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5248134017676488,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5038544533103799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.532135064543143236105530994894512887969047002771186534375487",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.433051794001631384437721057573122420584196917016650697771904",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.524813401767648821393909125858131079272054658653608372019131",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.503854453310379920601127518022685460765500944502562819502634",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9692924583032041,
+          "y": -0.0,
+          "z": -0.24591081772978476,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.48464622915160194,
+          "y": -0.8394318925872436,
+          "z": -0.24591081772978476,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4846462291516025,
+          "y": 0.8394318925872433,
+          "z": -0.24591081772978476,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.8783908933502105,
+          "y": -0.0,
+          "z": 0.47794292387210763,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.439195446675105,
+          "y": -0.7607088280941898,
+          "z": 0.47794292387210763,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4391954466751056,
+          "y": 0.7607088280941895,
+          "z": 0.47794292387210763,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: 10.11<k<10.12; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-c3-n11-a0-b2",
+      "n": 11,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 7,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{0,3,6,9\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{11}{r}}}|D_{11}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{11}{r}}",
+      "polynomialLatex": "P(z)=(z^3-u)^{2}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          -0.4621600198485861,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.34421447880634354,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5375163253218312,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6156303344103076,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "-0.462160019848586116945569155081175679274687001337485289099641",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.344214478806343529025777066196583653511909031732299006118094",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.537516325321831214883632405919700646645356882980154928796729",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.615630334410307529487932120486677430936865151969903505224167",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.8849168607098548,
+          "y": -0.0,
+          "z": -0.4657490200004886,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4424584303549272,
+          "y": -0.76636048161191,
+          "z": -0.4657490200004886,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.44245843035492777,
+          "y": 0.7663604816119096,
+          "z": -0.4657490200004886,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.9705360899129106,
+          "y": -0.0,
+          "z": 0.2409558012925995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4852680449564552,
+          "y": -0.8405089091541988,
+          "z": 0.24095580129259928,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4852680449564557,
+          "y": 0.8405089091541983,
+          "z": 0.2409558012925995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: 9.49<k<9.50; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-c3-n12-a0-b3",
+      "n": 12,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "partition": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 7,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{0,3,6,9\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{12}{r}}}|D_{12}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{12}{r}}",
+      "polynomialLatex": "P(z)=(z^3-u)^{2}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          0.472964224476714,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3266378803402926,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.33989692165276064,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7443672616006956,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "0.472964224476713970864883647270506360224428989791272257252301",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.326637880340292634124064625321287457949795845087901272375708",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.339896921652760622536687325056358502770842178685332271101340",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.744367261600695530582684936982222913042045910341867108326508",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.8575684308172733,
+          "y": -0.0,
+          "z": -0.5143698926508041,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4287842154086365,
+          "y": -0.7426760465713165,
+          "z": -0.5143698926508041,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.42878421540863704,
+          "y": 0.7426760465713163,
+          "z": -0.5143698926508041,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.4981051326294928,
+          "y": -0.8627433972251155,
+          "z": 0.08697762581619348,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9962102652589854,
+          "y": -1.220005712627152e-16,
+          "z": 0.08697762581619348,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4981051326294928,
+          "y": 0.8627433972251155,
+          "z": 0.08697762581619348,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: -7.16<k<-7.15; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-c3-n12-m3-a0-b0",
+      "n": 12,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact cyclic algebraic construction",
+      "status": "proven-existence",
+      "support": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "partition": [
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 6,
+      "stateLatex": "|\\psi\\rangle=\\frac{1}{\\sqrt{Z}}\\sum_{r\\in\\{0,3,6,9,12\\}}\\frac{(-1)^r[z^r]P(z)}{\\sqrt{\\binom{12}{r}}}|D_{12}^{(r)}\\rangle,\\quad Z=\\sum_r\\frac{|[z^r]P(z)|^2}{\\binom{12}{r}}",
+      "polynomialLatex": "P(z)=(z^3-u)^{3}(z^3-ku),\\quad u=\\sqrt{x}>0",
+      "exactCoefficients": null,
+      "coefficients": [
+        [
+          -0.48347482465158037,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2766099922099407,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3817735951783061,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7375411557266522,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.004579494706317259,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "-0.483474824651580365739925585996099814633637318229019727923048",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.276609992209940682073804858021687650658039328262366041406529",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.381773595178306108306633334307013728079402281125281620046401",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-0.737541155726652200951429447981484576894007189196961927345712",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.00457949470631725858046476499008585494807146248801988903755722",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.9427944460969215,
+          "y": -0.0,
+          "z": -0.33337461272388297,
+          "multiplicity": 3
+        },
+        {
+          "x": -0.47139722304846066,
+          "y": -0.8164839408668128,
+          "z": -0.33337461272388297,
+          "multiplicity": 3
+        },
+        {
+          "x": -0.4713972230484612,
+          "y": 0.8164839408668124,
+          "z": -0.33337461272388297,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.07437943893776897,
+          "y": -0.12882896727868268,
+          "z": 0.9888734986100147,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1487588778755379,
+          "y": -1.8217708363502952e-17,
+          "z": 0.9888734986100147,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.07437943893776897,
+          "y": 0.12882896727868268,
+          "z": 0.9888734986100147,
+          "multiplicity": 1
+        }
+      ],
+      "normalization": "Normalized exactly by the positive sum Z; decimal display rounded.",
+      "coefficientConvention": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r, up to its nonzero normalization.",
+      "notes": "An exact algebraic state: -6760.50<k<-6760.49; k is the unique root of the defining polynomial in the certificate, x is its stated rational function, and u=sqrt(x)>0. The algebraic definition, rather than rounded display coefficients, supplies the exact witness.",
+      "verification": {
+        "method": "Exact rational root isolation, positive rational recovery, vanishing moment-polynomial remainders, and explicit coprime squarefree cubic factors.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact cyclic construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "provenance": "New exact algebraic construction verified in this catalogue."
+    },
+    {
+      "id": "ac-order-sparse-n11-2x2-1x7",
+      "n": 11,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exact sparse two-pole construction",
+      "status": "proven-existence",
+      "support": [
+        2,
+        5,
+        9
+      ],
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 9,
+      "stateLatex": "\\sqrt{\\frac{61}{126}}|D_{11}^{(2)}\\rangle+\\frac16|D_{11}^{(5)}\\rangle+\\sqrt{\\frac{41}{84}}|D_{11}^{(9)}\\rangle",
+      "polynomialLatex": "- \\frac{\\sqrt{47355} z^{9}}{42} - \\frac{\\sqrt{462} z^{5}}{6} + \\frac{\\sqrt{46970} z^{2}}{42}",
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(854)/42",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "sqrt(861)/42",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6957923426763075,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.16666666666666666,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6986381310057719,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.695792342676307502768358397530488360451527686745701191808801",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.166666666666666666666666666666666666666666666666666666666667",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0.698638131005771896694586459169221266814149101838762056714149",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.9947609976807666,
+          "y": -0.0,
+          "z": -0.10222796825314502,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8552435052087052,
+          "y": 0.517515220788444,
+          "z": 0.027139326642632487,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8552435052087052,
+          "y": -0.517515220788444,
+          "z": 0.027139326642632487,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3006146437800223,
+          "y": 0.9516676616640054,
+          "z": -0.06292453963260052,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3006146437800223,
+          "y": -0.9516676616640054,
+          "z": -0.06292453963260052,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6503276233091876,
+          "y": 0.7548936424523126,
+          "z": 0.08490919235338233,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6503276233091876,
+          "y": -0.7548936424523126,
+          "z": 0.08490919235338233,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        }
+      ],
+      "normalization": "sum_r |c_r|^2=1, checked exactly",
+      "verification": {
+        "method": "Exact rational moments and support gaps; exact sign contradiction excludes repeated roots of the remaining degree-seven factor.",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "./research/ac-order-constructions.json"
+      },
+      "references": [
+        {
+          "title": "Exact sparse construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "notes": "Two double poles and seven simple finite roots. This witnesses order two; the partition maximum may be higher.",
+      "provenance": "New exact sparse construction verified in this catalogue."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "ac-order-c3-n9-a0-b0",
+      "n": 9,
+      "poleAtZero": 0,
+      "poleAtInfinity": 0,
+      "repeatedMultiplicity": 2,
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "targetOrder": 2,
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "190*k**8 + 1480*k**7 - 8645984*k**6 - 43219640*k**5 + 42944781241*k**4 - 43219640*k**3 - 8645984*k**2 + 1480*k + 190",
+      "parameterPolynomialLatex": "190 k^{8} + 1480 k^{7} - 8645984 k^{6} - 43219640 k^{5} + 42944781241 k^{4} - 43219640 k^{3} - 8645984 k^{2} + 1480 k + 190",
+      "rootBracket": [
+        "1817/25",
+        "7269/100"
+      ],
+      "rootInterval": [
+        "36720072359179183009/505219004925338000",
+        "27007237230231846929/371583405004632111"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "-45696*k**4 - 176064*k**3 - 174384*k**2 - 1680*k - 210",
+      "xDenominator": "38*k**6 + 144*k**5 - 846648*k**4 - 846904*k**3 - 211707*k**2 + 180*k + 20",
+      "xPositiveInterval": [
+        "13038825848285293481745414423456292676419218431718169698642631683133755741835060164202779188859730696841855752356957706193795931140099884413361416135357/175236493290765837318079720563105393800316641019525538684699820866429916108104693399793493116952338938484843949915831483594598522037169958732753431312500",
+        "25287419826977538873688076457612203985827404205109954812226468123557067948322725011139403028716774396679152620273955068537379761692937843856000000000000/339852593048757987525972791395113490891640862390719912998932030532350739231900479701751981860681256891434683239909070693401995244373823047199533307859249"
+      ],
+      "xRecoveryLatex": "\\frac{- 45696 k^{4} - 176064 k^{3} - 174384 k^{2} - 1680 k - 210}{38 k^{6} + 144 k^{5} - 846648 k^{4} - 846904 k^{3} - 211707 k^{2} + 180 k + 20}",
+      "momentPolynomials": [
+        "-252*k**2*x**3 - 4*k**2*x**2 + k**2*x - 4*k*x**2 + 4*k*x - x**2 + 4*x + 252",
+        "168*k**2*x**3 - 4*k**2*x**2 - k**2*x - 4*k*x**2 - 4*k*x - x**2 - 4*x + 168"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "72.68149456215672004658602467284104994181769221561196032438076063672569",
+        "x": "0.07440702335129631380296929082008325989804570053255488779015370173326852",
+        "u": "0.2727765080634626677582913053148330374671759460710702624417345239878438"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-c3-n10-a0-b1",
+      "n": 10,
+      "poleAtZero": 0,
+      "poleAtInfinity": 1,
+      "repeatedMultiplicity": 2,
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "targetOrder": 2,
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "752*k**8 + 9920*k**7 + 2330816*k**6 + 11518784*k**5 - 2124279508*k**4 + 11552480*k**3 + 2335028*k**2 - 2716*k - 301",
+      "parameterPolynomialLatex": "752 k^{8} + 9920 k^{7} + 2330816 k^{6} + 11518784 k^{5} - 2124279508 k^{4} + 11552480 k^{3} + 2335028 k^{2} - 2716 k - 301",
+      "rootBracket": [
+        "2463/100",
+        "616/25"
+      ],
+      "rootInterval": [
+        "80977416873448984312/3286924953307468875",
+        "80930325617704371059/3285013489228150925"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "40152*k**4 + 155904*k**3 + 154728*k**2 + 1176*k + 147",
+      "xDenominator": "376*k**6 + 3456*k**5 + 540576*k**4 + 545152*k**3 + 140094*k**2 - 504*k - 56",
+      "xPositiveInterval": [
+        "3447957447205275639720000596390708597241631520291833751027070644801924639331021180344574227842747683434293582426297958192107986960657313453386670273454501828540188150292959968292316194441/64649381146587481080335461362726110817383673368519483111439119870597704184137832652734526085285940371518086061438675930471350532425366966329109466311591549965085684093310070715692514516322",
+        "924635134415225836345160444257817955744353483131249139800006918736188051853512113372674804585402844784666385307197298618368559244203568880596913365593591655250663099666130666640763876953125/17336956775608729742631361931772271776075501903695068601250028681026120883975804564509689731595710128009479293020942310252577824219078235391089960185997187870006934469371325101690568015437432"
+      ],
+      "xRecoveryLatex": "\\frac{40152 k^{4} + 155904 k^{3} + 154728 k^{2} + 1176 k + 147}{376 k^{6} + 3456 k^{5} + 540576 k^{4} + 545152 k^{3} + 140094 k^{2} - 504 k - 56}",
+      "momentPolynomials": [
+        "-2100*k**2*x**3 - 28*k**2*x**2 + 2*k**2*x - 28*k*x**2 + 8*k*x - 7*x**2 + 8*x + 168",
+        "2100*k**2*x**3 - 28*k**2*x**2 - 6*k**2*x - 28*k*x**2 - 24*k*x - 7*x**2 - 24*x + 84"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "24.63622322498280430705217420440615500633338105037159409490655723679342",
+        "x": "0.05333318565551769624039836789787053151246741096142687320868017221639692",
+        "u": "0.2309397879437791816047687449094760545020241930594238455918083150966335"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-c3-n11-a1-b1",
+      "n": 11,
+      "poleAtZero": 1,
+      "poleAtInfinity": 1,
+      "repeatedMultiplicity": 2,
+      "support": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "targetOrder": 2,
+      "partition": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "39844*k**8 + 1205680*k**7 + 523179676*k**6 + 2549562460*k**5 - 81251748881*k**4 + 2549562460*k**3 + 523179676*k**2 + 1205680*k + 39844",
+      "parameterPolynomialLatex": "39844 k^{8} + 1205680 k^{7} + 523179676 k^{6} + 2549562460 k^{5} - 81251748881 k^{4} + 2549562460 k^{3} + 523179676 k^{2} + 1205680 k + 39844",
+      "rootBracket": [
+        "1011/100",
+        "253/25"
+      ],
+      "rootInterval": [
+        "17453754825990113093/1725372963765062025",
+        "5599329890106668297/553515991481998940"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "1462890*k**4 + 5018280*k**3 + 4809960*k**2 + 208320*k + 26040",
+      "xDenominator": "1423*k**6 + 37368*k**5 + 7730568*k**4 + 7832896*k**3 + 2015892*k**2 - 29232*k - 3248",
+      "xPositiveInterval": [
+        "22845141279475183935163970312879423549576064328742712273812363895505385657536375500183292355204081491338442583989374807440932020582431719488204611817717169603487032669460809357955293184/103035429559504707819572173019465701277655674550454290952883298230478240980779755301197994976811156844622873899115837248991060265997696559420643812600967204048740284373251517498705192745",
+        "41619873145472586393479531449053531360135341022909434589064545305156593276993909430396390288649624324350884345518802913337279483780591727676284082397976429643507916601083817686672439453125/187712628050526852041010045884460527632183495218320163994336541857412558974553885261775106572654714574436137814046120424545728294608006786001210903253296226736768117666479214285816642430336"
+      ],
+      "xRecoveryLatex": "\\frac{1462890 k^{4} + 5018280 k^{3} + 4809960 k^{2} + 208320 k + 26040}{1423 k^{6} + 37368 k^{5} + 7730568 k^{4} + 7832896 k^{3} + 2015892 k^{2} - 29232 k - 3248}",
+      "momentPolynomials": [
+        "-90*k**2*x**3 - 4*k**2*x**2 + k**2*x - 4*k*x**2 + 4*k*x - x**2 + 4*x + 90",
+        "750*k**2*x**3 - 116*k**2*x**2 - 29*k**2*x - 116*k*x**2 - 116*k*x - 29*x**2 - 116*x + 750"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "10.11593156525589882268481009199727633342380075021775760639983736943325",
+        "x": "0.2217212213036072940725123787415711790955867378363842458155472930811021",
+        "u": "0.4708728292263286814339500853870044782476903811997292560463275348497249"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-c3-n11-a0-b2",
+      "n": 11,
+      "poleAtZero": 0,
+      "poleAtInfinity": 2,
+      "repeatedMultiplicity": 2,
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "targetOrder": 2,
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "181116475*k**8 + 2276258500*k**7 + 98826217396*k**6 + 464826330688*k**5 - 16811043600440*k**4 + 471602158240*k**3 + 99673195840*k**2 - 264676832*k - 30628136",
+      "parameterPolynomialLatex": "181116475 k^{8} + 2276258500 k^{7} + 98826217396 k^{6} + 464826330688 k^{5} - 16811043600440 k^{4} + 471602158240 k^{3} + 99673195840 k^{2} - 264676832 k - 30628136",
+      "rootBracket": [
+        "949/100",
+        "19/2"
+      ],
+      "rootInterval": [
+        "10431523475682985644/1098101386228391833",
+        "3004723179619398721/316299982113266018"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "12685764*k**4 + 48240528*k**3 + 47614896*k**2 + 625632*k + 78204",
+      "xDenominator": "883495*k**6 + 7569720*k**5 + 203131080*k**4 + 211955200*k**3 + 60950520*k**2 - 564480*k - 62720",
+      "xPositiveInterval": [
+        "16684413800122932732805207904655681683909017437867182405686618024453527058829260901468336501628821812497782280560645063179087321842713509409667563705160540780084813047188485781438212471552/344551232298916923025451890033371185959422619160757509297835518367035054112309750860006364897047844814741101551690007925348114438355886844897868754871726061421529982486396911869290332373875",
+        "18672944827231141486269880018234018255378936067011366781299166487617466026968907651032641692287695682336469658878114372920187100296702307534018386118349335607476710559882513472759823436675/385616553745794249161673428896166419760219962420947473956953834638047099130086832649685327242236349324125737481208628038817461243388654748468889495761191907023796063622698392966624500698624"
+      ],
+      "xRecoveryLatex": "\\frac{12685764 k^{4} + 48240528 k^{3} + 47614896 k^{2} + 625632 k + 78204}{883495 k^{6} + 7569720 k^{5} + 203131080 k^{4} + 211955200 k^{3} + 60950520 k^{2} - 564480 k - 62720}",
+      "momentPolynomials": [
+        "-25410*k**2*x**3 - 280*k**2*x**2 + 5*k**2*x - 280*k*x**2 + 20*k*x - 70*x**2 + 20*x + 294",
+        "18150*k**2*x**3 - 136*k**2*x**2 - 25*k**2*x - 136*k*x**2 - 100*k*x - 34*x**2 - 100*x + 6"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "9.499599587531487444491432084701982222322107967866302414973081839823471",
+        "x": "0.04842360797493330929418185802636880523042945460592806548738320576548511",
+        "u": "0.2200536479473433071452856139971219112814877027243202720090002309732616"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-c3-n12-a0-b3",
+      "n": 12,
+      "poleAtZero": 0,
+      "poleAtInfinity": 3,
+      "repeatedMultiplicity": 2,
+      "support": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "targetOrder": 2,
+      "partition": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "227*k**6 + 3274*k**5 + 47505*k**4 + 261220*k**3 + 41801*k**2 - 198*k - 21",
+      "parameterPolynomialLatex": "227 k^{6} + 3274 k^{5} + 47505 k^{4} + 261220 k^{3} + 41801 k^{2} - 198 k - 21",
+      "rootBracket": [
+        "-179/25",
+        "-143/20"
+      ],
+      "rootInterval": [
+        "-396791730939933284/55470782411682597",
+        "-21118799087326980667/2952370771926432050"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "-213*k**4 - 756*k**3 - 732*k**2 - 24*k - 3",
+      "xDenominator": "454*k**5 + 10683*k**4 + 81204*k**3 + 11804*k**2 - 30*k - 3",
+      "xPositiveInterval": [
+        "228930283737363736877017492873680484123319738932399318788597793778200245402034403470350955066778824079069333269201908435107482179660870833030896413/6941963662339056908265028145764171081832635483083352646534802693955338476514318060581859605101004371939438855770939714642854927122250037832328750000",
+        "9538761822390155703209062203070020209550969974454278706424021291156860303589714625765502868207039973243680589251449845235161272870876128313281250/289248485930794037844376172740173793604547528984211031595889318934428616145572318374833242178938035369977697491798102924694910275491954386730138837"
+      ],
+      "xRecoveryLatex": "\\frac{- 213 k^{4} - 756 k^{3} - 732 k^{2} - 24 k - 3}{454 k^{5} + 10683 k^{4} + 81204 k^{3} + 11804 k^{2} - 30 k - 3}",
+      "momentPolynomials": [
+        "-440*k**2*x**3 - 4*k**2*x**2 - 4*k*x**2 - x**2 + 1",
+        "2904*k**2*x**3 - 12*k**2*x**2 - 2*k**2*x - 12*k*x**2 - 8*k*x - 3*x**2 - 8*x - 3"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "-7.153166292032789588635703260788571441988964129755309725821446158427193",
+        "x": "0.03297774158331259870173265523168203231196381430587021517215206470194406",
+        "u": "0.1815977466361094434979865640082445499032697803408404675718927469145577"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-c3-n12-m3-a0-b0",
+      "n": 12,
+      "poleAtZero": 0,
+      "poleAtInfinity": 0,
+      "repeatedMultiplicity": 3,
+      "support": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "targetOrder": 2,
+      "partition": [
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "parameterPolynomial": "2*k**10 + 13551*k**9 + 185177*k**8 - 120111820*k**7 - 742726963*k**6 + 1263628829066*k**5 - 742726963*k**4 - 120111820*k**3 + 185177*k**2 + 13551*k + 2",
+      "parameterPolynomialLatex": "2 k^{10} + 13551 k^{9} + 185177 k^{8} - 120111820 k^{7} - 742726963 k^{6} + 1263628829066 k^{5} - 742726963 k^{4} - 120111820 k^{3} + 185177 k^{2} + 13551 k + 2",
+      "rootBracket": [
+        "-13521/2",
+        "-676049/100"
+      ],
+      "rootInterval": [
+        "-13353040349732506307561/1975158082726036600",
+        "-13904321344202372106901/2056702591209620682"
+      ],
+      "rootCountInInterval": 1,
+      "irreducible": true,
+      "xNumerator": "-360448*k**8 - 5180384*k**7 - 4623591808*k**6 - 9334750744*k**5 - 4681557320*k**4 + 20590064*k**3 + 1783232*k**2 - 1496*k - 88",
+      "xDenominator": "1458*k**9 + 6986347*k**8 + 54907679*k**7 - 22527882710*k**6 - 14959023299*k**5 - 2459195968*k**4 + 1512433*k**3 + 119062*k**2 - 223*k - 11",
+      "xPositiveInterval": [
+        "40831274516712936635869562046773134733225722970529790864374109283033258404448401178592655369926239386856657489268773259063207053017774768962909847707702251022707813998322367609674128082856231915394241087767458908104764956827976297930689305261091370303877440788633595823126279762056183308408416790884942606254255416240481090560000000000000000000/326741226691382570210726946054066281977388563656206875042343951596788869964132636467822983144798938855142385524609065234404902653470486155726716909722196637558401767676175069769132881608617882203787104861341088090631953426738121230680090429076072132761497701409607378137685051867149945786006272044651518132492532050211972057272858850860778056679",
+        "67663043240250284977618814273056153991556211310046232173011856685779051859881374040576725069757703098933807511526285011663492847286326827047453310641765585696308011800016005156535022466826797472551936421396826280318016983736019668504411955809246052807788858304572538396400072563656192896043533012816570453310462721166191080523269456582727289/541455196088530937744066832122639718931630858797506473512546769720529580479224874710214230689286382190039399579024125920067489447099565449708298519676056853893617467468080496250201249464659383203424762045145918555434707422852712688826278583918281204518009907058754146242092842173129992219713234375403917101206787678584051174521406250000000000"
+      ],
+      "xRecoveryLatex": "\\frac{- 360448 k^{8} - 5180384 k^{7} - 4623591808 k^{6} - 9334750744 k^{5} - 4681557320 k^{4} + 20590064 k^{3} + 1783232 k^{2} - 1496 k - 88}{1458 k^{9} + 6986347 k^{8} + 54907679 k^{7} - 22527882710 k^{6} - 14959023299 k^{5} - 2459195968 k^{4} + 1512433 k^{3} + 119062 k^{2} - 223 k - 11}",
+      "momentPolynomials": [
+        "-440*k**2*x**4 - 9*k**2*x**3 + k**2*x - 6*k*x**3 + 6*k*x - x**3 + 9*x + 440",
+        "968*k**2*x**4 - 9*k**2*x**3 - 6*k**2*x**2 - k**2*x - 6*k*x**3 - 12*k*x**2 - 6*k*x - x**3 - 6*x**2 - 9*x + 968"
+      ],
+      "exactRemainders": [
+        "0",
+        "0"
+      ],
+      "parametersDecimal": {
+        "k": "-6760.491965940851566878274975095904563256018804250755423780369158239585",
+        "x": "0.1249651748271097962920343445114594487620536637513887377370199403295788",
+        "u": "0.3535041369306868469367163747278652987253223689312619282828438459365521"
+      },
+      "normalizationPositive": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "squarefreeCubicFactors": "u is nonzero; z^3-u and z^3-ku have three simple nonzero roots each.",
+      "factorsCoprime": "k is neither zero nor one, so the two cubic factors and the pole factor have disjoint roots.",
+      "extraneousResultantRootsExcluded": "The chosen root is isolated, the x recovery denominator is coprime to its polynomial, x is positive, and both unsquared moment equations vanish modulo its polynomial. No squared elimination condition alone is used."
+    },
+    {
+      "id": "ac-order-sparse-n11-2x2-1x7",
+      "n": 11,
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "probabilities": {
+        "2": "61/126",
+        "5": "1/36",
+        "9": "41/84"
+      },
+      "normalizationVerifiedExactly": true,
+      "firstMomentVerifiedExactly": true,
+      "secondMomentVerifiedExactly": true,
+      "offDiagonalRho2VanishesBySupportGaps": true,
+      "remainingFactor": "-sqrt(47355)*z**7/42 - sqrt(462)*z**3/6 + sqrt(46970)/42",
+      "repeatedRootContradiction": {
+        "lhs": "-54*sqrt(410)/42025",
+        "rhs": "93025/2304",
+        "lhsNegative": true,
+        "rhsPositive": true
+      }
+    }
+  ],
+  "proof": {
+    "id": "partition-cyclic-algebraic-order2",
+    "title": "Exact second-order constructions with repeated Majorana roots",
+    "summary": "Six cyclic algebraic states and one sparse state establish second-order anticoherence while preserving their stated full multiplicity partitions.",
+    "formulaLatex": "\\sum_r(2r-n)|c_r|^2=0,\\qquad\\sum_r\\left[3(2r-n)^2-n(n+2)\\right]|c_r|^2=0",
+    "bodyHtml": "<p>All nonzero Dicke coefficients are separated by at least three indices. Consequently the off-diagonal entries of the two-qubit reduced state vanish. The two exact moment identities above then make every diagonal entry equal to one third.</p><p>The cyclic family uses P(z)=z^a(z^3\u2212u)^m(z^3\u2212ku), with m equal to two or three and u positive. A univariate integer polynomial and a rational isolating interval define k; a rational function fixes x=u\u00b2. The constructor verifies that x is strictly positive and that both original moment equations have zero remainder modulo the defining polynomial. Since k is neither zero nor one, the cubic factors have distinct nonzero roots and are coprime. Their multiplicities, together with the projective poles, therefore give the full partition exactly.</p><p>The additional eleven-qubit sparse state has two double poles. Its remaining factor A+Bz\u00b3+Cz\u2077 is squarefree: a repeated root would require (\u22123B/7C)\u00b3=(\u22127A/4B)\u2074, whose two sides have opposite signs. Exact existence does not by itself prove that order two is the largest possible order for a partition.</p>",
+    "references": [
+      {
+        "title": "Reproducible constructor and exact certificate",
+        "url": "./research/ac-order-constructions.json"
+      }
+    ]
+  }
+}

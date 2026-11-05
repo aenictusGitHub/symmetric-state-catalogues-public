@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{A spin-three inertia bound and the fourth-order maximum at eighteen qubits}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+Write $K(N,t)$ for the largest dimension of a complex-linear subspace of spin $N/2$
+every normalized vector of which is $t$-anticoherent.
+\begin{theorem}
+For every integer $N\ge16$ and $t\ge4$,
+\[
+ \boxed{7K(N,t)\le N-5.}
+\]
+In particular, a two-dimensional fourth-order AC subspace on eighteen
+qubits does not exist. The existing exact state attains dimension one:
+\[
+ \boxed{K(18,4)=1.}
+\]
+\end{theorem}
+The proof applies to arbitrary complex subspaces. It makes no assumption
+about Dicke support, constellation symmetry or reality of amplitudes.
+
+\section*{1. Anticoherence gives a zero compression}
+Let $P$ project onto a $k$-dimensional fourth-order AC subspace of $V_j$,
+where $j=N/2$. Polarization of the AC conditions gives
+\[
+ PT_{\ell q}P=0\qquad(1\le\ell\le4)
+\]
+for all irreducible spin-tensor components. Every ordered polynomial in
+$J_x,J_y,J_z$ of degree at most four has only tensor ranks zero through
+four. Therefore, for every such operator $A$,
+\[
+ PAP=\frac{\Tr A}{2j+1}P. \tag{1}
+\]
+Introduce an auxiliary spin three, with operators $S_x,S_y,S_z$ on $V_3$,
+and put
+\[
+ X=J_x\otimes S_x+J_y\otimes S_y+J_z\otimes S_z.
+\]
+If $W$ is a polynomial of degree at most four in $X$, (1) applies to each
+physical-spin coefficient of $W$. Thus
+\[
+ (P\otimes I_7)W(P\otimes I_7)
+ =\frac{P}{2j+1}\otimes\Tr_{V_j}W. \tag{2}
+\]
+We will construct $W$ with zero partial trace and only $N-5$ positive
+eigenvalues, counted with multiplicity.
+
+\section*{2. An explicit quartic with the required inertia}
+For $j\ge8$, define
+\[
+ F_j(x)=(x+2j+5)(x+6)(x-j+5)(x-3j),
+\]
+\[
+ c_j=2j(4j^3-36j^2+47j-75),\qquad W=F_j(X)-c_j I.
+\]
+The Clebsch--Gordan decomposition
+\[
+ V_j\otimes V_3=\bigoplus_{p=0}^{6}V_{j-3+p}
+\]
+gives the eigenvalue of $X$ at total spin $L$ as
+\[
+ x_L=\frac{L(L+1)-j(j+1)-12}{2}.
+\]
+The complete spectrum is consequently
+\[
+\begin{array}{c|c|c}
+p&x_{j-3+p}&F_j(x_{j-3+p})\\\hline
+0&-3j-3&18(j-2)(j-1)(2j-1)(2j+1)\\
+1&-2j-5&0\\
+2&-j-6&-2j(j-1)(2j+1)(2j+3)\\
+3&-6&0\\
+4&j-5&0\\
+5&2j-3&-2(j+2)(j+3)(2j+1)(2j+3)\\
+6&3j&0
+\end{array}
+\]
+with multiplicities $2j-5+2p$. Summing these seven weighted values gives
+\[
+ \Tr F_j(X)=7(2j+1)c_j. \tag{3}
+\]
+Since $F_j(X)$ is invariant under the joint rotation representation,
+its partial trace over $V_j$ commutes with the irreducible spin-three
+representation. It is scalar; (3) determines that scalar:
+\[
+ \Tr_{V_j}F_j(X)=(2j+1)c_j I_7,
+ \qquad \Tr_{V_j}W=0. \tag{4}
+\]
+For $h=j-8\ge0$,
+\[
+ c_j=2j(4h^3+60h^2+239h+45)>0.
+\]
+The table shows that the six sectors $p=1,\ldots,6$ have strictly negative
+eigenvalues of $W$. Its remaining eigenvalue must be strictly positive:
+$\Tr W=0$ and the other sectors have negative trace. Equivalently, it is
+\[
+ F_j(-3j-3)-c_j
+ =4(j+1)(16j^3-52j^2+60j-9)>0.
+\]
+Thus $W$ is nonsingular and has positive and negative indices
+\[
+ n_+(W)=2j-5=N-5,\qquad n_-(W)=6(N+2). \tag{5}
+\]
+
+\section*{3. Inertia bounds the whole AC subspace}
+Equations (2) and (4) show that
+$\mathcal U=\operatorname{Ran}P\otimes V_3$, of dimension $7k$, is totally
+isotropic for $W$: its entire compressed matrix is zero.
+For a nonsingular Hermitian form, projection of a totally isotropic
+subspace onto its positive spectral subspace is injective. Indeed, a
+nonzero vector with zero positive projection would belong to the strictly
+negative spectral subspace and have negative quadratic form, a
+contradiction. Therefore
+\[
+ 7k=\dim\mathcal U\le n_+(W)=N-5.
+\]
+Every $t$-AC subspace with $t\ge4$ is also fourth-order AC, proving the
+stated general bound.
+
+\section*{4. Specialization to eighteen qubits}
+For $j=9$ one obtains the particularly simple operator
+\[
+ \begin{aligned}
+ W&=(X+23)(X+6)(X-4)(X-27)-6264 I\\
+  &=X^4-2X^3-653X^2-1146X+8640 I.
+ \end{aligned}
+\]
+Its exact spectrum is
+\[
+\begin{array}{c|rrrrrrr}
+L&6&7&8&9&10&11&12\\\hline
+2L+1&13&15&17&19&21&23&25\\
+W|_{V_L}&319320&-6264&-63720&-6264&-6264&-111600&-6264
+\end{array}
+\]
+so its positive index is thirteen. A two-dimensional AC4 subspace would
+produce a fourteen-dimensional totally isotropic subspace, which is
+impossible. Thus $K(18,4)\le\lfloor13/7\rfloor=1$.
+
+The supplied Julia source and AC-state catalogue already contain
+\[
+ |\psi\rangle=\frac{\sqrt{14}(|D_{18}^{(0)}\rangle+|D_{18}^{(18)}\rangle)
+ +i\sqrt{51}(|D_{18}^{(5)}\rangle+|D_{18}^{(13)}\rangle)}{\sqrt{130}}.
+\]
+Its probabilities are $(14,51,51,14)/130$, so it is normalized and
+reflection symmetry cancels odd diagonal moments. Moreover
+\[
+ \langle J_z^2\rangle=30=\frac{9\cdot10}{3},\qquad
+ \langle J_z^4\rangle=1614
+ =\frac{9\cdot10(3\cdot9^2+3\cdot9-1)}{15}.
+\]
+Every support gap is at least five, so all nonzero magnetic shifts through
+rank four vanish. Hence this state is fourth-order AC; in fact the known
+phase cancellation makes it fifth-order AC. Its one-dimensional span
+attains the upper bound.
+
+\paragraph{Independent exact verification.}
+\texttt{verify\_upper.py} reconstructs the physical spin-nine and
+spin-three matrices in an integer magnetic basis. It checks weighted
+Hermiticity, all 25 magnetic-block characteristic polynomials, all 49
+entries of the partial trace, and the complete inertia using exact
+arithmetic. No numerical eigenvalues enter the proof. The general trace
+identity is also checked by exact polynomial interpolation with its
+explicit degree bound. \texttt{upper-verification.json} records the result.
+The lower witness is checked independently against its exact Dicke
+coefficients and reduced states in the accompanying lower verification.
+
+At nineteen qubits this theorem alone gives $K(19,4)\le2$. The separate exact four-copy certificate in \texttt{../n19-t4/exclusion/proof.tex} now proves $K(19,4)=1$.
+\end{document}

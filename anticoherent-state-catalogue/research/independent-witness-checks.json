@@ -1,0 +1,381 @@
+{
+  "states": [
+    {
+      "n": 2,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        2
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "2": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 3,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        3
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "3": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 4,
+      "achievedOrder": 2,
+      "label": "Tetrahedron",
+      "support": [
+        0,
+        3
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(3)/3",
+        "3": "sqrt(6)/3"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        5
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "5": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 6,
+      "achievedOrder": 3,
+      "label": "Octahedron",
+      "support": [
+        1,
+        5
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(2)/2",
+        "5": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "1/3",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 7,
+      "achievedOrder": 2,
+      "label": "C3 seven-qubit state",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/3",
+        "3": "sqrt(14)/6",
+        "6": "sqrt(14)/6"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "3/10",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 8,
+      "achievedOrder": 3,
+      "label": "Cube",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(30)/12",
+        "4": "sqrt(21)/6",
+        "8": "sqrt(30)/12"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "7/30",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "Quantum 2020 Eq.65 chi0",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": {
+        "1": "-sqrt(21)/8",
+        "5": "sqrt(30)/8",
+        "9": "sqrt(13)/8"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "789/3136",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 10,
+      "achievedOrder": 3,
+      "label": "C4 ten-qubit state",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(5)/4",
+        "5": "sqrt(6)/4",
+        "9": "sqrt(5)/4"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "3/14",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 11,
+      "achievedOrder": 3,
+      "label": "New exact C3 eleven-qubit state",
+      "support": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "exactCoefficients": {
+        "1": "-35*sqrt(10)/288 + sqrt(10022)*I/288",
+        "4": "5*sqrt(3)/18",
+        "7": "5*sqrt(3)/18",
+        "10": "-35*sqrt(10)/288 + sqrt(10022)*I/288"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "42965/209088",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 12,
+      "achievedOrder": 5,
+      "label": "Icosahedron",
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        },
+        {
+          "t": 4,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/5"
+        },
+        {
+          "t": 5,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/6"
+        }
+      ],
+      "nextOrderPurity": "13/84",
+      "nextOrderFlatPurity": "1/7",
+      "representativeExactOrder": 5
+    }
+  ],
+  "nonexistenceIdentities": [
+    {
+      "n": 8,
+      "t": 4,
+      "J": 0,
+      "constant": "-4/27",
+      "multipoles": {
+        "1": "-1",
+        "2": "11/21",
+        "3": "11/14",
+        "4": "143/126"
+      }
+    },
+    {
+      "n": 10,
+      "t": 5,
+      "J": 6,
+      "constant": "-27/187",
+      "multipoles": {
+        "1": "-519/170",
+        "2": "-143/170",
+        "3": "754/255",
+        "4": "52/17",
+        "5": "520/561"
+      }
+    }
+  ],
+  "sourceMisprint": {
+    "n": 9,
+    "claimedOrderInTable": 3,
+    "actualVerifiedOrder": 2,
+    "rho3_03": "5/63 - sqrt(42)/126",
+    "rho3Purity": "4253/15876 - 10*sqrt(42)/3969",
+    "note": "PRResearch2022 TableIV q=3 is inconsistent with its own displayed vector; all rank1..2 vanish, rank3 does not."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "radical-n19-k1-t4",
+  "n": 19,
+  "t": 4,
+  "dimension": 1,
+  "label": "Five-component radical AC4 line",
+  "evidence": "exact",
+  "references": [
+    {
+      "label": "Exact sparse AC4 construction and verification",
+      "url": "research/n19-t4/index.html"
+    },
+    {
+      "label": "Exact Dicke coefficients",
+      "url": "research/n19-t4/basis.json"
+    },
+    {
+      "label": "Independent exact reduced-state verification",
+      "url": "research/n19-t4/verification.json"
+    },
+    {
+      "label": "Exact maximum AC4 dimension: plane exclusion",
+      "url": "research/n19-t4/exclusion/index.html"
+    }
+  ],
+  "notes": "A new exact AC4 witness, not asserted to equal the earlier numerical C3 state. The independent four-copy exclusion proves that no pure AC5 state exists on nineteen qubits, so the maximum pure-state AC order is four. A separate exact Young(2,2) positive-moment certificate excludes every AC4 plane, proving K(19,4)=1.",
+  "derivationLatex": "(p_0,p_6,p_{10},p_{14},p_{18})=\\left(\\frac{97}{800},\\frac{1083}{2560},\\frac{133}{12800},\\frac{741}{2560},\\frac{399}{2560}\\right)",
+  "basis": [
+    {
+      "id": "radical-n19-k1-t4-basis-1",
+      "n": 19,
+      "label": "Exact sparse fourth-order state",
+      "stateLatex": "|\\psi\\rangle=\\frac{\\sqrt{194}}{40}|D_{19}^{(0)}\\rangle+A|D_{19}^{(6)}\\rangle+\\frac{\\sqrt{266}}{160}|D_{19}^{(10)}\\rangle+\\frac{\\sqrt{7410}}{160}|D_{19}^{(14)}\\rangle+B|D_{19}^{(18)}\\rangle",
+      "coefficientDefinitionLatex": "\\begin{aligned}A&=-\\frac{9673\\sqrt{17290}}{5605600}-i\\frac{\\sqrt{2918881141085}}{2802800},\\\\B&=-\\frac{2837\\sqrt{323323}}{10210200}-i\\frac{\\sqrt{218332309353158}}{40840800}.\\end{aligned}",
+      "coefficients": [
+        [
+          0.34820970692960296,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.22690108882289908,
+          -0.6095594892141233
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.10193441518937557,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5380084804164336,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.15799501572298838,
+          -0.36179683526351175
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "exactCoefficients": [
+        "sqrt(194)/40",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-9673*sqrt(17290)/5605600 - sqrt(2918881141085)*I/2802800",
+        "0",
+        "0",
+        "0",
+        "sqrt(266)/160",
+        "0",
+        "0",
+        "0",
+        "sqrt(7410)/160",
+        "0",
+        "0",
+        "0",
+        "-2837*sqrt(323323)/10210200 - sqrt(218332309353158)*I/40840800",
+        "0"
+      ],
+      "evidence": "Exact AC4 witness. Majorana coordinates numerically render the exact Dicke coefficients."
+    }
+  ],
+  "verification": {
+    "exact": true,
+    "method": "Every reduced matrix entry through order4 checked exactly with independent standard-library squarefree-radical arithmetic.",
+    "orthogonalityError": 0,
+    "crossReductionError": 0,
+    "fifthOrderFrobeniusDistanceSquared": "8742251/10653696000"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "exactChecks": [
+    {
+      "n": 3,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 4,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 5,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 6,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": [
+        4
+      ]
+    },
+    {
+      "n": 7,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 8,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 9,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 10,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 11,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 12,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 13,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": [
+        9
+      ]
+    },
+    {
+      "n": 14,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 15,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 16,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 17,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 18,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 19,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 20,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 21,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 22,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 23,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    },
+    {
+      "n": 24,
+      "allRanksVerified": true,
+      "possibleAdditionalRank": []
+    }
+  ],
+  "generalExpansionCoefficients": [
+    "N\u00b2(N\u22121)\u00b2(N+2)\u00b2/24",
+    "N(N\u22121)\u00b2(N+2)(3N\u00b2+8N+12)/40",
+    "N(N\u22121)(N+2)(N+3)(N\u00b2\u22122N+4)/12",
+    "N(N\u22122)(N\u22121)(N+2)(N+3)(N+4)/20"
+  ],
+  "bound": "6k<=N",
+  "saturationNecessaryConditionForNdiv6andN>=12": "2L(L+1)=(N\u22121)(N+2) for some1<=L<=N",
+  "enumeratedPossibleSaturationExceptionsThroughN100000": [
+    [
+      6,
+      4
+    ],
+    [
+      78,
+      55
+    ],
+    [
+      7422,
+      5248
+    ],
+    [
+      90582,
+      64051
+    ]
+  ]
+}

@@ -1,0 +1,3829 @@
+{
+  "n": 23,
+  "t": 4,
+  "dimension": 2,
+  "method": "Unrestricted complex orthonormal-subspace least squares with an analytic Jacobian; independent normalized-Dicke reduced-matrix check after QR.",
+  "seed": 723402,
+  "jacobianDirectionalError": 1.4674994552876797e-10,
+  "attempts": [
+    {
+      "seedName": "random-0",
+      "residualL2": 0.09252761380854378,
+      "nfev": 128,
+      "status": 2,
+      "seconds": 0.10452466597780585,
+      "orthonormalityFrobenius": 2.673923791813939e-16,
+      "maxCrossReductionFrobenius": 0.011117420385025277,
+      "allOrderedCrossReductions": [
+        0.006592923417682385,
+        0.011117420385025277,
+        0.011117420385025277,
+        0.006367189162307714
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n18-k2-t3-pad0",
+      "residualL2": 0.09252761380854133,
+      "nfev": 165,
+      "status": 2,
+      "seconds": 0.12966824998147786,
+      "orthonormalityFrobenius": 3.2116664127858976e-16,
+      "maxCrossReductionFrobenius": 0.010416283470495585,
+      "allOrderedCrossReductions": [
+        0.007630713925712464,
+        0.010416283470495585,
+        0.010416283470495585,
+        0.007481712014189398
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n18-k2-t3-pad2",
+      "residualL2": 0.10051959595088934,
+      "nfev": 203,
+      "status": 2,
+      "seconds": 0.1610953330527991,
+      "orthonormalityFrobenius": 4.017046437196143e-16,
+      "maxCrossReductionFrobenius": 0.009855068914444466,
+      "allOrderedCrossReductions": [
+        0.008719936834669352,
+        0.009855068914444466,
+        0.009855068914444464,
+        0.0072378977629756515
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n18-k2-t3-pad5",
+      "residualL2": 0.09672317053529791,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.11402012500911951,
+      "orthonormalityFrobenius": 1.190234885354162e-16,
+      "maxCrossReductionFrobenius": 0.009481138605221567,
+      "allOrderedCrossReductions": [
+        0.009223605841909269,
+        0.009481138605221567,
+        0.009481138605221566,
+        0.009223606351948133
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "molien-octahedral-n24-d2-t3-contract0",
+      "residualL2": 0.09672317053529722,
+      "nfev": 171,
+      "status": 2,
+      "seconds": 0.14537549996748567,
+      "orthonormalityFrobenius": 3.501715168360422e-16,
+      "maxCrossReductionFrobenius": 0.010476559580700654,
+      "allOrderedCrossReductions": [
+        0.00807516271784708,
+        0.010476559580700652,
+        0.010476559580700654,
+        0.008075159707645371
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "molien-octahedral-n24-d2-t3-contract1",
+      "residualL2": 0.09672317053527811,
+      "nfev": 130,
+      "status": 2,
+      "seconds": 0.11274820799008012,
+      "orthonormalityFrobenius": 7.190615014419015e-16,
+      "maxCrossReductionFrobenius": 0.010082911634723664,
+      "allOrderedCrossReductions": [
+        0.00856162508754583,
+        0.010082911634723664,
+        0.010082911634723664,
+        0.008561624955588364
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n19-k2-t3-pad0",
+      "residualL2": 0.11330565151805415,
+      "nfev": 159,
+      "status": 2,
+      "seconds": 0.13503420795314014,
+      "orthonormalityFrobenius": 3.1696928315488677e-16,
+      "maxCrossReductionFrobenius": 0.012641959058033706,
+      "allOrderedCrossReductions": [
+        0.010832255477311356,
+        0.012641959058033706,
+        0.012641959058033704,
+        0.01077743602352674
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n19-k2-t3-pad2",
+      "residualL2": 0.15466357375191409,
+      "nfev": 1500,
+      "status": 0,
+      "seconds": 1.2104199999012053,
+      "orthonormalityFrobenius": 5.002001356419242e-16,
+      "maxCrossReductionFrobenius": 0.019974584768724407,
+      "allOrderedCrossReductions": [
+        0.019974584768724407,
+        0.015710873518438508,
+        0.015710873518438504,
+        0.019974584768724372
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n19-k2-t3-pad4",
+      "residualL2": 0.11330565151804002,
+      "nfev": 165,
+      "status": 2,
+      "seconds": 0.13544516707770526,
+      "orthonormalityFrobenius": 8.083687117340536e-16,
+      "maxCrossReductionFrobenius": 0.012646864598002521,
+      "allOrderedCrossReductions": [
+        0.01073776183946315,
+        0.012646864598002521,
+        0.01264686459800252,
+        0.010860167861326467
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n20-k2-t3-pad0",
+      "residualL2": 0.1546635739600981,
+      "nfev": 1500,
+      "status": 0,
+      "seconds": 1.304381167050451,
+      "orthonormalityFrobenius": 1.1120106121648033e-16,
+      "maxCrossReductionFrobenius": 0.023883508507377964,
+      "allOrderedCrossReductions": [
+        0.023883508507377964,
+        0.008682950799430315,
+        0.008682950799430315,
+        0.023883508507366095
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n20-k2-t3-pad1",
+      "residualL2": 0.092527613808549,
+      "nfev": 105,
+      "status": 2,
+      "seconds": 0.08629195811226964,
+      "orthonormalityFrobenius": 4.579575677246795e-16,
+      "maxCrossReductionFrobenius": 0.00940981120737301,
+      "allOrderedCrossReductions": [
+        0.008783417491236834,
+        0.00940981120737301,
+        0.00940981120737301,
+        0.008772929273145469
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "radical-n20-k2-t3-pad3",
+      "residualL2": 0.09252761380856322,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.08786570886150002,
+      "orthonormalityFrobenius": 2.225840627446376e-16,
+      "maxCrossReductionFrobenius": 0.009419771468279204,
+      "allOrderedCrossReductions": [
+        0.008763576348437734,
+        0.009419771468279204,
+        0.009419771468279204,
+        0.008771392269746553
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_18_2_3-pad0",
+      "residualL2": 0.09252761380854428,
+      "nfev": 155,
+      "status": 2,
+      "seconds": 0.12546975002624094,
+      "orthonormalityFrobenius": 2.5076106060046846e-16,
+      "maxCrossReductionFrobenius": 0.009885636956167105,
+      "allOrderedCrossReductions": [
+        0.008187304592012315,
+        0.009885636956167104,
+        0.009885636956167105,
+        0.00828964232901628
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_18_2_3-pad2",
+      "residualL2": 0.09252761380857112,
+      "nfev": 184,
+      "status": 2,
+      "seconds": 0.14518295787274837,
+      "orthonormalityFrobenius": 3.404161335842433e-16,
+      "maxCrossReductionFrobenius": 0.010140347590104907,
+      "allOrderedCrossReductions": [
+        0.007862315318477931,
+        0.010140347590104907,
+        0.010140347590104907,
+        0.007983260639543478
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_18_2_3-pad5",
+      "residualL2": 0.10051959595088536,
+      "nfev": 199,
+      "status": 2,
+      "seconds": 0.16338670812547207,
+      "orthonormalityFrobenius": 6.475343827103027e-16,
+      "maxCrossReductionFrobenius": 0.009849465595096966,
+      "allOrderedCrossReductions": [
+        0.007238254292176996,
+        0.009849465595096966,
+        0.009849465595096966,
+        0.008732294018661107
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_19_2_3-pad0",
+      "residualL2": 0.10264321265719471,
+      "nfev": 109,
+      "status": 2,
+      "seconds": 0.09115291596390307,
+      "orthonormalityFrobenius": 4.834224758267388e-17,
+      "maxCrossReductionFrobenius": 0.012821556563407053,
+      "allOrderedCrossReductions": [
+        0.008859708979340644,
+        0.012821556563407051,
+        0.012821556563407053,
+        0.008859708417475338
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_19_2_3-pad2",
+      "residualL2": 0.1546635736876864,
+      "nfev": 1295,
+      "status": 2,
+      "seconds": 1.059806166915223,
+      "orthonormalityFrobenius": 3.253372500341213e-16,
+      "maxCrossReductionFrobenius": 0.01951526545269114,
+      "allOrderedCrossReductions": [
+        0.01951526545269114,
+        0.016277898774101907,
+        0.016277898774101907,
+        0.019515265452691083
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_19_2_3-pad4",
+      "residualL2": 0.10264321265722837,
+      "nfev": 107,
+      "status": 2,
+      "seconds": 0.08749208296649158,
+      "orthonormalityFrobenius": 2.519334579175518e-16,
+      "maxCrossReductionFrobenius": 0.012891364690238492,
+      "allOrderedCrossReductions": [
+        0.00875782302274974,
+        0.012891364690238492,
+        0.012891364690238492,
+        0.008757823394377948
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_20_2_3-pad0",
+      "residualL2": 0.1546635736910682,
+      "nfev": 1500,
+      "status": 0,
+      "seconds": 1.2445832919329405,
+      "orthonormalityFrobenius": 2.4886500996434837e-16,
+      "maxCrossReductionFrobenius": 0.023883629678499912,
+      "allOrderedCrossReductions": [
+        0.023883629678499912,
+        0.008682615276624076,
+        0.008682615276624076,
+        0.023883629678497702
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_20_2_3-pad1",
+      "residualL2": 0.09252761380851875,
+      "nfev": 134,
+      "status": 2,
+      "seconds": 0.10641258303076029,
+      "orthonormalityFrobenius": 4.0207940943190357e-16,
+      "maxCrossReductionFrobenius": 0.009451618946397925,
+      "allOrderedCrossReductions": [
+        0.008715114541931922,
+        0.009451618946397925,
+        0.009451618946397925,
+        0.008751132195937218
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "acliege-\u03a0_20_2_3-pad3",
+      "residualL2": 0.09672317053529543,
+      "nfev": 116,
+      "status": 2,
+      "seconds": 0.10242016683332622,
+      "orthonormalityFrobenius": 2.5608748773537923e-16,
+      "maxCrossReductionFrobenius": 0.009378729769308494,
+      "allOrderedCrossReductions": [
+        0.009327717366054696,
+        0.009378729769308492,
+        0.009378729769308494,
+        0.009327717835387871
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n21-t3-k2-pad0",
+      "residualL2": 0.10345804873188166,
+      "nfev": 161,
+      "status": 2,
+      "seconds": 0.13744004187174141,
+      "orthonormalityFrobenius": 5.599729811783598e-16,
+      "maxCrossReductionFrobenius": 0.009564695660563727,
+      "allOrderedCrossReductions": [
+        0.008601664005225195,
+        0.009564695660563722,
+        0.009564695660563727,
+        0.008601624092501628
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n21-t3-k2-pad1",
+      "residualL2": 0.10345804873186691,
+      "nfev": 183,
+      "status": 2,
+      "seconds": 0.15501762507483363,
+      "orthonormalityFrobenius": 3.1643624826509613e-16,
+      "maxCrossReductionFrobenius": 0.009623999221838854,
+      "allOrderedCrossReductions": [
+        0.00853519948800184,
+        0.00962399922183885,
+        0.009623999221838854,
+        0.008535271589306148
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n21-t3-k2-pad2",
+      "residualL2": 0.11330565151795419,
+      "nfev": 129,
+      "status": 2,
+      "seconds": 0.10670375009067357,
+      "orthonormalityFrobenius": 4.0731277592433174e-16,
+      "maxCrossReductionFrobenius": 0.012166304147424716,
+      "allOrderedCrossReductions": [
+        0.012166304147424716,
+        0.011624684464572864,
+        0.011624684464572866,
+        0.011612218100281117
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n22-t3-k2-pad0",
+      "residualL2": 0.09788470375272756,
+      "nfev": 87,
+      "status": 2,
+      "seconds": 0.07597141596488655,
+      "orthonormalityFrobenius": 5.66968318382005e-16,
+      "maxCrossReductionFrobenius": 0.011042953102854072,
+      "allOrderedCrossReductions": [
+        0.011042953102854072,
+        0.010053674838426625,
+        0.010053674838426627,
+        0.007617651340361411
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n22-t3-k2-pad1",
+      "residualL2": 0.09252761380853514,
+      "nfev": 115,
+      "status": 2,
+      "seconds": 0.08836187492124736,
+      "orthonormalityFrobenius": 9.236014591352422e-16,
+      "maxCrossReductionFrobenius": 0.009391213469517918,
+      "allOrderedCrossReductions": [
+        0.008755049486670975,
+        0.009391213469517918,
+        0.009391213469517917,
+        0.008840879659890489
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "local-n23-t3-k2-pad0",
+      "residualL2": 0.0925276138085674,
+      "nfev": 117,
+      "status": 2,
+      "seconds": 0.09561333293095231,
+      "orthonormalityFrobenius": 3.1550484030803097e-16,
+      "maxCrossReductionFrobenius": 0.009104734345600395,
+      "allOrderedCrossReductions": [
+        0.009089907703479982,
+        0.009104734345600394,
+        0.009104734345600395,
+        0.009098513848954907
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-1",
+      "residualL2": 0.10264321265716313,
+      "nfev": 45,
+      "status": 2,
+      "seconds": 0.03707329207099974,
+      "orthonormalityFrobenius": 5.820928200186958e-16,
+      "maxCrossReductionFrobenius": 0.01263134831437246,
+      "allOrderedCrossReductions": [
+        0.009128843862682609,
+        0.012631348314372457,
+        0.01263134831437246,
+        0.009128843909147026
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-2",
+      "residualL2": 0.09252761380848246,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.10956429084762931,
+      "orthonormalityFrobenius": 7.592742554595623e-16,
+      "maxCrossReductionFrobenius": 0.010325728775005745,
+      "allOrderedCrossReductions": [
+        0.007752744307525895,
+        0.010325728775005745,
+        0.010325728775005745,
+        0.007606273756638697
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-3",
+      "residualL2": 0.0925276138085169,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.10908633284270763,
+      "orthonormalityFrobenius": 8.700393060066825e-16,
+      "maxCrossReductionFrobenius": 0.009226035249039137,
+      "allOrderedCrossReductions": [
+        0.008943774587223776,
+        0.009226035249039137,
+        0.009226035249039137,
+        0.008998398747400145
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-4",
+      "residualL2": 0.10825362535567415,
+      "nfev": 86,
+      "status": 2,
+      "seconds": 0.06348183401860297,
+      "orthonormalityFrobenius": 7.058828795539828e-16,
+      "maxCrossReductionFrobenius": 0.011736872266465078,
+      "allOrderedCrossReductions": [
+        0.010491165406146162,
+        0.011736872266465075,
+        0.011736872266465078,
+        0.010491165572227432
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-5",
+      "residualL2": 0.09788470375273514,
+      "nfev": 124,
+      "status": 2,
+      "seconds": 0.1064407080411911,
+      "orthonormalityFrobenius": 5.124175095213401e-16,
+      "maxCrossReductionFrobenius": 0.01122884533105503,
+      "allOrderedCrossReductions": [
+        0.01122884533105503,
+        0.008791259273547103,
+        0.0087912592735471,
+        0.010073170555729921
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-6",
+      "residualL2": 0.10345804873181566,
+      "nfev": 210,
+      "status": 2,
+      "seconds": 0.16990208392962813,
+      "orthonormalityFrobenius": 2.2356150458533744e-16,
+      "maxCrossReductionFrobenius": 0.009659787909548436,
+      "allOrderedCrossReductions": [
+        0.008494736595860714,
+        0.009659787909548436,
+        0.009659787909548436,
+        0.00849469352535824
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-7",
+      "residualL2": 0.10264321265721725,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.07068533287383616,
+      "orthonormalityFrobenius": 4.971728153082192e-16,
+      "maxCrossReductionFrobenius": 0.012961404406542316,
+      "allOrderedCrossReductions": [
+        0.008653826444958527,
+        0.012961404406542313,
+        0.012961404406542316,
+        0.00865383044300522
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-8",
+      "residualL2": 0.10825362535567863,
+      "nfev": 96,
+      "status": 2,
+      "seconds": 0.08012000005692244,
+      "orthonormalityFrobenius": 4.452622023065766e-16,
+      "maxCrossReductionFrobenius": 0.01186620467026545,
+      "allOrderedCrossReductions": [
+        0.010344659476033165,
+        0.011866204670265449,
+        0.01186620467026545,
+        0.010344654319744743
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-9",
+      "residualL2": 0.09252761380856012,
+      "nfev": 105,
+      "status": 2,
+      "seconds": 0.0830495001282543,
+      "orthonormalityFrobenius": 4.581975831963472e-16,
+      "maxCrossReductionFrobenius": 0.009349828292824588,
+      "allOrderedCrossReductions": [
+        0.008799648610085076,
+        0.009349828292824588,
+        0.009349828292824588,
+        0.008884218735410752
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-10",
+      "residualL2": 0.09252761380851347,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.08746095886453986,
+      "orthonormalityFrobenius": 4.755034595301885e-16,
+      "maxCrossReductionFrobenius": 0.010215730647567393,
+      "allOrderedCrossReductions": [
+        0.007898104564646687,
+        0.010215730647567393,
+        0.010215730647567391,
+        0.0077523799317856705
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-11",
+      "residualL2": 0.0925276138085213,
+      "nfev": 101,
+      "status": 2,
+      "seconds": 0.08161712507717311,
+      "orthonormalityFrobenius": 3.1913677962383526e-16,
+      "maxCrossReductionFrobenius": 0.009394947711126176,
+      "allOrderedCrossReductions": [
+        0.009370630854372654,
+        0.008807041562851206,
+        0.008807041562851205,
+        0.009394947711126176
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-12",
+      "residualL2": 0.09252761380854463,
+      "nfev": 148,
+      "status": 2,
+      "seconds": 0.11577824992127717,
+      "orthonormalityFrobenius": 1.2251668850872908e-16,
+      "maxCrossReductionFrobenius": 0.009180368186068835,
+      "allOrderedCrossReductions": [
+        0.009146864181259767,
+        0.009034861361570489,
+        0.009034861361570487,
+        0.009180368186068835
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-13",
+      "residualL2": 0.09788470375282529,
+      "nfev": 161,
+      "status": 2,
+      "seconds": 0.13566545792855322,
+      "orthonormalityFrobenius": 6.665797831119425e-16,
+      "maxCrossReductionFrobenius": 0.011195039667814516,
+      "allOrderedCrossReductions": [
+        0.009602967980523909,
+        0.011195039667814516,
+        0.011195039667814514,
+        0.006265251720555763
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-14",
+      "residualL2": 0.10051959595069851,
+      "nfev": 171,
+      "status": 2,
+      "seconds": 0.13871254213154316,
+      "orthonormalityFrobenius": 2.3915766238579755e-16,
+      "maxCrossReductionFrobenius": 0.011418389318637567,
+      "allOrderedCrossReductions": [
+        0.011418389318637567,
+        0.008600596859278206,
+        0.008600596859278208,
+        0.006659510622645869
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-15",
+      "residualL2": 0.09788470375283191,
+      "nfev": 91,
+      "status": 2,
+      "seconds": 0.0793301248922944,
+      "orthonormalityFrobenius": 8.174694285439645e-16,
+      "maxCrossReductionFrobenius": 0.011133030757585956,
+      "allOrderedCrossReductions": [
+        0.006425908515399295,
+        0.011133030757585956,
+        0.011133030757585956,
+        0.009640910749741879
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-16",
+      "residualL2": 0.10264321265722343,
+      "nfev": 73,
+      "status": 2,
+      "seconds": 0.06125208386220038,
+      "orthonormalityFrobenius": 2.276784959594036e-16,
+      "maxCrossReductionFrobenius": 0.012857425891527129,
+      "allOrderedCrossReductions": [
+        0.012857425891527129,
+        0.008807579821054972,
+        0.008807579821054973,
+        0.012857417185956696
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-17",
+      "residualL2": 0.1082536253557279,
+      "nfev": 94,
+      "status": 2,
+      "seconds": 0.07188212499022484,
+      "orthonormalityFrobenius": 7.053442073933985e-16,
+      "maxCrossReductionFrobenius": 0.011820512838991156,
+      "allOrderedCrossReductions": [
+        0.010396836077115848,
+        0.011820512838991153,
+        0.011820512838991156,
+        0.010396843922026807
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-18",
+      "residualL2": 0.09252761380856318,
+      "nfev": 111,
+      "status": 2,
+      "seconds": 0.08913966687396169,
+      "orthonormalityFrobenius": 6.621670039240504e-16,
+      "maxCrossReductionFrobenius": 0.009358214305441334,
+      "allOrderedCrossReductions": [
+        0.008848724258878615,
+        0.009358214305441334,
+        0.009358214305441334,
+        0.00881756656371034
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-19",
+      "residualL2": 0.11330565151804885,
+      "nfev": 127,
+      "status": 2,
+      "seconds": 0.10455349995754659,
+      "orthonormalityFrobenius": 4.556016299546017e-16,
+      "maxCrossReductionFrobenius": 0.012047296421716898,
+      "allOrderedCrossReductions": [
+        0.011671227288877607,
+        0.011657063226129956,
+        0.011657063226129956,
+        0.012047296421716898
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-20",
+      "residualL2": 0.09788470375276011,
+      "nfev": 147,
+      "status": 2,
+      "seconds": 0.12916700006462634,
+      "orthonormalityFrobenius": 4.823381927765489e-16,
+      "maxCrossReductionFrobenius": 0.01119731654924807,
+      "allOrderedCrossReductions": [
+        0.01119731654924807,
+        0.009565325577470503,
+        0.009565325577470503,
+        0.008588213309083145
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-21",
+      "residualL2": 0.09252761380852777,
+      "nfev": 120,
+      "status": 2,
+      "seconds": 0.0971908331848681,
+      "orthonormalityFrobenius": 3.112783840126889e-17,
+      "maxCrossReductionFrobenius": 0.01006187126727482,
+      "allOrderedCrossReductions": [
+        0.00796279708529978,
+        0.01006187126727482,
+        0.010061871267274817,
+        0.008081652769964727
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-22",
+      "residualL2": 0.09788470375282868,
+      "nfev": 77,
+      "status": 2,
+      "seconds": 0.06823487486690283,
+      "orthonormalityFrobenius": 4.454977994469634e-16,
+      "maxCrossReductionFrobenius": 0.011287283276762572,
+      "allOrderedCrossReductions": [
+        0.007767187317533112,
+        0.009858910213539993,
+        0.009858910213539991,
+        0.011287283276762572
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-23",
+      "residualL2": 0.09672317053530408,
+      "nfev": 115,
+      "status": 2,
+      "seconds": 0.10099479206837714,
+      "orthonormalityFrobenius": 1.3287700949871617e-16,
+      "maxCrossReductionFrobenius": 0.011509436459693278,
+      "allOrderedCrossReductions": [
+        0.006519155349757373,
+        0.011509436459693278,
+        0.011509436459693278,
+        0.006519155758381277
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-24",
+      "residualL2": 0.10825362535569093,
+      "nfev": 85,
+      "status": 2,
+      "seconds": 0.06467954209074378,
+      "orthonormalityFrobenius": 6.294099996771446e-16,
+      "maxCrossReductionFrobenius": 0.01162902531962819,
+      "allOrderedCrossReductions": [
+        0.011629020647091322,
+        0.010610589358227722,
+        0.010610589358227724,
+        0.01162902531962819
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-25",
+      "residualL2": 0.09252761380852632,
+      "nfev": 92,
+      "status": 2,
+      "seconds": 0.07488808408379555,
+      "orthonormalityFrobenius": 3.8028454415652774e-16,
+      "maxCrossReductionFrobenius": 0.009885443313529155,
+      "allOrderedCrossReductions": [
+        0.008289822622562323,
+        0.009885443313529153,
+        0.009885443313529155,
+        0.008187591013367468
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-26",
+      "residualL2": 0.10825362535568397,
+      "nfev": 142,
+      "status": 2,
+      "seconds": 0.10979224997572601,
+      "orthonormalityFrobenius": 5.029894728266054e-16,
+      "maxCrossReductionFrobenius": 0.01296071640595425,
+      "allOrderedCrossReductions": [
+        0.008935244611141627,
+        0.01296071640595425,
+        0.012960716405954245,
+        0.008935247951181143
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-27",
+      "residualL2": 0.09252761380853268,
+      "nfev": 157,
+      "status": 2,
+      "seconds": 0.12841933290474117,
+      "orthonormalityFrobenius": 1.0021782097448778e-15,
+      "maxCrossReductionFrobenius": 0.009923052253746067,
+      "allOrderedCrossReductions": [
+        0.008145863735091961,
+        0.009923052253746062,
+        0.009923052253746067,
+        0.008240920638066973
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-28",
+      "residualL2": 0.10247921731405664,
+      "nfev": 73,
+      "status": 2,
+      "seconds": 0.058680125046521425,
+      "orthonormalityFrobenius": 7.102328536953928e-16,
+      "maxCrossReductionFrobenius": 0.010503944414620074,
+      "allOrderedCrossReductions": [
+        0.009679880945167653,
+        0.010503944414620074,
+        0.010503944414620074,
+        0.009812212349977303
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-29",
+      "residualL2": 0.09252761380854864,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.10022533289156854,
+      "orthonormalityFrobenius": 4.516369455781723e-16,
+      "maxCrossReductionFrobenius": 0.010865130739205087,
+      "allOrderedCrossReductions": [
+        0.006993212076449818,
+        0.010865130739205087,
+        0.010865130739205083,
+        0.006796659524483022
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-30",
+      "residualL2": 0.10051959595087973,
+      "nfev": 134,
+      "status": 2,
+      "seconds": 0.11114316689781845,
+      "orthonormalityFrobenius": 4.0497393169518274e-16,
+      "maxCrossReductionFrobenius": 0.010250318227595867,
+      "allOrderedCrossReductions": [
+        0.010250318227595867,
+        0.009484706490615207,
+        0.009484706490615204,
+        0.006138476264608572
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-31",
+      "residualL2": 0.10345804873188459,
+      "nfev": 218,
+      "status": 2,
+      "seconds": 0.1797196250408888,
+      "orthonormalityFrobenius": 6.436206790537969e-16,
+      "maxCrossReductionFrobenius": 0.009591324565385622,
+      "allOrderedCrossReductions": [
+        0.008571918938205931,
+        0.009591324565385617,
+        0.009591324565385622,
+        0.008571957554263718
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-32",
+      "residualL2": 0.10345804873187874,
+      "nfev": 159,
+      "status": 2,
+      "seconds": 0.12773787486366928,
+      "orthonormalityFrobenius": 2.2817845294982355e-16,
+      "maxCrossReductionFrobenius": 0.00960550873513236,
+      "allOrderedCrossReductions": [
+        0.008556024734535341,
+        0.00960550873513236,
+        0.009605508735132356,
+        0.008556054382088046
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-33",
+      "residualL2": 0.09252761380852183,
+      "nfev": 141,
+      "status": 2,
+      "seconds": 0.1153381250333041,
+      "orthonormalityFrobenius": 3.353400978661549e-16,
+      "maxCrossReductionFrobenius": 0.010383787128530225,
+      "allOrderedCrossReductions": [
+        0.007676472259732601,
+        0.010383787128530225,
+        0.010383787128530221,
+        0.007525125165375467
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-34",
+      "residualL2": 0.0925276138085626,
+      "nfev": 133,
+      "status": 2,
+      "seconds": 0.1038081250153482,
+      "orthonormalityFrobenius": 2.4713273134847576e-16,
+      "maxCrossReductionFrobenius": 0.00947274774048058,
+      "allOrderedCrossReductions": [
+        0.008724465919465924,
+        0.00947274774048058,
+        0.009472747740480578,
+        0.008695950417010245
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-35",
+      "residualL2": 0.09252761380855089,
+      "nfev": 107,
+      "status": 2,
+      "seconds": 0.08414087491109967,
+      "orthonormalityFrobenius": 7.138596785519492e-16,
+      "maxCrossReductionFrobenius": 0.010061195015960325,
+      "allOrderedCrossReductions": [
+        0.008081201754072037,
+        0.010061195015960324,
+        0.010061195015960325,
+        0.007964963923580919
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-36",
+      "residualL2": 0.09252761380851658,
+      "nfev": 121,
+      "status": 2,
+      "seconds": 0.09481637482531369,
+      "orthonormalityFrobenius": 4.973920331197431e-16,
+      "maxCrossReductionFrobenius": 0.009419183028521811,
+      "allOrderedCrossReductions": [
+        0.008738805622276283,
+        0.009419183028521811,
+        0.009419183028521811,
+        0.00879733226536188
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-37",
+      "residualL2": 0.0978847037528242,
+      "nfev": 128,
+      "status": 2,
+      "seconds": 0.11064504203386605,
+      "orthonormalityFrobenius": 1.2375284165690256e-16,
+      "maxCrossReductionFrobenius": 0.010931527339394731,
+      "allOrderedCrossReductions": [
+        0.010046764894583176,
+        0.01093152733939473,
+        0.010931527339394731,
+        0.006495701899610639
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-38",
+      "residualL2": 0.09252761380853683,
+      "nfev": 127,
+      "status": 2,
+      "seconds": 0.10215791687369347,
+      "orthonormalityFrobenius": 5.714154387716553e-16,
+      "maxCrossReductionFrobenius": 0.01000394949650176,
+      "allOrderedCrossReductions": [
+        0.008151225987298645,
+        0.01000394949650176,
+        0.01000394949650176,
+        0.008037489370539753
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-39",
+      "residualL2": 0.0967231705352918,
+      "nfev": 97,
+      "status": 2,
+      "seconds": 0.08784204116091132,
+      "orthonormalityFrobenius": 4.446593276440666e-16,
+      "maxCrossReductionFrobenius": 0.01113103111054919,
+      "allOrderedCrossReductions": [
+        0.007146121457284129,
+        0.01113103111054919,
+        0.01113103111054919,
+        0.007146120540021448
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-40",
+      "residualL2": 0.09252761380849561,
+      "nfev": 153,
+      "status": 2,
+      "seconds": 0.11833870806731284,
+      "orthonormalityFrobenius": 4.498184771061184e-16,
+      "maxCrossReductionFrobenius": 0.010975140857021852,
+      "allOrderedCrossReductions": [
+        0.0068220412398627885,
+        0.01097514085702185,
+        0.010975140857021852,
+        0.00661468867780806
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-41",
+      "residualL2": 0.09252761380856542,
+      "nfev": 126,
+      "status": 2,
+      "seconds": 0.09866237500682473,
+      "orthonormalityFrobenius": 7.73393057865517e-16,
+      "maxCrossReductionFrobenius": 0.009411518549424413,
+      "allOrderedCrossReductions": [
+        0.009403813777244583,
+        0.008780471409123431,
+        0.00878047140912343,
+        0.009411518549424413
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-42",
+      "residualL2": 0.09252761380852893,
+      "nfev": 110,
+      "status": 2,
+      "seconds": 0.08742050011642277,
+      "orthonormalityFrobenius": 2.382761742575801e-16,
+      "maxCrossReductionFrobenius": 0.01106123961637917,
+      "allOrderedCrossReductions": [
+        0.006466231304760681,
+        0.01106123961637917,
+        0.011061239616379167,
+        0.006684877582164336
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-43",
+      "residualL2": 0.09672317053530455,
+      "nfev": 97,
+      "status": 2,
+      "seconds": 0.08643541601486504,
+      "orthonormalityFrobenius": 3.174300658658928e-16,
+      "maxCrossReductionFrobenius": 0.011027878917108474,
+      "allOrderedCrossReductions": [
+        0.007304299805770565,
+        0.011027878917108472,
+        0.011027878917108474,
+        0.007304299722622795
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-44",
+      "residualL2": 0.18419346462313047,
+      "nfev": 204,
+      "status": 2,
+      "seconds": 0.16484616580419242,
+      "orthonormalityFrobenius": 5.53143646305761e-16,
+      "maxCrossReductionFrobenius": 0.027304906910418716,
+      "allOrderedCrossReductions": [
+        0.021729909814426587,
+        0.027304906910418716,
+        0.027304906910418716,
+        0.0217299132773225
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-45",
+      "residualL2": 0.09252761380850545,
+      "nfev": 164,
+      "status": 2,
+      "seconds": 0.129441041033715,
+      "orthonormalityFrobenius": 2.263009265514642e-16,
+      "maxCrossReductionFrobenius": 0.009331542596654821,
+      "allOrderedCrossReductions": [
+        0.009331542596654821,
+        0.008885427629532035,
+        0.008885427629532039,
+        0.009285602211130988
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-46",
+      "residualL2": 0.1026432126572169,
+      "nfev": 89,
+      "status": 2,
+      "seconds": 0.0688511251937598,
+      "orthonormalityFrobenius": 1.2359357194926455e-16,
+      "maxCrossReductionFrobenius": 0.012886338491200147,
+      "allOrderedCrossReductions": [
+        0.008765217747022944,
+        0.012886338491200147,
+        0.012886338491200147,
+        0.008765216499667166
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-47",
+      "residualL2": 0.0925276138085692,
+      "nfev": 115,
+      "status": 2,
+      "seconds": 0.09042450017295778,
+      "orthonormalityFrobenius": 1.1114580001388692e-15,
+      "maxCrossReductionFrobenius": 0.009641292397816137,
+      "allOrderedCrossReductions": [
+        0.008569833968477715,
+        0.009641292397816137,
+        0.009641292397816135,
+        0.008476476782546722
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-48",
+      "residualL2": 0.1841934646231312,
+      "nfev": 188,
+      "status": 2,
+      "seconds": 0.14843733282759786,
+      "orthonormalityFrobenius": 3.4965261484749435e-16,
+      "maxCrossReductionFrobenius": 0.03050664933911588,
+      "allOrderedCrossReductions": [
+        0.016943769087287012,
+        0.03050664933911588,
+        0.030506649339115878,
+        0.01694377099921411
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-49",
+      "residualL2": 0.09252761380853047,
+      "nfev": 117,
+      "status": 2,
+      "seconds": 0.0957366251386702,
+      "orthonormalityFrobenius": 5.592620828265598e-16,
+      "maxCrossReductionFrobenius": 0.009283862729402667,
+      "allOrderedCrossReductions": [
+        0.009283862729402667,
+        0.008922932838101083,
+        0.008922932838101085,
+        0.00926143405907426
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-50",
+      "residualL2": 0.09252761380852148,
+      "nfev": 112,
+      "status": 2,
+      "seconds": 0.08910029102116823,
+      "orthonormalityFrobenius": 6.700358938383648e-16,
+      "maxCrossReductionFrobenius": 0.009402751562915933,
+      "allOrderedCrossReductions": [
+        0.008790569069243682,
+        0.009402751562915932,
+        0.009402751562915933,
+        0.008780897354670407
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-51",
+      "residualL2": 0.09788470375282983,
+      "nfev": 84,
+      "status": 2,
+      "seconds": 0.0733150839805603,
+      "orthonormalityFrobenius": 6.149556026925472e-16,
+      "maxCrossReductionFrobenius": 0.011479122762509328,
+      "allOrderedCrossReductions": [
+        0.0054309470056419585,
+        0.010508633287583466,
+        0.010508633287583467,
+        0.011479122762509328
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-52",
+      "residualL2": 0.09252761380854943,
+      "nfev": 137,
+      "status": 2,
+      "seconds": 0.10754412482492626,
+      "orthonormalityFrobenius": 6.412370673049114e-16,
+      "maxCrossReductionFrobenius": 0.010185596965146428,
+      "allOrderedCrossReductions": [
+        0.007803374197142797,
+        0.010185596965146428,
+        0.010185596965146424,
+        0.007925676667611408
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-53",
+      "residualL2": 0.09252761380856821,
+      "nfev": 139,
+      "status": 2,
+      "seconds": 0.11067083408124745,
+      "orthonormalityFrobenius": 5.580356410406403e-16,
+      "maxCrossReductionFrobenius": 0.009419685629921695,
+      "allOrderedCrossReductions": [
+        0.008756951259977079,
+        0.009419685629921695,
+        0.009419685629921695,
+        0.00877819206850034
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-54",
+      "residualL2": 0.09252761380852063,
+      "nfev": 111,
+      "status": 2,
+      "seconds": 0.09077212493866682,
+      "orthonormalityFrobenius": 5.623679099789302e-16,
+      "maxCrossReductionFrobenius": 0.009236386671592175,
+      "allOrderedCrossReductions": [
+        0.008970561675964566,
+        0.009236386671592175,
+        0.009236386671592173,
+        0.008950367706364162
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-55",
+      "residualL2": 0.09252761380859036,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.11246662517078221,
+      "orthonormalityFrobenius": 5.024253963501718e-16,
+      "maxCrossReductionFrobenius": 0.011075345437700624,
+      "allOrderedCrossReductions": [
+        0.006440714379702982,
+        0.011075345437700624,
+        0.011075345437700623,
+        0.006662765505368327
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-56",
+      "residualL2": 0.09252761380853769,
+      "nfev": 66,
+      "status": 2,
+      "seconds": 0.04748208401724696,
+      "orthonormalityFrobenius": 6.076150649114298e-17,
+      "maxCrossReductionFrobenius": 0.010543606616644653,
+      "allOrderedCrossReductions": [
+        0.007291266780935524,
+        0.01054360661664465,
+        0.010543606616644653,
+        0.007463505753026305
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-57",
+      "residualL2": 0.108253625355665,
+      "nfev": 173,
+      "status": 2,
+      "seconds": 0.1360627501271665,
+      "orthonormalityFrobenius": 8.465310797704638e-16,
+      "maxCrossReductionFrobenius": 0.011748412762719575,
+      "allOrderedCrossReductions": [
+        0.010478245502098874,
+        0.011748412762719575,
+        0.011748412762719575,
+        0.010478242828097607
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-58",
+      "residualL2": 0.09252761380852233,
+      "nfev": 116,
+      "status": 2,
+      "seconds": 0.09172099991701543,
+      "orthonormalityFrobenius": 3.1839930254774983e-16,
+      "maxCrossReductionFrobenius": 0.009842800302494811,
+      "allOrderedCrossReductions": [
+        0.008339584283479456,
+        0.009842800302494811,
+        0.009842800302494811,
+        0.008239640951624064
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-59",
+      "residualL2": 0.10051959595069744,
+      "nfev": 165,
+      "status": 2,
+      "seconds": 0.1362837920896709,
+      "orthonormalityFrobenius": 4.111752643616977e-16,
+      "maxCrossReductionFrobenius": 0.009668849752762427,
+      "allOrderedCrossReductions": [
+        0.009335057258287949,
+        0.009668849752762427,
+        0.009668849752762427,
+        0.0069679712928492265
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-60",
+      "residualL2": 0.09252761380846461,
+      "nfev": 140,
+      "status": 2,
+      "seconds": 0.10786654218100011,
+      "orthonormalityFrobenius": 3.447201834800614e-16,
+      "maxCrossReductionFrobenius": 0.00951507339930703,
+      "allOrderedCrossReductions": [
+        0.008712408558357136,
+        0.00951507339930703,
+        0.00951507339930703,
+        0.008615248083240669
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-61",
+      "residualL2": 0.09672317053530115,
+      "nfev": 155,
+      "status": 2,
+      "seconds": 0.13207862502895296,
+      "orthonormalityFrobenius": 3.6943392593883515e-16,
+      "maxCrossReductionFrobenius": 0.011348557064567642,
+      "allOrderedCrossReductions": [
+        0.006795347883981653,
+        0.011348557064567642,
+        0.011348557064567638,
+        0.00679534891928219
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-62",
+      "residualL2": 0.09788470375275916,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.07917841686867177,
+      "orthonormalityFrobenius": 5.706074591809817e-16,
+      "maxCrossReductionFrobenius": 0.011179048479390235,
+      "allOrderedCrossReductions": [
+        0.009590698206164906,
+        0.011179048479390235,
+        0.011179048479390228,
+        0.006340699549425277
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-63",
+      "residualL2": 0.09252761380854405,
+      "nfev": 146,
+      "status": 2,
+      "seconds": 0.1178413750603795,
+      "orthonormalityFrobenius": 1.123510583473489e-16,
+      "maxCrossReductionFrobenius": 0.009212175462796512,
+      "allOrderedCrossReductions": [
+        0.008976912084335072,
+        0.009212175462796512,
+        0.00921217546279651,
+        0.008993801556393184
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-64",
+      "residualL2": 0.10264321265720142,
+      "nfev": 70,
+      "status": 2,
+      "seconds": 0.05965595901943743,
+      "orthonormalityFrobenius": 4.994119866915676e-16,
+      "maxCrossReductionFrobenius": 0.011987432283559203,
+      "allOrderedCrossReductions": [
+        0.009959331258226503,
+        0.011987432283559203,
+        0.011987432283559203,
+        0.00995932513985537
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-65",
+      "residualL2": 0.10247921731407045,
+      "nfev": 81,
+      "status": 2,
+      "seconds": 0.06428983388468623,
+      "orthonormalityFrobenius": 4.67482715477849e-16,
+      "maxCrossReductionFrobenius": 0.011527920777722142,
+      "allOrderedCrossReductions": [
+        0.007974438191018073,
+        0.011527920777722137,
+        0.011527920777722142,
+        0.009014861098928332
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-66",
+      "residualL2": 0.09252761380856743,
+      "nfev": 146,
+      "status": 2,
+      "seconds": 0.11706791701726615,
+      "orthonormalityFrobenius": 5.9937183860809475e-16,
+      "maxCrossReductionFrobenius": 0.009557956023571136,
+      "allOrderedCrossReductions": [
+        0.00859281812031544,
+        0.009557956023571136,
+        0.009557956023571136,
+        0.008640380860803196
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-67",
+      "residualL2": 0.09252761380854863,
+      "nfev": 103,
+      "status": 2,
+      "seconds": 0.08083070791326463,
+      "orthonormalityFrobenius": 6.495859883675855e-16,
+      "maxCrossReductionFrobenius": 0.00994028804140988,
+      "allOrderedCrossReductions": [
+        0.008223541709393697,
+        0.009940288041409878,
+        0.00994028804140988,
+        0.00812135946384202
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-68",
+      "residualL2": 0.09788470375274398,
+      "nfev": 94,
+      "status": 2,
+      "seconds": 0.08241212484426796,
+      "orthonormalityFrobenius": 6.881363387190052e-17,
+      "maxCrossReductionFrobenius": 0.01160121162274938,
+      "allOrderedCrossReductions": [
+        0.01160121162274938,
+        0.010132364981012824,
+        0.010132364981012821,
+        0.006496957785959635
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-69",
+      "residualL2": 0.10825362535565736,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.07486233417876065,
+      "orthonormalityFrobenius": 4.414519172578717e-16,
+      "maxCrossReductionFrobenius": 0.011658626923795809,
+      "allOrderedCrossReductions": [
+        0.011658624089013393,
+        0.01057805387241847,
+        0.010578053872418468,
+        0.011658626923795809
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-70",
+      "residualL2": 0.10247921731407986,
+      "nfev": 84,
+      "status": 2,
+      "seconds": 0.06973499990999699,
+      "orthonormalityFrobenius": 7.983286472116758e-16,
+      "maxCrossReductionFrobenius": 0.011195541242691,
+      "allOrderedCrossReductions": [
+        0.008475051800928156,
+        0.01033146912766688,
+        0.010331469127666878,
+        0.011195541242691
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-71",
+      "residualL2": 0.10825362535572625,
+      "nfev": 86,
+      "status": 2,
+      "seconds": 0.07482037506997585,
+      "orthonormalityFrobenius": 6.026216189593659e-16,
+      "maxCrossReductionFrobenius": 0.013279073562484868,
+      "allOrderedCrossReductions": [
+        0.008454878618597644,
+        0.013279073562484868,
+        0.013279073562484868,
+        0.00845488352274541
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-72",
+      "residualL2": 0.1841934646233408,
+      "nfev": 179,
+      "status": 2,
+      "seconds": 0.15123716718517244,
+      "orthonormalityFrobenius": 4.618121886186811e-16,
+      "maxCrossReductionFrobenius": 0.0276872734519235,
+      "allOrderedCrossReductions": [
+        0.021240569267368503,
+        0.027687273451923497,
+        0.0276872734519235,
+        0.021240574125430577
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-73",
+      "residualL2": 0.10345804873181516,
+      "nfev": 214,
+      "status": 2,
+      "seconds": 0.17143191606737673,
+      "orthonormalityFrobenius": 5.673121320349347e-16,
+      "maxCrossReductionFrobenius": 0.00969660719916668,
+      "allOrderedCrossReductions": [
+        0.008452683418210163,
+        0.00969660719916668,
+        0.00969660719916668,
+        0.00845264079150181
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-74",
+      "residualL2": 0.09252761380844197,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.10952849988825619,
+      "orthonormalityFrobenius": 3.2216742601433336e-16,
+      "maxCrossReductionFrobenius": 0.009189884395489489,
+      "allOrderedCrossReductions": [
+        0.009042414669353625,
+        0.009189884395489489,
+        0.009189884395489489,
+        0.008973766913404067
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-75",
+      "residualL2": 0.1082536253556929,
+      "nfev": 106,
+      "status": 2,
+      "seconds": 0.0865380831528455,
+      "orthonormalityFrobenius": 7.026087360836077e-16,
+      "maxCrossReductionFrobenius": 0.012081973560855039,
+      "allOrderedCrossReductions": [
+        0.010091808385277918,
+        0.012081973560855039,
+        0.012081973560855039,
+        0.010091813907335597
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-76",
+      "residualL2": 0.09252761380852895,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.09119779197499156,
+      "orthonormalityFrobenius": 2.4956256526783286e-16,
+      "maxCrossReductionFrobenius": 0.010412299714404823,
+      "allOrderedCrossReductions": [
+        0.007489303885064899,
+        0.01041229971440482,
+        0.010412299714404823,
+        0.007634144419923726
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-77",
+      "residualL2": 0.0925276138085316,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.10797062492929399,
+      "orthonormalityFrobenius": 2.5317085041376886e-16,
+      "maxCrossReductionFrobenius": 0.01014014699590815,
+      "allOrderedCrossReductions": [
+        0.007991456572788845,
+        0.01014014699590815,
+        0.010140146995908149,
+        0.007854502872329923
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-78",
+      "residualL2": 0.09252761380857395,
+      "nfev": 112,
+      "status": 2,
+      "seconds": 0.09000354097224772,
+      "orthonormalityFrobenius": 6.701402673113018e-16,
+      "maxCrossReductionFrobenius": 0.009242286317697277,
+      "allOrderedCrossReductions": [
+        0.009234925896603857,
+        0.00895818253999466,
+        0.008958182539994657,
+        0.009242286317697277
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-79",
+      "residualL2": 0.09252761380852191,
+      "nfev": 110,
+      "status": 2,
+      "seconds": 0.0865986249409616,
+      "orthonormalityFrobenius": 4.982185150401493e-16,
+      "maxCrossReductionFrobenius": 0.010113704763022535,
+      "allOrderedCrossReductions": [
+        0.007895724001881535,
+        0.010113704763022535,
+        0.010113704763022532,
+        0.008017807018219818
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-80",
+      "residualL2": 0.10051959595068002,
+      "nfev": 176,
+      "status": 2,
+      "seconds": 0.14359804103150964,
+      "orthonormalityFrobenius": 1.6984685672976779e-16,
+      "maxCrossReductionFrobenius": 0.010055737577842559,
+      "allOrderedCrossReductions": [
+        0.0091451641200827,
+        0.010055737577842557,
+        0.010055737577842559,
+        0.006066257972084066
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-81",
+      "residualL2": 0.09788470375273853,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.09668700001202524,
+      "orthonormalityFrobenius": 8.034399739789441e-16,
+      "maxCrossReductionFrobenius": 0.01139453278489932,
+      "allOrderedCrossReductions": [
+        0.01139453278489932,
+        0.010620484961261445,
+        0.01062048496126144,
+        0.005167536422871914
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-82",
+      "residualL2": 0.1082536253556899,
+      "nfev": 107,
+      "status": 2,
+      "seconds": 0.08249245793558657,
+      "orthonormalityFrobenius": 2.5895756946151883e-16,
+      "maxCrossReductionFrobenius": 0.01194353624990131,
+      "allOrderedCrossReductions": [
+        0.010255281564456393,
+        0.011943536249901307,
+        0.01194353624990131,
+        0.010255273673418167
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-83",
+      "residualL2": 0.09252761380846573,
+      "nfev": 130,
+      "status": 2,
+      "seconds": 0.10135537502355874,
+      "orthonormalityFrobenius": 8.096596061024063e-17,
+      "maxCrossReductionFrobenius": 0.010311118227252046,
+      "allOrderedCrossReductions": [
+        0.007626557546935018,
+        0.010311118227252045,
+        0.010311118227252046,
+        0.007771686291849201
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-84",
+      "residualL2": 0.09672317053529933,
+      "nfev": 102,
+      "status": 2,
+      "seconds": 0.09225600003264844,
+      "orthonormalityFrobenius": 2.494309027888584e-16,
+      "maxCrossReductionFrobenius": 0.011475584828535813,
+      "allOrderedCrossReductions": [
+        0.006578590882044751,
+        0.011475584828535812,
+        0.011475584828535813,
+        0.0065785908804771144
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-85",
+      "residualL2": 0.09252761380855061,
+      "nfev": 126,
+      "status": 2,
+      "seconds": 0.0991298328153789,
+      "orthonormalityFrobenius": 3.420063100013859e-16,
+      "maxCrossReductionFrobenius": 0.009662655607199769,
+      "allOrderedCrossReductions": [
+        0.008549427456049951,
+        0.009662655607199769,
+        0.009662655607199767,
+        0.008448386793934167
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-86",
+      "residualL2": 0.09252761380854671,
+      "nfev": 154,
+      "status": 2,
+      "seconds": 0.12528549996204674,
+      "orthonormalityFrobenius": 4.985774380266049e-16,
+      "maxCrossReductionFrobenius": 0.009333365826506833,
+      "allOrderedCrossReductions": [
+        0.008824810072312249,
+        0.009333365826506831,
+        0.009333365826506833,
+        0.008893877803054619
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-87",
+      "residualL2": 0.09788470375273671,
+      "nfev": 89,
+      "status": 2,
+      "seconds": 0.07874987507238984,
+      "orthonormalityFrobenius": 1.1437270361110628e-16,
+      "maxCrossReductionFrobenius": 0.010758104016664154,
+      "allOrderedCrossReductions": [
+        0.010758104016664154,
+        0.01004381016583492,
+        0.010043810165834922,
+        0.00803959979295786
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-88",
+      "residualL2": 0.09252761380857086,
+      "nfev": 146,
+      "status": 2,
+      "seconds": 0.11615891708061099,
+      "orthonormalityFrobenius": 3.337409147483412e-16,
+      "maxCrossReductionFrobenius": 0.01062503936419087,
+      "allOrderedCrossReductions": [
+        0.007171013349106072,
+        0.010625039364190864,
+        0.01062503936419087,
+        0.007348155908489876
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-89",
+      "residualL2": 0.10051959595089384,
+      "nfev": 140,
+      "status": 2,
+      "seconds": 0.10540754115208983,
+      "orthonormalityFrobenius": 6.759255983925275e-17,
+      "maxCrossReductionFrobenius": 0.010535817093175066,
+      "allOrderedCrossReductions": [
+        0.010535817093175066,
+        0.009209698983714766,
+        0.009209698983714765,
+        0.0064829527590761675
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-90",
+      "residualL2": 0.09252761380853944,
+      "nfev": 125,
+      "status": 2,
+      "seconds": 0.10056774993427098,
+      "orthonormalityFrobenius": 4.966543333375456e-16,
+      "maxCrossReductionFrobenius": 0.010791362519890638,
+      "allOrderedCrossReductions": [
+        0.006915533373378762,
+        0.010791362519890638,
+        0.010791362519890638,
+        0.007104232549190568
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-91",
+      "residualL2": 0.09788470375283488,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.0799079998396337,
+      "orthonormalityFrobenius": 4.986255587760557e-16,
+      "maxCrossReductionFrobenius": 0.01178328287841914,
+      "allOrderedCrossReductions": [
+        0.01178328287841914,
+        0.010418213702516851,
+        0.01041821370251685,
+        0.005118993932785688
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-92",
+      "residualL2": 0.10264321265719496,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.06967587512917817,
+      "orthonormalityFrobenius": 9.179375164077654e-16,
+      "maxCrossReductionFrobenius": 0.011715102418162525,
+      "allOrderedCrossReductions": [
+        0.011715096198319041,
+        0.010278287752701957,
+        0.010278287752701957,
+        0.011715102418162525
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-93",
+      "residualL2": 0.09672317053529554,
+      "nfev": 104,
+      "status": 2,
+      "seconds": 0.0954327080398798,
+      "orthonormalityFrobenius": 5.770761803067607e-16,
+      "maxCrossReductionFrobenius": 0.011093369286265378,
+      "allOrderedCrossReductions": [
+        0.007204422700546476,
+        0.011093369286265378,
+        0.011093369286265378,
+        0.0072044196385316174
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-94",
+      "residualL2": 0.0967231705352938,
+      "nfev": 102,
+      "status": 2,
+      "seconds": 0.09506416600197554,
+      "orthonormalityFrobenius": 5.618084108021485e-16,
+      "maxCrossReductionFrobenius": 0.009829542739729325,
+      "allOrderedCrossReductions": [
+        0.008851382466798657,
+        0.009829542739729325,
+        0.009829542739729325,
+        0.008851383393661406
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-95",
+      "residualL2": 0.09252761380852802,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.10800908296369016,
+      "orthonormalityFrobenius": 8.227058460160988e-16,
+      "maxCrossReductionFrobenius": 0.010175694000081174,
+      "allOrderedCrossReductions": [
+        0.007948544891116545,
+        0.010175694000081174,
+        0.010175694000081174,
+        0.007805951932702505
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-96",
+      "residualL2": 0.09252761380856392,
+      "nfev": 116,
+      "status": 2,
+      "seconds": 0.09829362505115569,
+      "orthonormalityFrobenius": 8.742520060799229e-16,
+      "maxCrossReductionFrobenius": 0.010230464335914713,
+      "allOrderedCrossReductions": [
+        0.007871991468304149,
+        0.010230464335914707,
+        0.010230464335914713,
+        0.007740073791127195
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-97",
+      "residualL2": 0.09252761380853684,
+      "nfev": 120,
+      "status": 2,
+      "seconds": 0.09752487507648766,
+      "orthonormalityFrobenius": 5.229380522072902e-17,
+      "maxCrossReductionFrobenius": 0.009510121708223846,
+      "allOrderedCrossReductions": [
+        0.008635706882985763,
+        0.009510121708223846,
+        0.009510121708223846,
+        0.00870295747880398
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-98",
+      "residualL2": 0.09252761380852927,
+      "nfev": 121,
+      "status": 2,
+      "seconds": 0.09617020795121789,
+      "orthonormalityFrobenius": 7.032110938462638e-16,
+      "maxCrossReductionFrobenius": 0.010067401583162305,
+      "allOrderedCrossReductions": [
+        0.007957552183562129,
+        0.010067401583162303,
+        0.010067401583162305,
+        0.008073042982045324
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-99",
+      "residualL2": 0.09788470375273703,
+      "nfev": 96,
+      "status": 2,
+      "seconds": 0.07891762512736022,
+      "orthonormalityFrobenius": 4.985752047912725e-16,
+      "maxCrossReductionFrobenius": 0.011105340373934718,
+      "allOrderedCrossReductions": [
+        0.011105340373934718,
+        0.010603226070853837,
+        0.010603226070853835,
+        0.005826046795305906
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-100",
+      "residualL2": 0.09788470375272489,
+      "nfev": 101,
+      "status": 2,
+      "seconds": 0.08729954087175429,
+      "orthonormalityFrobenius": 2.372618165131961e-16,
+      "maxCrossReductionFrobenius": 0.010552800792545775,
+      "allOrderedCrossReductions": [
+        0.010552800792545775,
+        0.010339857227541426,
+        0.01033985722754142,
+        0.007545946678077846
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-101",
+      "residualL2": 0.09788470375275957,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.07271791715174913,
+      "orthonormalityFrobenius": 3.1834533917115286e-16,
+      "maxCrossReductionFrobenius": 0.011212737580785781,
+      "allOrderedCrossReductions": [
+        0.009593883030252213,
+        0.011212737580785781,
+        0.01121273758078578,
+        0.0062156779720293825
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-102",
+      "residualL2": 0.10051959595069633,
+      "nfev": 180,
+      "status": 2,
+      "seconds": 0.14683100022375584,
+      "orthonormalityFrobenius": 2.548467584667998e-16,
+      "maxCrossReductionFrobenius": 0.010996403635487286,
+      "allOrderedCrossReductions": [
+        0.010996403635487286,
+        0.008858864822760947,
+        0.008858864822760949,
+        0.006692485653766482
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-103",
+      "residualL2": 0.09252761380856547,
+      "nfev": 137,
+      "status": 2,
+      "seconds": 0.11169020785018802,
+      "orthonormalityFrobenius": 5.727755914507848e-16,
+      "maxCrossReductionFrobenius": 0.010539066643318192,
+      "allOrderedCrossReductions": [
+        0.007469861176162981,
+        0.01053906664331819,
+        0.010539066643318192,
+        0.007297883549771852
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-104",
+      "residualL2": 0.10345804873199962,
+      "nfev": 135,
+      "status": 2,
+      "seconds": 0.10813629115000367,
+      "orthonormalityFrobenius": 5.006047053343231e-16,
+      "maxCrossReductionFrobenius": 0.009589736909855808,
+      "allOrderedCrossReductions": [
+        0.008573696672575787,
+        0.009589736909855808,
+        0.009589736909855805,
+        0.008573728807665788
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-105",
+      "residualL2": 0.09672317053528086,
+      "nfev": 85,
+      "status": 2,
+      "seconds": 0.07357612485066056,
+      "orthonormalityFrobenius": 4.966747689151584e-16,
+      "maxCrossReductionFrobenius": 0.010677768655521912,
+      "allOrderedCrossReductions": [
+        0.007807166855119187,
+        0.010677768655521912,
+        0.010677768655521912,
+        0.007807162516133307
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-106",
+      "residualL2": 0.09252761380852527,
+      "nfev": 133,
+      "status": 2,
+      "seconds": 0.10801537497900426,
+      "orthonormalityFrobenius": 3.1564932084622977e-16,
+      "maxCrossReductionFrobenius": 0.009148186631373078,
+      "allOrderedCrossReductions": [
+        0.00913821027240495,
+        0.009055539156918506,
+        0.009055539156918507,
+        0.009148186631373078
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-107",
+      "residualL2": 0.09252761380856826,
+      "nfev": 122,
+      "status": 2,
+      "seconds": 0.09531858400441706,
+      "orthonormalityFrobenius": 5.750946013085203e-16,
+      "maxCrossReductionFrobenius": 0.009503484035089799,
+      "allOrderedCrossReductions": [
+        0.008721148781947347,
+        0.009503484035089799,
+        0.009503484035089799,
+        0.008631969497796751
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-108",
+      "residualL2": 0.09788470375273475,
+      "nfev": 148,
+      "status": 2,
+      "seconds": 0.12477275007404387,
+      "orthonormalityFrobenius": 3.3764927262949e-16,
+      "maxCrossReductionFrobenius": 0.011798628706251644,
+      "allOrderedCrossReductions": [
+        0.0062623773001014805,
+        0.010092155443660999,
+        0.010092155443661,
+        0.011798628706251644
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-109",
+      "residualL2": 0.09252761380853303,
+      "nfev": 121,
+      "status": 2,
+      "seconds": 0.09156508301384747,
+      "orthonormalityFrobenius": 1.1147834245730704e-16,
+      "maxCrossReductionFrobenius": 0.010760559221398206,
+      "allOrderedCrossReductions": [
+        0.0069620034956648594,
+        0.010760559221398206,
+        0.010760559221398206,
+        0.00715213510124932
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-110",
+      "residualL2": 0.09672317053527783,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.12205166695639491,
+      "orthonormalityFrobenius": 9.428016452571456e-17,
+      "maxCrossReductionFrobenius": 0.010569568717729726,
+      "allOrderedCrossReductions": [
+        0.007953034110319016,
+        0.010569568717729726,
+        0.010569568717729726,
+        0.007953033662468868
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-111",
+      "residualL2": 0.09252761380843517,
+      "nfev": 109,
+      "status": 2,
+      "seconds": 0.08760412503033876,
+      "orthonormalityFrobenius": 1.3099017894500474e-16,
+      "maxCrossReductionFrobenius": 0.009720311890640142,
+      "allOrderedCrossReductions": [
+        0.00839801881494679,
+        0.00972031189064014,
+        0.009720311890640142,
+        0.008467947950165446
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-112",
+      "residualL2": 0.09252761380852065,
+      "nfev": 94,
+      "status": 2,
+      "seconds": 0.07408650009892881,
+      "orthonormalityFrobenius": 2.2421770158360424e-16,
+      "maxCrossReductionFrobenius": 0.010676614158148112,
+      "allOrderedCrossReductions": [
+        0.007273651459888078,
+        0.010676614158148112,
+        0.010676614158148112,
+        0.00709334973914385
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-113",
+      "residualL2": 0.09672317053529485,
+      "nfev": 112,
+      "status": 2,
+      "seconds": 0.09749966696836054,
+      "orthonormalityFrobenius": 2.5133974532694597e-16,
+      "maxCrossReductionFrobenius": 0.011172439318886571,
+      "allOrderedCrossReductions": [
+        0.007081182395527801,
+        0.011172439318886571,
+        0.01117243931888657,
+        0.007081179615468004
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-114",
+      "residualL2": 0.092527613808533,
+      "nfev": 129,
+      "status": 2,
+      "seconds": 0.10121870809234679,
+      "orthonormalityFrobenius": 6.76525131612007e-16,
+      "maxCrossReductionFrobenius": 0.009626401414532526,
+      "allOrderedCrossReductions": [
+        0.008569163090465333,
+        0.009626401414532526,
+        0.009626401414532524,
+        0.00851093509894641
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-115",
+      "residualL2": 0.0978847037527324,
+      "nfev": 98,
+      "status": 2,
+      "seconds": 0.08555025001987815,
+      "orthonormalityFrobenius": 4.480225832398986e-16,
+      "maxCrossReductionFrobenius": 0.010041471763427392,
+      "allOrderedCrossReductions": [
+        0.010041471763427392,
+        0.009568660091267412,
+        0.009568660091267413,
+        0.009908508687516027
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-116",
+      "residualL2": 0.10051959595070066,
+      "nfev": 155,
+      "status": 2,
+      "seconds": 0.12465254194103181,
+      "orthonormalityFrobenius": 4.579967167445568e-16,
+      "maxCrossReductionFrobenius": 0.009989508301295595,
+      "allOrderedCrossReductions": [
+        0.008113840532538451,
+        0.009989508301295594,
+        0.009989508301295595,
+        0.007566655050022346
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-117",
+      "residualL2": 0.1024792173140585,
+      "nfev": 72,
+      "status": 2,
+      "seconds": 0.056120374938473105,
+      "orthonormalityFrobenius": 2.2602135723412767e-16,
+      "maxCrossReductionFrobenius": 0.010626923624714487,
+      "allOrderedCrossReductions": [
+        0.010024436710444503,
+        0.010626923624714487,
+        0.010626923624714485,
+        0.009181119690961047
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-118",
+      "residualL2": 0.09788470375273546,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.12255358300171793,
+      "orthonormalityFrobenius": 9.951865025131465e-16,
+      "maxCrossReductionFrobenius": 0.011685797354141294,
+      "allOrderedCrossReductions": [
+        0.005835022793791275,
+        0.010284037665789562,
+        0.010284037665789562,
+        0.011685797354141294
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-119",
+      "residualL2": 0.1026432126572216,
+      "nfev": 74,
+      "status": 2,
+      "seconds": 0.058629709063097835,
+      "orthonormalityFrobenius": 7.471073762592891e-16,
+      "maxCrossReductionFrobenius": 0.011435770325924497,
+      "allOrderedCrossReductions": [
+        0.011435762661457622,
+        0.010588200774018605,
+        0.0105882007740186,
+        0.011435770325924497
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-120",
+      "residualL2": 0.0967231705352921,
+      "nfev": 95,
+      "status": 2,
+      "seconds": 0.08533529215492308,
+      "orthonormalityFrobenius": 2.26309395286122e-16,
+      "maxCrossReductionFrobenius": 0.011292398404914063,
+      "allOrderedCrossReductions": [
+        0.0068882954606302215,
+        0.011292398404914063,
+        0.01129239840491406,
+        0.00688829710205819
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-121",
+      "residualL2": 0.09252761380856497,
+      "nfev": 136,
+      "status": 2,
+      "seconds": 0.10816908394917846,
+      "orthonormalityFrobenius": 2.4006626046255124e-17,
+      "maxCrossReductionFrobenius": 0.009934740219940702,
+      "allOrderedCrossReductions": [
+        0.008131551739580072,
+        0.009934740219940702,
+        0.0099347402199407,
+        0.008226876145220415
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-122",
+      "residualL2": 0.09252761380851546,
+      "nfev": 122,
+      "status": 2,
+      "seconds": 0.09810804110020399,
+      "orthonormalityFrobenius": 4.469056331943945e-16,
+      "maxCrossReductionFrobenius": 0.010184724289668972,
+      "allOrderedCrossReductions": [
+        0.007795077125003375,
+        0.01018472428966897,
+        0.010184724289668972,
+        0.007936075348442503
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-123",
+      "residualL2": 0.09252761380863353,
+      "nfev": 121,
+      "status": 2,
+      "seconds": 0.09050783305428922,
+      "orthonormalityFrobenius": 3.2023422802574444e-16,
+      "maxCrossReductionFrobenius": 0.010364270792514016,
+      "allOrderedCrossReductions": [
+        0.007699761101044301,
+        0.010364270792514016,
+        0.010364270792514015,
+        0.007555079260166134
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-124",
+      "residualL2": 0.10264321265719575,
+      "nfev": 68,
+      "status": 2,
+      "seconds": 0.05960949999280274,
+      "orthonormalityFrobenius": 4.591071901608693e-16,
+      "maxCrossReductionFrobenius": 0.011476417843659424,
+      "allOrderedCrossReductions": [
+        0.010544128672375874,
+        0.011476417843659424,
+        0.011476417843659424,
+        0.010544122502818679
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-125",
+      "residualL2": 0.10264321265719535,
+      "nfev": 76,
+      "status": 2,
+      "seconds": 0.06013799994252622,
+      "orthonormalityFrobenius": 4.0206719526940547e-16,
+      "maxCrossReductionFrobenius": 0.013419556107979494,
+      "allOrderedCrossReductions": [
+        0.007924787650448092,
+        0.013419556107979494,
+        0.013419556107979489,
+        0.007924788343133482
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-126",
+      "residualL2": 0.10051959595069783,
+      "nfev": 166,
+      "status": 2,
+      "seconds": 0.13054849999025464,
+      "orthonormalityFrobenius": 6.416382420852176e-16,
+      "maxCrossReductionFrobenius": 0.010355631993390887,
+      "allOrderedCrossReductions": [
+        0.006676526008833763,
+        0.010355631993390886,
+        0.010355631993390887,
+        0.007975901298569225
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-127",
+      "residualL2": 0.10825362535565944,
+      "nfev": 82,
+      "status": 2,
+      "seconds": 0.06451412499882281,
+      "orthonormalityFrobenius": 2.573963985412187e-16,
+      "maxCrossReductionFrobenius": 0.013078985815167503,
+      "allOrderedCrossReductions": [
+        0.008761215363904461,
+        0.013078985815167503,
+        0.013078985815167499,
+        0.008761211931949682
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-128",
+      "residualL2": 0.11330565151805096,
+      "nfev": 120,
+      "status": 2,
+      "seconds": 0.0993680830579251,
+      "orthonormalityFrobenius": 4.450259101281534e-16,
+      "maxCrossReductionFrobenius": 0.012056242948613852,
+      "allOrderedCrossReductions": [
+        0.01129944239048365,
+        0.012056242948613852,
+        0.012056242948613852,
+        0.01160800401487808
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-129",
+      "residualL2": 0.10264321265719005,
+      "nfev": 66,
+      "status": 2,
+      "seconds": 0.0546742919832468,
+      "orthonormalityFrobenius": 4.599007569822629e-16,
+      "maxCrossReductionFrobenius": 0.012475229740101476,
+      "allOrderedCrossReductions": [
+        0.009341061770722997,
+        0.012475229740101476,
+        0.012475229740101476,
+        0.00934105736613717
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-130",
+      "residualL2": 0.09252761380855541,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.10375612508505583,
+      "orthonormalityFrobenius": 4.82843137548638e-16,
+      "maxCrossReductionFrobenius": 0.009245859180676021,
+      "allOrderedCrossReductions": [
+        0.008941007531999274,
+        0.00924585918067602,
+        0.009245859180676021,
+        0.008960373717991516
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-131",
+      "residualL2": 0.0925276138085406,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.10706908302381635,
+      "orthonormalityFrobenius": 2.2768026215232e-16,
+      "maxCrossReductionFrobenius": 0.009160547875208955,
+      "allOrderedCrossReductions": [
+        0.00914010753702565,
+        0.009048329361726984,
+        0.009048329361726984,
+        0.009160547875208955
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-132",
+      "residualL2": 0.15466389243665535,
+      "nfev": 1500,
+      "status": 0,
+      "seconds": 1.2891520420089364,
+      "orthonormalityFrobenius": 2.229806997491806e-16,
+      "maxCrossReductionFrobenius": 0.02028109524237602,
+      "allOrderedCrossReductions": [
+        0.02028109524237602,
+        0.015314647798117857,
+        0.015314647798117859,
+        0.020281095242375972
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-133",
+      "residualL2": 0.11330565151805823,
+      "nfev": 123,
+      "status": 2,
+      "seconds": 0.10153387486934662,
+      "orthonormalityFrobenius": 5.328476615904781e-16,
+      "maxCrossReductionFrobenius": 0.011989920206536482,
+      "allOrderedCrossReductions": [
+        0.011354861455214539,
+        0.011989920206536478,
+        0.011989920206536482,
+        0.011691017570432387
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-134",
+      "residualL2": 0.10825362535568,
+      "nfev": 122,
+      "status": 2,
+      "seconds": 0.10222708410583436,
+      "orthonormalityFrobenius": 2.2317554350836665e-16,
+      "maxCrossReductionFrobenius": 0.012665889996891075,
+      "allOrderedCrossReductions": [
+        0.009348477866022088,
+        0.012665889996891073,
+        0.012665889996891075,
+        0.009348479728532812
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-135",
+      "residualL2": 0.09252761380856289,
+      "nfev": 119,
+      "status": 2,
+      "seconds": 0.094887875020504,
+      "orthonormalityFrobenius": 4.692798391417771e-16,
+      "maxCrossReductionFrobenius": 0.009215278532805054,
+      "allOrderedCrossReductions": [
+        0.009215278532805054,
+        0.009009251123942663,
+        0.009009251123942663,
+        0.009162269842660878
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-136",
+      "residualL2": 0.09252761380856442,
+      "nfev": 131,
+      "status": 2,
+      "seconds": 0.1051727922167629,
+      "orthonormalityFrobenius": 6.874699379177822e-16,
+      "maxCrossReductionFrobenius": 0.01002486001593385,
+      "allOrderedCrossReductions": [
+        0.008014614390413798,
+        0.01002486001593385,
+        0.010024860015933848,
+        0.008122320726868392
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-137",
+      "residualL2": 0.09672317053529449,
+      "nfev": 74,
+      "status": 2,
+      "seconds": 0.06289654085412621,
+      "orthonormalityFrobenius": 4.1708389913454263e-16,
+      "maxCrossReductionFrobenius": 0.010687720113640628,
+      "allOrderedCrossReductions": [
+        0.007793555041256701,
+        0.010687720113640624,
+        0.010687720113640628,
+        0.007793558988172802
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-138",
+      "residualL2": 0.09252761380854731,
+      "nfev": 115,
+      "status": 2,
+      "seconds": 0.09390191710554063,
+      "orthonormalityFrobenius": 3.166658499715261e-16,
+      "maxCrossReductionFrobenius": 0.009244143801708682,
+      "allOrderedCrossReductions": [
+        0.008988694019624578,
+        0.009244143801708682,
+        0.009244143801708682,
+        0.0089160975413962
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-139",
+      "residualL2": 0.09252761380849513,
+      "nfev": 134,
+      "status": 2,
+      "seconds": 0.10652683302760124,
+      "orthonormalityFrobenius": 2.3076338771595645e-16,
+      "maxCrossReductionFrobenius": 0.0092284832711275,
+      "allOrderedCrossReductions": [
+        0.0092284832711275,
+        0.008993394876034065,
+        0.008993394876034063,
+        0.009180116436278783
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-140",
+      "residualL2": 0.09252761380855505,
+      "nfev": 135,
+      "status": 2,
+      "seconds": 0.10983749991282821,
+      "orthonormalityFrobenius": 2.5718897955278083e-16,
+      "maxCrossReductionFrobenius": 0.011064404929472025,
+      "allOrderedCrossReductions": [
+        0.006460832247084789,
+        0.011064404929472025,
+        0.01106440492947202,
+        0.006679618387038701
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-141",
+      "residualL2": 0.1024792173141007,
+      "nfev": 70,
+      "status": 2,
+      "seconds": 0.05475833406671882,
+      "orthonormalityFrobenius": 5.046649656368307e-16,
+      "maxCrossReductionFrobenius": 0.010571907766931047,
+      "allOrderedCrossReductions": [
+        0.010566527928522598,
+        0.010571907766931045,
+        0.010571907766931047,
+        0.008686965352644354
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-142",
+      "residualL2": 0.11330565151806357,
+      "nfev": 134,
+      "status": 2,
+      "seconds": 0.1101405001245439,
+      "orthonormalityFrobenius": 2.4513453210895285e-16,
+      "maxCrossReductionFrobenius": 0.012760279696798093,
+      "allOrderedCrossReductions": [
+        0.010914132824942396,
+        0.012760279696798093,
+        0.012760279696798093,
+        0.010409676864147985
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-143",
+      "residualL2": 0.09788470375272922,
+      "nfev": 97,
+      "status": 2,
+      "seconds": 0.08016091585159302,
+      "orthonormalityFrobenius": 9.038894889963166e-16,
+      "maxCrossReductionFrobenius": 0.011783893785614254,
+      "allOrderedCrossReductions": [
+        0.011783893785614254,
+        0.010157420140029365,
+        0.010157420140029362,
+        0.0060763221004612
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-144",
+      "residualL2": 0.10825362535567978,
+      "nfev": 88,
+      "status": 2,
+      "seconds": 0.06357325008139014,
+      "orthonormalityFrobenius": 5.000594794154595e-16,
+      "maxCrossReductionFrobenius": 0.011509453265805951,
+      "allOrderedCrossReductions": [
+        0.011509453046272655,
+        0.010740171571791725,
+        0.010740171571791725,
+        0.011509453265805951
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-145",
+      "residualL2": 0.09252761380856855,
+      "nfev": 120,
+      "status": 2,
+      "seconds": 0.09270129213109612,
+      "orthonormalityFrobenius": 5.045143731049189e-16,
+      "maxCrossReductionFrobenius": 0.010545168170454597,
+      "allOrderedCrossReductions": [
+        0.00745654290603609,
+        0.010545168170454595,
+        0.010545168170454597,
+        0.00729387455820461
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-146",
+      "residualL2": 0.10051959595068906,
+      "nfev": 115,
+      "status": 2,
+      "seconds": 0.09192179189994931,
+      "orthonormalityFrobenius": 4.574798000557517e-16,
+      "maxCrossReductionFrobenius": 0.010161171821497927,
+      "allOrderedCrossReductions": [
+        0.006236180178102418,
+        0.010161171821497927,
+        0.010161171821497927,
+        0.008790930545866237
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-147",
+      "residualL2": 0.09788470375276166,
+      "nfev": 106,
+      "status": 2,
+      "seconds": 0.08394008316099644,
+      "orthonormalityFrobenius": 9.104167058722967e-16,
+      "maxCrossReductionFrobenius": 0.010551082107402384,
+      "allOrderedCrossReductions": [
+        0.007590079541365014,
+        0.010324571938631476,
+        0.010324571938631476,
+        0.010551082107402384
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-148",
+      "residualL2": 0.10051959595088503,
+      "nfev": 155,
+      "status": 2,
+      "seconds": 0.12631374993361533,
+      "orthonormalityFrobenius": 6.285429779321086e-16,
+      "maxCrossReductionFrobenius": 0.010476969266418825,
+      "allOrderedCrossReductions": [
+        0.0063614497828728914,
+        0.009285319076234793,
+        0.009285319076234791,
+        0.010476969266418825
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-149",
+      "residualL2": 0.09252761380856424,
+      "nfev": 104,
+      "status": 2,
+      "seconds": 0.07719179196283221,
+      "orthonormalityFrobenius": 2.3592661700658213e-16,
+      "maxCrossReductionFrobenius": 0.00977568242179348,
+      "allOrderedCrossReductions": [
+        0.008410258331971926,
+        0.00977568242179348,
+        0.00977568242179348,
+        0.008327146029381819
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-150",
+      "residualL2": 0.10051959595089197,
+      "nfev": 99,
+      "status": 2,
+      "seconds": 0.08190579200163484,
+      "orthonormalityFrobenius": 6.486828038933949e-16,
+      "maxCrossReductionFrobenius": 0.009930300038896332,
+      "allOrderedCrossReductions": [
+        0.006784255229819624,
+        0.009434836364929373,
+        0.009434836364929375,
+        0.009930300038896332
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-151",
+      "residualL2": 0.09252761380854267,
+      "nfev": 130,
+      "status": 2,
+      "seconds": 0.10231645801104605,
+      "orthonormalityFrobenius": 8.134795835123347e-16,
+      "maxCrossReductionFrobenius": 0.009413040229941808,
+      "allOrderedCrossReductions": [
+        0.008816747163029177,
+        0.009413040229941806,
+        0.009413040229941808,
+        0.008732472302236444
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-152",
+      "residualL2": 0.10345804873193913,
+      "nfev": 196,
+      "status": 2,
+      "seconds": 0.16263570892624557,
+      "orthonormalityFrobenius": 4.588734307377914e-16,
+      "maxCrossReductionFrobenius": 0.009614432354670924,
+      "allOrderedCrossReductions": [
+        0.008546045835750365,
+        0.00961443235467092,
+        0.009614432354670924,
+        0.008545983808380344
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-153",
+      "residualL2": 0.09252761380848806,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.08998583303764462,
+      "orthonormalityFrobenius": 2.600993940042109e-16,
+      "maxCrossReductionFrobenius": 0.009237462717023479,
+      "allOrderedCrossReductions": [
+        0.009237462717023479,
+        0.008988648344348345,
+        0.008988648344348345,
+        0.0091803852205347
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-154",
+      "residualL2": 0.09672317053529163,
+      "nfev": 107,
+      "status": 2,
+      "seconds": 0.0941547080874443,
+      "orthonormalityFrobenius": 2.518819259946903e-16,
+      "maxCrossReductionFrobenius": 0.009635983603739367,
+      "allOrderedCrossReductions": [
+        0.00963598262180813,
+        0.009061717025738289,
+        0.00906171702573829,
+        0.009635983603739367
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-155",
+      "residualL2": 0.10264321265720444,
+      "nfev": 68,
+      "status": 2,
+      "seconds": 0.05797095806337893,
+      "orthonormalityFrobenius": 6.680352670389237e-16,
+      "maxCrossReductionFrobenius": 0.013658626399750438,
+      "allOrderedCrossReductions": [
+        0.013658626399750438,
+        0.007505250762274188,
+        0.007505250762274187,
+        0.01365861811170738
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-156",
+      "residualL2": 0.09252761380856286,
+      "nfev": 155,
+      "status": 2,
+      "seconds": 0.12603929196484387,
+      "orthonormalityFrobenius": 9.133345843396814e-16,
+      "maxCrossReductionFrobenius": 0.010415189299120475,
+      "allOrderedCrossReductions": [
+        0.007485496878134998,
+        0.010415189299120475,
+        0.010415189299120473,
+        0.007629992263993163
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-157",
+      "residualL2": 0.10264321265723837,
+      "nfev": 75,
+      "status": 2,
+      "seconds": 0.06346316705457866,
+      "orthonormalityFrobenius": 4.965922927232951e-16,
+      "maxCrossReductionFrobenius": 0.013448779974207055,
+      "allOrderedCrossReductions": [
+        0.013448779974207055,
+        0.007875100658233129,
+        0.007875100658233124,
+        0.013448769397568457
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-158",
+      "residualL2": 0.0925276138085374,
+      "nfev": 121,
+      "status": 2,
+      "seconds": 0.09395570796914399,
+      "orthonormalityFrobenius": 5.600898037768174e-16,
+      "maxCrossReductionFrobenius": 0.010256143144082115,
+      "allOrderedCrossReductions": [
+        0.007698815391590069,
+        0.010256143144082111,
+        0.010256143144082115,
+        0.007845573796974373
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-159",
+      "residualL2": 0.09672317053530437,
+      "nfev": 142,
+      "status": 2,
+      "seconds": 0.12156745791435242,
+      "orthonormalityFrobenius": 3.3550072732108334e-16,
+      "maxCrossReductionFrobenius": 0.01089839533673203,
+      "allOrderedCrossReductions": [
+        0.007496097916885691,
+        0.01089839533673203,
+        0.010898395336732026,
+        0.007496097697419153
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-160",
+      "residualL2": 0.09252761380852485,
+      "nfev": 141,
+      "status": 2,
+      "seconds": 0.10956541704945266,
+      "orthonormalityFrobenius": 3.1492829590591616e-16,
+      "maxCrossReductionFrobenius": 0.010415918306042219,
+      "allOrderedCrossReductions": [
+        0.007634017681014395,
+        0.010415918306042216,
+        0.010415918306042219,
+        0.0074793595056529385
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-161",
+      "residualL2": 0.09788470375272636,
+      "nfev": 98,
+      "status": 2,
+      "seconds": 0.08485704194754362,
+      "orthonormalityFrobenius": 4.459271406590939e-16,
+      "maxCrossReductionFrobenius": 0.011237077661507392,
+      "allOrderedCrossReductions": [
+        0.009907496576693863,
+        0.008879689691110082,
+        0.008879689691110084,
+        0.011237077661507392
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-162",
+      "residualL2": 0.09252761380856493,
+      "nfev": 124,
+      "status": 2,
+      "seconds": 0.09251995803788304,
+      "orthonormalityFrobenius": 4.472493172686192e-16,
+      "maxCrossReductionFrobenius": 0.009205019833786564,
+      "allOrderedCrossReductions": [
+        0.009016058847351318,
+        0.009205019833786564,
+        0.009205019833786562,
+        0.00896926331128858
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-163",
+      "residualL2": 0.10264321265723435,
+      "nfev": 83,
+      "status": 2,
+      "seconds": 0.0664273330476135,
+      "orthonormalityFrobenius": 1.5216758629694018e-17,
+      "maxCrossReductionFrobenius": 0.013084583041617711,
+      "allOrderedCrossReductions": [
+        0.008466429638554259,
+        0.013084583041617711,
+        0.013084583041617711,
+        0.00846643043363824
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-164",
+      "residualL2": 0.092527613808489,
+      "nfev": 104,
+      "status": 2,
+      "seconds": 0.07804137491621077,
+      "orthonormalityFrobenius": 2.5348299403036953e-16,
+      "maxCrossReductionFrobenius": 0.011170138061255493,
+      "allOrderedCrossReductions": [
+        0.006273240196519648,
+        0.011170138061255493,
+        0.011170138061255493,
+        0.006504172389800185
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-165",
+      "residualL2": 0.09252761380849371,
+      "nfev": 110,
+      "status": 2,
+      "seconds": 0.08831341587938368,
+      "orthonormalityFrobenius": 1.250737497367238e-16,
+      "maxCrossReductionFrobenius": 0.010878773237448592,
+      "allOrderedCrossReductions": [
+        0.006972236859511741,
+        0.010878773237448592,
+        0.010878773237448592,
+        0.006774531885237142
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-166",
+      "residualL2": 0.09252761380849502,
+      "nfev": 113,
+      "status": 2,
+      "seconds": 0.0879632921423763,
+      "orthonormalityFrobenius": 7.2431559933766e-17,
+      "maxCrossReductionFrobenius": 0.011263189676501771,
+      "allOrderedCrossReductions": [
+        0.006101119302826773,
+        0.011263189676501771,
+        0.011263189676501771,
+        0.00634501426551993
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-167",
+      "residualL2": 0.10247921731408755,
+      "nfev": 67,
+      "status": 2,
+      "seconds": 0.054052624851465225,
+      "orthonormalityFrobenius": 7.297042318165025e-16,
+      "maxCrossReductionFrobenius": 0.010943523427055742,
+      "allOrderedCrossReductions": [
+        0.009565130095819649,
+        0.010943523427055742,
+        0.010943523427055742,
+        0.008923687560266338
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-168",
+      "residualL2": 0.09672317053529966,
+      "nfev": 117,
+      "status": 2,
+      "seconds": 0.1048271250911057,
+      "orthonormalityFrobenius": 3.424015844022981e-16,
+      "maxCrossReductionFrobenius": 0.011206842389536443,
+      "allOrderedCrossReductions": [
+        0.007026606385260596,
+        0.011206842389536443,
+        0.011206842389536443,
+        0.007026606356937974
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-169",
+      "residualL2": 0.09252761380851601,
+      "nfev": 96,
+      "status": 2,
+      "seconds": 0.07380620809271932,
+      "orthonormalityFrobenius": 3.363662243037693e-16,
+      "maxCrossReductionFrobenius": 0.00911461911973585,
+      "allOrderedCrossReductions": [
+        0.009074369098183313,
+        0.009104430291490231,
+        0.00910443029149023,
+        0.00911461911973585
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-170",
+      "residualL2": 0.10264321265729101,
+      "nfev": 69,
+      "status": 2,
+      "seconds": 0.057523292023688555,
+      "orthonormalityFrobenius": 5.198643383379909e-16,
+      "maxCrossReductionFrobenius": 0.011673175133853783,
+      "allOrderedCrossReductions": [
+        0.011673175133853783,
+        0.010325882456935527,
+        0.010325882456935529,
+        0.011673165257246331
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-171",
+      "residualL2": 0.09252761380857216,
+      "nfev": 106,
+      "status": 2,
+      "seconds": 0.07826650002971292,
+      "orthonormalityFrobenius": 2.2571029895471214e-16,
+      "maxCrossReductionFrobenius": 0.010294447544320422,
+      "allOrderedCrossReductions": [
+        0.007793429031908695,
+        0.010294447544320422,
+        0.010294447544320422,
+        0.007649373474703264
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-172",
+      "residualL2": 0.0925276138085239,
+      "nfev": 104,
+      "status": 2,
+      "seconds": 0.08095249999314547,
+      "orthonormalityFrobenius": 2.3673338979184336e-16,
+      "maxCrossReductionFrobenius": 0.009346301802011965,
+      "allOrderedCrossReductions": [
+        0.008874882034840643,
+        0.009346301802011963,
+        0.009346301802011965,
+        0.008816546380274085
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-173",
+      "residualL2": 0.09252761380853358,
+      "nfev": 136,
+      "status": 2,
+      "seconds": 0.11138300015591085,
+      "orthonormalityFrobenius": 5.072480611021264e-16,
+      "maxCrossReductionFrobenius": 0.009451087298019108,
+      "allOrderedCrossReductions": [
+        0.00874453541631614,
+        0.009451087298019108,
+        0.009451087298019108,
+        0.008722885402090248
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-174",
+      "residualL2": 0.09252761380851864,
+      "nfev": 125,
+      "status": 2,
+      "seconds": 0.09780920785851777,
+      "orthonormalityFrobenius": 2.680238407089462e-16,
+      "maxCrossReductionFrobenius": 0.009781697461151248,
+      "allOrderedCrossReductions": [
+        0.008402226360619174,
+        0.009781697461151248,
+        0.009781697461151246,
+        0.00832112425008842
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-175",
+      "residualL2": 0.09252761380856687,
+      "nfev": 107,
+      "status": 2,
+      "seconds": 0.0838321668561548,
+      "orthonormalityFrobenius": 4.492017981833465e-16,
+      "maxCrossReductionFrobenius": 0.00955511007161876,
+      "allOrderedCrossReductions": [
+        0.00955511007161876,
+        0.008619872958913132,
+        0.008619872958913134,
+        0.00955495699445179
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-176",
+      "residualL2": 0.09788470375272648,
+      "nfev": 85,
+      "status": 2,
+      "seconds": 0.0729657500050962,
+      "orthonormalityFrobenius": 5.886478868891295e-16,
+      "maxCrossReductionFrobenius": 0.011787947467935515,
+      "allOrderedCrossReductions": [
+        0.0076596049533475844,
+        0.009604763324275201,
+        0.009604763324275203,
+        0.011787947467935515
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-177",
+      "residualL2": 0.09252761380852849,
+      "nfev": 112,
+      "status": 2,
+      "seconds": 0.08814345789141953,
+      "orthonormalityFrobenius": 4.461821676810385e-16,
+      "maxCrossReductionFrobenius": 0.01007479132019313,
+      "allOrderedCrossReductions": [
+        0.008073773412895707,
+        0.010074791320193125,
+        0.01007479132019313,
+        0.007938078547596896
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-178",
+      "residualL2": 0.09788470375283453,
+      "nfev": 82,
+      "status": 2,
+      "seconds": 0.07361516705714166,
+      "orthonormalityFrobenius": 4.68170292415193e-16,
+      "maxCrossReductionFrobenius": 0.010385619183612369,
+      "allOrderedCrossReductions": [
+        0.010046997071065671,
+        0.010385619183612369,
+        0.010385619183612367,
+        0.00809097508005574
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-179",
+      "residualL2": 0.09252761380865393,
+      "nfev": 114,
+      "status": 2,
+      "seconds": 0.089531583013013,
+      "orthonormalityFrobenius": 2.551568412160174e-16,
+      "maxCrossReductionFrobenius": 0.009480180942194672,
+      "allOrderedCrossReductions": [
+        0.009461573342022385,
+        0.008712248911739395,
+        0.008712248911739395,
+        0.009480180942194672
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-180",
+      "residualL2": 0.09252761380854636,
+      "nfev": 125,
+      "status": 2,
+      "seconds": 0.09590083290822804,
+      "orthonormalityFrobenius": 4.464063196917598e-16,
+      "maxCrossReductionFrobenius": 0.009406483782446682,
+      "allOrderedCrossReductions": [
+        0.008793301939479881,
+        0.009406483782446682,
+        0.009406483782446682,
+        0.00877016129809461
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-181",
+      "residualL2": 0.09252761380854403,
+      "nfev": 135,
+      "status": 2,
+      "seconds": 0.10374279110692441,
+      "orthonormalityFrobenius": 3.175970220840897e-16,
+      "maxCrossReductionFrobenius": 0.010772195826140146,
+      "allOrderedCrossReductions": [
+        0.0069460337183895595,
+        0.010772195826140142,
+        0.010772195826140146,
+        0.007132599264970351
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-182",
+      "residualL2": 0.10264321265721793,
+      "nfev": 83,
+      "status": 2,
+      "seconds": 0.06501308386214077,
+      "orthonormalityFrobenius": 4.764800248379589e-16,
+      "maxCrossReductionFrobenius": 0.011930319696051744,
+      "allOrderedCrossReductions": [
+        0.01002767580389965,
+        0.01193031969605174,
+        0.011930319696051744,
+        0.0100276699051791
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-183",
+      "residualL2": 0.09252761380853172,
+      "nfev": 137,
+      "status": 2,
+      "seconds": 0.10938091715797782,
+      "orthonormalityFrobenius": 5.580857648869445e-16,
+      "maxCrossReductionFrobenius": 0.009214332616921941,
+      "allOrderedCrossReductions": [
+        0.008947071051024092,
+        0.009214332616921941,
+        0.009214332616921941,
+        0.009019083495046239
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-184",
+      "residualL2": 0.09788470375283853,
+      "nfev": 84,
+      "status": 2,
+      "seconds": 0.07348929205909371,
+      "orthonormalityFrobenius": 1.118993527668727e-16,
+      "maxCrossReductionFrobenius": 0.01082687928094355,
+      "allOrderedCrossReductions": [
+        0.01082687928094355,
+        0.010141711507374565,
+        0.010141711507374562,
+        0.007694041103654106
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-185",
+      "residualL2": 0.09252761380857083,
+      "nfev": 109,
+      "status": 2,
+      "seconds": 0.08793262508697808,
+      "orthonormalityFrobenius": 9.502336471458117e-16,
+      "maxCrossReductionFrobenius": 0.009431290577916104,
+      "allOrderedCrossReductions": [
+        0.008742783070779383,
+        0.009431290577916102,
+        0.009431290577916104,
+        0.008767386134298219
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-186",
+      "residualL2": 0.1133056515180517,
+      "nfev": 132,
+      "status": 2,
+      "seconds": 0.10554429213516414,
+      "orthonormalityFrobenius": 1.1474082152754586e-16,
+      "maxCrossReductionFrobenius": 0.01335862736372064,
+      "allOrderedCrossReductions": [
+        0.009977156668996668,
+        0.01335862736372064,
+        0.01335862736372064,
+        0.00983258045145758
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-187",
+      "residualL2": 0.09252761380856134,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.11216166685335338,
+      "orthonormalityFrobenius": 2.272842222724578e-16,
+      "maxCrossReductionFrobenius": 0.009218096187961843,
+      "allOrderedCrossReductions": [
+        0.009013297195964397,
+        0.009218096187961843,
+        0.009218096187961839,
+        0.008945148646364056
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-188",
+      "residualL2": 0.09252761380849475,
+      "nfev": 143,
+      "status": 2,
+      "seconds": 0.1132645420730114,
+      "orthonormalityFrobenius": 3.157285165249536e-16,
+      "maxCrossReductionFrobenius": 0.010091957380936998,
+      "allOrderedCrossReductions": [
+        0.008040296907923489,
+        0.010091957380936998,
+        0.010091957380936996,
+        0.00792844260981348
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-189",
+      "residualL2": 0.10051959595086363,
+      "nfev": 138,
+      "status": 2,
+      "seconds": 0.113506417023018,
+      "orthonormalityFrobenius": 2.490139236686769e-16,
+      "maxCrossReductionFrobenius": 0.009729249498581652,
+      "allOrderedCrossReductions": [
+        0.006840509763650438,
+        0.00972924949858165,
+        0.009729249498581652,
+        0.009303766098018088
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-190",
+      "residualL2": 0.0978847037527286,
+      "nfev": 126,
+      "status": 2,
+      "seconds": 0.10449095815420151,
+      "orthonormalityFrobenius": 4.006250139796616e-16,
+      "maxCrossReductionFrobenius": 0.011461865846509663,
+      "allOrderedCrossReductions": [
+        0.011461865846509663,
+        0.010285115447664073,
+        0.010285115447664072,
+        0.006259923518279678
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-191",
+      "residualL2": 0.09252761380852513,
+      "nfev": 114,
+      "status": 2,
+      "seconds": 0.09150199987925589,
+      "orthonormalityFrobenius": 4.48772908633051e-16,
+      "maxCrossReductionFrobenius": 0.0098187690647871,
+      "allOrderedCrossReductions": [
+        0.008276239208355147,
+        0.0098187690647871,
+        0.009818769064787099,
+        0.008359976599059944
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-192",
+      "residualL2": 0.09252761380852892,
+      "nfev": 148,
+      "status": 2,
+      "seconds": 0.11832304112613201,
+      "orthonormalityFrobenius": 3.454501942505482e-16,
+      "maxCrossReductionFrobenius": 0.009979612961272545,
+      "allOrderedCrossReductions": [
+        0.008179696805393058,
+        0.009979612961272545,
+        0.009979612961272543,
+        0.008069011005758632
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-193",
+      "residualL2": 0.09252761380855859,
+      "nfev": 110,
+      "status": 2,
+      "seconds": 0.08383083320222795,
+      "orthonormalityFrobenius": 5.049253878961134e-16,
+      "maxCrossReductionFrobenius": 0.010029419283301835,
+      "allOrderedCrossReductions": [
+        0.008004836448213357,
+        0.010029419283301835,
+        0.010029419283301831,
+        0.008120704510061581
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-194",
+      "residualL2": 0.09252761380856274,
+      "nfev": 156,
+      "status": 2,
+      "seconds": 0.12268225010484457,
+      "orthonormalityFrobenius": 6.759011727199146e-16,
+      "maxCrossReductionFrobenius": 0.009247805512826796,
+      "allOrderedCrossReductions": [
+        0.008946373931950618,
+        0.009247805512826794,
+        0.009247805512826796,
+        0.008950998430497108
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-195",
+      "residualL2": 0.09788470375275796,
+      "nfev": 86,
+      "status": 2,
+      "seconds": 0.07117129093967378,
+      "orthonormalityFrobenius": 5.022193574020767e-16,
+      "maxCrossReductionFrobenius": 0.01180803368239635,
+      "allOrderedCrossReductions": [
+        0.006747570556136481,
+        0.00992896885041696,
+        0.009928968850416962,
+        0.01180803368239635
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-196",
+      "residualL2": 0.1082536253556576,
+      "nfev": 101,
+      "status": 2,
+      "seconds": 0.08075108285993338,
+      "orthonormalityFrobenius": 5.020755253772286e-16,
+      "maxCrossReductionFrobenius": 0.011709193861852193,
+      "allOrderedCrossReductions": [
+        0.011709193861852193,
+        0.010522052407021993,
+        0.010522052407021993,
+        0.011709193466517278
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-197",
+      "residualL2": 0.09788470375273282,
+      "nfev": 84,
+      "status": 2,
+      "seconds": 0.07728920807130635,
+      "orthonormalityFrobenius": 2.6061595772649693e-16,
+      "maxCrossReductionFrobenius": 0.011558512129330081,
+      "allOrderedCrossReductions": [
+        0.005662122850677826,
+        0.010403590094080716,
+        0.010403590094080718,
+        0.011558512129330081
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-198",
+      "residualL2": 0.09252761380851524,
+      "nfev": 137,
+      "status": 2,
+      "seconds": 0.11673475010320544,
+      "orthonormalityFrobenius": 6.815546139019208e-17,
+      "maxCrossReductionFrobenius": 0.009266827806064724,
+      "allOrderedCrossReductions": [
+        0.008939090825981027,
+        0.009266827806064724,
+        0.009266827806064722,
+        0.008918867502678186
+      ],
+      "orderedComplexEntriesChecked": 100
+    },
+    {
+      "seedName": "random-199",
+      "residualL2": 0.10825362535569395,
+      "nfev": 101,
+      "status": 2,
+      "seconds": 0.08296570810489357,
+      "orthonormalityFrobenius": 2.613046835784969e-16,
+      "maxCrossReductionFrobenius": 0.014007414149190808,
+      "allOrderedCrossReductions": [
+        0.007184086915834402,
+        0.014007414149190808,
+        0.014007414149190808,
+        0.007184083921991599
+      ],
+      "orderedComplexEntriesChecked": 100
+    }
+  ],
+  "elapsedSeconds": 28.098453916143626,
+  "bestSeed": "local-n23-t3-k2-pad0",
+  "maxCrossReductionFrobenius": 0.009104734345600395,
+  "found": false,
+  "bestBasis": [
+    [
+      [
+        -0.19653808843730092,
+        -0.01193405026546838
+      ],
+      [
+        0.1941158087815343,
+        0.1317817790037841
+      ],
+      [
+        -0.024993538693858803,
+        0.24957493046656995
+      ],
+      [
+        0.0964668233501576,
+        -0.005937455745157666
+      ],
+      [
+        0.1254259453125277,
+        -0.1411602352600051
+      ],
+      [
+        0.09072851487550061,
+        -0.00968094745856931
+      ],
+      [
+        0.019690711753160856,
+        -0.07920322093520439
+      ],
+      [
+        0.15337801034642368,
+        0.35900259619576214
+      ],
+      [
+        0.08591719234763653,
+        -0.04324719406786653
+      ],
+      [
+        -0.21024909608952774,
+        -0.056343859606360715
+      ],
+      [
+        -0.013720896026122855,
+        0.1227964583485599
+      ],
+      [
+        -0.32371407889557163,
+        0.0620224407739888
+      ],
+      [
+        -0.09101274469772737,
+        -0.14645000500881555
+      ],
+      [
+        0.019876077004086043,
+        0.1452280086612943
+      ],
+      [
+        0.12189299834343231,
+        0.06630311265825578
+      ],
+      [
+        -0.01802350311237866,
+        0.15720231957565026
+      ],
+      [
+        0.06714482231226042,
+        0.006098328980897276
+      ],
+      [
+        0.3023026285074769,
+        0.04876646277050594
+      ],
+      [
+        -0.18286049571755983,
+        -0.1712137095368499
+      ],
+      [
+        -0.03415783365038551,
+        -0.00369726876572125
+      ],
+      [
+        0.19191486355395024,
+        -0.09373106075517855
+      ],
+      [
+        0.29587972809771806,
+        0.0940265332299969
+      ],
+      [
+        0.01215397226841172,
+        -0.0958943914390777
+      ],
+      [
+        0.09501935924355936,
+        0.1794853457089618
+      ]
+    ],
+    [
+      [
+        -0.03901229900407493,
+        0.20941672841165992
+      ],
+      [
+        -0.05479664633651652,
+        0.18120703581847142
+      ],
+      [
+        -0.06878585074294624,
+        -0.10394687113187936
+      ],
+      [
+        -0.2938621527560276,
+        0.015216590884838099
+      ],
+      [
+        0.21657323441284274,
+        0.020178598224868706
+      ],
+      [
+        -0.048421397628150065,
+        -0.022630030326244936
+      ],
+      [
+        -0.03411511486193822,
+        -0.309569441053317
+      ],
+      [
+        0.12623376468031108,
+        -0.08099407810505034
+      ],
+      [
+        -0.004335591579159101,
+        -0.13649992111747228
+      ],
+      [
+        -0.1533021672246005,
+        0.05941048226466983
+      ],
+      [
+        -0.2622980368252668,
+        -0.05485362999085353
+      ],
+      [
+        -0.0026625324356286313,
+        -0.06978908300778357
+      ],
+      [
+        0.042948558240788394,
+        0.10760034341346357
+      ],
+      [
+        0.08221145003576877,
+        -0.26614323222048786
+      ],
+      [
+        -0.2542751080527881,
+        -0.00010213242716637576
+      ],
+      [
+        -0.1067219704791327,
+        0.020081411047031494
+      ],
+      [
+        -0.003098985037316722,
+        -0.2874608803981164
+      ],
+      [
+        0.27857736454614085,
+        0.026112914732634957
+      ],
+      [
+        0.06586627904745812,
+        -0.17278091758902447
+      ],
+      [
+        0.054172744001334226,
+        -0.04136549316759583
+      ],
+      [
+        -0.051736676530431194,
+        -0.0015999354474163397
+      ],
+      [
+        -0.08808140170394811,
+        -0.24246346788215092
+      ],
+      [
+        -0.019348559700652367,
+        0.20044931590779924
+      ],
+      [
+        -0.04909219859140434,
+        0.21263025777347144
+      ]
+    ]
+  ],
+  "scope": "Numerical candidate only. A failed finite search is not a proof of nonexistence."
+}

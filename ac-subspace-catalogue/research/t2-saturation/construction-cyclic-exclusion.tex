@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{An asymptotic obstruction to cyclic saturation of second-order AC bounds}
+\author{}\date{}\maketitle
+
+The following excludes all upper-dimension subspaces invariant under a cyclic
+rotation of order $k$, about any axis. It does not exclude arbitrary
+anticoherent subspaces attaining the general upper bound.
+
+\begin{theorem}
+Let $N\ge420$ and $k=\lfloor N/5\rfloor+1$. There is no second-order
+anticoherent $k$-dimensional subspace invariant under the collective rotation
+$\exp(-2\pi i J_{\mathbf n}/k)$ about any axis $\mathbf n$.
+For the subsequence $N=5k-1$, the same conclusion holds already for $k\ge62$.
+\end{theorem}
+
+\begin{proof}
+A collective rotation preserves anticoherence, so we may take the symmetry
+axis to be $z$. Write $j=N/2$ and $c=j(j+1)/3$.
+
+We first prove that a second-order AC subspace supported on at most five
+$J_z$ eigenvalues spaced by $k$ has dimension at most one if $c>2k^2$.
+Pad missing endpoints by zero coefficients, and write the five positions as
+$d-2k,d-k,d,d+k,d+2k$. If the subspace had dimension at least two, the kernel
+of the top-coordinate functional would contain a nonzero vector. After
+normalization this vector has mean zero and variance $c$, supported in
+$[d-2k,d+k]$. For any real random variable in $[L,U]$,
+$(m-L)(U-m)\ge0$ implies
+$\mathbb E[m^2]\le(L+U)\mathbb E[m]-LU$. Consequently
+\[
+ c\le 2k^2+kd-d^2.
+\]
+Applying the same argument to a possibly different vector in the kernel of
+the bottom-coordinate functional gives
+\[
+ c\le2k^2-kd-d^2.
+\]
+Together these imply $c\le2k^2-k|d|-d^2\le2k^2$, a contradiction.
+
+Write $N=5k-s$, $1\le s\le5$. The cyclic rotation eigenspaces are precisely
+the Dicke residue sectors $r\equiv a\pmod k$, each with at most five nodes.
+Moreover,
+\[
+ c-2k^2=\frac{k^2-10(s-1)k+s(s-2)}{12}>0
+\]
+for $k\ge85$, as in the stated range. For $s=1$ this expression is already
+positive for every $k>1$. A cyclic-invariant code decomposes into subspaces
+of these sectors; each is itself AC and thus has dimension at most one.
+Since the total dimension is $k$, all $k$ sectors have dimension exactly one.
+We therefore obtain an orthonormal basis $u_0,\ldots,u_{k-1}$ satisfying
+\[
+ \operatorname{supp}(u_a)\subseteq
+ \{r:0\le r\le N,\ r\equiv a\pmod k\}.
+\]
+For half-integer spin, the overall phase of the rotation does not alter
+these distinct residue eigenspaces.
+
+Let $P$ be the code projector. AC order two implies
+\[
+ PJ_\alpha P=0,\qquad PJ_\alpha J_\beta P=c\delta_{\alpha\beta}P.
+\]
+Consequently the four isometries $P,J_xP/\sqrt c,J_yP/\sqrt c,J_zP/\sqrt c$
+have mutually orthogonal ranges. Their range projector is
+\[
+ E=P+\frac1c\sum_{\alpha=x,y,z}J_\alpha PJ_\alpha\le I.
+\]
+Let $p_r=P_{rr}$ in the Dicke basis, and put $m_r=j-r$. Its diagonal
+inequalities read
+\[
+ \left(1+\frac{m_r^2}{c}\right)p_r+
+ \frac{r(N-r+1)p_{r-1}+(r+1)(N-r)p_{r+1}}{2c}\le1,
+ \tag{1}
+\]
+where missing endpoint terms are zero. The support hypothesis supplies,
+for each residue $a$,
+\[
+ \sum_{r\equiv a}p_r=1,\qquad
+ \sum_{r\equiv a}m_rp_r=0,\qquad
+ \sum_{r\equiv a}m_r^2p_r=c. \tag{2}
+\]
+
+Set $\theta=\pi/8$ and use seven positive averaging weights
+\[
+ f_a=\sin((a+1)\theta),\quad 0\le a\le6,\qquad F=\sum_{a=0}^6 f_a.
+\]
+Set $f_{-1}=f_7=0$. In each of the five bands $r=\ell k+a$, $0\le\ell\le4$,
+sum (1) with multipliers $f_a$. All these indices exist: writing
+$N=5k-s$, $1\le s\le5$, it suffices that $k\ge s+6$, which is certainly true
+in the stated range.
+
+The coefficient of an internal $p_r$ in the weighted sum is
+\begin{align*}
+ &\left(1+\frac{m_r^2}{c}\right)f_a+
+ \frac{(j(j+1)-m_r^2+m_r)f_{a+1}
+       +(j(j+1)-m_r^2-m_r)f_{a-1}}{2c}\\
+ &=\left[1+3\cos\theta+
+       \frac{m_r^2}{c}(1-\cos\theta)\right]f_a
+       +\frac{m_r}{c}\sin\theta\cos((a+1)\theta)\\
+ &\ge\left[1+3\cos\theta-\frac{6}{N+2}\right]f_a.
+\end{align*}
+Here $\sin\theta\,|\cot((a+1)\theta)|\le1$ and $|m_r|/c\le6/(N+2)$.
+Contributions from outside the seven-index window are nonnegative.
+Moreover, $\cos(\pi/8)>11/12$: squaring reduces this to
+$\sqrt2>49/36$, itself an exact rational squared inequality.
+Thus, with
+\[
+ B(N)=\frac{15}{4}-\frac6{N+2},\qquad
+ W_\ell=\frac1F\sum_{a=0}^6f_a p_{\ell k+a},
+\]
+we obtain
+\[
+ 0\le W_\ell\le\frac1{B(N)},\qquad \sum_{\ell=0}^4W_\ell=1. \tag{3}
+\]
+
+Define ideal normalized latitudes and a quadratic dual polynomial by
+\[
+ z_\ell=1-\frac{2\ell}{5},\qquad Q(z)=z^2-\frac85z.
+\]
+The actual normalized latitude is
+\[
+ \frac{m_{\ell k+a}}j=z_\ell-e_{\ell a},\qquad
+ e_{\ell a}=\frac{2(a+s\ell/5)}N\le\frac{12+2\ell}{N}=:\epsilon_\ell.
+\]
+The five values of $Q(z_\ell)+3/5$ are
+\[
+ 0,\quad0,\quad\frac8{25},\quad\frac{24}{25},\quad\frac{48}{25}.
+\]
+For band zero, $Q(1-e)\le-3/5$ whenever $0\le e\le2/5$, as holds here.
+For bands $\ell=1,\ldots,4$,
+\[
+ Q(z_\ell-e)\le Q(z_\ell)
+       +\left(\frac85-2z_\ell\right)\epsilon_\ell+\epsilon_\ell^2.
+\]
+All four excesses above $-3/5$ are nonnegative. Applying (3), their total
+weighted expectation is bounded by
+\[
+ U(N)=-\frac35+
+ \frac{\displaystyle\frac{16}{5}+\frac{584}{5N}+\frac{1176}{N^2}}
+      {\displaystyle\frac{15}{4}-\frac6{N+2}}. \tag{4}
+\]
+On the other hand, the exact moments (2) imply that the same expectation is
+\[
+ \frac{c}{j^2}=\frac{N+2}{3N}>\frac13. \tag{5}
+\]
+The function $U(N)$ decreases for $N\ge420$, since its positive numerator
+decreases and its positive denominator increases. Exact rational arithmetic
+gives
+\[
+ \frac13-U(420)=\frac{872}{1655325}>0.
+\]
+Equations (4) and (5) contradict each other.
+
+For $s=1$, sharpen the band error to
+$\epsilon_\ell=(12+2\ell/5)/N$. The numerator in (4) becomes
+\[
+ \frac{16}{5}+\frac{424}{5N}+\frac{3384}{5N^2}.
+\]
+At $N=309=5\cdot62-1$, this gives an upper bound strictly below $1/3$;
+the same monotonicity argument covers every larger $k$.
+\end{proof}
+
+The proof makes no continuity or smoothness assumption on coefficients or
+phases. The one-dimension-per-residue property is a consequence of cyclic
+invariance and the variance lemma, not an extra hypothesis. The result
+strengthens the earlier smooth-profile obstruction, while leaving open
+upper-dimension subspaces without this cyclic invariance.
+The accompanying \texttt{construction\_cyclic\_exclusion.py} checks every
+rational coefficient, endpoint gap, and finite-window formula used above.
+\end{document}

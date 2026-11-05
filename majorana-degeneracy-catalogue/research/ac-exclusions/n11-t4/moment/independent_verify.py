@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""Independent exact audit of the N11,t4 three-copy obstruction.
+
+Reconstructs selected contraction equations from explicit symmetrized-word
+multiplicities, without importing the discovery or certificate-builder code.
+The selected equations alone already yield the contradiction.
+"""
+import argparse
+import itertools
+import json
+import math
+import time
+from fractions import Fraction
+from functools import reduce
+from pathlib import Path
+import sympy as s
+from sympy.polys.matrices import DomainMatrix
+
+
+def primitive(row):
+    row=[Fraction(x) for x in row]
+    denominator=math.lcm(*(x.denominator for x in row))
+    integers=[int(x*denominator) for x in row]
+    divisor=reduce(math.gcd,(abs(x) for x in integers))
+    assert divisor
+    return [x//divisor for x in integers]
+
+
+def multiplicity(word):
+    return math.factorial(len(word))//math.prod(math.factorial(word.count(k)) for k in set(word))
+
+
+def verify(data):
+    start=time.time()
+    n=data['n'];copies=data['copies'];t=data['t']
+    assert (n,copies,t)==(11,3,4)
+    words=list(itertools.combinations_with_replacement(range(n+1),copies))
+    byweight={}
+    for word in words:
+        byweight.setdefault(2*sum(word)-copies*n,[]).append(word)
+    lesser=list(itertools.combinations_with_replacement(range(n+1),copies-1))
+    lowweight={}
+    for word in lesser:
+        lowweight.setdefault(2*sum(word)-(copies-1)*n,[]).append(word)
+
+    # Collective lowering/raising by acting on every slot of each word.
+    def collective(matrix,weight,shift):
+        src=byweight[weight];dst=byweight.get(weight+2*shift,[])
+        index={word:i for i,word in enumerate(dst)}
+        result=s.zeros(len(dst),matrix.cols)
+        for column,word in enumerate(src):
+            for position,k in enumerate(word):
+                target=k+shift
+                if not 0<=target<=n:
+                    continue
+                out=list(word);out[position]=target;out=tuple(sorted(out))
+                coefficient=k+1 if shift==1 else n-k+1
+                row=index[out]
+                for a in range(matrix.cols):
+                    result[row,a]+=coefficient*matrix[column,a]
+        return result
+
+    expected_spins=[J for J in sorted(byweight) if J>=0 and len(byweight[J])>len(byweight.get(J+2,[]))]
+    assert [b['J2'] for b in data['blocks']]==expected_spins
+    blocks=[]
+    for block in data['blocks']:
+        J2=block['J2'];H=s.Matrix([[s.Integer(x) for x in row] for row in block['highestWeight']])
+        mult=block['multiplicity']
+        assert block['denominatorScale']>0
+        assert H.rows==len(byweight[J2]) and H.cols==mult
+        assert H.rank()==mult
+        assert collective(H,J2,1)==s.zeros(len(byweight.get(J2+2,[])),mult)
+        assert mult==len(byweight[J2])-len(byweight.get(J2+2,[]))
+        U={J2:H}
+        for step in range(1,J2+1):
+            M=J2-2*step
+            U[M]=collective(U[M+2],M+2,-1)/step
+            assert all(x.is_Integer for x in U[M])
+        lookup={M:{word:tuple(int(v) for v in matrix.row(i)) for i,word in enumerate(byweight[M])} for M,matrix in U.items()}
+        blocks.append({'J2':J2,'multiplicity':mult,'denominatorScale':block['denominatorScale'],'vectors':lookup})
+    dimension=sum((b['J2']+1)*b['multiplicity'] for b in blocks)
+    assert dimension==math.comb(n+copies,copies)==364
+    variables=[tuple(v) for v in data['variables']]
+    assert variables==[(ib,a,b) for ib,block in enumerate(blocks) for a in range(block['multiplicity']) for b in range(a,block['multiplicity'])]
+    assert len(variables)==27
+
+    reconstructed=[]
+    for ell,M3,a,b in data['selectedConstraints']:
+        assert 1<=ell<=t
+        alpha=lowweight[M3][a];beta=lowweight[M3][b]
+        row=[Fraction(0) for _ in variables]
+        for iv,(ib,A,B) in enumerate(variables):
+            block=blocks[ib];J2=block['J2']
+            for i in range(n+1):
+                M=M3+2*i-n
+                if M not in block['vectors']:
+                    continue
+                wa=tuple(sorted((i,)+alpha));wb=tuple(sorted((i,)+beta))
+                va=block['vectors'][M][wa];vb=block['vectors'][M][wb]
+                # A first-leg contraction of averaged words is the ratio of
+                # their orbit sizes; the square-root binomial factors pair up.
+                ratio=Fraction(multiplicity(alpha)*multiplicity(beta),multiplicity(wa)*multiplicity(wb))
+                z=2*i-n
+                f={1:z,2:3*z*z-143,3:z*(5*z*z-425),4:35*z**4-4190*z*z+57915}[ell]
+                scalar=Fraction(block['denominatorScale'],math.comb(J2,(J2-M)//2))*math.comb(n,i)*f*ratio
+                row[iv]+=scalar*(va[A]*vb[B]+(va[B]*vb[A] if A!=B else 0))
+        reconstructed.append(primitive(row))
+    assert reconstructed==[[int(x) for x in row] for row in data['selectedRows']]
+    matrix=s.Matrix(reconstructed)
+    rank=DomainMatrix.from_Matrix(matrix).convert_to(s.QQ).rank()
+    assert rank==len(variables)==27
+    # The full-rank equations force every real invariant moment operator to0.
+    # A hypothetical pure4-AC state would produce a nonzero positive moment;
+    # taking real parts preserves positivity and trace, so that too is excluded.
+    return {'n':n,'t':t,'copies':copies,'verifiedExactly':True,
+            'method':'Independent exact reconstruction of contraction equations using symmetrized-word orbit multiplicities; no discovery code imported.',
+            'fullSymmetricPowerDimension':dimension,'invariantVariables':len(variables),
+            'reconstructedConstraints':len(reconstructed),'exactRank':rank,'kernelDimension':0,
+            'runtimeSeconds':time.time()-start}
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('certificate',type=Path,nargs='?',default=Path(__file__).resolve().with_name('certificate.json'))
+    parser.add_argument('--out',type=Path,default=Path(__file__).with_name('independent-verification.json'))
+    args=parser.parse_args()
+    result=verify(json.loads(args.certificate.read_text()))
+    args.out.write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps(result,indent=2))

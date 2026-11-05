@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\paragraph{Current status.} The separate auxiliary-spin inertia theorem now proves $k_{\max}(13,2)=2$. This note retains an earlier, weaker investigation.
+
+\title{A three-copy projector relaxation for thirteen-qubit second-order AC subspaces}
+\author{Numerical research note}
+\date{30 October 2026}
+\maketitle
+\paragraph{Status.} This calculation does not decide whether a three-dimensional second-order AC subspace exists. It gives a numerically consistent solution to a stronger necessary-condition relaxation. No exact feasibility certificate, physical projector, or nonexistence proof is claimed.
+
+Let $V=V_{13/2}$, $d=14$, and suppose $P$ were a rank-$k=3$ orthogonal projector satisfying $PTP=0$ for every irreducible spin tensor $T$ of ranks one and two. Define
+\[
+Y=\frac{1}{k^3}\int_{SU(2)}(UPU^\dagger)^{\otimes3}\,dU.
+\]
+Then $Y\succeq0$, $\Tr Y=1$, and $Y$ commutes both with collective rotations and with permutations of its three factors. The full three-factor space has the decomposition
+\[
+V^{\otimes3}\cong\operatorname{Sym}^3V\oplus
+\bigl(S_{(2,1)}V\otimes\mathbb C^2\bigr)\oplus\Lambda^3V,
+\]
+whose three Schur-space dimensions are $560$, $910$, and $364$. Their real symmetric rotation-invariant multiplicity blocks have respectively $39$, $102$, and $27$ coordinates: $168$ in total. The two-dimensional permutation factor in the middle sector carries an identity matrix. Retaining all three sectors differs from using only the exterior product of a code basis.
+
+Put $Z=\Tr_1Y/k$, an operator on two factors. Since $P^2=P$, the swap $S_{12}$ gives
+\[
+\Tr_1(S_{12}Y)=Z.
+\]
+The AC conditions imply
+\[
+\Tr_1\bigl(T^{(1)}S_{12}Y\bigr)=0.
+\]
+The ordering in this equation matters: $\Tr_1[T^{(1)}S_{12}(P\otimes P\otimes P)]=(PTP)\otimes P$. Moving $T^{(1)}$ to the other side of the swap would instead produce $TP^2\otimes P$ and would be incorrect. By rotation covariance, it suffices to use $T=J_z$ and $T=J_z^2-j(j+1)I/3$ and to impose all entries of these two output matrices. Together with idempotence, these homogeneous equations have numerical rank $70$ in the $168$-variable parameterization. The singular-value gap separates approximately $2.72$ from $7.4\times10^{-14}$.
+
+For each placement of the identity, write $Z_i$ for $I\otimes Z$ and its permutations. The twirls of all products with each factor chosen from $P$ and $I-P$ must be positive. In the chosen normalization, the nontrivial forms are
+\[
+Y,\quad Z_i-Y,\quad
+\frac{I}{k^2d}-Z_i-Z_j+Y\quad(i\ne j),\quad
+\left(\frac1{k^3}-\frac3{k^2d}\right)I+\sum_iZ_i-Y.
+\]
+Each is a mixture of products of positive operators. It therefore remains positive after partial transposition on any factor, equivalently after partial time reversal $\Theta(A)=FA^{\mathsf T}F^\dagger$, where $F$ is the unitary spin-reversal matrix. All inequivalent one-factor cuts are imposed. Rotation invariance turns these into finite positive-semidefinite multiplicity blocks; the implementation checks $352$ blocks, including the original Schur blocks.
+
+All the chosen Clebsch--Gordan coefficients, output constraints, and partial-time-reversal maps are real. Passing to the entrywise real parts of the invariant Hermitian multiplicity blocks preserves positivity and these linear conditions. Thus searching real moment coordinates does not assume that the original subspace has real coefficients.
+
+\paragraph{Observed numerical result.}
+The bounded CLARABEL solve returned \texttt{optimal\_inaccurate}. An independent evaluation of the saved moment gives equality residual below $2\times10^{-17}$, unit trace to about $2\times10^{-12}$, and smallest tested eigenvalue approximately $-1.1\times10^{-14}$. These roundoff-sized discrepancies support numerical consistency of this relaxation but are not exact nonnegativity certificates. In particular, the moment need not equal the twirl of any actual rank-three projector.
+
+\paragraph{Controls and reproducibility.}
+Known genuine second-order codes at $(N,k)=(7,2)$ and $(14,3)$ populate the moment and validate the linear maps against direct tensor products. The largest control equation error is $3.4\times10^{-16}$; the partial-time-reversal and identity-times-pair maps agree to below $1.7\times10^{-16}$. The portable generator rebuilds the maps using Clebsch--Gordan coefficients evaluated from exact factorial sums before conversion to floating point. The saved candidate uses fixed pair-spin coupling coordinates, so it does not depend on arbitrary eigenvector choices within Schur multiplicity spaces. The separate verifier needs no optimizer. Large generated maps are omitted from the catalogue and can be reconstructed.
+\end{document}

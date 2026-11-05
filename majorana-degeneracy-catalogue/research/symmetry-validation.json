@@ -1,0 +1,2748 @@
+{
+  "schemaVersion": 1,
+  "detector": "../majorana-symmetry.js",
+  "detectorSHA256": "97fca2b475eea09e99d11c4875397f5a529c2fc9ff5b4bc53cad3b31dee122bd",
+  "tolerance": 0.000001,
+  "scientificStatus": "Numerical geometric verification only. This does not prove exact rotational symmetry, anticoherence, or optimality.",
+  "api": {
+    "call": "window.MajoranaSymmetry.detect(points, {tolerance:1e-6})",
+    "points": "Array of {x,y,z,multiplicity} objects or [x,y,z,weight] arrays; weight defaults to1.",
+    "status": [
+      "finite",
+      "continuous",
+      "invalid"
+    ],
+    "rotationCount": "Finite count includes the identity; null for a continuous group.",
+    "axes": "Unoriented directions. order is the cyclic order; null denotes all rotation angles about that axis. angle/generatorAngle are2pi/order for finite axes.",
+    "continuousFamilies": "Equal antipodal weights have an additional continuous family of perpendicular half-turn axes; these are not replaced by arbitrary sampled axes.",
+    "cache": "Cached by array identity plus complete coordinate/weight signature; clearCache() is available."
+  },
+  "method": {
+    "enumeration": "Choose a pair with maximal cross-product norm. An exact proper rotation is uniquely determined by its images. Enumerate all ordered image pairs with the same multiplicities and Gram product, and form the oriented-frame rotation.",
+    "verification": "A complete bipartite matching checks every point with its original multiplicity at the chord-distance tolerance.",
+    "axisExtraction": "Quaternion branches, including largest-diagonal branches at pi, give stable axes. Unoriented axes are coalesced and assigned the largest detected cyclic order.",
+    "continuousCases": "A single point or collinear antipodal set has arbitrary rotations about its line. Equal antipodal weights also permit every perpendicular half-turn axis.",
+    "limitations": "A tolerance-based detection is not a symbolic proof. Near-collinear and near-coincident configurations are explicitly flagged; absence of a detected axis is not a certified nonexistence result."
+  },
+  "summary": {
+    "allKnownTestsPassed": true,
+    "allAdditionalTestsPassed": true,
+    "catalogueVectors": 183,
+    "finiteVectors": 166,
+    "continuousVectors": 17,
+    "invalidVectors": 0,
+    "catalogueMilliseconds": 241,
+    "maximumMatchedResidual": 1.0068810866857322e-15
+  },
+  "knownGeometries": [
+    {
+      "name": "tetrahedron",
+      "inputPoints": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258
+        ],
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258
+        ]
+      ],
+      "expectedRotationCount": 12,
+      "expectedAxesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 12,
+        "axesByOrder": {
+          "2": 3,
+          "3": 4
+        },
+        "maxResidual": 4.839349969133127e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "octahedron",
+      "inputPoints": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "expectedRotationCount": 24,
+      "expectedAxesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 24,
+        "axesByOrder": {
+          "2": 6,
+          "3": 4,
+          "4": 3
+        },
+        "maxResidual": 0,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "icosahedron",
+      "inputPoints": [
+        [
+          0,
+          -1,
+          -1.618033988749895
+        ],
+        [
+          -1,
+          -1.618033988749895,
+          0
+        ],
+        [
+          -1.618033988749895,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1.618033988749895
+        ],
+        [
+          -1,
+          1.618033988749895,
+          0
+        ],
+        [
+          1.618033988749895,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1.618033988749895
+        ],
+        [
+          1,
+          -1.618033988749895,
+          0
+        ],
+        [
+          -1.618033988749895,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1.618033988749895
+        ],
+        [
+          1,
+          1.618033988749895,
+          0
+        ],
+        [
+          1.618033988749895,
+          0,
+          1
+        ]
+      ],
+      "expectedRotationCount": 60,
+      "expectedAxesByOrder": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 60,
+        "axesByOrder": {
+          "2": 15,
+          "3": 10,
+          "5": 6
+        },
+        "maxResidual": 3.343430380733629e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "regular-heptagon",
+      "inputPoints": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0.6234898018587336,
+          0.7818314824680298,
+          0
+        ],
+        [
+          -0.22252093395631434,
+          0.9749279121818236,
+          0
+        ],
+        [
+          -0.900968867902419,
+          0.43388373911755823,
+          0
+        ],
+        [
+          -0.9009688679024191,
+          -0.433883739117558,
+          0
+        ],
+        [
+          -0.2225209339563146,
+          -0.9749279121818236,
+          0
+        ],
+        [
+          0.6234898018587334,
+          -0.7818314824680299,
+          0
+        ]
+      ],
+      "expectedRotationCount": 14,
+      "expectedAxesByOrder": {
+        "2": 7,
+        "7": 1
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 14,
+        "axesByOrder": {
+          "2": 7,
+          "7": 1
+        },
+        "maxResidual": 5.978733960281817e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "generic",
+      "inputPoints": [
+        [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372733
+        ],
+        [
+          -0.8804509063256238,
+          0.4402254531628119,
+          0.1760901812651248
+        ],
+        [
+          0.22808577638091165,
+          -0.6082287370157645,
+          0.7602859212697056
+        ],
+        [
+          -0.2672612419124244,
+          -0.8017837257372733,
+          0.5345224838248488
+        ],
+        [
+          0.9428090415820635,
+          0.047140452079103175,
+          -0.3299831645537222
+        ]
+      ],
+      "expectedRotationCount": 1,
+      "expectedAxesByOrder": {},
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 1,
+        "axesByOrder": {},
+        "maxResidual": 5.661048867003676e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "weighted-asymmetric-tetrahedron",
+      "inputPoints": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258,
+          1
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258,
+          2
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258,
+          3
+        ],
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258,
+          4
+        ]
+      ],
+      "expectedRotationCount": 1,
+      "expectedAxesByOrder": {},
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 1,
+        "axesByOrder": {},
+        "maxResidual": 4.839349969133127e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "weighted-one-distinct-tetrahedron",
+      "inputPoints": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258,
+          2
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258,
+          1
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258,
+          1
+        ],
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258,
+          1
+        ]
+      ],
+      "expectedRotationCount": 3,
+      "expectedAxesByOrder": {
+        "3": 1
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 3,
+        "axesByOrder": {
+          "3": 1
+        },
+        "maxResidual": 4.839349969133127e-16,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "single-point",
+      "inputPoints": [
+        [
+          0.3,
+          0.4,
+          0.5
+        ]
+      ],
+      "expectedRotationCount": null,
+      "expectedAxesByOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "continuous",
+        "rotationCount": null,
+        "axesByOrder": {
+          "null": 1
+        },
+        "maxResidual": 0,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "antipodal-equal",
+      "inputPoints": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          -1,
+          2
+        ]
+      ],
+      "expectedRotationCount": null,
+      "expectedAxesByOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "continuous",
+        "rotationCount": null,
+        "axesByOrder": {
+          "null": 1
+        },
+        "maxResidual": 0,
+        "continuousFamilies": [
+          {
+            "kind": "perpendicular-half-turn-axes",
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "order": 2,
+            "rotationAngle": 3.141592653589793,
+            "description": "Every axis perpendicular to the main axis gives a half-turn symmetry."
+          }
+        ]
+      }
+    },
+    {
+      "name": "antipodal-unequal",
+      "inputPoints": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          -1,
+          1
+        ]
+      ],
+      "expectedRotationCount": null,
+      "expectedAxesByOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "continuous",
+        "rotationCount": null,
+        "axesByOrder": {
+          "null": 1
+        },
+        "maxResidual": 0,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "nonantipodal-equal-pair",
+      "inputPoints": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "expectedRotationCount": 2,
+      "expectedAxesByOrder": {
+        "2": 1
+      },
+      "passed": true,
+      "actual": {
+        "status": "finite",
+        "rotationCount": 2,
+        "axesByOrder": {
+          "2": 1
+        },
+        "maxResidual": 0,
+        "continuousFamilies": []
+      }
+    },
+    {
+      "name": "empty",
+      "inputPoints": [],
+      "expectedRotationCount": 0,
+      "expectedAxesByOrder": {},
+      "passed": true,
+      "actual": {
+        "status": "invalid",
+        "rotationCount": 0,
+        "axesByOrder": {},
+        "maxResidual": null,
+        "continuousFamilies": []
+      }
+    }
+  ],
+  "additionalTests": [
+    {
+      "name": "regular-100-gon",
+      "passed": true,
+      "rotationCount": 200,
+      "axisCount": 101,
+      "milliseconds": 194
+    },
+    {
+      "name": "duplicate-rows-equal-weighted-octahedron",
+      "passed": true,
+      "rotationCount": 24
+    },
+    {
+      "name": "cache-and-in-place-mutation",
+      "passed": true
+    }
+  ],
+  "rotationCovariance": [
+    {
+      "name": "tetrahedron",
+      "passed": true
+    },
+    {
+      "name": "octahedron",
+      "passed": true
+    },
+    {
+      "name": "icosahedron",
+      "passed": true
+    },
+    {
+      "name": "regular-heptagon",
+      "passed": true
+    },
+    {
+      "name": "generic",
+      "passed": true
+    },
+    {
+      "name": "weighted-asymmetric-tetrahedron",
+      "passed": true
+    },
+    {
+      "name": "weighted-one-distinct-tetrahedron",
+      "passed": true
+    },
+    {
+      "name": "single-point",
+      "passed": true
+    },
+    {
+      "name": "antipodal-equal",
+      "passed": true
+    },
+    {
+      "name": "antipodal-unequal",
+      "passed": true
+    },
+    {
+      "name": "nonantipodal-equal-pair",
+      "passed": true
+    }
+  ],
+  "selectedCatalogueTests": [
+    {
+      "id": "ac-n10-t3",
+      "passed": true,
+      "expectedRotationCount": 10,
+      "expectedAxesByOrder": {
+        "2": 5,
+        "5": 1
+      },
+      "actual": {
+        "id": "ac-n10-t3",
+        "n": 10,
+        "status": "finite",
+        "rotationCount": 10,
+        "axisCount": 6,
+        "axesByOrder": {
+          "2": 5,
+          "5": 1
+        },
+        "maxResidual": 7.631521572941402e-16,
+        "milliseconds": 0
+      }
+    },
+    {
+      "id": "gmax-n12-t3",
+      "passed": true,
+      "expectedRotationCount": 24,
+      "expectedAxesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "actual": {
+        "id": "gmax-n12-t3",
+        "n": 12,
+        "status": "finite",
+        "rotationCount": 24,
+        "axisCount": 13,
+        "axesByOrder": {
+          "2": 6,
+          "3": 4,
+          "4": 3
+        },
+        "maxResidual": 3.1401849173675503e-16,
+        "milliseconds": 0
+      }
+    }
+  ],
+  "finiteGroupChecks": {
+    "records": 166,
+    "closureFailures": [],
+    "inverseFailures": [],
+    "maximumDeterminantError": 1.5543122344752192e-15,
+    "maximumOrthogonalityError": 1.3322676295501878e-15,
+    "axisCountFailures": []
+  },
+  "catalogue": [
+    {
+      "id": "ac-n2-t1",
+      "n": 2,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 2.449293598294706e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n3-t1",
+      "n": 3,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 9.43689570931383e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n4-t2",
+      "n": 4,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 5.768888059150692e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n5-t1",
+      "n": 5,
+      "status": "finite",
+      "rotationCount": 10,
+      "axisCount": 6,
+      "axesByOrder": {
+        "2": 5,
+        "5": 1
+      },
+      "maxResidual": 5.567289494996018e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "ac-n5-t1-manuscript",
+      "n": 5,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 8.95090418262362e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n6-t3",
+      "n": 6,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 3.1401849173675503e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n7-t2",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 5,
+      "axisCount": 1,
+      "axesByOrder": {
+        "5": 1
+      },
+      "maxResidual": 4.611102534756203e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n7-t2-manuscript",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 7.364386412590295e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "ac-n8-t3",
+      "n": 8,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 5.661048867003676e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n8-t3-manuscript",
+      "n": 8,
+      "status": "finite",
+      "rotationCount": 8,
+      "axisCount": 5,
+      "axesByOrder": {
+        "2": 4,
+        "4": 1
+      },
+      "maxResidual": 5.20740757162067e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n9-t2",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 1,
+      "axesByOrder": {
+        "4": 1
+      },
+      "maxResidual": 4.1540741810552243e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n9-t2-manuscript",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 1,
+      "axesByOrder": {
+        "4": 1
+      },
+      "maxResidual": 4.710277376051325e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n10-t3",
+      "n": 10,
+      "status": "finite",
+      "rotationCount": 10,
+      "axisCount": 6,
+      "axesByOrder": {
+        "2": 5,
+        "5": 1
+      },
+      "maxResidual": 7.631521572941402e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n10-t3-manuscript",
+      "n": 10,
+      "status": "finite",
+      "rotationCount": 8,
+      "axisCount": 5,
+      "axesByOrder": {
+        "2": 4,
+        "4": 1
+      },
+      "maxResidual": 6.004449063730082e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n11-t3",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 8.95090418262362e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n12-t4-family",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 10,
+      "axisCount": 6,
+      "axesByOrder": {
+        "2": 5,
+        "5": 1
+      },
+      "maxResidual": 7.550332863779066e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "ac-n12-t5",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 60,
+      "axisCount": 31,
+      "axesByOrder": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "maxResidual": 9.566618574882216e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "gmax-n2-t1",
+      "n": 2,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n3-t1",
+      "n": 3,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 6.045391105841637e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n4-t1",
+      "n": 4,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n5-t1",
+      "n": 5,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 6.206335383118183e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n6-t1",
+      "n": 6,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n7-t1",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 1,
+      "axesByOrder": {
+        "4": 1
+      },
+      "maxResidual": 5.978733960281817e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n8-t1",
+      "n": 8,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n9-t1",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 5,
+      "axisCount": 1,
+      "axesByOrder": {
+        "5": 1
+      },
+      "maxResidual": 5.978733960281817e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n10-t1",
+      "n": 10,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n11-t1",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 1,
+      "axesByOrder": {
+        "6": 1
+      },
+      "maxResidual": 8.15843973306311e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n12-t1",
+      "n": 12,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n4-t2",
+      "n": 4,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 9.036560719766055e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n8-t2",
+      "n": 8,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 9.036560719766055e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n9-t2",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.441434166503682e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n10-t2",
+      "n": 10,
+      "status": "finite",
+      "rotationCount": 7,
+      "axisCount": 1,
+      "axesByOrder": {
+        "7": 1
+      },
+      "maxResidual": 5.661048867003676e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n11-t2",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.7772239894833365e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n12-t2",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 7.758617410211584e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "gmax-n12-t3",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 3.1401849173675503e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n12-t3-phase-i",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 8,
+      "axisCount": 5,
+      "axesByOrder": {
+        "2": 4,
+        "4": 1
+      },
+      "maxResidual": 9.006673595595123e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "partition-n12-3x4-tetra",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 5.768888059150692e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "partition-n12-2x4-1x4-tetra",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 7.850462293418876e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "gmax-n11-t3-certified",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.441569673167528e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.4.1.2",
+      "n": 4,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.5.1.2",
+      "n": 5,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 2.2887833992611187e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.6.1.3",
+      "n": 6,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.7.1.3",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 1,
+      "axesByOrder": {
+        "4": 1
+      },
+      "maxResidual": 3.6821932062951477e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.7.2.2",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 5,
+      "axisCount": 1,
+      "axesByOrder": {
+        "5": 1
+      },
+      "maxResidual": 3.477763656540197e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.8.1.4",
+      "n": 8,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.8.2.2",
+      "n": 8,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.9.1.4",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 5,
+      "axisCount": 1,
+      "axesByOrder": {
+        "5": 1
+      },
+      "maxResidual": 5.20740757162067e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.9.2.2",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.10.1.5",
+      "n": 10,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.10.2.3",
+      "n": 10,
+      "status": "finite",
+      "rotationCount": 7,
+      "axisCount": 1,
+      "axesByOrder": {
+        "7": 1
+      },
+      "maxResidual": 7.771561172376096e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.11.1.5",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 1,
+      "axesByOrder": {
+        "6": 1
+      },
+      "maxResidual": 5.438959822042073e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.11.2.3",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.2417518519112547e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.11.3.2",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.747440907919932e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.12.1.6",
+      "n": 12,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.12.3.2",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.206335383118183e-17,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.13.1.6",
+      "n": 13,
+      "status": "finite",
+      "rotationCount": 7,
+      "axisCount": 1,
+      "axesByOrder": {
+        "7": 1
+      },
+      "maxResidual": 6.843874359417885e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.13.2.4",
+      "n": 13,
+      "status": "finite",
+      "rotationCount": 9,
+      "axisCount": 1,
+      "axesByOrder": {
+        "9": 1
+      },
+      "maxResidual": 5.900916318210353e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.13.3.2",
+      "n": 13,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.7238012298709097e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.14.1.7",
+      "n": 14,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.14.2.4",
+      "n": 14,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.871083751574258e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.14.3.2",
+      "n": 14,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.689731085869606e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.15.1.7",
+      "n": 15,
+      "status": "finite",
+      "rotationCount": 8,
+      "axisCount": 1,
+      "axesByOrder": {
+        "8": 1
+      },
+      "maxResidual": 4.996003610813204e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.15.2.4",
+      "n": 15,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.206335383118183e-17,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.15.3.2",
+      "n": 15,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.387999773988765e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.16.1.8",
+      "n": 16,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.16.2.5",
+      "n": 16,
+      "status": "finite",
+      "rotationCount": 11,
+      "axisCount": 1,
+      "axesByOrder": {
+        "11": 1
+      },
+      "maxResidual": 8.326672684688674e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.16.3.3",
+      "n": 16,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.16.4.2",
+      "n": 16,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.498001805406602e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.17.1.8",
+      "n": 17,
+      "status": "finite",
+      "rotationCount": 9,
+      "axisCount": 1,
+      "axesByOrder": {
+        "9": 1
+      },
+      "maxResidual": 7.117113728600431e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.17.2.5",
+      "n": 17,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.017973090853895e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.17.3.3",
+      "n": 17,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.17.4.2",
+      "n": 17,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.20740757162067e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.18.1.9",
+      "n": 18,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.18.2.5",
+      "n": 18,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.206335383118183e-17,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.18.3.3",
+      "n": 18,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.5115191112877737e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.18.4.2",
+      "n": 18,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.7755575615628914e-17,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.19.1.9",
+      "n": 19,
+      "status": "finite",
+      "rotationCount": 10,
+      "axisCount": 1,
+      "axesByOrder": {
+        "10": 1
+      },
+      "maxResidual": 7.108895957933346e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.19.2.6",
+      "n": 19,
+      "status": "finite",
+      "rotationCount": 13,
+      "axisCount": 1,
+      "axesByOrder": {
+        "13": 1
+      },
+      "maxResidual": 8.400361489980555e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.19.3.3",
+      "n": 19,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.569671259731777e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.19.4.2",
+      "n": 19,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.978733960281817e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.20.1.10",
+      "n": 20,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.20.2.6",
+      "n": 20,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.23691153334427e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.20.3.3",
+      "n": 20,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.20.4.2",
+      "n": 20,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.1102230246251565e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.2.1",
+      "n": 2,
+      "status": "continuous",
+      "rotationCount": null,
+      "axisCount": 1,
+      "axesByOrder": {
+        "null": 1
+      },
+      "maxResidual": 0,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.3.1",
+      "n": 3,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 4.930611189526425e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.4.2",
+      "n": 4,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 3.1401849173675503e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.5.1",
+      "n": 5,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.3766115072321297e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.6.3",
+      "n": 6,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 2.273268385824304e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.7.2",
+      "n": 7,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.8.3",
+      "n": 8,
+      "status": "finite",
+      "rotationCount": 8,
+      "axisCount": 5,
+      "axesByOrder": {
+        "2": 4,
+        "4": 1
+      },
+      "maxResidual": 4.549522742319082e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.9.2",
+      "n": 9,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.10.3",
+      "n": 10,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.449354365408303e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.11.3",
+      "n": 11,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.52041112178401e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.12.5",
+      "n": 12,
+      "status": "finite",
+      "rotationCount": 60,
+      "axisCount": 31,
+      "axesByOrder": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "maxResidual": 6.770668172438905e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.13.3",
+      "n": 13,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.14.4",
+      "n": 14,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 5.087681048627601e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.15.3",
+      "n": 15,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.304854800243424e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.16.5",
+      "n": 16,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 7.550332863779066e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.17.4",
+      "n": 17,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 8.423257039365816e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.18.5",
+      "n": 18,
+      "status": "finite",
+      "rotationCount": 6,
+      "axisCount": 4,
+      "axesByOrder": {
+        "2": 3,
+        "3": 1
+      },
+      "maxResidual": 4.761112836873094e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.19.4",
+      "n": 19,
+      "status": "finite",
+      "rotationCount": 3,
+      "axisCount": 1,
+      "axesByOrder": {
+        "3": 1
+      },
+      "maxResidual": 4.967007407645019e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.20.5",
+      "n": 20,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 3.554447978966673e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.21.4",
+      "n": 21,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.2591401799415137e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.22.5",
+      "n": 22,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.652682298944613e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.23.5",
+      "n": 23,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.4835037038225095e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.24.7",
+      "n": 24,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 7.631521572941402e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.25.5",
+      "n": 25,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.2887833992611187e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.26.6",
+      "n": 26,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.3055512673781017e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.27.5",
+      "n": 27,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.2887833992611187e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.28.6",
+      "n": 28,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.551115123125783e-17,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.29.5",
+      "n": 29,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.688200336284365e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.30.7",
+      "n": 30,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 7.216449660063518e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.31.6",
+      "n": 31,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.20740757162067e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.32.7",
+      "n": 32,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 3,
+      "axesByOrder": {
+        "2": 3
+      },
+      "maxResidual": 6.304854800243424e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.33.6",
+      "n": 33,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.594315114139762e-17,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.34.7",
+      "n": 34,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 7.771561172376096e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.35.6",
+      "n": 35,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.611102534756203e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.36.8",
+      "n": 36,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 3,
+        "3": 4
+      },
+      "maxResidual": 1.0068810866857322e-15,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.37.7",
+      "n": 37,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.3714374201337736e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.38.7",
+      "n": 38,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.550551057807856e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.39.7",
+      "n": 39,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 7.870063977598499e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.40.8",
+      "n": 40,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 3,
+      "axesByOrder": {
+        "2": 3
+      },
+      "maxResidual": 4.1540741810552243e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.41.7",
+      "n": 41,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.5700924586837752e-16,
+      "milliseconds": 0
+    },
+    {
+      "id": "liege-acs.42.8",
+      "n": 42,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.618455766672135e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.43.7",
+      "n": 43,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.885780586188048e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.44.8",
+      "n": 44,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.7755575615628914e-17,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.45.8",
+      "n": 45,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.2738115944464653e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.46.8",
+      "n": 46,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.438959822042073e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.47.8",
+      "n": 47,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 7.447602459741819e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.48.9",
+      "n": 48,
+      "status": "finite",
+      "rotationCount": 24,
+      "axisCount": 13,
+      "axesByOrder": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 4.611102534756203e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.49.8",
+      "n": 49,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.7194799110210365e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.50.9",
+      "n": 50,
+      "status": "finite",
+      "rotationCount": 12,
+      "axisCount": 7,
+      "axesByOrder": {
+        "2": 6,
+        "6": 1
+      },
+      "maxResidual": 4.891305013403931e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.51.8",
+      "n": 51,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.7194799110210365e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.52.9",
+      "n": 52,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 0,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.53.8",
+      "n": 53,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.2399438456538504e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.54.9",
+      "n": 54,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 1,
+      "axesByOrder": {
+        "4": 1
+      },
+      "maxResidual": 3.564434644304479e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.55.9",
+      "n": 55,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.377745716588144e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.56.9",
+      "n": 56,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 5.087681048627601e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.57.9",
+      "n": 57,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.188872858294072e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.58.9",
+      "n": 58,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 1.2412670766236366e-16,
+      "milliseconds": 1
+    },
+    {
+      "id": "liege-acs.59.9",
+      "n": 59,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 3.510833468576701e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.60.9",
+      "n": 60,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.3714374201337736e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.61.9",
+      "n": 61,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 3.885780586188048e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.62.10",
+      "n": 62,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.7755575615628914e-17,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.63.9",
+      "n": 63,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.5438405243138006e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.64.10",
+      "n": 64,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 5.978733960281817e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.65.9",
+      "n": 65,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.830524433501838e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.66.10",
+      "n": 66,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 5.661048867003676e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.67.10",
+      "n": 67,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 8.270975252328749e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.68.10",
+      "n": 68,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.996003610813204e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.69.10",
+      "n": 69,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.2887833992611187e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.70.10",
+      "n": 70,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 6.20638993074805e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.71.10",
+      "n": 71,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.5438405243138006e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.72.10",
+      "n": 72,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.7894008272968645e-16,
+      "milliseconds": 2
+    },
+    {
+      "id": "liege-acs.73.10",
+      "n": 73,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 5.23691153334427e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.74.11",
+      "n": 74,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 5.978733960281817e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.75.10",
+      "n": 75,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 4.041272810440265e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.76.11",
+      "n": 76,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.1540741810552243e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.77.11",
+      "n": 77,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.244238786565822e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.78.11",
+      "n": 78,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.482534153247273e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.79.11",
+      "n": 79,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 1.2412670766236366e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.80.11",
+      "n": 80,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 1.2412670766236366e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.81.11",
+      "n": 81,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.0014830212433605e-16,
+      "milliseconds": 3
+    },
+    {
+      "id": "liege-acs.82.11",
+      "n": 82,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.2887833992611187e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.83.11",
+      "n": 83,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.2898349882893854e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.84.12",
+      "n": 84,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 3,
+      "axesByOrder": {
+        "2": 3
+      },
+      "maxResidual": 5.034405433428661e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.85.11",
+      "n": 85,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 7.174963931161662e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.86.12",
+      "n": 86,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 6.843874359417885e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.87.11",
+      "n": 87,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.830524433501838e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.88.12",
+      "n": 88,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.783309287441108e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.89.12",
+      "n": 89,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.9893669801409083e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.90.12",
+      "n": 90,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 1.594436429147036e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.91.12",
+      "n": 91,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 7.406111315403549e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.92.12",
+      "n": 92,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 3.554447978966673e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.93.12",
+      "n": 93,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 7.631521572941402e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.94.12",
+      "n": 94,
+      "status": "finite",
+      "rotationCount": 1,
+      "axisCount": 0,
+      "axesByOrder": {},
+      "maxResidual": 2.220446049250313e-16,
+      "milliseconds": 4
+    },
+    {
+      "id": "liege-acs.95.12",
+      "n": 95,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 7.947987303456224e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.96.13",
+      "n": 96,
+      "status": "finite",
+      "rotationCount": 4,
+      "axisCount": 3,
+      "axesByOrder": {
+        "2": 3
+      },
+      "maxResidual": 3.608224830031759e-16,
+      "milliseconds": 8
+    },
+    {
+      "id": "liege-acs.97.12",
+      "n": 97,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.335559509131367e-16,
+      "milliseconds": 5
+    },
+    {
+      "id": "liege-acs.98.13",
+      "n": 98,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.335559509131367e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.99.12",
+      "n": 99,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 4.0125770192081414e-16,
+      "milliseconds": 6
+    },
+    {
+      "id": "liege-acs.100.13",
+      "n": 100,
+      "status": "finite",
+      "rotationCount": 2,
+      "axisCount": 1,
+      "axesByOrder": {
+        "2": 1
+      },
+      "maxResidual": 2.5438405243138006e-16,
+      "milliseconds": 5
+    }
+  ]
+}

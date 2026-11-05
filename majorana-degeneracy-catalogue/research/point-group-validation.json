@@ -1,0 +1,1665 @@
+{
+  "orientationChecks": 108,
+  "latexChecks": 219,
+  "generatedUTC": "2026-10-28T19:43:10.481Z",
+  "passed": true,
+  "fixtureCount": 27,
+  "catalogueStates": 192,
+  "fixtures": [
+    {
+      "name": "asymmetric C1",
+      "expected": "C1",
+      "actual": "C1",
+      "proper": "C1",
+      "status": "classified",
+      "order": 1,
+      "maxResidual": 2.237726045655905e-16
+    },
+    {
+      "name": "mirror only Cs",
+      "expected": "Cs",
+      "actual": "Cs",
+      "proper": "C1",
+      "status": "classified",
+      "order": 2,
+      "maxResidual": 3.7238012298709097e-16
+    },
+    {
+      "name": "inversion only Ci",
+      "expected": "Ci",
+      "actual": "Ci",
+      "proper": "C1",
+      "status": "classified",
+      "order": 2,
+      "maxResidual": 5.147892387644517e-16
+    },
+    {
+      "name": "C5",
+      "expected": "C5",
+      "actual": "C5",
+      "proper": "C5",
+      "status": "classified",
+      "order": 5,
+      "maxResidual": 3.775166431889533e-16
+    },
+    {
+      "name": "C5v",
+      "expected": "C5v",
+      "actual": "C5v",
+      "proper": "C5",
+      "status": "classified",
+      "order": 10,
+      "maxResidual": 6.775999547977531e-16
+    },
+    {
+      "name": "C5h",
+      "expected": "C5h",
+      "actual": "C5h",
+      "proper": "C5",
+      "status": "classified",
+      "order": 10,
+      "maxResidual": 5.721958498152797e-16
+    },
+    {
+      "name": "S4",
+      "expected": "S4",
+      "actual": "S4",
+      "proper": "C2",
+      "status": "classified",
+      "order": 4,
+      "maxResidual": 3.55715613020066e-16
+    },
+    {
+      "name": "S6",
+      "expected": "S6",
+      "actual": "S6",
+      "proper": "C3",
+      "status": "classified",
+      "order": 6,
+      "maxResidual": 6.890150443143122e-16
+    },
+    {
+      "name": "S8",
+      "expected": "S8",
+      "actual": "S8",
+      "proper": "C4",
+      "status": "classified",
+      "order": 8,
+      "maxResidual": 3.925231146709438e-16
+    },
+    {
+      "name": "D5",
+      "expected": "D5",
+      "actual": "D5",
+      "proper": "D5",
+      "status": "classified",
+      "order": 10,
+      "maxResidual": 3.510833468576701e-16
+    },
+    {
+      "name": "D5h prism",
+      "expected": "D5h",
+      "actual": "D5h",
+      "proper": "D5",
+      "status": "classified",
+      "order": 20,
+      "maxResidual": 7.043575467574347e-16
+    },
+    {
+      "name": "D5d antiprism",
+      "expected": "D5d",
+      "actual": "D5d",
+      "proper": "D5",
+      "status": "classified",
+      "order": 20,
+      "maxResidual": 6.004449063730081e-16
+    },
+    {
+      "name": "D2h weighted octahedron",
+      "expected": "D2h",
+      "actual": "D2h",
+      "proper": "D2",
+      "status": "classified",
+      "order": 8,
+      "maxResidual": 0
+    },
+    {
+      "name": "D2d antiprism",
+      "expected": "D2d",
+      "actual": "D2d",
+      "proper": "D2",
+      "status": "classified",
+      "order": 8,
+      "maxResidual": 5.449600495581483e-16
+    },
+    {
+      "name": "T chiral",
+      "expected": "T",
+      "actual": "T",
+      "proper": "T",
+      "status": "classified",
+      "order": 12,
+      "maxResidual": 4.972820174300706e-16
+    },
+    {
+      "name": "Td tetrahedron",
+      "expected": "Td",
+      "actual": "Td",
+      "proper": "T",
+      "status": "classified",
+      "order": 24,
+      "maxResidual": 1.0473823066688542e-15
+    },
+    {
+      "name": "Th inversion tetrahedral",
+      "expected": "Th",
+      "actual": "Th",
+      "proper": "T",
+      "status": "classified",
+      "order": 24,
+      "maxResidual": 9.730298868281309e-16
+    },
+    {
+      "name": "O chiral",
+      "expected": "O",
+      "actual": "O",
+      "proper": "O",
+      "status": "classified",
+      "order": 24,
+      "maxResidual": 4.815412394636862e-16
+    },
+    {
+      "name": "Oh octahedron",
+      "expected": "Oh",
+      "actual": "Oh",
+      "proper": "O",
+      "status": "classified",
+      "order": 48,
+      "maxResidual": 0
+    },
+    {
+      "name": "I chiral",
+      "expected": "I",
+      "actual": "I",
+      "proper": "I",
+      "status": "classified",
+      "order": 60,
+      "maxResidual": 7.076311083754595e-16
+    },
+    {
+      "name": "Ih icosahedron",
+      "expected": "Ih",
+      "actual": "Ih",
+      "proper": "I",
+      "status": "classified",
+      "order": 120,
+      "maxResidual": 5.23691153334427e-16
+    },
+    {
+      "name": "weighted tetrahedron",
+      "expected": "C3v",
+      "actual": "C3v",
+      "proper": "C3",
+      "status": "classified",
+      "order": 6,
+      "maxResidual": 1.0473823066688542e-15
+    },
+    {
+      "name": "single point",
+      "expected": "C∞v",
+      "actual": "C∞v",
+      "proper": "SO(2)",
+      "status": "classified",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "name": "unequal antipodes",
+      "expected": "C∞v",
+      "actual": "C∞v",
+      "proper": "SO(2)",
+      "status": "classified",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "name": "equal antipodes",
+      "expected": "D∞h",
+      "actual": "D∞h",
+      "proper": "D∞",
+      "status": "classified",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "name": "coplanar asymmetric",
+      "expected": "Cs",
+      "actual": "Cs",
+      "proper": "C1",
+      "status": "classified",
+      "order": 2,
+      "maxResidual": 0
+    },
+    {
+      "name": "duplicate rows",
+      "expected": "Oh",
+      "actual": "Oh",
+      "proper": "O",
+      "status": "classified",
+      "order": 48,
+      "maxResidual": 0
+    }
+  ],
+  "catalogueGroupCounts": {
+    "D∞h": 17,
+    "D3h": 4,
+    "Td": 6,
+    "D5h": 3,
+    "Oh": 4,
+    "C5v": 4,
+    "C3v": 11,
+    "D4d": 3,
+    "C4v": 4,
+    "D3": 3,
+    "Ih": 2,
+    "C6v": 2,
+    "Cs": 4,
+    "C7v": 3,
+    "C1": 68,
+    "C9v": 2,
+    "C8v": 1,
+    "C11v": 1,
+    "C10v": 1,
+    "C13v": 1,
+    "D4": 1,
+    "T": 2,
+    "C3": 2,
+    "C2": 34,
+    "O": 3,
+    "D2": 4,
+    "D6": 1,
+    "C4": 1
+  },
+  "catalogueStatesChecked": [
+    {
+      "id": "ac-n2-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 2.449293598294706e-16
+    },
+    {
+      "id": "ac-n3-t1",
+      "proper": "D3",
+      "full": "D3h",
+      "order": 12,
+      "maxResidual": 9.43689570931383e-16
+    },
+    {
+      "id": "ac-n4-t2",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 7.850462293418876e-16
+    },
+    {
+      "id": "ac-n5-t1",
+      "proper": "D5",
+      "full": "D5h",
+      "order": 20,
+      "maxResidual": 5.83453984003745e-16
+    },
+    {
+      "id": "ac-n5-t1-manuscript",
+      "proper": "D3",
+      "full": "D3h",
+      "order": 12,
+      "maxResidual": 8.95090418262362e-16
+    },
+    {
+      "id": "ac-n6-t3",
+      "proper": "O",
+      "full": "Oh",
+      "order": 48,
+      "maxResidual": 3.3306690738754696e-16
+    },
+    {
+      "id": "ac-n7-t2",
+      "proper": "C5",
+      "full": "C5v",
+      "order": 10,
+      "maxResidual": 4.996003610813204e-16
+    },
+    {
+      "id": "ac-n7-t2-manuscript",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 8.025154038416283e-16
+    },
+    {
+      "id": "ac-n8-t3",
+      "proper": "O",
+      "full": "Oh",
+      "order": 48,
+      "maxResidual": 8.082545620880531e-16
+    },
+    {
+      "id": "ac-n8-t3-manuscript",
+      "proper": "D4",
+      "full": "D4d",
+      "order": 16,
+      "maxResidual": 5.980795035347601e-16
+    },
+    {
+      "id": "ac-n9-t2",
+      "proper": "C4",
+      "full": "C4v",
+      "order": 8,
+      "maxResidual": 7.030440880217109e-16
+    },
+    {
+      "id": "ac-n9-t2-manuscript",
+      "proper": "C4",
+      "full": "C4v",
+      "order": 8,
+      "maxResidual": 6.377745716588144e-16
+    },
+    {
+      "id": "ac-n10-t3",
+      "proper": "D5",
+      "full": "D5h",
+      "order": 20,
+      "maxResidual": 9.742167503148516e-16
+    },
+    {
+      "id": "ac-n10-t3-manuscript",
+      "proper": "D4",
+      "full": "D4d",
+      "order": 16,
+      "maxResidual": 7.771561172376096e-16
+    },
+    {
+      "id": "ac-n11-t3",
+      "proper": "D3",
+      "full": "D3",
+      "order": 6,
+      "maxResidual": 8.95090418262362e-16
+    },
+    {
+      "id": "ac-n12-t4-family",
+      "proper": "D5",
+      "full": "D5h",
+      "order": 20,
+      "maxResidual": 1.0007415106216803e-15
+    },
+    {
+      "id": "ac-n12-t5",
+      "proper": "I",
+      "full": "Ih",
+      "order": 120,
+      "maxResidual": 1.0175362097255202e-15
+    },
+    {
+      "id": "gmax-n2-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n3-t1",
+      "proper": "D3",
+      "full": "D3h",
+      "order": 12,
+      "maxResidual": 6.628900708943841e-16
+    },
+    {
+      "id": "gmax-n4-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n5-t1",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 7.8700639775985e-16
+    },
+    {
+      "id": "gmax-n6-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n7-t1",
+      "proper": "C4",
+      "full": "C4v",
+      "order": 8,
+      "maxResidual": 7.28021923224409e-16
+    },
+    {
+      "id": "gmax-n8-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n9-t1",
+      "proper": "C5",
+      "full": "C5v",
+      "order": 10,
+      "maxResidual": 8.158439733063109e-16
+    },
+    {
+      "id": "gmax-n10-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n11-t1",
+      "proper": "C6",
+      "full": "C6v",
+      "order": 12,
+      "maxResidual": 8.54583310691029e-16
+    },
+    {
+      "id": "gmax-n12-t1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "gmax-n4-t2",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 9.550499576785472e-16
+    },
+    {
+      "id": "gmax-n8-t2",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 9.550499576785472e-16
+    },
+    {
+      "id": "gmax-n9-t2",
+      "proper": "C1",
+      "full": "Cs",
+      "order": 2,
+      "maxResidual": 8.882868333007365e-16
+    },
+    {
+      "id": "gmax-n10-t2",
+      "proper": "C7",
+      "full": "C7v",
+      "order": 14,
+      "maxResidual": 1.047382306668854e-15
+    },
+    {
+      "id": "gmax-n11-t2",
+      "proper": "C1",
+      "full": "Cs",
+      "order": 2,
+      "maxResidual": 3.510833468576701e-16
+    },
+    {
+      "id": "gmax-n12-t2",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 1.1234809061876943e-15
+    },
+    {
+      "id": "gmax-n12-t3",
+      "proper": "O",
+      "full": "Oh",
+      "order": 48,
+      "maxResidual": 3.3306690738754696e-16
+    },
+    {
+      "id": "gmax-n12-t3-phase-i",
+      "proper": "D4",
+      "full": "D4d",
+      "order": 16,
+      "maxResidual": 1.27675647831893e-15
+    },
+    {
+      "id": "partition-n12-3x4-tetra",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 7.850462293418876e-16
+    },
+    {
+      "id": "partition-n12-2x4-1x4-tetra",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 8.308148362110448e-16
+    },
+    {
+      "id": "partition-n8-single-double-t2-sparse",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 6.361970213938149e-16
+    },
+    {
+      "id": "partition-n10-single-double-t2-sparse",
+      "proper": "C1",
+      "full": "Cs",
+      "order": 2,
+      "maxResidual": 0
+    },
+    {
+      "id": "ac-order-sparse-n11-2x2-1x7",
+      "proper": "C1",
+      "full": "Cs",
+      "order": 2,
+      "maxResidual": 4.710277376051326e-16
+    },
+    {
+      "id": "gmax-n11-t3-certified",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.441569673167528e-16
+    },
+    {
+      "id": "ac-order-c3-n9-a0-b0",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 9.550499576785472e-16
+    },
+    {
+      "id": "ac-order-c3-n10-a0-b1",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 1.2174545926647191e-15
+    },
+    {
+      "id": "ac-order-c3-n11-a1-b1",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 1.038518545263806e-15
+    },
+    {
+      "id": "ac-order-c3-n11-a0-b2",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 1.0314473817308903e-15
+    },
+    {
+      "id": "ac-order-c3-n12-a0-b3",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 7.216449660063518e-16
+    },
+    {
+      "id": "ac-order-c3-n12-m3-a0-b0",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 9.550499576785472e-16
+    },
+    {
+      "id": "liege-acs.4.1.2",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.5.1.2",
+      "proper": "C3",
+      "full": "C3v",
+      "order": 6,
+      "maxResidual": 4.582993836193719e-16
+    },
+    {
+      "id": "liege-acs.6.1.3",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.7.1.3",
+      "proper": "C4",
+      "full": "C4v",
+      "order": 8,
+      "maxResidual": 5.438959822042073e-16
+    },
+    {
+      "id": "liege-acs.7.2.2",
+      "proper": "C5",
+      "full": "C5v",
+      "order": 10,
+      "maxResidual": 6.736090074350496e-16
+    },
+    {
+      "id": "liege-acs.8.1.4",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.8.2.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.9.1.4",
+      "proper": "C5",
+      "full": "C5v",
+      "order": 10,
+      "maxResidual": 6.568167990716596e-16
+    },
+    {
+      "id": "liege-acs.9.2.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.10.1.5",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.10.2.3",
+      "proper": "C7",
+      "full": "C7v",
+      "order": 14,
+      "maxResidual": 1.2462222543165673e-15
+    },
+    {
+      "id": "liege-acs.11.1.5",
+      "proper": "C6",
+      "full": "C6v",
+      "order": 12,
+      "maxResidual": 1.047382306668854e-15
+    },
+    {
+      "id": "liege-acs.11.2.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.2417518519112547e-16
+    },
+    {
+      "id": "liege-acs.11.3.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.747440907919932e-16
+    },
+    {
+      "id": "liege-acs.12.1.6",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.12.3.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.206335383118183e-17
+    },
+    {
+      "id": "liege-acs.13.1.6",
+      "proper": "C7",
+      "full": "C7v",
+      "order": 14,
+      "maxResidual": 9.104505742017336e-16
+    },
+    {
+      "id": "liege-acs.13.2.4",
+      "proper": "C9",
+      "full": "C9v",
+      "order": 18,
+      "maxResidual": 9.678699938266251e-16
+    },
+    {
+      "id": "liege-acs.13.3.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.7238012298709097e-16
+    },
+    {
+      "id": "liege-acs.14.1.7",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.14.2.4",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.871083751574258e-16
+    },
+    {
+      "id": "liege-acs.14.3.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.689731085869606e-16
+    },
+    {
+      "id": "liege-acs.15.1.7",
+      "proper": "C8",
+      "full": "C8v",
+      "order": 16,
+      "maxResidual": 5.438959822042073e-16
+    },
+    {
+      "id": "liege-acs.15.2.4",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.206335383118183e-17
+    },
+    {
+      "id": "liege-acs.15.3.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.387999773988765e-16
+    },
+    {
+      "id": "liege-acs.16.1.8",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.16.2.5",
+      "proper": "C11",
+      "full": "C11v",
+      "order": 22,
+      "maxResidual": 1.0778315928076987e-15
+    },
+    {
+      "id": "liege-acs.16.3.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.16.4.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.498001805406602e-16
+    },
+    {
+      "id": "liege-acs.17.1.8",
+      "proper": "C9",
+      "full": "C9v",
+      "order": 18,
+      "maxResidual": 1.258070642689303e-15
+    },
+    {
+      "id": "liege-acs.17.2.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.017973090853895e-16
+    },
+    {
+      "id": "liege-acs.17.3.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.17.4.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.20740757162067e-16
+    },
+    {
+      "id": "liege-acs.18.1.9",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.18.2.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.206335383118183e-17
+    },
+    {
+      "id": "liege-acs.18.3.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.5115191112877737e-16
+    },
+    {
+      "id": "liege-acs.18.4.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.7755575615628914e-17
+    },
+    {
+      "id": "liege-acs.19.1.9",
+      "proper": "C10",
+      "full": "C10v",
+      "order": 20,
+      "maxResidual": 9.746120502906705e-16
+    },
+    {
+      "id": "liege-acs.19.2.6",
+      "proper": "C13",
+      "full": "C13v",
+      "order": 26,
+      "maxResidual": 9.805224261780596e-16
+    },
+    {
+      "id": "liege-acs.19.3.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.569671259731777e-16
+    },
+    {
+      "id": "liege-acs.19.4.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.978733960281817e-16
+    },
+    {
+      "id": "liege-acs.20.1.10",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.20.2.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.23691153334427e-16
+    },
+    {
+      "id": "liege-acs.20.3.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.20.4.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.1102230246251565e-16
+    },
+    {
+      "id": "liege-acs.2.1",
+      "proper": "D∞",
+      "full": "D∞h",
+      "order": null,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.3.1",
+      "proper": "D3",
+      "full": "D3h",
+      "order": 12,
+      "maxResidual": 6.831233592345874e-16
+    },
+    {
+      "id": "liege-acs.4.2",
+      "proper": "T",
+      "full": "Td",
+      "order": 24,
+      "maxResidual": 4.041272810440265e-16
+    },
+    {
+      "id": "liege-acs.5.1",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.3766115072321297e-16
+    },
+    {
+      "id": "liege-acs.6.3",
+      "proper": "O",
+      "full": "Oh",
+      "order": 48,
+      "maxResidual": 2.67059569185794e-16
+    },
+    {
+      "id": "liege-acs.7.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.8.3",
+      "proper": "D4",
+      "full": "D4",
+      "order": 8,
+      "maxResidual": 4.549522742319082e-16
+    },
+    {
+      "id": "liege-acs.9.2",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.10.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.449354365408303e-16
+    },
+    {
+      "id": "liege-acs.11.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.52041112178401e-16
+    },
+    {
+      "id": "liege-acs.12.5",
+      "proper": "I",
+      "full": "Ih",
+      "order": 120,
+      "maxResidual": 7.182661366900268e-16
+    },
+    {
+      "id": "liege-acs.13.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.14.4",
+      "proper": "D3",
+      "full": "D3",
+      "order": 6,
+      "maxResidual": 5.087681048627601e-16
+    },
+    {
+      "id": "liege-acs.15.3",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.304854800243424e-16
+    },
+    {
+      "id": "liege-acs.16.5",
+      "proper": "T",
+      "full": "T",
+      "order": 12,
+      "maxResidual": 7.550332863779066e-16
+    },
+    {
+      "id": "liege-acs.17.4",
+      "proper": "C3",
+      "full": "C3",
+      "order": 3,
+      "maxResidual": 8.423257039365816e-16
+    },
+    {
+      "id": "liege-acs.18.5",
+      "proper": "D3",
+      "full": "D3",
+      "order": 6,
+      "maxResidual": 4.761112836873094e-16
+    },
+    {
+      "id": "liege-acs.19.4",
+      "proper": "C3",
+      "full": "C3",
+      "order": 3,
+      "maxResidual": 4.967007407645019e-16
+    },
+    {
+      "id": "liege-acs.20.5",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 3.554447978966673e-16
+    },
+    {
+      "id": "liege-acs.21.4",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.2591401799415137e-16
+    },
+    {
+      "id": "liege-acs.22.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.652682298944613e-16
+    },
+    {
+      "id": "liege-acs.23.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.4835037038225095e-16
+    },
+    {
+      "id": "liege-acs.24.7",
+      "proper": "O",
+      "full": "O",
+      "order": 24,
+      "maxResidual": 7.631521572941402e-16
+    },
+    {
+      "id": "liege-acs.25.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.2887833992611187e-16
+    },
+    {
+      "id": "liege-acs.26.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.3055512673781017e-16
+    },
+    {
+      "id": "liege-acs.27.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.2887833992611187e-16
+    },
+    {
+      "id": "liege-acs.28.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.551115123125783e-17
+    },
+    {
+      "id": "liege-acs.29.5",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.688200336284365e-16
+    },
+    {
+      "id": "liege-acs.30.7",
+      "proper": "O",
+      "full": "O",
+      "order": 24,
+      "maxResidual": 7.216449660063518e-16
+    },
+    {
+      "id": "liege-acs.31.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.20740757162067e-16
+    },
+    {
+      "id": "liege-acs.32.7",
+      "proper": "D2",
+      "full": "D2",
+      "order": 4,
+      "maxResidual": 6.304854800243424e-16
+    },
+    {
+      "id": "liege-acs.33.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.594315114139762e-17
+    },
+    {
+      "id": "liege-acs.34.7",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 7.771561172376096e-16
+    },
+    {
+      "id": "liege-acs.35.6",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.611102534756203e-16
+    },
+    {
+      "id": "liege-acs.36.8",
+      "proper": "T",
+      "full": "T",
+      "order": 12,
+      "maxResidual": 1.0068810866857322e-15
+    },
+    {
+      "id": "liege-acs.37.7",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.3714374201337736e-16
+    },
+    {
+      "id": "liege-acs.38.7",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.550551057807856e-16
+    },
+    {
+      "id": "liege-acs.39.7",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 7.870063977598499e-16
+    },
+    {
+      "id": "liege-acs.40.8",
+      "proper": "D2",
+      "full": "D2",
+      "order": 4,
+      "maxResidual": 4.1540741810552243e-16
+    },
+    {
+      "id": "liege-acs.41.7",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.5700924586837752e-16
+    },
+    {
+      "id": "liege-acs.42.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.618455766672135e-16
+    },
+    {
+      "id": "liege-acs.43.7",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.885780586188048e-16
+    },
+    {
+      "id": "liege-acs.44.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.7755575615628914e-17
+    },
+    {
+      "id": "liege-acs.45.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.2738115944464653e-16
+    },
+    {
+      "id": "liege-acs.46.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.438959822042073e-16
+    },
+    {
+      "id": "liege-acs.47.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 7.447602459741819e-16
+    },
+    {
+      "id": "liege-acs.48.9",
+      "proper": "O",
+      "full": "O",
+      "order": 24,
+      "maxResidual": 4.611102534756203e-16
+    },
+    {
+      "id": "liege-acs.49.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.7194799110210365e-16
+    },
+    {
+      "id": "liege-acs.50.9",
+      "proper": "D6",
+      "full": "D6",
+      "order": 12,
+      "maxResidual": 4.891305013403931e-16
+    },
+    {
+      "id": "liege-acs.51.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.7194799110210365e-16
+    },
+    {
+      "id": "liege-acs.52.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 0
+    },
+    {
+      "id": "liege-acs.53.8",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.2399438456538504e-16
+    },
+    {
+      "id": "liege-acs.54.9",
+      "proper": "C4",
+      "full": "C4",
+      "order": 4,
+      "maxResidual": 3.564434644304479e-16
+    },
+    {
+      "id": "liege-acs.55.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.377745716588144e-16
+    },
+    {
+      "id": "liege-acs.56.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 5.087681048627601e-16
+    },
+    {
+      "id": "liege-acs.57.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.188872858294072e-16
+    },
+    {
+      "id": "liege-acs.58.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 1.2412670766236366e-16
+    },
+    {
+      "id": "liege-acs.59.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 3.510833468576701e-16
+    },
+    {
+      "id": "liege-acs.60.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.3714374201337736e-16
+    },
+    {
+      "id": "liege-acs.61.9",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 3.885780586188048e-16
+    },
+    {
+      "id": "liege-acs.62.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.7755575615628914e-17
+    },
+    {
+      "id": "liege-acs.63.9",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.5438405243138006e-16
+    },
+    {
+      "id": "liege-acs.64.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 5.978733960281817e-16
+    },
+    {
+      "id": "liege-acs.65.9",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.830524433501838e-16
+    },
+    {
+      "id": "liege-acs.66.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 5.661048867003676e-16
+    },
+    {
+      "id": "liege-acs.67.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 8.270975252328749e-16
+    },
+    {
+      "id": "liege-acs.68.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.996003610813204e-16
+    },
+    {
+      "id": "liege-acs.69.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.2887833992611187e-16
+    },
+    {
+      "id": "liege-acs.70.10",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 6.20638993074805e-16
+    },
+    {
+      "id": "liege-acs.71.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.5438405243138006e-16
+    },
+    {
+      "id": "liege-acs.72.10",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.7894008272968645e-16
+    },
+    {
+      "id": "liege-acs.73.10",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 5.23691153334427e-16
+    },
+    {
+      "id": "liege-acs.74.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 5.978733960281817e-16
+    },
+    {
+      "id": "liege-acs.75.10",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 4.041272810440265e-16
+    },
+    {
+      "id": "liege-acs.76.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.1540741810552243e-16
+    },
+    {
+      "id": "liege-acs.77.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.244238786565822e-16
+    },
+    {
+      "id": "liege-acs.78.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.482534153247273e-16
+    },
+    {
+      "id": "liege-acs.79.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 1.2412670766236366e-16
+    },
+    {
+      "id": "liege-acs.80.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 1.2412670766236366e-16
+    },
+    {
+      "id": "liege-acs.81.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.0014830212433605e-16
+    },
+    {
+      "id": "liege-acs.82.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.2887833992611187e-16
+    },
+    {
+      "id": "liege-acs.83.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.2898349882893854e-16
+    },
+    {
+      "id": "liege-acs.84.12",
+      "proper": "D2",
+      "full": "D2",
+      "order": 4,
+      "maxResidual": 5.034405433428661e-16
+    },
+    {
+      "id": "liege-acs.85.11",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 7.174963931161662e-16
+    },
+    {
+      "id": "liege-acs.86.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 6.843874359417885e-16
+    },
+    {
+      "id": "liege-acs.87.11",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.830524433501838e-16
+    },
+    {
+      "id": "liege-acs.88.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.783309287441108e-16
+    },
+    {
+      "id": "liege-acs.89.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.9893669801409083e-16
+    },
+    {
+      "id": "liege-acs.90.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 1.594436429147036e-16
+    },
+    {
+      "id": "liege-acs.91.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 7.406111315403549e-16
+    },
+    {
+      "id": "liege-acs.92.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 3.554447978966673e-16
+    },
+    {
+      "id": "liege-acs.93.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 7.631521572941402e-16
+    },
+    {
+      "id": "liege-acs.94.12",
+      "proper": "C1",
+      "full": "C1",
+      "order": 1,
+      "maxResidual": 2.220446049250313e-16
+    },
+    {
+      "id": "liege-acs.95.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 7.947987303456224e-16
+    },
+    {
+      "id": "liege-acs.96.13",
+      "proper": "D2",
+      "full": "D2",
+      "order": 4,
+      "maxResidual": 3.608224830031759e-16
+    },
+    {
+      "id": "liege-acs.97.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.335559509131367e-16
+    },
+    {
+      "id": "liege-acs.98.13",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.335559509131367e-16
+    },
+    {
+      "id": "liege-acs.99.12",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 4.0125770192081414e-16
+    },
+    {
+      "id": "liege-acs.100.13",
+      "proper": "C2",
+      "full": "C2",
+      "order": 2,
+      "maxResidual": 2.5438405243138006e-16
+    }
+  ],
+  "errors": [],
+  "implementationSHA256": {
+    "point-groups.js": "418b29ccdedde8966b4f296de7eba1f4639707dc57cb6453acb7142f1aa8bfaf",
+    "symmetry-groups.js": "ec8fcb7bc45d57a3da49886c7209492800e275f04062aee30153130f02ad56ff",
+    "majorana-symmetry.js": "97fca2b475eea09e99d11c4875397f5a529c2fc9ff5b4bc53cad3b31dee122bd"
+  },
+  "catalogueSHA256": "9f7f72cf55f9c90f0cf813a6f86054937064d336cc3202af7c7c56ccb36beeb3",
+  "algorithm": {
+    "tolerance": 1e-06,
+    "coordinates": "Normalized unit-sphere coordinates; positive integer point multiplicities preserved.",
+    "improperDetection": "Choose a maximally nonparallel ordered source pair. Enumerate weight- and Gram-compatible target pairs, map the two frame vectors and reverse the normal, then check a complete weighted bijection.",
+    "cosetVerification": "One verified improper S gives all improper operations R S for proper rotations R. Every coset member is checked against every point. S squared and S R S inverse must belong to the proper group within matrix tolerance.",
+    "completeness": "Every orthogonal map is fixed by its action on a nonparallel pair and its determinant. The determinant-minus-one component, if nonempty, is a coset of the proper subgroup. Collinear cases are handled separately.",
+    "classification": "Use the classified proper subgroup and the presence of inversion, principal-axis-preserving improper operations, and horizontal mirrors to distinguish Schoenflies families. For D2, test all three twofold axes as candidate principal axes.",
+    "continuousCases": "One point or unequal antipodal weights: C infinity v. Equal antipodal weights: D infinity h.",
+    "scientificScope": "Numerical full geometric point group in O(3), not an exact group certificate. Improper operations are not spin rotations. No AC order or multiplicity certificate is changed."
+  },
+  "fixtureConstruction": "Canonical tetrahedron, octahedron and icosahedron; prism/antiprism rings; generic orbits of prescribed generators with two differently weighted seeds to suppress accidental extra symmetry; weighted and repeated-point controls.",
+  "invarianceChecks": "Every fixture was additionally rigidly rotated, reflected, reordered, and radially rescaled before normalization.",
+  "references": [
+    {
+      "title": "Symmetry Essentials, Ludwig-Maximilians-Universitaet Muenchen",
+      "url": "https://www.cup.uni-muenchen.de/ch/compchem/geom/point1.html",
+      "role": "Definitions of reflections, inversion, rotoreflections and Schoenflies families."
+    },
+    {
+      "title": "UC San Diego Physics 211B, Crystal Math, Section 2.2",
+      "url": "https://courses.physics.ucsd.edu/2021/Winter/physics211b/LECTURES/C02.pdf",
+      "role": "Proper and improper point groups, horizontal/vertical/diagonal mirrors, tetrahedral and octahedral groups, Schoenflies classification."
+    }
+  ],
+  "metadataOnlyUpdateCheck": {
+    "constellationsUnchanged": true,
+    "all192RuntimeClassificationsRechecked": true,
+    "date": "2026-10-28"
+  }
+}

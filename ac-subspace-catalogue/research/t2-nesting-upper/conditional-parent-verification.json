@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "operatorIdentityChecks": 418,
+  "operatorIdentitySizes": [
+    2,
+    20
+  ],
+  "sourceAC2ConditionsIndependentlyChecked": true,
+  "sourceBasisSHA256": "f322cabb4e257a1191ed49d60fd55cb23db00e4e2036920bf7a44fe938cbe3e2",
+  "exactN18ParentChecks": [
+    {
+      "kind": "creation",
+      "parentDimension": 8,
+      "physicalQubits": 19,
+      "alpha": "7",
+      "orientation": "positive spinor",
+      "exactlyVerified": true
+    },
+    {
+      "kind": "derivative",
+      "parentDimension": 8,
+      "physicalQubits": 17,
+      "alpha": "17/3",
+      "orientation": "transpose spinor; equivalent to negative spinor by a y half-turn",
+      "exactlyVerified": true
+    }
+  ],
+  "proofScope": "Universal proof follows by Schwinger operator identities; these finite checks independently audit their normalization and implementation. Reproduces existing upper bounds, not a stronger one."
+}

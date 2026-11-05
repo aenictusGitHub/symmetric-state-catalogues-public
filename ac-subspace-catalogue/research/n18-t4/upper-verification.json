@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "certificateSHA256": "94be4282f14555fa17ff9867f0a39bda104fab967439431fb0c064e58ab540ac",
+  "n": 18,
+  "minimumACOrder": 4,
+  "maximumDimensionUpper": 1,
+  "physicalHilbertDimension": 133,
+  "physicalMagneticBlocksChecked": 25,
+  "weightedHermiticityEntriesChecked": 819,
+  "allCharacteristicPolynomialsExact": true,
+  "partialTraceOverSpinNineExactlyZero": true,
+  "partialTraceEntriesChecked": 49,
+  "normalizedPhysicalTraceMoments": [
+    "1",
+    "0",
+    "360",
+    "-180",
+    "226080"
+  ],
+  "polynomial": "X^4 - 2 X^3 - 653 X^2 - 1146 X + 8640 I",
+  "spectrum": {
+    "n": 18,
+    "mean": "6264",
+    "eigenvalues": [
+      "319320",
+      "-6264",
+      "-63720",
+      "-6264",
+      "-6264",
+      "-111600",
+      "-6264"
+    ],
+    "multiplicities": [
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25
+    ],
+    "positiveIndex": 13,
+    "negativeIndex": 120,
+    "upper": 1
+  },
+  "generalBound": {
+    "formula": "7 K(N,t) <= N-5",
+    "minimumN": 16,
+    "minimumT": 4,
+    "domainAllIntegers": true,
+    "positiveMeanExpansion": "2j [4(j-8)^3+60(j-8)^2+239(j-8)+45]",
+    "generalTraceIdentityVerifiedByExactPolynomialInterpolation": true
+  },
+  "method": "Independent integral physical spin matrices; weighted Hermiticity, every magnetic-block characteristic polynomial and all partial-trace entries checked exactly. Inertia argument and tensor-rank compression given in proof.tex. Standard library only; no numerical eigensolver.",
+  "scope": "Upper bound for arbitrary complex AC subspaces, with no support or symmetry restriction."
+}

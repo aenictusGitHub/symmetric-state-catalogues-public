@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Fourteen symmetric qubits cannot be fifth-order anticoherent}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+
+\begin{theorem}
+No pure spin-$7$ state is fifth-order anticoherent. Consequently,
+\[
+\boxed{K(14,t)=0\quad(t\ge5).}
+\]
+The existing exact fourth-order state therefore attains the maximum
+pure-state AC order at fourteen qubits.
+\end{theorem}
+
+The proof below is finite exact linear algebra, with an explicit positivity
+certificate. The accompanying \texttt{certificate.json} and standard-library
+Python verifier give all integer matrices and reconstruct the equations
+independently of the discovery implementation.
+
+\paragraph{1. Necessary three-copy equations.}
+Suppose a normalized $\psi\in V_7$ is fifth-order AC. With
+$\rho=|\psi\rangle\langle\psi|$, define
+\[
+X=\int_{\mathrm{SU}(2)}(U\rho U^\dagger)^{\otimes3}\,dU.
+\]
+Then $X\succeq0$, $\Tr X=1$, and $X$ is invariant on the
+$\binom{17}{3}=680$ dimensional space $\operatorname{Sym}^3(V_7)$.
+Anticoherence of every rotated state implies
+\begin{equation}\label{eq:necessary}
+\Tr_1[(T_{\ell0}\otimes I\otimes I)X]=0,
+\qquad 1\le\ell\le5.
+\end{equation}
+
+\paragraph{2. Exact invariant coordinates and positivity.}
+Use $b_i=\sqrt{\binom{14}{i}}|i\rangle$, $m=i-7$, and let $E_o$ be
+the average of the distinct three-letter words with occupations $o_i$.
+Then
+\[
+\|E_o\|^2=\frac{\prod_i\binom{14}{i}^{o_i}o_i!}{3!}.
+\]
+The raising and lowering coefficients in this basis are respectively
+$o_i(i+1)$ and $o_i(15-i)$. The highest-weight integer matrices $H_J$
+in the certificate generate descendants
+\[
+U_{J,M}=\frac{J_-^{J-M}}{(J-M)!}H_J.
+\]
+The spin multiplicities, listed as $(J,m_J)$, are
+\[
+\begin{gathered}
+(1,1),(3,2),(4,1),(5,2),(6,2),(7,3),(8,2),(9,3),\\
+(10,2),(11,2),(12,2),(13,2),(14,1),(15,2),\\
+(16,1),(17,1),(18,1),(19,1),(21,1).
+\end{gathered}
+\]
+They satisfy $\sum_J(2J+1)m_J=680$. The independent verifier checks
+their distinct spins, highest-weight equations, column independence,
+ladder relations and completeness.
+
+An invariant Hermitian operator has the form
+\[
+X=\sum_J d_J\sum_{M=-J}^{J}
+\frac{U_{J,M} B_J U_{J,M}^{\dagger}}
+{\binom{2J}{J-M}},
+\]
+where the displayed expression denotes coefficients of physical
+$|E_o\rangle\langle E_{o'}|$, $d_J>0$ clears binomial denominators,
+and $B_J$ is Hermitian. For each $J$, the normalized ladder embeddings
+are full column rank. Their Gram matrix is the same positive definite
+matrix for every $M$. Thus this is an injective congruence of
+$I_{2J+1}\otimes B_J$, and $X\succeq0$ implies $B_J\succeq0$.
+
+All bases and equations used in \eqref{eq:necessary} are real. Taking
+entrywise real parts of the $B_J$ preserves these equations, their
+physical trace, and positivity on real vectors. Consequently an
+arbitrary complex state would give real symmetric positive semidefinite
+$B_J$ satisfying the equations and normalization. This step does not
+assume real state amplitudes.
+
+\paragraph{3. The exact two-dimensional kernel.}
+There are $\sum_Jm_J(m_J+1)/2=47$ independent real coordinates,
+collected in $\mathbf b$. The diagonal rank-$\ell$ tensors may be
+scaled to discrete orthogonal polynomials in $z=2i-14$:
+\[
+\begin{aligned}
+f_1&=z/2,&f_2&=(3z^2-224)/4,\\
+f_3&=z(5z^2-668)/48,&
+f_4&=(35z^4-6620z^2+145152)/192,\\
+f_5&=z(63z^4-15260z^2+708032)/1920.
+\end{aligned}
+\]
+They are reconstructed by exact Gram--Schmidt orthogonalization on the
+fifteen magnetic eigenvalues. Contracting the first letter gives
+$(o_i/3)\sqrt{\binom{14}{i}}E_{o-e_i}$, so every equation in
+\eqref{eq:necessary} has rational coefficients.
+
+The certificate selects $45$ primitive integer equations
+$A\mathbf b=0$ with $A\in\mathbb Z^{45\times47}$. The verifier
+reconstructs them and verifies rank $45$ modulo the prime $1000003$.
+It also verifies an integer matrix $R\in\mathbb Z^{47\times2}$ with
+$AR=0$ and rank $2$. Therefore every solution is exactly
+\[
+\mathbf b=R\binom{u}{v}.
+\]
+
+\paragraph{4. Three diagonal inequalities give a contradiction.}
+Take the first diagonal of the $J=1$ block, the second diagonal of
+the $J=3$ block, and the first diagonal of the $J=5$ block. Substituting
+the kernel and dividing each coefficient row by its positive gcd gives
+\[
+\begin{aligned}
+L_1(u,v)&=1094490516902169308u-125072808123773475v,\\
+L_2(u,v)&=-42202464514105998136u+2086674682719126039v,\\
+L_3(u,v)&=-11877362318408u+1509722697267v.
+\end{aligned}
+\]
+Positive semidefiniteness requires $L_1,L_2,L_3\ge0$. But the exact
+integer identity
+\[
+\boxed{700L_1+3L_2+53844949L_3=0}
+\]
+forces all three to vanish. These forms have rank two, hence $u=v=0$.
+Thus every positive semidefinite solution of the necessary equations
+is $X=0$, contradicting $\Tr X=1$. This proves the theorem.
+
+\paragraph{Direct contradiction using physical probabilities.}
+Write $p_J=\Tr(\Pi_JX)$ for the physical total-spin-$J$ probability
+of the three-copy moment. The complete constraint kernel satisfies
+\[
+\boxed{265256992\Tr X+26961161975p_4+118909381500p_{16}=0.}
+\]
+All coefficients are strictly positive. Because $\Tr X=1$ and
+$p_4,p_{16}\ge0$, the left side is strictly positive, a contradiction.
+The verifier reconstructs the physical trace by summing every word of
+every spin block and verifies this identity exactly. This is a direct
+physical-probability version of the exclusion.
+
+\paragraph{Equivalent certificate using physical probabilities.}
+The same two-dimensional kernel yields a basis-independent version of
+the contradiction. Write $p_J=\Tr(\Pi_J X)$ for the physical total-spin-$J$
+probability of the three-copy moment. Then
+\[
+\boxed{21094337p_4+4375800p_{14}+119335580p_{16}=0.}
+\]
+All three probabilities are nonnegative, so they vanish. Their linear
+forms on the two-dimensional kernel have rank two, again forcing
+$\mathbf b=0$ and contradicting normalization. To verify the physical
+normalization, the checker reconstructs each probability by summing
+the occupation-word norms over every descendant. It independently
+checks the highest-weight formula
+\[
+p_J=d_J(2J+1)\Tr\!\left(H_J^T G_JH_J B_J\right),
+\]
+where $G_J$ is the diagonal occupation-word Gram matrix at weight $J$.
+Both the probability identity and its rank-two property are checked
+exactly in the accompanying verifier.
+
+\paragraph{Checks and consequences.}
+The exclusion propagates to all $t\ge5$ by nesting. The independently
+certified fourth-order radical state at $N=14$ proves that the maximum
+pure-state order is four. As a separate positive control, the exact
+icosahedral fifth-order state at $N=12$ has $\rho_5=I_6/6$ exactly;
+its three-copy invariant moment satisfies the same construction
+numerically, with trace one and contraction residual below $10^{-15}$.
+This numerical control is not used as a premise of the exact exclusion.
+
+Run \texttt{verify\_independently.py} next to \texttt{certificate.json}
+with Python 3 to reproduce every exact check. Only the standard library
+is required. The report records the certificate's SHA-256 digest.
+\end{document}

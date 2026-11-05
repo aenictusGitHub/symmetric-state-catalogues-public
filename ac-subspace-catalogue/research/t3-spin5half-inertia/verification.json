@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "generalBound": {
+    "formula": "6 K(N,t) <= N-4",
+    "minimumN": 19,
+    "minimumOrder": 3,
+    "auxiliarySpin": "5/2",
+    "positiveIndex": "N-4",
+    "negativeIndex": "5*(N+2)",
+    "exactDegreeFourTraceIdentityChecked": true,
+    "strictPositiveCenteringForAllNInDomain": true
+  },
+  "physicalChecks": [
+    {
+      "n": 19,
+      "passed": true,
+      "ambientDimension": 120,
+      "magneticBlocksChecked": 25,
+      "weightedHermiticityEntriesChecked": 650,
+      "allCharacteristicPolynomialsExact": true,
+      "partialTraceEntriesChecked": 36,
+      "partialTraceExactlyZero": true,
+      "polynomialCoefficientsAscending": [
+        "-330505/8",
+        "5901/2",
+        "138",
+        "-8"
+      ],
+      "spin": "19/2",
+      "centeringConstant": "570",
+      "totalSpins": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "dotProductEigenvalues": [
+        "-105/4",
+        "-73/4",
+        "-37/4",
+        "3/4",
+        "47/4",
+        "95/4"
+      ],
+      "multiplicities": [
+        15,
+        17,
+        19,
+        21,
+        23,
+        25
+      ],
+      "wEigenvalues": [
+        "121030",
+        "-570",
+        "-50466",
+        "-39026",
+        "-570",
+        "-570"
+      ],
+      "positiveIndex": 15,
+      "negativeIndex": 105,
+      "upper": 2
+    },
+    {
+      "n": 20,
+      "passed": true,
+      "ambientDimension": 126,
+      "magneticBlocksChecked": 26,
+      "weightedHermiticityEntriesChecked": 686,
+      "allCharacteristicPolynomialsExact": true,
+      "partialTraceEntriesChecked": 36,
+      "partialTraceExactlyZero": true,
+      "polynomialCoefficientsAscending": [
+        "-146300/3",
+        "3200",
+        "148",
+        "-8"
+      ],
+      "spin": "10",
+      "centeringConstant": "3800/3",
+      "totalSpins": [
+        "15/2",
+        "17/2",
+        "19/2",
+        "21/2",
+        "23/2",
+        "25/2"
+      ],
+      "dotProductEigenvalues": [
+        "-55/2",
+        "-19",
+        "-19/2",
+        "1",
+        "25/2",
+        "25"
+      ],
+      "multiplicities": [
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "wEigenvalues": [
+        "424600/3",
+        "-3800/3",
+        "-176852/3",
+        "-136280/3",
+        "-3800/3",
+        "-3800/3"
+      ],
+      "positiveIndex": 16,
+      "negativeIndex": 110,
+      "upper": 2
+    }
+  ],
+  "scope": "Arbitrary complex AC subspaces; complete degree-three compression and exact inertia proof.",
+  "method": "Exact rational magnetic blocks in a binomially rescaled physical basis. No numerical eigenvalues or optimization statuses."
+}

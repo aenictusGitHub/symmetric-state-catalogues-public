@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "theorem": "K(N,2)>=floor((N-1)/8) for every integer N>=17",
+  "arithmetic": "Exact integer polynomial coefficient certificates",
+  "records": [
+    {
+      "rho": 1,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "572",
+            "924",
+            "1116",
+            "988"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "988",
+            "1116",
+            "924",
+            "572"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "14060515629596147712",
+            "197698099770117554084892573790522834944"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 2,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "624",
+            "720",
+            "1008",
+            "1248"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "968",
+            "984",
+            "888",
+            "760"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "37891061423766503424",
+            "1124803385596881602954114269740584140800"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "800",
+            "696",
+            "888",
+            "1216"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1216",
+            "888",
+            "696",
+            "800"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "77147357786092339200",
+            "5951714813375342272396154548927856640000"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 4,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "864",
+            "480",
+            "768",
+            "1488"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1208",
+            "744",
+            "648",
+            "1000"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "125553070110444355584",
+            "15237387757972042759847592872713912320000"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 5,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "1052",
+            "444",
+            "636",
+            "1468"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1468",
+            "636",
+            "444",
+            "1052"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "187621716407605788672",
+            "35201908467736051210490481262923123523584"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 6,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "1128",
+            "216",
+            "504",
+            "1752"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1472",
+            "480",
+            "384",
+            "1264"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "155311339474177228800",
+            "36477195578170894958140625418348134400000"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 7,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "1328",
+            "168",
+            "360",
+            "1744"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1744",
+            "360",
+            "168",
+            "1328"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "160961392882483200000",
+            "25908569998669113356005398282240000000000"
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 8,
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: z + 2}",
+          "terms": [
+            3,
+            2,
+            3,
+            3
+          ],
+          "positiveConstants": [
+            "1392",
+            "720",
+            "1296",
+            "1776"
+          ]
+        },
+        {
+          "substitution": "{i: u + 1, q: u + z + 2}",
+          "terms": [
+            6,
+            5,
+            5,
+            6
+          ],
+          "positiveConstants": [
+            "1776",
+            "1296",
+            "720",
+            "1392"
+          ]
+        }
+      ],
+      "edgeCharts": [
+        {
+          "substitution": "{i: u, q: u + z + 2}",
+          "A": "7421703487488*u**14*z**2 + 7421703487488*u**2*z**14",
+          "FplusAterms": 145,
+          "productTerms": 541,
+          "positiveConstants": [
+            "2209971405406076928000",
+            "4883973612712510823385386151453917184000000"
+          ]
+        }
+      ]
+    }
+  ]
+}

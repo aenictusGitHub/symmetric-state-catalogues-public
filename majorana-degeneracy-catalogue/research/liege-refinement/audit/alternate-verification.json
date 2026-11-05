@@ -1,0 +1,611 @@
+{
+  "scientificStatus": "Numerical AC verification only; these unmatched Dicke alternates have no assigned Majorana partition.",
+  "inputs": {
+    "originalFilename": "alternate-inputs.json",
+    "originalSHA256": "f231f4f293f67eb8f98b77a4c2e2e35f7e232daf1faa4b7d63d8a5e4b4a0132d",
+    "refinedFilename": "alternate-refined.json",
+    "refinedSHA256": "c59573c53ddf028717d642f7d8d5611a2cb9cc1a77322d181e0b512950527a6a"
+  },
+  "summary": {
+    "records": 16,
+    "passedRecords": 16,
+    "maximumBeforeHSResidual": "5.41950112622681563022912689958e-41",
+    "maximumAfterHSResidual": "1.33308543768091903744334850905e-70",
+    "maximumAfterNormError": "1.975426122030680494884058428e-71",
+    "maximumPhaseAlignedComponentChange": "5.47566325967593100602900145334e-41"
+  },
+  "records": [
+    {
+      "id": "acs.2.1-original-dicke-alternate",
+      "sourceObservationId": "acs.2.1",
+      "n": 2,
+      "reportedOrder": 1,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999977758",
+        "normError": "2.22418318660037780094017418105e-96",
+        "traceError": "2.22418318660037780094017418105e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.11209159330018890047008709053e-96",
+        "HSResidual": "1.57273501384623134748094708561e-96",
+        "squaredHSResidual": "2.47349542377790550827901715733e-192"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000017629122913387",
+        "normError": "1.76291229133872437708996857411e-86",
+        "traceError": "1.76291229133872437708996857411e-86",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "8.81456145669362188544984287057e-87",
+        "HSResidual": "1.24656723584272649861537695657e-86",
+        "squaredHSResidual": "1.55392987347657570819059151393e-172"
+      },
+      "change": {
+        "maximumRawComponentChange": "6.23283618000000000000000022537e-87",
+        "maximumPhaseAlignedComponentChange": "6.23283618000000000000000022537e-87",
+        "phaseAlignedL2Change": "8.81456145780571347875003144408e-87",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.3.1-original-dicke-alternate",
+      "sourceObservationId": "acs.3.1",
+      "n": 3,
+      "reportedOrder": 1,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999977758",
+        "normError": "2.22418318660037780094017418105e-96",
+        "traceError": "2.22418318660037780094017418105e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.11209159330018890047008709053e-96",
+        "HSResidual": "1.57273501384623134748094708561e-96",
+        "squaredHSResidual": "2.47349542377790550827901715733e-192"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000017629122913387",
+        "normError": "1.76291229133872437708996857411e-86",
+        "traceError": "1.76291229133872437708996857411e-86",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "8.81456145669362188544984287057e-87",
+        "HSResidual": "1.24656723584272649861537695657e-86",
+        "squaredHSResidual": "1.55392987347657570819059151393e-172"
+      },
+      "change": {
+        "maximumRawComponentChange": "6.23283618000000000000000022537e-87",
+        "maximumPhaseAlignedComponentChange": "6.23283618000000000000000022537e-87",
+        "phaseAlignedL2Change": "8.81456145780571347875003144408e-87",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.4.2-original-dicke-alternate",
+      "sourceObservationId": "acs.4.2",
+      "n": 4,
+      "reportedOrder": 2,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002177",
+        "normError": "2.17717121743762910475607005402e-96",
+        "traceError": "2.17717121743762910475607005402e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.69411888134406005831647886182e-41",
+        "HSResidual": "2.0748634114537935445446440388e-41",
+        "squaredHSResidual": "4.30505817618967416465328972531e-82"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000001022086503955031858005609262",
+        "normError": "1.02208650395503185800560926168e-72",
+        "traceError": "1.02208650395503185800560926168e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.90255034645140530966760154361e-72",
+        "HSResidual": "2.81886348596632386085508312063e-72",
+        "squaredHSResidual": "7.94599135251421531803101117481e-144"
+      },
+      "change": {
+        "maximumRawComponentChange": "1.79688442370182941699344976831e-41",
+        "maximumPhaseAlignedComponentChange": "1.79688442370182941699344976831e-41",
+        "phaseAlignedL2Change": "2.54117832201609008747471829272e-41",
+        "normalizedInfidelity": "6.45758726428451124697993458798e-82",
+        "alignedPhase": [
+          "1.0",
+          "1.33978754530055001989421343107e-72"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.5.1-original-dicke-alternate",
+      "sourceObservationId": "acs.5.1",
+      "n": 5,
+      "reportedOrder": 1,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999977758",
+        "normError": "2.22418318660037780094017418105e-96",
+        "traceError": "2.22418318660037780094017418105e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.11209159330018890047008709053e-96",
+        "HSResidual": "1.57273501384623134748094708561e-96",
+        "squaredHSResidual": "2.47349542377790550827901715733e-192"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000017629122913387",
+        "normError": "1.76291229133872437708996857411e-86",
+        "traceError": "1.76291229133872437708996857411e-86",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "8.81456145669362188544984287057e-87",
+        "HSResidual": "1.24656723584272649861537695657e-86",
+        "squaredHSResidual": "1.55392987347657570819059151393e-172"
+      },
+      "change": {
+        "maximumRawComponentChange": "6.23283618000000000000000022537e-87",
+        "maximumPhaseAlignedComponentChange": "6.23283618000000000000000022537e-87",
+        "phaseAlignedL2Change": "8.81456145780571347875003144408e-87",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.6.3-original-dicke-alternate",
+      "sourceObservationId": "acs.6.3",
+      "n": 6,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999977758",
+        "normError": "2.22418318660037780094017418105e-96",
+        "traceError": "2.22418318660037780094017418105e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "5.56045796650094450235043545263e-97",
+        "HSResidual": "1.11209159330018869256189177763e-96",
+        "squaredHSResidual": "1.23674771188895229171359620729e-192"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000017629122913387",
+        "normError": "1.76291229133872437708996857411e-86",
+        "traceError": "1.76291229133872437708996874044e-86",
+        "traceMinusNorm": "1.66326556250318387496486473291e-111",
+        "maximumEntryResidual": "4.40728072834681094272492226692e-87",
+        "HSResidual": "8.81456145669362188544984411802e-87",
+        "squaredHSResidual": "7.76964936738287854095295976879e-173"
+      },
+      "change": {
+        "maximumRawComponentChange": "6.23283618000000000000000022537e-87",
+        "maximumPhaseAlignedComponentChange": "6.23283618000000000000000022537e-87",
+        "phaseAlignedL2Change": "8.81456145780571347875003144408e-87",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.7.2-original-dicke-alternate",
+      "sourceObservationId": "acs.7.2",
+      "n": 7,
+      "reportedOrder": 2,
+      "passed": true,
+      "before": {
+        "normSquared": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000807",
+        "normError": "8.07028782605293262107362550058e-96",
+        "traceError": "8.07028782605293262107362550058e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "4.42500413989815554559595603236e-41",
+        "HSResidual": "5.41950112622681563022912689958e-41",
+        "squaredHSResidual": "2.93709924571737230028937510707e-81"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000005279427296502782849690799932",
+        "normError": "5.27942729650278284969079993182e-72",
+        "traceError": "5.27942729650278284969079993182e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "4.51573717228961990601755550065e-72",
+        "HSResidual": "7.53899132092523014401284212334e-72",
+        "squaredHSResidual": "5.68363901369859464502863842921e-143"
+      },
+      "change": {
+        "maximumRawComponentChange": "5.47566325967593100602900145334e-41",
+        "maximumPhaseAlignedComponentChange": "5.47566325967593100602900145334e-41",
+        "phaseAlignedL2Change": "6.20881853495820180757596430472e-41",
+        "normalizedInfidelity": "3.85494276000405114412980482802e-81",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.8.3-original-dicke-alternate",
+      "sourceObservationId": "acs.8.3",
+      "n": 8,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005238",
+        "normError": "5.23827734677044438071350368051e-96",
+        "traceError": "5.2382773467704460439790661837e-96",
+        "traceMinusNorm": "1.66326556250318387496486473291e-111",
+        "maximumEntryResidual": "2.36080666877780002212599254332e-41",
+        "HSResidual": "4.72161333755560004425198508663e-41",
+        "squaredHSResidual": "2.22936325093829327272646173567e-81"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000475390006259470400657617848",
+        "normError": "4.75390006259470400657617848001e-73",
+        "traceError": "4.75390006259470400657617848001e-73",
+        "traceMinusNorm": "3.32653112500636774992972946582e-111",
+        "maximumEntryResidual": "5.01639321536907129883020668863e-72",
+        "HSResidual": "6.16959804426793478493885991289e-72",
+        "squaredHSResidual": "3.80639400278347257862284906053e-143"
+      },
+      "change": {
+        "maximumRawComponentChange": "3.60619175361026951000830458565e-41",
+        "maximumPhaseAlignedComponentChange": "3.60619175361026951000830458565e-41",
+        "phaseAlignedL2Change": "5.58668824198523769909069559764e-41",
+        "normalizedInfidelity": "3.12110855131361058181704642994e-81",
+        "alignedPhase": [
+          "1.0",
+          "-8.15127295514928481307941406628e-74"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.9.2-original-dicke-alternate",
+      "sourceObservationId": "acs.9.2",
+      "n": 9,
+      "reportedOrder": 2,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016428",
+        "normError": "1.64278222112375117049649353769e-95",
+        "traceError": "1.64278222112375117049649353769e-95",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "5.43871577071813611257014384954e-42",
+        "HSResidual": "6.66103924714359072752346527904e-42",
+        "squaredHSResidual": "4.43694438519872539520987889713e-83"
+      },
+      "after": {
+        "normSquared": "0.999999999999999999999999999999999999999999999999999999999999999999999999226210404342721421725372285",
+        "normError": "7.73789595657278578274627715007e-73",
+        "traceError": "7.73789595657278578274627715007e-73",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "6.35145428693995711826111148551e-73",
+        "HSResidual": "1.37155009281064841342558621719e-72",
+        "squaredHSResidual": "1.88114965708889827668418447288e-144"
+      },
+      "change": {
+        "maximumRawComponentChange": "6.66103924714359094033333514953e-42",
+        "maximumPhaseAlignedComponentChange": "6.66103924714359094033333514953e-42",
+        "phaseAlignedL2Change": "1.15372584072630427434798798049e-41",
+        "normalizedInfidelity": "1.33108331555961761856296366915e-82",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.10.3-original-dicke-alternate",
+      "sourceObservationId": "acs.10.3",
+      "n": 10,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999896891",
+        "normError": "1.03108519171893567368287642951e-95",
+        "traceError": "1.0310851917189355073563201792e-95",
+        "traceMinusNorm": "1.66326556250318387496486473291e-111",
+        "maximumEntryResidual": "1.46295268433447417211560245436e-41",
+        "HSResidual": "2.92590536866894834423120490872e-41",
+        "squaredHSResidual": "8.56092222640577452704908043832e-82"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999987962392677303824808084232614",
+        "normError": "1.20376073226961751919157673864e-72",
+        "traceError": "1.20376073226961751919157673864e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.01091142441318147612339925366e-72",
+        "HSResidual": "2.65439606596524601441521108123e-72",
+        "squaredHSResidual": "7.04581847501177467077303900864e-144"
+      },
+      "change": {
+        "maximumRawComponentChange": "2.26639655308674186048806704848e-41",
+        "maximumPhaseAlignedComponentChange": "2.26639655308674186048806704848e-41",
+        "phaseAlignedL2Change": "3.58348759445441108263079579472e-41",
+        "normalizedInfidelity": "1.28413833396086617905736206575e-81",
+        "alignedPhase": [
+          "1.0",
+          "1.04508755233652014503479640242e-88"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.11.3-original-dicke-alternate",
+      "sourceObservationId": "acs.11.3",
+      "n": 11,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005489",
+        "normError": "5.48928947238028343050422980406e-96",
+        "traceError": "5.48928947238028343050422980406e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "3.58470089752873832562469999998e-42",
+        "HSResidual": "7.16940179505747665124939999996e-42",
+        "squaredHSResidual": "5.14003220989733684382793782702e-83"
+      },
+      "after": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000008772870985318451063998627691",
+        "normError": "8.77287098531845106399862769088e-72",
+        "traceError": "8.77287098531845106399862769088e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "5.45902913862054095501936185756e-72",
+        "HSResidual": "8.50716033804252351137146732513e-72",
+        "squaredHSResidual": "7.23717770171637829027454858754e-143"
+      },
+      "change": {
+        "maximumRawComponentChange": "7.96966200021233319045789339496e-42",
+        "maximumPhaseAlignedComponentChange": "7.96966200021233319045789339496e-42",
+        "phaseAlignedL2Change": "1.28955480586120364624699339788e-41",
+        "normalizedInfidelity": "1.66295159731972662594433282639e-82",
+        "alignedPhase": [
+          "1.0",
+          "-2.77398116906294654833186761304e-59"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.12.5-original-dicke-alternate",
+      "sourceObservationId": "acs.12.5",
+      "n": 12,
+      "reportedOrder": 5,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999968891",
+        "normError": "3.11091254621987624777790388962e-96",
+        "traceError": "3.11091254621987624777790388962e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.19739779533600968347783273107e-41",
+        "HSResidual": "3.96141521183775390871776830925e-41",
+        "squaredHSResidual": "1.56928104805795566758403773841e-81"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999984217182010749498157625098523",
+        "normError": "1.57828179892505018423749014773e-72",
+        "traceError": "1.57828179892505018423749014773e-72",
+        "traceMinusNorm": "8.31632781251591937482432366455e-112",
+        "maximumEntryResidual": "1.38092580101485000554091675856e-71",
+        "HSResidual": "4.46858137111608153027297124583e-71",
+        "squaredHSResidual": "1.99682194702856791684034186295e-141"
+      },
+      "change": {
+        "maximumRawComponentChange": "4.37276640137022656448632228356e-41",
+        "maximumPhaseAlignedComponentChange": "4.37276640137022656448632228356e-41",
+        "phaseAlignedL2Change": "5.84335489511564772607649605602e-41",
+        "normalizedInfidelity": "3.41447964302720024375427991434e-81",
+        "alignedPhase": [
+          "1.0",
+          "-3.68670196608323952778904705149e-57"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.13.3-original-dicke-alternate",
+      "sourceObservationId": "acs.13.3",
+      "n": 13,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008671",
+        "normError": "8.67092975124536705836524899363e-96",
+        "traceError": "8.67092975124536705836524899363e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.23172083772940532009093309602e-42",
+        "HSResidual": "4.46344167545881064018186619203e-42",
+        "squaredHSResidual": "1.99223115902225546898528494851e-83"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999972011039732298313437248396979",
+        "normError": "2.79889602677016865627516030213e-72",
+        "traceError": "2.79889602677016865627516030213e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.85735938504873248378649598045e-72",
+        "HSResidual": "3.1101552202139604955455449404e-72",
+        "squaredHSResidual": "9.67306549382414910423530578193e-144"
+      },
+      "change": {
+        "maximumRawComponentChange": "7.49096195285537826475448018717e-42",
+        "maximumPhaseAlignedComponentChange": "7.49096195285537826475448018717e-42",
+        "phaseAlignedL2Change": "1.13795881004738745984935502419e-41",
+        "normalizedInfidelity": "1.29495025336446605484043521651e-82",
+        "alignedPhase": [
+          "1.0",
+          "-4.16663246894491408013504352494e-58"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.15.3-original-dicke-alternate",
+      "sourceObservationId": "acs.15.3",
+      "n": 15,
+      "reportedOrder": 3,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999932587",
+        "normError": "6.74132519901838153646724495377e-96",
+        "traceError": "6.74132519901837904156890119899e-96",
+        "traceMinusNorm": "2.49489834375477581244729709936e-111",
+        "maximumEntryResidual": "7.77874285837957360700884718113e-42",
+        "HSResidual": "1.55574857167591472140176943623e-41",
+        "squaredHSResidual": "2.42035361827164876533419254517e-82"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999874953054004665047620377954833",
+        "normError": "1.25046945995334952379622045167e-71",
+        "traceError": "1.25046945995334952379622045167e-71",
+        "traceMinusNorm": "1.66326556250318387496486473291e-111",
+        "maximumEntryResidual": "7.62596719283182312595913781737e-72",
+        "HSResidual": "1.07872238314747098515898221555e-71",
+        "squaredHSResidual": "1.1636419799033591940898575503e-142"
+      },
+      "change": {
+        "maximumRawComponentChange": "1.93483914137804945544542324504e-41",
+        "maximumPhaseAlignedComponentChange": "1.93483914137804945544542324504e-41",
+        "phaseAlignedL2Change": "3.06797755749266100908573789754e-41",
+        "normalizedInfidelity": "9.41248629327863408741074878675e-82",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.16.5-original-dicke-alternate",
+      "sourceObservationId": "acs.16.5",
+      "n": 16,
+      "reportedOrder": 5,
+      "passed": true,
+      "before": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998941",
+        "normError": "1.05893838708471134973705047574e-97",
+        "traceError": "1.05893838708471966606486299166e-97",
+        "traceMinusNorm": "8.31632781251591937482432366455e-112",
+        "maximumEntryResidual": "1.3698743779891219971360286648e-41",
+        "HSResidual": "3.2526997643145202618747078329e-41",
+        "squaredHSResidual": "1.05800557567717356592450837264e-81"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999881740530873292001040406476137",
+        "normError": "1.18259469126707998959593523863e-71",
+        "traceError": "1.18259469126707998959593523863e-71",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.24530626633548265123761077991e-71",
+        "HSResidual": "5.57880089396260491692820484252e-71",
+        "squaredHSResidual": "3.11230194144779597902571282107e-141"
+      },
+      "change": {
+        "maximumRawComponentChange": "3.51282786009272833321527018336e-41",
+        "maximumPhaseAlignedComponentChange": "3.51282786009272798991458314595e-41",
+        "phaseAlignedL2Change": "6.8718080720400741427429873879e-41",
+        "normalizedInfidelity": "4.72217461789551208191610878441e-81",
+        "alignedPhase": [
+          "1.0",
+          "-2.81153116291568673526634663527e-56"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.18.5-original-dicke-alternate",
+      "sourceObservationId": "acs.18.5",
+      "n": 18,
+      "reportedOrder": 5,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003216",
+        "normError": "3.21573732042881117613387351088e-96",
+        "traceError": "3.21573732042881117613387351088e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.04564890237431440027198038404e-41",
+        "HSResidual": "3.54316783335981868415289592198e-41",
+        "squaredHSResidual": "1.25540382953557118639353248546e-81"
+      },
+      "after": {
+        "normSquared": "0.99999999999999999999999999999999999999999999999999999999999999999999998024573877969319505115941572",
+        "normError": "1.975426122030680494884058428e-71",
+        "traceError": "1.975426122030680494884058428e-71",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "1.0821529473109882842994216982e-70",
+        "HSResidual": "1.33308543768091903744334850905e-70",
+        "squaredHSResidual": "1.77711678415692747464722195542e-140"
+      },
+      "change": {
+        "maximumRawComponentChange": "3.6682323650338664515001900302e-41",
+        "maximumPhaseAlignedComponentChange": "3.6682323650338664515001900302e-41",
+        "phaseAlignedL2Change": "5.85657118602292739905869908512e-41",
+        "normalizedInfidelity": "3.42994260569539984853947268347e-81",
+        "alignedPhase": [
+          "1.0",
+          "6.67614049878487871919697802377e-61"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    },
+    {
+      "id": "acs.20.5-original-dicke-alternate",
+      "sourceObservationId": "acs.20.5",
+      "n": 20,
+      "reportedOrder": 5,
+      "passed": true,
+      "before": {
+        "normSquared": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006465",
+        "normError": "6.46475507638165481024209011815e-96",
+        "traceError": "6.46475507638165481024209011815e-96",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "5.39617263232202923880257365777e-42",
+        "HSResidual": "1.02161903355457010544072441467e-41",
+        "squaredHSResidual": "1.04370544972097383900966983251e-82"
+      },
+      "after": {
+        "normSquared": "0.9999999999999999999999999999999999999999999999999999999999999999999999980842250616271564077965756213",
+        "normError": "1.91577493837284359220342437872e-72",
+        "traceError": "1.91577493837284359220342437872e-72",
+        "traceMinusNorm": "0.0",
+        "maximumEntryResidual": "2.80137305315665448216266083056e-71",
+        "HSResidual": "1.00124644097371762354219991141e-70",
+        "squaredHSResidual": "1.00249443556253620922190171254e-140"
+      },
+      "change": {
+        "maximumRawComponentChange": "2.89840666609592859844062146513e-41",
+        "maximumPhaseAlignedComponentChange": "2.89840666609592859844062146513e-41",
+        "phaseAlignedL2Change": "4.09258003589769257302093053879e-41",
+        "normalizedInfidelity": "1.6749211350228358629632331876e-81",
+        "alignedPhase": [
+          "1.0",
+          "-2.15946808080905379577319919361e-65"
+        ]
+      },
+      "structuralZerosPreservedExactly": true,
+      "partitionStatus": "Not assigned or certified."
+    }
+  ]
+}

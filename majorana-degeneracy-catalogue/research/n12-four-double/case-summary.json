@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-28",
+  "n": 12,
+  "partition": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "rigorousRange": [
+    2,
+    3
+  ],
+  "globalCaseSettled": false,
+  "newExactThirdOrderWitness": false,
+  "provedRestrictions": {
+    "antipodalDoublePointPairsExcluded": true,
+    "simplePointGeometryInitiallyUnrestricted": true,
+    "remainingPossibleProperRotationGroups": [
+      "C1",
+      "C2"
+    ],
+    "doublePointProbabilityInterval": [
+      "5/14",
+      "19/42"
+    ],
+    "probabilityEndpointsStrict": true,
+    "doublePointAngularLowerBoundApproxDegrees": 59.27563736473569
+  },
+  "boundarySequence": {
+    "infimumOfThirdOrderHSDefect": 0,
+    "attainmentNotDecided": true,
+    "certificate": "boundary_sequence.json"
+  },
+  "newSearchRuns": {
+    "generalComplexAndC2": 2866,
+    "antipodal": 1500
+  },
+  "exactCertificates": [
+    "antipodal-obstruction-verification.json",
+    "analytic-rotation-obstructions.json",
+    "analytic-d2-obstruction.json",
+    "analytic-moment-constraints.json",
+    "boundary_sequence.json"
+  ],
+  "independentAudits": [
+    "boundary-and-rotation-independent-audit.json",
+    "d2-independent-audit.json"
+  ],
+  "frontend": {
+    "readableProof": "index.html",
+    "renderedFormulas": 102,
+    "mathErrors": 0,
+    "horizontalPageOverflow": false,
+    "localLinksChecked": 16,
+    "missingLocalLinks": []
+  },
+  "limitation": "No exact witness or global nonexistence certificate was obtained for the remaining non-antipodal C1/C2 geometries. Failed numerical searches and incomplete elimination diagnostics do not change the range."
+}

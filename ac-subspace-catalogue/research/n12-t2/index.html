@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee"><meta name="description" content="Exact proof that the maximal second-order anticoherent subspace of twelve symmetric qubits has dimension two.">
+  <title>Twelve qubits · Maximum 2-AC subspace dimension is two</title>
+  <link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+  <script defer src="../../vendor/katex/katex.min.js"></script>
+  <style>
+    :root{--paper:#f5f4ee;--surface:#fffef9;--ink:#27302e;--muted:#68736d;--line:#d6dacf;--purple:#675283;--teal:#245c50;--serif:Georgia,'Times New Roman',serif;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,-apple-system,sans-serif}main{max-width:980px;margin:40px auto 0;padding:0 30px 60px}a{color:var(--teal);text-underline-offset:4px;text-decoration-thickness:1px}a:hover{color:#122f28}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.25}h1{font-size:clamp(30px,4vw,42px);letter-spacing:-1px;margin:24px 0 18px;max-width:810px}h2{font-size:27px;letter-spacing:-.5px;margin:42px 0 17px}h3{font-size:21px;margin:22px 0 10px}p{margin:0 0 18px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--purple);margin-bottom:10px}.back-link{font-size:13px}.lead{font-size:17px;line-height:1.8;color:#52645a}.result{border:1px solid #c2d3c5;border-left:4px solid var(--teal);background:#eaf1e8;border-radius:0 5px 5px 0;padding:19px 24px;margin:25px 0 29px}.result strong{color:var(--teal);font-size:14px}.result .math{font-size:25px}.result p{margin:10px 0 0;font-size:14px;line-height:1.75}.math[data-display=true]{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:7px 0;margin:14px 0}.katex-display{margin:.35em 0}.proof-chain{display:flex;flex-wrap:wrap;gap:7px 12px;color:var(--muted);font-size:13px;border-block:1px solid var(--line);padding:13px 0;margin:24px 0}.proof-chain span{white-space:nowrap}.certificate{border:1px solid #c7bcd2;border-left:4px solid var(--purple);background:#efebf3;border-radius:0 5px 5px 0;padding:18px 22px;margin:24px 0}.certificate .eyebrow{margin:0 0 5px}.certificate .math{font-size:18px}.certificate p:last-child{margin-bottom:0;font-size:14px}.note{color:var(--muted);font-size:14px}.equation-note{font-size:14px;color:var(--muted);margin-top:-3px}details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;margin:25px 0}summary{cursor:pointer;color:var(--purple);font-size:14px;font-weight:600}details>div{padding-top:15px}details p{font-size:14px}details .math{font-size:14px}.downloads{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin:20px 0}.download{display:flex;flex-direction:column;gap:4px;padding:14px 17px;border:1px solid var(--line);border-radius:5px;background:var(--surface)}.download a{font-size:14px;font-weight:500}.download span{color:var(--muted);font-size:12px;line-height:1.5}.witness{padding:17px 22px;background:var(--surface);border:1px solid var(--line);border-radius:5px;margin:20px 0}.witness .math{font-size:15px}.witness p:last-child{margin-bottom:0}.source-note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:30px}footer{display:flex;flex-wrap:wrap;gap:12px 24px;border-top:1px solid var(--line);margin-top:38px;padding-top:18px;font-size:12px;color:var(--muted)}:focus-visible{outline:2px solid var(--purple);outline-offset:4px}code{font-size:.85em;overflow-wrap:anywhere}
+    @media(max-width:600px){main{padding:0 18px 40px;margin-top:25px}body{font-size:15px}h1{font-size:30px}h2{font-size:24px;margin-top:34px}.lead{font-size:16px}.result,.certificate,.witness{padding:15px 17px}.result .math{font-size:21px}.certificate .math{font-size:16px}.downloads{grid-template-columns:1fr;gap:10px}.proof-chain{font-size:12px}.witness .math{font-size:13px}}
+    @media print{body{background:#fff}main{max-width:none;margin:0;padding:0}.downloads{break-inside:avoid}.result,.certificate{break-inside:avoid}details>div{display:block}.math[data-display=true]{overflow:visible}}
+  </style>
+  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-tex]').forEach(el=>{if(window.katex)el.innerHTML=katex.renderToString(el.dataset.tex,{displayMode:el.dataset.display==='true',throwOnError:false,trust:false,strict:'ignore'});});});</script>
+</head>
+<body><main id="top">
+  <p class="eyebrow">Anticoherent subspaces · Exact exclusion</p>
+  <a class="back-link" href="../../index.html#n=12&amp;t=2&amp;subspace=radical-n12-k2-t2">← Return to twelve qubits, order two</a>
+  <h1>Twelve qubits: the maximal second-order AC subspace has dimension two</h1>
+  <p class="lead">A three-dimensional candidate would leave a single pure state orthogonal to twelve spin-generated vectors. Its multipoles and two-copy spin probabilities must then obey an exact identity with a strictly positive right-hand side. This contradiction excludes every such candidate.</p>
+  <div class="result"><strong>Proved maximum</strong><div class="math" data-tex="\boxed{k_{\max}(12,2)=2}" data-display="true"></div><p>The exclusion applies to arbitrary complex subspaces. An explicit two-dimensional radical construction attains the bound.</p></div>
+  <div class="proof-chain" aria-label="Proof outline"><span>Three-dimensional candidate</span><span aria-hidden="true">→</span><span>Rank-one complement</span><span aria-hidden="true">→</span><span>Exact positivity contradiction</span></div>
+
+  <section aria-labelledby="spin-title"><h2 id="spin-title">1. The full-subspace AC condition</h2>
+    <p>Work in the spin-<span class="math" data-tex="j=6"></span> representation, of dimension <span class="math" data-tex="13"></span>. Let <span class="math" data-tex="P"></span> project onto a hypothetical three-dimensional subspace in which every normalized vector is second-order anticoherent. With <span class="math" data-tex="\hbar=1"></span>, the condition is</p>
+    <div class="math" data-tex="P J_a P=0,\qquad P J_aJ_bP=14\delta_{ab}P,\qquad a,b\in\{x,y,z\}." data-display="true"></div>
+    <p>The factor is <span class="math" data-tex="j(j+1)/3=14"></span>. The antisymmetric part of <span class="math" data-tex="J_aJ_b"></span> vanishes after compression because the first-order compressed moments vanish.</p>
+    <p>For an orthonormal basis <span class="math" data-tex="\{|u_1\rangle,|u_2\rangle,|u_3\rangle\}"></span> of the candidate, the following twelve vectors are mutually orthonormal:</p>
+    <div class="math" data-tex="\left\{|u_\alpha\rangle,\ \frac{J_x|u_\alpha\rangle}{\sqrt{14}},\ \frac{J_y|u_\alpha\rangle}{\sqrt{14}},\ \frac{J_z|u_\alpha\rangle}{\sqrt{14}}\right\}_{\alpha=1}^{3}." data-display="true"></div>
+    <p>The same argument gives <span class="math" data-tex="4k\le13"></span> for any second-order AC subspace. Thus only <span class="math" data-tex="k=3"></span> needs to be excluded to improve the upper bound to two.</p>
+  </section>
+
+  <section aria-labelledby="complement-title"><h2 id="complement-title">2. A pure state in the remaining dimension</h2>
+    <p>Define the rotationally covariant map <span class="math" data-tex="\Phi(A)=\sum_{a=x,y,z}J_aAJ_a"></span>. The orthogonal complement of the twelve vectors is a rank-one projector:</p>
+    <div class="math" data-tex="Q=I-P-\frac{\Phi(P)}{14}=|q\rangle\langle q|,\qquad PQ=0." data-display="true"></div>
+    <p>Choose Hilbert–Schmidt orthonormal irreducible spin tensors <span class="math" data-tex="T_{LM}"></span>, with <span class="math" data-tex="T_{00}=I/\sqrt{13}"></span>, and expand <span class="math" data-tex="P=\sum_{LM}p_{LM}T_{LM}"></span> and <span class="math" data-tex="Q=\sum_{LM}q_{LM}T_{LM}"></span>. The tensor eigenvalue of the map is</p>
+    <div class="math" data-tex="\Phi(T_{LM})=\left(42-\frac{L(L+1)}{2}\right)T_{LM}." data-display="true"></div>
+    <p>Consequently,</p>
+    <div class="math" data-tex="p_{00}=\frac3{\sqrt{13}},\qquad q_{00}=\frac1{\sqrt{13}},\qquad p_{LM}=\frac{28}{L(L+1)-112}\,q_{LM}\quad(L>0)." data-display="true"></div>
+    <p>None of these denominators vanishes for <span class="math" data-tex="1\le L\le12"></span>. The rank-one and rank-two coefficients of <span class="math" data-tex="P"></span> vanish by anticoherence, so the same is true for <span class="math" data-tex="Q"></span>. In particular, <span class="math" data-tex="|q\rangle"></span> is itself second-order anticoherent.</p>
+  </section>
+
+  <section aria-labelledby="recoupling-title"><h2 id="recoupling-title">3. Multipole lengths and two-copy probabilities</h2>
+    <p>Set <span class="math" data-tex="a_L=\sum_{M=-L}^{L}|q_{LM}|^2\ge0"></span>. We have <span class="math" data-tex="a_0=1/13"></span> and <span class="math" data-tex="a_1=a_2=0"></span>. Orthogonality of the two projectors gives</p>
+    <div class="math" data-tex="0=\operatorname{Tr}(PQ)=\frac3{13}+\sum_{L=1}^{12}\frac{28}{L(L+1)-112}\,a_L." data-display="true"></div>
+    <p>Let <span class="math" data-tex="\Pi_J"></span> denote the projector onto total spin <span class="math" data-tex="J"></span> in two copies of spin six, and define</p>
+    <div class="math" data-tex="p_J=\left\|\Pi_J\bigl(|q\rangle\otimes|q\rangle\bigr)\right\|^2\ge0,\qquad \sum_{J\in\{0,2,4,6,8,10,12\}}p_J=1." data-display="true"></div>
+    <p>Only even total spins occur because the two copies are identical. The multipole lengths and these probabilities are related by the exact Wigner recoupling identity</p>
+    <div class="math" data-tex="a_L=\sum_{J\in\{0,2,4,6,8,10,12\}}(2L+1)\begin{Bmatrix}6&amp;6&amp;L\\6&amp;6&amp;J\end{Bmatrix}p_J." data-display="true"></div>
+    <p class="equation-note">The braces are Wigner <span class="math" data-tex="6j"></span> symbols. The coefficient matrix used here is recorded in the rational certificate and recomputed by both verifiers.</p>
+  </section>
+
+  <section aria-labelledby="contradiction-title"><h2 id="contradiction-title">4. A strictly positive quantity would have to vanish</h2>
+    <p>Combining the recoupling identity, normalization, <span class="math" data-tex="a_1=a_2=0"></span>, and <span class="math" data-tex="\operatorname{Tr}(PQ)=0"></span> gives the exact integer identity</p>
+    <div class="certificate"><p class="eyebrow">Positivity certificate</p><div class="math" data-tex="\begin{aligned}0={}&9015+1031316\,a_3\\&+3936270\,p_0+20020\,p_2+728365\,p_6.\end{aligned}" data-display="true"></div><p>Every variable on the right is nonnegative, while the constant is strictly positive. The hypothesized three-dimensional subspace therefore cannot exist.</p></div>
+    <details><summary>The full rational identity before imposing the zero constraints</summary><div><p>Under the coefficient relation between <span class="math" data-tex="P"></span> and <span class="math" data-tex="Q"></span> derived above, recoupling gives</p><div class="math" data-tex="\begin{aligned}-\operatorname{Tr}(PQ)={}&\frac{16227}{207460}+\frac{609427}{82984}a_1-\frac{28005159}{1999160}a_2\\&+\frac{210951}{23575}a_3+\frac{3542643}{103730}p_0\\&+\frac{819}{4715}p_2+\frac{2907}{460}p_6.\end{aligned}" data-display="true"></div><p>Set <span class="math" data-tex="a_1=a_2=\operatorname{Tr}(PQ)=0"></span> and multiply by <span class="math" data-tex="1037300/9"></span> to obtain the displayed integer contradiction. This is a coefficientwise rational equality, independently reconstructed from the spin-tensor relations.</p></div></details>
+  </section>
+
+  <section aria-labelledby="attainment-title"><h2 id="attainment-title">5. Dimension two is attained</h2>
+    <p>The catalogue already contains an exact two-dimensional construction. In the normalized Dicke basis, define the unit phase</p>
+    <div class="math" data-tex="\eta=\frac{7\sqrt{285}+2i\sqrt{269515}}{1045},\qquad |\eta|=1." data-display="true"></div>
+    <div class="witness"><div class="math" data-tex="\begin{aligned}|v_1\rangle={}&\sqrt{\frac{19}{32}}|D_{12}^{(3)}\rangle+\frac14|D_{12}^{(7)}\rangle+\sqrt{\frac{11}{32}}\eta|D_{12}^{(11)}\rangle,\\[4pt]|v_2\rangle={}&\sqrt{\frac{11}{32}}|D_{12}^{(1)}\rangle-\frac{\overline\eta}{4}|D_{12}^{(5)}\rangle+\sqrt{\frac{19}{32}}\overline\eta|D_{12}^{(9)}\rangle.\end{aligned}" data-display="true"></div><p>These vectors are orthonormal and satisfy <span class="math" data-tex="R_2(|v_a\rangle\langle v_b|)=\delta_{ab}I_3/3"></span> exactly. Thus every vector in their span is second-order anticoherent.</p></div>
+    <p><a href="../../index.html#n=12&amp;t=2&amp;subspace=radical-n12-k2-t2">Inspect the basis and its Majorana spheres ↗</a> · <a href="../acliege/radical-subspaces/verification.json">Exact construction verification ↗</a></p>
+  </section>
+
+  <section aria-labelledby="verification-title"><h2 id="verification-title">Exact verification & downloads</h2>
+    <p>The exclusion uses the full-subspace AC equations, spin recoupling, and exact rational arithmetic. It imposes no reality, support, Majorana multiplicity, or discrete-symmetry restriction on the hypothetical subspace.</p>
+    <div class="downloads">
+      <div class="download"><a href="certificate.json">Rational certificate ↓</a><span>Recoupling coefficients and the exact contradiction.</span></div>
+      <div class="download"><a href="proof.tex">Complete proof in LaTeX ↓</a><span>Mathematical argument and conventions.</span></div>
+      <div class="download"><a href="verify.py">Certificate verifier ↓</a><span>Reconstructs the exact identities.</span></div>
+      <div class="download"><a href="verify_independent.py">Independent verifier ↓</a><span>A separate check of the exclusion.</span></div>
+      <div class="download"><a href="verification.json">Verification result ↓</a><span>Saved output of the certificate check.</span></div>
+      <div class="download"><a href="independent-verification.json">Independent verification result ↓</a><span>Saved output of the second check.</span></div>
+    </div>
+    <p class="source-note">The full-subspace definition and spin conventions follow the accompanying <a href="../../index.html#sources">source records</a>. The exclusion identity above is a catalogue calculation, with no claim of literature priority. The exact two-dimensional witness is a reconstruction from the supplied Julia support pattern.</p>
+  </section>
+  <footer><span>Anticoherent subspaces · 29 October 2026</span><a href="../../index.html#n=12&amp;t=2&amp;subspace=radical-n12-k2-t2">Return to the settled catalogue entry ↗</a><a href="#top">Back to top ↑</a></footer>
+</main></body>
+</html>

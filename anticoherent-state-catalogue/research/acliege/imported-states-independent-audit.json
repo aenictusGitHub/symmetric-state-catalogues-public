@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "catalogueSha256": "3a6d5dfaf7cfd70e409972d59d50951c9882b60c183ba79db2284d3a1641ab7c",
+  "statesChecked": 7,
+  "method": "Independent exact normalized-Dicke partial trace. The reduction at the claimed order is exactly I/(t+1); every lower order follows by tracing it. A nonzero entry at the next order establishes the exact achieved order of this representative.",
+  "states": [
+    {
+      "id": "acliege-n11-t3",
+      "n": 11,
+      "exactAchievedOrder": 3,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "-1/1080"
+      }
+    },
+    {
+      "id": "acliege-n12-t5",
+      "n": 12,
+      "exactAchievedOrder": 5,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "-1/420"
+      }
+    },
+    {
+      "id": "acliege-n13-t3",
+      "n": 13,
+      "exactAchievedOrder": 3,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "-1/165"
+      }
+    },
+    {
+      "id": "acliege-n15-t3",
+      "n": 15,
+      "exactAchievedOrder": 3,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "-1/780"
+      }
+    },
+    {
+      "id": "acliege-n16-t5",
+      "n": 16,
+      "exactAchievedOrder": 5,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "-5/32032"
+      }
+    },
+    {
+      "id": "acliege-n18-t5",
+      "n": 18,
+      "exactAchievedOrder": 5,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "1/910"
+      }
+    },
+    {
+      "id": "acliege-n20-t5",
+      "n": 20,
+      "exactAchievedOrder": 5,
+      "normalizationVerified": true,
+      "highestClaimedReductionVerifiedExactly": true,
+      "lowerOrdersFollowByPartialTrace": true,
+      "nextOrderCounterexample": {
+        "row": 0,
+        "column": 0,
+        "value": "11/14280"
+      }
+    }
+  ],
+  "scope": "This verifies each imported pure state, not global maximality of the order at its qubit number."
+}

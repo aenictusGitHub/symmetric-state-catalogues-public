@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "convention": {
+    "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r))*c_r*z^r",
+    "sphere": "(2Re(z), -2Im(z), |z|^2-1)/(1+|z|^2); infinity is north."
+  },
+  "records": {
+    "adjacent-triples-n22-k3-t2-basis-1": {
+      "id": "adjacent-triples-n22-k3-t2-basis-1",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 1",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.9148902418208248,
+          "y": -0.3789599462449862,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3789599462449861,
+          "y": -0.9148902418208243,
+          "z": 0.13915891837403166,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.37895994624498613,
+          "y": -0.9148902418208248,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9148902418208243,
+          "y": -0.37895994624498613,
+          "z": 0.13915891837403166,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9148902418208248,
+          "y": 0.3789599462449861,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.37895994624498675,
+          "y": 0.9148902418208243,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3789599462449864,
+          "y": 0.9148902418208246,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9148902418208243,
+          "y": 0.3789599462449868,
+          "z": 0.13915891837403152,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7681947748507655,
+          "y": -0.31819669428733327,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3181966942873333,
+          "y": -0.7681947748507655,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.31819669428733316,
+          "y": -0.7681947748507655,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7681947748507655,
+          "y": -0.3181966942873333,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7681947748507655,
+          "y": 0.31819669428733316,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3181966942873337,
+          "y": 0.7681947748507653,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.31819669428733344,
+          "y": 0.7681947748507654,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7681947748507653,
+          "y": 0.3181966942873337,
+          "z": -0.555542664101143,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "sourceParameterIntervals": {},
+      "sourceSHA256": "3d555fa312677bd0c934d5e73fe646a53708e9fb059c5686d98ff17dd8ed6711",
+      "rootDisks": [
+        {
+          "center": [
+            "-1916572875990751538579194357039830698807941196685905298374295541061461/625000000000000000000000000000000000000000000000000000000000000000000",
+            "0"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "2868688724835791590629/25000000000000000000000000000000000000000000000000",
+          "roucheRightLower": "35111048485569352764807257373238861497/100000000000000000000000000000000000000000000000000"
+        },
+        {
+          "center": [
+            "-33324420895466541370235613286009671614478841050197626351889347246097/5000000000000000000000000000000000000000000000000000000000000000000000",
+            "0"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "2868688724835791590629/25000000000000000000000000000000000000000000000000",
+          "roucheRightLower": "35111048485569352764807257373238861497/100000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "coordinateMethod": "Exact rational interval arithmetic and Rouche disks certify all nonzero roots simple; numerical disk centers render the sphere.",
+      "multiplicityEvidence": "Exact rational Rouche certificate and exact pole support.",
+      "evidence": "Exact AC subspace basis vector; coordinates are a numerical rendering of its algebraic coefficients.",
+      "diagnostics": {
+        "finiteRootsCertifiedSimple": true,
+        "multiplicityCertifiedExact": true,
+        "squareFreeFactorizationExact": false,
+        "rootCertificationMethod": "rational interval Rouche theorem",
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 5,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialDegree": 2,
+        "disjointCertifiedRootDisks": 2,
+        "roucheDiskRadius": "1/1000000000000000",
+        "intervalSquareRootDigits": 90,
+        "rootPrecisionDecimalDigits": 70,
+        "projectiveDickeReconstructionError": 2.086895897866681e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.6363933885746658
+      }
+    },
+    "adjacent-triples-n22-k3-t2-basis-2": {
+      "id": "adjacent-triples-n22-k3-t2-basis-2",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 2",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.9223284065022982,
+          "y": -0.14064656655798205,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5527325297550034,
+          "y": -0.7516368116825118,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14064656655798205,
+          "y": -0.9223284065022982,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7516368116825116,
+          "y": -0.5527325297550035,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9223284065022982,
+          "y": 0.14064656655798177,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5527325297550033,
+          "y": 0.751636811682512,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14064656655798213,
+          "y": 0.9223284065022982,
+          "z": -0.3599011723715035,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7516368116825118,
+          "y": 0.5527325297550033,
+          "z": -0.3599011723715033,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.931757561778303,
+          "y": -0.04794780698394052,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6249478708939136,
+          "y": -0.6927563098166497,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0479478069839405,
+          "y": -0.931757561778303,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6927563098166496,
+          "y": -0.6249478708939136,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.931757561778303,
+          "y": 0.04794780698394045,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6249478708939136,
+          "y": 0.6927563098166496,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0479478069839404,
+          "y": 0.931757561778303,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6927563098166496,
+          "y": 0.6249478708939136,
+          "z": 0.3599011723715034,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "sqrt(22)/8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(546)*(-37 + sqrt(9551)*I)/4368",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1463)*(-5 - sqrt(9551)*I)/6384",
+        "0",
+        "0",
+        "0"
+      ],
+      "sourceParameterIntervals": {},
+      "sourceSHA256": "b7511097accf5378ad7190d8898703a64248713bcaa189bc09204691a84828cf",
+      "rootDisks": [
+        {
+          "center": [
+            "43251977733752406262661263338411128421472097000035037977689711319503/2500000000000000000000000000000000000000000000000000000000000000000000",
+            "459361527804647090136871230130460766765252221805468992628637227261247/10000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "2415369768338599139593/100000000000000000000000000000000000000000000000000",
+          "roucheRightLower": "10954979914932233114536567819724627439/25000000000000000000000000000000000000000000000000"
+        },
+        {
+          "center": [
+            "37346460490109613895544546713567505171190777338129235129358370809375591/2000000000000000000000000000000000000000000000000000000000000000000000",
+            "20362861157298269147634639701180603652818301324521749040372694946278803/2500000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "2415369768338599139593/100000000000000000000000000000000000000000000000000",
+          "roucheRightLower": "10954979914932233114536567819724627439/25000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "coordinateMethod": "Exact rational interval arithmetic and Rouche disks certify all nonzero roots simple; numerical disk centers render the sphere.",
+      "multiplicityEvidence": "Exact rational Rouche certificate and exact pole support.",
+      "evidence": "Exact AC subspace basis vector; coordinates are a numerical rendering of its algebraic coefficients.",
+      "diagnostics": {
+        "finiteRootsCertifiedSimple": true,
+        "multiplicityCertifiedExact": true,
+        "squareFreeFactorizationExact": false,
+        "rootCertificationMethod": "rational interval Rouche theorem",
+        "zeroMultiplicity": 3,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialDegree": 2,
+        "disjointCertifiedRootDisks": 2,
+        "roucheDiskRadius": "1/1000000000000000",
+        "intervalSquareRootDigits": 90,
+        "rootPrecisionDecimalDigits": 70,
+        "projectiveDickeReconstructionError": 1.9206773052285874e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7140799617311315
+      }
+    },
+    "adjacent-triples-n22-k3-t2-basis-3": {
+      "id": "adjacent-triples-n22-k3-t2-basis-3",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 3",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9724568952279743,
+          "y": 0.18698230493963425,
+          "z": -0.13915891837403155,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8198473208120228,
+          "y": -0.5554144092426103,
+          "z": -0.1391589183740314,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18698230493963425,
+          "y": -0.9724568952279743,
+          "z": -0.13915891837403155,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5554144092426102,
+          "y": -0.8198473208120229,
+          "z": -0.1391589183740314,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9724568952279742,
+          "y": -0.18698230493963447,
+          "z": -0.1391589183740314,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.819847320812023,
+          "y": 0.5554144092426101,
+          "z": -0.13915891837403155,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18698230493963452,
+          "y": 0.9724568952279742,
+          "z": -0.1391589183740314,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.55541440924261,
+          "y": 0.8198473208120232,
+          "z": -0.1391589183740314,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8165310673715005,
+          "y": 0.15700116044336412,
+          "z": 0.5555426641011427,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6883912399915374,
+          "y": -0.4663580695842176,
+          "z": 0.5555426641011428,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15700116044336412,
+          "y": -0.8165310673715005,
+          "z": 0.5555426641011427,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.46635806958421766,
+          "y": -0.6883912399915377,
+          "z": 0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8165310673715005,
+          "y": -0.15700116044336435,
+          "z": 0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6883912399915377,
+          "y": 0.46635806958421755,
+          "z": 0.5555426641011427,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1570011604433644,
+          "y": 0.8165310673715005,
+          "z": 0.555542664101143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4663580695842174,
+          "y": 0.6883912399915375,
+          "z": 0.5555426641011428,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-5*sqrt(266)/3192 - sqrt(2540566)*I/3192",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "(5 + sqrt(9551)*I)**2/19152",
+        "0"
+      ],
+      "sourceParameterIntervals": {},
+      "sourceSHA256": "7ce2bcfb7be689bea8315ebde4e66300fe078e279158727741b3ed3c74234e14",
+      "rootDisks": [
+        {
+          "center": [
+            "41655526119333176712794516607512089518098551312747032939861684057621/2500000000000000000000000000000000000000000000000000000000000000000000",
+            "-651353917148024694910410158826607085268485810264411345056156990745017/2000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "8038456681888599697/3125000000000000000000000000000000000000000000000",
+          "roucheRightLower": "35065186441796520936606247761869555051/100000000000000000000000000000000000000000000000000"
+        },
+        {
+          "center": [
+            "76662915039630061543167774281593227952317647867436211934971821642458441/10000000000000000000000000000000000000000000000000000000000000000000000",
+            "-1498441343292551477337830833178169679837695958813373137766908526939843323/10000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "radius": "1/1000000000000000",
+          "roucheLeftUpper": "8038456681888599697/3125000000000000000000000000000000000000000000000",
+          "roucheRightLower": "35065186441796520936606247761869555051/100000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "coordinateMethod": "Exact rational interval arithmetic and Rouche disks certify all nonzero roots simple; numerical disk centers render the sphere.",
+      "multiplicityEvidence": "Exact rational Rouche certificate and exact pole support.",
+      "evidence": "Exact AC subspace basis vector; coordinates are a numerical rendering of its algebraic coefficients.",
+      "diagnostics": {
+        "finiteRootsCertifiedSimple": true,
+        "multiplicityCertifiedExact": true,
+        "squareFreeFactorizationExact": false,
+        "rootCertificationMethod": "rational interval Rouche theorem",
+        "zeroMultiplicity": 5,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialDegree": 2,
+        "disjointCertifiedRootDisks": 2,
+        "roucheDiskRadius": "1/1000000000000000",
+        "intervalSquareRootDigits": 90,
+        "rootPrecisionDecimalDigits": 70,
+        "projectiveDickeReconstructionError": 1.9759738112802863e-15,
+        "exactFormulaVsSavedCoefficientsError": 8.632844629531253e-19,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.6363933885746663
+      }
+    }
+  },
+  "verification": {
+    "passed": true,
+    "recordCount": 3,
+    "certifiedReducedRootDisks": 6,
+    "allFiniteNonzeroRootsCertifiedSimple": true,
+    "allMultiplicitiesCertified": true,
+    "maximumProjectiveDickeReconstructionError": 2.086895897866681e-15,
+    "minimumDistinctPointDistance": 0.6363933885746658,
+    "certificateArithmetic": "Exact rational fractions; square roots enclosed using integer isqrt; no floating-point inequalities used for multiplicity proofs."
+  }
+}

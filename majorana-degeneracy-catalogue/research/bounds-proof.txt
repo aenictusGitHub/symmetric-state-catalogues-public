@@ -1,0 +1,32 @@
+RIGOROUS MAJORANA MULTIPLICITY BOUNDS
+
+Let g be the multiplicity of any one Majorana point. Rotate it to a pole. With a suitable Dicke-index orientation this makes c_0,...,c_(g-1) zero. Hence K, distributed as P(K=k)=|c_k|², is supported on {g,...,n}. Anticoherence through order t imposes the uniform moments
+E[K^a]=(1/(n+1)) sum_(k=0)^n k^a, 0<=a<=t.
+Equivalently E[(K)_a]=(n)_a/(a+1). This follows from the diagonal entries of rho_t=I_(t+1)/(t+1); these moment conditions alone are not sufficient for full anticoherence.
+
+ORDER ONE
+E[K]=n/2 and K>=g imply g<=floor(n/2). Equality for even n forces the balanced Dicke state. Attainers are Eq.(58) and Eq.(59) of PRA96_032304(2017), PDF page9. In normalized Dicke notation, even n uses D_(n/2); odd n uses (D_0+sqrt(n)D_((n+1)/2))/sqrt(n+1).
+
+ORDER TWO
+Since (K-g)(n-K)>=0, its expected value is n(n-1-3g)/6>=0. Thus g<=floor((n-1)/3). For n>=7 this bound is attained by a general exact construction. Put g=floor((n-1)/3), delta=n-3g-1 in {0,1,2}, L=n-g, and take positive real coefficients with supports0,3,L and probabilities
+p0=[9(n-2g)-n delta]/(18L),
+p3=n delta/[18(L-3)],
+pL=n[3(L-3)-delta]/[6L(L-3)].
+The probabilities sum to1 and reproduce the first two uniform moments. When delta>0 the support gaps are at least3; when delta=0 the middle coefficient vanishes. Thus all off-diagonal conditions through order2 vanish. The polynomial degree is exactlyL, so the point at infinity has multiplicityg, attaining the universal bound. n4 is the Eq.(60) tetrahedral two-term state; n6 is the octahedral state. No2AC state exists for n2,3,5, as separately proved in the AC catalogue. This construction therefore determines gmax for every n>=7, not only the displayed core.
+
+ORDER THREE
+Write X=K-n/2, a=n/2-g, and V=n(n+2)/12. Anticoherence gives E[X]=E[X³]=0 and E[X²]=V. The positive semidefinite moment matrix of the nonnegative weight X+a is
+[[a,V],[V,aV]].
+Its determinant is V(a²-V), so g<=floor(n/2-sqrt(n(n+2)/12)). This bound is independent of all Majorana partition assumptions. It gives upperbound2 at n11 and n12.
+
+N12, ORDERS FOUR AND FIVE
+If g>=2, then K is an integer in[2,12]. The polynomial (K-2)(12-K)(K-6)(K-7) is nonnegative on this support, but its uniform n12 expectation is -42. Four-anticoherence fixes that expectation, a contradiction. Therefore g<=1 for both orders4 and5. Existing exact icosahedral witnesses attain1.
+
+COMPLETE CORE CERTIFICATES
+moment-bounds.json contains432 exact records for n2..12, g1..n, t1..min(n,6):365 exclusion polynomials and67 moment-feasible rational distributions. Each exclusion polynomial is nonnegative on the allowed integer support and has negative uniform expectation. verify_moment_bounds.py checks every certificate using only Python rational arithmetic. Feasible moment distributions are explicitly labelled necessary conditions, not AC witnesses. universal-bounds.json extracts the best g upperbounds for all56 valid n×t core cells. Previously proved global AC impossibility results must still be applied to cells such as (5,2),(7,3),(9,3),(10,4),(11,4).
+
+N12 THIRD-ORDER PARTITION EXAMPLES
+The real state sqrt(7)/4(D2+D10)+sqrt(2)/4 D6 is exactly3AC and has polynomial sqrt(462)/4 z²(z⁴+1)², hence partition(2,2,2,2,2,2). Replacing the middle amplitude by i sqrt(2)/4 yields polynomial sqrt(462)/4 z²(z⁸+2iz⁴+1), whose degree8 factor has gcd1 with its derivative; its partition is(2,2,1,1,1,1,1,1,1,1). Both attain gmax2. This demonstrates that maximal point multiplicity does not determine the full partition.
+
+PROVENANCE
+The pole-rotation restriction and source numerics appear in PRA96_032304(2017), PDF page9, Sec.IV.B/Fig.6. The exact bounds above and general n>=7 two-anticoherent family are independently derived here. The Dicke-coefficient moment and off-diagonal characterization is given by PRA92_052333(2015), PDF page4, Eqs.(16)-(17).

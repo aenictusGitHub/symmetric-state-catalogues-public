@@ -1,0 +1,1416 @@
+{
+  "definition": "Full t-anticoherence requires every multipole a_L=0 for1≤L≤t, equivalently rho_t=I_sym^(t)/(t+1). Vanishing even multipoles alone is insufficient.",
+  "scope": "Pure symmetric n-qubit states, n=2,...,12. Cells t1...12 are supplied so the UI can select its own column range. Existence always refers to exact witnesses, not maximality of the achieved order.",
+  "overview": [
+    {
+      "n": 2,
+      "highestVerifiedOrder": 1,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "highestVerifiedOrder": 1,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "highestVerifiedOrder": 2,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "highestVerifiedOrder": 1,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "odd-complement"
+    },
+    {
+      "n": 6,
+      "highestVerifiedOrder": 3,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "highestVerifiedOrder": 2,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "odd-complement"
+    },
+    {
+      "n": 8,
+      "highestVerifiedOrder": 3,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "n8-t4-spectral"
+    },
+    {
+      "n": 9,
+      "highestVerifiedOrder": 2,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "n9-t3-four-copy"
+    },
+    {
+      "n": 10,
+      "highestVerifiedOrder": 3,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "n10-t4-cubic"
+    },
+    {
+      "n": 11,
+      "highestVerifiedOrder": 3,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "n11-t4-cubic"
+    },
+    {
+      "n": 12,
+      "highestVerifiedOrder": 5,
+      "globalMaximumOrderProven": true,
+      "nextOrderStatus": "impossible",
+      "nextOrderProofId": "even-tensor-gram"
+    }
+  ],
+  "cells": [
+    {
+      "n": 2,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 1,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 2,
+      "t": 2,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 3,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 2,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 1,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 3,
+      "t": 2,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 3,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 3,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 4,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 4,
+      "t": 3,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 4,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 1,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 5,
+      "t": 2,
+      "status": "impossible",
+      "proofId": "odd-complement"
+    },
+    {
+      "n": 5,
+      "t": 3,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 5,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 6,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 6,
+      "t": 3,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 6,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 6,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 7,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 7,
+      "t": 3,
+      "status": "impossible",
+      "proofId": "odd-complement"
+    },
+    {
+      "n": 7,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 7,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 8,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 8,
+      "t": 3,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 8,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "n8-t4-spectral"
+    },
+    {
+      "n": 8,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 8,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 9,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 2,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 9,
+      "t": 3,
+      "status": "impossible",
+      "notes": "Independently derived exact certificate; unrestricted complex pure symmetric states. See research/reported-exclusions/index.html.",
+      "proofId": "n9-t3-four-copy"
+    },
+    {
+      "n": 9,
+      "t": 4,
+      "status": "impossible",
+      "proofId": "odd-complement"
+    },
+    {
+      "n": 9,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 9,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 10,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 10,
+      "t": 3,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 10,
+      "t": 4,
+      "status": "impossible",
+      "notes": "Independently derived exact certificate; unrestricted complex pure symmetric states. See research/reported-exclusions/index.html.",
+      "proofId": "n10-t4-cubic"
+    },
+    {
+      "n": 10,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "n10-t5-spectral"
+    },
+    {
+      "n": 10,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 10,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 11,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 11,
+      "t": 3,
+      "status": "exists",
+      "witnessOrder": 3,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 11,
+      "t": 4,
+      "status": "impossible",
+      "notes": "Two independently verified exact three-copy certificates exclude arbitrary complex pure symmetric states. See reported-exclusions/index.html#n11.",
+      "proofId": "n11-t4-cubic"
+    },
+    {
+      "n": 11,
+      "t": 5,
+      "status": "impossible",
+      "proofId": "odd-complement"
+    },
+    {
+      "n": 11,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 11,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 1,
+      "status": "exists",
+      "witnessOrder": 5,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 12,
+      "t": 2,
+      "status": "exists",
+      "witnessOrder": 5,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 12,
+      "t": 3,
+      "status": "exists",
+      "witnessOrder": 5,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 12,
+      "t": 4,
+      "status": "exists",
+      "witnessOrder": 5,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 12,
+      "t": 5,
+      "status": "exists",
+      "witnessOrder": 5,
+      "proof": "Exact normalized Dicke witness has rho_t=I_(t+1)/(t+1); all lower orders follow by reduction."
+    },
+    {
+      "n": 12,
+      "t": 6,
+      "status": "impossible",
+      "proofId": "even-tensor-gram"
+    },
+    {
+      "n": 12,
+      "t": 7,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 8,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 9,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 10,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 11,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    },
+    {
+      "n": 12,
+      "t": 12,
+      "status": "impossible",
+      "proofId": "schmidt-rank"
+    }
+  ],
+  "proofs": {
+    "schmidt-rank": {
+      "title": "Schmidt-rank bound",
+      "statement": "A pure symmetric n-qubit t-anticoherent state requires t≤floor(n/2).",
+      "proof": "The t-body reduced state is I_sym^(t)/(t+1), of rank t+1. Its complementary symmetric subsystem has dimension n−t+1. Equality of the nonzero Schmidt spectra requires t+1≤n−t+1. Higher orders are excluded by nesting."
+    },
+    "odd-complement": {
+      "title": "Odd-size complement obstruction",
+      "statement": "No pure symmetric n=2t+1 qubit state is t-anticoherent when t≥2.",
+      "proof": "For a hypothetical state, rho_t=I_sym^(t)/(t+1). The complementary rho_(t+1) has rank t+1 with equal nonzero eigenvalues in dimension t+2, hence rho_(t+1)=(I_sym^(t+1)−|phi><phi|)/(t+1). Since Tr_1 I_sym^(t+1)=(t+2)/(t+1) I_sym^(t), tracing one qubit forces Tr_1|phi><phi|=I_sym^(t)/(t+1). This reduced state has rank t+1>2, impossible for a pure (t+1)-qubit phi across the t-versus-one partition.",
+      "provenance": "Catalogue deduction; independent of numerical absence reports."
+    },
+    "even-tensor-gram": {
+      "title": "Orthogonal tensor-image dimension bound",
+      "statement": "Pure t-anticoherence with t≥2q requires (q+1)^2≤n+1. In particular, n=12,t=6 is impossible.",
+      "proof": "Take all orthonormal irreducible tensors T_LM with 0≤L≤q. Products T_LM†T_L′M′ have ranks at most 2q≤t. Anticoherence makes their expectations equal to those in I/(n+1), so the (q+1)^2 vectors T_LM|psi> are mutually orthogonal with nonzero squared norm 1/(n+1). They cannot fit in the (n+1)-dimensional symmetric Hilbert space when (q+1)^2>n+1. For n=12,q=3 this would require sixteen orthogonal nonzero vectors in dimension thirteen.",
+      "provenance": "Catalogue deduction from standard orthonormal multipole decomposition."
+    },
+    "n8-t4-spectral": {
+      "title": "Exact n=8,t=4 spectral obstruction",
+      "statement": "Pure symmetric eight-qubit 4-anticoherent states do not exist.",
+      "identityLatex": "p_0=-\\frac4{27}-a_1+\\frac{11}{21}a_2+\\frac{11}{14}a_3+\\frac{143}{126}a_4",
+      "proof": "The identity holds for every pure symmetric eight-qubit state. p_J is the nonnegative total-spin-J weight of |psi>⊗|psi>. Four-anticoherence sets a1,...,a4 to zero and would force p0=−4/27. The supplied verifier checks the identity coefficientwise in every allowed total-spin sector using exact fractions.",
+      "certificate": {
+        "n": 8,
+        "t": 4,
+        "J": 0,
+        "constant": "-4/27",
+        "multipoles": {
+          "1": "-1",
+          "2": "11/21",
+          "3": "11/14",
+          "4": "143/126"
+        }
+      }
+    },
+    "n10-t5-spectral": {
+      "title": "Exact n=10,t=5 spectral obstruction",
+      "statement": "Pure symmetric ten-qubit 5-anticoherent states do not exist.",
+      "identityLatex": "p_6=-\\frac{27}{187}-\\frac{519}{170}a_1-\\frac{143}{170}a_2+\\frac{754}{255}a_3+\\frac{52}{17}a_4+\\frac{520}{561}a_5",
+      "proof": "Five-anticoherence sets a1,...,a5 to zero, while the exact identity would force the nonnegative two-copy weight p6=−27/187. The verifier checks the identity coefficientwise with exact rational arithmetic.",
+      "certificate": {
+        "n": 10,
+        "t": 5,
+        "J": 6,
+        "constant": "-27/187",
+        "multipoles": {
+          "1": "-519/170",
+          "2": "-143/170",
+          "3": "754/255",
+          "4": "52/17",
+          "5": "520/561"
+        }
+      }
+    },
+    "n9-t3-four-copy": {
+      "title": "Exact exclusion at n=9, t=3",
+      "statement": "No pure symmetric 9-qubit 3-anticoherent state exists.",
+      "proofFile": "reported-exclusions/n9-t3/proof.md",
+      "certificate": "reported-exclusions/n9-t3/certificate.json",
+      "verifier": "reported-exclusions/n9-t3/verify.py",
+      "provenance": "Independently derived catalogue certificate, verified with exact arithmetic and independent reconstruction."
+    },
+    "n10-t4-cubic": {
+      "title": "Exact exclusion at n=10, t=4",
+      "statement": "No pure symmetric 10-qubit 4-anticoherent state exists.",
+      "proofFile": "reported-exclusions/n10-t4/proof.md",
+      "certificate": "reported-exclusions/n10-t4/certificate.json",
+      "verifier": "reported-exclusions/n10-t4/verify.py",
+      "provenance": "Independently derived catalogue certificate, verified with exact arithmetic and independent reconstruction."
+    },
+    "n11-t4-cubic": {
+      "title": "Exact n=11,t=4 three-copy obstruction",
+      "statement": "No pure symmetric eleven-qubit fourth-order anticoherent state exists.",
+      "proofFile": "reported-exclusions/n11-t4/proof.md",
+      "certificate": "reported-exclusions/n11-t4/certificate.json",
+      "verifier": "reported-exclusions/n11-t4/verify.py",
+      "alternativeProof": "reported-exclusions/n11-t4/moment/proof.md",
+      "provenance": "Independently derived exact catalogue certificates; polynomial identity and full-rank contraction matrix, each exactly verified."
+    }
+  },
+  "independentlyVerifiedWitnesses": [
+    {
+      "n": 2,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        2
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "2": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 3,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        3
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "3": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 4,
+      "achievedOrder": 2,
+      "label": "Tetrahedron",
+      "support": [
+        0,
+        3
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(3)/3",
+        "3": "sqrt(6)/3"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "GHZ",
+      "support": [
+        0,
+        5
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/2",
+        "5": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        }
+      ],
+      "nextOrderPurity": "1/2",
+      "nextOrderFlatPurity": "1/3",
+      "representativeExactOrder": 1
+    },
+    {
+      "n": 6,
+      "achievedOrder": 3,
+      "label": "Octahedron",
+      "support": [
+        1,
+        5
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(2)/2",
+        "5": "sqrt(2)/2"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "1/3",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 7,
+      "achievedOrder": 2,
+      "label": "C3 seven-qubit state",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(2)/3",
+        "3": "sqrt(14)/6",
+        "6": "sqrt(14)/6"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "3/10",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 8,
+      "achievedOrder": 3,
+      "label": "Cube",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": {
+        "0": "sqrt(30)/12",
+        "4": "sqrt(21)/6",
+        "8": "sqrt(30)/12"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "7/30",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "Quantum 2020 Eq.65 chi0",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": {
+        "1": "-sqrt(21)/8",
+        "5": "sqrt(30)/8",
+        "9": "sqrt(13)/8"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        }
+      ],
+      "nextOrderPurity": "789/3136",
+      "nextOrderFlatPurity": "1/4",
+      "representativeExactOrder": 2
+    },
+    {
+      "n": 10,
+      "achievedOrder": 3,
+      "label": "C4 ten-qubit state",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(5)/4",
+        "5": "sqrt(6)/4",
+        "9": "sqrt(5)/4"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "3/14",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 11,
+      "achievedOrder": 3,
+      "label": "New exact C3 eleven-qubit state",
+      "support": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "exactCoefficients": {
+        "1": "-35*sqrt(10)/288 + sqrt(10022)*I/288",
+        "4": "5*sqrt(3)/18",
+        "7": "5*sqrt(3)/18",
+        "10": "-35*sqrt(10)/288 + sqrt(10022)*I/288"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        }
+      ],
+      "nextOrderPurity": "42965/209088",
+      "nextOrderFlatPurity": "1/5",
+      "representativeExactOrder": 3
+    },
+    {
+      "n": 12,
+      "achievedOrder": 5,
+      "label": "Icosahedron",
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      },
+      "verifiedReductions": [
+        {
+          "t": 1,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/4"
+        },
+        {
+          "t": 4,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/5"
+        },
+        {
+          "t": 5,
+          "rhoEqualsSymmetricIdentity": true,
+          "purity": "1/6"
+        }
+      ],
+      "nextOrderPurity": "13/84",
+      "nextOrderFlatPurity": "1/7",
+      "representativeExactOrder": 5
+    }
+  ],
+  "sourceCaveat": {
+    "n": 9,
+    "claimedOrderInTable": 3,
+    "actualVerifiedOrder": 2,
+    "rho3_03": "5/63 - sqrt(42)/126",
+    "rho3Purity": "4253/15876 - 10*sqrt(42)/3969",
+    "note": "PRResearch2022 TableIV q=3 is inconsistent with its own displayed vector; all rank1..2 vanish, rank3 does not."
+  },
+  "unresolvedProofCases": [],
+  "relaxationFeasibility": [
+    {
+      "n": 9,
+      "t": 3,
+      "relaxationFeasible": true,
+      "freeParameterInterval": [
+        "9/1210",
+        "3/22"
+      ],
+      "pJ": {
+        "9": "1901/8228",
+        "7": "41757/106964",
+        "5": "24/143",
+        "3": "84/605",
+        "1": "87/1210"
+      },
+      "note": "This is a feasible relaxation point, not a physical-state construction or existence proof."
+    },
+    {
+      "n": 10,
+      "t": 4,
+      "relaxationFeasible": true,
+      "freeParameterInterval": [
+        "0",
+        "1/110"
+      ],
+      "pJ": {
+        "10": "189357/923780",
+        "8": "4395/10868",
+        "6": "25/374",
+        "4": "369/1430",
+        "2": "35/572",
+        "0": "1/220"
+      },
+      "note": "This is a feasible relaxation point, not a physical-state construction or existence proof."
+    },
+    {
+      "n": 11,
+      "t": 4,
+      "relaxationFeasible": true,
+      "freeParameterInterval": [
+        "0",
+        "517/7800"
+      ],
+      "pJ": {
+        "11": "179329/944775",
+        "9": "29513/79560",
+        "7": "473/5168",
+        "5": "2783/12240",
+        "3": "4081/46800",
+        "1": "517/15600"
+      },
+      "note": "This is a feasible relaxation point, not a physical-state construction or existence proof."
+    }
+  ],
+  "verification": {
+    "script": "verify_small_n_audit.py",
+    "all11HighestOrderWitnessesPassed": true,
+    "allLowerOrderReductionsPassed": true,
+    "n11NewWitnessVerifiedExactly": true,
+    "twoSpectralIdentitiesVerifiedExactly": true,
+    "allNewIdentityArithmetic": "fractions.Fraction; no numerical tolerance",
+    "n9ThirdOrderExclusionVerifiedExactly": true,
+    "n10FourthOrderExclusionVerifiedExactly": true,
+    "n11FourthOrderExclusionVerifiedExactly": true,
+    "allCoreExistenceCellsSettled": true
+  },
+  "notes": [
+    "A representative failing the next AC order does not prove that all states fail that order.",
+    "Do not promote min-S4 or other even-sector minimizers to full AC unless all odd multipoles also vanish.",
+    "The 2022 nine-qubit Table IV vector is exactly 2-AC, despite its printed q=3 label."
+  ],
+  "fourthOrderMinimumQubits": {
+    "n": 12,
+    "proof": "Schmidt rank excludes n<8; exact certificates exclude n=8,9,10,11; exact n=12 fourth- and fifth-order witnesses exist."
+  }
+}

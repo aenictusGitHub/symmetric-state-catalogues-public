@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,booktabs}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Thirteen symmetric qubits: the maximum first-order anticoherent subspace dimension is five}
+\author{Exact catalogue calculation}
+\date{}
+\maketitle
+\paragraph{Theorem.} For arbitrary complex subspaces of the symmetric thirteen-qubit space,
+\[
+\boxed{k_{\max}(13,1)=5.}
+\]
+The lower bound is attained by the exact basis below. The upper bound follows from the finite integer certificate in \texttt{kernel.json.gz} and \texttt{certificate.json}. Compression of the JSON is lossless; all stored coefficients are integers. Numerical infeasibility is not used as a proof.
+
+\section*{1. Retaining every whole-subspace condition}
+Write $V=V_{13/2}\cong\mathbb C^{14}$. Suppose orthonormal vectors $u_1,\ldots,u_6$ span a first-order AC subspace, with projector $P$. Then
+\[
+PJ_aP=0\qquad(a=x,y,z).
+\]
+Form the normalized exterior product
+\[
+w=u_1\wedge\cdots\wedge u_6\in\Lambda^6V,\qquad
+\dim\Lambda^6V=\binom{14}{6}=3003.
+\]
+For the signed omission wedges
+$w_a=(-1)^{a-1}u_1\wedge\cdots\wedge\widehat{u_a}\wedge\cdots\wedge u_6$,
+\[
+w=\frac1{\sqrt6}\sum_a u_a\otimes w_a,
+\qquad
+\Tr_1[(T\otimes I^{\otimes5})|w\rangle\langle w|]
+=\frac16\sum_{a,b}\langle u_b|T|u_a\rangle|w_a\rangle\langle w_b|.
+\]
+The omission wedges are orthonormal, so this matrix vanishes if and only if $PTP=0$. This includes every off-diagonal compression condition.
+
+\section*{2. A positive invariant necessary condition}
+Let $X$ be the collective rotational average of $|w\rangle\langle w|$ on six copies. Rotation covariance of the three spin operators implies
+\[
+X\succeq0,\qquad\Tr X=1,\qquad
+\mathcal C_z(X):=\Tr_1[(J_z\otimes I^{\otimes5})X]=0.
+\]
+The support lies in $\Lambda^6V$, and $X$ commutes with collective rotations. We exclude even this relaxed positive invariant condition; decomposability of the averaged moment is unnecessary.
+
+The complete decomposition is $\bigoplus_JV_J\otimes\mathbb C^{m_J}$. Its nonzero multiplicities are
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+2J&0&2&4&6&8&10&12&14&16&18&20&22\\\hline
+m_J&4&1&7&5&11&7&13&9&13&10&12&8
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+2J&24&26&28&30&32&34&36&38&40&42&44&48\\\hline
+m_J&11&7&8&5&6&3&4&2&2&1&1&1.
+\end{array}
+\]
+Consequently,
+\[
+\sum_J(2J+1)m_J=3003,\qquad
+\sum_Jm_J=151,\qquad
+\sum_J\frac{m_J(m_J+1)}2=735.
+\]
+Weight counting, exact highest-weight equations and descendant Gram identities independently verify this decomposition and the completeness of the saved bases.
+
+All highest-weight coordinates and contraction coefficients used below are real. For complex Hermitian multiplicity blocks, taking entrywise real parts preserves positivity, trace, invariance and the real contraction equations. Excluding the resulting real symmetric blocks therefore excludes arbitrary complex original subspaces. The original vectors are not assumed real.
+
+\section*{3. Exact physical coordinates}
+For the certificate use ascending magnetic labels $i=m+13/2$ and the rescaled basis
+$b_i=\sqrt{\binom{13}{i}}|13/2,m=i-13/2\rangle$. This is a reversed magnetic ordering relative to the usual Dicke convention, and does not change any vanishing-spin condition. Exterior vectors are specified by their physical amplitudes at increasing six-tuples; antisymmetry determines all others. Their scalar product is
+\[
+\langle h,h'\rangle=6!\sum_{i_1<\cdots<i_6}
+\left(\prod_{r=1}^6\binom{13}{i_r}\right)
+\overline{h_{i_1\ldots i_6}}h'_{i_1\ldots i_6}.
+\]
+For each real highest-weight basis $H_{Ja}$ define
+\[
+H_{JaM}=\frac{J_-^{J-M}}{(J-M)!}H_{Ja},\qquad
+G^J_{ab}=\langle H_{Ja},H_{Jb}\rangle.
+\]
+Then
+\[
+\langle H_{JaM},H_{JbM}\rangle=\binom{2J}{J-M}G^J_{ab}.
+\]
+The invariant expansion is
+\[
+X=\sum_{J,M,a,b}C^J_{ab}
+\frac{|H_{JaM}\rangle\langle H_{JbM}|}{\binom{2J}{J-M}}.
+\]
+The bases need not be orthogonal. Their full-column-rank changes of coordinates act by congruence, so $X\succeq0$ is equivalent to $C^J\succeq0$ for every $J$. The trace is $\sum_J(2J+1)\Tr(G^JC^J)$, with off-diagonal Gram terms retained.
+
+Let $x\in\mathbb R^{735}$ list the upper-triangular block coordinates. The certificate selects 716 physical matrix elements of $\mathcal C_z(X)=0$, all within the output weight-$1/2$ subspace of $\Lambda^5V$. Their exact contraction rows, rescaled to primitive integers, give
+\[
+Ax=0,\quad A\in\mathbb Z^{716\times735},\quad\operatorname{rank}A=716.
+\]
+Only these necessary equations are needed; no assertion that the selected equations exhaust every physical constraint is required. The saved integer matrix satisfies
+\[
+K\in\mathbb Z^{735\times19},\qquad AK=0,\qquad\operatorname{rank}K=19.
+\]
+Thus $\ker A=\operatorname{im}K$. Full row and column ranks are certified modulo the prime $1000003$, while $AK=0$ is checked over the integers.
+
+\section*{4. Strict positivity gives the contradiction}
+Let $D$ select the 151 diagonal coordinates. The certificate contains strictly positive integers $c_{Ja}$ satisfying
+\[
+\boxed{c^{\mathsf T}DK=0.}
+\]
+All integers are supplied in full; the largest has 281 decimal digits. Every candidate $x=Ky$ consequently satisfies
+\[
+0=c^{\mathsf T}Dx=\sum_{J,a}c_{Ja}C^J_{aa}.
+\]
+Every summand is nonnegative. Therefore all block diagonals vanish. Positivity implies $|C^J_{ab}|^2\le C^J_{aa}C^J_{bb}$, so every block vanishes. This gives $X=0$, contradicting $\Tr X=1$.
+
+No dimension-six AC subspace exists. Any larger AC subspace would contain one, so $k_{\max}(13,1)\le5$.
+
+\section*{5. A matching exact basis}
+Let $D_r=|D_{13}^{(r)}\rangle$ be normalized Dicke states and put
+\[
+a=\frac{65}{282},\qquad b=\frac{35}{94},\qquad c=\frac{56}{141},\qquad
+\zeta=\frac{-21\sqrt{182}+i\sqrt{92794}}{416}.
+\]
+Here $a+b+c=1$ and $|\zeta|^2=1$. The following five vectors are orthonormal:
+\[
+\begin{aligned}
+u_1&=\sqrt a\,\zeta D_3-\sqrt b\,D_6+\sqrt c\,D_9,\\
+u_2&=\sqrt c\,D_4-\sqrt b\,D_7+\sqrt a\,\zeta D_{10},\\
+u_3&=(D_5+D_8)/\sqrt2,\\
+u_4&=\sqrt{13/24}\,D_1+\sqrt{11/24}\,D_{13},\\
+u_5&=\sqrt{11/24}\,D_0-\sqrt{13/24}\,D_{12}.
+\end{aligned}
+\]
+They are the $N=13$ specialization of the previously established central-three block with separated reflected outer pairs. All compressed $J_z,J_+$ matrix elements vanish exactly, and direct reduction gives
+\[
+\Tr_{12}(|u_a\rangle\langle u_b|)=\delta_{ab}\frac{I_2}{2}
+\qquad(1\le a,b\le5).
+\]
+Thus every normalized superposition is first-order AC and the lower bound is five.
+
+\section*{6. Verification and scope}
+The portable verifier requires NumPy and SymPy, but no optimizer or floating-point algebraic certificate. It reconstructs the physical rows, checks the integer kernel and strictly positive identity, and verifies all 100 scalar entries of the 25 ordered cross reductions of the lower basis. NumPy is used only for exact finite-field elimination in safe 64-bit integer arithmetic.
+
+A separately written independent verifier has also passed: it reconstructs all 716 selected equations, checks 22,960 descendant Gram entries, confirms the full 3003-dimensional exterior representation and verifies the same positive certificate. This is an exact finite mathematical exclusion, not an inference from failed numerical searches. No claim of literature priority is made.
+\end{document}

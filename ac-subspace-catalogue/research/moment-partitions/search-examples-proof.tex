@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Two exact AC2 examples from prescribed moments}
+\author{}\date{}\maketitle
+Write $|D_N^{(r)}\rangle$ for the normalized Dicke vector with $r$ excitations,
+and put $m=N/2-r$ and $v=N(N+2)/12$. A subspace supported on a set of Dicke
+indices whose pairwise distances are at least three is AC2 if and only if
+its compression of $D=\operatorname{diag}(m)$ is zero and its compression of
+$D^2$ equals $vI$. All spin-tensor entries shifting $r$ by one or two then
+vanish identically.
+
+\begin{proposition}[Five symmetric nodes]
+Let $a>b>0$ and $b^2\le v\le ab$. In the coordinate space indexed by
+$\{a,-a,b,-b,0\}$ put
+\[
+ |a,\pm\rangle=(|a\rangle\pm|-a\rangle)/\sqrt2,
+ \qquad |b,\pm\rangle=(|b\rangle\pm|-b\rangle)/\sqrt2.
+\]
+Define
+\[
+ p=\frac{v-b^2}{a^2-b^2},\quad q=\frac{a^2-v}{a^2-b^2},\quad
+ A=\frac{vq}{a^2},\quad B=\frac{vp}{b^2},\quad
+ C=1-\frac{v^2}{a^2b^2}.
+\]
+The two orthonormal vectors
+\[
+ |u\rangle=\sqrt A|a,+\rangle+\sqrt B|b,+\rangle+\sqrt C|0\rangle,
+ \qquad
+ |w\rangle=\sqrt p|a,-\rangle-\sqrt q|b,-\rangle
+\]
+have $PDP=0$ and $PD^2P=vP$.
+\end{proposition}
+\begin{proof}
+Every weight is nonnegative. Direct substitution gives
+$p+q=1$, $A+B+C=1$, $a^2p+b^2q=v$, and $a^2A+b^2B=v$.
+Reflection parity makes the vectors orthogonal, their individual first
+moments zero, and their mixed second moment zero. Finally
+$a\sqrt{Ap}=b\sqrt{Bq}=\sqrt{vpq}$, so their mixed first moment vanishes.
+\end{proof}
+The statement becomes an AC2 construction whenever the five nodes are
+allowed spin values and their corresponding Dicke indices have global
+gap at least three. It is a joint compression with overlapping supports,
+not a disjoint partition.
+
+\paragraph{Twelve qubits.}
+Take $(a,b,v)=(6,3,14)$. The proposition gives
+\begin{align*}
+ |u\rangle={}&\sqrt{\frac{77}{486}}
+ (|D_{12}^{(0)}\rangle+|D_{12}^{(12)}\rangle)
+ +\sqrt{\frac{35}{243}}
+ (|D_{12}^{(3)}\rangle+|D_{12}^{(9)}\rangle)
+ +\frac{4\sqrt2}{9}|D_{12}^{(6)}\rangle,\\
+ |w\rangle={}&\sqrt{\frac5{54}}
+ (|D_{12}^{(0)}\rangle-|D_{12}^{(12)}\rangle)
+ -\sqrt{\frac{11}{27}}
+ (|D_{12}^{(3)}\rangle-|D_{12}^{(9)}\rangle).
+\end{align*}
+This is a real radical basis for the already-known maximum dimension two.
+No disjoint two-block moment partition exists on these same five nodes:
+each nonempty moment block requires at least three nodes, because no
+pair has product $-14$ and no single node has mean zero and variance 14.
+Thus overlapping-support compression strictly extends disjoint convex
+partitioning on this fixed support.
+
+\paragraph{Twenty-two qubits.}
+The disjoint moment blocks
+$\{0,15\}$, $\{7,22\}$, $\{3,10,18\}$ give
+\begin{align*}
+ |u_1\rangle={}&\sqrt{\frac4{15}}|D_{22}^{(0)}\rangle
+              +\sqrt{\frac{11}{15}}|D_{22}^{(15)}\rangle,\\
+ |u_2\rangle={}&\sqrt{\frac{11}{15}}|D_{22}^{(7)}\rangle
+              +\sqrt{\frac4{15}}|D_{22}^{(22)}\rangle,\\
+ |u_3\rangle={}&\sqrt{\frac{37}{105}}|D_{22}^{(3)}\rangle
+              +\sqrt{\frac3{14}}|D_{22}^{(10)}\rangle
+              +\sqrt{\frac{13}{30}}|D_{22}^{(18)}\rangle.
+\end{align*}
+All first moments vanish and all second moments equal 44. The sorted
+union $\{0,3,7,10,15,18,22\}$ has gap at least three. Hence the whole
+three-dimensional span is AC2. This simplifies an earlier complex-phase
+basis without changing the lower bound.
+
+The supplied verifier independently reconstructs all 117 ordered
+cross-reduction entries for the two examples using the Dicke splitting
+formula, and obtains $\mathcal R_2(|u_i\rangle\langle u_j|)=\delta_{ij}I_3/3$
+with exact arithmetic.
+\end{document}

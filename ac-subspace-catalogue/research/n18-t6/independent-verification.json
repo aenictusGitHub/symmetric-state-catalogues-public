@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "n": 18,
+  "t": 6,
+  "copies": 3,
+  "inputMomentDimension": 1330,
+  "realInvariantVariables": 84,
+  "constraintRank": 80,
+  "kernelDimension": 4,
+  "inputHighestWeightVectorsChecked": 50,
+  "physicalCrossGramChecks": 2050,
+  "selectedRowsReconstructed": 80,
+  "totalSpinProbabilitiesReconstructed": 25,
+  "certificateSHA256": "86840d0287fc57f9632e7cd74e0bf0ca1a0cf0be213550259d605f3d2cb2b0ac",
+  "method": "Independent full ordered-word reconstruction of the complete input representation, every selected contraction row, exact complete kernel and all physical total-spin traces; rational positive trace-versus-probabilities identity. Standard library only; no discovery imports.",
+  "arbitraryComplexStatesCovered": true,
+  "probabilityCertificate": {
+    "spins": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "traceWeight": "12657409923726158448",
+    "strictlyPositiveWeights": [
+      "2153634911000264211000",
+      "816239066034825197700",
+      "323510864033832623200",
+      "183048620153724783325"
+    ],
+    "allDescendantTraceReconstructionsExact": true,
+    "kernelIdentityExact": true,
+    "contradiction": "Trace one and nonnegative total-spin probabilities make the certified expression strictly positive, but the necessary AC6 equations force it to zero."
+  },
+  "scope": "Universal exclusion of pure sixth-order AC states on 18 qubits.",
+  "statement": "K(18,t)=0 for every t>=6.",
+  "elapsedSeconds": 0.29808902740478516
+}

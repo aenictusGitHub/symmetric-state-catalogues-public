@@ -1,0 +1,107 @@
+{
+  "generalFiveLevelFormula": {
+    "domain": "a>b>0, b^2<=v<=a*b; symmetric nodes +/-a,+/-b,0",
+    "p": "13/30",
+    "q": "(a**2 - v)/(a**2 - b**2)",
+    "A": "v*(a**2 - v)/(a**2*(a**2 - b**2))",
+    "B": "v*(-b**2 + v)/(b**2*(a**2 - b**2))",
+    "C": "1 - v**2/(a**2*b**2)",
+    "symbolicIdentities": {
+      "oddNormalization": "0",
+      "oddSecondMoment": "0",
+      "evenNormalization": "0",
+      "evenSecondMoment": "0",
+      "mixedFirstMomentSquaredCancellation": "0"
+    },
+    "positivity": "Follows directly from b^2<=v<=a*b<a^2.",
+    "phaseSigns": "The odd b-pair has a minus sign; all other displayed amplitudes are positive."
+  },
+  "examples": [
+    {
+      "n": 12,
+      "k": 2,
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "exactArithmetic": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "allEntriesExactlyZero": true
+        }
+      ],
+      "scalarEntriesChecked": 36
+    },
+    {
+      "n": 22,
+      "k": 3,
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "exactArithmetic": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "allEntriesExactlyZero": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "allEntriesExactlyZero": true
+        }
+      ],
+      "scalarEntriesChecked": 81
+    }
+  ],
+  "passed": true
+}

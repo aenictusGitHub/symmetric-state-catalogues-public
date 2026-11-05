@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\title{An exact adjacent-triple prescription for second-order anticoherent subspaces}
+\author{}\date{}\maketitle
+Write $j=N/2$, $V=j(j+1)/3$, and let $D_r=|D_N^{(r)}\rangle$.
+Choose integers $k,h,o$ with $h$ even, $h\ge2k+2$, $o\ge0$, and
+$o+2(k-1)+2h\le N$. For $0\le i<k$, set
+\[
+ r_{i\ell}=o+2i+\ell h,\quad m_{i\ell}=j-r_{i\ell},\qquad
+ w_{i\ell}=\frac{V+m_{ia}m_{ib}}{(m_{i\ell}-m_{ia})(m_{i\ell}-m_{ib})},
+ \quad\{a,b,\ell\}=\{0,1,2\}.
+\]
+Require all $w_{i\ell}>0$. These are the unique weights satisfying
+$\sum_\ell w_{i\ell}=1$, $\sum_\ell m_{i\ell}w_{i\ell}=0$, and
+$\sum_\ell m_{i\ell}^2w_{i\ell}=V$.
+For $0\le i<k-1$ define
+\[
+ A_{i\ell}=w_{i\ell}w_{i+1,\ell}
+ (N-r_{i\ell})(N-r_{i\ell}-1)(r_{i\ell}+1)(r_{i\ell}+2),
+\]
+\[
+ \Delta_i=2(A_{i0}A_{i1}+A_{i1}A_{i2}+A_{i2}A_{i0})
+ -(A_{i0}^2+A_{i1}^2+A_{i2}^2).
+\]
+The three positive lengths $\sqrt{A_{i\ell}}$ close to a triangle if and only if
+$\Delta_i\ge0$. When this holds, put
+\[
+ z_{i0}=1,\qquad
+ z_{i1}=\frac{A_{i2}-A_{i0}-A_{i1}+i\sqrt{\Delta_i}}
+ {2\sqrt{A_{i0}A_{i1}}},\qquad
+ z_{i2}=-\frac{\sqrt{A_{i0}}+\sqrt{A_{i1}}z_{i1}}{\sqrt{A_{i2}}}.
+\]
+All $z_{i\ell}$ have modulus one. Set $q_{0\ell}=1$ and
+$q_{i+1,\ell}=q_{i\ell}z_{i\ell}$. The vectors
+\[
+ u_i=\sum_{\ell=0}^2\sqrt{w_{i\ell}}q_{i\ell}D_{r_{i\ell}}
+\]
+span a $k$-dimensional second-order AC subspace.
+
+\paragraph{Proof.}
+Distinct vectors have disjoint support, so they are orthonormal. The weights
+make the diagonal compressions of $J_z$ and $J_z^2$ equal to $0$ and $V$;
+their off-diagonal compressions vanish by disjoint support.
+Every occupied Dicke index has the same parity, so $J_+$ and $J_+J_z$
+have zero compression. The separation $h\ge2k+2$ rules out shifts of two
+between bands. Within a band a shift of two connects exactly consecutive
+vectors, and the only potentially nonzero compression is
+\[
+ \langle u_i|J_+^2|u_{i+1}\rangle
+ =\sum_{\ell=0}^2\sqrt{A_{i\ell}}z_{i\ell}=0.
+\]
+These conditions, together with their adjoints and the Casimir identity,
+are precisely zero dipole and zero traceless quadrupole compression.
+Hence every vector in the span is second-order AC.
+This is a sufficient construction prescription, not a claim that its
+feasibility inequalities hold for every desired $N,k$, nor an optimality proof.
+All bands must have the same orientation; reversing one band moves its
+contribution to the opposite directed matrix element of $J_+^2$ and
+invalidates the triangle cancellation.
+
+\paragraph{New explicit example: $N=22$, $k=3$.}
+Take $h=8,o=1$. The three weight rows are
+\[
+ (1/4,1/4,1/2),\quad(11/32,5/16,11/32),\quad(1/2,1/4,1/4).
+\]
+The squared edge lengths are respectively
+\[
+ (3465/16,10725/8,9405/8),\quad(9405/8,10725/8,3465/16),
+\]
+and both discriminants equal $260025975/256>0$.
+Define
+\[
+ z=\frac{-37+i\sqrt{9551}}{2\sqrt{2730}},\qquad
+ w=\frac{-5-i\sqrt{9551}}{6\sqrt{266}}.
+\]
+An orthonormal analytical basis is
+\begin{align*}
+ u_1&=\tfrac12D_1+\tfrac12D_9+\tfrac1{\sqrt2}D_{17},\\
+ u_2&=\sqrt{\tfrac{11}{32}}D_3+\tfrac{\sqrt5}{4}zD_{11}
+       +\sqrt{\tfrac{11}{32}}wD_{19},\\
+ u_3&=\tfrac1{\sqrt2}D_5+\tfrac w2D_{13}+\tfrac{w^2}{2}D_{21}.
+\end{align*}
+Thus $K(22,2)\ge3$. This does not saturate the catalogue upper bound $5$.
+The companion exact-arithmetic verifier independently forms all six
+compressed matrices $I,J_z,J_z^2,J_+,J_+J_z,J_+^2$ and checks their targets.
+\end{document}

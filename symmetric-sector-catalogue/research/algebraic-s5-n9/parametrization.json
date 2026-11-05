@@ -1,0 +1,60 @@
+{
+  "n": 9,
+  "k": 5,
+  "mode": "max",
+  "status": "exact radical maximizer; global maximum proved",
+  "support": [
+    0,
+    3,
+    6,
+    9
+  ],
+  "stateLatex": "|\\psi_9\\rangle=\\frac{|D_9^{(0)}\\rangle+\\sqrt{84u}|D_9^{(3)}\\rangle+\\sqrt{84}\\,t|D_9^{(6)}\\rangle+z\\sqrt{u}|D_9^{(9)}\\rangle}{\\sqrt Q}",
+  "radicalDefinitionsLatex": [
+    "t=\\frac{\\sqrt{2447347+310013\\sqrt{61}}-991-159\\sqrt{61}}{2050}",
+    "z=5(15-\\sqrt{61})t",
+    "u=\\frac{t(4tz-29t-z+8)}{-84tz+336t+z^2-25}",
+    "Q=1+84u+84t^2+uz^2"
+  ],
+  "exactExpressions": {
+    "t": "(sqrt(2447347+310013*sqrt(61))-991-159*sqrt(61))/2050",
+    "z": "5*(15-sqrt(61))*t",
+    "u": "t*(4*t*z-29*t-z+8)/(-84*t*z+336*t+z**2-25)",
+    "Q": "1+84*u+84*t**2+u*z**2",
+    "coefficients": [
+      "1/sqrt(Q)",
+      "sqrt(84*u)/sqrt(Q)",
+      "sqrt(84)*t/sqrt(Q)",
+      "z*sqrt(u)/sqrt(Q)"
+    ],
+    "sectorLength": "(130928+6832*sqrt(61))/1461"
+  },
+  "valueLatex": "\\frac{130928+6832\\sqrt{61}}{1461}",
+  "sectorLength": "126.1380053290857377280590456746791107854200278532395513119855779395095462995316353428025726304504978",
+  "coefficients": [
+    "0.8646511015018027881285720191021845476414517627367070838529107795636248890409833499751085642429418346",
+    "0.4913278799569659477595176014260719122101759821215476537421365357643562748453873715808879320901478241",
+    "-0.1017966652597417262313889826793553797792328982004191568822266189236706318298007660920772927623067731",
+    "-0.02475532247231862510547091825872476732328651365133739283646591094367446366723831468504614059460365234"
+  ],
+  "rootPolynomialLatex": "20500t^4+39640t^3-10178t^2+252t+5",
+  "rootPolynomialCoefficients": [
+    20500,
+    39640,
+    -10178,
+    252,
+    5
+  ],
+  "rootInterval": [
+    "-1284555902806194669499550925759084638053248768653/100000000000000000000000000000000000000000000000000",
+    "-321138975701548667374887731439771159513312192163/25000000000000000000000000000000000000000000000000"
+  ],
+  "valuePolynomialLatex": "1461v^2-261856v+9784320",
+  "fullComplexGradientNorm": "7.23701491508115784635308218615e-99",
+  "exactStationarityProved": true,
+  "radicalBranchVerifiedExactly": true,
+  "globalOptimalityProved": true,
+  "coefficientConvention": "Normalized Dicke states; superscript is number of excitations. All other amplitudes vanish.",
+  "symmetryNote": "Collective SU(2) rotations and global phase preserve S5. The Kramers superposition family preserving even sectors does not preserve this odd sector.",
+  "globalProofUrl": "research/n9-s5-maximum/index.html"
+}

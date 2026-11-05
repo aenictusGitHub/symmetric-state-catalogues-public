@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}\newcommand{\Sym}{\operatorname{Sym}}
+\begin{document}
+\title{No fourth-order anticoherent plane on 20 symmetric qubits}
+\author{Exact catalogue calculation}\date{3 November 2026}\maketitle
+\begin{theorem}
+Every complex fourth-order anticoherent subspace in the symmetric 20-qubit Hilbert space has dimension at most one:
+\[\boxed{K(20,4)\le1.}\]
+Together with the catalogue's exact one-dimensional witness this gives $K(20,4)=1$.
+\end{theorem}
+This is a finite exact certificate proof for arbitrary complex subspaces. No restriction on Dicke support, amplitudes, constellation symmetry or basis phases is imposed. Numerical optimization discovered the certificate; the proof checks only integer and rational identities and strict signs.
+
+\section*{1. A necessary positive four-copy moment}
+Let $V=V_{20/2}$, of dimension 21, and suppose orthonormal $u,v$ span an AC4 plane with orthogonal projector $P$. Polarization of the moment conditions gives
+\[PT_{\ell q}P=0,\qquad 1\le\ell\le4,\quad -\ell\le q\le\ell.\]
+Put $w=(u\otimes v-v\otimes u)/\sqrt2$ and $R_w=|w\rangle\langle w|$. Direct expansion gives, for every operator $T$,
+\[\Tr_1[(T\otimes I)R_w]=\tfrac12\bigl(\Tr(PT)P-PTP\bigr).\]
+The contraction is consequently zero for all the spin tensors above. The normalized vector $\omega=w\otimes w$ belongs to
+\[W=\mathbb S_{(2,2)}V=\Sym^2(\Lambda^2V)\ominus\Lambda^4V,\qquad \dim W=\frac{d^2(d^2-1)}{12}=16170.\]
+The exterior-four component vanishes because $w$ is decomposable: $w\wedge w=0$. Twirl its projector over collective rotations:
+\[X=\int_{\mathrm{SU}(2)}D_{20/2}(g)^{\otimes4}|\omega\rangle\langle\omega|D_{20/2}(g)^{\dagger\otimes4}\,dg.\]
+Then $X\succeq0$, $\Tr X=1$, $X$ is rotation invariant and supported on $W$. Before averaging, first-leg contraction is the zero contraction of $R_w$ tensored with $R_w$. Rotations preserve each irreducible tensor-rank space. Hence
+\begin{equation}\label{eq:zero}\Tr_1[(T_{\ell0}\otimes I^{\otimes3})X]=0,\qquad1\le\ell\le4.\end{equation}
+Only these necessary component-zero equations are used below.
+
+\section*{2. Complete invariant coordinates}
+Decompose $W=\bigoplus_J V_J\otimes\mathbb C^{m_J}$. The certificate contains 37 blocks, with
+\[\sum_J(2J+1)m_J=16170,\qquad\sum_Jm_J=518,\qquad\sum_J\frac{m_J(m_J+1)}2=5208.\]
+The independent verifier determines every multiplicity from the weight counts in $\Sym^2(\Lambda^2V)-\Lambda^4V$. It verifies full-rank integer highest-weight columns, their Young symmetries, raising kernels and all divided-power lowering identities.
+
+Initially the multiplicity matrices of $X$ may be complex Hermitian. The coupled basis vectors and the component-zero equations are real. Averaging the matrices with their entrywise conjugates preserves positivity, trace and the equations. Therefore any hypothetical complex plane supplies real positive semidefinite multiplicity matrices. This does not assume that the plane itself has a real basis.
+
+For physical integer coordinates use $b_i=\sqrt{\binom{20}{i}}|D_{20}^{(i)}\rangle$. Canonical words $(a,b,c,d)$ have $a<b$, $c<d$ and $(a,b)\le(c,d)$. Expand them as signed sums of distinct tensor words, antisymmetric within each pair and symmetric under pair exchange. Their squared norms are
+\[\|E_{abcd}\|^2=\begin{cases}4,&(a,b)=(c,d),\\8,&(a,b)\ne(c,d),\end{cases}\binom{20}{a}\binom{20}{b}\binom{20}{c}\binom{20}{d}.\]
+The Young-space condition is the Pl\"ucker identity
+\[x_{abcd}-x_{acbd}+x_{adbc}=0\qquad(a<b<c<d).\]
+For each spin $J$, the certificate provides mutually orthogonal integer highest-weight columns $H_J$. Their divided-power descendants are
+\[U_{J,M}=\frac{J_-^{J-M}}{(J-M)!}H_J,\qquad U_{J,M}^{\dagger}U_{J,M}=\binom{2J}{J-M}H_J^{\dagger}H_J.\]
+With the positive integer scales $d_J$ recorded in the certificate, every real invariant operator has the unique form
+\[X=\sum_Jd_J\sum_{M=-J}^{J}\frac{U_{J,M}B_JU_{J,M}^{T}}{\binom{2J}{J-M}},\qquad B_J=B_J^T.\]
+The full-rank intertwiners show that $X\succeq0$ if and only if all $B_J\succeq0$.
+
+\section*{3. Reconstructing the physical equations}
+Let $z=2i-N$ and $v=N(N+2)$. Component-zero tensors of ranks one through four may be scaled to the diagonal polynomials
+\begin{align*}
+ f_1(z)&=z, & f_2(z)&=3z^2-v,\\
+ f_3(z)&=z(5z^2-3v+4), & f_4(z)&=35z^4-(30v-100)z^2+3v^2-24v.
+\end{align*}
+For each rank divide the vector $(f_\ell(2i-N))_{i=0}^N$ by the positive greatest common divisor of its entries. The verifier also obtains these vectors by exact discrete orthogonalization; an independent adjoint-Casimir check confirms their tensor ranks.
+
+Write $\mathbf b$ for the 5208 upper-triangular entries of the $B_J$, with each off-diagonal coordinate contributing both symmetric matrix entries. Selected physical matrix entries of \eqref{eq:zero} give
+\[A\mathbf b=0,\qquad A\in\mathbb Z^{4253\times5208}.\]
+Every row is reduced by its positive coefficient gcd. The certificate identifies its tensor rank, output magnetic weight, and output word indices. The independent verifier reconstructs each physical contraction, including binomial metrics and off-diagonal factors. The selected equations need not be complete or linearly independent: they need only be necessary.
+
+\section*{4. A strictly positive combination gives a contradiction}
+The certificate supplies exact dyadic rational multipliers $\lambda\in\mathbb Q^{4253}$. Define $Z_J$ by assigning each diagonal coordinate of $\lambda^TA$ to $(Z_J)_{aa}$ and half each off-diagonal coordinate to $(Z_J)_{ab}$. Identically,
+\[\lambda^TA\mathbf b=\sum_J\Tr(Z_JB_J).\]
+The decisive certificate is
+\[\boxed{Z_J\succ0\quad\text{for all 37 blocks}.}\]
+The independent verifier uses exact rational, square-root-free $LDL^T$ decomposition. Every one of the 518 pivots is strictly positive; it checks the reconstruction identity as well. Positive diagonal congruences may reduce coefficient size but do not alter definiteness. No rounded eigenvalue is a sign premise.
+
+A hypothetical AC4 plane would therefore satisfy
+\[0=\lambda^TA\mathbf b=\sum_J\Tr(Z_JB_J),\qquad Z_J\succ0,\quad B_J\succeq0.\]
+Every summand is nonnegative and vanishes only if $B_J=0$. Thus $X=0$, contradicting $\Tr X=1$. This excludes every plane, and hence every larger subspace. The argument is independent of numerical solver status, numerical rank thresholds and nullspace choices.
+
+\section*{5. Reproducibility and attainment}
+Run \texttt{python3 verify\_independently.py}. The verifier uses only the Python standard library and checks the certificate from physical tensor words. The files \texttt{certificate.json} and \texttt{independent-verification.json} record the exact proof and its successful independent audit. A separate exact fourth-order plane at sixty qubits is a positive control of the moment construction, not a premise of exclusion.
+
+The catalogue already contains an exact twenty-qubit fifth-order AC state. Its span is also fourth-order AC by nesting, and therefore attains dimension one. Combining that exact witness with the exclusion above gives $K(20,4)=1$.
+\end{document}

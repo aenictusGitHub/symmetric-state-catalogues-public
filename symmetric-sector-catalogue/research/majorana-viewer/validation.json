@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "scope": "Majorana coordinates, interactive viewer, and symmetry groups beside catalogue representatives; scientific values and proofs are unchanged.",
+  "representativesChecked": 154,
+  "maximumPhaseAlignedDickeError": 1.2576949946765736e-15,
+  "functionalAssertions": 7900,
+  "reports": {
+    "coordinates": "coordinates-audit.json",
+    "viewer": "viewer-audit.json",
+    "catalogueIntegration": "app-audit.json"
+  },
+  "reproduceFromCatalogueRoot": [
+    "python3 research/majorana-viewer/verify_coordinates.py",
+    "node research/majorana-viewer/verify_viewer.cjs",
+    "node research/majorana-viewer/verify_app.cjs"
+  ],
+  "dependencies": {
+    "coordinates": "Python 3 and mpmath",
+    "functional": "Node.js; uses the bundled KaTeX, no additional Node modules"
+  },
+  "portability": "Scripts locate their enclosing catalogue relative to their own path. No sibling catalogue, network, or absolute developer path is required. Each writes its report next to itself.",
+  "limitations": [
+    "Functional checks use a minimal DOM/canvas harness; browser layout and native modal behavior are verified separately.",
+    "Coordinate reconstruction establishes consistency with the saved Dicke vector; it does not establish anticoherence or global optimality."
+  ],
+  "verifiedFileSha256": {
+    "data/catalogue.json": "be31f6b09368a06282868ee6d49965a5a78ef505144c8eb99f4e659d7b0855ab",
+    "data/majorana.json": "b2393249b0e303e1fb208208180856638964252971a19b6fb9e45b9e11731036",
+    "app.js": "684380f422837f90f199a9457e5d9589f5f27973a333a8244e0f47e940a232a0",
+    "majorana-viewer.js": "3f8e1db62ecc02a7ccbfa6e48cabbc26dafa922c55c928e07ac3c5020b089dde",
+    "majorana-viewer.css": "7350a27c05a5fa23fd155c6d9e8979f8e615b8271e154af176588a7e99606ab8",
+    "majorana-symmetry.js": "97fca2b475eea09e99d11c4875397f5a529c2fc9ff5b4bc53cad3b31dee122bd",
+    "symmetry-groups.js": "ec8fcb7bc45d57a3da49886c7209492800e275f04062aee30153130f02ad56ff",
+    "point-groups.js": "418b29ccdedde8966b4f296de7eba1f4639707dc57cb6453acb7142f1aa8bfaf"
+  },
+  "representativeGroupSummaries": {
+    "checked": 154,
+    "fullPointGroups": {
+      "C\u221ev": 61,
+      "D\u221eh": 2,
+      "D3h": 3,
+      "D4h": 5,
+      "Td": 4,
+      "D5h": 4,
+      "C4v": 4,
+      "D6h": 4,
+      "Oh": 5,
+      "C3v": 11,
+      "D7h": 4,
+      "D8h": 5,
+      "D9h": 6,
+      "C6v": 3,
+      "C8v": 2,
+      "D10h": 6,
+      "C3": 1,
+      "C9v": 2,
+      "D11h": 6,
+      "C5v": 2,
+      "C7v": 1,
+      "C10v": 2,
+      "D12h": 7,
+      "D2d": 1,
+      "D6d": 1,
+      "Ih": 1,
+      "C11v": 1
+    },
+    "properRotationGroups": {
+      "SO(2)": 61,
+      "D\u221e": 2,
+      "D3": 3,
+      "D4": 5,
+      "T": 4,
+      "D5": 4,
+      "C4": 4,
+      "D6": 5,
+      "O": 5,
+      "C3": 12,
+      "D7": 4,
+      "D8": 5,
+      "D9": 6,
+      "C6": 3,
+      "C8": 2,
+      "D10": 6,
+      "C9": 2,
+      "D11": 6,
+      "C5": 2,
+      "C7": 1,
+      "C10": 2,
+      "D12": 7,
+      "D2": 1,
+      "I": 1,
+      "C11": 1
+    },
+    "summaryMatchesModalAndDirectClassification": true,
+    "sharedSymmetryCacheChecked": true,
+    "ACAlternativeSwitchesChecked": 0,
+    "ACConstructionCardsChecked": 0,
+    "evidence": "Numerical geometric classification at tolerance 1e-6; describes the attached representative."
+  },
+  "priorCoordinateVerificationReused": "The Dicke datasets and Majorana coordinates are byte-for-byte unchanged; the existing independent coordinate reconstruction report remains applicable."
+}

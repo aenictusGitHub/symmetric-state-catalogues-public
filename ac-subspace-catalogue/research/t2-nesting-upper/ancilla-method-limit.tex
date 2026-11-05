@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Scope limits of some auxiliary-spin approaches to AC2 upper bounds}
+\author{}\date{}\maketitle
+
+This note records negative results about specified proof methods. It does
+not prove that the current unrestricted AC2 upper bound is optimal, and
+it does not prove a stronger unrestricted upper bound.
+
+For an AC2 code of spin $j$, coupling to an auxiliary spin $s$ makes
+\[
+ W=X^2+aX-\frac{j(j+1)s(s+1)}3I,\qquad X=\mathbf J\cdot\mathbf S,
+\]
+have zero compression on the code tensored with the auxiliary space.
+The eigenvalue in total spin $L$ is obtained by substituting
+\[
+ x_L=\frac{L(L+1)-j(j+1)-s(s+1)}2.
+\]
+The exact script \texttt{ancilla\_quadratic\_scan.py} checks every
+nonsingular sign pattern as $a$ varies, for $8\le N\le100$ and
+$s=1/2,1,\ldots,20$. No bound in this scan improves
+\[
+ \min\left\{\frac{N-2}{4},\frac{N+5}{5}\right\}.
+\]
+Only finitely many ancillary spins and physical sizes are covered by that
+statement; it is not a theorem of finite-size optimality for this method.
+
+\begin{proposition}
+For any fixed irreducible ancillary spin $s>2$, the quadratic witness
+family above cannot improve the leading coefficient $1/5$ of the
+spin-two bound as $j\to\infty$.
+\end{proposition}
+\begin{proof}
+In the branches $L=j+m$, $m=-s,-s+1,\ldots,s$, we have
+$x_L=jm+O(1)$. If $a/j$ has a finite limiting value $A$, the limiting
+quadratic is
+\[
+ p(m)=m^2+Am-\frac{s(s+1)}3.
+\]
+Its roots are $-u<0<v$, with $uv=s(s+1)/3$. Allowing either sign at a
+zero of the limiting quadratic only makes the following counting bounds
+weaker, and therefore valid for finite-size perturbations.
+
+Let $t$ grid points lie strictly outside the closed root interval. If
+there are $a_-$ removed points at the left end and $a_+$ at the right,
+and both surviving endpoints straddle zero, inclusion of those endpoints
+requires
+\[
+ (s-a_-)(s-a_+)\le\frac{s(s+1)}3.
+\]
+Since the product is at least $s^2-s(a_-+a_+)$, this implies
+\[
+ t=a_-+a_+\ge\frac{2s-1}{3}>\frac{2s+1}{5}\qquad(s>2).
+\]
+If a surviving endpoint does not straddle zero, at least half the grid
+has already been removed, which gives the same weaker conclusion.
+
+The open root interval intersected with $[-s,s]$ has length at least
+$s$: if neither root is clipped this follows from
+$u+v\ge2\sqrt{s(s+1)/3}>s$; if one root is clipped, the interval still
+contains a full half of $[-s,s]$. Hence at least
+$\lceil s\rceil-1\ge s-1>(2s+1)/5$ grid points lie strictly inside it.
+Both sign counts therefore exceed $(2s+1)/5$. Each branch has
+multiplicity $N+O(1)$, so the inertia bound divided by the auxiliary
+dimension $2s+1$ has leading coefficient strictly greater than $1/5$.
+If $|a|/j\to\infty$, the linear term determines the signs away from
+$m=0$ and gives approximately half the branches of either sign, also
+larger than $1/5$. Subsequences cover varying choices of $a$.
+\end{proof}
+
+\section*{An obstruction for one promising reducible pair}
+The preceding proposition says nothing about reducible ancillary spaces
+or non-scalar matrix coefficients. One candidate is $V_3\oplus V_4$, of
+dimension sixteen, for which three positive branches could give a
+leading coefficient $3/16<1/5$.
+
+For the natural one-sided sign pattern, the two classical diagonal blocks
+can be normalized to
+\[
+ A_m=m^2+am-4,\quad B_m=m^2+bm-20/3,
+ \quad 5/3\le a\le3,\quad7/3\le b\le17/3.
+\]
+Both are nonpositive at $m=-3,\ldots,1$ and positive at $m=2,3$; $B_4$ is
+also positive. A general rank-one/rank-two off-diagonal coupling has the
+form $\sqrt{16-m^2}\,\ell_m$, where $\ell_m=e+fm$ and $e,f$ may be
+complex. Avoiding new positive eigenvalues in the blocks $m=\pm1$ requires
+\[
+ |\ell_1|^2\le\frac{(3-a)(17/3-b)}{15},\quad
+ |\ell_{-1}|^2\le\frac{(3+a)(17/3+b)}{15}.
+\]
+Using $\ell_3=2\ell_1-\ell_{-1}$ and Cauchy--Schwarz gives
+\[
+ |\ell_3|^2\le\frac{34}{15}(5-a)\le\frac{68}{9}.
+\]
+But merging the two positive eigenvalues of the $m=3$ block into a single
+positive eigenvalue requires its determinant to be negative, hence
+\[
+ |\ell_3|^2>
+ \frac{(5+3a)(7/3+3b)}7\ge\frac{40}{3}>\frac{68}{9}.
+\]
+This contradiction rules out that particular three-positive-branch
+pattern. It does not exclude all reducible ancillary constructions.
+\end{document}

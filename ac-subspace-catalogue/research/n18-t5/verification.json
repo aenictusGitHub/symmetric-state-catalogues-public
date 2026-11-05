@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "n": 18,
+  "t": 5,
+  "maximumDimension": 1,
+  "stateLatex": "|\\psi\\rangle=\\frac{\\sqrt{14}(|D_{18}^{(0)}\\rangle+|D_{18}^{(18)}\\rangle)+i\\sqrt{51}(|D_{18}^{(5)}\\rangle+|D_{18}^{(13)}\\rangle)}{\\sqrt{130}}",
+  "source": {
+    "file": "ACLiege.jl",
+    "line": 203,
+    "attribution": "M. Grassl, as credited by the source comment",
+    "sameSourceRay": true
+  },
+  "probabilities": {
+    "0": "7/65",
+    "5": "51/130",
+    "13": "51/130",
+    "18": "7/65"
+  },
+  "exactDiagonalMoments": [
+    {
+      "power": 0,
+      "value": "1"
+    },
+    {
+      "power": 1,
+      "value": "0"
+    },
+    {
+      "power": 2,
+      "value": "30"
+    },
+    {
+      "power": 3,
+      "value": "0"
+    },
+    {
+      "power": 4,
+      "value": "1614"
+    },
+    {
+      "power": 5,
+      "value": "0"
+    }
+  ],
+  "allReducedMatrices": [
+    {
+      "order": 1,
+      "entriesChecked": 4,
+      "identityVerified": true
+    },
+    {
+      "order": 2,
+      "entriesChecked": 9,
+      "identityVerified": true
+    },
+    {
+      "order": 3,
+      "entriesChecked": 16,
+      "identityVerified": true
+    },
+    {
+      "order": 4,
+      "entriesChecked": 25,
+      "identityVerified": true
+    },
+    {
+      "order": 5,
+      "entriesChecked": 36,
+      "identityVerified": true
+    }
+  ],
+  "exactReducedMatrixEntriesChecked": 90,
+  "sixthOrderFrobeniusDistanceSquared": "73/59150",
+  "exactAchievedOrder": 5,
+  "upperBound": {
+    "rectangularRanks": [
+      "1/2",
+      "3/2",
+      "5/2"
+    ],
+    "imagesPerBasisVector": 12,
+    "outputDimension": 18,
+    "inequality": "12k<=18",
+    "wholeSubspacePolarizationRequired": true,
+    "upper": 1
+  },
+  "method": "Independent normalized-Dicke splitting with exact fractions and squarefree radicals; every reduced matrix entry through order5, plus the next-order distance. Standard library only.",
+  "scope": "Exact witness and optimal fifth-order subspace dimension; the witness calculation alone does not exclude a different sixth-order state."
+}

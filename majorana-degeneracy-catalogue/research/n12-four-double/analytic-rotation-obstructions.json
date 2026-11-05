@@ -1,0 +1,71 @@
+{
+  "verifiedExactly": true,
+  "scope": "Pure symmetric12-qubit states with full partition(2,2,2,2,1,1,1,1).",
+  "globalExclusionProved": false,
+  "C3": {
+    "excluded": true,
+    "orbitCounting": "Four doubled points require one three-point orbit plus one polar double point. Four simple points require one three-point orbit plus the other polar simple point. The resulting Dicke support is one of the two listed sets.",
+    "momentSystems": [
+      {
+        "support": [
+          2,
+          5,
+          8,
+          11
+        ],
+        "forcedProbabilities": [
+          "37/81",
+          "-1/27",
+          "10/27",
+          "17/81"
+        ]
+      },
+      {
+        "support": [
+          1,
+          4,
+          7,
+          10
+        ],
+        "forcedProbabilities": [
+          "17/81",
+          "10/27",
+          "-1/27",
+          "37/81"
+        ]
+      }
+    ],
+    "contradiction": "Uniform moments through order3 force a negative probability."
+  },
+  "C4": {
+    "excluded": true,
+    "orbitCounting": "Both the doubled set and the simple set must be single four-point orbits; no polar point is possible. Thus P(z)=(z^4-u)^2(z^4-v), with u,v nonzero and distinct.",
+    "support": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "forcedProbabilities": [
+      "5/32",
+      "11/32",
+      "11/32",
+      "5/32"
+    ],
+    "requiredMonicMiddleCoefficientMagnitude": "33",
+    "doubleRootCubicLemma": "For (w-u)^2(w-v), |u\u00b2v|=1 and equal magnitudes of the two middle coefficients imply each squared magnitude is at most9+6sqrt(3).",
+    "lemmaDerivation": "Rotate u to r>0 and write v=r^-2 exp(i phi). Equal magnitudes factor as (r\u00b2-1)[r6-3r4-3r2+1+4r3cos(phi)]=0. If r=1 the magnitude is at most3. Otherwise h=r+1/r>=2 obeys cos(phi)=h(6-h\u00b2)/4, hence h<=1+sqrt3, and the squared middle magnitude is3(h\u00b2-1)<=9+6sqrt3<25.",
+    "contradiction": "The required magnitude33 exceeds the universal bound, which is less than5."
+  },
+  "ordersAtLeast5": {
+    "excluded": true,
+    "argument": "A nonaxial orbit under an order-m proper rotation has exactlym points. With onlyfour doubled points and at mosttwo axial points, m>=5 is impossible."
+  },
+  "remainingProperRotationGroups": [
+    "C1",
+    "C2",
+    "D2"
+  ],
+  "groupClassificationReason": "Finite subgroups of SO(3) are cyclic, dihedral or polyhedral. If no element has order>=3, only C1,C2,D2 remain. Continuous rotation symmetry is impossible for eight distinct points.",
+  "limitation": "The target partition remains unsettled for general geometries in the three remaining proper-group classes. No numerical failure is used as a global exclusion."
+}

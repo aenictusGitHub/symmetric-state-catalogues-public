@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "n": 16,
+  "t": 3,
+  "dimension": 2,
+  "arithmetic": "Exact SymPy rational and radical arithmetic.",
+  "independentMethod": "Coefficient expressions rebuilt without importing the primary verifier; direct normalized-Dicke bipartitions for every ordered basis pair.",
+  "orthonormalityExact": true,
+  "orderedCrossReductions": [
+    {
+      "a": 1,
+      "b": 1,
+      "matrix": "I_4/4",
+      "entries": 16
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "matrix": "zero_4x4",
+      "entries": 16
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "matrix": "zero_4x4",
+      "entries": 16
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "matrix": "I_4/4",
+      "entries": 16
+    }
+  ],
+  "complexCrossEntriesExactlyVerified": 64,
+  "basisFourthReductions": [
+    {
+      "purity": "3457/16562",
+      "exactACOrder": 3
+    },
+    {
+      "purity": "3433/16562",
+      "exactACOrder": 3
+    }
+  ],
+  "exactCodeOrder": 3,
+  "dimensionUpperBound": "6k<=16, hence k<=2",
+  "maximumDimension": 2,
+  "sourceCoefficientAssociation": true,
+  "scope": "Every normalized complex superposition in the displayed two-dimensional span is third-order AC."
+}

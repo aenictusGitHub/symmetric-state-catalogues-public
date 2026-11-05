@@ -1,0 +1,23 @@
+{
+  "independent_audit_passed": true,
+  "theorem": "10k <= N+10 for AC order >=4 and N>=9",
+  "trace_derivation": "Cartesian contractions and Casimir commutators; no total-spin trace sum",
+  "fourth_moment_generic": "Q*q*(3*Q*q - Q - q + 2)/15",
+  "scalar_trace": "9*(j + 1)*(4*j**3 + 724*j**2 + 2637*j + 6750)/20",
+  "top_eigenvalue_after_scalar_subtraction": "9*j*(596*j**3 + 4972*j**2 + 14489*j + 11688)/20",
+  "spectral_signs_bottom_to_top": [
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "negative",
+    "positive"
+  ],
+  "positive_sector_dimension": "N+10",
+  "all_signs_strict_for_entire_domain": true,
+  "scope": "Upper bound, with no general attainment claim"
+}

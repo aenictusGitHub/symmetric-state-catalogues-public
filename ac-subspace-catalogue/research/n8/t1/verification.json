@@ -1,0 +1,31 @@
+{
+  "generalEvenQubitConsequence": {
+    "forEvenNAtLeast8": "k_max(N,1)<=N/2-1",
+    "n8Method": "Exact auxiliary pure16,t7 recoupling contradiction.",
+    "evenNAtLeast10Method": "Saturation would give a pure2N-qubit(N-1)-AC state. Its orthogonal tensor-error vectors number(N/2)^2, exceeding Hilbert-space dimension2N+1."
+  },
+  "passed": true,
+  "n": 8,
+  "t": 1,
+  "maximumDimension": 3,
+  "k3WitnessExactlyVerified": true,
+  "casimirEigenvalues": [
+    "20",
+    "19",
+    "17",
+    "14",
+    "10",
+    "5",
+    "-1",
+    "-8",
+    "-16"
+  ],
+  "rank8OperatorBasisVectorizationChecks": 17,
+  "rank8PartialTracesVanishExactly": true,
+  "pure16RecouplingEntriesChecked": 153,
+  "rationalHighestWeightSumsAgreeWithSixJ": true,
+  "positiveObstruction": "0=100+136*p_0+115*a_9, impossible because p_0>=0 and a_9>=0.",
+  "alternativeA15Obstruction": "0=1105+2431*p_0+11310*a_15, impossible because p_0>=0 and a_15>=0.",
+  "independentAlternativeObstruction": "0=205620+24871*p_2+1292646*p_12",
+  "rootOfArgument": "Any rank4 first-order AC projector in spin4 would yield a pure symmetric16-qubit7-AC state; the displayed exact positive identity excludes every such state."
+}

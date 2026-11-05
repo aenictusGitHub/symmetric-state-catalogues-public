@@ -1,0 +1,126 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\newcommand{\D}[2]{|D_{#1}^{(#2)}\rangle}
+\begin{document}
+\title{Exact bridges between optimal AC subspaces and highly AC pure states}
+\author{Catalogue calculation}\date{31 October 2026}\maketitle
+
+These identities relate existing exact representatives; they do not assert a
+classification or uniqueness of the optimal subspaces. All coefficients are in
+the normalized Dicke basis. The accompanying \texttt{bridge-verify.py} checks
+the formulas with exact symbolic arithmetic against the saved catalogue bases.
+
+\paragraph{A centered-projector construction.}
+Let $P$ be a rank-$k$ orthogonal projector on the spin-$n/2$ space, of
+dimension $d=n+1$, with $0<k<d$, and suppose that
+\[
+Y=P-\frac{k}{d}I_d
+\]
+has only irreducible tensor rank $n$. Set
+$F_{rs}=(-1)^r\delta_{s,n-r}$ and use the row-column vectorization convention
+$\operatorname{vec}(A)=\sum_{r,s}A_{rs}\D{n}{r}\D{n}{s}$. Then
+\[
+|\Phi_P\rangle=\frac{\operatorname{vec}(YF)}{\sqrt{\operatorname{Tr}Y^2}}
+\]
+is a symmetric $2n$-qubit pure state of AC order at least $n-1$.
+
+Indeed, multiplication by $F$ intertwines conjugation of operators with the
+tensor-product spin action, so tensor rank $n$ becomes total spin $n$, the
+fully symmetric $2n$-qubit sector. Projector idempotency gives
+\[
+Y^2=\left(1-\frac{2k}{d}\right)Y+\frac{k(d-k)}{d^2}I_d,
+\qquad \operatorname{Tr}Y^2=\frac{k(d-k)}d.
+\]
+Consequently its $n$-qubit reduced state is
+\[
+\rho_n=\frac{Y^2}{\operatorname{Tr}Y^2}
+=\frac{I_d}{d}+\frac{d-2k}{k(d-k)}Y.
+\]
+Partial trace onto $n-1$ symmetric qubits is rotation covariant, and its
+output operator space has no rank-$n$ tensors. It therefore kills $Y$ and
+gives $\rho_{n-1}=I_n/n$, proving the claim. This is a sufficient
+construction condition on a projector, not a condition satisfied by every
+AC subspace.
+
+This sufficient condition is impossible for $n\ge7$. Indeed, its output
+would have $2n$ qubits and AC order $n-1$. If $n=2r+1\ge7$, the pure
+even-order bound requires $2n=4r+2\ge(r+1)^2$, false for $r\ge3$.
+If $n=2r+2\ge8$, the odd-order bound requires
+$2n=4r+4\ge(r+1)(r+2)$, likewise false for $r\ge3$.
+Thus the following bridges are exceptional finite constructions, not the
+start of an unrestricted family under this same sufficient condition.
+
+\paragraph{Four qubits to eight.}
+The catalogue's optimal two-dimensional 1-AC subspace on four qubits has
+orthonormal basis
+\[
+u_\pm=\frac12\D4{0}\pm\frac{i}{\sqrt2}\D4{2}+\frac12\D4{4}.
+\]
+For $P_4=|u_+\rangle\langle u_+|+|u_-\rangle\langle u_-|$, the operator
+$Y_4=P_4-2I_5/5$ has only rank four. The construction gives
+\[
+\boxed{|\Phi_8\rangle=
+\frac{\sqrt{30}}{12}\bigl(\D8{0}+\D8{8}\bigr)
++\frac{\sqrt{21}}6\D8{4}.}
+\]
+Its reduction is exactly $\rho_3=I_4/4$. The Majorana polynomial is
+proportional to $z^8+14z^4+1$, the standard cubic constellation. Here the
+polynomial convention is $\sum_r(-1)^r\sqrt{\binom Nr}c_rz^r$.
+
+\paragraph{The six-, seven-, and twelve-qubit bridge.}
+The published two-dimensional 2-AC subspace on seven qubits (Eq.~E1 of
+PRA 111, 022435 (2025), catalogue \texttt{paper-e1}) is spanned by
+\[
+u=\sqrt{\frac3{10}}\D7{0}+\sqrt{\frac7{10}}\D7{5},\qquad
+v=\sqrt{\frac7{10}}\D7{2}-\sqrt{\frac3{10}}\D7{7}.
+\]
+Write $P_7=|u\rangle\langle u|+|v\rangle\langle v|$ and let $\mathcal R_6$
+trace out one qubit. Its Dicke-basis matrix is
+\[
+(\mathcal R_6 X)_{rs}=
+\frac{\sqrt{(7-r)(7-s)}X_{rs}
++\sqrt{(r+1)(s+1)}X_{r+1,s+1}}7.
+\]
+Direct substitution proves that $Q=2\mathcal R_6(P_7)$ is an orthogonal
+rank-four projector. More strongly,
+\[
+\boxed{P_6=I_7-2\mathcal R_6(P_7),}
+\]
+where $P_6$ projects onto the catalogue's optimal three-dimensional 1-AC
+subspace with orthonormal basis
+\[
+w_1=\sqrt{\frac35}\D6{1}+\sqrt{\frac25}\D6{6},\quad
+w_2=\sqrt{\frac25}\D6{0}-\sqrt{\frac35}\D6{5},\quad
+w_3=\D6{3}.
+\]
+Thus the \emph{kernel} of the reduced normalized code state
+$\mathcal R_6(P_7/2)=Q/4$ is an optimal 1-AC subspace. No such conclusion
+is claimed for its support.
+
+The centered projectors obey
+\[
+Y_6=P_6-\frac37I_7=-\left(Q-\frac47I_7\right),
+\qquad Y_6^2=\frac17Y_6+\frac{12}{49}I_7.
+\]
+$Y_6$ has only tensor rank six. Vectorizing it as above gives, up to a
+global sign,
+\[
+\boxed{|\Phi_{12}\rangle=
+\frac{-\sqrt7\D{12}{1}+\sqrt{11}\D{12}{6}
++\sqrt7\D{12}{11}}5.}
+\]
+Its reduction is exactly $\rho_5=I_6/6$. Therefore the three exact catalogue
+maxima $(N,t,k)=(6,1,3),(7,2,2),(12,5,1)$ share an explicit algebraic
+construction. The Majorana polynomial is proportional to
+$z(1+11z^5-z^{10})$, with an additional point at infinity, a standard
+icosahedral form.
+
+\paragraph{Exact checks.}
+Besides every ordered cross reduced matrix of the three source subspaces,
+the verifier checks projector idempotency, the complement identity, the
+rank-four/rank-six tensor claims via
+$\sum_a[J_a,[J_a,Y]]=L(L+1)Y$, and every entry of both output states'
+reduced matrices. It also checks directly that the vectorized matrix lies
+in the highest-spin sector using the Dicke Clebsch--Gordan coefficients
+$\sqrt{\binom nr\binom ns/\binom{2n}{r+s}}$.
+\end{document}

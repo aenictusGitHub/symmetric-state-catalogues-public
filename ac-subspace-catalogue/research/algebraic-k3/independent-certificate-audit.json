@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "method": "Independent parsing of saved exact Dicke coefficients; rational row reduction checks every complete cross matrix against the defining equations. Fraction arithmetic independently reconstructs the Jacobian/Hessians and verifies a Newton-map Banach certificate with the separate bound ||I-RJ0||\u221e+r||R||\u221e max_l sum_ij |H_lij|. No case-specific verifier or definition module is imported.",
+  "mathematicalJustification": [
+    "The closed rational box is complete. The Newton map x\u2212RF(x) maps it strictly into itself and contracts, so it has exactly one fixed point.",
+    "The inverse defect is below one, making R and every Jacobian in the box nonsingular; a fixed point therefore satisfies F(x)=0.",
+    "A nonsingular isolated zero of a square rational polynomial system has algebraic coordinates.",
+    "Every full cross reduction equals delta_ab I3/3 at that root. Tracing gives an orthonormal basis, so every normalized vector in its span is second-order AC."
+  ],
+  "cases": [
+    {
+      "n": 15,
+      "dimension": 3,
+      "orderAtLeast": 2,
+      "passed": true,
+      "basisSha256": "d9cbaf2a011ed0405f421081034f98a20e5758ce178373f72aa7a6c5c8f167ec",
+      "certificateSha256": "86288cf595a4586e05e19fe2f73618098f3240f13c5908f6ec703972c8b24184",
+      "variablesAndIndependentEquations": 14,
+      "allRealImaginaryCrossComponentsVerified": 162,
+      "separateGramComponentsVerified": 18,
+      "previewCoefficientError": 0.0,
+      "boxRadius": "1/1000000000000000000000000000000000000000000000",
+      "newtonDisplacementStrictUpperBound": "1e-60",
+      "jacobianDefectStrictUpperBound": "1e-59",
+      "independentContractionStrictUpperBound": "1e-42",
+      "strictSelfMapping": true,
+      "uniqueRealRootInClosedBox": true,
+      "nonsingularJacobianThroughoutBox": true,
+      "isolatedRootIsAlgebraic": true
+    },
+    {
+      "n": 17,
+      "dimension": 3,
+      "orderAtLeast": 2,
+      "passed": true,
+      "basisSha256": "536eedda8ea94357bd42a01f9266ee6ab631b86889d6eb22653386f6f17c6752",
+      "certificateSha256": "7f83c32f725b51e9fc7a48e53c446578be2187ff8bced252ddfd0efd2c0a934d",
+      "variablesAndIndependentEquations": 27,
+      "allRealImaginaryCrossComponentsVerified": 162,
+      "separateGramComponentsVerified": 18,
+      "previewCoefficientError": 1.1102230246251565e-16,
+      "boxRadius": "1/1000000000000000000000000000000000000000000000000000000000000",
+      "newtonDisplacementStrictUpperBound": "1e-90",
+      "jacobianDefectStrictUpperBound": "1e-88",
+      "independentContractionStrictUpperBound": "1e-56",
+      "strictSelfMapping": true,
+      "uniqueRealRootInClosedBox": true,
+      "nonsingularJacobianThroughoutBox": true,
+      "isolatedRootIsAlgebraic": true
+    }
+  ]
+}

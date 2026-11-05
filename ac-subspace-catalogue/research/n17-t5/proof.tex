@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Nonexistence of fifth-order anticoherent pure states on seventeen symmetric qubits}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+There is no pure fifth-order anticoherent state in
+$\operatorname{Sym}^{17}(\mathbb C^2)$. Consequently
+$K(17,t)=0$ for every $t\geq5$.
+\end{theorem}
+This is a computer-assisted exact proof. The accompanying
+\texttt{certificate.json} contains rational coefficients, and
+\texttt{verify\_independently.py} reconstructs the identities and verifies
+positive definiteness using exact arithmetic. No numerical feasibility result
+is used as a proof premise.
+
+\section*{1. Necessary moment conditions}
+Put $V=\operatorname{Sym}^{17}(\mathbb C^2)$, with orthonormal Dicke basis
+$|i\rangle=|D_{17}^{i}\rangle$, $0\leq i\leq17$.
+If a normalized $\psi\in V$ were fifth-order anticoherent, define its
+three-copy rotational average
+\[
+ X=\int_{\mathrm{SU}(2)}
+ (U\,|\psi\rangle\langle\psi|\,U^\dagger)^{\otimes3}\,dU.
+\]
+Then $X\succeq0$, $\Tr X=1$, $X$ is invariant under simultaneous rotations,
+and its support is contained in $\operatorname{Sym}^{3}(V)$.
+Moreover, $X$ is separable across the first copy and the other two copies.
+
+For $z_i=2i-17$, define diagonal matrices $T_\ell$ by their eigenvalues
+\begin{align*}
+ f_1(i)&=z_i, &f_2(i)&=(3z_i^2-323)/8,\\
+ f_3(i)&=z_i(z_i^2-193)/24, &f_4(i)&=(z_i^4-274z_i^2+8721)/192,\\
+ f_5(i)&=z_i(9z_i^4-3170z_i^2+214361)/960.
+\end{align*}
+These are nonzero multiples of the rank-$\ell$, zero-component irreducible
+spin tensors. Fifth-order anticoherence of every rotated state gives
+\begin{equation}\label{contractions}
+ \Tr_1[(T_\ell\otimes I^{\otimes2})X]=0,
+ \qquad 1\leq\ell\leq5.
+\end{equation}
+It suffices to work with real symmetric coefficient matrices: replacing
+$X$ by $(X+\overline X)/2$ preserves its trace, positivity, simultaneous
+rotation invariance, separability and the real constraints
+\eqref{contractions}. Complex conjugation preserves the spin rotation group
+as a set in this Dicke basis. Thus this reduction does not restrict the
+hypothetical state to have real coefficients.
+
+\section*{2. Rational coordinates and complete invariant parametrization}
+Let $b_i=\sqrt{\binom{17}{i}}\,|i\rangle$.
+For a sorted word $w$ of length $r$, let $E_w$ be the average of the $r!$
+permutations of $b_{w_1}\otimes\cdots\otimes b_{w_r}$, and let $c_i(w)$
+be the multiplicity of $i$ in $w$. Its squared norm is
+\[
+ g_r(w)=\frac1{r!}\prod_{i=0}^{17}
+          \binom{17}{i}^{c_i(w)}c_i(w)!.
+\]
+The doubled magnetic weight is $2\sum_iw_i-17r$.
+Raising acts with coefficients $c_i(w)(i+1)$ and lowering with coefficients
+$c_i(w)(18-i)$. Thus all representation matrices and metrics are rational.
+
+The certificate supplies integer highest-weight matrices $H_J$ for all
+irreducible constituents of $\operatorname{Sym}^{3}(V)$; $J$ denotes twice
+the spin. They consist of $24$ blocks with $45$ highest-weight columns.
+The verifier checks their weights, raising equations, linear independence
+and the complete weight character. Consequently they exhaust the
+$\binom{20}{3}=1140$-dimensional symmetric third power.
+Set
+\[
+ U_{J,q}=\frac{J_-^{q}}{q!}H_J,\qquad
+ d_J=\operatorname{lcm}_{0\leq q\leq J}\binom Jq.
+\]
+In coefficient matrices relative to the $E_w$ basis, every real symmetric
+invariant operator has the form
+\begin{equation}\label{decomposition}
+ X_{\rm coeff}=\sum_J d_J\sum_{q=0}^{J}
+ \frac{U_{J,q}B_JU_{J,q}^{T}}{\binom Jq}.
+\end{equation}
+Here $X\succeq0$ is equivalent to $B_J\succeq0$ for all $J$.
+The certificate uses positive dyadic diagonal matrices $S_J$ and the
+congruent variables
+\[
+ x_J=d_J(J+1)S_JB_JS_J\succeq0.
+\]
+There are $72$ independent real symmetric entries in the $B_J$.
+The certificate lists $62$ matrix entries of \eqref{contractions}.
+Each resulting integer coefficient row $R_i$ is divided by the positive
+greatest common divisor of its coefficients. This rescaling preserves
+$R_i(B)=0$. The verifier reconstructs every selected row; completeness of
+these constraints is unnecessary, since all are necessary conditions.
+
+\section*{3. Positivity after partial time reversal}
+Let $F|i\rangle=(-1)^i|17-i\rangle$ and set
+\[
+ Y=(F\otimes I)X^{T_1}(F^\dagger\otimes I).
+\]
+Separability of $X$ implies $Y\succeq0$. This is the additional condition
+that strengthens the ordinary three-copy positive-moment relaxation.
+It also restores ordinary simultaneous rotation covariance after the
+partial transpose.
+
+Use the rational product basis $b_i\otimes E_a$, where $a$ is a sorted
+two-letter word. Its metric is
+$G_{(i,a)}=\binom{17}{i}g_2(a)$.
+For two such indices $(i,a),(j,b)$, put
+$o=\operatorname{sort}(a,17-j)$ and
+$p=\operatorname{sort}(b,17-i)$.
+A direct embedding and partial-transpose calculation gives
+\begin{equation}\label{ppt}
+ Y_{{\rm coeff},(i,a),(j,b)}=
+ \frac{(-1)^{i+j}}{9}
+ [c_{17-j}(a)+1][c_{17-i}(b)+1]
+ X_{{\rm coeff},o,p}.
+\end{equation}
+This formula includes both symmetric-tensor embedding factors.
+
+The certificate supplies rationally scaled highest-weight columns $W_L$
+in $V\otimes\operatorname{Sym}^{2}(V)$, arranged in $26$ blocks with $126$
+columns in total. In doubled-spin weight $L$, define
+\[
+ Y_L=(L+1)W_L^TG_LY_{{\rm coeff},L}G_LW_L\succeq0.
+\]
+Only positivity of these compressions is needed. The verifier also checks
+the supplied highest-weight bases and their orthogonality.
+
+\section*{4. Exact separating identity}
+The rational data give matrices $C_J\succ0$, $Q_L\succ0$ and rational
+numbers $y_i$ such that, identically in all $72$ entries of the $B_J$,
+\begin{equation}\label{certificate}
+ -\Tr X=\sum_{i=1}^{62}y_iR_i(B)
+       +\sum_J\Tr(C_Jx_J)+\sum_L\Tr(Q_LY_L).
+\end{equation}
+The identity is checked coefficient by coefficient after substituting
+\eqref{decomposition} and \eqref{ppt}. All calculations are rational.
+Positive definiteness is checked by exact unpivoted $LDL^T$ factorization:
+there are $45$ strictly positive pivots for the $24$ matrices $C_J$, and
+$126$ strictly positive pivots for the $26$ matrices $Q_L$.
+
+For the hypothetical state, $R_i(B)=0$, $x_J\succeq0$ and $Y_L\succeq0$.
+The right-hand side of \eqref{certificate} is therefore nonnegative,
+whereas the left-hand side equals $-1$. This contradiction proves the
+theorem. Higher-order anticoherence implies fifth-order anticoherence,
+so the same exclusion applies to every $t\geq5$.
+
+\section*{Attainment of order four}
+An independently verified six-component radical state at $N=17$ is given
+in the adjacent catalogue directory \texttt{../n17-t4/}. Its reductions
+through order four are exactly the symmetric identities. The exclusion
+above therefore proves that the maximum pure-state AC order at seventeen
+qubits is four. It also gives $K(17,5)=K(17,6)=0$ by nesting.
+
+\section*{Reproduction and controls}
+Run \texttt{python3 verify\_independently.py} in this directory.
+The verifier uses only the Python standard library. Its report records the
+certificate SHA-256 and the exact checks.
+As a separate convention check, direct partially transposed and time-reversed
+product moments are compared with \eqref{ppt} for a complex test state.
+These floating-point controls help detect implementation mistakes but are
+not premises of the exact proof.
+\end{document}

@@ -1,0 +1,256 @@
+{
+  "convention": "P(1,z)=sum_r(-1)^r sqrt(C(n,r)) c_r z^r, up to a nonzero scalar; infinity multiplicity n-degree.",
+  "states": [
+    {
+      "id": "partition-n12-3x4-tetra",
+      "n": 12,
+      "label": "Three coincident copies of a tetrahedral constellation",
+      "exactCoefficients": [
+        "sqrt(23485)/488",
+        "0",
+        "3*sqrt(4270)*I/488",
+        "0",
+        "-11*sqrt(427)/488",
+        "0",
+        "-3*sqrt(305)*I/244",
+        "0",
+        "-11*sqrt(427)/488",
+        "0",
+        "3*sqrt(4270)*I/488",
+        "0",
+        "sqrt(23485)/488"
+      ],
+      "coefficients": [
+        [
+          0.31403312449276516,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.4017125226074887
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.46578639655223375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.2147243753677006
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.46578639655223375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.4017125226074887
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31403312449276516,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{23485}}{488}|D_{12}^{(0)}\\rangle + \\frac{3 \\sqrt{4270} i}{488}|D_{12}^{(2)}\\rangle + - \\frac{11 \\sqrt{427}}{488}|D_{12}^{(4)}\\rangle + - \\frac{3 \\sqrt{305} i}{244}|D_{12}^{(6)}\\rangle + - \\frac{11 \\sqrt{427}}{488}|D_{12}^{(8)}\\rangle + \\frac{3 \\sqrt{4270} i}{488}|D_{12}^{(10)}\\rangle + \\frac{\\sqrt{23485}}{488}|D_{12}^{(12)}\\rangle",
+      "support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "achievedOrder": 2,
+      "partition": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 4,
+      "majoranaPolynomial": "z**12 + 6*sqrt(3)*I*z**10 - 33*z**8 - 12*sqrt(3)*I*z**6 - 33*z**4 + 6*sqrt(3)*I*z**2 + 1",
+      "majoranaPolynomialLatex": "z^{12} + 6 \\sqrt{3} i z^{10} - 33 z^{8} - 12 \\sqrt{3} i z^{6} - 33 z^{4} + 6 \\sqrt{3} i z^{2} + 1",
+      "squarefreeFactorization": [
+        {
+          "factor": "z**4 + 2*sqrt(3)*I*z**2 + 1",
+          "degree": 4,
+          "multiplicity": 3
+        }
+      ],
+      "checks": [
+        {
+          "t": 1,
+          "rhoIsIdentity": true,
+          "distanceSquared": "0"
+        },
+        {
+          "t": 2,
+          "rhoIsIdentity": true,
+          "distanceSquared": "0"
+        },
+        {
+          "t": 3,
+          "rhoIsIdentity": false,
+          "distanceSquared": "441/14884"
+        }
+      ],
+      "lowerBoundOnly": true,
+      "notes": "The exact order of this witness is verified. This alone does not prove maximal order among all states in this full multiplicity partition."
+    },
+    {
+      "id": "partition-n12-2x4-1x4-tetra",
+      "n": 12,
+      "label": "A double tetrahedron and its simple dual",
+      "exactCoefficients": [
+        "sqrt(11)/8",
+        "0",
+        "sqrt(2)*I/8",
+        "0",
+        "sqrt(5)/8",
+        "0",
+        "sqrt(7)*I/4",
+        "0",
+        "sqrt(5)/8",
+        "0",
+        "sqrt(2)*I/8",
+        "0",
+        "sqrt(11)/8"
+      ],
+      "coefficients": [
+        [
+          0.414578098794425,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.1767766952966369
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2795084971874737,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6614378277661477
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2795084971874737,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.1767766952966369
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.414578098794425,
+          0.0
+        ]
+      ],
+      "stateLatex": "\\frac{\\sqrt{11}}{8}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{2} i}{8}|D_{12}^{(2)}\\rangle + \\frac{\\sqrt{5}}{8}|D_{12}^{(4)}\\rangle + \\frac{\\sqrt{7} i}{4}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{5}}{8}|D_{12}^{(8)}\\rangle + \\frac{\\sqrt{2} i}{8}|D_{12}^{(10)}\\rangle + \\frac{\\sqrt{11}}{8}|D_{12}^{(12)}\\rangle",
+      "support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "achievedOrder": 2,
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 8,
+      "majoranaPolynomial": "z**12 + 2*sqrt(3)*I*z**10 + 15*z**8 + 28*sqrt(3)*I*z**6 + 15*z**4 + 2*sqrt(3)*I*z**2 + 1",
+      "majoranaPolynomialLatex": "z^{12} + 2 \\sqrt{3} i z^{10} + 15 z^{8} + 28 \\sqrt{3} i z^{6} + 15 z^{4} + 2 \\sqrt{3} i z^{2} + 1",
+      "squarefreeFactorization": [
+        {
+          "factor": "z**4 - 2*sqrt(3)*I*z**2 + 1",
+          "degree": 4,
+          "multiplicity": 1
+        },
+        {
+          "factor": "z**4 + 2*sqrt(3)*I*z**2 + 1",
+          "degree": 4,
+          "multiplicity": 2
+        }
+      ],
+      "checks": [
+        {
+          "t": 1,
+          "rhoIsIdentity": true,
+          "distanceSquared": "0"
+        },
+        {
+          "t": 2,
+          "rhoIsIdentity": true,
+          "distanceSquared": "0"
+        },
+        {
+          "t": 3,
+          "rhoIsIdentity": false,
+          "distanceSquared": "1/484"
+        }
+      ],
+      "lowerBoundOnly": true,
+      "notes": "The exact order of this witness is verified. This alone does not prove maximal order among all states in this full multiplicity partition."
+    }
+  ]
+}

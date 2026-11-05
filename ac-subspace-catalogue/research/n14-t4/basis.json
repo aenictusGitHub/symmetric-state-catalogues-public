@@ -1,0 +1,129 @@
+{
+  "id": "radical-n14-k1-t4",
+  "n": 14,
+  "t": 4,
+  "dimension": 1,
+  "label": "Exact radical fourth-order AC state (positive branch)",
+  "evidence": "exact",
+  "basis": [
+    {
+      "id": "radical-n14-k1-t4-basis-1",
+      "n": 14,
+      "label": "Exact fourth-order AC state \u00b7 positive branch",
+      "exactCoefficients": [
+        "0",
+        "7*sqrt(110)/220 + sqrt(4337410)*I/5940",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "-sqrt(2730)/300 + sqrt(2196870)*I/2700",
+        "0",
+        "0",
+        "2*sqrt(455)/135",
+        "0",
+        "0",
+        "7*sqrt(110)/220 + sqrt(4337410)*I/5940",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3337119062359573,
+          0.35061362844081656
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31601080011409693,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.17416467303484176,
+          0.5489571107700679
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31601080011409693,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3337119062359573,
+          0.35061362844081656
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stateLatex": "\\begin{aligned}|\\psi_+\\rangle={}&A\\bigl(|D_{14}^{1}\\rangle+|D_{14}^{13}\\rangle\\bigr)\\\\&+B\\bigl(|D_{14}^{4}\\rangle+|D_{14}^{10}\\rangle\\bigr)+C|D_{14}^{7}\\rangle\\end{aligned}",
+      "coefficientDefinitionLatex": "\\begin{aligned}A&=\\frac{7}{\\sqrt{440}}+i\\sqrt{\\frac{39431}{320760}},\\\\B&=\\sqrt{\\frac{364}{3645}},\\\\C&=-\\sqrt{\\frac{91}{3000}}+i\\sqrt{\\frac{73229}{243000}}.\\end{aligned}"
+    }
+  ],
+  "parameters": {
+    "A": "7*sqrt(110)/220 + sqrt(4337410)*I/5940",
+    "B": "2*sqrt(455)/135",
+    "C": "-sqrt(2730)/300 + sqrt(2196870)*I/2700"
+  },
+  "derivationLatex": "\\rho_4=I_5/5,\\qquad\\operatorname{Tr}(\\rho_5^2)=\\frac16+\\frac{14}{15125},\\qquad9k\\le15\\Longrightarrow K(14,4)=1.",
+  "provenance": "Exact radical reconstruction of the N=14 numerical state in ACLiege.jl, up to a collective z rotation and a global phase. The whole one-dimensional subspace is verified by its exact four-qubit reduction. The conjugate branch is a separate one-dimensional AC subspace; their joint span is not claimed to be AC.",
+  "sourceComparison": {
+    "passed": true,
+    "source": "references/ACLiege.jl",
+    "sourceSha256": "2e1564c7df76b35e0b7418c29d10c0350bdc888caaa4eddd985cdfe0f85c370d",
+    "precisionDecimalDigits": 90,
+    "convention": "source approximately exp(i*chi) exp(-i*beta*J_z) psi_plus; J_z|D_14^r>=(7-r)|D_14^r>",
+    "betaRadians": "0.300243209039566490914471846753632531026269921209955096683615545649279203434",
+    "chiRadians": "2.5789433521056274788980031771785636219198522372616261945981392377568660272",
+    "maximumDickeCoefficientError": "3.462911797574719268957525e-19",
+    "sourceNormalizationError": "2.136627524518935435129532e-55",
+    "scope": "Numerical comparison only. Printed source precision does not imply the same number of accurate digits; exact existence is proved by the symbolic reductions."
+  },
+  "properRotationGroup": "D3",
+  "conjugateBranch": {
+    "coefficients": "coefficientwise complex conjugation",
+    "exactACOrder": 4,
+    "sameProperRotationOrbit": false,
+    "proof": "The unique threefold axis fixes a normalizer-invariant ratio c_1 c_13/(c_4 c_10)=A^2/B^2 with nonzero imaginary part."
+  }
+}

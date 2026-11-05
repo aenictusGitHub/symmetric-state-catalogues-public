@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\begin{document}
+\title{A universal separated-triple construction of second-order anticoherent subspaces}
+\author{}
+\date{}
+\maketitle
+
+Write $K(N,2)$ for the largest dimension of a subspace of the spin-$N/2$
+representation all of whose unit vectors are second-order anticoherent.
+The following is a constructive lower bound; it does not assert general
+optimality.
+
+\begin{theorem}
+For every integer $N\ge6$,
+\[
+ K(N,2)\ge \left\lfloor\frac{N+3}{9}\right\rfloor.
+\]
+More explicitly, set
+\[
+ j=\frac N2,\qquad V=\frac{j(j+1)}3,\qquad
+ k=\left\lfloor\frac{N+3}{9}\right\rfloor,\qquad
+ h=\left\lfloor\frac{N-3(k-1)}2\right\rfloor.
+\]
+For $i=0,\ldots,k-1$, put
+\[
+ a_i=j-3i,\qquad b_i=a_i-h,\qquad c_i=a_i-2h,
+\]
+and
+\[
+ w_{i,0}=\frac{V+b_ic_i}{2h^2},\qquad
+ w_{i,1}=-\frac{V+a_ic_i}{h^2},\qquad
+ w_{i,2}=\frac{V+a_ib_i}{2h^2}.
+\]
+Then the vectors
+\[
+ \ket{u_i}=
+ \sqrt{w_{i,0}}\ket{D_N^{(3i)}}+
+ \sqrt{w_{i,1}}\ket{D_N^{(3i+h)}}+
+ \sqrt{w_{i,2}}\ket{D_N^{(3i+2h)}}
+\]
+are an orthonormal basis of a second-order anticoherent subspace.  All the
+weights are strictly positive rational numbers.
+\end{theorem}
+
+\begin{proof}
+We use the convention $J_z\ket{D_N^{(r)}}=(j-r)\ket{D_N^{(r)}}$.
+First, $N\ge9k-3$, hence $h\ge3k$.  With $d=3(k-1)$, the integer
+\[
+ \epsilon=N-2h-d
+\]
+is either zero or one.  The support indices are the three blocks
+\[
+ \{0,3,\ldots,d\},\qquad
+ \{h,h+3,\ldots,h+d\},\qquad
+ \{2h,2h+3,\ldots,2h+d\}.
+\]
+Each is contained in $\{0,\ldots,N\}$, and the gap between consecutive
+indices in their union is at least three, including between the blocks,
+since $h-d\ge3$.
+
+For equally spaced points $a,b=a-h,c=a-2h$, the displayed weights are the
+unique solution of
+\[
+ w_0+w_1+w_2=1,\quad aw_0+bw_1+cw_2=0,\quad
+ a^2w_0+b^2w_1+c^2w_2=V.
+\]
+These identities follow directly by substitution, or by Lagrange interpolation
+of polynomials of degree at most two.
+
+We verify positivity.  Since $a-b=b-c=h$, both products $ab$ and $bc$ are
+at least $-h^2/4$.  Moreover,
+\[
+ \frac{h^2}{4}\le\frac{N^2}{16}<\frac{N(N+2)}{12}=V,
+\]
+so the outside weights are positive.  For the middle weight, the function
+\[
+ -a_ic_i=(j-3i)(2h-j+3i)
+\]
+is concave in $i$.  Its minimum is therefore attained at an endpoint.
+At the two endpoints its values are
+\[
+ j(j-d-\epsilon),\qquad (j-d)(j-\epsilon),
+\]
+respectively; their difference is $d\epsilon\ge0$.  Consequently
+\begin{align*}
+ -a_ic_i-V
+ &\ge j(j-d-\epsilon)-\frac{j(j+1)}3\\
+ &=\frac j3\left(N-9k+8-3\epsilon\right)>0,
+\end{align*}
+because $N\ge9k-3$ and $\epsilon\le1$.  Thus the middle weights are also
+strictly positive.
+
+The moment identities and disjoint supports give, for the projector $P$ onto
+the span of these vectors,
+\[
+ PJ_zP=0,\qquad PJ_z^2P=VP.
+\]
+Every monomial appearing in $J_+$, $J_+^2$, or
+$J_zJ_++J_+J_z$ shifts the Dicke excitation index by one or two.  The global
+support gap therefore gives
+\[
+ PJ_+P=PJ_+^2P=P(J_zJ_++J_+J_z)P=0,
+\]
+and the adjoint identities hold as well.  Using
+$J_x^2+J_y^2+J_z^2=j(j+1)I$, these equations imply
+\[
+ PJ_\alpha P=0,\qquad
+ P\frac{J_\alpha J_\beta+J_\beta J_\alpha}{2}P
+ =\frac{j(j+1)}3\delta_{\alpha\beta}P,
+ \qquad \alpha,\beta\in\{x,y,z\}.
+\]
+These are precisely the first- and second-order anticoherence compression
+conditions.  They hold for every vector in the subspace, including every
+superposition of the basis vectors.
+\end{proof}
+
+For example, this gives $K(35,2)\ge4$ and $K(42,2)\ge5$.
+The corresponding Dicke indices and rational squared amplitudes are recorded
+in \texttt{separated-triples-bases.json}.  The accompanying verifier checks all
+conditions using exact rational arithmetic for $6\le N\le1000$; these finite
+checks supplement the all-$N$ proof above.
+\end{document}

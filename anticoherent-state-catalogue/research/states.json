@@ -1,0 +1,4179 @@
+{
+  "definition": "A pure symmetric N-qubit state is t-anticoherent iff rho_t is the maximally mixed state I_(t+1)/(t+1) on the symmetric t-qubit subspace. Equivalently all spin moments through order t are independent of direction. This requires every multipole rank1,...,t to vanish, not only the even ranks.",
+  "definitionReferences": [
+    {
+      "file": "2605.29436.pdf",
+      "page": 2,
+      "location": "Definition 1, Eqs. (3)–(4)"
+    },
+    {
+      "file": "PRA92_052333(2015).pdf",
+      "page": 3,
+      "location": "Eq. (10) and anticoherence definition"
+    },
+    {
+      "file": "PRA96_032304(2017).pdf",
+      "page": 3,
+      "location": "Sec. II.B.2, Eq. (13)"
+    }
+  ],
+  "states": [
+    {
+      "id": "ac-n2-t1",
+      "n": 2,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "GHZ / spin-cat state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{2}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{2}^{(2)}\\rangle",
+      "support": [
+        0,
+        2
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n3-t1",
+      "n": 3,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "GHZ / spin-cat state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{3}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{3}^{(3)}\\rangle",
+      "support": [
+        0,
+        3
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n4-t2",
+      "n": 4,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Tetrahedral state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{1}{2}|D_{4}^{(0)}\\rangle + \\frac{\\sqrt{2} i}{2}|D_{4}^{(2)}\\rangle + \\frac{1}{2}|D_{4}^{(4)}\\rangle",
+      "support": [
+        0,
+        2,
+        4
+      ],
+      "exactCoefficients": [
+        "1/2",
+        "0",
+        "sqrt(2)*I/2",
+        "0",
+        "1/2"
+      ],
+      "coefficients": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7071067811865476
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C2)"
+        },
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (2)"
+        },
+        {
+          "file": "PRA90_032314(2014).pdf",
+          "page": 4,
+          "location": "Eq. (25) at mu=i sqrt(2); uniqueness discussion continues on PDF p5"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n5-t1",
+      "n": 5,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "GHZ / spin-cat state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{5}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{5}^{(5)}\\rangle",
+      "support": [
+        0,
+        5
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n5-t1-manuscript",
+      "n": 5,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Local AC manuscript representative",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{5}^{(1)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{5}^{(4)}\\rangle",
+      "support": [
+        1,
+        4
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C3)"
+        }
+      ],
+      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
+      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/150",
+            "purity": "17/50"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n6-t3",
+      "n": 6,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Octahedral state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{6}^{(1)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{6}^{(5)}\\rangle",
+      "support": [
+        1,
+        5
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C4)"
+        },
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (61)"
+        },
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "C4-symmetric six-qubit construction"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n7-t2",
+      "n": 7,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Two-term cyclic construction",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{30}}{10}|D_{7}^{(0)}\\rangle + \\frac{\\sqrt{70}}{10}|D_{7}^{(5)}\\rangle",
+      "support": [
+        0,
+        5
+      ],
+      "exactCoefficients": [
+        "sqrt(30)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(70)/10",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5477225575051661,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8366600265340756,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), j=7/2"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/20",
+            "purity": "3/10"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n7-t2-manuscript",
+      "n": 7,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Local AC manuscript representative",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{3}|D_{7}^{(0)}\\rangle -  \\frac{\\sqrt{14}}{6}|D_{7}^{(3)}\\rangle -  \\frac{\\sqrt{14}}{6}|D_{7}^{(6)}\\rangle",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "-sqrt(14)/6",
+        "0",
+        "0",
+        "-sqrt(14)/6",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6236095644623235,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6236095644623235,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C5)"
+        }
+      ],
+      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
+      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "17/1620",
+            "purity": "211/810"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n8-t3",
+      "n": 8,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Even-qubit cyclic construction",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{30}}{12}|D_{8}^{(0)}\\rangle + \\frac{\\sqrt{21}}{6}|D_{8}^{(4)}\\rangle + \\frac{\\sqrt{30}}{12}|D_{8}^{(8)}\\rangle",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(30)/12",
+        "0",
+        "0",
+        "0",
+        "sqrt(21)/6",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/12"
+      ],
+      "coefficients": [
+        [
+          0.45643546458763845,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7637626158259734,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.45643546458763845,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "Eq. (48); paragraph immediately after gives order 3 for even N>=8"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/30",
+            "purity": "7/30"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n8-t3-manuscript",
+      "n": 8,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Local AC manuscript representative",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{30}}{12}|D_{8}^{(0)}\\rangle -  \\frac{\\sqrt{21}}{6}|D_{8}^{(4)}\\rangle -  \\frac{\\sqrt{30}}{12}|D_{8}^{(8)}\\rangle",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(30)/12",
+        "0",
+        "0",
+        "0",
+        "-sqrt(21)/6",
+        "0",
+        "0",
+        "0",
+        "-sqrt(30)/12"
+      ],
+      "coefficients": [
+        [
+          0.45643546458763845,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7637626158259734,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.45643546458763845,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C6)"
+        }
+      ],
+      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
+      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "7/360",
+            "purity": "79/360"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n9-t2",
+      "n": 9,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Small-angle rotosensor, chi=0",
+      "status": "proven-existence",
+      "stateLatex": "- \\frac{\\sqrt{21}}{8}|D_{9}^{(1)}\\rangle + \\frac{\\sqrt{30}}{8}|D_{9}^{(5)}\\rangle + \\frac{\\sqrt{13}}{8}|D_{9}^{(9)}\\rangle",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": [
+        "0",
+        "-sqrt(21)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(13)/8"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.57282196186948,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6846531968814576,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.45069390943299864,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "Quantum4_285(2020).pdf",
+          "page": 11,
+          "location": "Eq. (65), chi=0"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "The same source explicitly reports no full t>=3 anticoherent states at j=9/2. The q=3 label for a different N=9 state in the 2022 Table IV is inconsistent with its nonzero rank-3 multipole.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/3136",
+            "purity": "789/3136"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n9-t2-manuscript",
+      "n": 9,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Local AC manuscript representative",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{13}}{8}|D_{9}^{(0)}\\rangle + \\frac{\\sqrt{30}}{8}|D_{9}^{(4)}\\rangle -  \\frac{\\sqrt{21}}{8}|D_{9}^{(8)}\\rangle",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(13)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/8",
+        "0",
+        "0",
+        "0",
+        "-sqrt(21)/8",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.45069390943299864,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6846531968814576,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.57282196186948,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C7)"
+        }
+      ],
+      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
+      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/3136",
+            "purity": "789/3136"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n10-t3",
+      "n": 10,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Even-qubit cyclic construction",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{5}}{5}|D_{10}^{(0)}\\rangle + \\frac{\\sqrt{15}}{5}|D_{10}^{(5)}\\rangle + \\frac{\\sqrt{5}}{5}|D_{10}^{(10)}\\rangle",
+      "support": [
+        0,
+        5,
+        10
+      ],
+      "exactCoefficients": [
+        "sqrt(5)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(15)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(5)/5"
+      ],
+      "coefficients": [
+        [
+          0.4472135954999579,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7745966692414834,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4472135954999579,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "Eq. (48); paragraph immediately after gives order 3 for even N>=8"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/70",
+            "purity": "3/14"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n10-t3-manuscript",
+      "n": 10,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Local AC manuscript representative",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{5}}{4}|D_{10}^{(1)}\\rangle + \\frac{\\sqrt{6}}{4}|D_{10}^{(5)}\\rangle -  \\frac{\\sqrt{5}}{4}|D_{10}^{(9)}\\rangle",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/4",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5)/4",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6123724356957945,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C8)"
+        }
+      ],
+      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
+      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/1120",
+            "purity": "45/224"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n11-t3",
+      "n": 11,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Four-term cyclic construction",
+      "status": "proven-existence",
+      "stateLatex": "\\left(- \\frac{35 \\sqrt{10}}{288} + \\frac{\\sqrt{10022} i}{288}\\right)|D_{11}^{(1)}\\rangle + \\frac{5 \\sqrt{3}}{18}|D_{11}^{(4)}\\rangle + \\frac{5 \\sqrt{3}}{18}|D_{11}^{(7)}\\rangle + \\left(- \\frac{35 \\sqrt{10}}{288} + \\frac{\\sqrt{10022} i}{288}\\right)|D_{11}^{(10)}\\rangle",
+      "support": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "exactCoefficients": [
+        "0",
+        "-35*sqrt(10)/288 + sqrt(10022)*I/288",
+        "0",
+        "0",
+        "5*sqrt(3)/18",
+        "0",
+        "0",
+        "5*sqrt(3)/18",
+        "0",
+        "0",
+        "-35*sqrt(10)/288 + sqrt(10022)*I/288",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.38430457675657387,
+          0.3476039568279814
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4811252243246881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4811252243246881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.38430457675657387,
+          0.3476039568279814
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Dicke-coefficient characterization, Eqs. (16)–(17)"
+        }
+      ],
+      "provenance": "Independently derived exact construction using the published characterization",
+      "notes": "This radical witness is derived here, not copied from the rounded numerical N=11 vector in the 2017 Appendix. The two outer probabilities are 29/108 and the two inner probabilities are 25/108. Their phases cancel the only possible off-diagonal third-order constraint exactly.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5737/1045440",
+            "purity": "42965/209088"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n12-t4-family",
+      "n": 12,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Four-anticoherent cyclic family, theta=0",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{7}}{5}|D_{12}^{(1)}\\rangle + \\frac{\\sqrt{11}}{5}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{7}}{5}|D_{12}^{(11)}\\rangle",
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(7)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(11)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(7)/5",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6633249580710799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (62), theta=0"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "Eq. (62) supplies a continuous family. Its theta=pi/2 endpoint is 5-anticoherent.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "49/11250",
+            "purity": "962/5625"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n12-t5",
+      "n": 12,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Icosahedral state",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{7}}{5}|D_{12}^{(1)}\\rangle + \\frac{\\sqrt{11} i}{5}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{7}}{5}|D_{12}^{(11)}\\rangle",
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(7)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(11)*I/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(7)/5",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6633249580710799
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (62), theta=pi/2; Sec. IV.B.5"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/84",
+            "purity": "13/84"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n24-t5",
+      "n": 24,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Five-anticoherent cyclic family at N=24",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{111930}}{1080}|D_{24}^{(0)}\\rangle + \\frac{\\sqrt{98670}}{540}|D_{24}^{(6)}\\rangle + \\frac{\\sqrt{4255}}{180}|D_{24}^{(12)}\\rangle + \\frac{\\sqrt{98670}}{540}|D_{24}^{(18)}\\rangle + \\frac{\\sqrt{111930}}{1080}|D_{24}^{(24)}\\rangle",
+      "support": [
+        0,
+        6,
+        12,
+        18,
+        24
+      ],
+      "exactCoefficients": [
+        "sqrt(111930)/1080",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(98670)/540",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(4255)/180",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(98670)/540",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(111930)/1080"
+      ],
+      "coefficients": [
+        [
+          0.3097772331149896,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5816996523952097,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3623908946066763,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5816996523952097,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3097772331149896,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 10,
+          "location": "Eqs. (51)–(52), m=5"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "169*sqrt(2939946)/5684450400 + 364930319/477493833600",
+            "purity": "169*sqrt(2939946)/5684450400 + 9796905017/68213404800"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "ac-n42-t7",
+      "n": 42,
+      "achievedOrder": 7,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "label": "Seven-anticoherent D7d construction",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{7062}}{343}|D_{42}^{(0)}\\rangle + \\frac{\\sqrt{29315}}{343}|D_{42}^{(7)}\\rangle + \\frac{3 \\sqrt{451}}{343}|D_{42}^{(14)}\\rangle + \\frac{\\sqrt{36777}}{343}|D_{42}^{(21)}\\rangle -  \\frac{3 \\sqrt{451}}{343}|D_{42}^{(28)}\\rangle + \\frac{\\sqrt{29315}}{343}|D_{42}^{(35)}\\rangle -  \\frac{\\sqrt{7062}}{343}|D_{42}^{(42)}\\rangle",
+      "support": [
+        0,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42
+      ],
+      "exactCoefficients": [
+        "sqrt(7062)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(29315)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(451)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(36777)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-3*sqrt(451)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(29315)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(7062)/343"
+      ],
+      "coefficients": [
+        [
+          0.24500206033999405,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.49917270422078114,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.18574426164660612,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.559105841599652,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.18574426164660612,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.49917270422078114,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.24500206033999405,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 10,
+          "location": "Figure 5 caption"
+        }
+      ],
+      "provenance": "published exact construction",
+      "notes": "",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/7"
+          },
+          {
+            "t": 7,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/8"
+          },
+          {
+            "t": 8,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "267168*sqrt(336515)/360025721385211 + 42592*sqrt(5748012715)/6840488706319009 + 299762496*sqrt(17081)/6840488706319009 + 1650182313802/43974570254907915",
+            "purity": "267168*sqrt(336515)/360025721385211 + 42592*sqrt(5748012715)/6840488706319009 + 299762496*sqrt(17081)/6840488706319009 + 1629237847990079/14658190084969305"
+          }
+        ],
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "acliege-n11-t3",
+      "n": 11,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=11",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 135,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(17)/12",
+        "0",
+        "0",
+        "sqrt(55)*I/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(55)*I/12",
+        "0",
+        "0",
+        "sqrt(17)/12"
+      ],
+      "coefficients": [
+        [
+          0.3435921354681384,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6180165405913053
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6180165405913053
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3435921354681384,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "517/116640",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5423294148613652,
+          "y": -0.31245696456820415,
+          "z": 0.7799034883041319,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8086185040158472,
+          "y": -0.5881015675784258,
+          "z": 0.016512455146700692,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.808618504015847,
+          "y": 0.5881015675784257,
+          "z": -0.016512455146700713,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5423294148613652,
+          "y": 0.3124569645682042,
+          "z": -0.779903488304132,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011136387550641066,
+          "y": 0.6251306046960147,
+          "z": 0.7805193699589512,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011136387550641066,
+          "y": -0.6251306046960147,
+          "z": -0.7805193699589513,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5404681538488301,
+          "y": 0.31266912055662754,
+          "z": -0.7811095926472691,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3097456492544011,
+          "y": -0.9507654899494002,
+          "z": -0.010129950110764722,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30974564925440107,
+          "y": 0.9507654899494,
+          "z": 0.010129950110764735,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5404681538488301,
+          "y": -0.31266912055662754,
+          "z": 0.781109592647269,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**11 - 55*sqrt(51)*I*y**8/17 + 55*sqrt(51)*I*y**3/17 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.563105130469368e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.854198861903103,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{17}}{12})|D_{11}^{(0)}\\rangle+(\\frac{\\sqrt{55} i}{12})|D_{11}^{(3)}\\rangle+(\\frac{\\sqrt{55} i}{12})|D_{11}^{(8)}\\rangle+(\\frac{\\sqrt{17}}{12})|D_{11}^{(11)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=11",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 135; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n12-t5",
+      "n": 12,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=12",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 136,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(7)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(11)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(7)/5",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6633249580710799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "1/84",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7236067977499789,
+          "y": -0.5257311121191336,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.27639320225002095,
+          "y": -0.85065080835204,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8944271909999159,
+          "y": -1.0953573965284052e-16,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2763932022500212,
+          "y": 0.85065080835204,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7236067977499788,
+          "y": 0.5257311121191338,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8944271909999159,
+          "y": -0.0,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27639320225002106,
+          "y": -0.8506508083520398,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7236067977499788,
+          "y": -0.5257311121191337,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7236067977499789,
+          "y": 0.5257311121191335,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27639320225002084,
+          "y": 0.85065080835204,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 11*y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.458865921737327e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 1.051462224238267,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{7}}{5})|D_{12}^{(1)}\\rangle+(\\frac{\\sqrt{11}}{5})|D_{12}^{(6)}\\rangle+(- \\frac{\\sqrt{7}}{5})|D_{12}^{(11)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=12",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 136; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n13-t3",
+      "n": 13,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=13",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 137,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(15)/15",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "sqrt(15)/15"
+      ],
+      "coefficients": [
+        [
+          0.2581988897471611,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2581988897471611,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        10,
+        13
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "38/9075",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.45680747810527617,
+          "y": -0.26375351341635916,
+          "z": 0.8495651900281838,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9009769713978392,
+          "y": -0.4338187426435171,
+          "z": 0.006464947174969507,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.900976971397839,
+          "y": 0.433818742643517,
+          "z": -0.006464947174969291,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4568074781052762,
+          "y": 0.26375351341635916,
+          "z": -0.8495651900281836,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.22265372136257683,
+          "y": 0.9748838343073855,
+          "z": 0.005179765392942701,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2226537213625769,
+          "y": -0.9748838343073857,
+          "z": -0.00517976539294284,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.6986435254167725e-05,
+          "y": -0.5274637662500987,
+          "z": -0.8495775271068519,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.698643525416773e-05,
+          "y": 0.5274637662500987,
+          "z": 0.8495775271068517,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": 0.2637102870268731,
+          "z": -0.8495898446830877,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": 0.781897753601443,
+          "z": -0.0028713014111677137,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": -0.7818977536014429,
+          "z": 0.002871301411167811,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": -0.2637102870268732,
+          "z": 0.8495898446830877,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**13 - 13*sqrt(11)*I*y**10 + 13*sqrt(11)*I*y**3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0686612575053706e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.8677338232678895,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{15}}{15})|D_{13}^{(0)}\\rangle+(\\frac{\\sqrt{390} i}{30})|D_{13}^{(3)}\\rangle+(\\frac{\\sqrt{390} i}{30})|D_{13}^{(10)}\\rangle+(\\frac{\\sqrt{15}}{15})|D_{13}^{(13)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=13",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 137; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n15-t3",
+      "n": 15,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=15",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 157,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "3*sqrt(22)/44",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(22)/44"
+      ],
+      "coefficients": [
+        [
+          0.31980107453341566,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31980107453341566,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "1301/3680820",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": 0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": -0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": 0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": -0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": 0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": -0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": 0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": -0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": 0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": -0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**15 + 35*sqrt(39)*y**11/3 - 35*sqrt(39)*y**4/3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3137671987015485e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8608292299677537,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{3 \\sqrt{22}}{44})|D_{15}^{(0)}\\rangle+(\\frac{\\sqrt{770}}{44})|D_{15}^{(4)}\\rangle+(\\frac{\\sqrt{770}}{44})|D_{15}^{(11)}\\rangle+(\\frac{3 \\sqrt{22}}{44})|D_{15}^{(15)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=15",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 157; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n16-t5",
+      "n": 16,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=16",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 158,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(69)/32",
+        "0",
+        "17*sqrt(690)/1472 - 7*sqrt(3358)*I/1472",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-279*sqrt(46046)/210496 - sqrt(50420370)*I/210496",
+        "0",
+        "-137*sqrt(98670)/105248 + 7*sqrt(480194)*I/26312",
+        "0",
+        "279*sqrt(46046)/210496 + sqrt(50420370)*I/210496",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-17*sqrt(690)/1472 + 7*sqrt(3358)*I/1472",
+        "0",
+        "sqrt(69)/32"
+      ],
+      "coefficients": [
+        [
+          0.25958199571618984,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3033651278825854,
+          -0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2844174971754177,
+          -0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.4088832118823884,
+          0.18435399111693207
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2844174971754177,
+          0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3033651278825854,
+          0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25958199571618984,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "339/286286",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 4.9995996217394874e-17,
+          "y": 0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.9995996217394874e-17,
+          "y": -0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.363476901526931,
+          "y": 0.9137670951339852,
+          "z": -0.18142281528732843,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3634769015269309,
+          "y": -0.9137670951339852,
+          "z": -0.1814228152873285,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5103366953788339,
+          "y": -0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5103366953788339,
+          "y": 0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14685979385190273,
+          "y": 0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14685979385190268,
+          "y": -0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.816496580927726,
+          "y": 1.4566548927776847e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.816496580927726,
+          "y": -9.999199243478976e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7669073012820825,
+          "y": -0.5103366953788337,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7669073012820826,
+          "y": 0.5103366953788335,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9137670951339852,
+          "y": 0.3634769015269311,
+          "z": 0.18142281528732845,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9137670951339851,
+          "y": -0.36347690152693096,
+          "z": 0.18142281528732865,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4034303997551513,
+          "y": 0.14685979385190268,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.40343039975515155,
+          "y": -0.14685979385190287,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**8 + y**7*(-170*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**6*(-560/23 + 28*sqrt(1095)*I/23) + y**5*(1302*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**4*(-4110/23 + 56*sqrt(1095)*I/23) + y**3*(-1302*sqrt(3)/23 - 14*sqrt(365)*I/23) + y**2*(-560/23 + 28*sqrt(1095)*I/23) + y*(170*sqrt(3)/23 - 14*sqrt(365)*I/23) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.307363498719824e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8469436844349447,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{69}}{32})|D_{16}^{(0)}\\rangle+(\\frac{17 \\sqrt{690}}{1472} - \\frac{7 \\sqrt{3358} i}{1472})|D_{16}^{(2)}\\rangle+(- \\frac{\\sqrt{31395}}{1196} + \\frac{3 \\sqrt{152789} i}{4784})|D_{16}^{(4)}\\rangle+(- \\frac{279 \\sqrt{46046}}{210496} - \\frac{\\sqrt{50420370} i}{210496})|D_{16}^{(6)}\\rangle+(- \\frac{137 \\sqrt{98670}}{105248} + \\frac{7 \\sqrt{480194} i}{26312})|D_{16}^{(8)}\\rangle+(\\frac{279 \\sqrt{46046}}{210496} + \\frac{\\sqrt{50420370} i}{210496})|D_{16}^{(10)}\\rangle+(- \\frac{\\sqrt{31395}}{1196} + \\frac{3 \\sqrt{152789} i}{4784})|D_{16}^{(12)}\\rangle+(- \\frac{17 \\sqrt{690}}{1472} + \\frac{7 \\sqrt{3358} i}{1472})|D_{16}^{(14)}\\rangle+(\\frac{\\sqrt{69}}{32})|D_{16}^{(16)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=16",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 158; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n18-t5",
+      "n": 18,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=18",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 203,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(455)/65",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(455)/65"
+      ],
+      "coefficients": [
+        [
+          0.3281650616569468,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3281650616569468,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        13,
+        18
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "73/59150",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": -0.6000647849232895,
+          "y": -0.19495305413198974,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.37086513006314625,
+          "y": 0.5104002516308715,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6000647849232895,
+          "y": 0.1949530541319897,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3708651300631463,
+          "y": -0.5104002516308717,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030788e-17,
+          "y": 0.6308943850129586,
+          "z": -0.7758687227612162,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030787e-17,
+          "y": -0.6308943850129584,
+          "z": 0.7758687227612161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3708651300631463,
+          "y": -0.5104002516308715,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232895,
+          "y": 0.1949530541319896,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.37086513006314625,
+          "y": 0.5104002516308714,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232896,
+          "y": -0.19495305413198963,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**18 - 102*sqrt(3)*I*y**13 - 102*sqrt(3)*I*y**5 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.821705437899758e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7416574467027541,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{455}}{65})|D_{18}^{(0)}\\rangle+(\\frac{\\sqrt{6630} i}{130})|D_{18}^{(5)}\\rangle+(\\frac{\\sqrt{6630} i}{130})|D_{18}^{(13)}\\rangle+(\\frac{\\sqrt{455}}{65})|D_{18}^{(18)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=18",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 203; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n20-t5",
+      "n": 20,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=20",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 229,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(561)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(741)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(561)/75"
+      ],
+      "coefficients": [
+        [
+          0.3158058475287203,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.36295086903509866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3158058475287203,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "121/97104",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.491123473188423,
+          "y": -0.3568220897730899,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507984,
+          "y": -0.5773502691896258,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6070619982066862,
+          "y": -7.434365329878145e-17,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507998,
+          "y": 0.5773502691896257,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49112347318842287,
+          "y": 0.35682208977309,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917662,
+          "y": -0.5773502691896257,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.303530999103343,
+          "y": -0.9341723589627158,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9822469463768461,
+          "y": -1.2029055788526663e-16,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.30353099910334325,
+          "y": 0.9341723589627157,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917658,
+          "y": 0.5773502691896258,
+          "z": 0.18759247408508015,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6070619982066862,
+          "y": -0.0,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507992,
+          "y": -0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911234731884229,
+          "y": -0.35682208977309,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49112347318842303,
+          "y": 0.3568220897730899,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507976,
+          "y": 0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.982246946376846,
+          "y": -0.0,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30353099910334314,
+          "y": -0.9341723589627156,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.794654472291766,
+          "y": -0.5773502691896258,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7946544722917662,
+          "y": 0.5773502691896256,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3035309991033429,
+          "y": 0.9341723589627158,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + 228*y**3 + 494*y**2 - 228*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3417348143383273e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7136441795461796,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{561}}{75})|D_{20}^{(0)}\\rangle+(\\frac{\\sqrt{209}}{25})|D_{20}^{(5)}\\rangle+(\\frac{\\sqrt{741}}{75})|D_{20}^{(10)}\\rangle+(- \\frac{\\sqrt{209}}{25})|D_{20}^{(15)}\\rangle+(\\frac{\\sqrt{561}}{75})|D_{20}^{(20)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=20",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 229; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    }
+  ],
+  "sourceCaveats": [
+    {
+      "file": "PhysRevResearch4_013178(2022).pdf",
+      "page": 17,
+      "location": "Table IV, j=9/2 row",
+      "issue": "The printed q=3 label conflicts with both the listed nonzero rank3 multipole and the explicit state. The normalized printed state has achieved order2, not3: rho_3[0,3]=(10-sqrt(42))/126 is nonzero."
+    },
+    {
+      "file": "PhysRevResearch4_013178(2022).pdf",
+      "page": 17,
+      "location": "Table IV, j=5 row",
+      "issue": "Printed endpoint amplitudes1/sqrt(11) with middle amplitude sqrt(3/5) have norm squared43/55. Use the normalized exact construction from PRA92(2015) Eq48; do not silently quote the erroneous row."
+    }
+  ]
+}

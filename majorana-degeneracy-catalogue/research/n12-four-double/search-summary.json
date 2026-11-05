@@ -1,0 +1,229 @@
+{
+  "scientificStatus": "Research remains unresolved: no pattern-preserving3AC witness and no global exclusion proof were obtained.",
+  "n": 12,
+  "partition": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "targetOrder": 3,
+  "rigorousRangeUnchanged": [
+    2,
+    3
+  ],
+  "summary": {
+    "newOptimizerOrRootSolverRuns": 2866,
+    "arbitraryComplexGeometricRuns": 266,
+    "genericComplexC2Runs": 1000,
+    "fixedPoleC2Runs": 600,
+    "directSevenPolynomialRootRuns": 1000,
+    "differentialEvolutionRuns": 6,
+    "differentialEvolutionFunctionEvaluations": 375336,
+    "newExactACWitnesses": 0,
+    "acceptedSeparatedTargetOrderCandidates": 0,
+    "geometricStatesWithIntervalCertifiedFullPartition": 266,
+    "independentRootTRSearchIncluded": false,
+    "earlier64StartsIncluded": false
+  },
+  "cases": [
+    {
+      "case": "geometric-search",
+      "source": "geometric-search-results.json",
+      "attempts": 163,
+      "bestObservedHSResidual": 1.7132446599466053e-08,
+      "rootGapAtThatOutput": 0.0200000005478662,
+      "bestObservedHSResidualAmongGapsAbovePoint02": 1.7132446599466053e-08,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    },
+    {
+      "case": "geometric-double-bound",
+      "source": "geometric-double-bound-results.json",
+      "attempts": 103,
+      "bestObservedHSResidual": 2.5355719468305533e-08,
+      "rootGapAtThatOutput": 0.02000000299417345,
+      "bestObservedHSResidualAmongGapsAbovePoint02": 2.5355719468305533e-08,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    },
+    {
+      "case": "c2-factor",
+      "source": "c2-factor-results.json",
+      "attempts": 1000,
+      "bestObservedHSResidual": 1.545355393042262e-16,
+      "rootGapAtThatOutput": 0.0001477729431057963,
+      "bestObservedHSResidualAmongGapsAbovePoint02": 0.00026235922289630887,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    },
+    {
+      "case": "double-poles",
+      "source": "c2-pole-results.json",
+      "attempts": 300,
+      "bestObservedHSResidual": 2.8738679496554446e-17,
+      "rootGapAtThatOutput": 1.9032193879817927e-08,
+      "bestObservedHSResidualAmongGapsAbovePoint02": null,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    },
+    {
+      "case": "simple-poles",
+      "source": "c2-pole-results.json",
+      "attempts": 300,
+      "bestObservedHSResidual": 0.05283156919158387,
+      "rootGapAtThatOutput": 0.7376679813988674,
+      "bestObservedHSResidualAmongGapsAbovePoint02": 0.05283156919158387,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    },
+    {
+      "case": "c2-polynomial-root",
+      "source": "c2-polynomial-root-results.json",
+      "attempts": 1000,
+      "bestObservedHSResidual": 5.901517569181312e-17,
+      "rootGapAtThatOutput": 0.00013335313174645542,
+      "bestObservedHSResidualAmongGapsAbovePoint02": 4.427049470918027e-08,
+      "acceptedTargetOrderWitnesses": 0,
+      "interpretation": "Observed optimizer outputs only; these minima are not global lower bounds."
+    }
+  ],
+  "separationContinuation": [
+    {
+      "minimumSeparationConstraint": 0.02,
+      "runs": 8,
+      "bestObservedHSResidual": 1.7132446599466053e-08,
+      "actualGap": 0.0200000005478662,
+      "timeReversalInfidelity": 6.661338147750939e-16,
+      "kind": "split-octahedron-opposite"
+    },
+    {
+      "minimumSeparationConstraint": 0.05,
+      "runs": 8,
+      "bestObservedHSResidual": 3.762272308945794e-07,
+      "actualGap": 0.050008938037057506,
+      "timeReversalInfidelity": 2.738195404083932e-06,
+      "kind": "split-octahedron-adjacent"
+    },
+    {
+      "minimumSeparationConstraint": 0.1,
+      "runs": 8,
+      "bestObservedHSResidual": 6.021236887087919e-06,
+      "actualGap": 0.099999999999999,
+      "timeReversalInfidelity": 4.385995837352663e-05,
+      "kind": "split-octahedron-adjacent"
+    },
+    {
+      "minimumSeparationConstraint": 0.15,
+      "runs": 31,
+      "bestObservedHSResidual": 3.0574585817467095e-05,
+      "actualGap": 0.14999999999999994,
+      "timeReversalInfidelity": 0.0002227452292901111,
+      "kind": "separated-random-multistart"
+    },
+    {
+      "minimumSeparationConstraint": 0.2,
+      "runs": 8,
+      "bestObservedHSResidual": 9.702583692447037e-05,
+      "actualGap": 0.19999999999999993,
+      "timeReversalInfidelity": 0.000707150254562805,
+      "kind": "split-octahedron-adjacent"
+    },
+    {
+      "minimumSeparationConstraint": 0.35,
+      "runs": 31,
+      "bestObservedHSResidual": 0.0009255361842464284,
+      "actualGap": 0.34999999999999865,
+      "timeReversalInfidelity": 0.006779213586397992,
+      "kind": "separated-random-multistart"
+    },
+    {
+      "minimumSeparationConstraint": 0.5,
+      "runs": 8,
+      "bestObservedHSResidual": 0.0039260926409390344,
+      "actualGap": 0.5000000000000002,
+      "timeReversalInfidelity": 0.02924010043298919,
+      "kind": "split-octahedron-adjacent"
+    },
+    {
+      "minimumSeparationConstraint": 0.6,
+      "runs": 31,
+      "bestObservedHSResidual": 0.008204017063808001,
+      "actualGap": 0.6000000000000001,
+      "timeReversalInfidelity": 0.06233871628503551,
+      "kind": "separated-random-multistart"
+    },
+    {
+      "minimumSeparationConstraint": 0.9,
+      "runs": 30,
+      "bestObservedHSResidual": 0.03924764994923257,
+      "actualGap": 0.8999999999999998,
+      "timeReversalInfidelity": 0.30441814093164776,
+      "kind": "separated-random-multistart"
+    }
+  ],
+  "geometricMethod": "Eight physical spinors with multiplicities(2,2,2,2,1,1,1,1), normalized after symmetrization. Three rotation freedoms are fixed, leaving13 real variables. Analytic derivatives and pairwise separation inequalities are used. Random starts, controlled adjacent/opposite octahedron splits and differential evolution are distinct initialization strategies.",
+  "partitionCertification": {
+    "report": "verified-star-partitions.json",
+    "script": "verify_star_separation.py",
+    "scope": "90-digit outward interval trigonometry proves all8 stars distinct for every one of266 stored geometric angle vectors. Repeating the corresponding spinors with the fixed weights therefore gives the exact full partition. This does not make their AC residuals exact zero."
+  },
+  "C2Families": {
+    "generic": "P(z)=(z^4+(b+i*c)*z^2+a)^2*(z^4+(f+i*g)*z^2+(d+i*e)).",
+    "genericGauge": "a,b,c,d,e,f,g are real; an axial rotation can make a>0 whenever the constant ofQ is nonzero. The direct real-root pass also allows a<0, which is equivalent by an additional axial rotation.",
+    "doublePoles": "P(z)=z^2*(z^2+u)^2*(z^4+v*z^2+w), u,v,w complex; the affine degree10 supplies the double point at infinity.",
+    "simplePoles": "P(z)=z*(z^4+u*z^2+v)^2*(z^2+w), u,v,w complex; the affine degree11 supplies the simple point at infinity.",
+    "limitations": "C2 is a search restriction. No argument here forces every hypothetical3AC state in the target partition to possess C2 symmetry."
+  },
+  "polynomialEquationDocumentation": {
+    "input": "c2-equations-input.json",
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "equations": "Three independent diagonal-difference equations and the real/imaginary parts ofrho3[2,0] andrho3[3,1], after clearing common normalization factors. The input polynomials are exact rational equations independently supplied by the root researcher.",
+    "independentValidation": "Every numerical root is re-evaluated using the normalized symmetric reduced density matrix. The247 roots passingHS<1e-10 all fail the separation criterion."
+  },
+  "observations": [
+    "The smallest residuals in unconstrained factor/root searches occur with additional root collisions approaching the known double-octahedral partition(2,2,2,2,2,2). They are not witnesses in the target partition.",
+    "The best adjacent-octahedron splitting branch is not time-reversal invariant; its small-gap residual scales numerically approximately as0.0602*gap^4. Opposite splits have a time-reversal invariant branch with larger coefficient near0.1048. These scaling observations are not proofs.",
+    "The best constrained non-TR states exhibit numerical C2 symmetry. This observation is not a global symmetry theorem."
+  ],
+  "limitations": [
+    "Finite numerical searches cannot prove nonexistence.",
+    "No positive global lower bound on the3AC residual is established for the target partition.",
+    "Standard spherical-coordinate singularities can occur at poles; the complementary complex-factor and polynomial-root parameterizations reduce dependence on that chart.",
+    "The new strict double-point separation theorem was imposed conservatively as chord>=0.989031 in103 additional runs; simple-root collisions remain possible."
+  ],
+  "sources": [
+    {
+      "file": "geometric-search-results.json",
+      "sha256": "75dacecb17e46a38785cbe3e7b4da1a4f47f1ac52825c27e47aa391ae03fe1f7"
+    },
+    {
+      "file": "geometric-double-bound-results.json",
+      "sha256": "fba25d4054884c32e24b6f31c1cba98fe528cf19162316bc9a952fe0b6598064"
+    },
+    {
+      "file": "c2-factor-results.json",
+      "sha256": "571169d89df7a4c994819537c5850075ca5421641c33c1c45b506c6079c289b8"
+    },
+    {
+      "file": "c2-pole-results.json",
+      "sha256": "d89aa8353ecaf004b9ad7953957666ddeaae566a290f50ad9e8370097c997fde"
+    },
+    {
+      "file": "c2-polynomial-root-results.json",
+      "sha256": "68660548d5d1acc714022e4bd587cf16bc593779aaf9a0154836e87f1f6de623"
+    }
+  ]
+}

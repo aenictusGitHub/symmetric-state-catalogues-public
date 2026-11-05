@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,booktabs,hyperref}
+\usepackage[margin=1in]{geometry}
+\newcommand{\D}[2]{\lvert D_{#1}^{#2}\rangle}
+\title{Explicit anticoherent subspaces from binary polyhedral forms}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\paragraph{Scope.}
+The constructions below certify lower bounds on the dimension of an
+anticoherent (AC) subspace. Their symmetry-sector dimensions are not asserted
+to equal the unrestricted maximum. The accompanying files give normalized,
+orthonormal Dicke bases and exact verification at every catalogue qubit
+number $N=1,\ldots,20,22,24,35,42$.
+
+\paragraph{A whole-subspace symmetry argument.}
+Let $G\subset SU(2)$ be a finite group and let $\chi$ be a one-dimensional
+unitary character. Consider the subspace on which every collective rotation
+$U_g$ acts as $\chi(g)I$. For $u,v$ in this same character sector and any
+operator $T$, one has
+\[
+ \langle u,Tv\rangle
+ =\left\langle u,\frac1{|G|}\sum_{g\in G}U_g^*TU_gv\right\rangle.
+\]
+Thus if the spin-$\ell$ tensor representation contains no $G$-fixed vector,
+every tensor of rank $\ell$ compresses to zero on the entire sector, including
+its off-diagonal matrix elements. For the quaternion, tetrahedral,
+octahedral, and icosahedral rotation groups, the first positive invariant
+harmonic degrees are respectively $2,3,4,6$. Any single character sector is
+therefore AC of order at least $1,2,3,5$, respectively. This argument does not
+permit combining distinct character sectors.
+
+\paragraph{Invariant forms.}
+Use the following homogeneous polynomials:
+\begin{align*}
+ Q&=x^2y^2,& R&=x^4+y^4,& U&=xy,& V&=x^4-y^4,\\
+ F&=xy(x^4-y^4),\\
+ G&=x^8+14x^4y^4+y^8,\\
+ H&=x^{12}-33x^8y^4-33x^4y^8+y^{12},\\
+ A&=x^4+2i\sqrt3x^2y^2+y^4,\\
+ I&=xy(x^{10}+11x^5y^5-y^{10}),\\
+ J&=x^{20}-228x^{15}y^5+494x^{10}y^{10}+228x^5y^{15}+y^{20},\\
+ K&=x^{30}+522x^{25}y^5-10005x^{20}y^{10}
+       -10005x^{10}y^{20}-522x^5y^{25}+y^{30}.
+\end{align*}
+Here the bar on $\overline A$ conjugates coefficients. The elementary
+relations
+\[
+ F^2=Q(R^2-4Q^2),\qquad H^2=G^3-108F^4,
+ \qquad K^2=J^3+1728I^5
+\]
+give free-module presentations of the fixed rings. In particular the
+quaternion, tetrahedral, octahedral and icosahedral fixed spaces are the
+degree-$N$ pieces of
+\[
+ \mathbb C[Q,R]\{1,F\},\quad
+ \mathbb C[F,G]\{1,H\},\quad
+ \mathbb C[G,F^2]\{1,FH\},\quad
+ \mathbb C[I,J]\{1,K\},
+\]
+respectively. The notation $\{P_1,P_2\}$ means a free module with the two
+displayed generators. Their Hilbert series in the qubit-count variable $z$
+are
+\[
+ \frac{1+z^6}{(1-z^4)^2},\quad
+ \frac{1+z^{12}}{(1-z^6)(1-z^8)},\quad
+ \frac{1+z^{18}}{(1-z^8)(1-z^{12})},\quad
+ \frac{1+z^{30}}{(1-z^{12})(1-z^{20})}.
+\]
+The quadratic relations must be imposed; simply counting monomials in three
+unrestricted generators overcounts the dimension.
+
+\paragraph{Additional character sectors.}
+One quaternion nontrivial character sector, one tetrahedral nontrivial
+character sector, and the octahedral sign sector are
+\[
+ \mathbb C[Q,R]\{U,V\},\qquad
+ \mathbb C[F,G]\{A,\overline A^{\,2}\},\qquad
+ \mathbb C[G,F^2]\{F,H\}.
+\]
+Their respective Hilbert numerators are $z^2+z^4$, $z^4+z^8$, and $z^6+z^{12}$,
+with the same denominators as the corresponding fixed sectors. The identities
+\[
+ A\overline A=G,\qquad
+ A^3=H+6i\sqrt3F^2,\qquad
+ \overline A^{\,3}=H-6i\sqrt3F^2
+\]
+show that $A$ and $\overline A^2$ have the same tetrahedral character.
+They are independent over $\mathbb C(F,G)$: otherwise
+$\overline A^2/A=G^2/(H+6i\sqrt3F^2)$ would make $H$ rational in $F,G$,
+whereas $G^3-108F^4$ is not a square in $\mathbb C(F,G)$.
+Similarly $(H/F)^2=(G^3-108(F^2)^2)/F^2$ has a simple pole along $F^2=0$,
+so $F,H$ are independent over $\mathbb C(G,F^2)$.
+The character Hilbert series then give spanning. For the finite data set,
+independence and the character-averaged dimension are additionally checked
+directly by exact arithmetic.
+
+\paragraph{Conversion to Dicke vectors.}
+For $p(x,y)=\sum_{r=0}^N p_rx^ry^{N-r}$ set
+\[
+ \langle p,q\rangle_N=\sum_{r=0}^N
+ \frac{\overline{p_r}q_r}{\binom Nr}.
+\]
+Weighted Gram--Schmidt over $\mathbb Q(i\sqrt3)$ produces orthogonal
+polynomials $p_1,\ldots,p_k$ with positive rational squared norms $h_i$.
+The corresponding orthonormal Dicke basis is
+\[
+ |u_i\rangle=\sum_{r=0}^N
+ \frac{(-1)^rp_{i,r}}{\sqrt{h_i\binom Nr}}\D Nr.
+\]
+This convention agrees with the homogeneous Majorana polynomial convention
+up to an irrelevant common phase.
+
+\paragraph{Exact verification including cross terms.}
+The $t$-qubit reduction of $|u_i\rangle\langle u_j|$, in the symmetric Dicke
+basis, has $(a,b)$ entry
+\[
+ \frac{(-1)^{a+b}\sqrt{\binom ta\binom tb}}{\sqrt{h_ih_j}}
+ \sum_{r=0}^{N-t}
+ \frac{p_{i,a+r}\overline{p_{j,b+r}}\binom{N-t}r}
+      {\binom N{a+r}\binom N{b+r}}.
+\]
+The AC-subspace condition is that this matrix equal
+$\delta_{ij}I_{t+1}/(t+1)$. All radicals outside the sum are nonzero and
+can be removed. Thus the exact condition checked is
+\[
+ \sum_{r=0}^{N-t}
+ \frac{p_{i,a+r}\overline{p_{j,b+r}}\binom{N-t}r}
+      {\binom N{a+r}\binom N{b+r}}
+ =\frac{\delta_{ij}\delta_{ab}h_i}{(t+1)\binom ta}.
+\]
+The program checks all ordered pairs $i,j$ and all entries $a,b$.
+It verifies 65 nonzero spaces and 11,896 reduction entries, including the
+first order at which each space fails. An independent checker instead uses
+the compressed spin moments $J_+^qJ_z^p$ and obtains the same orders.
+
+\paragraph{Compact examples improving catalogue lower bounds.}
+The following polynomial spans are particularly useful; normalized
+orthonormal Dicke coefficients are supplied in \texttt{bases.json}:
+\[
+\begin{array}{ccl}
+ (N,t,k)& &\text{polynomial span}\\ \hline
+ (20,2,2)&&\operatorname{span}\{F^2G,GH\},\\
+ (22,3,1)&&\operatorname{span}\{FG^2\},\\
+ (24,2,3)&&\operatorname{span}\{G^3,F^4,F^2H\},\\
+ (24,3,2)&&\operatorname{span}\{G^3,F^4\},\\
+ (42,2,4)&&\operatorname{span}\{F^3G^3,F^7,FG^3H,F^5H\},\\
+ (42,3,2)&&\operatorname{span}\{FG^3H,F^5H\}.
+\end{array}
+\]
+Each stated AC order is the exact order of the displayed entire subspace;
+each stated dimension is an attained lower bound on the unrestricted
+maximum.
+
+\paragraph{References.}
+The invariant construction and its guaranteed AC orders follow
+Pereira--Paul-Paddock, \href{https://arxiv.org/abs/1610.05841}{Anticoherent
+Subspaces}. The Hilbert-series interpretation follows Suter,
+\href{https://arxiv.org/abs/math/0503542}{Quantum affine Cartan matrices,
+Poincar\'e series of binary polyhedral groups, and reflection
+representations}. Explicit icosahedral forms, in a rotated sign convention,
+appear in Crass, \href{https://doi.org/10.3390/sym12010177}{Critically-Finite
+Dynamics on the Icosahedron}. No maximality claim from the older
+first-order AC-subspace corollary is used.
+\end{document}

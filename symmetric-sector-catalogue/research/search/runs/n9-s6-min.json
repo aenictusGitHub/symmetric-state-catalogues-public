@@ -1,0 +1,490 @@
+{
+  "n": 9,
+  "k": 6,
+  "mode": "min",
+  "value": 38.18181818181506,
+  "coefficients": [
+    [
+      0.7550902807294267,
+      2.991652250270841e-18
+    ],
+    [
+      0.06954411446344186,
+      0.005300107957352404
+    ],
+    [
+      -0.0072081482553745125,
+      0.027497346012918773
+    ],
+    [
+      -0.0029896591799104567,
+      -0.0033332297161081945
+    ],
+    [
+      0.0005434865832096027,
+      6.556348033586137e-05
+    ],
+    [
+      0.0018578240216950263,
+      7.963336871105217e-05
+    ],
+    [
+      0.012415502802484631,
+      -0.01505915166576818
+    ],
+    [
+      -0.031093672676323392,
+      -0.14159424684964447
+    ],
+    [
+      -0.5591960959918129,
+      -0.2740026924965464
+    ],
+    [
+      -0.12077324454731317,
+      -0.019537902943518586
+    ]
+  ],
+  "sectorVector": [
+    1.0000000000000004,
+    0.7598034674844847,
+    24.694214978341492,
+    23.207791156318137,
+    63.52066151510428,
+    70.58589246847077,
+    38.18181818181802,
+    39.487263496120704,
+    128.60330532473654,
+    121.95924941160558
+  ],
+  "gradientNorm": 2.8512029734576193e-06,
+  "optimizerSuccess": true,
+  "optimizerMessage": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+  "seed": 20261028,
+  "starts": 60,
+  "history": [
+    {
+      "start": 0,
+      "value": 38.181818181816425,
+      "success": false,
+      "nit": 24,
+      "gradientNorm": 8.091879689587432e-06
+    },
+    {
+      "start": 1,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 4.527107963538073e-07
+    },
+    {
+      "start": 2,
+      "value": 38.1818181818162,
+      "success": false,
+      "nit": 24,
+      "gradientNorm": 7.792469203738839e-07
+    },
+    {
+      "start": 3,
+      "value": 38.18181818181574,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 7.814595376598442e-06
+    },
+    {
+      "start": 4,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 9.509554115130995e-06
+    },
+    {
+      "start": 5,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 1.7406986067147615e-06
+    },
+    {
+      "start": 6,
+      "value": 38.18181818181711,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.6727826686203582e-06
+    },
+    {
+      "start": 7,
+      "value": 38.18181818181711,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 5.923778596359055e-07
+    },
+    {
+      "start": 8,
+      "value": 38.18181818181688,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.6238879944764271e-06
+    },
+    {
+      "start": 9,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 2.131912499226182e-06
+    },
+    {
+      "start": 10,
+      "value": 38.18181818181915,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 1.7722457387081844e-06
+    },
+    {
+      "start": 11,
+      "value": 38.181818181816425,
+      "success": false,
+      "nit": 24,
+      "gradientNorm": 8.017966952722897e-06
+    },
+    {
+      "start": 12,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 4.7978860758271385e-06
+    },
+    {
+      "start": 13,
+      "value": 38.18181818181506,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 2.8512029734576193e-06
+    },
+    {
+      "start": 14,
+      "value": 38.1818181818187,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 3.5947747960830026e-07
+    },
+    {
+      "start": 15,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 1.1316942310520711e-05
+    },
+    {
+      "start": 16,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 1.1186890513124823e-05
+    },
+    {
+      "start": 17,
+      "value": 38.181818181818926,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 3.777815764031875e-06
+    },
+    {
+      "start": 18,
+      "value": 38.18181818181665,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 3.4710684487973083e-06
+    },
+    {
+      "start": 19,
+      "value": 38.1818181818187,
+      "success": true,
+      "nit": 21,
+      "gradientNorm": 3.4264156718855066e-06
+    },
+    {
+      "start": 20,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 1.0775177403304079e-05
+    },
+    {
+      "start": 21,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 2.944863374043572e-07
+    },
+    {
+      "start": 22,
+      "value": 38.18181818181665,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 8.2060083961403e-06
+    },
+    {
+      "start": 23,
+      "value": 38.181818181818244,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 1.1549227029147913e-05
+    },
+    {
+      "start": 24,
+      "value": 38.18181818181688,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 7.080588582934387e-06
+    },
+    {
+      "start": 25,
+      "value": 38.181818181817334,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 1.7721065294662294e-06
+    },
+    {
+      "start": 26,
+      "value": 38.18181818181847,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 4.651089451735311e-06
+    },
+    {
+      "start": 27,
+      "value": 38.181818181817334,
+      "success": true,
+      "nit": 32,
+      "gradientNorm": 4.4947884999874545e-06
+    },
+    {
+      "start": 28,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 6.338656336317158e-06
+    },
+    {
+      "start": 29,
+      "value": 38.18181818181711,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 3.047415696422631e-06
+    },
+    {
+      "start": 30,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 5.590334318016994e-06
+    },
+    {
+      "start": 31,
+      "value": 38.18181818181711,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 9.248463844754886e-06
+    },
+    {
+      "start": 32,
+      "value": 38.18181818181665,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 8.90750513075617e-06
+    },
+    {
+      "start": 33,
+      "value": 38.18181818181665,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 2.0686043130639106e-06
+    },
+    {
+      "start": 34,
+      "value": 38.181818181816425,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 2.6231717958923594e-06
+    },
+    {
+      "start": 35,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.458121168491829e-06
+    },
+    {
+      "start": 36,
+      "value": 38.181818181818244,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 2.5221048197461197e-06
+    },
+    {
+      "start": 37,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 6.103422908980022e-06
+    },
+    {
+      "start": 38,
+      "value": 38.18181818181756,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 3.729914111603577e-06
+    },
+    {
+      "start": 39,
+      "value": 38.181818181817334,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 1.8990744382302776e-05
+    },
+    {
+      "start": 40,
+      "value": 38.1818181818187,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 7.712462541888214e-06
+    },
+    {
+      "start": 41,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 3.3572008863139585e-06
+    },
+    {
+      "start": 42,
+      "value": 38.181818181818926,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 1.2750043882639476e-06
+    },
+    {
+      "start": 43,
+      "value": 38.181818181818244,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 1.0597834325667426e-06
+    },
+    {
+      "start": 44,
+      "value": 38.181818181818244,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.4106074346231217e-06
+    },
+    {
+      "start": 45,
+      "value": 38.181818181816425,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 2.0401167344098315e-06
+    },
+    {
+      "start": 46,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 1.1444469378365072e-06
+    },
+    {
+      "start": 47,
+      "value": 38.181818181818244,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 5.29120602806032e-06
+    },
+    {
+      "start": 48,
+      "value": 38.181818181818926,
+      "success": true,
+      "nit": 18,
+      "gradientNorm": 2.5866836027071915e-05
+    },
+    {
+      "start": 49,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 6.573690400399065e-06
+    },
+    {
+      "start": 50,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 5.271842316310213e-06
+    },
+    {
+      "start": 51,
+      "value": 38.18181818181847,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 4.901174769455961e-06
+    },
+    {
+      "start": 52,
+      "value": 38.18181818181915,
+      "success": true,
+      "nit": 21,
+      "gradientNorm": 1.917476824570017e-05
+    },
+    {
+      "start": 53,
+      "value": 38.181818181817334,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 7.635647801262133e-06
+    },
+    {
+      "start": 54,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 1.0474803823850528e-05
+    },
+    {
+      "start": 55,
+      "value": 38.18181818181802,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 7.375919749297662e-06
+    },
+    {
+      "start": 56,
+      "value": 38.18181818181711,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 1.0564824396374248e-05
+    },
+    {
+      "start": 57,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 6.790640995232339e-07
+    },
+    {
+      "start": 58,
+      "value": 38.181818181815515,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 1.596339644274497e-06
+    },
+    {
+      "start": 59,
+      "value": 38.18181818181779,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 2.584608831758051e-06
+    }
+  ],
+  "elapsed": 0.13995003700256348,
+  "status": "numerical",
+  "warning": "Numerical candidate; not a proof of global optimality."
+}

@@ -1,0 +1,206 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,longtable,hyperref}
+\geometry{margin=24mm}
+\newcommand{\D}[1]{|D_{19}^{(#1)}\rangle}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newtheorem{theorem}{Theorem}
+\title{An exact algebraic four-dimensional second-order anticoherent subspace at nineteen qubits}
+\author{Catalogue calculation}\date{30 October 2026}
+\begin{document}\maketitle
+The construction below is an exact isolated algebraic root definition with an explicit
+rational existence certificate. It does not assert a short formula in radicals.
+Every vector in the resulting four-dimensional complex span is second-order AC.
+
+\section{Compact analytical basis}
+For $j=0,\ldots,4$, define
+\[
+ a_j=\sqrt{\binom{19}{4j}}(A_j+iB_j),\qquad
+ b_j=\sqrt{\binom{19}{4j+1}}(C_j+iD_j),\qquad B_0=D_0=0,
+\]
+where the eighteen real coordinates are ordered as
+\begin{align*}
+(A_0,A_1,B_1,A_2,B_2,A_3,B_3,A_4,B_4)&=(x_1,\ldots,x_9),\\
+(C_0,C_1,D_1,C_2,D_2,C_3,D_3,C_4,D_4)&=(x_{10},\ldots,x_{18}).
+\end{align*}
+The exact definition of $x$ is given in Sections 2--3. Set
+\begin{align*}
+|u_1\rangle&=\sum_{j=0}^4a_j\D{4j},&
+|u_2\rangle&=\sum_{j=0}^4b_j\D{4j+1},\\
+|u_3\rangle&=\sum_{j=0}^4b_j\D{18-4j},&
+|u_4\rangle&=\sum_{j=0}^4a_j\D{19-4j}.
+\end{align*}
+These four vectors have disjoint residue-class supports modulo four.
+The reversal is unitary and contains no coefficientwise complex conjugation.
+
+\begin{theorem}
+The specified rational box contains a unique zero of the eighteen quadratic
+polynomials defined below. Its coordinates yield an orthonormal basis satisfying
+\[
+R_2(|u_a\rangle\langle u_b|)=\delta_{ab}\frac{I_3}{3},\qquad 1\le a,b\le4.
+\]
+Consequently the span is second-order AC, and $K(19,2)=4$.
+\end{theorem}
+
+\section{The exact quadratic equations}
+Write $c_{a,r}=\sqrt{\binom{19}{r}}\,\xi_{a,r}$ for the displayed coefficients.
+Thus $\xi_{1,4j}=A_j+iB_j$, $\xi_{2,4j+1}=C_j+iD_j$,
+$\xi_{3,18-4j}=C_j+iD_j$ and $\xi_{4,19-4j}=A_j+iB_j$;
+all other entries vanish. Define
+\[
+h_0(r)=1,\quad h_1(r)=19-2r,\quad
+h_2(r)=3(19-2r)^2-399.
+\]
+For the triples $(q,p)$ used in the table, put
+\[
+P_{ab}^{q,p}(x)=
+\sum_{r=q}^{19}\binom{19}{r}\,r^{\underline q}h_p(r)
+\overline{\xi_{a,r-q}}\xi_{b,r}
+-\delta_{q0}\delta_{p0}\delta_{ab}.
+\]
+Here $r^{\underline q}=r(r-1)\cdots(r-q+1)$, with value one for $q=0$.
+The equation $F_i=0$ is the listed real or imaginary part of $P_{ab}^{q,p}$:
+\[
+\begin{array}{c|ccccc}
+i&a&b&q&p&\text{part}\\\hline
+1 & 1 & 1 & 0 & 0 & \mathrm{real} \\
+2 & 2 & 2 & 0 & 0 & \mathrm{real} \\
+3 & 1 & 1 & 0 & 1 & \mathrm{real} \\
+4 & 2 & 2 & 0 & 1 & \mathrm{real} \\
+5 & 1 & 1 & 0 & 2 & \mathrm{real} \\
+6 & 2 & 2 & 0 & 2 & \mathrm{real} \\
+7 & 1 & 2 & 1 & 0 & \mathrm{real} \\
+8 & 1 & 2 & 1 & 0 & \mathrm{imaginary} \\
+9 & 2 & 3 & 1 & 0 & \mathrm{real} \\
+10 & 4 & 1 & 1 & 0 & \mathrm{real} \\
+11 & 1 & 2 & 1 & 1 & \mathrm{real} \\
+12 & 1 & 2 & 1 & 1 & \mathrm{imaginary} \\
+13 & 2 & 3 & 1 & 1 & \mathrm{imaginary} \\
+14 & 4 & 1 & 1 & 1 & \mathrm{imaginary} \\
+15 & 1 & 3 & 2 & 0 & \mathrm{real} \\
+16 & 1 & 3 & 2 & 0 & \mathrm{imaginary} \\
+17 & 3 & 1 & 2 & 0 & \mathrm{real} \\
+18 & 3 & 1 & 2 & 0 & \mathrm{imaginary} \\
+\end{array}
+\]
+These are explicitly specified quadratic polynomials with integer coefficients.
+The factor $\binom{19}{r}r^{\underline q}$ follows directly from normalized Dicke
+matrix elements of $J_+^q$.
+
+For $q=0$ and $p=0,1,2$, the resulting equations are respectively the Gram,
+$2J_z$ and $12J_z^2-399I$ compression conditions. The remaining cases are
+$(q,p)=(1,0),(1,1),(2,0)$, giving $J_+$, $2J_+J_z$ and $J_+^2$.
+Their adjoints give the lowering conditions. Together these are exactly
+normalization and vanishing tensor ranks one and two.
+
+Before linear redundancy removal, the prescribed support and reversal leave
+34 nonzero real equations. The certificate contains a rational $34\times18$
+reconstruction matrix expressing each original polynomial as a linear
+combination of the selected eighteen. Both the physical polynomial coefficients
+and this reconstruction are checked exactly. The independent verifier instead
+reconstructs every reduced-state polynomial directly from Dicke splitting and
+checks all 144 complex entries, including every off-diagonal basis pair.
+
+\section{Rational box and existence proof}
+Set $r_0=10^{-50}$ and $x_i^{(0)}=n_i/10^{70}$, where the integers $n_i$
+are listed in the appendix. The exact coordinate definition is the unique root
+of $F(x)=0$ in
+\[
+\mathcal B=\{x\in\mathbb R^{18}:|x_i-x_i^{(0)}|\le r_0\text{ for all }i\}.
+\]
+The certificate supplies an explicit rational matrix $A$ with denominator
+$10^{60}$. Integer arithmetic verifies, in the induced infinity norm,
+\begin{align*}
+\delta=\|I-AF'(x^{(0)})\|_\infty&<2\cdot10^{-55},\\
+\eta=\|AF(x^{(0)})\|_\infty&<5\cdot10^{-71},\\
+\|A\|_\infty&<3/10.
+\end{align*}
+For every $x\in\mathcal B$, the exact polynomial Hessians give
+\[
+\|F'(x)-F'(x^{(0)})\|_\infty
+\le181138248\,\|x-x^{(0)}\|_\infty.
+\]
+The map $G(x)=x-AF(x)$ is therefore a strict contraction on $\mathcal B$, with
+\[
+\operatorname{Lip}(G)<7\cdot10^{-43},\qquad
+\|G(x)-x^{(0)}\|_\infty<6\cdot10^{-71}<r_0.
+\]
+It maps the box strictly into itself. The contraction theorem supplies a unique
+fixed point. Since $\delta<1$, the square matrix $AF'(x^{(0)})$ and hence $A$
+are invertible. The fixed point consequently satisfies $F(x)=0$.
+Every coordinate is real algebraic: the invertible Jacobian makes this an
+isolated nonsingular root of an integer polynomial system. Decimal optimization
+was used only to locate the rational box; none of the proof inequalities relies
+on floating-point arithmetic.
+
+\section{Whole-span identity and optimal dimension}
+The moment conditions are equivalent to the full two-qubit cross identity.
+For a direct expression, define
+\[
+M(c)_{ab}=c_{a+b}\sqrt{\frac{\binom2a\binom{17}b}{\binom{19}{a+b}}},
+\quad0\le a\le2,\quad0\le b\le17.
+\]
+The independent certificate verifies $M(u_i)M(u_j)^\dagger=\delta_{ij}I_3/3$.
+Linearity now proves the identity for every normalized complex superposition.
+
+For the upper bound, couple physical spin $j=19/2$ to auxiliary spin $3/2$ and
+write $X=\mathbf J\cdot\mathbf S$. The second-order AC conditions give zero
+compression of
+\[
+W=X^2-\frac{15}{2}X-\frac{1995}{16}I
+\]
+on the $4k$-dimensional code--auxiliary space. On the four total-spin sectors
+$8,9,10,11$, only the spin-eight sector is positive; it has dimension 17, and
+there are no zero eigenvalues. Projection of an isotropic subspace into the
+positive eigenspace is injective. Thus $4k\le17$, giving $k\le4$.
+The displayed basis attains this bound, proving $K(19,2)=4$ without restricting
+the symmetry of a competing subspace.
+
+\section{Relation to the numerical source and Majorana points}
+The source is \texttt{\(\Pi\)\_19\_4\_2} in the supplied \texttt{ACLiege.jl},
+line 1006. Its span has approximately one vector in each residue class modulo
+four. A common coefficient rephasing $c_r\mapsto e^{i\beta r}c_r$,
+$\beta\simeq0.020395581511200894$, makes the paired residue vectors related by
+unitary reversal up to individual phases. Refinement of this structure produces
+the isolated algebraic root above. The refined projector differs from the
+rotated source projector by $3.76\cdot10^{-8}$ in Frobenius norm. This is an
+approximate association with the supplied decimal subspace, not an assertion
+that the rounded source already satisfies exact identities.
+
+The four Majorana polynomials reduce to quartics in $z^4$ times an explicit
+power of $z$. Exact rational interval estimates and disjoint Rouch\'e disks
+certify all sixteen reduced roots as simple and nonzero. The multiplicity
+patterns are $(3,1^{16})$ for $u_1,u_4$ and $(2,1^{17})$ for $u_2,u_3$.
+Their numerical coordinates reconstruct the state rays to less than
+$1.2\cdot10^{-15}$. These are properties of the chosen basis representatives,
+not constellations of the full four-dimensional subspace.
+
+\appendix\section{Exact center numerators}
+All entries have common denominator $10^{70}$. They define the box, not the
+algebraic root itself.
+{\scriptsize
+\begin{longtable}{r|r}
+i&n_i\\\hline
+1 & 4291256405878055156282314634547861427979220094757699665120090204232617 \\
+2 & -33403743290029659862230629603920758886371636037308289756601292022702 \\
+3 & 9286452461006488056330409251798418783587222115934851191894963828098 \\
+4 & -5225798200773107665673406364103769277465079282511927315613140169612 \\
+5 & -19301092704014119073796814747460504928080621569302022539128686709246 \\
+6 & -16815208565591816582138855416319178081433842169200896779507296881748 \\
+7 & -1859347921660105387171264520156560634372276895955762161928623414220 \\
+8 & 102508475707419101112407734202129538007790953632166242317018315249144 \\
+9 & -151024968462427430345361080359081266605406391146222878545114079643221 \\
+10 & 971387704479272983962329833995547339634441471688729989604032800569841 \\
+11 & -28057426574450962205245346076324857905998642734238630969102319918354 \\
+12 & -33824453079610240780609723472867009655839610826623582844498397024739 \\
+13 & -5962445703294221169600092178690019470723325501597045975184766308450 \\
+14 & 9136760453529342792627321184905574395292792392759686855533982183605 \\
+15 & 31179359891046315480697005725986116066482343969177461969109788812489 \\
+16 & -1312989377740439525583823548920649516725029788244065264526473257950 \\
+17 & 241420505162928586308905175120113510060537141983884608679991329098025 \\
+18 & -267419905258932840961826849307769699123163320347564966574538171275315 \\
+\end{longtable}}
+The machine-readable files \texttt{basis.json} and \texttt{certificate.json}
+contain the same expressions, intervals, complete polynomials, reconstruction
+matrix and rational approximate inverse. The two verifiers use independently
+constructed moment and reduced-state polynomial systems.
+\end{document}

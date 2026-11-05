@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{The next auxiliary-spin upper bound: third-order AC subspaces}
+\author{}\date{}\maketitle
+\begin{theorem}
+If $N\ge6$ and $\mathcal C$ is a $k$-dimensional symmetric $N$-qubit
+subspace of AC order at least three, then
+\[
+ \boxed{7k\le N+7.}
+\]
+This is an unrestricted upper bound. No reality, sparsity or symmetry
+assumption on the subspace is made.
+\end{theorem}
+\begin{proof}
+Put $j=N/2$, and let $S_a$ be the spin-three matrices on an auxiliary
+seven-dimensional space. Set $X=\sum_aJ_a\otimes S_a$. If $P$ projects
+onto the AC3 subspace, compression of a polynomial of degree at most
+three in the physical spin matrices agrees with its normalized physical
+trace times $P$.
+This is a whole-code operator identity: polarization of the vanishing
+rank-$1,2,3$ expectations gives $PT_{\ell m}P=0$ on every code
+matrix element. Every ordered product of at most three $J_a$ decomposes
+into tensor ranks at most three. Expanding $X^q$ as a sum of ordered
+physical products tensored with ordered auxiliary products therefore
+justifies the identities below on the full tensor-product code, including
+arbitrary superpositions entangled with the auxiliary space. In particular,
+\[
+ (P\otimes I)X(P\otimes I)=0,
+\]
+\[
+ (P\otimes I)X^2(P\otimes I)=4j(j+1)P\otimes I,
+ \quad
+ (P\otimes I)X^3(P\otimes I)=-2j(j+1)P\otimes I.
+\]
+The cubic identity follows from
+$\operatorname{tr}(J_aJ_bJ_c)/(2j+1)=ij(j+1)\epsilon_{abc}/6$
+and $\sum\epsilon_{abc}S_aS_bS_c=i\,3(3+1)I$.
+
+Define
+\begin{align*}
+ F(X)&=(X+2j+5)(X+j+6)(X-2j+3),\\
+ C_j&=15(2j^2+3j+6),\qquad W=F(X)-C_jI.
+\end{align*}
+Equivalently,
+\[
+ W=X^3+(j+14)X^2+(-4j^2+4j+63)X
+      -2j(j+1)(2j+27)I.
+\]
+The three identities above show that $W$ has zero compression on
+$\mathcal C\otimes V_3$.
+
+In the total-spin sector $j+r$, $r=-3,-2,\ldots,3$, the eigenvalue of $X$
+is
+\[
+ x_r=jr+\frac{r(r+1)}2-6.
+\]
+The corresponding eigenvalues of $W$ are
+\[
+\begin{array}{c|c}
+ r& W(x_r)\\\hline
+ -3&-5(j+1)(2j^2-3j+18)\\
+ -2&-15(2j^2+3j+6)\\
+ -1&-15(2j^2+3j+6)\\
+ 0&-2(2j+15)(j^2+j+3)\\
+ 1&-3(2j^3+15j^2+17j+30)\\
+ 2&-15(2j^2+3j+6)\\
+ 3&5j(4j^2+16j+27).
+\end{array}
+\]
+All entries below the highest-spin sector are strictly negative, and the
+highest entry is strictly positive. Indeed
+$2j^2-3j+18=2(j-3/4)^2+135/8>0$.
+Projection of the totally isotropic space $\mathcal C\otimes V_3$ into
+the positive eigenspace is injective. The former has dimension $7k$,
+and the latter is the spin-$(j+3)$ sector of dimension $N+7$.
+\end{proof}
+
+Combining this theorem with the rectangular-tensor bound gives
+\[
+ K(N,3)\le\min\left\{\left\lfloor\frac N6\right\rfloor,
+                  \left\lfloor\frac{N+7}{7}\right\rfloor\right\},
+ \qquad N\ge6,
+\]
+with the known exact saturation exclusions for the first term retained.
+For example, at $N=55$ the old upper bound nine becomes eight.
+No currently displayed catalogue entry (whose largest size is 42) is
+improved by this third-order inequality alone.
+
+This extends the already proved auxiliary-spin sequence
+$3k\le N+3$ at order one and $5k\le N+5$ at order two.
+It does not establish a general rule for higher orders, nor does it
+establish attainment of the new upper bound.
+\end{document}

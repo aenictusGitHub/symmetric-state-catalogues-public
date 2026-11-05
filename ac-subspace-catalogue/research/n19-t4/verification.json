@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "n": 19,
+  "t": 4,
+  "exactAchievedOrder": 4,
+  "probabilities": {
+    "0": "97/800",
+    "6": "1083/2560",
+    "10": "133/12800",
+    "14": "741/2560",
+    "18": "399/2560"
+  },
+  "exactDiagonalMoments": [
+    {
+      "power": 0,
+      "value": "1"
+    },
+    {
+      "power": 1,
+      "value": "19/2"
+    },
+    {
+      "power": 2,
+      "value": "247/2"
+    },
+    {
+      "power": 3,
+      "value": "1805"
+    },
+    {
+      "power": 4,
+      "value": "281333/10"
+    }
+  ],
+  "reductions": [
+    {
+      "t": 1,
+      "identityVerified": true,
+      "entriesChecked": 4,
+      "frobeniusDistanceSquared": "0"
+    },
+    {
+      "t": 2,
+      "identityVerified": true,
+      "entriesChecked": 9,
+      "frobeniusDistanceSquared": "0"
+    },
+    {
+      "t": 3,
+      "identityVerified": true,
+      "entriesChecked": 16,
+      "frobeniusDistanceSquared": "0"
+    },
+    {
+      "t": 4,
+      "identityVerified": true,
+      "entriesChecked": 25,
+      "frobeniusDistanceSquared": "0"
+    }
+  ],
+  "exactReducedMatrixEntriesChecked": 54,
+  "fifthOrderFrobeniusDistanceSquared": "8742251/10653696000",
+  "fifthRawMomentDifference": "-10773/5",
+  "method": "Independent full normalized-Dicke splitting; exact fractions and square-free radicals, standard library only. All reduced matrix entries through order5 computed.",
+  "scope": "Exact existence of a fourth-order AC line. Does not assert that AC4 is the highest order possible on19 qubits, or that its one-dimensional span is the largest AC4 subspace.",
+  "exactSourceCoefficientIdentitiesChecked": 20,
+  "sourceBasisSHA256": "d8688cfa4c1ee835ca31c109e96ae58b2c7f1e74cf0471391d88eaba74b0e40c"
+}

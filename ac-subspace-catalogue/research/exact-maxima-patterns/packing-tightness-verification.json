@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "classification": {
+    "t1": [
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    "t2": [
+      [
+        7,
+        2
+      ]
+    ],
+    "t3": [
+      [
+        6,
+        1
+      ]
+    ],
+    "t4": []
+  },
+  "meaning": "Equality in unrounded rectangular-tensor bounds, not in rounded integer upper bounds.",
+  "cutoffs": {
+    "t1": 6,
+    "t2": 15,
+    "t3": 42,
+    "t4": 80
+  },
+  "t2CandidateChecks": [
+    {
+      "n": 3,
+      "k": 1,
+      "notExcludedByCitedExactTheorems": false
+    },
+    {
+      "n": 7,
+      "k": 2,
+      "notExcludedByCitedExactTheorems": true
+    },
+    {
+      "n": 11,
+      "k": 3,
+      "notExcludedByCitedExactTheorems": false
+    },
+    {
+      "n": 15,
+      "k": 4,
+      "notExcludedByCitedExactTheorems": false
+    }
+  ],
+  "t3CandidateChecks": [
+    {
+      "n": 6,
+      "admissibleChannelRoots": [
+        4
+      ],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 12,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 18,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 24,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 30,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 36,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    },
+    {
+      "n": 42,
+      "admissibleChannelRoots": [],
+      "direct6jAndPellAgree": true
+    }
+  ],
+  "t4CandidateChecks": [
+    {
+      "n": 8,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 17,
+      "admissibleChannelRoots": [
+        16
+      ],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 26,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 35,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 44,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 53,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 62,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 71,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    },
+    {
+      "n": 80,
+      "admissibleChannelRoots": [],
+      "direct6jAndRationalPolynomialAgree": true
+    }
+  ],
+  "n17Exclusion": {
+    "proof": "../n17-t4/proof.tex",
+    "rankSixteenProjectorLiftArithmeticChecked": true,
+    "pure32QubitOrder15Contradiction": "64>33"
+  },
+  "attainingWitnessChecks": [
+    {
+      "n": 2,
+      "t": 1,
+      "k": 1,
+      "allOrderedSpinWordCompressionsExact": true,
+      "wordCount": 3
+    },
+    {
+      "n": 4,
+      "t": 1,
+      "k": 2,
+      "allOrderedSpinWordCompressionsExact": true,
+      "wordCount": 3
+    },
+    {
+      "n": 6,
+      "t": 1,
+      "k": 3,
+      "allOrderedSpinWordCompressionsExact": true,
+      "wordCount": 3
+    },
+    {
+      "n": 7,
+      "t": 2,
+      "k": 2,
+      "allOrderedSpinWordCompressionsExact": true,
+      "wordCount": 12
+    },
+    {
+      "n": 6,
+      "t": 3,
+      "k": 1,
+      "allOrderedSpinWordCompressionsExact": true,
+      "wordCount": 39
+    }
+  ],
+  "strictCorollaries": [
+    "6K(N,3)<=N-1 for N>=7",
+    "9K(N,4)<=N for N>=4"
+  ],
+  "importsCatalogueBounds": false
+}

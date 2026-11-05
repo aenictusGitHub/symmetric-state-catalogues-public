@@ -1,0 +1,180 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Prescribed-moment partitions and overlapping radical compressions}
+\author{}\date{}\maketitle
+Put $j=N/2$ and $c=j(j+1)/3$. Let $S\subset\{-j,-j+1,\ldots,j\}$
+be a set with pairwise distances at least three. On the Dicke coordinate
+space supported on $S$, all spin operators shifting the magnetic quantum
+number by one or two have zero compression. Hence a matrix $Q$ whose
+columns are supported there is an orthonormal AC2 basis precisely when
+\[
+ Q^*Q=I,\qquad Q^*DQ=0,\qquad Q^*(D^2-cI)Q=0,
+ \qquad D=\operatorname{diag}(m:m\in S).
+\]
+These equations include every cross condition, not only the individual
+vectors' moments.
+
+\section*{Disjoint convex blocks}
+For a block $B\subset S$, nonnegative probabilities $w_m$ give the required
+moments exactly when
+\[
+ \sum_{m\in B}w_m(m,m^2)=(0,c),\qquad\sum_{m\in B}w_m=1.
+\]
+Disjoint blocks therefore produce orthogonal AC2 vectors
+$\sum_{m\in B}\sqrt{w_m}\,|j,m\rangle$. A three-point block with distinct
+nodes $a,b,d$ has the unique rational weights
+\[
+ w_a=\frac{c+bd}{(a-b)(a-d)},\quad
+ w_b=\frac{c+ad}{(b-a)(b-d)},\quad
+ w_d=\frac{c+ab}{(d-a)(d-b)}.
+\]
+A two-point block exists precisely when $ab=-c$; its weights are
+$w_a=-b/(a-b)$ and $w_b=a/(a-b)$.
+
+Let $M=|S|$, let $d$ be the Tukey depth of $(0,c)$ in the planar set
+$\{(m,m^2):m\in S\}$, and let $p$ be the number of pairs with $ab=-c$.
+Those pairs are automatically disjoint, since each nonzero node has a
+unique possible partner.
+\begin{proposition}
+The largest number of disjoint prescribed-moment blocks on this fixed
+support set is
+\[
+ \min\left\{d,\left\lfloor\frac{M+p}{3}\right\rfloor\right\}.
+\]
+\end{proposition}
+\begin{proof}
+Carath\'eodory's theorem reduces each block to a pair or triangle; singletons
+cannot represent $(0,c)$ because $c>0$. At most $p$ blocks are pairs, giving
+$3k-p\le M$. Each block meets every generic halfplane through the target,
+giving $k\le d$. Conversely, remove all $p$ pairs. Each pair contributes
+exactly one point to every generic halfplane through the target, so the
+remaining depth is $d-p$. The remaining moment points together with the
+target are in general position. The prescribed planar Tverberg theorem
+(\cite[Theorem 7]{hp}) supplies
+$\min\{d-p,\lfloor(M-2p)/3\rfloor\}$ disjoint triangles. Restoring the
+pairs attains the upper bound.
+\end{proof}
+This is a theorem about fixed disjoint support blocks. It is not an
+unrestricted bound on AC2 subspaces.
+
+\section*{Allowing overlaps: an exact radical prescription}
+Overlapping columns can do better than disjoint blocks. Choose a rational
+$\varepsilon$ such that
+\[
+ a_m=m+\varepsilon(m^2-c)\ne0\quad(m\in S),\qquad b_m=m^2-c.
+\]
+Use $\varepsilon=0$ if $0\notin S$; otherwise any sufficiently small
+nonzero rational number works. Sort the ratios $b_m/a_m$ separately over
+the positive and negative $a_m$:
+\[
+ \alpha_1<\cdots<\alpha_u,\qquad\beta_1<\cdots<\beta_v.
+\]
+\begin{proposition}
+There is a $k$-dimensional AC2 subspace on this fixed support set if and
+only if $k\le\min(u,v)$ and
+\[
+ \max(\alpha_i,\beta_i)\le
+ \min(\alpha_{u-k+i},\beta_{v-k+i}),\qquad1\le i\le k.
+\]
+When these rational inequalities hold, its basis can be constructed by
+field operations and square roots only.
+\end{proposition}
+\begin{proof}
+A zero compression of the first diagonal form is injective into its
+positive and negative coordinate sectors. After a change of code basis,
+every such subspace has a spanning matrix
+\[
+ F=\begin{pmatrix}A_+^{-1/2}U\\(-A_-)^{-1/2}V\end{pmatrix},
+ \qquad U^*U=V^*V=I_k.
+\]
+The second form has zero compression if and only if
+\[
+ U^*\operatorname{diag}(\alpha)U
+ =V^*\operatorname{diag}(\beta)V.
+\]
+The Fan--Pall theorem \cite{fanpall} characterizes the possible sorted
+compression eigenvalues $\lambda_i$ by
+$\alpha_i\le\lambda_i\le\alpha_{u-k+i}$ and the analogous inequalities
+for $\beta$. Their intersection is exactly the displayed criterion. One
+can take the rational values $\lambda_i=\max(\alpha_i,\beta_i)$.
+
+For completeness, the isometries can be realized by successive
+codimension-one compressions. If rational spectra
+$x_1<\cdots<x_m$ and $y_1<\cdots<y_{m-1}$ interlace strictly, put
+\[
+ z_i^2=\frac{\prod_{r=1}^{m-1}(x_i-y_r)}{
+                  \prod_{s\ne i}(x_i-x_s)}.
+\]
+These numbers are positive and sum to one. The normalized vectors with
+coordinates $z_i/(x_i-y_r)$ form an isometry whose compression spectrum
+is $y$. Shared eigenvalues are retained as coordinate vectors, leaving a
+strict interlacing problem. To compress directly to a rational spectrum
+$\lambda_1<\cdots<\lambda_k$, choose a first intermediate spectrum
+\[
+ y_i=\begin{cases}
+ x_i,&i\le m-1-k,\\
+ \max\{x_i,\lambda_{i-(m-1-k)}\},&i>m-1-k,
+ \end{cases}
+\]
+and iterate. Interlacing holds at each stage. Finally apply ordinary
+Gram--Schmidt to $F$. This uses only arithmetic and square roots and
+preserves both zero-compression equations. Since the chosen first form
+is $D+\varepsilon(D^2-cI)$, the original first and second moment equations
+follow.
+\end{proof}
+The implementation \texttt{geometry\_graph.py} follows this prescription.
+For $N=12$, $S=\{6,3,0,-3,-6\}$, it constructs dimension two even though
+no two nodes have product $-14$: disjoint blocks on these five nodes have
+dimension at most one. Similarly, for $N=21$ the eight nodes
+$10.5,7.5,\ldots,-10.5$ support dimension three, whereas disjoint blocks
+have dimension at most two. These examples illustrate an improvement of
+the partition ansatz, not a new unrestricted catalogue lower bound.
+
+\section*{A sharp asymptotic limitation of all globally separated supports}
+The following argument also covers overlapping supports and nonuniform
+choices of $S$. It was derived independently of the finite search.
+\begin{proposition}
+Any AC2 subspace contained in Dicke levels with global spacing at least
+three satisfies
+\[
+ k\le\left\lceil\frac N9\right\rceil.
+\]
+\end{proposition}
+\begin{proof}
+For a sufficiently small positive $\delta$, consider
+\[
+ q_\delta(m)=(m+j+\delta)
+              \left(m-\frac{c}{j+\delta}\right).
+\]
+Its compression is zero, since its constant term is $-c$ and the code
+has first moment zero and second moment $c$. Its first factor is strictly
+positive on $[-j,j]$. Choose $\delta$ small enough that its second root
+meets no support point, and that the positive support points are exactly
+those with $m\ge c/j=(j+1)/3$. The associated diagonal form is strictly
+negative on all other support coordinates. Projection of a totally
+isotropic subspace into its positive eigenspace is injective. Thus $k$
+is at most the number of support levels in $[(j+1)/3,j]$. That interval
+has length $(N-1)/3$ and its levels are separated by at least three, so
+\[
+ k\le\left\lfloor\frac{N-1}{9}\right\rfloor+1
+ =\left\lceil\frac N9\right\rceil.
+\]
+\end{proof}
+Consequently, this mechanism cannot asymptotically surpass the previously
+proved four-band $N/8$ construction. Improving that rate requires
+admitting nearby Dicke levels and satisfying their off-diagonal cross
+conditions by cancellation or another mechanism.
+
+\begin{thebibliography}{9}
+\bibitem{fanpall} K. Fan and G. Pall,
+\emph{Imbedding Conditions for Hermitian and Normal Matrices},
+Canadian Journal of Mathematics 9 (1957), 298--304.
+\href{https://doi.org/10.4153/CJM-1957-036-1}{doi:10.4153/CJM-1957-036-1}.
+\bibitem{hp} S. Har-Peled and T. Zhou,
+\emph{Improved Approximation Algorithms for Tverberg Partitions},
+ESA 2021, Article 51.
+\href{https://doi.org/10.4230/LIPIcs.ESA.2021.51}{doi:10.4230/LIPIcs.ESA.2021.51}.
+\end{thebibliography}
+\end{document}

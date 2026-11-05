@@ -1,0 +1,1340 @@
+{
+  "examples": [
+    {
+      "n": 25,
+      "k": 3,
+      "t": 2,
+      "h": 7,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            7,
+            14,
+            21
+          ],
+          "weights": [
+            "74/441",
+            "59/294",
+            "13/42",
+            "142/441"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            9,
+            16,
+            23
+          ],
+          "weights": [
+            "11/49",
+            "27/98",
+            "27/98",
+            "11/49"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            11,
+            18,
+            25
+          ],
+          "weights": [
+            "142/441",
+            "13/42",
+            "59/294",
+            "74/441"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "325600/7203",
+            "2924748/2401",
+            "772200/343",
+            "3161488/7203"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "3161488/7203",
+            "772200/343",
+            "2924748/2401",
+            "325600/7203"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "k": 4,
+      "t": 2,
+      "h": 9,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            9,
+            18,
+            27
+          ],
+          "weights": [
+            "19/108",
+            "53/324",
+            "101/324",
+            "113/324"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            11,
+            20,
+            29
+          ],
+          "weights": [
+            "203/972",
+            "77/324",
+            "31/108",
+            "259/972"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            13,
+            22,
+            31
+          ],
+          "weights": [
+            "259/972",
+            "31/108",
+            "77/324",
+            "203/972"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            15,
+            24,
+            33
+          ],
+          "weights": [
+            "113/324",
+            "101/324",
+            "53/324",
+            "19/108"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "169708/2187",
+            "5162465/2187",
+            "10410575/1458",
+            "29706005/13122"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "8149435/13122",
+            "2389387/486",
+            "2389387/486",
+            "8149435/13122"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "29706005/13122",
+            "10410575/1458",
+            "5162465/2187",
+            "169708/2187"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 41,
+      "k": 5,
+      "t": 2,
+      "h": 11,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            11,
+            22,
+            33
+          ],
+          "weights": [
+            "397/2178",
+            "50/363",
+            "38/121",
+            "797/2178"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            13,
+            24,
+            35
+          ],
+          "weights": [
+            "443/2178",
+            "25/121",
+            "107/363",
+            "643/2178"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            15,
+            26,
+            37
+          ],
+          "weights": [
+            "175/726",
+            "94/363",
+            "94/363",
+            "175/726"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            17,
+            28,
+            39
+          ],
+          "weights": [
+            "643/2178",
+            "107/363",
+            "25/121",
+            "443/2178"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            19,
+            30,
+            41
+          ],
+          "weights": [
+            "797/2178",
+            "38/121",
+            "50/363",
+            "397/2178"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "144214220/1185921",
+            "56550000/14641",
+            "255865248/14641",
+            "8537766860/1185921"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "38297350/43923",
+            "124362000/14641",
+            "1778254400/131769",
+            "41634250/14641"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "41634250/14641",
+            "1778254400/131769",
+            "124362000/14641",
+            "38297350/43923"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "8537766860/1185921",
+            "255865248/14641",
+            "56550000/14641",
+            "144214220/1185921"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "k": 6,
+      "t": 2,
+      "h": 13,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            13,
+            26,
+            39
+          ],
+          "weights": [
+            "1139/6084",
+            "241/2028",
+            "641/2028",
+            "2299/6084"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            15,
+            28,
+            41
+          ],
+          "weights": [
+            "409/2028",
+            "123/676",
+            "203/676",
+            "641/2028"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            17,
+            30,
+            43
+          ],
+          "weights": [
+            "1387/6084",
+            "473/2028",
+            "553/2028",
+            "1619/6084"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            19,
+            32,
+            45
+          ],
+          "weights": [
+            "1619/6084",
+            "553/2028",
+            "473/2028",
+            "1387/6084"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            21,
+            34,
+            47
+          ],
+          "weights": [
+            "641/2028",
+            "203/676",
+            "123/676",
+            "409/2028"
+          ]
+        },
+        {
+          "indices": [
+            10,
+            23,
+            36,
+            49
+          ],
+          "weights": [
+            "2299/6084",
+            "641/2028",
+            "241/2028",
+            "1139/6084"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "45653398/257049",
+            "326814075/57122",
+            "2074030497/57122",
+            "1510500475/85683"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "613232923/514098",
+            "369902082/28561",
+            "1709143275/57122",
+            "2186600353/257049"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "617527075/171366",
+            "616256564/28561",
+            "616256564/28561",
+            "617527075/171366"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "2186600353/257049",
+            "1709143275/57122",
+            "369902082/28561",
+            "613232923/514098"
+          ]
+        },
+        {
+          "fromRow": 4,
+          "toRow": 5,
+          "squaredLengths": [
+            "1510500475/85683",
+            "2074030497/57122",
+            "326814075/57122",
+            "45653398/257049"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "k": 7,
+      "t": 2,
+      "h": 15,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            15,
+            30,
+            45
+          ],
+          "weights": [
+            "43/225",
+            "47/450",
+            "143/450",
+            "29/75"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            17,
+            32,
+            47
+          ],
+          "weights": [
+            "136/675",
+            "73/450",
+            "137/450",
+            "224/675"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            19,
+            34,
+            49
+          ],
+          "weights": [
+            "149/675",
+            "19/90",
+            "127/450",
+            "193/675"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            21,
+            36,
+            51
+          ],
+          "weights": [
+            "56/225",
+            "113/450",
+            "113/450",
+            "56/225"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            23,
+            38,
+            53
+          ],
+          "weights": [
+            "193/675",
+            "127/450",
+            "19/90",
+            "149/675"
+          ]
+        },
+        {
+          "indices": [
+            10,
+            25,
+            40,
+            55
+          ],
+          "weights": [
+            "224/675",
+            "137/450",
+            "73/450",
+            "136/675"
+          ]
+        },
+        {
+          "indices": [
+            12,
+            27,
+            42,
+            57
+          ],
+          "weights": [
+            "29/75",
+            "143/450",
+            "47/450",
+            "43/225"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "12444544/50625",
+            "133918792/16875",
+            "126322768/1875",
+            "617951488/16875"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "1783232/1125",
+            "1370356/75",
+            "13014452/225",
+            "67787776/3375"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "45992128/10125",
+            "21130774/675",
+            "50831242/1125",
+            "20578432/2025"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "20578432/2025",
+            "50831242/1125",
+            "21130774/675",
+            "45992128/10125"
+          ]
+        },
+        {
+          "fromRow": 4,
+          "toRow": 5,
+          "squaredLengths": [
+            "67787776/3375",
+            "13014452/225",
+            "1370356/75",
+            "1783232/1125"
+          ]
+        },
+        {
+          "fromRow": 5,
+          "toRow": 6,
+          "squaredLengths": [
+            "617951488/16875",
+            "126322768/1875",
+            "133918792/16875",
+            "12444544/50625"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 65,
+      "k": 8,
+      "t": 2,
+      "h": 17,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            17,
+            34,
+            51
+          ],
+          "weights": [
+            "2021/10404",
+            "19/204",
+            "369/1156",
+            "4093/10404"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            19,
+            36,
+            53
+          ],
+          "weights": [
+            "2101/10404",
+            "169/1156",
+            "1067/3468",
+            "3581/10404"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            21,
+            38,
+            55
+          ],
+          "weights": [
+            "751/3468",
+            "667/3468",
+            "59/204",
+            "349/1156"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            23,
+            40,
+            57
+          ],
+          "weights": [
+            "2477/10404",
+            "803/3468",
+            "305/1156",
+            "2773/10404"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            25,
+            42,
+            59
+          ],
+          "weights": [
+            "2773/10404",
+            "305/1156",
+            "803/3468",
+            "2477/10404"
+          ]
+        },
+        {
+          "indices": [
+            10,
+            27,
+            44,
+            61
+          ],
+          "weights": [
+            "349/1156",
+            "59/204",
+            "667/3468",
+            "751/3468"
+          ]
+        },
+        {
+          "indices": [
+            12,
+            29,
+            46,
+            63
+          ],
+          "weights": [
+            "3581/10404",
+            "1067/3468",
+            "169/1156",
+            "2101/10404"
+          ]
+        },
+        {
+          "indices": [
+            14,
+            31,
+            48,
+            65
+          ],
+          "weights": [
+            "4093/10404",
+            "369/1156",
+            "19/204",
+            "2021/10404"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "2207982920/6765201",
+            "51613614/4913",
+            "19223525475/167042",
+            "918981312067/13530402"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "342393667/167042",
+            "4083390675/167042",
+            "8983959677/88434",
+            "6804992205/167042"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "2836846175/501126",
+            "64094836069/1503378",
+            "410555925/4913",
+            "1930715115/83521"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "82266671417/6765201",
+            "5271795375/83521",
+            "5271795375/83521",
+            "82266671417/6765201"
+          ]
+        },
+        {
+          "fromRow": 4,
+          "toRow": 5,
+          "squaredLengths": [
+            "1930715115/83521",
+            "410555925/4913",
+            "64094836069/1503378",
+            "2836846175/501126"
+          ]
+        },
+        {
+          "fromRow": 5,
+          "toRow": 6,
+          "squaredLengths": [
+            "6804992205/167042",
+            "8983959677/88434",
+            "4083390675/167042",
+            "342393667/167042"
+          ]
+        },
+        {
+          "fromRow": 6,
+          "toRow": 7,
+          "squaredLengths": [
+            "918981312067/13530402",
+            "19223525475/167042",
+            "51613614/4913",
+            "2207982920/6765201"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 73,
+      "k": 9,
+      "t": 2,
+      "h": 19,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            19,
+            38,
+            57
+          ],
+          "weights": [
+            "1279/6498",
+            "91/1083",
+            "347/1083",
+            "2591/6498"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            21,
+            40,
+            59
+          ],
+          "weights": [
+            "439/2166",
+            "48/361",
+            "112/361",
+            "767/2166"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            23,
+            42,
+            61
+          ],
+          "weights": [
+            "1391/6498",
+            "191/1083",
+            "319/1083",
+            "2047/6498"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            25,
+            44,
+            63
+          ],
+          "weights": [
+            "79/342",
+            "232/1083",
+            "296/1083",
+            "1829/6498"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            27,
+            46,
+            65
+          ],
+          "weights": [
+            "183/722",
+            "89/361",
+            "89/361",
+            "183/722"
+          ]
+        },
+        {
+          "indices": [
+            10,
+            29,
+            48,
+            67
+          ],
+          "weights": [
+            "1829/6498",
+            "296/1083",
+            "232/1083",
+            "79/342"
+          ]
+        },
+        {
+          "indices": [
+            12,
+            31,
+            50,
+            69
+          ],
+          "weights": [
+            "2047/6498",
+            "319/1083",
+            "191/1083",
+            "1391/6498"
+          ]
+        },
+        {
+          "indices": [
+            14,
+            33,
+            52,
+            71
+          ],
+          "weights": [
+            "767/2166",
+            "112/361",
+            "48/361",
+            "439/2166"
+          ]
+        },
+        {
+          "indices": [
+            16,
+            35,
+            54,
+            73
+          ],
+          "weights": [
+            "2591/6498",
+            "347/1083",
+            "91/1083",
+            "1279/6498"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "163952452/390963",
+            "1750170240/130321",
+            "24049043200/130321",
+            "136010606680/1172889"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "3034925530/1172889",
+            "4100883072/130321",
+            "21656312832/130321",
+            "87153419990/1172889"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "429665990/61731",
+            "21712880000/390963",
+            "55381564480/390963",
+            "17873679362/390963"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "99444884/6859",
+            "10900161792/130321",
+            "14760016320/130321",
+            "3480952800/130321"
+          ]
+        },
+        {
+          "fromRow": 4,
+          "toRow": 5,
+          "squaredLengths": [
+            "3480952800/130321",
+            "14760016320/130321",
+            "10900161792/130321",
+            "99444884/6859"
+          ]
+        },
+        {
+          "fromRow": 5,
+          "toRow": 6,
+          "squaredLengths": [
+            "17873679362/390963",
+            "55381564480/390963",
+            "21712880000/390963",
+            "429665990/61731"
+          ]
+        },
+        {
+          "fromRow": 6,
+          "toRow": 7,
+          "squaredLengths": [
+            "87153419990/1172889",
+            "21656312832/130321",
+            "4100883072/130321",
+            "3034925530/1172889"
+          ]
+        },
+        {
+          "fromRow": 7,
+          "toRow": 8,
+          "squaredLengths": [
+            "136010606680/1172889",
+            "24049043200/130321",
+            "1750170240/130321",
+            "163952452/390963"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 81,
+      "k": 10,
+      "t": 2,
+      "h": 21,
+      "offset": 0,
+      "rows": [
+        {
+          "indices": [
+            0,
+            21,
+            42,
+            63
+          ],
+          "weights": [
+            "39/196",
+            "15/196",
+            "9/28",
+            "79/196"
+          ]
+        },
+        {
+          "indices": [
+            2,
+            23,
+            44,
+            65
+          ],
+          "weights": [
+            "359/1764",
+            "215/1764",
+            "551/1764",
+            "71/196"
+          ]
+        },
+        {
+          "indices": [
+            4,
+            25,
+            46,
+            67
+          ],
+          "weights": [
+            "125/588",
+            "41/252",
+            "527/1764",
+            "575/1764"
+          ]
+        },
+        {
+          "indices": [
+            6,
+            27,
+            48,
+            69
+          ],
+          "weights": [
+            "19/84",
+            "39/196",
+            "55/196",
+            "173/588"
+          ]
+        },
+        {
+          "indices": [
+            8,
+            29,
+            50,
+            71
+          ],
+          "weights": [
+            "431/1764",
+            "407/1764",
+            "65/252",
+            "157/588"
+          ]
+        },
+        {
+          "indices": [
+            10,
+            31,
+            52,
+            73
+          ],
+          "weights": [
+            "157/588",
+            "65/252",
+            "407/1764",
+            "431/1764"
+          ]
+        },
+        {
+          "indices": [
+            12,
+            33,
+            54,
+            75
+          ],
+          "weights": [
+            "173/588",
+            "55/196",
+            "39/196",
+            "19/84"
+          ]
+        },
+        {
+          "indices": [
+            14,
+            35,
+            56,
+            77
+          ],
+          "weights": [
+            "575/1764",
+            "527/1764",
+            "41/252",
+            "125/588"
+          ]
+        },
+        {
+          "indices": [
+            16,
+            37,
+            58,
+            79
+          ],
+          "weights": [
+            "71/196",
+            "551/1764",
+            "215/1764",
+            "359/1764"
+          ]
+        },
+        {
+          "indices": [
+            18,
+            39,
+            60,
+            81
+          ],
+          "weights": [
+            "79/196",
+            "9/28",
+            "15/196",
+            "39/196"
+          ]
+        }
+      ],
+      "exactBasisDefinition": {
+        "convention": "|u_i> = sum_l sqrt(w_i,l) eta_i,l |D_N^(r_i,l)>",
+        "initialPhases": "eta_0,l = 1",
+        "edgeLengths": "(a,b,c,d) = componentwise positive square roots of squaredLengths",
+        "diagonal": "D=(max(abs(a-b),abs(c-d))+min(a+b,c+d))/2",
+        "pair": "Z(u,v)=(C_u+i sqrt(1-C_u^2), C_v-i sqrt(1-C_v^2)), with C_u=(D^2+u^2-v^2)/(2Du), C_v=(D^2+v^2-u^2)/(2Dv)",
+        "increments": "(z_0,z_1)=Z(a,b), (z_2,z_3)=-Z(c,d)",
+        "recursion": "eta_(i+1),l=eta_i,l z_l",
+        "scope": "These finite radical recurrences define exact coefficients; decimal rendering is not the certificate."
+      },
+      "phaseEdges": [
+        {
+          "fromRow": 0,
+          "toRow": 1,
+          "squaredLengths": [
+            "1260090/2401",
+            "80232625/4802",
+            "193121643/686",
+            "446252040/2401"
+          ]
+        },
+        {
+          "fromRow": 1,
+          "toRow": 2,
+          "squaredLengths": [
+            "46086625/14406",
+            "121426625/3087",
+            "1235554135/4802",
+            "300880250/2401"
+          ]
+        },
+        {
+          "fromRow": 2,
+          "toRow": 3,
+          "squaredLengths": [
+            "2481875/294",
+            "3429855/49",
+            "231590150/1029",
+            "505631425/6174"
+          ]
+        },
+        {
+          "fromRow": 3,
+          "toRow": 4,
+          "squaredLengths": [
+            "7574825/441",
+            "73190403/686",
+            "3932500/21",
+            "106063705/2058"
+          ]
+        },
+        {
+          "fromRow": 4,
+          "toRow": 5,
+          "squaredLengths": [
+            "74095365/2401",
+            "906216025/6174",
+            "906216025/6174",
+            "74095365/2401"
+          ]
+        },
+        {
+          "fromRow": 5,
+          "toRow": 6,
+          "squaredLengths": [
+            "106063705/2058",
+            "3932500/21",
+            "73190403/686",
+            "7574825/441"
+          ]
+        },
+        {
+          "fromRow": 6,
+          "toRow": 7,
+          "squaredLengths": [
+            "505631425/6174",
+            "231590150/1029",
+            "3429855/49",
+            "2481875/294"
+          ]
+        },
+        {
+          "fromRow": 7,
+          "toRow": 8,
+          "squaredLengths": [
+            "300880250/2401",
+            "1235554135/4802",
+            "121426625/3087",
+            "46086625/14406"
+          ]
+        },
+        {
+          "fromRow": 8,
+          "toRow": 9,
+          "squaredLengths": [
+            "446252040/2401",
+            "193121643/686",
+            "80232625/4802",
+            "1260090/2401"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\begin{document}
+\title{A four-band radical construction of second-order anticoherent subspaces}
+\author{}\date{}\maketitle
+
+This construction gives a general lower bound.  No assertion of optimality
+for all $N$ is made.  The proof contains a finite, exactly reproducible
+polynomial coefficient certificate, covering all $N$ simultaneously.
+
+\begin{theorem}
+For every integer $N\ge40$,
+\[
+ K(N,2)\ge\left\lfloor\frac N8\right\rfloor-3.
+\]
+A basis can be obtained using rational arithmetic and square roots.
+\end{theorem}
+
+Write $N=8q+\rho$, with $0\le\rho\le7$, and set
+\[
+ k=q-3,\quad h=2q,\quad s=4+\lfloor\rho/2\rfloor,\quad
+ j=N/2,\quad v=\frac{j(j+1)}{3h^2},\quad x_i=\frac{j-s-2i}{h}.
+\]
+Define four rational weights for each $0\le i<k$ by evaluating
+\begin{align*}
+ w_0(x)&=\frac v4+\frac{x^2}4-\frac{35x}{36}+\frac56,&
+ w_1(x)&=-\frac v4-\frac{x^2}4+\frac{5x}{12}+\frac12,\\
+ w_2(x)&=-\frac v4-\frac{x^2}4+\frac{13x}{12}-\frac12,&
+ w_3(x)&=\frac v4+\frac{x^2}4-\frac{19x}{36}+\frac16.
+\end{align*}
+The basis has the form
+\[
+ \ket{u_i}=\sum_{\ell=0}^3
+ \sqrt{w_\ell(x_i)}\,\eta_{i,\ell}
+ \ket{D_N^{(s+2i+\ell h)}},\qquad |\eta_{i,\ell}|=1.
+\]
+The phases are assigned recursively, as follows.
+
+For $0\le i<k-1$, let $r_{i\ell}=s+2i+\ell h$ and
+\[
+ L_{i\ell}=\sqrt{w_\ell(x_i)w_\ell(x_{i+1})
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1)}.
+\]
+Take any common diagonal length $d$ in
+\[
+ \bigl[\max(|L_{i0}-L_{i1}|,|L_{i2}-L_{i3}|),\,
+       \min(L_{i0}+L_{i1},L_{i2}+L_{i3})\bigr],
+\]
+for example its midpoint.  For positive $a,b$ with $|a-b|\le d\le a+b$,
+put
+\[
+ c_a=\frac{d^2+a^2-b^2}{2da},\qquad
+ c_b=\frac{d^2+b^2-a^2}{2db},\qquad
+ (z_a,z_b)=\bigl(c_a+i\sqrt{1-c_a^2},\,
+                   c_b-i\sqrt{1-c_b^2}\bigr).
+\]
+Then $az_a+bz_b=d$.  Apply this to $(L_{i0},L_{i1})$ to obtain
+$(z_0,z_1)$, and to $(L_{i2},L_{i3})$ to obtain $(z_2,z_3)$.
+With $\eta_{0,\ell}=1$, define
+\[
+ (\eta_{i+1,0},\eta_{i+1,1},\eta_{i+1,2},\eta_{i+1,3})
+ =(\eta_{i,0}z_0,\eta_{i,1}z_1,-\eta_{i,2}z_2,-\eta_{i,3}z_3).
+\]
+This is an explicit prescription in radicals, once the interval above is
+proved nonempty.
+
+\begin{proof}
+Direct substitution gives
+\[
+ \sum_{\ell=0}^3w_\ell(x)=1,\qquad
+ \sum_{\ell=0}^3(x-\ell)w_\ell(x)=0,\qquad
+ \sum_{\ell=0}^3(x-\ell)^2w_\ell(x)=v.
+\]
+The supports are disjoint.  All indices have the same parity, and the gap
+between successive bands is $h-2(k-1)=8$.  Consequently all operators
+shifting the excitation number by one have zero compression.  For a shift
+by two, the only possible off-diagonal entries join rows $i$ and $i+1$
+in the same band.  Every such shift has the same orientation across all
+four bands.  The phase prescription gives
+\[
+ \sum_{\ell=0}^3L_{i\ell}\,
+ \overline{\eta_{i\ell}}\eta_{i+1,\ell}=0,
+\]
+so these entries also vanish.  The three moment identities supply
+normalization, $PJ_zP=0$, and $PJ_z^2P=j(j+1)P/3$.
+Thus all first- and second-rank spin tensors have zero compression,
+which is second-order anticoherence of the entire subspace.
+
+It remains to certify that the weights are positive and the quadrilateral
+interval is nonempty.  The following exact polynomial certificate does so.
+All quantities below are defined by the displayed formulas and require no
+numerical approximation.
+
+For each of the eight fixed remainders $\rho$, set
+\[
+ W_\ell(q,i)=576q^2 w_\ell(x_i).
+\]
+These are polynomials with integer coefficients.  Under $q=i+z+4$, every
+coefficient of each $W_\ell$ is nonnegative, and its constant coefficient
+is strictly positive.  This substitution covers the entire basis range
+$0\le i\le q-4$, with $z\ge0$, and proves positivity of all weights.
+
+For neighboring rows, define the polynomial
+\[
+ E_\ell(q,i)=W_\ell(q,i)W_\ell(q,i+1)
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1).
+\]
+It equals $(576q^2)^2L_{i\ell}^2$.
+Substitute $q=i+z+5$, which covers all neighboring pairs $0\le i\le q-5$.
+Writing $E_\ell$ for these substituted polynomials, put
+\[
+ F=\left(\sum_\ell E_\ell\right)^2-2\sum_\ell E_\ell^2,
+ \qquad A=7421703487488\,(i^{14}z^2+i^2z^{14}).
+\]
+For each $\rho=0,\ldots,7$, the polynomials
+\[
+ F+A\quad\hbox{and}\quad64E_0E_1E_2E_3-A^2
+\]
+have only nonnegative coefficients and strictly positive constant coefficients.  These are finite coefficient assertions;
+\texttt{four\_bands.py} constructs the integer polynomials directly and
+checks every coefficient, without sampling values of $N$.
+Thus $F\ge-A$ and $8\sqrt{E_0E_1E_2E_3}\ge A$ for all $i,z\ge0$, giving
+\[
+ F+8\sqrt{E_0E_1E_2E_3}>0.
+\]
+For positive lengths $\lambda_\ell=\sqrt{E_\ell}$, the left side is
+\[
+ \prod_{\ell=0}^3\left(\sum_{m=0}^3\lambda_m-2\lambda_\ell\right).
+\]
+At most one factor can be negative.  Therefore this nonnegative product
+is equivalent to the four quadrilateral inequalities
+$\lambda_\ell\le\sum_{m\ne\ell}\lambda_m$.  Rescaling gives the same
+inequalities for $L_{i\ell}$, exactly the condition that the diagonal
+interval in the phase prescription has nonempty interior.
+\end{proof}
+
+The certificate is recorded in \texttt{four-band-certificate.json}; its
+numerical checks of directly constructed spin compressions for
+$40\le N\le80$ are supplementary checks of the phase implementation.
+The all-$N$ statement follows from the polynomial certificate above.
+Combining with the separated-triple construction gives
+\[
+ K(N,2)\ge\max\!\left\{
+ \left\lfloor\frac{N+3}{9}\right\rfloor,
+ \left\lfloor\frac N8\right\rfloor-3\right\}\qquad(N\ge40).
+\]
+\end{document}
+
+% Exact basis calculator: construct_exact.py selects a rational squared diagonal
+% by rational bisection and outputs phase definitions without expansion.

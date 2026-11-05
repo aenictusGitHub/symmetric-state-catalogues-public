@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "records": {
+    "radical-n19-k1-t4-basis-1": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.19952294887837022,
+          "y": -0.6783130395656507,
+          "z": 0.7071647709169959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1995229488783706,
+          "y": 0.6783130395656506,
+          "z": 0.7071647709169959,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18134893499194796,
+          "y": 0.9828179149087055,
+          "z": 0.0343730986643774,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18134893499194787,
+          "y": -0.9828179149087055,
+          "z": 0.0343730986643774,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6153645461269055,
+          "y": -0.7796643160364147,
+          "z": 0.11597426296164713,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6153645461269055,
+          "y": 0.7796643160364147,
+          "z": 0.11597426296164713,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.21189832648391815,
+          "y": 0.6366313554949538,
+          "z": -0.7414847378294259,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2118983264839181,
+          "y": -0.6366313554949538,
+          "z": -0.7414847378294259,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.44448801010474753,
+          "y": -0.5015379153381588,
+          "z": -0.7422197305053104,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44448801010474764,
+          "y": 0.5015379153381588,
+          "z": -0.7422197305053104,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6563723091837818,
+          "y": 0.13535436823695401,
+          "z": -0.7421957873337232,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6563723091837818,
+          "y": -0.13535436823695415,
+          "z": -0.7421957873337232,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7795841817166321,
+          "y": 0.6154044078898351,
+          "z": 0.11630098179710463,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7795841817166321,
+          "y": -0.6154044078898351,
+          "z": 0.11630098179710463,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9827038198460177,
+          "y": -0.1818599180479213,
+          "z": 0.034930970035895605,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9827038198460177,
+          "y": 0.18185991804792112,
+          "z": 0.034930970035895605,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6783130418158011,
+          "y": 0.19952295656994742,
+          "z": 0.7071647665885102,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6783130418158011,
+          "y": -0.1995229565699474,
+          "z": 0.7071647665885102,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**9 + y**7*(-11348*sqrt(2310)/40425 + 2*sqrt(389971974315)*I/40425) + y**5*(-11348/1575 + sqrt(675276146)*I/1575) + y**3*(31401814*sqrt(2310)/24279255 + 134*sqrt(389971974315)*I/24279255) - 22696*sqrt(3301298)/509233725 + 4*sqrt(557321947559377)*I/509233725",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.303796792561105e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.6699524198351201,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "radical-n19-k1-t4-basis-1",
+      "n": 19,
+      "label": "Exact sparse fourth-order state",
+      "evidence": "Representative of a candidate sector-length extremum. Global optimality is not proved for this entry.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "assertions": 1356,
+  "catalogues": [
+    {
+      "catalogue": "anticoherent-state-catalogue",
+      "entries": 132,
+      "representativeSelections": 94,
+      "emptyCellsChecked": 61,
+      "coordinateDownloads": 155,
+      "alternativeSwitches": 42,
+      "representativeGroupSummariesChecked": 94,
+      "ACGroupOptionChecks": true,
+      "constructionCardsChecked": 12,
+      "worksWithoutSupplementalData": true
+    }
+  ],
+  "checks": [
+    "every catalogue entry selects without runtime errors",
+    "viewer receives exact selected state coordinate record",
+    "alternative AC representative selection updates viewer",
+    "exclusion and unresolved cells have no phantom stars",
+    "downloaded record includes matching Majorana representation",
+    "selection change disposes prior viewer",
+    "file:// paths supported and optional coordinates missing handled",
+    "full and proper groups shown beside every representative",
+    "AC options show each alternative group and cards update on selection"
+  ],
+  "limitation": "Minimal DOM harness; browser visual QA separate."
+}

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "n": 17,
+  "t": 6,
+  "maximumDimension": 0,
+  "method": "Exact Clebsch-Gordan matrices, tensor covariance, product-rank support, and discrete-polynomial channel reconstruction; no numerical tolerance.",
+  "hilbertSchmidtGramEntriesChecked": 120,
+  "raisingCovarianceIdentitiesChecked": 15,
+  "forbiddenHighRankProductComponentsChecked": 2805,
+  "adjointChannelMonicMultipliers": [
+    {
+      "rank": 0,
+      "monicMultiplier": "5/6"
+    },
+    {
+      "rank": 1,
+      "monicMultiplier": "455/646"
+    },
+    {
+      "rank": 2,
+      "monicMultiplier": "182/323"
+    },
+    {
+      "rank": 3,
+      "monicMultiplier": "273/646"
+    },
+    {
+      "rank": 4,
+      "monicMultiplier": "377/1292"
+    },
+    {
+      "rank": 5,
+      "monicMultiplier": "231/1292"
+    },
+    {
+      "rank": 6,
+      "monicMultiplier": "1375/15504"
+    }
+  ],
+  "imageCount": 15,
+  "imageSquaredNorm": "1/18",
+  "outputDimension": 16,
+  "complementRank": 1,
+  "complementQubits": 15,
+  "complementInheritsACOrder": 6,
+  "contradiction": "A pure AC6 state on fifteen qubits would require fifteen orthogonal rank-one, rank-two and rank-three tensor images in fourteen dimensions.",
+  "generalCorollary": {
+    "formula": "K((r+1)^2+1,2r)=0 for every integer r>=1",
+    "examples": [
+      [
+        5,
+        2
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        17,
+        6
+      ],
+      [
+        26,
+        8
+      ],
+      [
+        37,
+        10
+      ]
+    ],
+    "proofSource": "proof.tex"
+  },
+  "arbitraryComplexStatesCovered": true,
+  "scope": "Finite exact convention audit for N17; the general theorem follows from the representation-theoretic rank-one-complement proof.",
+  "elapsedSeconds": 9.827151775360107
+}

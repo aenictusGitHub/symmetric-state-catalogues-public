@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "evidence": "numerical",
+  "decimalPrecision": 80,
+  "candidatesSHA256": "b3a9bc2331f042a72138da6aebc24533ac501502b6494f8e2afb8d9135d4d71b",
+  "candidateCount": 4,
+  "orderedComplexReducedEntriesChecked": 609,
+  "candidates": [
+    {
+      "id": "numerical-search-n21-k2-t3",
+      "n": 21,
+      "t": 3,
+      "dimension": 2,
+      "gramFrobenius": "1.976762969632834359786165e-16",
+      "reductions": [
+        {
+          "order": 1,
+          "maxCrossReductionFrobenius": "3.173922311798449834114979e-16",
+          "orderedComplexEntries": 16
+        },
+        {
+          "order": 2,
+          "maxCrossReductionFrobenius": "3.432194694182587608916841e-16",
+          "orderedComplexEntries": 36
+        },
+        {
+          "order": 3,
+          "maxCrossReductionFrobenius": "1.738337636704435523906346e-15",
+          "orderedComplexEntries": 64
+        }
+      ]
+    },
+    {
+      "id": "numerical-search-n22-k2-t3",
+      "n": 22,
+      "t": 3,
+      "dimension": 2,
+      "gramFrobenius": "6.629467298696741238070153e-16",
+      "reductions": [
+        {
+          "order": 1,
+          "maxCrossReductionFrobenius": "6.143889259536539775067045e-16",
+          "orderedComplexEntries": 16
+        },
+        {
+          "order": 2,
+          "maxCrossReductionFrobenius": "6.639721663436702892556744e-16",
+          "orderedComplexEntries": 36
+        },
+        {
+          "order": 3,
+          "maxCrossReductionFrobenius": "9.479110572977371072390564e-16",
+          "orderedComplexEntries": 64
+        }
+      ]
+    },
+    {
+      "id": "numerical-search-n23-k2-t3",
+      "n": 23,
+      "t": 3,
+      "dimension": 2,
+      "gramFrobenius": "5.818043701667698510393317e-16",
+      "reductions": [
+        {
+          "order": 1,
+          "maxCrossReductionFrobenius": "4.567018772695042288181566e-16",
+          "orderedComplexEntries": 16
+        },
+        {
+          "order": 2,
+          "maxCrossReductionFrobenius": "4.779201442458465275794774e-16",
+          "orderedComplexEntries": 36
+        },
+        {
+          "order": 3,
+          "maxCrossReductionFrobenius": "8.263815592042079622081063e-16",
+          "orderedComplexEntries": 64
+        }
+      ]
+    },
+    {
+      "id": "numerical-search-n24-k3-t3",
+      "n": 24,
+      "t": 3,
+      "dimension": 3,
+      "gramFrobenius": "3.499702410556406567636101e-16",
+      "reductions": [
+        {
+          "order": 1,
+          "maxCrossReductionFrobenius": "2.378761487553986877922317e-16",
+          "orderedComplexEntries": 36
+        },
+        {
+          "order": 2,
+          "maxCrossReductionFrobenius": "2.595037471644237985790911e-16",
+          "orderedComplexEntries": 81
+        },
+        {
+          "order": 3,
+          "maxCrossReductionFrobenius": "8.888939886670869352445607e-16",
+          "orderedComplexEntries": 144
+        }
+      ]
+    }
+  ],
+  "scope": "All saved decimal coefficients are checked independently through normalized-Dicke reductions at 80-digit arithmetic. This is a numerical validation, not an exact algebraic certificate and not a proof of global optimality."
+}

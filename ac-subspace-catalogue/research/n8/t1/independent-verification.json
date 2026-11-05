@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "certificateSha256": "e14a2428d93f5d928edc06c58c35c9d5e17b9157161c3f4176da480745c190f8",
+  "recouplingMethod": "Direct Wigner3j tensor matrices and Clebsch-Gordan highest-weight vectors; no6j or rational-sum evaluator imported.",
+  "recouplingEntriesIndependentlyChecked": 72,
+  "tensorComponentsNormalizedExactly": 82,
+  "channelChecks": [
+    {
+      "J": 0,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 2,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 4,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 6,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 8,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 10,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 12,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 14,
+      "identityExactlyZero": true
+    },
+    {
+      "J": 16,
+      "identityExactlyZero": true
+    }
+  ],
+  "preferredObstruction": "0=100+136*p_0+115*a_9, impossible because p_0>=0 and a_9>=0.",
+  "spin4TimeReversalIntertwinerGeneratorsChecked": 3,
+  "separateSimpleDimension3WitnessVerified": true,
+  "conceptualAudit": [
+    "The Casimir-map spectral inequality gives k<=j. If k=j, equality forces P=alpha I+X with X entirely in tensor rankN.",
+    "The unitary time-reversal matrix Y satisfies JY+YJ^T=0, so vectorization XY carries the adjoint rankN representation into total spinN, the fully symmetric2N-qubit sector.",
+    "For Hermitian X, the left N-qubit reduction of normalized vec(XY) is X\u00b2/Tr(X\u00b2)=I/(N+1)+4X/[N(N+2)]. No real-coefficient assumption is used.",
+    "The SU2-covariant one-qubit partial trace kills rankN because its target operator space has ranks at mostN\u22121. It maps I/(N+1) to I/N, giving a pure2N-qubit(N\u22121)-AC state.",
+    "ForN8 the exact positive pure16 identity is impossible. The verified dimension3 witness therefore attains the maximum."
+  ]
+}

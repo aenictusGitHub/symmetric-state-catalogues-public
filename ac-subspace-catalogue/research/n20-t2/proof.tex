@@ -1,0 +1,128 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\C}{\mathcal C}
+\begin{document}
+\title{A certified four-dimensional second-order anticoherent subspace at twenty qubits}
+\author{Catalogue calculation}
+\date{30 October 2026}
+\maketitle
+
+\paragraph{Result.}
+There is a complex four-dimensional second-order anticoherent subspace
+of $\operatorname{Sym}^{20}(\mathbb C^2)$.  Together with the general
+bound $4k\le N-2$ at $N=20$, this proves
+\[
+\boxed{k_{\max}(20,2)=4.}
+\]
+The basis below is defined by isolated real algebraic numbers, not by
+unverified decimal approximations or an asserted radical formula.
+
+\section{The explicit algebraic basis}
+Let $|D_{20}^{(r)}\rangle$ be normalized Dicke states, and put
+$\epsilon=(1,1,0,0)$.  Define four vectors
+\[
+|u_a\rangle=\sum_{\substack{0\le r\le20\\r\equiv\epsilon_a\pmod2}}
+\sqrt{\binom{20}{r}}\,(a_{ar}+i b_{ar})|D_{20}^{(r)}\rangle,
+\qquad a=1,2,3,4.
+\]
+The $84$ real coordinates are ordered by increasing $a$, then increasing
+$r$ of the indicated parity, then real and imaginary part.  The supplied
+\texttt{basis.json} specifies $12$ coordinates as exact rational numbers
+and the remaining $72$ coordinates as the unique common real zero of
+the displayed rational quadratic polynomials in a displayed rational
+box.  Each coordinate is named, each interval endpoint is rational, and
+each Dicke coefficient is explicitly associated with those coordinates.
+Thus the definition is finite and exact.
+
+\section{All whole-subspace conditions}
+Write $B=(u_1,u_2,u_3,u_4)$, $j=10$, and $m_r=10-r$.  The real system
+consists of the nonzero parity-supported entries of
+\begin{align*}
+B^\dagger B&=I_4,&
+B^\dagger J_zB&=0,&
+B^\dagger(3J_z^2-110I)B&=0,\\
+B^\dagger J_+B&=0,&
+B^\dagger J_+J_zB&=0,&
+B^\dagger J_+^2B&=0.
+\end{align*}
+For the first three Hermitian matrices it suffices to include the real
+diagonal and the real and imaginary parts above the diagonal.  Parity
+leaves eight real equations for each matrix.  Each of $J_+$ and
+$J_+J_z$ couples only opposite parities and contributes sixteen real
+equations.  $J_+^2$ preserves parity and contributes sixteen more.
+There are therefore
+\[
+3\cdot8+2\cdot16+16=72
+\]
+real equations.  The omitted entries are identically zero by parity or
+are Hermitian conjugates of included entries.  There is no selection of
+only a convenient subset of the nonzero equations.
+
+In the above coordinates their coefficients are integers.  In particular,
+the matrix element of $J_+^qJ_z^p$ is
+\[
+\sum_{r=q}^{20}\binom{20}{r}\frac{r!}{(r-q)!}\,m_r^p\,
+\overline{z_{a,r-q}}z_{b,r},\qquad z_{a,r}=a_{ar}+ib_{ar}.
+\]
+For the quadrupole equation, replace $m_r^p$ by $3m_r^2-110$.
+
+These conditions give $B^\dagger J_a B=0$ and
+$B^\dagger J_aJ_b B=\frac{110}{3}\delta_{ab}I_4$ for all three
+Cartesian directions.  Indeed, $J_+^2$ supplies the two transverse
+quadrupoles, $J_+J_z$ together with $J_+$ supplies both mixed
+quadrupoles, and the diagonal quadrupole plus the Casimir fixes the
+remaining second moments.  Thus every normalized vector in the span,
+including arbitrary complex superpositions, is second-order AC.
+Equivalently, all sixteen ordered two-qubit cross reductions satisfy
+\[
+\operatorname{Tr}_{18}(|u_a\rangle\langle u_b|)
+=\delta_{ab}\frac{I_{\mathrm{Sym}^2}}{3}.
+\]
+
+\section{Exact existence certificate}
+After fixing the twelve listed rational coordinates, write the complete
+system as $F:\mathbb R^{72}\to\mathbb R^{72}$.  The certificate gives
+a rational center $c$, a rational matrix $A$, and radius
+$r=10^{-35}$.  Define $G(x)=x-AF(x)$.  All bounds below are checked by
+integer arithmetic with common denominators; rounded decimals play no
+role in the inequalities.
+
+The certificate recomputes
+\[
+e=\|I-AJ_F(c)\|_\infty<4\cdot10^{-45},\qquad
+\beta=\|AF(c)\|_\infty<5\cdot10^{-61}.
+\]
+Let $H$ bound the maximum, over equations, of the sum of absolute
+values of all Hessian entries with respect to the unknown coordinates.
+Since every equation is quadratic, $H$ is an explicit integer obtained
+from the coefficient list.  Throughout $\|x-c\|_\infty\le r$,
+\[
+\|DG(x)\|_\infty
+\le e+\|A\|_\infty Hr=:\gamma<3\cdot10^{-27}.
+\]
+Moreover, the exact computation gives
+\[
+\beta+\gamma r<5.3\cdot10^{-61}<r.
+\]
+Consequently $G$ maps the closed rational cube strictly into itself and
+is a strict contraction.  Banach's theorem gives a unique fixed point
+there.  The inequality $e<1$ also implies that $AJ_F(c)$ is invertible,
+hence $A$ is invertible.  Therefore the fixed point satisfies $F(x)=0$,
+not merely $AF(x)=0$.  This proves exact existence of the claimed
+orthonormal basis and all its AC identities.
+
+\section{Verification and provenance}
+\texttt{verify.py} uses only standard-library integer and rational
+arithmetic.  It reconstructs the complete moment system, recomputes the
+Jacobian, the inverse defect, the correction bound, and the quadratic
+Lipschitz bound, then checks every interval and coefficient association
+in \texttt{basis.json}.  The separate independent verifier reconstructs
+the same conditions from physical spin matrices.
+
+The numerical seed is the supplied Julia subspace
+\(\Pi\)\texttt{\_20\_4\_2}.  A numerical refinement suggests the
+certificate center; the rational contraction proof establishes the
+result.  Equality to the original decimal span is not asserted.
+No claim of literature priority is made.
+\end{document}

@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "convention": {
+    "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r))*c_r*z^r",
+    "sphere": "(2Re(z), -2Im(z), |z|^2-1)/(1+|z|^2); infinity is north."
+  },
+  "records": {
+    "radical-n16-k2-t3-basis-1": {
+      "id": "radical-n16-k2-t3-basis-1",
+      "n": 16,
+      "label": "Exact third-order AC subspace \u00b7 basis vector 1",
+      "points": [
+        {
+          "x": 0.5807433656574537,
+          "y": 0.35932364438986386,
+          "z": 0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.35932364438986397,
+          "y": -0.5807433656574537,
+          "z": 0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5807433656574535,
+          "y": -0.359323644389864,
+          "z": 0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.359323644389864,
+          "y": 0.5807433656574535,
+          "z": 0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6780766176348607,
+          "y": -0.6495335023294071,
+          "z": 0.34397431585593835,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6495335023294072,
+          "y": -0.6780766176348607,
+          "z": 0.34397431585593813,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6780766176348607,
+          "y": 0.6495335023294071,
+          "z": 0.34397431585593835,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6495335023294072,
+          "y": 0.6780766176348608,
+          "z": 0.34397431585593813,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6780766176348609,
+          "y": -0.6495335023294072,
+          "z": -0.343974315855938,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6495335023294072,
+          "y": -0.6780766176348607,
+          "z": -0.3439743158559381,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6780766176348609,
+          "y": 0.6495335023294072,
+          "z": -0.343974315855938,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6495335023294071,
+          "y": 0.6780766176348609,
+          "z": -0.3439743158559381,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5807433656574538,
+          "y": 0.3593236443898638,
+          "z": -0.7304954906275872,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.35932364438986397,
+          "y": -0.5807433656574538,
+          "z": -0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5807433656574537,
+          "y": -0.3593236443898641,
+          "z": -0.7304954906275875,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3593236443898641,
+          "y": 0.5807433656574537,
+          "z": -0.7304954906275875,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact radical Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "factorizationField": "QQ(sqrt(385), I*sqrt(10))",
+        "reducedPolynomialGcdWithDerivative": "1",
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4*(-14323/133133 - 41856*sqrt(10)*I/133133) + y**3*(2180*sqrt(385)/1463 - 3840*sqrt(154)*I/1463) + y**2*(16350/133 - 5760*sqrt(10)*I/133) + y*(2180*sqrt(385)/1463 - 3840*sqrt(154)*I/1463) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.349075320664838e-16,
+        "exactFormulaVsSavedCoefficientsError": 8.223217205988892e-18,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.5057016505833527,
+        "rootPrecisionDecimalDigits": 50,
+        "noNumericalRootClustering": true
+      },
+      "sourceExactCoefficients": [
+        "sqrt(38)/16",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5434)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(13585)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5434)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(38)*(192*sqrt(10) + 545*I)**2/10650640"
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coordinateMethod": "Explicit quartic algebraic field, exact square-free factorization and 50-digit numerical roots.",
+      "multiplicityEvidence": "Exact gcd and sparse homogeneous polynomial support."
+    },
+    "radical-n16-k2-t3-basis-2": {
+      "id": "radical-n16-k2-t3-basis-2",
+      "n": 16,
+      "label": "Exact third-order AC subspace \u00b7 basis vector 2",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.9165723782395804,
+          "y": 0.025197522149430406,
+          "z": -0.39907412886050186,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.02519752214943046,
+          "y": -0.9165723782395804,
+          "z": -0.39907412886050186,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9165723782395804,
+          "y": -0.02519752214943052,
+          "z": -0.39907412886050186,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.025197522149430572,
+          "y": 0.9165723782395804,
+          "z": -0.39907412886050186,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9729313349723906,
+          "y": 0.2310943907342668,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2310943907342669,
+          "y": -0.9729313349723905,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9729313349723906,
+          "y": -0.23109439073426677,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.23109439073426682,
+          "y": 0.9729313349723906,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9165723782395803,
+          "y": 0.02519752214943039,
+          "z": 0.39907412886050203,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.025197522149430454,
+          "y": -0.9165723782395803,
+          "z": 0.39907412886050203,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9165723782395803,
+          "y": -0.025197522149430513,
+          "z": 0.39907412886050203,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.02519752214943057,
+          "y": 0.9165723782395803,
+          "z": 0.39907412886050203,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact radical Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "factorizationField": "QQ(sqrt(385), I*sqrt(10))",
+        "reducedPolynomialGcdWithDerivative": "1",
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3*(-145*sqrt(385)/7007 - 516*sqrt(154)*I/7007) + y**2*(19/5 + 8*sqrt(10)*I/5) + y*(-11*sqrt(385)/35 - 4*sqrt(154)*I/35) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.872788751557623e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.45258149854232943,
+        "rootPrecisionDecimalDigits": 50,
+        "noNumericalRootClustering": true
+      },
+      "sourceExactCoefficients": [
+        "0",
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "-sqrt(195)*I*(4*sqrt(10) - 55*I)/1820",
+        "0",
+        "0",
+        "0",
+        "sqrt(3003)*I*(8*sqrt(10) - 19*I)/4004",
+        "0",
+        "0",
+        "0",
+        "sqrt(77)*(4*sqrt(10) - 55*I)*(8*sqrt(10) - 19*I)/28028",
+        "0",
+        "0"
+      ],
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coordinateMethod": "Explicit quartic algebraic field, exact square-free factorization and 50-digit numerical roots.",
+      "multiplicityEvidence": "Exact gcd and sparse homogeneous polynomial support."
+    }
+  },
+  "verification": {
+    "passed": true,
+    "sourceBasisSha256": "4e03fabf74387aabd7983702c29718c6443c653491c2fd1f926a7235842cedc8",
+    "recordsChecked": 2,
+    "exactCoefficientIdentitiesChecked": 34,
+    "exactSquareFreeReducedPolynomialsChecked": 2,
+    "partitions": {
+      "radical-n16-k2-t3-basis-1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "radical-n16-k2-t3-basis-2": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "maximumProjectiveDickeReconstructionError": 8.349075320664838e-16,
+    "scope": "Multiplicities are exact. Sphere coordinates are numerical renderings, independently checked by reconstruction; roots are never clustered."
+  }
+}

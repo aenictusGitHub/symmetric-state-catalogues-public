@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "n": 17,
+  "t": 3,
+  "dimension": 2,
+  "orthonormalityExact": true,
+  "complexCrossEntriesExactlyVerified": 64,
+  "wholeSpanAC": true,
+  "P": [
+    "95/768",
+    "53/256",
+    "229/768",
+    "125/768",
+    "5/24"
+  ],
+  "Q": [
+    "73/384",
+    "181/768",
+    "145/768",
+    "215/768",
+    "27/256"
+  ],
+  "parameters": {
+    "p": "5/24",
+    "tanHalfBend": "1",
+    "triangleBranch": 1
+  },
+  "phaseDeterminant": "1046084177/2199911876176644145152",
+  "triangleDiscriminant": "1057861/11350123846041600",
+  "rho4Purities": [
+    "-65017*sqrt(158087379080771)/34351601463244800 + 13706489*sqrt(114250800893097)/23925863790001582080 + 64796057*sqrt(38751757152574166547)/968293781618887557120 + 14735969770359671/72431283705446400",
+    "-13123*sqrt(158087379080771)/14691943956480000 + 1475238097*sqrt(114250800893097)/2728236694136905728000 + 64083193*sqrt(38751757152574166547)/320969022839635968000 + 304255345656706169/1498578283560960000"
+  ],
+  "displayedBasisVectorsExactACOrder": 3,
+  "upperBound": "6k <= 17",
+  "maximumDimension": 2,
+  "method": "Direct exact normalized-Dicke splitting, including all four ordered cross reductions; phase and quadrilateral identities are checked separately."
+}

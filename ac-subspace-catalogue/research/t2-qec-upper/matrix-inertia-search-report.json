@@ -1,0 +1,26 @@
+{
+  "method": "Alternating projections on the full eight-operator physical tensor space with arbitrary Hermitian auxiliary coefficients; Frobenius norm sqrt(total dimension); numerical nonconvex search",
+  "experiments": [
+    {
+      "n": 35,
+      "auxiliaryDimension": 5,
+      "candidateDimensionExcludedIfSuccessful": 8,
+      "targetPositiveIndex": 39,
+      "trialCount": 10,
+      "stepsPerTrial": 3000,
+      "bestBoundaryEigenvalue": 0.005100300044114189,
+      "witnessFound": false
+    },
+    {
+      "n": 35,
+      "auxiliaryDimension": 6,
+      "candidateDimensionExcludedIfSuccessful": 8,
+      "targetPositiveIndex": 47,
+      "trialCount": 10,
+      "stepsPerTrial": 2000,
+      "bestBoundaryEigenvalue": 0.0013224212404573405,
+      "witnessFound": false
+    }
+  ],
+  "scope": "No witness found in the specified finite searches. This is not a proof that a better witness or general bound does not exist. No catalogue bound changes."
+}

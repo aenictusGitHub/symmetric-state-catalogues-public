@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,booktabs,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{An auxiliary-spin bound for second-order anticoherent subspaces}
+\author{Independent catalogue calculation}
+\date{30 October 2026}
+\maketitle
+\begin{theorem}
+For every integer $N\ge8$, a complex second-order anticoherent subspace
+of $\operatorname{Sym}^N(\mathbb C^2)$ has dimension
+\[
+ \boxed{\quad k\le\left\lfloor\frac{N-2}{4}\right\rfloor.\quad}
+\]
+In particular, $k_{\max}(13,2)=2$.
+\end{theorem}
+The upper bound applies to arbitrary complex subspaces. It assumes neither
+Dicke sparsity nor a rotational symmetry of the subspace or its states.
+The auxiliary spin below is a proof device, not an additional physical
+qubit included in the definition of the code.
+
+\section*{1. Whole-subspace second moments}
+Let $j=N/2$, $\mathcal H_j\cong\mathbb C^{N+1}$, and let $P$ project
+onto a $k$-dimensional second-order AC subspace $\mathcal C$. Polarization
+of the AC conditions gives
+\[
+ PJ_aP=0,\qquad PJ_aJ_bP=c\delta_{ab}P,\qquad
+ c=\frac{j(j+1)}3=\frac{N(N+2)}{12}.
+\]
+The symmetric second moments give the symmetric part of the second
+identity. Its antisymmetric part vanishes because
+$[J_a,J_b]=i\epsilon_{abc}J_c$ and the first identity holds. Thus all
+ordered products, including the cross terms between different code
+vectors, are covered.
+
+Introduce an auxiliary spin $s=3/2$, with operators $S_a$ on
+$\mathbb C^4$. Set
+\[
+ X=\sum_{a=x,y,z}J_a\otimes S_a,
+ \qquad \Pi=P\otimes I_4.
+\]
+Then
+\[
+ \Pi X\Pi=0,\qquad
+ \Pi X^2\Pi=cP\otimes\sum_aS_a^2
+ =\frac{5N(N+2)}{16}\Pi.
+\]
+Consequently the Hermitian operator
+\[
+ \boxed{W=X^2-\frac{N-4}{2}X-\frac{5N(N+2)}{16}I}
+\]
+satisfies
+\[
+ \Pi W\Pi=0.
+\]
+This means that $\mathcal C\otimes\mathbb C^4$, a complex subspace of
+dimension $4k$, is totally isotropic for the Hermitian form defined by $W$.
+
+\section*{2. The spectrum has only $N-2$ positive directions}
+The tensor product of spins $j$ and $3/2$ decomposes into total spins
+$J=j-3/2,j-1/2,j+1/2,j+3/2$. Since
+\[
+ X=\frac12\bigl(J_{\mathrm{tot}}^2-j(j+1)I-s(s+1)I\bigr),
+\]
+its four eigenvalues and the corresponding eigenvalues of $W$ are
+\[
+\begin{array}{c|c|c|c}
+J&\text{multiplicity}&X&W\\\hline
+j-3/2&N-2&-3(N+2)/4&(N+2)(5N-3)/8\\
+j-1/2&N&-(N+8)/4&-N(N-7)/8\\
+j+1/2&N+2&(N-6)/4&-(3N^2+N+6)/8\\
+j+3/2&N+4&3N/4&-N(N-7)/8.
+\end{array}
+\]
+For $N\ge8$, the first is strictly positive and the remaining three are
+strictly negative. There are no zero eigenvalues. Therefore the inertia
+of $W$ is
+\[
+ (n_+,n_-,n_0)=(N-2,3N+6,0).
+\]
+
+\begin{lemma}
+If a nonsingular Hermitian form has $p$ positive and $q$ negative
+directions, every totally isotropic complex subspace has dimension at
+most $\min(p,q)$.
+\end{lemma}
+\begin{proof}
+Projection of an isotropic subspace to the positive eigenspace is
+injective: a vector in its kernel would lie entirely in the negative
+eigenspace and could have zero quadratic form only if it were zero.
+The same argument applies to the negative eigenspace.
+\end{proof}
+Applying the lemma to $\mathcal C\otimes\mathbb C^4$ gives
+\[
+ 4k\le N-2,
+\]
+which proves the general theorem. At $N=7$ two eigenvalues of $W$ vanish,
+so this nonsingular argument does not apply. This is consistent with the
+known two-dimensional second-order AC subspace at seven qubits.
+
+\section*{3. The thirteen-qubit case and exact attainment}
+At $N=13$,
+\[
+ W=X^2-\frac92X-\frac{975}{16}I.
+\]
+Its eigenvalues are $465/4,-39/4,-263/4,-39/4$, on total spins
+$5,6,7,8$ of dimensions $11,13,15,17$, respectively. Hence $4k\le11$
+and $k\le2$.
+
+In normalized Dicke notation $D_r=|D_{13}^{(r)}\rangle$, an attaining
+orthonormal basis is
+\[
+ u=\frac{\sqrt{10}D_0+\sqrt{26}D_9}{6},\qquad
+ v=\frac{-\sqrt{26}D_4+\sqrt{10}D_{13}}{6}.
+\]
+Every support gap exceeds two. All rank-one/rank-two ladder terms
+therefore vanish, including cross terms between the two vectors. Each
+vector has zero magnetic mean and second moment $65/4$, establishing
+the complete second-order AC compression identities. Thus
+\[
+ \boxed{k_{\max}(13,2)=2.}
+\]
+The earlier one-parameter phase family also attains this maximum; the
+upper bound is independent of that family and does not assume that a
+hypothetical code contains either displayed vector.
+
+\section*{4. Reproducible independent verification}
+The accompanying \texttt{verify.py} uses Python's standard library only.
+It reconstructs the physical spin operators in rescaled Dicke bases
+$b_r=\sqrt{\binom Nr}D_r$ and
+$c_a=\sqrt{\binom3a}|D_3^{(a)}\rangle$:
+\[
+ J_-b_r=(r+1)b_{r+1},\qquad J_+b_r=(N-r+1)b_{r-1},
+\]
+with analogous auxiliary-spin actions. The resulting matrices have
+rational entries and are self-adjoint for the explicitly retained
+positive diagonal Gram matrix.
+
+The verifier builds every conserved-weight block of the physical $X$.
+It constructs rational spectral projectors as polynomials in those
+blocks and verifies their idempotence, orthogonality, completeness,
+weighted self-adjointness, exact eigenvalues and multiplicities. Checks
+at $N=7,8,9,12,13,14,16,17$ include the exceptional seven-qubit nullspace
+and the signature claimed for $N\ge8$.
+
+For two members of the thirteen-qubit family, the verifier independently
+checks all 32 rank-one/rank-two cross-compression entries and all 64
+entries of the direct physical auxiliary-spin compression
+$(U\otimes I_4)^\dagger W(U\otimes I_4)=0$, using exact arithmetic in
+$\mathbb Q(\sqrt{11})$. No numerical optimizer, Wigner-symbol package,
+or symbolic algebra package is required. These finite checks validate
+the implementation and the explicit witnesses; the formula and inertia
+argument above establish the theorem for all $N\ge8$.
+\end{document}

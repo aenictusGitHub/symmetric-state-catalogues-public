@@ -1,0 +1,18 @@
+{
+  "n": 6,
+  "sector": 4,
+  "checkedExactly": true,
+  "rdmTermCount": 72,
+  "momentTermCount": 72,
+  "nonzeroResidualCoefficients": 0,
+  "JzConvention": "J_z |D_6^(r)>=(3-r)|D_6^(r)>",
+  "q": "sum_r |c_r|^2",
+  "F_i": "<psi|J_i|psi>",
+  "Q_ij": "<psi|(J_i J_j+J_j J_i)/2|psi>-4*q*delta_ij",
+  "theta": "sum_r (-1)^r c_r*c_(6-r)",
+  "identity": "S4_un=11*q^2+(8/3)*|F|^2-(8/15)*tr(Q^2)+24*|theta|^2",
+  "equivalentSharpInequality": "tr(Q^2)<=(60/7)*q^2+5*|F|^2+45*|theta|^2",
+  "identityProved": true,
+  "sharpInequalityProvedByThisScript": false,
+  "note": "The identity alone does not prove the sharp inequality; a separate global certificate is required."
+}

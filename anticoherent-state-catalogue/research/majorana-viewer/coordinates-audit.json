@@ -1,0 +1,551 @@
+{
+  "method": "80-digit homogeneous polynomial reconstruction from unit-sphere points, with exact projective infinity chart, repeated factors weighted by multiplicity, binomial Dicke conversion, normalization and phase alignment against the original stored Dicke vector. Independent of coordinate generator.",
+  "passed": true,
+  "threshold": 1e-09,
+  "catalogues": [
+    {
+      "catalogue": "anticoherent-state-catalogue",
+      "total": 26,
+      "checked": 26,
+      "missing": [],
+      "maxPhaseAlignedVectorError": 1.9723681427437723e-15,
+      "maxUnitSphereError": 2.220446049250313e-16,
+      "catalogueSha256": "3a6d5dfaf7cfd70e409972d59d50951c9882b60c183ba79db2284d3a1641ab7c",
+      "majoranaSha256": "a79ee9aef22933abdbafb5d0a447769a8c41eac107f002d7fe1489d2a5c1e91c",
+      "records": [
+        {
+          "id": "ac-n2-t1",
+          "n": 2,
+          "distinctPositions": 2,
+          "partition": [
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.3691967456605065e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n3-t1",
+          "n": 3,
+          "distinctPositions": 3,
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.999812300917417e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n4-t2",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.566805415528468e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "ac-n5-t1",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.018046548808284e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n5-t1-manuscript",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.3381367962831903e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n6-t3",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6832815729997475e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n7-t2",
+          "n": 7,
+          "distinctPositions": 6,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.1153334841172155e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n7-t2-manuscript",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.18796541836138e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "ac-n8-t3",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.628582223047482e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "ac-n8-t3-manuscript",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.541196869856861e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n9-t2",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.3810982449975383e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n9-t2-manuscript",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.820226381949465e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n10-t3",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.905188941451956e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "ac-n10-t3-manuscript",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.522500015511749e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n11-t3",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.664306413928115e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n12-t4-family",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.562501783799471e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "ac-n12-t5",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.264239101089091e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n24-t5",
+          "n": 24,
+          "distinctPositions": 24,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.677156224560948e-15,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "ac-n42-t7",
+          "n": 42,
+          "distinctPositions": 42,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.9723681427437723e-15,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "acliege-n11-t3",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.3865125109765347e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "acliege-n12-t5",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.945976356560681e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "acliege-n13-t3",
+          "n": 13,
+          "distinctPositions": 13,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.8111265033281934e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "acliege-n15-t3",
+          "n": 15,
+          "distinctPositions": 15,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.2848364472164934e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "acliege-n16-t5",
+          "n": 16,
+          "distinctPositions": 16,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.806344231796638e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "acliege-n18-t5",
+          "n": 18,
+          "distinctPositions": 18,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.69781725727067e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "acliege-n20-t5",
+          "n": 20,
+          "distinctPositions": 20,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.436790904919975e-16,
+          "unitSphereError": 2.220446049250313e-16
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "basisSHA256": "f322cabb4e257a1191ed49d60fd55cb23db00e4e2036920bf7a44fe938cbe3e2",
+  "inputFirstAndAllOrderedSecondMomentsRechecked": true,
+  "errorFrameGramIdentity16": true,
+  "complementRank": 3,
+  "complementProjectorFromFullErrorFrame": true,
+  "complementBasisColumns": [
+    1,
+    0,
+    2
+  ],
+  "phaseCorrection": [
+    "1",
+    "1",
+    "-I"
+  ],
+  "compressedSpinTriple": "(9/2)*(Sx,-Sy,Sz)",
+  "orientationCaveat": "Reflection of y axis; zero-compression equivalent to spin1, not an oriented su2 representation.",
+  "largestAdditionDimension": 1,
+  "exactFiveDimensionalAC1ParentVerified": true,
+  "largestAC1ParentDimension": 5,
+  "maximumUnrestrictedAC1Dimension": 7,
+  "noTwoDimensionalAdditionProof": "A 2D totally isotropic subspace for Sz in C3 must contain its kernel |0>. Its other vector is a|+1>+b|-1>; zero <0|Sx|v> and <0|Sy|v> force a=b=0. The kernel vector itself gives a 1D addition.",
+  "scope": "This exact N18 dimension4 AC2 code, including any collective rotation of it."
+}

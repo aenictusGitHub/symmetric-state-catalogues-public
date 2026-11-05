@@ -1,0 +1,32 @@
+{
+  "claim": "The infimum of the third-order Hilbert\u2013Schmidt defect over the exact partition(2^4,1^4) is zero. This does not imply the infimum is attained.",
+  "parameter": "epsilon>0",
+  "polynomial": "(z^4-6*z^2+1)^2*((z^2+1)^2+epsilon)",
+  "doubleFactorDiscriminant": "16384",
+  "simpleFactorDiscriminant": "256*epsilon**2*(epsilon + 1)",
+  "factorResultant": "(epsilon**2 + 48*epsilon + 64)**2",
+  "finiteDegree": 12,
+  "partitionForEveryPositiveParameter": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "normalizationSquared": "16*(271*epsilon**2 + 288*epsilon + 384)/693",
+  "thirdOrderHSDefectSquared": "49*epsilon**2*(4509001*epsilon**2 + 9432576*epsilon + 6832128)/(12100*(271*epsilon**2 + 288*epsilon + 384)**2)",
+  "limitPolynomial": "z**12 - 10*z**10 + 15*z**8 + 52*z**6 + 15*z**4 - 10*z**2 + 1",
+  "limitPartition": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "limitExactly3AC": true,
+  "limitations": "The construction neither supplies a third-order state in the target partition nor proves that none exists."
+}

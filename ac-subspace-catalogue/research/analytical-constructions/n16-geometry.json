@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "source": "t2-bases.json",
+  "subspaceId": "mod4-reflection-n16-d3-t2",
+  "records": {
+    "mod4-reflection-n16-d3-t2-basis-1": {
+      "id": "mod4-reflection-n16-d3-t2-basis-1",
+      "n": 16,
+      "points": [
+        {
+          "x": 0.7169682117587489,
+          "y": -0.13273577910958742,
+          "z": 0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.13273577910958742,
+          "y": -0.7169682117587489,
+          "z": 0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7169682117587489,
+          "y": 0.13273577910958742,
+          "z": 0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13273577910958742,
+          "y": 0.7169682117587489,
+          "z": 0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7169682117587489,
+          "y": 0.13273577910958742,
+          "z": -0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13273577910958742,
+          "y": -0.7169682117587489,
+          "z": -0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7169682117587489,
+          "y": -0.13273577910958742,
+          "z": -0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.13273577910958742,
+          "y": 0.7169682117587489,
+          "z": -0.6843520996326617,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6374620711849119,
+          "y": -0.6252874440697151,
+          "z": -0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6252874440697151,
+          "y": -0.6374620711849119,
+          "z": -0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6374620711849119,
+          "y": 0.6252874440697151,
+          "z": -0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6252874440697151,
+          "y": 0.6374620711849119,
+          "z": -0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6374620711849119,
+          "y": 0.6252874440697151,
+          "z": 0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6252874440697151,
+          "y": -0.6374620711849119,
+          "z": 0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6374620711849119,
+          "y": -0.6252874440697151,
+          "z": 0.4501752104341211,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6252874440697151,
+          "y": 0.6374620711849119,
+          "z": 0.4501752104341211,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(6)/32",
+        "0",
+        "0",
+        "0",
+        "sqrt(7)*(24*sqrt(166) - 47*I)/1120",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(6)/32",
+        "0",
+        "0",
+        "0",
+        "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808"
+      ],
+      "sourceCoefficientsSHA256": "421c4e61c423651639b9e6df0bb65dc68748cc1a4e7ad3c1761878e018745794",
+      "coordinateMethod": "Exact elementary square-freeness certificates and 80-digit root placement; no primitive-element algebra or numerical clustering.",
+      "multiplicityEvidence": "Exact nonvanishing certificates for the quartic reduction or cubic discriminant.",
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + y**3*(-96*sqrt(110390)/2261 - 1644*sqrt(665)*I/2261) + y**2*(-10946*sqrt(21945)/11305 - 832*sqrt(3642870)*I/11305) + y*(-96*sqrt(110390)/2261 - 1644*sqrt(665)*I/2261) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "exactSquareFreeCertificate": {
+          "method": "Reciprocal quartic: q(y)=y^2[(y+1/y)^2+a(y+1/y)+(b-2)]; nonzero q(+/-1) and distinct quadratic roots prove square-freeness.",
+          "reducedPolynomialAscending": [
+            "1",
+            "-96*sqrt(110390)/2261 - 1644*sqrt(665)*I/2261",
+            "-10946*sqrt(21945)/11305 - 832*sqrt(3642870)*I/11305",
+            "-96*sqrt(110390)/2261 - 1644*sqrt(665)*I/2261",
+            "1"
+          ],
+          "nonzeroChecks": [
+            {
+              "name": "constant coefficient",
+              "expression": "1",
+              "nonzeroPart": "real",
+              "component": "1",
+              "rationalInterval": [
+                "1",
+                "1"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "1",
+                  "radicand": null,
+                  "sqrtLower": "1",
+                  "sqrtUpper": "1"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            },
+            {
+              "name": "q(1)=b+2+2a",
+              "expression": "-10946*sqrt(21945)/11305 - 192*sqrt(110390)/2261 + 2 - 832*sqrt(3642870)*I/11305 - 3288*sqrt(665)*I/2261",
+              "nonzeroPart": "imaginary",
+              "component": "-832*sqrt(3642870)/11305 - 3288*sqrt(665)/2261",
+              "rationalInterval": [
+                "-2015728/11305",
+                "-1998456/11305"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "-3288/2261",
+                  "radicand": 665,
+                  "sqrtLower": "25",
+                  "sqrtUpper": "26"
+                },
+                {
+                  "coefficient": "-832/11305",
+                  "radicand": 3642870,
+                  "sqrtLower": "1908",
+                  "sqrtUpper": "1909"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            },
+            {
+              "name": "q(-1)=b+2-2a",
+              "expression": "-10946*sqrt(21945)/11305 + 2 + 192*sqrt(110390)/2261 + 8*I*(-104*sqrt(3642870) + 2055*sqrt(665))/11305",
+              "nonzeroPart": "imaginary",
+              "component": "-832*sqrt(3642870)/11305 + 3288*sqrt(665)/2261",
+              "rationalInterval": [
+                "-168184/1615",
+                "-1160016/11305"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "-832/11305",
+                  "radicand": 3642870,
+                  "sqrtLower": "1908",
+                  "sqrtUpper": "1909"
+                },
+                {
+                  "coefficient": "3288/2261",
+                  "radicand": 665,
+                  "sqrtLower": "25",
+                  "sqrtUpper": "26"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            },
+            {
+              "name": "quadratic discriminant a^2-4(b-2)",
+              "expression": "-5556904/38437 + 43784*sqrt(21945)/11305 + 256*I*(30825*sqrt(166) + 221*sqrt(3642870))/192185",
+              "nonzeroPart": "imaginary",
+              "component": "1578240*sqrt(166)/38437 + 3328*sqrt(3642870)/11305",
+              "rationalInterval": [
+                "202641408/192185",
+                "210589184/192185"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "3328/11305",
+                  "radicand": 3642870,
+                  "sqrtLower": "1908",
+                  "sqrtUpper": "1909"
+                },
+                {
+                  "coefficient": "1578240/38437",
+                  "radicand": 166,
+                  "sqrtLower": "12",
+                  "sqrtUpper": "13"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            }
+          ],
+          "zeroMultiplicity": 0,
+          "infinityMultiplicity": 0,
+          "substitutionStep": 4,
+          "conclusion": "All nonzero finite roots of P(z)=z^low q(z^4) are simple; only the explicit zero and infinity factors can repeat."
+        },
+        "rootPrecisionDecimalDigits": 80,
+        "maximumRelativePolynomialResidual": "1.149908025303168298e-79",
+        "exactFormulaVsSavedCoefficientsError": 2.3416149470089107e-18,
+        "projectiveDickeReconstructionError": 4.256842706478875e-16,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.5639085107629268
+      }
+    },
+    "mod4-reflection-n16-d3-t2-basis-2": {
+      "id": "mod4-reflection-n16-d3-t2-basis-2",
+      "n": 16,
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.5637348024559101,
+          "y": -0.5402068990156881,
+          "z": -0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5402068990156881,
+          "y": -0.5637348024559101,
+          "z": -0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5637348024559101,
+          "y": 0.5402068990156881,
+          "z": -0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5402068990156881,
+          "y": 0.5637348024559101,
+          "z": -0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9764389798709671,
+          "y": 0.07160466466001728,
+          "z": 0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.07160466466001728,
+          "y": -0.9764389798709671,
+          "z": 0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9764389798709671,
+          "y": -0.07160466466001728,
+          "z": 0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.07160466466001728,
+          "y": 0.9764389798709671,
+          "z": 0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8835848395195895,
+          "y": -0.4681317168446348,
+          "z": -0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4681317168446348,
+          "y": -0.8835848395195895,
+          "z": -0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8835848395195895,
+          "y": 0.4681317168446348,
+          "z": -0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4681317168446348,
+          "y": 0.8835848395195895,
+          "z": -0.011424843772928033,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "0",
+        "3*sqrt(6)*I/16",
+        "0",
+        "0",
+        "0",
+        "sqrt(2470)*(-27 + 16*sqrt(166)*I)/19760",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(3458)*I*(-27 + 16*sqrt(166)*I)/138320",
+        "0",
+        "0",
+        "0",
+        "sqrt(114)/16",
+        "0",
+        "0",
+        "0"
+      ],
+      "sourceCoefficientsSHA256": "d7ff06d18d4edc82ec0e84e3f32ec37cb5f27a5ebe5695cda0ac93f87f6d209a",
+      "coordinateMethod": "Exact elementary square-freeness certificates and 80-digit root placement; no primitive-element algebra or numerical clustering.",
+      "multiplicityEvidence": "Exact nonvanishing certificates for the quartic reduction or cubic discriminant.",
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + y**2*(-16*sqrt(5478)/665 - 27*sqrt(33)*I/665) + y*(-27/95 + 16*sqrt(166)*I/95) + 3*sqrt(665)*I/665",
+            "multiplicity": 1
+          }
+        ],
+        "exactSquareFreeCertificate": {
+          "method": "Explicit cubic discriminant is nonzero, so all three nonzero roots are simple.",
+          "reducedPolynomialAscending": [
+            "3*sqrt(665)*I/665",
+            "-27/95 + 16*sqrt(166)*I/95",
+            "-16*sqrt(5478)/665 - 27*sqrt(33)*I/665",
+            "1"
+          ],
+          "nonzeroChecks": [
+            {
+              "name": "constant coefficient",
+              "expression": "3*sqrt(665)*I/665",
+              "nonzeroPart": "imaginary",
+              "component": "3*sqrt(665)/665",
+              "rationalInterval": [
+                "15/133",
+                "78/665"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "3/665",
+                  "radicand": 665,
+                  "sqrtLower": "25",
+                  "sqrtUpper": "26"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            },
+            {
+              "name": "cubic discriminant",
+              "expression": "-115747035234/3991080625 + 9143663562*sqrt(21945)/195562950625 + 128*I*(3692043*sqrt(3642870) + 3685387951*sqrt(166))/195562950625",
+              "nonzeroPart": "imaginary",
+              "component": "472581504*sqrt(3642870)/195562950625 + 9627135872*sqrt(166)/3991080625",
+              "rationalInterval": [
+                "6562441402368/195562950625",
+                "281385745664/7822518025"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "472581504/195562950625",
+                  "radicand": 3642870,
+                  "sqrtLower": "1908",
+                  "sqrtUpper": "1909"
+                },
+                {
+                  "coefficient": "9627135872/3991080625",
+                  "radicand": 166,
+                  "sqrtLower": "12",
+                  "sqrtUpper": "13"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            }
+          ],
+          "zeroMultiplicity": 1,
+          "infinityMultiplicity": 3,
+          "substitutionStep": 4,
+          "conclusion": "All nonzero finite roots of P(z)=z^low q(z^4) are simple; only the explicit zero and infinity factors can repeat."
+        },
+        "rootPrecisionDecimalDigits": 80,
+        "maximumRelativePolynomialResidual": "6.3912881379571591452e-82",
+        "exactFormulaVsSavedCoefficientsError": 1.9628701919526945e-18,
+        "projectiveDickeReconstructionError": 4.549632210665369e-16,
+        "maxUnitSphereError": 1.1102230246251565e-16,
+        "minimumDistinctPointDistance": 0.5883527192642054
+      }
+    },
+    "mod4-reflection-n16-d3-t2-basis-3": {
+      "id": "mod4-reflection-n16-d3-t2-basis-3",
+      "n": 16,
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9764389798709671,
+          "y": -0.07160466466001728,
+          "z": -0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.07160466466001728,
+          "y": -0.9764389798709671,
+          "z": -0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9764389798709671,
+          "y": 0.07160466466001728,
+          "z": -0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.07160466466001728,
+          "y": 0.9764389798709671,
+          "z": -0.2035674104258134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8835848395195895,
+          "y": 0.4681317168446348,
+          "z": 0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4681317168446348,
+          "y": -0.8835848395195895,
+          "z": 0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8835848395195895,
+          "y": -0.4681317168446348,
+          "z": 0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4681317168446348,
+          "y": 0.8835848395195895,
+          "z": 0.011424843772928033,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5637348024559101,
+          "y": 0.5402068990156881,
+          "z": 0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5402068990156881,
+          "y": -0.5637348024559101,
+          "z": 0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5637348024559101,
+          "y": -0.5402068990156881,
+          "z": 0.6248036321564161,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5402068990156881,
+          "y": 0.5637348024559101,
+          "z": 0.6248036321564161,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sourceExactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "sqrt(114)/16",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(3458)*I*(-27 + 16*sqrt(166)*I)/138320",
+        "0",
+        "0",
+        "0",
+        "sqrt(2470)*(-27 + 16*sqrt(166)*I)/19760",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(6)*I/16",
+        "0"
+      ],
+      "sourceCoefficientsSHA256": "d963ae5518011e2465aef3265fe208219b40fe618d236b2d806d73eefe145874",
+      "coordinateMethod": "Exact elementary square-freeness certificates and 80-digit root placement; no primitive-element algebra or numerical clustering.",
+      "multiplicityEvidence": "Exact nonvanishing certificates for the quartic reduction or cubic discriminant.",
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 3,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + y**2*(16*sqrt(110390)/285 + 9*sqrt(665)*I/95) + y*(-9*sqrt(21945)/665 + 16*sqrt(3642870)*I/1995) - sqrt(665)*I/3",
+            "multiplicity": 1
+          }
+        ],
+        "exactSquareFreeCertificate": {
+          "method": "Explicit cubic discriminant is nonzero, so all three nonzero roots are simple.",
+          "reducedPolynomialAscending": [
+            "-sqrt(665)*I/3",
+            "-9*sqrt(21945)/665 + 16*sqrt(3642870)*I/1995",
+            "16*sqrt(110390)/285 + 9*sqrt(665)*I/95",
+            "1"
+          ],
+          "nonzeroChecks": [
+            {
+              "name": "constant coefficient",
+              "expression": "-sqrt(665)*I/3",
+              "nonzeroPart": "imaginary",
+              "component": "-sqrt(665)/3",
+              "rationalInterval": [
+                "-26/3",
+                "-25/3"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "-1/3",
+                  "radicand": 665,
+                  "sqrtLower": "25",
+                  "sqrtUpper": "26"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            },
+            {
+              "name": "cubic discriminant",
+              "expression": "-38582345078/243675 + 338654206*sqrt(21945)/1326675 + 128*I*(3692043*sqrt(3642870) + 3685387951*sqrt(166))/35820225",
+              "nonzeroPart": "imaginary",
+              "component": "52509056*sqrt(3642870)/3980025 + 9627135872*sqrt(166)/731025",
+              "rationalInterval": [
+                "2187480467456/11940075",
+                "281385745664/1432809"
+              ],
+              "intervalTerms": [
+                {
+                  "coefficient": "52509056/3980025",
+                  "radicand": 3642870,
+                  "sqrtLower": "1908",
+                  "sqrtUpper": "1909"
+                },
+                {
+                  "coefficient": "9627135872/731025",
+                  "radicand": 166,
+                  "sqrtLower": "12",
+                  "sqrtUpper": "13"
+                }
+              ],
+              "nonzeroVerifiedExactly": true
+            }
+          ],
+          "zeroMultiplicity": 3,
+          "infinityMultiplicity": 1,
+          "substitutionStep": 4,
+          "conclusion": "All nonzero finite roots of P(z)=z^low q(z^4) are simple; only the explicit zero and infinity factors can repeat."
+        },
+        "rootPrecisionDecimalDigits": 80,
+        "maximumRelativePolynomialResidual": "6.0512898852553077067e-82",
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "projectiveDickeReconstructionError": 5.162375256822679e-16,
+        "maxUnitSphereError": 1.1102230246251565e-16,
+        "minimumDistinctPointDistance": 0.5883527192642054
+      }
+    }
+  },
+  "convention": "P(z)=sum_r (-1)^r sqrt(C(16,r)) c_r z^r; root z maps to (2Re z,-2Im z,|z|^2-1)/(1+|z|^2), infinity north.",
+  "allMultiplicityCertificatesVerifiedExactly": true,
+  "noNumericalRootClustering": true
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee">
+  <meta name="description" content="A source-linked catalogue of pure anticoherent symmetric multiqubit states, exact representatives, and existence results.">
+  <title>Anticoherent symmetric states · A research catalogue</title>
+  <link rel="stylesheet" href="styles.css?v=ae73bfd8c6bf">
+  <link rel="stylesheet" href="majorana-viewer.css?v=611ee25c74b5">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <script src="vendor/katex/katex.min.js" defer></script>
+  <script src="data/catalogue.js?v=7f5a69e3f0f5" defer></script>
+  <script src="data/majorana.js?v=7bf5cad5b9ba" defer></script>
+  <script src="majorana-symmetry.js" defer></script>
+  <script src="symmetry-groups.js" defer></script>
+  <script src="point-groups.js" defer></script>
+  <script src="majorana-hull.js?v=487d893d323f" defer></script>
+  <script src="majorana-svg.js?v=f2d76493f567" defer></script>
+  <script src="majorana-viewer.js?v=46c597bb3c19" defer></script>
+  <script src="app.js?v=b6d90708ee00" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span class="wordmark-symbol" aria-hidden="true">◎</span><span>Anticoherent states</span></a>
+    <nav aria-label="Main navigation"><a href="#catalogue">Catalogue</a><a href="#definitions">Definitions</a><a href="#proofs">Proofs</a><a href="#sources">Sources</a></nav>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy"><p class="eyebrow">Pure states · Permutation symmetry</p><h1 id="page-title">Anticoherent<br><em>symmetric states</em></h1><p class="intro-description">States with isotropic low-order spin moments. Explore their existence by qubit number and order, inspect exact Dicke coefficients and Majorana constellations, and follow the supporting evidence.</p></div>
+      <div class="intro-aside"><span class="section-number" aria-hidden="true">n × t</span><p>A table of existence.<br>A state behind each witness.</p><a class="text-link" href="../symmetric-sector-catalogue/index.html">Sector-length catalogue <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="catalogue" class="catalogue-section" aria-labelledby="catalogue-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / The catalogue</p><h2 id="catalogue-title">Existence of pure t-AC states</h2></div><a class="download-link" href="data/catalogue.json" download>Download catalogue <span aria-hidden="true">↓</span></a></div>
+      <div class="toolbar">
+        <label class="filter-label" for="status-filter">Evidence <select id="status-filter"><option value="all">All cells</option><option value="exists">Explicit witnesses</option><option value="impossible">Proven impossible</option><option value="reported_absent">Reported absent</option><option value="unknown">Unresolved</option></select></label>
+        <label class="toggle-label"><input id="extended-toggle" type="checkbox"><span>Include larger n</span><span class="toggle-hint">selected n = 13–42</span></label>
+        <p id="result-count" class="result-count" aria-live="polite">Loading source records…</p>
+      </div>
+      <div class="catalogue-layout">
+        <div class="matrix-panel">
+          <div class="matrix-heading"><span>Qubit number <i>n</i> / Anticoherence order <i>t</i></span><span class="matrix-instruction">Select a cell for the state and evidence</span></div>
+          <div id="state-table" class="table-scroll" role="region" aria-label="Anticoherence existence table" tabindex="0"><div class="empty-state"><span class="empty-mark" aria-hidden="true">◎</span><h3>Loading the catalogue</h3><p>Exact representatives and source references will appear here.</p></div></div>
+          <div class="legend" aria-label="Evidence legend"><span><i class="legend-dot exists" aria-hidden="true"></i>Explicit witness</span><span><i class="legend-dot impossible" aria-hidden="true"></i>Proven impossible</span><span><i class="legend-dot reported_absent" aria-hidden="true"></i>Reported absent</span><span><i class="legend-dot unknown" aria-hidden="true"></i>Unresolved</span></div>
+          <p id="coverage-note" class="coverage-note">“Reported absent” records a source's conclusion. “Unresolved” makes no claim about existence. A witness of order t also establishes every lower order.</p>
+        </div>
+        <aside id="result-detail" class="detail-panel" aria-label="Selected result" aria-live="polite"><p class="eyebrow">Selected result</p><div class="empty-state"><h3>A state for each cell.</h3><p>Select a parameter pair to inspect its evidence.</p></div></aside>
+      </div>
+    </section>
+
+    <section id="definitions" class="reference-section" aria-labelledby="definitions-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Reading the catalogue</p><h2 id="definitions-title">What is anticoherence?</h2></div></div>
+      <div class="definition-grid"><div class="prose-panel"><p>A pure symmetric state is <strong>t-anticoherent</strong> when its spin moments up to order t are independent of direction. Equivalently, its t-qubit reduced state is maximally mixed within the symmetric subspace:</p><div class="definition-equation" data-tex="\rho_t=\frac{I_{\mathrm{Sym}^t}}{t+1}" data-display="true"></div><p>The symmetric subspace has dimension t + 1. This condition refers to that subspace, rather than the entire t-qubit Hilbert space.</p></div><div class="definition-note"><p class="eyebrow">All ranks, through order t</p><p>Every spin multipole of rank 1 through t must vanish. Cancelling only even ranks is insufficient for full anticoherence.</p><p>A t-AC state is also t′-AC for each t′ ≤ t. The order shown beside a representative is the order verified for that particular state.</p></div></div>
+      <p id="definition-sources" class="reference-note"></p>
+      <p class="prose-panel">Throughout, <span data-tex="|\psi_n\rangle=\sum_{r=0}^{n}c_r|D_n^{(r)}\rangle"></span> uses normalized Dicke states, with r the excitation number and <span data-tex="\sum_r|c_r|^2=1"></span>.</p>
+    </section>
+
+    <section id="proofs" class="reference-section" aria-labelledby="proofs-title"><div class="section-heading"><div><p class="eyebrow">03 / Beyond numerical searches</p><h2 id="proofs-title">Proofs & exclusions</h2></div></div><p class="section-intro">Existence is certified by an explicit state. Exclusions require an argument that applies to every pure symmetric state with the specified parameters.</p><div id="proof-list" class="proof-list"></div></section>
+
+    <section id="constructions" class="reference-section" aria-labelledby="constructions-title"><div class="section-heading"><div><p class="eyebrow">04 / Representative states</p><h2 id="constructions-title">Selected constructions</h2></div></div><div id="construction-list" class="construction-grid"></div><div id="general-constructions" class="general-constructions"></div></section>
+
+    <section id="sources" class="reference-section" aria-labelledby="sources-title"><div class="section-heading"><div><p class="eyebrow">05 / The source record</p><h2 id="sources-title">Sources & reading notes</h2></div></div><div id="source-caveats" class="source-caveats"></div><div id="source-list" class="source-list"></div></section>
+  </main>
+  <footer class="site-footer"><p>Anticoherent symmetric states</p><a href="../symmetric-sector-catalogue/index.html">Sector-length catalogue ↗</a><a href="../majorana-degeneracy-catalogue/index.html">Majorana degeneracy ↗</a><a href="../ac-subspace-catalogue/index.html">AC subspaces ↗</a><a href="#top">Back to top ↑</a><a href="../index.html">All catalogues ↗</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

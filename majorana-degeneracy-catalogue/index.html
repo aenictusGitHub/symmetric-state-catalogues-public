@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f3ed">
+  <meta name="description" content="Highest anticoherence order for each full Majorana multiplicity partition of a pure symmetric multiqubit state, with rigorous bounds and explicit representatives.">
+  <title>Majorana degeneracy · A research catalogue</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="styles.css?v=23ded05faae8">
+  <script src="vendor/katex/katex.min.js" defer></script>
+  <script src="data/catalogue.js" defer></script>
+  <script src="majorana-symmetry.js" defer></script>
+  <script src="symmetry-groups.js" defer></script>
+  <script src="point-groups.js" defer></script>
+  <script src="majorana-hull.js?v=487d893d323f" defer></script>
+  <script src="majorana-svg.js?v=f2d76493f567" defer></script>
+  <script src="app.js?v=2e6f433aee52" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span class="wordmark-symbol" aria-hidden="true">✳</span><span>Majorana degeneracy</span></a>
+    <nav aria-label="Main navigation"><a href="#catalogue">Catalogue</a><a href="#definitions">Definitions</a><a href="#proofs">Proofs</a><a href="#sources">Sources</a></nav>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">Pure symmetric states · Anticoherence</p><h1 id="page-title">When Majorana<br><em>points coincide</em></h1><p class="intro-description">Fix every Majorana-point multiplicity. How anticoherent can the state be? Explore the highest achievable order for each full partition, with rigorous bounds, existence results and explicit constellations. Numerical observations from the Liège library appear separately.</p></div>
+      <aside class="intro-aside"><span class="intro-symbol" data-tex="(n,\lambda)\mapsto t_{\max}"></span><p>All partitions for 2–12 qubits.<br>Source observations through 100 qubits.</p><a class="text-link" href="../anticoherent-state-catalogue/index.html">Anticoherent-state catalogue ↗</a><a class="text-link" href="../symmetric-sector-catalogue/index.html">Sector-length catalogue ↗</a><a class="text-link" href="../ac-subspace-catalogue/index.html">Anticoherent-subspace catalogue ↗</a></aside>
+    </section>
+
+    <section id="catalogue" class="catalogue-section" aria-labelledby="catalogue-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / The catalogue</p><h2 id="catalogue-title">Highest anticoherence order</h2></div><a class="download-link" href="data/catalogue.json" download>Download catalogue ↓</a></div>
+      <div class="toolbar"><div class="filter-controls"><label for="n-filter">Qubits <select id="n-filter"><option value="12" selected>12</option></select></label><label for="status-filter">Evidence <select id="status-filter"><option value="all">All results</option><option value="proven">Proven maxima</option><option value="bounded">Bounds only</option><option value="no_ac">No positive AC order</option></select></label></div><div class="viewer-launch"><button id="view-majorana" class="view-majorana-button" type="button" aria-haspopup="dialog" aria-controls="majorana-viewer" aria-describedby="majorana-availability" disabled>View Majorana sphere ↗</button><span id="majorana-availability" class="micro-copy" hidden></span></div><p id="result-count" class="result-count" aria-live="polite">Loading source records…</p></div>
+      <div id="library-scope" class="library-scope" hidden></div>
+      <div class="catalogue-layout">
+        <div class="matrix-panel">
+          <div class="matrix-heading"><span>Qubits <i>n</i> / full multiplicity partition <i>λ</i></span><span>Select a row · Arrow keys move between results</span></div>
+          <div id="state-table" class="table-scroll" role="region" aria-label="Highest anticoherence order by full multiplicity partition"><p class="empty-state">Loading the catalogue…</p></div>
+          <div class="legend"><span><i class="legend-dot proven" aria-hidden="true"></i>Proven maximum</span><span><i class="legend-dot bounded" aria-hidden="true"></i>Bounds only</span><span><i class="legend-dot no_ac" aria-hidden="true"></i>No positive AC order</span></div>
+          <p class="coverage-note">The main value gives the exact highest AC order or rigorous bounds for the full partition. <strong>0</strong> means that no state in the partition is 1-AC. The separate <strong>reported</strong> column contains numerical source claims and does not change the rigorous bounds. <strong>Point groups</strong> describe the attached representatives; a multiplicity partition need not have a unique symmetry group. <a href="data/symmetry-groups.json" download>Download state groups ↓</a></p>
+          <div class="matrix-footnote"><span class="small-star" aria-hidden="true">✳</span><p>An exponent counts repeated parts: (2⁶) means six distinct double points. All multiplicities sum to <i>n</i>.</p></div>
+        </div>
+        <aside id="result-detail" class="detail-panel" aria-label="Selected result" aria-live="polite"><p class="eyebrow">Selected partition</p><p class="empty-state">Select a row to inspect its states and evidence.</p></aside>
+      </div>
+    </section>
+
+    <section id="definitions" class="reference-section" aria-labelledby="definitions-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Reading the constellation</p><h2 id="definitions-title">Multiplicity and anticoherence</h2></div></div>
+      <div class="definition-grid"><div class="prose-panel"><h3>One state, <i>n</i> Majorana points</h3><p>A pure symmetric <i>n</i>-qubit state has <i>n</i> Majorana points on the Bloch sphere, counted with repetitions. Coincident points form a cluster. Its multiplicity is the number of points in that cluster.</p><div class="definition-equation" data-tex="\lambda=(m_1,\ldots,m_d),\qquad \sum_{i=1}^{d}m_i=n,\quad g=\max_i m_i" data-display="true"></div><p>The full partition <span data-tex="\lambda"></span> records every cluster, sorted by multiplicity. The catalogue fixes this entire partition and maximizes the AC order over all compatible geometries.</p></div><div class="prose-panel"><h3>Every order through <i>t</i></h3><p>A pure symmetric state is <i>t</i>-anticoherent when its spin moments through order <i>t</i> are independent of direction. Its reduced state satisfies</p><div class="definition-equation" data-tex="\rho_t=\frac{I_{\mathrm{Sym}^t}}{t+1}" data-display="true"></div><p>A representative of order <i>t</i> also witnesses every lower order. The reported maximum concerns all states in the partition; a displayed witness may have a lower order.</p></div></div>
+      <div class="reading-note"><h3>A partition fixes multiplicities, not geometry</h3><p>The same partition can describe many different constellations and, when there are four or more distinct points, different SLOCC classes. Invertible collective filters preserve the partition but generally change anticoherence. A theorem establishing an AC representative does not make every state with that partition AC.</p><p>For exact representatives, multiplicities and AC claims rely on their certificates. Liège library AC orders are checked numerically. Original source constellations are grouped by coordinate proximity; where a refined vector has a root certificate, its full partition is certified for the saved coefficients. Small AC residuals do not prove exact anticoherence or optimality.</p></div>
+    </section>
+
+    <section id="proofs" class="reference-section" aria-labelledby="proofs-title"><div class="section-heading"><div><p class="eyebrow">03 / Why the maximum is sharp</p><h2 id="proofs-title">Bounds and proofs</h2></div></div><p class="section-intro">An explicit state or an existence theorem supplies a lower bound. A proven maximum also requires an upper bound valid for every pure symmetric state with exactly the same multiplicity partition.</p><div id="proof-list" class="proof-list"></div></section>
+    <section id="sources" class="reference-section" aria-labelledby="sources-title"><div class="section-heading"><div><p class="eyebrow">04 / The source record</p><h2 id="sources-title">References</h2></div></div><p class="section-intro">Numerical searches in a source are distinguished from exact witnesses and exclusion proofs.</p><div id="source-list" class="source-list"></div></section>
+  </main>
+  <footer class="site-footer"><p>Majorana degeneracy <span aria-hidden="true">/</span> A research catalogue</p><p id="compiled-date"></p><a href="data/catalogue.json" download>Download data ↓</a><a href="../index.html">All catalogues ↗</a></footer>
+  <dialog id="majorana-viewer" class="majorana-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-help">
+    <div class="viewer-heading"><div><p class="eyebrow">Majorana representation</p><h2 id="viewer-title">State constellation</h2></div><button id="close-majorana" type="button" class="viewer-close" aria-label="Close Majorana viewer">Close ×</button></div>
+    <div id="viewer-summary" class="viewer-summary"></div>
+    <label class="viewer-state-label" for="viewer-witness">Representative<select id="viewer-witness"></select></label>
+    <p id="viewer-evidence" class="micro-copy"></p>
+    <div class="viewer-workspace">
+    <div class="viewer-sphere-frame"><canvas id="viewer-sphere" class="sphere-canvas" tabindex="0" aria-label="Interactive Majorana sphere" aria-describedby="viewer-help"></canvas></div>
+    <div class="viewer-sidebar"><div class="viewer-controls">
+      <div class="viewer-turn" role="group" aria-label="Rotate constellation"><button type="button" id="viewer-left" aria-label="Rotate left">←</button><button type="button" id="viewer-up" aria-label="Rotate up">↑</button><button type="button" id="viewer-down" aria-label="Rotate down">↓</button><button type="button" id="viewer-right" aria-label="Rotate right">→</button><button type="button" id="viewer-reset">Reset view</button></div>
+      <button type="button" id="viewer-align" aria-label="Align highest-order symmetry axis to z">Align to z</button>
+      <button type="button" id="viewer-download-svg">Download SVG</button>
+      <label><input type="checkbox" id="viewer-hull">Convex hull</label>
+      <label><input type="checkbox" id="viewer-symmetry" checked> Symmetry axes</label><label for="viewer-symmetry-order">Show <select id="viewer-symmetry-order"><option value="all">All orders</option></select></label>
+      <label><input type="checkbox" id="viewer-axes">Coordinate axes</label>
+    </div>
+    <div id="viewer-groups"></div>
+    <div id="viewer-symmetry-summary" class="viewer-symmetry-summary" aria-live="polite"></div>
+    <div class="sphere-legend viewer-legend"><span><i class="sphere-dot" aria-hidden="true"></i>Front hemisphere</span><span><i class="sphere-dot back" aria-hidden="true"></i>Back hemisphere</span><span><b class="mv-centre-key" aria-hidden="true">+</b>Sphere centre</span><span><b class="mv-barycentre-key" aria-hidden="true">◇</b>Barycentre (with multiplicities)</span><span>Numbers beside points = multiplicities · Unlabelled = 1</span></div>
+    </div></div>
+    <details class="viewer-symmetry-check"><summary>How to use the viewer</summary><p id="viewer-help" class="viewer-help">Drag the sphere or use the rotation buttons. With the sphere focused, arrow keys rotate and Home resets. Escape closes. Alignment chooses a displayed coordinate frame with the highest-order symmetry axis along z. Reset restores the default aligned view. Saved coordinates and state coefficients are unchanged.</p></details>
+    <details class="viewer-symmetry-check"><summary>About the symmetry axes</summary><p id="viewer-symmetry-method" class="micro-copy"></p></details>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\section*{A dimension obstruction to nesting AC subspaces}
+\begin{theorem}
+Let $1\le s$ and $2s\le N$. Suppose that
+$\mathcal C\subset\mathcal A\subset V_{N/2}$, where $\mathcal A$ is
+$s$-anticoherent of dimension $d$ and $\mathcal C$ is $2s$-anticoherent
+of dimension $k$. Then
+\[
+\boxed{d+s(s+2)k\le N+1.}
+\]
+Anticoherence here is a whole-subspace condition: every normalized vector
+in the indicated subspace is anticoherent to the required order.
+\end{theorem}
+\begin{proof}
+Choose irreducible spin tensors $T_{\ell m}$ on $V_{N/2}$ normalized by
+\[
+\operatorname{Tr}(T_{\ell m}^{\dagger}T_{\ell' m'})
+ =\delta_{\ell\ell'}\delta_{mm'},\qquad
+T_{00}=\frac{I}{\sqrt{N+1}}.
+\]
+Let $P_A$ and $P_C$ be the two orthogonal projectors. Anticoherence and
+polarization give
+\[
+ P_A T_{\ell m}P_A=0\quad(1\le\ell\le s).
+\]
+The product $T_{\ell m}^{\dagger}T_{\ell' m'}$ has spin-tensor ranks
+at most $\ell+\ell'\le2s$. Its compression to $\mathcal C$ therefore
+retains only its scalar part, giving
+\[
+ P_C T_{\ell m}^{\dagger}T_{\ell' m'}P_C
+ =\frac{\delta_{\ell\ell'}\delta_{mm'}}{N+1}P_C
+ \qquad(1\le\ell,\ell'\le s).
+\]
+For an orthonormal basis $u_1,\ldots,u_k$ of $\mathcal C$, the vectors
+\[
+ \sqrt{N+1}\,T_{\ell m}u_a,
+ \qquad 1\le\ell\le s,\quad -\ell\le m\le\ell,\quad 1\le a\le k,
+\]
+are mutually orthonormal. Moreover they are orthogonal to
+$\mathcal A$, since $u_a\in\mathcal A$ and
+$P_A T_{\ell m}P_A=0$. They span a space of dimension
+$k\sum_{\ell=1}^s(2\ell+1)=ks(s+2)$ in $\mathcal A^{\perp}$.
+Adding the dimension $d$ proves the inequality.
+\end{proof}
+
+\section*{An exact seven-qubit counterexample to maximum-parent nesting}
+The catalogue proves $K(7,1)=3$ and $K(7,2)=2$. For example, a
+second-order subspace is spanned by the orthonormal Dicke-basis vectors
+\[
+ u=\sqrt{\frac3{10}}\,|D_7^{(0)}\rangle+
+      \sqrt{\frac7{10}}\,|D_7^{(5)}\rangle,
+ \qquad
+ v=\sqrt{\frac7{10}}\,|D_7^{(2)}\rangle-
+      \sqrt{\frac3{10}}\,|D_7^{(7)}\rangle.
+\]
+Each has $\langle J_z\rangle=0$ and
+$\langle J_z^2\rangle=21/4=j(j+1)/3$. All degree-one cross
+compressions vanish by support separation; the only potentially nonzero
+raising/lowering degree-two cross term cancels between the transitions
+$2\to0$ and $7\to5$, whose ladder factors are both $\sqrt{84}$.
+Together with the Casimir identity, this verifies second-order
+anticoherence on the whole span. The standard bound $4k\le N+1$
+proves its optimality.
+
+If any two-dimensional second-order subspace were contained in a
+first-order parent of dimension $d$, the theorem with $s=1$ would give
+$d+3\cdot2\le8$, hence $d\le2$. It therefore cannot be contained in
+\emph{any} maximum-dimensional first-order subspace, since those have
+dimension three. In fact every two-dimensional second-order subspace
+at $N=7$ is already inclusion-maximal among first-order subspaces.
+
+This result constrains nesting constructions. It does not by itself
+improve an unrestricted upper bound on $K(N,2s)$, since one may always
+choose the parent $\mathcal A=\mathcal C$.
+\end{document}

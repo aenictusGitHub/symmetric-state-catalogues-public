@@ -1,0 +1,369 @@
+{
+  "passed": true,
+  "generalBound": "6 K(N,t) <= N-4 for integers N>=19 and t>=3",
+  "exactSymbolicWeightedTraceIdentity": true,
+  "lowestEigenvalueShift9Polynomial": "440*h**3/3 + 11780*h**2/3 + 34860*h + 102600",
+  "allShiftedCoefficientsStrictlyPositive": true,
+  "generalSignPattern": [
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "physicalChecks": [
+    {
+      "n": 19,
+      "ambientDimension": 120,
+      "magneticBlocksChecked": 25,
+      "characteristicPolynomialsChecked": 50,
+      "allPartialTraceEntriesExactlyZero": true,
+      "partialTraceEntriesChecked": 36,
+      "centeringConstant": "570",
+      "totalSpins": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "xEigenvalues": [
+        "-105/4",
+        "-73/4",
+        "-37/4",
+        "3/4",
+        "47/4",
+        "95/4"
+      ],
+      "wEigenvalues": [
+        "121030",
+        "-570",
+        "-50466",
+        "-39026",
+        "-570",
+        "-570"
+      ],
+      "multiplicities": [
+        15,
+        17,
+        19,
+        21,
+        23,
+        25
+      ],
+      "positiveIndex": 15,
+      "negativeIndex": 105,
+      "zeroIndex": 0,
+      "upper": 2,
+      "physicalBlocks": [
+        {
+          "totalMagneticNumberTwice": -24,
+          "dimension": 1,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -22,
+          "dimension": 2,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -20,
+          "dimension": 3,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -18,
+          "dimension": 4,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -16,
+          "dimension": 5,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -14,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -12,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -10,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -8,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -6,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -4,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -2,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 0,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 2,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 4,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 6,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 8,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 10,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 12,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 14,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 16,
+          "dimension": 5,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 18,
+          "dimension": 4,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 20,
+          "dimension": 3,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 22,
+          "dimension": 2,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 24,
+          "dimension": 1,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "ambientDimension": 126,
+      "magneticBlocksChecked": 26,
+      "characteristicPolynomialsChecked": 52,
+      "allPartialTraceEntriesExactlyZero": true,
+      "partialTraceEntriesChecked": 36,
+      "centeringConstant": "3800/3",
+      "totalSpins": [
+        "15/2",
+        "17/2",
+        "19/2",
+        "21/2",
+        "23/2",
+        "25/2"
+      ],
+      "xEigenvalues": [
+        "-55/2",
+        "-19",
+        "-19/2",
+        "1",
+        "25/2",
+        "25"
+      ],
+      "wEigenvalues": [
+        "424600/3",
+        "-3800/3",
+        "-176852/3",
+        "-136280/3",
+        "-3800/3",
+        "-3800/3"
+      ],
+      "multiplicities": [
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "positiveIndex": 16,
+      "negativeIndex": 110,
+      "zeroIndex": 0,
+      "upper": 2,
+      "physicalBlocks": [
+        {
+          "totalMagneticNumberTwice": -25,
+          "dimension": 1,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -23,
+          "dimension": 2,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -21,
+          "dimension": 3,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -19,
+          "dimension": 4,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -17,
+          "dimension": 5,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -15,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -13,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -11,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -9,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -7,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -5,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -3,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": -1,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 1,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 3,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 5,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 7,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 9,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 11,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 13,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 15,
+          "dimension": 6,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 17,
+          "dimension": 5,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 19,
+          "dimension": 4,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 21,
+          "dimension": 3,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 23,
+          "dimension": 2,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        },
+        {
+          "totalMagneticNumberTwice": 25,
+          "dimension": 1,
+          "bothCharacteristicPolynomialsExactlyVerified": true
+        }
+      ]
+    }
+  ],
+  "arbitraryComplexSubspacesCovered": true,
+  "method": "Independent normalized spin-ladder magnetic blocks with square-root amplitudes and exact full characteristic polynomials, plus a symbolic all-j trace identity and strict sign proof. No discovery or primary-verifier imports.",
+  "compressionArgument": "Every physical coefficient of the centered cubic has degree at most3. Its physical partial trace vanishes, so compression to an AC3 code tensor auxiliary spin5/2 is zero. Its sixfold code dimension cannot exceed the positive spectral index N-4."
+}

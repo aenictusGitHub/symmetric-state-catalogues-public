@@ -1,0 +1,958 @@
+{
+  "allChecksPassed": true,
+  "method": "Exact spin matrices, highest-weight operator Casimir identities, and integer rank enumeration.",
+  "theoremScope": "Every pure symmetric anticoherent subspace of order t>=2.",
+  "gramBound": "4k<=n+1",
+  "saturationIdentity": "I=P+sum_a J_a P J_a/c, c=n(n+2)/12",
+  "necessaryNonscalarRankEquation": "3 L(L+1)=2 n(n+2), 1<=L<=n",
+  "scalarContradictionWhenNoRankExists": "P=I/4 implies P^2-P=-3I/16, so P is not a projector.",
+  "casimirChecks": [
+    {
+      "n": 11,
+      "spin": "11/2",
+      "c": "143/12",
+      "allRanksVerified": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "phiEigenvalue": "143/4",
+          "saturationMultiplier": "4",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 1,
+          "phiEigenvalue": "139/4",
+          "saturationMultiplier": "560/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 2,
+          "phiEigenvalue": "131/4",
+          "saturationMultiplier": "536/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 3,
+          "phiEigenvalue": "119/4",
+          "saturationMultiplier": "500/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 4,
+          "phiEigenvalue": "103/4",
+          "saturationMultiplier": "452/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 5,
+          "phiEigenvalue": "83/4",
+          "saturationMultiplier": "392/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 6,
+          "phiEigenvalue": "59/4",
+          "saturationMultiplier": "320/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 7,
+          "phiEigenvalue": "31/4",
+          "saturationMultiplier": "236/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 8,
+          "phiEigenvalue": "-1/4",
+          "saturationMultiplier": "140/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 9,
+          "phiEigenvalue": "-37/4",
+          "saturationMultiplier": "32/143",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 10,
+          "phiEigenvalue": "-77/4",
+          "saturationMultiplier": "-8/13",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 11,
+          "phiEigenvalue": "-121/4",
+          "saturationMultiplier": "-20/13",
+          "highestWeightIdentityVerified": true
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "spin": "6",
+      "c": "14",
+      "allRanksVerified": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "phiEigenvalue": "42",
+          "saturationMultiplier": "4",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 1,
+          "phiEigenvalue": "41",
+          "saturationMultiplier": "55/14",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 2,
+          "phiEigenvalue": "39",
+          "saturationMultiplier": "53/14",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 3,
+          "phiEigenvalue": "36",
+          "saturationMultiplier": "25/7",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 4,
+          "phiEigenvalue": "32",
+          "saturationMultiplier": "23/7",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 5,
+          "phiEigenvalue": "27",
+          "saturationMultiplier": "41/14",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 6,
+          "phiEigenvalue": "21",
+          "saturationMultiplier": "5/2",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 7,
+          "phiEigenvalue": "14",
+          "saturationMultiplier": "2",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 8,
+          "phiEigenvalue": "6",
+          "saturationMultiplier": "10/7",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 9,
+          "phiEigenvalue": "-3",
+          "saturationMultiplier": "11/14",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 10,
+          "phiEigenvalue": "-13",
+          "saturationMultiplier": "1/14",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 11,
+          "phiEigenvalue": "-24",
+          "saturationMultiplier": "-5/7",
+          "highestWeightIdentityVerified": true
+        },
+        {
+          "rank": 12,
+          "phiEigenvalue": "-36",
+          "saturationMultiplier": "-11/7",
+          "highestWeightIdentityVerified": true
+        }
+      ]
+    }
+  ],
+  "requestedConsequences": [
+    {
+      "n": 7,
+      "gramUpper": 2,
+      "allowedSaturationRanks": [
+        6
+      ],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 11,
+      "gramUpper": 3,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 15,
+      "gramUpper": 4,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 3
+    },
+    {
+      "n": 19,
+      "gramUpper": 5,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 4
+    },
+    {
+      "n": 35,
+      "gramUpper": 9,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 8
+    }
+  ],
+  "integerEnumerationThroughN100": [
+    {
+      "n": 1,
+      "gramUpper": 0,
+      "allowedSaturationRanks": [
+        1
+      ],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 0
+    },
+    {
+      "n": 2,
+      "gramUpper": 0,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 0
+    },
+    {
+      "n": 3,
+      "gramUpper": 1,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 0
+    },
+    {
+      "n": 4,
+      "gramUpper": 1,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 1
+    },
+    {
+      "n": 5,
+      "gramUpper": 1,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 1
+    },
+    {
+      "n": 6,
+      "gramUpper": 1,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 1
+    },
+    {
+      "n": 7,
+      "gramUpper": 2,
+      "allowedSaturationRanks": [
+        6
+      ],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 8,
+      "gramUpper": 2,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 9,
+      "gramUpper": 2,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 10,
+      "gramUpper": 2,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 11,
+      "gramUpper": 3,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 2
+    },
+    {
+      "n": 12,
+      "gramUpper": 3,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 3
+    },
+    {
+      "n": 13,
+      "gramUpper": 3,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 3
+    },
+    {
+      "n": 14,
+      "gramUpper": 3,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 3
+    },
+    {
+      "n": 15,
+      "gramUpper": 4,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 3
+    },
+    {
+      "n": 16,
+      "gramUpper": 4,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 4
+    },
+    {
+      "n": 17,
+      "gramUpper": 4,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 4
+    },
+    {
+      "n": 18,
+      "gramUpper": 4,
+      "allowedSaturationRanks": [
+        15
+      ],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 4
+    },
+    {
+      "n": 19,
+      "gramUpper": 5,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 4
+    },
+    {
+      "n": 20,
+      "gramUpper": 5,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 5
+    },
+    {
+      "n": 21,
+      "gramUpper": 5,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 5
+    },
+    {
+      "n": 22,
+      "gramUpper": 5,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 5
+    },
+    {
+      "n": 23,
+      "gramUpper": 6,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 5
+    },
+    {
+      "n": 24,
+      "gramUpper": 6,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 6
+    },
+    {
+      "n": 25,
+      "gramUpper": 6,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 6
+    },
+    {
+      "n": 26,
+      "gramUpper": 6,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 6
+    },
+    {
+      "n": 27,
+      "gramUpper": 7,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 6
+    },
+    {
+      "n": 28,
+      "gramUpper": 7,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 7
+    },
+    {
+      "n": 29,
+      "gramUpper": 7,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 7
+    },
+    {
+      "n": 30,
+      "gramUpper": 7,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 7
+    },
+    {
+      "n": 31,
+      "gramUpper": 8,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 7
+    },
+    {
+      "n": 32,
+      "gramUpper": 8,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 8
+    },
+    {
+      "n": 33,
+      "gramUpper": 8,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 8
+    },
+    {
+      "n": 34,
+      "gramUpper": 8,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 8
+    },
+    {
+      "n": 35,
+      "gramUpper": 9,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 8
+    },
+    {
+      "n": 36,
+      "gramUpper": 9,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 9
+    },
+    {
+      "n": 37,
+      "gramUpper": 9,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 9
+    },
+    {
+      "n": 38,
+      "gramUpper": 9,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 9
+    },
+    {
+      "n": 39,
+      "gramUpper": 10,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 9
+    },
+    {
+      "n": 40,
+      "gramUpper": 10,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 10
+    },
+    {
+      "n": 41,
+      "gramUpper": 10,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 10
+    },
+    {
+      "n": 42,
+      "gramUpper": 10,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 10
+    },
+    {
+      "n": 43,
+      "gramUpper": 11,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 10
+    },
+    {
+      "n": 44,
+      "gramUpper": 11,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 11
+    },
+    {
+      "n": 45,
+      "gramUpper": 11,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 11
+    },
+    {
+      "n": 46,
+      "gramUpper": 11,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 11
+    },
+    {
+      "n": 47,
+      "gramUpper": 12,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 11
+    },
+    {
+      "n": 48,
+      "gramUpper": 12,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 12
+    },
+    {
+      "n": 49,
+      "gramUpper": 12,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 12
+    },
+    {
+      "n": 50,
+      "gramUpper": 12,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 12
+    },
+    {
+      "n": 51,
+      "gramUpper": 13,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 12
+    },
+    {
+      "n": 52,
+      "gramUpper": 13,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 13
+    },
+    {
+      "n": 53,
+      "gramUpper": 13,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 13
+    },
+    {
+      "n": 54,
+      "gramUpper": 13,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 13
+    },
+    {
+      "n": 55,
+      "gramUpper": 14,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 13
+    },
+    {
+      "n": 56,
+      "gramUpper": 14,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 14
+    },
+    {
+      "n": 57,
+      "gramUpper": 14,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 14
+    },
+    {
+      "n": 58,
+      "gramUpper": 14,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 14
+    },
+    {
+      "n": 59,
+      "gramUpper": 15,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 14
+    },
+    {
+      "n": 60,
+      "gramUpper": 15,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 15
+    },
+    {
+      "n": 61,
+      "gramUpper": 15,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 15
+    },
+    {
+      "n": 62,
+      "gramUpper": 15,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 15
+    },
+    {
+      "n": 63,
+      "gramUpper": 16,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 15
+    },
+    {
+      "n": 64,
+      "gramUpper": 16,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 16
+    },
+    {
+      "n": 65,
+      "gramUpper": 16,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 16
+    },
+    {
+      "n": 66,
+      "gramUpper": 16,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 16
+    },
+    {
+      "n": 67,
+      "gramUpper": 17,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 16
+    },
+    {
+      "n": 68,
+      "gramUpper": 17,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 17
+    },
+    {
+      "n": 69,
+      "gramUpper": 17,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 17
+    },
+    {
+      "n": 70,
+      "gramUpper": 17,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 17
+    },
+    {
+      "n": 71,
+      "gramUpper": 18,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 17
+    },
+    {
+      "n": 72,
+      "gramUpper": 18,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 18
+    },
+    {
+      "n": 73,
+      "gramUpper": 18,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 18
+    },
+    {
+      "n": 74,
+      "gramUpper": 18,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 18
+    },
+    {
+      "n": 75,
+      "gramUpper": 19,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 18
+    },
+    {
+      "n": 76,
+      "gramUpper": 19,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 19
+    },
+    {
+      "n": 77,
+      "gramUpper": 19,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 19
+    },
+    {
+      "n": 78,
+      "gramUpper": 19,
+      "allowedSaturationRanks": [
+        64
+      ],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 19
+    },
+    {
+      "n": 79,
+      "gramUpper": 20,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 19
+    },
+    {
+      "n": 80,
+      "gramUpper": 20,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 20
+    },
+    {
+      "n": 81,
+      "gramUpper": 20,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 20
+    },
+    {
+      "n": 82,
+      "gramUpper": 20,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 20
+    },
+    {
+      "n": 83,
+      "gramUpper": 21,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 20
+    },
+    {
+      "n": 84,
+      "gramUpper": 21,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 21
+    },
+    {
+      "n": 85,
+      "gramUpper": 21,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 21
+    },
+    {
+      "n": 86,
+      "gramUpper": 21,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 21
+    },
+    {
+      "n": 87,
+      "gramUpper": 22,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 21
+    },
+    {
+      "n": 88,
+      "gramUpper": 22,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 22
+    },
+    {
+      "n": 89,
+      "gramUpper": 22,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 22
+    },
+    {
+      "n": 90,
+      "gramUpper": 22,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 22
+    },
+    {
+      "n": 91,
+      "gramUpper": 23,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 22
+    },
+    {
+      "n": 92,
+      "gramUpper": 23,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 23
+    },
+    {
+      "n": 93,
+      "gramUpper": 23,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 23
+    },
+    {
+      "n": 94,
+      "gramUpper": 23,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 23
+    },
+    {
+      "n": 95,
+      "gramUpper": 24,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 23
+    },
+    {
+      "n": 96,
+      "gramUpper": 24,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 24
+    },
+    {
+      "n": 97,
+      "gramUpper": 24,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 24
+    },
+    {
+      "n": 98,
+      "gramUpper": 24,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 24
+    },
+    {
+      "n": 99,
+      "gramUpper": 25,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": true,
+      "upperForEveryOrderAtLeastTwo": 24
+    },
+    {
+      "n": 100,
+      "gramUpper": 25,
+      "allowedSaturationRanks": [],
+      "saturationExcludedByRankCondition": false,
+      "upperForEveryOrderAtLeastTwo": 25
+    }
+  ],
+  "n7SaturationWitness": {
+    "n": 7,
+    "dimension": 2,
+    "order": 2,
+    "orthonormal": true,
+    "allFirstAndSecondCompressedSpinIdentitiesVerified": true,
+    "resolutionOfIdentityVerified": true,
+    "onlyNonscalarRank": 6,
+    "basisDickeCoefficients": [
+      [
+        "0",
+        "0",
+        "sqrt(70)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/10"
+      ],
+      [
+        "-sqrt(30)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(70)/10",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "limitations": "An allowed rank is only a necessary condition in general. Existence at n=7 is separately established here by its explicit basis. The strengthened upper bounds do not by themselves prove attainment at other sizes."
+}

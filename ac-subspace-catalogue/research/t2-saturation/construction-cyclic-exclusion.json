@@ -1,0 +1,38 @@
+{
+  "status": "rigorous cyclic-invariance exclusion",
+  "scope": "All k-dimensional AC2 subspaces invariant under a collective rotation by 2*pi/k, about any axis",
+  "rank_one_per_residue": "Derived from the five-node variance lemma, not an assumption",
+  "variance_lemma_gaps_at_k85_for_s1_to_5": [
+    "602",
+    "2125/4",
+    "1382/3",
+    "1561/4",
+    "320"
+  ],
+  "general_subspace_exclusion": false,
+  "window_size": 7,
+  "window_weights": "sin((a+1)*pi/8), a=0,...,6",
+  "cosine_lower_bound": "cos(pi/8)>11/12",
+  "band_cap": "1/(15/4-6/(N+2))",
+  "dual_polynomial": "Q(z)=z^2-(8/5)z",
+  "records": [
+    {
+      "residue_case": "all N=5k-s, 1<=s<=5",
+      "minimum_N": 420,
+      "minimum_k_on_N_5k_minus_1": null,
+      "linear_numerator": "584/5",
+      "quadratic_numerator": "1176",
+      "upper_expectation_at_threshold": "550903/1655325",
+      "strict_gap_below_one_third": "872/1655325"
+    },
+    {
+      "residue_case": "N=5k-1",
+      "minimum_N": 309,
+      "minimum_k_on_N_5k_minus_1": 62,
+      "linear_numerator": "424/5",
+      "quadratic_numerator": "3384/5",
+      "upper_expectation_at_threshold": "246088487/738545535",
+      "strict_gap_below_one_third": "93358/738545535"
+    }
+  ]
+}

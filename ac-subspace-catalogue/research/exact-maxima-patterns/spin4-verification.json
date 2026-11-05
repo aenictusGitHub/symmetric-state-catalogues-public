@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "theorem": "10k<=N+10 for N>=9 and AC order at least four",
+  "symbolicMeanAndSpectrumChecked": true,
+  "allDomainSignsCertifiedByPositivePolynomialCoefficients": true,
+  "physicalChecks": [
+    {
+      "n": 9,
+      "normalizedPhysicalPartialTracesThroughDegree4": true
+    },
+    {
+      "n": 10,
+      "normalizedPhysicalPartialTracesThroughDegree4": true
+    },
+    {
+      "n": 12,
+      "normalizedPhysicalPartialTracesThroughDegree4": true
+    }
+  ],
+  "scope": "Universal bound, not an existence or optimality statement."
+}

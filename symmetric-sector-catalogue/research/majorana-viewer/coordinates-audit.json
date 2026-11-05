@@ -1,0 +1,2232 @@
+{
+  "method": "80-digit homogeneous polynomial reconstruction from unit-sphere points, with exact projective infinity chart, repeated factors weighted by multiplicity, binomial Dicke conversion, normalization and phase alignment against the original stored Dicke vector. Independent of coordinate generator.",
+  "passed": true,
+  "threshold": 1e-09,
+  "catalogues": [
+    {
+      "catalogue": "symmetric-sector-catalogue",
+      "total": 154,
+      "checked": 154,
+      "missing": [],
+      "maxPhaseAlignedVectorError": 1.2576949946765736e-15,
+      "maxUnitSphereError": 3.3306690738754696e-16,
+      "catalogueSha256": "be31f6b09368a06282868ee6d49965a5a78ef505144c8eb99f4e659d7b0855ab",
+      "majoranaSha256": "b2393249b0e303e1fb208208180856638964252971a19b6fb9e45b9e11731036",
+      "records": [
+        {
+          "id": "n2-s1-max",
+          "n": 2,
+          "distinctPositions": 1,
+          "partition": [
+            2
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n2-s1-min",
+          "n": 2,
+          "distinctPositions": 2,
+          "partition": [
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.3691967456605065e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n2-s2-max",
+          "n": 2,
+          "distinctPositions": 2,
+          "partition": [
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.3691967456605065e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n2-s2-min",
+          "n": 2,
+          "distinctPositions": 1,
+          "partition": [
+            2
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s1-max",
+          "n": 3,
+          "distinctPositions": 1,
+          "partition": [
+            3
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s1-min",
+          "n": 3,
+          "distinctPositions": 3,
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.999812300917417e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s2-max",
+          "n": 3,
+          "distinctPositions": 1,
+          "partition": [
+            3
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s2-min",
+          "n": 3,
+          "distinctPositions": 1,
+          "partition": [
+            3
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s3-max",
+          "n": 3,
+          "distinctPositions": 3,
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.999812300917417e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n3-s3-min",
+          "n": 3,
+          "distinctPositions": 1,
+          "partition": [
+            3
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s1-max",
+          "n": 4,
+          "distinctPositions": 1,
+          "partition": [
+            4
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s1-min",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6060826285186483e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s2-max",
+          "n": 4,
+          "distinctPositions": 1,
+          "partition": [
+            4
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s2-min",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.104832428639051e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s3-max",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.104832428639051e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s3-min",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6060826285186483e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s4-max",
+          "n": 4,
+          "distinctPositions": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6060826285186483e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n4-s4-min",
+          "n": 4,
+          "distinctPositions": 1,
+          "partition": [
+            4
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s1-max",
+          "n": 5,
+          "distinctPositions": 1,
+          "partition": [
+            5
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s1-min",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.018046548808284e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s2-max",
+          "n": 5,
+          "distinctPositions": 1,
+          "partition": [
+            5
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s2-min",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.8649627559281315e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s3-max",
+          "n": 5,
+          "distinctPositions": 1,
+          "partition": [
+            5
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s3-min",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.018046548808284e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s4-max",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.8649627559281315e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s4-min",
+          "n": 5,
+          "distinctPositions": 1,
+          "partition": [
+            5
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s5-max",
+          "n": 5,
+          "distinctPositions": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.018046548808284e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n5-s5-min",
+          "n": 5,
+          "distinctPositions": 1,
+          "partition": [
+            5
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s1-max",
+          "n": 6,
+          "distinctPositions": 1,
+          "partition": [
+            6
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s1-min",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.469195340223535e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s2-max",
+          "n": 6,
+          "distinctPositions": 1,
+          "partition": [
+            6
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s2-min",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6832815729997475e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s3-max",
+          "n": 6,
+          "distinctPositions": 1,
+          "partition": [
+            6
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s3-min",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.469195340223535e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s4-max",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.6832815729997475e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s4-min",
+          "n": 6,
+          "distinctPositions": 5,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.7144362540296624e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n6-s5-max",
+          "n": 6,
+          "distinctPositions": 5,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.053390130699414e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s5-min",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.469195340223535e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s6-max",
+          "n": 6,
+          "distinctPositions": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.469195340223535e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n6-s6-min",
+          "n": 6,
+          "distinctPositions": 1,
+          "partition": [
+            6
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s1-max",
+          "n": 7,
+          "distinctPositions": 1,
+          "partition": [
+            7
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s1-min",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.2522426162894083e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s2-max",
+          "n": 7,
+          "distinctPositions": 1,
+          "partition": [
+            7
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s2-min",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.654477982820531e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n7-s3-max",
+          "n": 7,
+          "distinctPositions": 1,
+          "partition": [
+            7
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s3-min",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.2522426162894083e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s4-max",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.78405410778791e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n7-s4-min",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.654477982820531e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n7-s5-max",
+          "n": 7,
+          "distinctPositions": 2,
+          "partition": [
+            6,
+            1
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s5-min",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.2522426162894083e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s6-max",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.654477982820531e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n7-s6-min",
+          "n": 7,
+          "distinctPositions": 1,
+          "partition": [
+            7
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s7-max",
+          "n": 7,
+          "distinctPositions": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.2522426162894083e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n7-s7-min",
+          "n": 7,
+          "distinctPositions": 1,
+          "partition": [
+            7
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s1-max",
+          "n": 8,
+          "distinctPositions": 1,
+          "partition": [
+            8
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s1-min",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.148889075488489e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s2-max",
+          "n": 8,
+          "distinctPositions": 1,
+          "partition": [
+            8
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s2-min",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.027903236995299e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n8-s3-max",
+          "n": 8,
+          "distinctPositions": 1,
+          "partition": [
+            8
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s3-min",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.148889075488489e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s4-max",
+          "n": 8,
+          "distinctPositions": 1,
+          "partition": [
+            8
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s4-min",
+          "n": 8,
+          "distinctPositions": 4,
+          "partition": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "phaseAlignedVectorError": 8.452645095026503e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n8-s5-max",
+          "n": 8,
+          "distinctPositions": 2,
+          "partition": [
+            7,
+            1
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s5-min",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.148889075488489e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s6-max",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.027903236995299e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n8-s6-min",
+          "n": 8,
+          "distinctPositions": 2,
+          "partition": [
+            5,
+            3
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s7-max",
+          "n": 8,
+          "distinctPositions": 4,
+          "partition": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "phaseAlignedVectorError": 9.03563006164528e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s7-min",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.148889075488489e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s8-max",
+          "n": 8,
+          "distinctPositions": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.148889075488489e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n8-s8-min",
+          "n": 8,
+          "distinctPositions": 1,
+          "partition": [
+            8
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s1-max",
+          "n": 9,
+          "distinctPositions": 1,
+          "partition": [
+            9
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s1-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s2-max",
+          "n": 9,
+          "distinctPositions": 1,
+          "partition": [
+            9
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s2-min",
+          "n": 9,
+          "distinctPositions": 4,
+          "partition": [
+            6,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.52513835444269e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n9-s3-max",
+          "n": 9,
+          "distinctPositions": 1,
+          "partition": [
+            9
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s3-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s4-max",
+          "n": 9,
+          "distinctPositions": 1,
+          "partition": [
+            9
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s4-min",
+          "n": 9,
+          "distinctPositions": 7,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.803821102153327e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n9-s5-max",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.571768825271133e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s5-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s6-max",
+          "n": 9,
+          "distinctPositions": 2,
+          "partition": [
+            8,
+            1
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s6-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.612387957109545e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n9-s7-max",
+          "n": 9,
+          "distinctPositions": 2,
+          "partition": [
+            7,
+            2
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s7-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s8-max",
+          "n": 9,
+          "distinctPositions": 8,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.062037763094398e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n9-s8-min",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s9-max",
+          "n": 9,
+          "distinctPositions": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.168489405448957e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n9-s9-min",
+          "n": 9,
+          "distinctPositions": 1,
+          "partition": [
+            9
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s1-max",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s1-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s2-max",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s2-min",
+          "n": 10,
+          "distinctPositions": 8,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.520931326596594e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n10-s3-max",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s3-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s4-max",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s4-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.255060768105837e-16,
+          "unitSphereError": 3.3306690738754696e-16
+        },
+        {
+          "id": "n10-s5-max",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s5-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s6-max",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.0515662107741393e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n10-s6-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.587787127282984e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n10-s7-max",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.449423110231128e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n10-s7-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s8-max",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.0515662107741393e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n10-s8-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.539531274985754e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n10-s9-max",
+          "n": 10,
+          "distinctPositions": 8,
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.132149707724936e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n10-s9-min",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s10-max",
+          "n": 10,
+          "distinctPositions": 10,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.755621379592361e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n10-s10-min",
+          "n": 10,
+          "distinctPositions": 1,
+          "partition": [
+            10
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s1-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s1-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s2-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s2-min",
+          "n": 11,
+          "distinctPositions": 8,
+          "partition": [
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.723537814905949e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s3-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s3-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s4-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s4-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 3.7430056398698973e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n11-s5-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s5-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s6-max",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s6-min",
+          "n": 11,
+          "distinctPositions": 10,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.039274784511986e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n11-s7-max",
+          "n": 11,
+          "distinctPositions": 9,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.8037822450812955e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s7-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s8-max",
+          "n": 11,
+          "distinctPositions": 2,
+          "partition": [
+            9,
+            2
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s8-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.41159742993669e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n11-s9-max",
+          "n": 11,
+          "distinctPositions": 9,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.683680305719676e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n11-s9-min",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s10-max",
+          "n": 11,
+          "distinctPositions": 10,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.965463693354256e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s10-min",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s11-max",
+          "n": 11,
+          "distinctPositions": 11,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.081604866512036e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n11-s11-min",
+          "n": 11,
+          "distinctPositions": 1,
+          "partition": [
+            11
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s1-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s1-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s2-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s2-min",
+          "n": 12,
+          "distinctPositions": 6,
+          "partition": [
+            6,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 2.37964162286834e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s3-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s3-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s4-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s4-min",
+          "n": 12,
+          "distinctPositions": 11,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.864145516641324e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n12-s5-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s5-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s6-max",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s6-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 4.032163616125943e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s7-max",
+          "n": 12,
+          "distinctPositions": 2,
+          "partition": [
+            11,
+            1
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s7-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s8-max",
+          "n": 12,
+          "distinctPositions": 6,
+          "partition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "phaseAlignedVectorError": 5.002975025473434e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s8-min",
+          "n": 12,
+          "distinctPositions": 11,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 9.098824494715914e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n12-s9-max",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 7.500431935818692e-16,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s9-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s10-max",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 5.945976356560681e-16,
+          "unitSphereError": 1.1102230246251565e-16
+        },
+        {
+          "id": "n12-s10-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 6.464863217380464e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n12-s11-max",
+          "n": 12,
+          "distinctPositions": 11,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 8.258629120562277e-16,
+          "unitSphereError": 2.220446049250313e-16
+        },
+        {
+          "id": "n12-s11-min",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s12-max",
+          "n": 12,
+          "distinctPositions": 12,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "phaseAlignedVectorError": 1.2576949946765736e-15,
+          "unitSphereError": 0.0
+        },
+        {
+          "id": "n12-s12-min",
+          "n": 12,
+          "distinctPositions": 1,
+          "partition": [
+            12
+          ],
+          "phaseAlignedVectorError": 0.0,
+          "unitSphereError": 0.0
+        }
+      ]
+    }
+  ]
+}

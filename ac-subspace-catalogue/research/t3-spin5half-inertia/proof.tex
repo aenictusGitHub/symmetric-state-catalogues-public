@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{A cubic auxiliary-spin bound on third-order anticoherent subspaces}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+For every integer $N\ge19$ and AC order $t\ge3$,
+\[
+\boxed{6K(N,t)\le N-4.}
+\]
+In particular, $K(19,3)\le2$ and $K(20,3)\le2$.
+\end{theorem}
+\begin{proof}
+Let $j=N/2$, and let $P$ project onto a $k$-dimensional third-order AC
+subspace of $V_j$. Polarization gives $PT_{\ell q}P=0$ for every tensor
+of rank $1\le\ell\le3$. Every ordered spin polynomial $A$ of degree at
+most three therefore satisfies $PAP=(\Tr A)/(2j+1)P$.
+
+Introduce an auxiliary spin $5/2$, and set
+\[
+X=\sum_{a=x,y,z}J_a\otimes S_a,
+\quad F_j(x)=-(2x+3j+8)(2x-3j+5)(2x-5j).
+\]
+For $p=0,\ldots,5$, the total-spin sectors $L=j-5/2+p$ have dimensions
+$2j-4+2p$ and the following coupling eigenvalues and polynomial values:
+\[
+\begin{array}{c|c|c}
+p&x_L&F_j(x_L)\\\hline
+0&-5(j+1)/2&40j(2j-3)(2j+1)\\
+1&-3j/2-4&0\\
+2&-j/2-9/2&-12(j+1)(2j-1)(2j+3)\\
+3&j/2-4&-16j(j+2)(2j+3)\\
+4&3j/2-5/2&0\\
+5&5j/2&0
+\end{array}
+\]
+Here $x_L=[L(L+1)-j(j+1)-35/4]/2$. The weighted sum gives
+\[
+\frac{\Tr F_j(X)}{6(2j+1)}
+=c_j=\frac{20}{3}j(j-9)(2j-1)>0\qquad(j\ge19/2).
+\]
+Set $W=F_j(X)-c_jI$. Since $F_j(X)$ is invariant under joint rotations,
+its partial trace over $V_j$ is scalar on the auxiliary irreducible
+space. The above trace fixes that scalar and yields
+\[
+\Tr_{V_j}W=0.
+\]
+Every sector except $L=j-5/2$ has a strictly negative eigenvalue of $W$.
+The remaining eigenvalue is positive, either from $\Tr W=0$ or directly:
+\[
+F_j(-5(j+1)/2)-c_j
+=\frac{20}{3}j(j+1)(22j-27)>0.
+\]
+Thus $W$ is nonsingular with positive index $N-4$ and negative index
+$5(N+2)$.
+
+The degree-three compression identity gives
+\[
+(P\otimes I_6)W(P\otimes I_6)
+=\frac{P}{2j+1}\otimes\Tr_{V_j}W=0.
+\]
+Hence $\operatorname{Ran}P\otimes V_{5/2}$ is a $6k$-dimensional totally
+isotropic subspace. Projection into the positive spectral space is
+injective: a nonzero vector with zero positive component would have a
+strictly negative quadratic form. Therefore $6k\le N-4$.
+Every higher-order AC subspace is third-order AC as well.
+\end{proof}
+At $N=19$, this gives $6k\le15$; at $N=20$, it gives $6k\le16$.
+The upper bound excludes dimension three at both sizes, without assuming
+real amplitudes, a Dicke support pattern or constellation symmetry.
+
+\paragraph{Exact verification.}
+The accompanying verifier reconstructs the physical magnetic blocks of
+$J\cdot S$ at $N=19,20$, checks their characteristic polynomials and
+Hermiticity with the exact physical metric, and verifies every partial-
+trace entry of $W$ with rational arithmetic. The general weighted-trace
+identity is also checked at five exact points after its degree-four
+bound is established. Numerical searches play no role in the proof.
+\end{document}

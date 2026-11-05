@@ -1,0 +1,285 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{General upper bounds for anticoherent subspaces of symmetric qubits}
+\author{Catalogue calculation}
+\date{30 October 2026}
+\maketitle
+Let $k_{\max}(N,t)$ denote the largest dimension of a subspace of $\operatorname{Sym}^N(\mathbb C^2)$ all of whose normalized vectors are $t$-anticoherent. We prove a bound for every integer $1\le t\le N$, without assuming real coefficients or any constellation symmetry.
+\paragraph{Closed upper bound.}
+For odd order $t=2r+1$,
+\[
+\boxed{k_{\max}(N,2r+1)\le\left\lfloor\frac{N}{(r+1)(r+2)}\right\rfloor.}
+\]
+For even order $t=2r\ge2$,
+\[
+\boxed{k_{\max}(N,2r)\le
+\begin{cases}0,&N<(r+1)^2,\\
+\left\lfloor\dfrac{N+1}{(r+1)^2}\right\rfloor,&N\ge(r+1)^2.
+\end{cases}}
+\]
+These inequalities need not be sharp at every size. General equality obstructions below can lower the integer upper bound by one, and stronger existing certificates remain applicable. The source paper's Schmidt bound is recovered as one member of the same rectangular-tensor family. No claim of literature priority is made.
+\section{A dimension bound from rectangular spin tensors}
+Let $\mathcal H_N=\operatorname{Sym}^N(\mathbb C^2)$ and let
+$V\subset\mathcal H_N$ be a $t$-anticoherent subspace of dimension $k$.
+Write $P$ for its orthogonal projector. Equivalently,
+$P A P=\operatorname{Tr}(A)P/(N+1)$ whenever $A$ is a linear
+combination of spin tensors of ranks $0,1,\ldots,t$.
+Assume $1\le t\le N$.
+
+For each integer $h$ with $0\le h\le t$, put $M=N-h$ and define
+\[
+ D_h(t)=\sum_{\substack{\ell=h/2,h/2+1,\ldots\\2\ell\le t}}(2\ell+1).
+\]
+Then
+\begin{equation}\label{eq:rectangular-general}
+ \boxed{\quad kD_h(t)\le N-h+1\qquad(0\le h\le t).\quad}
+\end{equation}
+In particular, $h=t$ gives the Schmidt bound
+$k(t+1)\le N-t+1$, whereas $h=0$ gives the usual tensor-Gram bound.
+
+\paragraph{Proof.}
+Under $A\mapsto U_{M/2}(g)AU_{N/2}(g)^\dagger$, the rectangular
+operator space $\operatorname{Hom}(\mathcal H_N,\mathcal H_M)$
+decomposes once into each spin
+\[
+ \ell=h/2,h/2+1,\ldots,N-h/2.
+\]
+Choose Hilbert--Schmidt orthonormal tensor operators
+$A_{\ell m}:\mathcal H_N\to\mathcal H_M$ for the ranks
+$\ell\le t/2$. The product
+$A_{\ell m}^\dagger A_{\ell' m'}$ has only integer tensor ranks at
+most $\ell+\ell'\le t$. Its scalar part is
+$\delta_{\ell\ell'}\delta_{mm'}I/(N+1)$. Thus for an orthonormal
+basis $u_1,\ldots,u_k$ of $V$,
+\[
+ \left\langle A_{\ell m}u_a,A_{\ell'm'}u_b\right\rangle
+ =\frac{\delta_{ab}\delta_{\ell\ell'}\delta_{mm'}}{N+1}.
+\]
+The $kD_h(t)$ nonzero vectors $\sqrt{N+1}\,A_{\ell m}u_a$ are
+orthonormal in the $(N-h+1)$-dimensional space $\mathcal H_M$.
+This proves \eqref{eq:rectangular-general}, for arbitrary complex $V$.
+
+\paragraph{Closed form and optimization.}
+If $t=2r$, then
+\[
+ D_{2a}=(r+1)^2-a^2\quad(0\le a\le r),\qquad
+ D_{2a+1}=r(r+1)-a(a+1)\quad(0\le a<r).
+\]
+If $t=2r+1$, then
+\[
+ D_{2a}=(r+1)^2-a^2,\qquad
+ D_{2a+1}=(r+1)(r+2)-a(a+1)\quad(0\le a\le r).
+\]
+Optimizing all the inequalities gives
+\[
+ \boxed{\begin{array}{ll}
+  t=2r+1:&N\ge k(r+1)(r+2),\\[2pt]
+  t=2r,\ k\ge2:&N+1\ge k(r+1)^2,\\[2pt]
+  t=2r,\ k=1:&N\ge(r+1)^2.
+ \end{array}}
+\]
+For even shifts the lower bound on $N$ differs from its value at $a=0$
+by $a(2-ka)$; this is maximized at $a=0$ for $k\ge2$ (with a tie
+at $a=1$ when $k=2$), and at $a=1$ for $k=1$. For odd shifts the
+corresponding difference is $a[2-k(a+1)]\le0$. Comparing the two
+parities gives exactly the displayed envelope. The statement for even
+$t$ assumes $r\ge1$; $t=0$ instead has the trivial bound $k\le N+1$.
+
+Consequently, $t=3$ gives $6k\le N$, and $t=5$ gives $12k\le N$.
+For pure states, the even-order refinement excludes $N=8,t=4$
+immediately: eight orthogonal rank-one/rank-two rectangular tensor
+images would have to fit in $\mathcal H_6$, whose dimension is seven.
+
+\section{A general saturation test and an explicit fourth-order test}
+Suppose $t=2r$ and $k(r+1)^2=N+1$. The orthogonal images for $h=0$
+then form a complete basis, so
+\[
+ \mathcal E_r(P):=\sum_{\ell=0}^r\sum_{m=-\ell}^{\ell}
+ T_{\ell m}PT_{\ell m}^{\dagger}=\frac{I}{N+1},
+\]
+where the $T_{\ell m}$ are Hilbert--Schmidt orthonormal tensors on
+$\mathcal H_N$. This channel is rotation covariant. On rank-$L$
+tensors its eigenvalue is
+\[
+ e_{r,L}=\sum_{\ell=0}^r(-1)^{N+\ell+L}(2\ell+1)
+ \begin{Bmatrix}N/2&N/2&\ell\\N/2&N/2&L\end{Bmatrix}.
+\]
+Since $P$ is nonconstant and its ranks $1,\ldots,2r$ vanish,
+\[
+ \boxed{\text{Saturation requires }e_{r,L}=0
+ \text{ for at least one integer }L\in\{2r+1,\ldots,N\}.}
+\]
+Thus if none of these finitely specified exact coefficients vanishes,
+$k(r+1)^2=N+1$ is impossible. This criterion applies to every $N$;
+it does not rely on a numerical search.
+
+For $r=1$, setting $Q=N(N+2)$ and $x=L(L+1)$ gives
+\[
+ e_{1,L}=\frac{2(2Q-3x)}{(N+1)Q},
+\]
+recovering the necessary condition $3L(L+1)=2N(N+2)$ at $4k=N+1$.
+For $r=2$,
+\[
+ e_{2,L}=\frac{3\left[10x^2+(16-12Q)x+3Q(Q-3)\right]}
+ {(N+1)Q(Q-3)}.
+\]
+Hence a fourth-order AC subspace saturating $9k=N+1$ requires
+\[
+ \boxed{10[L(L+1)]^2+[16-12N(N+2)]L(L+1)
+ +3N(N+2)[N(N+2)-3]=0}
+\]
+for an integer $L\in\{5,\ldots,N\}$. In particular, the integer
+$24Q^2-24Q+256$ must be a perfect square, although this square test
+alone is only a necessary condition.
+
+\paragraph{Direct derivation of the fourth-order polynomial.}
+Put $j=N/2$, $c=j(j+1)$, and
+$\Phi(A)=\sum_{i=x,y,z}J_iAJ_i$. On rank $L$, $\Phi$ has eigenvalue
+$f=c-L(L+1)/2$. Define the symmetric traceless quadrupoles
+$Q_{ij}=\{J_i,J_j\}/2-c\delta_{ij}I/3$. The commutation relations give
+\[
+ \sum_{ij}Q_{ij}AQ_{ij}=\Phi^2(A)-\tfrac12\Phi(A)-\tfrac{c^2}{3}A.
+\]
+Their Hilbert--Schmidt normalization yields
+\[
+ \mathcal E_2=\frac{\mathrm{id}}{N+1}
+ +\frac{3\Phi}{(N+1)c}
+ +\frac{30(\Phi^2-\Phi/2-c^2\mathrm{id}/3)}{(N+1)c(4c-3)}.
+\]
+Substituting $f=c-x/2$ and $c=Q/4$ gives the polynomial above.
+\section{Odd-order equality: the exact channel}
+Put $t=2r+1$, $D=(r+1)(r+2)$, $j=N/2$ and $j'=j-1/2$. In this section rescale the Hilbert--Schmidt unit tensors of Section~1 to $E_{\ell q}=\sqrt{N+1}A_{\ell q}$, so their squared Hilbert--Schmidt norm is $N+1$. If $kD=N$, the error vectors form a basis of $V_{j'}$ and
+\[
+\mathcal F_r(P)=I_{V_{j'}},\qquad
+\mathcal F_r(A)=\sum_{\ell=1/2}^{r+1/2}\sum_{q=-\ell}^{\ell}E_{\ell q}A E_{\ell q}^{\dagger}.
+\]
+Use Hilbert--Schmidt unit-normalized input/output tensor bases. Covariance maps rank $L$ to the same rank, with scalar
+\begin{equation}\label{eq:sixj}
+\eta_r(L)=(N+1)\sum_{a=0}^r(2a+2)(-1)^{N+L+a}
+\begin{Bmatrix}
+j&j&L\\ j-\tfrac12&j-\tfrac12&a+\tfrac12
+\end{Bmatrix},\qquad 0\le L\le N-1.
+\end{equation}
+Rank $N$ is absent from the output and is in the kernel. Equation~\eqref{eq:sixj}, with the stated normalization, is a finite exact criterion independently of any polynomial simplification.
+
+For convenient rational evaluation, set
+\[
+f_L=\sqrt{\frac{N(N+1)-L(L+1)}{N^2}}>0\quad (0\le L\le N-1)
+\]
+and define the terminating polynomial
+\begin{equation}\label{eq:polynomial}
+R_r^{(N)}(L)=\sum_{h=0}^{\min(r,L)}
+\frac{(-r)_h(r+3)_h(-L)_h(L+1)_h}
+{(2)_h(1-N)_h(N+2)_h\,h!}.
+\end{equation}
+Then
+\[
+\boxed{\eta_r(L)=(r+1)(r+2)f_L R_r^{(N)}(L).}
+\]
+All polynomial denominators are nonzero in the range $2r+1\le N$.
+
+\paragraph{Derivation of the polynomial.}
+The Racah factorial formula for the individual six-j symbol gives
+\[
+\frac{(N+1)(-1)^{N+L+a}}{f_L}
+\begin{Bmatrix}j&j&L\\j-\tfrac12&j-\tfrac12&a+\tfrac12\end{Bmatrix}
+=\sum_{h=0}^{\min(a,L)}
+\frac{(-a)_h(a+2)_h(-L)_h(L+1)_h}
+{(1)_h(1-N)_h(N+2)_h\,h!}.
+\]
+Interchange the two finite sums and use
+\begin{align*}
+\sum_{a=h}^r2(a+1)(-a)_h(a+2)_h
+&=2(-1)^h\sum_{a=h}^r\frac{(a+h+1)!}{(a-h)!}\\
+&=\frac{(-1)^h(r+h+2)!}{(h+1)(r-h)!}\\
+&=\frac{(r+1)(r+2)(-r)_h(r+3)_h}{h+1}.
+\end{align*}
+The middle equality is the elementary binomial hockey-stick identity. The extra factor $h+1$ converts $(1)_h$ into $(2)_h$, proving~\eqref{eq:polynomial} for all admissible parameters, rather than only for checked examples.
+
+\section{A general exclusion of odd-order saturation}
+Suppose $N\ge7$, $kD=N$, and
+\[
+R_r^{(N)}(L)\ne0\qquad\text{for every integer }2r+2\le L\le N-1.
+\]
+The ranks $1,\ldots,2r+1$ of $P$ vanish by anticoherence; equality in the channel eliminates every remaining rank below $N$. Thus
+\[
+P=\alpha I+X,\qquad \alpha=\frac{k}{N+1},
+\]
+where $X$ is Hermitian and lies entirely in tensor rank $N$. The projector identity gives
+\[
+X^2=(1-2\alpha)X+\alpha(1-\alpha)I.
+\]
+Here $0<\alpha<1$, so $X\ne0$. Time-reversed vectorization identifies rank-$N$ operators on $V_{N/2}$ with the maximal-spin $N$ subspace in $V_{N/2}\otimes V_{N/2}$, i.e. the symmetric $2N$-qubit space. Explicitly let $F_{mn}=(-1)^{j-m}\delta_{m,-n}$, the unitary linear part of spin time reversal. Then $|\Psi\rangle=\operatorname{vec}(XF)/\sqrt{\Tr X^2}$ is a pure symmetric $2N$-qubit state. Its $N$-qubit reduction is
+\[
+\frac{XX^{\dagger}}{\Tr X^2}=\frac{X^2}{\Tr X^2},
+\]
+which has only scalar and rank-$N$ multipoles. Tracing out one more qubit eliminates rank $N$, proving that the lifted pure state is $(N-1)$-AC.
+
+The pure-state corollary $(t+2)^2\le4n+1$, proved below directly from the packing bound, applies to the lifted state with $n=2N$ and $t=N-1$. It requires
+\[
+(N+1)^2\le8N+1,\qquad N(N-6)\le0.
+\]
+This is impossible for every $N\ge7$, with no exceptional small-size certificate. Thus saturation is excluded:
+\[
+\boxed{kD=N\ \text{and no allowed integer root}\quad\Longrightarrow\quad
+k_{\max}(N,2r+1)\le k-1\quad(N\ge7).}
+\]
+An integer root is only a necessary escape from this obstruction; it does not prove existence.
+
+\section{Explicit third-order arithmetic}
+For $r=1$,
+\[
+R_1^{(N)}(L)=1-\frac{2L(L+1)}{(N-1)(N+2)}.
+\]
+Consequently, when $6k=N\ge12$, equality is impossible unless some integer $4\le L\le N-1$ satisfies
+\[
+2L(L+1)=(N-1)(N+2),
+\]
+or equivalently
+\[
+(2N+1)^2-2(2L+1)^2=7.
+\]
+There is no such root at $N=12,18,24$. At $N=6$ the root $L=4$ is consistent with the octahedral pure state; at $N=78$ the root $L=55$ means this criterion alone leaves saturation open.
+
+\section{An additional pure-state equality test}
+The rectangular bound with a two-qubit reduction shows that a pure even-order $2s$-AC state must have $N\ge(s+1)^2$: it uses ranks $1,\ldots,s$ in $\operatorname{Hom}(V_{N/2},V_{(N-2)/2})$, numbering $s(s+2)$, and gives $s(s+2)\le N-1$.
+
+Suppose now a pure $(2r+1)$-AC state attains $N=(r+1)(r+2)$, with $r\ge1$. It is necessary that
+\[
+\boxed{R_r^{(N)}(2r+2)=0.}
+\]
+Otherwise the equality channel eliminates rank $2r+2$ as well, making the pure state $(2r+2)$-AC. The even-order pure bound would require $N\ge(r+2)^2>(r+1)(r+2)$, a contradiction. This step uses $k=1$; an averaged AC projector for $k>1$ is insufficient.
+
+For $r=1,2$ the test vanishes, consistent with the six-qubit octahedron and twelve-qubit icosahedron. For $r=3$, $N=20$ and
+\[
+R_3^{(20)}(8)=-\frac{375}{81719}\ne0,
+\]
+so no pure twenty-qubit seventh-order AC state exists. The only allowed integer root in that example is $L=18$; having that root does not evade the stronger pure-state test. Nonvanishing of this test for every $r\ge3$ is not claimed here.
+
+
+\section{A pure-state corollary}
+Setting $k=1$ in the optimized packing bound gives
+\[
+N\ge\left\lfloor\frac{(t+2)^2}{4}\right\rfloor,
+\qquad\boxed{(t+2)^2\le4N+1.}
+\]
+The two forms are equivalent since an integer square is $0$ or $1$ modulo $4$. Thus $t\le\lfloor\sqrt{4N+1}\rfloor-2$ for a nonzero pure AC state. This consequence is used in the projector-lift obstruction above; its proof depends only on the packing argument, so there is no circular dependence on an equality exclusion.
+
+\section{Exact catalogue application}
+The implementation evaluates all bounds with integers and rational/algebraic six-j coefficients. A multiplier is zero only when it vanishes exactly. Existing lower bounds use the previously verified whole-subspace bases; numerical representatives are not promoted to rigorous existence witnesses. The accompanying file \texttt{improvements.json} lists every changed interval.
+
+The new positive-dimensional maxima are
+\[
+k_{\max}(10,3)=k_{\max}(11,3)=k_{\max}(12,3)=1,\qquad k_{\max}(18,3)=2,
+\]
+\[
+k_{\max}(18,5)=k_{\max}(20,5)=k_{\max}(24,5)=1.
+\]
+The bounds also exclude all nonzero subspaces at $(N,t)=(15,6)$ and at $(N,7)$ for $16\le N\le20$. Other improved cells remain rigorous intervals. The total is 30 improved entries, including 13 newly settled maxima or zero exclusions.
+
+\paragraph{Verification and provenance.}
+The proof is analytic for all $N,t,k$. Separate exact checks reconstruct rectangular tensor matrices from Clebsch--Gordan coefficients, verify their product ranks and Gram matrices, and check both channel formulas with independent tensor contractions. The third-order equality obstruction has an additional spectral proof. The full catalogue audit independently recomputes the all-shift bound and exact equality roots for every entry. Finite checks are validation of the algebra and implementation, not substitutes for the general proof.
+\end{document}

@@ -1,0 +1,77 @@
+Complete equality classification for pure symmetric seven-qubit states
+====================================================================
+
+Assume the independently verified positive-definite sum-of-squares identity
+for q(P6-7q^2), with q=<psi|psi>. The following argument proves:
+
+S6(psi)=7 if and only if psi is a collective SU(2) rotation of
+ alpha |D7^0> + beta |D7^7>, |alpha|^2+|beta|^2=1.
+
+This includes coherent states when alpha or beta vanishes, and the entire
+complex generalized-GHZ family, not just balanced GHZ states.
+
+1. Equality forces a rank-two Hankel condition.
+Write c_r=sqrt(C(7,r))*x_r and associate the binary septic
+ f(X,Y)=sum_(r=0)^7 C(7,r) x_r X^(7-r)Y^r.
+Every positive summand in the exact SOS must vanish. The holomorphic cubic
+blocks have twice-spins 3,5,9 and therefore 4+6+10=20 scalar components.
+Exact rational linear algebra shows that their span is precisely the span
+of the twenty 3x3 minors of
+ H=(x_(i+j))_(0<=i<=2,0<=j<=5).
+Consequently rank(H)<=2. The supplied verification script checks the full
+20x120 coefficient matrices, an invertible20x20 change of basis, and the
+positive Gram matrices of all three blocks.
+
+2. An elementary apolar argument gives only two possible forms.
+A nonzero left-kernel vector (u0,u1,u2) of H gives
+ (u0 d_X^2+u1 d_X d_Y+u2 d_Y^2)f=0,
+because the coefficient of X^(5-j)Y^j is exactly
+ 42 C(5,j)(u0 x_j+u1 x_(j+1)+u2 x_(j+2)), j=0,...,5.
+Over the complex numbers this nonzero quadratic differential operator
+factors into two linear operators.
+If they are distinct, an invertible coordinate change turns it into
+ d_U d_V, so homogeneity implies f=A U^7+B V^7.
+If they coincide, the operator becomes d_V^2, so
+ f=A U^7+B U^6 V.
+This argument includes every rank-one/rank-two boundary case. In the
+two-power case A=0 or B=0 gives a coherent power. In the tangent case
+B=0 is coherent; A=0 can remain noncoherent and is covered by Step4.
+
+3. The mixed cubic forces orthogonality in the two-power case.
+Because equality is preserved by collective rotations, rotate the first
+linear form to X. In the noncoherent two-power case the state is then
+ f=A X^7+B(cX+dY)^7,
+with A,B nonzero and d nonzero (the two linear forms are distinct).
+The highest component of the mixed(2,1) block with twice-spin13 is
+ h=(x0*x2-x1^2)*conj(x5)
+   +(x0*x3-x1*x2)*conj(x6)
+   +(x1*x3-x2^2)*conj(x7).
+Substituting x_r=A*delta_(r,0)+B*c^(7-r)*d^r gives exactly
+ h=A*|B|^2*c^4*conj(c)*d^2*conj(d)^5*(|c|^2+|d|^2).
+The Gram coefficient of this block is strictly positive. Equality therefore
+requires h=0. With A,B,d nonzero and |c|^2+|d|^2>0, this forces c=0.
+Thus the two coherent spinors are orthogonal, and f is A X^7+B'Y^7.
+
+4. Noncoherent tangent forms are impossible.
+Rotate the repeated linear form U to X. Absorbing any X component of V
+into the X^7 term leaves support only at x0 and x1, with x1 nonzero for a
+noncoherent tangent. Component4 (zero-based magnetic-component index) of
+the same twice-spin13 mixed covariant restricts to
+ -5*x1^2*conj(x1).
+It cannot vanish when x1 is nonzero. Hence every tangent equality state
+is coherent and again belongs to the generalized-GHZ family.
+
+5. Sufficiency.
+For arbitrary complex alpha,beta with |alpha|^2+|beta|^2=1, direct Pauli
+expectations, or the exact reduced-purity checker, give
+ (S0,S2,S4,S6)=(1,21,35,7)
+on alpha D7^0+beta D7^7. Collective rotations preserve all sector lengths.
+This proves the converse and completes the classification.
+
+Reproducibility:
+ verify_equality_classification.py checks the Hankel-minor span,
+ mixed-cubic formulas, their factorization/restriction and positivity.
+ verify_even_sectors.py independently checks the full complex endpoint
+ family and P2+P4+P6=63q^2 from reduced purities.
+The global SOS identity is independently verified by the separate
+certificate verifier; this equality argument depends on that identity.

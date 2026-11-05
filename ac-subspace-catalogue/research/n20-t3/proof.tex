@@ -1,0 +1,154 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\D}[1]{|D_{20}^{(#1)}\rangle}
+\begin{document}
+\title{An explicit radical third-order AC plane for twenty qubits}
+\author{Catalogue calculation}\date{3 November 2026}\maketitle
+We construct an orthonormal pair whose entire complex span is third-order
+anticoherent. All Dicke states are normalized and square roots are the
+nonnegative real square roots. This is an independent analytical witness;
+no identification with a rounded numerical plane in \texttt{ACLiege.jl} is
+asserted.
+
+\section{Explicit coefficients}
+Let $R_r=4r$ for $0\leq r\leq5$ and $S_r=3+4r$ for $0\leq r\leq4$.
+Choose
+\[
+ p=(3927,333,9318,5018,2483,3497)/24576,\qquad
+ q=(143,23,53,117,48)/384.
+\]
+Set
+\[
+ U=\frac{89947}{262144},\qquad
+ V=-\frac{274443}{1048576},\qquad W=\frac{26039}{393216},
+\]
+\[
+ A=\sqrt U,\qquad B=\frac{V+i\sqrt{4UW-V^2}}{2\sqrt U},
+ \qquad Z_r=(-1)^r\binom4r(A+rB).
+\]
+For $0\leq r\leq4$ let
+\[
+ f_r=\sqrt{(20-S_r)(S_r+1)},\qquad
+ g_r=\sqrt{\prod_{h=0}^{2}(20-R_r-h)(R_r+h+1)},\qquad
+ L_r=g_r\sqrt{p_rq_r}.
+\]
+Define
+\[
+ C=-L_0+L_1+L_2,\qquad
+ x=-\frac{C^2+L_3^2-L_4^2}{2C},\qquad y=\sqrt{L_3^2-x^2},
+\]
+\[
+ (T_0,T_1,T_2,T_3,T_4)=(-L_0,L_1,L_2,x+iy,-C-x-iy).
+\]
+Finally set
+\[
+ a_0=\sqrt{p_0},\qquad
+ a_{r+1}=\frac{g_rZ_r}{f_rT_r}a_r,\qquad
+ b_r=\overline{\frac{Z_r}{f_ra_{r+1}}}\quad(0\leq r\leq4).
+\]
+An explicit basis is
+\[
+ |u\rangle=\sum_{r=0}^{5}a_r\D{4r},\qquad
+ |v\rangle=\sum_{r=0}^{4}b_r\D{3+4r}.
+\]
+This finite recurrence is an expression in radicals, with no free parameters.
+The file \texttt{basis.json} also gives every expanded component.
+
+\section{Well-defined radicals and exact norms}
+First,
+\[
+ 4UW-V^2=\frac{73835750677}{3298534883328}>0.
+\]
+Thus $|A+rB|^2=U+rV+r^2W$. Direct rational substitution proves
+\[
+ |Z_r|^2=\binom4r^2(U+rV+r^2W)=f_r^2p_{r+1}q_r.
+\]
+The other squared lengths are the positive rationals
+\[
+ (L_0^2,L_1^2,L_2^2,L_3^2,L_4^2)=
+ \left(\frac{160044885}{65536},\frac{9382275}{16384},
+ \frac{2240862525}{32768},\frac{934966305}{16384},
+ \frac{7218081}{4096}\right).
+\]
+Comparing these rationals with integer squares proves
+\[
+ 49<L_0<50,\quad23<L_1<24,\quad261<L_2<262,
+ \quad238<L_3<239,\quad41<L_4<42.
+\]
+In particular $234<C<237$ and
+\[
+ |L_3-L_4|<198<234<C<237<279<L_3+L_4.
+\]
+The strict triangle inequalities imply $y^2>0$. More explicitly,
+\[
+ 4C^2y^2=((L_3+L_4)^2-C^2)(C^2-(L_3-L_4)^2)>0.
+\]
+The construction therefore gives
+\[
+ \sum_{r=0}^{4}T_r=0,\qquad |T_r|^2=L_r^2=g_r^2p_rq_r.
+\]
+Starting from $|a_0|^2=p_0$, the recurrence proves by induction
+\[
+ |a_r|^2=p_r,\qquad |b_r|^2=q_r,
+\]
+\[
+ f_ra_{r+1}\overline{b_r}=Z_r,\qquad
+ g_ra_r\overline{b_r}=T_r.
+\]
+All $p_r,q_r$ are strictly positive; hence no denominator vanishes.
+The supports are disjoint and both probability lists sum to one, proving
+orthonormality.
+
+\section{Third-order AC for every superposition}
+Exact rational moment identities are
+\[
+ \sum_r p_r(4r)^d=\sum_r q_r(3+4r)^d
+ =\frac1{21}\sum_{j=0}^{20}j^d,\qquad0\leq d\leq3.
+\]
+Distinct occupied Dicke indices within each vector differ by at least four,
+so all self off-diagonal moments of rank at most three vanish. The four
+diagonal identities therefore give both three-qubit self reductions $I_4/4$.
+
+The only cross-support differences of absolute value at most three are
+$R_{r+1}-S_r=1$ and $R_r-S_r=-3$. For the former, all rank-one, rank-two and
+rank-three conditions reduce to
+\[
+ \sum_{r=0}^{4}r^dZ_r=0\qquad(d=0,1,2).
+\]
+Indeed the fourth finite difference annihilates every polynomial of degree
+at most three, and $r^d(A+rB)$ has degree at most three. For the latter the
+sole rank-three condition is $\sum T_r=0$, already proved. Their conjugates
+give the adjoint moments. Consequently every ordered three-qubit reduction is
+\[
+ R_3(|u_i\rangle\langle u_j|)=\delta_{ij}\frac{I_4}{4}.
+\]
+This is the whole-subspace condition, not merely separate AC conditions on
+the two basis states.
+
+\section{Independent verification and optimality}
+The primary verifier reconstructs the saved radical coefficients and checks
+all forty ordered spin-moment entries $J_+^qJ_z^p$, $q+p\leq3$.
+The independent verifier imports no construction code. It separately checks
+the radical recurrence, its exact norm identities and rational positivity
+bounds. It then constructs all sixty-four physical reduced entries from
+\[
+ R_3(|u\rangle\langle v|)_{ab}
+ =\sum_{h=0}^{17}u_{a+h}\overline{v_{b+h}}
+ \frac{\sqrt{\binom3a\binom3b}\binom{17}h}
+ {\sqrt{\binom{20}{a+h}\binom{20}{b+h}}}.
+\]
+For cross entries it substitutes the certified products $Z_r/f_r$ and
+$T_r/g_r$ before simplification. The vanishing is a polynomial identity in
+the phase variables, so no large primitive algebraic field needs to be
+expanded. Every exported coefficient is exactly associated with the
+verified radical recurrence; no decimal tolerance is used in the AC proof.
+
+The separately certified spin-$5/2$ cubic-inertia bound gives
+$6k\leq N-4$ at $N=20$, hence $k\leq2$. Combining it with this witness yields
+\[
+ \boxed{K(20,3)=2.}
+\]
+The upper-bound proof is supplied in
+\texttt{../t3-spin5half-inertia/proof.tex}.
+\end{document}

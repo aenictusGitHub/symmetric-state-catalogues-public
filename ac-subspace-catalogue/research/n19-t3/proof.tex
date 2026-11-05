@@ -1,0 +1,121 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\D}[1]{|D_{19}^{(#1)}\rangle}
+\begin{document}
+\title{An explicit radical third-order AC plane for nineteen qubits}
+\author{Catalogue calculation}\date{3 November 2026}\maketitle
+All Dicke states are normalized, and every unqualified square root below is
+the nonnegative real square root. We construct an orthonormal pair whose
+\emph{entire complex span} is third-order anticoherent. The construction is
+independent of the rounded numerical plane in \texttt{ACLiege.jl}; equality to
+that plane, even up to rotation, is not asserted.
+
+\section{Explicit coefficients}
+Let $R_i=1+5i$, $S_i=3+5i$, $0\leq i\leq3$, and set
+\[
+ p=(77,199,21,203)/500,\qquad q_i=p_{3-i}.
+\]
+For the indicated index ranges define the positive ladder factors
+\[
+ f_i=\sqrt{(19-R_i)(R_i+1)(18-R_i)(R_i+2)}\quad(0\leq i\leq3),
+\]
+\[
+ g_i=\sqrt{\prod_{h=0}^{2}(19-S_i-h)(S_i+h+1)}\quad(0\leq i\leq2).
+\]
+Put
+\begin{align*}
+ z&=f_0\sqrt{p_0p_3},&
+ w&=\frac{60649+i\sqrt{65076^2-60649^2}}{65076},\\
+ (Z_0,Z_1,Z_2,Z_3)&=z(1,w-2,1-2w,w),\\
+ L&=g_0\sqrt{p_1p_3},&M&=g_1p_2,\\
+ \eta&=-\frac{M}{2L}+i\sqrt{1-\frac{M^2}{4L^2}},&
+ (T_0,T_1,T_2)&=(L,M\eta,-L-M\eta).
+\end{align*}
+The coefficients are given by a finite radical recurrence,
+\[
+ a_0=\sqrt{p_0},\qquad
+ a_{i+1}=\frac{f_iT_i}{g_iZ_i}a_i\quad(0\leq i\leq2),
+ \qquad b_i=\overline{\frac{Z_i}{f_i a_i}}\quad(0\leq i\leq3).
+\]
+The required basis is
+\[
+ |u\rangle=\sum_{i=0}^{3}a_i\D{1+5i},\qquad
+ |v\rangle=\sum_{i=0}^{3}b_i\D{3+5i}.
+\]
+This specifies every component by rational operations, conjugation and square
+roots, with no unknown parameters or implicit polynomial roots.
+
+\section{The phase and norm identities}
+The number $w$ has unit modulus. Direct rational arithmetic gives
+\[
+ \Re w=\frac{5f_0^2p_0p_3-f_1^2p_1p_2}{4f_0^2p_0p_3},
+ \qquad |Z_i|^2=f_i^2p_iq_i.
+\]
+Moreover $0<M<2L$, so $|\eta|=1$. Consequently
+\[
+ |T_i|^2=g_i^2p_{i+1}q_i\quad(0\leq i\leq2),\qquad
+ \sum_{i=0}^{2}T_i=0.
+\]
+In the last length identity one uses
+$|L+M\eta|^2=L^2$ and $g_2=g_0$.
+The recurrence, starting from $|a_0|^2=p_0$, therefore proves inductively that
+\[
+ |a_i|^2=p_i,\quad |b_i|^2=q_i,\quad
+ f_i a_i\overline{b_i}=Z_i,\quad
+ g_i a_{i+1}\overline{b_i}=T_i.
+\]
+All the norms are positive, so every denominator in the recurrence is nonzero.
+Since $\sum p_i=\sum q_i=1$ and the two supports are disjoint, the pair is
+orthonormal.
+
+\section{Proof for the entire plane}
+Both probability measures have exactly the uniform Dicke moments through
+order three:
+\[
+ \sum_i p_iR_i^d=\sum_i q_iS_i^d
+ =\frac1{20}\sum_{r=0}^{19}r^d,\qquad 0\leq d\leq3.
+\]
+Within either support all distinct occupied indices differ by at least five.
+Thus each three-qubit self reduction is diagonal. Its diagonal entries are
+linear combinations of these four moments, so both self reductions equal
+$I_4/4$ in the symmetric three-qubit space.
+
+For cross reductions, the only support differences of absolute value at most
+three are $S_i-R_i=2$ and $R_{i+1}-S_i=3$. For shift two the spin moments of
+rank at most three are proportional to
+\[
+ \sum_i Z_i=0,\qquad \sum_i iZ_i=0;
+\]
+both vanish directly from the definition of $Z$. For shift three the only
+condition is $\sum_iT_i=0$. The adjoint conditions are their conjugates.
+Equivalently, every ordered matrix element of
+$J_+^qJ_z^p$ for $q+p\leq3$ has the required scalar compression. These
+operators and their adjoints span the spin-tensor ranks zero through three.
+It follows that
+\[
+ R_3(|u\rangle\langle u|)=R_3(|v\rangle\langle v|)=I_4/4,
+ \qquad R_3(|u\rangle\langle v|)=R_3(|v\rangle\langle u|)=0.
+\]
+Hence every normalized $\alpha|u\rangle+\beta|v\rangle$ is third-order AC.
+
+\section{Exact checks and optimality}
+The primary verifier checks all forty ordered physical spin moments of total
+degree at most three. A separate verifier reads the exported radical
+coefficients and checks all sixty-four entries of the four ordered
+three-qubit reduced matrices directly with exact symbolic arithmetic. The
+coefficient matrix used for this independent calculation is
+\[
+ M(c)_{a,b}=c_{a+b}
+ \sqrt{\frac{\binom3a\binom{16}b}{\binom{19}{a+b}}},
+ \quad 0\leq a\leq3,\quad0\leq b\leq16.
+\]
+It verifies $M(c_i)M(c_j)^\dagger=\delta_{ij}I_4/4$.
+The separately certified spin-$5/2$ cubic-inertia bound gives
+$6k\leq N-4$ at $N=19$, hence $k\leq2$. Together with this witness,
+\[
+ \boxed{K(19,3)=2.}
+\]
+See the companion proof in
+\texttt{../t3-spin5half-inertia/proof.tex} for that upper bound.
+\end{document}

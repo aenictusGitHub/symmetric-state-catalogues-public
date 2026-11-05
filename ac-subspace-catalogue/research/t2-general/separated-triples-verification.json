@@ -1,0 +1,15 @@
+{
+  "arithmetic": "exact rational",
+  "verified_n_min": 6,
+  "verified_n_max": 1000,
+  "verified_count": 995,
+  "passed": true,
+  "checks": [
+    "strictly positive rational weights",
+    "unit normalization",
+    "zero first spin moment",
+    "isotropic second spin moment",
+    "disjoint supports with global gap at least 3"
+  ],
+  "qualification": "Finite exact checks supplement the all-N proof."
+}

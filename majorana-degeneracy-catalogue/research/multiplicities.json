@@ -1,0 +1,2129 @@
+{
+  "convention": {
+    "homogeneous": "P(X,Y)=sum_r (-1)^r sqrt(binomial(n,r)) c_r X^(n-r)Y^r",
+    "affine": "z=Y/X; f(z)=P(1,z)",
+    "infinity": "[X:Y]=[0:1], multiplicity n-degree(f)",
+    "normalization": "Nonzero overall scalar omitted; leading affine coefficient set to1.",
+    "interpretation": "Multiplicity partition is independent of rotations, coordinate chart, complex conjugation and the antipodal convention."
+  },
+  "method": "Exact algebraic squarefree factorization of f(z)=z^a h(z^g), including infinity. No numerical clustering.",
+  "states": [
+    {
+      "stateId": "ac-n2-t1",
+      "n": 2,
+      "achievedOrder": 1,
+      "label": "GHZ / spin-cat state",
+      "partition": [
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**2 + Y**2",
+      "homogeneousPolynomialLatex": "X^{2} + Y^{2}",
+      "affinePolynomial": "z**2 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^2",
+        "step": 2,
+        "polynomial": "y + 1",
+        "polynomialLatex": "y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + 1",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 2
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "runtimeSeconds": 0.05877995491027832
+    },
+    {
+      "stateId": "ac-n3-t1",
+      "n": 3,
+      "achievedOrder": 1,
+      "label": "GHZ / spin-cat state",
+      "partition": [
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 3,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**3 + Y**3",
+      "homogeneousPolynomialLatex": "- X^{3} + Y^{3}",
+      "affinePolynomial": "z**3 - 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y - 1",
+        "polynomialLatex": "y - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - 1",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 3
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "runtimeSeconds": 0.0036590099334716797
+    },
+    {
+      "stateId": "ac-n4-t2",
+      "n": 4,
+      "achievedOrder": 2,
+      "label": "Tetrahedral state",
+      "partition": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 4,
+      "status": "exact",
+      "homogeneousPolynomial": "X**4 + 2*sqrt(3)*I*X**2*Y**2 + Y**4",
+      "homogeneousPolynomialLatex": "X^{4} + 2 \\sqrt{3} i X^{2} Y^{2} + Y^{4}",
+      "affinePolynomial": "z**4 + 2*sqrt(3)*I*z**2 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^2",
+        "step": 2,
+        "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+        "polynomialLatex": "y^{2} + 2 \\sqrt{3} i y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(3) + I>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C2)"
+        },
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (2)"
+        },
+        {
+          "file": "PRA90_032314(2014).pdf",
+          "page": 4,
+          "location": "Eq. (25) at mu=i sqrt(2); uniqueness discussion continues on PDF p5"
+        }
+      ],
+      "runtimeSeconds": 0.011725187301635742
+    },
+    {
+      "stateId": "ac-n5-t1",
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "GHZ / spin-cat state",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 5,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**5 + Y**5",
+      "homogeneousPolynomialLatex": "- X^{5} + Y^{5}",
+      "affinePolynomial": "z**5 - 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y - 1",
+        "polynomialLatex": "y - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - 1",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 5
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 2,
+          "location": "Eq. (1)"
+        }
+      ],
+      "runtimeSeconds": 0.003329038619995117
+    },
+    {
+      "stateId": "ac-n5-t1-manuscript",
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "Local AC manuscript representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 5,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**4*Y + X*Y**4",
+      "homogeneousPolynomialLatex": "- X^{4} Y + X Y^{4}",
+      "affinePolynomial": "z**4 - z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y - 1",
+        "polynomialLatex": "y - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - 1",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 3
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C3)"
+        }
+      ],
+      "runtimeSeconds": 0.0052242279052734375
+    },
+    {
+      "stateId": "ac-n6-t3",
+      "n": 6,
+      "achievedOrder": 3,
+      "label": "Octahedral state",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 6,
+      "status": "exact",
+      "homogeneousPolynomial": "X**5*Y + X*Y**5",
+      "homogeneousPolynomialLatex": "X^{5} Y + X Y^{5}",
+      "affinePolynomial": "z**5 + z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y + 1",
+        "polynomialLatex": "y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + 1",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C4)"
+        },
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (61)"
+        },
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "C4-symmetric six-qubit construction"
+        }
+      ],
+      "runtimeSeconds": 0.0039179325103759766
+    },
+    {
+      "stateId": "ac-n7-t2",
+      "n": 7,
+      "achievedOrder": 2,
+      "label": "Two-term cyclic construction",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 6,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**7/7 + X**2*Y**5",
+      "homogeneousPolynomialLatex": "- \\frac{X^{7}}{7} + X^{2} Y^{5}",
+      "affinePolynomial": "z**5 - 1/7",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y - 1/7",
+        "polynomialLatex": "y - \\frac{1}{7}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - 1/7",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 5
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), j=7/2"
+        }
+      ],
+      "runtimeSeconds": 0.006207942962646484
+    },
+    {
+      "stateId": "ac-n7-t2-manuscript",
+      "n": 7,
+      "achievedOrder": 2,
+      "label": "Local AC manuscript representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 7,
+      "status": "exact",
+      "homogeneousPolynomial": "-2*X**7/7 - sqrt(5)*X**4*Y**3 + X*Y**6",
+      "homogeneousPolynomialLatex": "- \\frac{2 X^{7}}{7} - \\sqrt{5} X^{4} Y^{3} + X Y^{6}",
+      "affinePolynomial": "z**6 - sqrt(5)*z**3 - 2/7",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y**2 - sqrt(5)*y - 2/7",
+        "polynomialLatex": "y^{2} - \\sqrt{5} y - \\frac{2}{7}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - sqrt(5)*y - 2/7",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 6
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(5)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C5)"
+        }
+      ],
+      "runtimeSeconds": 0.009750843048095703
+    },
+    {
+      "stateId": "ac-n8-t3",
+      "n": 8,
+      "achievedOrder": 3,
+      "label": "Even-qubit cyclic construction",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 8,
+      "status": "exact",
+      "homogeneousPolynomial": "X**8 + 14*X**4*Y**4 + Y**8",
+      "homogeneousPolynomialLatex": "X^{8} + 14 X^{4} Y^{4} + Y^{8}",
+      "affinePolynomial": "z**8 + 14*z**4 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 + 14*y + 1",
+        "polynomialLatex": "y^{2} + 14 y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 14*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "Eq. (48); paragraph immediately after gives order 3 for even N>=8"
+        }
+      ],
+      "runtimeSeconds": 0.005921125411987305
+    },
+    {
+      "stateId": "ac-n8-t3-manuscript",
+      "n": 8,
+      "achievedOrder": 3,
+      "label": "Local AC manuscript representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 8,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**8 + 14*X**4*Y**4 + Y**8",
+      "homogeneousPolynomialLatex": "- X^{8} + 14 X^{4} Y^{4} + Y^{8}",
+      "affinePolynomial": "z**8 + 14*z**4 - 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 + 14*y - 1",
+        "polynomialLatex": "y^{2} + 14 y - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 14*y - 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C6)"
+        }
+      ],
+      "runtimeSeconds": 0.0051877498626708984
+    },
+    {
+      "stateId": "ac-n9-t2",
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "Small-angle rotosensor, chi=0",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 9,
+      "status": "exact",
+      "homogeneousPolynomial": "-3*sqrt(273)*X**8*Y/13 + 6*sqrt(1365)*X**4*Y**5/13 + Y**9",
+      "homogeneousPolynomialLatex": "- \\frac{3 \\sqrt{273} X^{8} Y}{13} + \\frac{6 \\sqrt{1365} X^{4} Y^{5}}{13} + Y^{9}",
+      "affinePolynomial": "z**9 + 6*sqrt(1365)*z**5/13 - 3*sqrt(273)*z/13",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 + 6*sqrt(1365)*y/13 - 3*sqrt(273)/13",
+        "polynomialLatex": "y^{2} + \\frac{6 \\sqrt{1365} y}{13} - \\frac{3 \\sqrt{273}}{13}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 6*sqrt(1365)*y/13 - 3*sqrt(273)/13",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(273) + sqrt(1365)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "Quantum4_285(2020).pdf",
+          "page": 11,
+          "location": "Eq. (65), chi=0"
+        }
+      ],
+      "runtimeSeconds": 0.01873183250427246
+    },
+    {
+      "stateId": "ac-n9-t2-manuscript",
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "Local AC manuscript representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 9,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(273)*X**9/63 - 2*sqrt(5)*X**5*Y**4 + X*Y**8",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{273} X^{9}}{63} - 2 \\sqrt{5} X^{5} Y^{4} + X Y^{8}",
+      "affinePolynomial": "z**8 - 2*sqrt(5)*z**4 - sqrt(273)/63",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 - 2*sqrt(5)*y - sqrt(273)/63",
+        "polynomialLatex": "y^{2} - 2 \\sqrt{5} y - \\frac{\\sqrt{273}}{63}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 2*sqrt(5)*y - sqrt(273)/63",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(5) + sqrt(273)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C7)"
+        }
+      ],
+      "runtimeSeconds": 0.015188932418823242
+    },
+    {
+      "stateId": "ac-n10-t3",
+      "n": 10,
+      "achievedOrder": 3,
+      "label": "Even-qubit cyclic construction",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 10,
+      "status": "exact",
+      "homogeneousPolynomial": "X**10 - 6*sqrt(21)*X**5*Y**5 + Y**10",
+      "homogeneousPolynomialLatex": "X^{10} - 6 \\sqrt{21} X^{5} Y^{5} + Y^{10}",
+      "affinePolynomial": "z**10 - 6*sqrt(21)*z**5 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y**2 - 6*sqrt(21)*y + 1",
+        "polynomialLatex": "y^{2} - 6 \\sqrt{21} y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 6*sqrt(21)*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 10
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(21)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 9,
+          "location": "Eq. (48); paragraph immediately after gives order 3 for even N>=8"
+        }
+      ],
+      "runtimeSeconds": 0.009047746658325195
+    },
+    {
+      "stateId": "ac-n10-t3-manuscript",
+      "n": 10,
+      "achievedOrder": 3,
+      "label": "Local AC manuscript representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 10,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**9*Y - 6*sqrt(21)*X**5*Y**5/5 + X*Y**9",
+      "homogeneousPolynomialLatex": "- X^{9} Y - \\frac{6 \\sqrt{21} X^{5} Y^{5}}{5} + X Y^{9}",
+      "affinePolynomial": "z**9 - 6*sqrt(21)*z**5/5 - z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 - 6*sqrt(21)*y/5 - 1",
+        "polynomialLatex": "y^{2} - \\frac{6 \\sqrt{21} y}{5} - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 6*sqrt(21)*y/5 - 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(21)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "2605.29436.pdf",
+          "page": 22,
+          "location": "Appendix C.2, Eq. (C8)"
+        }
+      ],
+      "runtimeSeconds": 0.011195898056030273
+    },
+    {
+      "stateId": "ac-n11-t3",
+      "n": 11,
+      "achievedOrder": 3,
+      "label": "Four-term cyclic construction",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 11,
+      "status": "exact",
+      "homogeneousPolynomial": "-X**10*Y - 240*sqrt(110)*X**7*Y**4/(35*sqrt(110) - sqrt(110242)*I) + 240*sqrt(110)*X**4*Y**7/(35*sqrt(110) - sqrt(110242)*I) + X*Y**10",
+      "homogeneousPolynomialLatex": "- X^{10} Y - \\frac{240 \\sqrt{110} X^{7} Y^{4}}{35 \\sqrt{110} - \\sqrt{110242} i} + \\frac{240 \\sqrt{110} X^{4} Y^{7}}{35 \\sqrt{110} - \\sqrt{110242} i} + X Y^{10}",
+      "affinePolynomial": "z**10 + 240*sqrt(110)*z**7/(35*sqrt(110) - sqrt(110242)*I) - 240*sqrt(110)*z**4/(35*sqrt(110) - sqrt(110242)*I) - z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y**3 + y**2*(120/245027 + 29399040/(245027*(24508 - 1540*sqrt(25055)*I)) + 58798080*sqrt(110)/(245027*(35*sqrt(110) - sqrt(110242)*I))) + y*(-120/245027 - 58798080*sqrt(110)/(245027*(35*sqrt(110) - sqrt(110242)*I)) - 29399040/(245027*(24508 - 1540*sqrt(25055)*I))) - 1",
+        "polynomialLatex": "y^{3} + y^{2} \\cdot \\left(\\frac{120}{245027} + \\frac{29399040}{245027 \\cdot \\left(24508 - 1540 \\sqrt{25055} i\\right)} + \\frac{58798080 \\sqrt{110}}{245027 \\cdot \\left(35 \\sqrt{110} - \\sqrt{110242} i\\right)}\\right) + y \\left(- \\frac{120}{245027} - \\frac{58798080 \\sqrt{110}}{245027 \\cdot \\left(35 \\sqrt{110} - \\sqrt{110242} i\\right)} - \\frac{29399040}{245027 \\cdot \\left(24508 - 1540 \\sqrt{25055} i\\right)}\\right) - 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**3 + y**2*(120/245027 + 29399040/(245027*(24508 - 1540*sqrt(25055)*I)) + 58798080*sqrt(110)/(245027*(35*sqrt(110) - sqrt(110242)*I))) + y*(-120/245027 - 58798080*sqrt(110)/(245027*(35*sqrt(110) - sqrt(110242)*I)) - 29399040/(245027*(24508 - 1540*sqrt(25055)*I))) - 1",
+          "degree": 3,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 9
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(110) + 1/(35*sqrt(110) - sqrt(110242)*I)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Dicke-coefficient characterization, Eqs. (16)\u2013(17)"
+        }
+      ],
+      "runtimeSeconds": 0.07871007919311523
+    },
+    {
+      "stateId": "ac-n12-t4-family",
+      "n": 12,
+      "achievedOrder": 4,
+      "label": "Four-anticoherent cyclic family, theta=0",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 12,
+      "status": "exact",
+      "homogeneousPolynomial": "X**11*Y - 11*X**6*Y**6 + X*Y**11",
+      "homogeneousPolynomialLatex": "X^{11} Y - 11 X^{6} Y^{6} + X Y^{11}",
+      "affinePolynomial": "z**11 - 11*z**6 + z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y**2 - 11*y + 1",
+        "polynomialLatex": "y^{2} - 11 y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 11*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 10
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (62), theta=0"
+        }
+      ],
+      "runtimeSeconds": 0.008088111877441406
+    },
+    {
+      "stateId": "ac-n12-t5",
+      "n": 12,
+      "achievedOrder": 5,
+      "label": "Icosahedral state",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 12,
+      "status": "exact",
+      "homogeneousPolynomial": "X**11*Y - 11*I*X**6*Y**6 + X*Y**11",
+      "homogeneousPolynomialLatex": "X^{11} Y - 11 i X^{6} Y^{6} + X Y^{11}",
+      "affinePolynomial": "z**11 - 11*I*z**6 + z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y**2 - 11*I*y + 1",
+        "polynomialLatex": "y^{2} - 11 i y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 11*I*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 10
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ_I",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 10,
+          "location": "Eq. (62), theta=pi/2; Sec. IV.B.5"
+        }
+      ],
+      "runtimeSeconds": 0.007141828536987305
+    },
+    {
+      "stateId": "gmax-n2-t1",
+      "n": 2,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X*Y",
+      "homogeneousPolynomialLatex": "X Y",
+      "affinePolynomial": "z",
+      "zeroMultiplicity": 1,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.001802206039428711
+    },
+    {
+      "stateId": "gmax-n3-t1",
+      "n": 3,
+      "achievedOrder": 1,
+      "label": "Two-term odd-N family",
+      "partition": [
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 3,
+      "status": "exact",
+      "homogeneousPolynomial": "X**3/3 + X*Y**2",
+      "homogeneousPolynomialLatex": "\\frac{X^{3}}{3} + X Y^{2}",
+      "affinePolynomial": "z**2 + 1/3",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^2",
+        "step": 2,
+        "polynomial": "y + 1/3",
+        "polynomialLatex": "y + \\frac{1}{3}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + 1/3",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 2
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "runtimeSeconds": 0.0014071464538574219
+    },
+    {
+      "stateId": "gmax-n4-t1",
+      "n": 4,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        2,
+        2
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**2*Y**2",
+      "homogeneousPolynomialLatex": "X^{2} Y^{2}",
+      "affinePolynomial": "z**2",
+      "zeroMultiplicity": 2,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.001828908920288086
+    },
+    {
+      "stateId": "gmax-n5-t1",
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "Two-term odd-N family",
+      "partition": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 4,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(2)*X**5/10 + X**2*Y**3",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{2} X^{5}}{10} + X^{2} Y^{3}",
+      "affinePolynomial": "z**3 - sqrt(2)/10",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y - sqrt(2)/10",
+        "polynomialLatex": "y - \\frac{\\sqrt{2}}{10}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - sqrt(2)/10",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 3
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(2)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "runtimeSeconds": 0.007338047027587891
+    },
+    {
+      "stateId": "gmax-n6-t1",
+      "n": 6,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        3,
+        3
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**3*Y**3",
+      "homogeneousPolynomialLatex": "X^{3} Y^{3}",
+      "affinePolynomial": "z**3",
+      "zeroMultiplicity": 3,
+      "infinityMultiplicity": 3,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.002173185348510742
+    },
+    {
+      "stateId": "gmax-n7-t1",
+      "n": 7,
+      "achievedOrder": 1,
+      "label": "Two-term odd-N family",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 5,
+      "status": "exact",
+      "homogeneousPolynomial": "sqrt(5)*X**7/35 + X**3*Y**4",
+      "homogeneousPolynomialLatex": "\\frac{\\sqrt{5} X^{7}}{35} + X^{3} Y^{4}",
+      "affinePolynomial": "z**4 + sqrt(5)/35",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 3,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y + sqrt(5)/35",
+        "polynomialLatex": "y + \\frac{\\sqrt{5}}{35}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + sqrt(5)/35",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(5)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "runtimeSeconds": 0.006462812423706055
+    },
+    {
+      "stateId": "gmax-n8-t1",
+      "n": 8,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        4,
+        4
+      ],
+      "maxMultiplicity": 4,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**4*Y**4",
+      "homogeneousPolynomialLatex": "X^{4} Y^{4}",
+      "affinePolynomial": "z**4",
+      "zeroMultiplicity": 4,
+      "infinityMultiplicity": 4,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.0024580955505371094
+    },
+    {
+      "stateId": "gmax-n9-t1",
+      "n": 9,
+      "achievedOrder": 1,
+      "label": "Two-term odd-N family",
+      "partition": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 4,
+      "distinctPoints": 6,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(14)*X**9/126 + X**4*Y**5",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{14} X^{9}}{126} + X^{4} Y^{5}",
+      "affinePolynomial": "z**5 - sqrt(14)/126",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 4,
+      "nonzeroRootSubstitution": {
+        "formula": "z^5",
+        "step": 5,
+        "polynomial": "y - sqrt(14)/126",
+        "polynomialLatex": "y - \\frac{\\sqrt{14}}{126}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - sqrt(14)/126",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 5
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(14)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "runtimeSeconds": 0.008651018142700195
+    },
+    {
+      "stateId": "gmax-n10-t1",
+      "n": 10,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        5,
+        5
+      ],
+      "maxMultiplicity": 5,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**5*Y**5",
+      "homogeneousPolynomialLatex": "X^{5} Y^{5}",
+      "affinePolynomial": "z**5",
+      "zeroMultiplicity": 5,
+      "infinityMultiplicity": 5,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.003337860107421875
+    },
+    {
+      "stateId": "gmax-n11-t1",
+      "n": 11,
+      "achievedOrder": 1,
+      "label": "Two-term odd-N family",
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 5,
+      "distinctPoints": 7,
+      "status": "exact",
+      "homogeneousPolynomial": "sqrt(42)*X**11/462 + X**5*Y**6",
+      "homogeneousPolynomialLatex": "\\frac{\\sqrt{42} X^{11}}{462} + X^{5} Y^{6}",
+      "affinePolynomial": "z**6 + sqrt(42)/462",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 5,
+      "nonzeroRootSubstitution": {
+        "formula": "z^6",
+        "step": 6,
+        "polynomial": "y + sqrt(42)/462",
+        "polynomialLatex": "y + \\frac{\\sqrt{42}}{462}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + sqrt(42)/462",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 6
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(42)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (59), r=j-m"
+        }
+      ],
+      "runtimeSeconds": 0.007126808166503906
+    },
+    {
+      "stateId": "gmax-n12-t1",
+      "n": 12,
+      "achievedOrder": 1,
+      "label": "Balanced Dicke state",
+      "partition": [
+        6,
+        6
+      ],
+      "maxMultiplicity": 6,
+      "distinctPoints": 2,
+      "status": "exact",
+      "homogeneousPolynomial": "X**6*Y**6",
+      "homogeneousPolynomialLatex": "X^{6} Y^{6}",
+      "affinePolynomial": "z**6",
+      "zeroMultiplicity": 6,
+      "infinityMultiplicity": 6,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "1",
+        "polynomialLatex": "1"
+      },
+      "squarefreeFactors": [],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (58)"
+        }
+      ],
+      "runtimeSeconds": 0.0029230117797851562
+    },
+    {
+      "stateId": "gmax-n4-t2",
+      "n": 4,
+      "achievedOrder": 2,
+      "label": "Two-term tetrahedral representative",
+      "partition": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 1,
+      "distinctPoints": 4,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(2)*X**4/4 + X*Y**3",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{2} X^{4}}{4} + X Y^{3}",
+      "affinePolynomial": "z**3 - sqrt(2)/4",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 1,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y - sqrt(2)/4",
+        "polynomialLatex": "y - \\frac{\\sqrt{2}}{4}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - sqrt(2)/4",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 3
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(2)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), g=1"
+        }
+      ],
+      "runtimeSeconds": 0.006020069122314453
+    },
+    {
+      "stateId": "gmax-n8-t2",
+      "n": 8,
+      "achievedOrder": 2,
+      "label": "General extremal-degeneracy family for all N\u22657",
+      "partition": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 4,
+      "status": "exact",
+      "homogeneousPolynomial": "X**8/8 - sqrt(2)*X**5*Y**3/2 + X**2*Y**6",
+      "homogeneousPolynomialLatex": "\\frac{X^{8}}{8} - \\frac{\\sqrt{2} X^{5} Y^{3}}{2} + X^{2} Y^{6}",
+      "affinePolynomial": "z**6 - sqrt(2)*z**3/2 + 1/8",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y**2 - sqrt(2)*y/2 + 1/8",
+        "polynomialLatex": "y^{2} - \\frac{\\sqrt{2} y}{2} + \\frac{1}{8}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - sqrt(2)/4",
+          "degree": 1,
+          "multiplicity": 2,
+          "nonzeroProjectiveRoots": 3
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "y - sqrt(2)/4",
+        "degree": 1,
+        "domain": "QQ<sqrt(2)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.008566141128540039
+    },
+    {
+      "stateId": "gmax-n9-t2",
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "General extremal-degeneracy family for all N\u22657",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 8,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(10)*X**9/30 + 7*sqrt(5)*X**6*Y**3/15 + X**2*Y**7",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{10} X^{9}}{30} + \\frac{7 \\sqrt{5} X^{6} Y^{3}}{15} + X^{2} Y^{7}",
+      "affinePolynomial": "z**7 + 7*sqrt(5)*z**3/15 - sqrt(10)/30",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "y**7 + 7*sqrt(5)*y**3/15 - sqrt(10)/30",
+        "polynomialLatex": "y^{7} + \\frac{7 \\sqrt{5} y^{3}}{15} - \\frac{\\sqrt{10}}{30}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**7 + 7*sqrt(5)*y**3/15 - sqrt(10)/30",
+          "degree": 7,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 7
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(5) + sqrt(10)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.017352819442749023
+    },
+    {
+      "stateId": "gmax-n10-t2",
+      "n": 10,
+      "achievedOrder": 2,
+      "label": "Published two-term family (also a special case of the general construction)",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 8,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(3)*X**10/30 + X**3*Y**7",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{3} X^{10}}{30} + X^{3} Y^{7}",
+      "affinePolynomial": "z**7 - sqrt(3)/30",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 3,
+      "nonzeroRootSubstitution": {
+        "formula": "z^7",
+        "step": 7,
+        "polynomial": "y - sqrt(3)/30",
+        "polynomialLatex": "y - \\frac{\\sqrt{3}}{30}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y - sqrt(3)/30",
+          "degree": 1,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 7
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(3)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA96_032304(2017).pdf",
+          "page": 9,
+          "location": "Eq. (60), g=3"
+        }
+      ],
+      "runtimeSeconds": 0.006933927536010742
+    },
+    {
+      "stateId": "gmax-n11-t2",
+      "n": 11,
+      "achievedOrder": 2,
+      "label": "General extremal-degeneracy family for all N\u22657",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 9,
+      "status": "exact",
+      "homogeneousPolynomial": "sqrt(119)*X**11/231 - 2*sqrt(21)*X**8*Y**3/21 + X**3*Y**8",
+      "homogeneousPolynomialLatex": "\\frac{\\sqrt{119} X^{11}}{231} - \\frac{2 \\sqrt{21} X^{8} Y^{3}}{21} + X^{3} Y^{8}",
+      "affinePolynomial": "z**8 - 2*sqrt(21)*z**3/21 + sqrt(119)/231",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 3,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "y**8 - 2*sqrt(21)*y**3/21 + sqrt(119)/231",
+        "polynomialLatex": "y^{8} - \\frac{2 \\sqrt{21} y^{3}}{21} + \\frac{\\sqrt{119}}{231}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**8 - 2*sqrt(21)*y**3/21 + sqrt(119)/231",
+          "degree": 8,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(21) + sqrt(119)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.019852161407470703
+    },
+    {
+      "stateId": "gmax-n12-t2",
+      "n": 12,
+      "achievedOrder": 2,
+      "label": "General extremal-degeneracy family for all N\u22657",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 10,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(11)*X**12/88 + sqrt(6)*X**9*Y**3/4 + X**3*Y**9",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{11} X^{12}}{88} + \\frac{\\sqrt{6} X^{9} Y^{3}}{4} + X^{3} Y^{9}",
+      "affinePolynomial": "z**9 + sqrt(6)*z**3/4 - sqrt(11)/88",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 3,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y**3 + sqrt(6)*y/4 - sqrt(11)/88",
+        "polynomialLatex": "y^{3} + \\frac{\\sqrt{6} y}{4} - \\frac{\\sqrt{11}}{88}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**3 + sqrt(6)*y/4 - sqrt(11)/88",
+          "degree": 3,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 9
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(6) + sqrt(11)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.016738176345825195
+    },
+    {
+      "stateId": "gmax-n12-t3",
+      "n": 12,
+      "achievedOrder": 3,
+      "label": "Double octahedron: six distinct points, each of multiplicity two",
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 6,
+      "status": "exact",
+      "homogeneousPolynomial": "X**10*Y**2 + 2*X**6*Y**6 + X**2*Y**10",
+      "homogeneousPolynomialLatex": "X^{10} Y^{2} + 2 X^{6} Y^{6} + X^{2} Y^{10}",
+      "affinePolynomial": "z**10 + 2*z**6 + z**2",
+      "zeroMultiplicity": 2,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 + 2*y + 1",
+        "polynomialLatex": "y^{2} + 2 y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y + 1",
+          "degree": 1,
+          "multiplicity": 2,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "y + 1",
+        "degree": 1,
+        "domain": "ZZ",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.0062100887298583984
+    },
+    {
+      "stateId": "gmax-n12-t3-phase-i",
+      "n": 12,
+      "achievedOrder": 3,
+      "label": "Phase variant with two double points and eight simple points",
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 10,
+      "status": "exact",
+      "homogeneousPolynomial": "X**10*Y**2 + 2*I*X**6*Y**6 + X**2*Y**10",
+      "homogeneousPolynomialLatex": "X^{10} Y^{2} + 2 i X^{6} Y^{6} + X^{2} Y^{10}",
+      "affinePolynomial": "z**10 + 2*I*z**6 + z**2",
+      "zeroMultiplicity": 2,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^4",
+        "step": 4,
+        "polynomial": "y**2 + 2*I*y + 1",
+        "polynomialLatex": "y^{2} + 2 i y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 2*I*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "ZZ_I",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Eqs. (16)\u2013(17), construction independently derived here"
+        }
+      ],
+      "runtimeSeconds": 0.006514072418212891
+    },
+    {
+      "stateId": "partition-n12-3x4-tetra",
+      "n": 12,
+      "achievedOrder": 2,
+      "label": "Three coincident copies of a tetrahedral constellation",
+      "partition": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxMultiplicity": 3,
+      "distinctPoints": 4,
+      "status": "exact",
+      "homogeneousPolynomial": "X**12 + 6*sqrt(3)*I*X**10*Y**2 - 33*X**8*Y**4 - 12*sqrt(3)*I*X**6*Y**6 - 33*X**4*Y**8 + 6*sqrt(3)*I*X**2*Y**10 + Y**12",
+      "homogeneousPolynomialLatex": "X^{12} + 6 \\sqrt{3} i X^{10} Y^{2} - 33 X^{8} Y^{4} - 12 \\sqrt{3} i X^{6} Y^{6} - 33 X^{4} Y^{8} + 6 \\sqrt{3} i X^{2} Y^{10} + Y^{12}",
+      "affinePolynomial": "z**12 + 6*sqrt(3)*I*z**10 - 33*z**8 - 12*sqrt(3)*I*z**6 - 33*z**4 + 6*sqrt(3)*I*z**2 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^2",
+        "step": 2,
+        "polynomial": "y**6 + 6*sqrt(3)*I*y**5 - 33*y**4 - 12*sqrt(3)*I*y**3 - 33*y**2 + 6*sqrt(3)*I*y + 1",
+        "polynomialLatex": "y^{6} + 6 \\sqrt{3} i y^{5} - 33 y^{4} - 12 \\sqrt{3} i y^{3} - 33 y^{2} + 6 \\sqrt{3} i y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+          "degree": 2,
+          "multiplicity": 3,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "y**4 + 4*sqrt(3)*I*y**3 - 10*y**2 + 4*sqrt(3)*I*y + 1",
+        "degree": 4,
+        "domain": "QQ<sqrt(3) + I>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Reduced-state equations and point-group methods; exact repeated-tetrahedron construction independently supplied here."
+        }
+      ],
+      "runtimeSeconds": 0.024953842163085938
+    },
+    {
+      "stateId": "partition-n12-2x4-1x4-tetra",
+      "n": 12,
+      "achievedOrder": 2,
+      "label": "A double tetrahedron and its simple dual",
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 8,
+      "status": "exact",
+      "homogeneousPolynomial": "X**12 + 2*sqrt(3)*I*X**10*Y**2 + 15*X**8*Y**4 + 28*sqrt(3)*I*X**6*Y**6 + 15*X**4*Y**8 + 2*sqrt(3)*I*X**2*Y**10 + Y**12",
+      "homogeneousPolynomialLatex": "X^{12} + 2 \\sqrt{3} i X^{10} Y^{2} + 15 X^{8} Y^{4} + 28 \\sqrt{3} i X^{6} Y^{6} + 15 X^{4} Y^{8} + 2 \\sqrt{3} i X^{2} Y^{10} + Y^{12}",
+      "affinePolynomial": "z**12 + 2*sqrt(3)*I*z**10 + 15*z**8 + 28*sqrt(3)*I*z**6 + 15*z**4 + 2*sqrt(3)*I*z**2 + 1",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 0,
+      "nonzeroRootSubstitution": {
+        "formula": "z^2",
+        "step": 2,
+        "polynomial": "y**6 + 2*sqrt(3)*I*y**5 + 15*y**4 + 28*sqrt(3)*I*y**3 + 15*y**2 + 2*sqrt(3)*I*y + 1",
+        "polynomialLatex": "y^{6} + 2 \\sqrt{3} i y^{5} + 15 y^{4} + 28 \\sqrt{3} i y^{3} + 15 y^{2} + 2 \\sqrt{3} i y + 1"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - 2*sqrt(3)*I*y + 1",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 4
+        },
+        {
+          "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+          "degree": 2,
+          "multiplicity": 2,
+          "nonzeroProjectiveRoots": 4
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+        "degree": 2,
+        "domain": "QQ<sqrt(3) + I>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "file": "PRA92_052333(2015).pdf",
+          "page": 4,
+          "location": "Reduced-state equations and point-group methods; exact repeated-tetrahedron construction independently supplied here."
+        }
+      ],
+      "runtimeSeconds": 0.02406597137451172
+    },
+    {
+      "stateId": "partition-n8-single-double-t2-sparse",
+      "n": 8,
+      "achievedOrder": 2,
+      "label": "Phase-shifted three-term state with one double point",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 7,
+      "status": "exact",
+      "homogeneousPolynomial": "X**8/8 - sqrt(2)*I*X**5*Y**3/2 + X**2*Y**6",
+      "homogeneousPolynomialLatex": "\\frac{X^{8}}{8} - \\frac{\\sqrt{2} i X^{5} Y^{3}}{2} + X^{2} Y^{6}",
+      "affinePolynomial": "z**6 - sqrt(2)*I*z**3/2 + 1/8",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^3",
+        "step": 3,
+        "polynomial": "y**2 - sqrt(2)*I*y/2 + 1/8",
+        "polynomialLatex": "y^{2} - \\frac{\\sqrt{2} i y}{2} + \\frac{1}{8}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**2 - sqrt(2)*I*y/2 + 1/8",
+          "degree": 2,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 6
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(2) + I>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [],
+      "runtimeSeconds": 0.01447296142578125
+    },
+    {
+      "stateId": "partition-n10-single-double-t2-sparse",
+      "n": 10,
+      "achievedOrder": 2,
+      "label": "Three-term state with one double point",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 9,
+      "status": "exact",
+      "homogeneousPolynomial": "sqrt(15)*X**10/45 - 4*X**7*Y**3/3 + X**2*Y**8",
+      "homogeneousPolynomialLatex": "\\frac{\\sqrt{15} X^{10}}{45} - \\frac{4 X^{7} Y^{3}}{3} + X^{2} Y^{8}",
+      "affinePolynomial": "z**8 - 4*z**3/3 + sqrt(15)/45",
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "y**8 - 4*y**3/3 + sqrt(15)/45",
+        "polynomialLatex": "y^{8} - \\frac{4 y^{3}}{3} + \\frac{\\sqrt{15}}{45}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**8 - 4*y**3/3 + sqrt(15)/45",
+          "degree": 8,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 8
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(15)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [],
+      "runtimeSeconds": 0.013053178787231445
+    },
+    {
+      "stateId": "ac-order-sparse-n11-2x2-1x7",
+      "n": 11,
+      "achievedOrder": 2,
+      "label": "Exact sparse two-pole construction",
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxMultiplicity": 2,
+      "distinctPoints": 9,
+      "status": "exact",
+      "homogeneousPolynomial": "-sqrt(15006)*X**9*Y**2/123 + 7*sqrt(410)*X**6*Y**5/205 + X**2*Y**9",
+      "homogeneousPolynomialLatex": "- \\frac{\\sqrt{15006} X^{9} Y^{2}}{123} + \\frac{7 \\sqrt{410} X^{6} Y^{5}}{205} + X^{2} Y^{9}",
+      "affinePolynomial": "z**9 + 7*sqrt(410)*z**5/205 - sqrt(15006)*z**2/123",
+      "zeroMultiplicity": 2,
+      "infinityMultiplicity": 2,
+      "nonzeroRootSubstitution": {
+        "formula": "z^1",
+        "step": 1,
+        "polynomial": "y**7 + 7*sqrt(410)*y**3/205 - sqrt(15006)/123",
+        "polynomialLatex": "y^{7} + \\frac{7 \\sqrt{410} y^{3}}{205} - \\frac{\\sqrt{15006}}{123}"
+      },
+      "squarefreeFactors": [
+        {
+          "polynomial": "y**7 + 7*sqrt(410)*y**3/205 - sqrt(15006)/123",
+          "degree": 7,
+          "multiplicity": 1,
+          "nonzeroProjectiveRoots": 7
+        }
+      ],
+      "gcdCertificate": {
+        "polynomial": "1",
+        "degree": 0,
+        "domain": "QQ<sqrt(410) + sqrt(15006)>",
+        "verifiedReconstruction": true,
+        "verifiedSquarefreeFactors": true,
+        "verifiedPairwiseCoprime": true
+      },
+      "references": [
+        {
+          "title": "Exact sparse construction certificate",
+          "url": "./research/ac-order-constructions.json"
+        }
+      ],
+      "runtimeSeconds": 0.06493997573852539
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+\section*{A spin-two ancillary bound for second-order anticoherent subspaces}
+Let $j=N/2\ge2$. Let $C\subset V_j$ be a $k$-dimensional second-order
+anticoherent subspace with orthogonal projector $P$. Its compression
+identities are
+\[
+ PJ_aP=0,\qquad PJ_aJ_bP=\frac{j(j+1)}3\delta_{ab}P.
+\]
+The second identity includes the ordered products: the antisymmetric part
+vanishes because $P[J_a,J_b]P=i\epsilon_{abc}PJ_cP=0$.
+
+Introduce an auxiliary spin two, with operators $S_a$ on a five-dimensional
+space, and set
+\[
+ X=\sum_aJ_a\otimes S_a,\qquad
+ W=X^2+(j+3)X-2j(j+1)I.
+\]
+Writing $Q=P\otimes I_5$, the compression identities imply
+\[
+ QXQ=0,\qquad
+ QX^2Q=\frac{j(j+1)}3P\otimes\sum_aS_a^2
+       =2j(j+1)Q,
+\]
+since $\sum_aS_a^2=2(2+1)I_5$. Consequently $QWQ=0$:
+$C\otimes V_2$ is a totally isotropic subspace of dimension $5k$ for $W$.
+
+By angular momentum addition,
+\[
+ V_j\otimes V_2=\bigoplus_{r=-2}^2 V_{j+r},\qquad
+ X|_{V_{j+r}}=jr+\frac{r(r+1)-6}{2}.
+\]
+Substituting these five eigenvalues into $W$ gives
+\[
+\begin{array}{c|ccccc}
+ r&-2&-1&0&1&2\\ \hline
+ X&-2j-2&-j-3&-3&j-2&2j\\
+ W&-2(j+1)&-2j(j+1)&-j(2j+5)&-5j-2&4j(j+1)\\
+ \text{multiplicity}&N-3&N-1&N+1&N+3&N+5.
+\end{array}
+\]
+All four lower branches are strictly negative and the highest branch is
+strictly positive. Thus $W$ has positive index $N+5$, negative index $4N$,
+and no zero eigenvalues. Projection of a totally isotropic subspace onto
+either definite eigenspace is injective. It follows that
+\[
+ \boxed{\quad5k\le N+5,\qquad
+ k_{\max}(N,2)\le\left\lfloor\frac{N+5}{5}\right\rfloor
+ =\left\lfloor\frac N5\right\rfloor+1\quad(N\ge4).\quad}
+\]
+The argument applies to arbitrary complex subspaces and requires no
+symmetry or support restriction on the code.
+
+\paragraph{Comparison with the spin-$3/2$ bound.}
+The separate established bound $4k\le N-2$ holds for $N\ge8$.
+The two witnesses therefore imply
+\[
+ k_{\max}(N,2)\le
+ \min\!\left\{\left\lfloor\frac{N-2}{4}\right\rfloor,
+                 \left\lfloor\frac{N+5}{5}\right\rfloor\right\}
+ \qquad(N\ge8).
+\]
+The spin-two inequality is strictly better as a real bound when $N>30$;
+its first strict integer improvement occurs at $N=34$, where it gives
+$k\le7$ instead of $k\le8$. At $N=42$ it gives $k\le9$ instead of $k\le10$.
+In particular $\lfloor(N-2)/4\rfloor$ cannot be the unrestricted optimal
+dimension for all sizes, despite matching the known maxima at $N=8,\ldots,17$.
+The new upper bound alone does not establish its own attainability.
+
+\paragraph{Verification.}
+The standalone standard-library script \texttt{verify.py} constructs the
+physical spin matrices in each conserved-total-m block and checks the
+entire displayed spectrum with exact integer arithmetic for $N=4,\ldots,300$.
+Those finite checks audit the implementation; the all-$N$ result follows
+from the preceding angular-momentum and inertia proof.
+\end{document}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "theorem": "7k<=N+7 for N>=6 and AC order at least three",
+  "symbolicSpectrumChecked": true,
+  "allDomainSignsCertifiedByPositivePolynomialCoefficients": true,
+  "physicalChecks": [
+    {
+      "n": 6,
+      "normalizedPhysicalPartialTracesOfX_X2_X3": true
+    },
+    {
+      "n": 7,
+      "normalizedPhysicalPartialTracesOfX_X2_X3": true
+    },
+    {
+      "n": 8,
+      "normalizedPhysicalPartialTracesOfX_X2_X3": true
+    },
+    {
+      "n": 10,
+      "normalizedPhysicalPartialTracesOfX_X2_X3": true
+    }
+  ],
+  "scope": "Universal bound, not an existence or optimality statement."
+}

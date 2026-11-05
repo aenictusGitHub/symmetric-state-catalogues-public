@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\D}[1]{\lvert D_{16}^{(#1)}\rangle}
+\newcommand{\R}{\mathcal R}
+\title{An analytical third-order anticoherent plane for sixteen qubits}
+\author{Catalogue calculation}
+\date{30 October 2026}
+\begin{document}
+\maketitle
+Throughout, $\D r$ is the normalized symmetric Dicke state with $r$ excitations.
+The reduced operator $\R_t$ traces out $16-t$ qubits and is represented in
+normalized Dicke coordinates on the remaining symmetric space.
+A subspace is $t$-anticoherent when every normalized vector in it has
+$\R_t(\lvert\psi\rangle\langle\psi\rvert)=I_{t+1}/(t+1)$.
+
+\section{Explicit normalized basis}
+Define three unit complex numbers
+\begin{equation}\label{eq:phases}
+z=\frac{545-192i\sqrt{10}}{7\sqrt{13585}},\qquad
+f=-\frac{55+4i\sqrt{10}}{7\sqrt{65}},\qquad
+g=\frac{19+8i\sqrt{10}}{\sqrt{1001}}.
+\end{equation}
+Their moduli are one, as follows immediately by squaring their real and
+imaginary parts. Set
+\begin{align}
+u_1&=\frac{\sqrt{38}}{16}\bigl(\D0+z^2\D{16}\bigr)
+ +\frac z8\bigl(\sqrt{10}\D4+5\D8+\sqrt{10}\D{12}\bigr),\label{eq:u1}\\
+u_2&=\frac{\sqrt5}{4}\bigl(\D2+fg\D{14}\bigr)
+ +\frac{\sqrt3}{4}\bigl(f\D6+g\D{10}\bigr).\label{eq:u2}
+\end{align}
+\begin{theorem}
+The vectors $u_1,u_2$ are orthonormal and satisfy
+\begin{equation}\label{eq:cross}
+\R_3(\lvert u_a\rangle\langle u_b\rvert)=\delta_{ab}\frac{I_4}{4}
+\qquad(a,b\in\{1,2\}).
+\end{equation}
+Consequently their complex linear span is a two-dimensional third-order
+anticoherent subspace. Its dimension is maximal: $K(16,3)=2$.
+\end{theorem}
+
+\section{Full-span verification}
+The squared Dicke amplitudes, in increasing order on the stated supports, are
+\begin{equation}
+ u_1:\quad \frac1{128}(19,20,50,20,19),\qquad
+ u_2:\quad \frac1{16}(5,3,3,5).
+\end{equation}
+Each list sums to one, and the supports are disjoint, proving
+orthonormality. To check all reduced operators explicitly, associate to
+$v=\sum_{r=0}^{16}v_r\D r$ its bipartition matrix
+\begin{equation}\label{eq:matrix}
+ [M_t(v)]_{a,b}=v_{a+b}
+ \sqrt{\frac{\binom ta\binom{16-t}b}{\binom{16}{a+b}}},
+ \quad 0\le a\le t,\quad0\le b\le16-t.
+\end{equation}
+Then $\R_t(\lvert v\rangle\langle w\rvert)=M_t(v)M_t(w)^\dagger$.
+Within each vector, consecutive occupied Dicke indices differ by four.
+For $t=3$ all off-diagonal entries of both self reductions therefore
+vanish. Substitution of the two probability lists into
+\eqref{eq:matrix} gives
+\begin{equation}
+ M_3(u_1)M_3(u_1)^\dagger=M_3(u_2)M_3(u_2)^\dagger
+ =\operatorname{diag}(1/4,1/4,1/4,1/4).
+\end{equation}
+
+It remains essential to check the cross reductions: separate
+anticoherence of the displayed basis vectors alone would not suffice.
+Write $F=\overline f$, $G=\overline g$, and put
+\begin{align}
+ E_1&=7\sqrt{19}+z\bigl(\sqrt{91}FG+15\sqrt{11}F+9\sqrt{35}G\bigr),\\
+ E_2&=\sqrt{91}FG+\sqrt{11}F+2\sqrt{35}G,\\
+ E_3&=2\sqrt{35}F+\sqrt{11}G+\sqrt{91},\\
+ E_4&=7\sqrt{19}FGz+9\sqrt{35}F+15\sqrt{11}G+\sqrt{91}.
+\end{align}
+Direct substitution of \eqref{eq:phases} gives
+$E_1=E_2=E_3=E_4=0$, with exact radical arithmetic. All possible nonzero
+entries of the first cross reduction are displayed in
+\begin{equation}
+ M_3(u_1)M_3(u_2)^\dagger=
+ \begin{pmatrix}
+ 0&0&E_1/896&0\\
+ 0&0&0&3zE_2/448\\
+ 3zE_3/448&0&0&0\\
+ 0&zE_4/896&0&0
+ \end{pmatrix}=0.
+\end{equation}
+The reverse ordered cross reduction is its adjoint. This proves
+\eqref{eq:cross}, including every off-diagonal basis pair. For arbitrary
+complex $\alpha,\beta$ with $|\alpha|^2+|\beta|^2=1$, linearity now yields
+\begin{equation}
+ \R_3\bigl(\lvert\alpha u_1+\beta u_2\rangle
+ \langle\alpha u_1+\beta u_2\rvert\bigr)=I_4/4.
+\end{equation}
+
+The two basis vectors individually have exact AC order three. Indeed,
+their fourth-reduction purities are
+\begin{equation}
+ \operatorname{Tr}\R_4(\lvert u_1\rangle\langle u_1\rvert)^2
+ =\frac{3457}{16562}>\frac15,\qquad
+ \operatorname{Tr}\R_4(\lvert u_2\rangle\langle u_2\rvert)^2
+ =\frac{3433}{16562}>\frac15.
+\end{equation}
+In particular, the whole plane is not fourth-order anticoherent.
+These two purity computations do not assert that every superposition
+has exactly order three.
+
+\section{Why a larger third-order subspace is impossible}
+Here is the relevant general dimension bound, specialized so that the
+optimality statement is self-contained. Let
+$\mathcal H_N=\operatorname{Sym}^N(\mathbb C^2)$ and let
+$V\subset\mathcal H_{16}$ be an arbitrary third-order AC subspace,
+with projector $P$ and dimension $k$.
+The polarized AC identities are
+\begin{equation}
+ PTP=\frac{\operatorname{Tr}T}{17}P
+\end{equation}
+for every operator $T$ having spin-tensor ranks at most three.
+Choose Hilbert--Schmidt orthonormal rectangular irreducible tensor maps
+$A_{\ell m}:\mathcal H_{16}\to\mathcal H_{15}$ with
+$\ell=1/2,3/2$. These exist by the spin decomposition of
+$\operatorname{Hom}(\mathcal H_{16},\mathcal H_{15})$.
+There are $2+4=6$ such maps. Each product
+$A_{\ell m}^{\dagger}A_{\ell'm'}$ has tensor ranks at most
+$\ell+\ell'\le3$, and its scalar part is
+$\delta_{\ell\ell'}\delta_{mm'}I_{17}/17$.
+For an orthonormal basis $v_1,\ldots,v_k$ of $V$, it follows that
+\begin{equation}
+ \langle A_{\ell m}v_a,A_{\ell'm'}v_b\rangle
+ =\frac{\delta_{ab}\delta_{\ell\ell'}\delta_{mm'}}{17}.
+\end{equation}
+Thus $6k$ nonzero, mutually orthogonal vectors lie in the
+16-dimensional space $\mathcal H_{15}$, so $6k\le16$ and $k\le2$.
+Together with \eqref{eq:u1}--\eqref{eq:u2}, this proves $K(16,3)=2$.
+The argument applies to arbitrary complex subspaces, with no support
+or symmetry assumption.
+
+\section{Reconstruction and scope}
+The sparse supports and the simple probability lists above were obtained
+from the numerical example \texttt{\(\Pi\)\_16\_2\_3} in the supplied
+\texttt{ACLiege.jl}, at line 901. Fixing these probabilities reduces the
+remaining full-span conditions to the four phase identities displayed
+above; their solution \eqref{eq:phases} gives an exact certificate.
+A common collective rotation $\exp(-i\beta J_z)$, with
+$\beta\simeq-0.7306438994490132$, and independent phases on the two
+basis vectors match the supplied numerical vectors to maximum Dicke
+amplitude errors $3.32\times10^{-10}$ and $5.10\times10^{-10}$.
+This comparison is approximate and is separate from the exact proof.
+
+The machine-readable \texttt{basis.json} contains every exact and
+numerical Dicke coefficient. The primary and independent verifiers
+rebuild all 64 scalar entries of the four ordered cross reductions in
+exact rational and radical arithmetic. The saved reports also record
+the fourth-reduction purities and the source comparison. No claim of
+classification of all optimal subspaces or of literature priority is made.
+\end{document}

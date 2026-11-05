@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{General matrix-valued joint-compression witnesses}
+Let $A_1,\ldots,A_8$ be a Hermitian basis of the rank-one and rank-two
+traceless spin tensors on $V_{N/2}$. For any auxiliary dimension $a$,
+and any Hermitian $a\times a$ matrices $H_1,\ldots,H_8$, put
+\[
+ W=\sum_{\mu=1}^8 A_\mu\otimes H_\mu.
+\]
+For every second-order anticoherent projection $P$ of rank $k$,
+\[
+ (P\otimes I_a)W(P\otimes I_a)=0.
+\]
+The inertia bound therefore gives
+\[
+ ak\le n_0(W)+\min\{n_+(W),n_-(W)\}.
+\]
+This family allows arbitrary ancillary matrix coefficients and need not
+be rotationally invariant. The existing scalar-polynomial auxiliary-spin
+witnesses form a special case. A nonsingular witness with fewer than
+$ak_0$ positive eigenvalues would exclude a candidate dimension $k_0$.
+A rigorous numerical discovery must be followed by exact or interval
+certification of its inertia. A zero eigenvalue contributes to the bound;
+approaching a singular limiting witness does not establish an exclusion.
+
+The accompanying search uses alternating projection between the linear
+space of such witnesses and a prescribed inertia cone, with Frobenius
+normalization. It is a nonconvex numerical search, so its failure gives
+no mathematical impossibility result. Tests at $N=35$ with auxiliary
+dimensions five and six did not produce a witness excluding dimension
+eight. No improvement to an unrestricted bound is asserted.
+\end{document}

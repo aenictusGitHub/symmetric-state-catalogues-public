@@ -1,0 +1,33 @@
+{
+  "allChecksPassed": true,
+  "independentRecouplingCoefficients": 91,
+  "allTensorCasimirEigenvalues": 13,
+  "tracePQIdentityVerifiedColumnwise": true,
+  "traceP2ConstraintUsed": false,
+  "identity": {
+    "negativePQScale": "1037300/9",
+    "fullA1Coefficient": "15235675/18",
+    "fullA2Coefficient": "-513427915/318",
+    "constant": 9015,
+    "a3": 1031316,
+    "p0": 3936270,
+    "p2": 20020,
+    "p6": 728365
+  },
+  "necessaryConclusion": "0 = 9015 + 1031316 a3 + 3936270 p0 + 20020 p2 + 728365 p6",
+  "contradiction": "Every term on the right is nonnegative and the constant is strictly positive.",
+  "conceptualAudit": {
+    "codeMomentNormalization": "PJaP=0 and PJaJbP=14 delta_ab P for spin6,t2",
+    "orthogonalErrorSpaces": "C and Ja C/sqrt14 (a=x,y,z) are four orthogonal dimension3 spaces",
+    "rankOneComplement": "Q=I-P-sum_a JaPJa/14 is a positive rank1 projector, TrQ=1 and PQ=0",
+    "multipoleInversion": "P0=3Q0; P_L=28Q_L/[L(L+1)-112] for1<=L<=12, denominators all nonzero",
+    "complementAnticoherence": "P has zero rank1 andrank2 components, so Q does as well",
+    "twoCopyParity": "q tensor q is symmetric; atinteger spin6 only even J occur",
+    "multipoleDefinition": "aL=sum_M |Tr(Q T_LM)|\u00b2 >=0 for Hilbert-Schmidt-orthonormal irreducible tensors",
+    "probabilities": "pJ=||Pi_J(q tensor q)||\u00b2 >=0 and sum_evenJ pJ=1",
+    "scalarPart": "Tr(P0 Q0)=3/13, hence the beta0 coefficient of a0 is3",
+    "recouplingSign": "Direct tensor matrix-element calculation confirms aL=(2L+1)sum_evenJ {6 6 L;6 6 J}pJ with no extra sign",
+    "noRestrictedAnsatz": "No geometric symmetry, real-coefficient, or Dicke-support assumption is used."
+  },
+  "conclusion": "The maximum dimension of a second-order AC subspace at N12 is2, using the separately exactly verified dimension2 radical witness."
+}

@@ -1,0 +1,23 @@
+{
+  "n": 7,
+  "sector": 6,
+  "minimum": "7",
+  "holomorphicCubicCount": 20,
+  "hankelMinorCount": 20,
+  "holomorphicRank": 20,
+  "hankelMinorRank": 20,
+  "combinedRank": 20,
+  "hankelConvention": "H[i,j]=x_(i+j), i=0,1,2 and j=0,...,5",
+  "quadraticApolarIdentityVerified": true,
+  "apolarIdentity": "(q0 dXX+q1 dXY+q2 dYY)f=42 sum_j C(5,j)(q0 x_j+q1 x_(j+1)+q2 x_(j+2))X^(5-j)Y^j",
+  "mixedHighestIdentityVerified": true,
+  "mixedHighest": "(x0*x2-x1^2)y5+(x0*x3-x1*x2)y6+(x1*x3-x2^2)y7",
+  "twoPowerSubstitution": "x_r=A delta(r,0)+B c^(7-r)d^r, y_r=conj(x_r)",
+  "twoPowerFactorization": "A B conj(B) c^4 conj(c) d^2 conj(d)^5 (|c|^2+|d|^2)",
+  "twoPowerFactorizationVerified": true,
+  "tangentComponentIndex": 4,
+  "tangentComponent": "-5*x1^2*conj(x1)",
+  "tangentExclusionIdentityVerified": true,
+  "classification": "Every normalized equality state is U^(tensor7)(alpha|0>^(tensor7)+beta|1>^(tensor7)), with U in SU(2) and |alpha|^2+|beta|^2=1. The proof additionally uses factorization of a nonzero quadratic over C and the homogeneous PDE normal forms described in the report.",
+  "basisSha256": "3ff592f6b57c654d8440b1c6f9df8292ac565b392942f66822a224499d7e75a9"
+}

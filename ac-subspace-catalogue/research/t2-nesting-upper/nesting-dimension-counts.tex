@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{What dimension counting in first-order parents implies}
+\author{}\date{}\maketitle
+
+Let $\mathcal C\subset\operatorname{Sym}^N\mathbb C^2$ be a
+$k$-dimensional second-order anticoherent subspace, and let $P$ be its
+orthogonal projector. Put $j=N/2$, $c=j(j+1)/3$, and $D=N+1$.
+The polarized identities are
+\[
+ PJ_aP=0,\qquad PJ_aJ_bP=c\delta_{ab}P.
+\]
+Hence $\mathcal C,J_x\mathcal C,J_y\mathcal C,J_z\mathcal C$ are
+pairwise orthogonal $k$-dimensional spaces.
+
+\begin{proposition}[Conditional parent-dimension bound]
+If a first-order AC parent $\mathcal W$ contains $\mathcal C$, and
+$d=\dim\mathcal W$, then
+\[
+ \boxed{d+3k\le N+1.}
+\]
+\end{proposition}
+\begin{proof}
+For any $w\in\mathcal W$ and $u\in\mathcal C\subseteq\mathcal W$,
+first-order anticoherence gives $\langle w,J_a u\rangle=0$.
+Thus $\mathcal W$ is orthogonal to each of the three pairwise orthogonal
+spaces $J_a\mathcal C$. Their direct sum has dimension $d+3k$ and lies
+in the $N+1$ dimensional physical space.
+\end{proof}
+
+\paragraph{Why the unrestricted first-order maximum cannot be substituted.}
+For $N\ge4$ the established maximum is
+$K(N,1)=\lfloor N/3\rfloor+1$. This is an \emph{upper} bound on $d$;
+it does not imply that any given $\mathcal C$ has a parent of this
+maximum dimension. Substituting $d=K(N,1)$ into the proposition without
+an extension theorem reverses the required direction of information.
+
+There is an exact counterexample in the catalogue. Its optimal
+four-dimensional second-order code at $N=18$ has a largest first-order
+parent of dimension five, although $K(18,1)=7$. The proof and independent
+exact verifiers are in
+\href{../t2-nested-t1/extension-obstruction.tex}{\texttt{../t2-nested-t1/extension-obstruction.tex}}.
+Thus searching every maximum-dimensional first-order parent would still
+miss this particular optimal second-order code.
+
+\paragraph{What the hypothetical maximum-parent assumption would give.}
+If maximum-dimensional containment is established for a particular code,
+then the conditional conclusion is
+\[
+ k\le\left\lfloor\frac{N-\lfloor N/3\rfloor}{3}\right\rfloor
+ =\frac{2N}{9}+O(1).
+\]
+It can improve a finite-size bound under that extra assumption; for
+example at $N=30$ it gives $k\le6$. It is not an unrestricted exclusion
+of dimension seven. Asymptotically its coefficient $2/9$ is larger than
+$1/5$, so even maximum-parent containment would not improve the leading
+coefficient of the already established universal bound
+\[
+ k\le\min\left\{\left\lfloor\frac{N-2}{4}\right\rfloor,
+                   \left\lfloor\frac{N+5}{5}\right\rfloor\right\}
+ \qquad(N\ge8).
+\]
+Using only the always valid $d\ge k$ recovers $4k\le N+1$.
+Even a separately justified one-dimensional extension, $d\ge k+1$,
+would give only $4k\le N$, weaker than the known $4k\le N-2$.
+
+\paragraph{The exact extension problem retains operator information.}
+Define
+\[
+ R=I-P-\frac1c\sum_aJ_aPJ_a.
+\]
+It is an orthogonal projector of rank $r=N+1-4k$. The first-order parents
+of $\mathcal C$ are precisely
+\[
+ \mathcal W=\mathcal C\oplus\mathcal A,\qquad
+ \mathcal A\subseteq\operatorname{ran}R,\qquad
+ P_{\mathcal A}J_aP_{\mathcal A}=0.
+\]
+Thus determining the largest parent requires solving the common zero
+compression problem for the three matrices $RJ_aR$ on the complement.
+The rank of $R$ alone does not solve that problem.
+
+There are additional exact trace identities:
+\[
+ \operatorname{Tr}(RJ_a)=0,\qquad
+ \operatorname{Tr}(RJ_aJ_b)=cr\delta_{ab}.
+\]
+For completeness, set $C=j(j+1)$ and
+$\Phi(X)=\sum_aJ_aXJ_a$. Then
+\[
+ \Phi(J_b)=(C-1)J_b,
+\]
+\[
+ \Phi\!\left(\frac{J_aJ_b+J_bJ_a}{2}\right)
+ =(C-3)\frac{J_aJ_b+J_bJ_a}{2}+C\delta_{ab}I.
+\]
+Self-adjointness of $\Phi$ in the Hilbert--Schmidt pairing, together with
+the AC2 identities for $P$, gives the displayed traces; the antisymmetric
+part vanishes by the first trace identity. If $r>0$, the density operator
+$R/r$ therefore has isotropic first and second spin moments. This is a
+mixed-state trace statement. It does not say that every vector in
+$\operatorname{ran}R$ is first- or second-order AC.
+
+\paragraph{Scope.}
+These facts identify the limits of the basic nesting dimension count,
+not an impossibility theorem for every argument based on nesting.
+Uniform control of the five quadrupole compressions, or stronger operator
+constraints on the complement, could still lead to a better unrestricted
+upper bound. No such improvement is proved here, and no catalogue upper
+bound is changed by this note.
+\end{document}

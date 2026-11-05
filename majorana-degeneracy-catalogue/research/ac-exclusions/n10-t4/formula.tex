@@ -1,0 +1,41 @@
+\paragraph{Ten-qubit exclusion.}
+For an arbitrary pure spin-$5$ state $|\psi\rangle$, let
+\[
+ I_{\ell m k}(\psi)=\sum_{q+r+s=0}
+ \begin{pmatrix}\ell&m&k\\q&r&s\end{pmatrix}
+ \langle\psi|T_{\ell q}|\psi\rangle
+ \langle\psi|T_{mr}|\psi\rangle
+ \langle\psi|T_{ks}|\psi\rangle,
+ \qquad
+ W_{\ell m k}(\psi)=\frac{I_{\ell m k}(\psi)}{I_{\ell m k}(D_{10}^{(0)})}.
+\]
+The denominator is nonzero for each even triangle triple below. The following identity holds for every complex $|\psi\rangle$:
+\[
+ \sum_{\ell m k}b_{\ell m k}W_{\ell m k}(\psi)=\langle\psi|\psi\rangle^3.
+\]
+\[
+\begin{array}{c|r}
+(\ell,m,k)&b_{\ell m k}\\\hline
+(0,1,1) & \frac{115}{4} \\
+(0,2,2) & \frac{225}{4} \\
+(0,3,3) & \frac{135}{4} \\
+(0,4,4) & \frac{37}{4} \\
+(1,1,2) & 60 \\
+(1,2,3) & \frac{135}{2} \\
+(1,3,4) & \frac{5}{6} \\
+(1,4,5) & -\frac{275}{12} \\
+(2,2,4) & -\frac{25}{2} \\
+(2,3,3) & -\frac{135}{4} \\
+(2,3,5) & -\frac{125}{2} \\
+(2,4,4) & -\frac{3175}{132} \\
+(2,4,6) & -\frac{875}{44} \\
+(3,3,4) & -\frac{1495}{44} \\
+(3,3,6) & -\frac{625}{44} \\
+(3,4,5) & -\frac{425}{26} \\
+(3,4,7) & -\frac{6125}{858} \\
+(4,4,4) & -\frac{279}{52} \\
+(4,4,6) & -\frac{25}{12} \\
+(4,4,8) & -\frac{175}{286} \\
+\end{array}
+\]
+Every listed triple contains a rank in $\{1,2,3,4\}$. For a $4$-anticoherent state, every invariant on the left therefore vanishes. The right is positive for a nonzero state, a contradiction. The identity is verified coefficientwise using exact rational arithmetic; it imposes no symmetry or reality restriction on $|\psi\rangle$.

@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An explicit radical Dicke basis for an optimal two-dimensional third-order anticoherent subspace of sixteen symmetric qubits."><title>Sixteen qubits: an analytical third-order AC plane</title><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><script defer src="../../vendor/katex/katex.min.js"></script><style>
+    :root{--paper:#f5f4ee;--surface:#fffef9;--ink:#27302e;--muted:#68736d;--line:#d6dacf;--purple:#675283;--teal:#245c50;--serif:Georgia,'Times New Roman',serif;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,-apple-system,sans-serif}main{max-width:980px;margin:40px auto 0;padding:0 30px 60px}a{color:var(--teal);text-underline-offset:4px;text-decoration-thickness:1px}a:hover{color:#122f28}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.25}h1{font-size:clamp(30px,4vw,42px);letter-spacing:-1px;margin:24px 0 18px;max-width:810px}h2{font-size:27px;letter-spacing:-.5px;margin:42px 0 17px}h3{font-size:21px;margin:22px 0 10px}p{margin:0 0 18px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--purple);margin-bottom:10px}.back-link{font-size:13px}.lead{font-size:17px;line-height:1.8;color:#52645a}.result{border:1px solid #c2d3c5;border-left:4px solid var(--teal);background:#eaf1e8;border-radius:0 5px 5px 0;padding:19px 24px;margin:25px 0 29px}.result strong{color:var(--teal);font-size:14px}.result .math{font-size:25px}.result p{margin:10px 0 0;font-size:14px;line-height:1.75}.math[data-display=true]{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:7px 0;margin:14px 0}.katex-display{margin:.35em 0}.proof-chain{display:flex;flex-wrap:wrap;gap:7px 12px;color:var(--muted);font-size:13px;border-block:1px solid var(--line);padding:13px 0;margin:24px 0}.proof-chain span{white-space:nowrap}.certificate{border:1px solid #c7bcd2;border-left:4px solid var(--purple);background:#efebf3;border-radius:0 5px 5px 0;padding:18px 22px;margin:24px 0}.certificate .eyebrow{margin:0 0 5px}.certificate .math{font-size:18px}.certificate p:last-child{margin-bottom:0;font-size:14px}.note{color:var(--muted);font-size:14px}.equation-note{font-size:14px;color:var(--muted);margin-top:-3px}details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;margin:25px 0}summary{cursor:pointer;color:var(--purple);font-size:14px;font-weight:600}details>div{padding-top:15px}details p{font-size:14px}details .math{font-size:14px}.downloads{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin:20px 0}.download{display:flex;flex-direction:column;gap:4px;padding:14px 17px;border:1px solid var(--line);border-radius:5px;background:var(--surface)}.download a{font-size:14px;font-weight:500}.download span{color:var(--muted);font-size:12px;line-height:1.5}.witness{padding:17px 22px;background:var(--surface);border:1px solid var(--line);border-radius:5px;margin:20px 0}.witness .math{font-size:15px}.witness p:last-child{margin-bottom:0}.source-note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:30px}footer{display:flex;flex-wrap:wrap;gap:12px 24px;border-top:1px solid var(--line);margin-top:38px;padding-top:18px;font-size:12px;color:var(--muted)}:focus-visible{outline:2px solid var(--purple);outline-offset:4px}code{font-size:.85em;overflow-wrap:anywhere}
+    @media(max-width:600px){main{padding:0 18px 40px;margin-top:25px}body{font-size:15px}h1{font-size:30px}h2{font-size:24px;margin-top:34px}.lead{font-size:16px}.result,.certificate,.witness{padding:15px 17px}.result .math{font-size:21px}.certificate .math{font-size:16px}.downloads{grid-template-columns:1fr;gap:10px}.proof-chain{font-size:12px}.witness .math{font-size:13px}}
+    @media print{body{background:#fff}main{max-width:none;margin:0;padding:0}.downloads{break-inside:avoid}.result,.certificate{break-inside:avoid}details>div{display:block}.math[data-display=true]{overflow:visible}}
+  
+.assembly-scroll{overflow:auto;margin:22px 0}.assembly{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}.assembly th,.assembly td{padding:13px 15px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.assembly th{background:#ebe8f0;color:var(--purple);font-size:12px}.assembly tr:nth-child(even) td{background:#fffef950}.block-label{font-size:12px;color:var(--purple);text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin:30px 0 7px}.scope-note{border-left:3px solid #b49456;background:#f6efdf;padding:15px 19px;font-size:14px;margin:22px 0}.scope-note p:last-child{margin:0}.witness .math{font-size:17px}.jump-links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;margin:20px 0 32px}.result .math{font-size:23px}@media(max-width:600px){.witness .math{font-size:14px}.result .math{font-size:18px}}
+.classification{width:100%;border-collapse:collapse;background:var(--surface);border-top:3px solid var(--purple);margin:24px 0}.classification th,.classification td{text-align:left;padding:13px 17px;border-bottom:1px solid var(--line)}.classification th{font-size:12px;color:var(--purple);letter-spacing:.04em}.classification td{font-size:14px}.classification .math{font-size:17px}.table-wrap{overflow:auto}.section-start{border-top:1px solid var(--line);padding-top:28px;margin-top:38px}.section-start h2{margin-top:0}.step{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--purple);font-weight:700;margin-top:26px}.witness .math{font-size:16px}.result .math{font-size:22px}.derivation .math{font-size:16px}.strong-identity{border-left:4px solid var(--purple);background:#efebf3;padding:16px 20px;margin:22px 0}.strong-identity p{font-size:14px;margin-bottom:0}.strong-identity .math{font-size:23px}.proof-chain{font-size:12px}.fact{background:var(--surface);border:1px solid var(--line);padding:17px 22px;border-radius:5px;margin:20px 0}.fact p:last-child{margin:0}@media(max-width:600px){.classification{min-width:480px}.classification th,.classification td{padding:11px 13px}.witness .math,.derivation .math{font-size:13px}.strong-identity .math{font-size:19px}}
+.result{border-color:#d6c195;border-left-color:#99752c;background:#f6efdf}.result strong{color:#7a5c25}.result{border-color:#c2d3c5;border-left-color:#245c50;background:#eaf1e8}.result strong{color:#245c50}
+.basis-number{font-size:11px;font-weight:700;color:var(--purple);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.basis-block+.basis-block{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}.phase-definitions{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}.witness .math{font-size:16px}.download a{line-height:1.5}.jump-links a{white-space:nowrap}.result .math{font-size:24px}@media(max-width:600px){.witness .math{font-size:13px}.result .math{font-size:21px}}
+</style><script>document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll("[data-tex]").forEach(el=>{if(window.katex)el.innerHTML=katex.renderToString(el.dataset.tex,{displayMode:el.dataset.display==="true",throwOnError:false,strict:"ignore",trust:false});}));</script></head><body><main id="top"><p class="eyebrow">Anticoherent subspaces · Exact radical basis</p>
+<a class="back-link" href="../../index.html#n=16&amp;t=3&amp;subspace=radical-n16-k2-t3">← Return to the catalogue</a>
+<h1>Sixteen qubits at third order</h1>
+<p class="lead">Two analytical Dicke vectors span an optimal third-order AC subspace. Every normalized complex superposition is anticoherent, including the coherences between the basis vectors.</p>
+<div class="result"><strong>Proved maximum dimension</strong>
+<div class="math" data-tex="\boxed{K(16,3)=2}" data-display="true"></div>
+<p>The exact two-dimensional construction attains the general dimension bound.</p></div>
+<nav class="jump-links" aria-label="On this page"><a href="#basis">Analytical basis</a><a href="#proof">Full-span proof</a><a href="#maximum">Optimality</a><a href="#sources">Source and downloads</a></nav>
+<section id="basis"><h2>An explicit orthonormal basis</h2><p>Use normalized Dicke states, with the superscript denoting the number of excitations. All coefficients outside the displayed supports vanish.</p><div class="witness">
+<div class="basis-block"><p class="basis-number">Basis vector 1</p>
+<div class="math" data-tex="\begin{aligned}|u_1\rangle&amp;=\frac{\sqrt{38}}{16}\bigl(|D_{16}^{(0)}\rangle+z^2|D_{16}^{(16)}\rangle\bigr)\\&amp;\quad+\frac z8\bigl(\sqrt{10}|D_{16}^{(4)}\rangle+5|D_{16}^{(8)}\rangle+\sqrt{10}|D_{16}^{(12)}\rangle\bigr),\end{aligned}" data-display="true"></div>
+</div>
+<div class="basis-block"><p class="basis-number">Basis vector 2</p>
+<div class="math" data-tex="\begin{aligned}|u_2\rangle&amp;=\frac{\sqrt5}{4}\bigl(|D_{16}^{(2)}\rangle+fg|D_{16}^{(14)}\rangle\bigr)\\&amp;\quad+\frac{\sqrt3}{4}\bigl(f|D_{16}^{(6)}\rangle+g|D_{16}^{(10)}\rangle\bigr).\end{aligned}" data-display="true"></div>
+</div>
+<div class="phase-definitions"><p>The three phases are</p>
+<div class="math" data-tex="\begin{aligned}z&amp;=\frac{545-192i\sqrt{10}}{7\sqrt{13585}},\\f&amp;=-\frac{55+4i\sqrt{10}}{7\sqrt{65}},\\g&amp;=\frac{19+8i\sqrt{10}}{\sqrt{1001}},\qquad |z|=|f|=|g|=1.\end{aligned}" data-display="true"></div>
+</div></div><p><a href="../../index.html#n=16&amp;t=3&amp;subspace=radical-n16-k2-t3">Inspect the exact coefficients and Majorana spheres ↗</a> · <a href="basis.json">Download all coefficients ↓</a></p>
+<p>The displayed supports are disjoint. Their squared amplitudes are</p>
+<div class="math" data-tex="\begin{aligned}u_1:\quad&amp;\frac1{128}(19,20,50,20,19),\\u_2:\quad&amp;\frac1{16}(5,3,3,5).\end{aligned}" data-display="true"></div>
+<p>Each probability list sums to one, so the two vectors are orthonormal.</p></section>
+<section id="proof"><h2>Why the entire span is AC</h2><p>Write 
+<span class="math" data-tex="\mathcal R_t"></span>
+ for the reduction to the symmetric space of <span class="math" data-tex="t"></span> qubits. The decisive identity is</p><div class="strong-identity">
+<div class="math" data-tex="\mathcal R_3(|u_a\rangle\langle u_b|)=\delta_{ab}\frac{I_4}{4},\qquad a,b\in\{1,2\}." data-display="true"></div>
+<p>Both self reductions are maximally mixed, and both ordered cross reductions vanish.</p></div><p>For arbitrary complex coefficients, it follows that</p>
+<div class="math" data-tex="\begin{gathered}|\psi\rangle=\alpha|u_1\rangle+\beta|u_2\rangle,\qquad |\alpha|^2+|\beta|^2=1,\\\mathcal R_3(|\psi\rangle\langle\psi|)=\frac{I_4}{4}.\end{gathered}" data-display="true"></div>
+<h3>Checking every reduced entry</h3><p>For a coefficient vector 
+<span class="math" data-tex="v=\sum_{r=0}^{16}v_r|D_{16}^{(r)}\rangle"></span>
+, form the Dicke bipartition matrix</p>
+<div class="math" data-tex="[M_t(v)]_{a,b}=v_{a+b}\sqrt{\frac{\binom ta\binom{16-t}b}{\binom{16}{a+b}}},\qquad\begin{array}{l}0\le a\le t,\\0\le b\le16-t.\end{array}" data-display="true"></div>
+<div class="math" data-tex="\mathcal R_t(|v\rangle\langle w|)=M_t(v)M_t(w)^\dagger." data-display="true"></div>
+<p>Within either basis vector, occupied Dicke indices differ by multiples of four. The off-diagonal entries of each three-qubit self reduction vanish. Inserting the two probability lists gives four equal diagonal entries, each 
+<span class="math" data-tex="1/4"></span>
+.</p><p>The phase definitions cancel the remaining cross terms exactly. The primary and independent verifiers reconstruct all 64 entries of the four ordered cross reductions in rational and radical arithmetic.</p>
+<details><summary>Four exact phase identities complete the proof</summary><div><p>Set 
+<span class="math" data-tex="F=\overline f,\quad G=\overline g"></span>
+. The only potentially nonzero cross terms are controlled by</p>
+<div class="math" data-tex="\begin{aligned}E_1&amp;=7\sqrt{19}+z\bigl(\sqrt{91}FG+15\sqrt{11}F+9\sqrt{35}G\bigr),\\E_2&amp;=\sqrt{91}FG+\sqrt{11}F+2\sqrt{35}G,\\E_3&amp;=2\sqrt{35}F+\sqrt{11}G+\sqrt{91},\\E_4&amp;=7\sqrt{19}FGz+9\sqrt{35}F+15\sqrt{11}G+\sqrt{91}.\end{aligned}" data-display="true"></div>
+<p>Substitution of the explicit radicals gives <span class="math" data-tex="E_1=E_2=E_3=E_4=0"></span>. Hence</p>
+<div class="math" data-tex="M_3(u_1)M_3(u_2)^\dagger=\begin{pmatrix}0&amp;0&amp;E_1/896&amp;0\\0&amp;0&amp;0&amp;3zE_2/448\\3zE_3/448&amp;0&amp;0&amp;0\\0&amp;zE_4/896&amp;0&amp;0\end{pmatrix}=0." data-display="true"></div>
+<p>The reverse ordered cross reduction is the adjoint. This completes the full-span verification, including arbitrary complex superpositions.</p></div></details></section>
+<section id="maximum"><h2>Why dimension two is optimal</h2><p>Let 
+<span class="math" data-tex="\mathcal H_N=\mathrm{Sym}^N(\mathbb C^2)"></span>
+, and consider any third-order AC subspace of dimension 
+<span class="math" data-tex="k"></span>
+. Choose Hilbert–Schmidt orthonormal rectangular spin-tensor maps</p>
+<div class="math" data-tex="A_{\ell m}:\mathcal H_{16}\longrightarrow\mathcal H_{15},\qquad\ell=\frac12,\frac32." data-display="true"></div>
+<p>There are six maps: two of rank one half and four of rank three halves. Every product 
+<span class="math" data-tex="A_{\ell m}^\dagger A_{\ell&#x27; m&#x27;}"></span>
+ has spin-tensor ranks at most three. The whole-subspace AC condition therefore gives, for any orthonormal subspace basis 
+<span class="math" data-tex="v_1,\ldots,v_k"></span>
+,</p>
+<div class="math" data-tex="\langle A_{\ell m}v_a,A_{\ell&#x27; m&#x27;}v_b\rangle=\frac{\delta_{ab}\delta_{\ell\ell&#x27;}\delta_{mm&#x27;}}{17}." data-display="true"></div>
+<p>Thus six nonzero orthogonal images per basis vector must fit in the 16-dimensional output space:</p>
+<div class="math" data-tex="6k\le16\quad\Longrightarrow\quad k\le2." data-display="true"></div>
+<p>The analytical plane supplies the matching lower bound. This upper bound applies to arbitrary complex subspaces, with no assumption on their supports or symmetries. <a href="../general-bounds/index.html">Read the general rectangular-tensor theorem ↗</a></p></section>
+<section id="order"><h2>The two displayed states have exact AC order three</h2><p>The fourth-reduction purities are</p>
+<div class="math" data-tex="\begin{aligned}\operatorname{Tr}\!\left[\mathcal R_4(|u_1\rangle\langle u_1|)^2\right]&amp;=\frac{3457}{16562}&gt;\frac15,\\\operatorname{Tr}\!\left[\mathcal R_4(|u_2\rangle\langle u_2|)^2\right]&amp;=\frac{3433}{16562}&gt;\frac15.\end{aligned}" data-display="true"></div>
+<p>Neither representative is fourth-order AC, and the plane is not a fourth-order AC subspace. These two purity checks do not determine whether some other superposition in the plane has higher order.</p></section>
+<section id="sources"><h2>Source and analytical reconstruction</h2><p>The starting point was John Martin’s numerical example 
+<span class="math" data-tex="\Pi_{16,2,3}"></span>
+ in <a href="../../references/ACLiege.jl">ACLiege.jl, line 901</a>. Its sparse supports reveal the simple rational probability lists above. Fixing those probabilities reduces the remaining full-span conditions to phase equations; the explicit 
+<span class="math" data-tex="z,f,g"></span>
+ solve them exactly.</p><p>A common collective rotation about the third axis and independent phases on the two basis vectors match the supplied numerical example:</p>
+<div class="math" data-tex="\begin{gathered}u_a^{\mathrm{source}}\simeq e^{i\chi_a}e^{-i\beta J_z}u_a,\\\beta\simeq-0.7306438994490132,\qquad J_z|D_{16}^{(r)}\rangle=(8-r)|D_{16}^{(r)}\rangle.\end{gathered}" data-display="true"></div>
+<p>The largest Dicke-amplitude errors are 
+<span class="math" data-tex="3.32\times10^{-10}"></span>
+ and <span class="math" data-tex="5.10\times10^{-10}"></span>
+. This decimal comparison identifies the reconstruction; the exact reduced-operator identities prove existence independently.</p>
+<h3>Majorana representations</h3><p>The analytical coefficients also determine both Majorana constellations. The first vector has sixteen distinct points. The second has two double points and twelve simple points:</p>
+<div class="math" data-tex="\lambda(u_1)=(1^{16}),\qquad\lambda(u_2)=(2^2,1^{12})." data-display="true"></div>
+<p>Exact polynomial square-free checks certify these multiplicities. The numerical sphere coordinates reconstruct the corresponding state rays with errors below 
+<span class="math" data-tex="8.4\times10^{-16}"></span>
+.</p><h3>Proof and reproducibility</h3><div class="downloads">
+<div class="download"><a href="basis.json">Analytical basis ↓</a><span>Every exact and numerical Dicke coefficient, phase definition and source comparison.</span></div>
+<div class="download"><a href="proof.tex">Complete LaTeX proof ↓</a><span>Explicit cross identities and a self-contained dimension argument.</span></div>
+<div class="download"><a href="verify.py">Primary exact verifier ↓</a><span>Reconstructs the 64 ordered cross entries and all four phase identities.</span></div>
+<div class="download"><a href="verification.json">Exact verification report ↓</a><span>Saved rational and radical checks, purities and numerical source comparison.</span></div>
+<div class="download"><a href="verify_independently.py">Independent verifier ↓</a><span>Rebuilds the basis expressions and checks the full complex span.</span></div>
+<div class="download"><a href="independent-verification.json">Independent report ↓</a><span>Exact coefficient association and all ordered cross reductions.</span></div>
+<div class="download"><a href="verify_geometry.py">Majorana verifier ↓</a><span>Checks polynomial multiplicities and reconstruction of the state rays.</span></div>
+<div class="download"><a href="geometry.json">Majorana coordinates ↓</a><span>Sphere coordinates for the two analytical basis representatives.</span></div>
+<div class="download"><a href="geometry-verification.json">Geometry report ↓</a><span>Exact multiplicity certificates and numerical reconstruction residuals.</span></div>
+<div class="download"><a href="build_page.py">Page generator ↓</a><span>Rebuilds this page using the local catalogue assets.</span></div>
+</div><p class="source-note">The exact formulas reconstruct one supplied numerical plane. They prove optimal dimension without classifying every optimal plane. No claim of literature priority is made.</p></section>
+<footer><span>Anticoherent subspaces · 30 October 2026</span><a href="../../index.html#n=16&amp;t=3&amp;subspace=radical-n16-k2-t3">Return to the catalogue ↗</a><a href="#top">Back to top ↑</a></footer></main></body></html>

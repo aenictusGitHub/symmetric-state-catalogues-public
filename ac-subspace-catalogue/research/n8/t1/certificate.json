@@ -1,0 +1,56 @@
+{
+  "n": 8,
+  "t": 1,
+  "maximumDimension": 3,
+  "targetExcludedDimension": 4,
+  "auxiliaryPureState": {
+    "n": 16,
+    "t": 7
+  },
+  "conventions": {
+    "projector": "P is the rank4 orthogonal projector onto an arbitrary complex first-order AC subspace of spin4.",
+    "casimirMap": "Phi(A)=sum_a J_a A J_a, with eigenvalue20-L(L+1)/2 on tensor rankL.",
+    "pureMultipoles": "a_L=sum_M |Tr(rho T_LM)|^2 for Hilbert-Schmidt-orthonormal spin8 tensors; a_L>=0.",
+    "twoCopyProbabilities": "p_J=||Pi_J(q tensor q)||^2, J=0,2,...,16, sum_J p_J=1.",
+    "recoupling": "a_L=(2L+1)sum_even_J {8 8 L;8 8 J}p_J."
+  },
+  "identity": {
+    "constant": "100",
+    "p0Coefficient": "136",
+    "a9Coefficient": "115",
+    "lowMultipoleCoefficients": [
+      "2567/2",
+      "969/2",
+      "-323",
+      "-969",
+      "-28747/26",
+      "-22287/26",
+      "-4370/13"
+    ],
+    "fullIdentity": "0=100+136*p_0+115*a_9+sum_(L=1)^7 c_L*a_L",
+    "underSevenAC": "0=100+136*p_0+115*a_9, impossible because p_0>=0 and a_9>=0."
+  },
+  "scope": "No reality, spatial symmetry, support pattern or group ansatz is imposed on the excluded subspace.",
+  "generalEvenQubitConsequence": {
+    "hypothesis": "N is even and N>=8",
+    "bound": "k_max(N,1)<=N/2-1",
+    "saturationLift": "If k=N/2 then P=N I/[2(N+1)]+X with X supported only at tensor rankN. The normalized time-reversed vectorization of X is pure2N-qubit(N-1)-AC.",
+    "largeNContradiction": "For evenN>=10, its tensor-error Gram matrix through rankN/2-1 has dimension(N/2)^2>2N+1. ForN8 use the displayed rational recoupling identity."
+  },
+  "alternativeA15Identity": {
+    "constant": "1105",
+    "p0Coefficient": "2431",
+    "a15Coefficient": "11310",
+    "lowMultipoleCoefficients": [
+      "126308/3",
+      "16796/3",
+      "-40664/3",
+      "-33592/3",
+      "-94316/3",
+      "-29716/3",
+      "-35530/3"
+    ],
+    "fullIdentity": "0=1105+2431*p_0+11310*a_15+sum_(L=1)^7 c_L*a_L",
+    "underSevenAC": "0=1105+2431*p_0+11310*a_15, impossible because p_0>=0 and a_15>=0."
+  }
+}

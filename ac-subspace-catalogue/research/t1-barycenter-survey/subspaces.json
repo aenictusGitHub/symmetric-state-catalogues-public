@@ -1,0 +1,9326 @@
+[
+  {
+    "id": "reflection-pairs-n2-k1-t1",
+    "n": 2,
+    "dimension": 1,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "1",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 4,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "2/3"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "family46-n3",
+    "n": 3,
+    "dimension": 1,
+    "order": 1,
+    "label": "GHZ line",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "sqrt(2)/2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reflection-pairs-n4-k2-t1",
+    "n": 4,
+    "dimension": 2,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(6)/3",
+          "0",
+          "0",
+          "sqrt(3)/3"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5773502691896257,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          4
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "-sqrt(6)/3",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          3
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "1"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 16,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 1,
+        "squaredFrobeniusDefect": "1/3"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n5-k2-t1",
+    "n": 5,
+    "dimension": 2,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/4"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6123724356957945,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          5
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(10)/4",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          4
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "3/2"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 16,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "1/96"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n6-k3-t1",
+    "n": 6,
+    "dimension": 3,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          6
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          5
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 36,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "8/75"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "cyclic-radical-n7-k3-t1",
+    "n": 7,
+    "dimension": 3,
+    "order": 1,
+    "label": "Exact three-dimensional cyclic construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "-4*sqrt(105)/105 + sqrt(4305)*I/210",
+          "0",
+          "0",
+          "-sqrt(3)/3",
+          "0",
+          "0",
+          "sqrt(15)/6",
+          "0"
+        ],
+        "coefficients": [
+          [
+            -0.39036002917941326,
+            0.3124404705204619
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6454972243679028,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          3,
+          6
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(15)/6",
+          "0",
+          "0",
+          "-sqrt(3)/3",
+          "0",
+          "0",
+          "-4*sqrt(105)/105 + sqrt(4305)*I/210"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6454972243679028,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.39036002917941326,
+            0.3124404705204619
+          ]
+        ],
+        "support": [
+          1,
+          4,
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          5
+        ]
+      }
+    ],
+    "construction": {
+      "type": "cyclic-C3",
+      "phase": "sqrt(105)*(-8 + sqrt(41)*I)/105",
+      "unitPhaseIdentity": "(64+41)/105=1",
+      "supports": [
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "argument": "Disjoint residue classes give orthonormality and zero off-diagonal Jz. Each probability distribution has mean r=7/2. Two cross J+ sums cancel pairwise; the third is sqrt(105)*(q+conjugate(q))/12+4/3=0."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 36,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "1/1176"
+      }
+    },
+    "provenance": "Independent exact radical reconstruction with all cross reductions independently verified."
+  },
+  {
+    "id": "reflection-pairs-n8-k3-t1",
+    "n": 8,
+    "dimension": 3,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          6
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 36,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "25/294"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "central-four-n9-k4-t1",
+    "n": 9,
+    "dimension": 4,
+    "order": 1,
+    "label": "Central cyclic block with reflected outer pairs",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(6)/4",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "-sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(10)/4",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          6
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(30)/24 + sqrt(42)*I/12",
+          "0",
+          "0",
+          "0",
+          "sqrt(3)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/8",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.22821773229381923,
+            0.5400617248673217
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4330127018922193,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6846531968814576,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          4,
+          8
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(30)/8",
+          "0",
+          "0",
+          "0",
+          "-sqrt(3)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/24 + sqrt(42)*I/12"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6846531968814576,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.4330127018922193,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.22821773229381923,
+            0.5400617248673217
+          ]
+        ],
+        "support": [
+          1,
+          5,
+          9
+        ]
+      }
+    ],
+    "construction": {
+      "type": "central-four",
+      "centralProbabilities": {
+        "a": "11/32",
+        "b": "3/16",
+        "c": "15/32"
+      },
+      "phase": "sqrt(165)/33 + 2*sqrt(231)*I/33",
+      "magneticPairLowerValues": [],
+      "argument": "The central block obeys exact zero compressed Jz and J\u00b1 identities with a unit phase. Reflected outer pairs are separated by one unused magnetic level from the central block and from one another."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 64,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "3/128"
+      }
+    },
+    "provenance": "General central-block construction; independently verified here by every reduced cross matrix."
+  },
+  {
+    "id": "reflection-pairs-n10-k4-t1",
+    "n": 10,
+    "dimension": 4,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/3",
+          "0",
+          "0",
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "-sqrt(6)/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          6
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(5)/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2/3"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7453559924999299,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6666666666666666,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "2/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(5)/3",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6666666666666666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7453559924999299,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          9
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "1",
+        "4"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 64,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "32/675"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n11-k4-t1",
+    "n": 11,
+    "dimension": 4,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/4",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          8
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(55)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(5)/10"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7416198487095663,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6708203932499369,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          11
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "3*sqrt(5)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(55)/10",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6708203932499369,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7416198487095663,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          10
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "3/2",
+        "9/2"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 64,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "2401/72600"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n12-k5-t1",
+    "n": 12,
+    "dimension": 5,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          8
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(66)/11",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          11
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2",
+        "5"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 100,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "49/726"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "central-three-n13-k5-t1",
+    "n": 13,
+    "dimension": 5,
+    "order": 1,
+    "label": "Central cyclic block with reflected outer pairs",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "-7*sqrt(4935)/1504 + sqrt(2516145)*I/4512",
+          "0",
+          "0",
+          "-sqrt(3290)/94",
+          "0",
+          "0",
+          "2*sqrt(1974)/141",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.326959365765384,
+            0.3515594217753339
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6101970382851059,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6302087912488812,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          6,
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2*sqrt(1974)/141",
+          "0",
+          "0",
+          "-sqrt(3290)/94",
+          "0",
+          "0",
+          "-7*sqrt(4935)/1504 + sqrt(2516145)*I/4512",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6302087912488812,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6101970382851059,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.326959365765384,
+            0.3515594217753339
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          7,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          5,
+          8
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(78)/12",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(66)/12"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7359800721939872,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.67700320038633,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(66)/12",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(78)/12",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.67700320038633,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7359800721939872,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          12
+        ]
+      }
+    ],
+    "construction": {
+      "type": "central-three",
+      "centralProbabilities": {
+        "a": "65/282",
+        "b": "35/94",
+        "c": "56/141"
+      },
+      "phase": "-21*sqrt(182)/416 + sqrt(92794)*I/416",
+      "magneticPairLowerValues": [
+        "11/2"
+      ],
+      "argument": "The central block obeys exact zero compressed Jz and J\u00b1 identities with a unit phase. Reflected outer pairs are separated by one unused magnetic level from the central block and from one another."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 100,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "21675/746642"
+      }
+    },
+    "provenance": "General central-block construction; independently verified here by every reduced cross matrix."
+  },
+  {
+    "id": "reflection-pairs-n14-k5-t1",
+    "n": 14,
+    "dimension": 5,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          5,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(66)/11",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          12
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2",
+        "5"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 100,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "32/507"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "central-four-n15-k6-t1",
+    "n": 15,
+    "dimension": 6,
+    "order": 1,
+    "label": "Central cyclic block with reflected outer pairs",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          5,
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "11*sqrt(742)/1484 + sqrt(616602)*I/1484",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(1166)/212",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(2226)/212",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.2019113520089469,
+            0.5291375274076213
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.48320861544237376,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6676486478538933,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          7,
+          11
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(2226)/212",
+          "0",
+          "0",
+          "0",
+          "-3*sqrt(1166)/212",
+          "0",
+          "0",
+          "0",
+          "11*sqrt(742)/1484 + sqrt(616602)*I/1484",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6676486478538933,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.48320861544237376,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.2019113520089469,
+            0.5291375274076213
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          8,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(105)/14",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(91)/14"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7319250547113999,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6813851438692469,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          15
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(91)/14",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(105)/14",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6813851438692469,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7319250547113999,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          14
+        ]
+      }
+    ],
+    "construction": {
+      "type": "central-four",
+      "centralProbabilities": {
+        "a": "17/53",
+        "b": "99/424",
+        "c": "189/424"
+      },
+      "phase": "11*sqrt(238)/476 + sqrt(197778)*I/476",
+      "magneticPairLowerValues": [
+        "13/2"
+      ],
+      "argument": "The central block obeys exact zero compressed Jz and J\u00b1 identities with a unit phase. Reflected outer pairs are separated by one unused magnetic level from the central block and from one another."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 144,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "1/24"
+      }
+    },
+    "provenance": "General central-block construction; independently verified here by every reduced cross matrix."
+  },
+  {
+    "id": "reflection-pairs-n16-k6-t1",
+    "n": 16,
+    "dimension": 6,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/3",
+          "0",
+          "0",
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "-sqrt(6)/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6,
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(5)/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2/3",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7453559924999299,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6666666666666666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "2/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(5)/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6666666666666666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7453559924999299,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "2*sqrt(30)/15",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(105)/15"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7302967433402214,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6831300510639732,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          16
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(105)/15",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2*sqrt(30)/15",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6831300510639732,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7302967433402214,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          15
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "1",
+        "4",
+        "7"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 144,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "121/2400"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n17-k6-t1",
+    "n": 17,
+    "dimension": 6,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7,
+          11
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(6)/4",
+          "0",
+          "0",
+          "0",
+          "-sqrt(10)/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6123724356957945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7905694150420949,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6,
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(5)/10",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7416198487095663,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6708203932499369,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          14
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "3*sqrt(5)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(55)/10",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6708203932499369,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7416198487095663,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(34)/8",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/8"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7288689868556626,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6846531968814576,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          17
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(30)/8",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(34)/8",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6846531968814576,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7288689868556626,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          16
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "3/2",
+        "9/2",
+        "15/2"
+      ],
+      "includeMZero": false,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 144,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "19321/443904"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "reflection-pairs-n18-k7-t1",
+    "n": 18,
+    "dimension": 7,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          9
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6,
+          11
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          15
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          14
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "3*sqrt(17)/17",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2*sqrt(34)/17"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7276068751089989,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6859943405700354,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          18
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "2*sqrt(34)/17",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-3*sqrt(17)/17",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6859943405700354,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7276068751089989,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          17
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2",
+        "5",
+        "8"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 196,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "50/867"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  },
+  {
+    "id": "central-three-n19-k7-t1",
+    "n": 19,
+    "dimension": 7,
+    "order": 1,
+    "label": "Central cyclic block with reflected outer pairs",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-80*sqrt(143)/3003 + sqrt(4498351)*I/6006",
+          "0",
+          "0",
+          "-2*sqrt(42)/21",
+          "0",
+          "0",
+          "sqrt(77)/14",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.318568384764606,
+            0.3531354703494767
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6172133998483676,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6267831705280087,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          6,
+          9,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(77)/14",
+          "0",
+          "0",
+          "-2*sqrt(42)/21",
+          "0",
+          "0",
+          "-80*sqrt(143)/3003 + sqrt(4498351)*I/6006",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6267831705280087,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.6172133998483676,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.318568384764606,
+            0.3531354703494767
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7,
+          10,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          8,
+          11
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(78)/12",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(66)/12",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7359800721939872,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.67700320038633,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          16
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(66)/12",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(78)/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.67700320038633,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7359800721939872,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          15
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "sqrt(19)/6",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(17)/6"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7264831572567789,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6871842709362768,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          19
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "sqrt(17)/6",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(19)/6",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.6871842709362768,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7264831572567789,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          18
+        ]
+      }
+    ],
+    "construction": {
+      "type": "central-three",
+      "centralProbabilities": {
+        "a": "19/84",
+        "b": "8/21",
+        "c": "11/28"
+      },
+      "phase": "-160*sqrt(57057)/57057 + sqrt(1794842049)*I/57057",
+      "magneticPairLowerValues": [
+        "11/2",
+        "17/2"
+      ],
+      "argument": "The central block obeys exact zero compressed Jz and J\u00b1 identities with a unit phase. Reflected outer pairs are separated by one unused magnetic level from the central block and from one another."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 196,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "152881/3820824"
+      }
+    },
+    "provenance": "General central-block construction; independently verified here by every reduced cross matrix."
+  },
+  {
+    "id": "reflection-pairs-n20-k7-t1",
+    "n": 20,
+    "dimension": 7,
+    "order": 1,
+    "label": "Separated reflection-pair construction",
+    "basis": [
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          10
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          8,
+          13
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(15)/5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6324555320336759,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7745966692414834,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          7,
+          12
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          5,
+          16
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(55)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(66)/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.674199862463242,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7385489458759964,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          15
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "0",
+          "3*sqrt(17)/17",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2*sqrt(34)/17",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7276068751089989,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6859943405700354,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          19
+        ]
+      },
+      {
+        "exactCoefficients": [
+          "0",
+          "2*sqrt(34)/17",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-3*sqrt(17)/17",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6859943405700354,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.7276068751089989,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          18
+        ]
+      }
+    ],
+    "construction": {
+      "type": "reflection-pairs",
+      "magneticPairLowerValues": [
+        "2",
+        "5",
+        "8"
+      ],
+      "includeMZero": true,
+      "basisConvention": "Normalized Dicke basis r=j-m; the magnetic spin basis |m> is |D_n^(j-m)>.",
+      "moduleFormula": "v_x=sqrt((x+1)/(2x+1))|x>+sqrt(x/(2x+1))|-x-1>; w_x=sqrt(x/(2x+1))|x+1>-sqrt((x+1)/(2x+1))|-x>",
+      "argument": "Both vectors have zero Jz expectation. Their only possible internal J+ matrix element is a sum of two equal-magnitude opposite-sign terms; spin-ladder coefficients agree by reflection. Magnetic pairs are separated by one unused level, so different modules have zero compressed Jz and J\u00b1. If included, m=0 is separated from every module by the unused m=\u00b11 levels."
+    },
+    "verification": {
+      "orthonormal": true,
+      "allCrossReductionsVerified": true,
+      "checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 0,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 1,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 2,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 3,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 4,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 5,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 0,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 1,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 2,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 3,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 4,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 5,
+          "reducedCrossIdentityVerified": true
+        },
+        {
+          "i": 6,
+          "j": 6,
+          "reducedCrossIdentityVerified": true
+        }
+      ],
+      "scalarEntriesChecked": 196,
+      "nextOrderFailure": {
+        "i": 0,
+        "j": 0,
+        "squaredFrobeniusDefect": "121/2166"
+      }
+    },
+    "provenance": "Independent analytic construction from reflected adjacent magnetic levels."
+  }
+]

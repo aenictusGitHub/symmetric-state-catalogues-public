@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{A second-order AC subspace need not lie in a largest first-order AC subspace}
+\author{}\date{}\maketitle
+
+Let $\mathcal C$ be a $k$-dimensional second-order anticoherent subspace in
+spin $j=N/2$, and let $P$ be its orthogonal projector. Put
+$c=j(j+1)/3$. Polarization of the anticoherence identities gives
+\[
+ PJ_aP=0,\qquad PJ_aJ_bP=c\delta_{ab}P.
+\]
+Consequently $\mathcal C,J_x\mathcal C,J_y\mathcal C,J_z\mathcal C$ are
+mutually orthogonal, with dimension $k$ each. Define
+\[
+ R=I-P-c^{-1}\sum_{a=x,y,z}J_aPJ_a.
+\]
+This is the orthogonal projector onto their common orthogonal complement,
+and has rank $N+1-4k$.
+
+\begin{proposition}[Exact first-order extension criterion]
+A first-order AC subspace containing $\mathcal C$ has exactly the form
+$\mathcal C\oplus\mathcal D$, where
+\[
+ \mathcal D\subseteq\operatorname{ran}R,
+ \qquad P_{\mathcal D}J_aP_{\mathcal D}=0\quad(a=x,y,z).
+\]
+In particular, every such parent has dimension at most $N+1-3k$.
+\end{proposition}
+\begin{proof}
+Write any parent as $\mathcal C\oplus\mathcal D$ with
+$\mathcal D\perp\mathcal C$. The cross compression conditions are
+$\langle d,J_a u\rangle=0$ for every $d\in\mathcal D$, $u\in\mathcal C$.
+They are equivalent to $\mathcal D\subseteq\operatorname{ran}R$.
+The remaining compression conditions are precisely the displayed
+first-order conditions within $\mathcal D$. The dimension bound follows
+from $\operatorname{rank}R=N+1-4k$.
+\end{proof}
+
+\section*{The catalogue's exact $N=18$, $k=4$ example}
+Use the four-dimensional radical basis in
+\texttt{../n18-t2/basis.json}, already verified to have AC order two.
+Here $j=9$, $c=30$, and $\operatorname{rank}R=3$. In the normalized Dicke
+basis $e_r=|D_{18}^{(r)}\rangle$, exact arithmetic gives
+\[
+ \langle e_1,Re_1\rangle=\frac{1496}{3645},\qquad
+ \langle e_1,RJ_zRe_1\rangle=\frac{748}{405}\ne0.
+\]
+The largest possible first-order AC dimension is
+$K(18,1)=\lfloor18/3\rfloor+1=7$.
+Any seven-dimensional first-order parent of $\mathcal C$ would have to be
+$\mathcal C\oplus\operatorname{ran}R$, but the nonzero matrix element
+above excludes this immediately. In particular no rotation or basis
+change can place this code inside \emph{any} maximum-dimensional
+first-order AC subspace.
+
+In fact its largest first-order parent has dimension exactly five.
+Define three normalized vectors
+\[
+ q_+=\frac{Re_1}{\sqrt{\langle e_1,Re_1\rangle}},\qquad
+ q_0=\frac{Re_0}{\sqrt{\langle e_0,Re_0\rangle}},\qquad
+ q_-=\frac{Re_2}{\sqrt{\langle e_2,Re_2\rangle}}.
+\]
+They form an orthonormal basis of $\operatorname{ran}R$.
+Writing $Q=(q_+,q_0,q_-)$ and $J_+=J_x+iJ_y$, one obtains
+\[
+ Q^\dagger J_zQ=\frac92
+ \begin{pmatrix}1&0&0\\0&0&0\\0&0&-1\end{pmatrix},\qquad
+ Q^\dagger J_+Q=\frac9{\sqrt2}
+ \begin{pmatrix}0&0&0\\1&0&0\\0&-i&0\end{pmatrix}.
+\]
+These are a scaled spin-one triple after basis phases and a reflection
+of the generator coordinates, but an elementary proof suffices.
+A two-dimensional subspace with zero compression of the first matrix
+must contain $(0,1,0)^T$: its projection onto the positive eigenspace
+has a nontrivial kernel, and zero quadratic form then forces the negative
+component to vanish as well. An orthogonal second vector is $(a,0,b)^T$
+with $|a|=|b|\ne0$. Its matrix element with $(0,1,0)^T$ under the second
+matrix is $9a/\sqrt2\ne0$. Thus no such two-dimensional first-order
+subspace exists in $\operatorname{ran}R$.
+The line spanned by $q_0$ is first-order AC, so
+\[
+ \mathcal C\oplus\operatorname{span}\{q_0\}
+\]
+is an explicit five-dimensional first-order AC parent, and five is the
+largest possible dimension of a first-order parent of this particular
+optimal second-order code.
+
+\section*{Scope}
+This does not exclude constructing other optimal second-order codes
+inside suitably chosen first-order parents. It shows that restricting
+to maximum-dimensional first-order parents is not a complete search
+strategy. An analytical family attaining $K(N,1)$ is not a classification
+of all first-order AC subspaces, nor of those maximal under inclusion.
+The supplied verifier checks the source hash, all independent AC2 spin
+conditions, $R=QQ^\dagger$, and both displayed compressed matrices with
+exact rational and radical arithmetic.
+\end{document}

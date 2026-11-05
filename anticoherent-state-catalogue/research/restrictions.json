@@ -1,0 +1,441 @@
+{
+  "scope": "Normalized pure states in Sym^N(C^2), equivalently spin j=N/2. Order means at least t, unless a record explicitly says exact maximal order.",
+  "conventions": [
+    {
+      "id": "reduced-state-definition",
+      "statement": "A pure symmetric state is t-anticoherent iff rho_t=I_(t+1)/(t+1) in the symmetric Dicke basis. This is not I_(2^t)/2^t.",
+      "references": [
+        {
+          "sourceId": "symmetries-2015",
+          "page": 3,
+          "location": "Eq. (10)"
+        },
+        {
+          "sourceId": "mes-2014",
+          "page": 3,
+          "location": "Sec. II C, reduced-state characterization"
+        }
+      ]
+    },
+    {
+      "id": "multipole-definition",
+      "statement": "Equivalent condition: every spin multipole of ranks 1,...,t vanishes. Thus t-AC implies s-AC for every 0≤s≤t.",
+      "references": [
+        {
+          "sourceId": "depolarization-2022",
+          "page": 3,
+          "location": "Eq. (20)"
+        },
+        {
+          "sourceId": "symmetries-2015",
+          "page": 4,
+          "location": "Husimi/multipole characterization"
+        }
+      ]
+    },
+    {
+      "id": "basis-convention",
+      "statement": "Use normalized Dicke states with excitation number r, mapped to |j,m=j−r>. Some supplied papers reverse the sign of the spin-z convention; reflection r↔N−r preserves AC order."
+    },
+    {
+      "id": "t-zero",
+      "statement": "Order zero is vacuous. No normalized pure one-qubit state is 1-AC."
+    }
+  ],
+  "rigorousRestrictions": [
+    {
+      "id": "schmidt-rank",
+      "kind": "published theorem",
+      "formula": "2t≤N",
+      "forbiddenWhen": "2*t>N",
+      "statement": "The t-qubit reduced matrix must have rank t+1, but a pure symmetric state has reduction rank at most min(t+1,N−t+1).",
+      "proof": "The two complementary reductions have the same nonzero Schmidt spectrum. The complement is supported on Sym^(N−t), of dimension N−t+1. Hence t+1≤N−t+1.",
+      "references": [
+        {
+          "sourceId": "mes-2014",
+          "page": 3,
+          "location": "Paragraph immediately after order-two characterization"
+        },
+        {
+          "sourceId": "measures-2017",
+          "page": 2,
+          "location": "General restriction t≤j"
+        }
+      ]
+    },
+    {
+      "id": "odd-complement-rank",
+      "kind": "new catalogue deduction",
+      "formula": "N=2t+1 and t≥2 is impossible",
+      "forbiddenWhen": "N==2*t+1 and t>=2",
+      "statement": "No pure symmetric (2t+1)-qubit state can be t-AC for t≥2.",
+      "proof": "If rho_t=I_(t+1)/(t+1), its complement rho_(t+1) has t+1 equal nonzero eigenvalues in a symmetric space of dimension t+2. Thus rho_(t+1)=(I_(t+2)−|phi><phi|)/(t+1) for a normalized symmetric (t+1)-qubit vector phi. Trace one qubit, using Tr_1 I_sym^(t+1)=(t+2)/(t+1) I_sym^t. Comparing with rho_t yields rho_t^phi=I_(t+1)/(t+1). But rho_t^phi has rank at most two because phi has a single-qubit complement. This contradicts t+1≥3.",
+      "examples": [
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          11,
+          5
+        ]
+      ],
+      "references": [
+        {
+          "sourceId": "mes-2014",
+          "page": 3,
+          "location": "Schmidt-rank framework; the odd-complement deduction is newly supplied by the catalogue"
+        }
+      ]
+    },
+    {
+      "id": "tensor-gram-even",
+      "kind": "new catalogue deduction",
+      "formula": "(floor(t/2)+1)^2≤N+1",
+      "forbiddenWhen": "(t//2+1)**2>N+1",
+      "statement": "The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.",
+      "proof": "Put q=floor(t/2). For Hilbert–Schmidt orthonormal tensors A,B of ranks at most q, A†B has ranks at most 2q≤t. Anticoherence therefore gives <psi|A†B|psi>=Tr(A†B)/(N+1). The (q+1)^2 vectors A|psi> consequently have a positive diagonal Gram matrix, so they are linearly independent in the (N+1)-dimensional spin space.",
+      "examples": [
+        [
+          12,
+          6
+        ]
+      ],
+      "references": [
+        {
+          "sourceId": "symmetries-2015",
+          "page": 3,
+          "location": "Spin-moment characterization, Eq. (12)"
+        }
+      ]
+    },
+    {
+      "id": "tensor-gram-odd",
+      "kind": "catalogue deduction using referenced restriction-rank lemma",
+      "formula": "For t=2q+1, N≥(q+1)(q+2)",
+      "forbiddenWhen": "t%2==1 and N<((t+1)//2)*((t+3)//2)",
+      "statement": "The odd-order necessary bound implies that a pure 5-AC state needs at least 12 qubits.",
+      "proof": "The lower-rank tensor images L≤q span (q+1)^2 orthogonal dimensions. Every rank-(q+1) image is orthogonal to that space because cross products have rank at most 2q+1 and zero scalar part. The restriction-rank lemma applied to the line span{|psi>} gives at least q+2 independent rank-(q+1) images. Therefore N+1≥(q+1)^2+(q+2), or N≥(q+1)(q+2).",
+      "references": [
+        {
+          "sourceId": "threshold-certificates-2026",
+          "url": "https://github.com/aenictusGitHub/n9-s8-exact-certificates/blob/a992fde3e73455f81445c872a442c640ddb6a11b/thresholds/docs/threshold_proofs.tex#L793-L833",
+          "location": "Lemma: Restriction rank of a spin-tensor space; use k=1"
+        }
+      ],
+      "caution": "This is a pure-state corollary, not the even-sector minimum threshold stated elsewhere in that supplement."
+    },
+    {
+      "id": "five-qubit-purity-obstruction",
+      "kind": "exact computer-assisted source theorem; programs not locally rerun in this AC task",
+      "formula": "Pmax(5,2)=13/18<1",
+      "forbiddenWhen": "N==5 and t>=2",
+      "statement": "Every 2-AC spin-5/2 density operator has purity at most 13/18. Consequently no pure five-qubit 2-AC state exists.",
+      "proof": "The source gives a sum of nine positive localizing blocks equal to 13/18−Tr(rho²), valid for arbitrary complex density matrices of every rank. A pure state would have Tr(rho²)=1.",
+      "references": [
+        {
+          "sourceId": "mixed-ac-2026",
+          "page": 13,
+          "location": "Eq. (78), Sec. V B 3, Eqs. (83)–(84); Ref. [66] on PDF p.24"
+        },
+        {
+          "sourceId": "spin52-purity-certificates-2026",
+          "url": "https://github.com/aenictusGitHub/spin52-purity-certificates/blob/455931c12d0475a3ad8e314ea9867437345bd75d/docs/purity-certificates.tex",
+          "location": "Exact second-order threshold; Eq. spin52_P2_certificate"
+        },
+        {
+          "sourceId": "spin52-purity-certificates-2026",
+          "url": "https://github.com/aenictusGitHub/spin52-purity-certificates/blob/455931c12d0475a3ad8e314ea9867437345bd75d/README.md",
+          "location": "Pinned version 1.1.0; exact purity maxima and verification obligations"
+        }
+      ]
+    },
+    {
+      "id": "majorana-degeneracy",
+      "kind": "published class restriction",
+      "statement": "A Majorana degeneracy m≥N/2 excludes 1-AC, except the balanced-Dicke class D_(N/2,N/2) for even N. Therefore all higher orders are excluded in the same prohibited classes.",
+      "proof": "Rotate the repeated Majorana point to a pole. The spin expectation cannot vanish unless the sole occupied Dicke coefficient is the balanced one.",
+      "references": [
+        {
+          "sourceId": "mes-2014",
+          "page": 4,
+          "location": "Sec. III, boxed Nonexistence criterion and proof"
+        }
+      ],
+      "caution": "This restricts particular Majorana/SLOCC classes, not all states at the given N. The balanced Dicke representative is 1-AC; it is not thereby higher-order AC."
+    }
+  ],
+  "existenceAndThresholdStatements": [
+    {
+      "id": "order-one",
+      "status": "proven existence",
+      "formula": "Every N≥2 has a pure 1-AC state",
+      "witness": "(|D_N^0>+|D_N^N>)/sqrt(2)",
+      "references": [
+        {
+          "sourceId": "measures-2017",
+          "page": 9,
+          "location": "Sec. IV B 1: 1-AC states exist for every j>1/2"
+        }
+      ]
+    },
+    {
+      "id": "first-order-two",
+      "status": "exact first attainment",
+      "t": 2,
+      "minimumN": 4,
+      "reason": "Schmidt-rank lower bound and tetrahedron witness.",
+      "references": [
+        {
+          "sourceId": "measures-2017",
+          "page": 2,
+          "location": "Eq. (2): tetrahedron state"
+        },
+        {
+          "sourceId": "mes-2014",
+          "page": 3,
+          "location": "Rank bound"
+        }
+      ]
+    },
+    {
+      "id": "first-order-three",
+      "status": "exact first attainment",
+      "t": 3,
+      "minimumN": 6,
+      "reason": "Schmidt-rank lower bound and octahedron witness.",
+      "references": [
+        {
+          "sourceId": "measures-2017",
+          "page": 10,
+          "location": "Eq. (61): octahedron state"
+        }
+      ]
+    },
+    {
+      "id": "first-order-five",
+      "status": "exact first attainment using derived tensor-gram-odd bound",
+      "t": 5,
+      "minimumN": 12,
+      "reason": "The derived necessary bound gives N≥12, attained by the icosahedral state.",
+      "references": [
+        {
+          "sourceId": "measures-2017",
+          "page": 10,
+          "location": "Eq. (62) at theta=pi/2"
+        },
+        {
+          "sourceId": "threshold-certificates-2026",
+          "url": "https://github.com/aenictusGitHub/n9-s8-exact-certificates/blob/a992fde3e73455f81445c872a442c640ddb6a11b/thresholds/docs/threshold_proofs.tex#L793-L833",
+          "location": "Restriction-rank lemma used in the derived lower bound"
+        }
+      ]
+    },
+    {
+      "id": "all-orders-eventual-existence",
+      "status": "published constructive existence theorem",
+      "statement": "For every fixed t, pure symmetric t-AC states exist for sufficiently large N.",
+      "proofOutline": "Choose t+1 widely separated Dicke indices near scaled Gauss–Legendre nodes. The finite moment system converges to a nonsingular quadrature system with positive weights. For all sufficiently large N, the weights remain positive and support gaps exceed t, eliminating the off-diagonal constraints.",
+      "references": [
+        {
+          "sourceId": "symmetries-2015",
+          "page": 10,
+          "location": "Sec. VI; Eq. (53)"
+        },
+        {
+          "sourceId": "symmetries-2015",
+          "page": 11,
+          "location": "Eqs. (54)–(60) and positivity/separation proof"
+        }
+      ],
+      "caution": "The proof does not provide the minimal eventual threshold for each t. The explicitly searched N=t(t+1)(t+2)/6 values are not a proven universal formula for all t."
+    },
+    {
+      "id": "cyclic-construction-search",
+      "status": "restricted ansatz results only",
+      "statement": "The thresholds in PRA92 Fig.4 apply to C_m-symmetric constructions with m>t. Their absence is not a general nonexistence theorem.",
+      "reportedFirstSizes": {
+        "2": 4,
+        "3": 6,
+        "4": 12,
+        "5": 24,
+        "6": 42,
+        "7": 75
+      },
+      "references": [
+        {
+          "sourceId": "symmetries-2015",
+          "page": 9,
+          "location": "Fig.3 and Eq. (50) search"
+        },
+        {
+          "sourceId": "symmetries-2015",
+          "page": 10,
+          "location": "Fig.4 and explicit restriction to C_m symmetry with m>t"
+        }
+      ],
+      "counterexampleToGlobalReading": "The general 5-AC icosahedron already exists at N=12. The same paper finds a 7-AC D_7d state at N=42 despite the restricted threshold 75."
+    }
+  ],
+  "reportedExclusionsWithoutLocatedProof": [
+    {
+      "N": 7,
+      "t": 3,
+      "sourceClaim": "No third-order state exists.",
+      "auditStatus": "Now independently justified by odd-complement-rank deduction.",
+      "references": [
+        {
+          "sourceId": "rotations-2020",
+          "page": 10,
+          "location": "Sec. 4.3.3, j=7/2"
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "t": 4,
+      "sourceClaim": "No fourth-order state exists.",
+      "auditStatus": "Now independently proved by the exact two-copy certificate in this catalogue.",
+      "references": [
+        {
+          "sourceId": "rotations-2020",
+          "page": 11,
+          "location": "Sec. 4.4.2, j=4"
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "t": 3,
+      "sourceClaim": "No state of order t≥3 exists.",
+      "auditStatus": "Now independently proved by the exact higher-copy certificate in this catalogue. The source report itself was not used as proof.",
+      "references": [
+        {
+          "sourceId": "rotations-2020",
+          "page": 11,
+          "location": "Sec. 4.4.3, j=9/2"
+        }
+      ],
+      "proofFile": "reported-exclusions/n9-t3/proof.md"
+    },
+    {
+      "N": 10,
+      "t": 4,
+      "sourceClaim": "No state of order t≥4 exists.",
+      "auditStatus": "Now independently proved by the exact higher-copy certificate in this catalogue. The source report itself was not used as proof.",
+      "references": [
+        {
+          "sourceId": "rotations-2020",
+          "page": 11,
+          "location": "Sec. 4.4.4, j=5"
+        }
+      ],
+      "proofFile": "reported-exclusions/n10-t4/proof.md"
+    },
+    {
+      "N": 11,
+      "t": 4,
+      "sourceClaim": "No witness is shown in the relevant numerical survey.",
+      "auditStatus": "The numerical survey did not prove absence. The catalogue now independently proves this exclusion using exact three-copy polynomial and full-rank moment certificates.",
+      "references": [
+        {
+          "sourceId": "measures-2017",
+          "page": 9,
+          "location": "Fig.6 and explanatory paragraph"
+        }
+      ],
+      "proofFile": "reported-exclusions/n11-t4/proof.md"
+    }
+  ],
+  "sourceCorrections": [
+    {
+      "sourceId": "depolarization-2022",
+      "page": 17,
+      "location": "Table IV, j=9/2 row",
+      "printed": "q=3; c0=c9=1/sqrt(6), c3=c6=−1/sqrt(3)",
+      "verified": "Normalized and exactly 2-AC, but not 3-AC. The (0,3) entry of rho3−I4/4 is (10−sqrt(42))/126, nonzero. The same printed table lists a nonzero rank-three multipole.",
+      "action": "Use verified order2; disclose printed-order inconsistency.",
+      "status": "Independent mathematical correction; no published erratum located."
+    },
+    {
+      "sourceId": "depolarization-2022",
+      "page": 17,
+      "location": "Table IV, j=5 row",
+      "printed": "c0=c10=1/sqrt(11), c5=sqrt(3/5)",
+      "verified": "Printed vector has norm squared43/55. Replacing the two endpoint amplitudes by1/sqrt(5) gives a normalized state with rho3=I4/4 and rho4 purity3/14>1/5.",
+      "action": "Use corrected endpoints only with explicit correction note, or choose an independently sourced 3-AC state.",
+      "status": "Independent mathematical correction; no published erratum located."
+    }
+  ],
+  "cautions": [
+    "PRA96(2017) Fig.6 states explicitly that missing blocks mean lack of numerical convergence; its lowest-found spins are not all proven impossibility thresholds.",
+    "Exact anticoherence requires all ranks1,...,t to vanish. Attaining an individual even-sector minimum only cancels even multipoles and can fail already at order1.",
+    "In particular, the N10 and N11 S4 minimizers from the threshold supplement are not pure4-AC states. The even-sector threshold N0(4)=10 is not a full4-AC existence threshold.",
+    "Purity thresholds and rank-two/rank-four states in the local2026 mixed-AC manuscript concern mixed states. Only a universal purity bound strictly below1 can be used directly as a pure-state exclusion.",
+    "The local2605.29436.pdf is an October2026 revised manuscript. The public arXiv v1 is an earlier, shorter version; the new exact certificate statements should be cited to the local version and pinned companion repository.",
+    "The approximate scaling t~2sqrt(j) in Quantum2020 and PRR2022 is numerical evidence, not a universal proven bound.",
+    "Counting t(t+2) equations against pure-state parameters is a heuristic because the constraints can be dependent; do not turn that count into a general nonexistence proof.",
+    "A Majorana constellation with good packing/geometric entanglement or a numerical spherical-design analogy is not by itself an AC certificate. Validate the reduced identity or every multipole through t.",
+    "Existence at a single size need not imply existence at the next size: N4t2 exists and N5t2 is impossible. Distinguish first attainment from eventual existence.",
+    "The historical source-report list retains its original name. The nine-qubit third-order and ten-qubit fourth-order reports are now independently proved by exact higher-copy certificates in this catalogue.",
+    "The n=11,t=4 cell is now exactly excluded. All pure-state existence cells for n=2,...,12 are settled in this catalogue; the first pure fourth-order AC states occur at n=12."
+  ],
+  "sourceCoverage": [
+    {
+      "filename": "PRA90_032314(2014).pdf",
+      "restrictionContribution": "Exact Schmidt-rank bound and Majorana/SLOCC nonexistence criterion."
+    },
+    {
+      "filename": "PRA92_052333(2015).pdf",
+      "restrictionContribution": "Definitions, explicit AC equations, restricted symmetry searches, and constructive all-order existence."
+    },
+    {
+      "filename": "PRA96_032304(2017).pdf",
+      "restrictionContribution": "Small-spin numerical survey, explicit warning that missing solutions are numerical; exact low-order families."
+    },
+    {
+      "filename": "Quantum4_285(2020).pdf",
+      "restrictionContribution": "Explicit small-spin nonexistence statements, not accompanied by the needed global exclusion proofs here."
+    },
+    {
+      "filename": "2605.29436.pdf",
+      "restrictionContribution": "New exact mixed-state purity maximum13/18 certifies pure N5t2 impossibility."
+    },
+    {
+      "filename": "Purity_inequalities_symmetric-draft.pdf",
+      "restrictionContribution": "Sector/multipole identities and even-only saturation. Full AC must not be inferred from individual even-sector thresholds."
+    },
+    {
+      "filename": "PhysRevResearch4_013178(2022).pdf",
+      "restrictionContribution": "Multipole AC criterion and HOAP table; two printed errors independently identified."
+    },
+    {
+      "filename": "PRL114_080401(2015).pdf",
+      "restrictionContribution": "Tensor/reduced-state formalism; no additional unconditional small-size exclusion extracted."
+    },
+    {
+      "filename": "PRA81_062347(2010).pdf",
+      "restrictionContribution": "Geometric entanglement states; objective differs from exact AC."
+    },
+    {
+      "filename": "PRA98_062335(2018).pdf",
+      "restrictionContribution": "Particle-loss entanglement and reduction ranks; no further exact AC-order exclusion extracted."
+    },
+    {
+      "filename": "PRA113_012415(2026).pdf",
+      "restrictionContribution": "Global sector constraints usable for separate LP exclusion deductions; not itself a fullAC existence table."
+    },
+    {
+      "filename": "PRA114_032406(2026).pdf",
+      "restrictionContribution": "Metrological invariant formalism; metrological extrema alone do not certify AC order."
+    }
+  ]
+}

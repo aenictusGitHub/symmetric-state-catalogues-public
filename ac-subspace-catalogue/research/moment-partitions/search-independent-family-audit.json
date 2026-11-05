@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "theorem": "K(N,2)>=floor((N-1)/8) for every integer N>=17",
+  "independence": "No construction module imported. Three physical moment weights reconstructed by a 3x3 Vandermonde solve from one prescribed free weight; area identity reconstructed as pair products.",
+  "arithmetic": "Exact symbolic rational and integer polynomials, covering all q>=2 and all eight remainders.",
+  "domainCoverage": {
+    "rows": "i=0,q=V+2; or i=U+1,q=U+V+2 with U=i-1,V=q-i-1>=0",
+    "edges": "i=U,q=U+V+2 with U=i,V=q-i-2>=0"
+  },
+  "quadrilateralLogic": "For positive sides, the four factors sum(side)-2*side have at most one nonpositive member. Their product equals F+8sqrt(product E)>0 by the coefficient certificate, so all are strictly positive. The two diagonal intervals overlap strictly; their intersection midpoint gives radical phases.",
+  "fullCrossMomentLogic": "Distinct supports give normalization and diagonal-moment orthogonality. The union has no distance-one pair. Distance-two pairs occur only between consecutive rows in each band. The quadrilateral phases cancel every such cross entry. No other rank-one/two entries survive.",
+  "records": [
+    {
+      "rho": 1,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "572",
+            "924",
+            "1116",
+            "988"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "988",
+            "1116",
+            "924",
+            "572"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "307433984",
+        "5716884096",
+        "5716884096",
+        "307433984"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "197698099770117554084892573790522834944",
+      "supportEndpointSlack": "0",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 2,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "624",
+            "720",
+            "1008",
+            "1248"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "968",
+            "984",
+            "888",
+            "760"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "369667584",
+        "4641960960",
+        "6616608768",
+        "1547919360"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "1124803385596881602954114269740584140800",
+      "supportEndpointSlack": "1",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 3,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "800",
+            "696",
+            "888",
+            "1216"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1216",
+            "888",
+            "696",
+            "800"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "1786060800",
+        "5399267328",
+        "5399267328",
+        "1786060800"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "5951714813375342272396154548927856640000",
+      "supportEndpointSlack": "1",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 4,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "864",
+            "480",
+            "768",
+            "1488"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1208",
+            "744",
+            "648",
+            "1000"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "2141697024",
+        "3639767040",
+        "5589762048",
+        "5463936000"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "15237387757972042759847592872713912320000",
+      "supportEndpointSlack": "2",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 5,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "1052",
+            "444",
+            "636",
+            "1468"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1468",
+            "636",
+            "444",
+            "1052"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "6337954944",
+        "3700359936",
+        "3700359936",
+        "6337954944"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "35201908467736051210490481262923123523584",
+      "supportEndpointSlack": "2",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 6,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "1128",
+            "216",
+            "504",
+            "1752"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1472",
+            "480",
+            "384",
+            "1264"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "7571496960",
+        "1567641600",
+        "3170119680",
+        "15147371520"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "36477195578170894958140625418348134400000",
+      "supportEndpointSlack": "3",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 7,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "1328",
+            "168",
+            "360",
+            "1744"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1744",
+            "360",
+            "168",
+            "1328"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "17601843200",
+        "1143072000",
+        "1143072000",
+        "17601843200"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "25908569998669113356005398282240000000000",
+      "supportEndpointSlack": "3",
+      "interbandGap": "3"
+    },
+    {
+      "rho": 8,
+      "momentResiduals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rowCharts": [
+        {
+          "substitution": "{i: 0, q: V + 2}",
+          "positiveConstants": [
+            "1392",
+            "720",
+            "1296",
+            "1776"
+          ]
+        },
+        {
+          "substitution": "{i: U + 1, q: U + V + 2}",
+          "positiveConstants": [
+            "1776",
+            "1296",
+            "720",
+            "1392"
+          ]
+        }
+      ],
+      "edgeChart": "{i: U, q: U + V + 2}",
+      "edgePositiveConstants": [
+        "13705832448",
+        "20155392000",
+        "20155392000",
+        "13705832448"
+      ],
+      "areaPlusNegativePartNonnegative": true,
+      "strictProductCertificate": true,
+      "productPolynomialTerms": 541,
+      "productPositiveConstant": "4883973612712510823385386151453917184000000",
+      "supportEndpointSlack": "2",
+      "interbandGap": "4"
+    }
+  ]
+}

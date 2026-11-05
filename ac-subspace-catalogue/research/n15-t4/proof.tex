@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Nonexistence of fourth-order anticoherent pure states on fifteen symmetric qubits}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+There is no pure fourth-order anticoherent state in
+$\operatorname{Sym}^{15}(\mathbb C^2)$. Consequently
+$K(15,t)=0$ for every $t\geq4$.
+\end{theorem}
+This is a computer-assisted exact proof. The accompanying
+\texttt{certificate.json} contains rational coefficients, and
+\texttt{verify\_independently.py} reconstructs the identities and verifies
+positive definiteness using exact arithmetic. No numerical feasibility result
+is used as a proof premise.
+
+\section*{1. Necessary moment conditions}
+Put $V=\operatorname{Sym}^{15}(\mathbb C^2)$, with orthonormal Dicke basis
+$|i\rangle=|D_{15}^{i}\rangle$, $0\leq i\leq15$.
+If a normalized $\psi\in V$ were fourth-order anticoherent, define its
+four-copy rotational average
+\[
+ X=\int_{\mathrm{SU}(2)}
+ (U\,|\psi\rangle\langle\psi|\,U^\dagger)^{\otimes4}\,dU.
+\]
+Then $X\succeq0$, $\Tr X=1$, $X$ is invariant under simultaneous rotations,
+and its support is contained in $\operatorname{Sym}^{4}(V)$.
+Moreover, $X$ is separable across the first copy and the other three copies.
+
+For $z_i=2i-15$, define diagonal matrices $T_\ell$ by their eigenvalues
+\begin{align*}
+ f_1(i)&=z_i, &
+ f_2(i)&=(z_i^2-85)/4,\\
+ f_3(i)&=z_i(5z_i^2-761)/12, &
+ f_4(i)&=(7z_i^4-1510z_i^2+37791)/192.
+\end{align*}
+These are nonzero multiples of the rank-$\ell$, zero-component irreducible
+spin tensors. Fourth-order anticoherence of every rotated state gives
+\begin{equation}\label{contractions}
+ \Tr_1[(T_\ell\otimes I^{\otimes3})X]=0,
+ \qquad 1\leq\ell\leq4.
+\end{equation}
+It suffices to work with real symmetric coefficient matrices: replacing
+$X$ by $(X+\overline X)/2$ preserves its trace, positivity, simultaneous
+rotation invariance, separability and the real constraints
+\eqref{contractions}. Complex conjugation preserves the spin rotation group
+as a set in this Dicke basis. Thus this reduction does not restrict the
+hypothetical state to have real coefficients.
+
+\section*{2. Rational coordinates and complete invariant parametrization}
+Let $b_i=\sqrt{\binom{15}{i}}\,|i\rangle$.
+For a sorted word $w$ of length $r$, let $E_w$ be the average of the $r!$
+permutations of $b_{w_1}\otimes\cdots\otimes b_{w_r}$, and let $c_i(w)$
+be the multiplicity of $i$ in $w$. Its squared norm is
+\[
+ g_r(w)=\frac1{r!}\prod_{i=0}^{15}
+          \binom{15}{i}^{c_i(w)}c_i(w)!.
+\]
+The doubled magnetic weight is $2\sum_iw_i-15r$.
+Raising acts with coefficients $c_i(w)(i+1)$ and lowering with coefficients
+$c_i(w)(16-i)$. Thus all representation matrices and metrics are rational.
+
+The certificate supplies integer highest-weight matrices $H_J$ for all
+irreducible constituents of $\operatorname{Sym}^{4}(V)$; $J$ denotes twice
+the spin. They consist of $29$ blocks with $150$ highest-weight columns.
+The verifier checks their weights, raising equations, linear independence
+and the complete weight character. Consequently they exhaust the
+$\binom{19}{4}=3876$-dimensional symmetric fourth power.
+Set
+\[
+ U_{J,q}=\frac{J_-^{q}}{q!}H_J,\qquad
+ d_J=\operatorname{lcm}_{0\leq q\leq J}\binom Jq.
+\]
+In coefficient matrices relative to the $E_w$ basis, every real symmetric
+invariant operator has the form
+\begin{equation}\label{decomposition}
+ X_{\rm coeff}=\sum_J d_J\sum_{q=0}^{J}
+ \frac{U_{J,q}B_JU_{J,q}^{T}}{\binom Jq}.
+\end{equation}
+Here $X\succeq0$ is equivalent to $B_J\succeq0$ for all $J$.
+The certificate uses positive dyadic diagonal matrices $S_J$ and the
+congruent variables
+\[
+ x_J=d_J(J+1)S_JB_JS_J\succeq0.
+\]
+There are $579$ independent real symmetric entries in the $B_J$.
+The certificate lists $525$ matrix entries of \eqref{contractions}.
+Each resulting integer coefficient row $R_i$ is divided by the positive
+greatest common divisor of its coefficients. This rescaling preserves
+$R_i(B)=0$. The verifier reconstructs every selected row; completeness of
+these constraints is unnecessary, since all are necessary conditions.
+
+\section*{3. Positivity after partial time reversal}
+Let $F|i\rangle=(-1)^i|15-i\rangle$ and set
+\[
+ Y=(F\otimes I)X^{T_1}(F^\dagger\otimes I).
+\]
+Separability of $X$ implies $Y\succeq0$. This is the additional condition
+that strengthens the ordinary four-copy positive-moment relaxation.
+It also restores ordinary simultaneous rotation covariance after the
+partial transpose.
+
+Use the rational product basis $b_i\otimes E_a$, where $a$ is a sorted
+three-letter word. Its metric is
+$G_{(i,a)}=\binom{15}{i}g_3(a)$.
+For two such indices $(i,a),(j,b)$, put
+$o=\operatorname{sort}(a,15-j)$ and
+$p=\operatorname{sort}(b,15-i)$.
+A direct embedding and partial-transpose calculation gives
+\begin{equation}\label{ppt}
+ Y_{{\rm coeff},(i,a),(j,b)}=
+ \frac{(-1)^{i+j}}{16}
+ [c_{15-j}(a)+1][c_{15-i}(b)+1]
+ X_{{\rm coeff},o,p}.
+\end{equation}
+This formula includes both symmetric-tensor embedding factors.
+
+The certificate supplies rationally scaled highest-weight columns $W_L$
+in $V\otimes\operatorname{Sym}^{3}(V)$, arranged in $31$ blocks with $522$
+columns in total. In doubled-spin weight $L$, define
+\[
+ Y_L=(L+1)W_L^TG_LY_{{\rm coeff},L}G_LW_L\succeq0.
+\]
+Only positivity of these compressions is needed. The verifier also checks
+the supplied highest-weight bases and their orthogonality.
+
+\section*{4. Exact separating identity}
+The rational data give matrices $C_J\succ0$, $Q_L\succ0$ and rational
+numbers $y_i$ such that, identically in all $579$ entries of the $B_J$,
+\begin{equation}\label{certificate}
+ -\Tr X=\sum_{i=1}^{525}y_iR_i(B)
+       +\sum_J\Tr(C_Jx_J)+\sum_L\Tr(Q_LY_L).
+\end{equation}
+The identity is checked coefficient by coefficient after substituting
+\eqref{decomposition} and \eqref{ppt}. All calculations are rational.
+Positive definiteness is checked by exact unpivoted $LDL^T$ factorization:
+there are $150$ strictly positive pivots for the $29$ matrices $C_J$, and
+$522$ strictly positive pivots for the $31$ matrices $Q_L$.
+
+For the hypothetical state, $R_i(B)=0$, $x_J\succeq0$ and $Y_L\succeq0$.
+The right-hand side of \eqref{certificate} is therefore nonnegative,
+whereas the left-hand side equals $-1$. This contradiction proves the
+theorem. Higher-order anticoherence implies fourth-order anticoherence,
+so the same exclusion applies to every $t\geq4$.
+
+\section*{Reproduction and controls}
+Run \texttt{python3 verify\_independently.py} in this directory.
+The verifier uses only the Python standard library. Its report records the
+certificate SHA-256 and the exact checks.
+As a separate convention check, direct partially transposed and time-reversed
+product moments are compared with \eqref{ppt} for a complex test state.
+These floating-point controls help detect implementation mistakes but are
+not premises of the exact proof.
+\end{document}

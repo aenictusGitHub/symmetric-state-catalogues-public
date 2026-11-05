@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{An even-order pure-state equality obstruction\\and the exclusion of $N=16$, $t=6$}
+\author{Catalogue research note}
+\date{31 October 2026}
+\maketitle
+
+Write $V_j$ for the spin-$j$ representation, of dimension $2j+1$.
+A pure $t$-anticoherent (AC) state in $V_j$, $j=N/2$, has vanishing
+expectations of all irreducible spin tensors of ranks $1,\ldots,t$.
+Consequently, if an operator $A$ has only tensor ranks at most $t$, then
+\[
+ \langle\psi|A|\psi\rangle=\frac{\Tr A}{N+1}.
+\]
+We use Hilbert--Schmidt orthonormal tensors throughout.
+
+\begin{theorem}
+There is no pure sixth-order AC state on sixteen symmetric qubits.
+In particular, the maximal sixth-order AC-subspace dimension is
+$K(16,6)=0$.
+\end{theorem}
+
+\begin{proof}
+Suppose $|\psi\rangle\in V_8$ were $6$-AC.  Consider the rectangular
+tensor operators $E_{\ell q}:V_8\to V_7$, for $\ell=1,2,3$ and
+$q=-\ell,\ldots,\ell$.  There are $3+5+7=15$ such operators, and
+$\dim V_7=15$.  Their explicit matrix elements are
+\[
+ (E_{\ell q})_{a,m}=(-1)^{7-a}\sqrt{2\ell+1}
+ \begin{pmatrix}7&\ell&8\\-a&q&m\end{pmatrix},
+ \qquad -7\le a\le7,\quad -8\le m\le8.
+\]
+Orthogonality of the Wigner $3j$ symbols gives
+$\Tr(E_{\ell q}^\dagger E_{\ell' q'})=
+\delta_{\ell\ell'}\delta_{qq'}$.
+The product $E_{\ell q}^\dagger E_{\ell' q'}$ contains tensor ranks at
+most $\ell+\ell'\le6$.  Anticoherence therefore implies
+\[
+ \langle\psi|E_{\ell q}^\dagger E_{\ell' q'}|\psi\rangle
+ =\frac{\delta_{\ell\ell'}\delta_{qq'}}{17}.
+\]
+Thus the fifteen vectors $\sqrt{17}E_{\ell q}|\psi\rangle$ form an
+orthonormal basis of $V_7$, and, with $\rho=|\psi\rangle\langle\psi|$,
+\begin{equation}\label{eq:channel}
+ \Phi(\rho):=\sum_{\ell=1}^{3}\sum_{q=-\ell}^{\ell}
+ E_{\ell q}\rho E_{\ell q}^\dagger=\frac{I_{15}}{17}.
+\end{equation}
+
+The map $\Phi$ intertwines the spin conjugation actions.  Each tensor
+rank occurs once in the input and output operator spaces, so it acts by
+a scalar on each common rank.  Let
+\[
+ (T^{(j)}_{LM})_{m',m}=(-1)^{j-m'}\sqrt{2L+1}
+ \begin{pmatrix}j&L&j\\-m'&M&m\end{pmatrix}.
+\]
+At rank seven the scalar is exactly
+\begin{equation}\label{eq:multiplier}
+ \Phi(T^{(8)}_{7M})=
+ \frac{5\sqrt{69}}{8398}\,T^{(7)}_{7M}\ne0,
+ \qquad M=-7,\ldots,7.
+\end{equation}
+This coefficient can be checked directly from the displayed $3j$
+matrices.  For $M=0$, the contributions of $\ell=1,2,3$ to
+$\Tr[T^{(7)\dagger}_{70}\Phi(T^{(8)}_{70})]$ are, respectively,
+\[
+ \frac{3\sqrt{69}}{170},\qquad
+ \frac{\sqrt{69}}{306},\qquad
+ -\frac{7679\sqrt{69}}{377910};
+\]
+their sum is $5\sqrt{69}/8398$.  The accompanying exact verifier checks
+every diagonal matrix element, in addition to this scalar contraction.
+Covariance gives the same multiplier for every $M$.
+
+The right side of \eqref{eq:channel} has no rank-seven component.
+Because \eqref{eq:multiplier} is nonzero, every rank-seven multipole of
+$\rho$ must vanish.  Hence $|\psi\rangle$ would actually be $7$-AC.
+
+Finally take the Hilbert--Schmidt orthonormal rectangular tensors
+$F_{\ell q}:V_8\to V_{15/2}$ of ranks
+$\ell=\tfrac12,\tfrac32,\tfrac52,\tfrac72$.  Their products have ranks
+at most seven, so the same Gram argument would give
+$2+4+6+8=20$ nonzero pairwise orthogonal images in the
+sixteen-dimensional space $V_{15/2}$.  This contradiction proves the claim.
+\end{proof}
+
+\paragraph{General conditional equality test.}
+For a pure $2r$-AC state with $N=(r+1)^2$, $r\ge2$, take
+$E_{\ell q}:V_{N/2}\to V_{(N-2)/2}$ for $\ell=1,\ldots,r$.
+There are $r(r+2)=N-1$ orthogonal images, so again the channel output
+must be scalar.  With the tensor convention above its rank-$L$
+multiplier is
+\[
+ c_{r,L}=\sum_{\ell=1}^r(-1)^{N+L+\ell+1}(2\ell+1)
+ \begin{Bmatrix}
+ N/2&N/2&L\\(N-2)/2&(N-2)/2&\ell
+ \end{Bmatrix}.
+\]
+If $c_{r,2r+1}\ne0$, equality is impossible: the state becomes
+$(2r+1)$-AC, whereas the one-qubit rectangular packing bound requires
+$N\ge(r+1)(r+2)>(r+1)^2$.  This is a rigorous criterion for each $r$;
+nonvanishing for every $r\ge2$ has not been proved here.
+The verifier checks nonvanishing for $2\le r\le8$, independently
+checking the physical $3j$ channel for $r=2,3$.
+
+This argument concerns pure states at the minimal-size packing bound.
+It does not assume that a Majorana constellation of an AC state is a
+spherical design, nor that every optimal subspace has polyhedral symmetry.
+The analogous Fisher-bound pattern for spherical designs is motivation,
+not a premise of the proof.
+\end{document}

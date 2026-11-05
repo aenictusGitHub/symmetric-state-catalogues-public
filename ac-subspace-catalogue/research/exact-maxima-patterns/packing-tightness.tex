@@ -1,0 +1,148 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\section*{Complete classification of unrounded packing equality through order four}
+Let $\mathcal C\subset\operatorname{Sym}^N(\mathbb C^2)$ be a nonzero
+$t$-anticoherent subspace of dimension $k$, with $N\ge t\ge1$.
+The unrounded rectangular-tensor packing inequalities at orders one
+through four are
+\[
+2k\le N,\qquad4k\le N+1,\qquad6k\le N,\qquad9k\le N+1,
+\]
+respectively. Equality here refers to these unrounded inequalities,
+not to their integer-rounded versions or to the strongest available
+upper bound.
+
+\begin{theorem}
+Equality in these four inequalities is possible precisely as follows:
+\[
+\begin{array}{c|c|c}
+ t&\text{equality}&\text{all possible }(N,k)\\\hline
+ 1&2k=N&(2,1),(4,2),(6,3)\\
+ 2&4k=N+1&(7,2)\\
+ 3&6k=N&(6,1)\\
+ 4&9k=N+1&\text{none}.
+\end{array}
+\]
+Consequently the following strict refinements hold:
+\[
+\boxed{6K(N,3)\le N-1\quad(N\ge7),}
+\qquad
+\boxed{9K(N,4)\le N\quad(N\ge4).}
+\]
+These do not assert that the refined or integer-rounded bounds are attained.
+\end{theorem}
+
+\paragraph{Order one.}
+The already proved auxiliary-spin bound $3k\le N+3$ implies $N\le6$
+when $2k=N$. Since $N$ is a positive even integer, only $N=2,4,6$
+remain. Explicit first-order bases, with normalized Dicke states, are
+\begin{align*}
+N=2:&\quad (|D_2^{(0)}\rangle+|D_2^{(2)}\rangle)/\sqrt2,\\
+N=4:&\quad (|D_4^{(0)}\rangle+|D_4^{(4)}\rangle)/\sqrt2,
+                   \quad |D_4^{(2)}\rangle,\\
+N=6:&\quad \sqrt{3/5}|D_6^{(1)}\rangle+\sqrt{2/5}|D_6^{(6)}\rangle,\\
+&\quad \sqrt{2/5}|D_6^{(0)}\rangle-\sqrt{3/5}|D_6^{(5)}\rangle,
+                   \quad |D_6^{(3)}\rangle.
+\end{align*}
+Their compressed spin generators vanish identically.
+
+\paragraph{Order two.}
+The bound $5k\le N+5$ implies $N\le15$ at equality
+$4k=N+1$. The candidates are $N=3,7,11,15$.
+A pure second-order state needs $N\ge4$, excluding $N=3$.
+For every $N\ge8$ the already established auxiliary-spin-$3/2$ theorem
+$4k\le N-2$ excludes equality, hence excludes $N=11,15$.
+At $N=7$ an exact optimal plane has basis
+\[
+\sqrt{3/10}|D_7^{(0)}\rangle+\sqrt{7/10}|D_7^{(5)}\rangle,
+\qquad
+\sqrt{7/10}|D_7^{(2)}\rangle-\sqrt{3/10}|D_7^{(7)}\rangle.
+\]
+For these vectors all degree-two compressed spin moments agree with the
+normalized physical trace. The auxiliary-spin theorems used here are in
+\href{../t2-spin2-inertia/proof.tex}{the spin-two proof} and
+\href{../ancilla-inertia/proof.tex}{the spin-three-halves proof}.
+
+\paragraph{Order three.}
+The new bound $7k\le N+7$ implies $N\le42$ when $6k=N$.
+Thus only $N=6,12,18,24,30,36,42$ remain.
+For $N\ge7$, equality in the rectangular-tensor channel requires a
+nonscalar zero multiplier below the highest physical tensor rank.
+Here the highest rank $L=N$ is automatically annihilated because the
+rectangular channel outputs spin $(N-1)/2$. If it were the only
+nonscalar kernel rank, the projector would have the form
+$P=\alpha I+X_N$. The
+\href{../general-bounds/proof.tex}{highest-rank projector obstruction}
+then vectorizes $X_N$ into a pure symmetric $2N$-qubit state of AC
+order $N-1$. Its pure-state packing inequality would require
+$(N+1)^2\le8N+1$, hence $N\le6$, a contradiction.
+Thus, for the remaining $N\ge12$ candidates, the necessary zero is
+equivalent to
+\[
+2L(L+1)=(N-1)(N+2),\qquad 4\le L\le N-1.
+\]
+An exact check of the finite list leaves only $(N,L)=(6,4)$.
+At $N=6$ the octahedral state
+\[
+(|D_6^{(1)}\rangle+|D_6^{(5)}\rangle)/\sqrt2
+\]
+is third-order AC. The auxiliary-spin theorem therefore turns the
+previous Pell-type necessary condition into a complete equality
+classification: all larger Pell solutions are outside the possible
+range $N\le42$. In particular even the next arithmetic candidate,
+$N=78$, cannot attain $6k=N$.
+
+\paragraph{Order four.}
+The new bound $10k\le N+10$, valid for $N\ge9$, gives $N\le80$
+when $9k=N+1$. There is also the smaller candidate $N=8$.
+Hence the complete candidate list is
+\[
+N=8,17,26,35,44,53,62,71,80.
+\]
+Under packing equality, the normalized tensor channel
+\[
+\mathcal E_2(A)=\sum_{\ell=0}^2\sum_{m=-\ell}^{\ell}
+ T_{\ell m}A T_{\ell m}^{\dagger}
+\]
+satisfies $\mathcal E_2(P)=I/(N+1)$ for the code projector $P$.
+Its multiplier on rank $L$ is
+\begin{align*}
+e_{2,L}
+&=\sum_{\ell=0}^2(-1)^{N+\ell+L}(2\ell+1)
+ \begin{Bmatrix}N/2&N/2&\ell\\N/2&N/2&L\end{Bmatrix}\\
+&=\frac{3[10x^2+(16-12Q)x+3Q(Q-3)]}{(N+1)Q(Q-3)},
+\qquad x=L(L+1),\quad Q=N(N+2).
+\end{align*}
+An exact independent evaluation of every admissible $5\le L\le N$
+for this finite candidate list gives no zero, except $L=16$ at $N=17$.
+Absence of a zero would force $P=kI/(N+1)$, contradicting its being a
+nontrivial projector.
+
+The remaining $N=17$ case is excluded by the existing
+\href{../n17-t4/proof.tex}{rank-sixteen vectorization proof}.
+For completeness, the key chain is as follows. Equality forces
+$P=I_{18}/9+X_{16}$. First-order AC gives a rank-four projector
+$Q'=2\operatorname{Tr}_1P=4I_{17}/17+Y_{16}$.
+Then
+\[
+Y_{16}^2=\frac9{17}Y_{16}+\frac{52}{289}I_{17},
+\qquad \operatorname{Tr}Y_{16}^2=\frac{52}{17}.
+\]
+Time-reversed vectorization of $Y_{16}$ produces a pure symmetric
+32-qubit state. Its sixteen-qubit reduction equals
+$I_{17}/17+9Y_{16}/52$; tracing one more qubit annihilates rank sixteen.
+The resulting pure state would therefore be fifteenth-order AC.
+Its tensor-Gram bound requires $64\le33$, a contradiction.
+Thus the last candidate also fails.
+
+\paragraph{Independent exact verification.}
+The companion script imports no catalogue bound implementation.
+It reconstructs Wigner-$6j$ channel multipliers directly, checks their
+zeros and the fourth-order rational formula for every candidate, verifies
+the finite first- and second-order eliminations, and checks all ordered
+spin-word compressions for the displayed attaining witnesses exactly.
+The unbounded ranges are excluded analytically by the auxiliary-spin
+inequalities; no finite numerical scan is used to infer them.
+\end{document}

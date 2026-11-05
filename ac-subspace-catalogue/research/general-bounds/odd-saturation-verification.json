@@ -1,0 +1,307 @@
+{
+  "passed": true,
+  "coefficientTelescopingChecks": 462,
+  "allSpinSixJPolynomialComparisons": 661,
+  "independentExplicitKrausChecks": [
+    {
+      "n": 6,
+      "r": 1,
+      "L": 0,
+      "exactEigenvalue": "sqrt(42)",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 6,
+      "r": 1,
+      "L": 1,
+      "exactEigenvalue": "9*sqrt(10)/5",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 6,
+      "r": 1,
+      "L": 2,
+      "exactEigenvalue": "21/5",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 6,
+      "r": 1,
+      "L": 3,
+      "exactEigenvalue": "2*sqrt(30)/5",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 6,
+      "r": 1,
+      "L": 4,
+      "exactEigenvalue": "0",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 6,
+      "r": 1,
+      "L": 5,
+      "exactEigenvalue": "-sqrt(3)",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "L": 0,
+      "exactEigenvalue": "sqrt(39)",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "L": 1,
+      "exactEigenvalue": "75*sqrt(154)/154",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "L": 4,
+      "exactEigenvalue": "57*sqrt(34)/77",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "L": 10,
+      "exactEigenvalue": "-3*sqrt(46)/14",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "L": 11,
+      "exactEigenvalue": "-5*sqrt(6)/7",
+      "KrausNormsChecked": 6
+    },
+    {
+      "n": 12,
+      "r": 2,
+      "L": 0,
+      "exactEigenvalue": "2*sqrt(39)",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 12,
+      "r": 2,
+      "L": 6,
+      "exactEigenvalue": "0",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 12,
+      "r": 2,
+      "L": 10,
+      "exactEigenvalue": "0",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 0,
+      "exactEigenvalue": "5*sqrt(6)",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 6,
+      "exactEigenvalue": "9953*sqrt(62)/9867",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 10,
+      "exactEigenvalue": "259*sqrt(10)/299",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 14,
+      "exactEigenvalue": "-2087*sqrt(390)/29601",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 18,
+      "exactEigenvalue": "-1099*sqrt(258)/9867",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 22,
+      "exactEigenvalue": "7*sqrt(94)/39",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 24,
+      "r": 2,
+      "L": 23,
+      "exactEigenvalue": "154*sqrt(3)/117",
+      "KrausNormsChecked": 12
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 0,
+      "exactEigenvalue": "2*sqrt(105)",
+      "KrausNormsChecked": 20
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 8,
+      "exactEigenvalue": "-750*sqrt(87)/81719",
+      "KrausNormsChecked": 20
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 12,
+      "exactEigenvalue": "-77500*sqrt(66)/245157",
+      "KrausNormsChecked": 20
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 14,
+      "exactEigenvalue": "16*sqrt(210)/1311",
+      "KrausNormsChecked": 20
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 18,
+      "exactEigenvalue": "0",
+      "KrausNormsChecked": 20
+    },
+    {
+      "n": 20,
+      "r": 3,
+      "L": 19,
+      "exactEigenvalue": "-204*sqrt(10)/253",
+      "KrausNormsChecked": 20
+    }
+  ],
+  "saturationCases": [
+    {
+      "n": 6,
+      "t": 3,
+      "saturatingDimension": 1,
+      "nonforbiddenIntegerRoots": [
+        4
+      ],
+      "noRootSaturationExcluded": false,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": "0",
+      "saturationExcluded": false,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 12,
+      "t": 3,
+      "saturatingDimension": 2,
+      "nonforbiddenIntegerRoots": [],
+      "noRootSaturationExcluded": true,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 18,
+      "t": 3,
+      "saturatingDimension": 3,
+      "nonforbiddenIntegerRoots": [],
+      "noRootSaturationExcluded": true,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 24,
+      "t": 3,
+      "saturatingDimension": 4,
+      "nonforbiddenIntegerRoots": [],
+      "noRootSaturationExcluded": true,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 78,
+      "t": 3,
+      "saturatingDimension": 13,
+      "nonforbiddenIntegerRoots": [
+        55
+      ],
+      "noRootSaturationExcluded": false,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": false,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 12,
+      "t": 5,
+      "saturatingDimension": 1,
+      "nonforbiddenIntegerRoots": [
+        6,
+        10
+      ],
+      "noRootSaturationExcluded": false,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": "0",
+      "saturationExcluded": false,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 24,
+      "t": 5,
+      "saturatingDimension": 2,
+      "nonforbiddenIntegerRoots": [],
+      "noRootSaturationExcluded": true,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 20,
+      "t": 7,
+      "saturatingDimension": 1,
+      "nonforbiddenIntegerRoots": [
+        18
+      ],
+      "noRootSaturationExcluded": false,
+      "pureOrderJumpExcluded": true,
+      "pureEqualityPolynomialValue": "-375/81719",
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    },
+    {
+      "n": 35,
+      "t": 4,
+      "saturatingDimension": 4,
+      "nonforbiddenIntegerRoots": [],
+      "noRootSaturationExcluded": true,
+      "pureOrderJumpExcluded": false,
+      "pureEqualityPolynomialValue": null,
+      "saturationExcluded": true,
+      "method": "exact six-j coefficients, cross-checked by terminating rational polynomial"
+    }
+  ],
+  "scope": "A root is only a necessary condition and does not establish existence. The general identities and the upper-bound proof are in odd-saturation.tex."
+}

@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "theorem": "K(N,2)>=floor(N/8)-1 for every integer N>=40",
+  "arithmetic": "Exact symbolic moment identities and integer polynomial coefficient inequalities, independently reconstructed",
+  "domainCoverage": "Row charts cover i=0,1,2 with q>=5, and i>=3 with q-i>=2. Edge charts cover i=0,1 with q>=5, and i>=2 with q-i>=3.",
+  "physicalSupportProof": "All four bands have one parity, supports are disjoint, every inter-band gap is at least four, and only neighboring rows couple through J+^2. Positive moment weights fix Gram, Jz and Jz^2. The strict quadrilateral inequality admits explicit radical phases cancelling each J+^2 cross entry.",
+  "firstOrderParentProof": "Each row has Jz signature(2,2). If p=Dplus^(1/2)uplus and n=Dminus^(1/2)uminus have equal norms, their Hermitian-orthogonal partners pperp=(-conj(p2),conj(p1)), nperp=(-conj(n2),conj(n1)) produce an independent neutral vector. Its span with u is Jz-neutral. Row planes are disjoint and parity kills Jx,Jy, giving an exact AC1 parent of dimension2k.",
+  "quadrilateralProof": "F+A has nonnegative coefficients, and 64*product(E)-A^2 has nonnegative coefficients and positive constant. Thus F+8sqrt(product(E))>0, the product of the four quadrilateral side deficits. With four positive lengths at most one deficit can be nonpositive, so every deficit is positive.",
+  "records": [
+    {
+      "rho": 0,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "2",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "25065415865980631170905651506931485774129066409984"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "53149824508383692194394837757768090255360000000000"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "25065415865980631170905651506931485774129066409984"
+        }
+      ]
+    },
+    {
+      "rho": 1,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "3",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "21672829501744326703468084350888247296000000000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "83123296673923919113480469707125895987200000000000"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "57024361897777750418579485229329107767210803200000"
+        }
+      ]
+    },
+    {
+      "rho": 2,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "3",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "52427842879862611751233357106852659200000000000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "129991473982154903007322297073664000000000000000000"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "52427842879862611751233357106852659200000000000000"
+        }
+      ]
+    },
+    {
+      "rho": 3,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "4",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "16160319446281543126682223182170308476928000000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "167600848379595313604576194746452512942391090479104"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "101839772017326790739611614863912334262272000000000"
+        }
+      ]
+    },
+    {
+      "rho": 4,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "4",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "43002019344741583379658980630514943131648000000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "216576879354309505501864157564537394720772020240384"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "43002019344741583379658980630514943131648000000000"
+        }
+      ]
+    },
+    {
+      "rho": 5,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "4",
+      "lastSupportDistanceFromN": "5",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 15,
+          "strictProductConstant": "2683551082390765655392165344086089786982400000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "238810936625148325127796025106213926363400346009600"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "145770801749141111837736930832192398950400000000000"
+        }
+      ]
+    },
+    {
+      "rho": 6,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "6",
+      "lastSupportDistanceFromN": "2",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 5,
+          "strictProductConstant": "3620129782860545872440427184169392720471654400000000"
+        },
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "6055443587400704107145203138845797042985369600000000"
+        },
+        {
+          "correctionMonomials": 13,
+          "strictProductConstant": "3620129782860545872440427184169392720471654400000000"
+        }
+      ]
+    },
+    {
+      "rho": 7,
+      "momentEquationsReconstructedAndVerified": true,
+      "rowCharts": 4,
+      "edgeCharts": 3,
+      "minimumBandGap": "6",
+      "lastSupportDistanceFromN": "3",
+      "twoPositiveAndTwoNegativeLevelsPerRow": true,
+      "weightsPositiveForAllRows": true,
+      "strictQuadrilateralInequalityForAllEdges": true,
+      "edgeChecks": [
+        {
+          "correctionMonomials": 2,
+          "strictProductConstant": "4716984713693442866249161972619353933637222400000000"
+        },
+        {
+          "correctionMonomials": 1,
+          "strictProductConstant": "10186500896725811309184598654787541858987343872000000"
+        },
+        {
+          "correctionMonomials": 6,
+          "strictProductConstant": "8025407213498530498314833232834480011149836288000000"
+        }
+      ]
+    }
+  ]
+}

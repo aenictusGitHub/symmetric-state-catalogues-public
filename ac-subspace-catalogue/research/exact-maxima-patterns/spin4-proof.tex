@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{A fourth-order auxiliary-spin upper bound}
+Let $C\subset V_j$ be a $k$-dimensional fourth-order anticoherent
+subspace, where $j=N/2$ and $N\ge9$. Then
+\[
+\boxed{10k\le N+10.}
+\]
+The same bound holds when the anticoherence order is greater than four.
+It is an upper bound only: no attainment assertion is made.
+Combining it with the existing packing and saturation bounds gives the
+first improvement at $N=99$, from $k\le11$ to $k\le10$.
+The raw packing bound is already improved at $N=89$, but the existing
+equality obstruction independently excludes packing equality there.
+None of the currently displayed catalogue rows, whose largest $N$ is 42,
+is improved by this new bound.
+
+Set $s=9/2$, let $S_a$ be the spin-$s$ generators, and put
+$X=\sum_aJ_a\otimes S_a$. Fourth-order anticoherence implies that
+compression to $C$ of every physical-spin polynomial of degree at most
+four equals its normalized physical trace times the identity. This follows
+by decomposing such a polynomial into spin tensors of ranks at most four.
+Consequently, for a scalar polynomial $f$ of degree at most four,
+\[
+(P_C\otimes I)f(X)(P_C\otimes I)=c_f P_C\otimes I,
+\qquad
+c_f I=\frac{\operatorname{Tr}_{V_j} f(X)}{2j+1}.
+\]
+The partial trace is scalar on the auxiliary irreducible spin space, since
+$f(X)$ is invariant under joint rotations.
+
+The total-spin sectors have labels $j+r$ with
+$r=-9/2,-7/2,\ldots,9/2$. On such a sector,
+\[
+x_r=jr+\tfrac12\bigl(r(r+1)-99/4\bigr)
+\]
+is the eigenvalue of $X$. These eigenvalues increase strictly with $r$
+for $j\ge9/2$. Define
+\begin{align*}
+F(x)&=(x-x_{-9/2})(x-x_{-3/2})(x-x_{-1/2})(x-x_{7/2})\\
+&=\frac{(2x-7j+9)(2x+j+25)(2x+3j+24)(2x+9j+9)}{16},\\
+c_j&=\frac{\sum_r(2j+2r+1)F(x_r)}{10(2j+1)}\\
+&=\frac{9(j+1)(4j^3+724j^2+2637j+6750)}{20}>0.
+\end{align*}
+For every $r<9/2$, $F(x_r)\le0$: the only interval on which its
+sign could be positive between the two middle roots contains no spectral
+node, because $-3/2$ and $-1/2$ are adjacent. The first root is the lowest
+spectral node and the last is the next-to-highest node. Thus
+$W=F(X)-c_jI$ has strictly negative eigenvalues on every lower sector.
+Its highest-sector eigenvalue is
+\[
+F(x_{9/2})-c_j=
+\frac{9j(596j^3+4972j^2+14489j+11688)}{20}>0.
+\]
+Fourth-order anticoherence gives zero compression of $W$ to
+$C\otimes V_{9/2}$, whose dimension is $10k$. Projection of a totally
+isotropic subspace for this nondegenerate Hermitian form onto its positive
+spectral subspace is injective. The positive subspace is exactly the top
+spin $j+9/2$ sector, of dimension $2(j+9/2)+1=N+10$.
+Therefore $10k\le N+10$.
+
+\paragraph{Independent checks.}
+The accompanying script checks the normalized trace and all spectral signs
+symbolically, and verifies the physical-spin partial traces of $X^a$
+for $0\le a\le4$ using explicit exact spin matrices at $N=9,10,12$.
+The normalized moments used for the latter check are
+\[
+\mu_0=1,\quad\mu_1=0,\quad
+\mu_2=\frac{33j(j+1)}4,\quad
+\mu_3=-\frac{33j(j+1)}8,\quad
+\mu_4=\frac{33j(j+1)(293j^2+293j-91)}{80}.
+\]
+\end{document}

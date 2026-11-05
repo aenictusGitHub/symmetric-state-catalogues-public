@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "certificateSha256": "cbbb5bd631c553afd4a753ae933f7d3580fbfe2ab84bc9695f82fce0e992071c",
+  "result": {
+    "n": 8,
+    "maximumDimensionAtOrder2": 1,
+    "maximumDimensionAtOrder3": 1,
+    "dimension2Order2Excluded": true
+  },
+  "recouplingMethod": "Rational highest-weight sums, without Wigner/CG routines.",
+  "rationalRecouplingEntriesChecked": 45,
+  "exactChannelIdentities": [
+    {
+      "J": 0,
+      "exactlyEqual": true,
+      "coefficient": "-25575264"
+    },
+    {
+      "J": 2,
+      "exactlyEqual": true,
+      "coefficient": "11043864"
+    },
+    {
+      "J": 4,
+      "exactlyEqual": true,
+      "coefficient": "-7422192"
+    },
+    {
+      "J": 6,
+      "exactlyEqual": true,
+      "coefficient": "10775592"
+    },
+    {
+      "J": 8,
+      "exactlyEqual": true,
+      "coefficient": "715392"
+    }
+  ],
+  "casimirHighestWeightsChecked": 9,
+  "lowerWitnessReducedEntriesChecked": 25,
+  "contradictionLatex": "0=5831+217971a_5>0",
+  "scope": "All complex symmetric subspaces; no ansatz or numerical-search assumption."
+}

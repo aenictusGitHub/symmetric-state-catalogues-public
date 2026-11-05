@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "method": "Independent integer symmetric-word reconstruction; no discovery imports.",
+  "n": 14,
+  "t": 5,
+  "copies": 3,
+  "momentDimension": 680,
+  "realInvariantVariables": 47,
+  "constraintRank": 45,
+  "modularRankPrime": 1000003,
+  "kernelDimension": 2,
+  "scope": "Universal exclusion for arbitrary complex pure symmetric states.",
+  "certificateSHA256": "3ca94b20ff3a00264151aec7d78d70fe7edc1f5d39a5787b644e102b680baa8a",
+  "positiveDiagonalCertificate": {
+    "indices": [
+      0,
+      3,
+      5
+    ],
+    "primitiveRows": [
+      [
+        1094490516902169308,
+        -125072808123773475
+      ],
+      [
+        -42202464514105998136,
+        2086674682719126039
+      ],
+      [
+        -11877362318408,
+        1509722697267
+      ]
+    ],
+    "strictlyPositiveWeights": [
+      700,
+      3,
+      53844949
+    ],
+    "positiveCombinationVanishesExactly": true,
+    "formsHaveRankTwo": true,
+    "conclusion": "Positivity forces each of the three diagonals to vanish; rank two forces the whole moment to vanish, contradicting trace one."
+  },
+  "probabilityCertificate": {
+    "spins": [
+      4,
+      14,
+      16
+    ],
+    "strictlyPositiveWeights": [
+      21094337,
+      4375800,
+      119335580
+    ],
+    "probabilitiesReconstructedFromAllWords": true,
+    "highestWeightShortcutIndependentlyChecked": true,
+    "positiveCombinationVanishesExactly": true,
+    "formsHaveRankTwo": true,
+    "identity": "21094337 p_4 + 4375800 p_14 + 119335580 p_16 = 0"
+  },
+  "traceProbabilityCertificate": {
+    "identity": "265256992 Tr(X) + 26961161975 p_4 + 118909381500 p_16 = 0",
+    "physicalTraceReconstructedFromAllWords": true,
+    "highestWeightShortcutIndependentlyChecked": true,
+    "strictlyPositiveCoefficients": [
+      265256992,
+      26961161975,
+      118909381500
+    ],
+    "identityVerifiedExactly": true,
+    "contradiction": "Trace one and nonnegative probabilities make the left side strictly positive."
+  },
+  "statement": "No pure symmetric fourteen-qubit state is fifth-order anticoherent: K(14,5)=0."
+}

@@ -1,0 +1,237 @@
+{
+  "id": "radical-n16-k2-t3",
+  "n": 16,
+  "t": 3,
+  "dimension": 2,
+  "label": "Analytical two-dimensional third-order AC subspace",
+  "evidence": "exact",
+  "basis": [
+    {
+      "id": "radical-n16-k2-t3-basis-1",
+      "n": 16,
+      "label": "Exact third-order AC subspace \u00b7 basis vector 1",
+      "exactCoefficients": [
+        "sqrt(38)/16",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5434)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(13585)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5434)*I*(192*sqrt(10) + 545*I)/152152",
+        "0",
+        "0",
+        "0",
+        "-sqrt(38)*(192*sqrt(10) + 545*I)**2/10650640"
+      ],
+      "coefficients": [
+        [
+          0.385275875185561,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2640454291555879,
+          -0.2941598397844978
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.41749248094414404,
+          -0.46510754493461354
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2640454291555879,
+          -0.2941598397844978
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.041449575689594544,
+          -0.38303972728054275
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "stateLatex": "\\begin{aligned}|u_1\\rangle&=\\frac{\\sqrt{38}}{16}\\bigl(|D_{16}^{(0)}\\rangle+z^2|D_{16}^{(16)}\\rangle\\bigr)\\\\&\\quad+\\frac z8\\bigl(\\sqrt{10}|D_{16}^{(4)}\\rangle+5|D_{16}^{(8)}\\rangle+\\sqrt{10}|D_{16}^{(12)}\\rangle\\bigr),\\end{aligned}",
+      "coefficientDefinitionLatex": "\\begin{aligned}z&=\\frac{545-192i\\sqrt{10}}{7\\sqrt{13585}},\\\\f&=-\\frac{55+4i\\sqrt{10}}{7\\sqrt{65}},\\\\g&=\\frac{19+8i\\sqrt{10}}{\\sqrt{1001}},\\qquad |z|=|f|=|g|=1.\\end{aligned}"
+    },
+    {
+      "id": "radical-n16-k2-t3-basis-2",
+      "n": 16,
+      "label": "Exact third-order AC subspace \u00b7 basis vector 2",
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "-sqrt(195)*I*(4*sqrt(10) - 55*I)/1820",
+        "0",
+        "0",
+        "0",
+        "sqrt(3003)*I*(8*sqrt(10) - 19*I)/4004",
+        "0",
+        "0",
+        "0",
+        "sqrt(77)*(4*sqrt(10) - 55*I)*(8*sqrt(10) - 19*I)/28028",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.4219962650589515,
+          -0.09705231721239392
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2600382281893955,
+          0.3462370862286706
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.22698191739900417,
+          -0.5108612425834158
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "stateLatex": "\\begin{aligned}|u_2\\rangle&=\\frac{\\sqrt5}{4}\\bigl(|D_{16}^{(2)}\\rangle+fg|D_{16}^{(14)}\\rangle\\bigr)\\\\&\\quad+\\frac{\\sqrt3}{4}\\bigl(f|D_{16}^{(6)}\\rangle+g|D_{16}^{(10)}\\rangle\\bigr).\\end{aligned}",
+      "coefficientDefinitionLatex": "\\begin{aligned}z&=\\frac{545-192i\\sqrt{10}}{7\\sqrt{13585}},\\\\f&=-\\frac{55+4i\\sqrt{10}}{7\\sqrt{65}},\\\\g&=\\frac{19+8i\\sqrt{10}}{\\sqrt{1001}},\\qquad |z|=|f|=|g|=1.\\end{aligned}"
+    }
+  ],
+  "parameters": {
+    "z": "sqrt(13585)*(545 - 192*sqrt(10)*I)/95095",
+    "f": "sqrt(65)*(-55 - 4*sqrt(10)*I)/455",
+    "g": "sqrt(1001)*(19 + 8*sqrt(10)*I)/1001"
+  },
+  "derivationLatex": "R_3(|u_a\\rangle\\langle u_b|)=\\delta_{ab}\\frac{I_4}{4},\\qquad 6k\\le16\\Longrightarrow K(16,3)=2.",
+  "provenance": "Exact radical reconstruction on the sparse supports of \u03a0_16_2_3 in ACLiege.jl. Full ordered cross reductions, including all off-diagonal basis pairs, are verified exactly. A common collective z rotation and independent basis-vector phases match the numerical source to about 6e-10 in Dicke amplitudes.",
+  "sourceComparison": {
+    "source": "references/ACLiege.jl, \u03a0_16_2_3 at line 901",
+    "sourceSha256": "2e1564c7df76b35e0b7418c29d10c0350bdc888caaa4eddd985cdfe0f85c370d",
+    "convention": "source_a approximately exp(i*chi_a) exp(-i*beta*J_z) u_a, J_z|D_16^r>=(8-r)|D_16^r>",
+    "betaRadians": -0.7306438994490132,
+    "chiRadians": [
+      -5.631327318166528,
+      -5.777878499186769
+    ],
+    "maximumCoefficientErrors": [
+      3.315549079595212e-10,
+      5.097346126920268e-10
+    ],
+    "scope": "Approximate comparison with the supplied numerical vectors. The exact proof uses only the radical identities."
+  }
+}

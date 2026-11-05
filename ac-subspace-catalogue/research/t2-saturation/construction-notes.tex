@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\title{Five-band saturation: exact equations and a conditional obstruction}
+\author{}\date{}\maketitle
+
+No infinite family saturating the second-order dimension bound is proved
+here. These notes identify the remaining nonlinear conditions and rule out
+one restricted asymptotic mechanism.
+
+\paragraph{Exact five-band equations.}
+Let $N=5k-1$ and consider $k$ vectors with disjoint supports in the Dicke
+residue classes modulo $k$. Write $c_r$ for the coefficient in the unique
+vector containing excitation $r$, and $w_r=|c_r|^2$. Each residue class
+must satisfy
+\[
+ \sum_{r\equiv a\ (k)} w_r=1,\quad
+ \sum_{r\equiv a\ (k)} (N/2-r)w_r=0,\quad
+ \sum_{r\equiv a\ (k)} (N/2-r)^2w_r=\frac{N(N+2)}{12}.
+\]
+For positive coefficients, define the edge variables
+\[
+ Y_r=\sqrt{(r+1)(N-r)}\,\overline{c_{r+1}}c_r,
+ \qquad 0\le r<N.
+\]
+Their moduli obey
+\[
+ |Y_r|^2=(r+1)(N-r)w_rw_{r+1}.
+\]
+The remaining first- and second-rank compression conditions are exactly
+\[
+ \sum_{\substack{r\equiv a\ (k)\\r<N}}Y_r=0,\qquad
+ \sum_{\substack{r\equiv a\ (k)\\r<N}}(N/2-r-1/2)Y_r=0,
+\]
+and
+\[
+ \sum_{\substack{r\equiv a\ (k)\\r<N-1}}
+ \frac{Y_rY_{r+1}}{w_{r+1}}=0.
+\]
+All shifts near residue boundaries are included by these global indices.
+Phases can be reconstructed successively from the $Y_r$ along the physical
+chain of excitations. The last equation explains why independently closing
+polygons for neighboring pairs does not settle second-order anticoherence:
+it involves products of successive edge phases.
+
+\paragraph{Obstruction to a smooth fixed profile.}
+Suppose a proposed asymptotic five-band family has neighboring residue
+weights and phases converging to the same profile, so that the continuum
+versions of its first- and second-step equations use one azimuth per band.
+Its five band weights and azimuths must then form a weighted spherical
+2-design at the prescribed latitudes.
+
+Every node of any positive weighted spherical 2-design has weight at most
+$1/4$. Indeed, the four rows of the matrix with columns
+\[
+ \sqrt{w_l}\,(1,\sqrt3\,\mathbf n_l)^T
+\]
+are orthonormal. The squared norm of a column is $4w_l$, a diagonal entry
+of an orthogonal projector, so $4w_l\le1$.
+
+At the endpoint of the five-band residue interval the limiting latitudes
+are
+\[
+ 1,\quad\frac35,\quad\frac15,\quad-\frac15,\quad-\frac35.
+\]
+With weights summing to one and bounded above by $1/4$, the smallest possible
+weighted mean is zero, attained uniquely by
+\[
+ (w_0,w_1,w_2,w_3,w_4)=(0,1/4,1/4,1/4,1/4).
+\]
+The associated second moment is $1/5$, whereas a spherical 2-design requires
+$1/3$. Hence this smooth fixed-profile mechanism cannot yield saturation
+throughout the five-band interval.
+
+This is not an exclusion theorem for general AC subspaces or even for all
+five-band constructions. Neighboring residues may oscillate rather than
+approach a common smooth profile. Such oscillations, or a different support
+structure, remain possible.
+\end{document}

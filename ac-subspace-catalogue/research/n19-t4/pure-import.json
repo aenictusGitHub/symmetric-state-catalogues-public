@@ -1,0 +1,705 @@
+{
+  "states": [
+    {
+      "id": "certified-n19-t4",
+      "n": 19,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Five-component analytical fourth-order state at N=19",
+      "status": "proven-existence",
+      "stateLatex": "\\begin{gathered}|\\psi\\rangle=\\frac{\\sqrt{194}}{40}|D_{19}^{(0)}\\rangle+A|D_{19}^{(6)}\\rangle+\\frac{\\sqrt{266}}{160}|D_{19}^{(10)}\\rangle+\\frac{\\sqrt{7410}}{160}|D_{19}^{(14)}\\rangle+B|D_{19}^{(18)}\\rangle\\\\[4pt]\\begin{aligned}A&=-\\frac{9673\\sqrt{17290}}{5605600}-i\\frac{\\sqrt{2918881141085}}{2802800},\\\\B&=-\\frac{2837\\sqrt{323323}}{10210200}-i\\frac{\\sqrt{218332309353158}}{40840800}.\\end{aligned}\\end{gathered}",
+      "support": [
+        0,
+        6,
+        10,
+        14,
+        18
+      ],
+      "exactCoefficients": [
+        "sqrt(194)/40",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-9673*sqrt(17290)/5605600 - sqrt(2918881141085)*I/2802800",
+        "0",
+        "0",
+        "0",
+        "sqrt(266)/160",
+        "0",
+        "0",
+        "0",
+        "sqrt(7410)/160",
+        "0",
+        "0",
+        "0",
+        "-2837*sqrt(323323)/10210200 - sqrt(218332309353158)*I/40840800",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.34820970692960296,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.22690108882289908,
+          -0.6095594892141233
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.10193441518937557,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5380084804164336,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.15799501572298838,
+          -0.36179683526351175
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+      "references": [
+        {
+          "title": "Exact sparse AC4 construction and verification",
+          "url": "../ac-subspace-catalogue/research/n19-t4/index.html"
+        },
+        {
+          "title": "Exact Dicke coefficients",
+          "url": "../ac-subspace-catalogue/research/n19-t4/basis.json"
+        },
+        {
+          "title": "Independent exact reduced-state verification",
+          "url": "../ac-subspace-catalogue/research/n19-t4/verification.json"
+        },
+        {
+          "title": "Exact maximum AC4 dimension: plane exclusion",
+          "url": "../ac-subspace-catalogue/research/n19-t4/exclusion/index.html"
+        },
+        {
+          "title": "Universal fifth-order exclusion: four-copy proof",
+          "url": "../ac-subspace-catalogue/research/n19-t5/index.html"
+        }
+      ],
+      "provenance": "Independent catalogue construction: rational diagonal moment quadrature and an exact phase triangle.",
+      "notes": "A new exact AC4 witness, not asserted to equal the earlier numerical C3 state. The independent four-copy exclusion proves that no pure AC5 state exists on nineteen qubits, so the maximum pure-state AC order is four. A separate exact Young(2,2) positive-moment certificate excludes every AC4 plane, proving K(19,4)=1.",
+      "verification": {
+        "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "8742251/10653696000",
+            "purity": "1784358251/10653696000"
+          }
+        ],
+        "globalMaximumOrderProven": true
+      },
+      "sourceSubspaceId": "radical-n19-k1-t4"
+    }
+  ],
+  "geometryImports": {
+    "certified-n19-t4": {
+      "exactCoefficients": [
+        "sqrt(194)/40",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-9673*sqrt(17290)/5605600 - sqrt(2918881141085)*I/2802800",
+        "0",
+        "0",
+        "0",
+        "sqrt(266)/160",
+        "0",
+        "0",
+        "0",
+        "sqrt(7410)/160",
+        "0",
+        "0",
+        "0",
+        "-2837*sqrt(323323)/10210200 - sqrt(218332309353158)*I/40840800",
+        "0"
+      ],
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.19952294887837022,
+          "y": -0.6783130395656507,
+          "z": 0.7071647709169959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1995229488783706,
+          "y": 0.6783130395656506,
+          "z": 0.7071647709169959,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18134893499194796,
+          "y": 0.9828179149087055,
+          "z": 0.0343730986643774,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18134893499194787,
+          "y": -0.9828179149087055,
+          "z": 0.0343730986643774,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6153645461269055,
+          "y": -0.7796643160364147,
+          "z": 0.11597426296164713,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6153645461269055,
+          "y": 0.7796643160364147,
+          "z": 0.11597426296164713,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.21189832648391815,
+          "y": 0.6366313554949538,
+          "z": -0.7414847378294259,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2118983264839181,
+          "y": -0.6366313554949538,
+          "z": -0.7414847378294259,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.44448801010474753,
+          "y": -0.5015379153381588,
+          "z": -0.7422197305053104,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44448801010474764,
+          "y": 0.5015379153381588,
+          "z": -0.7422197305053104,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6563723091837818,
+          "y": 0.13535436823695401,
+          "z": -0.7421957873337232,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6563723091837818,
+          "y": -0.13535436823695415,
+          "z": -0.7421957873337232,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7795841817166321,
+          "y": 0.6154044078898351,
+          "z": 0.11630098179710463,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7795841817166321,
+          "y": -0.6154044078898351,
+          "z": 0.11630098179710463,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9827038198460177,
+          "y": -0.1818599180479213,
+          "z": 0.034930970035895605,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9827038198460177,
+          "y": 0.18185991804792112,
+          "z": 0.034930970035895605,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6783130418158011,
+          "y": 0.19952295656994742,
+          "z": 0.7071647665885102,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6783130418158011,
+          "y": -0.1995229565699474,
+          "z": 0.7071647665885102,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**9 + y**7*(-11348*sqrt(2310)/40425 + 2*sqrt(389971974315)*I/40425) + y**5*(-11348/1575 + sqrt(675276146)*I/1575) + y**3*(31401814*sqrt(2310)/24279255 + 134*sqrt(389971974315)*I/24279255) - 22696*sqrt(3301298)/509233725 + 4*sqrt(557321947559377)*I/509233725",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.303796792561105e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.6699524198351201,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sourceSubspaceId": "radical-n19-k1-t4",
+      "sourceGeometryCertificate": "../ac-subspace-catalogue/research/n19-t4/geometry-verification.json"
+    }
+  },
+  "method": "Independent exact rational-moment/phase-triangle construction; all normalized-Dicke reductions independently verified.",
+  "state": {
+    "id": "certified-n19-t4",
+    "n": 19,
+    "achievedOrder": 4,
+    "witnessesOrders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "label": "Five-component analytical fourth-order state at N=19",
+    "status": "proven-existence",
+    "stateLatex": "\\begin{gathered}|\\psi\\rangle=\\frac{\\sqrt{194}}{40}|D_{19}^{(0)}\\rangle+A|D_{19}^{(6)}\\rangle+\\frac{\\sqrt{266}}{160}|D_{19}^{(10)}\\rangle+\\frac{\\sqrt{7410}}{160}|D_{19}^{(14)}\\rangle+B|D_{19}^{(18)}\\rangle\\\\[4pt]\\begin{aligned}A&=-\\frac{9673\\sqrt{17290}}{5605600}-i\\frac{\\sqrt{2918881141085}}{2802800},\\\\B&=-\\frac{2837\\sqrt{323323}}{10210200}-i\\frac{\\sqrt{218332309353158}}{40840800}.\\end{aligned}\\end{gathered}",
+    "support": [
+      0,
+      6,
+      10,
+      14,
+      18
+    ],
+    "exactCoefficients": [
+      "sqrt(194)/40",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-9673*sqrt(17290)/5605600 - sqrt(2918881141085)*I/2802800",
+      "0",
+      "0",
+      "0",
+      "sqrt(266)/160",
+      "0",
+      "0",
+      "0",
+      "sqrt(7410)/160",
+      "0",
+      "0",
+      "0",
+      "-2837*sqrt(323323)/10210200 - sqrt(218332309353158)*I/40840800",
+      "0"
+    ],
+    "coefficients": [
+      [
+        0.34820970692960296,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.22690108882289908,
+        -0.6095594892141233
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.10193441518937557,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.5380084804164336,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.15799501572298838,
+        -0.36179683526351175
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+    "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
+    "references": [
+      {
+        "title": "Exact sparse AC4 construction and verification",
+        "url": "../ac-subspace-catalogue/research/n19-t4/index.html"
+      },
+      {
+        "title": "Exact Dicke coefficients",
+        "url": "../ac-subspace-catalogue/research/n19-t4/basis.json"
+      },
+      {
+        "title": "Independent exact reduced-state verification",
+        "url": "../ac-subspace-catalogue/research/n19-t4/verification.json"
+      },
+      {
+        "title": "Exact maximum AC4 dimension: plane exclusion",
+        "url": "../ac-subspace-catalogue/research/n19-t4/exclusion/index.html"
+      },
+      {
+        "title": "Universal fifth-order exclusion: four-copy proof",
+        "url": "../ac-subspace-catalogue/research/n19-t5/index.html"
+      }
+    ],
+    "provenance": "Independent catalogue construction: rational diagonal moment quadrature and an exact phase triangle.",
+    "notes": "A new exact AC4 witness, not asserted to equal the earlier numerical C3 state. The independent four-copy exclusion proves that no pure AC5 state exists on nineteen qubits, so the maximum pure-state AC order is four. A separate exact Young(2,2) positive-moment certificate excludes every AC4 plane, proving K(19,4)=1.",
+    "verification": {
+      "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
+      "exactNormalization": true,
+      "reductions": [
+        {
+          "t": 1,
+          "identityVerified": true,
+          "frobeniusDistanceSquared": "0",
+          "purity": "1/2"
+        },
+        {
+          "t": 2,
+          "identityVerified": true,
+          "frobeniusDistanceSquared": "0",
+          "purity": "1/3"
+        },
+        {
+          "t": 3,
+          "identityVerified": true,
+          "frobeniusDistanceSquared": "0",
+          "purity": "1/4"
+        },
+        {
+          "t": 4,
+          "identityVerified": true,
+          "frobeniusDistanceSquared": "0",
+          "purity": "1/5"
+        },
+        {
+          "t": 5,
+          "identityVerified": false,
+          "frobeniusDistanceSquared": "8742251/10653696000",
+          "purity": "1784358251/10653696000"
+        }
+      ],
+      "globalMaximumOrderProven": true
+    },
+    "sourceSubspaceId": "radical-n19-k1-t4"
+  },
+  "geometry": {
+    "exactCoefficients": [
+      "sqrt(194)/40",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-9673*sqrt(17290)/5605600 - sqrt(2918881141085)*I/2802800",
+      "0",
+      "0",
+      "0",
+      "sqrt(266)/160",
+      "0",
+      "0",
+      "0",
+      "sqrt(7410)/160",
+      "0",
+      "0",
+      "0",
+      "-2837*sqrt(323323)/10210200 - sqrt(218332309353158)*I/40840800",
+      "0"
+    ],
+    "points": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 1.0,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.19952294887837022,
+        "y": -0.6783130395656507,
+        "z": 0.7071647709169959,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.1995229488783706,
+        "y": 0.6783130395656506,
+        "z": 0.7071647709169959,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.18134893499194796,
+        "y": 0.9828179149087055,
+        "z": 0.0343730986643774,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.18134893499194787,
+        "y": -0.9828179149087055,
+        "z": 0.0343730986643774,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.6153645461269055,
+        "y": -0.7796643160364147,
+        "z": 0.11597426296164713,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.6153645461269055,
+        "y": 0.7796643160364147,
+        "z": 0.11597426296164713,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.21189832648391815,
+        "y": 0.6366313554949538,
+        "z": -0.7414847378294259,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.2118983264839181,
+        "y": -0.6366313554949538,
+        "z": -0.7414847378294259,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.44448801010474753,
+        "y": -0.5015379153381588,
+        "z": -0.7422197305053104,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.44448801010474764,
+        "y": 0.5015379153381588,
+        "z": -0.7422197305053104,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.6563723091837818,
+        "y": 0.13535436823695401,
+        "z": -0.7421957873337232,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.6563723091837818,
+        "y": -0.13535436823695415,
+        "z": -0.7421957873337232,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.7795841817166321,
+        "y": 0.6154044078898351,
+        "z": 0.11630098179710463,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.7795841817166321,
+        "y": -0.6154044078898351,
+        "z": 0.11630098179710463,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.9827038198460177,
+        "y": -0.1818599180479213,
+        "z": 0.034930970035895605,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.9827038198460177,
+        "y": 0.18185991804792112,
+        "z": 0.034930970035895605,
+        "multiplicity": 1
+      },
+      {
+        "x": 0.6783130418158011,
+        "y": 0.19952295656994742,
+        "z": 0.7071647665885102,
+        "multiplicity": 1
+      },
+      {
+        "x": -0.6783130418158011,
+        "y": -0.1995229565699474,
+        "z": 0.7071647665885102,
+        "multiplicity": 1
+      }
+    ],
+    "diagnostics": {
+      "coefficientSource": "saved exact Dicke coefficients",
+      "squareFreeFactorizationExact": true,
+      "zeroMultiplicity": 0,
+      "infinityMultiplicity": 1,
+      "nonzeroRootStep": 2,
+      "reducedPolynomialFactors": [
+        {
+          "polynomial": "y**9 + y**7*(-11348*sqrt(2310)/40425 + 2*sqrt(389971974315)*I/40425) + y**5*(-11348/1575 + sqrt(675276146)*I/1575) + y**3*(31401814*sqrt(2310)/24279255 + 134*sqrt(389971974315)*I/24279255) - 22696*sqrt(3301298)/509233725 + 4*sqrt(557321947559377)*I/509233725",
+          "multiplicity": 1
+        }
+      ],
+      "projectiveDickeReconstructionError": 1.303796792561105e-15,
+      "exactFormulaVsSavedCoefficientsError": 0.0,
+      "maxUnitSphereError": 3.3306690738754696e-16,
+      "minimumDistinctPointDistance": 0.6699524198351201,
+      "rootPrecisionDecimalDigits": 40
+    },
+    "sourceSubspaceId": "radical-n19-k1-t4",
+    "sourceGeometryCertificate": "../ac-subspace-catalogue/research/n19-t4/geometry-verification.json"
+  }
+}

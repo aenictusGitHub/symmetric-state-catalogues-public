@@ -1,0 +1,596 @@
+{
+  "passed": true,
+  "method": "Exact arithmetic in Q(sqrt(-3)); primitive weighted Gram-Schmidt; independent group-character dimensions; every ordered Dicke cross reduction through the highest verified order and the first failing order (up to 7).",
+  "familyCount": 7,
+  "subspaceCount": 65,
+  "dimensionCountsChecked": 168,
+  "generatorRelationsPassed": true,
+  "exactCrossEntriesChecked": 11896,
+  "witnesses": [
+    {
+      "id": "molien-quaternion-n4-d2-t1",
+      "n": 4,
+      "group": "quaternion",
+      "dimension": 2,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n6-d1-t3",
+      "n": 6,
+      "group": "quaternion",
+      "dimension": 1,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n8-d3-t1",
+      "n": 8,
+      "group": "quaternion",
+      "dimension": 3,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n10-d2-t1",
+      "n": 10,
+      "group": "quaternion",
+      "dimension": 2,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n12-d4-t1",
+      "n": 12,
+      "group": "quaternion",
+      "dimension": 4,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n14-d3-t1",
+      "n": 14,
+      "group": "quaternion",
+      "dimension": 3,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n16-d5-t1",
+      "n": 16,
+      "group": "quaternion",
+      "dimension": 5,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n18-d4-t1",
+      "n": 18,
+      "group": "quaternion",
+      "dimension": 4,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n20-d6-t1",
+      "n": 20,
+      "group": "quaternion",
+      "dimension": 6,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n22-d5-t1",
+      "n": 22,
+      "group": "quaternion",
+      "dimension": 5,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n24-d7-t1",
+      "n": 24,
+      "group": "quaternion",
+      "dimension": 7,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-n42-d10-t1",
+      "n": 42,
+      "group": "quaternion",
+      "dimension": 10,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n2-d1-t1",
+      "n": 2,
+      "group": "quaternion-character",
+      "dimension": 1,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n4-d1-t1",
+      "n": 4,
+      "group": "quaternion-character",
+      "dimension": 1,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n6-d2-t1",
+      "n": 6,
+      "group": "quaternion-character",
+      "dimension": 2,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n8-d2-t1",
+      "n": 8,
+      "group": "quaternion-character",
+      "dimension": 2,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n10-d3-t1",
+      "n": 10,
+      "group": "quaternion-character",
+      "dimension": 3,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n12-d3-t1",
+      "n": 12,
+      "group": "quaternion-character",
+      "dimension": 3,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n14-d4-t1",
+      "n": 14,
+      "group": "quaternion-character",
+      "dimension": 4,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n16-d4-t1",
+      "n": 16,
+      "group": "quaternion-character",
+      "dimension": 4,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n18-d5-t1",
+      "n": 18,
+      "group": "quaternion-character",
+      "dimension": 5,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n20-d5-t1",
+      "n": 20,
+      "group": "quaternion-character",
+      "dimension": 5,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n22-d6-t1",
+      "n": 22,
+      "group": "quaternion-character",
+      "dimension": 6,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n24-d6-t1",
+      "n": 24,
+      "group": "quaternion-character",
+      "dimension": 6,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-quaternion-character-n42-d11-t1",
+      "n": 42,
+      "group": "quaternion-character",
+      "dimension": 11,
+      "guaranteedOrder": 1,
+      "verifiedAchievedOrder": 1,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n6-d1-t3",
+      "n": 6,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n8-d1-t3",
+      "n": 8,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n12-d2-t2",
+      "n": 12,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n14-d1-t3",
+      "n": 14,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n16-d1-t3",
+      "n": 16,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n18-d2-t2",
+      "n": 18,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n20-d2-t2",
+      "n": 20,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n22-d1-t3",
+      "n": 22,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n24-d3-t2",
+      "n": 24,
+      "group": "tetrahedral",
+      "dimension": 3,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-n42-d4-t2",
+      "n": 42,
+      "group": "tetrahedral",
+      "dimension": 4,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n4-d1-t2",
+      "n": 4,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n8-d1-t2",
+      "n": 8,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n10-d1-t2",
+      "n": 10,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n12-d1-t2",
+      "n": 12,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n14-d1-t2",
+      "n": 14,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n16-d2-t2",
+      "n": 16,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n18-d1-t2",
+      "n": 18,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n20-d2-t2",
+      "n": 20,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n22-d2-t2",
+      "n": 22,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n24-d2-t2",
+      "n": 24,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-tetrahedral-character-n42-d3-t2",
+      "n": 42,
+      "group": "tetrahedral-character",
+      "dimension": 3,
+      "guaranteedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n8-d1-t3",
+      "n": 8,
+      "group": "octahedral",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n12-d1-t3",
+      "n": 12,
+      "group": "octahedral",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n16-d1-t3",
+      "n": 16,
+      "group": "octahedral",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n18-d1-t3",
+      "n": 18,
+      "group": "octahedral",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n20-d1-t3",
+      "n": 20,
+      "group": "octahedral",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n24-d2-t3",
+      "n": 24,
+      "group": "octahedral",
+      "dimension": 2,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-n42-d2-t3",
+      "n": 42,
+      "group": "octahedral",
+      "dimension": 2,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n6-d1-t3",
+      "n": 6,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n12-d1-t3",
+      "n": 12,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n14-d1-t3",
+      "n": 14,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n18-d1-t3",
+      "n": 18,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n20-d1-t3",
+      "n": 20,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n22-d1-t3",
+      "n": 22,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n24-d1-t3",
+      "n": 24,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-octahedral-sign-n42-d2-t3",
+      "n": 42,
+      "group": "octahedral-sign",
+      "dimension": 2,
+      "guaranteedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-icosahedral-n12-d1-t5",
+      "n": 12,
+      "group": "icosahedral",
+      "dimension": 1,
+      "guaranteedOrder": 5,
+      "verifiedAchievedOrder": 5,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-icosahedral-n20-d1-t5",
+      "n": 20,
+      "group": "icosahedral",
+      "dimension": 1,
+      "guaranteedOrder": 5,
+      "verifiedAchievedOrder": 5,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-icosahedral-n24-d1-t5",
+      "n": 24,
+      "group": "icosahedral",
+      "dimension": 1,
+      "guaranteedOrder": 5,
+      "verifiedAchievedOrder": 5,
+      "orderIsExact": true
+    },
+    {
+      "id": "molien-icosahedral-n42-d1-t5",
+      "n": 42,
+      "group": "icosahedral",
+      "dimension": 1,
+      "guaranteedOrder": 5,
+      "verifiedAchievedOrder": 5,
+      "orderIsExact": true
+    }
+  ]
+}

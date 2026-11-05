@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "n": 19,
+  "t": 3,
+  "dimension": 2,
+  "orthonormalityExact": true,
+  "wholeSpanAC": true,
+  "physicalComplexMomentEntriesExactlyVerified": 40,
+  "allRanksZeroThroughThreeVerified": true,
+  "P": [
+    "77/500",
+    "199/500",
+    "21/500",
+    "203/500"
+  ],
+  "Q": [
+    "203/500",
+    "21/500",
+    "199/500",
+    "77/500"
+  ],
+  "basisSHA256": "1a3e7a7b1e25a7675d5209aae7cdd1d733053cf77b57b2aa32b2674648c8f9ea",
+  "method": "Reproduce every exported radical coefficient and prove its norm by phase-length identities. Check all 40 ordered physical J+^q Jz^p matrix entries, q+p<=3, exactly using the certified coefficient products. These operators and their adjoints span all spin tensors through rank three, proving AC for the entire plane."
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "case": {
+    "n": 16,
+    "t": 6,
+    "maximumDimension": 0
+  },
+  "independentMethod": "Clebsch-Gordan operators and monic discrete orthogonal polynomials",
+  "inputRankSevenPolynomial": "x**7 - 1442*x**5/13 + 44737*x**3/13 - 337308*x/13",
+  "outputRankSevenPolynomial": "x**7 - 1106*x**5/13 + 26257*x**3/13 - 11628*x",
+  "monicMultiplier": "115/8398",
+  "normalizedMultiplier": "5*sqrt(69)/8398",
+  "checks": [
+    "all lower polynomial moments vanish",
+    "all 15 rectangular operators are HS orthonormal",
+    "full channel matrix proportionality",
+    "channel image of identity",
+    "nonzero rank-seven multiplier"
+  ],
+  "proofImplication": "AC6 would force AC7; 20 orthogonal rectangular-tensor images cannot fit in dimension 16"
+}

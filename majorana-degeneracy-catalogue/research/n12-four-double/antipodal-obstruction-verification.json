@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "scope": "No 3-AC pure symmetric 12-qubit state has partition (2,2,2,2,1,1,1,1) with its four doubled points forming two antipodal pairs. Simple points may be arbitrary complex points. This does not exclude non-antipodal doubled-point configurations.",
+  "normalForm": "P(z)=(z^4+2h*z^2+1)^2 R(z), -1<h<1; arbitrary complex quartic R, including lower degree and pole roots.",
+  "antipodalResidualForcedByOddReductionRank": 10,
+  "oddRestrictionDeterminant": "-697827328000000*(h**2 + 3)**2*(h**12 + 50*h**10 + 1031*h**8 + 3548*h**6 + 20287*h**4 + 44754*h**2 + 73689)*(35*h**12 - 224*h**11 + 1134*h**10 - 3344*h**9 + 8493*h**8 - 14336*h**7 + 20292*h**6 - 24800*h**5 + 27085*h**4 - 19872*h**3 + 13038*h**2 - 7056*h + 3651)*(35*h**12 + 224*h**11 + 1134*h**10 + 3344*h**9 + 8493*h**8 + 14336*h**7 + 20292*h**6 + 24800*h**5 + 27085*h**4 + 19872*h**3 + 13038*h**2 + 7056*h + 3651)",
+  "oddRestrictionFactors": [
+    {
+      "polynomial": "h**2 + 3",
+      "multiplicity": 2,
+      "closedIntervalRealRootCount": 0
+    },
+    {
+      "polynomial": "h**12 + 50*h**10 + 1031*h**8 + 3548*h**6 + 20287*h**4 + 44754*h**2 + 73689",
+      "multiplicity": 1,
+      "closedIntervalRealRootCount": 0
+    },
+    {
+      "polynomial": "35*h**12 - 224*h**11 + 1134*h**10 - 3344*h**9 + 8493*h**8 - 14336*h**7 + 20292*h**6 - 24800*h**5 + 27085*h**4 - 19872*h**3 + 13038*h**2 - 7056*h + 3651",
+      "multiplicity": 1,
+      "closedIntervalRealRootCount": 0
+    },
+    {
+      "polynomial": "35*h**12 + 224*h**11 + 1134*h**10 + 3344*h**9 + 8493*h**8 + 14336*h**7 + 20292*h**6 + 24800*h**5 + 27085*h**4 + 19872*h**3 + 13038*h**2 + 7056*h + 3651",
+      "multiplicity": 1,
+      "closedIntervalRealRootCount": 0
+    }
+  ],
+  "bothEFNonzeroContradiction": "e\u00b2 times a strictly positive coefficient plus d\u00b2 times a strictly positive coefficient is zero; e is nonzero.",
+  "positiveAUniformLowerBound": 67,
+  "singleNonzeroBranches": [
+    {
+      "zero": "e",
+      "active": "f",
+      "reconstructedC": "2*b*(2*h**2 - h + 9)/(h**2 - h + 2)",
+      "determinant": "48*(h - 3)*(h + 1)**3*(h**2 + 3)*(h**2 - h + 2)**2*(h**3 - 4*h**2 + h - 2)*(h**3 + h**2 - h - 17)",
+      "interiorRealRootCount": 0
+    },
+    {
+      "zero": "f",
+      "active": "e",
+      "reconstructedC": "-2*b*(2*h**2 + h + 9)/(h**2 + h + 2)",
+      "determinant": "-48*(h - 1)**3*(h + 3)*(h**2 + 3)*(h**2 + h + 2)**2*(h**3 - h**2 - h + 17)*(h**3 + 4*h**2 + h + 2)",
+      "interiorRealRootCount": 0
+    }
+  ],
+  "dNonzeroDiagonalLowerBounds": {
+    "bSquared": 4304,
+    "dSquared": 4288
+  },
+  "realEvenResultant": "3072*h**2*(h - 3)**2*(h + 3)**2*(h**2 + 3)**2*(8*h**6 + 51*h**4 + 258*h**2 + 195)",
+  "soleSurvivingProjectivePolynomial": "z^2*(z^4+1)^2",
+  "survivingPartition": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "survivingOrder3VerifiedExactly": true,
+  "targetMultiplicityGuard": "The survivor has six double roots, including zero and infinity, so it is outside (2^4,1^4). h=\u00b11 would merge roots of Q and is also excluded.",
+  "globalComplexExclusionProved": false,
+  "runtimeSeconds": 1.0522265410982072
+}

@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{An analytical fourth-order anticoherent state on nineteen qubits}
+\author{Exact catalogue construction}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+There exists a pure symmetric nineteen-qubit state of exactly fourth
+anticoherence order. The separate \href{exclusion/proof.tex}{exact plane exclusion} then proves $K(19,4)=1$. Together with the independently certified
+nonexistence of fifth-order states, the maximum pure-state AC order is four.
+\end{theorem}
+In the normalized Dicke basis, set
+\[
+ |\psi\rangle=\frac{\sqrt{194}}{40}|D_{19}^{(0)}\rangle
+ +A|D_{19}^{(6)}\rangle+\frac{\sqrt{266}}{160}|D_{19}^{(10)}\rangle
+ +\frac{\sqrt{7410}}{160}|D_{19}^{(14)}\rangle+B|D_{19}^{(18)}\rangle,
+\]
+where
+\begin{align*}
+ A&=-\frac{9673\sqrt{17290}}{5605600}
+       -i\frac{\sqrt{2918881141085}}{2802800},\\
+ B&=-\frac{2837\sqrt{323323}}{10210200}
+       -i\frac{\sqrt{218332309353158}}{40840800}.
+\end{align*}
+This is a new exact witness, not an identification of the earlier
+seven-component numerical representative from \texttt{ACLiege.jl}.
+
+\section*{Rational quadrature and a phase triangle}
+The five probabilities, at indices $S=(0,6,10,14,18)$, are
+\[
+ p=\left(\frac{97}{800},\frac{1083}{2560},\frac{133}{12800},
+         \frac{741}{2560},\frac{399}{2560}\right).
+\]
+Direct rational substitution gives
+\[
+ \sum_{r\in S}p_r r^a=\frac1{20}\sum_{r=0}^{19}r^a,
+ \qquad 0\le a\le4.
+\]
+Their common values are $1,19/2,247/2,1805,281333/10$.
+Thus the state is normalized and every diagonal moment through degree
+four has its isotropic value. No two support indices differ by one,
+two or three. Hence all nonzero magnetic shifts below four vanish.
+
+At shift four the only edges are $6\to10$, $10\to14$ and $14\to18$.
+Put $\Lambda_r=\sqrt{\prod_{a=1}^4(r+a)(20-r-a)}$ and define the
+three positive lengths
+\[
+ a=\sqrt{p_6p_{10}}\Lambda_6=\frac{1197\sqrt{27170}}{320},\quad
+ b=\sqrt{p_{10}p_{14}}\Lambda_{10}=\frac{15561\sqrt{2310}}{1600},\quad
+ c=\sqrt{p_{14}p_{18}}\Lambda_{14}=\frac{513\sqrt{1547}}{32}.
+\]
+Let
+\[
+ x=\frac{c^2-a^2-b^2}{2ab}=-\frac{9673\sqrt{5187}}{1996995},
+ \qquad u=x+i\sqrt{1-x^2},\qquad v=-\frac{au+b}{c}.
+\]
+Here $-1<x<1$. The cosine-rule identity gives $|u|=|v|=1$
+and $au+b+cv=0$. Choose
+\[
+ c_0=\sqrt{p_0},\quad c_6=\sqrt{p_6}\,\overline u,\quad
+ c_{10}=\sqrt{p_{10}},\quad c_{14}=\sqrt{p_{14}},\quad
+ c_{18}=\sqrt{p_{18}}v.
+\]
+These simplify to the radicals stated above. They obey
+\[
+ \sum_{r=0}^{15}\overline c_r c_{r+4}\Lambda_r=au+b+cv=0.
+\]
+This and its conjugate are the remaining rank-four off-diagonal
+conditions. Together with the diagonal conditions and the absent shifts,
+they exhaust every irreducible spin-tensor component of ranks one
+through four. Consequently $\rho_4=I_5/5$.
+
+\section*{Independent direct reduction check}
+The verifier reconstructs all entries of the reductions from
+\[
+ (\rho_t)_{ab}=\sum_{\ell=0}^{19-t}c_{a+\ell}\overline c_{b+\ell}
+ \sqrt{\frac{\binom ta\binom tb\binom{19-t}{\ell}^{2}}
+ {\binom{19}{a+\ell}\binom{19}{b+\ell}}}.
+\]
+Exact fractions and squarefree radicals give $\rho_t=I_{t+1}/(t+1)$
+for $t=1,2,3,4$, while
+\[
+ \left\|\rho_5-I_6/6\right\|_F^2=\frac{8742251}{10653696000}>0.
+\]
+Thus the representative has exactly order four. The separate
+\href{../n19-t5/proof.tex}{four-copy positive-moment certificate} excludes every
+fifth-order pure state, proving global optimality of order four.
+The separate \href{exclusion/proof.tex}{Young-space positive-moment certificate} excludes every two-dimensional AC4 subspace, including arbitrary complex bases. Consequently this exact line is also dimension-optimal: $K(19,4)=1$.
+\end{document}

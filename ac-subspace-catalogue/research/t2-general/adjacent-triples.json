@@ -1,0 +1,460 @@
+{
+  "id": "adjacent-triples-n22-k3-t2",
+  "n": 22,
+  "t": 2,
+  "dimension": 3,
+  "label": "Analytical adjacent-triple second-order AC subspace",
+  "evidence": "exact",
+  "basis": [
+    {
+      "id": "adjacent-triples-n22-k3-t2-basis-1",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 1",
+      "support": [
+        1,
+        9,
+        17
+      ],
+      "exactCoefficients": [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "|u_1\\rangle=\\frac12|D_{22}^{(1)}\\rangle+\\frac12|D_{22}^{(9)}\\rangle+\\frac1{\\sqrt2}|D_{22}^{(17)}\\rangle"
+    },
+    {
+      "id": "adjacent-triples-n22-k3-t2-basis-2",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 2",
+      "support": [
+        3,
+        11,
+        19
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "sqrt(22)/8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(546)*(-37 + sqrt(9551)*I)/4368",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1463)*(-5 - sqrt(9551)*I)/6384",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5863019699779287,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.19793172778629722,
+          0.5228030519569785
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.029957066884250122,
+          -0.5855361424743075
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "|u_2\\rangle=\\sqrt{\\frac{11}{32}}|D_{22}^{(3)}\\rangle+\\frac{\\sqrt5}{4}z|D_{22}^{(11)}\\rangle+\\sqrt{\\frac{11}{32}}w|D_{22}^{(19)}\\rangle",
+      "coefficientDefinitionLatex": "z=\\frac{-37+i\\sqrt{9551}}{2\\sqrt{2730}},\\qquad w=\\frac{-5-i\\sqrt{9551}}{6\\sqrt{266}},\\qquad |z|=|w|=1."
+    },
+    {
+      "id": "adjacent-triples-n22-k3-t2-basis-3",
+      "n": 22,
+      "label": "Adjacent-triple exact basis vector 3",
+      "support": [
+        5,
+        13,
+        21
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-5*sqrt(266)/3192 - sqrt(2540566)*I/3192",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "(5 + sqrt(9551)*I)**2/19152",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.02554747247854024,
+          -0.49934690011049254
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.49738930659983294,
+          0.05102820475126877
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "stateLatex": "|u_3\\rangle=\\frac1{\\sqrt2}|D_{22}^{(5)}\\rangle+\\frac{w}{2}|D_{22}^{(13)}\\rangle+\\frac{w^2}{2}|D_{22}^{(21)}\\rangle",
+      "coefficientDefinitionLatex": "z=\\frac{-37+i\\sqrt{9551}}{2\\sqrt{2730}},\\qquad w=\\frac{-5-i\\sqrt{9551}}{6\\sqrt{266}},\\qquad |z|=|w|=1."
+    }
+  ],
+  "parameters": {
+    "spacing": 8,
+    "offset": 1
+  },
+  "weights": [
+    [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    [
+      "11/32",
+      "5/16",
+      "11/32"
+    ],
+    [
+      "1/2",
+      "1/4",
+      "1/4"
+    ]
+  ],
+  "edges": [
+    {
+      "squaredLengths": [
+        "3465/16",
+        "10725/8",
+        "9405/8"
+      ],
+      "discriminant": "260025975/256",
+      "phaseIncrements": [
+        "1",
+        "sqrt(2730)*(-37 + sqrt(9551)*I)/5460",
+        "sqrt(266)*(-5 - sqrt(9551)*I)/1596"
+      ]
+    },
+    {
+      "squaredLengths": [
+        "9405/8",
+        "10725/8",
+        "3465/16"
+      ],
+      "discriminant": "260025975/256",
+      "phaseIncrements": [
+        "1",
+        "sqrt(3705)*(-223 + sqrt(9551)*I)/14820",
+        "sqrt(266)*(-5 - sqrt(9551)*I)/1596"
+      ]
+    }
+  ],
+  "derivation": "Three equally oriented Dicke bands; the first two moments fix rational weights. Adjacent Jplus-squared cross terms cancel by exact triangle phases. All other cross terms vanish by support separation. This establishes K(22,2)>=3, not maximality.",
+  "verification": {
+    "normalization": true,
+    "Jz": true,
+    "Jz_squared": true,
+    "Jplus": true,
+    "Jplus_Jz": true,
+    "Jplus_squared": true
+  }
+}

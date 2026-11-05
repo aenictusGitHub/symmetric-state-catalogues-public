@@ -1,0 +1,163 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\section*{Current result: the maximum is two}
+The auxiliary-spin inertia theorem now proves $k_{\max}(13,2)=2$ for arbitrary
+complex subspaces. With $X=\mathbf J\cdot\mathbf S$ and auxiliary spin $3/2$,
+$W=X^2-9X/2-975I/16$ has eleven positive and forty-five negative eigenvalues,
+and no zero eigenvalues. Its compression to the $4k$-dimensional code--auxiliary
+space vanishes. Projection into the positive eigenspace is injective, proving
+$4k\le11$. The exact two-dimensional family below attains this bound.
+The complete standalone proof is in \texttt{inertia/proof.tex}.
+\section*{Historical investigations, superseded by the global proof}
+The former unresolved status and weaker conditional results below describe work
+before the auxiliary-spin theorem. They are retained for reproducibility and
+are not the current catalogue status.
+
+\title{Thirteen symmetric qubits, second-order anticoherent subspaces: current bounds}
+\author{Research note}
+\date{}
+\maketitle
+
+\paragraph{Current rigorous conclusion.}
+The maximal dimension satisfies
+\[
+ \boxed{2\le k_{\max}(13,2)\le3.}
+\]
+The conjecture that the maximum is two has not been proved by the calculations recorded here. No three-dimensional counterexample has been constructed either.
+
+\paragraph{An exact two-dimensional witness.}
+An orthonormal basis is
+\[
+ |u\rangle=\frac{\sqrt{10}|D_{13}^{(0)}\rangle+\sqrt{26}|D_{13}^{(9)}\rangle}{6},
+ \qquad
+ |v\rangle=\frac{-\sqrt{26}|D_{13}^{(4)}\rangle+\sqrt{10}|D_{13}^{(13)}\rangle}{6}.
+\]
+All Dicke support gaps within and between these vectors exceed two. The first moments vanish and each second diagonal moment equals
+$j(j+1)/3=65/4$, with $j=13/2$. More directly, exact Dicke splitting verifies every entry of
+\[
+ \Tr_{11}(|u_a\rangle\langle u_b|)=\delta_{ab}\frac{I_3}{3}.
+\]
+All four ordered basis pairs, comprising 36 matrix entries, pass this identity. This certifies the entire span, rather than only its basis states.
+
+\paragraph{Why the upper bound is three.}
+For a second-order AC subspace of dimension $k$, the vectors obtained from an orthonormal basis by the four operators
+\[
+ I,\quad J_x/\sqrt{65/4},\quad J_y/\sqrt{65/4},\quad J_z/\sqrt{65/4}
+\]
+are mutually orthonormal. The symmetric Hilbert space has dimension fourteen, so $4k\le14$ and $k\le3$.
+
+\paragraph{What a hypothetical dimension-three subspace would imply.}
+Let $P$ be its orthogonal projector and write
+$\Phi(A)=\sum_aJ_aAJ_a$. The unused spin-error space is represented by
+\[
+ Q=I-P-\frac4{65}\Phi(P).
+\]
+It is an orthogonal projector of rank two, and
+\[
+ PQ=0,\qquad PJ_aQ=0.
+\]
+For the irreducible tensor components of the operators,
+\[
+ P_L=\beta_LQ_L,\qquad
+ \beta_0=\frac32,\qquad
+ \beta_L=\frac{65}{2L(L+1)-260}\quad(1\le L\le13).
+\]
+The first two multipoles of $Q$ vanish. With
+$a_L=\|Q_L\|_{\rm HS}^2$, useful necessary scalar identities are
+\[
+ a_0=\frac27,\quad a_1=a_2=0,\quad
+ \sum_La_L=2,\quad
+ \sum_L\beta_La_L=0,\quad
+ \sum_L\beta_L^2a_L=3.
+\]
+The last two equalities are $\Tr(PQ)=0$ and $\Tr(P^2)=3$.
+
+The complementary Schmidt space gives another projector,
+\[
+ H=I_{\operatorname{Sym}^{11}}-3\Tr_2P,
+ \qquad \operatorname{rank}H=3.
+\]
+Its existence follows from the nine mutually orthogonal Schmidt partner vectors of the three code states across the two-qubit versus eleven-qubit split.
+
+\paragraph{Averaged anticoherence is not a code condition.}
+Vanishing $Q_1,Q_2$ means that the mixed state $Q/2$ has the required averaged first and second moments. It does not imply $QT_{Lq}Q=0$. Thus one cannot treat the rank-two complement as a second-order AC subspace. For a simple illustration in spin three, the equally weighted mixture of $|m=2\rangle$ and $|m=-2\rangle$ is second-order AC, but the two-dimensional span is not even first-order AC: its compressed $J_z$ has eigenvalues $2$ and $-2$.
+
+\paragraph{What the relaxations establish, and what they do not.}
+An exact rational point satisfies the tested scalar-invariant relaxation, including 450 nonnegativity inequalities and nine equality rows. These incorporate purity, spin-tensor transitions, two-copy probabilities, the spin-error and Schmidt complements, and mixed-spin positivity with time reversal. The point, expressed as the squared multipole lengths of the hypothetical rank-three projector $P$, is saved in \texttt{relaxation-report.json}; \texttt{verify\_scalar.py} reconstructs and verifies its constraints exactly. Its existence proves that these scalar constraints alone cannot exclude dimension three.
+
+Stronger matrix-moment relaxations were also investigated. They retain some correlations discarded by scalar multipole lengths, using exterior products and rotation-averaged copy moments. Feasibility of such a relaxation does not produce a physical subspace: a positive moment matrix need not come from an actual rank-three AC projector, or factor into the required identical-copy pure moments. Conversely, a numerical infeasibility or matrix-rank report is insufficient without an exact certificate and an independently checked representation.
+
+Nine direct searches over complex bases, including seeds derived from the known fourteen-qubit construction, found no exact zero of the whole-subspace constraints. This is numerical evidence only. The strongest tested matrix relaxation, including partial-transpose positivity and the full wedge-copy partial transpose, remained numerically feasible after its known zero directions were removed. Its smallest remaining block eigenvalue was approximately $9.50\times10^{-6}$; no physical three-dimensional subspace was recovered from it.
+
+Before the auxiliary-spin proof, the outcome was the rigorous interval $2\le k_{\max}(13,2)\le3$. Settling it requires either an exact exclusion covering all complex three-dimensional subspaces or an explicit, fully verified dimension-three construction.
+\section*{A continuous family and a rigorous nonextension result}
+Write $D_r=|D_{13}^{(r)}\rangle$. For every real $\phi$, set
+\[
+ u=\frac{\sqrt{10}D_0+\sqrt{26}D_9}{6},\qquad
+ v_\phi=\frac{\sqrt{26}D_4+e^{i\phi}\sqrt{10}D_{13}}6.
+\]
+The two vectors have disjoint supports and unit norms. Their support union
+$\{0,4,9,13\}$ has all gaps at least four. Consequently all off-diagonal
+spin-tensor matrix elements through rank two vanish. Each vector has
+$\langle J_z\rangle=0$ and $\langle J_z^2\rangle=65/4$; cross diagonal
+elements vanish by disjoint support. These identities prove that the entire
+span is second-order AC, for every $\phi$. It is not third-order AC:
+$\langle u|J_z^3|u\rangle=65\ne0$.
+
+\paragraph{Inequivalence under collective rotations.}
+Let $P_\phi$ be the projector onto this span, and define spin time reversal
+by $\Theta D_r=(-1)^rD_{13-r}$, with antilinear extension. Direct calculation gives
+\[
+ \operatorname{Tr}(P_\phi\Theta P_\phi\Theta^{-1})
+ =2-\frac{65}{81}(1+\cos\phi).
+\]
+Time reversal commutes with collective rotations, so this quantity is invariant.
+It increases strictly from $32/81$ to $2$ as $\phi$ runs from $0$ to $\pi$.
+Thus these parameters give pairwise rotation-inequivalent subspaces.
+
+\paragraph{Every member is inclusion-maximal.}
+Put $z=e^{i\phi}$ and use $J_zD_r=(13/2-r)D_r$ and
+$J_-D_r=\sqrt{(r+1)(13-r)}D_{r+1}$. Form the matrix with columns
+\begin{align*}
+ &u,J_zu,v_\phi,J_zv_\phi,J_+u,J_+^2u,J_-u,\{J_z,J_-\}u,\\
+ &J_-v_\phi,J_-^2v_\phi,J_+v_\phi,\{J_z,J_+\}v_\phi,J_-^2u,J_+^2v_\phi.
+\end{align*}
+In the normalized Dicke basis its determinant is exactly
+\[
+ -2413404500000\,z^2(z-11),
+\]
+which is nonzero when $|z|=1$. Every column is an image under an operator
+of tensor rank at most two. A vector extending the span to a larger second-order
+AC subspace would be orthogonal to all fourteen columns, hence zero.
+This proves inclusion-maximality, not a global maximum-dimension theorem.
+The symbolic verifier checks all 36 reduced-state matrix entries, the determinant,
+the time-reversal invariant, and the nonzero third moment exactly.
+\section*{A stronger conditional exclusion}
+An exact positive certificate also excludes every three-dimensional second-order
+AC code containing $u$ itself, regardless of the other two basis vectors.
+Their orthogonality to all rank-at-most-two tensor images of $u$ places them in
+\[
+\mathcal K=\operatorname{span}\left\{(\sqrt{11}D_2-D_{11})/\sqrt{12},
+D_3,D_4,D_5,D_6,D_{12},D_{13}\right\}.
+\]
+The ninefold axial rotation preserves $u$ projectively and preserves $\mathcal K$.
+Averaging the exterior-product density of the other two vectors gives a positive
+operator on $\Lambda^2\mathcal K$, with 48 real invariant block coordinates.
+Forty independent exact equations leave an eight-dimensional kernel. A strictly
+positive integer identity on all 21 block diagonals annihilates this kernel,
+forcing the operator to vanish and contradicting its nonzero trace.
+The complete proof, certificate and two physical reconstructions are supplied
+in the accompanying \texttt{containing-u/} directory.
+
+Every second-order AC state with at most two Dicke components, along any axis,
+is a collective rotation of $u$. Indeed its opposite magnetic labels $a,-b$
+satisfy $ab=65/4$. Both $2a$ and $2b$ are positive odd integers at most 13,
+so their unordered pair is $\{5,13\}$. The weights are fixed by zero mean,
+and axial rotation removes the relative phase. Consequently any hypothetical
+dimension-three code must avoid every such two-component state.
+This remains conditional: no assertion that all three-dimensional codes contain
+such a state is made, and this conditional argument alone left the interval $2$--$3$; the auxiliary-spin theorem now closes that gap.
+\end{document}

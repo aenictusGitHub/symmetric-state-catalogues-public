@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "n": 13,
+  "order": 2,
+  "dimension": 2,
+  "family": "u=sqrt(5/18) D0+sqrt(13/18) D9; v=sqrt(13/18) D4+z sqrt(5/18) D13; |z|=1",
+  "fullCrossReductionEntriesCheckedSymbolically": 36,
+  "parameterAssumption": "conjugate(z)=1/z",
+  "spinImageDeterminant": "-2413404500000*z**2*(z - 11)",
+  "determinantConstant": "-2413404500000",
+  "fullTensorImageRank": 14,
+  "nonextension": "Every member is inclusion-maximal: no third vector can be added preserving second-order AC.",
+  "timeReversalOverlap": "(z*(194 - 65*z) - 65)/(162*z)",
+  "inequivalentParameterInterval": "phi in [0,pi], z=exp(i phi); overlap increases strictly from 32/81 to 2.",
+  "thirdMomentOfU": "65",
+  "exactOrder": 2,
+  "globalMaximum": "k_max(13,2)=2, proved separately by the auxiliary-spin inertia theorem. Every phase-family member is optimal."
+}

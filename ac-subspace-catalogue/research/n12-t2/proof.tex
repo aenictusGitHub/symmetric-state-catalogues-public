@@ -1,0 +1,166 @@
+\documentclass[11pt]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\HS}{\mathrm{HS}}
+\newcommand{\ii}{\mathrm{i}}
+\title{Twelve qubits: the maximal dimension of a second-order anticoherent subspace is two}
+\author{Independent catalogue calculation}
+\date{29 October 2026}
+\begin{document}
+\maketitle
+\begin{theorem}
+A complex linear subspace of pure symmetric twelve-qubit states in which every normalized vector is second-order anticoherent has dimension at most two. An explicit two-dimensional subspace attains this bound.
+\end{theorem}
+The argument is global: it makes no reality, support, Majorana-degeneracy, or symmetry assumption about a hypothetical subspace. Numerical optimization is not used in the proof. All numerical-looking constants below are exact rational numbers.
+
+\section*{1. A hypothetical three-dimensional subspace leaves one state}
+The symmetric twelve-qubit Hilbert space is the spin-$j=6$ irreducible representation $\mathcal H$, with $\dim\mathcal H=13$. Set $\hbar=1$. Let $V\subset\mathcal H$ be a hypothetical three-dimensional second-order anticoherent subspace and let $U:\mathbb C^3\to\mathcal H$ be an isometry with image $V$. Put $P=UU^\dagger$.
+
+The whole-subspace condition, obtained by polarization of the anticoherence conditions, is
+\begin{equation}
+ U^\dagger J_aU=0,\qquad U^\dagger J_aJ_bU=14\delta_{ab}I_3,
+ \qquad a,b\in\{x,y,z\}.
+ \label{eq:compression}
+\end{equation}
+Here $14=j(j+1)/3$. The symmetric second moments give the second equation; its antisymmetric part vanishes because $[J_a,J_b]=\ii\epsilon_{abc}J_c$ and the first moments vanish. In particular, the twelve columns of
+\[
+ W=\left(U,\frac{J_xU}{\sqrt{14}},\frac{J_yU}{\sqrt{14}},\frac{J_zU}{\sqrt{14}}\right)
+\]
+are mutually orthonormal. Consequently
+\begin{equation}
+ Q=I-P-\frac1{14}\sum_{a=x,y,z}J_aPJ_a
+ \label{eq:complement}
+\end{equation}
+is an orthogonal rank-one projector, say $Q=|q\rangle\langle q|$, and $PQ=0$.
+
+The same orthogonality argument gives $4\dim V\le13$, so dimension three is the only remaining possibility above two. Alternatively, any higher-dimensional AC subspace would contain a three-dimensional one.
+
+\section*{2. Inverting the Casimir map}
+Choose Hilbert--Schmidt orthonormal spin tensors $T_{LM}$, with $T_{00}=I/\sqrt{13}$, and write $X_L$ for the rank-$L$ component of an operator $X$. The SU(2)-equivariant map
+\[
+ \Phi(X)=\sum_aJ_aXJ_a
+\]
+has eigenvalue $42-L(L+1)/2$ on rank $L$. This follows from the adjoint Casimir identity
+\[
+ \sum_a[J_a,[J_a,X_L]]=L(L+1)X_L.
+\]
+Applying this to \eqref{eq:complement} gives
+\begin{equation}
+ Q_L=\frac{L(L+1)-112}{28}\,P_L\quad(1\le L\le12),
+ \qquad P_0=\frac3{13}I,\quad Q_0=\frac1{13}I.
+ \label{eq:inverse}
+\end{equation}
+No denominator vanishes. Moreover, the AC condition gives $P_1=P_2=0$, hence $Q_1=Q_2=0$: the complementary pure state is itself second-order AC.
+
+Define
+\[
+ a_L=\|Q_L\|_{\HS}^2=\sum_{M=-L}^L|\Tr(QT_{LM})|^2\ge0,
+ \qquad
+ \beta_L=\frac{28}{L(L+1)-112}\quad(L\ge1).
+\]
+Then $a_0=1/13$, $a_1=a_2=0$, and
+\begin{equation}
+ \Tr(PQ)=\frac3{13}+\sum_{L=1}^{12}\beta_La_L=0.
+ \label{eq:orthogonality}
+\end{equation}
+For later convenience set $\beta_0=3$. Thus
+\[
+ (\beta_0,\ldots,\beta_{12})=
+ \left(3,-\frac{14}{55},-\frac{14}{53},-\frac7{25},-\frac7{23},
+ -\frac{14}{41},-\frac25,-\frac12,-\frac7{10},-\frac{14}{11},
+ -14,\frac75,\frac7{11}\right).
+\]
+
+\section*{3. An exact positive certificate gives a contradiction}
+Let $\Pi_J$ be the total-spin-$J$ projector for two spin-6 systems and set
+\[
+ p_J=\langle q,q|\Pi_J|q,q\rangle\ge0.
+\]
+The vector $|q,q\rangle$ is symmetric under exchange. Therefore only even total spins occur: $J=0,2,4,6,8,10,12$, and $\sum_Jp_J=1$.
+
+The following exact two-copy identity holds:
+\begin{align}
+ -\Tr(PQ)={}&\frac{16227}{207460}
+ +\frac{609427}{82984}a_1
+ -\frac{28005159}{1999160}a_2
+ +\frac{210951}{23575}a_3 \notag\\
+ &+\frac{3542643}{103730}p_0
+ +\frac{819}{4715}p_2
+ +\frac{2907}{460}p_6.
+ \label{eq:certificate}
+\end{align}
+Here $P$ is related to $Q$ by \eqref{eq:inverse}; the identity itself does not require $P$ to be positive. Its exact verification is given below.
+
+Substitute $\Tr(PQ)=a_1=a_2=0$ and multiply by $1037300/9$. Equation \eqref{eq:certificate} becomes
+\begin{equation}
+ \boxed{\quad 0=9015+1031316a_3+3936270p_0+20020p_2+728365p_6>0.\quad}
+ \label{eq:contradiction}
+\end{equation}
+Every quantity on the right is nonnegative, and the constant is strictly positive. This contradiction excludes every three-dimensional second-order AC subspace.
+
+\section*{4. Attainment by an exact two-dimensional subspace}
+Use normalized Dicke states $|D_{12}^{(r)}\rangle$, with $r$ the excitation number. Define the unit phases
+\[
+ v=\frac{7\sqrt{285}+2\ii\sqrt{269515}}{1045},\qquad
+ w=-\overline v.
+\]
+An orthonormal basis for a two-dimensional second-order AC subspace is
+\begin{align*}
+ |u_1\rangle={}&\sqrt{\frac{19}{32}}|D_{12}^{(3)}\rangle
+ +\frac14|D_{12}^{(7)}\rangle
+ +\sqrt{\frac{11}{32}}v|D_{12}^{(11)}\rangle,\\
+ |u_2\rangle={}&\sqrt{\frac{11}{32}}|D_{12}^{(1)}\rangle
+ +\frac w4|D_{12}^{(5)}\rangle
+ +\sqrt{\frac{19}{32}}\overline v|D_{12}^{(9)}\rangle.
+\end{align*}
+For $c_r^{(a)}=\langle D_{12}^{(r)}|u_a\rangle$, form the Dicke splitting matrices
+\[
+ (M_a)_{r,s}=c_{r+s}^{(a)}
+ \sqrt{\frac{\binom2r\binom{10}s}{\binom{12}{r+s}}},
+ \qquad 0\le r\le2,\quad0\le s\le10.
+\]
+Direct exact substitution gives
+\[
+ M_aM_b^\dagger=\delta_{ab}\frac{I_3}{3},\qquad a,b\in\{1,2\}.
+\]
+This verifies the whole span, including its off-diagonal cross terms. Thus the upper bound two is attained.
+
+\section*{5. Checking the certificate without an optimizer}
+Define the SU(2)-invariant two-copy operators
+\[
+ \Omega_L=\sum_{M=-L}^LT_{LM}\otimes T_{LM}^\dagger.
+\]
+Then $a_L=\langle q,q|\Omega_L|q,q\rangle$. On the total-spin-$J$ sector, their eigenvalues are
+\begin{equation}
+ F_{LJ}=(-1)^{12+J}(2L+1)
+ \begin{Bmatrix}6&6&J\\6&6&L\end{Bmatrix}.
+ \label{eq:sixj}
+\end{equation}
+Let $B=-\sum_{L=0}^{12}\beta_L\Omega_L$. Equation \eqref{eq:certificate} is an operator identity on $\Sym^2(\mathcal H)$. It is enough to check it on the seven even-$J$ channels. The required exact eigenvalues are:
+\begin{center}
+\small
+\begin{tabular}{rrrrr}
+\toprule
+$J$ & $F_{1J}$ & $F_{2J}$ & $F_{3J}$ & $B_J$\\
+\midrule
+0 & $-3/13$ & $5/13$ & $-7/13$ & $306907743/13744225$\\
+2 & $-3/14$ & $87/286$ & $-46/143$ & $-116296701/13744225$\\
+4 & $-16/91$ & $20/143$ & $19/572$ & $-79029803/27488450$\\
+6 & $-3/26$ & $-15/286$ & $35/143$ & $9318813/1099538$\\
+8 & $-3/91$ & $-185/1001$ & $29/286$ & $91602789/27488450$\\
+10 & $1/14$ & $-25/182$ & $-3/13$ & $12701869/27488450$\\
+12 & $18/91$ & $22/91$ & $11/52$ & $92613/2498950$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For each row, $B_J$ equals the right side of \eqref{eq:certificate}, replacing $a_L$ by $F_{LJ}$ and $p_K$ by $\delta_{JK}$.
+
+The accompanying \texttt{verify.py} uses finite rational highest-weight sums to reproduce all $13\times7=91$ recoupling entries independently of Wigner-symbol routines. It also checks the Casimir map on all thirteen irreducible highest-weight operators $J_+^L$, verifies all seven certificate identities, and verifies all thirty-six scalar cross-reduction entries of the attaining basis. No floating-point calculation or numerical optimizer is needed for these checks.
+
+\paragraph{Context.}
+The definition and compression characterization of anticoherent subspaces are given in E. Serrano-Ens\'{a}stiga, C. Chryssomalakos, and J. Martin, ``Quantum metrology of rotations with mixed spin states,'' \emph{Physical Review A} \textbf{111}, 022435 (2025), Definition 2 and Lemma 1, DOI: \href{https://doi.org/10.1103/PhysRevA.111.022435}{10.1103/PhysRevA.111.022435}. The exclusion certificate above is an independent catalogue calculation. The displayed attaining basis is the exact radical reconstruction from the support pattern of the supplied \texttt{ACLiege.jl} example.
+\end{document}

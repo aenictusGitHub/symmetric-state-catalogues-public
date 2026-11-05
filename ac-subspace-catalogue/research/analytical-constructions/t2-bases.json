@@ -1,0 +1,552 @@
+{
+  "schemaVersion": 1,
+  "subspaces": [
+    {
+      "id": "mod3-time-reversal-n11-d2-t2",
+      "n": 11,
+      "t": 2,
+      "dimension": 2,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "5*sqrt(26)/54",
+            "0",
+            "0",
+            "sqrt(66)/27",
+            "0",
+            "0",
+            "sqrt(231)/27",
+            "0",
+            "0",
+            "7*sqrt(22)/54",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.47213143644377636,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.30089031128281335,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5629142279100245,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.608016857754889,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "stateLatex": "\\begin{aligned}|u_1\\rangle={}&\\frac{5\\sqrt{26}|D_{11}^{0}\\rangle+2\\sqrt{66}|D_{11}^{3}\\rangle}{54}\\\\&+\\frac{2\\sqrt{231}|D_{11}^{6}\\rangle+7\\sqrt{22}|D_{11}^{9}\\rangle}{54}\\end{aligned}"
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "-7*sqrt(22)/54",
+            "0",
+            "0",
+            "sqrt(231)/27",
+            "0",
+            "0",
+            "-sqrt(66)/27",
+            "0",
+            "0",
+            "5*sqrt(26)/54"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.608016857754889,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5629142279100245,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.30089031128281335,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.47213143644377636,
+              0.0
+            ]
+          ],
+          "support": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "stateLatex": "\\begin{aligned}|u_2\\rangle={}&\\frac{-7\\sqrt{22}|D_{11}^{2}\\rangle+2\\sqrt{231}|D_{11}^{5}\\rangle}{54}\\\\&+\\frac{-2\\sqrt{66}|D_{11}^{8}\\rangle+5\\sqrt{26}|D_{11}^{11}\\rangle}{54}\\end{aligned}"
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "orthonormal": true,
+        "fullRank": true,
+        "matrixElementsChecked": 36,
+        "violations": []
+      },
+      "nextOrder": {
+        "passed": false,
+        "orthonormal": true,
+        "fullRank": true,
+        "matrixElementsChecked": 64,
+        "violations": [
+          {
+            "basisA": 0,
+            "basisB": 0,
+            "reducedRow": 0,
+            "reducedColumn": 0,
+            "value": "37/1620"
+          },
+          {
+            "basisA": 0,
+            "basisB": 0,
+            "reducedRow": 0,
+            "reducedColumn": 3,
+            "value": "sqrt(65)/729 + 154*sqrt(5)/3645"
+          },
+          {
+            "basisA": 0,
+            "basisB": 0,
+            "reducedRow": 1,
+            "reducedColumn": 1,
+            "value": "-37/540"
+          },
+          {
+            "basisA": 0,
+            "basisB": 0,
+            "reducedRow": 2,
+            "reducedColumn": 2,
+            "value": "37/540"
+          }
+        ]
+      },
+      "derivation": "Use one mod-3-supported vector on r=0,3,6,9 and its time reversal. The diagonal spin moments fix p0=16/27-u, p3=3u-55/54, p6=77/54-3u, p9=u. The only remaining rank-1 cross equation is p3*p9=p6^2/3, giving u=539/1458. All rank-2 cross terms cancel under time reversal. All full cross reductions independently verified.",
+      "provenance": "Independent sparse mod-3 construction; not claimed equal to the source Julia numerical span (which uses parity supports).",
+      "order": 2,
+      "verifiedAchievedOrder": 2
+    },
+    {
+      "id": "mod4-reflection-n16-d3-t2",
+      "n": 16,
+      "t": 2,
+      "dimension": 3,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(6)/32",
+            "0",
+            "0",
+            "0",
+            "sqrt(7)*(24*sqrt(166) - 47*I)/1120",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(6)/32",
+            "0",
+            "0",
+            "0",
+            "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808"
+          ],
+          "coefficients": [
+            [
+              -0.25101010512426375,
+              0.3336320328977811
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.22963966338592295,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7304597378168276,
+              -0.1110270639464605
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.22963966338592295,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.25101010512426375,
+              0.3336320328977811
+            ]
+          ],
+          "support": [
+            0,
+            4,
+            8,
+            12,
+            16
+          ],
+          "stateLatex": "\\begin{aligned}|u_1\\rangle={}&\\alpha(|D_{16}^{0}\\rangle+|D_{16}^{16}\\rangle)\\\\&+\\beta(|D_{16}^{4}\\rangle+|D_{16}^{12}\\rangle)+\\gamma|D_{16}^{8}\\rangle\\end{aligned}"
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "3*sqrt(6)*I/16",
+            "0",
+            "0",
+            "0",
+            "sqrt(2470)*(-27 + 16*sqrt(166)*I)/19760",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(3458)*I*(-27 + 16*sqrt(166)*I)/138320",
+            "0",
+            "0",
+            "0",
+            "sqrt(114)/16",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.4592793267718459
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.0679086818369044,
+              0.5184842436672248
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.26291949872703113,
+              -0.034435986832478935
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.667317390751957,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            5,
+            9,
+            13
+          ],
+          "stateLatex": "\\begin{aligned}|u_2\\rangle={}&\\frac{i\\sqrt{27}|D_{16}^{1}\\rangle+q\\sqrt{35}|D_{16}^{5}\\rangle}{8\\sqrt2}\\\\&+\\frac{3iq|D_{16}^{9}\\rangle+\\sqrt{57}|D_{16}^{13}\\rangle}{8\\sqrt2}\\end{aligned}"
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "sqrt(114)/16",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(3458)*I*(-27 + 16*sqrt(166)*I)/138320",
+            "0",
+            "0",
+            "0",
+            "sqrt(2470)*(-27 + 16*sqrt(166)*I)/19760",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(6)*I/16",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.667317390751957,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.26291949872703113,
+              -0.034435986832478935
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.0679086818369044,
+              0.5184842436672248
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.4592793267718459
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "stateLatex": "\\begin{aligned}|u_3\\rangle={}&\\frac{\\sqrt{57}|D_{16}^{3}\\rangle+3iq|D_{16}^{7}\\rangle}{8\\sqrt2}\\\\&+\\frac{q\\sqrt{35}|D_{16}^{11}\\rangle+i\\sqrt{27}|D_{16}^{15}\\rangle}{8\\sqrt2}\\end{aligned}"
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "orthonormal": true,
+        "fullRank": true,
+        "matrixElementsChecked": 81,
+        "violations": []
+      },
+      "provenance": "Independent mod-4 reflection construction, not claimed equal to numerical source span.",
+      "probabilities": [
+        "27/128",
+        "35/128",
+        "9/128",
+        "57/128"
+      ],
+      "phase": "sqrt(1729)*(-27 + 16*sqrt(166)*I)/8645",
+      "unnormalizedA": [
+        "-4*sqrt(41002)/741 + 137*sqrt(247)*I/1482",
+        "1",
+        "5*(357*sqrt(42) - 16*sqrt(1743)*I)/(18*(16*sqrt(166) - 27*I))",
+        "1",
+        "-4*sqrt(41002)/741 + 137*sqrt(247)*I/1482"
+      ],
+      "normA": "512/27",
+      "phaseLatex": "q=\\frac{-27+16i\\sqrt{166}}{5\\sqrt{1729}}",
+      "compactCoefficients": {
+        "alpha": "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808",
+        "beta": "3*sqrt(6)/32",
+        "gamma": "sqrt(7)*(24*sqrt(166) - 47*I)/1120"
+      },
+      "stateLatex": [
+        "|u_1\\rangle=\\alpha(|D_{16}^{0}\\rangle+|D_{16}^{16}\\rangle)+\\beta(|D_{16}^{4}\\rangle+|D_{16}^{12}\\rangle)+\\gamma|D_{16}^{8}\\rangle",
+        "|u_2\\rangle=\\frac{i\\sqrt{27}|D_{16}^{1}\\rangle+q\\sqrt{35}|D_{16}^{5}\\rangle+3iq|D_{16}^{9}\\rangle+\\sqrt{57}|D_{16}^{13}\\rangle}{8\\sqrt2}",
+        "|u_3\\rangle=\\frac{\\sqrt{57}|D_{16}^{3}\\rangle+3iq|D_{16}^{7}\\rangle+q\\sqrt{35}|D_{16}^{11}\\rangle+i\\sqrt{27}|D_{16}^{15}\\rangle}{8\\sqrt2}"
+      ],
+      "coefficientLatex": [
+        "\\alpha=\\frac{\\sqrt6(-8\\sqrt{166}+137i)}{64\\sqrt{247}}",
+        "\\beta=\\frac{3\\sqrt6}{32}",
+        "\\gamma=\\frac{\\sqrt7(24\\sqrt{166}-47i)}{1120}"
+      ],
+      "derivation": "Let B occupy Dicke indices 1,5,9,13 and C its reflection. Use squared amplitudes D,E,F,G and phases (i,q,iq,1). Norm and diagonal moments imply D=21/32-G, E=3G-17/16, F=45/32-3G. One J+\u00b2 cross term cancels by quadrature; the other fixes Re(q)=-9F/sqrt(195EG). The two first/second-rank cross equations with reflection-symmetric A determine its component ratios. Its variance condition reduces to 128G=57, giving (D,E,F,G)=(27,35,9,57)/128 and the phase above. Full Dicke cross reductions are checked independently.",
+      "order": 2,
+      "verifiedAchievedOrder": 2,
+      "derivationLatex": "\\begin{aligned}q&=\\frac{-27+16i\\sqrt{166}}{5\\sqrt{1729}},\\quad |q|=1,\\\\\\alpha&=\\frac{\\sqrt6(-8\\sqrt{166}+137i)}{64\\sqrt{247}},\\\\\\beta&=\\frac{3\\sqrt6}{32},\\\\\\gamma&=\\frac{\\sqrt7(24\\sqrt{166}-47i)}{1120}.\\end{aligned}"
+    }
+  ]
+}

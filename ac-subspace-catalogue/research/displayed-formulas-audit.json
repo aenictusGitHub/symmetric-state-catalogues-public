@@ -1,0 +1,398 @@
+{
+  "passed": true,
+  "catalogueSha256": "ceaea4c5a8b0992a008e2fa581c80226e9fdb12ee8decac0015eea69d842b6d0",
+  "method": "Strict independent parsing of actual displayed LaTeX, including scalar and phase definitions, Greek variables, complex conjugation, grouped ket sums, fractions and left-hand normalization factors; exact coefficient-wise comparison with saved exactCoefficients. Builder functions are not imported.",
+  "subspacesChecked": 15,
+  "basisFormulasChecked": 37,
+  "complexCoefficientsChecked": 786,
+  "subspaces": [
+    {
+      "id": "radical-n12-k2-t2",
+      "scalarDefinitionsParsedFromDisplay": {
+        "v": "7*sqrt(285)/1045 + 2*sqrt(269515)*I/1045",
+        "w": "-7*sqrt(285)/1045 + 2*sqrt(269515)*I/1045"
+      },
+      "unitPhasesVerified": [
+        "v",
+        "w"
+      ],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "radical-n12-k2-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 3,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 13
+        },
+        {
+          "id": "radical-n12-k2-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 3,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 13
+        }
+      ]
+    },
+    {
+      "id": "radical-n13-k2-t3",
+      "scalarDefinitionsParsedFromDisplay": {
+        "q": "sqrt(11)*(sqrt(7) + 2*I)/11"
+      },
+      "unitPhasesVerified": [
+        "q"
+      ],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "radical-n13-k2-t3-basis-1",
+          "normalizationFactorOnLeft": "16",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 14
+        },
+        {
+          "id": "radical-n13-k2-t3-basis-2",
+          "normalizationFactorOnLeft": "16",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 14
+        }
+      ]
+    },
+    {
+      "id": "radical-n18-k2-t3",
+      "scalarDefinitionsParsedFromDisplay": {
+        "q": "-73*sqrt(39)/780 + sqrt(400569)*I/780",
+        "e": "-577*sqrt(858)/17160 - sqrt(8812518)*I/17160"
+      },
+      "unitPhasesVerified": [
+        "q",
+        "e"
+      ],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "radical-n18-k2-t3-basis-1",
+          "normalizationFactorOnLeft": "4*sqrt(3)",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 19
+        },
+        {
+          "id": "radical-n18-k2-t3-basis-2",
+          "normalizationFactorOnLeft": "2*sqrt(3)",
+          "displayedTerms": 3,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 19
+        }
+      ]
+    },
+    {
+      "id": "cyclic-radical-n7-k3-t1",
+      "scalarDefinitionsParsedFromDisplay": {
+        "q": "sqrt(105)*(-8 + sqrt(41)*I)/105"
+      },
+      "unitPhasesVerified": [
+        "q"
+      ],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "cyclic-radical-n7-k3-t1-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 3,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 8
+        },
+        {
+          "id": "cyclic-radical-n7-k3-t1-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 3,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 8
+        },
+        {
+          "id": "cyclic-radical-n7-k3-t1-basis-3",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 2,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 8
+        }
+      ]
+    },
+    {
+      "id": "mod3-time-reversal-n11-d2-t2",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "mod3-time-reversal-n11-d2-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 12
+        },
+        {
+          "id": "mod3-time-reversal-n11-d2-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 12
+        }
+      ]
+    },
+    {
+      "id": "mod4-reflection-n16-d3-t2",
+      "scalarDefinitionsParsedFromDisplay": {
+        "q": "sqrt(1729)*(-27 + 16*sqrt(166)*I)/8645",
+        "\\alpha": "sqrt(1482)*(-8*sqrt(166) + 137*I)/15808",
+        "\\beta": "3*sqrt(6)/32",
+        "\\gamma": "sqrt(7)*(24*sqrt(166) - 47*I)/1120"
+      },
+      "unitPhasesVerified": [
+        "q"
+      ],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "mod4-reflection-n16-d3-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 5,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 17
+        },
+        {
+          "id": "mod4-reflection-n16-d3-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 17
+        },
+        {
+          "id": "mod4-reflection-n16-d3-t2-basis-3",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 4,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 17
+        }
+      ]
+    },
+    {
+      "id": "molien-tetrahedral-n20-d2-t2",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-tetrahedral-n20-d2-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 5,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 21
+        },
+        {
+          "id": "molien-tetrahedral-n20-d2-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 6,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 21
+        }
+      ]
+    },
+    {
+      "id": "molien-octahedral-sign-n22-d1-t3",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-octahedral-sign-n22-d1-t3-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 6,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 23
+        }
+      ]
+    },
+    {
+      "id": "molien-octahedral-n24-d2-t3",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-octahedral-n24-d2-t3-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 5,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 25
+        },
+        {
+          "id": "molien-octahedral-n24-d2-t3-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 7,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 25
+        }
+      ]
+    },
+    {
+      "id": "molien-tetrahedral-n24-d3-t2",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-tetrahedral-n24-d3-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 7,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 25
+        },
+        {
+          "id": "molien-tetrahedral-n24-d3-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 7,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 25
+        },
+        {
+          "id": "molien-tetrahedral-n24-d3-t2-basis-3",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 6,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 25
+        }
+      ]
+    },
+    {
+      "id": "molien-octahedral-n42-d2-t3",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-octahedral-n42-d2-t3-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 8,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        },
+        {
+          "id": "molien-octahedral-n42-d2-t3-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 10,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        }
+      ]
+    },
+    {
+      "id": "molien-tetrahedral-n42-d4-t2",
+      "scalarDefinitionsParsedFromDisplay": {},
+      "unitPhasesVerified": [],
+      "everyPhaseUnitModulusVerified": true,
+      "basis": [
+        {
+          "id": "molien-tetrahedral-n42-d4-t2-basis-1",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 10,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        },
+        {
+          "id": "molien-tetrahedral-n42-d4-t2-basis-2",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 10,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        },
+        {
+          "id": "molien-tetrahedral-n42-d4-t2-basis-3",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 10,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        },
+        {
+          "id": "molien-tetrahedral-n42-d4-t2-basis-4",
+          "normalizationFactorOnLeft": "1",
+          "displayedTerms": 10,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true,
+          "coefficientsChecked": 43
+        }
+      ]
+    },
+    {
+      "id": "radical-n14-k3-t2",
+      "sourceSha256": "74197ed23fc75a8cbc437e7d579b96df4767909aa950ea4997329103308f7c43",
+      "displayMethod": "Exact parsing of scalar definitions and coefficient expressions; explicit finite-sum templates are expanded coefficient by coefficient. Display fields must also match the separately verified source record.",
+      "sourceExactVerifierPassed": true,
+      "basis": [
+        {
+          "id": "radical-n14-k3-t2-basis-1",
+          "coefficientsChecked": 15,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "radical-n14-k3-t2-basis-2",
+          "coefficientsChecked": 15,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "radical-n14-k3-t2-basis-3",
+          "coefficientsChecked": 15,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        }
+      ]
+    },
+    {
+      "id": "algebraic-n15-k3-t2",
+      "sourceSha256": "d9cbaf2a011ed0405f421081034f98a20e5758ce178373f72aa7a6c5c8f167ec",
+      "displayMethod": "Exact parsing of scalar definitions and coefficient expressions; explicit finite-sum templates are expanded coefficient by coefficient. Display fields must also match the separately verified source record.",
+      "sourceExactVerifierPassed": true,
+      "basis": [
+        {
+          "id": "algebraic-n15-k3-t2-basis-1",
+          "coefficientsChecked": 16,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "algebraic-n15-k3-t2-basis-2",
+          "coefficientsChecked": 16,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "algebraic-n15-k3-t2-basis-3",
+          "coefficientsChecked": 16,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        }
+      ]
+    },
+    {
+      "id": "algebraic-n17-k3-t2",
+      "sourceSha256": "536eedda8ea94357bd42a01f9266ee6ab631b86889d6eb22653386f6f17c6752",
+      "displayMethod": "Exact parsing of scalar definitions and coefficient expressions; explicit finite-sum templates are expanded coefficient by coefficient. Display fields must also match the separately verified source record.",
+      "sourceExactVerifierPassed": true,
+      "basis": [
+        {
+          "id": "algebraic-n17-k3-t2-basis-1",
+          "coefficientsChecked": 18,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "algebraic-n17-k3-t2-basis-2",
+          "coefficientsChecked": 18,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        },
+        {
+          "id": "algebraic-n17-k3-t2-basis-3",
+          "coefficientsChecked": 18,
+          "allDisplayedAndOmittedCoefficientsMatchExactly": true
+        }
+      ]
+    }
+  ]
+}

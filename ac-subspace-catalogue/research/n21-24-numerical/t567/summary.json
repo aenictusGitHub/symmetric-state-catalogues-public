@@ -1,0 +1,759 @@
+{
+  "scope": "Finite numerical pure-state searches at N21\u201324; no exact existence or nonexistence claim. Higher AC order supplies candidates at every lower order.",
+  "threshold": 1e-10,
+  "candidates": [
+    {
+      "id": "numerical-survey-n21-k1-t4",
+      "n": 21,
+      "t": 4,
+      "dimension": 1,
+      "evidence": "numerical",
+      "label": "Refined Li\u00e8ge pure AC4 candidate at N=21",
+      "basis": [
+        {
+          "id": "numerical-survey-n21-k1-t4-basis-1",
+          "coefficients": [
+            [
+              0.0,
+              -0.0
+            ],
+            [
+              -0.24683385122301532,
+              -0.052723518483716675
+            ],
+            [
+              0.3694958238717121,
+              -7.308217282079513e-18
+            ],
+            [
+              0.2210609451692987,
+              -0.019847153490809663
+            ],
+            [
+              0.05659542303298674,
+              -0.08698567645754066
+            ],
+            [
+              0.043782228727384485,
+              -0.11630357512726205
+            ],
+            [
+              0.008394228433079081,
+              -0.047343124504362004
+            ],
+            [
+              0.16570658154763684,
+              -0.07754023273303158
+            ],
+            [
+              -0.0790186117622881,
+              0.19461438872034273
+            ],
+            [
+              0.28357121819340453,
+              0.11741328563340044
+            ],
+            [
+              -0.1852729929975538,
+              0.06420945958173158
+            ],
+            [
+              -0.23687350749153344,
+              -0.06261022459731327
+            ],
+            [
+              0.23720273948872,
+              0.12331607991368602
+            ],
+            [
+              0.048367301362587795,
+              0.18050713003522575
+            ],
+            [
+              0.2248461474992198,
+              0.17016968446446584
+            ],
+            [
+              0.08706029887825456,
+              -0.10890112845935383
+            ],
+            [
+              -0.023429411614762627,
+              0.06785765664053645
+            ],
+            [
+              -0.055081406465330086,
+              0.028293018188901998
+            ],
+            [
+              0.10680027055281037,
+              0.27631138592125637
+            ],
+            [
+              -0.2857896202448071,
+              -0.0021570808941729944
+            ],
+            [
+              -0.12018291840706466,
+              0.08064550695406872
+            ],
+            [
+              0.20616499922894307,
+              0.06702278478850353
+            ]
+          ]
+        }
+      ],
+      "reportedOrder": 4,
+      "sourceFile": "inputs/acsdk.21.4.txt",
+      "searchFile": "n21-t4-search.json",
+      "verification": {
+        "normalizationError": 2.220446049250313e-16,
+        "allReducedStatesThroughOrderChecked": true,
+        "maximumReductionFrobeniusResidual": 2.335548389512225e-15,
+        "reductions": [
+          {
+            "order": 1,
+            "frobeniusResidual": 7.91624655279134e-16,
+            "maxEntryResidual": 5.551164995391326e-16
+          },
+          {
+            "order": 2,
+            "frobeniusResidual": 8.917246006962453e-16,
+            "maxEntryResidual": 3.9287817030633414e-16
+          },
+          {
+            "order": 3,
+            "frobeniusResidual": 1.5150788237935023e-15,
+            "maxEntryResidual": 6.766345210719324e-16
+          },
+          {
+            "order": 4,
+            "frobeniusResidual": 2.335548389512225e-15,
+            "maxEntryResidual": 8.070958124358399e-16
+          }
+        ]
+      },
+      "notes": "Numerical witness only. It is not an exact existence certificate, and failed searches at higher orders do not prove nonexistence."
+    },
+    {
+      "id": "numerical-survey-n22-k1-t5",
+      "n": 22,
+      "t": 5,
+      "dimension": 1,
+      "evidence": "numerical",
+      "label": "Refined Li\u00e8ge pure AC5 candidate at N=22",
+      "basis": [
+        {
+          "id": "numerical-survey-n22-k1-t5-basis-1",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.38264088351348435,
+              1.4188162224619604e-18
+            ],
+            [
+              0.0641083478689756,
+              0.0034923002923928164
+            ],
+            [
+              -0.04898046165512447,
+              -0.05293749540039768
+            ],
+            [
+              0.023697271837427026,
+              0.24421803292739233
+            ],
+            [
+              -0.09072974109363581,
+              -0.15848637956527395
+            ],
+            [
+              0.09060913524191527,
+              0.08384985609786198
+            ],
+            [
+              0.3150580441315469,
+              0.07128049451649028
+            ],
+            [
+              0.18085984397457772,
+              0.10474282156473479
+            ],
+            [
+              0.06268393738641304,
+              -0.029697214689179446
+            ],
+            [
+              -0.04346432379029585,
+              -0.1642358893651447
+            ],
+            [
+              0.07134191115911777,
+              0.3530940739988924
+            ],
+            [
+              -0.054809476377595374,
+              -0.050448883966659155
+            ],
+            [
+              0.016263771152398077,
+              -0.12938641625289038
+            ],
+            [
+              -0.10261220218505376,
+              -0.08846124362224168
+            ],
+            [
+              0.1473182492255382,
+              -0.24194514549739202
+            ],
+            [
+              -0.0821652411497267,
+              -0.24243557314161446
+            ],
+            [
+              0.029129406829264504,
+              0.14020406113568915
+            ],
+            [
+              -0.23503457703176422,
+              0.024956909884657714
+            ],
+            [
+              0.046165874587819226,
+              -0.0781085953445525
+            ],
+            [
+              0.12041953338313131,
+              -0.182383158393722
+            ],
+            [
+              -0.21916327081031983,
+              -0.17921271227330723
+            ],
+            [
+              0.13105460951226913,
+              -0.08739611726681812
+            ]
+          ]
+        }
+      ],
+      "reportedOrder": 5,
+      "sourceFile": "inputs/acsdk.22.5.txt",
+      "searchFile": "n22-t5-search.json",
+      "verification": {
+        "normalizationError": 3.3306690738754696e-16,
+        "allReducedStatesThroughOrderChecked": true,
+        "maximumReductionFrobeniusResidual": 5.1581648071437336e-15,
+        "reductions": [
+          {
+            "order": 1,
+            "frobeniusResidual": 2.487655307695094e-16,
+            "maxEntryResidual": 2.220446075662731e-16
+          },
+          {
+            "order": 2,
+            "frobeniusResidual": 2.8656803753556126e-16,
+            "maxEntryResidual": 1.6657053678103938e-16
+          },
+          {
+            "order": 3,
+            "frobeniusResidual": 4.956999729269623e-16,
+            "maxEntryResidual": 2.7755603765243015e-16
+          },
+          {
+            "order": 4,
+            "frobeniusResidual": 1.4218206473084322e-15,
+            "maxEntryResidual": 5.45483077627809e-16
+          },
+          {
+            "order": 5,
+            "frobeniusResidual": 5.1581648071437336e-15,
+            "maxEntryResidual": 1.933812164788687e-15
+          }
+        ]
+      },
+      "notes": "Numerical witness only. It is not an exact existence certificate, and failed searches at higher orders do not prove nonexistence."
+    },
+    {
+      "id": "numerical-survey-n23-k1-t5",
+      "n": 23,
+      "t": 5,
+      "dimension": 1,
+      "evidence": "numerical",
+      "label": "Refined Li\u00e8ge pure AC5 candidate at N=23",
+      "basis": [
+        {
+          "id": "numerical-survey-n23-k1-t5-basis-1",
+          "coefficients": [
+            [
+              0.0,
+              -0.0
+            ],
+            [
+              0.24288833128729087,
+              -0.26884659025297736
+            ],
+            [
+              -0.0837748948059928,
+              0.02409999558072144
+            ],
+            [
+              -0.004587037853711299,
+              0.10027476726592449
+            ],
+            [
+              -0.1517070138246686,
+              0.22544110166571307
+            ],
+            [
+              -0.20424793360257137,
+              -0.04687858531999513
+            ],
+            [
+              -0.04334303062833681,
+              0.09485181245547689
+            ],
+            [
+              -0.010496739600982753,
+              0.21067987628387813
+            ],
+            [
+              0.1363731073098457,
+              -0.209729152134925
+            ],
+            [
+              -0.0864268318956631,
+              0.11118135601813525
+            ],
+            [
+              0.03616336578315548,
+              0.07264572363895182
+            ],
+            [
+              -0.0024014898052798473,
+              -0.12230246441232967
+            ],
+            [
+              0.43135136727487355,
+              4.203295358226714e-18
+            ],
+            [
+              0.15145015835665487,
+              -0.060421253943954874
+            ],
+            [
+              0.023667288275434867,
+              0.01570097887264724
+            ],
+            [
+              -0.18419701145165177,
+              0.09696854442736175
+            ],
+            [
+              0.1621958434966038,
+              -0.005501285225785949
+            ],
+            [
+              -0.022791509645358095,
+              0.11161457354250062
+            ],
+            [
+              -0.21488615509609912,
+              0.12301796036550097
+            ],
+            [
+              0.13324142299160646,
+              0.19789325997412255
+            ],
+            [
+              -0.14355714756082202,
+              0.02676289952638641
+            ],
+            [
+              0.13371036050835525,
+              -0.036239049349556435
+            ],
+            [
+              0.2412266017627451,
+              -0.23584325757144423
+            ],
+            [
+              0.015616226393615377,
+              0.07113685200542551
+            ]
+          ]
+        }
+      ],
+      "reportedOrder": 5,
+      "sourceFile": "inputs/acsdk.23.5.txt",
+      "searchFile": "n23-t5-search.json",
+      "verification": {
+        "normalizationError": 1.1102230246251565e-16,
+        "allReducedStatesThroughOrderChecked": true,
+        "maximumReductionFrobeniusResidual": 1.6244165651276333e-15,
+        "reductions": [
+          {
+            "order": 1,
+            "frobeniusResidual": 1.2238067447023652e-16,
+            "maxEntryResidual": 7.790447680065713e-17
+          },
+          {
+            "order": 2,
+            "frobeniusResidual": 2.4913286028851345e-16,
+            "maxEntryResidual": 1.6653518447446034e-16
+          },
+          {
+            "order": 3,
+            "frobeniusResidual": 3.100540727748971e-16,
+            "maxEntryResidual": 1.9429034953705287e-16
+          },
+          {
+            "order": 4,
+            "frobeniusResidual": 5.340786142646397e-16,
+            "maxEntryResidual": 2.220479403183116e-16
+          },
+          {
+            "order": 5,
+            "frobeniusResidual": 1.6244165651276333e-15,
+            "maxEntryResidual": 4.932387433366231e-16
+          }
+        ]
+      },
+      "notes": "Numerical witness only. It is not an exact existence certificate, and failed searches at higher orders do not prove nonexistence."
+    },
+    {
+      "id": "numerical-survey-n24-k1-t7",
+      "n": 24,
+      "t": 7,
+      "dimension": 1,
+      "evidence": "numerical",
+      "label": "Refined Li\u00e8ge pure AC7 candidate at N=24",
+      "basis": [
+        {
+          "id": "numerical-survey-n24-k1-t7-basis-1",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3815006063956647,
+              -9.253117401426032e-18
+            ],
+            [
+              -0.010872509005157094,
+              -0.00765834657419337
+            ],
+            [
+              0.004522212606486514,
+              0.011180970479812428
+            ],
+            [
+              0.07349818428571667,
+              0.06656951951157472
+            ],
+            [
+              0.14667477267862347,
+              0.11394674535359545
+            ],
+            [
+              -0.021068683801609582,
+              0.24426963872791627
+            ],
+            [
+              0.09861447913788239,
+              -0.3489804766786426
+            ],
+            [
+              -0.11304739506650877,
+              -0.11889963216536525
+            ],
+            [
+              0.04777395243906211,
+              -0.11111697291930878
+            ],
+            [
+              0.1281379494674702,
+              -0.1362954251870289
+            ],
+            [
+              0.020098583106321587,
+              0.002167332076468627
+            ],
+            [
+              -0.11488938769937565,
+              -0.0860912167019558
+            ],
+            [
+              0.20862039728816434,
+              -0.027713451959729178
+            ],
+            [
+              0.11101435123476229,
+              0.2242421432714056
+            ],
+            [
+              0.2172570685752661,
+              -0.07335801793092916
+            ],
+            [
+              -0.24431937538230672,
+              -0.16122059101964017
+            ],
+            [
+              0.046430087473193604,
+              -0.12697578816329222
+            ],
+            [
+              0.0007712352618679115,
+              -0.11979426078961972
+            ],
+            [
+              -0.10728118675711609,
+              -0.16766162232980947
+            ],
+            [
+              0.18840657698513785,
+              -0.02974354357744843
+            ],
+            [
+              0.0627719745678212,
+              0.17999967359192917
+            ],
+            [
+              0.1266466636755098,
+              -0.17053020045390607
+            ],
+            [
+              -0.14098359546606504,
+              -0.18500370745058378
+            ],
+            [
+              0.14030514181935883,
+              -0.10758051555979004
+            ]
+          ]
+        }
+      ],
+      "reportedOrder": 7,
+      "sourceFile": "inputs/acsdk.24.7.txt",
+      "searchFile": "n24-t7-search.json",
+      "verification": {
+        "normalizationError": 4.440892098500626e-16,
+        "allReducedStatesThroughOrderChecked": true,
+        "maximumReductionFrobeniusResidual": 8.346477915401609e-15,
+        "reductions": [
+          {
+            "order": 1,
+            "frobeniusResidual": 3.192352274679499e-16,
+            "maxEntryResidual": 2.2207033894997576e-16
+          },
+          {
+            "order": 2,
+            "frobeniusResidual": 4.734598366315283e-16,
+            "maxEntryResidual": 3.3306710645164836e-16
+          },
+          {
+            "order": 3,
+            "frobeniusResidual": 4.113036405379371e-16,
+            "maxEntryResidual": 2.220446777631079e-16
+          },
+          {
+            "order": 4,
+            "frobeniusResidual": 5.684988045571234e-16,
+            "maxEntryResidual": 2.2204472250632173e-16
+          },
+          {
+            "order": 5,
+            "frobeniusResidual": 1.1298390234016694e-15,
+            "maxEntryResidual": 3.203833108129761e-16
+          },
+          {
+            "order": 6,
+            "frobeniusResidual": 2.0556608587354447e-15,
+            "maxEntryResidual": 4.920215362108717e-16
+          },
+          {
+            "order": 7,
+            "frobeniusResidual": 8.346477915401609e-15,
+            "maxEntryResidual": 2.426965231029058e-15
+          }
+        ]
+      },
+      "notes": "Numerical witness only. It is not an exact existence certificate, and failed searches at higher orders do not prove nonexistence."
+    }
+  ],
+  "searches": [
+    {
+      "n": 21,
+      "t": 4,
+      "dimension": 1,
+      "attemptCount": 1,
+      "randomComplexAttempts": 0,
+      "status": "candidate-found",
+      "bestMaximumReductionFrobeniusResidual": 2.335548389512225e-15,
+      "searchFile": "n21-t4-search.json",
+      "sourceSHA256": "8e551ed3c68aade8b58aa76ffcca96dc0111655ce38c940a71a6d020f55d8763",
+      "elapsedSeconds": 0.0003860828001052141,
+      "bestResidual": 2.335548389512225e-15,
+      "found": true,
+      "sourceFile": "n21-t4-search.json"
+    },
+    {
+      "n": 21,
+      "t": 5,
+      "dimension": 1,
+      "attemptCount": 500,
+      "randomComplexAttempts": 492,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.008044661816802655,
+      "searchFile": "n21-t5-search.json",
+      "sourceSHA256": "140d03d7317a34babe09af78934901024f90ac152845873d79c74d1847fcce73",
+      "elapsedSeconds": 8.675868750084192,
+      "bestResidual": 0.008044661816802655,
+      "found": false,
+      "sourceFile": "n21-t5-search.json"
+    },
+    {
+      "n": 21,
+      "t": 6,
+      "dimension": 1,
+      "attemptCount": 160,
+      "randomComplexAttempts": 152,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.013260292354699206,
+      "searchFile": "n21-t6-search.json",
+      "sourceSHA256": "56e513132395e2103252b171322b928fd75503af060632c1bd14276acc88467d",
+      "elapsedSeconds": 11.515014917124063,
+      "bestResidual": 0.013260292354699206,
+      "found": false,
+      "sourceFile": "n21-t6-search.json"
+    },
+    {
+      "n": 21,
+      "t": 7,
+      "dimension": 1,
+      "attemptCount": 160,
+      "randomComplexAttempts": 152,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.05200127806737019,
+      "searchFile": "n21-t7-search.json",
+      "sourceSHA256": "1a012a2920544d160d999afec54314b5be0d7bb174984a5fce15c9a70745a0cd",
+      "elapsedSeconds": 7.7487220000475645,
+      "bestResidual": 0.05200127806737019,
+      "found": false,
+      "sourceFile": "n21-t7-search.json"
+    },
+    {
+      "n": 22,
+      "t": 5,
+      "dimension": 1,
+      "attemptCount": 1,
+      "randomComplexAttempts": 0,
+      "status": "candidate-found",
+      "bestMaximumReductionFrobeniusResidual": 5.1581648071437336e-15,
+      "searchFile": "n22-t5-search.json",
+      "sourceSHA256": "d8ee35865bc55186b9a8473240eaf643c4ddecd2f3dd4030fd035009b3d54958",
+      "elapsedSeconds": 0.00033083301968872547,
+      "bestResidual": 5.1581648071437336e-15,
+      "found": true,
+      "sourceFile": "n22-t5-search.json"
+    },
+    {
+      "n": 22,
+      "t": 6,
+      "dimension": 1,
+      "attemptCount": 500,
+      "randomComplexAttempts": 492,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.010879676925386043,
+      "searchFile": "n22-t6-search.json",
+      "sourceSHA256": "341b9b379f638e2723004837adf1e3711b15e33af272bc96e0ddeec6dae55016",
+      "elapsedSeconds": 21.742072792025283,
+      "bestResidual": 0.010879676925386043,
+      "found": false,
+      "sourceFile": "n22-t6-search.json"
+    },
+    {
+      "n": 22,
+      "t": 7,
+      "dimension": 1,
+      "attemptCount": 160,
+      "randomComplexAttempts": 152,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.028605721463379512,
+      "searchFile": "n22-t7-search.json",
+      "sourceSHA256": "cc7b045d5f5ce04b47240d7c0abf37a803462a6a5fe5772b6a2bf1335504cd3d",
+      "elapsedSeconds": 4.105604083975777,
+      "bestResidual": 0.028605721463379512,
+      "found": false,
+      "sourceFile": "n22-t7-search.json"
+    },
+    {
+      "n": 23,
+      "t": 5,
+      "dimension": 1,
+      "attemptCount": 1,
+      "randomComplexAttempts": 0,
+      "status": "candidate-found",
+      "bestMaximumReductionFrobeniusResidual": 1.6244165651276333e-15,
+      "searchFile": "n23-t5-search.json",
+      "sourceSHA256": "0e4e13d57f972bed9066c894e1a75843b8413ea12c8811dbb6fe3c95f93d414e",
+      "elapsedSeconds": 0.00030212500132620335,
+      "bestResidual": 1.6244165651276333e-15,
+      "found": true,
+      "sourceFile": "n23-t5-search.json"
+    },
+    {
+      "n": 23,
+      "t": 6,
+      "dimension": 1,
+      "attemptCount": 500,
+      "randomComplexAttempts": 492,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.016234454814967787,
+      "searchFile": "n23-t6-search.json",
+      "sourceSHA256": "211b61ee2b0d05bb51de4fa9612730dddf571922af67f5d0ea8cfbe3561f1a69",
+      "elapsedSeconds": 24.33887912519276,
+      "bestResidual": 0.016234454814967787,
+      "found": false,
+      "sourceFile": "n23-t6-search.json"
+    },
+    {
+      "n": 23,
+      "t": 7,
+      "dimension": 1,
+      "attemptCount": 160,
+      "randomComplexAttempts": 152,
+      "status": "not-found-in-finite-search",
+      "bestMaximumReductionFrobeniusResidual": 0.04159490763496325,
+      "searchFile": "n23-t7-search.json",
+      "sourceSHA256": "d9dd20b1f483b4985826c8f9cedffa3c4b9f9421b3881bba8fb98cd5a6650bc2",
+      "elapsedSeconds": 2.2134803330991417,
+      "bestResidual": 0.04159490763496325,
+      "found": false,
+      "sourceFile": "n23-t7-search.json"
+    },
+    {
+      "n": 24,
+      "t": 7,
+      "dimension": 1,
+      "attemptCount": 1,
+      "randomComplexAttempts": 0,
+      "status": "candidate-found",
+      "bestMaximumReductionFrobeniusResidual": 8.346477915401609e-15,
+      "searchFile": "n24-t7-search.json",
+      "sourceSHA256": "338d5657f4d609946140c0190f5f58062bf653cdd48bcf8eaeb877e65a9ca530",
+      "elapsedSeconds": 0.0008156248368322849,
+      "bestResidual": 8.346477915401609e-15,
+      "found": true,
+      "sourceFile": "n24-t7-search.json"
+    }
+  ],
+  "sourceProvenance": "inputs/provenance.json"
+}

@@ -1,0 +1,419 @@
+{
+  "passed": true,
+  "n": 18,
+  "t": 4,
+  "maximumDimension": 1,
+  "auxiliarySpin": "3",
+  "ambientTensorDimension": 133,
+  "polynomial": "X^4-2X^3-653X^2-1146X+8640 I",
+  "factoredPolynomial": "(X+23 I)(X+6 I)(X-4 I)(X-27 I)-6264 I",
+  "totalSpins": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sectorDimensions": [
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25
+  ],
+  "xEigenvalues": [
+    "-30",
+    "-23",
+    "-15",
+    "-6",
+    "4",
+    "15",
+    "27"
+  ],
+  "wEigenvalues": [
+    "319320",
+    "-6264",
+    "-63720",
+    "-6264",
+    "-6264",
+    "-111600",
+    "-6264"
+  ],
+  "positiveIndex": 13,
+  "negativeIndex": 120,
+  "zeroIndex": 0,
+  "physicalMagneticBlocksChecked": 25,
+  "characteristicPolynomialsChecked": 50,
+  "partialTraceDiagonalEntriesChecked": 7,
+  "partialTraceJofWIsZero": true,
+  "traceMoments": [
+    {
+      "power": 1,
+      "normalizedTrace": "0",
+      "partialTraceOnAuxiliary": "0"
+    },
+    {
+      "power": 2,
+      "normalizedTrace": "360",
+      "partialTraceOnAuxiliary": "6840"
+    },
+    {
+      "power": 3,
+      "normalizedTrace": "-180",
+      "partialTraceOnAuxiliary": "-3420"
+    },
+    {
+      "power": 4,
+      "normalizedTrace": "226080",
+      "partialTraceOnAuxiliary": "4295520"
+    }
+  ],
+  "knownAC4LineCompressionEntriesExactlyZero": 49,
+  "knownAC4ReducedMatrixEntriesChecked": 25,
+  "exactLowerBound": 1,
+  "exactUpperBound": 1,
+  "bound": "7k<=13",
+  "arbitraryComplexSubspacesCovered": true,
+  "compressionArgument": "Every first-spin operator in a degree-four polynomial in J.S has spin-tensor ranks at most 4. Its scalar coefficient is fixed by the partial trace over spin 9. That partial trace vanishes, so the polynomial contains only first-spin ranks 1..4. Every such tensor compresses to zero on an AC4 subspace. Hence C tensor V3 is a 7k-dimensional totally isotropic subspace. A nonsingular Hermitian form of inertia (13,120) admits no totally isotropic subspace larger than 13.",
+  "method": "Independent normalized physical-spin matrices in every conserved total-magnetic block; exact characteristic polynomials, all partial-trace entries, exact strict inertia, and direct normalized-Dicke verification of the attaining state. No optimization or discovery imports.",
+  "physicalBlocks": [
+    {
+      "totalMagneticNumber": 12,
+      "dimension": 1,
+      "activeTotalSpins": [
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 11,
+      "dimension": 2,
+      "activeTotalSpins": [
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 10,
+      "dimension": 3,
+      "activeTotalSpins": [
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 9,
+      "dimension": 4,
+      "activeTotalSpins": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 8,
+      "dimension": 5,
+      "activeTotalSpins": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 7,
+      "dimension": 6,
+      "activeTotalSpins": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 6,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 5,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 4,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 3,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 2,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 1,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": 0,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -1,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -2,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -3,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -4,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -5,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -6,
+      "dimension": 7,
+      "activeTotalSpins": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -7,
+      "dimension": 6,
+      "activeTotalSpins": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -8,
+      "dimension": 5,
+      "activeTotalSpins": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -9,
+      "dimension": 4,
+      "activeTotalSpins": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -10,
+      "dimension": 3,
+      "activeTotalSpins": [
+        10,
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -11,
+      "dimension": 2,
+      "activeTotalSpins": [
+        11,
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    },
+    {
+      "totalMagneticNumber": -12,
+      "dimension": 1,
+      "activeTotalSpins": [
+        12
+      ],
+      "xCharacteristicPolynomialVerified": true,
+      "wCharacteristicPolynomialVerified": true
+    }
+  ],
+  "certificateSHA256": "94be4282f14555fa17ff9867f0a39bda104fab967439431fb0c064e58ab540ac"
+}

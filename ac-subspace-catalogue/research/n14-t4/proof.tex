@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Exact fourth-order anticoherent states of fourteen symmetric qubits}
+\author{Catalogue calculation}
+\date{30 October 2026}
+\maketitle
+
+Let $|D_{14}^{r}\rangle$ be the normalized symmetric Dicke state with $r$
+excitations, with $J_z|D_{14}^{r}\rangle=(7-r)|D_{14}^{r}\rangle$.
+Put
+\[
+ A=\frac{7}{\sqrt{440}}+i\sqrt{\frac{39431}{320760}},\qquad
+ B=\sqrt{\frac{364}{3645}},\qquad
+ C=-\sqrt{\frac{91}{3000}}+i\sqrt{\frac{73229}{243000}}.
+\]
+Then the normalized state
+\begin{align*}
+ |\psi_+\rangle={}&A\bigl(|D_{14}^{1}\rangle+|D_{14}^{13}\rangle\bigr)\\
+ &+B\bigl(|D_{14}^{4}\rangle+|D_{14}^{10}\rangle\bigr)
+ +C|D_{14}^{7}\rangle
+\end{align*}
+is exactly fourth-order anticoherent. Its coefficientwise complex conjugate
+$|\psi_-\rangle$ is another exact fourth-order anticoherent state.
+These are two one-dimensional subspaces; their joint span is not claimed
+to be anticoherent. No classification of all fourteen-qubit AC states is asserted.
+
+\section{Exact verification}
+The nonzero Dicke probabilities are
+\[
+(|c_1|^2,|c_4|^2,|c_7|^2,|c_{10}|^2,|c_{13}|^2)
+=\frac1{3645}(854,364,1209,364,854).
+\]
+They sum to one. For any normalized Dicke coefficient vector $c$, its
+$t$-qubit reduced state in the symmetric Dicke basis is $\rho_t=M_tM_t^\dagger$,
+where
+\[
+ (M_t)_{ab}=c_{a+b}
+ \sqrt{\frac{\binom ta\binom{14-t}b}{\binom{14}{a+b}}},
+ \quad 0\le a\le t,\quad 0\le b\le14-t.
+\]
+Substituting the displayed probabilities makes every diagonal entry of
+$\rho_4$ equal to $1/5$. Because the support has spacing three, its only
+potentially nonzero off-diagonal entries are $(0,3),(1,4)$ and their conjugates.
+Direct substitution gives
+\[
+ (\rho_4)_{03}=\frac B{1001}
+ \left[\sqrt{286}(10A+\overline A)
+       +\sqrt{42}(35\overline C+20C)\right],
+ \qquad (\rho_4)_{14}=\overline{(\rho_4)_{03}}.
+\]
+Writing $A=a+ib$, the exact coefficient identity
+\[
+ C=\sqrt{\frac{143}{525}}\,(-a+3ib)
+\]
+makes the real and imaginary parts vanish separately. Thus
+\[
+ \boxed{\rho_4=\frac{I_5}{5}.}
+\]
+Complex conjugation preserves this equality, proving the claim for both signs.
+The executable verifier independently forms every matrix entry with exact radicals.
+
+These states have exactly order four, since the same computation gives
+\[
+ \Tr\rho_5^2=\frac{15209}{90750}
+ =\frac16+\frac{14}{15125}>\frac16.
+\]
+They are therefore not fifth-order anticoherent.
+
+\section{Derivation from the sparse numerical state}
+On support $r=1,4,7,10,13$, the diagonal fourth-order AC conditions are
+the five moment conditions through degree four. This is an invertible
+Vandermonde system and yields the probabilities displayed above.
+Use a global phase and a rotation about $z$ to make $c_1,c_4$ positive.
+The remaining equations then admit the exact parametrization
+\[
+ z=\frac{-265\mathbin\pm27i\sqrt{39431}}{5368},\qquad |z|=1,
+\]
+\[
+ c_1=\sqrt{\frac{854}{3645}},\quad
+ c_4=\sqrt{\frac{364}{3645}},\quad
+ c_7=\sqrt{\frac{17446}{273375}}(z-2),\quad
+ c_{10}=z\sqrt{\frac{364}{3645}},\quad
+ c_{13}=z^2\sqrt{\frac{854}{3645}}.
+\]
+A further $z$ rotation and global phase yield the palindromic formula above.
+The supplied vector in \texttt{ACLiege.jl} agrees with the plus branch, after
+such a rotation, to a maximum Dicke-amplitude error of approximately
+$3.47\times10^{-19}$. This is a comparison with rounded numerical data,
+separate from the exact existence proof. The number of printed decimal places
+in the Julia file is not taken as an accuracy certificate.
+
+\section{The two branches are distinct rotation orbits}
+The support spacing gives a threefold rotation axis, and palindromicity
+gives a perpendicular twofold rotation, so the proper rotation group contains
+$D_3$. It is finite: invariance of the state ray under a continuous rotation
+about an axis would make it an eigenvector of the corresponding spin component.
+Its variance along that axis would vanish, contradicting second-order
+anticoherence, which fixes every spin-component variance to $56/3$.
+
+Its nonzero rank-five multipole excludes tetrahedral symmetry. Indeed the
+spin-five representation has tetrahedral invariant multiplicity
+\[
+ \frac{\chi_5(0)+8\chi_5(2\pi/3)+3\chi_5(\pi)}{12}
+ =\frac{11-8-3}{12}=0.
+\]
+Octahedral and icosahedral symmetry are excluded as well, since both contain
+a tetrahedral subgroup. A larger dihedral group would require a rotation
+of order greater than three about the existing threefold axis; the five
+nonzero coefficients at spacing three prohibit it. Thus the full proper
+rotation group is $D_3$, and its threefold axis is unique.
+
+Any proper rotation relating the two branches must preserve this axis as an
+unoriented line. Such rotations consist of $z$ rotations and their compositions
+with a perpendicular half-turn. The quantity
+\[
+ R=\frac{c_1c_{13}}{c_4c_{10}}
+\]
+is invariant under their action and under a global phase. For the palindromic
+state it equals $A^2/B^2$, whose imaginary part is nonzero. Conjugation replaces
+$R$ by $\overline R$. Consequently the two conjugate branches are not related
+by a collective proper rotation and a global phase.
+
+\section{Maximum AC-subspace dimension}
+For any fourth-order AC subspace of dimension $k$, apply Hilbert--Schmidt
+orthonormal spin tensors of ranks zero, one and two to an orthonormal code basis.
+Products of these tensors have rank at most four. The full AC compression
+conditions therefore make the resulting $9k$ vectors orthogonal and nonzero.
+They lie in the fourteen-qubit symmetric space of dimension fifteen, so
+\[
+ 9k\le15,\qquad k\le1.
+\]
+Together with either exact state above this proves
+\[
+ \boxed{K(14,4)=1.}
+\]
+\end{document}

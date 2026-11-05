@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Nineteen qubits cannot be fifth-order anticoherent}
+\author{Exact four-copy certificate}
+\date{}
+\maketitle
+\begin{theorem}
+No pure symmetric state of nineteen qubits is anticoherent of order five.
+Consequently $K(19,t)=0$ for every $t\geq5$.
+\end{theorem}
+\begin{proof}
+Write $V=V_{19/2}$ for the spin-$19/2$ representation. Suppose that
+$\lvert\psi\rangle\in V$ were normalized and fifth-order anticoherent.
+The collective-rotation average
+\[
+ X=\int_{SU(2)} \bigl(U_g\lvert\psi\rangle\langle\psi\rvert U_g^\dagger\bigr)^{\otimes4}\,dg
+\]
+is a positive semidefinite, trace-one invariant operator on
+$W=\operatorname{Sym}^4(V)$, of dimension $\binom{23}{4}=8855$.
+For every irreducible spin tensor of rank $1\leq\ell\leq5$,
+\[
+ \Tr_1\bigl[(T_{\ell0}\otimes I^{\otimes3})X\bigr]=0. \tag{1}
+\]
+Indeed, the first tensor factor contracts to the vanishing tensor expectation
+of each rotated state.
+
+Here are the exact conventions used to certify that these conditions are
+inconsistent with positivity. Put $b_i=\sqrt{\binom{19}{i}}\lvert D_{19}^i\rangle$,
+$i=0,\ldots,19$. For a sorted four-letter word $w$, let $e_w$ be its averaged
+symmetric tensor product and let $o_i(w)$ denote its occupancy. Its squared norm is
+\[
+ \langle e_w,e_w\rangle=
+ \frac{\prod_{i=0}^{19}\binom{19}{i}^{o_i(w)}o_i(w)!}{4!}.
+\]
+These words are orthogonal. Raising and lowering have integer coefficients
+$o_i(i+1)$ and $o_i(20-i)$, respectively. The certificate supplies exact
+mutually orthogonal highest-weight columns $H_J$, their multiplicities $m_J$,
+and $d_J=\operatorname{lcm}_{0\leq s\leq2J}\binom{2J}{s}$.
+With $U_{J,s}=J_-^sH_J/s!$, every invariant Hermitian operator has the form
+\[
+ X=\sum_J\sum_{s=0}^{2J}\frac{d_J}{\binom{2J}{s}}
+       U_{J,s}B_JU_{J,s}^{\dagger}.
+\]
+Positivity is equivalent to $B_J\succeq0$ for all $J$.
+There are 37 nonzero spin blocks and $\sum_Jm_J=277$.
+All equations have real coefficients, so taking the real part of each
+Hermitian $B_J$ preserves positive semidefiniteness, trace, and (1).
+Thus the argument covers arbitrary complex states while using real
+symmetric matrices and $\sum_Jm_J(m_J+1)/2=1522$ scalar variables.
+
+The diagonal entries of $T_{\ell0}$ are the integer-normalized discrete
+orthogonal polynomials of degree $\ell$ in $2i-19$, for the uniform measure
+on $i=0,\ldots,19$. Each equation $R_a(B)=0$ used below is a specified
+matrix entry of (1), multiplied by 16 and divided by the greatest common
+divisor of its integer coefficients. The downloadable certificate lists
+1380 such valid equations. It also provides positive dyadic diagonal
+matrices $S_J$, rational weights $y_a$, and rational symmetric matrices $C_J$.
+Define
+\[
+ x_J=d_J(2J+1)S_JB_JS_J\succeq0.
+\]
+The following identity is verified coefficient by coefficient, using
+exact integer and rational arithmetic:
+\[
+ \boxed{-\Tr X=\sum_{a=1}^{1380}y_aR_a(B)
+                  +\sum_J\Tr(C_Jx_J).} \tag{2}
+\]
+Every $C_J$ is strictly positive definite: all 277 rational LDL pivots are
+positive. Substitution of (1) and $\Tr X=1$ into (2) would therefore give
+$-1\geq0$, a contradiction. No numerical tolerance, optimizer status,
+partial-transpose condition, or assumption that the state is real enters
+this conclusion.
+\end{proof}
+
+\paragraph{Reproducibility.}
+The proof data are in \texttt{certificate.json}; the independent verifier is
+\texttt{verify\_independently.py}. It reconstructs the spin representation,
+physical metric, moment equations, separating identity, and rational
+positive-definiteness checks. Four-copy positive controls are recorded in
+\texttt{positive-control.json}. The certificate SHA-256 is
+\begin{center}\small\texttt{48a0119d785105a3797f9d33e9aa05be5496296d71c553f49f3c3918596bbc23}.\end{center}
+The separately established exact fourth-order AC state at $N=19$, together
+with this exclusion, makes four the maximum pure-state AC order at $N=19$.
+\end{document}

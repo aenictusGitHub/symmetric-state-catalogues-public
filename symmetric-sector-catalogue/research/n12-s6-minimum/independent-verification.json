@@ -1,0 +1,28 @@
+{
+  "n": 12,
+  "sector": 6,
+  "direction": "min",
+  "degree": 8,
+  "globalOptimalityProven": true,
+  "fullPolynomialIdentityVerified": true,
+  "identityVerification": "250-dimensional invariant-space completeness; 246 exact coefficient equations and four exact vanishing constraints; certified injectivity",
+  "attainmentVerifiedExact": true,
+  "arithmetic": "Exact rational/algebraic arithmetic and directed-rounding Arb real-ball certificates",
+  "floatingPointToleranceUsed": false,
+  "invariantDimension": 250,
+  "coefficientConstraints": 246,
+  "vanishingConstraints": 4,
+  "positiveDefiniteGramBlocks": 46,
+  "squaredForms": 8417,
+  "positiveLDLPivotLowerBound": 0.008323051268234849,
+  "precisionBits": 1024,
+  "boundEnclosure": "[142.687882135894087969744314325121588494796357749984170120605183037640168623364070738134548008583119195476753034858593214768852677081077474687142705055092473185868410231029594216790715252158987362335829950174589609635461355109768199653771220572212917876088544558265380823116731715710761984817599127025489499 +/- 1.90e-304]",
+  "inputSha256": {
+    "basis.json": "839eb3e3691e9422cdf7f01d2547496ebafc3180e566e9bafbedc624b59e04c8",
+    "kernels.json": "b12731b45a74375310c4e609f35755ec54f25dd3a8fb7e4cccd92dc3576fdca1",
+    "sos-certificate.json": "98d9a1d66458f42130e1e247c4765a87b582a29c0581c6b7da735490a511561d",
+    "state-parameters.json": "b652e631b7c3c6d1e0b9f90ee90b50f54a7d0a034ee8825d6230e5f2b86ae47c",
+    "exact_field.py": "144bd4f2c15c828d3dcd2226cd3b71bb622072b457e5fc4c3518eabe94abf2c5",
+    "verify_certificate.py": "322474e155458ff59b4abbbe686d84be1676078b327d3ceb6e3d1b826e56d4e3"
+  }
+}

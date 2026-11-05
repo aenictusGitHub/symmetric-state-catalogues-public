@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\D}[1]{|D_{17}^{(#1)}\rangle}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{A radical family of optimal third-order AC planes for seventeen qubits}
+\author{Catalogue calculation}
+\date{30 October 2026}
+\maketitle
+We give a two-real-parameter analytical family of two-dimensional third-order
+anticoherent (AC) subspaces. A simple rational parameter choice gives a compact
+exact witness; a second, exactly specified rational choice reconstructs the
+reported numerical plane in \texttt{ACLiege.jl} to its numerical accuracy.
+No equality between an exact state and rounded source decimals is asserted.
+
+Throughout, $\D r$ is a normalized Dicke state with $r$ excitations.
+All square roots used below are the nonnegative real square roots, and the
+stated domain conditions make every denominator nonzero.
+
+\section{The analytical construction}
+Choose real parameters $p,r$, and put $q=241/768-p$. Define the two probability
+lists, indexed by $i=0,\ldots,4$,
+\begin{align*}
+P={}&(p-65/768,\;799/768-4p,\;6p-731/768,\;255/256-4p,\;p),\\
+Q={}&(q+65/768,\;505/768-4q,\;6q-341/768,\;539/768-4q,\;q).
+\end{align*}
+Next define
+\begin{align*}
+X&=-\frac{(1024p-255)(3072p-425)}{2895532523520},\\
+Y&=-\frac{p(768p-241)}{13056},\\
+Z&=\frac{25690112p^2-9670144p+770185}{68941250560},\\
+z&=\sqrt X,\qquad w=\frac{Z+i\sqrt{XY-Z^2}}{\sqrt X},
+\end{align*}
+and
+\[
+\alpha=(-1820,3,-14/33,1,0),\quad
+\beta=(-3,2/455,-1/2145,0,1),\quad x_i=\alpha_i z+\beta_i w.
+\]
+The letters $z,w$ here are auxiliary scalars, not sphere coordinates.
+For $i=0,1,2,3$ set
+\[
+h=(14,2002,2002,14),\qquad
+\ell_i^2=\frac{h_i^2P_{i+1}Q_i}{\binom{17}{4i+4}\binom{17}{4i+1}}.
+\]
+The second family parameter gives a unit complex number
+\[
+\eta=\frac{1-r^2+2ir}{1+r^2},\qquad
+S=\ell_0+\ell_1\eta,\qquad R=|S|^2,
+\]
+\[
+d=\frac{R+\ell_2^2-\ell_3^2}{2},\qquad
+\Delta=\ell_2^2R-d^2.
+\]
+Four closed-quadrilateral edges are
+\[
+e_0=\ell_0,\quad e_1=\ell_1\eta,\quad
+ e_2=-\frac{S(d+i\sqrt\Delta)}{R},\quad e_3=-S-e_2.
+\]
+The opposite sign of $i\sqrt\Delta$ is also allowed. We use the plus sign
+for both parameter choices below.
+Finally, the finite recurrence
+\[
+a_0=\sqrt{P_0},\qquad
+a_{i+1}=\frac{a_i e_i}{h_i x_i}\quad(0\le i\le3),\qquad
+b_i=\overline{\frac{x_i}{a_i}}
+\]
+provides every coefficient explicitly using rational operations and radicals.
+The two basis vectors are
+\begin{equation}\label{basis}
+|u\rangle=\sum_{i=0}^4\sqrt{\binom{17}{4i}}a_i\D{4i},\qquad
+|v\rangle=\sum_{i=0}^4\sqrt{\binom{17}{4i+1}}b_i\D{4i+1}.
+\end{equation}
+This is a finite radical expression, not an implicit polynomial-root definition.
+The domain is
+\[
+P_i,Q_i>0,\qquad X>0,\qquad XY-Z^2>0,\qquad R>0,\qquad\Delta\ge0.
+\]
+
+\section{A simple exact point}
+Take $p=5/24$ and $r=1$, so $\eta=i$. The probability lists simplify to
+\[
+P=\frac1{768}(95,159,229,125,160),\qquad
+Q=\frac1{768}(146,181,145,215,81).
+\]
+The phase constants are
+\[
+X=\frac{5375}{1737319514112},\qquad
+Y=\frac{45}{34816},\qquad Z=-\frac{232931}{124094251008}.
+\]
+The two relevant discriminants are strictly positive:
+\[
+XY-Z^2=\frac{1046084177}{2199911876176644145152},\qquad
+\Delta=\frac{1057861}{11350123846041600}.
+\]
+Thus every coefficient in \eqref{basis} is a well-defined radical. The
+machine-readable \texttt{basis.json} expands the finite recurrence into
+ordinary symbolic expressions for all thirty-six Dicke components.
+
+\section{Proof that the entire span is third-order AC}
+The lists $P$ and $Q$ were obtained by solving the four diagonal moment
+equations on supports $\{0,4,8,12,16\}$ and $\{1,5,9,13,17\}$. Directly,
+\[
+\sum_{i=0}^4P_i(4i)^a=\sum_{i=0}^4Q_i(4i+1)^a
+=\frac1{18}\sum_{j=0}^{17}j^a,\qquad a=0,1,2,3.
+\]
+Occupied indices within each vector differ by at least four, so each
+three-qubit self reduction is diagonal. These moment identities make
+each of its four diagonal entries equal to $1/4$.
+
+To verify both cross reductions, write the binomial-scaled coefficients
+as in \eqref{basis}. The three possible entries with index difference one
+are proportional to the rows of
+\[
+Kx=0,\qquad
+K=\begin{pmatrix}
+1&1001&3003&91&0\\
+0&1092&10296&1092&0\\
+0&91&3003&1001&1
+\end{pmatrix}.
+\]
+Both $\alpha$ and $\beta$ lie in $\ker K$, hence the identity holds.
+The probability constraints on these products are exactly
+\[
+|x_i|^2=\alpha_i^2X+\beta_i^2Y+2\alpha_i\beta_iZ
+=\frac{P_iQ_i}{\binom{17}{4i}\binom{17}{4i+1}}.
+\]
+They are rational identities in $p$. Conversely, compatibility of this
+kernel with the two moment families forces $p+q=241/768$.
+
+The quadrilateral construction gives
+\[
+\sum_{i=0}^3e_i=0,\qquad |e_i|^2=\ell_i^2.
+\]
+For example, $|e_2|^2=(d^2+\Delta)/R=\ell_2^2$ and
+$|e_3|^2=R+\ell_2^2-2d=\ell_3^2$.
+The recurrence therefore implies inductively
+\[
+|a_i|^2=\frac{P_i}{\binom{17}{4i}},\qquad
+|b_i|^2=\frac{Q_i}{\binom{17}{4i+1}}.
+\]
+The fourth possible cross entry, with index difference three, vanishes because
+\[
+\sum_{i=0}^3 h_i a_{i+1}\overline{b_i}
+=\sum_{i=0}^3h_i\frac{a_{i+1}}{a_i}x_i
+=\sum_{i=0}^3e_i=0.
+\]
+These are every potentially nonzero cross entry. The two supports are disjoint,
+and each probability list sums to one, so the basis is orthonormal. Consequently
+\[
+\boxed{R_3(|u_a\rangle\langle u_b|)=\delta_{ab}I_4/4,
+\qquad (u_1,u_2)=(u,v).}
+\]
+Every normalized complex superposition in the span is therefore third-order AC.
+The primary verifier independently checks all $4\cdot4^2=64$ ordered scalar
+cross-reduction entries at the simple point, using normalized Dicke splitting.
+
+At that point the two displayed basis vectors have exactly AC order three:
+their fourth-reduction first diagonal entries are respectively
+\[
+(\rho_4^u)_{00}=1099/5440=1/5+11/5440,\qquad
+(\rho_4^v)_{00}=653/3264=1/5+1/16320.
+\]
+This does not classify the AC order of every superposition in the plane.
+
+\section{Analytical reconstruction of the reported plane}
+For the numerical example \texttt{\(\Pi\)\_17\_2\_3} at line 939 of
+\texttt{ACLiege.jl}, use the exact rational parameters
+\[
+p_* =\frac{18370114016312017}{10^{17}},\qquad
+r_* =\frac{47980997065595143}{10^{17}}.
+\]
+These are another member of the same radical family. The verifier
+\texttt{verify\_family.py} checks all polynomial family identities and proves
+that this rational point satisfies the domain inequalities using rational
+square-root enclosures. Its numerical reduction to the source convention uses
+one common collective $z$ rotation and independent basis phases. At eighty-digit
+working precision, the maximum coefficient discrepancies from the supplied
+rounded vectors are $1.73\times10^{-10}$ and $2.48\times10^{-10}$.
+The exact existence argument is the family proof, not this numerical agreement.
+The simple point $p=5/24,r=1$ is not claimed to be the original numerical plane.
+
+\section{Optimality of the dimension}
+For any third-order AC subspace of dimension $k$, take Hilbert--Schmidt
+orthonormal rectangular irreducible spin-tensor maps
+\[
+A_{\ell m}:\operatorname{Sym}^{17}\mathbb C^2\to
+\operatorname{Sym}^{16}\mathbb C^2,\qquad \ell=1/2,3/2.
+\]
+There are six maps. Every product $A_{\ell m}^\dagger A_{\ell'm'}$ has
+tensor rank at most three, so the polarized AC conditions give
+\[
+\langle A_{\ell m}u_a,A_{\ell'm'}u_b\rangle
+=\frac{\delta_{ab}\delta_{\ell\ell'}\delta_{mm'}}{18}.
+\]
+Thus $6k$ nonzero orthogonal vectors must fit in the seventeen-dimensional
+output space: $6k\le17$, hence $k\le2$. The explicit family attains this bound:
+\[
+\boxed{K(17,3)=2.}
+\]
+The upper bound is unrestricted: no sparsity, symmetry or realness assumption
+is imposed on competing subspaces. No classification of all optimal planes
+or claim of literature priority is made.
+\end{document}

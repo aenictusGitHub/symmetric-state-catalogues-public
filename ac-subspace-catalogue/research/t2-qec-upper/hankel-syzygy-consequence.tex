@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{A polynomial-syzygy consequence of the existing AC2 upper bound}
+\author{}\date{}\maketitle
+This note gives a structural consequence of the established spin-two
+inertia argument. It does not improve the unrestricted upper bound.
+
+Identify the spin-$N/2$ space with homogeneous binary forms of degree $N$,
+using the normalized Dicke map
+\[
+ (c_0,\ldots,c_N)\longmapsto
+ f(x,y)=\sum_{r=0}^N c_r\sqrt{\binom Nr}\,x^{N-r}y^r.
+\]
+Let $\mathcal C$ be a $k$-dimensional second-order AC subspace, $N\ge4$.
+\begin{proposition}
+The multiplication map
+\[
+ \mathcal C\otimes\operatorname{Sym}^4\mathbb C^2
+ \longrightarrow\operatorname{Sym}^{N+4}\mathbb C^2,
+ \qquad f\otimes g\longmapsto fg,
+\]
+is injective. In particular, if the forms in $\mathcal C$ have a common
+factor of degree $g$, then
+\[
+ \boxed{5k\le N+5-g.}
+\]
+\end{proposition}
+\begin{proof}
+Put $j=N/2$, let $S_a$ be auxiliary spin-two matrices, and set
+\[
+ X=\sum_aJ_a\otimes S_a,\qquad
+ W=X^2+(j+3)X-2j(j+1)I.
+\]
+The AC2 equations imply that the compression of $W$ to
+$\mathcal C\otimes V_2$ is zero. In the total-spin sectors $j+r$,
+$r=-2,-1,0,1,2$, the eigenvalues of $W$ are respectively
+\[
+ -2(j+1),\quad -2j(j+1),\quad -j(2j+5),\quad -5j-2,
+ \quad4j(j+1).
+\]
+Thus $W$ is strictly negative on the kernel of the highest-spin
+projection. A nonzero vector of $\mathcal C\otimes V_2$ cannot belong
+to that kernel. The highest-spin projection, identified with the Cartan
+product, is the displayed multiplication map up to nonzero normalization.
+This proves injectivity.
+
+If $h$ is a common factor of degree $g$, every product belongs to
+$h\operatorname{Sym}^{N+4-g}\mathbb C^2$, of dimension $N+5-g$.
+The domain has dimension $5k$, proving the bound.
+\end{proof}
+Equivalently, for a basis $f_1,\ldots,f_k$ of $\mathcal C$, there is no
+nontrivial polynomial syzygy
+\[
+ \sum_{a=1}^k f_a g_a=0
+\]
+whose coefficients $g_a$ are homogeneous forms of common degree at most
+four. A relation of smaller degree can be multiplied by a nonzero form
+to obtain a degree-four relation.
+
+\paragraph{A fixed-parity corollary.}
+If $N$ is odd and every code polynomial has only even powers of $y$,
+all forms are divisible by $x$. If every form has only odd powers of
+$y$, all are divisible by $y$. Thus any code contained in a single
+Dicke-parity sector satisfies
+\[
+ 5k\le N+4.
+\]
+For $N=10m+5\ge35$ this lowers the current general integer upper bound
+by one within either such sector: $k\le2m+1$, rather than $2m+2$.
+It does not apply to arbitrary codes, or to a code merely invariant under
+parity while using both sectors.
+
+For arbitrary subspaces the common factor may have degree zero, so this
+recovers only the current unrestricted bound $5k\le N+5$.
+Injectivity with degree-five coefficients would imply $6k\le N+6$,
+but no such result is proved here. A degree-five relation can involve at
+most six independent code vectors after changing the code basis, since
+$\dim\operatorname{Sym}^5\mathbb C^2=6$. Therefore that proposed extension
+reduces to a pure-state problem in $V_j\otimes V_{5/2}$ with an AC2
+physical Schmidt support of dimension at most six. A mixed-state
+relaxation of this problem is insufficient: the lower total-spin sectors
+can support mixtures having the required scalar first and second moments.
+This is a limitation of that relaxation, not a proof that a pure solution
+exists or is impossible.
+\end{document}

@@ -1,0 +1,50 @@
+{
+  "result": "No stronger unrestricted upper bound was established by this branch.",
+  "irreducibleQuadraticScan": {
+    "physicalN": [
+      8,
+      100
+    ],
+    "ancillaryTwiceSpin": [
+      1,
+      40
+    ],
+    "arithmetic": "Exact fractions; each open interval between critical coefficients a=(v-x^2)/x is tested.",
+    "witness": "X^2+aX-j(j+1)s(s+1)I/3",
+    "improvementsOverExistingRealBound": 0,
+    "existingRealBound": "min((N-2)/4,(N+5)/5)",
+    "scope": "Finite scan; no finite-size optimality claim outside those ranges."
+  },
+  "fixedAncillaAsymptoticArgument": {
+    "statement": "For each fixed irreducible s>2, the quadratic family cannot improve leading coefficient1/5.",
+    "reason": "In the limiting polynomial m^2+Am-s(s+1)/3, both the strictly positive and strictly negative branch counts exceed(2s+1)/5. Multiplicities are N+O(1).",
+    "scope": "Fixed irreducible auxiliaryspin, scalar rotationally invariant quadratic witness. Does not cover s growingwithN, reducibleancillas, or moregeneral operatorwitnesses."
+  },
+  "reduciblePairObstructions": [
+    {
+      "pair": "V3 plus V4",
+      "pattern": "Both diagonal quadratics positive only on the highest sharedbands; trying to merge m=2,3 without new positive blocks.",
+      "negativeBandUpperBoundForOffDiagonalAtTop": "68/9",
+      "positiveBandRequiredLowerBound": "40/3",
+      "contradiction": true,
+      "scope": "Conditional on the stated classical diagonal and rank1/rank2 off-diagonalforms, not an exhaustive reducible-ancilla classification."
+    },
+    {
+      "pair": "V6 plus V7",
+      "pattern": "Aligned one-sided minimum-positive branch pattern.",
+      "negativeBandUpperBoundForOffDiagonalAtTop": "616/45",
+      "positiveBandRequiredLowerBound": "1430/21",
+      "contradiction": true,
+      "scope": "Same restricted classical pattern only."
+    },
+    {
+      "pair": "V(9/2) plus V(11/2)",
+      "pattern": "Aligned one-sided minimum-positive branch pattern.",
+      "negativeBandUpperBoundForOffDiagonalAtTop": "87/7",
+      "positiveBandRequiredLowerBound": "56",
+      "contradiction": true,
+      "scope": "Same restricted classical pattern only."
+    }
+  ],
+  "generalUpperBoundUnchanged": true
+}

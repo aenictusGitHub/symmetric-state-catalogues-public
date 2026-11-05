@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "seconds": 6.920742416987196,
+  "stdout": "{\"stage\": \"matrix_built\", \"shape\": [7, 9], \"seconds\": 0.628956374945119}\n",
+  "stderr": "------------------------------------------------------------------------\n0   signals.cpython-313-darwin.so       0x000000010f82592f PyInit_signals + 32399\n1   signals.cpython-313-darwin.so       0x000000010f825770 PyInit_signals + 31952\n2   libsystem_platform.dylib            0x00007ff814fd741d _sigtramp + 29\n3   ???                                 0x000000010fbc61b0 0x0 + 4558971312\n4   libflint.21.0.dylib                 0x00000001bf4bd7b2 _fmpq_mul + 178\n5   libflint.21.0.dylib                 0x00000001bf694bcd fmpq_mpoly_mul + 45\n6   libpolys-4.4.1.dylib                0x00000001c32a63d2 _Z13Flint_Mult_MPP8spolyreciS0_iP21fmpq_mpoly_ctx_structP8ip_sring + 162\n7   ???                                 0x0000000000000001 0x0 + 1\n------------------------------------------------------------------------\nUnhandled SIGILL: An illegal instruction occurred.\nThis probably occurred because a *compiled* module has a bug\nin it and is not properly wrapped with sig_on(), sig_off().\nPython will now terminate.\n------------------------------------------------------------------------\n",
+  "exitCode": -4,
+  "conclusion": "No global nonexistence conclusion; finite-field chart diagnostics cannot alone establish real, all-chart infeasibility."
+}

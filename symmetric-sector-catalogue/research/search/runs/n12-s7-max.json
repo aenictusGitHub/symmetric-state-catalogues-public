@@ -1,0 +1,505 @@
+{
+  "n": 12,
+  "k": 7,
+  "mode": "max",
+  "value": 946.0000000003201,
+  "coefficients": [
+    [
+      0.5995685605195809,
+      -1.6789179574787048e-18
+    ],
+    [
+      -0.14304201253284954,
+      -0.18219413703704776
+    ],
+    [
+      0.13400881478153787,
+      -0.5485386988444023
+    ],
+    [
+      0.4083182471083712,
+      -0.18528317990138915
+    ],
+    [
+      0.2109857589364448,
+      0.10963141932257067
+    ],
+    [
+      0.017904677582623915,
+      0.09495170988366815
+    ],
+    [
+      -0.020891843126097907,
+      0.023876656594639684
+    ],
+    [
+      -0.00860031222328688,
+      -0.00045822713443502156
+    ],
+    [
+      -0.0011187405519501841,
+      -0.001592638474147869
+    ],
+    [
+      0.00010506660957525305,
+      -0.0003484658244467
+    ],
+    [
+      5.132582156734151e-05,
+      -2.0066555734249984e-05
+    ],
+    [
+      5.5312155924318795e-06,
+      3.2608348940961365e-06
+    ],
+    [
+      6.503690968170247e-08,
+      4.987394503859576e-07
+    ]
+  ],
+  "sectorVector": [
+    1.0000000000000004,
+    8.333333333333323,
+    33.00000000000017,
+    91.66666666666549,
+    220.00000000000728,
+    461.9999999999782,
+    770.0000000000618,
+    945.9999999998836,
+    825.000000000291,
+    494.99999999965075,
+    194.33333333360497,
+    44.99999999976717,
+    4.666666666718811
+  ],
+  "gradientNorm": 1.2914999248316912e-05,
+  "optimizerSuccess": false,
+  "optimizerMessage": "ABNORMAL_TERMINATION_IN_LNSRCH",
+  "seed": 20261028,
+  "starts": 60,
+  "history": [
+    {
+      "start": 0,
+      "value": 946.0000000003201,
+      "success": false,
+      "nit": 25,
+      "gradientNorm": 1.2914999248316912e-05
+    },
+    {
+      "start": 1,
+      "value": 946.0000000002328,
+      "success": true,
+      "nit": 18,
+      "gradientNorm": 0.00027704209257257734
+    },
+    {
+      "start": 2,
+      "value": 946.000000000291,
+      "success": false,
+      "nit": 20,
+      "gradientNorm": 0.00019142969965420798
+    },
+    {
+      "start": 3,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 0.00020443118736406
+    },
+    {
+      "start": 4,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 0.00014378820780467034
+    },
+    {
+      "start": 5,
+      "value": 945.9999999999709,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 1.6875098646399758e-05
+    },
+    {
+      "start": 6,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 2.43888255002492e-05
+    },
+    {
+      "start": 7,
+      "value": 946.0000000000582,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 2.5221464679723293e-05
+    },
+    {
+      "start": 8,
+      "value": 946.0000000000873,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 3.2360955221966013e-06
+    },
+    {
+      "start": 9,
+      "value": 946.0000000000873,
+      "success": false,
+      "nit": 25,
+      "gradientNorm": 1.643847369476218e-05
+    },
+    {
+      "start": 10,
+      "value": 946.0000000000873,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 3.260926865160506e-06
+    },
+    {
+      "start": 11,
+      "value": 946.0000000000873,
+      "success": true,
+      "nit": 18,
+      "gradientNorm": 6.554743094187771e-05
+    },
+    {
+      "start": 12,
+      "value": 946.0000000000582,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 4.287097226650472e-05
+    },
+    {
+      "start": 13,
+      "value": 946.0000000001746,
+      "success": true,
+      "nit": 34,
+      "gradientNorm": 3.0202335462239953e-05
+    },
+    {
+      "start": 14,
+      "value": 945.9999999999709,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 4.90011450697826e-05
+    },
+    {
+      "start": 15,
+      "value": 946.0000000000873,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 4.5204933404864525e-05
+    },
+    {
+      "start": 16,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 6.843192689822565e-05
+    },
+    {
+      "start": 17,
+      "value": 946.0000000000291,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 3.114307533455584e-05
+    },
+    {
+      "start": 18,
+      "value": 946.0000000002619,
+      "success": false,
+      "nit": 29,
+      "gradientNorm": 0.0002442701424742275
+    },
+    {
+      "start": 19,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 5.391458142097175e-06
+    },
+    {
+      "start": 20,
+      "value": 946.000000000291,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 9.221101736420419e-05
+    },
+    {
+      "start": 21,
+      "value": 946.0000000001746,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 2.3512923167229098e-05
+    },
+    {
+      "start": 22,
+      "value": 946.0000000001455,
+      "success": false,
+      "nit": 25,
+      "gradientNorm": 3.944801623478742e-05
+    },
+    {
+      "start": 23,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 7.94665109506758e-05
+    },
+    {
+      "start": 24,
+      "value": 946.0000000000291,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.0021484928808607e-05
+    },
+    {
+      "start": 25,
+      "value": 946.0000000002328,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 2.003286753044304e-05
+    },
+    {
+      "start": 26,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 0.0001205150012183755
+    },
+    {
+      "start": 27,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 0.00013247361093821346
+    },
+    {
+      "start": 28,
+      "value": 946.0000000000291,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 5.996778805428444e-05
+    },
+    {
+      "start": 29,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 0.0001288821267985627
+    },
+    {
+      "start": 30,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 6.471250806757434e-05
+    },
+    {
+      "start": 31,
+      "value": 946.000000000291,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 7.730398024893941e-05
+    },
+    {
+      "start": 32,
+      "value": 946.0000000000291,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 8.72673544158448e-05
+    },
+    {
+      "start": 33,
+      "value": 945.9999999999127,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 8.767354455454058e-05
+    },
+    {
+      "start": 34,
+      "value": 946.0000000002037,
+      "success": false,
+      "nit": 27,
+      "gradientNorm": 2.383299055405665e-05
+    },
+    {
+      "start": 35,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 4.1625495308541024e-05
+    },
+    {
+      "start": 36,
+      "value": 946.0000000001746,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 0.00013497111623235754
+    },
+    {
+      "start": 37,
+      "value": 946.0,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 9.344393964452491e-05
+    },
+    {
+      "start": 38,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 3.78574668827698e-05
+    },
+    {
+      "start": 39,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 1.2419342364026451e-05
+    },
+    {
+      "start": 40,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 3.909520794225926e-05
+    },
+    {
+      "start": 41,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 7.65682371614246e-06
+    },
+    {
+      "start": 42,
+      "value": 946.0,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 3.0050424731506803e-05
+    },
+    {
+      "start": 43,
+      "value": 946.0000000000873,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 0.00014233082085205582
+    },
+    {
+      "start": 44,
+      "value": 945.9999999999709,
+      "success": true,
+      "nit": 34,
+      "gradientNorm": 4.889678889813452e-05
+    },
+    {
+      "start": 45,
+      "value": 946.0000000000582,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 0.0003753288086642359
+    },
+    {
+      "start": 46,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 23,
+      "gradientNorm": 4.00050012588448e-05
+    },
+    {
+      "start": 47,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 29,
+      "gradientNorm": 3.807238535800542e-05
+    },
+    {
+      "start": 48,
+      "value": 946.0000000000291,
+      "success": true,
+      "nit": 21,
+      "gradientNorm": 0.00022071633400544053
+    },
+    {
+      "start": 49,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 7.33877233546492e-05
+    },
+    {
+      "start": 50,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 0.0001816698951972437
+    },
+    {
+      "start": 51,
+      "value": 946.0000000002619,
+      "success": false,
+      "nit": 28,
+      "gradientNorm": 7.451334488028656e-06
+    },
+    {
+      "start": 52,
+      "value": 946.0000000000582,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 0.00016202413722412535
+    },
+    {
+      "start": 53,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 28,
+      "gradientNorm": 0.00022126792922335132
+    },
+    {
+      "start": 54,
+      "value": 946.0000000001455,
+      "success": false,
+      "nit": 30,
+      "gradientNorm": 0.00013412945952256353
+    },
+    {
+      "start": 55,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 22,
+      "gradientNorm": 3.7198182117318986e-05
+    },
+    {
+      "start": 56,
+      "value": 946.0000000001455,
+      "success": true,
+      "nit": 24,
+      "gradientNorm": 1.0132400368883585e-05
+    },
+    {
+      "start": 57,
+      "value": 945.9999999999418,
+      "success": true,
+      "nit": 25,
+      "gradientNorm": 0.00015267064073621047
+    },
+    {
+      "start": 58,
+      "value": 946.0000000002037,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 6.696486634262899e-05
+    },
+    {
+      "start": 59,
+      "value": 946.0000000001164,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 4.00843954445589e-05
+    }
+  ],
+  "elapsed": 0.24111580848693848,
+  "status": "numerical",
+  "warning": "Numerical candidate; not a proof of global optimality."
+}

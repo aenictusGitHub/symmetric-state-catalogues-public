@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "stabilization": "Each lowering step is projected to the proper total-spin Casimir eigenspace before polar reorthonormalization, preventing amplified higher-spin roundoff leakage.",
+  "rankThresholdRelative": 1e-10,
+  "scope": "Numerical positive controls of the identical physical four-copy contraction construction. Exact known witnesses survive and have nonzero invariant trace; this verifies the scheme does not erroneously exclude adjacent known cases. This is not an exact exclusion proof.",
+  "records": [
+    {
+      "n": 12,
+      "t": 4,
+      "copies": 4,
+      "variables": 250,
+      "rank": 242,
+      "nullDimension": 8,
+      "knownExactWitnessTrace": 1.0000000000000004,
+      "directFourthReductionDeviation": 9.205483015737869e-17,
+      "knownExactWitnessConstraintNorm": 1.138738171450757e-16,
+      "realTwirlBlocksPositiveSemidefinite": true,
+      "smallestSingularValues": [
+        0.0490973522488962,
+        0.026437704654771868,
+        6.337549751951557e-15,
+        5.323632999084926e-15,
+        5.076053404746688e-15,
+        4.788326376623199e-15,
+        4.597369098125732e-15,
+        4.1732748560094296e-15,
+        2.9295246033516494e-15,
+        2.059747816923463e-15
+      ],
+      "traceProjectionToNullNorm": 80.52194483116543
+    },
+    {
+      "n": 14,
+      "t": 4,
+      "copies": 4,
+      "variables": 447,
+      "rank": 417,
+      "nullDimension": 30,
+      "knownExactWitnessTrace": 1.0000000000000002,
+      "directFourthReductionDeviation": 6.882225853039144e-17,
+      "knownExactWitnessConstraintNorm": 4.686700118582695e-17,
+      "realTwirlBlocksPositiveSemidefinite": true,
+      "smallestSingularValues": [
+        5.8158776775097394e-15,
+        5.6319875143033915e-15,
+        5.487893042979636e-15,
+        5.109652319074364e-15,
+        4.891789212244515e-15,
+        4.380996041662614e-15,
+        3.84975897815501e-15,
+        2.6264895169146588e-15,
+        2.117219636884382e-15,
+        1.9937806078652873e-15
+      ],
+      "traceProjectionToNullNorm": 199.04526945861832
+    }
+  ]
+}

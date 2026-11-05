@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "n": 17,
+  "t": 4,
+  "dimension": 1,
+  "arithmetic": "Exact rational and radical SymPy expressions; every reduced-matrix entry checked.",
+  "branches": [
+    {
+      "sign": 1,
+      "normalizedExactly": true,
+      "fourthReduction": "I_5/5",
+      "fourthReductionEntriesChecked": 25,
+      "fifthReductionEntriesChecked": 36,
+      "fifthReductionPurity": "5443/32487",
+      "purityAboveOneSixth": "19/21658",
+      "exactACOrder": 4
+    },
+    {
+      "sign": -1,
+      "normalizedExactly": true,
+      "fourthReduction": "I_5/5",
+      "fourthReductionEntriesChecked": 25,
+      "fifthReductionEntriesChecked": 36,
+      "fifthReductionPurity": "5443/32487",
+      "purityAboveOneSixth": "19/21658",
+      "exactACOrder": 4
+    }
+  ],
+  "radicandStrictlyPositiveExactly": true,
+  "sourceBasisSha256": "f3841b1eddba25063c6be8476ae37bcf08b0e406f07d74cf85c04af137b4957c",
+  "scope": "An analytical construction suggested by the Julia support pattern. Equality or collective-rotation equivalence to the numerical Julia representative is not asserted."
+}

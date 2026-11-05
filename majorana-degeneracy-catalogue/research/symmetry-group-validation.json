@@ -1,0 +1,5909 @@
+{
+  "schemaVersion": 1,
+  "classifier": "../symmetry-groups.js",
+  "classifierSHA256": "ec8fcb7bc45d57a3da49886c7209492800e275f04062aee30153130f02ad56ff",
+  "detector": "../majorana-symmetry.js",
+  "tolerance": 1e-06,
+  "scientificStatus": "Numerical proper-rotation group classification. Reflections and inversion are excluded here and belong to a separate full point-group classification. No exact symmetry or AC proof is inferred.",
+  "api": {
+    "call": "window.MajoranaGroups.classify(MajoranaSymmetry.detect(points,{tolerance:1e-6}))",
+    "symbol": "LaTeX group symbol; for example D_{5}.",
+    "label": "Plain group label; for example D5.",
+    "order": "Number of proper rotations, including identity; null for a continuous group.",
+    "degree": "The n in C_n or D_n; null for polyhedral and continuous groups.",
+    "continuous": "True for SO(2) and continuous D_infinity.",
+    "properRotationsOnly": true,
+    "closureVerified": "True only after checking the complete finite point-permutation action for identity, uniqueness and composition closure; null for continuous groups."
+  },
+  "method": {
+    "classification": "Finite subgroups of SO(3) are cyclic, dihedral, tetrahedral, octahedral or icosahedral. The complete unoriented-axis orders distinguish these cases.",
+    "axisSignatures": {
+      "C_n": "One axis of order n (n>=2); C1 has no nonidentity axis.",
+      "D_n": "One n-fold axis and n twofold axes (n>=3). D2 has three twofold axes.",
+      "T": {
+        "2": 3,
+        "3": 4
+      },
+      "O": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "I": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      }
+    },
+    "consistency": "Every rotation order is checked against its point-permutation order. The sum of axis order minus1 must equal the nonidentity count. Element-order histograms must agree with those implied by the cyclic axis stabilizers. Nonclosed or inconsistent detections stay unclassified.",
+    "continuous": "The supported nonempty collinear constellations have SO(2), or SO(2) semidirect C2 (denoted D_infinity) for equal antipodal weights. Empty or invalid data are not assigned SO(3).",
+    "convention": "D_n has order2n. These are rotational groups, not the full groups containing mirror operations."
+  },
+  "references": [
+    {
+      "title": "Pavel Etingof, Groups Around Us, Lecture5, Section10, Theorem10.2",
+      "url": "https://math.mit.edu/~etingof/groups.pdf",
+      "scope": "Classification of finite subgroups of SO(3). The axis signatures and implementation checks are derived and validated here."
+    }
+  ],
+  "summary": {
+    "catalogueVectors": 192,
+    "classified": 192,
+    "unclassified": 0,
+    "finiteClosureVerified": 175,
+    "continuous": 17,
+    "knownFixtureTestsPassed": true,
+    "negativeTestsPassed": true,
+    "totalMilliseconds": 174,
+    "counts": {
+      "D∞": 17,
+      "D3": 7,
+      "T": 8,
+      "D5": 3,
+      "O": 7,
+      "C5": 4,
+      "C3": 13,
+      "D4": 4,
+      "C4": 5,
+      "I": 2,
+      "C6": 2,
+      "C1": 72,
+      "C7": 3,
+      "C9": 2,
+      "C8": 1,
+      "C11": 1,
+      "C10": 1,
+      "C13": 1,
+      "C2": 34,
+      "D2": 4,
+      "D6": 1
+    }
+  },
+  "knownFixtures": [
+    {
+      "name": "identity",
+      "inputPoints": [
+        [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372733
+        ],
+        [
+          -0.8804509063256238,
+          0.4402254531628119,
+          0.1760901812651248
+        ],
+        [
+          0.22808577638091165,
+          -0.6082287370157645,
+          0.7602859212697056
+        ],
+        [
+          -0.2672612419124244,
+          -0.8017837257372733,
+          0.5345224838248488
+        ],
+        [
+          0.9428090415820635,
+          0.047140452079103175,
+          -0.3299831645537222
+        ]
+      ],
+      "expectedLabel": "C1",
+      "expectedOrder": 1,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "cyclic",
+        "symbol": "C_{1}",
+        "label": "C1",
+        "name": "Trivial rotational group",
+        "degree": 1,
+        "order": 1,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {},
+        "elementOrderSignature": {
+          "1": 1
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "cyclic-four",
+      "inputPoints": [
+        [
+          0.916515138991168,
+          0,
+          0.4
+        ],
+        [
+          5.612036656678127e-17,
+          0.916515138991168,
+          0.4
+        ],
+        [
+          -0.916515138991168,
+          1.1224073313356253e-16,
+          0.4
+        ],
+        [
+          -1.683610997003438e-16,
+          -0.916515138991168,
+          0.4
+        ]
+      ],
+      "expectedLabel": "C4",
+      "expectedOrder": 4,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "cyclic",
+        "symbol": "C_{4}",
+        "label": "C4",
+        "name": "Cyclic rotational group",
+        "degree": 4,
+        "order": 4,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "4": 1
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 1,
+          "4": 2
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "dihedral-four",
+      "inputPoints": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          6.123233995736766e-17,
+          1,
+          0
+        ],
+        [
+          -1,
+          1.2246467991473532e-16,
+          0
+        ],
+        [
+          -1.8369701987210297e-16,
+          -1,
+          0
+        ]
+      ],
+      "expectedLabel": "D4",
+      "expectedOrder": 8,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "dihedral",
+        "symbol": "D_{4}",
+        "label": "D4",
+        "name": "Dihedral rotational group",
+        "degree": 4,
+        "order": 8,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 4,
+          "4": 1
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 5,
+          "4": 2
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "The notation D4 denotes a proper rotation group of order 8.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "dihedral-two",
+      "inputPoints": [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          -2,
+          1,
+          0
+        ],
+        [
+          -2,
+          -1,
+          0
+        ]
+      ],
+      "expectedLabel": "D2",
+      "expectedOrder": 4,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "dihedral",
+        "symbol": "D_{2}",
+        "label": "D2",
+        "name": "Dihedral rotational group",
+        "degree": 2,
+        "order": 4,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 3
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 3
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "The notation D2 denotes a proper rotation group of order 4.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "tetrahedral",
+      "inputPoints": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258
+        ],
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258
+        ]
+      ],
+      "expectedLabel": "T",
+      "expectedOrder": 12,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "tetrahedral",
+        "symbol": "T",
+        "label": "T",
+        "name": "Tetrahedral rotational group",
+        "degree": null,
+        "order": 12,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 3,
+          "3": 4
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 3,
+          "3": 8
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "octahedral",
+      "inputPoints": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "expectedLabel": "O",
+      "expectedOrder": 24,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "octahedral",
+        "symbol": "O",
+        "label": "O",
+        "name": "Octahedral rotational group",
+        "degree": null,
+        "order": 24,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 6,
+          "3": 4,
+          "4": 3
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 9,
+          "3": 8,
+          "4": 6
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "icosahedral",
+      "inputPoints": [
+        [
+          0,
+          -1,
+          -1.618033988749895
+        ],
+        [
+          -1,
+          -1.618033988749895,
+          0
+        ],
+        [
+          -1.618033988749895,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1.618033988749895
+        ],
+        [
+          -1,
+          1.618033988749895,
+          0
+        ],
+        [
+          1.618033988749895,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1.618033988749895
+        ],
+        [
+          1,
+          -1.618033988749895,
+          0
+        ],
+        [
+          -1.618033988749895,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1.618033988749895
+        ],
+        [
+          1,
+          1.618033988749895,
+          0
+        ],
+        [
+          1.618033988749895,
+          0,
+          1
+        ]
+      ],
+      "expectedLabel": "I",
+      "expectedOrder": 60,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "icosahedral",
+        "symbol": "I",
+        "label": "I",
+        "name": "Icosahedral rotational group",
+        "degree": null,
+        "order": 60,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 15,
+          "3": 10,
+          "5": 6
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 15,
+          "3": 20,
+          "5": 24
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "single-point",
+      "inputPoints": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "expectedLabel": "SO(2)",
+      "expectedOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "axial-continuous",
+        "symbol": "\\mathrm{SO}(2)",
+        "label": "SO(2)",
+        "name": "Continuous axial rotation group",
+        "degree": null,
+        "order": null,
+        "continuous": true,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": null,
+        "axisSignature": {
+          "null": 1
+        },
+        "elementOrderSignature": null,
+        "tolerance": 1e-06,
+        "notes": [
+          "All rotation angles about one axis are allowed.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "unequal-antipodal",
+      "inputPoints": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          -1,
+          1
+        ]
+      ],
+      "expectedLabel": "SO(2)",
+      "expectedOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "axial-continuous",
+        "symbol": "\\mathrm{SO}(2)",
+        "label": "SO(2)",
+        "name": "Continuous axial rotation group",
+        "degree": null,
+        "order": null,
+        "continuous": true,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": null,
+        "axisSignature": {
+          "null": 1
+        },
+        "elementOrderSignature": null,
+        "tolerance": 1e-06,
+        "notes": [
+          "All rotation angles about one axis are allowed.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "equal-antipodal",
+      "inputPoints": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          -1,
+          2
+        ]
+      ],
+      "expectedLabel": "D∞",
+      "expectedOrder": null,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "dihedral-continuous",
+        "symbol": "D_{\\infty}",
+        "label": "D∞",
+        "name": "Continuous dihedral rotational group",
+        "degree": null,
+        "order": null,
+        "continuous": true,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": null,
+        "axisSignature": {
+          "null": 1
+        },
+        "elementOrderSignature": null,
+        "tolerance": 1e-06,
+        "notes": [
+          "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "weighted-tetrahedron",
+      "inputPoints": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258,
+          2
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258,
+          1
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258,
+          1
+        ],
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258,
+          1
+        ]
+      ],
+      "expectedLabel": "C3",
+      "expectedOrder": 3,
+      "passed": true,
+      "actual": {
+        "status": "classified",
+        "kind": "cyclic",
+        "symbol": "C_{3}",
+        "label": "C3",
+        "name": "Cyclic rotational group",
+        "degree": 3,
+        "order": 3,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "3": 1
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "3": 2
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "name": "empty",
+      "inputPoints": [],
+      "expectedLabel": "Unavailable",
+      "expectedOrder": 0,
+      "passed": true,
+      "actual": {
+        "status": "invalid",
+        "kind": "invalid",
+        "symbol": "\\text{unavailable}",
+        "label": "Unavailable",
+        "name": "Symmetry unavailable",
+        "order": 0,
+        "degree": null,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": false,
+        "axisSignature": {},
+        "tolerance": 1e-06,
+        "notes": [
+          "No valid constellation symmetry result is available.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    }
+  ],
+  "negativeTests": [
+    {
+      "name": "nonclosed-detected-set-remains-unclassified",
+      "passed": true,
+      "actual": {
+        "status": "unclassified",
+        "kind": "unknown",
+        "symbol": "\\text{unclassified}",
+        "label": "Unclassified",
+        "name": "Unclassified rotational symmetry",
+        "order": 3,
+        "degree": null,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": false,
+        "axisSignature": {
+          "3": 1
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The detected permutations are not closed under composition at this tolerance.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      },
+      "input": {
+        "status": "finite",
+        "rotationCount": 3,
+        "pointCount": 3,
+        "tolerance": 1e-06,
+        "axes": [
+          {
+            "order": 3,
+            "rotationCount": 2,
+            "continuous": false
+          }
+        ],
+        "rotations": [
+          {
+            "permutation": [
+              0,
+              1,
+              2
+            ],
+            "order": 1
+          },
+          {
+            "permutation": [
+              1,
+              0,
+              2
+            ],
+            "order": 2
+          },
+          {
+            "permutation": [
+              0,
+              2,
+              1
+            ],
+            "order": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "incorrect-axis-orders-remain-unclassified",
+      "passed": true,
+      "actual": {
+        "status": "unclassified",
+        "kind": "unknown",
+        "symbol": "\\text{unclassified}",
+        "label": "Unclassified",
+        "name": "Unclassified rotational symmetry",
+        "order": 4,
+        "degree": null,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "4": 1
+        },
+        "tolerance": 1e-06,
+        "notes": [
+          "The element orders do not agree with the cyclic subgroups described by the axes.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      },
+      "input": {
+        "status": "finite",
+        "rotationCount": 4,
+        "pointCount": 4,
+        "tolerance": 1e-06,
+        "axes": [
+          {
+            "order": 4,
+            "rotationCount": 3,
+            "continuous": false
+          }
+        ],
+        "rotations": [
+          {
+            "permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "order": 1
+          },
+          {
+            "permutation": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "order": 2
+          },
+          {
+            "permutation": [
+              2,
+              3,
+              0,
+              1
+            ],
+            "order": 2
+          },
+          {
+            "permutation": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "order": 2
+          }
+        ]
+      }
+    }
+  ],
+  "catalogue": [
+    {
+      "id": "ac-n2-t1",
+      "n": 2,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n3-t1",
+      "n": 3,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n4-t2",
+      "n": 4,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n5-t1",
+      "n": 5,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{5}",
+      "label": "D5",
+      "name": "Dihedral rotational group",
+      "degree": 5,
+      "order": 10,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 5,
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D5 denotes a proper rotation group of order 10.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n5-t1-manuscript",
+      "n": 5,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n6-t3",
+      "n": 6,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n7-t2",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{5}",
+      "label": "C5",
+      "name": "Cyclic rotational group",
+      "degree": 5,
+      "order": 5,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n7-t2-manuscript",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n8-t3",
+      "n": 8,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n8-t3-manuscript",
+      "n": 8,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{4}",
+      "label": "D4",
+      "name": "Dihedral rotational group",
+      "degree": 4,
+      "order": 8,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 4,
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D4 denotes a proper rotation group of order 8.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n9-t2",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{4}",
+      "label": "C4",
+      "name": "Cyclic rotational group",
+      "degree": 4,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n9-t2-manuscript",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{4}",
+      "label": "C4",
+      "name": "Cyclic rotational group",
+      "degree": 4,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n10-t3",
+      "n": 10,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{5}",
+      "label": "D5",
+      "name": "Dihedral rotational group",
+      "degree": 5,
+      "order": 10,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 5,
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D5 denotes a proper rotation group of order 10.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n10-t3-manuscript",
+      "n": 10,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{4}",
+      "label": "D4",
+      "name": "Dihedral rotational group",
+      "degree": 4,
+      "order": 8,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 4,
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D4 denotes a proper rotation group of order 8.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n11-t3",
+      "n": 11,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n12-t4-family",
+      "n": 12,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{5}",
+      "label": "D5",
+      "name": "Dihedral rotational group",
+      "degree": 5,
+      "order": 10,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 5,
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D5 denotes a proper rotation group of order 10.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-n12-t5",
+      "n": 12,
+      "status": "classified",
+      "kind": "icosahedral",
+      "symbol": "I",
+      "label": "I",
+      "name": "Icosahedral rotational group",
+      "degree": null,
+      "order": 60,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n2-t1",
+      "n": 2,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n3-t1",
+      "n": 3,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n4-t1",
+      "n": 4,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n5-t1",
+      "n": 5,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n6-t1",
+      "n": 6,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n7-t1",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{4}",
+      "label": "C4",
+      "name": "Cyclic rotational group",
+      "degree": 4,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n8-t1",
+      "n": 8,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n9-t1",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{5}",
+      "label": "C5",
+      "name": "Cyclic rotational group",
+      "degree": 5,
+      "order": 5,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n10-t1",
+      "n": 10,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n11-t1",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{6}",
+      "label": "C6",
+      "name": "Cyclic rotational group",
+      "degree": 6,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "6": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "6": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n12-t1",
+      "n": 12,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n4-t2",
+      "n": 4,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n8-t2",
+      "n": 8,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n9-t2",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n10-t2",
+      "n": 10,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{7}",
+      "label": "C7",
+      "name": "Cyclic rotational group",
+      "degree": 7,
+      "order": 7,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "7": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "7": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n11-t2",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n12-t2",
+      "n": 12,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n12-t3",
+      "n": 12,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n12-t3-phase-i",
+      "n": 12,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{4}",
+      "label": "D4",
+      "name": "Dihedral rotational group",
+      "degree": 4,
+      "order": 8,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 4,
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D4 denotes a proper rotation group of order 8.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "partition-n12-3x4-tetra",
+      "n": 12,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "partition-n12-2x4-1x4-tetra",
+      "n": 12,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "partition-n8-single-double-t2-sparse",
+      "n": 8,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "partition-n10-single-double-t2-sparse",
+      "n": 10,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-sparse-n11-2x2-1x7",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "gmax-n11-t3-certified",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n9-a0-b0",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n10-a0-b1",
+      "n": 10,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n11-a1-b1",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n11-a0-b2",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n12-a0-b3",
+      "n": 12,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "ac-order-c3-n12-m3-a0-b0",
+      "n": 12,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.4.1.2",
+      "n": 4,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.5.1.2",
+      "n": 5,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.6.1.3",
+      "n": 6,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.7.1.3",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{4}",
+      "label": "C4",
+      "name": "Cyclic rotational group",
+      "degree": 4,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.7.2.2",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{5}",
+      "label": "C5",
+      "name": "Cyclic rotational group",
+      "degree": 5,
+      "order": 5,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.8.1.4",
+      "n": 8,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.8.2.2",
+      "n": 8,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.9.1.4",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{5}",
+      "label": "C5",
+      "name": "Cyclic rotational group",
+      "degree": 5,
+      "order": 5,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "5": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "5": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.9.2.2",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.10.1.5",
+      "n": 10,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.10.2.3",
+      "n": 10,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{7}",
+      "label": "C7",
+      "name": "Cyclic rotational group",
+      "degree": 7,
+      "order": 7,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "7": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "7": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.11.1.5",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{6}",
+      "label": "C6",
+      "name": "Cyclic rotational group",
+      "degree": 6,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "6": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "6": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.11.2.3",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.11.3.2",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.12.1.6",
+      "n": 12,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.12.3.2",
+      "n": 12,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.13.1.6",
+      "n": 13,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{7}",
+      "label": "C7",
+      "name": "Cyclic rotational group",
+      "degree": 7,
+      "order": 7,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "7": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "7": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.13.2.4",
+      "n": 13,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{9}",
+      "label": "C9",
+      "name": "Cyclic rotational group",
+      "degree": 9,
+      "order": 9,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "9": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2,
+        "9": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.13.3.2",
+      "n": 13,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.14.1.7",
+      "n": 14,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.14.2.4",
+      "n": 14,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.14.3.2",
+      "n": 14,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.15.1.7",
+      "n": 15,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{8}",
+      "label": "C8",
+      "name": "Cyclic rotational group",
+      "degree": 8,
+      "order": 8,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "8": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2,
+        "8": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.15.2.4",
+      "n": 15,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.15.3.2",
+      "n": 15,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.16.1.8",
+      "n": 16,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.16.2.5",
+      "n": 16,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{11}",
+      "label": "C11",
+      "name": "Cyclic rotational group",
+      "degree": 11,
+      "order": 11,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "11": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "11": 10
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.16.3.3",
+      "n": 16,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.16.4.2",
+      "n": 16,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.17.1.8",
+      "n": 17,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{9}",
+      "label": "C9",
+      "name": "Cyclic rotational group",
+      "degree": 9,
+      "order": 9,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "9": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2,
+        "9": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.17.2.5",
+      "n": 17,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.17.3.3",
+      "n": 17,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.17.4.2",
+      "n": 17,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.18.1.9",
+      "n": 18,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.18.2.5",
+      "n": 18,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.18.3.3",
+      "n": 18,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.18.4.2",
+      "n": 18,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.19.1.9",
+      "n": 19,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{10}",
+      "label": "C10",
+      "name": "Cyclic rotational group",
+      "degree": 10,
+      "order": 10,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "10": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "5": 4,
+        "10": 4
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.19.2.6",
+      "n": 19,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{13}",
+      "label": "C13",
+      "name": "Cyclic rotational group",
+      "degree": 13,
+      "order": 13,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "13": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "13": 12
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.19.3.3",
+      "n": 19,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.19.4.2",
+      "n": 19,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.20.1.10",
+      "n": 20,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.20.2.6",
+      "n": 20,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.20.3.3",
+      "n": 20,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.20.4.2",
+      "n": 20,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.2.1",
+      "n": 2,
+      "status": "classified",
+      "kind": "dihedral-continuous",
+      "symbol": "D_{\\infty}",
+      "label": "D∞",
+      "name": "Continuous dihedral rotational group",
+      "degree": null,
+      "order": null,
+      "continuous": true,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": null,
+      "axisSignature": {
+        "null": 1
+      },
+      "elementOrderSignature": null,
+      "tolerance": 1e-06,
+      "notes": [
+        "The proper-rotation subgroup is SO(2) semidirect C2: arbitrary axial rotations and half-turns about every perpendicular axis.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.3.1",
+      "n": 3,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.4.2",
+      "n": 4,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.5.1",
+      "n": 5,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.6.3",
+      "n": 6,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.7.2",
+      "n": 7,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.8.3",
+      "n": 8,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{4}",
+      "label": "D4",
+      "name": "Dihedral rotational group",
+      "degree": 4,
+      "order": 8,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 4,
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D4 denotes a proper rotation group of order 8.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.9.2",
+      "n": 9,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.10.3",
+      "n": 10,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.11.3",
+      "n": 11,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.12.5",
+      "n": 12,
+      "status": "classified",
+      "kind": "icosahedral",
+      "symbol": "I",
+      "label": "I",
+      "name": "Icosahedral rotational group",
+      "degree": null,
+      "order": 60,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.13.3",
+      "n": 13,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.14.4",
+      "n": 14,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.15.3",
+      "n": 15,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.16.5",
+      "n": 16,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.17.4",
+      "n": 17,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.18.5",
+      "n": 18,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{3}",
+      "label": "D3",
+      "name": "Dihedral rotational group",
+      "degree": 3,
+      "order": 6,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D3 denotes a proper rotation group of order 6.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.19.4",
+      "n": 19,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{3}",
+      "label": "C3",
+      "name": "Cyclic rotational group",
+      "degree": 3,
+      "order": 3,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "3": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "3": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.20.5",
+      "n": 20,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.21.4",
+      "n": 21,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.22.5",
+      "n": 22,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.23.5",
+      "n": 23,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.24.7",
+      "n": 24,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.25.5",
+      "n": 25,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.26.6",
+      "n": 26,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.27.5",
+      "n": 27,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.28.6",
+      "n": 28,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.29.5",
+      "n": 29,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.30.7",
+      "n": 30,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.31.6",
+      "n": 31,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.32.7",
+      "n": 32,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{2}",
+      "label": "D2",
+      "name": "Dihedral rotational group",
+      "degree": 2,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D2 denotes a proper rotation group of order 4.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.33.6",
+      "n": 33,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.34.7",
+      "n": 34,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.35.6",
+      "n": 35,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.36.8",
+      "n": 36,
+      "status": "classified",
+      "kind": "tetrahedral",
+      "symbol": "T",
+      "label": "T",
+      "name": "Tetrahedral rotational group",
+      "degree": null,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3,
+        "3": 4
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.37.7",
+      "n": 37,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.38.7",
+      "n": 38,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.39.7",
+      "n": 39,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.40.8",
+      "n": 40,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{2}",
+      "label": "D2",
+      "name": "Dihedral rotational group",
+      "degree": 2,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D2 denotes a proper rotation group of order 4.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.41.7",
+      "n": 41,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.42.8",
+      "n": 42,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.43.7",
+      "n": 43,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.44.8",
+      "n": 44,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.45.8",
+      "n": 45,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.46.8",
+      "n": 46,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.47.8",
+      "n": 47,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.48.9",
+      "n": 48,
+      "status": "classified",
+      "kind": "octahedral",
+      "symbol": "O",
+      "label": "O",
+      "name": "Octahedral rotational group",
+      "degree": null,
+      "order": 24,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.49.8",
+      "n": 49,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.50.9",
+      "n": 50,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{6}",
+      "label": "D6",
+      "name": "Dihedral rotational group",
+      "degree": 6,
+      "order": 12,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 6,
+        "6": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 7,
+        "3": 2,
+        "6": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D6 denotes a proper rotation group of order 12.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.51.8",
+      "n": 51,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.52.9",
+      "n": 52,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.53.8",
+      "n": 53,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.54.9",
+      "n": 54,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{4}",
+      "label": "C4",
+      "name": "Cyclic rotational group",
+      "degree": 4,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "4": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1,
+        "4": 2
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.55.9",
+      "n": 55,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.56.9",
+      "n": 56,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.57.9",
+      "n": 57,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.58.9",
+      "n": 58,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.59.9",
+      "n": 59,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.60.9",
+      "n": 60,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.61.9",
+      "n": 61,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.62.10",
+      "n": 62,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.63.9",
+      "n": 63,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.64.10",
+      "n": 64,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.65.9",
+      "n": 65,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.66.10",
+      "n": 66,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.67.10",
+      "n": 67,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.68.10",
+      "n": 68,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.69.10",
+      "n": 69,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.70.10",
+      "n": 70,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.71.10",
+      "n": 71,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.72.10",
+      "n": 72,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.73.10",
+      "n": 73,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.74.11",
+      "n": 74,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.75.10",
+      "n": 75,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.76.11",
+      "n": 76,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.77.11",
+      "n": 77,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.78.11",
+      "n": 78,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.79.11",
+      "n": 79,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.80.11",
+      "n": 80,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.81.11",
+      "n": 81,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.82.11",
+      "n": 82,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.83.11",
+      "n": 83,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.84.12",
+      "n": 84,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{2}",
+      "label": "D2",
+      "name": "Dihedral rotational group",
+      "degree": 2,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D2 denotes a proper rotation group of order 4.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.85.11",
+      "n": 85,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.86.12",
+      "n": 86,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.87.11",
+      "n": 87,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.88.12",
+      "n": 88,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.89.12",
+      "n": 89,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.90.12",
+      "n": 90,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.91.12",
+      "n": 91,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.92.12",
+      "n": 92,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.93.12",
+      "n": 93,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.94.12",
+      "n": 94,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{1}",
+      "label": "C1",
+      "name": "Trivial rotational group",
+      "degree": 1,
+      "order": 1,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {},
+      "elementOrderSignature": {
+        "1": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.95.12",
+      "n": 95,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.96.13",
+      "n": 96,
+      "status": "classified",
+      "kind": "dihedral",
+      "symbol": "D_{2}",
+      "label": "D2",
+      "name": "Dihedral rotational group",
+      "degree": 2,
+      "order": 4,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 3
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 3
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "The notation D2 denotes a proper rotation group of order 4.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.97.12",
+      "n": 97,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.98.13",
+      "n": 98,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.99.12",
+      "n": 99,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    },
+    {
+      "id": "liege-acs.100.13",
+      "n": 100,
+      "status": "classified",
+      "kind": "cyclic",
+      "symbol": "C_{2}",
+      "label": "C2",
+      "name": "Cyclic rotational group",
+      "degree": 2,
+      "order": 2,
+      "continuous": false,
+      "numerical": true,
+      "properRotationsOnly": true,
+      "closureVerified": true,
+      "axisSignature": {
+        "2": 1
+      },
+      "elementOrderSignature": {
+        "1": 1,
+        "2": 1
+      },
+      "tolerance": 1e-06,
+      "notes": [
+        "The full finite permutation action contains identity and is closed under composition.",
+        "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+      ]
+    }
+  ],
+  "validatedUTC": "2026-10-28T19:44:12.755Z",
+  "catalogueSHA256": "9f7f72cf55f9c90f0cf813a6f86054937064d336cc3202af7c7c56ccb36beeb3",
+  "metadataOnlyUpdateCheck": {
+    "constellationsUnchanged": true,
+    "all192RuntimeClassificationsRechecked": true,
+    "date": "2026-10-28"
+  }
+}

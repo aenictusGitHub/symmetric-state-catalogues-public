@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "sourceSubspaceId": "radical-n13-k2-t3",
+  "n": 13,
+  "t": 3,
+  "k": 2,
+  "exactCrossCompressionChecks": [
+    {
+      "raisingPower": 0,
+      "diagonalPower": 0,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 1,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 2,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 0,
+      "diagonalPower": 3,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 0,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 1,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 1,
+      "diagonalPower": 2,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 2,
+      "diagonalPower": 0,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 2,
+      "diagonalPower": 1,
+      "exactCrossCompression": true
+    },
+    {
+      "raisingPower": 3,
+      "diagonalPower": 0,
+      "exactCrossCompression": true
+    }
+  ],
+  "exactFirstLegContractions": [
+    {
+      "ell": 1,
+      "allFirstLegContractionEntriesExactlyZero": true
+    },
+    {
+      "ell": 2,
+      "allFirstLegContractionEntriesExactlyZero": true
+    },
+    {
+      "ell": 3,
+      "allFirstLegContractionEntriesExactlyZero": true
+    }
+  ],
+  "rotatedComplexBasisNormError": 2.378828009777753e-16,
+  "rotatedWedgeSquaredNorm": 1.0,
+  "maximumRotatedPluckerResidual": 8.182674270850422e-18,
+  "rotatedFirstLegNormalizedResiduals": [
+    6.767254072531097e-17,
+    1.3585173829550946e-16,
+    1.7039668099502756e-16
+  ],
+  "scope": "Positive control for the necessary Young22 support and first-leg equations; not an N14 nonexistence proof."
+}

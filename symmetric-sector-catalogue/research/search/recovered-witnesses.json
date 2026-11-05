@@ -1,0 +1,2142 @@
+{
+  "method": "Complex Dicke coefficients; analytic-gradient L-BFGS-B multistart with purity formula. Independent full-Hilbert-space Pauli expectations with symmetric multiplicities. Sparse candidates additionally checked in exact SymPy arithmetic.",
+  "entries": [
+    {
+      "id": "n10-s4-min",
+      "n": 10,
+      "k": 4,
+      "mode": "min",
+      "value": "42",
+      "valueLatex": "\\simeq 42",
+      "numericValue": 41.999999999999986,
+      "decimal": 41.999999999999986,
+      "status": "numerical",
+      "stateName": "Numerically optimized representative",
+      "stateLatex": "\\sum_{r=0}^{10} c_r |D_{10}^{(r)}\\rangle",
+      "coefficients": [
+        [
+          -0.07925831676654857,
+          0.1150247468787315
+        ],
+        [
+          0.012248978404374904,
+          -0.19745978271785647
+        ],
+        [
+          -0.3336787609771276,
+          -0.0545466203846034
+        ],
+        [
+          0.5892552215506864,
+          -4.671791947845184e-17
+        ],
+        [
+          0.3521260414327098,
+          0.10014102599451276
+        ],
+        [
+          0.042662359916334415,
+          -0.08586790949553369
+        ],
+        [
+          0.09074821167774655,
+          0.060572407085200675
+        ],
+        [
+          -0.021599843427517175,
+          -0.084542999669599
+        ],
+        [
+          0.005729059310912903,
+          0.2922172930014231
+        ],
+        [
+          -0.15658797615302028,
+          0.07273767502949552
+        ],
+        [
+          0.44415564670604313,
+          0.06758115191749646
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": false,
+      "optimalityProven": false,
+      "independentPauliValue": 41.999999999999986,
+      "sectorVector": [
+        0.014311922200677785,
+        15.000000000000007,
+        22.940103581212128,
+        42.00000000000023,
+        105.54650177361077,
+        112.69226972559954,
+        104.94540104119005,
+        224.5314235696278,
+        278.5536816817985,
+        116.77630670476015
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 4.43787774346606e-07,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value to numerical precision. The search alone does not establish global optimality. A separate bound certificate is required for proven status."
+    },
+    {
+      "id": "n10-s8-max",
+      "n": 10,
+      "k": 8,
+      "mode": "max",
+      "value": "405",
+      "valueLatex": "405",
+      "numericValue": 405.0,
+      "decimal": 405.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{5}}{4}|D_{10}^{(1)}\\rangle + \\frac{\\sqrt{6}}{4}|D_{10}^{(5)}\\rangle + \\frac{\\sqrt{5}}{4}|D_{10}^{(9)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6123724356957945,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 404.99999999999994,
+      "sectorVector": [
+        -1.7763568394002505e-15,
+        15.000000000000014,
+        -5.684341886080802e-14,
+        90.00000000000023,
+        0.0,
+        270.0000000000018,
+        -3.637978807091713e-12,
+        405.00000000000364,
+        -1.8189894035458565e-12,
+        243.0000000000009
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.5540792571581915e-05,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "1": "sqrt(5)/4",
+        "5": "sqrt(6)/4",
+        "9": "sqrt(5)/4"
+      }
+    },
+    {
+      "id": "n10-s8-min",
+      "n": 10,
+      "k": 8,
+      "mode": "min",
+      "value": "21",
+      "valueLatex": "21",
+      "numericValue": 21.0,
+      "decimal": 21.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{6}}{3}|D_{10}^{(0)}\\rangle + \\frac{\\sqrt{3}}{3}|D_{10}^{(9)}\\rangle",
+      "coefficients": [
+        [
+          0.816496580927726,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5773502691896257,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 20.999999999999996,
+      "sectorVector": [
+        1.5999999999999996,
+        34.199999999999996,
+        37.33333333333337,
+        124.13333333333344,
+        134.39999999999782,
+        103.60000000000582,
+        99.19999999999709,
+        21.0,
+        239.4666666666635,
+        228.06666666666752
+      ],
+      "searchStarts": 284,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.1257153812418287e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(6)/3",
+        "9": "sqrt(3)/3"
+      }
+    },
+    {
+      "id": "n10-s9-max",
+      "n": 10,
+      "k": 9,
+      "mode": "max",
+      "value": "880/3",
+      "valueLatex": "\\frac{880}{3}",
+      "numericValue": 293.3333333333333,
+      "decimal": 293.3333333333333,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{1}{2}|D_{10}^{(2)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{10}^{(5)}\\rangle + \\frac{1}{2}|D_{10}^{(8)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 293.3333333333332,
+      "sectorVector": [
+        3.552713678800501e-15,
+        19.033333333333317,
+        37.333333333333314,
+        58.13333333333321,
+        90.66666666666742,
+        75.26666666666279,
+        90.66666666667152,
+        233.93333333332703,
+        293.33333333333576,
+        124.63333333333276
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 1.4028898248226016e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "2": "1/2",
+        "5": "sqrt(2)/2",
+        "8": "1/2"
+      }
+    },
+    {
+      "id": "n11-s10-max",
+      "n": 11,
+      "k": 10,
+      "mode": "max",
+      "value": "19459/35",
+      "valueLatex": "\\frac{19459}{35}",
+      "numericValue": 555.9714285714285,
+      "decimal": 555.9714285714285,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{2282}}{70}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{2618}}{70}|D_{11}^{(9)}\\rangle",
+      "coefficients": [
+        [
+          0.6824326235712107,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7309485031694876,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 555.9714285714289,
+      "sectorVector": [
+        0.17384489795918867,
+        26.621185306122428,
+        44.410187755102186,
+        108.97790693877505,
+        174.5115428571453,
+        148.40420571427967,
+        184.45690775510957,
+        183.0252734693886,
+        359.2937273469324,
+        555.9714285714326,
+        261.153789387753
+      ],
+      "searchStarts": 1050,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 6.879171121243313e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(2282)/70",
+        "9": "sqrt(2618)/70"
+      }
+    },
+    {
+      "id": "n11-s10-min",
+      "n": 11,
+      "k": 10,
+      "mode": "min",
+      "value": "11",
+      "valueLatex": "11",
+      "numericValue": 11.0,
+      "decimal": 11.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "1|D_{11}^{(0)}\\rangle",
+      "coefficients": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 11.0,
+      "sectorVector": [
+        11.0,
+        55.0,
+        165.0,
+        330.0,
+        462.0,
+        462.0,
+        330.0,
+        165.0,
+        55.0,
+        11.0,
+        1.0
+      ],
+      "searchStarts": 282,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 4.6014002121558846e-05,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "1"
+      }
+    },
+    {
+      "id": "n11-s4-min",
+      "n": 11,
+      "k": 4,
+      "mode": "min",
+      "value": "66",
+      "valueLatex": "\\simeq 66",
+      "numericValue": 65.99999999999997,
+      "decimal": 65.99999999999997,
+      "status": "numerical",
+      "stateName": "Numerically optimized representative",
+      "stateLatex": "\\sum_{r=0}^{11} c_r |D_{11}^{(r)}\\rangle",
+      "coefficients": [
+        [
+          0.0194426482071508,
+          -0.21514797294027524
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.5903779770410709,
+          0.30241336663726504
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.7164728418261168,
+          4.9116109073202656e-17
+        ],
+        [
+          -0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": false,
+      "optimalityProven": false,
+      "independentPauliValue": 65.99999999999997,
+      "sectorVector": [
+        1.2222222194096108,
+        18.333333333333343,
+        10.999999974686546,
+        66.00000000000023,
+        143.18654879808219,
+        402.58713766848086,
+        187.9327443954371,
+        253.0000000000009,
+        426.84503331765336,
+        283.07952899819065,
+        253.81345129473357
+      ],
+      "searchStarts": 58,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 4.4009733711081097e-07,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value to numerical precision. The search alone does not establish global optimality. A separate bound certificate is required for proven status."
+    },
+    {
+      "id": "n11-s6-max",
+      "n": 11,
+      "k": 6,
+      "mode": "max",
+      "value": "462",
+      "valueLatex": "462",
+      "numericValue": 462.0,
+      "decimal": 462.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "1|D_{11}^{(0)}\\rangle",
+      "coefficients": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 462.0,
+      "sectorVector": [
+        11.0,
+        55.0,
+        165.0,
+        330.0,
+        462.0,
+        462.0,
+        330.0,
+        165.0,
+        55.0,
+        11.0,
+        1.0
+      ],
+      "searchStarts": 58,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 3.853327179364425e-05,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "1"
+      }
+    },
+    {
+      "id": "n11-s6-min",
+      "n": 11,
+      "k": 6,
+      "mode": "min",
+      "value": "113.109043566",
+      "valueLatex": "\\simeq 113.109043566",
+      "numericValue": 113.1090435663468,
+      "decimal": 113.1090435663468,
+      "status": "numerical",
+      "stateName": "Numerically optimized representative",
+      "stateLatex": "\\sum_{r=0}^{11} c_r |D_{11}^{(r)}\\rangle",
+      "coefficients": [
+        [
+          -0.4863546496685766,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2609151148419338,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5760723489633521,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6029287738635656,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": false,
+      "optimalityProven": false,
+      "independentPauliValue": 113.1090435663468,
+      "sectorVector": [
+        0.0003937434780105775,
+        18.33770990217863,
+        33.22292780408259,
+        89.92352097996672,
+        122.41906859242272,
+        113.10904356634455,
+        251.90043175976461,
+        324.66552528761395,
+        401.1440341309317,
+        476.9642002638884,
+        215.3131439693184
+      ],
+      "searchStarts": 1050,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 1.724718943925274e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value to numerical precision. The search alone does not establish global optimality. A separate bound certificate is required for proven status."
+    },
+    {
+      "id": "n11-s7-max",
+      "n": 11,
+      "k": 7,
+      "mode": "max",
+      "value": "250060/517",
+      "valueLatex": "\\frac{250060}{517}",
+      "numericValue": 483.67504835589943,
+      "decimal": 483.67504835589943,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{8366}}{94}|D_{11}^{(1)}\\rangle + \\frac{\\sqrt{470}}{94}|D_{11}^{(8)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9730408576407765,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.23063280200722128,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 483.67504835589943,
+      "sectorVector": [
+        6.195481295526566,
+        24.615622042059357,
+        55.897636391072524,
+        146.05553040591258,
+        277.9519596142609,
+        402.5004321165252,
+        483.6750483559299,
+        342.3916622083134,
+        145.24767823089496,
+        107.43675322718991,
+        55.032196112310885
+      ],
+      "searchStarts": 1050,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.424177308903518e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "1": "sqrt(8366)/94",
+        "8": "sqrt(470)/94"
+      }
+    },
+    {
+      "id": "n11-s8-max",
+      "n": 11,
+      "k": 8,
+      "mode": "max",
+      "value": "5271/11",
+      "valueLatex": "\\frac{5271}{11}",
+      "numericValue": 479.1818181818182,
+      "decimal": 479.1818181818182,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "1|D_{11}^{(2)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 479.18181818181824,
+      "sectorVector": [
+        4.454545454545457,
+        18.345454545454544,
+        66.81818181818164,
+        141.49090909091046,
+        187.09090909090628,
+        242.07272727273084,
+        384.98181818180456,
+        479.18181818182256,
+        357.40000000000873,
+        141.909090909081,
+        23.254545454547042
+      ],
+      "searchStarts": 58,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.3358064037861872e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "2": "1"
+      }
+    },
+    {
+      "id": "n11-s8-min",
+      "n": 11,
+      "k": 8,
+      "mode": "min",
+      "value": "77",
+      "valueLatex": "77",
+      "numericValue": 77.0,
+      "decimal": 77.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{570}}{30}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{330}}{30}|D_{11}^{(10)}\\rangle",
+      "coefficients": [
+        [
+          0.7958224257542215,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6055300708194984,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 77.00000000000001,
+      "sectorVector": [
+        1.2222222222222232,
+        41.80000000000001,
+        40.333333333333144,
+        195.06666666666752,
+        207.3866666666654,
+        227.91999999999825,
+        239.06666666667297,
+        77.00000000000273,
+        58.91111111110513,
+        481.21333333333314,
+        477.0800000000054
+      ],
+      "searchStarts": 282,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 9.21771665284684e-06,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(570)/30",
+        "10": "sqrt(330)/30"
+      }
+    },
+    {
+      "id": "n11-s9-max",
+      "n": 11,
+      "k": 9,
+      "mode": "max",
+      "value": "134645/239",
+      "valueLatex": "\\frac{134645}{239}",
+      "numericValue": 563.36820083682,
+      "decimal": 563.36820083682,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{67159}}{478}|D_{11}^{(0)}\\rangle + \\frac{15 \\sqrt{717}}{478}|D_{11}^{(8)}\\rangle",
+      "coefficients": [
+        [
+          0.5421559318068054,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.84027789784493,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 563.3682008368202,
+      "sectorVector": [
+        0.008022841464137898,
+        18.543418994128828,
+        45.411757497243,
+        67.09923591228085,
+        147.4567099188207,
+        182.64994405813923,
+        110.80072445892802,
+        251.255651877751,
+        563.368200836816,
+        503.4517491577026,
+        156.9545844467275
+      ],
+      "searchStarts": 1050,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.8545678707661008e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(67159)/478",
+        "8": "15*sqrt(717)/478"
+      }
+    },
+    {
+      "id": "n12-s10-max",
+      "n": 12,
+      "k": 10,
+      "mode": "max",
+      "value": "1606",
+      "valueLatex": "1606",
+      "numericValue": 1606.0,
+      "decimal": 1606.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{7}}{5}|D_{12}^{(1)}\\rangle + \\frac{\\sqrt{11}}{5}|D_{12}^{(6)}\\rangle -  \\frac{\\sqrt{7}}{5}|D_{12}^{(11)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6633249580710799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 1606.0000000000005,
+      "sectorVector": [
+        0.0,
+        22.000000000000014,
+        -1.1368683772161603e-13,
+        99.00000000000045,
+        -9.094947017729282e-13,
+        836.0000000000036,
+        -7.275957614183426e-12,
+        759.0000000000291,
+        0.0,
+        1606.000000000029,
+        -1.4551915228366852e-11,
+        773.0000000000036
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 1.912600540183303e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      }
+    },
+    {
+      "id": "n12-s10-min",
+      "n": 12,
+      "k": 10,
+      "mode": "min",
+      "value": "594/19",
+      "valueLatex": "\\frac{594}{19}",
+      "numericValue": 31.263157894736842,
+      "decimal": 31.263157894736842,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{247}}{19}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{114}}{19}|D_{12}^{(11)}\\rangle",
+      "coefficients": [
+        [
+          0.8271701918685112,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5619514869490164,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 31.26315789473687,
+      "sectorVector": [
+        2.1274238227146807,
+        53.20221606648204,
+        64.59833795013844,
+        324.97229916897595,
+        359.80055401661593,
+        509.3518005540136,
+        522.1495844875753,
+        242.70083102490753,
+        199.88919667585287,
+        31.26315789477667,
+        899.4349030470767,
+        885.509695290868
+      ],
+      "searchStarts": 284,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 0.00021462162278413775,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(247)/19",
+        "11": "sqrt(114)/19"
+      }
+    },
+    {
+      "id": "n12-s11-max",
+      "n": 12,
+      "k": 11,
+      "mode": "max",
+      "value": "1270976/1191",
+      "valueLatex": "\\frac{1270976}{1191}",
+      "numericValue": 1067.150293870697,
+      "decimal": 1067.150293870697,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{680458}}{1191}|D_{12}^{(0)}\\rangle + \\frac{13 \\sqrt{4367}}{1191}|D_{12}^{(10)}\\rangle",
+      "coefficients": [
+        [
+          0.6926102281021039,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7213120489277519,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 1067.1502938706967,
+      "sectorVector": [
+        0.2117837738110424,
+        34.22045241039923,
+        53.62820483998735,
+        177.62972699512784,
+        293.6284283445966,
+        283.0177085362666,
+        372.3783336618799,
+        355.80138777563116,
+        261.00295550888404,
+        677.9395749031682,
+        1067.1502938706835,
+        518.3911493794876
+      ],
+      "searchStarts": 1052,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 0.00012885451116271995,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(680458)/1191",
+        "10": "13*sqrt(4367)/1191"
+      }
+    },
+    {
+      "id": "n12-s4-min",
+      "n": 12,
+      "k": 4,
+      "mode": "min",
+      "value": "99",
+      "valueLatex": "99",
+      "numericValue": 99.0,
+      "decimal": 99.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{7}}{5}|D_{12}^{(1)}\\rangle + \\frac{\\sqrt{11}}{5}|D_{12}^{(6)}\\rangle -  \\frac{\\sqrt{7}}{5}|D_{12}^{(11)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6633249580710799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 99.0000000000002,
+      "sectorVector": [
+        0.0,
+        22.000000000000014,
+        -1.1368683772161603e-13,
+        99.00000000000045,
+        -9.094947017729282e-13,
+        836.0000000000036,
+        -7.275957614183426e-12,
+        759.0000000000291,
+        0.0,
+        1606.000000000029,
+        -1.4551915228366852e-11,
+        773.0000000000036
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.4862057221857232e-06,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      }
+    },
+    {
+      "id": "n12-s6-max",
+      "n": 12,
+      "k": 6,
+      "mode": "max",
+      "value": "924",
+      "valueLatex": "924",
+      "numericValue": 924.0,
+      "decimal": 924.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "1|D_{12}^{(0)}\\rangle",
+      "coefficients": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 924.0,
+      "sectorVector": [
+        12.0,
+        66.0,
+        220.0,
+        495.0,
+        792.0,
+        924.0,
+        792.0,
+        495.0,
+        220.0,
+        66.0,
+        12.0,
+        1.0
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.162138817640467e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "1"
+      }
+    },
+    {
+      "id": "n12-s6-min",
+      "n": 12,
+      "k": 6,
+      "mode": "min",
+      "value": "142.687882136",
+      "valueLatex": "\\simeq 142.687882136",
+      "numericValue": 142.6878821358944,
+      "decimal": 142.6878821358944,
+      "status": "numerical",
+      "stateName": "Numerically optimized representative",
+      "stateLatex": "\\sum_{r=0}^{12} c_r |D_{12}^{(r)}\\rangle",
+      "coefficients": [
+        [
+          0.28154050874213593,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4119986019337018,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.40399449714268465,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4190000959912152,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.40399449714268465,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4119986019337018,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.28154050874213593,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": false,
+      "optimalityProven": false,
+      "independentPauliValue": 142.6878821358944,
+      "sectorVector": [
+        3.552713678800501e-15,
+        22.219948337638925,
+        9.400912924853401,
+        100.97841327339188,
+        222.47270436778308,
+        142.68788213591324,
+        549.7194679998793,
+        798.0955431696493,
+        241.68458549730713,
+        529.5139430214767,
+        1022.8676155099965,
+        455.3589837621039
+      ],
+      "searchStarts": 1052,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 4.157441296259594e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value to numerical precision. The search alone does not establish global optimality. A separate bound certificate is required for proven status."
+    },
+    {
+      "id": "n12-s7-max",
+      "n": 12,
+      "k": 7,
+      "mode": "max",
+      "value": "946",
+      "valueLatex": "946",
+      "numericValue": 946.0,
+      "decimal": 946.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "1|D_{12}^{(1)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 946.0000000000006,
+      "sectorVector": [
+        8.333333333333329,
+        33.00000000000006,
+        91.66666666666606,
+        220.00000000000364,
+        461.9999999999909,
+        770.0000000000218,
+        945.9999999999418,
+        825.0000000000582,
+        494.9999999998836,
+        194.33333333343035,
+        44.99999999991269,
+        4.666666666700621
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 1.2914999248316912e-05,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "1": "1"
+      }
+    },
+    {
+      "id": "n12-s8-max",
+      "n": 12,
+      "k": 8,
+      "mode": "max",
+      "value": "15405/11",
+      "valueLatex": "\\frac{15405}{11}",
+      "numericValue": 1400.4545454545455,
+      "decimal": 1400.4545454545455,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{7}}{4}|D_{12}^{(2)}\\rangle + \\frac{\\sqrt{2}}{4}|D_{12}^{(6)}\\rangle + \\frac{\\sqrt{7}}{4}|D_{12}^{(10)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3535533905932738,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6614378277661477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 1400.4545454545457,
+      "sectorVector": [
+        0.0,
+        22.0,
+        1.1368683772161603e-13,
+        205.90909090909054,
+        -1.8189894035458565e-12,
+        408.3636363636415,
+        -1.4551915228366852e-11,
+        1400.4545454545878,
+        -5.820766091346741e-11,
+        1178.363636363676,
+        -5.820766091346741e-11,
+        879.9090909090974
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 3.5289589733531066e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "2": "sqrt(7)/4",
+        "6": "sqrt(2)/4",
+        "10": "sqrt(7)/4"
+      }
+    },
+    {
+      "id": "n12-s8-min",
+      "n": 12,
+      "k": 8,
+      "mode": "min",
+      "value": "223.307697898",
+      "valueLatex": "\\simeq 223.307697898",
+      "numericValue": 223.30769789775897,
+      "decimal": 223.30769789775897,
+      "status": "numerical",
+      "stateName": "Numerically optimized representative",
+      "stateLatex": "\\sum_{r=0}^{12} c_r |D_{12}^{(r)}\\rangle",
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2698136900462214,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5511240512973504,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6979890897422282,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.36915319766467286,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": false,
+      "optimalityProven": false,
+      "independentPauliValue": 223.30769789775897,
+      "sectorVector": [
+        0.0012327211169012031,
+        28.258939022503228,
+        64.79420193558758,
+        142.4361314020066,
+        263.3589311392925,
+        305.3554253167604,
+        258.68987177287636,
+        223.30769789771875,
+        481.6760682944441,
+        992.5946841395344,
+        979.4796941367676,
+        355.0471222213928
+      ],
+      "searchStarts": 1052,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.1270972524177358e-05,
+      "searchOptimizerSuccess": false,
+      "notes": "Explicit state attains the displayed value to numerical precision. The search alone does not establish global optimality. A separate bound certificate is required for proven status."
+    },
+    {
+      "id": "n12-s9-max",
+      "n": 12,
+      "k": 9,
+      "mode": "max",
+      "value": "1280",
+      "valueLatex": "1280",
+      "numericValue": 1280.0,
+      "decimal": 1280.0,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{1}{2}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{12}^{(6)}\\rangle -  \\frac{1}{2}|D_{12}^{(12)}\\rangle",
+      "coefficients": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 1280.0,
+      "sectorVector": [
+        5.329070518200751e-15,
+        23.454545454545396,
+        5.115907697472721e-13,
+        204.99999999999704,
+        1.0913936421275139e-11,
+        403.2727272727061,
+        384.00000000001455,
+        347.7272727272648,
+        1280.0000000000582,
+        223.45454545450048,
+        384.00000000004366,
+        844.0909090908881
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 7.845029343216615e-05,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "1/2",
+        "6": "sqrt(2)/2",
+        "12": "-1/2"
+      }
+    },
+    {
+      "id": "n9-s6-min",
+      "n": 9,
+      "k": 6,
+      "mode": "min",
+      "value": "420/11",
+      "valueLatex": "\\frac{420}{11}",
+      "numericValue": 38.18181818181818,
+      "decimal": 38.18181818181818,
+      "status": "numerical",
+      "stateName": "Recovered sparse representative",
+      "stateLatex": "\\frac{\\sqrt{286}}{22}|D_{9}^{(0)}\\rangle + \\frac{3 \\sqrt{22}}{22}|D_{9}^{(8)}\\rangle",
+      "coefficients": [
+        [
+          0.7687061147858074,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6396021490668313,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "coefficientConvention": "Normalized amplitudes ordered r=0,...,n in the Dicke basis. Each pair is [real, imaginary].",
+      "attainmentVerifiedExact": true,
+      "optimalityProven": false,
+      "independentPauliValue": 38.18181818181818,
+      "sectorVector": [
+        0.6694214876033051,
+        24.694214876033072,
+        21.520661157024733,
+        63.52066115702519,
+        71.85123966942092,
+        38.1818181818187,
+        36.5950413223145,
+        128.60330578512276,
+        125.36363636363672
+      ],
+      "searchStarts": 60,
+      "searchSeed": 20261028,
+      "searchGradientNorm": 2.8512029734576193e-06,
+      "searchOptimizerSuccess": true,
+      "notes": "Explicit state attains the displayed value exactly, as verified symbolically. The search alone does not establish global optimality. A separate bound certificate is required for proven status.",
+      "exactCoefficients": {
+        "0": "sqrt(286)/22",
+        "8": "3*sqrt(22)/22"
+      }
+    }
+  ]
+}

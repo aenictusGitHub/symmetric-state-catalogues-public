@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "arithmetic": "exact SymPy algebraic numbers",
+  "minimumN": 2,
+  "maximumN": 6,
+  "parameterCases": 25,
+  "hilbertSchmidtGramEntries": 959,
+  "productScalarTraceChecks": 1732,
+  "forbiddenHighRankProductComponents": 2313,
+  "rectangularSixJEigenvalueChecks": 186,
+  "coversBothShiftParities": true,
+  "scope": "Independent convention and normalization audit. The representation-theoretic proof, not these finite checks, establishes the bound for every N,t,k.",
+  "runtimeSeconds": 5.718227863311768,
+  "cases": [
+    {
+      "N": 2,
+      "shift": 0,
+      "targetDimension": 3,
+      "operatorsChecked": 4
+    },
+    {
+      "N": 2,
+      "shift": 1,
+      "targetDimension": 2,
+      "operatorsChecked": 2
+    },
+    {
+      "N": 2,
+      "shift": 2,
+      "targetDimension": 1,
+      "operatorsChecked": 3
+    },
+    {
+      "N": 3,
+      "shift": 0,
+      "targetDimension": 4,
+      "operatorsChecked": 4
+    },
+    {
+      "N": 3,
+      "shift": 1,
+      "targetDimension": 3,
+      "operatorsChecked": 6
+    },
+    {
+      "N": 3,
+      "shift": 2,
+      "targetDimension": 2,
+      "operatorsChecked": 3
+    },
+    {
+      "N": 3,
+      "shift": 3,
+      "targetDimension": 1,
+      "operatorsChecked": 4
+    },
+    {
+      "N": 4,
+      "shift": 0,
+      "targetDimension": 5,
+      "operatorsChecked": 9
+    },
+    {
+      "N": 4,
+      "shift": 1,
+      "targetDimension": 4,
+      "operatorsChecked": 6
+    },
+    {
+      "N": 4,
+      "shift": 2,
+      "targetDimension": 3,
+      "operatorsChecked": 8
+    },
+    {
+      "N": 4,
+      "shift": 3,
+      "targetDimension": 2,
+      "operatorsChecked": 4
+    },
+    {
+      "N": 4,
+      "shift": 4,
+      "targetDimension": 1,
+      "operatorsChecked": 5
+    },
+    {
+      "N": 5,
+      "shift": 0,
+      "targetDimension": 6,
+      "operatorsChecked": 9
+    },
+    {
+      "N": 5,
+      "shift": 1,
+      "targetDimension": 5,
+      "operatorsChecked": 12
+    },
+    {
+      "N": 5,
+      "shift": 2,
+      "targetDimension": 4,
+      "operatorsChecked": 8
+    },
+    {
+      "N": 5,
+      "shift": 3,
+      "targetDimension": 3,
+      "operatorsChecked": 10
+    },
+    {
+      "N": 5,
+      "shift": 4,
+      "targetDimension": 2,
+      "operatorsChecked": 5
+    },
+    {
+      "N": 5,
+      "shift": 5,
+      "targetDimension": 1,
+      "operatorsChecked": 6
+    },
+    {
+      "N": 6,
+      "shift": 0,
+      "targetDimension": 7,
+      "operatorsChecked": 16
+    },
+    {
+      "N": 6,
+      "shift": 1,
+      "targetDimension": 6,
+      "operatorsChecked": 12
+    },
+    {
+      "N": 6,
+      "shift": 2,
+      "targetDimension": 5,
+      "operatorsChecked": 15
+    },
+    {
+      "N": 6,
+      "shift": 3,
+      "targetDimension": 4,
+      "operatorsChecked": 10
+    },
+    {
+      "N": 6,
+      "shift": 4,
+      "targetDimension": 3,
+      "operatorsChecked": 12
+    },
+    {
+      "N": 6,
+      "shift": 5,
+      "targetDimension": 2,
+      "operatorsChecked": 6
+    },
+    {
+      "N": 6,
+      "shift": 6,
+      "targetDimension": 1,
+      "operatorsChecked": 7
+    }
+  ]
+}

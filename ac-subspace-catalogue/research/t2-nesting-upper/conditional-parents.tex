@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Creation and annihilation parents: a nesting derivation of the existing second-order bounds}
+\author{}\date{}\maketitle
+This note derives the established bounds from structured conditional
+parents. It does not assert a stronger unrestricted upper bound.
+
+Let $\mathcal C\subset\operatorname{Sym}^N(\mathbb C^2)$ be a
+$k$-dimensional second-order AC subspace with isometry $U$, and put
+$j=N/2$, $c=j(j+1)/3$. Thus
+\[
+ U^\dagger J_aU=0,\qquad U^\dagger J_aJ_bU=c\delta_{ab}I_k.
+\]
+Use Schwinger bosons $a,b$ with total occupation $N=2j$,
+$J_z=(a^\dagger a-b^\dagger b)/2$ and $J_+=a^\dagger b$.
+
+\section*{Two structured parents}
+Define creation and annihilation isometries, with columns grouped by
+spinor label,
+\[
+ E_+=\frac{1}{\sqrt{j+1}}(a^\dagger U,\ b^\dagger U)
+ :\mathbb C^2\otimes\mathbb C^k\longrightarrow V_{j+1/2},
+\]
+\[
+ E_-=\frac{1}{\sqrt j}(aU,\ bU)
+ :\mathbb C^2\otimes\mathbb C^k\longrightarrow V_{j-1/2}.
+\]
+The first-order AC equations imply $E_\pm^\dagger E_\pm=I_{2k}$.
+The second-order equations give
+\[
+ E_+^\dagger(J_x',J_y',J_z')E_+
+ =\alpha_+(S_x,S_y,S_z)\otimes I_k,
+ \quad\alpha_+=\frac{N+3}{3},
+\tag{1}
+\]
+\[
+ E_-^\dagger(J_x',J_y',J_z')E_-
+ =\alpha_-(S_x,-S_y,S_z)\otimes I_k,
+ \quad\alpha_-=\frac{N-1}{3},
+\tag{2}
+\]
+where $S_a=\sigma_a/2$. Conjugating the spinor factor of (2) by a
+half-turn about $y$ turns the triple into $-\alpha_-(S_x,S_y,S_z)$.
+The sign/orientation is essential: the annihilation parent carries the
+dual spinor compression. Neither parent is a first-order AC subspace.
+They instead have fully prescribed nonzero spin compressions.
+
+For clarity, the diagonal $z$ entries follow directly from
+\[
+ aJ_z'a^\dagger=(j+J_z+1)(J_z+1/2),\qquad
+ a^\dagger J_z'a=(j+J_z)(J_z-1/2),
+\]
+whose compressions, after normalization, are respectively
+\[
+ \frac{c+(j+1)/2}{j+1}=\frac{N+3}{6},\qquad
+ \frac{c-j/2}{j}=\frac{N-1}{6}.
+\]
+The opposite spinor labels give their negatives. The nonzero raising
+cross entries are supplied by
+\[
+ aJ_+'b^\dagger=(j+1)^2-J_z^2,\qquad
+ b^\dagger J_+'a=j^2-J_z^2.
+\]
+The reverse cross entries are $J_+^2$ and compress to zero; diagonal
+raising entries are linear combinations of $J_+$ and $J_+J_z$ and
+also compress to zero. This proves (1) and (2) for arbitrary complex
+AC2 subspaces, without a symmetry assumption.
+
+\section*{Annihilation parent gives $4k\le N-2$}
+Couple the physical spin $J=j-1/2=(N-1)/2$ to an auxiliary spin one,
+and put $X=\mathbf J'\cdot\mathbf T$. On the $6k$-dimensional
+structured parent times the auxiliary space, its compression is unitarily
+similar to $-\alpha_-\mathbf S\cdot\mathbf T\otimes I_k$.
+Its two eigenvalues are
+\[
+ -\alpha_-/2\quad\text{with multiplicity }4k,
+ \qquad \alpha_-\quad\text{with multiplicity }2k.
+\]
+The ambient $X$ has eigenvalues and multiplicities
+\[
+\begin{array}{c|ccc}
+L&J-1&J&J+1\\\hline
+X_L&-(J+1)&-1&J\\
+2L+1&N-2&N&N+2.
+\end{array}
+\]
+For $N\ge8$, $-\alpha_-/2=-(N-1)/6<-1$.
+Cauchy interlacing therefore forces the $4k$ compression eigenvalues
+below $-1$ to fit into the ambient lowest eigenspace of dimension $N-2$:
+\[
+ \boxed{4k\le N-2\qquad(N\ge8).}
+\]
+
+\section*{Creation parent gives $5k\le N+5$}
+Now couple physical spin $J=j+1/2=(N+1)/2$ to auxiliary spin $s=3/2$.
+The compression of $X=\mathbf J'\cdot\mathbf T$ is
+$\alpha_+\mathbf S\cdot\mathbf T\otimes I_k$. Its eigenvalues are
+\[
+ 3\alpha_+/4=\frac{N+3}{4}\quad\text{with multiplicity }5k,
+ \qquad -5\alpha_+/4\quad\text{with multiplicity }3k.
+\]
+For $N\ge2$, the two highest ambient eigenvalues are
+\[
+ X_{J+s}=\frac{3J}{2},\qquad X_{J+s-1}=\frac J2-\frac32=\frac{N-5}{4}.
+\]
+The positive compression eigenvalue is strictly above the second of these.
+Only the ambient top total-spin sector can lie at or above it. Its
+dimension is
+\[
+ 2(J+s)+1=N+5.
+\]
+Interlacing therefore gives
+\[
+ \boxed{5k\le N+5.}
+\]
+Combined with the annihilation result, this recovers
+\[
+ K(N,2)\le\min\left\{\left\lfloor\frac{N-2}{4}\right\rfloor,
+                         \left\lfloor\frac{N+5}{5}\right\rfloor\right\}
+ \qquad(N\ge8).
+\]
+This is an alternative derivation of the existing inequalities, not an
+improvement to their numerical values.
+
+\section*{Other auxiliary spins and the limits of this calculation}
+For an arbitrary auxiliary spin $s$, the creation-parent compression
+has eigenvalues
+\[
+ \alpha_+s/2\ (\text{multiplicity }(2s+2)k),\qquad
+ -\alpha_+(s+1)/2\ (\text{multiplicity }2sk).
+\]
+The annihilation-parent compression has eigenvalues
+\[
+ -\alpha_-s/2\ (\text{multiplicity }(2s+2)k),\qquad
+ \alpha_-(s+1)/2\ (\text{multiplicity }2sk).
+\]
+The ambient eigenvalues are exactly
+\[
+ \frac{L(L+1)-J(J+1)-s(s+1)}2,
+ \qquad L=|J-s|,\ldots,J+s,
+\]
+with multiplicity $2L+1$. Thus every interlacing bound from these
+parents and a single irreducible auxiliary spin is computable with
+rational arithmetic.
+The accompanying finite scan checks all four endpoint interlacing counts
+for $8\le N\le200$ and $1/2\le s\le N+2$. None improves the displayed
+combined bound. This finite check is not an all-$N$ or all-auxiliary-space
+optimality theorem.
+\end{document}

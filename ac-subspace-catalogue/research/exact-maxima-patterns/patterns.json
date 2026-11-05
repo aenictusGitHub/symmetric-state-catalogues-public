@@ -1,0 +1,1327 @@
+{
+  "catalogueSHA256": "8b3b961a0fae837f567f3b97a3ae4c155e07057ae8b064bf3445c5b549875c6d",
+  "entries": 161,
+  "positiveExactMaxima": 67,
+  "provedEmpty": 60,
+  "unsettled": 34,
+  "exactPositiveCountByOrder": {
+    "1": 25,
+    "2": 17,
+    "3": 13,
+    "4": 7,
+    "5": 5,
+    "6": 0,
+    "7": 0
+  },
+  "plateausAtOrdersAtLeastTwo": [
+    {
+      "n": 6,
+      "orders": [
+        2,
+        3
+      ],
+      "k": 1
+    },
+    {
+      "n": 8,
+      "orders": [
+        2,
+        3
+      ],
+      "k": 1
+    },
+    {
+      "n": 12,
+      "orders": [
+        3,
+        4,
+        5
+      ],
+      "k": 1
+    },
+    {
+      "n": 13,
+      "orders": [
+        2,
+        3
+      ],
+      "k": 2
+    },
+    {
+      "n": 14,
+      "orders": [
+        3,
+        4
+      ],
+      "k": 1
+    },
+    {
+      "n": 16,
+      "orders": [
+        4,
+        5
+      ],
+      "k": 1
+    },
+    {
+      "n": 18,
+      "orders": [
+        4,
+        5
+      ],
+      "k": 1
+    },
+    {
+      "n": 20,
+      "orders": [
+        4,
+        5
+      ],
+      "k": 1
+    }
+  ],
+  "thirdOrderFiniteFit": {
+    "formula": "floor((N-1)/6)",
+    "minimumN": 10,
+    "matchingProvedSizes": [
+      10,
+      11,
+      12,
+      13,
+      16,
+      17,
+      18
+    ],
+    "exactCounterexamples": [
+      {
+        "n": 14,
+        "provedMaximum": 1,
+        "fittedValue": 2
+      },
+      {
+        "n": 15,
+        "provedMaximum": 1,
+        "fittedValue": 2
+      },
+      {
+        "n": 19,
+        "provedMaximum": 2,
+        "fittedValue": 3
+      },
+      {
+        "n": 20,
+        "provedMaximum": 2,
+        "fittedValue": 3
+      }
+    ],
+    "universalExtensionRuledOutAtN": 55,
+    "fittedValue": 9,
+    "newRigorousUpper": 8
+  },
+  "newGeneralBounds": [
+    {
+      "minimumN": 6,
+      "minimumOrder": 3,
+      "bound": "7k<=N+7"
+    },
+    {
+      "minimumN": 9,
+      "minimumOrder": 4,
+      "bound": "10k<=N+10"
+    },
+    {
+      "minimumN": 16,
+      "minimumOrder": 4,
+      "bound": "7k<=N-5"
+    },
+    {
+      "minimumN": 19,
+      "minimumOrder": 3,
+      "bound": "6k<=N-4"
+    }
+  ],
+  "additionalSettledCells": [
+    {
+      "n": 18,
+      "t": 4,
+      "previousInterval": [
+        1,
+        2
+      ],
+      "newInterval": [
+        1,
+        1
+      ]
+    }
+  ],
+  "newSettledCell": {
+    "n": 16,
+    "t": 6,
+    "previousInterval": [
+      0,
+      1
+    ],
+    "newInterval": [
+      0,
+      0
+    ]
+  },
+  "entriesData": [
+    {
+      "n": 1,
+      "t": 1,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 2,
+      "t": 1,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 2,
+      "t": 2,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 3,
+      "t": 1,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 3,
+      "t": 2,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 3,
+      "t": 3,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 4,
+      "t": 1,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 4,
+      "t": 2,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 4,
+      "t": 3,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 4,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 5,
+      "t": 1,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 5,
+      "t": 2,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 5,
+      "t": 3,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 5,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 5,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 6,
+      "t": 1,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 6,
+      "t": 2,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 6,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 6,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 6,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 6,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 7,
+      "t": 1,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 7,
+      "t": 2,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 7,
+      "t": 3,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 7,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 7,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 7,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 7,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 8,
+      "t": 1,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 8,
+      "t": 2,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 8,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 8,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 8,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 8,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 8,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 9,
+      "t": 1,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 9,
+      "t": 2,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 9,
+      "t": 3,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 9,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 9,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 9,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 9,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 10,
+      "t": 1,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 10,
+      "t": 2,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 10,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 10,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 10,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 10,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 10,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 11,
+      "t": 1,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 11,
+      "t": 2,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 11,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 11,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 11,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 11,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 11,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 12,
+      "t": 1,
+      "lower": 5,
+      "upper": 5,
+      "status": "proven"
+    },
+    {
+      "n": 12,
+      "t": 2,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 12,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 12,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 12,
+      "t": 5,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 12,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 12,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 13,
+      "t": 1,
+      "lower": 5,
+      "upper": 5,
+      "status": "proven"
+    },
+    {
+      "n": 13,
+      "t": 2,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 13,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 13,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 13,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 13,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 13,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 14,
+      "t": 1,
+      "lower": 5,
+      "upper": 5,
+      "status": "proven"
+    },
+    {
+      "n": 14,
+      "t": 2,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 14,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 14,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 14,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 14,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 14,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 15,
+      "t": 1,
+      "lower": 6,
+      "upper": 6,
+      "status": "proven"
+    },
+    {
+      "n": 15,
+      "t": 2,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 15,
+      "t": 3,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 15,
+      "t": 4,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 15,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 15,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 15,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 16,
+      "t": 1,
+      "lower": 6,
+      "upper": 6,
+      "status": "proven"
+    },
+    {
+      "n": 16,
+      "t": 2,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 16,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 16,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 16,
+      "t": 5,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 16,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 16,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 17,
+      "t": 1,
+      "lower": 6,
+      "upper": 6,
+      "status": "proven"
+    },
+    {
+      "n": 17,
+      "t": 2,
+      "lower": 3,
+      "upper": 3,
+      "status": "proven"
+    },
+    {
+      "n": 17,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 17,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 17,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 17,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 17,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 18,
+      "t": 1,
+      "lower": 7,
+      "upper": 7,
+      "status": "proven"
+    },
+    {
+      "n": 18,
+      "t": 2,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 18,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 18,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 18,
+      "t": 5,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 18,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 18,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 19,
+      "t": 1,
+      "lower": 7,
+      "upper": 7,
+      "status": "proven"
+    },
+    {
+      "n": 19,
+      "t": 2,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 19,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 19,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 19,
+      "t": 5,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 19,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 19,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 20,
+      "t": 1,
+      "lower": 7,
+      "upper": 7,
+      "status": "proven"
+    },
+    {
+      "n": 20,
+      "t": 2,
+      "lower": 4,
+      "upper": 4,
+      "status": "proven"
+    },
+    {
+      "n": 20,
+      "t": 3,
+      "lower": 2,
+      "upper": 2,
+      "status": "proven"
+    },
+    {
+      "n": 20,
+      "t": 4,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 20,
+      "t": 5,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 20,
+      "t": 6,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 20,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "status": "impossible"
+    },
+    {
+      "n": 21,
+      "t": 1,
+      "lower": 8,
+      "upper": 8,
+      "status": "proven"
+    },
+    {
+      "n": 21,
+      "t": 2,
+      "lower": 0,
+      "upper": 4,
+      "status": "range"
+    },
+    {
+      "n": 21,
+      "t": 3,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 21,
+      "t": 4,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 21,
+      "t": 5,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 21,
+      "t": 6,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 21,
+      "t": 7,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 1,
+      "lower": 8,
+      "upper": 8,
+      "status": "proven"
+    },
+    {
+      "n": 22,
+      "t": 2,
+      "lower": 3,
+      "upper": 5,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 3,
+      "lower": 1,
+      "upper": 3,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 4,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 5,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 6,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 22,
+      "t": 7,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 1,
+      "lower": 8,
+      "upper": 8,
+      "status": "proven"
+    },
+    {
+      "n": 23,
+      "t": 2,
+      "lower": 0,
+      "upper": 5,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 3,
+      "lower": 0,
+      "upper": 3,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 4,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 5,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 6,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 23,
+      "t": 7,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 24,
+      "t": 1,
+      "lower": 9,
+      "upper": 9,
+      "status": "proven"
+    },
+    {
+      "n": 24,
+      "t": 2,
+      "lower": 5,
+      "upper": 5,
+      "status": "proven"
+    },
+    {
+      "n": 24,
+      "t": 3,
+      "lower": 2,
+      "upper": 3,
+      "status": "range"
+    },
+    {
+      "n": 24,
+      "t": 4,
+      "lower": 1,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 24,
+      "t": 5,
+      "lower": 1,
+      "upper": 1,
+      "status": "proven"
+    },
+    {
+      "n": 24,
+      "t": 6,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 24,
+      "t": 7,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 1,
+      "lower": 12,
+      "upper": 12,
+      "status": "proven"
+    },
+    {
+      "n": 35,
+      "t": 2,
+      "lower": 5,
+      "upper": 8,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 3,
+      "lower": 0,
+      "upper": 5,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 4,
+      "lower": 0,
+      "upper": 3,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 5,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 6,
+      "lower": 0,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 35,
+      "t": 7,
+      "lower": 0,
+      "upper": 1,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 1,
+      "lower": 15,
+      "upper": 15,
+      "status": "proven"
+    },
+    {
+      "n": 42,
+      "t": 2,
+      "lower": 6,
+      "upper": 9,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 3,
+      "lower": 2,
+      "upper": 6,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 4,
+      "lower": 1,
+      "upper": 4,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 5,
+      "lower": 1,
+      "upper": 3,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 6,
+      "lower": 1,
+      "upper": 2,
+      "status": "range"
+    },
+    {
+      "n": 42,
+      "t": 7,
+      "lower": 1,
+      "upper": 2,
+      "status": "range"
+    }
+  ],
+  "unroundedPackingEquality": {
+    "t1": [
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    "t2": [
+      [
+        7,
+        2
+      ]
+    ],
+    "t3": [
+      [
+        6,
+        1
+      ]
+    ],
+    "t4": []
+  }
+}

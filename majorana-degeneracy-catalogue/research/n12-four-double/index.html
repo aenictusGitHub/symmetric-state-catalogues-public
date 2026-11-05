@@ -1,0 +1,117 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Twelve qubits, four double points · Partial exclusion</title><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><script defer src="../../vendor/katex/katex.min.js"></script><style>body{margin:0;background:#f7f5ee;color:#28332f;font:17px/1.75 system-ui,sans-serif}main{max-width:960px;margin:45px auto;padding:0 28px 70px}h1,h2{font-family:Georgia,serif;line-height:1.25;color:#342d26}h1{font-size:2.2rem}h2{margin-top:2.4em}a{color:#814426;text-underline-offset:4px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:#814426}.status{border-left:4px solid #a76a2f;background:#eee8db;padding:18px 24px;margin:24px 0 36px}.status strong{display:block;color:#865b24}.status p{margin:8px 0 0}.status>.math{font-size:1.2rem}.math[data-display=true]{overflow-x:auto;max-width:100%;padding:10px 0}.katex-display{margin:.4em 0}code{font-size:.85em;overflow-wrap:anywhere}li{margin:.9em 0}footer{border-top:1px solid #ccc5b8;margin-top:35px;padding-top:15px;color:#68716c;font-size:.8rem}@media(max-width:600px){main{padding:0 18px}h1{font-size:1.75rem}body{font-size:16px}}</style><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-tex]').forEach(el=>{el.innerHTML=katex.renderToString(el.dataset.tex,{displayMode:el.dataset.display==='true',throwOnError:false,strict:'ignore'});});});</script></head><body><main><p class="eyebrow">Majorana catalogue · Focused case study</p><a href="../../index.html#n=12&amp;partition=2-2-2-2-1-1-1-1&amp;state=partition-n12-2x4-1x4-tetra">← Return to the selected partition</a><div class="status"><strong>Open in general</strong><span class="math" data-tex="2\leq t_{\max}(12,(2^4,1^4))\leq3"></span><p>The proof below excludes a geometric subfamily. It does not prove maximum two for the full partition.</p></div><h1>A rigorous obstruction when the four doubled points form antipodal pairs</h1>
+<p>The result proved here is restricted: a pure symmetric 12-qubit state of full
+Majorana partition <span class="math" data-tex="(2,2,2,2,1,1,1,1)" data-display="false">(2,2,2,2,1,1,1,1)</span> cannot be 3-anticoherent if its four doubled
+points form two antipodal pairs. The four simple points are unrestricted. This
+<strong>does not</strong> settle the partition for arbitrary doubled-point geometry.</p>
+<p>The proof uses exact rational polynomial identities and real-root counts. Run
+<code>python verify-antipodal-obstruction.py</code> from this directory (SymPy is required).
+The output is <code>antipodal-obstruction-verification.json</code>. The verifier reconstructs
+its matrices and equations rather than importing the discovery scripts.</p>
+<h2>1. Complete normal form for the stated family</h2>
+<p>Two distinct unoriented antipodal axes lie in a plane. A spatial rotation sends
+that plane to the equator. A further rotation about the polar axis places the
+four points at <span class="math" data-tex="\pm \exp(i\theta ), \pm \exp(-i\theta )" data-display="false">\pm \exp(i\theta ), \pm \exp(-i\theta )</span> in the root coordinate. Distinctness gives
+<span class="math" data-tex="0&lt;\theta &lt;\pi /2" data-display="false">0&lt;\theta &lt;\pi /2</span>. Consequently the double-root factor can be written</p>
+<div class="math" data-tex="Q(z)=z^4+2hz^2+1,\qquad h=-\cos(2\theta)\in(-1,1)." data-display="true">Q(z)=z^4+2hz^2+1,\qquad h=-\cos(2\theta)\in(-1,1).</div>
+<p>Every state in the stated family therefore has Majorana polynomial
+<span class="math" data-tex="P=Q^2R" data-display="false">P=Q^2R</span>, with an arbitrary complex quartic <span class="math" data-tex="R" data-display="false">R</span>. A degree below four is allowed;
+the missing degree records roots at infinity. Common roots of <span class="math" data-tex="Q" data-display="false">Q</span> and <span class="math" data-tex="R" data-display="false">R</span>,
+repeated roots of <span class="math" data-tex="R" data-display="false">R</span>, and the endpoints <span class="math" data-tex="h=\pm 1" data-display="false">h=\pm 1</span> cannot occur in the target full
+partition. We permit these degenerations during the algebraic calculation and
+exclude them when identifying the surviving partition.</p>
+<p>We use the normalized-Dicke convention</p>
+<div class="math" data-tex="P(z)=\sum_{r=0}^{12}(-1)^r\sqrt{\binom{12}{r}}c_rz^r" data-display="true">P(z)=\sum_{r=0}^{12}(-1)^r\sqrt{\binom{12}{r}}c_rz^r</div>
+<p>up to a nonzero scalar. Rotations and global phase do not affect anticoherence
+or multiplicities.</p>
+<h2>2. Third-order anticoherence forces the residual quartic to be antipodal</h2>
+<p>Consider the time-reversal-real quartic basis</p>
+<div class="math" data-tex="B=(z^4+1,\ z^2,\ i(z^4-1),\ z^3-z,\ i(z^3+z))." data-display="true">B=(z^4+1,\ z^2,\ i(z^4-1),\ z^3-z,\ i(z^3+z)).</div>
+<p>It is a complex basis of all quartics, including polynomials of lower degree.
+Write <span class="math" data-tex="R=\sum (x_j+i y_j)B_j" data-display="false">R=\sum (x_j+i y_j)B_j</span>, with real vectors <span class="math" data-tex="x,y" data-display="false">x,y</span>. Since <span class="math" data-tex="Q" data-display="false">Q</span> is time-reversal
+real, the corresponding spin-six vectors <span class="math" data-tex="W_j=Q^2B_j" data-display="false">W_j=Q^2B_j</span> are also time-reversal real.
+The odd part of the pure density operator is therefore a linear combination of</p>
+<div class="math" data-tex="i(W_iW_j^\dagger-W_jW_i^\dagger),\quad i&lt;j," data-display="true">i(W_iW_j^\dagger-W_jW_i^\dagger),\quad i&lt;j,</div>
+<p>with coefficients given, up to a common sign, by <span class="math" data-tex="x_i y_j-y_i x_j" data-display="false">x_i y_j-y_i x_j</span>.</p>
+<p>Taking a three-qubit reduced state commutes with time reversal. The identity
+<span class="math" data-tex="\rho _3=I_4/4" data-display="false">\rho _3=I_4/4</span> is time-reversal even, so the reduced image of this odd part must vanish.
+The verifier constructs all 16 real components of this reduction as a <span class="math" data-tex="16\times 10" data-display="false">16\times 10</span>
+matrix <span class="math" data-tex="M(h)" data-display="false">M(h)</span>. Explicitly, before positive row scalings, the matrix entries follow
+from</p>
+<div class="math" data-tex="\rho_{ac}=(-1)^{a+c}\sqrt{\binom3a\binom3c}
+ \sum_{q=0}^9\frac{\binom9q p_{a+q}\overline{p_{c+q}}}
+ {\binom{12}{a+q}\binom{12}{c+q}}." data-display="true">\rho_{ac}=(-1)^{a+c}\sqrt{\binom3a\binom3c}
+ \sum_{q=0}^9\frac{\binom9q p_{a+q}\overline{p_{c+q}}}
+ {\binom{12}{a+q}\binom{12}{c+q}}.</div>
+<p>The selected ten rows listed in <code>odd-restriction.json</code> have determinant</p>
+<div class="math" data-tex="-697827328000000(h^2+3)^2 A_0(h)A_-(h)A_+(h)," data-display="true">-697827328000000(h^2+3)^2 A_0(h)A_-(h)A_+(h),</div>
+<p>where the three degree-twelve factors are recorded in that file and in the
+verification output. The verifier recomputes the determinant and uses exact
+Sturm counts to establish that none of its factors has a real root in <span class="math" data-tex="[-1,1]" data-display="false">[-1,1]</span>.
+Thus <span class="math" data-tex="M" data-display="false">M</span> has rank ten throughout the allowed interval. All wedge coordinates
+<span class="math" data-tex="x_i y_j-y_i x_j" data-display="false">x_i y_j-y_i x_j</span> vanish, so <span class="math" data-tex="x,y" data-display="false">x,y</span> are proportional. A global phase makes <span class="math" data-tex="R" data-display="false">R</span>
+time-reversal real.</p>
+<p>This step does not assume that the four simple points were antipodal. It proves
+that they would have to be antipodal in any candidate 3-AC state in this family.</p>
+<h2>3. Exact elimination in the time-reversal-real family</h2>
+<p>After the phase choice, put</p>
+<div class="math" data-tex="R=(b+id)z^4+(e+if)z^3+cz^2+(-e+if)z+b-id,
+ \qquad b,c,d,e,f\in\mathbb R." data-display="true">R=(b+id)z^4+(e+if)z^3+cz^2+(-e+if)z+b-id,
+ \qquad b,c,d,e,f\in\mathbb R.</div>
+<p>Odd moments vanish automatically. Second-order isotropy is equivalent to the
+five real equations from <span class="math" data-tex="\langle J_z^2\rangle =14" data-display="false">\langle J_z^2\rangle =14</span>, <span class="math" data-tex="\langle \{J_z,J_+\}\rangle =0" data-display="false">\langle \{J_z,J_+\}\rangle =0</span>, and <span class="math" data-tex="\langle J_+^2\rangle =0" data-display="false">\langle J_+^2\rangle =0</span>.
+Their primitive integer polynomials are in <code>antipodal-reduction.json</code>; the
+verifier independently reconstructs them from the Dicke coefficients.</p>
+<ul>
+<li>If <span class="math" data-tex="ef\ne 0" data-display="false">ef\ne 0</span>, set <span class="math" data-tex="t=f/e" data-display="false">t=f/e</span> and solve the two linear off-diagonal equations for
+  <span class="math" data-tex="b,c" data-display="false">b,c</span> in terms of <span class="math" data-tex="d" data-display="false">d</span>. The remaining off-diagonal equation is</li>
+</ul>
+<div class="math" data-tex="t^2D(h)K(h)e^2+16(h^2+1)
+       [t^2A(h)+A(-h)]d^2=0," data-display="true">t^2D(h)K(h)e^2+16(h^2+1)
+       [t^2A(h)+A(-h)]d^2=0,</div>
+<p>where</p>
+<div class="math" data-tex="D=(h^2-2h+5)(h^2+2h+5),\quad K=7h^4+18h^2+7," data-display="true">D=(h^2-2h+5)(h^2+2h+5),\quad K=7h^4+18h^2+7,</div>
+<div class="math" data-tex="A=h^6+2h^5+9h^4+12h^3+51h^2+34h+115." data-display="true">A=h^6+2h^5+9h^4+12h^3+51h^2+34h+115.</div>
+<p>Here <span class="math" data-tex="D,K&gt;0" data-display="false">D,K&gt;0</span> and <span class="math" data-tex="A(\pm h)\ge 67" data-display="false">A(\pm h)\ge 67</span> on <span class="math" data-tex="[-1,1]" data-display="false">[-1,1]</span>. Since <span class="math" data-tex="e\ne 0" data-display="false">e\ne 0</span>, this is impossible.
+  The derivation does not divide by <span class="math" data-tex="d" data-display="false">d</span>, so it includes <span class="math" data-tex="d=0" data-display="false">d=0</span>.</p>
+<ul>
+<li>If exactly one of <span class="math" data-tex="e,f" data-display="false">e,f</span> is nonzero, another off-diagonal equation forces <span class="math" data-tex="d=0" data-display="false">d=0</span>.
+  For example, when <span class="math" data-tex="e=0" data-display="false">e=0</span>, its coefficient is
+  <span class="math" data-tex="h^4+4h^3+12h^2+16h+23\ge 3" data-display="false">h^4+4h^3+12h^2+16h+23\ge 3</span>. The remaining linear equation fixes
+  <span class="math" data-tex="c=2b(2h^2-h+9)/(h^2-h+2)" data-display="false">c=2b(2h^2-h+9)/(h^2-h+2)</span>. The two diagonal conditions then form a homogeneous
+  linear system in <span class="math" data-tex="b^2,f^2" data-display="false">b^2,f^2</span>. Its determinant is</li>
+</ul>
+<div class="math" data-tex="48(h-3)(h+1)^3(h^2+3)(h^2-h+2)^2
+       (h^3-4h^2+h-2)(h^3+h^2-h-17)." data-display="true">48(h-3)(h+1)^3(h^2+3)(h^2-h+2)^2
+       (h^3-4h^2+h-2)(h^3+h^2-h-17).</div>
+<p>It has no root in <span class="math" data-tex="(-1,1)" data-display="false">(-1,1)</span>, verified exactly. The <span class="math" data-tex="f=0" data-display="false">f=0</span> branch is also checked
+  directly. Both branches contradict the nonzero active component.</p>
+<ul>
+<li>If <span class="math" data-tex="e=f=0" data-display="false">e=f=0</span> but <span class="math" data-tex="d\ne 0" data-display="false">d\ne 0</span>, the last equation fixes
+  <span class="math" data-tex="c=-2bh/(h^2+2)" data-display="false">c=-2bh/(h^2+2)</span>. The diagonal equation, after multiplying by its positive
+  denominator, becomes</li>
+</ul>
+<div class="math" data-tex="(-16h^8+1104h^4+4320h^2+4320)b^2
+  +(-16h^8-48h^6+1088h^4+4416h^2+4352)d^2=0." data-display="true">(-16h^8+1104h^4+4320h^2+4320)b^2
+  +(-16h^8-48h^6+1088h^4+4416h^2+4352)d^2=0.</div>
+<p>The coefficients are at least <span class="math" data-tex="4304" data-display="false">4304</span> and <span class="math" data-tex="4288" data-display="false">4288</span> on <span class="math" data-tex="[-1,1]" data-display="false">[-1,1]</span>, respectively.
+  This is impossible.</p>
+<ul>
+<li>In the remaining branch <span class="math" data-tex="d=e=f=0" data-display="false">d=e=f=0</span>, suppose first that <span class="math" data-tex="b\ne 0" data-display="false">b\ne 0</span> and rescale it
+  to one. Eliminating <span class="math" data-tex="c" data-display="false">c</span> gives</li>
+</ul>
+<div class="math" data-tex="3072h^2(h-3)^2(h+3)^2(h^2+3)^2
+       (8h^6+51h^4+258h^2+195)=0." data-display="true">3072h^2(h-3)^2(h+3)^2(h^2+3)^2
+       (8h^6+51h^4+258h^2+195)=0.</div>
+<p>The only root in <span class="math" data-tex="(-1,1)" data-display="false">(-1,1)</span> is <span class="math" data-tex="h=0" data-display="false">h=0</span>, where the first equation is <span class="math" data-tex="1080=0" data-display="false">1080=0</span>.
+  Hence <span class="math" data-tex="b=0" data-display="false">b=0</span>. The nonzero-state condition now gives <span class="math" data-tex="c\ne 0" data-display="false">c\ne 0</span>; the diagonal
+  equation is <span class="math" data-tex="-2c^2h^2(3h^2+11)=0" data-display="false">-2c^2h^2(3h^2+11)=0</span>, forcing <span class="math" data-tex="h=0" data-display="false">h=0</span>.</p>
+<h2>4. Multiplicity guard and conclusion</h2>
+<p>The sole surviving projective polynomial is</p>
+<div class="math" data-tex="P(z)=z^2(z^4+1)^2." data-display="true">P(z)=z^2(z^4+1)^2.</div>
+<p>It has four simple roots of <span class="math" data-tex="z^4+1" data-display="false">z^4+1</span>, each doubled, a double root at zero, and a
+double root at infinity because its affine degree is ten while <span class="math" data-tex="n=12" data-display="false">n=12</span>. Its full
+partition is therefore <span class="math" data-tex="(2,2,2,2,2,2)" data-display="false">(2,2,2,2,2,2)</span>, the double octahedron. The verifier checks
+both this square-free decomposition and <span class="math" data-tex="\rho _3=I_4/4" data-display="false">\rho _3=I_4/4</span> exactly.</p>
+<p>The survivor lies outside <span class="math" data-tex="(2^4,1^4)" data-display="false">(2^4,1^4)</span>. Therefore any hypothetical 3-AC state in the
+target partition must have a doubled-point configuration that is <strong>not</strong> two
+antipodal pairs. No global nonexistence claim follows from this restriction.</p><section><h2>Threefold and fourfold symmetry are also impossible</h2><p>A threefold rotation forces one double pole, one simple pole and two three-point orbits. The Dicke support is <span class="math" data-tex="\{2,5,8,11\}"></span>, or its reflection. The first three uniform moments force probabilities</p><div class="math" data-display="true" data-tex="\left(\frac{37}{81},-\frac1{27},\frac{10}{27},\frac{17}{81}\right),"></div><p>which is impossible because one is negative.</p><p>A fourfold rotation instead gives <span class="math" data-tex="P(z)=(z^4-u)^2(z^4-v)"></span>. Third-order moments force the four Dicke probabilities to be <span class="math" data-tex="(5,11,11,5)/32"></span>. After making the polynomial monic, its endpoint coefficients have magnitude one and its two middle coefficients must each have magnitude 33. But a cubic <span class="math" data-tex="(w-u)^2(w-v)"></span> with these endpoint and equal-middle-magnitude conditions has middle magnitudes at most <span class="math" data-tex="\sqrt{9+6\sqrt3}&lt;5"></span>, a contradiction. This argument allows complex parameters.</p><p>Rotations of order five or more cannot preserve a set of four distinct double points: each nonaxial orbit would already contain at least five points.</p><p><a href="analytic-rotation-obstructions.json">Exact symmetry restrictions</a> · <a href="analytic-rotation-obstructions.py">Verifier</a> · <a href="boundary-and-rotation-independent-audit.json">Independent audit</a></p></section><section><h2>Two perpendicular half-turn axes are excluded</h2><p>The proper dihedral group <span class="math" data-tex="D_2"></span> is generated by half-turns about two perpendicular axes. Its doubled-point set is either two antipodal pairs, already excluded above, or one four-point orbit. In the latter case</p><div class="math" data-display="true" data-tex="Q(z)=z^4+az^2+1,\qquad a\in\mathbb C."></div><p>All residual quartics fall into four transformation classes: <span class="math" data-tex="R=\beta(z^4+1)+\gamma z^2"></span>, or a scalar multiple of <span class="math" data-tex="z^4-1"></span>, <span class="math" data-tex="z(z^2-1)"></span>, or <span class="math" data-tex="z(z^2+1)"></span>. The latter three classes have inconsistent exact AC equations.</p><p>In the two-dimensional class, normalize the nonzero <span class="math" data-tex="\beta"></span> to one and write <span class="math" data-tex="a=A+iB"></span>. Three AC equations determine the residual density matrix. Its determinant has the form <span class="math" data-tex="-12\mathcal P(A^2,B^2)/D(A,B)^2"></span>. Exact real-root counts certify positivity of every coefficient of the positive powers of <span class="math" data-tex="B^2"></span>; the constant coefficient is</p><div class="math" data-display="true" data-tex="\mathcal P(U,0)=U(U-36)^2(U+12)^6(2U^3+51U^2+1032U+3120)."></div><p>Hence a nonreal <span class="math" data-tex="a"></span> would require a negative density-matrix determinant. The real and vanishing-<span class="math" data-tex="\beta"></span> exceptions are checked separately; every survivor again has six double points.</p><p>Combining these exclusions, any hypothetical third-order state of the target partition must have proper rotational group <span class="math" data-tex="C_1"></span> or <span class="math" data-tex="C_2"></span>. These remaining cases are not excluded.</p><p><a href="analytic-d2-obstruction.json">Exact dihedral certificate</a> · <a href="analytic-d2-obstruction.py">Verifier</a></p></section><section><h2>An exact sequence explains the near-zero residuals</h2><div class="math" data-display="true" data-tex="P_\epsilon(z)=(z^4-6z^2+1)^2[(z^2+1)^2+\epsilon],\qquad\epsilon&gt;0"></div><p>Every positive parameter gives exactly four double and four simple roots: the quartic discriminants and their resultant are nonzero. As the parameter tends to zero, the normalized state approaches a third-order state with six double points. Thus the infimum of the third-order defect within the target partition is zero. This proves neither attainment nor nonattainment.</p><p><a href="boundary_sequence.json">Exact sequence certificate</a> · <a href="boundary_sequence.py">Verifier</a></p></section><section><h2>Additional constraints and searches</h2><p>For an arbitrary third-order candidate, every double point obeys a strict bound on its second Dicke probability in its pole frame:</p><div class="math" data-display="true" data-tex="\frac{5}{14}&lt;|c_2|^2&lt;\frac{19}{42}"></div><p>Distinct doubled points must also have angular separation greater than approximately 59.275637 degrees. These are necessary conditions, not a global exclusion.</p><p><a href="analytic-moment-constraints.json">Exact moment and separation certificates</a> · <a href="analytic-moment-constraints.py">Verifier</a></p><p>Searches in arbitrary complex star coordinates and symmetry-restricted polynomial families have not established a third-order state with the required eight distinct positions. Approaching the double octahedron changes the full partition and is not an attaining witness.</p><p><a href="search-summary.json">Search summary and limitations</a> · <a href="antipodal-obstruction-verification.json">Exact obstruction verification</a> · <a href="verify-antipodal-obstruction.py">Portable proof verifier</a> · <a href="antipodal-obstruction.md">Proof source</a></p></section><footer>Exact certificates checked independently. Numerical searches are evidence only; the full non-antipodal case remains open in this catalogue.</footer></main></body></html>

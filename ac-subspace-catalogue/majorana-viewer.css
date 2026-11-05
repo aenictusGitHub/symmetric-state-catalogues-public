@@ -1,0 +1,66 @@
+/* Scoped shared Majorana viewer; the host catalogue supplies its colour palette. */
+body.mv-open{overflow:hidden}
+.mv-dialog{--mv-accent:var(--purple,var(--teal,#675283));width:min(1000px,calc(100vw - 32px));max-width:none;max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px);padding:24px 28px 18px;border:1px solid var(--line,#d6dacf);border-radius:12px;background:var(--surface,#fffef9);color:var(--ink,#27302e);font:400 14px/1.6 var(--sans,system-ui,sans-serif);box-sizing:border-box;overflow:auto;box-shadow:0 25px 90px #24180f55}
+.mv-dialog[open]{display:flex;flex-direction:column}
+.mv-dialog::backdrop{background:rgba(37,32,26,.6);backdrop-filter:blur(3px)}
+.mv-dialog>*{flex-shrink:0}
+.mv-dialog .mv-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.mv-dialog .mv-eyebrow{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mv-accent);margin:0 0 7px}
+.mv-dialog .mv-heading h2{font:400 clamp(22px,3vw,30px)/1.2 var(--serif,Georgia,serif);letter-spacing:-.4px;margin:0}
+.mv-dialog button{border:1px solid var(--line,#d6dacf);border-radius:5px;background:var(--surface,#fffef9);color:var(--ink,#27302e);padding:8px 12px;cursor:pointer;font:inherit;white-space:nowrap}
+.mv-dialog button:disabled{opacity:.5;cursor:default}
+.mv-dialog #mv-align{max-width:100%;white-space:normal;text-align:left}
+.mv-dialog button:hover{background:var(--paper,#f5f4ee)}
+.mv-dialog .mv-close{font-size:13px}
+.mv-dialog .mv-label{font-size:14px;margin:12px 0 2px;color:var(--ink,#27302e);overflow-wrap:anywhere}
+.mv-dialog .mv-summary{font-size:12px;color:var(--muted,#68736d);margin:0 0 8px}
+.mv-dialog .mv-note{font-size:12px;color:var(--muted,#68736d);margin:0 0 12px;line-height:1.6}
+.mv-dialog .mv-workspace{display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:22px;align-items:start}
+.mv-dialog .mv-sphere-frame{min-width:0;background:#f7f4ed;border:1px solid #e4ddd2;border-radius:8px}
+.mv-dialog .mv-sphere{display:block;width:100%;height:clamp(290px,52vh,540px);height:clamp(290px,52dvh,540px);touch-action:none;border-radius:8px;cursor:grab}
+.mv-dialog .mv-sphere.dragging{cursor:grabbing}
+.mv-dialog .mv-sidebar{min-width:0;padding-top:4px}
+.mv-dialog .mv-controls{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin:0 0 17px;font-size:12px}
+.mv-dialog .mv-controls>label{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.mv-dialog .mv-controls input{accent-color:var(--mv-accent)}
+.mv-dialog .mv-controls input[type=checkbox]{width:16px;height:16px;margin:0}
+.mv-dialog .mv-controls select{max-width:165px;padding:6px 22px 6px 9px;border:1px solid var(--line,#d6dacf);border-radius:4px;background:var(--surface,#fffef9);color:var(--ink,#27302e);font:inherit}
+.mv-dialog .mv-turn{display:flex;flex-wrap:wrap;gap:5px}
+.mv-dialog .mv-turn button{font-size:13px;min-width:32px;padding:6px 8px}
+.mv-dialog .mv-turn button:last-child{margin-left:3px}
+.mv-dialog .mv-groups{display:grid;grid-template-columns:1fr 1fr;gap:9px 14px;border:1px solid var(--line,#d6dacf);border-radius:6px;background:var(--paper,#f5f4ee);padding:10px 12px;margin-bottom:14px}
+.mv-dialog .mv-group{display:flex;flex-direction:column;gap:2px;min-width:0}
+.mv-dialog .mv-group-kind,.mv-dialog .mv-group-size{font-size:10px;color:var(--muted,#68736d)}
+.mv-dialog .mv-group strong{font-size:21px;font-weight:400;color:var(--mv-accent)}
+.mv-dialog .mv-group-name{font-size:10px;line-height:1.5;color:var(--ink,#27302e)}
+.mv-dialog .mv-group-evidence{grid-column:1/-1;font-size:10px;line-height:1.5;margin:0;color:var(--muted,#68736d)}
+.mv-dialog .mv-symmetry-summary{display:flex;flex-wrap:wrap;align-items:center;gap:7px 14px;font-size:11px;color:var(--muted,#68736d);border-top:1px solid var(--line,#d6dacf);padding-top:12px;margin-bottom:14px}
+.mv-dialog .mv-symmetry-key{display:inline-flex;align-items:center;gap:6px}
+.mv-dialog .mv-symmetry-key i{width:16px;height:2px;display:inline-block}
+.mv-dialog .mv-symmetry-family{flex-basis:100%}
+.mv-dialog .mv-legend{display:flex;flex-direction:column;gap:8px;color:var(--muted,#68736d);font-size:11px;line-height:1.5}
+.mv-dialog .mv-legend>span{display:flex;align-items:center;gap:7px}
+.mv-dialog .mv-dot{display:inline-block;width:9px;height:9px;background:#a45a34;border:1px solid #814321;border-radius:50%;flex-shrink:0}
+.mv-dialog .mv-dot.mv-back{background:#ddb392;border:1.4px solid #8a4d2c}
+.mv-dialog .mv-help{font-size:11px;color:var(--muted,#68736d);line-height:1.6;margin:12px 0 0}
+.mv-dialog .mv-method{margin-top:9px;border-top:1px solid var(--line,#d6dacf);padding-top:8px}
+.mv-dialog .mv-method summary{font-size:11px;color:var(--muted,#68736d);cursor:pointer}
+.mv-dialog .mv-method .mv-note{margin:10px 0 0}
+.mv-dialog .mv-formula{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:6px 0}
+.mv-dialog :focus-visible{outline:2px solid var(--mv-accent);outline-offset:3px}
+.view-majorana-button{border:1px solid var(--purple,var(--teal,#675283));border-radius:4px;background:var(--surface,#fffef9);color:var(--purple,var(--teal,#675283));padding:9px 13px;font:500 12px/1.5 var(--sans,system-ui,sans-serif);cursor:pointer}
+.view-majorana-button:hover{background:var(--paper,#f5f4ee)}
+.view-majorana-button:disabled{opacity:.5;cursor:default}
+@media(max-width:720px){.mv-dialog .mv-workspace{grid-template-columns:1fr;gap:15px}.mv-dialog .mv-sphere{height:clamp(250px,42dvh,380px)}.mv-dialog .mv-controls{flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px 18px;margin-bottom:14px}.mv-dialog .mv-groups{max-width:430px}.mv-dialog .mv-legend{flex-direction:row;flex-wrap:wrap;gap:8px 16px}.mv-dialog .mv-symmetry-summary{padding-top:11px;margin-bottom:12px}}
+@media(max-width:480px){.mv-dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:17px 15px;border-radius:8px}.mv-dialog .mv-heading h2{font-size:21px}.mv-dialog .mv-close{font-size:11px;padding:7px 9px}.mv-dialog .mv-label{font-size:12px}.mv-dialog .mv-controls{gap:10px 14px}.mv-dialog .mv-sphere{height:270px}}
+@media print{.mv-dialog,.view-majorana-button{display:none!important}}
+
+/* Representative symmetry is visible without opening the sphere. */
+.representative-symmetry{display:flex;flex-wrap:wrap;align-items:center;gap:7px 10px;margin:8px 0 15px}
+.representative-group{display:inline-flex;align-items:center;gap:7px;padding:4px 9px;border:1px solid var(--line,#d6dacf);border-radius:4px;background:var(--paper,#f5f4ee);font-size:10px;line-height:1.5;color:var(--muted,#68736d)}
+.representative-group strong{font-size:15px;font-weight:400;color:var(--purple,var(--teal,#675283))}
+.representative-symmetry-note{flex-basis:100%;font-size:9px;line-height:1.5;color:var(--muted,#68736d)}
+.representative-symmetry.compact{margin:5px 0 10px}
+
+.mv-dialog .mv-centre-key{color:#35424a;font:700 16px/1 sans-serif}
+.mv-dialog .mv-barycentre-key{color:#a12b75;font:700 17px/1 sans-serif}

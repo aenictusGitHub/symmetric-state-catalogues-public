@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,hyperref}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+\section*{A universal upper bound for first-order anticoherent subspaces}
+Let $j=N/2$ and let $C\subset V_j$ be a $k$-dimensional subspace with
+orthogonal projector $P$ such that $PJ_aP=0$ for $a=x,y,z$.
+Introduce an auxiliary spin one with operators $S_a$ on $V_1$ and put
+\[
+ X=J_x\otimes S_x+J_y\otimes S_y+J_z\otimes S_z.
+\]
+Then $C\otimes V_1$, of dimension $3k$, is totally isotropic for the
+Hermitian form associated with $X$:
+\[
+ (P\otimes I_3)X(P\otimes I_3)=0.
+\]
+For $j\ge1$, angular momentum addition gives
+\[
+ V_j\otimes V_1=V_{j-1}\oplus V_j\oplus V_{j+1},\qquad
+ X=\frac{(\mathbf J+\mathbf S)^2-j(j+1)-2}{2}.
+\]
+Its eigenvalues and multiplicities are therefore
+\[
+\begin{array}{c|ccc}
+ \text{total spin}&j-1&j&j+1\\ \hline
+ \text{eigenvalue}&-(j+1)&-1&j\\
+ \text{multiplicity}&N-1&N+1&N+3.
+\end{array}
+\]
+There is no kernel. If a totally isotropic subspace had dimension larger
+than the positive index, it would contain a nonzero vector whose projection
+onto the positive eigenspace vanishes. Such a vector has strictly negative
+quadratic form, a contradiction. Applying the same argument to the negative
+index gives
+\[
+ \boxed{3k\le\min(2N,N+3)\qquad(N\ge2).}
+\]
+In particular, for every $N\ge3$,
+\[
+ \boxed{k\le\left\lfloor\frac{N+3}{3}\right\rfloor
+      =\left\lfloor\frac N3\right\rfloor+1.}
+\]
+\paragraph{Small cases and a separate splitting bound.}
+For an orthonormal basis $u_1,\ldots,u_k$ of a first-order AC subspace, write
+\[
+ u_a=|0\rangle\otimes v_{a,0}+|1\rangle\otimes v_{a,1},
+ \qquad v_{a,b}\in\operatorname{Sym}^{N-1}\mathbb C^2.
+\]
+The diagonal and cross one-qubit reductions give
+$\langle v_{a,b},v_{c,d}\rangle=\delta_{ac}\delta_{bd}/2$.
+Thus the $2k$ conditional vectors $\sqrt2v_{a,b}$ are orthonormal in a
+space of dimension $N$, proving $2k\le N$. This gives $k=0$ for $N=1$
+and $k\le1$ for $N=2,3$. The states $|D_2^1\rangle$ and
+$(|D_3^0\rangle+|D_3^3\rangle)/\sqrt2$ attain the latter bounds.
+
+\paragraph{Attainment for every larger size.}
+The general construction in
+\href{../analytical-constructions/construct_t1.py}{\texttt{construct\_t1.py}}
+produces dimension $\lfloor N/3\rfloor+1$ for every $N\ge4$.
+For integer spin and for $N\equiv5\pmod6$ it uses separated reflected pairs
+\begin{align*}
+ v_x&=\sqrt{\frac{x+1}{2x+1}}|x\rangle
+       +\sqrt{\frac{x}{2x+1}}|-x-1\rangle,\\
+ w_x&=\sqrt{\frac{x}{2x+1}}|x+1\rangle
+       -\sqrt{\frac{x+1}{2x+1}}|-x\rangle.
+\end{align*}
+The modules have $x$ separated by $3$, with an isolated $m=0$ vector when
+required. For $N\equiv1,3\pmod6$, an exact three- or four-dimensional
+central block is supplemented with the same outer pairs. The functions
+\texttt{central\_odd} and \texttt{verify\_general\_blocks} give the formulas
+and check their normalization, mean and cross identities, together with
+positivity of the defining phase for the entire parameter range. This is a
+general construction, not an extrapolation from finitely many witnesses.
+Combining it with the upper bound proves
+\[
+\boxed{\quad k_{\max}(N,1)=
+ \begin{cases}
+ 0,&N=1,\\
+ 1,&N=2,3,\\
+ \lfloor N/3\rfloor+1,&N\ge4.
+ \end{cases}\quad}
+\]
+
+This proof uses the full compression conditions, not only vanishing traces
+of $PJ_a$, and applies to arbitrary complex subspaces. It requires neither
+rotational symmetry of $C$ nor any restriction on its Dicke supports.
+\end{document}

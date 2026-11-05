@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Span}{\operatorname{span}}
+\begin{document}
+\paragraph{Current status.} The separate auxiliary-spin inertia theorem now proves $k_{\max}(13,2)=2$. This note retains an earlier, weaker investigation.
+
+\title{A conditional obstruction for thirteen-qubit second-order anticoherent subspaces}
+\author{Exact catalogue calculation}
+\date{30 October 2026}
+\maketitle
+\begin{theorem}
+No complex three-dimensional second-order anticoherent subspace of
+$\operatorname{Sym}^{13}(\mathbb C^2)$ contains
+\[
+ u=\sqrt{\frac5{18}}D_0+\sqrt{\frac{13}{18}}D_9,
+ \qquad D_r=|D_{13}^{(r)}\rangle,
+\]
+or any collective rotation of $u$.
+\end{theorem}
+This is a conditional theorem. It does not exclude three-dimensional
+second-order AC subspaces that contain no rotation of this state, and hence
+does not settle the global interval $2\le k_{\max}(13,2)\le3$.
+
+\section*{1. Any extension must lie in a seven-dimensional space}
+Put $j=13/2$, $c=j(j+1)/3=65/4$, and use the convention
+$J_zD_r=(j-r)D_r$. Let $\mathcal T$ consist of the eight operators
+\[
+ J_z,\quad J_z^2-cI,\quad J_-,J_+,\quad
+ \{J_z,J_-\},\{J_z,J_+\},\quad J_-^2,J_+^2.
+\]
+They span the spin tensors of ranks one and two. A second-order AC
+subspace $V$ obeys $P_VTP_V=0$ for every $T\in\mathcal T$.
+If $u\in V$ and $W=V\cap u^\perp$, then every vector of $W$ is
+orthogonal to $u$ and all $Tu$. Direct spin-ladder calculation gives
+\[
+ \mathcal K:=\Span\{u,Tu:T\in\mathcal T\}^{\perp}
+ =\Span\left\{
+ \frac{\sqrt{11}D_2-D_{11}}{\sqrt{12}},
+ D_3,D_4,D_5,D_6,D_{12},D_{13}\right\}.
+\]
+The tensor-image span has dimension seven. Thus a hypothetical
+three-dimensional $V$ supplies a two-dimensional $W\subset\mathcal K$
+whose every compressed tensor of ranks one and two vanishes.
+
+For exact rational coordinates set $b_r=\sqrt{\binom{13}{r}}D_r$ and use
+\[
+ h_0=\sqrt{11}b_2-b_{11},\quad
+ h_1=\sqrt{11}b_3,\ h_2=\sqrt{11}b_4,\
+ h_3=\sqrt{11}b_5,\ h_4=\sqrt{11}b_6,\
+ h_5=b_{12},\ h_6=b_{13}.
+\]
+These vectors are orthogonal, with squared norms
+\[
+ (936,3146,7865,14157,18876,13,1).
+\]
+All matrices $A_T=(\langle h_a|T|h_b\rangle)_{a,b=0}^6$ are rational
+and real. The provided verifier reconstructs them from
+$J_-b_r=(r+1)b_{r+1}$ and $J_+b_r=(14-r)b_{r-1}$; it also verifies
+$u$, the tensor-image rank, and the displayed orthogonal complement.
+
+\section*{2. An exterior-product moment and a finite cyclic average}
+Let $w_1,w_2$ be an orthonormal basis of $W$, and set
+$w=w_1\wedge w_2$, $\rho=|w\rangle\langle w|$.
+For every $T\in\mathcal T$,
+\[
+ \Tr_1[(T\otimes I)\rho]=0.
+\]
+Indeed, its four coefficients in the omission basis $w_1,w_2$ are,
+up to signs and a common factor, precisely
+$\langle w_a|T|w_b\rangle$. This uses the whole-subspace condition,
+including its cross terms.
+
+The rotation through $2\pi/9$ about $z$ preserves $\mathcal K$.
+After removing one common phase, its charges on the ordered $h$ basis are
+\[
+ (2,3,4,5,6,3,4)\pmod9.
+\]
+Average $\rho$ over its nine conjugations. The resulting $X$ is positive,
+has trace one, and still obeys all eight contraction equations, since
+rotations preserve the rank-one/rank-two tensor span. In the exterior basis
+$e_{ab}=h_a\wedge h_b$ ($a<b$), $X$ is block diagonal by the charge
+$q_a+q_b$ modulo nine. The nonempty sectors are
+\[
+\begin{array}{c|rrrrrrr}
+q&0&1&2&5&6&7&8\\\hline
+\text{dimension}&4&2&1&2&3&5&4.
+\end{array}
+\]
+They sum to $\dim\Lambda^2\mathcal K=21$.
+Writing $X=\sum C_{ab}|e_a\rangle\langle e_b|$, positivity is equivalent
+to positivity of each $C$ block, even though the $e_a$ are not normalized.
+All contraction coefficients are real. The entrywise real parts of the
+Hermitian blocks remain positive, retain the same trace, and satisfy the
+same equations. Therefore arbitrary complex $W$ is covered by considering
+48 real symmetric block coordinates $x$.
+
+\section*{3. A strictly positive exact certificate}
+The contraction equations have 70 nonzero scalar rows. Removing integer
+common factors gives an integer matrix $M\in\mathbb Z^{70\times48}$.
+The file \texttt{certificate.json} records the physical row metadata,
+all rows, and an integer matrix $Z\in\mathbb Z^{48\times8}$ satisfying
+\[
+ MZ=0,\qquad \operatorname{rank}M=40,\qquad\operatorname{rank}Z=8.
+\]
+Consequently $\ker M=\operatorname{Ran}Z$. Both ranks have nonzero
+modular minors modulo $1000000007$, while the integer zero product gives
+the matching upper rank bound. These are exact rank certificates.
+
+Let $D$ select the 21 diagonal block coordinates. The same file supplies
+21 strictly positive integers $c_i$ with
+\[
+ c^{\mathsf T}DZ=0.
+\]
+Thus any admissible $x$ obeys
+\[
+ 0=c^{\mathsf T}Dx=\sum_{i=1}^{21}c_i(C_i)_{\rm diagonal}.
+\]
+Every summand is nonnegative because the blocks are positive, and every
+$c_i$ is strictly positive. All diagonal entries vanish. Positivity then
+forces every block to vanish, contradicting $\Tr X=1$. This excludes $W$
+and proves the theorem. The rational matrices and positive functional are
+finite certificates; no numerical feasibility result is used in this proof.
+
+The portable \texttt{verify.py} uses only Python's standard library. It
+independently reconstructs the physical spin actions in
+$\mathbb Q(\sqrt{11})$, the cyclic sectors, and all 70 contraction rows.
+It verifies the ranks, all 560 exact row--kernel products and all eight
+positive-functional kernel products. An optimizer is not needed to check
+any part of the certificate.
+
+\section*{4. A basis-independent sparse-state consequence}
+\begin{corollary}
+A three-dimensional second-order AC subspace at $N=13$ cannot contain
+any normalized state supported on at most two Dicke components along
+any spin axis.
+\end{corollary}
+For a two-component second-order AC state, the zero first moment forces
+its magnetic levels to have opposite signs, say $a$ and $-b$ with $a,b>0$.
+The probabilities are $b/(a+b)$ and $a/(a+b)$, so the second moment is
+$ab=65/4$. Hence $(2a)(2b)=65$, where $2a,2b$ are positive odd integers
+at most thirteen. The only possible unordered pair is $\{5,13\}$.
+Thus its supports are either $\{0,9\}$ or $\{4,13\}$, with the displayed
+probabilities. A rotation about $z$ removes the relative phase and a
+half-turn interchanges the two support patterns. Every such state is
+therefore collectively rotation-equivalent to $u$. A one-component state
+cannot have zero magnetic mean for half-integer spin. The theorem applies.
+\end{document}

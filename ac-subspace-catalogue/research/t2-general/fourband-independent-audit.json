@@ -1,0 +1,124 @@
+{
+  "claim": "K(N,2) >= floor(N/8)-3 for every integer N>=40",
+  "exact": true,
+  "momentIdentities": true,
+  "quadrilateralIdentity": true,
+  "rowDomain": "q=i+z+4, i,z>=0",
+  "edgeDomain": "q=i+z+5, i,z>=0",
+  "supportGap": 8,
+  "argument": "F>=-A and 64 product(E)>=A^2, A>=0 imply F+8 sqrt(product(E))>=0; equivalently the four positive edge lengths close. Forward bands and independent adjacent-edge phase increments give vanishing directed Jplus^2 compression. Other required compressions follow from parity, disjoint support, and the three moment identities.",
+  "residues": [
+    {
+      "residue": 0,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 1,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 2,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 3,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 4,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 5,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 6,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    },
+    {
+      "residue": 7,
+      "strictWeightPositivity": true,
+      "rowWeightCoefficientCounts": [
+        6,
+        5,
+        5,
+        6
+      ],
+      "FplusA_nonnegativeCoefficients": true,
+      "64productMinusA2_nonnegativeCoefficients": true,
+      "FplusA_termCount": 145,
+      "productMargin_termCount": 541
+    }
+  ]
+}

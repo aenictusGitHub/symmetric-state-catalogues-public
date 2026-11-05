@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "method": "Exact Dicke splitting and every ordered cross-reduction block, including cross terms between distinct basis states.",
+  "witnesses": [
+    {
+      "id": "mod3-time-reversal-n11-d2-t2",
+      "passed": true,
+      "exactFullCrossEntries": 36,
+      "orthonormal": true,
+      "achievedOrder": 2,
+      "nextOrderFails": true,
+      "dimension": 2,
+      "maximumDimension": 2,
+      "upperBound": "Tensor-Gram saturation: k=3 fills all 12 dimensions, forcing a projector P=I/4 because every non-scalar tensor factor is nonzero. This is impossible.",
+      "nonzeroTensorFactors": [
+        "560/143",
+        "536/143",
+        "500/143",
+        "452/143",
+        "392/143",
+        "320/143",
+        "236/143",
+        "140/143",
+        "32/143",
+        "-8/13",
+        "-20/13"
+      ]
+    },
+    {
+      "id": "mod4-reflection-n16-d3-t2",
+      "passed": true,
+      "exactFullCrossEntries": 81,
+      "orthonormal": true,
+      "achievedOrder": 2,
+      "nextOrderFails": true,
+      "dimension": 3,
+      "rigorousDimensionRange": [
+        3,
+        4
+      ],
+      "upperBound": "Tensor-Gram bound floor((N+1)/4). The witness alone does not exclude dimension four."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "scientificRecordsUnchanged": true,
+  "staticChecks": {
+    "passed": true,
+    "missingAssets": [],
+    "syntaxFiles": [
+      "app.js",
+      "data/majorana.js",
+      "majorana-viewer.js",
+      "majorana-symmetry.js",
+      "symmetry-groups.js",
+      "point-groups.js"
+    ]
+  },
+  "browser": {
+    "engine": "Codex in-app browser",
+    "consoleErrors": 0,
+    "nativeModalOpenClose": "passed",
+    "screenshot": "../../majorana-preview.png",
+    "selectedStates": [
+      "n9-s8-max"
+    ],
+    "rotationButton": "passed",
+    "zoom": "100 to 110 and reset to 100",
+    "coordinateAxes": "passed",
+    "labelsToggle": "passed",
+    "escapeClose": "passed",
+    "focusRestoredTo": "view-majorana"
+  },
+  "features": [
+    "view selected representative",
+    "drag and keyboard rotation",
+    "zoom and reset",
+    "multiplicity labels",
+    "rotational symmetry axes",
+    "full point group and rotational subgroup",
+    "offline bundled assets",
+    "constellation in record download"
+  ],
+  "inlineSymmetryFollowup": {
+    "date": "2026-10-29",
+    "passed": true,
+    "fullPointGroupAndRotationalSubgroupVisibleWithoutViewer": true,
+    "consoleErrors": 0,
+    "screenshot": "../../symmetry-labels-preview.png",
+    "checkedRepresentatives": {
+      "n9-s8-max": [
+        "C3v",
+        "C3"
+      ]
+    }
+  }
+}

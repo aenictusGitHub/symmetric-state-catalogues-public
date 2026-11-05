@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "catalogueSHA256": "3e75431dc53d7a242f4f8957344c948f0496977f0316048698582a0705162d97",
+  "exactStatesChecked": 29,
+  "allReducedMatricesThroughAchievedOrderAndNextOrderChecked": true,
+  "importedRadicalStates": [
+    14,
+    17
+  ],
+  "newProvedExclusions": [
+    [
+      20,
+      6
+    ],
+    [
+      19,
+      5
+    ],
+    [
+      19,
+      6
+    ],
+    [
+      18,
+      6
+    ],
+    [
+      17,
+      5
+    ],
+    [
+      17,
+      6
+    ],
+    [
+      15,
+      4
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      15,
+      6
+    ],
+    [
+      16,
+      6
+    ],
+    [
+      16,
+      7
+    ],
+    [
+      18,
+      7
+    ],
+    [
+      20,
+      7
+    ]
+  ],
+  "newN17RowSeventhOrderExcluded": true,
+  "n16RankSevenMultiplier": "5*sqrt(69)/8398",
+  "n20RankEightMultiplier": "-250*sqrt(87)/572033",
+  "allStatesHaveMajoranaCoordinates": true,
+  "n13MaximumACOrder": 3,
+  "n14MaximumACOrder": 4,
+  "n16MaximumACOrder": 5,
+  "n13FourthOrderStatus": "impossible",
+  "scope": "Full exact witness checks plus exact recoupling coefficients for the linked equality proofs; proof arguments are linked separately.",
+  "linkedN13Exclusion": {
+    "certificateSHA256": "a5427415ccec3842e2c54d28f0d2373f19a4ebf6e9bade3727089c6740410c14",
+    "independentVerificationPassed": true,
+    "variables": 331,
+    "constraintRank": 320,
+    "kernelDimension": 11,
+    "proofSource": "../ac-subspace-catalogue/research/n13-t4/index.html"
+  },
+  "n15MaximumACOrder": 3,
+  "n17MaximumACOrder": 4,
+  "n18MaximumACOrder": 5,
+  "n19MaximumACOrder": 4,
+  "n20MaximumACOrder": 5,
+  "linkedN20SixthOrderExclusion": {
+    "certificateSHA256": "ac17153ad1fe852658626d7b19d712f49f868bdcb562115851472d310e8afa37",
+    "independentVerificationPassed": true,
+    "proofSource": "../ac-subspace-catalogue/research/n20-t6/index.html"
+  },
+  "linkedN19FifthOrderExclusion": {
+    "certificateSHA256": "48a0119d785105a3797f9d33e9aa05be5496296d71c553f49f3c3918596bbc23",
+    "independentVerificationPassed": true,
+    "variables": 1522,
+    "selectedConstraints": 1380,
+    "positivePivots": 277,
+    "proofSource": "../ac-subspace-catalogue/research/n19-t5/index.html"
+  },
+  "linkedN19SixthOrderExclusion": {
+    "certificateSHA256": "0d3c38f2ecaa7085752a64cd498b2e455136e771ec677aba63d4ddb8116bc3d1",
+    "independentVerificationPassed": true,
+    "variables": 94,
+    "constraintRank": 88,
+    "kernelDimension": 6,
+    "proofSource": "../ac-subspace-catalogue/research/n19-t6/index.html"
+  },
+  "linkedN18SixthOrderExclusion": {
+    "certificateSHA256": "86840d0287fc57f9632e7cd74e0bf0ca1a0cf0be213550259d605f3d2cb2b0ac",
+    "independentVerificationPassed": true,
+    "variables": 84,
+    "constraintRank": 80,
+    "kernelDimension": 4,
+    "proofSource": "../ac-subspace-catalogue/research/n18-t6/index.html"
+  },
+  "linkedN17FifthOrderExclusion": {
+    "certificateSHA256": "8ce56f1b519b5088ff126a4fb463995a8b72ff5f36d67095e75649ccc98f771f",
+    "independentVerificationPassed": true,
+    "proofSource": "../ac-subspace-catalogue/research/n17-t5/index.html"
+  },
+  "linkedN17SixthOrderComplement": {
+    "verificationPassed": true,
+    "generalFormula": "K((r+1)^2+1,2r)=0 for every integer r>=1",
+    "proofSource": "../ac-subspace-catalogue/research/n17-t6/index.html"
+  },
+  "linkedN15Exclusion": {
+    "certificateSHA256": "f7c013425838b95ec52beef9fd701c6af5b21fc8b51c69f12472f63288fe99f7",
+    "independentVerificationPassed": true,
+    "proofSource": "../ac-subspace-catalogue/research/n15-t4/index.html"
+  },
+  "linkedN14Exclusion": {
+    "certificateSHA256": "3ca94b20ff3a00264151aec7d78d70fe7edc1f5d39a5787b644e102b680baa8a",
+    "independentVerificationPassed": true,
+    "variables": 47,
+    "constraintRank": 45,
+    "kernelDimension": 2,
+    "proofSource": "../ac-subspace-catalogue/research/n14-t5/index.html"
+  }
+}

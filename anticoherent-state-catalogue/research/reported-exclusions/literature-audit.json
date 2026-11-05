@@ -1,0 +1,125 @@
+{
+  "scope": "Historical source audit for the reported pure-state exclusions N=9,t=3 and N=10,t=4.",
+  "checked": "2026-10-28",
+  "result": "No explicit global exclusion proof or machine-checkable certificate located in the primary literature examined. This is a research-search result, not a claim that no proof exists anywhere.",
+  "sources": [
+    {
+      "id": "rotations-2020",
+      "title": "Optimal Detection of Rotations about Unknown Axes by Coherent and Anticoherent States",
+      "authors": [
+        "John Martin",
+        "Stefan Weigert",
+        "Olivier Giraud"
+      ],
+      "doi": "10.22331/q-2020-06-22-285",
+      "url": "https://quantum-journal.org/papers/q-2020-06-22-285/",
+      "pdf": "Quantum4_285(2020).pdf",
+      "pdfPages": [
+        11
+      ],
+      "locations": [
+        "Section 4.4.3 (j=9/2)",
+        "Section 4.4.4 (j=5)"
+      ],
+      "finding": "Explicitly states absence of orders t>=3 for j=9/2 and t>=4 for j=5. These sections do not give exclusion proofs, algebraic certificates, or case-specific proof references. They provide lower-order witnesses and numerical optimization discussion.",
+      "interpretation": "Appropriate provenance for 'reported absent'; the categorical wording alone does not establish a reproducible proof in this catalogue."
+    },
+    {
+      "id": "extremal-2015",
+      "title": "Extremal quantum states and their Majorana constellations",
+      "authors": [
+        "Gunnar Björk",
+        "Andrei B. Klimov",
+        "Pablo de la Hoz",
+        "Markus Grassl",
+        "Gerd Leuchs",
+        "Luis L. Sánchez-Soto"
+      ],
+      "doi": "10.1103/PhysRevA.92.031801",
+      "url": "https://doi.org/10.1103/PhysRevA.92.031801",
+      "pdfUrl": "https://arxiv.org/pdf/1503.03446",
+      "version": "arXiv:1503.03446v3, 28 September 2015",
+      "pdfPages": [
+        2,
+        3
+      ],
+      "locations": [
+        "Minimal states paragraph, PDFp2",
+        "Table I caption and j=9/2,j=5 rows, PDFp3"
+      ],
+      "quote": "which we conjecture is the highest possible",
+      "finding": "Describes solving real quadratic multipole equations using MAGMA Gröbner bases, including the ability to detect infeasibility. Crucially, Table I explicitly labels its listed highest orders conjectural. Rows j=9/2 and j=5 give orders 2 and 3. The generic computational-method sentence cannot be promoted into a case-specific exclusion certificate.",
+      "interpretation": "Independent primary-source evidence that these maximal-order claims were conjectural in the 2015 work cited by Quantum2020."
+    },
+    {
+      "id": "stars-2015",
+      "title": "Stars of the quantum Universe: extremal constellations on the Poincaré sphere",
+      "authors": [
+        "Gunnar Björk",
+        "Markus Grassl",
+        "Pablo de la Hoz",
+        "Gerd Leuchs",
+        "Luis L. Sánchez-Soto"
+      ],
+      "doi": "10.1088/0031-8949/90/10/108008",
+      "url": "https://doi.org/10.1088/0031-8949/90/10/108008",
+      "pdfUrl": "https://inspirehep.net/files/6176153f09dde6b85730cafc51193a8f",
+      "pdfPages": [
+        5,
+        6
+      ],
+      "printedPages": [
+        4,
+        5
+      ],
+      "locations": [
+        "Section 4, paragraphs 1–2, printed p4",
+        "Section 4, S=9/2 paragraph, printed p5"
+      ],
+      "quote": "we conjecture that no third-order unpolarized constellations exist",
+      "finding": "Explicitly calls absence of third-order anticoherence at spin9/2 a conjecture. Earlier on printed p4 the authors explain that their Gröbner-based approach has not supplied a general assurance of finding all constellations or the highest attainable order. The PDF includes a cover sheet, so PDF page numbers are one larger than printed page numbers.",
+      "interpretation": "The clearest primary statement of the historical status of N9,t3."
+    },
+    {
+      "id": "measures-2017",
+      "title": "Anticoherence measures for pure spin states",
+      "authors": [
+        "D. Baguette",
+        "John Martin"
+      ],
+      "doi": "10.1103/PhysRevA.96.032304",
+      "url": "https://doi.org/10.1103/PhysRevA.96.032304",
+      "pdf": "PRA96_032304(2017).pdf",
+      "pdfPages": [
+        9
+      ],
+      "locations": [
+        "Section IVB and Figure 6"
+      ],
+      "finding": "Search-derived occurrence diagram. Missing blocks reflect absence of convergence to AC states, not a proof of nonexistence. This does not independently resolve the two target cells."
+    },
+    {
+      "id": "martin-ac-library",
+      "title": "Library of spin anticoherent states",
+      "author": "John Martin",
+      "url": "https://www.oq.ulg.ac.be/libspinACstates.html",
+      "finding": "Lists witnesses of orders2 and3 for N9 andN10. Its discussion explicitly treats equality between maximum AC order and spherical-design degree as conjectural; the Majorana-constellation iff-design conjecture is already false. Therefore nonexistence results for spherical designs do not prove the target AC exclusions."
+    }
+  ],
+  "negativeSearchResults": {
+    "certificate": "No case-specific certificate or public exact elimination output located.",
+    "grasslDatabase": "The referenced polarization.markus-grassl.de site did not load through the browser tool; no inference about unpublished code or data is made.",
+    "sphericalDesignShortcut": "Invalid without a further theorem relating existence of AC states to existence of spherical designs."
+  },
+  "suggestedCatalogueWording": "Reported absent in Quantum 4,285 (2020). The earlier primary sources explicitly classified the relevant maximal-order claims as conjectural; no explicit exclusion certificate has been reproduced here.",
+  "catalogueFollowup": {
+    "date": "2026-10-28",
+    "result": "Both exclusions are now independently proved by exact catalogue certificates; no external source is used as proof of the new identities.",
+    "proofs": [
+      "n9-t3/proof.md",
+      "n10-t4/proof.md",
+      "n11-t4/proof.md"
+    ],
+    "additionalResult": "The previously unresolved N=11,t=4 case is independently excluded by two exact three-copy certificates; this completes the n=2–12 core."
+  }
+}

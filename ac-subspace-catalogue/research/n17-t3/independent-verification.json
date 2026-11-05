@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "n": 17,
+  "t": 3,
+  "dimension": 2,
+  "maximumDimension": 2,
+  "orthonormalityVerified": true,
+  "physicalComplexMomentEntriesChecked": 40,
+  "operators": [
+    {
+      "raisingPower": 0,
+      "zPower": 0,
+      "scalarExpectation": "1"
+    },
+    {
+      "raisingPower": 0,
+      "zPower": 1,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 0,
+      "zPower": 2,
+      "scalarExpectation": "323/12"
+    },
+    {
+      "raisingPower": 0,
+      "zPower": 3,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 1,
+      "zPower": 0,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 1,
+      "zPower": 1,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 1,
+      "zPower": 2,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 2,
+      "zPower": 0,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 2,
+      "zPower": 1,
+      "scalarExpectation": "0"
+    },
+    {
+      "raisingPower": 3,
+      "zPower": 0,
+      "scalarExpectation": "0"
+    }
+  ],
+  "complexCrossEntriesExactlyVerified": 64,
+  "fullCrossReductionEntriesChecked": 64,
+  "basisSHA256": "e1bb9db003097d976d1bb13acbff95f7abd1ca1ae7f56e9fdbd999d3dc851158",
+  "maximumDisplayCoefficientError": 5.551115123125783e-17,
+  "method": "Independently construct physical Jz and J+ matrices and check every ordered basis-pair compression of J+^q Jz^p for q+p<=t. These operators and their adjoints span all spin-tensor ranks zero through t; their scalar compressions are equivalent to every ordered t-qubit cross reduction. No primary verifier or constructor is imported.",
+  "coefficientType": "Explicit finite radical expressions, with no free parameters."
+}

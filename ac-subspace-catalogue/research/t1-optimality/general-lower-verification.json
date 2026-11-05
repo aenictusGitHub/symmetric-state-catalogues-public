@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "scope": "Symbolic complete-parameter central-block identities and coefficient positivity for the general first-order attaining construction. Separated module support and cancellation arguments are documented in proof.tex and the source constructor.",
+  "source": "../analytical-constructions/construct_t1.py",
+  "symbolicCentralBlocks": [
+    {
+      "type": "central-three",
+      "minimumX": "63/4",
+      "probabilities": {
+        "a": "8*X/(36*X - 63)",
+        "b": "(28*X - 105)/(72*X - 126)",
+        "c": "(28*X - 21)/(72*X - 126)"
+      },
+      "normalizationMeanAndCrossIdentitiesVerified": true,
+      "phaseCosineSquared": "7*(4*X - 15)**2*(4*X + 1)/(64*X*(4*X - 35)*(4*X - 3))",
+      "phaseSineSquared": "9*(64*X**3 - 720*X**2 + 140*X - 175)/(64*X*(4*X - 35)*(4*X - 3))",
+      "shiftedPositiveNumerator": "576*Y**3 + 20736*Y**2 + 225792*Y + 661248",
+      "shiftedPositiveDenominator": "1024*Y**3 + 38656*Y**2 + 462336*Y + 1693440",
+      "allShiftedCoefficientsPositive": true,
+      "finalPhaseEquation": "For central-three use negative cosine; for central-four use positive cosine. The remaining compressed J+ equation then vanishes by its defining phase formula."
+    },
+    {
+      "type": "central-four",
+      "minimumX": "99/4",
+      "probabilities": {
+        "a": "16*X/(52*X - 135)",
+        "b": "(108*X - 945)/(416*X - 1080)",
+        "c": "(180*X - 135)/(416*X - 1080)"
+      },
+      "normalizationMeanAndCrossIdentitiesVerified": true,
+      "phaseCosineSquared": "81*(4*X - 35)**2*(4*X + 1)/(2560*X*(4*X - 63)*(4*X - 3))",
+      "phaseSineSquared": "(35776*X**3 - 586416*X**2 + 109620*X - 99225)/(2560*X*(4*X - 63)*(4*X - 3))",
+      "shiftedPositiveNumerator": "35776*Y**3 + 2069952*Y**2 + 36827136*Y + 185794560",
+      "shiftedPositiveDenominator": "40960*Y**3 + 2365440*Y**2 + 42301440*Y + 218972160",
+      "allShiftedCoefficientsPositive": true,
+      "finalPhaseEquation": "For central-three use negative cosine; for central-four use positive cosine. The remaining compressed J+ equation then vanishes by its defining phase formula."
+    }
+  ]
+}

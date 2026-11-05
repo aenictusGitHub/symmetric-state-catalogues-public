@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,longtable,hyperref}
+\title{No pure fourth-order anticoherent state of eleven symmetric qubits}
+\author{Exact catalogue certificate}
+\date{28 October 2026}
+\begin{document}
+\maketitle
+
+\paragraph{Theorem.} No nonzero vector in $\operatorname{Sym}^{11}(\mathbb C^2)$ is fourth-order anticoherent. The result allows arbitrary complex Dicke amplitudes and assumes no discrete symmetry, sparse support, or reality condition.
+
+Let $T_{\ell q}$ be an irreducible spherical-tensor family for spin $11/2$, in the usual Wigner convention, with $0\le\ell\le11$ and $-\ell\le q\le\ell$. Define
+\[
+ I_{\ell m k}(\psi)=\sum_{q+r+s=0}
+ \begin{pmatrix}\ell&m&k\\q&r&s\end{pmatrix}
+ \langle\psi|T_{\ell q}|\psi\rangle
+ \langle\psi|T_{mr}|\psi\rangle
+ \langle\psi|T_{ks}|\psi\rangle,
+ \qquad
+ W_{\ell m k}(\psi)=\frac{I_{\ell m k}(\psi)}{I_{\ell m k}(D_{11}^{(0)})}.
+\]
+The parentheses are Wigner $3j$ symbols. Every triple below satisfies the triangle inequalities and has even $\ell+m+k$. Consequently its zero-projection $3j$ symbol is nonzero. The coherent tensor moments of rank at most $11$ are also nonzero, so all displayed denominators are nonzero. Any nonzero rescaling of an entire tensor-rank family cancels in $W$.
+
+\paragraph{Exact identity.} For every complex, not necessarily normalized, spin-$11/2$ vector,
+\[
+ \boxed{\sum_{\ell m k}b_{\ell m k}W_{\ell m k}(\psi)=\langle\psi|\psi\rangle^3.}
+\]
+The coefficients are
+\begin{longtable}{c|r}
+$(\ell,m,k)$&$b_{\ell m k}$\\\hline
+(0,1,1) & 9 \\
+(0,2,2) & \frac{56625}{2303} \\
+(0,3,3) & \frac{4779}{329} \\
+(0,4,4) & \frac{3204}{2303} \\
+(1,1,2) & \frac{180}{7} \\
+(1,2,3) & \frac{8910}{329} \\
+(1,3,4) & -\frac{4272}{329} \\
+(1,4,5) & -\frac{1560}{329} \\
+(2,2,2) & \frac{27500}{16121} \\
+(2,2,4) & -\frac{295650}{16121} \\
+(2,3,3) & -\frac{4320}{329} \\
+(2,3,5) & -\frac{103500}{3619} \\
+(2,4,4) & -\frac{1091700}{177331} \\
+(2,4,6) & -\frac{101250}{25333} \\
+(2,5,5) & -\frac{900}{4277} \\
+(2,5,7) & \frac{4050}{47047} \\
+(3,3,4) & -\frac{3618}{329} \\
+(3,3,6) & -\frac{23400}{3619} \\
+(3,4,5) & -\frac{20520}{47047} \\
+(3,4,7) & -\frac{10050}{6721} \\
+(3,5,6) & \frac{450}{517} \\
+(4,4,4) & \frac{1899774}{2305303} \\
+(4,4,6) & \frac{26280}{25333} \\
+(4,4,8) & -\frac{360}{6721} \\
+(4,5,5) & \frac{6750}{4277} \\
+(4,5,7) & \frac{9600}{47047} \\
+\end{longtable}
+
+\paragraph{Contradiction.} Every listed triple contains a rank in $\{1,2,3,4\}$. Fourth-order anticoherence sets all tensor expectations of those ranks to zero. Every invariant on the left therefore vanishes, whereas the right is strictly positive for a nonzero vector. This proves the theorem. Together with an exact third-order construction, it proves that the maximal anticoherence order for eleven qubits is three.
+
+\paragraph{Exact rational verification.} For completeness, the verifier's convention is specified here. Put
+\[
+ e_r=\sqrt{\binom{11}{r}}\,|D_{11}^{(r)}\rangle,
+ \qquad |\psi\rangle=\sum_{r=0}^{11}z_r e_r,
+ \qquad G_{rr}=\binom{11}{r}.
+\]
+Choose $J_z|D_{11}^{(r)}\rangle=(r-11/2)|D_{11}^{(r)}\rangle$, reversing the source spin-axis convention $m=11/2-r$. Anticoherence and the scalar contractions are rotation-invariant. In this convention,
+\[
+ J_+e_r=(r+1)e_{r+1},\qquad J_-e_r=(12-r)e_{r-1}.
+\]
+Terms outside $0\le r\le11$ are zero. Construct integer matrices
+\[
+ F_{\ell q}=\frac{(\operatorname{ad}J_-)^{\ell-q}(J_+)^{\ell}}{(\ell-q)!\,\ell!},
+ \qquad (\operatorname{ad}A)(B)=AB-BA.
+\]
+They differ from conventional tensors by a rank-dependent nonzero constant and the factor $\sqrt{\binom{2\ell}{\ell-q}}$. Thus the rational scalar contractions use
+\[
+ h^{qrs}_{\ell m k}=\frac{\begin{pmatrix}\ell&m&k\\q&r&s\end{pmatrix}}
+ {\sqrt{\binom{2\ell}{\ell-q}\binom{2m}{m-r}\binom{2k}{k-s}}},
+ \qquad g^{qrs}_{\ell m k}=h^{qrs}_{\ell m k}/h_{\rm seed},
+\]
+where $h_{\rm seed}$ is the first nonzero value in ascending lexicographic $(q,r)$ order, with $s=-q-r$. The ratios $g$ are rational. Let $f_{\ell m k}$ denote the contraction using $F$ and $g$. Then
+\[
+ f_{\ell m k}(D_{11}^{(0)})=g^{000}_{\ell m k}
+ \binom{11}{\ell}\binom{11}{m}\binom{11}{k},
+ \qquad W_{\ell m k}=f_{\ell m k}/f_{\ell m k}(D_{11}^{(0)}).
+\]
+The machine-readable certificate records $\alpha_{\ell m k}=b_{\ell m k}/f_{\ell m k}(D_{11}^{(0)})$ and verifies
+\[
+ \sum_{\ell m k}\alpha_{\ell m k}f_{\ell m k}(\psi)
+ =\left(\sum_{r=0}^{11}\binom{11}{r}|z_r|^2\right)^3.
+\]
+The independent verifier constructs the matrices directly from the commutators and expands this equality in independent formal variables $z_r$ and $\overline{z_r}$. All $974{,}308$ rational contributions across $5{,}664$ monomial slots cancel exactly. No numerical arithmetic, optimization output, or irreducible-block decomposition is used in that verification. Run \texttt{python3 verify\_certificate.py} beside \texttt{certificate.json}; Python 3 and SymPy suffice.
+
+\paragraph{Scope and attribution.} This is an independently derived catalogue certificate. The equivalence of anticoherence with vanishing multipoles of ranks $1,\ldots,t$ is stated in the supplied manuscript \texttt{2605.29436.pdf}, Definition 1, Eqs.~(3)--(4), PDF page 2. The moment and reduced-state characterization also appears in D. Baguette et al., \emph{Physical Review A} \textbf{92}, 052333 (2015), Eqs.~(10), (16)--(17), PDF pages 3--4.
+\end{document}

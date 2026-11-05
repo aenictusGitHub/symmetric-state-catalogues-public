@@ -1,0 +1,212 @@
+{
+  "pointGroupCoverage": {
+    "states": 197,
+    "groupCardsChecked": 197,
+    "groupDropdownsChecked": 197,
+    "groupRowsChecked": 158,
+    "blankGroupRows": 229,
+    "fullGroups": {
+      "D\u221eh": 17,
+      "D3h": 4,
+      "Td": 6,
+      "D5h": 3,
+      "Oh": 4,
+      "C5v": 4,
+      "C3v": 11,
+      "D4d": 3,
+      "C4v": 4,
+      "D3": 3,
+      "Ih": 3,
+      "C6v": 2,
+      "Cs": 4,
+      "C7v": 3,
+      "C1": 68,
+      "C2": 35,
+      "C2v": 1,
+      "T": 3,
+      "C2h": 1,
+      "C9v": 2,
+      "C8v": 1,
+      "C11v": 1,
+      "C10v": 1,
+      "C13v": 1,
+      "D4": 1,
+      "C3": 2,
+      "O": 3,
+      "D2": 4,
+      "D6": 1,
+      "C4": 1
+    },
+    "properGroups": {
+      "D\u221e": 17,
+      "D3": 7,
+      "T": 9,
+      "D5": 3,
+      "O": 7,
+      "C5": 4,
+      "C3": 13,
+      "D4": 4,
+      "C4": 5,
+      "I": 3,
+      "C6": 2,
+      "C1": 72,
+      "C7": 3,
+      "C2": 37,
+      "C9": 2,
+      "C8": 1,
+      "C11": 1,
+      "C10": 1,
+      "C13": 1,
+      "D2": 4,
+      "D6": 1
+    },
+    "samePartitionSwitches": [
+      {
+        "n": 12,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "first": {
+          "id": "ac-n12-t5",
+          "pointGroup": "Ih"
+        },
+        "second": {
+          "id": "ac-n12-t4-family",
+          "pointGroup": "D5h"
+        }
+      },
+      {
+        "n": 8,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "first": {
+          "id": "ac-n8-t3",
+          "pointGroup": "Oh"
+        },
+        "second": {
+          "id": "ac-n8-t3-manuscript",
+          "pointGroup": "D4d"
+        }
+      }
+    ],
+    "knownExamples": [
+      {
+        "id": "ac-n12-t5",
+        "pointGroup": "Ih",
+        "rotationalSubgroup": "I",
+        "pointGroupOrder": 120
+      },
+      {
+        "id": "ac-n10-t3",
+        "pointGroup": "D5h",
+        "rotationalSubgroup": "D5",
+        "pointGroupOrder": 20
+      },
+      {
+        "id": "gmax-n12-t3",
+        "pointGroup": "Oh",
+        "rotationalSubgroup": "O",
+        "pointGroupOrder": 48
+      }
+    ],
+    "scope": "Numerical weighted-constellation groups of each attached representative; full O3 group and proper SO3 subgroup are distinct."
+  },
+  "rearPointFill": {
+    "color": "#ddb392",
+    "alpha": 0.85,
+    "drawPathChecked": true
+  },
+  "symmetryChecks": [
+    {
+      "id": "ac-n10-t3",
+      "rotationCount": 10,
+      "axes": {
+        "2": 5,
+        "5": 1
+      },
+      "maxResidual": 7.631521572941402e-16
+    },
+    {
+      "id": "gmax-n12-t3",
+      "rotationCount": 24,
+      "axes": {
+        "2": 6,
+        "3": 4,
+        "4": 3
+      },
+      "maxResidual": 3.1401849173675503e-16
+    }
+  ],
+  "symmetryCoverage": {
+    "finite": 180,
+    "continuous": 17,
+    "nontrivial": 125,
+    "maxResidual": 1.0068810866857322e-15
+  },
+  "drawCallsExercised": true,
+  "schemaVersion": "2.3",
+  "dataFile": "/Users/jmartin/Documents/ChatGPT/QFI symmetric/majorana-degeneracy-catalogue/data/catalogue.json",
+  "refinedStates": 144,
+  "entriesRendered": 387,
+  "viewerOpens": 197,
+  "viewerWarnings": [],
+  "lifecycleCycles": 20,
+  "exactStatesSelected": 53,
+  "algebraicDefinitionsChecked": 6,
+  "numericalStatesSelected": 144,
+  "assertions": 10826,
+  "legacyLinksChecked": 56,
+  "renderedMathExpressionsChecked": 4669,
+  "mathErrors": [],
+  "default": "n12 partition 1^12, maximum5",
+  "selectedExamples": [
+    "n12 2^6 maximum3 and matching double-octahedron state",
+    "n11 (2,1^9) certified implicit vector"
+  ],
+  "checks": [
+    "syntax",
+    "all records initialize and select without runtime errors",
+    "all state selections match full partitions",
+    "numerical reports never presented as exact attainment",
+    "all numerical amplitudes, residuals, clustering and source files shown",
+    "dynamic qubit filter and limited higher-n coverage",
+    "theorem-only and zero-order copy",
+    "every attached proof link displayed",
+    "n and evidence filters",
+    "legacy hash conversion",
+    "local KaTeX rendering",
+    "modal open/close and focus for every vector",
+    "no-vector availability and state-picker synchronization",
+    "20 renderer lifecycle cycles including active pointer capture",
+    "weighted D5 and octahedral symmetry axes",
+    "continuous axis and perpendicular half-turn family",
+    "all symmetry summaries render valid LaTeX",
+    "axis and continuous-plane draw paths exercised",
+    "all representative full point groups and rotational subgroups shown in card and modal",
+    "representative dropdown group labels synchronize with selected vector",
+    "table aggregates groups per representative without assigning a group to its partition",
+    "known Ih/I, D5h/D5 and Oh/O examples",
+    "same-partition representatives with different full point groups",
+    "stronger rear-point fill exercised in drawing calls"
+  ],
+  "limitation": "Uses a minimal DOM harness for functional/static checks; visual layout and real browser interaction are assigned to the parent agent."
+}

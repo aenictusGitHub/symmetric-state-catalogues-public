@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "n": 60,
+  "t": 4,
+  "dimension": 2,
+  "exactSignedMagneticPointProbabilities": [
+    {
+      "0": "6667/50625",
+      "-15": "53041/151875",
+      "15": "53041/151875",
+      "-30": "12896/151875",
+      "30": "12896/151875"
+    },
+    {
+      "-5": "889/7500",
+      "5": "889/7500",
+      "-10": "617/3750",
+      "10": "617/3750",
+      "-25": "1627/7500",
+      "25": "1627/7500"
+    }
+  ],
+  "exactDiagonalMomentsThroughFour": [
+    "1",
+    "0",
+    "310",
+    "0",
+    "172918"
+  ],
+  "allProbabilitiesStrictlyPositive": true,
+  "fullSpanAC4CrossConditionsVerifiedExactly": true,
+  "exactBasisGramMatrix": "identity(2)",
+  "exactNonzeroNormalizedYoung22MomentTrace": "1",
+  "disjointSupports": true,
+  "minimumUnionSupportGap": 5,
+  "rotatedComplexBasisGramError": 1.5602787056185967e-15,
+  "normalizedWedgeSquaredNorm": 1.0000000000000004,
+  "normalizedNonzeroYoung22MomentTrace": 1.0000000000000009,
+  "maximumRotatedPluckerResidual": 7.052524705321354e-19,
+  "rotatedFirstLegContractions": [
+    {
+      "rank": 1,
+      "normalizedFirstLegContractionNorm": 1.9330644842679743e-16,
+      "rankFourTensorContractionFrobeniusNorm": 1.933064484267975e-16
+    },
+    {
+      "rank": 2,
+      "normalizedFirstLegContractionNorm": 2.5573657251435477e-16,
+      "rankFourTensorContractionFrobeniusNorm": 2.5573657251435487e-16
+    },
+    {
+      "rank": 3,
+      "normalizedFirstLegContractionNorm": 1.7242614352741814e-16,
+      "rankFourTensorContractionFrobeniusNorm": 1.7242614352741821e-16
+    },
+    {
+      "rank": 4,
+      "normalizedFirstLegContractionNorm": 1.688706722809331e-16,
+      "rankFourTensorContractionFrobeniusNorm": 1.6887067228093318e-16
+    }
+  ],
+  "scope": "A genuine normalized nonzero AC4-plane Young22 moment satisfies the necessary support and first-leg equations. The rotation is a supplementary numerical diagnostic, not a premise of either exact exclusion proof."
+}

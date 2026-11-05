@@ -1,0 +1,1448 @@
+{
+  "source": "references/ACLiege.jl",
+  "sourceSHA256": "2e1564c7df76b35e0b7418c29d10c0350bdc888caaa4eddd985cdfe0f85c370d",
+  "extraction": "Analytic coefficients read without executing Julia; original orientation retained.",
+  "scope": "Exact existence witnesses for full partition (1^n); no new global maximality claims. Existing numerical representatives remain separate.",
+  "states": [
+    {
+      "id": "acliege-n13-t3",
+      "n": 13,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=13",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 137,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(15)/15",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "sqrt(15)/15"
+      ],
+      "coefficients": [
+        [
+          0.2581988897471611,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2581988897471611,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        10,
+        13
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "38/9075",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.45680747810527617,
+          "y": -0.26375351341635916,
+          "z": 0.8495651900281838,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9009769713978392,
+          "y": -0.4338187426435171,
+          "z": 0.006464947174969507,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.900976971397839,
+          "y": 0.433818742643517,
+          "z": -0.006464947174969291,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4568074781052762,
+          "y": 0.26375351341635916,
+          "z": -0.8495651900281836,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.22265372136257683,
+          "y": 0.9748838343073855,
+          "z": 0.005179765392942701,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2226537213625769,
+          "y": -0.9748838343073857,
+          "z": -0.00517976539294284,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.6986435254167725e-05,
+          "y": -0.5274637662500987,
+          "z": -0.8495775271068519,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.698643525416773e-05,
+          "y": 0.5274637662500987,
+          "z": 0.8495775271068517,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": 0.2637102870268731,
+          "z": -0.8495898446830877,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": 0.781897753601443,
+          "z": -0.0028713014111677137,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": -0.7818977536014429,
+          "z": 0.002871301411167811,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": -0.2637102870268732,
+          "z": 0.8495898446830877,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**13 - 13*sqrt(11)*I*y**10 + 13*sqrt(11)*I*y**3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0686612575053706e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.8677338232678895,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{15}}{15})|D_{13}^{(0)}\\rangle+(\\frac{\\sqrt{390} i}{30})|D_{13}^{(3)}\\rangle+(\\frac{\\sqrt{390} i}{30})|D_{13}^{(10)}\\rangle+(\\frac{\\sqrt{15}}{15})|D_{13}^{(13)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=13",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 137; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n15-t3",
+      "n": 15,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=15",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 157,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "3*sqrt(22)/44",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(22)/44"
+      ],
+      "coefficients": [
+        [
+          0.31980107453341566,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31980107453341566,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "1301/3680820",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": 0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": -0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": 0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": -0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": 0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": -0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": 0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": -0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": 0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": -0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**15 + 35*sqrt(39)*y**11/3 - 35*sqrt(39)*y**4/3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3137671987015485e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8608292299677537,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{3 \\sqrt{22}}{44})|D_{15}^{(0)}\\rangle+(\\frac{\\sqrt{770}}{44})|D_{15}^{(4)}\\rangle+(\\frac{\\sqrt{770}}{44})|D_{15}^{(11)}\\rangle+(\\frac{3 \\sqrt{22}}{44})|D_{15}^{(15)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=15",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 157; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n16-t5",
+      "n": 16,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=16",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 158,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(69)/32",
+        "0",
+        "17*sqrt(690)/1472 - 7*sqrt(3358)*I/1472",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-279*sqrt(46046)/210496 - sqrt(50420370)*I/210496",
+        "0",
+        "-137*sqrt(98670)/105248 + 7*sqrt(480194)*I/26312",
+        "0",
+        "279*sqrt(46046)/210496 + sqrt(50420370)*I/210496",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-17*sqrt(690)/1472 + 7*sqrt(3358)*I/1472",
+        "0",
+        "sqrt(69)/32"
+      ],
+      "coefficients": [
+        [
+          0.25958199571618984,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3033651278825854,
+          -0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2844174971754177,
+          -0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.4088832118823884,
+          0.18435399111693207
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2844174971754177,
+          0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3033651278825854,
+          0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25958199571618984,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "339/286286",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 4.9995996217394874e-17,
+          "y": 0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.9995996217394874e-17,
+          "y": -0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.363476901526931,
+          "y": 0.9137670951339852,
+          "z": -0.18142281528732843,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3634769015269309,
+          "y": -0.9137670951339852,
+          "z": -0.1814228152873285,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5103366953788339,
+          "y": -0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5103366953788339,
+          "y": 0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14685979385190273,
+          "y": 0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14685979385190268,
+          "y": -0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.816496580927726,
+          "y": 1.4566548927776847e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.816496580927726,
+          "y": -9.999199243478976e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7669073012820825,
+          "y": -0.5103366953788337,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7669073012820826,
+          "y": 0.5103366953788335,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9137670951339852,
+          "y": 0.3634769015269311,
+          "z": 0.18142281528732845,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9137670951339851,
+          "y": -0.36347690152693096,
+          "z": 0.18142281528732865,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4034303997551513,
+          "y": 0.14685979385190268,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.40343039975515155,
+          "y": -0.14685979385190287,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**8 + y**7*(-170*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**6*(-560/23 + 28*sqrt(1095)*I/23) + y**5*(1302*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**4*(-4110/23 + 56*sqrt(1095)*I/23) + y**3*(-1302*sqrt(3)/23 - 14*sqrt(365)*I/23) + y**2*(-560/23 + 28*sqrt(1095)*I/23) + y*(170*sqrt(3)/23 - 14*sqrt(365)*I/23) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.307363498719824e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8469436844349447,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{69}}{32})|D_{16}^{(0)}\\rangle+(\\frac{17 \\sqrt{690}}{1472} - \\frac{7 \\sqrt{3358} i}{1472})|D_{16}^{(2)}\\rangle+(- \\frac{\\sqrt{31395}}{1196} + \\frac{3 \\sqrt{152789} i}{4784})|D_{16}^{(4)}\\rangle+(- \\frac{279 \\sqrt{46046}}{210496} - \\frac{\\sqrt{50420370} i}{210496})|D_{16}^{(6)}\\rangle+(- \\frac{137 \\sqrt{98670}}{105248} + \\frac{7 \\sqrt{480194} i}{26312})|D_{16}^{(8)}\\rangle+(\\frac{279 \\sqrt{46046}}{210496} + \\frac{\\sqrt{50420370} i}{210496})|D_{16}^{(10)}\\rangle+(- \\frac{\\sqrt{31395}}{1196} + \\frac{3 \\sqrt{152789} i}{4784})|D_{16}^{(12)}\\rangle+(- \\frac{17 \\sqrt{690}}{1472} + \\frac{7 \\sqrt{3358} i}{1472})|D_{16}^{(14)}\\rangle+(\\frac{\\sqrt{69}}{32})|D_{16}^{(16)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=16",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 158; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n18-t5",
+      "n": 18,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=18",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 203,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(455)/65",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(455)/65"
+      ],
+      "coefficients": [
+        [
+          0.3281650616569468,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3281650616569468,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        13,
+        18
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "73/59150",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": -0.6000647849232895,
+          "y": -0.19495305413198974,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.37086513006314625,
+          "y": 0.5104002516308715,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6000647849232895,
+          "y": 0.1949530541319897,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3708651300631463,
+          "y": -0.5104002516308717,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030788e-17,
+          "y": 0.6308943850129586,
+          "z": -0.7758687227612162,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030787e-17,
+          "y": -0.6308943850129584,
+          "z": 0.7758687227612161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3708651300631463,
+          "y": -0.5104002516308715,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232895,
+          "y": 0.1949530541319896,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.37086513006314625,
+          "y": 0.5104002516308714,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232896,
+          "y": -0.19495305413198963,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**18 - 102*sqrt(3)*I*y**13 - 102*sqrt(3)*I*y**5 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.821705437899758e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7416574467027541,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{455}}{65})|D_{18}^{(0)}\\rangle+(\\frac{\\sqrt{6630} i}{130})|D_{18}^{(5)}\\rangle+(\\frac{\\sqrt{6630} i}{130})|D_{18}^{(13)}\\rangle+(\\frac{\\sqrt{455}}{65})|D_{18}^{(18)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=18",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 203; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    },
+    {
+      "id": "acliege-n20-t5",
+      "n": 20,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=20",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 229,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(561)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(741)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(561)/75"
+      ],
+      "coefficients": [
+        [
+          0.3158058475287203,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.36295086903509866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3158058475287203,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "121/97104",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.491123473188423,
+          "y": -0.3568220897730899,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507984,
+          "y": -0.5773502691896258,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6070619982066862,
+          "y": -7.434365329878145e-17,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507998,
+          "y": 0.5773502691896257,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49112347318842287,
+          "y": 0.35682208977309,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917662,
+          "y": -0.5773502691896257,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.303530999103343,
+          "y": -0.9341723589627158,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9822469463768461,
+          "y": -1.2029055788526663e-16,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.30353099910334325,
+          "y": 0.9341723589627157,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917658,
+          "y": 0.5773502691896258,
+          "z": 0.18759247408508015,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6070619982066862,
+          "y": -0.0,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507992,
+          "y": -0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911234731884229,
+          "y": -0.35682208977309,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49112347318842303,
+          "y": 0.3568220897730899,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507976,
+          "y": 0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.982246946376846,
+          "y": -0.0,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30353099910334314,
+          "y": -0.9341723589627156,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.794654472291766,
+          "y": -0.5773502691896258,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7946544722917662,
+          "y": 0.5773502691896256,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3035309991033429,
+          "y": 0.9341723589627158,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + 228*y**3 + 494*y**2 - 228*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3417348143383273e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7136441795461796,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [],
+      "stateLatex": "|\\psi\\rangle=(\\frac{\\sqrt{561}}{75})|D_{20}^{(0)}\\rangle+(\\frac{\\sqrt{209}}{25})|D_{20}^{(5)}\\rangle+(\\frac{\\sqrt{741}}{75})|D_{20}^{(10)}\\rangle+(- \\frac{\\sqrt{209}}{25})|D_{20}^{(15)}\\rangle+(\\frac{\\sqrt{561}}{75})|D_{20}^{(20)}\\rangle",
+      "stateName": "ACLiege analytic representative at n=20",
+      "references": [
+        {
+          "file": "ACLiege.jl",
+          "location": "acstateslist, line 229; exact verification in research/acliege/"
+        }
+      ],
+      "provenance": "M. Grassl, as credited by the source comment; supplied ACLiege.jl, independently verified.",
+      "notes": "Exact formula from the supplied Julia source. Every reduced matrix through the displayed order is verified symbolically; this does not prove that no higher-order state exists at this size."
+    }
+  ]
+}

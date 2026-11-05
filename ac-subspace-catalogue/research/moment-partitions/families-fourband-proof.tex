@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Prescribed moment partitions with four bands: an improved radical family}
+\author{}\date{}\maketitle
+\begin{theorem}
+For every integer $N\ge17$, there exists an explicitly constructed
+second-order anticoherent subspace of dimension
+\[
+ k=\left\lfloor\frac{N-1}{8}\right\rfloor.
+\]
+Its Dicke coefficients are radicals of rational numbers. This is a lower
+bound on the unrestricted maximum, not a maximality assertion.
+\end{theorem}
+Write $N=8q+\rho$ with $q=\lfloor(N-1)/8\rfloor\ge2$ and
+$1\le\rho\le8$, and put $j=N/2$. If $1\le\rho\le7$, set
+\[
+ h=2q+1,\quad s=\left\lfloor\frac{\rho-1}{2}\right\rfloor,
+ \quad \epsilon=\frac1h.
+\]
+For $\rho=8$, set $h=2q+2$, $s=2$, and $\epsilon=0$.
+For $i=0,\ldots,q-1$ and $\ell=0,1,2,3$, define
+\[
+ r_{i\ell}=s+2i+\ell h,\qquad x_i=\frac{j-s-2i}{h},
+ \qquad v=\frac{j(j+1)}{3h^2}.
+\]
+The weight functions are
+\begin{align*}
+ b_0(x)&=\frac{v+x^2}{4}-\frac{35x}{36}+\frac56,&
+ b_1(x)&=-\frac{v+x^2}{4}+\frac{5x}{12}+\frac12,\\
+ b_2(x)&=-\frac{v+x^2}{4}+\frac{13x}{12}-\frac12,&
+ b_3(x)&=\frac{v+x^2}{4}-\frac{19x}{36}+\frac16.
+\end{align*}
+Set
+\[
+ (w_{i0},w_{i1},w_{i2},w_{i3})=
+ (b_0(x_i),b_1(x_i),b_2(x_i),b_3(x_i))
+ +\epsilon(x_i-3/2)(-1/3,1,-1,1/3).
+\]
+These are rational strictly positive weights. The correction lies in the
+kernel of the three moment equations, so directly
+\[
+ \sum_\ell w_{i\ell}=1,\quad
+ \sum_\ell w_{i\ell}(j-r_{i\ell})=0,\quad
+ \sum_\ell w_{i\ell}(j-r_{i\ell})^2=\frac{j(j+1)}3.
+\]
+Thus the four lifted nodes $(m,m^2)$ for each row express the same prescribed
+moment point $(0,j(j+1)/3)$ as a convex combination. The phase construction
+below enforces the remaining cross-moment constraints.
+
+For each $i=0,\ldots,q-2$, define four positive edge lengths
+\[
+ L_{i\ell}=\sqrt{w_{i\ell}w_{i+1,\ell}
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1)}.
+\]
+They obey the strict quadrilateral inequalities
+$2\max_\ell L_{i\ell}<\sum_\ell L_{i\ell}$.
+Here is an explicit radical prescription for phases closing each
+quadrilateral. Write $(a,b,c,d)=(L_{i0},L_{i1},L_{i2},L_{i3})$ and choose
+\[
+ D=\frac{\max\{|a-b|,|c-d|\}+\min\{a+b,c+d\}}2>0.
+\]
+For a pair $(u,v)$ define
+\[
+ C_u=\frac{D^2+u^2-v^2}{2Du},\quad
+ C_v=\frac{D^2+v^2-u^2}{2Dv},\qquad
+ Z(u,v)=\left(C_u+i\sqrt{1-C_u^2},
+ C_v-i\sqrt{1-C_v^2}\right).
+\]
+If $(z_0,z_1)=Z(a,b)$ and $(z_2,z_3)=-Z(c,d)$, then
+$\sum_\ell L_{i\ell}z_\ell=0$ and each $|z_\ell|=1$.
+Let $\eta_{0\ell}=1$ and recursively set
+$\eta_{i+1,\ell}=\eta_{i\ell}z_\ell$. An orthonormal basis is
+\[
+ |u_i\rangle=\sum_{\ell=0}^3\sqrt{w_{i\ell}}\,
+ \eta_{i\ell}|D_N^{r_{i\ell}}\rangle,
+ \qquad 0\le i<q.
+\]
+The max/min in the formula choose between explicitly known real radicals;
+there is no polynomial root search or numerical optimization.
+
+\paragraph{Why every superposition is AC2.}
+The four bands are disjoint. Their successive gaps are at least three:
+$h-2(q-1)=3$ for $\rho<8$ and $4$ for $\rho=8$.
+Within a band, used Dicke levels differ by two. Consequently all compressed
+operators shifting excitation by one vanish. The only excitation-shift-two
+matrix elements are between consecutive rows in the same band, and these
+are exactly the four-edge sums canceled above. Disjointness annihilates
+off-diagonal moments of $J_z$ and $J_z^2$, while the displayed moment
+identities fix their diagonals. Thus for the basis matrix $B$,
+\[
+ B^\dagger B=I_q,\quad B^\dagger J_zB=0,\quad
+ B^\dagger J_z^2B=\frac{j(j+1)}3I_q,
+\]
+\[
+ B^\dagger J_+B=B^\dagger J_+^2B=
+ B^\dagger\{J_z,J_+\}B=0.
+\]
+These are the full first- and second-order AC compression identities,
+including every pair of different basis vectors.
+
+\paragraph{Uniform exact positivity certificate.}
+The companion script \texttt{families\_fourband.py} proves weight and
+quadrilateral positivity for all $q\ge2$ by polynomial identities.
+Multiply every weight by the positive denominator $144h^2$ and call
+the resulting integer polynomial $W_\ell(q,i)$. Let
+\[
+ E_\ell=W_\ell(q,i)W_\ell(q,i+1)
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1).
+\]
+The row domain is covered by $i=0,q=z+2$ and
+$i=u+1,q=u+z+2$, where $u,z\ge0$. Every coefficient of every transformed
+$W_\ell$ is nonnegative and its constant term is positive. The edge domain
+is covered by $i=u,q=u+z+2$. Every coefficient of every $E_\ell$ is
+nonnegative, with positive constant term. Define
+\[
+ F=(E_0+E_1+E_2+E_3)^2-2\sum_\ell E_\ell^2.
+\]
+Let $A$ be the polynomial obtained by negating just the negative-coefficient
+terms of $F$. The exact certificate checks that every coefficient of
+$64E_0E_1E_2E_3-A^2$ is nonnegative and its constant is positive.
+Therefore $F+8\sqrt{E_0E_1E_2E_3}>0$. Factoring this expression gives
+\[
+ (-a+b+c+d)(a-b+c+d)(a+b-c+d)(a+b+c-d)>0,
+\]
+where $a,b,c,d$ are the four positive square roots of the $E_\ell$.
+At most one factor could be nonpositive, proving all strict quadrilateral
+inequalities. The coefficient certificate is symbolic for all eight
+remainders, not an extrapolation from a finite search.
+
+For $N\not\equiv0\pmod8$ this improves the previous universal four-band
+lower bound $\lfloor N/8\rfloor-1$ by one dimension; at multiples of eight
+the dimension agrees. The earlier separated-triple construction remains
+available and may be larger at smaller sizes.
+\end{document}

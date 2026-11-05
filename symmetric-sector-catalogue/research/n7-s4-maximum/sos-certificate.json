@@ -1,0 +1,120 @@
+{
+  "n": 7,
+  "sector": 4,
+  "bound": "265/7",
+  "target": "(265/7)*Q^3-Q*S4_un",
+  "basisFile": "basis.json",
+  "basisScales": [
+    [
+      "1/32"
+    ],
+    [
+      "1/8"
+    ],
+    [
+      "1/16"
+    ],
+    [
+      "2",
+      "64"
+    ],
+    [
+      "1/32",
+      "2"
+    ],
+    [
+      "1/8"
+    ]
+  ],
+  "blocks": [
+    {
+      "kind": "21",
+      "L2": 1,
+      "matrix": [
+        [
+          "1107491/2359296"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "1107491/2359296"
+      ]
+    },
+    {
+      "kind": "21",
+      "L2": 3,
+      "matrix": [
+        [
+          "281291/630784"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "281291/630784"
+      ]
+    },
+    {
+      "kind": "21",
+      "L2": 5,
+      "matrix": [
+        [
+          "9890585/22708224"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "9890585/22708224"
+      ]
+    },
+    {
+      "kind": "21",
+      "L2": 7,
+      "matrix": [
+        [
+          "5137325/194688",
+          "-64231/18252"
+        ],
+        [
+          "-64231/18252",
+          "174488/195195"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "5137325/194688",
+        "13604649056/32041496025"
+      ]
+    },
+    {
+      "kind": "21",
+      "L2": 9,
+      "matrix": [
+        [
+          "201/64",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "15/32"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "201/64",
+        "2887/6432"
+      ]
+    },
+    {
+      "kind": "21",
+      "L2": 11,
+      "matrix": [
+        [
+          "7/16"
+        ]
+      ],
+      "positiveLDLPivots": [
+        "7/16"
+      ]
+    }
+  ],
+  "identityMonomialsChecked": 868,
+  "coefficientRank": 6,
+  "gramVariables": 10,
+  "exactIdentityVerified": true,
+  "exactPositiveDefinitenessVerified": true
+}

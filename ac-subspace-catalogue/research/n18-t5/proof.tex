@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Eighteen qubits: the maximum fifth-order AC subspace dimension is one}
+\author{Exact catalogue verification}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+For symmetric eighteen-qubit states, $K(18,5)=1$.
+\end{theorem}
+\section*{1. An explicit state from the AC-state catalogue}
+Use normalized Dicke states, indexed by excitation number. The supplied
+\texttt{ACLiege.jl}, line 203, gives a vector credited in its source comment
+to M. Grassl. Normalizing and simplifying that same vector yields
+\[
+ |\psi\rangle=\frac{\sqrt{14}\bigl(|D_{18}^{(0)}\rangle+|D_{18}^{(18)}\rangle\bigr)
+ +i\sqrt{51}\bigl(|D_{18}^{(5)}\rangle+|D_{18}^{(13)}\rangle\bigr)}{\sqrt{130}}.
+\]
+The probabilities are $14/130$ at magnetic numbers $m=\pm9$ and
+$51/130$ at $m=\pm4$. They sum to one. The odd diagonal moments vanish,
+and direct substitution gives
+\[
+ \langle J_z^2\rangle=30,\qquad \langle J_z^4\rangle=1614,
+\]
+equal to the normalized spin-nine traces. Thus every diagonal spin moment
+through degree five is isotropic.
+
+The Dicke support gaps eliminate every magnetic shift from one through
+four. At shift five, only the pairs $0\to5$ and $13\to18$ contribute.
+Their $J_+^5$ ladder coefficients are equal, while the amplitude products
+are $-i\sqrt{714}/130$ and $+i\sqrt{714}/130$. Hence
+$\langle J_+^5\rangle=0$. Its conjugate vanishes too. These conditions
+cover all irreducible tensor components through rank five, proving AC5.
+
+Equivalently, normalized Dicke splitting gives $\rho_5=I_6/6$.
+The accompanying independent verifier reconstructs every entry of each
+$\rho_t$ for $t=1,\ldots,5$ using exact fractions and squarefree radicals.
+It also verifies
+\[
+ \left\|\rho_6-I_7/7\right\|_F^2=\frac{73}{59150}>0,
+\]
+so this representative has exactly order five. This last calculation
+alone does not exclude a different sixth-order state.
+
+\section*{2. A two-dimensional fifth-order subspace is impossible}
+Let $\mathcal C\subset V_9$ be a fifth-order AC subspace of dimension $k$,
+with orthonormal basis $u_1,\ldots,u_k$. Polarization of the AC conditions
+implies $P T_{Lq}P=0$ for every rank $1\le L\le5$, where $P$ projects onto
+$\mathcal C$.
+Choose all Hilbert--Schmidt orthonormal rectangular tensor maps
+\[
+ E_{\ell q}:V_9\longrightarrow V_{17/2},
+ \qquad \ell=\tfrac12,\tfrac32,\tfrac52.
+\]
+There are $2+4+6=12$ maps. Every product $E_{\ell q}^{\dagger}E_{\ell' q'}$
+has ranks at most $\ell+\ell'\le5$. Whole-subspace AC therefore gives
+\[
+ \langle E_{\ell q}u_a,E_{\ell' q'}u_b\rangle
+ =\frac{\delta_{ab}\delta_{\ell\ell'}\delta_{qq'}}{19}.
+\]
+These are $12k$ nonzero orthogonal vectors in the eighteen-dimensional
+output space, so $12k\le18$ and $k\le1$. The explicit witness attains
+dimension one, proving the theorem. The argument applies to arbitrary
+complex subspaces and imposes no symmetry or support restriction.
+\end{document}

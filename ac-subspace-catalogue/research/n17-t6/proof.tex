@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{A rank-one-complement obstruction to anticoherence:\\seventeen qubits cannot be sixth-order AC}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}\label{thm}
+For every integer $r\ge1$, there is no pure $2r$-anticoherent state on
+$N=(r+1)^2+1$ symmetric qubits. In particular,
+\[
+ \boxed{K((r+1)^2+1,2r)=0,\qquad K(17,6)=0.}
+\]
+The conclusion applies to arbitrary complex amplitudes.
+\end{theorem}
+This is an analytical representation-theoretic proof. The accompanying
+\texttt{verify\_channel.py} checks the physical Clebsch--Gordan normalization,
+operator product ranks, and covariant channel for the seventeen-qubit case
+with exact algebraic arithmetic. Numerical optimization is not used.
+
+\section*{1. Rectangular spin tensors and their orthogonal images}
+Write $V_{N/2}=\operatorname{Sym}^N(\mathbb C^2)$, of dimension $N+1$.
+A pure state $\rho=|\psi\rangle\langle\psi|$ is $t$-AC precisely when
+\[
+ \Tr(\rho T_{Lq})=0\qquad(1\le L\le t,\ -L\le q\le L)
+\]
+for all irreducible spin tensors on its spin space. Consequently,
+\begin{equation}\label{mom}
+ \langle\psi|A|\psi\rangle=\frac{\Tr A}{N+1}
+\end{equation}
+whenever $A$ has only tensor ranks $0,\ldots,t$.
+
+Consider Hilbert--Schmidt orthonormal tensor maps
+\[
+ E_{\ell q}:V_{N/2}\longrightarrow V_{(N-2)/2},
+ \qquad \ell=1,\ldots,r,\quad q=-\ell,\ldots,\ell.
+\]
+All these irreducible representations occur in
+$\operatorname{Hom}(V_{N/2},V_{(N-2)/2})$, whose tensor ranks are
+$1,2,\ldots,N-1$; the sizes used below satisfy $r\le N-1$.
+There are
+\[
+ M=\sum_{\ell=1}^{r}(2\ell+1)=r(r+2)=(r+1)^2-1
+\]
+such maps. Products $E_{\ell q}^{\dagger}E_{\ell' q'}$ have ranks at most
+$\ell+\ell'\le2r$. Thus if $\psi$ is $2r$-AC, \eqref{mom} and
+Hilbert--Schmidt orthogonality give the exact Gram identity
+\begin{equation}\label{gram}
+ \langle E_{\ell q}\psi,E_{\ell' q'}\psi\rangle
+ =\frac{\delta_{\ell\ell'}\delta_{qq'}}{N+1}.
+\end{equation}
+In particular $M$ nonzero orthogonal vectors fit into the output space of
+dimension $N-1$, giving the familiar necessary bound
+\begin{equation}\label{bound}
+ \boxed{N\ge(r+1)^2}\qquad\text{for a pure $2r$-AC state.}
+\end{equation}
+
+\section*{2. Covariance transfers anticoherence to a rank-one complement}
+Define the completely positive map
+\[
+ \Phi(A)=\sum_{\ell=1}^{r}\sum_{q=-\ell}^{\ell}
+ E_{\ell q}A E_{\ell q}^{\dagger}.
+\]
+For each $\ell$ the Kraus operators contain the entire tensor multiplet.
+Under a rotation their $q$ indices mix by a unitary spin-$\ell$ matrix,
+so $\Phi$ is covariant:
+\[
+ \Phi(D_{N/2}(g)A D_{N/2}(g)^{\dagger})
+ =D_{(N-2)/2}(g)\Phi(A)D_{(N-2)/2}(g)^{\dagger}.
+\]
+The operator spaces of both irreducible spin representations contain each
+allowed tensor rank once. Schur's lemma therefore implies that $\Phi$ and
+its Hilbert--Schmidt adjoint preserve tensor rank, possibly annihilating
+it. In particular, if $\rho$ has no ranks $1,\ldots,2r$, neither does
+$\Phi(\rho)$. This implication requires no nonvanishing channel multiplier.
+
+By \eqref{gram},
+\[
+ Q=(N+1)\Phi(\rho)
+\]
+is an orthogonal projector of rank $M$. If its complement has rank one,
+there is a normalized output vector $\phi$ such that
+\[
+ I_{N-1}-Q=|\phi\rangle\langle\phi|.
+\]
+The identity has only scalar tensor rank, while $Q$ has no ranks
+$1,\ldots,2r$. Hence $\phi$ is a pure $2r$-AC state on $N-2$ qubits.
+This is the rank-one-complement transfer used in the theorem.
+
+\section*{3. The forbidden sizes}
+Put $D=(r+1)^2$ and suppose $N=D+1$. Then
+\[
+ \dim V_{(N-2)/2}=N-1=D,\qquad\operatorname{rank}Q=M=D-1.
+\]
+The complement is therefore one-dimensional and supplies a pure $2r$-AC
+state on $N-2=D-1$ qubits. That violates \eqref{bound}, which requires at
+least $D$ qubits. This contradiction proves Theorem~\ref{thm}.
+The first instances are
+\[
+ (N,t)=(5,2),(10,4),(17,6),(26,8),(37,10),\ldots.
+\]
+The theorem excludes these specific sizes; it is not an existence claim
+at any neighboring size.
+
+\section*{4. The seventeen-qubit case explicitly}
+For $N=17$ and $r=3$, the fifteen tensors of ranks one, two and three map
+spin $17/2$ into spin $15/2$. Their image Gram matrix is $I_{15}/18$, so
+\[
+ 18\Phi(|\psi\rangle\langle\psi|)=I_{16}-|\phi\rangle\langle\phi|.
+\]
+The complementary vector would be a pure sixth-order AC state on fifteen
+qubits. Applying the same fifteen rectangular tensors to that state maps
+into the fourteen-dimensional spin-$13/2$ space, contradicting their
+orthogonality. Thus $K(17,6)=0$. This proof is independent of the separate
+fifth-order exclusion and of the fifteen-qubit fourth-order certificate.
+
+\paragraph{Exact matrix convention.}
+In magnetic-number bases, the verified operators are
+\[
+ \langle j',a|E_{\ell q}|j,m\rangle
+ =\sqrt{\frac{2\ell+1}{2j'+1}}
+ \langle j,m;\ell,q\mid j',a\rangle,
+ \qquad j=17/2,\ j'=15/2.
+\]
+The verifier checks all Hilbert--Schmidt Gram entries, the raising-operator
+covariance equations, absence of every product rank above
+$\ell+\ell'$, and the adjoint channel on every diagonal tensor rank from
+zero through six. Covariance extends the diagonal checks to every magnetic
+component. All these checks use exact SymPy algebraic numbers, with no
+floating-point tolerance. The general theorem rests on the proof above,
+not extrapolation from a finite computation.
+\end{document}

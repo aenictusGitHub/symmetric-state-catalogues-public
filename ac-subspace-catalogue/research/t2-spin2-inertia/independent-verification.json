@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "catalogueSha256": "57589155142af874f0adae354b93650ffd5794a47f17c8d21f968cfb94331530",
+  "symbolicAllNVerification": {
+    "passed": true,
+    "method": "Exact all-N tridiagonal magnetization-block characteristic polynomials, including every boundary size; exact polynomial substitution and coefficientwise strict signs.",
+    "XEigenvaluesDescendingTotalSpin": [
+      "N",
+      "N/2 - 2",
+      "-3",
+      "-N/2 - 3",
+      "-N - 2"
+    ],
+    "WEigenvaluesDescendingTotalSpin": [
+      "N*(N + 2)",
+      "-(5*N + 4)/2",
+      "-N*(N + 5)/2",
+      "-N*(N + 2)/2",
+      "-N - 2"
+    ],
+    "multiplicitiesDescendingTotalSpin": [
+      "N+5",
+      "N+3",
+      "N+1",
+      "N-1",
+      "N-3"
+    ],
+    "inertiaForNAtLeast4": {
+      "positive": "N+5",
+      "negative": "4*N",
+      "zero": 0
+    },
+    "conclusion": "5*k <= N+5 for N>=4 and t>=2"
+  },
+  "physicalSpectra": [
+    {
+      "n": 4,
+      "passed": true,
+      "dimension": 25,
+      "eigenvalues": [
+        "24",
+        "-12",
+        "-18",
+        "-12",
+        "-6"
+      ],
+      "multiplicities": [
+        9,
+        7,
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "passed": true,
+      "dimension": 30,
+      "eigenvalues": [
+        "35",
+        "-29/2",
+        "-25",
+        "-35/2",
+        "-7"
+      ],
+      "multiplicities": [
+        10,
+        8,
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "n": 6,
+      "passed": true,
+      "dimension": 35,
+      "eigenvalues": [
+        "48",
+        "-17",
+        "-33",
+        "-24",
+        "-8"
+      ],
+      "multiplicities": [
+        11,
+        9,
+        7,
+        5,
+        3
+      ]
+    },
+    {
+      "n": 7,
+      "passed": true,
+      "dimension": 40,
+      "eigenvalues": [
+        "63",
+        "-39/2",
+        "-42",
+        "-63/2",
+        "-9"
+      ],
+      "multiplicities": [
+        12,
+        10,
+        8,
+        6,
+        4
+      ]
+    },
+    {
+      "n": 8,
+      "passed": true,
+      "dimension": 45,
+      "eigenvalues": [
+        "80",
+        "-22",
+        "-52",
+        "-40",
+        "-10"
+      ],
+      "multiplicities": [
+        13,
+        11,
+        9,
+        7,
+        5
+      ]
+    },
+    {
+      "n": 9,
+      "passed": true,
+      "dimension": 50,
+      "eigenvalues": [
+        "99",
+        "-49/2",
+        "-63",
+        "-99/2",
+        "-11"
+      ],
+      "multiplicities": [
+        14,
+        12,
+        10,
+        8,
+        6
+      ]
+    },
+    {
+      "n": 10,
+      "passed": true,
+      "dimension": 55,
+      "eigenvalues": [
+        "120",
+        "-27",
+        "-75",
+        "-60",
+        "-12"
+      ],
+      "multiplicities": [
+        15,
+        13,
+        11,
+        9,
+        7
+      ]
+    },
+    {
+      "n": 11,
+      "passed": true,
+      "dimension": 60,
+      "eigenvalues": [
+        "143",
+        "-59/2",
+        "-88",
+        "-143/2",
+        "-13"
+      ],
+      "multiplicities": [
+        16,
+        14,
+        12,
+        10,
+        8
+      ]
+    },
+    {
+      "n": 12,
+      "passed": true,
+      "dimension": 65,
+      "eigenvalues": [
+        "168",
+        "-32",
+        "-102",
+        "-84",
+        "-14"
+      ],
+      "multiplicities": [
+        17,
+        15,
+        13,
+        11,
+        9
+      ]
+    }
+  ],
+  "exactPositiveControls": [
+    {
+      "id": "line-ac-n4-t2",
+      "n": 4,
+      "dimension": 1,
+      "passed": true,
+      "exactFullWitnessCompressionEntries": 25,
+      "exactFirstAndSecondMomentEntries": 50
+    },
+    {
+      "id": "acliege-\u03a0_7_2_2",
+      "n": 7,
+      "dimension": 2,
+      "passed": true,
+      "exactFullWitnessCompressionEntries": 100,
+      "exactFirstAndSecondMomentEntries": 200
+    }
+  ],
+  "scope": "No implementation or output from the primary verifier is imported.",
+  "catalogueAssociationRefresh": {
+    "method": "Existing positive-control records compared unchanged with the previously audited catalogue; symbolic and physical calculations unchanged.",
+    "baselineSHA256": "3f2f90560b69c5a020edafceb01dc5dde4a33c99a5436f863bba86ce22e82fe8",
+    "positiveControlRecordsUnchanged": true,
+    "presentationOnlyNotesRefreshVerified": true
+  }
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "n": 6,
+    "sector": 4,
+    "support": [
+      2,
+      5
+    ],
+    "firstProbability": "20/21",
+    "secondProbability": "1/21",
+    "sectorPolynomial": "84*x**2/5 - 32*x + 65/3",
+    "squareCompletion": "45/7 + 84/5*(x-(20/21))**2",
+    "allSectorPolynomials": [
+      "1",
+      "6*x**2 - 8*x + 8/3",
+      "18*x**2/5 + 5",
+      "12*x**2 - 16*x + 40/3",
+      "84*x**2/5 - 32*x + 65/3",
+      "-18*x**2 + 24*x + 16",
+      "-102*x**2/5 + 32*x + 13/3"
+    ],
+    "achievedSectorVectorIncludingS0": [
+      "1",
+      "24/49",
+      "405/49",
+      "440/49",
+      "45/7",
+      "1104/49",
+      "799/49"
+    ],
+    "globalMinimalityProvedByThisScript": false,
+    "globalProof": "sos-certificate.json (verified separately by verify_certificate.py)",
+    "minimumWithinFamilyProved": true,
+    "relativePhaseRemovableByCollectiveZRotation": true,
+    "majoranaMultiplicityPattern": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "properRotationGroup": "C3",
+    "fullPointGroup": "C3v"
+  },
+  {
+    "n": 6,
+    "sector": 4,
+    "support": [
+      0,
+      5
+    ],
+    "firstProbability": "4/7",
+    "secondProbability": "3/7",
+    "sectorPolynomial": "140*x**2/3 - 160*x/3 + 65/3",
+    "squareCompletion": "45/7 + 140/3*(x-(4/7))**2",
+    "allSectorPolynomials": [
+      "1",
+      "50*x**2/3 - 40*x/3 + 8/3",
+      "10*x**2 + 5",
+      "100*x**2/3 - 80*x/3 + 40/3",
+      "140*x**2/3 - 160*x/3 + 65/3",
+      "-50*x**2 + 40*x + 16",
+      "-170*x**2/3 + 160*x/3 + 13/3"
+    ],
+    "achievedSectorVectorIncludingS0": [
+      "1",
+      "24/49",
+      "405/49",
+      "440/49",
+      "45/7",
+      "1104/49",
+      "799/49"
+    ],
+    "globalMinimalityProvedByThisScript": false,
+    "globalProof": "sos-certificate.json (verified separately by verify_certificate.py)",
+    "minimumWithinFamilyProved": true,
+    "relativePhaseRemovableByCollectiveZRotation": true,
+    "majoranaMultiplicityPattern": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "properRotationGroup": "C5",
+    "fullPointGroup": "C5v"
+  }
+]

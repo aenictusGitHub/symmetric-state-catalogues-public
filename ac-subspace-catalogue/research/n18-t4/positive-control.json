@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "n": 18,
+  "order": 4,
+  "auxiliarySpin": 3,
+  "polynomial": "X^4 - 2X^3 - 653X^2 - 1146X + 8640I",
+  "physicalDimension": 133,
+  "positiveInertia": 13,
+  "negativeInertia": 120,
+  "maximumEigenvalueError": 4.0745362639427185e-10,
+  "partialTraceNorm": 3.4312910058511174e-10,
+  "controls": [
+    {
+      "subspaceId": "line-acliege-n18-t5",
+      "verifiedACOrder": 5,
+      "dimension": 1,
+      "normalizedCompressionNormsOriginalAndRotated": [
+        2.1756251033372738e-16,
+        1.6710144401964893e-16
+      ],
+      "compressionExpectedZero": true
+    },
+    {
+      "subspaceId": "family51-n18",
+      "verifiedACOrder": 4,
+      "dimension": 1,
+      "normalizedCompressionNormsOriginalAndRotated": [
+        2.1756251033372738e-16,
+        1.9734740217538866e-16
+      ],
+      "compressionExpectedZero": true
+    },
+    {
+      "subspaceId": "radical-n18-k2-t3",
+      "verifiedACOrder": 3,
+      "dimension": 2,
+      "normalizedCompressionNormsOriginalAndRotated": [
+        0.3468732672096003,
+        0.3468732672096003
+      ],
+      "compressionExpectedZero": false
+    }
+  ],
+  "scope": "Numerical spin/normalization controls only. Exact upper and lower proofs are verified separately."
+}

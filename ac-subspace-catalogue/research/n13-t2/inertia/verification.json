@@ -1,0 +1,312 @@
+{
+  "passed": true,
+  "method": "Independent exact physical spin matrices in rescaled Dicke bases; rational spectral projectors and quadratic-field cross compressions; Python standard library only.",
+  "generalTheorem": "k_max(N,2) <= floor((N-2)/4) for every integer N>=8.",
+  "n13Conclusion": "k_max(13,2)=2.",
+  "spectralChecks": [
+    {
+      "n": 7,
+      "auxiliarySpin": "3/2",
+      "alpha": "3/2",
+      "constant": "315/16",
+      "totalSpins": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "xEigenvalues": [
+        "-27/4",
+        "-15/4",
+        "1/4",
+        "21/4"
+      ],
+      "wEigenvalues": [
+        "36",
+        "0",
+        "-20",
+        "0"
+      ],
+      "multiplicities": [
+        5,
+        7,
+        9,
+        11
+      ],
+      "inertiaPositiveNegativeZero": [
+        5,
+        9,
+        18
+      ],
+      "exactBlockProjectorChecks": 44
+    },
+    {
+      "n": 8,
+      "auxiliarySpin": "3/2",
+      "alpha": "2",
+      "constant": "25",
+      "totalSpins": [
+        "5/2",
+        "7/2",
+        "9/2",
+        "11/2"
+      ],
+      "xEigenvalues": [
+        "-15/2",
+        "-4",
+        "1/2",
+        "6"
+      ],
+      "wEigenvalues": [
+        "185/4",
+        "-1",
+        "-103/4",
+        "-1"
+      ],
+      "multiplicities": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "inertiaPositiveNegativeZero": [
+        6,
+        30,
+        0
+      ],
+      "exactBlockProjectorChecks": 48
+    },
+    {
+      "n": 9,
+      "auxiliarySpin": "3/2",
+      "alpha": "5/2",
+      "constant": "495/16",
+      "totalSpins": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "xEigenvalues": [
+        "-33/4",
+        "-17/4",
+        "3/4",
+        "27/4"
+      ],
+      "wEigenvalues": [
+        "231/4",
+        "-9/4",
+        "-129/4",
+        "-9/4"
+      ],
+      "multiplicities": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "inertiaPositiveNegativeZero": [
+        7,
+        33,
+        0
+      ],
+      "exactBlockProjectorChecks": 52
+    },
+    {
+      "n": 12,
+      "auxiliarySpin": "3/2",
+      "alpha": "4",
+      "constant": "105/2",
+      "totalSpins": [
+        "9/2",
+        "11/2",
+        "13/2",
+        "15/2"
+      ],
+      "xEigenvalues": [
+        "-21/2",
+        "-5",
+        "3/2",
+        "9"
+      ],
+      "wEigenvalues": [
+        "399/4",
+        "-15/2",
+        "-225/4",
+        "-15/2"
+      ],
+      "multiplicities": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "inertiaPositiveNegativeZero": [
+        10,
+        42,
+        0
+      ],
+      "exactBlockProjectorChecks": 64
+    },
+    {
+      "n": 13,
+      "auxiliarySpin": "3/2",
+      "alpha": "9/2",
+      "constant": "975/16",
+      "totalSpins": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "xEigenvalues": [
+        "-45/4",
+        "-21/4",
+        "7/4",
+        "39/4"
+      ],
+      "wEigenvalues": [
+        "465/4",
+        "-39/4",
+        "-263/4",
+        "-39/4"
+      ],
+      "multiplicities": [
+        11,
+        13,
+        15,
+        17
+      ],
+      "inertiaPositiveNegativeZero": [
+        11,
+        45,
+        0
+      ],
+      "exactBlockProjectorChecks": 68
+    },
+    {
+      "n": 14,
+      "auxiliarySpin": "3/2",
+      "alpha": "5",
+      "constant": "70",
+      "totalSpins": [
+        "11/2",
+        "13/2",
+        "15/2",
+        "17/2"
+      ],
+      "xEigenvalues": [
+        "-12",
+        "-11/2",
+        "2",
+        "21/2"
+      ],
+      "wEigenvalues": [
+        "134",
+        "-49/4",
+        "-76",
+        "-49/4"
+      ],
+      "multiplicities": [
+        12,
+        14,
+        16,
+        18
+      ],
+      "inertiaPositiveNegativeZero": [
+        12,
+        48,
+        0
+      ],
+      "exactBlockProjectorChecks": 72
+    },
+    {
+      "n": 16,
+      "auxiliarySpin": "3/2",
+      "alpha": "6",
+      "constant": "90",
+      "totalSpins": [
+        "13/2",
+        "15/2",
+        "17/2",
+        "19/2"
+      ],
+      "xEigenvalues": [
+        "-27/2",
+        "-6",
+        "5/2",
+        "12"
+      ],
+      "wEigenvalues": [
+        "693/4",
+        "-18",
+        "-395/4",
+        "-18"
+      ],
+      "multiplicities": [
+        14,
+        16,
+        18,
+        20
+      ],
+      "inertiaPositiveNegativeZero": [
+        14,
+        54,
+        0
+      ],
+      "exactBlockProjectorChecks": 80
+    },
+    {
+      "n": 17,
+      "auxiliarySpin": "3/2",
+      "alpha": "13/2",
+      "constant": "1615/16",
+      "totalSpins": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "xEigenvalues": [
+        "-57/4",
+        "-25/4",
+        "11/4",
+        "51/4"
+      ],
+      "wEigenvalues": [
+        "779/4",
+        "-85/4",
+        "-445/4",
+        "-85/4"
+      ],
+      "multiplicities": [
+        15,
+        17,
+        19,
+        21
+      ],
+      "inertiaPositiveNegativeZero": [
+        15,
+        57,
+        0
+      ],
+      "exactBlockProjectorChecks": 84
+    }
+  ],
+  "knownN13TwoDimensionalCodes": [
+    {
+      "relativeEndpointPhase": "pi up to a basis-vector global phase",
+      "orthonormalAfterDivisionBySqrt990": true,
+      "exactSpinTensorCrossEntries": 32,
+      "exactAncillaCompressionEntries": 64
+    },
+    {
+      "relativeEndpointPhase": "0",
+      "orthonormalAfterDivisionBySqrt990": true,
+      "exactSpinTensorCrossEntries": 32,
+      "exactAncillaCompressionEntries": 64
+    }
+  ],
+  "scope": "The upper bound covers all complex symmetric subspaces, without support or symmetry assumptions. Explicit basis checks validate attainment only.",
+  "elapsedSeconds": 0.534
+}

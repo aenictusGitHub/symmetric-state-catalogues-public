@@ -1,0 +1,66 @@
+{
+  "title": "Analytical first-order AC subspaces attaining the proposed dimensions",
+  "theorem": "For every integer n>=4, there is a pure symmetric first-order anticoherent subspace of dimension floor(n/3)+1. The same formula holds at n=2. At n=3 a one-dimensional example suffices for the paper value; n=1 admits no pure first-order AC state.",
+  "theoremLatex": "k_{\\max}(n,1)\\ge\\left\\lfloor\\frac n3\\right\\rfloor+1\\qquad(n\\ge4)",
+  "scope": "These constructions attain floor(N/3)+1 for every N\u22654. The auxiliary spin-1 inertia proof in ../t1-optimality/proof.tex supplies the matching general upper bound, so all these first-order subspaces are optimal. The established N=1 and N=3 exceptions are retained.",
+  "notation": "j=n/2,\\quad X=j(j+1),\\quad e_m=|D_n^{(j-m)}\\rangle,\\quad P J_a P=0\\ (a=x,y,z)",
+  "blocks": [
+    {
+      "id": "pairs",
+      "title": "Two-dimensional reflection-pair block",
+      "domain": "x>=1 for integer spin, x>=3/2 for half-integer spin; x+1<=j.",
+      "formulaLatex": "v_x=\\frac{\\sqrt{x+1}\\,e_x+\\sqrt{x}\\,e_{-x-1}}{\\sqrt{2x+1}},\\qquad w_x=\\frac{\\sqrt{x}\\,e_{x+1}-\\sqrt{x+1}\\,e_{-x}}{\\sqrt{2x+1}}",
+      "argument": "Each vector has zero magnetic mean. The only potential cross ladder element cancels because the transitions x\u2192x+1 and \u2212x\u22121\u2192\u2212x have equal spin-ladder factors and opposite amplitude products. Distinct blocks are separated by one unused magnetic level, eliminating all cross spin matrix elements."
+    },
+    {
+      "id": "central-three",
+      "title": "Three-dimensional central block",
+      "domain": "Half-integer j>=7/2.",
+      "probabilitiesLatex": "a=\\frac{8X}{9(4X-7)},\\qquad b=\\frac{7(4X-15)}{18(4X-7)},\\qquad c=\\frac{7(4X-3)}{18(4X-7)}",
+      "phaseLatex": "\\zeta=u+i\\sqrt{1-u^2},\\qquad u=-\\frac{\\sqrt{X+1/4}\\,b}{2\\sqrt{(X-35/4)ac}}",
+      "formulaLatex": "\\begin{aligned}v_0&=\\sqrt a\\,\\zeta e_{7/2}-\\sqrt b\\,e_{1/2}+\\sqrt c\\,e_{-5/2},\\\\v_1&=\\sqrt c\\,e_{5/2}-\\sqrt b\\,e_{-1/2}+\\sqrt a\\,\\zeta e_{-7/2},\\\\v_2&=(e_{3/2}+e_{-3/2})/\\sqrt2.\\end{aligned}",
+      "identitiesLatex": "a+b+c=1,\\quad7a+b-5c=0,\\quad (X-3/4)b=(X-15/4)c",
+      "argument": "Disjoint supports give orthogonality and eliminate cross Jz elements. The listed scalar identities set every magnetic mean to zero and cancel two ladder elements. The phase equation cancels the remaining ladder element. Exact positivity after shifting X by63/4 proves a,b,c>0 and |u|<1 throughout the domain."
+    },
+    {
+      "id": "central-four",
+      "title": "Four-dimensional central block",
+      "domain": "Half-integer j>=9/2.",
+      "probabilitiesLatex": "a=\\frac{16X}{52X-135},\\qquad b=\\frac{27(4X-35)}{8(52X-135)},\\qquad c=\\frac{45(4X-3)}{8(52X-135)}",
+      "phaseLatex": "\\zeta=u+i\\sqrt{1-u^2},\\qquad u=\\frac{\\sqrt{X+1/4}\\,b}{2\\sqrt{(X-63/4)ac}}",
+      "formulaLatex": "\\begin{aligned}v_0&=\\sqrt{5/8}\\,e_{3/2}-\\sqrt{3/8}\\,e_{-5/2},\\\\v_1&=-\\sqrt{3/8}\\,e_{5/2}-\\sqrt{5/8}\\,e_{-3/2},\\\\v_2&=\\sqrt a\\,\\zeta e_{9/2}+\\sqrt b\\,e_{1/2}+\\sqrt c\\,e_{-7/2},\\\\v_3&=\\sqrt c\\,e_{7/2}-\\sqrt b\\,e_{-1/2}+\\sqrt a\\,\\zeta e_{-9/2}.\\end{aligned}",
+      "identitiesLatex": "a+b+c=1,\\quad9a+b-7c=0,\\quad5(X-3/4)b=3(X-35/4)c",
+      "argument": "The first two vectors form a reflection-pair block. Their cross ladder elements with the remaining two vectors vanish by the last scalar identity. The phase equation cancels the final ladder element. Positive shifted polynomials at X=99/4 prove the unit phase exists for the entire domain."
+    }
+  ],
+  "assembly": [
+    {
+      "case": "n even, j=3q or3q+1",
+      "construction": "Include e0 and reflection blocks x=2,5,...,3q\u22121."
+    },
+    {
+      "case": "n even, j=3q+2",
+      "construction": "Use reflection blocks x=1,4,...,3q+1; omit e0."
+    },
+    {
+      "case": "n=6q+5",
+      "construction": "Use reflection blocks x=3/2,9/2,...,3q+3/2."
+    },
+    {
+      "case": "n=6q+1, q>=1",
+      "construction": "Use the three-dimensional central block and outer reflection blocks x=11/2,17/2,... with x+1<=j."
+    },
+    {
+      "case": "n=6q+3, q>=1",
+      "construction": "Use the four-dimensional central block and outer reflection blocks x=13/2,19/2,... with x+1<=j."
+    }
+  ],
+  "selectedN7": {
+    "phaseLatex": "\\zeta=\\frac{-8+i\\sqrt{41}}{\\sqrt{105}}",
+    "basisLatex": "\\begin{aligned}v_0&=\\tfrac\\zeta2|D_7^{(0)}\\rangle-\\tfrac1{\\sqrt3}|D_7^{(3)}\\rangle+\\sqrt{5/12}|D_7^{(6)}\\rangle,\\\\v_1&=\\sqrt{5/12}|D_7^{(1)}\\rangle-\\tfrac1{\\sqrt3}|D_7^{(4)}\\rangle+\\tfrac\\zeta2|D_7^{(7)}\\rangle,\\\\v_2&=(|D_7^{(2)}\\rangle+|D_7^{(5)}\\rangle)/\\sqrt2.\\end{aligned}",
+    "keyCancellationLatex": "\\frac{\\sqrt{105}}{12}(\\zeta+\\bar\\zeta)+\\frac43=0",
+    "conclusion": "Every normalized superposition of these three vectors is first-order anticoherent. This gives an analytic example attaining the proposed k=3."
+  },
+  "verification": "construct_verify.py checks every reduced cross operator; verify.py independently checks all compressed spin matrices on the exported JSON. The general block identities and phase positivity are checked symbolically.",
+  "optimalityProof": "../t1-optimality/proof.tex"
+}

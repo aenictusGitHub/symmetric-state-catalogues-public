@@ -1,0 +1,149 @@
+Exact algebraic Dicke coefficients for the N=11 minimum-S6 candidate
+==================================================================
+
+This construction defines the numerically best-known candidate exactly.
+It proves attainment of its algebraic sector value and stationarity in the
+full complex symmetric-state space. It does not prove global optimality.
+
+Let B be the unique real root in the rational interval
+
+  0.2498461150300332175000977146562933123120
+    < B <
+  0.2498461150300332175000977146562933123121
+
+of the following irreducible degree-11 polynomial:
+
+P(B) = 6553908000640*B**11 - 47749705756816*B**10 + 38786603025904*B**9 + 27371751187872*B**8 - 32177829392328*B**7 + 3302466279420*B**6 - 1075446089160*B**5 - 2548435383327*B**4 + 1442986160763*B**3 + 20421441136*B**2 - 42986444944*B - 1429276160.
+
+Define A = N(B)/D(B), with
+
+N(B) = 8195902377594624*B**10 - 24984548973505352*B**9 - 601021730435016*B**8 + 7983595609746504*B**7 - 646509630952394*B**6 + 6465750075753540*B**5 + 2557192063814058*B**4 - 773414750407684*B**3 - 131386442394240*B**2 + 7833634195992*B + 337037811968,
+
+D(B) = 439673793045872*B**10 - 2125014483790184*B**9 - 1110337968996000*B**8 + 908536337112068*B**7 - 818218719725126*B**6 + 59380580497440*B**5 + 430675747039408*B**4 - 56808112579123*B**3 - 10644468942948*B**2 + 195808041424*B + 15319900544.
+
+Now set
+
+T = [10 A B^2 - 10 A B + 706 B^2 + 440 B + 39]
+    / [A^2 - 84 A B + 1848 B + 917],
+
+Q = A^2 T + 165 B^2 + 462 T + 55.
+
+The state, in the normalized Dicke basis, is exactly
+
+|psi_11> = [ A sqrt(T) |D_11^(0)> + sqrt(165) B |D_11^(3)>
+             + sqrt(462 T) |D_11^(6)> + sqrt(55) |D_11^(9)> ] / sqrt(Q).
+
+Here A < 0 and T > 0. All other Dicke coefficients vanish.
+The root construction is derived from exact polynomial elimination;
+the coefficients were not obtained by fitting decimal values.
+
+Exact rational interval arithmetic over the root-isolating interval verifies
+the branches and denominators: 81,000,000,000 < D(B) < 82,000,000,000,
+-19 < A < -18, 2088 < A^2-84AB+1848B+917 < 2089,
+1/10 < T < 11/100, and 151 < Q < 152. Both denominator intervals
+exclude zero; all square roots use the positive real branch.
+
+100-significant-digit coefficients:
+  c_0 = -0.4863546496685821096527660115715774552320102389574494100659549536065000990331150311275524308134880202
+  c_3 = 0.2609151148419332786046522468249747106436257633495219346717155010971054364142666095399077599742016455
+  c_6 = 0.5760723489633517555846125229442700517076058069029267508501460697629178487639552035017713339447101544
+  c_9 = 0.6029287738635616087279575789565509783895068018201424645872314411873130650271209538738724387740202865
+
+Sector value:
+  S_6 = 113.1090435663466909908720436191490453102178363250599475907754402671327202767183434246072334240921061
+
+Equivalently, this attained value is the unique real root V in
+  113.1090435663466909908720436191490453102178 < V
+    < 113.1090435663466909908720436191490453102179
+of the irreducible degree-11 polynomial
+
+  65114404217782153785421145145896465*V**11 - 159630387359332893940565570386607172868*V**10 + 173405740390815565602325863936054295057388*V**9 - 110231342476278680155879807958435866438009456*V**8 + 45605043889609360530559876839467941192906722464*V**7 - 12911009268297359627822919565442099156717882805376*V**6 + 2556311134571004158560453554469813450024962604049792*V**5 - 354577331467774206157080043894211977970386225365128704*V**4 + 33822744205501037189144367574686575533619606202769061120*V**3 - 2116442430416829933848029447667434406546748929320829875200*V**2 + 78301524038580172261999909645104129293842678084367041920000*V - 1299191253191721488426281243242779496151960098294425771520000 = 0.
+
+Derivation and exact verification
+--------------------------------
+
+For real coefficients supported on r=0,3,6,9, rescale
+c_r = sqrt(C(11,r)) x_r and fix x_9=1. Write x_0=A sqrt(T),
+x_3=B, x_6=sqrt(T). The unnormalized norm is Q. The three
+independent constrained-stationarity equations become
+
+  T A^3 - 16 T A^2 B - 19 A B^2 + 352 T A B - 110 T A
+    - 31 A - 880 B^2 + 880 B = 0,
+
+  T(3 A^2 B - 48 A B^2 - 32 A B + 16 A + 1056 B^2
+    - 178 B - 352) - 241 B^3 + 91 B = 0,
+
+  T(A^2 - 84 A B + 1848 B + 917)
+    - 10 A B^2 + 10 A B - 706 B^2 - 440 B - 39 = 0.
+
+Eliminating A,T produces P(B) as the factor selecting this solution.
+The rational function for A comes from the linear subresultant and is
+reduced modulo P(B). Each of the three stationary equations has exactly
+zero remainder in Q[B]/(P). SymPy verifies that P is irreducible and that
+the stated interval contains exactly one real root.
+
+The algebraic degree is substantive. Modulo 71, P has two distinct
+irreducible factors of degrees 2 and 9:
+
+  (B^2+26B+28)
+  (B^9-24B^8-28B^7+5B^6+33B^5-3B^4+15B^3+B^2-6B+35),
+
+up to a nonzero constant factor. Hence its Galois group contains a
+permutation with cycle lengths 2 and 9; its ninth power is a transposition.
+Irreducibility gives a transitive group of prime degree 11, which is
+primitive. A primitive permutation group containing a transposition is
+the full symmetric group, so Gal(P)=S_11. Thus B is not expressible by
+radicals over Q. In particular, these four nonzero Dicke coefficients
+cannot all have radical expressions, because B=c_3/(sqrt(3)c_9).
+The exact isolated-root representation is therefore appropriate.
+
+The full complex stationarity follows as well. The state is invariant,
+up to a global phase, under the collective rotation through 2 pi/3 about z.
+The gradient can therefore have support only on Dicke indices 0 mod 3.
+For a real state, imaginary-direction derivatives vanish by complex
+conjugation invariance. The remaining real derivatives are precisely the
+three equations above after normalization. An independent 110-digit
+evaluation of the full projected gradient gives maximum residual
+1.877760289e-106.
+
+Exact family from time reversal
+------------------------------
+
+Define the antiunitary time-reversal map by
+
+  Theta |D_n^(r)> = (-1)^r |D_n^(n-r)>,
+
+with complex conjugation of scalar coefficients. For odd n,
+Theta^2=-I, so |psi> and Theta|psi> are orthonormal. Every even-weight
+Pauli product P obeys Theta P Theta^{-1}=P. Its diagonal matrix elements
+in that two-dimensional span coincide, and its off-diagonal elements
+vanish. For example the skew relation
+
+  <x|Theta y> = -<y|Theta x>
+
+with y=P x proves <psi|P Theta psi>=0. Therefore any normalized state
+
+  |psi(alpha,beta)> = alpha |psi> + beta Theta|psi>,
+  |alpha|^2 + |beta|^2 = 1,
+
+has the same individual even-weight Pauli expectation values and hence
+the same S_2,S_4,S_6,S_8,S_10. This gives two additional real flat
+directions after removal of the overall phase. For the state above,
+
+Theta|psi_11> = [ -sqrt(55) |D_11^(2)> + sqrt(462 T) |D_11^(5)>
+                 -sqrt(165) B |D_11^(8)> + A sqrt(T) |D_11^(11)> ] / sqrt(Q).
+
+Files and reproducibility
+-------------------------
+
+derive.py                 Exact quartic sector polynomial and high precision root.
+eliminate.py              Exact projective stationary ideal and Groebner basis.
+reduce.py                 Reduced equations and resultant.
+rational_univariate.py    Degree-11 root and rational A(B).
+verify_exact.py            Root isolation, exact quotient-field checks, full gradient.
+verify_branches.py         Exact rational interval checks of signs and denominators.
+exact-algebraic.json       Machine-readable exact expressions.
+verification.json          High precision coefficients and verification results.
+value-polynomial.json      Optional degree-11 polynomial for the attained S6 value.
+
+Run with Python 3, SymPy and mpmath. The optional family check also needs NumPy.

@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "theorem": "For every N >= 8, every second-order AC subspace has 4k <= N-2.",
+  "scope": "Arbitrary complex symmetric subspaces; every higher AC order also satisfies the bound.",
+  "generalSymbolicIdentities": {
+    "totalSpinEigenvalues": [
+      "-3*N/4 - 3/2",
+      "-N/4 - 2",
+      "N/4 - 3/2",
+      "3*N/4"
+    ],
+    "quadraticWitnessEigenvalues": [
+      "(N + 2)*(5*N - 3)/8",
+      "-N*(N - 7)/8",
+      "-(3*N**2 + N + 6)/8",
+      "-N*(N - 7)/8"
+    ],
+    "multiplicities": [
+      "N - 2",
+      "N",
+      "N + 2",
+      "N + 4"
+    ],
+    "ancillaCasimir": "15/4",
+    "compressionScalar": "5*N*(N+2)/16",
+    "allNSignsProvedByPositiveShiftedPolynomialCoefficients": true
+  },
+  "physicalControls": [
+    {
+      "n": 13,
+      "dimension": 2,
+      "ancillaDimension": 4,
+      "physicalWitnessMatrixDimension": 56,
+      "compressedWitnessEntriesCheckedExactly": 64,
+      "wholeSubspaceFirstAndSecondMomentsCheckedExactly": true,
+      "compressedWitnessIsExactlyZero": true
+    },
+    {
+      "n": 7,
+      "dimension": 2,
+      "ancillaDimension": 4,
+      "physicalWitnessMatrixDimension": 32,
+      "compressedWitnessEntriesCheckedExactly": 64,
+      "wholeSubspaceFirstAndSecondMomentsCheckedExactly": true,
+      "compressedWitnessIsExactlyZero": true
+    }
+  ],
+  "n13Result": {
+    "upper": 2,
+    "inertia": {
+      "positive": 11,
+      "negative": 45,
+      "zero": 0
+    },
+    "eigenvalues": [
+      {
+        "value": "465/4",
+        "multiplicity": 11
+      },
+      {
+        "value": "-39/4",
+        "multiplicity": 13
+      },
+      {
+        "value": "-263/4",
+        "multiplicity": 15
+      },
+      {
+        "value": "-39/4",
+        "multiplicity": 17
+      }
+    ]
+  },
+  "n7Exception": {
+    "zeroEigenvalueMultiplicity": 18,
+    "knownDimensionTwoCodePreserved": true
+  },
+  "additionalIntegerImplementationChecks": {
+    "firstN": 8,
+    "lastN": 200,
+    "count": 193
+  },
+  "interpretation": "All-size algebra and sign assertions are symbolic. Finite controls validate conventions and implementation, not the general theorem."
+}

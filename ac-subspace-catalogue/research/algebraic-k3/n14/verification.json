@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "id": "radical-n14-k3-t2",
+  "basisSha256": "74197ed23fc75a8cbc437e7d579b96df4767909aa950ea4997329103308f7c43",
+  "method": "Every ordered Dicke cross reduction checked by exact rational polynomial reduction modulo the quadratic for c and f\u00b2=u(c), g\u00b2=v(c); saved closed radicals checked against that parameterization.",
+  "closedRadicalCoefficientsChecked": 45,
+  "orthonormalGramEntriesChecked": 9,
+  "fullCrossReductionEntriesChecked": 81,
+  "achievedOrder": 2,
+  "nextOrderFails": true,
+  "nextOrderCounterexample": {
+    "basisA": 0,
+    "basisB": 0,
+    "row": 0,
+    "column": 2,
+    "nonzeroReducedFieldNumerator": {
+      "(1, 1)": "2816*I"
+    }
+  },
+  "positiveRadicandsCertifiedOnIsolatingInterval": true,
+  "dimension": 3,
+  "maximumDimension": 3,
+  "upperBound": "Tensor-Gram: k*(floor(t/2)+1)^2 <= N+1 gives k<=floor(15/4)=3."
+}

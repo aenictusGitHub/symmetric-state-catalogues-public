@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "n": 14,
+  "t": 4,
+  "dimension": 1,
+  "arithmetic": "Exact SymPy rational and radical arithmetic for the entire AC certificate; 90-digit mpmath only for source comparison.",
+  "independentMethod": "Direct Dicke bipartition amplitudes and physical collective spin matrices; primary verifier not imported.",
+  "branches": [
+    {
+      "sign": 1,
+      "normalizationExact": true,
+      "fourthReduction": "I_5/5",
+      "fourthReductionEntriesChecked": 25,
+      "fifthReductionEntriesChecked": 36,
+      "fifthReductionOffDiagonal": [
+        {
+          "indices": [
+            0,
+            3
+          ],
+          "value": "sqrt(70)/825"
+        },
+        {
+          "indices": [
+            1,
+            4
+          ],
+          "value": "-sqrt(7)/165"
+        },
+        {
+          "indices": [
+            2,
+            5
+          ],
+          "value": "sqrt(70)/825"
+        }
+      ],
+      "fifthDegreeMoment": "1456*sqrt(7)/5",
+      "exactACOrder": 4,
+      "sparseGaugeEquivalenceExact": true,
+      "axisNormalizerInvariant": "-265/2288 + 27*sqrt(39431)*I/2288"
+    },
+    {
+      "sign": -1,
+      "normalizationExact": true,
+      "fourthReduction": "I_5/5",
+      "fourthReductionEntriesChecked": 25,
+      "fifthReductionEntriesChecked": 36,
+      "fifthReductionOffDiagonal": [
+        {
+          "indices": [
+            0,
+            3
+          ],
+          "value": "sqrt(70)/825"
+        },
+        {
+          "indices": [
+            1,
+            4
+          ],
+          "value": "-sqrt(7)/165"
+        },
+        {
+          "indices": [
+            2,
+            5
+          ],
+          "value": "sqrt(70)/825"
+        }
+      ],
+      "fifthDegreeMoment": "1456*sqrt(7)/5",
+      "exactACOrder": 4,
+      "sparseGaugeEquivalenceExact": true,
+      "axisNormalizerInvariant": "-265/2288 - 27*sqrt(39431)*I/2288"
+    }
+  ],
+  "properSymmetryGroup": "D3",
+  "conjugateBranchesProperRotationInequivalent": true,
+  "rankFiveTetrahedralInvariantMultiplicity": "0",
+  "sourceComparison": {
+    "source": "references/ACLiege.jl, acstateslist N=14",
+    "matches": [
+      {
+        "sign": 1,
+        "maxCoefficientError": "3.46291179757471926895752527988e-19",
+        "globalPhaseAtFirstSupport": "0.777484097868228533411172096657",
+        "phaseIncrementPerThreeDickeIndices": "0.900729627118699472743415540261"
+      },
+      {
+        "sign": -1,
+        "maxCoefficientError": "0.631250992248343675258460379955",
+        "globalPhaseAtFirstSupport": "2.39766711526636257177366340861",
+        "phaseIncrementPerThreeDickeIndices": "-0.719453390279434565619075771689"
+      }
+    ],
+    "scope": "Numerical comparison only; the exact certificate is the symbolic reduction above. Printed precision is not asserted to equal numerical accuracy."
+  }
+}

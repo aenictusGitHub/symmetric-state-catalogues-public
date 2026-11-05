@@ -1,0 +1,813 @@
+{
+  "n": 11,
+  "sector": 9,
+  "bound": "134645/239",
+  "direction": "max",
+  "degree": 8,
+  "targetDerivation": "Direct reduced Dicke purities",
+  "independentComplexVariables": true,
+  "floatingPointUsed": false,
+  "fullPolynomialIdentityVerified": true,
+  "nonzeroMonomials": 20553,
+  "allMonomialsIncludingCancellations": 67189,
+  "attainmentVerified": true,
+  "specifiedSpanVerified": true,
+  "attainingStateSectorVector": [
+    "5041/628331",
+    "11651405/628331",
+    "2593965/57121",
+    "42160530/628331",
+    "92651622/628331",
+    "114764622/628331",
+    "69619530/628331",
+    "157871715/628331",
+    "134645/239",
+    "316334341/628331",
+    "98619431/628331"
+  ],
+  "positiveDefiniteGramBlocks": 45,
+  "squaredForms": 7891,
+  "maxMatrixDimension": 26,
+  "positivity": [
+    {
+      "kind": "22",
+      "L2": 0,
+      "dimension": 5,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 2,
+      "dimension": 5,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 4,
+      "dimension": 15,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 6,
+      "dimension": 14,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 8,
+      "dimension": 22,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 10,
+      "dimension": 20,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 12,
+      "dimension": 26,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 14,
+      "dimension": 23,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 16,
+      "dimension": 25,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 18,
+      "dimension": 21,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 20,
+      "dimension": 23,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 22,
+      "dimension": 18,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 24,
+      "dimension": 18,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 26,
+      "dimension": 12,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 28,
+      "dimension": 12,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 30,
+      "dimension": 7,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 32,
+      "dimension": 5,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 34,
+      "dimension": 1,
+      "leadingPrincipalMinorSigns": [
+        1
+      ]
+    },
+    {
+      "kind": "22",
+      "L2": 36,
+      "dimension": 1,
+      "leadingPrincipalMinorSigns": [
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 6,
+      "dimension": 11,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 8,
+      "dimension": 13,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 10,
+      "dimension": 14,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 12,
+      "dimension": 15,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 14,
+      "dimension": 16,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 16,
+      "dimension": 16,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 18,
+      "dimension": 16,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 20,
+      "dimension": 15,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 22,
+      "dimension": 13,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 24,
+      "dimension": 11,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 26,
+      "dimension": 8,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 28,
+      "dimension": 6,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 30,
+      "dimension": 4,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 32,
+      "dimension": 3,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "31",
+      "L2": 34,
+      "dimension": 1,
+      "leadingPrincipalMinorSigns": [
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 4,
+      "dimension": 3,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 6,
+      "dimension": 1,
+      "leadingPrincipalMinorSigns": [
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 8,
+      "dimension": 4,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 10,
+      "dimension": 2,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 12,
+      "dimension": 4,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 14,
+      "dimension": 2,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 16,
+      "dimension": 4,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 18,
+      "dimension": 2,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 20,
+      "dimension": 3,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 22,
+      "dimension": 1,
+      "leadingPrincipalMinorSigns": [
+        1
+      ]
+    },
+    {
+      "kind": "40",
+      "L2": 24,
+      "dimension": 2,
+      "leadingPrincipalMinorSigns": [
+        1,
+        1
+      ]
+    }
+  ],
+  "basisSha256": "f5003a2d8b10e9c4e746aacbbed86568815d69e76b75dc84834757a946989c56",
+  "certificateSha256": "0675e7e9b4ada0fd0f3d448e265e1cd0e249fac874ed89887729463ee076dca8"
+}

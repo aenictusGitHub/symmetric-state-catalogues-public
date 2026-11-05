@@ -1,0 +1,51 @@
+{
+  "verifiedExactly": true,
+  "scope": "Necessary conditions for every complex pure symmetric twelve-qubit third-order anticoherent state at any double Majorana point. These do not globally exclude partition (2,2,2,2,1,1,1,1).",
+  "globalExclusionProved": false,
+  "doublePointProbability": {
+    "definition": "After rotating a double root to z=0, c0=c1=0 and p2=|c2|\u00b2.",
+    "strictLower": "5/14",
+    "strictUpper": "19/42",
+    "lowerPolynomial": "r**3 - 22*r**2 + 147*r - 270",
+    "lowerUniformExpectation": "-20",
+    "upperPolynomial": "-r**3 + 29*r**2 - 276*r + 864",
+    "upperUniformExpectation": "190",
+    "endpointSupports": {
+      "lower": {
+        "2": "5/14",
+        "3": "1/7",
+        "9": "1/7",
+        "10": "5/14"
+      },
+      "upper": {
+        "2": "19/42",
+        "8": "1/12",
+        "9": "8/21",
+        "12": "1/12"
+      }
+    },
+    "lowerEndpointExcluded": "Only c2*c3bar and c9*c10bar contribute to J+. Their nonzero magnitudes and the independent {Jz,J+} equation force an impossible simultaneous A+B=0 and -7A+7B=0.",
+    "upperEndpointExcluded": "The sole adjacent support pair8,9 gives a nonzero J+ expectation."
+  },
+  "doublePointSeparation": {
+    "coordinate": "q=tan(theta/2)^2, theta is the angular separation of two distinct double points.",
+    "coefficientKernelA": "q**10 + 12*q**9 + 66*q**8 + 220*q**7 + 495*q**6 + 792*q**5 + 924*q**4 + 792*q**3 + 495*q**2 + 220*q + 66",
+    "coefficientKernelD": "10*q**9 + 108*q**8 + 528*q**7 + 1540*q**6 + 2970*q**5 + 3960*q**4 + 3696*q**3 + 2376*q**2 + 6*q*(15*q**8 + 144*q**7 + 616*q**6 + 1540*q**5 + 2475*q**4 + 2640*q**3 + 1848*q**2 + 792*q + 165) + 990*q + 220",
+    "gramDeterminant": "12*q**18 + 264*q**17 + 2772*q**16 + 18480*q**15 + 87780*q**14 + 316008*q**13 + 895356*q**12 + 2046528*q**11 + 3837240*q**10 + 5969040*q**9 + 7758300*q**8 + 8450640*q**7 + 7694148*q**6 + 5793480*q**5 + 3528360*q**4 + 1672704*q**3 + 579348*q**2 + 130680*q + 14520",
+    "maximumP2": "1-66*D/(A*D-q*(dA/dq)^2)",
+    "positivityJustification": "A*D-q*(A prime)^2 is a Gram determinant of two independent evaluation/derivative vectors for every q>0.",
+    "definingPolynomial": "9*q**18 + 198*q**17 + 2079*q**16 + 13860*q**15 + 65835*q**14 + 237006*q**13 + 671517*q**12 + 1534896*q**11 + 2877930*q**10 + 4469080*q**9 + 5743881*q**8 + 6012732*q**7 + 4940551*q**6 + 2972970*q**5 + 1121670*q**4 + 116160*q**3 - 114345*q**2 - 54450*q - 6050",
+    "uniquePositiveRoot": true,
+    "isolatingInterval": [
+      "8515588572497023/26306477904952000",
+      "12687367570977083/39193997201305000"
+    ],
+    "qLowerBoundApproximation": "0.323706906080879280349707544988706463010752184378099966020082",
+    "angularThresholdRadiansApproximation": 1.0345550382328126,
+    "angularThresholdDegreesApproximation": 59.27563736473569,
+    "exactAngularThreshold": "2*atan(sqrt(q_star)), where q_star is the unique positive root of definingPolynomial.",
+    "numericalScope": "Floating angles approximate the exact threshold; they are not asserted to be outward-rounded interval bounds. Antipodal pairs satisfy the separation bound automatically.",
+    "conclusion": "Every pair of distinct double points has angular separation strictly greater than this bound."
+  },
+  "interpretation": "The repeated points cannot themselves approach one another in an exact3AC state. Simple points may still coalesce into additional double points; the double-octahedral boundary therefore remains possible."
+}

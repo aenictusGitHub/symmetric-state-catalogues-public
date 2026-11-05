@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "n": 12,
+  "t": 5,
+  "copies": 3,
+  "exactDickeCoefficients": [
+    "0",
+    "sqrt(7)/5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "sqrt(11)*I/5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "sqrt(7)/5",
+    "0"
+  ],
+  "fifthReductionExactlyIdentity": true,
+  "variables": 34,
+  "rank": 33,
+  "nullDimension": 1,
+  "knownExactWitnessTrace": 0.9999999999999999,
+  "knownExactWitnessConstraintNorm": 7.323428684623056e-17,
+  "realTwirlBlocksPositiveSemidefinite": true,
+  "stabilization": "Each lowering step is projected to its Casimir eigenspace before polar reorthonormalization.",
+  "scope": "An exactly verified AC5 witness at N12 survives the same three-copy contraction construction numerically. This supplements, but is not a premise of, the exact N14 exclusion."
+}

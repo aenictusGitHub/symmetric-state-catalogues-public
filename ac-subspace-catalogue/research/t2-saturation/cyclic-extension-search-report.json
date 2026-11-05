@@ -1,0 +1,85 @@
+{
+  "scope": "Attempt to extend the exact N24,k5 cyclic construction to N=5k-1, where dimension k would attain the current upper bound.",
+  "status": "No new existence or exclusion theorem established.",
+  "control": "D5 search at N24,k5 recovers a solution with residual3.23e-16 in its first start.",
+  "residualDefinition": "Euclidean norm of normalized Gram, dipole and traceless-quadrupole equations; numerical search residuals are not mathematical certificates.",
+  "records": [
+    {
+      "N": 29,
+      "k": 6,
+      "method": "C_k random starts",
+      "completedStarts": 80,
+      "bestResidualNorm": 0.0003686419503303233,
+      "file": "cyclic-n29-k6.json"
+    },
+    {
+      "N": 29,
+      "k": 6,
+      "method": "D_k reflection",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.0003686419503303174,
+      "file": "dihedral-n29-k6-sign1.json"
+    },
+    {
+      "N": 29,
+      "k": 6,
+      "method": "Interpolated N24 basis",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.0003686419503303309,
+      "file": "continuation-n29-k6.json"
+    },
+    {
+      "N": 34,
+      "k": 7,
+      "method": "D_k even central vector",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.026948378519141166,
+      "file": "dihedral-n34-k7-sign1.json"
+    },
+    {
+      "N": 34,
+      "k": 7,
+      "method": "D_k odd central vector",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.15571231007859443,
+      "file": "dihedral-n34-k7-sign-1.json"
+    },
+    {
+      "N": 34,
+      "k": 7,
+      "method": "Interpolated N24 basis",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.026948378519141183,
+      "file": "continuation-n34-k7.json"
+    },
+    {
+      "N": 39,
+      "k": 8,
+      "method": "D_k reflection",
+      "completedStarts": 40,
+      "bestResidualNorm": 0.030077842146771117,
+      "file": "dihedral-n39-k8-sign1.json"
+    },
+    {
+      "N": 44,
+      "k": 9,
+      "method": "D_k even central vector",
+      "completedStarts": 15,
+      "bestResidualNorm": 0.041306928317828714,
+      "file": "dihedral-n44-k9-sign1.json"
+    },
+    {
+      "N": 49,
+      "k": 10,
+      "method": "D_k reflection",
+      "completedStarts": 15,
+      "bestResidualNorm": 0.05455402913781124,
+      "file": "dihedral-n49-k10-sign1.json"
+    }
+  ],
+  "limitations": [
+    "Failed local optimization does not prove nonexistence, even inside the ansatz.",
+    "The ansatz imposes cyclic or dihedral symmetry, so its failure would not exclude general AC subspaces.",
+    "The finite examples do not establish or refute an infinite family attaining the upper bound."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "assertions": 1233,
+  "catalogues": [
+    {
+      "catalogue": "symmetric-sector-catalogue",
+      "entries": 154,
+      "representativeSelections": 154,
+      "emptyCellsChecked": 0,
+      "coordinateDownloads": 154,
+      "alternativeSwitches": 0,
+      "representativeGroupSummariesChecked": 154,
+      "ACGroupOptionChecks": false,
+      "constructionCardsChecked": 0,
+      "worksWithoutSupplementalData": true
+    }
+  ],
+  "checks": [
+    "every catalogue entry selects without runtime errors",
+    "viewer receives exact selected state coordinate record",
+    "alternative AC representative selection updates viewer",
+    "exclusion and unresolved cells have no phantom stars",
+    "downloaded record includes matching Majorana representation",
+    "selection change disposes prior viewer",
+    "file:// paths supported and optional coordinates missing handled",
+    "full and proper groups shown beside every representative",
+    "AC options show each alternative group and cards update on selection"
+  ],
+  "limitation": "Minimal DOM harness; browser visual QA separate."
+}

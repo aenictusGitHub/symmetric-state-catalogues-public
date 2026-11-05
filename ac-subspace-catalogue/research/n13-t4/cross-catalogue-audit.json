@@ -1,0 +1,2652 @@
+{
+  "passed": true,
+  "scope": "Consistency audit, not an independent reproof of existing exact certificates.",
+  "inputSHA256": {
+    "pureCatalogue": "3e75431dc53d7a242f4f8957344c948f0496977f0316048698582a0705162d97",
+    "subspaceCatalogue": "8b3b961a0fae837f567f3b97a3ae4c155e07057ae8b064bf3445c5b549875c6d"
+  },
+  "sharedEntriesChecked": 132,
+  "contradictions": [],
+  "stalePureStatuses": [],
+  "staleSubspaceBounds": [],
+  "sizesMissingFromPureCatalogue": [
+    {
+      "n": 1,
+      "highestExactWitnessOrder": 0,
+      "provedImpossibleOrders": [
+        1
+      ],
+      "note": "Size not displayed by the pure-state catalogue."
+    },
+    {
+      "n": 21,
+      "highestExactWitnessOrder": 1,
+      "provedImpossibleOrders": [],
+      "note": "Size not displayed by the pure-state catalogue."
+    },
+    {
+      "n": 22,
+      "highestExactWitnessOrder": 3,
+      "provedImpossibleOrders": [],
+      "note": "Size not displayed by the pure-state catalogue."
+    },
+    {
+      "n": 23,
+      "highestExactWitnessOrder": 1,
+      "provedImpossibleOrders": [],
+      "note": "Size not displayed by the pure-state catalogue."
+    },
+    {
+      "n": 35,
+      "highestExactWitnessOrder": 2,
+      "provedImpossibleOrders": [],
+      "note": "Size not displayed by the pure-state catalogue."
+    }
+  ],
+  "n13SourceStatus": {
+    "DickeFiles": [
+      {
+        "filename": "acsdk.13.3.txt",
+        "sha256": "3ec4ef351c1a9e3d62ef75fc905109d5ce71c3a940b8e4871b5bcb9963e8e96e",
+        "n": 13,
+        "claimedOrder": 3,
+        "normBeforeNormalization": 1.0,
+        "claimedOrderFrobeniusResidual": 5.551115873918753e-17,
+        "nextOrderFrobeniusResidual": 0.06470956516382621,
+        "numericallySupportedAt1eMinus8": true,
+        "exactExistenceCertificate": false,
+        "conflictingProvedExclusions": []
+      }
+    ],
+    "noFourthOrderDickeFileFound": true,
+    "degenerateFileRecords": [
+      {
+        "id": "acs.13.1.6",
+        "n": 13,
+        "t": 1,
+        "declaredMinimumMultiplicity": 6,
+        "coordinateFilename": "acs.13.1.6.txt",
+        "coordinateURL": "http://www.oq.ulg.ac.be/ACstates/acs.13.1.6.txt",
+        "coordinateLocalfile": "raw/acs.13.1.6.txt",
+        "DickeFilename": null,
+        "DickeURL": null,
+        "DickeLocalfile": null,
+        "sourcecategory": "degenerate",
+        "sourcePageURL": "http://www.oq.ulg.ac.be/libspinACstatesdeg.html",
+        "sourcePageLocalfile": "source-pages/degenerate.html.txt",
+        "sourceFlaggedBelowSphericalDesignOrder": false,
+        "provenance": {
+          "method": "local-counterpart",
+          "onlineByteIdentityVerified": false,
+          "coordinate": {
+            "localfile": "raw/acs.13.1.6.txt",
+            "localSource": "local counterpart / acs.13.1.6.txt",
+            "sha256": "836879e07f6f6b37bb992ccef7960489b74ab9f72a2cefffe93336bf6119f20d",
+            "bytes": 517,
+            "importedUTC": "2026-10-28T17:46:25.191402+00:00",
+            "onlineByteIdentityVerified": false,
+            "counterparts": [
+              {
+                "path": "local counterpart / acs.13.1.6.txt",
+                "sha256": "836879e07f6f6b37bb992ccef7960489b74ab9f72a2cefffe93336bf6119f20d",
+                "bytes": 517
+              },
+              {
+                "path": "local counterpart / acs.13.1.6.txt",
+                "sha256": "836879e07f6f6b37bb992ccef7960489b74ab9f72a2cefffe93336bf6119f20d",
+                "bytes": 517
+              }
+            ]
+          },
+          "Dicke": null
+        },
+        "status": "local-counterparts-imported",
+        "scientificStatus": "Numerical source observation; no exact AC certificate or optimality proof supplied by this import."
+      },
+      {
+        "id": "acs.13.2.4",
+        "n": 13,
+        "t": 2,
+        "declaredMinimumMultiplicity": 4,
+        "coordinateFilename": "acs.13.2.4.txt",
+        "coordinateURL": "http://www.oq.ulg.ac.be/ACstates/acs.13.2.4.txt",
+        "coordinateLocalfile": "raw/acs.13.2.4.txt",
+        "DickeFilename": null,
+        "DickeURL": null,
+        "DickeLocalfile": null,
+        "sourcecategory": "degenerate",
+        "sourcePageURL": "http://www.oq.ulg.ac.be/libspinACstatesdeg.html",
+        "sourcePageLocalfile": "source-pages/degenerate.html.txt",
+        "sourceFlaggedBelowSphericalDesignOrder": false,
+        "provenance": {
+          "method": "local-counterpart",
+          "onlineByteIdentityVerified": false,
+          "coordinate": {
+            "localfile": "raw/acs.13.2.4.txt",
+            "localSource": "local counterpart / acs.13.2.4.txt",
+            "sha256": "5aa5bbadac5602ad9ff635090ef1f0d692f9b07bf4c5bb326a95e797e3cead14",
+            "bytes": 1164,
+            "importedUTC": "2026-10-28T17:46:25.191402+00:00",
+            "onlineByteIdentityVerified": false,
+            "counterparts": [
+              {
+                "path": "local counterpart / acs.13.2.4.txt",
+                "sha256": "5aa5bbadac5602ad9ff635090ef1f0d692f9b07bf4c5bb326a95e797e3cead14",
+                "bytes": 1164
+              },
+              {
+                "path": "local counterpart / acs.13.2.4.txt",
+                "sha256": "5aa5bbadac5602ad9ff635090ef1f0d692f9b07bf4c5bb326a95e797e3cead14",
+                "bytes": 1164
+              }
+            ]
+          },
+          "Dicke": null
+        },
+        "status": "local-counterparts-imported",
+        "scientificStatus": "Numerical source observation; no exact AC certificate or optimality proof supplied by this import."
+      },
+      {
+        "id": "acs.13.3.2",
+        "n": 13,
+        "t": 3,
+        "declaredMinimumMultiplicity": 2,
+        "coordinateFilename": "acs.13.3.2.txt",
+        "coordinateURL": "http://www.oq.ulg.ac.be/ACstates/acs.13.3.2.txt",
+        "coordinateLocalfile": "raw/acs.13.3.2.txt",
+        "DickeFilename": null,
+        "DickeURL": null,
+        "DickeLocalfile": null,
+        "sourcecategory": "degenerate",
+        "sourcePageURL": "http://www.oq.ulg.ac.be/libspinACstatesdeg.html",
+        "sourcePageLocalfile": "source-pages/degenerate.html.txt",
+        "sourceFlaggedBelowSphericalDesignOrder": false,
+        "provenance": {
+          "method": "local-counterpart",
+          "onlineByteIdentityVerified": false,
+          "coordinate": {
+            "localfile": "raw/acs.13.3.2.txt",
+            "localSource": "local counterpart / acs.13.3.2.txt",
+            "sha256": "62450ea7099da072cf3c5bb31638665241a88583ec97091413e34176bd6b5897",
+            "bytes": 1051,
+            "importedUTC": "2026-10-28T17:46:25.191402+00:00",
+            "onlineByteIdentityVerified": false,
+            "counterparts": [
+              {
+                "path": "local counterpart / acs.13.3.2.txt",
+                "sha256": "62450ea7099da072cf3c5bb31638665241a88583ec97091413e34176bd6b5897",
+                "bytes": 1051
+              },
+              {
+                "path": "local counterpart / acs.13.3.2.txt",
+                "sha256": "62450ea7099da072cf3c5bb31638665241a88583ec97091413e34176bd6b5897",
+                "bytes": 1051
+              }
+            ]
+          },
+          "Dicke": null
+        },
+        "status": "local-counterparts-imported",
+        "scientificStatus": "Numerical source observation; no exact AC certificate or optimality proof supplied by this import."
+      },
+      {
+        "id": "acs.13.3",
+        "n": 13,
+        "t": 3,
+        "declaredMinimumMultiplicity": null,
+        "coordinateFilename": "acs.13.3.txt",
+        "coordinateURL": "http://www.oq.ulg.ac.be/ACstates/acs.13.3.txt",
+        "coordinateLocalfile": "raw/acs.13.3.txt",
+        "DickeFilename": "acsdk.13.3.txt",
+        "DickeURL": "http://www.oq.ulg.ac.be/ACstates/acsdk.13.3.txt",
+        "DickeLocalfile": "raw/acsdk.13.3.txt",
+        "sourcecategory": "general",
+        "sourcePageURL": "http://www.oq.ulg.ac.be/libspinACstates.html",
+        "sourcePageLocalfile": "source-pages/general.html.txt",
+        "sourceFlaggedBelowSphericalDesignOrder": false,
+        "provenance": {
+          "method": "local-counterpart",
+          "onlineByteIdentityVerified": false,
+          "coordinate": {
+            "localfile": "raw/acs.13.3.txt",
+            "localSource": "local counterpart / acs.13.3.txt",
+            "sha256": "af9c0dc338da131b283c5cbafc18831855b1ba1e97f74f3227a68e904ff0ca57",
+            "bytes": 1138,
+            "importedUTC": "2026-10-28T17:46:25.191402+00:00",
+            "onlineByteIdentityVerified": false,
+            "counterparts": [
+              {
+                "path": "local counterpart / acs.13.3.txt",
+                "sha256": "af9c0dc338da131b283c5cbafc18831855b1ba1e97f74f3227a68e904ff0ca57",
+                "bytes": 1138
+              },
+              {
+                "path": "local counterpart / acs.13.3.txt",
+                "sha256": "af9c0dc338da131b283c5cbafc18831855b1ba1e97f74f3227a68e904ff0ca57",
+                "bytes": 1138
+              }
+            ]
+          },
+          "Dicke": {
+            "localfile": "raw/acsdk.13.3.txt",
+            "localSource": "local counterpart / acsdk.13.3.txt",
+            "sha256": "3ec4ef351c1a9e3d62ef75fc905109d5ce71c3a940b8e4871b5bcb9963e8e96e",
+            "bytes": 220,
+            "importedUTC": "2026-10-28T17:46:25.191402+00:00",
+            "onlineByteIdentityVerified": false,
+            "counterparts": [
+              {
+                "path": "local counterpart / acsdk.13.3.txt",
+                "sha256": "3ec4ef351c1a9e3d62ef75fc905109d5ce71c3a940b8e4871b5bcb9963e8e96e",
+                "bytes": 220
+              },
+              {
+                "path": "local counterpart / acsdk.13.3.txt",
+                "sha256": "79da5cf087c6bd0f3bfbefba52ec17302467c45bd07a57fa8a15876a3c77b8d0",
+                "bytes": 978
+              }
+            ]
+          }
+        },
+        "status": "local-counterparts-imported",
+        "scientificStatus": "Numerical source observation; no exact AC certificate or optimality proof supplied by this import."
+      }
+    ],
+    "caution": "In acs.N.t.g.txt, the final index is the reported maximum point multiplicity, not the AC order. Absence of an order-four file is not nonexistence proof."
+  },
+  "localDickeFileCount": 100,
+  "localNumericalSupportFailures": [],
+  "localNumericalVsRigorousConflicts": [],
+  "localNumericalRecords": [
+    {
+      "filename": "acsdk.2.1.txt",
+      "sha256": "34fd79fd305ca7497ef126446edbe5cdaa924f4eca0833445c4e5729ba205858",
+      "n": 2,
+      "claimedOrder": 1,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 1.5700924586837752e-16,
+      "nextOrderFrobeniusResidual": 0.8164965809277263,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.3.1.txt",
+      "sha256": "b61b4778744b325262c452c530a634798af2e06cfd13d7246b33069fdcc42bf6",
+      "n": 3,
+      "claimedOrder": 1,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 1.5700924586837752e-16,
+      "nextOrderFrobeniusResidual": 0.40824829046386313,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.4.2.txt",
+      "sha256": "08fc27e798ba50016c9770b387450e55e2255e191bedc32ad0659e6a0fbddc9e",
+      "n": 4,
+      "claimedOrder": 2,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.3597399555105182e-16,
+      "nextOrderFrobeniusResidual": 0.5000000000000001,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.5.1.txt",
+      "sha256": "8dc629fde664e101f2c26e75a4f161e1144cd3ada5c7c94149bb36c7d57e56ad",
+      "n": 5,
+      "claimedOrder": 1,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 1.5700924586837752e-16,
+      "nextOrderFrobeniusResidual": 0.40824829046386313,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.6.3.txt",
+      "sha256": "1a01bd84b87c9bf2ec97ea53d64fae2c3da78e5819688008c1fb56563b6926eb",
+      "n": 6,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 2.220446049250313e-16,
+      "nextOrderFrobeniusResidual": 0.3651483716701108,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.7.2.txt",
+      "sha256": "cdf97b0eec061de35c5401228391db518c874e9210190eda840f533bf72000ec",
+      "n": 7,
+      "claimedOrder": 2,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.8410966031475738e-16,
+      "nextOrderFrobeniusResidual": 0.22360679774997902,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.8.3.txt",
+      "sha256": "bb8e6c82678fff4aed4ad399e30e02ce58133a5f2c2df91e76c25793ab81f2cf",
+      "n": 8,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 5.551115123125783e-17,
+      "nextOrderFrobeniusResidual": 0.18257418583505533,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.9.2.txt",
+      "sha256": "e7ecb29cbbd96a8f9f5097cf126e8da3048ba1d892e399406cd55bae727b99e0",
+      "n": 9,
+      "claimedOrder": 2,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.603703785810335e-16,
+      "nextOrderFrobeniusResidual": 0.03949987487158152,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.10.3.txt",
+      "sha256": "3fcea4a2ab9168d4c823300fd3b67f2ccf745a66f135107451e2083f632d6d8b",
+      "n": 10,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.925231146709438e-17,
+      "nextOrderFrobeniusResidual": 0.11952286093343938,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.11.3.txt",
+      "sha256": "a2f79e530acef78aa96a063831fba8ff93f11132758055bf6786aadad16ed79e",
+      "n": 11,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.122564919707436e-18,
+      "nextOrderFrobeniusResidual": 0.06657658523054648,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.12.5.txt",
+      "sha256": "6e90fd1fc4680c2f0242ba0fc10a60c7dab3aa00d768da85bd974d7ab6305f38",
+      "n": 12,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.0009885847430741e-16,
+      "nextOrderFrobeniusResidual": 0.10910894511799621,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.13.3.txt",
+      "sha256": "3ec4ef351c1a9e3d62ef75fc905109d5ce71c3a940b8e4871b5bcb9963e8e96e",
+      "n": 13,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 5.551115873918753e-17,
+      "nextOrderFrobeniusResidual": 0.06470956516382621,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.14.4.txt",
+      "sha256": "8645669fc680037ef91e4dc0f4221375c894628ecdce3d9a03defc97edbc7571",
+      "n": 14,
+      "claimedOrder": 4,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 5.676582906885704e-17,
+      "nextOrderFrobeniusResidual": 0.03042400096487547,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.15.3.txt",
+      "sha256": "5d0e4df9d8c557b83a15eff37b9659d76cd91fa924019efc97693e4fc51e7aa4",
+      "n": 15,
+      "claimedOrder": 3,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.7755575615628914e-17,
+      "nextOrderFrobeniusResidual": 0.01880036834632096,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.16.5.txt",
+      "sha256": "ff294e8bc1841cc0c9fba1d2d7cf61ca8e4874c3fc956b21b7c46a75e53945f5",
+      "n": 16,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 6.946641151134506e-17,
+      "nextOrderFrobeniusResidual": 0.03441119810119848,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.17.4.txt",
+      "sha256": "24e0cd4ab3850d4b1c3d5e5dd622d8471a3be231161248a94487ab6ce3c31c16",
+      "n": 17,
+      "claimedOrder": 4,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.0031809172697371e-16,
+      "nextOrderFrobeniusResidual": 0.030780355915701083,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.18.5.txt",
+      "sha256": "89a8bd47d04afb81497d15818f3a4a001bbbf9f7a228b1f702c66ca5c8ac5044",
+      "n": 18,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 7.343472276969687e-17,
+      "nextOrderFrobeniusResidual": 0.035130477721199496,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.19.4.txt",
+      "sha256": "b2c7ed1068f6954303294c87d747d4e73ad4fd63f631a68ca7ae7fdb2a7f8e06",
+      "n": 19,
+      "claimedOrder": 4,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 4.92264943492815e-17,
+      "nextOrderFrobeniusResidual": 0.029392334462932324,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.20.5.txt",
+      "sha256": "ecffeca55e66506d858d23b56fad4f24396f0e124c8bc3a52fd7886b6db4977a",
+      "n": 20,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 4.8076492727269113e-17,
+      "nextOrderFrobeniusResidual": 0.03529995283229289,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.21.4.txt",
+      "sha256": "69c0629b6d37eb3f41b48cfa25ee74d99dd6d2d2a16cbadf622dc5f7058ab2f0",
+      "n": 21,
+      "claimedOrder": 4,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.3190570651738803e-15,
+      "nextOrderFrobeniusResidual": 0.02028535345678879,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.22.5.txt",
+      "sha256": "0dddd5cf86f8e6da572f85ea9a01771b1c52429f72d0c53361f0435c70bcbc30",
+      "n": 22,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 5.158954292506444e-15,
+      "nextOrderFrobeniusResidual": 0.00902892167895534,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.23.5.txt",
+      "sha256": "62d97f8a81c7e2dcf06dbf34faae0fceba4eccf788f694fcc257586e102400fb",
+      "n": 23,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.6298548771882962e-15,
+      "nextOrderFrobeniusResidual": 0.01950837007445346,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.24.7.txt",
+      "sha256": "2d7134d584afce84fe40cc52573eb9de457b136b2a10343554842fac630943a5",
+      "n": 24,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 8.344144475418005e-15,
+      "nextOrderFrobeniusResidual": 0.01324713258801367,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.25.5.txt",
+      "sha256": "4f8656e352c0496605c0b12ca7cbf692455d6bdce841664aac8c415755ffb4c5",
+      "n": 25,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.1917828197896473e-15,
+      "nextOrderFrobeniusResidual": 0.01355766981179698,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.26.6.txt",
+      "sha256": "ce03e948d3a58dc5e5dddbd37a4e5607f69e4d4b2bc12cd737c87b80fed8b894",
+      "n": 26,
+      "claimedOrder": 6,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 8.637015964113383e-15,
+      "nextOrderFrobeniusResidual": 0.010283570654946847,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.27.5.txt",
+      "sha256": "e842e0606a364a380de9119141768562c39c346abe796f5b9e4e439df84556bb",
+      "n": 27,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 8.102762270267614e-16,
+      "nextOrderFrobeniusResidual": 0.0154173212090118,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.28.6.txt",
+      "sha256": "784932772adb6a70dc77cfebbc1c5324990ed64ed2c170564c823f4e3c2dc632",
+      "n": 28,
+      "claimedOrder": 6,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.0209789633491527e-14,
+      "nextOrderFrobeniusResidual": 0.007600003232639969,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.29.5.txt",
+      "sha256": "18dd199799d59a836bd5c7885a90d767ba25e459252e2b3885d81dc9adf86528",
+      "n": 29,
+      "claimedOrder": 5,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 6.054468162309766e-16,
+      "nextOrderFrobeniusResidual": 0.01614878310441083,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.30.7.txt",
+      "sha256": "10336ede9c039206548128f3814b6c6246e181a50886e2dde43346846a6dbeda",
+      "n": 30,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.7943277901941277e-14,
+      "nextOrderFrobeniusResidual": 0.0032290240689624703,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.31.6.txt",
+      "sha256": "6a3ce31a4b67e1b9e713a605d3c5beffb71a1cf8877e25d3662cf104adf1f434",
+      "n": 31,
+      "claimedOrder": 6,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.4113116910598105e-15,
+      "nextOrderFrobeniusResidual": 0.0073110701886571015,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.32.7.txt",
+      "sha256": "12cfef795b364ba0fda133c8064846dcc8999c160cbd674217d49ae652ee2692",
+      "n": 32,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.3595037930116595e-16,
+      "nextOrderFrobeniusResidual": 0.0071071310845959666,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.33.6.txt",
+      "sha256": "189aa6ae0737871ff24c82b89e321b41b686ffa5f19772711596b4c9c48f5e92",
+      "n": 33,
+      "claimedOrder": 6,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 1.4854926283187525e-15,
+      "nextOrderFrobeniusResidual": 0.008328102270034072,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.34.7.txt",
+      "sha256": "f9b874d6a1733b1e17a652a781437e2ac8c4685e3f134789ade66f59d1f49a6f",
+      "n": 34,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.5140235659711337e-16,
+      "nextOrderFrobeniusResidual": 0.004667120327551977,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.35.6.txt",
+      "sha256": "84572232b909e01e0e0d37324a967fe07e762437396fd7e6f947d42092e51e43",
+      "n": 35,
+      "claimedOrder": 6,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 8.215341716201593e-16,
+      "nextOrderFrobeniusResidual": 0.005775545995840895,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.36.8.txt",
+      "sha256": "d347fc61f084b3d4816f54d6e1275660e924c46fd827bd57d7f00e85fe72a24c",
+      "n": 36,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.267389099288483e-16,
+      "nextOrderFrobeniusResidual": 0.0017718193369380872,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.37.7.txt",
+      "sha256": "ec44e092dbb2870976d4161499660abf350c6821a3e1c8622679bb1468d9a19b",
+      "n": 37,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 6.950017854052936e-17,
+      "nextOrderFrobeniusResidual": 0.004946958660190301,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.38.7.txt",
+      "sha256": "6f8d2aeb83ee89a319c513c2e8b36935ee0f08c636d29a7c208bfe57d6bc936b",
+      "n": 38,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 7.118301771118239e-15,
+      "nextOrderFrobeniusResidual": 0.005531980109010017,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.39.7.txt",
+      "sha256": "00628e497158bf27b26416b608bad51492b1bade85e1731cdd733f02abecb597",
+      "n": 39,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 6.418205883279704e-15,
+      "nextOrderFrobeniusResidual": 0.0032955442289104727,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.40.8.txt",
+      "sha256": "d2d4c0e494f8665522dcf832e134a89489e45766bb9b60b8527896cdec27584d",
+      "n": 40,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.4692380308477567e-16,
+      "nextOrderFrobeniusResidual": 0.0021893427450860154,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.41.7.txt",
+      "sha256": "3bfaf7588815bd492b1896ee032543e0d538de1dd24b08807bdcb93ed22f939a",
+      "n": 41,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.527895494362237e-15,
+      "nextOrderFrobeniusResidual": 0.0042021054677732084,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.42.8.txt",
+      "sha256": "51b4fc610582813e40cd16e8afb02621e6b1fdc7ee1330b9882dbd16ac1762b3",
+      "n": 42,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 2.1738325529086026e-16,
+      "nextOrderFrobeniusResidual": 0.002027497037744221,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.43.7.txt",
+      "sha256": "601851e78cb4cbbca6c64d4ab45c4c6d107c0d79f2556adca5b436fcd0a14808",
+      "n": 43,
+      "claimedOrder": 7,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.882537061858674e-15,
+      "nextOrderFrobeniusResidual": 0.004194815202436002,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.44.8.txt",
+      "sha256": "a8dc57f7bf0d82849913cf6e3f17889c08a508c188541f54f050ff6c83e3ddda",
+      "n": 44,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.856086824075637e-14,
+      "nextOrderFrobeniusResidual": 0.0016373288424894918,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.45.8.txt",
+      "sha256": "804a639d3849b2ff0b5c48bfff3f002e8bba6196cb72a04aa31c7397e3d5078d",
+      "n": 45,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.2439969903388796e-16,
+      "nextOrderFrobeniusResidual": 0.0020120154326720777,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.46.8.txt",
+      "sha256": "949e0fe8d76c53aff1611e74bf4edd0157a63f84612bde98156d9870032ff582",
+      "n": 46,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 1.0281444525408354e-16,
+      "nextOrderFrobeniusResidual": 0.0011098407257093804,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.47.8.txt",
+      "sha256": "c160ce6a9e5819b38abc73c9911036afc38cbf178f060603187461edd1e71309",
+      "n": 47,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.0311041957834449e-16,
+      "nextOrderFrobeniusResidual": 0.0019618003985680315,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.48.9.txt",
+      "sha256": "f13e4c926624c07bba866e3d9e14e7110a7bd3e900d85b27c42d44c17fe36d0c",
+      "n": 48,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.4495364893705624e-17,
+      "nextOrderFrobeniusResidual": 0.0005514258403656787,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.49.8.txt",
+      "sha256": "bed92b73206ab11010b692a0ec5689bd024314d607bad63af710731d17c561da",
+      "n": 49,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.2229548305437507e-16,
+      "nextOrderFrobeniusResidual": 0.0015907705071416959,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.50.9.txt",
+      "sha256": "33be06196c6f90d95ca2efa528fdb01b8a864b128571f1cd6ad34ca5e1d8b279",
+      "n": 50,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.430749942741839e-14,
+      "nextOrderFrobeniusResidual": 0.0009370192510063571,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.51.8.txt",
+      "sha256": "aadd7588dd8cdda928838528b24b98abd45bd87a9d4cc99da48df0feb366081d",
+      "n": 51,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 3.2729318809976812e-15,
+      "nextOrderFrobeniusResidual": 0.0014395740818855763,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.52.9.txt",
+      "sha256": "4bba07c40ff5db1fc9d7811565fdfe57030356357f8cd2b6b063320d77be4d03",
+      "n": 52,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 9.06244508450907e-14,
+      "nextOrderFrobeniusResidual": 0.000639150360519178,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.53.8.txt",
+      "sha256": "711963fdb079636cdb5c48be6083d706601a12c32c7b750e52a610adf77ef6e4",
+      "n": 53,
+      "claimedOrder": 8,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 9.026535263169177e-15,
+      "nextOrderFrobeniusResidual": 0.001868167727360344,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.54.9.txt",
+      "sha256": "a59a1e1136a2c3a21aa80d21b8812494a406bdba1031db7ce2dfcba9a9f3d9f1",
+      "n": 54,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 6.682707071508576e-17,
+      "nextOrderFrobeniusResidual": 0.000917101111624867,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.55.9.txt",
+      "sha256": "6be7fb7a51edd219e96677367b3ef45948362d0661e89d6e24ccec76e0f2565d",
+      "n": 55,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.7001175685685377e-14,
+      "nextOrderFrobeniusResidual": 0.0012284277973780813,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.56.9.txt",
+      "sha256": "7fb848b78044a3da0f52a064649f52a8cdcc2ecf558d490f98b0dfcf7feebe9f",
+      "n": 56,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.697917328788989e-14,
+      "nextOrderFrobeniusResidual": 0.0005644313277073742,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.57.9.txt",
+      "sha256": "f86ad4d6b92c525c4c845330ff427a704cebdea12ba6ba8dbe72d853cec721ce",
+      "n": 57,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 2.5546627510275453e-14,
+      "nextOrderFrobeniusResidual": 0.0010771163395009262,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.58.9.txt",
+      "sha256": "4315eef30c1b2fe7af328f774cfb7f4144e09c5c07159a36a2555acf8ed430e3",
+      "n": 58,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 1.2910252090191232e-14,
+      "nextOrderFrobeniusResidual": 0.0007441221793882334,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.59.9.txt",
+      "sha256": "c404d83fd2604dccbd1e3c7bfbea4abe41db59e35ce2fa0607ac893725b5f1cb",
+      "n": 59,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.2970967176864213e-14,
+      "nextOrderFrobeniusResidual": 0.000996100677940186,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.60.10.txt",
+      "sha256": "f6682597df3779ecf8579eb86a81e76c2044c1478e84f784ebede25e2f530678",
+      "n": 60,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.8786188105053226e-15,
+      "nextOrderFrobeniusResidual": 8.900892808973519e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.61.9.txt",
+      "sha256": "d6131c32e0327543f8e23302978e1cd28b12cc9d78adfcd4b0373cc2e5f59203",
+      "n": 61,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 0.9999999999999997,
+      "claimedOrderFrobeniusResidual": 1.3827024985737906e-16,
+      "nextOrderFrobeniusResidual": 0.0006125642545612161,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.62.10.txt",
+      "sha256": "154f313df93c074b38b53e90fe3d0d14eae551309b5bcdfb3042efed066ea371",
+      "n": 62,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.9226948426827645e-15,
+      "nextOrderFrobeniusResidual": 0.00040408517132882693,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.63.9.txt",
+      "sha256": "a74aa9ae12bc3a12c8e574d5c5e07bf08e266edabd97ce06b6865570c24565ec",
+      "n": 63,
+      "claimedOrder": 9,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 1.831324900252604e-16,
+      "nextOrderFrobeniusResidual": 0.0010192107512294124,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.64.10.txt",
+      "sha256": "0773b3134b619620758e1d2867fbafcf29a1d726ed000bfe0d5aa8a3975000a4",
+      "n": 64,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 3.8795385150330266e-16,
+      "nextOrderFrobeniusResidual": 0.00030493818919449594,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.65.10.txt",
+      "sha256": "a1752f66ba147b2eaa44dc54bcb88c9477d7e4a04ac2f3f86d6e61407779582a",
+      "n": 65,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 7.908849142188202e-16,
+      "nextOrderFrobeniusResidual": 0.00039368452306035414,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.66.10.txt",
+      "sha256": "14bc29f6a5c0d12d39d0a0a3293d80c0b62a073d59ff27750ecee17b65be5d32",
+      "n": 66,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.394280529827263e-16,
+      "nextOrderFrobeniusResidual": 0.0004957606585231569,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.67.10.txt",
+      "sha256": "533b1f6d3c49c8318c24513909b491a9f3194cc59b4ae57e1aad5544734e1381",
+      "n": 67,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 1.6475299660669336e-16,
+      "nextOrderFrobeniusResidual": 0.0005306096193575269,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.68.10.txt",
+      "sha256": "c83f7c6502196c127ca68c496a0a7748d72b79cabaccca79da0a90304a31ddeb",
+      "n": 68,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.4744896637159263e-16,
+      "nextOrderFrobeniusResidual": 0.0005451757983077691,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.69.10.txt",
+      "sha256": "adf53b10e3a53bf83aebbc4aa9287eef42d3ecc1be46d93b6edb144068921aba",
+      "n": 69,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 1.6969709517601016e-16,
+      "nextOrderFrobeniusResidual": 0.0004282306251497092,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.70.11.txt",
+      "sha256": "02f777addc845383e715388b3369f7c819456d0dcb310e50c416a1a062a819d7",
+      "n": 70,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 3.6900391742407353e-16,
+      "nextOrderFrobeniusResidual": 0.00027403386751959676,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.71.10.txt",
+      "sha256": "a83a471b1e8bdffe97fd151eaa89a2533bfbdb13ea63a0b54e37a2c77d17d50c",
+      "n": 71,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 2.1655574204333633e-16,
+      "nextOrderFrobeniusResidual": 0.0003758227604021431,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.72.11.txt",
+      "sha256": "a5dc73dc4b33fd1ae4472ff30df1d21eca506d4edd332281b8925f83c44a1a95",
+      "n": 72,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.7469744668600784e-15,
+      "nextOrderFrobeniusResidual": 0.0003253931109532022,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.73.10.txt",
+      "sha256": "8ab20c45d57a5d2d270ff8762fa0894587ac83dfd5abc2a8f828f398a404e541",
+      "n": 73,
+      "claimedOrder": 10,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.4141242004728454e-16,
+      "nextOrderFrobeniusResidual": 0.00033712078970905466,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.74.11.txt",
+      "sha256": "132664fda999fc85e8ded774f513136e61df5160b018b3120a7839e958fb6e5b",
+      "n": 74,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 6.889242208357979e-16,
+      "nextOrderFrobeniusResidual": 0.00023614532294689858,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.75.11.txt",
+      "sha256": "da6a66b2bd05b8c5a42a15dabcf2a1c1c50574ba3234a37191fc98f8be583c64",
+      "n": 75,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.0439315158881845e-16,
+      "nextOrderFrobeniusResidual": 0.0002954846284874439,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.76.11.txt",
+      "sha256": "f1021e852fce3bf4e4c2bfa0e24857641709d8af252bbb33ec030437d29829c6",
+      "n": 76,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 4.271155790841304e-16,
+      "nextOrderFrobeniusResidual": 0.00019651729570703205,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.77.11.txt",
+      "sha256": "6a1cc5b1108b1060a4537b5aea70a11d9e876bfdd4c4308d7800b8ced5d53e9c",
+      "n": 77,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 5.230826807357902e-16,
+      "nextOrderFrobeniusResidual": 0.00023817633591517723,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.78.11.txt",
+      "sha256": "289ed7cfa5888f2d1c5db10fa7c3657801336faaa09dfbcc360e706e5b8b60d0",
+      "n": 78,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 2.3856197721692477e-16,
+      "nextOrderFrobeniusResidual": 0.00024075908713643465,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.79.11.txt",
+      "sha256": "5415141267d1c6d6ed91de2c93941258951b245043566b985f839afb7a33954b",
+      "n": 79,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 5.96292628652558e-16,
+      "nextOrderFrobeniusResidual": 0.0002482567695211553,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.80.11.txt",
+      "sha256": "a779f11ec919b15dcf731e12d50603615fd1908061d567d0adbe9a53a1b4700d",
+      "n": 80,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.6288230755941833e-16,
+      "nextOrderFrobeniusResidual": 0.00016540538746265157,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.81.11.txt",
+      "sha256": "8e78a067cdf0b2fb58d4b1c023d4061767820fc7f7b391f42553ef8d87c5be56",
+      "n": 81,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 2.6558279544934943e-16,
+      "nextOrderFrobeniusResidual": 0.00020941050049650087,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.82.11.txt",
+      "sha256": "42d45bbb06b244ef7da42193c523c4440dc79a3a63f81a94a1b0911cc2c54169",
+      "n": 82,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 3.1168105919647863e-16,
+      "nextOrderFrobeniusResidual": 0.00010905492227910502,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.83.11.txt",
+      "sha256": "33595761d4317ef1019558565228e69341bc1cc46270ae5322f7741a5315452b",
+      "n": 83,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 0.9999999999999997,
+      "claimedOrderFrobeniusResidual": 2.725837582657975e-16,
+      "nextOrderFrobeniusResidual": 0.0002124098921500105,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.84.11.txt",
+      "sha256": "700bdbac6b1fd3cd9dc947346a9360c82416fb54a3bbf3516838fe2620cba4d9",
+      "n": 84,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.4264080255200556e-14,
+      "nextOrderFrobeniusResidual": 0.00015720775896965665,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.84.12.txt",
+      "sha256": "e00900558de6bc51f4cb81b89de025ea5c4a34f39310e774542c4a131ef40455",
+      "n": 84,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 4.2012213143527963e-16,
+      "nextOrderFrobeniusResidual": 9.256819637162706e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.85.11.txt",
+      "sha256": "e77b55b4dba0846544b8e8aa45d1b3b84962945eb979899bc5b4d97e6d645690",
+      "n": 85,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.8685464227489555e-16,
+      "nextOrderFrobeniusResidual": 0.0001589842260863697,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.86.12.txt",
+      "sha256": "91dec194fe58ef07685b3bd1c56bea48b77c8f1735537f5b4fa1d4466e5335f2",
+      "n": 86,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.2367917535776885e-15,
+      "nextOrderFrobeniusResidual": 9.645509197426846e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.87.11.txt",
+      "sha256": "e598e4e2f8f3b7ad92d4beb9bd7c51b9ac86f2ecdcc260d0fc607be96c5fe6d5",
+      "n": 87,
+      "claimedOrder": 11,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 2.4022110732646652e-14,
+      "nextOrderFrobeniusResidual": 0.000146154494326906,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.88.12.txt",
+      "sha256": "f2d94bc635ccbc4b2b2f2393a6447144d6d6019b20024684b9adced5fd1ca871",
+      "n": 88,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 0.9999999999999997,
+      "claimedOrderFrobeniusResidual": 3.188029101402006e-16,
+      "nextOrderFrobeniusResidual": 0.00013103111705896112,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.89.12.txt",
+      "sha256": "7a38990d273b0fab4b0c7737081bab381d355a0389ab928a129ed9dbbe9db33f",
+      "n": 89,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 5.849445781623114e-16,
+      "nextOrderFrobeniusResidual": 0.00010725696416470308,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.90.12.txt",
+      "sha256": "5aed8d27c74b940efed6679516219f660dd734a6eac752031340e0b23bc8cdb9",
+      "n": 90,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 6.957849498413274e-16,
+      "nextOrderFrobeniusResidual": 8.317828583053911e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.91.12.txt",
+      "sha256": "05891d8fd08ed6ff38fbfac023b23a7f60f21f17a2cb3d682e57fc6b9fab1f6b",
+      "n": 91,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 4.408996711059437e-16,
+      "nextOrderFrobeniusResidual": 9.863682382154345e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.92.12.txt",
+      "sha256": "1de9fdc362c770ac2051eea7b8530b466e4fee70c3f73c4827fedc407e301254",
+      "n": 92,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 3.4218145111571877e-16,
+      "nextOrderFrobeniusResidual": 0.00010363321373521322,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.93.12.txt",
+      "sha256": "c8a63db29e2f591797fad32740beb66d4781ecd79566919deff5d2437e825495",
+      "n": 93,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 7.503829409091646e-16,
+      "nextOrderFrobeniusResidual": 0.00011237350754394347,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.95.12.txt",
+      "sha256": "8dbee6d428521fa8afdc69bd69091a7c65e76f8648d7159a0909cef5a5b0de94",
+      "n": 95,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 3.8607998397686255e-16,
+      "nextOrderFrobeniusResidual": 7.944342014665418e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.96.12.txt",
+      "sha256": "930265b9d7a2491535cec6a7d900e01d27ab3134083be15a636a6f451a10b116",
+      "n": 96,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 0.9999999999999998,
+      "claimedOrderFrobeniusResidual": 7.052650294391409e-14,
+      "nextOrderFrobeniusResidual": 8.712758248400892e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.96.13.txt",
+      "sha256": "8fbe63abc583936b7de739e35622b5f21f76a76a3c31e4784359de579d3a044d",
+      "n": 96,
+      "claimedOrder": 13,
+      "normBeforeNormalization": 0.9999999999999999,
+      "claimedOrderFrobeniusResidual": 1.7139875331493378e-15,
+      "nextOrderFrobeniusResidual": 6.934242767740818e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.97.12.txt",
+      "sha256": "31e0df3211c539643fe5a49e1d3c2026de2c4bc53fd8a5611f38c665364279f6",
+      "n": 97,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0000000000000002,
+      "claimedOrderFrobeniusResidual": 4.50020084650582e-16,
+      "nextOrderFrobeniusResidual": 7.037478139033895e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.98.13.txt",
+      "sha256": "9d810e65c08c8cb3b720f371b5137e3efc9351a36087aa169c59fbeeb19ec89e",
+      "n": 98,
+      "claimedOrder": 13,
+      "normBeforeNormalization": 0.9999999999999997,
+      "claimedOrderFrobeniusResidual": 3.081517848942331e-15,
+      "nextOrderFrobeniusResidual": 4.866389997363399e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.99.12.txt",
+      "sha256": "dc4968d270cd9105810cb330272c2714a231f2cde4937dd8e865e6cae307b724",
+      "n": 99,
+      "claimedOrder": 12,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 3.8654688649380674e-16,
+      "nextOrderFrobeniusResidual": 7.116571113260576e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    },
+    {
+      "filename": "acsdk.100.13.txt",
+      "sha256": "e597b14f1a86803acc8a5e03a0a97aae70a75476c2c7fbc47ed8faff99dd2414",
+      "n": 100,
+      "claimedOrder": 13,
+      "normBeforeNormalization": 1.0,
+      "claimedOrderFrobeniusResidual": 1.3085541064039941e-15,
+      "nextOrderFrobeniusResidual": 4.2948195875899304e-05,
+      "numericallySupportedAt1eMinus8": true,
+      "exactExistenceCertificate": false,
+      "conflictingProvedExclusions": []
+    }
+  ],
+  "sharedEntries": [
+    {
+      "n": 2,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 2,
+      "t": 2,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "t": 2,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "t": 3,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 4,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "t": 3,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 5,
+      "t": 2,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "t": 3,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 6,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 7,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 7,
+      "t": 3,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 8,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 9,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 9,
+      "t": 3,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 10,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 10,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 10,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 11,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 11,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 11,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 11,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 11,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 11,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 11,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 12,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        5,
+        5
+      ]
+    },
+    {
+      "n": 12,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 12,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 12,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 12,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 12,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 12,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 13,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        5,
+        5
+      ]
+    },
+    {
+      "n": 13,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 13,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 13,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 13,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 13,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 13,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 14,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        5,
+        5
+      ]
+    },
+    {
+      "n": 14,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 14,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 14,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 14,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 14,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 14,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 15,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        6,
+        6
+      ]
+    },
+    {
+      "n": 15,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 15,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 15,
+      "t": 4,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 15,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 15,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 15,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 16,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        6,
+        6
+      ]
+    },
+    {
+      "n": 16,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 16,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 16,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 16,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 16,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 16,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 17,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        6,
+        6
+      ]
+    },
+    {
+      "n": 17,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        3,
+        3
+      ]
+    },
+    {
+      "n": 17,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 17,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 17,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 17,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 17,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 18,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        7,
+        7
+      ]
+    },
+    {
+      "n": 18,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 18,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 18,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 18,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 18,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 18,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 19,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        7,
+        7
+      ]
+    },
+    {
+      "n": 19,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 19,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 19,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 19,
+      "t": 5,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 19,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 19,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 20,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        7,
+        7
+      ]
+    },
+    {
+      "n": 20,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        4,
+        4
+      ]
+    },
+    {
+      "n": 20,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        2
+      ]
+    },
+    {
+      "n": 20,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 20,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 20,
+      "t": 6,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 20,
+      "t": 7,
+      "pureStatus": "impossible",
+      "subspaceInterval": [
+        0,
+        0
+      ]
+    },
+    {
+      "n": 24,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        9,
+        9
+      ]
+    },
+    {
+      "n": 24,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        5,
+        5
+      ]
+    },
+    {
+      "n": 24,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        3
+      ]
+    },
+    {
+      "n": 24,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        2
+      ]
+    },
+    {
+      "n": 24,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        1
+      ]
+    },
+    {
+      "n": 24,
+      "t": 6,
+      "pureStatus": "unknown",
+      "subspaceInterval": [
+        0,
+        1
+      ]
+    },
+    {
+      "n": 24,
+      "t": 7,
+      "pureStatus": "unknown",
+      "subspaceInterval": [
+        0,
+        1
+      ]
+    },
+    {
+      "n": 42,
+      "t": 1,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        15,
+        15
+      ]
+    },
+    {
+      "n": 42,
+      "t": 2,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        6,
+        9
+      ]
+    },
+    {
+      "n": 42,
+      "t": 3,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        2,
+        6
+      ]
+    },
+    {
+      "n": 42,
+      "t": 4,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        4
+      ]
+    },
+    {
+      "n": 42,
+      "t": 5,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        3
+      ]
+    },
+    {
+      "n": 42,
+      "t": 6,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        2
+      ]
+    },
+    {
+      "n": 42,
+      "t": 7,
+      "pureStatus": "exists",
+      "subspaceInterval": [
+        1,
+        2
+      ]
+    }
+  ]
+}

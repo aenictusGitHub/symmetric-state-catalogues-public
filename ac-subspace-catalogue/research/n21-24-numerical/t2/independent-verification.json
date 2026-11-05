@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "acceptanceThreshold": 1e-12,
+  "candidates": [
+    {
+      "id": "numerical-n21-k4-t2",
+      "n": 21,
+      "t": 2,
+      "dimension": 4,
+      "acceptedNumerically": true,
+      "maxGramEntryError": 2.222145240582787e-16,
+      "reductions": [
+        {
+          "order": 1,
+          "orderedMatrices": 16,
+          "complexEntries": 64,
+          "maxCrossReductionFrobenius": 1.76439004694233e-16
+        },
+        {
+          "order": 2,
+          "orderedMatrices": 16,
+          "complexEntries": 144,
+          "maxCrossReductionFrobenius": 2.0875417473193447e-16
+        },
+        {
+          "order": 3,
+          "orderedMatrices": 16,
+          "complexEntries": 256,
+          "maxCrossReductionFrobenius": 0.10583453822304541
+        }
+      ],
+      "sourceSHA256": "83aa6daf165f1b5d6a949927a90591c1b53c9cb8b7fcd2f4f3b700a18316050e",
+      "evidence": "numerical only"
+    },
+    {
+      "id": "numerical-n22-k4-t2",
+      "n": 22,
+      "t": 2,
+      "dimension": 4,
+      "acceptedNumerically": true,
+      "maxGramEntryError": 6.661746589659558e-16,
+      "reductions": [
+        {
+          "order": 1,
+          "orderedMatrices": 16,
+          "complexEntries": 64,
+          "maxCrossReductionFrobenius": 4.0047403693834666e-16
+        },
+        {
+          "order": 2,
+          "orderedMatrices": 16,
+          "complexEntries": 144,
+          "maxCrossReductionFrobenius": 5.003405894324576e-16
+        },
+        {
+          "order": 3,
+          "orderedMatrices": 16,
+          "complexEntries": 256,
+          "maxCrossReductionFrobenius": 0.09771638148516602
+        }
+      ],
+      "sourceSHA256": "d175428d4d180ef937f2686daf1ff77e7c7e04acdcd1a682bc0182422ac82824",
+      "evidence": "numerical only"
+    },
+    {
+      "id": "numerical-n23-k4-t2",
+      "n": 23,
+      "t": 2,
+      "dimension": 4,
+      "acceptedNumerically": true,
+      "maxGramEntryError": 4.44144580179097e-16,
+      "reductions": [
+        {
+          "order": 1,
+          "orderedMatrices": 16,
+          "complexEntries": 64,
+          "maxCrossReductionFrobenius": 2.4829842732346353e-16
+        },
+        {
+          "order": 2,
+          "orderedMatrices": 16,
+          "complexEntries": 144,
+          "maxCrossReductionFrobenius": 1.764496684153068e-16
+        },
+        {
+          "order": 3,
+          "orderedMatrices": 16,
+          "complexEntries": 256,
+          "maxCrossReductionFrobenius": 0.09450818980550865
+        }
+      ],
+      "sourceSHA256": "d18ecddee4f5e3cf64cffd53bd2862e84ab25af9abbc2f18fd1ce7481bd3aa82",
+      "evidence": "numerical only"
+    }
+  ],
+  "method": "Independent normalized-Dicke coefficient matrices, every ordered cross reduction, orders1\u20133; no search objective or optimizer code imported. Floating-point checks only.",
+  "nonexistenceClaims": false
+}

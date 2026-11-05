@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Physical positive controls for the four-copy AC contraction equations}
+These are numerical consistency checks, separate from the exact rational
+nonexistence certificate. They verify that the same physical contraction
+model admits known fourth-order AC states at neighboring sizes.
+
+On the normalized occupation basis of $\operatorname{Sym}^4(V_{N/2})$,
+annihilation of component $i$ is normalized as
+\[
+ A_i|\nu\rangle=\sqrt{\nu_i/4}\,|\nu-e_i\rangle.
+\]
+For a pure tensor $|\psi\rangle^{\otimes4}$ this gives
+$A_i|\psi\rangle^{\otimes4}=c_i|\psi\rangle^{\otimes3}$.
+Contracting against a rank-$L$, component-zero spin tensor gives
+\[
+ \sum_i(T_{L0})_{ii}\,A_i X A_i^\dagger=0,
+ \qquad L=1,2,3,4,
+\]
+when $X$ is the rotational average of a fourth-order AC pure tensor.
+The real part of this rotational average is positive semidefinite and
+still satisfies these real equations.
+
+The verification explicitly decomposes the four-copy physical space into
+spin representations, forms the rotational average of each known state,
+and tests its trace and every contraction equation. To prevent roundoff
+leakage during long lowering ladders, each descent is projected onto the
+known total-spin Casimir eigenspace and polar-reorthonormalized. Numerical
+matrix rank is never used as the nonexistence proof.
+
+The input at $N=12$ is
+\[
+\frac{-\sqrt7|D_{12}^{(1)}\rangle+\sqrt{11}|D_{12}^{(6)}\rangle
++\sqrt7|D_{12}^{(11)}\rangle}{5}.
+\]
+At $N=14$ the input is the exact radical witness saved in
+\texttt{../n14-t4/basis.json}. Both have directly verified
+$\rho_4=I_5/5$.
+The numerical invariant systems have respectively $250$ and $447$
+real symmetric block variables, ranks $242$ and $417$, and nullities
+$8$ and $30$. The explicit state twirls have trace one and contraction
+residuals below $2\cdot10^{-16}$ in Euclidean norm.
+
+For $N=13$, the stabilized physical system has $331$ variables,
+rank $320$, and nullity $11$. Its trace functional vanishes on that
+nullspace numerically. The decisive statement is the separate exact
+rational verification of this trace annihilation, not this numerical rank
+or a failed optimization. The positive controls show that the construction
+does not exclude the known adjacent examples.
+\end{document}

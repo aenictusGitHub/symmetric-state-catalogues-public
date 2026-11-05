@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="iso-8859-1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		
+		<script>
+		MathJax = {
+		  tex: {
+		    inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+		</script>		<title>Library of spin anticoherent states | John Martin</title>
+		<meta name="author" content="John Martin" />
+		<meta name="robots" content="all" />
+		<meta name="generator" content="Sandvox 2.10.12" />
+		<meta name="viewport" content="width=771" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="canonical" href="http://www.oq.ulg.ac.be/libspinACstates.html" />
+		
+		<link rel="stylesheet" type="text/css" href="com_behindTheRabbit_Sandvox_WROQlogo/main.css" title="White Rabbit logo" />
+		<!--
+		Photo credits for this website's design: <http://www.oq.ulg.ac.be/com_behindTheRabbit_Sandvox_WROQlogo/Credits.rtf>
+		Licensing for this website's design:     <http://www.oq.ulg.ac.be/com_behindTheRabbit_Sandvox_WROQlogo/License.rtf>
+		-->
+		
+	</head>
+	<body class="sandvox has-page-title no-sidebar no-custom-banner no-navigation IR" id="www_oq_ulg_ac_be" font-family: "Avenir Next" !important;>
+				<div id="page-container">
+			<div id="page">
+				<div id="page-top" class="no-logo no-title no-tagline">
+					<div id="title">
+						<h1 class="title hidden"><a href="./"><br /></a></h1>
+					</div><!-- title -->
+					<div id="sitemenu-container">
+						<div id="sitemenu">
+							<h2 class="hidden">Site Navigation<a href="#page-content" rel="nofollow">[Skip]</a></h2>
+							<div id="sitemenu-content">
+								<ul>
+									<li class="i1 o"><a href="./" title="Quantum Optics at ULiège"><span class="in">HOME</span></a></li>
+									<li class="i2 e"><a href="recherche.html" title="Research and collaborations"><span class="in">Research</span></a></li>
+									<li class="i3 o"><a href="enseignement.html" title="Teaching"><span class="in">Teaching</span></a></li>
+									<li class="i4 e"><a href="membres.html" title="Members"><span class="in">Members</span></a></li>
+									<li class="i5 o last-item last"><a href="contact.html" title="Applications"><span class="in">Applications</span></a></li>
+								</ul>
+							</div> <!-- /sitemenu-content -->
+						</div> <!-- /sitemenu -->
+					</div> <!-- sitemenu-container -->
+				</div> <!-- page-top -->
+				<div class="clear below-page-top"></div>
+				<div id="page-content" class="no-navigation">
+					<div id="main">
+						<div id="main-top"></div>
+						<div id="main-content">
+							<h2 class="title"><span class="in"><span style="font-style: normal; font-size: 20px; font-family: AvenirNext-Bold; text-shadow: rgba(0, 0, 0, 0) 0.000000000000000006123233849335533px 0.10000000149011612px 4px;">Library of spin anticoherent states</span></span></h2>
+							<div class="article">
+								<div class="article-content">
+									<div class="RichTextElement">
+										<div><p><br /><span style="font-size: 14px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">&#10095;&#10095; </span><span style="font-size: 14px; font-family: AvenirNext-Regular;"> <strong><a href="libspinACstatesdeg.html">Library of spin anticoherent states with degeneracy</a></strong></span></p><p><span style="font-size: 14px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">&#10095;&#10095; </span><span style="font-size: 14px; font-family: AvenirNext-Regular;"> <strong><a href="lib3dsphericaldesign.html">Library of 3-d spherical designs with degeneracy</a></strong></span></p><p><span style="font-family: AvenirNext-Regular;"><br /></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">Anticoherent spin-<em>j</em> states to order </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> are states<br /></span></p>
+											
+											<div class="first wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\psi\rangle\in\mathbb{C}^{2j+1}\quad\textrm{such that}\quad\langle\psi|(\mathbf{J}\boldsymbol{\cdot}\mathbf{n})^{k}|\psi\rangle\quad\textrm{is independent of }\mathbf{n}\textrm{ for }k=1,\ldots,t$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">These states are equivalent to symmetric <em>N</em>-qubit states (<em>N=2j</em>) with maximally mixed <em>t</em>-qubit reductions in the symmetric sector; see</span><span style="font-size: 13px; font-family: AvenirNext-Regular;"> </span><em style="font-size: 16px;"><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular;"><a href="list/pra90_0323142014.pdf">Phys. Rev. A <strong>90, </strong>032314</a> (2014) and </span></em><span style="font-family: AvenirNext-Regular;"><a href="list/prl114_0804012015.pdf" style="font-size: 13px;">Phys. Rev. Lett. <strong>114, </strong>080401</a></span><span style="font-size: 13px; font-family: AvenirNext-Regular;"> (2015) </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">for more details. Multiqubit symmetric states can always be written in the form</span></p>
+											
+											<div class="not-first-item wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\psi\rangle=\mathcal{N}\sum_{\sigma\in S_{N}}|\epsilon_{\sigma(1)}\rangle\otimes|\epsilon_{\sigma(2)}\rangle\otimes\cdots\otimes|\epsilon_{\sigma(N)}\rangle$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p style="text-align: justify;"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">where to each single-qubit state (</span><span style="font-size: 13px; font-family: AvenirNext-Regular;">for </span><span style="font-family: AvenirNext-Regular;"><em style="font-size: 13px;">i=1,&#8230;,N</em></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">)</span></p>
+											
+											<div class="not-first-item wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\epsilon_{i}\rangle=\cos(\tfrac{\theta_i}{2})|0\rangle+\sin(\tfrac{\theta_i}{2})e^{i\varphi_i}|1\rangle$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div>
+											<p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">one can associate a point on the Bloch sphere. Therefore, multiqubit symmetric states can be described by a set of </span><span style="color: rgb(0, 0, 0); font-size: 13px; font-style: italic; font-family: AvenirNext-Regular;">N</span><span style="color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-family: AvenirNext-Regular;"> points on the Bloch sphere. This is the celebrated Majorana representation.</span></p><p style="text-align: justify;"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">One can wonder whether the notions of anticoherent spin state to order </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> and 3-dimensional spherical </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-design are related. Some relationships were indeed found in J. Phys. A: Math. Theor. <strong>43</strong> (2010) 255307, where it was conjectured that any spin state is anticoherent to order <em>t</em></span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> if and only if its Majorana points form a </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">3-d spherical </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-design. This conjecture was soon after proven false, see J. Phys. A: Math. Theor. </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><strong style="font-size: 13px;">44</strong></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> (2011) 343002. In fact, there are anticoherent states to order </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> that do not define a 3-d spherical </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-design and, conversely, there are 3-d spherical </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-designs that do not correspond to anticoherent states to order </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">. For example, the spin-<em>5/2</em></span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> state (expressed in the standard angular momentum </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">basis</span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">)</span></p>
+											
+											<div class="not-first-item wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\psi\rangle=\sqrt{\tfrac{3}{8}}|\tfrac{5}{2},-\tfrac{5}{2}\rangle+\sqrt{\tfrac{5}{8}}|\tfrac{5}{2},\tfrac{3}{2}\rangle$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p style="text-align: justify;"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">is anticoherent to order <em>1</em></span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> but its Majorana points do not form a spherical </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em>1</em></span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-design. Conversely, the </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">spin-<em>5/2</em> state</span></p>
+											
+											<div class="not-first-item wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\psi\rangle=\tfrac{9}{\sqrt{206}}|\tfrac{5}{2},-\tfrac{5}{2}\rangle+5\sqrt{\tfrac{5}{206}}|\tfrac{5}{2},\tfrac{3}{2}\rangle$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p style="text-align: justify;"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">has Majorana points forming a spherical <em>1</em>-design but is not anticoherent to order </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">1.</em></span></p><p style="text-align: justify;"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">Nonetheless, numerical results seem to suggest that the pairs <em>(t,j)</em> for which a spin-<em>j</em> state anticoherent to order <em>t </em>exists coincide with those for which a <em>2j</em>-points spherical <em>t</em>-design exists in three dimensions. It has been conjectured (see the Conclusion of Phys. Scr. <strong>90</strong> (2015) 108008) that the highest possible degree of anticoherence matches the maximal degree <em>t</em> for an <em>N</em>-point spherical <em>t</em>-design. We were able to find anticoherent states for almost all <em>N</em></span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">&#8804;100 </em></span><span style="font-size: 13px; font-style: normal; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">(all </span><span style="font-size: 13px; font-family: AvenirNext-Regular;"><em>N</em></span><span style="font-family: AvenirNext-Regular;"><em style="font-size: 13px;">&#8804;100</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> except</span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"> <em>29,87 </em></span><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">and</span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em> 94)</em>, whose order </span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">matches the maximal degree </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> for an </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">N</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-point spherical </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-design</span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">.</em></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;"> Despite many efforts, we were unable to find an anticoherent state to order 6 of 29 qubits, eventhough there exists a spherical 6-design made of 29 points. The state that comes closest to an anticoherent state to order 6 that we could find has a purity-based measure of anticoherence (see </span><span style="font-size: 13px; font-family: AvenirNext-Regular;"><a href="list/pra96_0323042017.pdf" target="_blank" style="color: rgb(148, 17, 0);">Phys. Rev. A <strong>96</strong>, 032304 (2017)</a> for more details</span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">)</span></p>
+											
+											<div class="not-first-item wide center">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$\mathcal{A}_t(|\psi\rangle)=\frac{t+1}{t}\left(1-\mathrm{Tr}[\rho_t^2]\right)\quad\mathrm{with}\quad \rho_t=\mathrm{Tr}_{\neg t}[|\psi\rangle\langle\psi|]$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">that is approximately equal to 1&#8722;3</span><span style="font-size: 13px; font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0);">x10<sup>-8</sup>&#8800;1</em></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">. This raises the question of the validity of the conjecture. It might be that the maximal degree </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> for an </span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em style="font-size: 13px;">N</em></span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">-point spherical design is only an upper bound for the maximal order of anticoherence of an <em>N/2</em>-spin state. Further work is needed to confirm or refute this conjecture.</span></p><p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">It should be noted that as soon as we impose a minimal degeneracy </span><span style="font-size: 13px; font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0);">d</em></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;"> to one of the points defining a spherical design or a symmetric multiqubit state, the simultaneous</span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"> existence of anticoherent states and spherical designs for fixed <em>N,</em> <em>t </em></span><span style="font-style: normal; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;">and</span><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Regular;"><em> d</em> is not observed. For example, we find that there is no spherical 2-design of 7 points with one point 2-fold degenerated while there is a spin-7/2 state anticoherent to order 2 with one Majorana point 2-fold degenerated, i.e. the state</span></p>
+											
+											<div class="not-first-item wide right">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<span>
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														<body>
+														$$|\psi\rangle=\sqrt{\tfrac{7}{10}}|\tfrac{7}{2},-\tfrac{3}{2}\rangle+\sqrt{\tfrac{3}{10}}|\tfrac{7}{2},\tfrac{7}{2}\rangle$$
+														</body>
+														
+														</div>
+														</span>
+													</div>
+												</div>
+											</div><p><u><span style="font-size: 13px; font-family: AvenirNext-Regular;">References</span><span style="font-family: AvenirNext-Regular;"><br /></span></u></p><ul><li><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">Anticoherence measures for pure spin states<br /></span><span style="font-family: AvenirNext-Regular;"><a href="list/pra96_0323042017.pdf" target="_blank" style="font-size: 13px;"><span style="color: rgb(148, 17, 0);">Phys. Rev. A <strong>96</strong>, 032304 (2017)</span></a><br /></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">D. Baguette, </span><span style="color: rgb(0, 0, 0); font-size: 13px; font-style: italic; font-family: AvenirNext-Regular;">J. Martin<br /><br /></span></li><li><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">Anticoherence of spin states with point-group symmetries<br /></span><span style="font-family: AvenirNext-Regular;"><a href="list/pra92_0523332015.pdf" style="font-size: 13px;">Phys. Rev. A <strong>92</strong>, 052333 (2015)</a><br /></span><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">D. Baguette, F. Damanet, O. Giraud, </span><span style="font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0); font-size: 13px;">J. Martin<br /><br /></em></span></li><li><em style="font-size: 16px; color: rgb(0, 0, 0);"><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular;">Multiqubit symmetric states with maximally mixed one-qubit reductions</span></em><span style="font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0); font-size: 13px;"><br /></em></span><em style="font-size: 16px; color: rgb(0, 0, 0);"><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular;"><a href="list/pra90_0323142014.pdf">Phys. Rev. A <strong>90, </strong>032314</a> (2014)</span></em><span style="font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0); font-size: 13px;"><br /></em></span><em style="font-size: 16px; color: rgb(0, 0, 0);"><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular;">D. Baguette, T. Bastin, </span></em><span style="font-family: AvenirNext-Regular;"><em style="color: rgb(0, 0, 0); font-size: 13px;">J. Martin<br /><br /></em></span></li></ul><p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 13px; font-family: AvenirNext-Regular;">Here below we give putative optimal anticoherent states to order </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"> for all </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">N&#8804;100 </em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">except <em>29,87 </em></span><span style="font-style: normal; font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">and</span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em> 94</em></span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">.</em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"> These states were found by maximizing the purity-based measure of anticoherence <em>A<sub>t</sub></em> and using as numerical criterion that a state is anticoherent if its measure of anticoherence approaches </span><span style="font-size: 13px; font-style: italic; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">1 </span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">by less than </span><span style="font-size: 13px; font-style: italic; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">10</span><span style="color: rgb(0, 0, 0);"><sup style="font-family: AvenirNext-Regular; font-style: italic;">-</sup></span><sup style="font-size: 11px;"><span style="font-family: AvenirNext-Italic; color: rgb(0, 0, 0);"><em>25</em></span></sup><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">.<br />The data are presented both as a list of cartesian coordinates for each Majorana point (acs.* files), as is done by </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><a href="http://neilsloane.com/sphdesigns/dim3/" style="font-size: 13px;">Hardin and Sloane</a></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"> for 3d spherical designs, and as a list of (complex) components in the Dicke states basis </span><span style="font-family: AvenirNext-Regular; font-size: 13px; color: rgb(0, 0, 0);">(acsdk.* files, first/second column corresponds to real/imaginary part)</span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">. States marked by (*) are those whose order is less than the maximal degree </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"> for an </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">N</em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">-point spherical </span><span style="font-family: AvenirNext-Regular; color: rgb(0, 0, 0);"><em style="font-size: 13px;">t</em></span><span style="font-size: 13px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">-design in 3d.</span></p><p><span style="font-family: AvenirNext-Regular; font-size: 13px;">~~~</span></p><p><span style="font-weight: bold; font-size: 13px; font-family: AvenirNext-Bold;">Library of spin anticoherent states (</span><span style="font-weight: bold; font-size: 13px; color: rgb(0, 0, 0); font-family: AvenirNext-Bold; font-style: normal;">2020)</span><span style="font-weight: bold; color: rgb(0, 0, 0); font-family: AvenirNext-Bold; font-style: normal;"><br /></span><span style="color: rgb(0, 0, 0); font-family: AvenirNext-Regular; font-style: normal; font-size: 12px;"><u>Note</u> : a spin</span><span style="font-size: 12px; font-family: AvenirNext-Bold; font-style: normal; color: rgb(0, 0, 0);"> </span><span style="font-family: AvenirNext-Bold; font-size: 12px; color: rgb(0, 0, 0);"><em>j</em></span><span style="font-style: normal; font-size: 12px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">-state is equivalent to a</span><span style="font-family: AvenirNext-Bold; font-style: normal; font-size: 12px; color: rgb(0, 0, 0);"> </span><span style="font-family: AvenirNext-Regular; font-size: 12px; color: rgb(0, 0, 0);">symmetric </span><span style="font-size: 12px; color: rgb(0, 0, 0);"><em style="font-family: AvenirNext-Regular;">N</em></span><span style="font-family: AvenirNext-Regular; font-size: 12px; color: rgb(0, 0, 0);">-qubit state with </span><span style="color: rgb(0, 0, 0);"><em style="font-size: 12px; font-family: AvenirNext-Regular;">N=2j</em></span><span style="font-style: normal; font-size: 12px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">. Here, we give the values of </span><span style="color: rgb(0, 0, 0);"><em style="font-size: 12px; font-family: AvenirNext-Regular;">N </em></span><span style="font-size: 12px; font-family: AvenirNext-Regular; color: rgb(0, 0, 0);">instead of <em>j. </em></span></p>
+											
+											<div class="not-first-item wide left">
+												<div style="" class="graphic">
+													<div class="figure-content HTMLElement">
+														<table width="680" font-family: "Avenir Next" !important;>
+														<tr>
+														<td  align="justify" valign="top">
+														<div style="line-height:1.35em; font-family: Avenir Next; font-size: 13px;">
+														
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.2.1.txt" target="_blank">acs.2.1.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.2.1.txt" target="_blank">acsdk.2.1.txt</a> contain a 2-qubit anticoherent state to order 1
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.3.1.txt" target="_blank">acs.3.1.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.3.1.txt" target="_blank">acsdk.3.1.txt</a> contain a 3-qubit anticoherent state to order 1
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.4.2.txt" target="_blank">acs.4.2.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.4.2.txt" target="_blank">acsdk.4.2.txt</a> contain a 4-qubit anticoherent state to order 2
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.5.1.txt" target="_blank">acs.5.1.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.5.1.txt" target="_blank">acsdk.5.1.txt</a> contain a 5-qubit anticoherent state to order 1
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.6.3.txt" target="_blank">acs.6.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.6.3.txt" target="_blank">acsdk.6.3.txt</a> contain a 6-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.7.2.txt" target="_blank">acs.7.2.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.7.2.txt" target="_blank">acsdk.7.2.txt</a> contain a 7-qubit anticoherent state to order 2
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.8.3.txt" target="_blank">acs.8.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.8.3.txt" target="_blank">acsdk.8.3.txt</a> contain a 8-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.9.2.txt" target="_blank">acs.9.2.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.9.2.txt" target="_blank">acsdk.9.2.txt</a> contain a 9-qubit anticoherent state to order 2
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.10.3.txt" target="_blank">acs.10.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.10.3.txt" target="_blank">acsdk.10.3.txt</a> contain a 10-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.11.3.txt" target="_blank">acs.11.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.11.3.txt" target="_blank">acsdk.11.3.txt</a> contain a 11-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.12.5.txt" target="_blank">acs.12.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.12.5.txt" target="_blank">acsdk.12.5.txt</a> contain a 12-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.13.3.txt" target="_blank">acs.13.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.13.3.txt" target="_blank">acsdk.13.3.txt</a> contain a 13-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.14.4.txt" target="_blank">acs.14.4.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.14.4.txt" target="_blank">acsdk.14.4.txt</a> contain a 14-qubit anticoherent state to order 4
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.15.3.txt" target="_blank">acs.15.3.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.15.3.txt" target="_blank">acsdk.15.3.txt</a> contain a 15-qubit anticoherent state to order 3
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.16.5.txt" target="_blank">acs.16.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.16.5.txt" target="_blank">acsdk.16.5.txt</a> contain a 16-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.17.4.txt" target="_blank">acs.17.4.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.17.4.txt" target="_blank">acsdk.17.4.txt</a> contain a 17-qubit anticoherent state to order 4
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.18.5.txt" target="_blank">acs.18.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.18.5.txt" target="_blank">acsdk.18.5.txt</a> contain a 18-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.19.4.txt" target="_blank">acs.19.4.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.19.4.txt" target="_blank">acsdk.19.4.txt</a> contain a 19-qubit anticoherent state to order 4
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.20.5.txt" target="_blank">acs.20.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.20.5.txt" target="_blank">acsdk.20.5.txt</a> contain a 20-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.21.4.txt" target="_blank">acs.21.4.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.21.4.txt" target="_blank">acsdk.21.4.txt</a> contain a 21-qubit anticoherent state to order 4
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.22.5.txt" target="_blank">acs.22.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.22.5.txt" target="_blank">acsdk.22.5.txt</a> contain a 22-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.23.5.txt" target="_blank">acs.23.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.23.5.txt" target="_blank">acsdk.23.5.txt</a> contain a 23-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.24.7.txt" target="_blank">acs.24.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.24.7.txt" target="_blank">acsdk.24.7.txt</a> contain a 24-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.25.5.txt" target="_blank">acs.25.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.25.5.txt" target="_blank">acsdk.25.5.txt</a> contain a 25-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.26.6.txt" target="_blank">acs.26.6.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.26.6.txt" target="_blank">acsdk.26.6.txt</a> contain a 26-qubit anticoherent state to order 6
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.27.5.txt" target="_blank">acs.27.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.27.5.txt" target="_blank">acsdk.27.5.txt</a> contain a 27-qubit anticoherent state to order 5
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.28.6.txt" target="_blank">acs.28.6.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.28.6.txt" target="_blank">acsdk.28.6.txt</a> contain a 28-qubit anticoherent state to order 6
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.29.5.txt" target="_blank">acs.29.5.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.29.5.txt" target="_blank">acsdk.29.5.txt</a> contain a 29-qubit anticoherent state to order 5 (*)
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.30.7.txt" target="_blank">acs.30.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.30.7.txt" target="_blank">acsdk.30.7.txt</a> contain a 30-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.31.6.txt" target="_blank">acs.31.6.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.31.6.txt" target="_blank">acsdk.31.6.txt</a> contain a 31-qubit anticoherent state to order 6
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.32.7.txt" target="_blank">acs.32.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.32.7.txt" target="_blank">acsdk.32.7.txt</a> contain a 32-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.33.6.txt" target="_blank">acs.33.6.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.33.6.txt" target="_blank">acsdk.33.6.txt</a> contain a 33-qubit anticoherent state to order 6
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.34.7.txt" target="_blank">acs.34.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.34.7.txt" target="_blank">acsdk.34.7.txt</a> contain a 34-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.35.6.txt" target="_blank">acs.35.6.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.35.6.txt" target="_blank">acsdk.35.6.txt</a> contain a 35-qubit anticoherent state to order 6
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.36.8.txt" target="_blank">acs.36.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.36.8.txt" target="_blank">acsdk.36.8.txt</a> contain a 36-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.37.7.txt" target="_blank">acs.37.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.37.7.txt" target="_blank">acsdk.37.7.txt</a> contain a 37-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.38.7.txt" target="_blank">acs.38.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.38.7.txt" target="_blank">acsdk.38.7.txt</a> contain a 38-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.39.7.txt" target="_blank">acs.39.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.39.7.txt" target="_blank">acsdk.39.7.txt</a> contain a 39-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.40.8.txt" target="_blank">acs.40.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.40.8.txt" target="_blank">acsdk.40.8.txt</a> contain a 40-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.41.7.txt" target="_blank">acs.41.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.41.7.txt" target="_blank">acsdk.41.7.txt</a> contain a 41-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.42.8.txt" target="_blank">acs.42.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.42.8.txt" target="_blank">acsdk.42.8.txt</a> contain a 42-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.43.7.txt" target="_blank">acs.43.7.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.43.7.txt" target="_blank">acsdk.43.7.txt</a> contain a 43-qubit anticoherent state to order 7
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.44.8.txt" target="_blank">acs.44.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.44.8.txt" target="_blank">acsdk.44.8.txt</a> contain a 44-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.45.8.txt" target="_blank">acs.45.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.45.8.txt" target="_blank">acsdk.45.8.txt</a> contain a 45-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.46.8.txt" target="_blank">acs.46.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.46.8.txt" target="_blank">acsdk.46.8.txt</a> contain a 46-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.47.8.txt" target="_blank">acs.47.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.47.8.txt" target="_blank">acsdk.47.8.txt</a> contain a 47-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.48.9.txt" target="_blank">acs.48.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.48.9.txt" target="_blank">acsdk.48.9.txt</a> contain a 48-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.49.8.txt" target="_blank">acs.49.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.49.8.txt" target="_blank">acsdk.49.8.txt</a> contain a 49-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.50.9.txt" target="_blank">acs.50.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.50.9.txt" target="_blank">acsdk.50.9.txt</a> contain a 50-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.51.8.txt" target="_blank">acs.51.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.51.8.txt" target="_blank">acsdk.51.8.txt</a> contain a 51-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.52.9.txt" target="_blank">acs.52.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.52.9.txt" target="_blank">acsdk.52.9.txt</a> contain a 52-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.53.8.txt" target="_blank">acs.53.8.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.53.8.txt" target="_blank">acsdk.53.8.txt</a> contain a 53-qubit anticoherent state to order 8
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.54.9.txt" target="_blank">acs.54.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.54.9.txt" target="_blank">acsdk.54.9.txt</a> contain a 54-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.55.9.txt" target="_blank">acs.55.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.55.9.txt" target="_blank">acsdk.55.9.txt</a> contain a 55-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.56.9.txt" target="_blank">acs.56.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.56.9.txt" target="_blank">acsdk.56.9.txt</a> contain a 56-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.57.9.txt" target="_blank">acs.57.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.57.9.txt" target="_blank">acsdk.57.9.txt</a> contain a 57-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.58.9.txt" target="_blank">acs.58.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.58.9.txt" target="_blank">acsdk.58.9.txt</a> contain a 58-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.59.9.txt" target="_blank">acs.59.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.59.9.txt" target="_blank">acsdk.59.9.txt</a> contain a 59-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.60.9.txt" target="_blank">acs.60.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.60.9.txt" target="_blank">acsdk.60.9.txt</a> contain a 60-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.61.9.txt" target="_blank">acs.61.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.61.9.txt" target="_blank">acsdk.61.9.txt</a> contain a 61-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.62.10.txt" target="_blank">acs.62.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.62.10.txt" target="_blank">acsdk.62.10.txt</a> contain a 62-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.63.9.txt" target="_blank">acs.63.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.63.9.txt" target="_blank">acsdk.63.9.txt</a> contain a 63-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.64.10.txt" target="_blank">acs.64.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.64.10.txt" target="_blank">acsdk.64.10.txt</a> contain a 64-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.65.9.txt" target="_blank">acs.65.9.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.65.9.txt" target="_blank">acsdk.65.9.txt</a> contain a 65-qubit anticoherent state to order 9
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.66.10.txt" target="_blank">acs.66.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.66.10.txt" target="_blank">acsdk.66.10.txt</a> contain a 66-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.67.10.txt" target="_blank">acs.67.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.67.10.txt" target="_blank">acsdk.67.10.txt</a> contain a 67-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.68.10.txt" target="_blank">acs.68.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.68.10.txt" target="_blank">acsdk.68.10.txt</a> contain a 68-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.69.10.txt" target="_blank">acs.69.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.69.10.txt" target="_blank">acsdk.69.10.txt</a> contain a 69-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.70.10.txt" target="_blank">acs.70.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.70.10.txt" target="_blank">acsdk.70.10.txt</a> contain a 70-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.71.10.txt" target="_blank">acs.71.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.71.10.txt" target="_blank">acsdk.71.10.txt</a> contain a 71-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.72.10.txt" target="_blank">acs.72.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.72.10.txt" target="_blank">acsdk.72.10.txt</a> contain a 72-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.73.10.txt" target="_blank">acs.73.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.73.10.txt" target="_blank">acsdk.73.10.txt</a> contain a 73-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.74.11.txt" target="_blank">acs.74.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.74.11.txt" target="_blank">acsdk.74.11.txt</a> contain a 74-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.75.10.txt" target="_blank">acs.75.10.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.75.10.txt" target="_blank">acsdk.75.10.txt</a> contain a 75-qubit anticoherent state to order 10
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.76.11.txt" target="_blank">acs.76.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.76.11.txt" target="_blank">acsdk.76.11.txt</a> contain a 76-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.77.11.txt" target="_blank">acs.77.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.77.11.txt" target="_blank">acsdk.77.11.txt</a> contain a 77-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.78.11.txt" target="_blank">acs.78.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.78.11.txt" target="_blank">acsdk.78.11.txt</a> contain a 78-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.79.11.txt" target="_blank">acs.79.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.79.11.txt" target="_blank">acsdk.79.11.txt</a> contain a 79-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.80.11.txt" target="_blank">acs.80.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.80.11.txt" target="_blank">acsdk.80.11.txt</a> contain a 80-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.81.11.txt" target="_blank">acs.81.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.81.11.txt" target="_blank">acsdk.81.11.txt</a> contain a 81-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.82.11.txt" target="_blank">acs.82.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.82.11.txt" target="_blank">acsdk.82.11.txt</a> contain a 82-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.83.11.txt" target="_blank">acs.83.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.83.11.txt" target="_blank">acsdk.83.11.txt</a> contain a 83-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.84.12.txt" target="_blank">acs.84.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.84.12.txt" target="_blank">acsdk.84.12.txt</a> contain a 84-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.85.11.txt" target="_blank">acs.85.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.85.11.txt" target="_blank">acsdk.85.11.txt</a> contain a 85-qubit anticoherent state to order 11
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.86.12.txt" target="_blank">acs.86.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.86.12.txt" target="_blank">acsdk.86.12.txt</a> contain a 86-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.87.11.txt" target="_blank">acs.87.11.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.87.11.txt" target="_blank">acsdk.87.11.txt</a> contain a 87-qubit anticoherent state to order 11 (*)
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.88.12.txt" target="_blank">acs.88.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.88.12.txt" target="_blank">acsdk.88.12.txt</a> contain a 88-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.89.12.txt" target="_blank">acs.89.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.89.12.txt" target="_blank">acsdk.89.12.txt</a> contain a 89-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.90.12.txt" target="_blank">acs.90.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.90.12.txt" target="_blank">acsdk.90.12.txt</a> contain a 90-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.91.12.txt" target="_blank">acs.91.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.91.12.txt" target="_blank">acsdk.91.12.txt</a> contain a 91-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.92.12.txt" target="_blank">acs.92.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.92.12.txt" target="_blank">acsdk.92.12.txt</a> contain a 92-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.93.12.txt" target="_blank">acs.93.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.93.12.txt" target="_blank">acsdk.93.12.txt</a> contain a 93-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.94.12.txt" target="_blank">acs.94.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.94.12.txt" target="_blank">acsdk.94.12.txt</a> contain a 94-qubit anticoherent state to order 12 (*)
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.95.12.txt" target="_blank">acs.95.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.95.12.txt" target="_blank">acsdk.95.12.txt</a> contain a 95-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.96.13.txt" target="_blank">acs.96.13.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.96.13.txt" target="_blank">acsdk.96.13.txt</a> contain a 96-qubit anticoherent state to order 13
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.97.12.txt" target="_blank">acs.97.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.97.12.txt" target="_blank">acsdk.97.12.txt</a> contain a 97-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.98.13.txt" target="_blank">acs.98.13.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.98.13.txt" target="_blank">acsdk.98.13.txt</a> contain a 98-qubit anticoherent state to order 13
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.99.12.txt" target="_blank">acs.99.12.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.99.12.txt" target="_blank">acsdk.99.12.txt</a> contain a 99-qubit anticoherent state to order 12
+														<br><br>
+														Found by J. Martin.<br>
+														<a href="http://www.oq.ulg.ac.be/ACstates/acs.100.13.txt" target="_blank">acs.100.13.txt</a> and <a href="http://www.oq.ulg.ac.be/ACstates/acsdk.100.13.txt" target="_blank">acsdk.100.13.txt</a> contain a 100-qubit anticoherent state to order 13
+														<br><br>
+														
+														
+														</div>
+														</td>
+														</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+											<p style="color: rgb(0, 0, 0);"><span style="color: rgb(51, 51, 51);"><br /></span></p>
+											
+										</div>
+									</div>
+								</div> <!-- /article-content -->
+								<div class="article-info">
+								</div> <!-- /article-info -->
+							</div> <!-- /article -->
+						</div> <!-- main-content -->
+						<div id="main-bottom"></div>
+					</div> <!-- main -->
+				</div> <!-- content -->
+				<div class="clear below-content"></div>
+				<div id="page-bottom">
+					<div id="page-bottom-contents">
+						<div><span style="color: rgb(169, 169, 169); font-family: Arial;">© ULiege 2024 - John Martin</span><br />
+											
+											
+											
+											
+											</div>
+						<div class="hidden"> <a rel="nofollow" href="#title">[Back To Top]</a></div>
+					</div>
+				</div> <!-- page-bottom -->
+			</div> <!-- container -->
+			<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+		</div> <!-- specific body type -->
+		<script charset="utf-8" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+		<script>
+		if (typeof jQuery === 'undefined') document.write('<scr'+'ipt src="_Resources/jquery-1.9.1.min.js" charset="utf-8"></scr'+'ipt>');
+		</script>
+		
+		
+	</body>
+</html>

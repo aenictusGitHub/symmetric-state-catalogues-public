@@ -1,0 +1,287 @@
+{
+  "id": "radical-n19-k2-t3",
+  "n": 19,
+  "t": 3,
+  "dimension": 2,
+  "label": "Analytical third-order AC plane on 19 qubits",
+  "evidence": "exact",
+  "exactnessKind": "explicit-radical-recurrence",
+  "provenance": "Independent analytical construction using rational diagonal moments and exact phase closure. Equality to the numerical Julia plane is not asserted.",
+  "derivationLatex": "R_3(|u_a\\rangle\\langle u_b|)=\\delta_{ab}I_4/4",
+  "basis": [
+    {
+      "id": "radical-n19-k2-t3-basis-1",
+      "n": 19,
+      "label": "Analytical AC3 plane \u00b7 basis vector 1",
+      "exactCoefficients": [
+        "0",
+        "sqrt(385)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(995)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*(5*sqrt(9989489510) + 99*sqrt(170170)*I)/(100*(5*sqrt(22263383) + 69503*I))",
+        "0",
+        "0",
+        "0",
+        "0",
+        "561*(-1797715*sqrt(408866395) - 108724869*sqrt(6965)*I)/(506892800*(5*sqrt(22263383) - 60649*I))",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3924283374069717,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6308724118235002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.08146045262629951,
+          -0.18805370152676712
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.08030118433312415,
+          -0.6321010360651987
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        6,
+        11,
+        16
+      ],
+      "stateLatex": "|u\\rangle=\\sum_{i=0}^{3}a_i|D_{19}^{(1+5i)}\\rangle",
+      "evidence": "Exact radical coefficients; every whole-subspace third reduced matrix is verified.",
+      "coefficientDefinitionLatex": "\\begin{gathered}p=(77,199,21,203)/500,\\quad q_i=p_{3-i},\\\\ f_i=\\sqrt{(18-5i)(2+5i)(17-5i)(3+5i)},\\\\g_i=\\sqrt{(16-5i)(4+5i)(15-5i)(5+5i)(14-5i)(6+5i)},\\\\z=f_0\\sqrt{p_0p_3},\\quad w=\\frac{60649+i\\sqrt{65076^2-60649^2}}{65076},\\\\(Z_0,Z_1,Z_2,Z_3)=z(1,w-2,1-2w,w),\\\\L=g_0\\sqrt{p_1p_3},\\quad M=g_1p_2,\\quad\\eta=-\\frac{M}{2L}+i\\sqrt{1-\\frac{M^2}{4L^2}},\\\\(T_0,T_1,T_2)=(L,M\\eta,-L-M\\eta),\\\\a_0=\\sqrt{p_0},\\quad a_{i+1}=\\frac{f_iT_i}{g_iZ_i}a_i\\ (0\\le i\\le2),\\\\b_i=\\overline{\\frac{Z_i}{f_i a_i}}\\ (0\\le i\\le3).\\end{gathered}"
+    },
+    {
+      "id": "radical-n19-k2-t3-basis-2",
+      "n": 19,
+      "label": "Analytical AC3 plane \u00b7 basis vector 2",
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "sqrt(1015)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(982051070)*(-69503 - 5*sqrt(22263383)*I)/11223440800",
+        "0",
+        "0",
+        "0",
+        "0",
+        "398*(5*sqrt(3228190535) + 60649*sqrt(145)*I)/(406725*(5*sqrt(58703) - 99*I))",
+        "0",
+        "0",
+        "0",
+        "0",
+        "12736*(-303245*sqrt(49465563567805) - 1560858313*sqrt(2221835)*I)/(228172725*(1797715*sqrt(58703) - 108724869*I))",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6371812928829597,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.19406381609489642,
+          -0.06587287213023442
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.18006187933724543,
+          0.6046302337871794
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.18722463395457,
+          -0.3448868458503126
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        3,
+        8,
+        13,
+        18
+      ],
+      "stateLatex": "|v\\rangle=\\sum_{i=0}^{3}b_i|D_{19}^{(3+5i)}\\rangle",
+      "evidence": "Exact radical coefficients; every whole-subspace third reduced matrix is verified.",
+      "coefficientDefinitionLatex": "\\begin{gathered}p=(77,199,21,203)/500,\\quad q_i=p_{3-i},\\\\ f_i=\\sqrt{(18-5i)(2+5i)(17-5i)(3+5i)},\\\\g_i=\\sqrt{(16-5i)(4+5i)(15-5i)(5+5i)(14-5i)(6+5i)},\\\\z=f_0\\sqrt{p_0p_3},\\quad w=\\frac{60649+i\\sqrt{65076^2-60649^2}}{65076},\\\\(Z_0,Z_1,Z_2,Z_3)=z(1,w-2,1-2w,w),\\\\L=g_0\\sqrt{p_1p_3},\\quad M=g_1p_2,\\quad\\eta=-\\frac{M}{2L}+i\\sqrt{1-\\frac{M^2}{4L^2}},\\\\(T_0,T_1,T_2)=(L,M\\eta,-L-M\\eta),\\\\a_0=\\sqrt{p_0},\\quad a_{i+1}=\\frac{f_iT_i}{g_iZ_i}a_i\\ (0\\le i\\le2),\\\\b_i=\\overline{\\frac{Z_i}{f_i a_i}}\\ (0\\le i\\le3).\\end{gathered}"
+    }
+  ],
+  "construction": {
+    "p": [
+      "77/500",
+      "199/500",
+      "21/500",
+      "203/500"
+    ],
+    "q": [
+      "203/500",
+      "21/500",
+      "199/500",
+      "77/500"
+    ],
+    "Z": [
+      "21*sqrt(16269)/250",
+      "21*sqrt(16269)*(-69503/65076 + 5*sqrt(22263383)*I/65076)/250",
+      "21*sqrt(16269)*(-28111/32538 - 5*sqrt(22263383)*I/32538)/250",
+      "21*sqrt(16269)*(60649/65076 + 5*sqrt(22263383)*I/65076)/250"
+    ],
+    "T": [
+      "84*sqrt(5771)/25",
+      "-205821*sqrt(5771)/4616800 + 2079*sqrt(338775013)*I/923360",
+      "-15306627*sqrt(5771)/4616800 - 2079*sqrt(338775013)*I/923360"
+    ],
+    "cos": "60649/65076",
+    "L": "84*sqrt(5771)/25",
+    "M": "2079/50"
+  },
+  "references": [
+    {
+      "label": "Analytical basis and proof",
+      "url": "research/n19-t3/index.html"
+    },
+    {
+      "label": "Exact whole-subspace verification",
+      "url": "research/n19-t3/independent-verification.json"
+    }
+  ]
+}

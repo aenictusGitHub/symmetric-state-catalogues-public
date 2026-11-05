@@ -1,0 +1,133 @@
+{
+  "n": 40,
+  "t": 2,
+  "k": 2,
+  "status": "exact analytical construction; optimality not asserted",
+  "basis_convention": "Column i is u_i; Dicke row r is D_N^(r).",
+  "expression_convention": "SymPy syntax; I is the imaginary unit. Evaluate ordered definitions before amplitudes.",
+  "definitions": [
+    {
+      "name": "p_0_0",
+      "expression": "1"
+    },
+    {
+      "name": "p_0_1",
+      "expression": "1"
+    },
+    {
+      "name": "p_0_2",
+      "expression": "1"
+    },
+    {
+      "name": "p_0_3",
+      "expression": "1"
+    },
+    {
+      "name": "z_0_0",
+      "expression": "25*sqrt(77953710821)*(474047/75 + 2*sqrt(119215709795)*I/75)/77953710821"
+    },
+    {
+      "name": "p_1_0",
+      "expression": "p_0_0*z_0_0"
+    },
+    {
+      "name": "z_0_1",
+      "expression": "5*sqrt(41354947855)*(201188/15 - 2*sqrt(119215709795)*I/75)/16541979142"
+    },
+    {
+      "name": "p_1_1",
+      "expression": "p_0_1*z_0_1"
+    },
+    {
+      "name": "z_0_2",
+      "expression": "5*sqrt(41354947855)*(-201188/15 - 2*sqrt(119215709795)*I/75)/16541979142"
+    },
+    {
+      "name": "p_1_2",
+      "expression": "p_0_2*z_0_2"
+    },
+    {
+      "name": "z_0_3",
+      "expression": "25*sqrt(77953710821)*(-474047/75 + 2*sqrt(119215709795)*I/75)/77953710821"
+    },
+    {
+      "name": "p_1_3",
+      "expression": "p_0_3*z_0_3"
+    }
+  ],
+  "basis": [
+    {
+      "column": 0,
+      "components": [
+        {
+          "dicke_index": 4,
+          "squared_magnitude": "241/900",
+          "amplitude": "sqrt(241)*p_0_0/30"
+        },
+        {
+          "dicke_index": 14,
+          "squared_magnitude": "53/300",
+          "amplitude": "sqrt(159)*p_0_1/30"
+        },
+        {
+          "dicke_index": 24,
+          "squared_magnitude": "73/300",
+          "amplitude": "sqrt(219)*p_0_2/30"
+        },
+        {
+          "dicke_index": 34,
+          "squared_magnitude": "281/900",
+          "amplitude": "sqrt(281)*p_0_3/30"
+        }
+      ]
+    },
+    {
+      "column": 1,
+      "components": [
+        {
+          "dicke_index": 6,
+          "squared_magnitude": "281/900",
+          "amplitude": "sqrt(281)*p_1_0/30"
+        },
+        {
+          "dicke_index": 16,
+          "squared_magnitude": "73/300",
+          "amplitude": "sqrt(219)*p_1_1/30"
+        },
+        {
+          "dicke_index": 26,
+          "squared_magnitude": "53/300",
+          "amplitude": "sqrt(159)*p_1_2/30"
+        },
+        {
+          "dicke_index": 36,
+          "squared_magnitude": "241/900",
+          "amplitude": "sqrt(241)*p_1_3/30"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_column": 0,
+      "to_column": 1,
+      "squared_lengths": [
+        "474047/150",
+        "100594/15",
+        "100594/15",
+        "474047/150"
+      ],
+      "squared_diagonal": "493329/50",
+      "triangle_discriminants": [
+        "95372567836/1125",
+        "95372567836/1125"
+      ]
+    }
+  ],
+  "exact_checks": {
+    "positive_rational_weights": true,
+    "normalization": true,
+    "first_and_second_moments": true,
+    "phase_norms_and_adjacent_closures": true
+  }
+}

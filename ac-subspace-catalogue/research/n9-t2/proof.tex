@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,booktabs,geometry}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\begin{document}
+\title{Nine symmetric qubits: the maximum second-order anticoherent subspace dimension is one}
+\author{Exact catalogue calculation}
+\date{}
+\maketitle
+\paragraph{Theorem.}
+For pure symmetric nine-qubit subspaces,
+\[
+ \boxed{k_{\max}(9,2)=1.}
+\]
+The proof applies to arbitrary complex subspaces. Its finite exact certificate is stored in \texttt{kernel.json} and \texttt{certificate.json}; the accompanying verifier reconstructs the representation and checks the rational identities.
+
+\section*{1. The unrestricted complex problem}
+Let $V$ be the spin-$9/2$ representation, of dimension ten. Suppose $P$ projects onto a two-dimensional pure symmetric second-order anticoherent subspace. If $u,v$ are an arbitrary complex orthonormal basis of $\Ran P$, then
+\[
+ PT_{Lq}P=0\qquad (L=1,2;\ -L\le q\le L),
+\]
+where $T_{Lq}$ are irreducible spin tensors. This is the full compressed-operator condition, including all cross terms between $u$ and $v$.
+
+Define the normalized exterior product
+\[
+ w=u\wedge v=\frac{u\otimes v-v\otimes u}{\sqrt2},
+ \qquad R_w=|w\rangle\langle w|.
+\]
+For any operator $T$ on $V$, direct expansion gives
+\begin{align*}
+2\Tr_1[(T\otimes I)R_w]
+={}&\langle u|T|u\rangle|v\rangle\langle v|
++\langle v|T|v\rangle|u\rangle\langle u|\\
+&-\langle v|T|u\rangle|v\rangle\langle u|
+-\langle u|T|v\rangle|u\rangle\langle v|.
+\end{align*}
+Since $u,v$ are orthonormal, this matrix vanishes if and only if $PTP=0$. In particular,
+\[
+ \Tr_1[(T_{Lq}\otimes I)R_w]=0\quad(L=1,2).
+\]
+
+\section*{2. Four copies and the Young subspace}
+Set $\omega=w\otimes w\in V^{\otimes4}$. It lies in
+$\Sym^2(\Lambda^2V)$, and its component in $\Lambda^4V$ vanishes because
+$w\wedge w=0$. Therefore
+\[
+ \omega\in W:=\mathbb S_{(2,2)}V,
+ \qquad \dim W=\frac{10^2(10^2-1)}{12}=825.
+\]
+An explicit orthogonal projector onto $W$ is
+\[
+ Y_{22}=E-A_4,\qquad
+ E=\frac{I-U_{(12)}}2\frac{I-U_{(34)}}2
+       \frac{I+U_{(13)(24)}}2,
+ \qquad A_4=\frac1{24}\sum_{\pi\in S_4}\operatorname{sgn}(\pi)U_\pi.
+\]
+Here $A_4$ is a subprojector of $E$, so $Y_{22}$ is indeed an orthogonal projector. This construction depends only on permutation symmetries, not on an ansatz for the code.
+
+Let $D(g)$ denote the spin-$9/2$ representation and define the collective rotation average
+\[
+ X=\int_{SU(2)}D(g)^{\otimes4}|\omega\rangle\langle\omega|
+                      D(g)^{\dagger\otimes4}\,dg.
+\]
+Then $X\succeq0$, $\Tr X=1$, $\Ran X\subseteq W$, and $X$ commutes with collective rotations. Moreover,
+\[
+ \mathcal C_{Lq}(X):=
+ \Tr_1[(T_{Lq}\otimes I^{\otimes3})X]=0,
+ \qquad L=1,2.
+\]
+Before averaging, this identity is the tensor product of the zero matrix in Section~1 with $R_w$. Averaging preserves the identity because the tensors of a fixed rank form a rotation-invariant linear space.
+
+For a rotation-invariant $X$, it suffices to impose $q=0$. Indeed,
+$T\mapsto\Tr_1[(T\otimes I^{\otimes3})X]$ intertwines rotations, and the orbit of the nonzero vector $T_{L0}$ spans the entire irreducible rank-$L$ tensor space. Thus using only $T_{10}$ and $T_{20}$ in the linear system loses no rank-one or rank-two contraction condition.
+
+\section*{3. Completeness of the finite representation}
+Under collective rotations,
+\[
+ W\cong\bigoplus_J V_J\otimes\mathbb C^{m_J}.
+\]
+The multiplicities are
+\[
+\begin{array}{c|rrrrrrrrrrrrrrr}
+J&0&2&3&4&5&6&7&8&9&10&11&12&13&14&16\\\hline
+m_J&3&6&2&7&4&7&4&7&3&5&2&3&1&2&1.
+\end{array}
+\]
+They satisfy
+\[
+ \sum_J(2J+1)m_J=825,
+ \qquad \sum_J\frac{m_J(m_J+1)}2=169.
+\]
+The table can be obtained independently from
+$\Sym^2(\Lambda^2V)-\Lambda^4V$: count each weight, then subtract consecutive nonnegative weight multiplicities to recover $m_J$. An exact highest-weight construction must find exactly $m_J$ independent vectors in
+$W\cap\ker J_+\cap\ker(J_z-JI)$ for every listed $J$. Their lowering orbits then span all 825 dimensions. These dimension checks prevent accidental omission of a possible subspace.
+
+In an orthonormal real coupled basis, Schur's lemma gives
+\[
+ X=\bigoplus_J\frac{I_{2J+1}}{2J+1}\otimes\sigma_J,
+ \qquad \sigma_J\succeq0,\quad\sum_J\Tr\sigma_J=1.
+\]
+The matrices $\sigma_J$ may initially be complex Hermitian. The tensor matrices $T_{L0}$, the permutation projector, and the chosen coupled basis have real entries. Consequently the contraction equations have real coefficients. Replacing every $\sigma_J$ by
+\[
+ \frac{\sigma_J+\overline{\sigma_J}}2
+\]
+preserves positivity, trace, and all contraction equations. Thus a hypothetical complex code always supplies real symmetric positive semidefinite blocks. This reduction does \emph{not} assume that the original states have real Dicke coefficients.
+
+\section*{4. The exact coordinates and their normalization}
+To avoid unnecessary square roots, the saved calculation uses real, unnormalized highest-weight columns $H_{Ja}$, $a=1,\ldots,m_J$. They need not be orthogonal. Put
+\[
+ H_{JaM}=\frac{J_-^{J-M}}{(J-M)!}H_{Ja},\qquad
+ (G_J)_{ab}=\langle H_{Ja},H_{Jb}\rangle.
+\]
+The ladder identity gives
+\[
+ \langle H_{JaM},H_{JbM}\rangle
+ =\binom{2J}{J-M}(G_J)_{ab}.
+\]
+Every invariant operator on $W$ can therefore be written uniquely as
+\[
+ X=\sum_{J,M}\sum_{a,b=1}^{m_J}
+ C^J_{ab}\,
+ \frac{|H_{JaM}\rangle\langle H_{JbM}|}{\binom{2J}{J-M}}.
+\]
+The coefficient matrices $C^J$ are real symmetric. Because each highest-weight matrix has full column rank, changing between $C^J$ and orthonormal multiplicity blocks is an invertible congruence. Consequently
+\[
+ X\succeq0\quad\Longleftrightarrow\quad C^J\succeq0
+ \ \hbox{for every }J.
+\]
+In particular, all 57 diagonal entries $C^J_{aa}$ are nonnegative. The trace is
+\[
+ \Tr X=\sum_J(2J+1)\Tr(G_JC^J).
+\]
+It generally contains off-diagonal terms because $G_J$ need not be diagonal. The proof below does not replace this trace by an unweighted sum of block diagonals.
+
+Use the 169 upper-triangular entries of the $C^J$ as coordinates $x$. An off-diagonal coordinate contributes both symmetric matrix entries. Exact expansion of selected entries of the two contraction matrices gives
+\[
+ Ax=0,\qquad A\in\mathbb Q^{156\times169},\qquad\operatorname{rank}A=156.
+\]
+Only a subset of the full contraction equations is required; every genuine code satisfies this subset. The stored exact kernel basis
+\[
+ K\in\mathbb Q^{169\times13},\qquad AK=0,
+ \qquad\operatorname{rank}K=13
+\]
+therefore spans all solutions of these necessary equations. Let $D$ select the 57 diagonal coordinates from $x$.
+
+\section*{5. A strictly positive exact certificate}
+The file \texttt{certificate.json} gives a vector $z\in\mathbb Z^{57}$, with every entry strictly positive, such that
+\[
+ \boxed{z^{\mathsf T}DK=0.}
+\]
+Its largest coefficient has 106 decimal digits. No rounded coefficient or numerical sign decision enters this identity. The certificate is deliberately supplied as machine-readable integers rather than several pages of large numerators.
+
+For any solution $x=Ky$ of the necessary contraction equations,
+\[
+ \sum_{J,a}z_{Ja}C^J_{aa}=z^{\mathsf T}Dx=0.
+\]
+Since every $z_{Ja}>0$ and $C^J\succeq0$, all diagonal entries vanish. For a positive semidefinite matrix,
+\[
+ |C^J_{ab}|^2\le C^J_{aa}C^J_{bb},
+\]
+so every off-diagonal entry also vanishes. Thus every $C^J=0$, and hence $X=0$. This contradicts $\Tr X=1$.
+
+The exact verification includes all 2028 entries of $AK$, all 13 entries of $z^{\mathsf T}DK$, all 57 strict signs, and the representation dimensions. The ranks can be independently certified by nonzero minors modulo the prime $1000003$; all rational denominators are nonzero modulo that prime. The physical row reconstruction separately verifies that the saved rows are the stated contraction equations on the complete Young subspace.
+
+This excludes every two-dimensional second-order anticoherent subspace. A higher-dimensional subspace would contain a two-dimensional one, so it is excluded as well.
+
+\section*{6. Exact lower bound}
+Dimension one is attained, for example by
+\[
+ |\psi\rangle=\frac{\sqrt{13}|D_9^{(0)}\rangle
+                         +\sqrt{30}|D_9^{(4)}\rangle
+                         -\sqrt{21}|D_9^{(8)}\rangle}{8}.
+\]
+It is normalized, its Dicke support gaps eliminate all nonzero magnetic tensor components through rank two, and
+$\langle J_z\rangle=0$, $\langle J_z^2\rangle=33/4=j(j+1)/3$.
+Its span is therefore second-order anticoherent. Together with the exclusion in Section~5, this establishes $k_{\max}(9,2)=1$.
+\end{document}

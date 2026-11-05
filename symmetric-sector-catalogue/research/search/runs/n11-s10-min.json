@@ -1,0 +1,2054 @@
+{
+  "n": 11,
+  "k": 10,
+  "mode": "min",
+  "value": 10.99999999985448,
+  "coefficients": [
+    [
+      0.7239787092903516,
+      4.3472175979065694e-18
+    ],
+    [
+      -0.1786858105986848,
+      0.5580649634552368
+    ],
+    [
+      -0.26028760012361496,
+      -0.18572379823691254
+    ],
+    [
+      0.10831621073246328,
+      -0.08085268795385597
+    ],
+    [
+      0.015116508980878293,
+      0.044071648367205285
+    ],
+    [
+      -0.013718071298321815,
+      0.0004910968288249748
+    ],
+    [
+      0.001410543813862901,
+      -0.0019123960815294718
+    ],
+    [
+      0.005147675305153301,
+      0.00012192210795899373
+    ],
+    [
+      0.003243775712789107,
+      -0.012817228598454971
+    ],
+    [
+      -0.02664023778424925,
+      -0.016830780638448613
+    ],
+    [
+      -0.04422960382245471,
+      0.03708804308014092
+    ],
+    [
+      0.026975977812931706,
+      0.06601903077930847
+    ]
+  ],
+  "sectorVector": [
+    1.0000000000000004,
+    10.581200059798222,
+    54.99999999999045,
+    158.71800089696035,
+    329.9999999999427,
+    444.41040251153026,
+    461.9999999999709,
+    317.4360017940344,
+    165.0000000000582,
+    52.906000299029984,
+    11.000000000029104,
+    39.948394438644755
+  ],
+  "gradientNorm": 4.6014002121558846e-05,
+  "optimizerSuccess": false,
+  "optimizerMessage": "ABNORMAL_TERMINATION_IN_LNSRCH",
+  "seed": 20261028,
+  "starts": 282,
+  "history": [
+    {
+      "start": 0,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 35,
+      "gradientNorm": 0.00018998136391891888
+    },
+    {
+      "start": 1,
+      "value": 10.99999999985448,
+      "success": false,
+      "nit": 49,
+      "gradientNorm": 4.6014002121558846e-05
+    },
+    {
+      "start": 2,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00014518845510385343
+    },
+    {
+      "start": 3,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 4.82604414882424e-05
+    },
+    {
+      "start": 4,
+      "value": 11.000000000050932,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00011176996739327107
+    },
+    {
+      "start": 5,
+      "value": 10.999999999996362,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 9.075380266926003e-05
+    },
+    {
+      "start": 6,
+      "value": 10.999999999974534,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 3.427712627051895e-05
+    },
+    {
+      "start": 7,
+      "value": 11.0,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 3.71974020821053e-05
+    },
+    {
+      "start": 8,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 2.1986625965843852e-05
+    },
+    {
+      "start": 9,
+      "value": 11.0,
+      "success": true,
+      "nit": 53,
+      "gradientNorm": 7.564768946454893e-05
+    },
+    {
+      "start": 10,
+      "value": 10.999999999978172,
+      "success": false,
+      "nit": 49,
+      "gradientNorm": 0.00013125525171020982
+    },
+    {
+      "start": 11,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 36,
+      "gradientNorm": 0.00011099879732109211
+    },
+    {
+      "start": 12,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 34,
+      "gradientNorm": 0.0001526692842173168
+    },
+    {
+      "start": 13,
+      "value": 11.000000000138243,
+      "success": true,
+      "nit": 26,
+      "gradientNorm": 0.00023890543000908054
+    },
+    {
+      "start": 14,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 0.00044731830937860915
+    },
+    {
+      "start": 15,
+      "value": 10.99999999992724,
+      "success": true,
+      "nit": 35,
+      "gradientNorm": 0.00040613244925853274
+    },
+    {
+      "start": 16,
+      "value": 11.0,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 7.702383953447738e-05
+    },
+    {
+      "start": 17,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 4.3839346930881414e-05
+    },
+    {
+      "start": 18,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 34,
+      "gradientNorm": 0.00022176508881919827
+    },
+    {
+      "start": 19,
+      "value": 10.999999999912689,
+      "success": true,
+      "nit": 30,
+      "gradientNorm": 5.587537567042698e-05
+    },
+    {
+      "start": 20,
+      "value": 10.999999999934516,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 7.435032796849187e-05
+    },
+    {
+      "start": 21,
+      "value": 10.999999999974534,
+      "success": true,
+      "nit": 27,
+      "gradientNorm": 0.0001337348395763509
+    },
+    {
+      "start": 22,
+      "value": 10.999999999959982,
+      "success": true,
+      "nit": 35,
+      "gradientNorm": 0.00012196790444115539
+    },
+    {
+      "start": 23,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 36,
+      "gradientNorm": 0.0001666342383775511
+    },
+    {
+      "start": 24,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 31,
+      "gradientNorm": 0.0002531760223442694
+    },
+    {
+      "start": 25,
+      "value": 10.999999999934516,
+      "success": true,
+      "nit": 33,
+      "gradientNorm": 0.00010354636176923755
+    },
+    {
+      "start": 26,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 4.4265171027580184e-05
+    },
+    {
+      "start": 27,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 5.1213555915115135e-05
+    },
+    {
+      "start": 28,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.4516895011187876e-05
+    },
+    {
+      "start": 29,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 6.733298768302244e-05
+    },
+    {
+      "start": 30,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 4.205436994135156e-05
+    },
+    {
+      "start": 31,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00014240273944047665
+    },
+    {
+      "start": 32,
+      "value": 10.999999999974534,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 3.432251638533646e-05
+    },
+    {
+      "start": 33,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 8.602468139319404e-05
+    },
+    {
+      "start": 34,
+      "value": 10.999999999959982,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 2.2329621072527336e-05
+    },
+    {
+      "start": 35,
+      "value": 10.999999999970896,
+      "success": false,
+      "nit": 43,
+      "gradientNorm": 3.4066325542599356e-05
+    },
+    {
+      "start": 36,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 7.851480095416383e-05
+    },
+    {
+      "start": 37,
+      "value": 10.999999999996362,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 4.8663260559410695e-05
+    },
+    {
+      "start": 38,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 34,
+      "gradientNorm": 0.000115949844642454
+    },
+    {
+      "start": 39,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 3.2020663526255975e-05
+    },
+    {
+      "start": 40,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 3.007967522276865e-05
+    },
+    {
+      "start": 41,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 39,
+      "gradientNorm": 4.1734973370094145e-05
+    },
+    {
+      "start": 42,
+      "value": 11.000000000058208,
+      "success": true,
+      "nit": 35,
+      "gradientNorm": 0.00031277857121128134
+    },
+    {
+      "start": 43,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 9.830334901892011e-05
+    },
+    {
+      "start": 44,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 1.0806209079546785e-05
+    },
+    {
+      "start": 45,
+      "value": 10.999999999996362,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 7.466636206792762e-05
+    },
+    {
+      "start": 46,
+      "value": 11.000000000021828,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 4.3923345383645443e-05
+    },
+    {
+      "start": 47,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 55,
+      "gradientNorm": 2.5571124680895433e-05
+    },
+    {
+      "start": 48,
+      "value": 10.999999999941792,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.222238562790791e-05
+    },
+    {
+      "start": 49,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 9.162843271160446e-05
+    },
+    {
+      "start": 50,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 6.414924593229219e-05
+    },
+    {
+      "start": 51,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 6.434784495423901e-05
+    },
+    {
+      "start": 52,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 7.485475503017716e-05
+    },
+    {
+      "start": 53,
+      "value": 10.999999999974534,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 4.6539536763623474e-05
+    },
+    {
+      "start": 54,
+      "value": 11.000000000007276,
+      "success": false,
+      "nit": 45,
+      "gradientNorm": 7.762994518994112e-05
+    },
+    {
+      "start": 55,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 5.417426214452576e-05
+    },
+    {
+      "start": 56,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 8.883538634655925e-05
+    },
+    {
+      "start": 57,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 7.285010385619354e-05
+    },
+    {
+      "start": 58,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 4.102727348269393e-05
+    },
+    {
+      "start": 59,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.548639813898345e-05
+    },
+    {
+      "start": 60,
+      "value": 11.000000000058208,
+      "success": true,
+      "nit": 37,
+      "gradientNorm": 0.00017344722695079423
+    },
+    {
+      "start": 61,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 0.00013141782876439678
+    },
+    {
+      "start": 62,
+      "value": 10.999999999967258,
+      "success": false,
+      "nit": 48,
+      "gradientNorm": 3.169730172668481e-05
+    },
+    {
+      "start": 63,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.00012694605851116086
+    },
+    {
+      "start": 64,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 7.529231463455765e-05
+    },
+    {
+      "start": 65,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 6.623257612759517e-05
+    },
+    {
+      "start": 66,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 4.0925190117647935e-05
+    },
+    {
+      "start": 67,
+      "value": 11.000000000029104,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 8.531973083647058e-05
+    },
+    {
+      "start": 68,
+      "value": 11.0,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 0.00011435061048496693
+    },
+    {
+      "start": 69,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 8.234916554960386e-05
+    },
+    {
+      "start": 70,
+      "value": 11.0,
+      "success": false,
+      "nit": 51,
+      "gradientNorm": 3.225038530259602e-05
+    },
+    {
+      "start": 71,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 3.0232007773005616e-05
+    },
+    {
+      "start": 72,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 3.357481404749759e-05
+    },
+    {
+      "start": 73,
+      "value": 11.000000000032742,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 8.12471565275167e-05
+    },
+    {
+      "start": 74,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 7.690134681160877e-05
+    },
+    {
+      "start": 75,
+      "value": 11.000000000025466,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.0001084647334618355
+    },
+    {
+      "start": 76,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 9.277832118244796e-05
+    },
+    {
+      "start": 77,
+      "value": 11.0,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00011194157030286535
+    },
+    {
+      "start": 78,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 2.3449465424044494e-05
+    },
+    {
+      "start": 79,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 4.919358319012127e-05
+    },
+    {
+      "start": 80,
+      "value": 11.00000000003638,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.0001733403227402086
+    },
+    {
+      "start": 81,
+      "value": 11.000000000021828,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 5.587839650463106e-05
+    },
+    {
+      "start": 82,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 6.868853528883312e-05
+    },
+    {
+      "start": 83,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.212610021425615e-05
+    },
+    {
+      "start": 84,
+      "value": 11.0,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 0.00011142900645656653
+    },
+    {
+      "start": 85,
+      "value": 11.0,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 8.962253538131388e-05
+    },
+    {
+      "start": 86,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 38,
+      "gradientNorm": 0.0001612458332350248
+    },
+    {
+      "start": 87,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00011906282443213345
+    },
+    {
+      "start": 88,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.9254414785888506e-05
+    },
+    {
+      "start": 89,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 9.447367107769003e-05
+    },
+    {
+      "start": 90,
+      "value": 10.99999999996362,
+      "success": false,
+      "nit": 48,
+      "gradientNorm": 2.875301950792208e-05
+    },
+    {
+      "start": 91,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 3.035539021386638e-05
+    },
+    {
+      "start": 92,
+      "value": 11.000000000021828,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00010853996829272352
+    },
+    {
+      "start": 93,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 4.882127844243816e-05
+    },
+    {
+      "start": 94,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00010052949907307278
+    },
+    {
+      "start": 95,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 3.4254948133044896e-05
+    },
+    {
+      "start": 96,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.0001382307289217924
+    },
+    {
+      "start": 97,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.00016685963436243056
+    },
+    {
+      "start": 98,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.3901975902561444e-05
+    },
+    {
+      "start": 99,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 1.602035989642746e-05
+    },
+    {
+      "start": 100,
+      "value": 11.0,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 6.528780277863782e-05
+    },
+    {
+      "start": 101,
+      "value": 10.999999999938154,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 2.822748718304267e-05
+    },
+    {
+      "start": 102,
+      "value": 11.000000000003638,
+      "success": true,
+      "nit": 39,
+      "gradientNorm": 0.00015590317839885744
+    },
+    {
+      "start": 103,
+      "value": 11.000000000003638,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 9.443584975428616e-05
+    },
+    {
+      "start": 104,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.00011340685108812458
+    },
+    {
+      "start": 105,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 2.6075633756896412e-05
+    },
+    {
+      "start": 106,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 8.15812623132501e-05
+    },
+    {
+      "start": 107,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.2547552176307746e-05
+    },
+    {
+      "start": 108,
+      "value": 10.999999999941792,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 2.6506032017243444e-05
+    },
+    {
+      "start": 109,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 0.000188244346529509
+    },
+    {
+      "start": 110,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 2.4519144641405875e-05
+    },
+    {
+      "start": 111,
+      "value": 10.99999999989086,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.303401723718109e-05
+    },
+    {
+      "start": 112,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 4.94002860601297e-05
+    },
+    {
+      "start": 113,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 3.016876108485307e-05
+    },
+    {
+      "start": 114,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.0001281269896574958
+    },
+    {
+      "start": 115,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 52,
+      "gradientNorm": 4.933652794617881e-05
+    },
+    {
+      "start": 116,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 4.554339954222513e-05
+    },
+    {
+      "start": 117,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 9.46006048296214e-05
+    },
+    {
+      "start": 118,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 2.3358766072410174e-05
+    },
+    {
+      "start": 119,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.0001449172343983056
+    },
+    {
+      "start": 120,
+      "value": 11.0,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 7.296451623548958e-05
+    },
+    {
+      "start": 121,
+      "value": 10.999999999967258,
+      "success": false,
+      "nit": 48,
+      "gradientNorm": 6.745006110740563e-05
+    },
+    {
+      "start": 122,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 8.486917442297176e-05
+    },
+    {
+      "start": 123,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 7.470634866431584e-05
+    },
+    {
+      "start": 124,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00018546681655981297
+    },
+    {
+      "start": 125,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 3.735899685208136e-05
+    },
+    {
+      "start": 126,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 1.6720653636631937e-05
+    },
+    {
+      "start": 127,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.950959487042498e-05
+    },
+    {
+      "start": 128,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 3.877060485850338e-05
+    },
+    {
+      "start": 129,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 8.883603271503596e-05
+    },
+    {
+      "start": 130,
+      "value": 11.00000000003638,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.000152813320237199
+    },
+    {
+      "start": 131,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00011351587519499979
+    },
+    {
+      "start": 132,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 3.7267579499994e-05
+    },
+    {
+      "start": 133,
+      "value": 11.0,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 6.091018707423807e-05
+    },
+    {
+      "start": 134,
+      "value": 11.0,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 5.3854292546151606e-05
+    },
+    {
+      "start": 135,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 8.459445977861538e-05
+    },
+    {
+      "start": 136,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 4.7622843023749454e-05
+    },
+    {
+      "start": 137,
+      "value": 10.99999999994543,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.8469866428342176e-05
+    },
+    {
+      "start": 138,
+      "value": 11.000000000065484,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.00013879044372649903
+    },
+    {
+      "start": 139,
+      "value": 10.999999999974534,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 4.2078153003605736e-05
+    },
+    {
+      "start": 140,
+      "value": 11.000000000043656,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 0.00021126088231788434
+    },
+    {
+      "start": 141,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00014368454653946377
+    },
+    {
+      "start": 142,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.0001271862715235341
+    },
+    {
+      "start": 143,
+      "value": 11.0,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 5.1448357001725314e-05
+    },
+    {
+      "start": 144,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 2.673130342268192e-05
+    },
+    {
+      "start": 145,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 53,
+      "gradientNorm": 8.76086841729513e-06
+    },
+    {
+      "start": 146,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 6.537114413825044e-05
+    },
+    {
+      "start": 147,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 0.0001421136425535332
+    },
+    {
+      "start": 148,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 2.1958263482362114e-05
+    },
+    {
+      "start": 149,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 1.813583223806758e-05
+    },
+    {
+      "start": 150,
+      "value": 10.999999999970896,
+      "success": false,
+      "nit": 52,
+      "gradientNorm": 3.18529906798375e-05
+    },
+    {
+      "start": 151,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 0.00010856465871872529
+    },
+    {
+      "start": 152,
+      "value": 10.999999999996362,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 3.6900176688007205e-05
+    },
+    {
+      "start": 153,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 0.00011887732358320822
+    },
+    {
+      "start": 154,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 5.736308102881792e-05
+    },
+    {
+      "start": 155,
+      "value": 10.999999999985448,
+      "success": false,
+      "nit": 43,
+      "gradientNorm": 6.0284576855867904e-05
+    },
+    {
+      "start": 156,
+      "value": 11.000000000116415,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.0002695931741817099
+    },
+    {
+      "start": 157,
+      "value": 11.0,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.0001833212952904336
+    },
+    {
+      "start": 158,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 0.00016420253740368905
+    },
+    {
+      "start": 159,
+      "value": 10.999999999941792,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.4360902281761827e-05
+    },
+    {
+      "start": 160,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.4896536031253378e-05
+    },
+    {
+      "start": 161,
+      "value": 10.99999999998181,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 2.303303254671237e-05
+    },
+    {
+      "start": 162,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 9.61796304118574e-05
+    },
+    {
+      "start": 163,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 8.125404103469187e-05
+    },
+    {
+      "start": 164,
+      "value": 10.999999999978172,
+      "success": false,
+      "nit": 52,
+      "gradientNorm": 3.892938134884614e-05
+    },
+    {
+      "start": 165,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 60,
+      "gradientNorm": 1.7650309979435714e-05
+    },
+    {
+      "start": 166,
+      "value": 11.0,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 4.8193859171181856e-05
+    },
+    {
+      "start": 167,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 7.62705295317451e-05
+    },
+    {
+      "start": 168,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 4.9442330882014135e-05
+    },
+    {
+      "start": 169,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 1.5141864554597544e-05
+    },
+    {
+      "start": 170,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 2.896466090802799e-05
+    },
+    {
+      "start": 171,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 4.702009475342394e-05
+    },
+    {
+      "start": 172,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 9.211961952692273e-05
+    },
+    {
+      "start": 173,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.0001186235285002305
+    },
+    {
+      "start": 174,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 4.431771513894702e-05
+    },
+    {
+      "start": 175,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 3.9521729007774953e-05
+    },
+    {
+      "start": 176,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 38,
+      "gradientNorm": 0.0001421301100827239
+    },
+    {
+      "start": 177,
+      "value": 11.0,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 4.7198993043813126e-05
+    },
+    {
+      "start": 178,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 4.297455415090322e-05
+    },
+    {
+      "start": 179,
+      "value": 11.0,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00011714791636945801
+    },
+    {
+      "start": 180,
+      "value": 11.0,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 6.343862786782491e-05
+    },
+    {
+      "start": 181,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 2.9401561640057248e-05
+    },
+    {
+      "start": 182,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 54,
+      "gradientNorm": 2.1230784277605466e-05
+    },
+    {
+      "start": 183,
+      "value": 10.999999999941792,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 4.7988857332334054e-05
+    },
+    {
+      "start": 184,
+      "value": 11.0,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 0.00016376788479815441
+    },
+    {
+      "start": 185,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 9.814911687534852e-05
+    },
+    {
+      "start": 186,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00010765364826893614
+    },
+    {
+      "start": 187,
+      "value": 11.0,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.00010642989657169679
+    },
+    {
+      "start": 188,
+      "value": 11.000000000021828,
+      "success": false,
+      "nit": 46,
+      "gradientNorm": 7.745033818681659e-05
+    },
+    {
+      "start": 189,
+      "value": 11.0,
+      "success": false,
+      "nit": 43,
+      "gradientNorm": 0.0001152112805465355
+    },
+    {
+      "start": 190,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 2.125312544642039e-05
+    },
+    {
+      "start": 191,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 9.207127240742144e-05
+    },
+    {
+      "start": 192,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 6.641291010412024e-05
+    },
+    {
+      "start": 193,
+      "value": 10.999999999919964,
+      "success": false,
+      "nit": 43,
+      "gradientNorm": 9.365405838320194e-05
+    },
+    {
+      "start": 194,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00010339798997895515
+    },
+    {
+      "start": 195,
+      "value": 10.999999999970896,
+      "success": false,
+      "nit": 41,
+      "gradientNorm": 3.849801684240981e-05
+    },
+    {
+      "start": 196,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.32785098387244e-05
+    },
+    {
+      "start": 197,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 1.445348691672584e-05
+    },
+    {
+      "start": 198,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 39,
+      "gradientNorm": 9.455114716719981e-05
+    },
+    {
+      "start": 199,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 2.9045501769373956e-05
+    },
+    {
+      "start": 200,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00019709688440782943
+    },
+    {
+      "start": 201,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 2.588499311446981e-05
+    },
+    {
+      "start": 202,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 6.491096123536271e-05
+    },
+    {
+      "start": 203,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 6.798838076443057e-05
+    },
+    {
+      "start": 204,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 4.84185636568881e-05
+    },
+    {
+      "start": 205,
+      "value": 11.000000000003638,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 0.00016768501167138865
+    },
+    {
+      "start": 206,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.0138165459198114e-05
+    },
+    {
+      "start": 207,
+      "value": 10.999999999967258,
+      "success": false,
+      "nit": 44,
+      "gradientNorm": 5.332017000460887e-05
+    },
+    {
+      "start": 208,
+      "value": 10.999999999956344,
+      "success": false,
+      "nit": 46,
+      "gradientNorm": 6.03679880681409e-05
+    },
+    {
+      "start": 209,
+      "value": 10.99999999998181,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 3.195166310646558e-05
+    },
+    {
+      "start": 210,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 52,
+      "gradientNorm": 3.030738612381509e-05
+    },
+    {
+      "start": 211,
+      "value": 10.999999999996362,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 7.023468351373688e-05
+    },
+    {
+      "start": 212,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 54,
+      "gradientNorm": 5.032542352522682e-05
+    },
+    {
+      "start": 213,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 52,
+      "gradientNorm": 1.2387884803444766e-05
+    },
+    {
+      "start": 214,
+      "value": 10.999999999956344,
+      "success": false,
+      "nit": 50,
+      "gradientNorm": 3.793149830636173e-05
+    },
+    {
+      "start": 215,
+      "value": 11.00000000003638,
+      "success": true,
+      "nit": 39,
+      "gradientNorm": 9.802129039704319e-05
+    },
+    {
+      "start": 216,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 0.00023176516032551584
+    },
+    {
+      "start": 217,
+      "value": 10.99999999998181,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 2.740483435216769e-05
+    },
+    {
+      "start": 218,
+      "value": 11.000000000087311,
+      "success": true,
+      "nit": 36,
+      "gradientNorm": 0.0001787959614260356
+    },
+    {
+      "start": 219,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 2.7779948363007228e-05
+    },
+    {
+      "start": 220,
+      "value": 10.999999999970896,
+      "success": false,
+      "nit": 46,
+      "gradientNorm": 8.754823690244293e-05
+    },
+    {
+      "start": 221,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 5.2909630292034674e-05
+    },
+    {
+      "start": 222,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 2.182817834622893e-05
+    },
+    {
+      "start": 223,
+      "value": 11.000000000029104,
+      "success": false,
+      "nit": 50,
+      "gradientNorm": 0.00011543607611621744
+    },
+    {
+      "start": 224,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 9.304910443642756e-05
+    },
+    {
+      "start": 225,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 6.805939370582474e-05
+    },
+    {
+      "start": 226,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 4.102075885482997e-05
+    },
+    {
+      "start": 227,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 0.00010611965937177957
+    },
+    {
+      "start": 228,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.0001011340122620696
+    },
+    {
+      "start": 229,
+      "value": 10.999999999934516,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 1.1100352308175963e-05
+    },
+    {
+      "start": 230,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 4.8500810932502463e-05
+    },
+    {
+      "start": 231,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00013733363328117534
+    },
+    {
+      "start": 232,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 4.2994275292654357e-05
+    },
+    {
+      "start": 233,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 6.395142500798482e-05
+    },
+    {
+      "start": 234,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 40,
+      "gradientNorm": 5.669095716219819e-05
+    },
+    {
+      "start": 235,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 7.206798823055992e-05
+    },
+    {
+      "start": 236,
+      "value": 11.0,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 7.624712178559088e-05
+    },
+    {
+      "start": 237,
+      "value": 11.0,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 4.662516833279103e-05
+    },
+    {
+      "start": 238,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 5.4417710052605964e-05
+    },
+    {
+      "start": 239,
+      "value": 11.000000000021828,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 8.880688071563072e-05
+    },
+    {
+      "start": 240,
+      "value": 11.000000000050932,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 0.00011797423575649391
+    },
+    {
+      "start": 241,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 51,
+      "gradientNorm": 1.7397633955284765e-05
+    },
+    {
+      "start": 242,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 6.062421242200668e-05
+    },
+    {
+      "start": 243,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 4.7510017171801454e-05
+    },
+    {
+      "start": 244,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 0.00012498230803165519
+    },
+    {
+      "start": 245,
+      "value": 11.000000000007276,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.3204971674876154e-05
+    },
+    {
+      "start": 246,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 7.494244933922482e-05
+    },
+    {
+      "start": 247,
+      "value": 11.0,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 9.806047787334907e-05
+    },
+    {
+      "start": 248,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 2.1367460038254734e-05
+    },
+    {
+      "start": 249,
+      "value": 11.000000000010914,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 5.033146818710303e-05
+    },
+    {
+      "start": 250,
+      "value": 10.99999999998181,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 5.361774256378729e-05
+    },
+    {
+      "start": 251,
+      "value": 10.999999999985448,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.00011888349334784614
+    },
+    {
+      "start": 252,
+      "value": 11.000000000029104,
+      "success": true,
+      "nit": 48,
+      "gradientNorm": 0.0001191468839422464
+    },
+    {
+      "start": 253,
+      "value": 10.999999999949068,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 4.094206862295142e-05
+    },
+    {
+      "start": 254,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 2.0470291293356703e-05
+    },
+    {
+      "start": 255,
+      "value": 11.000000000058208,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 0.00025880260414003583
+    },
+    {
+      "start": 256,
+      "value": 10.99999999998181,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 5.177454244091436e-05
+    },
+    {
+      "start": 257,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 0.00010136234079528
+    },
+    {
+      "start": 258,
+      "value": 10.99999999994543,
+      "success": false,
+      "nit": 45,
+      "gradientNorm": 6.718995034786641e-05
+    },
+    {
+      "start": 259,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 46,
+      "gradientNorm": 4.5825969719703844e-05
+    },
+    {
+      "start": 260,
+      "value": 10.999999999989086,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 0.00014718664114864592
+    },
+    {
+      "start": 261,
+      "value": 11.0,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 7.909999392320765e-05
+    },
+    {
+      "start": 262,
+      "value": 10.99999999996362,
+      "success": true,
+      "nit": 44,
+      "gradientNorm": 3.6290851267589446e-05
+    },
+    {
+      "start": 263,
+      "value": 11.000000000014552,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.00013425849640132963
+    },
+    {
+      "start": 264,
+      "value": 10.999999999970896,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 6.598669355133888e-05
+    },
+    {
+      "start": 265,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 9.074050516390779e-05
+    },
+    {
+      "start": 266,
+      "value": 10.999999999967258,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 1.8449917614207074e-05
+    },
+    {
+      "start": 267,
+      "value": 11.000000000021828,
+      "success": false,
+      "nit": 51,
+      "gradientNorm": 5.119334504620986e-05
+    },
+    {
+      "start": 268,
+      "value": 10.999999999956344,
+      "success": false,
+      "nit": 42,
+      "gradientNorm": 6.586623758667396e-05
+    },
+    {
+      "start": 269,
+      "value": 10.999999999912689,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 7.012089158075872e-05
+    },
+    {
+      "start": 270,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 1.64983475415392e-05
+    },
+    {
+      "start": 271,
+      "value": 11.000000000003638,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 8.400704150089948e-05
+    },
+    {
+      "start": 272,
+      "value": 10.99999999992724,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 3.129609185261578e-05
+    },
+    {
+      "start": 273,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 0.00012012629197016192
+    },
+    {
+      "start": 274,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 3.564124656881031e-05
+    },
+    {
+      "start": 275,
+      "value": 10.999999999992724,
+      "success": true,
+      "nit": 43,
+      "gradientNorm": 0.00015371963858536086
+    },
+    {
+      "start": 276,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 41,
+      "gradientNorm": 2.5183666115040337e-05
+    },
+    {
+      "start": 277,
+      "value": 11.000000000021828,
+      "success": true,
+      "nit": 45,
+      "gradientNorm": 7.99747606843488e-05
+    },
+    {
+      "start": 278,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 49,
+      "gradientNorm": 7.39936600495127e-05
+    },
+    {
+      "start": 279,
+      "value": 10.999999999978172,
+      "success": true,
+      "nit": 47,
+      "gradientNorm": 3.786818623990268e-05
+    },
+    {
+      "start": 280,
+      "value": 11.000000000029104,
+      "success": true,
+      "nit": 42,
+      "gradientNorm": 9.920302474280723e-05
+    },
+    {
+      "start": 281,
+      "value": 10.999999999956344,
+      "success": true,
+      "nit": 50,
+      "gradientNorm": 8.891625089927854e-05
+    }
+  ],
+  "elapsed": 1.2765429019927979,
+  "status": "numerical",
+  "warning": "Numerical candidate; not a proof of global optimality."
+}

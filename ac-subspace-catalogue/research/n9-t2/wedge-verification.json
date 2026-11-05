@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "witness": "N7,t2,k2: u=sqrt(3/10)D0+sqrt(7/10)D5; v=sqrt(7/10)D2-sqrt(3/10)D7.",
+  "wedgeNormalization": "w=(u tensor v-v tensor u)/sqrt2",
+  "allRank1And2TensorComponentsChecked": 8,
+  "contractionDefinition": "[Tr_1((T tensor I)|w><w|)]_(b,e)=sum_(a,c) T_(a,c) w_(c,b) conjugate(w_(a,e)).",
+  "young22SupportVerified": "Antisymmetric in each pair, symmetric under pair exchange, and all Plucker relations vanish.",
+  "fourCopyNonzeroCoefficients": 64,
+  "canonicalWeightedWordCount": 10,
+  "weightedOrbitNormalizationVerified": true,
+  "components": [
+    {
+      "tensor": "T10",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 512
+    },
+    {
+      "tensor": "T11",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 0
+    },
+    {
+      "tensor": "T1m1",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 0
+    },
+    {
+      "tensor": "T20",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 512
+    },
+    {
+      "tensor": "T21",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 0
+    },
+    {
+      "tensor": "T2m1",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 0
+    },
+    {
+      "tensor": "T22",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 256
+    },
+    {
+      "tensor": "T2m2",
+      "codeCompressionZero": true,
+      "oneWedgeContractionZero": true,
+      "fourCopyFirstLegContractionZero": true,
+      "fourCopyOutputEntriesChecked": 256
+    }
+  ],
+  "conceptualIdentity": "If W=(uv^T-vu^T)/sqrt2, the contraction is (uu*/2)<v|T|v>+(vv*/2)<u|T|u>-(uv*/2)<u|T|v>-(vu*/2)<v|T|u>. It vanishes iff the complete2x2 compression B*TB vanishes. The four-copy contraction factors as this matrix tensor |w><w|."
+}

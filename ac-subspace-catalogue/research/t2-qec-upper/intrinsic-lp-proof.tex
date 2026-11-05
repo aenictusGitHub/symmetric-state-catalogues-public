@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,hyperref}
+\begin{document}
+\title{Exact feasible enumerators for the second-order AC relaxation}
+\author{}\date{}\maketitle
+\paragraph{Result and scope.}
+The supplied rational points satisfy the expanded necessary-condition
+relaxation at $(N,k)=(35,8),(41,9),(42,9)$. Thus this particular relaxation
+cannot lower the existing upper endpoints at those sizes. They are not
+physical projectors and do not prove existence of the corresponding
+AC subspaces. No stronger unrestricted upper bound is obtained here.
+
+Let $d=N+1$, $j=N/2$, and let $P$ be a hypothetical rank-$k$ AC2 projector.
+Choose Hilbert--Schmidt orthonormal spin tensors $T_{\ell m}$ and define
+\[
+ a_\ell=\sum_m|\operatorname{Tr}(PT_{\ell m})|^2,
+ \qquad q_\ell=a_\ell/k.
+\]
+Then
+\[
+ q_\ell\ge0,\quad\sum_{\ell=0}^Nq_\ell=1,\quad
+ q_0=\frac{k}{d},\quad q_1=q_2=0.
+\]
+The intrinsic MacWilliams matrix has exact entries
+\[
+ M_{b a}=\frac{2b+1}{N+1}\,
+ {}_4F_3\!\left(\begin{matrix}-b,b+1,-a,a+1\\1,-N,N+2\end{matrix};1\right)
+ =(2b+1)(-1)^{N+a+b}
+ \begin{Bmatrix}j&j&b\\j&j&a\end{Bmatrix}.
+\]
+The hypergeometric series terminates at $\min(a,b)$.
+The physical transition enumerator is
+\[
+ (Mq)_b=\frac1k\sum_m\operatorname{Tr}
+   (PT_{bm}PT_{bm}^\dagger).
+\]
+Consequently
+\[
+ (Mq)_1=(Mq)_2=0,\qquad Mq\ge0,\qquad q_b\le k(Mq)_b.
+\]
+These are the AC2 specialization of the intrinsic quantum-code
+MacWilliams and Knill--Laflamme inequalities. The normalization above
+corresponds to $\widetilde A=(d/k)q$ in the coding-theoretic convention
+$\widetilde B=kM\widetilde A$.
+Primary references are
+\href{https://arxiv.org/html/2605.22439v1}{Kubischta--Teixeira, Section IX}
+and \href{https://arxiv.org/abs/2605.15372}{Teixeira's Racah-polynomial formulation}.
+
+\paragraph{Two-copy and antiunitary refinements.}
+Let $\Pi_b$ project the product of two spin-$j$ spaces onto total spin $b$.
+Writing $D_{\ell\ell}=(-1)^\ell$, recoupling gives
+\[
+ (MDq)_b=\frac1k\operatorname{Tr}[\Pi_b(P\otimes P)]\ge0.
+\]
+Besides the projector bound, the swap parity yields
+\[
+ (MDq)_b\le\frac1k\min\!\left\{2b+1,
+ \frac{k[k+(-1)^{N-b}]}2\right\}.
+\]
+Indeed the rank of $P\otimes P$ in the symmetric/antisymmetric code sector
+is $k(k+1)/2$ or $k(k-1)/2$, respectively.
+For odd $N$, spin time reversal $\Theta$ squares to $-I$.
+If $k$ is also odd, the matrix of overlaps between a code frame and its
+time reverse is skew-symmetric, has rank at most $k-1$, and has all singular
+values at most one. Therefore
+\[
+ \operatorname{Tr}[P\Theta(P)]\le k-1,
+ \qquad \sum_\ell(-1)^\ell q_\ell\le\frac{k-1}{k}.
+\]
+Here $\Theta(P)$ denotes antiunitary conjugation of the projector. This
+extra inequality is imposed in the $(41,9)$ certificate.
+
+\paragraph{Error-image and remainder projectors.}
+Put $c=j(j+1)/3$. The AC2 equations imply that
+\[
+ E=\frac1c\sum_aJ_aPJ_a,\qquad R=I-P-E
+\]
+are orthogonal projectors of ranks $3k$ and $r=d-4k$.
+Together with $P$ they are pairwise orthogonal. Their multipoles are scalar
+multiples of those of $P$. For positive tensor rank,
+\[
+ f_P(\ell)=1,\quad f_E(\ell)=3-\frac{\ell(\ell+1)}{2c},\quad
+ f_R(\ell)=-4+\frac{\ell(\ell+1)}{2c}.
+\]
+At rank zero use $f_P(0)=1$, $f_E(0)=3$, $f_R(0)=r/k$.
+For every unordered pair $A,B\in\{P,E,R\}$, define
+\[
+ w_\ell^{AB}=f_A(\ell)f_B(\ell)q_\ell.
+\]
+Positivity of transitions between two positive projectors and positivity
+of their two-copy product give
+\[
+ Mw^{AB}\ge0,\qquad 0\le MDw^{AB}\le
+ \bigl((2b+1)/k\bigr)_{b=0}^N.
+\]
+For $A=B$, Cauchy--Schwarz additionally gives
+\[
+ w_b^{AA}\le\operatorname{rank}(A)(Mw^{AA})_b.
+\]
+These retain all tensor ranks, not merely ranks one and two.
+The relevant purity and mutual-orthogonality equalities also follow from
+the displayed moment equations; the independent verifier checks them.
+
+\paragraph{Exact certificates.}
+The files \texttt{lp-feasible-N35-k8.json},
+\texttt{lp-feasible-N41-k9.json}, and
+\texttt{lp-feasible-N42-k9.json} give every $q_\ell$ as a rational number.
+The verifier \texttt{verify\_lp\_feasible.py} uses only the Python standard
+library. It reconstructs $M$ through the independent factorial six-j sum,
+then checks every equality and inequality using rational arithmetic.
+The constructor instead uses the terminating hypergeometric recurrence.
+No floating-point tolerance is used in the final verification.
+
+A separate numerical scan tests the same type of relaxation at selected
+larger sizes, including $N=500$. Its feasible floating-point points are
+reported only as exploratory evidence. They are not an all-$N$ theorem,
+physical constructions, or exact feasibility certificates.
+\end{document}

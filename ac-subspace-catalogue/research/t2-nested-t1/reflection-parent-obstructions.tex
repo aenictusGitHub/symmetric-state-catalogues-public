@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Restrictions on nesting second-order AC subspaces inside the explicit first-order family}
+\author{}\date{}\maketitle
+
+Put $j=N/2$ and $c=j(j+1)/3$. Let $V$ be the isometry whose columns
+are the explicit maximal first-order AC basis in the catalogue, and let
+$B$ be an isometry parametrizing a child subspace: $U=VB$. Since
+$V^\dagger J_\alpha V=0$, every such child is automatically first-order AC.
+It is second-order AC precisely when every traceless quadrupole has zero
+compression to it. In particular, for any real linear combination $Q$ of
+traceless quadrupoles,
+\[
+ B^\dagger V^\dagger QVB=0.
+\]
+If $V^\dagger QV$ has inertia $(n_+,n_-,n_0)$, the child dimension obeys
+\[
+ \dim U\le \min(n_+,n_-)+n_0.
+\tag{1}
+\]
+Indeed, quotienting the zero eigenspace leaves a totally isotropic
+subspace of a nondegenerate Hermitian form; projection to either sign
+subspace is injective. This is a restriction on the chosen parent,
+not on arbitrary second-order AC subspaces.
+
+\begin{proposition}
+In the catalogue's explicit maximal first-order parent at $N=18$, every
+second-order AC child has dimension at most two. At $N=24$, every such
+child has dimension at most three. These bounds also apply to collective
+rotations of the chosen parents.
+\end{proposition}
+\begin{proof}
+Use the reflection modules
+\[
+ v_x=\sqrt{\frac{x+1}{2x+1}}|x\rangle+
+     \sqrt{\frac{x}{2x+1}}|-x-1\rangle,
+ \quad
+ w_x=\sqrt{\frac{x}{2x+1}}|x+1\rangle-
+     \sqrt{\frac{x+1}{2x+1}}|-x\rangle.
+\]
+In the ordered parent basis $|0\rangle,v_2,w_2,v_5,w_5,\ldots$, take
+\[
+ Q_{18}=J_z^2-cI+(J_x^2-J_y^2)+\{J_x,J_z\},
+ \qquad
+ Q_{24}=J_z^2-cI+2(J_x^2-J_y^2)+\{J_x,J_z\}.
+\]
+Each has zero compression on every second-order AC subspace.
+The exact $LDL^T$ pivots of $V^\dagger Q_{18}V$ belong, respectively, to
+\[
+ (-31,-29),\ (15,16),\ (-4,-3),\ (91,92),\ (54,55),\ (40,41),\ (5,6).
+\]
+Those of $V^\dagger Q_{24}V$ belong to
+\[
+ (-53,-51),\ (231,232),\ (-34,-33),\ (107,108),\ (52,53),
+ \ (-33,-32),\ (377,378),\ (78,79),\ (26,27).
+\]
+These enclosures are certified by the accompanying verifier using exact
+rational interval arithmetic with outward rounding at every operation.
+It reconstructs the physical spin matrices and the exact radical parent
+bases before eliminating. No numerical eigenvalue signs are assumed.
+Sylvester's law gives inertia $(5,2,0)$ and $(6,3,0)$, respectively.
+Equation (1) proves the claims. Collective rotations preserve both AC
+order and the existence of a child subspace.
+\end{proof}
+
+\begin{proposition}
+For every $N\ge22$, no second-order AC subspace inside the catalogue's
+explicit maximal first-order family attains the general upper bound
+\[
+ \min\left\{\left\lfloor\frac{N-2}{4}\right\rfloor,
+             \left\lfloor\frac{N+5}{5}\right\rfloor\right\}.
+\]
+In fact, for $N\ge15$ every such child has dimension at most
+\[
+ 2\left\lfloor\frac{j+2-r}{3}\right\rfloor,
+ \qquad r=\frac{\sqrt{1+4j(j+1)/3}-1}{2}.
+ \tag{2}
+\]
+Its asymptotic coefficient is $(1-1/\sqrt3)/3\simeq0.140883$.
+\end{proposition}
+\begin{proof}
+Use $Q=J_z^2-cI$. On each reflection module its compression is
+\[
+ (x(x+1)-c)I_2.
+\]
+The module parameters are spaced by three and satisfy $x\le j-1$.
+All remaining central blocks are supported on $|m|\le9/2$; for $N\ge15$
+we have $c>81/4$, so their compressed $Q$ is strictly negative.
+There are no cross terms between distinct blocks since $Q$ is diagonal
+in the magnetic basis and their supports are disjoint.
+The number of nonnegative module directions is therefore twice the
+number of parameters $x\ge r$, at most
+$2\lfloor(j+2-r)/3\rfloor$. Applying (1), even without using the negative
+inertia count, proves (2).
+
+Since $r>j/\sqrt3-1/2$, its right-hand side is strictly smaller than
+\[
+ \frac{1-1/\sqrt3}{3}N+\frac53.
+\]
+For $N\ge29$ this is smaller than $N/5$: at $N=29$, the required
+inequality is $145>83\sqrt3$, certified by
+$145^2-3\cdot83^2=358>0$; the difference then increases with $N$.
+For $N\ge30$, the general upper bound is
+$\lfloor(N+5)/5\rfloor=\lfloor N/5\rfloor+1>N/5$.
+At $N=29$ both terms give six. Finally, direct exact evaluation of (2)
+gives four at each $N=22,\ldots,28$, whereas the general bound is
+$5,5,5,5,6,6,6$, respectively.
+\end{proof}
+
+These exclusions do not characterize all first-order AC subspaces.
+In particular, the known unrestricted optima $K(18,2)=4$ and $K(24,2)=5$
+cannot be contained in these specific maximal first-order parents.
+Searching over different first-order parents remains a valid construction
+strategy. No extension theorem asserting containment in this explicit
+family is used or established here.
+\end{document}

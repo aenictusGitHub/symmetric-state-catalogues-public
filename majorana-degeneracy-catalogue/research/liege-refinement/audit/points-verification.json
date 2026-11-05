@@ -1,0 +1,2322 @@
+{
+  "scientificStatus": "Numerical consistency of displayed/refined sphere points with refined state coefficients; use the separate interval audit for exact multiplicity statements.",
+  "inputs": {
+    "refinedFilename": "refined.json",
+    "refinedSHA256": "e2e11536193dc21f08ef9badff1e7332a2a696f02e24300a2bc245900bf455e6",
+    "pointsFilename": "refined-points.json",
+    "pointsSHA256": "c206d869a0fad7ca781a4eac29b48b618357115b5925ae3dc9e27494cb7c4187"
+  },
+  "summary": {
+    "records": 144,
+    "passedRecords": 144,
+    "maximumPointNormError": "7.66507271398072629001385236209e-76",
+    "maximumPointDisplacement": "0.000000180121559924812954405735161455",
+    "maximumReconstructedCoefficientError": "1.53792098806345910079527503982e-66"
+  },
+  "records": [
+    {
+      "id": "acs.4.1.2",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.5.1.2",
+      "passed": true,
+      "maximumPointNormError": "2.31903965373541037113800027295e-76",
+      "maximumPointDisplacement": "2.87209777521558365905365910052e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "3.87579837078300986961935282918e-68",
+        "maximumPhaseAlignedComponentChange": "3.87579837078300987547397058203e-68",
+        "phaseAlignedL2Change": "4.24572441426877158943667005877e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "7.18011936460131622262747734526e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.6.1.3",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.7.1.3",
+      "passed": true,
+      "maximumPointNormError": "8.98640659777444360751374376083e-77",
+      "maximumPointDisplacement": "2.07198345473592810372587537544e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "8.59613289894832405394797462217e-68",
+        "maximumPhaseAlignedComponentChange": "8.59613289894832405394797462217e-68",
+        "phaseAlignedL2Change": "9.18965263076536673520366105592e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "-1.40210485638183968332927470011e-213"
+        ]
+      }
+    },
+    {
+      "id": "acs.7.2.2",
+      "passed": true,
+      "maximumPointNormError": "6.41696502384320201409319573621e-76",
+      "maximumPointDisplacement": "0.0000000762676156657342905101250079684",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "8.18183033025827562019951489567e-76",
+        "maximumPhaseAlignedComponentChange": "8.11344263623073804534236657928e-76",
+        "phaseAlignedL2Change": "1.06694708880453885181780904535e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "8.0964630684800922994593672427e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.8.1.4",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.8.2.2",
+      "passed": true,
+      "maximumPointNormError": "4.80772499839638829322213054703e-76",
+      "maximumPointDisplacement": "2.29432759723161059335368502488e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "2.00400763259961489213611311482e-16",
+        "maximumPhaseAlignedComponentChange": "4.15691579937339645322023726013e-73",
+        "phaseAlignedL2Change": "5.33962009431269672352437512536e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "2.57413260333070237692681490521e-16"
+        ]
+      }
+    },
+    {
+      "id": "acs.9.1.4",
+      "passed": true,
+      "maximumPointNormError": "3.13999114968920719486208621961e-76",
+      "maximumPointDisplacement": "1.63458551530452152629835018021e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "9.21011773713734721101548559232e-69",
+        "maximumPhaseAlignedComponentChange": "9.21011773713734739369368755716e-69",
+        "phaseAlignedL2Change": "9.70831652157296564804600646091e-69",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "-6.09742400600451894325884027643e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.9.2.2",
+      "passed": true,
+      "maximumPointNormError": "4.35746848757402971285822107602e-76",
+      "maximumPointDisplacement": "5.46646636779319642133568174072e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.33983744274416006047316305689",
+        "maximumPhaseAlignedComponentChange": "7.01070420674893367743118146818e-75",
+        "phaseAlignedL2Change": "9.95531200516725472062967349075e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.767045088356178402740929811882",
+          "-0.641593198552371241800315235838"
+        ]
+      }
+    },
+    {
+      "id": "acs.10.1.5",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.10.2.3",
+      "passed": true,
+      "maximumPointNormError": "5.32623218567374195650834782973e-76",
+      "maximumPointDisplacement": "0.0000000843718047828413187537034855215",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.05560360760210510260653404417e-75",
+        "maximumPhaseAlignedComponentChange": "8.47769420444682008751220435734e-76",
+        "phaseAlignedL2Change": "1.12969852610453915697343501273e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "-4.80373283932251783711629535054e-76"
+        ]
+      }
+    },
+    {
+      "id": "acs.11.1.5",
+      "passed": true,
+      "maximumPointNormError": "3.21404296547031625548087035824e-76",
+      "maximumPointDisplacement": "1.02151585276609715873125721827e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.30531206999535759761238675785e-68",
+        "maximumPhaseAlignedComponentChange": "1.30531206999535759761238675785e-68",
+        "phaseAlignedL2Change": "1.36335399142241235093821714739e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "8.48611843978705436807031396094e-103"
+        ]
+      }
+    },
+    {
+      "id": "acs.11.2.3",
+      "passed": true,
+      "maximumPointNormError": "3.22890543095565134741768630198e-76",
+      "maximumPointDisplacement": "1.14935218588038449361803656964e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.10746070952077049639785427918e-17",
+        "maximumPhaseAlignedComponentChange": "2.43239394517317280794578435125e-74",
+        "phaseAlignedL2Change": "3.05410762908298656374925752356e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "-1.38003893201221077397510933357e-17"
+        ]
+      }
+    },
+    {
+      "id": "acs.11.3.2",
+      "passed": true,
+      "maximumPointNormError": "5.02267530528449098193978935545e-76",
+      "maximumPointDisplacement": "1.45735240759336011021834106628e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.151655972191169054173720524855",
+        "maximumPhaseAlignedComponentChange": "7.17960148880531906934958898306e-70",
+        "phaseAlignedL2Change": "1.02962550577145548845142179938e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.976349150533495347561394025713",
+          "0.21619976006582903114694945348"
+        ]
+      }
+    },
+    {
+      "id": "acs.12.1.6",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.12.3.2",
+      "passed": true,
+      "maximumPointNormError": "4.60714163969672317569827184966e-76",
+      "maximumPointDisplacement": "3.34782762580791138725308955351e-19",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.25191926910972692544529518092",
+        "maximumPhaseAlignedComponentChange": "3.86030343627556858683510597947e-76",
+        "phaseAlignedL2Change": "5.97612388208670402568303612247e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.779412084531747458561723390029",
+          "-0.626511614007175571719409667142"
+        ]
+      }
+    },
+    {
+      "id": "acs.13.1.6",
+      "passed": true,
+      "maximumPointNormError": "2.77105783231177496777871292084e-76",
+      "maximumPointDisplacement": "2.35539538765599358792311355326e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.02591959705346170426582483763e-69",
+        "maximumPhaseAlignedComponentChange": "1.02591959705346209012117080516e-69",
+        "phaseAlignedL2Change": "1.06464713216008093199409289853e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "2.91993325339650755977665682927e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.13.2.4",
+      "passed": true,
+      "maximumPointNormError": "5.46182957466459650933094571907e-76",
+      "maximumPointDisplacement": "0.0000000790928975246118798832029702069",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "6.83357815251515592151389483579e-76",
+        "maximumPhaseAlignedComponentChange": "6.83357815251515592151389483579e-76",
+        "phaseAlignedL2Change": "9.36785841108707314711632031973e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "7.29167879708410598478193538596e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.13.3.2",
+      "passed": true,
+      "maximumPointNormError": "5.97893608924271874907625755865e-76",
+      "maximumPointDisplacement": "5.47973060353525113853949508219e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.459611993376254679074038540414",
+        "maximumPhaseAlignedComponentChange": "1.28652006500246400701761197326e-70",
+        "phaseAlignedL2Change": "2.02154155306710655563685528721e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.739213653980629646543943793247",
+          "0.673470989552338433548763240252"
+        ]
+      }
+    },
+    {
+      "id": "acs.14.1.7",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.14.2.4",
+      "passed": true,
+      "maximumPointNormError": "3.82096956924491970941293055728e-76",
+      "maximumPointDisplacement": "2.15144970249365067520762221698e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.13422800004050969066158613882",
+        "maximumPhaseAlignedComponentChange": "1.52484640005531925296601397464e-75",
+        "phaseAlignedL2Change": "1.92449431989739344818025790621e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.00811013098620355875066745476391",
+          "-0.999967112346894447050177427247"
+        ]
+      }
+    },
+    {
+      "id": "acs.14.3.2",
+      "passed": true,
+      "maximumPointNormError": "6.26540916431733063695152543962e-76",
+      "maximumPointDisplacement": "1.08498471060908522209148021681e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0675536754270703002885396499313",
+        "maximumPhaseAlignedComponentChange": "9.0519399542871070056962535542e-70",
+        "phaseAlignedL2Change": "1.47281391520518148390308154299e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.993959398555118514347684005174",
+          "-0.109748412398298805698640921806"
+        ]
+      }
+    },
+    {
+      "id": "acs.15.1.7",
+      "passed": true,
+      "maximumPointNormError": "4.8235561466328679236421183006e-77",
+      "maximumPointDisplacement": "5.85604928478505016477711781483e-23",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "2.67903019000298059256876439947e-70",
+        "maximumPhaseAlignedComponentChange": "2.67903019000298059256876439947e-70",
+        "phaseAlignedL2Change": "2.76689272130298869475206154738e-70",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "-1.90179465402637559259233797578e-103"
+        ]
+      }
+    },
+    {
+      "id": "acs.15.2.4",
+      "passed": true,
+      "maximumPointNormError": "4.89360560409568265163906388108e-76",
+      "maximumPointDisplacement": "1.20843681219715172339279513512e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.822819486571504873002338518117",
+        "maximumPhaseAlignedComponentChange": "4.18108490180825631208391658174e-74",
+        "phaseAlignedL2Change": "5.36577566610171967287914374863e-74",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.444210133708185437165381563791",
+          "0.895922628975826246841062009469"
+        ]
+      }
+    },
+    {
+      "id": "acs.15.3.2",
+      "passed": true,
+      "maximumPointNormError": "5.65383584032064981151949230469e-76",
+      "maximumPointDisplacement": "4.33836280406608583953315761722e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.08579046152823739817414111225",
+        "maximumPhaseAlignedComponentChange": "1.12632314804713450888674811655e-72",
+        "phaseAlignedL2Change": "2.04029544956046075184379183344e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.935597312185158890020085493261",
+          "-0.353068930142410486748358474505"
+        ]
+      }
+    },
+    {
+      "id": "acs.16.1.8",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.16.2.5",
+      "passed": true,
+      "maximumPointNormError": "4.43626817730360296927209734805e-76",
+      "maximumPointDisplacement": "0.000000143884200905394039273415046514",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "5.45350328576816786681421214552e-76",
+        "maximumPhaseAlignedComponentChange": "4.79554923219224684637636859657e-76",
+        "phaseAlignedL2Change": "7.52010674347331523525855356238e-76",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "1.0",
+          "-1.97587371939006296413723956564e-76"
+        ]
+      }
+    },
+    {
+      "id": "acs.16.3.3",
+      "passed": true,
+      "maximumPointNormError": "6.04421476246204059145234378184e-76",
+      "maximumPointDisplacement": "6.43500418720671849396185570926e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0279643976024418332865185538276",
+        "maximumPhaseAlignedComponentChange": "6.75160944906213951913944442249e-76",
+        "phaseAlignedL2Change": "1.013691197556465667882444061e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999188156902191890993761587217",
+          "-0.0402868105761769052160082921907"
+        ]
+      }
+    },
+    {
+      "id": "acs.16.4.2",
+      "passed": true,
+      "maximumPointNormError": "5.34064382066123278836286686494e-76",
+      "maximumPointDisplacement": "9.22714817689110725780880322653e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.000620205610080928232579129515061",
+        "maximumPhaseAlignedComponentChange": "6.46721099542288648791299310135e-69",
+        "phaseAlignedL2Change": "9.66257964351288119175954780328e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999999570667787764355602552042",
+          "-0.000926641376232002890668291308629"
+        ]
+      }
+    },
+    {
+      "id": "acs.17.1.8",
+      "passed": true,
+      "maximumPointNormError": "7.13206206816745133120134293411e-76",
+      "maximumPointDisplacement": "1.4720560286776066089114818391e-21",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "9.21532524537763768421324403393e-69",
+        "maximumPhaseAlignedComponentChange": "9.21532524537763798501773698138e-69",
+        "phaseAlignedL2Change": "9.48249151702863739215708946e-69",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "1.0",
+          "7.75849956149664692159889922822e-77"
+        ]
+      }
+    },
+    {
+      "id": "acs.17.2.5",
+      "passed": true,
+      "maximumPointNormError": "6.53560576356347334478581510436e-76",
+      "maximumPointDisplacement": "1.44766233410581869658811958718e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.854366655534668645182144061079",
+        "maximumPhaseAlignedComponentChange": "8.44267203846491745197898921914e-74",
+        "phaseAlignedL2Change": "1.04241286053753148795472655879e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.441244495780231448831607410626",
+          "-0.897386925993269255153797326132"
+        ]
+      }
+    },
+    {
+      "id": "acs.17.3.3",
+      "passed": true,
+      "maximumPointNormError": "6.79376065569852292871635600641e-76",
+      "maximumPointDisplacement": "6.79407270157001496366980814216e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.30578263595038103723178394869",
+        "maximumPhaseAlignedComponentChange": "5.57550847724961550051213573032e-69",
+        "phaseAlignedL2Change": "8.26899671994855176475011587883e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.875203865098826846288794102864",
+          "0.483754270798795635102850645392"
+        ]
+      }
+    },
+    {
+      "id": "acs.17.4.2",
+      "passed": true,
+      "maximumPointNormError": "5.58296515686686043105708958008e-76",
+      "maximumPointDisplacement": "3.7341349454347943908183317793e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.09600065585480402671501524354",
+        "maximumPhaseAlignedComponentChange": "8.18733052325916873717398138267e-76",
+        "phaseAlignedL2Change": "1.67208014896143106038411222249e-75",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.834046002669298419845294857218",
+          "0.551694902488109503031095137703"
+        ]
+      }
+    },
+    {
+      "id": "acs.18.1.9",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.18.2.5",
+      "passed": true,
+      "maximumPointNormError": "5.12663656941866637908158887062e-76",
+      "maximumPointDisplacement": "3.12381443567970723772891281071e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.26424942962356702046708046405",
+        "maximumPhaseAlignedComponentChange": "7.18832884264004084506355439807e-73",
+        "phaseAlignedL2Change": "9.2533149260786661442829142462e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.323386098263134972365426474498",
+          "-0.946267103649992691644424254987"
+        ]
+      }
+    },
+    {
+      "id": "acs.18.3.3",
+      "passed": true,
+      "maximumPointNormError": "3.80357976835150598048500731677e-76",
+      "maximumPointDisplacement": "8.95712373992897905596029372039e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.305471806742661871796934565447",
+        "maximumPhaseAlignedComponentChange": "3.78534325002536999895950230422e-69",
+        "phaseAlignedL2Change": "5.83724157209627388833862799489e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.889052595289764449973367661828",
+          "-0.457805070754501694325516486216"
+        ]
+      }
+    },
+    {
+      "id": "acs.18.4.2",
+      "passed": true,
+      "maximumPointNormError": "5.4058382955392433830071702211e-76",
+      "maximumPointDisplacement": "2.77502373782134952683051484816e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0088426735927486787350234521872",
+        "maximumPhaseAlignedComponentChange": "1.53792098806345910079527503982e-66",
+        "phaseAlignedL2Change": "2.72510626173365827455683084919e-66",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999877245893684502974729028425",
+          "-0.0156682208326400842248120130841"
+        ]
+      }
+    },
+    {
+      "id": "acs.19.1.9",
+      "passed": true,
+      "maximumPointNormError": "5.65123386390066554333318954973e-76",
+      "maximumPointDisplacement": "2.51696409120051805306668500321e-22",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.31034326681472626938542565587e-68",
+        "maximumPhaseAlignedComponentChange": "1.31034326681472626938542565587e-68",
+        "phaseAlignedL2Change": "1.34438382217884638533858914518e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "-4.56554141814370297469392930904e-104"
+        ]
+      }
+    },
+    {
+      "id": "acs.19.2.6",
+      "passed": true,
+      "maximumPointNormError": "4.52844644060171097260944701783e-76",
+      "maximumPointDisplacement": "0.000000180121559924812954405735161455",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "6.10514798812125533915050867575e-76",
+        "maximumPhaseAlignedComponentChange": "5.24112214119672854979475762506e-76",
+        "phaseAlignedL2Change": "7.80367580924301612620600577713e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "2.37996375838829953524462133651e-76"
+        ]
+      }
+    },
+    {
+      "id": "acs.19.3.3",
+      "passed": true,
+      "maximumPointNormError": "6.00256701751851711826261284116e-76",
+      "maximumPointDisplacement": "9.00521043522836432817554010761e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.667224091787109592893673656366",
+        "maximumPhaseAlignedComponentChange": "7.90534441695192007831084315005e-75",
+        "phaseAlignedL2Change": "1.27924208795387504117123423449e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.422176258079674974146206362317",
+          "-0.90651376554018399037728283208"
+        ]
+      }
+    },
+    {
+      "id": "acs.19.4.2",
+      "passed": true,
+      "maximumPointNormError": "5.95065959446227111488667762714e-76",
+      "maximumPointDisplacement": "6.85618803705730070186921650386e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.07225173991644334355542915065",
+        "maximumPhaseAlignedComponentChange": "1.67809759008041501762395558911e-70",
+        "phaseAlignedL2Change": "3.12125583433352457399553149206e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.988774301190828274190775534669",
+          "0.149416803956547043107867473952"
+        ]
+      }
+    },
+    {
+      "id": "acs.20.1.10",
+      "passed": true,
+      "maximumPointNormError": "0.0",
+      "maximumPointDisplacement": "0.0",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0",
+        "maximumPhaseAlignedComponentChange": "0.0",
+        "phaseAlignedL2Change": "0.0",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "0.0"
+        ]
+      }
+    },
+    {
+      "id": "acs.20.2.6",
+      "passed": true,
+      "maximumPointNormError": "4.19193845054894061655323581026e-76",
+      "maximumPointDisplacement": "1.90193813234697433058805323937e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.01278709566872598447984782515",
+        "maximumPhaseAlignedComponentChange": "1.46632105459904736914681259023e-68",
+        "phaseAlignedL2Change": "1.80438731201841100355230744103e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.22338155514125228058197258442",
+          "0.974731081284820663131973269524"
+        ]
+      }
+    },
+    {
+      "id": "acs.20.3.3",
+      "passed": true,
+      "maximumPointNormError": "5.16357735634056874872879506189e-76",
+      "maximumPointDisplacement": "5.84561332475610263767255270918e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.118009994811476742442097568757",
+        "maximumPhaseAlignedComponentChange": "1.06676086290097169824661208407e-71",
+        "phaseAlignedL2Change": "1.7471426790390009153487958196e-71",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.981321263379550798948069603501",
+          "0.192376136875555051424328102484"
+        ]
+      }
+    },
+    {
+      "id": "acs.20.4.2",
+      "passed": true,
+      "maximumPointNormError": "5.4249282636980517164926314197e-76",
+      "maximumPointDisplacement": "1.01235145594972124395597829231e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0645198425433490703964514418311",
+        "maximumPhaseAlignedComponentChange": "1.54144389571208841570627030231e-69",
+        "phaseAlignedL2Change": "2.93193127400113647145515679795e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.992469760153197082951398595336",
+          "-0.122489898283309288074177308529"
+        ]
+      }
+    },
+    {
+      "id": "acs.2.1",
+      "passed": true,
+      "maximumPointNormError": "2.6563506200952508113578524299e-76",
+      "maximumPointDisplacement": "3.73207547190053798195337091614e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.2328895969222583702162151786e-47",
+        "maximumPhaseAlignedComponentChange": "6.97603929047492766526370011923e-78",
+        "phaseAlignedL2Change": "6.97603929047492766526370012529e-78",
+        "normalizedInfidelity": "3.32653112500636774992972946582e-111",
+        "alignedPhase": [
+          "1.0",
+          "-1.2328895969222583702162151786e-47"
+        ]
+      }
+    },
+    {
+      "id": "acs.3.1",
+      "passed": true,
+      "maximumPointNormError": "5.00446776893305038240991295346e-76",
+      "maximumPointDisplacement": "5.70997669574790942044096403785e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "2.90147175374286479014509846811e-32",
+        "maximumPhaseAlignedComponentChange": "4.80338887328624126111776089454e-76",
+        "phaseAlignedL2Change": "5.20646944277722874552603975419e-76",
+        "normalizedInfidelity": "2.49489834375477581244729709936e-111",
+        "alignedPhase": [
+          "1.0",
+          "3.35033099613907708585218510011e-32"
+        ]
+      }
+    },
+    {
+      "id": "acs.4.2",
+      "passed": true,
+      "maximumPointNormError": "3.91648332910192448295841503804e-76",
+      "maximumPointDisplacement": "3.19785062828046039371475299201e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "5.15586420204839486840992522723e-32",
+        "maximumPhaseAlignedComponentChange": "5.18636952130688680429015641408e-76",
+        "phaseAlignedL2Change": "6.97305183798675359112757408148e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "1.0",
+          "-6.31461823905025926902963559525e-32"
+        ]
+      }
+    },
+    {
+      "id": "acs.5.1",
+      "passed": true,
+      "maximumPointNormError": "5.70450509226977902531205103519e-76",
+      "maximumPointDisplacement": "1.98723868299105243738633494297e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.1024039212295147571642731614",
+        "maximumPhaseAlignedComponentChange": "4.60474991870904583266590194082e-76",
+        "phaseAlignedL2Change": "7.36035089278129134724043543211e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.761632096306309774727660396552",
+          "0.648009683473986422807265025774"
+        ]
+      }
+    },
+    {
+      "id": "acs.6.3",
+      "passed": true,
+      "maximumPointNormError": "4.90135050979607819189338925514e-76",
+      "maximumPointDisplacement": "4.09618238448505046302380463377e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.713061905547347988762051364804",
+        "maximumPhaseAlignedComponentChange": "4.7890689624301083333935963056e-76",
+        "phaseAlignedL2Change": "6.18155142183085560476969892156e-76",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.491542718857184975571236303408",
+          "0.870853463872359188208295138862"
+        ]
+      }
+    },
+    {
+      "id": "acs.7.2",
+      "passed": true,
+      "maximumPointNormError": "4.1608429613853215758199262459e-76",
+      "maximumPointDisplacement": "1.31205590757582481869898667059e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00717171763793758641337193517419",
+        "maximumPhaseAlignedComponentChange": "2.88480981880996768865631187297e-74",
+        "phaseAlignedL2Change": "4.89159724721332126466265861212e-74",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.999925862194304137140585166236",
+          "0.0121766216569905924507952023458"
+        ]
+      }
+    },
+    {
+      "id": "acs.8.3",
+      "passed": true,
+      "maximumPointNormError": "3.83697490304636314920488324448e-76",
+      "maximumPointDisplacement": "3.47514548671198227300502433229e-18",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.02435734830467361734282631146",
+        "maximumPhaseAlignedComponentChange": "6.69760903570658624155287382417e-76",
+        "phaseAlignedL2Change": "1.10452352957313407604293596813e-75",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "-0.372807583675021815928203859664",
+          "-0.927908673067771043564124262028"
+        ]
+      }
+    },
+    {
+      "id": "acs.9.2",
+      "passed": true,
+      "maximumPointNormError": "6.50918349788846581539483883613e-76",
+      "maximumPointDisplacement": "3.64773423115826051380943222396e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "1.0253801910163830803048860785",
+        "maximumPhaseAlignedComponentChange": "2.50269784527120834421191892241e-72",
+        "phaseAlignedL2Change": "4.85913782615184760185203653664e-72",
+        "normalizedInfidelity": "2.49489834375477581244729709936e-111",
+        "alignedPhase": [
+          "-0.981609560592229536232180307216",
+          "0.190899634766361066208764324294"
+        ]
+      }
+    },
+    {
+      "id": "acs.10.3",
+      "passed": true,
+      "maximumPointNormError": "5.93716269103888525060541531548e-76",
+      "maximumPointDisplacement": "2.02213464217603676660038893157e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.865664686871330563492112205481",
+        "maximumPhaseAlignedComponentChange": "3.90961520389114538573777107089e-73",
+        "phaseAlignedL2Change": "7.45116534661918173286551606556e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.359931584306040315368007202014",
+          "0.932978699981378885150036023954"
+        ]
+      }
+    },
+    {
+      "id": "acs.11.3",
+      "passed": true,
+      "maximumPointNormError": "4.78492248221669379917185091919e-76",
+      "maximumPointDisplacement": "8.90967049680381634323153162483e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.464117982563592445339948854417",
+        "maximumPhaseAlignedComponentChange": "2.80136767144080295434654744595e-71",
+        "phaseAlignedL2Change": "5.26965465930228998371354225579e-71",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.61888578317866525854972427951",
+          "-0.785480991099931159946559023949"
+        ]
+      }
+    },
+    {
+      "id": "acs.12.5",
+      "passed": true,
+      "maximumPointNormError": "4.35031755382410256988111756187e-76",
+      "maximumPointDisplacement": "8.52355754410757736627277622658e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "9.65885780347534158329331853842e-16",
+        "maximumPhaseAlignedComponentChange": "5.77118665754575130220497835501e-76",
+        "phaseAlignedL2Change": "1.30157714827215360737392219698e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999999999999999999999999999999",
+          "1.45612760170563739340209987001e-15"
+        ]
+      }
+    },
+    {
+      "id": "acs.13.3",
+      "passed": true,
+      "maximumPointNormError": "3.72438906999752360162152059523e-76",
+      "maximumPointDisplacement": "3.79355858197355508417006262742e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.403844264852202905243774042784",
+        "maximumPhaseAlignedComponentChange": "1.36896429817106453369638257755e-72",
+        "phaseAlignedL2Change": "2.81150404126359417146693121284e-72",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.656008984537593725577241627554",
+          "-0.754753080289146694297680102324"
+        ]
+      }
+    },
+    {
+      "id": "acs.14.4",
+      "passed": true,
+      "maximumPointNormError": "4.33382724768705205708564508518e-76",
+      "maximumPointDisplacement": "4.49406407270049962065213088228e-20",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0187592871890010728297449984717",
+        "maximumPhaseAlignedComponentChange": "7.54849082669918300327654324887e-76",
+        "phaseAlignedL2Change": "1.33525611645923486291972909002e-75",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.999469514032450502451727353687",
+          "-0.0325682440382841053468188040553"
+        ]
+      }
+    },
+    {
+      "id": "acs.15.3",
+      "passed": true,
+      "maximumPointNormError": "5.66482396887598820971269384634e-76",
+      "maximumPointDisplacement": "3.67014530820137110702528558593e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.140293937994390059727734705434",
+        "maximumPhaseAlignedComponentChange": "2.18951690511153359501673448112e-72",
+        "phaseAlignedL2Change": "5.42017917940330269495110250609e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.939698539961087229867944036411",
+          "0.34200388008764015564926075079"
+        ]
+      }
+    },
+    {
+      "id": "acs.16.5",
+      "passed": true,
+      "maximumPointNormError": "6.0295061289207321921247742668e-76",
+      "maximumPointDisplacement": "3.84526196434029925857514932813e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00827765594260632415464731947078",
+        "maximumPhaseAlignedComponentChange": "3.97981860883043858152854417695e-67",
+        "phaseAlignedL2Change": "6.9947313783293141718514453784e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999894172077156489697064146189",
+          "0.0145480117589231839987441003864"
+        ]
+      }
+    },
+    {
+      "id": "acs.17.4",
+      "passed": true,
+      "maximumPointNormError": "5.22376415614872819613778200691e-76",
+      "maximumPointDisplacement": "2.91070585720368588029825269798e-20",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0119464373962826759086564167887",
+        "maximumPhaseAlignedComponentChange": "5.38864445412745221777984376286e-76",
+        "phaseAlignedL2Change": "1.30957037344146495412642674438e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.99980307594405843724442938685",
+          "-0.0198446298226829374990179012795"
+        ]
+      }
+    },
+    {
+      "id": "acs.18.5",
+      "passed": true,
+      "maximumPointNormError": "5.34094129075835917891155911949e-76",
+      "maximumPointDisplacement": "2.75589066273714746173948071027e-17",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.571333782413245434003953773831",
+        "maximumPhaseAlignedComponentChange": "7.78202591798773975464281619538e-75",
+        "phaseAlignedL2Change": "1.71236020298860617847973148935e-74",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.140472147996131788729536319464",
+          "0.990084630542941439055244860745"
+        ]
+      }
+    },
+    {
+      "id": "acs.19.4",
+      "passed": true,
+      "maximumPointNormError": "5.6298924079095034502319221764e-76",
+      "maximumPointDisplacement": "7.13250088471903294102004672163e-20",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.843502444848937972800431203105",
+        "maximumPhaseAlignedComponentChange": "5.31791756218587709748872796562e-76",
+        "phaseAlignedL2Change": "1.25306691709260588553748383932e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.0327637484453067310532390281437",
+          "-0.999463124276134892540361119014"
+        ]
+      }
+    },
+    {
+      "id": "acs.20.5",
+      "passed": true,
+      "maximumPointNormError": "5.63070485627339514167593106501e-76",
+      "maximumPointDisplacement": "1.73508299255773915384240034939e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.888515542436744340546159474603",
+        "maximumPhaseAlignedComponentChange": "1.17437347596945955573288897156e-71",
+        "phaseAlignedL2Change": "2.63742183008747027704872436506e-71",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.990890442311733611439546327243",
+          "-0.134670454574330905284501134044"
+        ]
+      }
+    },
+    {
+      "id": "acs.21.4",
+      "passed": true,
+      "maximumPointNormError": "6.04337370895727570418194029427e-76",
+      "maximumPointDisplacement": "1.23734640335394424803806532278e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.734282040652005419931236741973",
+        "maximumPhaseAlignedComponentChange": "2.06924201900475813022009793993e-69",
+        "phaseAlignedL2Change": "5.60017721678925166355795393864e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.974589158617399145508692478147",
+          "0.223999937288897491504393518224"
+        ]
+      }
+    },
+    {
+      "id": "acs.22.5",
+      "passed": true,
+      "maximumPointNormError": "4.48693087928845791861064318618e-76",
+      "maximumPointDisplacement": "4.94195206045094762407022578881e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.446094942036081983509263109492",
+        "maximumPhaseAlignedComponentChange": "1.09890778504101292807330313593e-70",
+        "phaseAlignedL2Change": "2.87190326424344858302155151423e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.320418009386133177370081531168",
+          "0.947276252875066994860981779933"
+        ]
+      }
+    },
+    {
+      "id": "acs.23.5",
+      "passed": true,
+      "maximumPointNormError": "4.11486652838471509093564402153e-76",
+      "maximumPointDisplacement": "3.04000952251040886746869570092e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.075685220635679432705214845307",
+        "maximumPhaseAlignedComponentChange": "1.15676134256682561048674538346e-67",
+        "phaseAlignedL2Change": "2.68171478415143871788539169194e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.984606768209964524243180765364",
+          "0.174784186913831517633280441889"
+        ]
+      }
+    },
+    {
+      "id": "acs.24.7",
+      "passed": true,
+      "maximumPointNormError": "5.17559153952184215259154966512e-76",
+      "maximumPointDisplacement": "3.15521414493776627989115217573e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.422471728291751916510883018457",
+        "maximumPhaseAlignedComponentChange": "7.605940042670248361347253622e-72",
+        "phaseAlignedL2Change": "1.99356934533949342835404438334e-71",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.386838550969160041667565455794",
+          "0.922147458644267244823011443461"
+        ]
+      }
+    },
+    {
+      "id": "acs.25.5",
+      "passed": true,
+      "maximumPointNormError": "6.51082259941910005108020990875e-76",
+      "maximumPointDisplacement": "3.01242510308521116936024960012e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0208645365897973408260164560374",
+        "maximumPhaseAlignedComponentChange": "3.98467452763377012701226258215e-68",
+        "phaseAlignedL2Change": "1.11326125982829079045751005461e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.998300989779519402616377052505",
+          "-0.0582677767314996946513017713629"
+        ]
+      }
+    },
+    {
+      "id": "acs.26.6",
+      "passed": true,
+      "maximumPointNormError": "5.09274570385446382068382868562e-76",
+      "maximumPointDisplacement": "9.85996605706311860740571763194e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.189636416729361520639769475064",
+        "maximumPhaseAlignedComponentChange": "4.70782295307693552282718002184e-69",
+        "phaseAlignedL2Change": "1.28615145991493661019105736571e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.865798488676685022891299502381",
+          "0.500392822695498017870562991309"
+        ]
+      }
+    },
+    {
+      "id": "acs.27.5",
+      "passed": true,
+      "maximumPointNormError": "4.82774920547930445748579136752e-76",
+      "maximumPointDisplacement": "2.66077931937294785782135896014e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.674328929168537195887574497532",
+        "maximumPhaseAlignedComponentChange": "7.6609342306047494504688409335e-69",
+        "phaseAlignedL2Change": "2.26895131462974567486593817512e-68",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.994345875996539730840971269948",
+          "0.106189824788790534741153401978"
+        ]
+      }
+    },
+    {
+      "id": "acs.28.6",
+      "passed": true,
+      "maximumPointNormError": "6.01804654860860222478950147182e-76",
+      "maximumPointDisplacement": "1.68660019804277142092338836967e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.266424842969351781596363374186",
+        "maximumPhaseAlignedComponentChange": "7.85060128180496260324632601635e-68",
+        "phaseAlignedL2Change": "2.32189678818189551594327132266e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.689544450067585972648832371371",
+          "-0.724243364747645054543261709057"
+        ]
+      }
+    },
+    {
+      "id": "acs.29.5",
+      "passed": true,
+      "maximumPointNormError": "6.01365043998592303846199232705e-76",
+      "maximumPointDisplacement": "1.32335401604362986515206372176e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00191069368630190970230632211008",
+        "maximumPhaseAlignedComponentChange": "6.55425471989217170669663974808e-70",
+        "phaseAlignedL2Change": "1.34707767355539684799219510173e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999992289352685889811756674282",
+          "-0.00392698805373003062462570350889"
+        ]
+      }
+    },
+    {
+      "id": "acs.30.7",
+      "passed": true,
+      "maximumPointNormError": "6.41824237488202872267394984213e-76",
+      "maximumPointDisplacement": "6.25633804070352905650120852099e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0136224584131166169002801217931",
+        "maximumPhaseAlignedComponentChange": "1.62165368141164916552703031317e-73",
+        "phaseAlignedL2Change": "3.96076943029900942867898700916e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999443582182393131319860169678",
+          "-0.0333545504305782387155613634064"
+        ]
+      }
+    },
+    {
+      "id": "acs.31.6",
+      "passed": true,
+      "maximumPointNormError": "6.25087151908526039540792236882e-76",
+      "maximumPointDisplacement": "1.45166993522875433481805510257e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.298862535609712337647334101439",
+        "maximumPhaseAlignedComponentChange": "4.41956091179334405295119131177e-75",
+        "phaseAlignedL2Change": "1.45910870128979741214306847514e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.565200411202452760192281521314",
+          "0.824953632137333105530607924075"
+        ]
+      }
+    },
+    {
+      "id": "acs.32.7",
+      "passed": true,
+      "maximumPointNormError": "5.79490350016777239627370042703e-76",
+      "maximumPointDisplacement": "5.06784506880004538073282838074e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.50381300132603599924255782358",
+        "maximumPhaseAlignedComponentChange": "1.83253746750126073742783237906e-75",
+        "phaseAlignedL2Change": "3.78623127764052873826816898295e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.217981651335777564397920182614",
+          "0.975952867550952740769636767684"
+        ]
+      }
+    },
+    {
+      "id": "acs.33.6",
+      "passed": true,
+      "maximumPointNormError": "6.2634795679392156128864770084e-76",
+      "maximumPointDisplacement": "4.91112432717343727319283855528e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.568957512097575408142721194668",
+        "maximumPhaseAlignedComponentChange": "6.29095312207671536413741533339e-76",
+        "phaseAlignedL2Change": "1.94493846356672919089040028827e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.294178261742061606488222322215",
+          "-0.955750569091339381424871832912"
+        ]
+      }
+    },
+    {
+      "id": "acs.34.7",
+      "passed": true,
+      "maximumPointNormError": "6.94849426233686527568056626267e-76",
+      "maximumPointDisplacement": "1.60070005857729919359478503297e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0332144874551606017312747718141",
+        "maximumPhaseAlignedComponentChange": "1.14387241975397634336974085086e-72",
+        "phaseAlignedL2Change": "3.15327503021736827140645658979e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.995803765299593666514962855598",
+          "-0.0915142667301212261575574961069"
+        ]
+      }
+    },
+    {
+      "id": "acs.35.6",
+      "passed": true,
+      "maximumPointNormError": "5.90898889327927880583996466163e-76",
+      "maximumPointDisplacement": "2.60676018918230372244120732919e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.565744760140239264016217886519",
+        "maximumPhaseAlignedComponentChange": "1.31498834245656784749132811657e-67",
+        "phaseAlignedL2Change": "4.61995169768029415972121221289e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.975341314966248907817784996044",
+          "0.220701878831849649168510084215"
+        ]
+      }
+    },
+    {
+      "id": "acs.36.8",
+      "passed": true,
+      "maximumPointNormError": "5.12094684539374438491072185594e-76",
+      "maximumPointDisplacement": "2.50040221795410170139088460458e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.159559030700239206289074389901",
+        "maximumPhaseAlignedComponentChange": "9.76754595970767112468558716278e-76",
+        "phaseAlignedL2Change": "2.65926116169397866391099429293e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.879697374679206445387986893941",
+          "0.475533940936408734399109686253"
+        ]
+      }
+    },
+    {
+      "id": "acs.37.7",
+      "passed": true,
+      "maximumPointNormError": "5.46013282153976809060469022964e-76",
+      "maximumPointDisplacement": "1.06957436749835541270914841068e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0198842432705036814302648573386",
+        "maximumPhaseAlignedComponentChange": "3.16102125840642795270858556817e-67",
+        "phaseAlignedL2Change": "7.67025435865276029840256033597e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.998836000377557590335056025465",
+          "-0.0482353019039351847367906678131"
+        ]
+      }
+    },
+    {
+      "id": "acs.38.7",
+      "passed": true,
+      "maximumPointNormError": "6.16694982328538665860281100245e-76",
+      "maximumPointDisplacement": "9.05457599211884537923163665701e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.446272587248680157606983353962",
+        "maximumPhaseAlignedComponentChange": "1.49717806051639888453561862943e-70",
+        "phaseAlignedL2Change": "5.36817564040187649980143188636e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.280198170019319777243715798559",
+          "-0.959942178215867524625027121429"
+        ]
+      }
+    },
+    {
+      "id": "acs.39.7",
+      "passed": true,
+      "maximumPointNormError": "5.57474636827152461367450066702e-76",
+      "maximumPointDisplacement": "6.39086144586116249246268854094e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0101671531495680642038309886941",
+        "maximumPhaseAlignedComponentChange": "5.26666725416921862544493803653e-71",
+        "phaseAlignedL2Change": "1.79162872087449515860068972489e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999401873642998665885348154982",
+          "0.0345817142267951856070575443926"
+        ]
+      }
+    },
+    {
+      "id": "acs.40.8",
+      "passed": true,
+      "maximumPointNormError": "5.18832089169208166384404247205e-76",
+      "maximumPointDisplacement": "9.64536719406510216580000439072e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.708801117750380585774262615446",
+        "maximumPhaseAlignedComponentChange": "1.30688559409989432190500652485e-67",
+        "phaseAlignedL2Change": "3.67025677218734226984492394589e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.981237529993435852027365730052",
+          "-0.192802774182274350090982846892"
+        ]
+      }
+    },
+    {
+      "id": "acs.41.7",
+      "passed": true,
+      "maximumPointNormError": "6.27961660660632215837083050872e-76",
+      "maximumPointDisplacement": "2.72253109611582768412263664738e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.522206053340628689753119309814",
+        "maximumPhaseAlignedComponentChange": "4.82914248200696693635960699724e-74",
+        "phaseAlignedL2Change": "1.58715610646037129402049323756e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.448939341821850023292005819258",
+          "0.893562234746167024138523419943"
+        ]
+      }
+    },
+    {
+      "id": "acs.42.8",
+      "passed": true,
+      "maximumPointNormError": "6.26031382112894228451230746796e-76",
+      "maximumPointDisplacement": "1.49422144179726042806321615389e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.569044160333850661838192062239",
+        "maximumPhaseAlignedComponentChange": "5.59348794452497806033232985677e-74",
+        "phaseAlignedL2Change": "1.87951707031266179196608621702e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.843810985569954945306793625513",
+          "-0.536640494774165628345152078234"
+        ]
+      }
+    },
+    {
+      "id": "acs.43.7",
+      "passed": true,
+      "maximumPointNormError": "6.08694535899678379596841757453e-76",
+      "maximumPointDisplacement": "1.89001901990038977403563818928e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.148912447779135185829379781524",
+        "maximumPhaseAlignedComponentChange": "2.60173087806729067983153263895e-74",
+        "phaseAlignedL2Change": "8.86000022547044700921660029713e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.868911321096891132061363809903",
+          "0.494967792961981876752046136246"
+        ]
+      }
+    },
+    {
+      "id": "acs.44.8",
+      "passed": true,
+      "maximumPointNormError": "6.1641715497351578373320110359e-76",
+      "maximumPointDisplacement": "5.91828787224337602399583827815e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.222916433287493806469634797516",
+        "maximumPhaseAlignedComponentChange": "1.3806890546746210663252785944e-74",
+        "phaseAlignedL2Change": "4.38961334040632487449371952231e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.752605384551055626492236263652",
+          "0.658471818033815081917518104243"
+        ]
+      }
+    },
+    {
+      "id": "acs.45.8",
+      "passed": true,
+      "maximumPointNormError": "5.69961944744162628136490453503e-76",
+      "maximumPointDisplacement": "3.40880993642186458693269531802e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.471591888871804628470441431494",
+        "maximumPhaseAlignedComponentChange": "1.98027905554584270802334227262e-67",
+        "phaseAlignedL2Change": "6.77346913207729619875315301211e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.300984685108567646351111990201",
+          "-0.953628973621343143653514017374"
+        ]
+      }
+    },
+    {
+      "id": "acs.46.8",
+      "passed": true,
+      "maximumPointNormError": "5.80101915952095797043945577815e-76",
+      "maximumPointDisplacement": "1.31001757027033251945713755591e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.494739041741289084056535506282",
+        "maximumPhaseAlignedComponentChange": "1.08537760215978340558968523431e-67",
+        "phaseAlignedL2Change": "3.92775729349759443115961784253e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.602691553230672167749257684677",
+          "-0.797974242481798316420661781317"
+        ]
+      }
+    },
+    {
+      "id": "acs.47.8",
+      "passed": true,
+      "maximumPointNormError": "5.50871185390400946612612566423e-76",
+      "maximumPointDisplacement": "5.7591954762475359086141475216e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.566968957256583371565560520258",
+        "maximumPhaseAlignedComponentChange": "1.48560774323552557372427504226e-75",
+        "phaseAlignedL2Change": "3.66410050671478098003298475389e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.82619639577721658013093863403",
+          "0.563382210940971139498429891314"
+        ]
+      }
+    },
+    {
+      "id": "acs.48.9",
+      "passed": true,
+      "maximumPointNormError": "6.61938857846995039761065504032e-76",
+      "maximumPointDisplacement": "4.05930648512081803792426593801e-15",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.306684586361250422851891320399",
+        "maximumPhaseAlignedComponentChange": "8.62608469940049175668302231447e-68",
+        "phaseAlignedL2Change": "2.15600417716853843954435330695e-67",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.706217674864630366993735437007",
+          "-0.707994770961477673791157091093"
+        ]
+      }
+    },
+    {
+      "id": "acs.49.8",
+      "passed": true,
+      "maximumPointNormError": "5.99988374579021355519589133057e-76",
+      "maximumPointDisplacement": "1.00779360813096665836439411858e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.275284423047793186739572344452",
+        "maximumPhaseAlignedComponentChange": "9.6139239175510685617879836205e-76",
+        "phaseAlignedL2Change": "3.49088291855088924365639525325e-75",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.431402118626482346315948167976",
+          "0.902159748628025663716757046991"
+        ]
+      }
+    },
+    {
+      "id": "acs.50.9",
+      "passed": true,
+      "maximumPointNormError": "6.43154050541572268244785882014e-76",
+      "maximumPointDisplacement": "1.11659731595823014139104877782e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.561148963335310903286986403839",
+        "maximumPhaseAlignedComponentChange": "1.04788772934038896114784703653e-72",
+        "phaseAlignedL2Change": "2.3638984004467760508786428742e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.199108078692672665212379184832",
+          "0.979977536987104857696799294888"
+        ]
+      }
+    },
+    {
+      "id": "acs.51.8",
+      "passed": true,
+      "maximumPointNormError": "5.39160050261306855225435975452e-76",
+      "maximumPointDisplacement": "2.88442917551849056717447324431e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.416083567339927259622778295542",
+        "maximumPhaseAlignedComponentChange": "6.43056440806185527640047932171e-73",
+        "phaseAlignedL2Change": "2.25979015683760443149576132854e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.069276830563028409366826336127",
+          "0.997597474308722101268039900319"
+        ]
+      }
+    },
+    {
+      "id": "acs.52.9",
+      "passed": true,
+      "maximumPointNormError": "6.65630734599062836532582981437e-76",
+      "maximumPointDisplacement": "4.86313225844296061238539432632e-10",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0976907055936017811640206942526",
+        "maximumPhaseAlignedComponentChange": "5.20223127635384939303828606963e-68",
+        "phaseAlignedL2Change": "2.0309288281880049564135500998e-67",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.927274520525422978338507684839",
+          "-0.374382109060177873842642805593"
+        ]
+      }
+    },
+    {
+      "id": "acs.53.8",
+      "passed": true,
+      "maximumPointNormError": "6.26459804930698404401323397765e-76",
+      "maximumPointDisplacement": "1.68158900921569624645968894148e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0535281631376766546898517970024",
+        "maximumPhaseAlignedComponentChange": "1.48934076242196177634735236446e-69",
+        "phaseAlignedL2Change": "6.27152944095949115038899725865e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.974596511788789511501716007852",
+          "0.223967942369268255801355888403"
+        ]
+      }
+    },
+    {
+      "id": "acs.54.9",
+      "passed": true,
+      "maximumPointNormError": "6.57188399965985907274263243656e-76",
+      "maximumPointDisplacement": "3.29698697449865771117531674292e-16",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0198561619729323300005018733412",
+        "maximumPhaseAlignedComponentChange": "2.97642858028574443967837259264e-70",
+        "phaseAlignedL2Change": "8.36427689394022634953864524273e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.998443221149069971476625334324",
+          "-0.0557775415509625525013603532596"
+        ]
+      }
+    },
+    {
+      "id": "acs.55.9",
+      "passed": true,
+      "maximumPointNormError": "5.07413360789138356778070097045e-76",
+      "maximumPointDisplacement": "1.05101478785004001586774353812e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0678528116023893171167103878615",
+        "maximumPhaseAlignedComponentChange": "3.7698455673648535730621019686e-72",
+        "phaseAlignedL2Change": "1.53828355110115513004345396994e-71",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.961667526104980032917316961707",
+          "0.274218105228534366588890448594"
+        ]
+      }
+    },
+    {
+      "id": "acs.56.9",
+      "passed": true,
+      "maximumPointNormError": "5.79868528416374218638967771308e-76",
+      "maximumPointDisplacement": "2.490556404546546811483660287e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.397380279560302170970890832088",
+        "maximumPhaseAlignedComponentChange": "2.33876374523555820464052868928e-69",
+        "phaseAlignedL2Change": "9.2969998389484315749232541832e-69",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.247657737014311566403597111729",
+          "-0.968847586205874845757488705891"
+        ]
+      }
+    },
+    {
+      "id": "acs.57.9",
+      "passed": true,
+      "maximumPointNormError": "6.01999003091858229248348449086e-76",
+      "maximumPointDisplacement": "1.31691066252249315847412493264e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.393278406575581295414419291222",
+        "maximumPhaseAlignedComponentChange": "3.33529975913876861630622281168e-73",
+        "phaseAlignedL2Change": "1.38194968345397953315244877197e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.330158971246951932802947576424",
+          "0.94392534329000530702646206501"
+        ]
+      }
+    },
+    {
+      "id": "acs.58.9",
+      "passed": true,
+      "maximumPointNormError": "7.02902760280860005119688447881e-76",
+      "maximumPointDisplacement": "8.79925696874429289579608110118e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.447890534489023688403397287844",
+        "maximumPhaseAlignedComponentChange": "1.35455271544347654145112758067e-73",
+        "phaseAlignedL2Change": "5.54539116481113930861457334554e-73",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "-0.670532260258904587465542488831",
+          "-0.741880373073775718158977231546"
+        ]
+      }
+    },
+    {
+      "id": "acs.59.9",
+      "passed": true,
+      "maximumPointNormError": "6.31858491824855455789488415391e-76",
+      "maximumPointDisplacement": "5.11204912358611308753296943156e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00917417628250494659290456170417",
+        "maximumPhaseAlignedComponentChange": "1.61277613329403485147887066997e-75",
+        "phaseAlignedL2Change": "3.8399654886096517816772613605e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999393288842907792400984030118",
+          "0.0348289278582656780670387975388"
+        ]
+      }
+    },
+    {
+      "id": "acs.60.9",
+      "passed": true,
+      "maximumPointNormError": "6.82974950002858431399364568403e-76",
+      "maximumPointDisplacement": "6.03736480395964917127113773035e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.524100804798497888986076441962",
+        "maximumPhaseAlignedComponentChange": "1.42348201993842006482434027144e-74",
+        "phaseAlignedL2Change": "5.26316927744803438927663879203e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.891044440097299587470571573701",
+          "0.453916077895121365495716516088"
+        ]
+      }
+    },
+    {
+      "id": "acs.61.9",
+      "passed": true,
+      "maximumPointNormError": "6.68167428842679938715218853485e-76",
+      "maximumPointDisplacement": "2.46579180925895270960423122045e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.41955633125908383257218581949",
+        "maximumPhaseAlignedComponentChange": "8.9939447051177738356501159824e-76",
+        "phaseAlignedL2Change": "3.40347445688377916564924041039e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.00987822290586551254691225123266",
+          "0.999951209165838267855797438627"
+        ]
+      }
+    },
+    {
+      "id": "acs.62.10",
+      "passed": true,
+      "maximumPointNormError": "6.07356708818997422943005399893e-76",
+      "maximumPointDisplacement": "1.75106731669943981141747142466e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.651169335340804311886283090962",
+        "maximumPhaseAlignedComponentChange": "9.33153258586786376016356605756e-76",
+        "phaseAlignedL2Change": "3.2899453441708787086689455072e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.589133233347892417303407975221",
+          "0.808035910937786069999812501017"
+        ]
+      }
+    },
+    {
+      "id": "acs.63.9",
+      "passed": true,
+      "maximumPointNormError": "6.415079722275025674594051113e-76",
+      "maximumPointDisplacement": "2.4249585713923311047747920824e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00310537344575175632443459324573",
+        "maximumPhaseAlignedComponentChange": "1.86053238594701316037452891174e-75",
+        "phaseAlignedL2Change": "4.20380269927854792628346230567e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999975517301339391833073316022",
+          "0.0069974851138593090763677871048"
+        ]
+      }
+    },
+    {
+      "id": "acs.64.10",
+      "passed": true,
+      "maximumPointNormError": "5.8563135020730822295466814835e-76",
+      "maximumPointDisplacement": "4.84288008717494836097133662301e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.428781793336535374075967065011",
+        "maximumPhaseAlignedComponentChange": "2.95310219664052611280991906786e-70",
+        "phaseAlignedL2Change": "9.59906869555876387826665126854e-70",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.0287227245408361150829163694904",
+          "0.999587417435289273750682806358"
+        ]
+      }
+    },
+    {
+      "id": "acs.65.9",
+      "passed": true,
+      "maximumPointNormError": "5.7813980959232713936333394279e-76",
+      "maximumPointDisplacement": "4.01608279023094443656181360562e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.358199376784080180643142262093",
+        "maximumPhaseAlignedComponentChange": "1.10444706034694488076538577725e-75",
+        "phaseAlignedL2Change": "3.92662261348607662701089628235e-75",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.268702814881979759608563123002",
+          "-0.963223129536713583908511676319"
+        ]
+      }
+    },
+    {
+      "id": "acs.66.10",
+      "passed": true,
+      "maximumPointNormError": "6.9998747626086840041835097242e-76",
+      "maximumPointDisplacement": "1.53616370296551423367072299283e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.509465548979022764056508257052",
+        "maximumPhaseAlignedComponentChange": "1.51335734848104929881733395143e-73",
+        "phaseAlignedL2Change": "4.99133805511882973765748972563e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.410054612036845557542777817124",
+          "0.912060971178633470635856002248"
+        ]
+      }
+    },
+    {
+      "id": "acs.67.10",
+      "passed": true,
+      "maximumPointNormError": "5.83536253033134297725072653211e-76",
+      "maximumPointDisplacement": "1.1106942719657353115681314238e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.162079784141670277116348036772",
+        "maximumPhaseAlignedComponentChange": "1.08874439240070418812061323002e-73",
+        "phaseAlignedL2Change": "3.3779895439849245320876289665e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.874375251574875109842245121633",
+          "0.485250367782832145836131992319"
+        ]
+      }
+    },
+    {
+      "id": "acs.68.10",
+      "passed": true,
+      "maximumPointNormError": "5.40797186427049110404339086396e-76",
+      "maximumPointDisplacement": "1.20513653359171949625174000461e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.527404644582912017065551788695",
+        "maximumPhaseAlignedComponentChange": "6.46652507840700933107609742175e-74",
+        "phaseAlignedL2Change": "2.2926754773331627577037196161e-73",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.743216663960451596458173119434",
+          "-0.66905081302655717577873667233"
+        ]
+      }
+    },
+    {
+      "id": "acs.69.10",
+      "passed": true,
+      "maximumPointNormError": "5.42633248631697264281225497197e-76",
+      "maximumPointDisplacement": "8.31441943013633486990228871672e-14",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.290210805041154084143175644347",
+        "maximumPhaseAlignedComponentChange": "3.43174666135229837376733155208e-74",
+        "phaseAlignedL2Change": "1.28014773230893195473848765193e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.426194551534411988640529640486",
+          "0.904631529542488057767426804178"
+        ]
+      }
+    },
+    {
+      "id": "acs.70.10",
+      "passed": true,
+      "maximumPointNormError": "6.07865412894712421469567531371e-76",
+      "maximumPointDisplacement": "4.01260032622819865700456572089e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.461165412524576853362623438383",
+        "maximumPhaseAlignedComponentChange": "1.21295317123217921948991334515e-69",
+        "phaseAlignedL2Change": "4.98974183104189154315632603797e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.799498684639897713139350149436",
+          "-0.600667839374702484571584544746"
+        ]
+      }
+    },
+    {
+      "id": "acs.71.10",
+      "passed": true,
+      "maximumPointNormError": "6.50985322951830910902266949823e-76",
+      "maximumPointDisplacement": "1.50255668379589141006431834227e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.409130165994390481247884649098",
+        "maximumPhaseAlignedComponentChange": "2.01615245110916865238957422078e-74",
+        "phaseAlignedL2Change": "7.00183194737178828670673669761e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.00478793513621442435673243272199",
+          "-0.999988537772874376341148961387"
+        ]
+      }
+    },
+    {
+      "id": "acs.72.10",
+      "passed": true,
+      "maximumPointNormError": "7.02221909272662684306641667132e-76",
+      "maximumPointDisplacement": "1.43431344388635353558376013093e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.254842414235988413511285794545",
+        "maximumPhaseAlignedComponentChange": "6.99532342539575555666933163702e-72",
+        "phaseAlignedL2Change": "2.96252419514751813473251655289e-71",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.417570601650645040578302499365",
+          "-0.908644480881889425298126363063"
+        ]
+      }
+    },
+    {
+      "id": "acs.73.10",
+      "passed": true,
+      "maximumPointNormError": "6.28935018376793343234193162395e-76",
+      "maximumPointDisplacement": "1.99013961429881979619921678825e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.11779330955564339435423929523",
+        "maximumPhaseAlignedComponentChange": "1.05117626670776070604089456963e-72",
+        "phaseAlignedL2Change": "3.64437318893763794002517930983e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.9166427183871843255948937362",
+          "0.399707551627127868915589002094"
+        ]
+      }
+    },
+    {
+      "id": "acs.74.11",
+      "passed": true,
+      "maximumPointNormError": "6.46888870526638814010202533346e-76",
+      "maximumPointDisplacement": "3.82128537066387536313064657385e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00286079341662226918983591985042",
+        "maximumPhaseAlignedComponentChange": "8.42819535640281530270013341863e-72",
+        "phaseAlignedL2Change": "2.39983753897615512982581915891e-71",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.999966824653071777121420360473",
+          "-0.00814552596538749910159689179215"
+        ]
+      }
+    },
+    {
+      "id": "acs.75.10",
+      "passed": true,
+      "maximumPointNormError": "7.21260543137928368422121300286e-76",
+      "maximumPointDisplacement": "7.61731714765526363433339369844e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.251182241539190151996969137155",
+        "maximumPhaseAlignedComponentChange": "2.51626826818334680055305132428e-75",
+        "phaseAlignedL2Change": "1.12113348730381930333105856034e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.44524587746305390485245829761",
+          "-0.895408347404777764313783721109"
+        ]
+      }
+    },
+    {
+      "id": "acs.76.11",
+      "passed": true,
+      "maximumPointNormError": "5.52770358448472642256278033115e-76",
+      "maximumPointDisplacement": "1.51231645341859796604225723248e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.41105954938634103828492691516",
+        "maximumPhaseAlignedComponentChange": "1.30740309409153045536484519011e-66",
+        "phaseAlignedL2Change": "4.51555639226655214295884079201e-66",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.00782009051901019073057862991353",
+          "0.999969422624649301794140806443"
+        ]
+      }
+    },
+    {
+      "id": "acs.77.11",
+      "passed": true,
+      "maximumPointNormError": "6.00178532467601348136783402435e-76",
+      "maximumPointDisplacement": "1.72301676329454179563128823788e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00359328148990817664027850842829",
+        "maximumPhaseAlignedComponentChange": "9.6845589737175790604984670912e-67",
+        "phaseAlignedL2Change": "2.6215888774082426272549709236e-66",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.999952693375498641279871349877",
+          "-0.00972681916589363388911763581391"
+        ]
+      }
+    },
+    {
+      "id": "acs.78.11",
+      "passed": true,
+      "maximumPointNormError": "6.02814295283644019963037128287e-76",
+      "maximumPointDisplacement": "1.27499798313842734032744418136e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.482172912861098703062022513466",
+        "maximumPhaseAlignedComponentChange": "5.6189730781162249634988848977e-74",
+        "phaseAlignedL2Change": "1.88409795011126291921672929871e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.315575471893110644979589605056",
+          "-0.94890048031363148494502453907"
+        ]
+      }
+    },
+    {
+      "id": "acs.79.11",
+      "passed": true,
+      "maximumPointNormError": "6.85517368602924638357437583762e-76",
+      "maximumPointDisplacement": "1.46088696774986096237390331295e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.477221651416065324796377480671",
+        "maximumPhaseAlignedComponentChange": "2.9379429150298551093100384695e-67",
+        "phaseAlignedL2Change": "1.06691208270278486264768897613e-66",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.501691926372717505703771350548",
+          "0.865046363504541759471935497434"
+        ]
+      }
+    },
+    {
+      "id": "acs.80.11",
+      "passed": true,
+      "maximumPointNormError": "6.33153383093610380144471905779e-76",
+      "maximumPointDisplacement": "3.09409562644650720812519459744e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.380100115243723623706195745778",
+        "maximumPhaseAlignedComponentChange": "4.46809634458387831679833038264e-73",
+        "phaseAlignedL2Change": "1.54439302550260666265636449414e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.138449126443505247584479551256",
+          "0.990369546879865594746473565572"
+        ]
+      }
+    },
+    {
+      "id": "acs.81.11",
+      "passed": true,
+      "maximumPointNormError": "6.1695964993302932428939659643e-76",
+      "maximumPointDisplacement": "4.69049644459235975914113044143e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.510693576720780628244974771357",
+        "maximumPhaseAlignedComponentChange": "2.28301402302404896414746351718e-70",
+        "phaseAlignedL2Change": "8.94012110380727743253484974732e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.999678318000403700294276269243",
+          "-0.0253625810966418624418346011521"
+        ]
+      }
+    },
+    {
+      "id": "acs.82.11",
+      "passed": true,
+      "maximumPointNormError": "6.22506464122670780200272062461e-76",
+      "maximumPointDisplacement": "4.70769665676720096589294543328e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0116495496767299245308017954277",
+        "maximumPhaseAlignedComponentChange": "1.04671737655950933342818286965e-69",
+        "phaseAlignedL2Change": "3.65103223571860373677356186452e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.999174416613938161967394009024",
+          "0.040626163788823757649330218945"
+        ]
+      }
+    },
+    {
+      "id": "acs.83.11",
+      "passed": true,
+      "maximumPointNormError": "5.4699032603727781560626748157e-76",
+      "maximumPointDisplacement": "1.54398864191648709633126691197e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.00203054719389881934082843659434",
+        "maximumPhaseAlignedComponentChange": "5.66209314709461067456261663792e-74",
+        "phaseAlignedL2Change": "1.67093312028760030762387594686e-73",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "0.999982105608259694192032655769",
+          "0.00598234596720683318338440659839"
+        ]
+      }
+    },
+    {
+      "id": "acs.84.12",
+      "passed": true,
+      "maximumPointNormError": "7.21741628001381670830884043158e-76",
+      "maximumPointDisplacement": "2.11641740898019330123163469895e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.530806542776360431882193560991",
+        "maximumPhaseAlignedComponentChange": "1.44266035154316430473958159055e-74",
+        "phaseAlignedL2Change": "5.34948543282238337832306286582e-74",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "-0.971754353324603012198743105977",
+          "-0.235994654165475982911818745747"
+        ]
+      }
+    },
+    {
+      "id": "acs.85.11",
+      "passed": true,
+      "maximumPointNormError": "5.72664321783609434292990116594e-76",
+      "maximumPointDisplacement": "1.56929218621154280973408717305e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.52707287216024143156223919908",
+        "maximumPhaseAlignedComponentChange": "6.174415908197627178022699384e-73",
+        "phaseAlignedL2Change": "2.27867710577901800168224171979e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.889262760276004075114656345105",
+          "0.457396702203133629795110812984"
+        ]
+      }
+    },
+    {
+      "id": "acs.86.12",
+      "passed": true,
+      "maximumPointNormError": "5.79984491110845305269880299351e-76",
+      "maximumPointDisplacement": "8.01847823937543353184024670852e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.578594867571388043292890958324",
+        "maximumPhaseAlignedComponentChange": "9.46350869223172368233990390886e-72",
+        "phaseAlignedL2Change": "3.24912553910759652142303059047e-71",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.97293552214068099785592901401",
+          "-0.23107676161146199473828684519"
+        ]
+      }
+    },
+    {
+      "id": "acs.87.11",
+      "passed": true,
+      "maximumPointNormError": "7.66507271398072629001385236209e-76",
+      "maximumPointDisplacement": "2.58460239884423244935180829021e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.140381867091571874673565468687",
+        "maximumPhaseAlignedComponentChange": "4.7599007694735712784632512973e-70",
+        "phaseAlignedL2Change": "1.96487808004602430864145981866e-69",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.832093607484000601248347276595",
+          "-0.554635221009504533070251145754"
+        ]
+      }
+    },
+    {
+      "id": "acs.88.12",
+      "passed": true,
+      "maximumPointNormError": "5.97423883917522754131371647333e-76",
+      "maximumPointDisplacement": "1.17063569610511286379041602225e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0800123143046331420964153534417",
+        "maximumPhaseAlignedComponentChange": "9.3456899706864216808387571587e-69",
+        "phaseAlignedL2Change": "3.59812257847969783635662872103e-68",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.952552549289195277882234896816",
+          "0.304374179001201086944685119107"
+        ]
+      }
+    },
+    {
+      "id": "acs.89.12",
+      "passed": true,
+      "maximumPointNormError": "6.68404449756618438880045533067e-76",
+      "maximumPointDisplacement": "3.15737319309510427650581663998e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.336068727537290943672561324784",
+        "maximumPhaseAlignedComponentChange": "4.19479370452338202165592383865e-74",
+        "phaseAlignedL2Change": "1.31219341955501857357751982452e-73",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.447252888730097883103616879514",
+          "-0.894407543305948802184796817122"
+        ]
+      }
+    },
+    {
+      "id": "acs.90.12",
+      "passed": true,
+      "maximumPointNormError": "5.89845612262058941221258074355e-76",
+      "maximumPointDisplacement": "3.02389615162994939657519822394e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.222449288105008548559146209044",
+        "maximumPhaseAlignedComponentChange": "1.32597930906180222757094852527e-74",
+        "phaseAlignedL2Change": "4.577380104724640206497630085e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.714323683306492896361022108439",
+          "-0.699815458151250930069695631347"
+        ]
+      }
+    },
+    {
+      "id": "acs.91.12",
+      "passed": true,
+      "maximumPointNormError": "7.12095754763074714734481024231e-76",
+      "maximumPointDisplacement": "2.16133289694879675059398700631e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.245125850328052777123036216605",
+        "maximumPhaseAlignedComponentChange": "4.42217033338477534718463188313e-75",
+        "phaseAlignedL2Change": "1.38039954111157870330359020732e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.641400952179642841601188832078",
+          "0.767205851478628593965628969145"
+        ]
+      }
+    },
+    {
+      "id": "acs.92.12",
+      "passed": true,
+      "maximumPointNormError": "6.59018666951876072774128279381e-76",
+      "maximumPointDisplacement": "8.54426733709219008184792249354e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.252371775561067335550209125962",
+        "maximumPhaseAlignedComponentChange": "5.82532262577022572660804200759e-69",
+        "phaseAlignedL2Change": "1.84156201017107366619310367929e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.681738360580083868907255895934",
+          "-0.731596068683791895593782835479"
+        ]
+      }
+    },
+    {
+      "id": "acs.93.12",
+      "passed": true,
+      "maximumPointNormError": "7.22701698179083930932976598204e-76",
+      "maximumPointDisplacement": "6.7309583446947778165696246712e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.410495602902866266076540240849",
+        "maximumPhaseAlignedComponentChange": "3.57409150791120430089586797008e-73",
+        "phaseAlignedL2Change": "1.18197206992722076531894745877e-72",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.0780393549129543533362358529523",
+          "0.996950279143734402934130473635"
+        ]
+      }
+    },
+    {
+      "id": "acs.94.12",
+      "passed": true,
+      "maximumPointNormError": "7.15307600037423198209456874202e-76",
+      "maximumPointDisplacement": "3.43186471958632994693939556433e-10",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.156920908407762035133759828915",
+        "maximumPhaseAlignedComponentChange": "2.85444015597845108942334057101e-69",
+        "phaseAlignedL2Change": "1.48228549185866633321050173809e-68",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.667988246344587117379304570789",
+          "-0.744171823402017281467835332201"
+        ]
+      }
+    },
+    {
+      "id": "acs.95.12",
+      "passed": true,
+      "maximumPointNormError": "6.16908981864796160442108139383e-76",
+      "maximumPointDisplacement": "2.17676211922270539067522584559e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.263685551803158452460449585927",
+        "maximumPhaseAlignedComponentChange": "1.87675728428415048135631973573e-75",
+        "phaseAlignedL2Change": "6.01053926640800121527651639187e-75",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.463833496582474310890272629056",
+          "0.885922393580880080780647993537"
+        ]
+      }
+    },
+    {
+      "id": "acs.96.13",
+      "passed": true,
+      "maximumPointNormError": "7.60913104514136189525054832295e-76",
+      "maximumPointDisplacement": "3.31718432911592203938020579476e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0367831530756172333491579986709",
+        "maximumPhaseAlignedComponentChange": "2.13173436878055915123863114263e-74",
+        "phaseAlignedL2Change": "5.98697174763344996130736469718e-74",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.994320907425087751750368106842",
+          "0.106423367064522409186243632314"
+        ]
+      }
+    },
+    {
+      "id": "acs.97.12",
+      "passed": true,
+      "maximumPointNormError": "6.6642953932990830076722584746e-76",
+      "maximumPointDisplacement": "1.67366061742834424901741488683e-12",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.470659938901090420895304758404",
+        "maximumPhaseAlignedComponentChange": "1.33757707168525188288965934804e-66",
+        "phaseAlignedL2Change": "5.2578138338990167082765823191e-66",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "-0.711422552872887844461679810819",
+          "-0.702764506263530001994156001527"
+        ]
+      }
+    },
+    {
+      "id": "acs.98.13",
+      "passed": true,
+      "maximumPointNormError": "6.89407298138199577616800497744e-76",
+      "maximumPointDisplacement": "7.65806097837120868799540467427e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.0308559445925042620219484981827",
+        "maximumPhaseAlignedComponentChange": "9.22131171194384021667302264644e-71",
+        "phaseAlignedL2Change": "3.17417415571452605791415845251e-70",
+        "normalizedInfidelity": "0.0",
+        "alignedPhase": [
+          "0.994359478479764588889629271876",
+          "-0.106062375786376685460253567862"
+        ]
+      }
+    },
+    {
+      "id": "acs.99.12",
+      "passed": true,
+      "maximumPointNormError": "5.99995893490720675531709871903e-76",
+      "maximumPointDisplacement": "6.53067166635321546395922031602e-13",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.466162806981733557096713451515",
+        "maximumPhaseAlignedComponentChange": "2.53551534261051351462007146021e-69",
+        "phaseAlignedL2Change": "8.31710104695757369989964062847e-69",
+        "normalizedInfidelity": "8.31632781251591937482432366455e-112",
+        "alignedPhase": [
+          "-0.169113526364229175590132658682",
+          "0.985596578322314978376076115459"
+        ]
+      }
+    },
+    {
+      "id": "acs.100.13",
+      "passed": true,
+      "maximumPointNormError": "6.71611498754221127502410229131e-76",
+      "maximumPointDisplacement": "1.65835555168791380217574803738e-11",
+      "reconstructedCoefficientAgreement": {
+        "maximumRawComponentChange": "0.27629695987861986665285028002",
+        "maximumPhaseAlignedComponentChange": "9.80465714349798785772927073291e-68",
+        "phaseAlignedL2Change": "3.1957770642617429785867468268e-67",
+        "normalizedInfidelity": "1.66326556250318387496486473291e-111",
+        "alignedPhase": [
+          "0.594481802031962776406296944709",
+          "-0.804109064152886053119858410158"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "radical-n17-k1-t4",
+  "n": 17,
+  "t": 4,
+  "dimension": 1,
+  "label": "Exact radical fourth-order AC state \u00b7 palindromic branch",
+  "evidence": "exact",
+  "basis": [
+    {
+      "id": "radical-n17-k1-t4-basis-1",
+      "n": 17,
+      "label": "Exact fourth-order AC state \u00b7 palindromic branch",
+      "exactCoefficients": [
+        "0",
+        "sqrt(15)*(-9*sqrt(20995) + 710 - I*sqrt(-575935 + 12780*sqrt(20995)))/11340",
+        "0",
+        "0",
+        "2*sqrt(21)/27",
+        "0",
+        "0",
+        "sqrt(4290)*(-5680 + 18*sqrt(20995) - 4*I*sqrt(-575935 + 12780*sqrt(20995)))/810810",
+        "0",
+        "0",
+        "sqrt(4290)*(-5680 + 18*sqrt(20995) - 4*I*sqrt(-575935 + 12780*sqrt(20995)))/810810",
+        "0",
+        "0",
+        "2*sqrt(21)/27",
+        "0",
+        "0",
+        "sqrt(15)*(-9*sqrt(20995) + 710 - I*sqrt(-575935 + 12780*sqrt(20995)))/11340",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.20289399671473313,
+          -0.3857723534365793
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3394500514782104,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.24814832900033545,
+          -0.3649791593870894
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.24814832900033545,
+          -0.3649791593870894
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3394500514782104,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.20289399671473313,
+          -0.3857723534365793
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stateLatex": "\\begin{aligned}|\\psi_+\\rangle={}&A\\bigl(|D_{17}^{(1)}\\rangle+|D_{17}^{(16)}\\rangle\\bigr)\\\\&+B\\bigl(|D_{17}^{(4)}\\rangle+|D_{17}^{(13)}\\rangle\\bigr)\\\\&+C\\bigl(|D_{17}^{(7)}\\rangle+|D_{17}^{(10)}\\rangle\\bigr),\\end{aligned}",
+      "coefficientDefinitionLatex": "\\begin{aligned}A&=\\frac{710-9q-iv}{756\\sqrt{15}},\\\\B&=\\frac{2\\sqrt{21}}{27},\\\\C&=\\frac{2(9q-2840-2iv)}{189\\sqrt{4290}}.\\end{aligned}"
+    }
+  ],
+  "parameters": {
+    "q": "sqrt(20995)",
+    "v": "sqrt(12780*sqrt(20995)-575935)"
+  },
+  "derivationLatex": "q=\\sqrt{20995},\\qquad v=\\sqrt{12780q-575935}>0.",
+  "provenance": "Independent analytical reconstruction using the six-component support of the supplied Julia example, with an additional palindromic choice. This gives a different exact representative; equality or collective-rotation equivalence to the numerical source is not asserted.",
+  "source": {
+    "file": "references/ACLiege.jl",
+    "line": 180,
+    "role": "Support-pattern inspiration only."
+  },
+  "conjugateBranch": {
+    "construction": "Coefficientwise complex conjugation",
+    "alsoExactOrder": 4
+  }
+}

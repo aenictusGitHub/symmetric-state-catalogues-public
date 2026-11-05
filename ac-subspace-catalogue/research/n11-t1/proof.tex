@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry,booktabs}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\begin{document}
+\title{Eleven symmetric qubits: the maximum first-order anticoherent subspace dimension is four}
+\author{Exact catalogue calculation}
+\date{}
+\maketitle
+\paragraph{Theorem.} For arbitrary complex subspaces of the symmetric eleven-qubit space,
+\[
+\boxed{k_{\max}(11,1)=4.}
+\]
+An exact dimension-four basis was already supplied in \texttt{ACLiege.jl}. The new upper bound follows from the finite rational certificate in \texttt{kernel.json} and \texttt{certificate.json}. Numerical infeasibility is not used as a proof.
+
+\section*{1. The whole-subspace condition}
+Let $V=V_{11/2}\cong\mathbb C^{12}$. Suppose an orthonormal set $u_1,\ldots,u_5$ spans a first-order anticoherent subspace with projector $P$. Its defining conditions are
+\[
+PJ_aP=0\qquad(a=x,y,z).
+\]
+They include every off-diagonal matrix element between basis vectors. Form the normalized exterior product
+\[
+w=u_1\wedge\cdots\wedge u_5\in\Lambda^5V,\qquad
+\dim\Lambda^5V=\binom{12}{5}=792.
+\]
+Put $w_a=(-1)^{a-1}u_1\wedge\cdots\wedge\widehat{u_a}\wedge\cdots\wedge u_5$; these five omission wedges are orthonormal. In the split between the first tensor factor and the other four,
+\[
+w=\frac1{\sqrt5}\sum_{a=1}^5u_a\otimes w_a.
+\]
+Consequently, for any operator $T$ on $V$,
+\[
+\Tr_1[(T\otimes I^{\otimes4})|w\rangle\langle w|]
+=\frac15\sum_{a,b=1}^5\langle u_b|T|u_a\rangle
+|w_a\rangle\langle w_b|.
+\]
+Because the $w_a$ are orthonormal, this matrix vanishes if and only if $PTP=0$. In particular, it vanishes for all three spin operators.
+
+\section*{2. A positive invariant operator}
+Average over collective rotations, with normalized Haar measure:
+\[
+X=\int_{SU(2)}D^{(11/2)}(g)^{\otimes5}|w\rangle\langle w|
+D^{(11/2)}(g)^{\dagger\otimes5}\,dg.
+\]
+Then $X\succeq0$, $\Tr X=1$, and $X$ is rotation invariant and supported on $\Lambda^5V$. Rotations preserve the span of the three spin operators, hence
+\begin{equation}\label{eq:contraction}
+\mathcal C_z(X):=\Tr_1[(J_z\otimes I^{\otimes4})X]=0.
+\end{equation}
+Only this necessary equation is used below. The moment need not be assumed decomposable after averaging. Showing that no positive, trace-one invariant operator satisfies~\eqref{eq:contraction} is already sufficient.
+
+The exterior representation decomposes as $\bigoplus_J V_J\otimes\mathbb C^{m_J}$, with
+\begingroup\setlength{\arraycolsep}{3pt}\small
+\[
+\begin{array}{c|rrrrrrrrrrrrrrrrr}
+2J&1&3&5&7&9&11&13&15&17&19&21&23&25&27&29&31&35\\\hline
+m_J&1&2&3&4&4&5&4&5&4&4&3&3&2&2&1&1&1
+\end{array}
+\]
+\endgroup
+Thus
+\[
+\sum_J(2J+1)m_J=792,\quad
+\sum_Jm_J=49,\quad
+\sum_J\frac{m_J(m_J+1)}2=111.
+\]
+These multiplicities are independently obtained by counting the weights of all five-element subsets of $\{0,\ldots,11\}$ and taking consecutive weight differences. Exact highest-weight and lowering checks verify completeness of the saved basis.
+
+The chosen highest-weight and lowered coordinate arrays, their Gram matrices, and the contraction coefficients are real. If the invariant multiplicity matrices are complex Hermitian, taking their entrywise real parts preserves positivity, trace, and~\eqref{eq:contraction}; invariance follows from the same block expansion. It therefore suffices to exclude real symmetric positive blocks. This does not restrict the original vectors $u_a$ to have real coefficients or assert that the rotation matrices themselves are real.
+
+\section*{3. Exact coordinates and positivity}
+The data use the rescaled spin basis $b_i=\sqrt{\binom{11}{i}}|i\rangle$, with magnetic convention $m=i-11/2$. Reversing this convention does not affect the vanishing spin conditions. A vector in the exterior space is specified by its physical tensor amplitudes at increasing five-tuples; all other amplitudes follow by antisymmetry. The scalar product of two such canonical amplitude vectors is
+\[
+\langle h,h'\rangle=5!\sum_{i_1<\cdots<i_5}
+\left(\prod_{r=1}^5\binom{11}{i_r}\right)
+\overline{h_{i_1\ldots i_5}}h'_{i_1\ldots i_5}.
+\]
+Let $H_{Ja}$ be the saved real highest-weight vectors, which need not be orthogonal, and define
+\[
+H_{JaM}=\frac{J_-^{J-M}}{(J-M)!}H_{Ja},\qquad
+G^J_{ab}=\langle H_{Ja},H_{Jb}\rangle.
+\]
+Their Gram matrices obey
+\[
+\langle H_{JaM},H_{JbM}\rangle
+=\binom{2J}{J-M}G^J_{ab}.
+\]
+Every real invariant operator has a unique expansion
+\[
+X=\sum_{J,M,a,b}C^J_{ab}
+\frac{|H_{JaM}\rangle\langle H_{JbM}|}{\binom{2J}{J-M}}.
+\]
+The full-column-rank basis changes act by invertible congruences. Hence
+\[
+X\succeq0\quad\Longleftrightarrow\quad C^J\succeq0\text{ for every }J.
+\]
+Its trace is $\sum_J(2J+1)\Tr(G^JC^J)$; in a nonorthogonal basis one must retain the off-diagonal Gram terms.
+
+Let $x\in\mathbb R^{111}$ list the upper-triangular entries of the $C^J$, with an off-diagonal coordinate contributing both symmetric entries. Expanding 100 selected matrix elements of~\eqref{eq:contraction} gives
+\[
+Ax=0,\qquad A\in\mathbb Z^{100\times111},\qquad\operatorname{rank}A=100.
+\]
+Each row is rescaled by a nonzero rational factor to primitive integers. The saved integer matrix $K\in\mathbb Z^{111\times11}$ satisfies
+\[
+AK=0,\qquad\operatorname{rank}K=11,
+\]
+so $\ker A=\Ran K$. These are necessary physical contraction equations, not fitted equations. Their ranks are certified by modular nonzero minors, together with the exact zero product.
+
+\section*{4. The strictly positive certificate}
+Let $D$ select all 49 diagonal coordinates from $x$. The file \texttt{certificate.json} supplies 49 strictly positive integers $c_{Ja}$ such that
+\[
+\boxed{c^{\mathsf T}DK=0.}
+\]
+The largest weight has 121 decimal digits. All integers are supplied in full; the identity is checked exactly without an optimizer. For every candidate $x=Ky$,
+\[
+0=c^{\mathsf T}Dx=\sum_{J,a}c_{Ja}C^J_{aa}.
+\]
+Every summand is nonnegative. Strict positivity of every weight forces all block diagonals to vanish. Positivity also implies $|C^J_{ab}|^2\le C^J_{aa}C^J_{bb}$, so all blocks vanish. Therefore $X=0$, contradicting $\Tr X=1$.
+
+This excludes dimension five. Every larger AC subspace would contain a dimension-five AC subspace, so $k_{\max}(11,1)\le4$.
+
+\section*{5. The exact lower witness}
+Write $D_r=|D_{11}^{(r)}\rangle$ for normalized Dicke states, and set
+\[
+\alpha=\frac{36+5i\sqrt{789}}{70\sqrt{11}},\qquad |\alpha|^2=\frac{39}{100}.
+\]
+The existing Julia example has the following orthonormal basis:
+\begin{align*}
+u_1&=\sqrt{\frac7{10}}D_4+\sqrt{\frac3{10}}D_9,\\
+u_2&=\alpha D_0+\frac{\sqrt3}{5}D_5-\frac7{10}D_{10},\\
+u_3&=-\frac7{10}D_1+\frac{\sqrt3}{5}D_6+\alpha D_{11},\\
+u_4&=\sqrt{\frac3{10}}D_2+\sqrt{\frac7{10}}D_7.
+\end{align*}
+Their supports are disjoint, their norms are one, and direct exact substitution verifies
+\[
+\langle u_a|J_z|u_b\rangle=
+\langle u_a|J_+|u_b\rangle=
+\langle u_a|J_-|u_b\rangle=0
+\qquad(a,b=1,\ldots,4).
+\]
+Equivalently all sixteen ordered cross reductions satisfy
+$\Tr_{10}(|u_a\rangle\langle u_b|)=\delta_{ab}I_2/2$.
+Together with the exclusion this proves the theorem and confirms the proposed dimension in Figure 2 of Phys. Rev. A 111, 022435 (2025).
+
+\paragraph{Reproducibility.} The portable verifier reconstructs the exact exterior basis and selected contraction rows. A separate verifier rebuilds the physical contractions and Gram matrices, and checks the same integer certificate. The lower-witness verifier checks the displayed radicals and all ordered cross reductions. The numerical search that suggested the certificate and the known $N=12$, dimension-five example are consistency checks, not ingredients of the exact upper-bound proof. No claim of literature priority is made.
+\end{document}

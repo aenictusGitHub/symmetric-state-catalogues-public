@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{A strengthened four-band nested construction of second-order AC subspaces}
+\author{}\date{}\maketitle
+
+\begin{theorem}
+For every integer $N\ge40$,
+\[
+ \boxed{K(N,2)\ge\left\lfloor\frac N8\right\rfloor-1.}
+\]
+The construction is explicit in radicals. The resulting $k$-dimensional
+second-order AC subspace is contained in an analytically constructible
+$2k$-dimensional first-order AC subspace. No unrestricted optimality is asserted.
+\end{theorem}
+
+Write $N=8q+\rho$, $0\le\rho\le7$, so $q\ge5$, and put $k=q-1$.
+Choose the even band spacing and starting index
+\[
+ h=\begin{cases}2q,&0\le\rho\le5,\\2q+2,&6\le\rho\le7,\end{cases}
+ \qquad
+ o=\begin{cases}2+\lfloor\rho/2\rfloor,&0\le\rho\le5,\\
+                 \lfloor(\rho-2)/2\rfloor,&6\le\rho\le7.
+    \end{cases}
+\]
+Set
+\[
+ j=N/2,\quad c=j(j+1)/3,\quad v=c/h^2,\quad
+ x_i=\frac{j-o-2i}{h},\quad r_{i\ell}=o+2i+\ell h,
+ \quad0\le i<k,\ 0\le\ell\le3.
+\]
+Define the basic weights
+\begin{align*}
+ w_0(x)&=v/4+x^2/4-35x/36+5/6,&
+ w_1(x)&=-v/4-x^2/4+5x/12+1/2,\\
+ w_2(x)&=-v/4-x^2/4+13x/12-1/2,&
+ w_3(x)&=v/4+x^2/4-19x/36+1/6.
+\end{align*}
+For $\rho\ne5$, use $\widetilde w_\ell=w_\ell$.
+For $\rho=5$, make the moment-preserving correction
+\[
+ (\widetilde w_0,\widetilde w_1,\widetilde w_2,\widetilde w_3)
+ =(w_0,w_1,w_2,w_3)
+ +\frac{x-3/2}{2q}\left(-\frac13,1,-1,\frac13\right).
+\]
+All weights evaluated at $x_i$ are strictly positive. The explicit basis is
+\[
+ u_i=\sum_{\ell=0}^3\sqrt{\widetilde w_\ell(x_i)}\,
+ \eta_{i\ell}|D_N^{(r_{i\ell})}\rangle,
+ \qquad |\eta_{i\ell}|=1.
+\]
+The following radical phase prescription determines $\eta$ without a
+numerical optimization.
+
+For each $0\le i<k-1$, define
+\[
+ L_{i\ell}=\sqrt{\widetilde w_\ell(x_i)\widetilde w_\ell(x_{i+1})
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1)}.
+\]
+Writing $(a,b,c',d)=(L_{i0},L_{i1},L_{i2},L_{i3})$, choose a diagonal length
+\[
+ D=\frac{\max(|a-b|,|c'-d|)+\min(a+b,c'+d)}{2}.
+\]
+The interval is proved to have positive length below. For either pair
+$(A,B)=(a,b)$ or $(c',d)$, put
+\[
+ C_A=\frac{D^2+A^2-B^2}{2DA},\qquad
+ C_B=\frac{D^2+B^2-A^2}{2DB},\qquad
+ z_A=C_A+i\sqrt{1-C_A^2},\quad z_B=C_B-i\sqrt{1-C_B^2}.
+\]
+Then $Az_A+Bz_B=D$. With $\eta_{0\ell}=1$, multiply the first two phases
+by $(z_a,z_b)$ and the last two by $(-z_{c'},-z_d)$ to obtain row $i+1$.
+Thus every adjacent cross term obeys
+\[
+ \sum_\ell L_{i\ell}\overline{\eta_{i\ell}}\eta_{i+1,\ell}=0.
+\]
+
+\begin{proof}
+The support indices lie between zero and $N$, are distinct, and all have
+the same parity. The gap between successive bands is
+$h-2(k-1)=4$ or $6$, so shifts by two cannot connect distinct bands.
+Inside each band, such a shift connects consecutive rows only.
+
+Direct polynomial identities give
+\[
+ \sum_\ell\widetilde w_\ell(x)=1,\qquad
+ \sum_\ell(x-\ell)\widetilde w_\ell(x)=0,\qquad
+ \sum_\ell(x-\ell)^2\widetilde w_\ell(x)=v.
+\]
+The correction for $\rho=5$ preserves these identities because its
+coefficient vector is a multiple of the third finite-difference vector.
+Consequently the compressed identity, $J_z$ and $J_z^2$ have targets
+$I_k,0,cI_k$. Parity kills the first-step spin operators, and the phase
+recurrence kills every $J_+^2$ cross term. Together with their adjoints
+and the Casimir identity, these are exactly second-order anticoherence
+for the entire complex span.
+
+Here is a finite exact polynomial certificate of positivity and phase
+feasibility for all $N$, rather than a check at sampled sizes.
+Let
+\[
+ H=576\bigl(q+\mathbf1_{\rho\ge6}\bigr)^2,\qquad
+ W_\ell(q,i)=H\widetilde w_\ell(x_i).
+\]
+Each $W_\ell$ is a polynomial with integer coefficients. To cover all
+rows $q\ge5$, $0\le i\le q-2$, use four charts in nonnegative variables
+$u,z$:
+\[
+ (i,q)=(0,z+5),\ (1,z+5),\ (2,z+5),\ (u+3,u+z+5).
+\]
+For each of the eight values of $\rho$, every coefficient of each
+substituted $W_\ell$ is nonnegative and its constant coefficient is
+strictly positive.
+
+Define the integer edge polynomials
+\[
+ E_\ell(q,i)=W_\ell(q,i)W_\ell(q,i+1)
+ (r_{i\ell}+1)(r_{i\ell}+2)(N-r_{i\ell})(N-r_{i\ell}-1).
+\]
+They equal $H^2L_{i\ell}^2$. All edges are covered by three charts:
+\[
+ (i,q)=(0,z+5),\ (1,z+5),\ (u+2,u+z+5).
+\]
+In each chart put
+\[
+ F=\left(\sum_\ell E_\ell\right)^2-2\sum_\ell E_\ell^2,
+\]
+and let $A$ be the polynomial obtained by reversing the sign of every
+negative coefficient of $F$ and discarding its nonnegative coefficients.
+Thus $A\ge0$ and $F+A$ has nonnegative coefficients by definition.
+The accompanying verifier checks that every coefficient of
+\[
+ 64E_0E_1E_2E_3-A^2
+\]
+is nonnegative, with a strictly positive constant coefficient, in all
+$8\times3$ edge charts. Therefore
+\[
+ F+8\sqrt{E_0E_1E_2E_3}>0.
+\]
+For positive $\lambda_\ell=\sqrt{E_\ell}$ this expression factors as
+\[
+ \prod_{\ell=0}^3\left(\sum_{m=0}^3\lambda_m-2\lambda_\ell\right).
+\]
+At most one factor can be nonpositive, so positivity of the product gives
+all four strict quadrilateral inequalities. Rescaling yields the same
+inequalities for $L_{i\ell}$, exactly the strict overlap condition for
+the two diagonal-length intervals used in the phase recurrence.
+All coefficient checks use integer arithmetic and are reproducible from
+the formulas above; the certificate records the charts and polynomials.
+\end{proof}
+
+\paragraph{An explicit first-order parent.}
+In every four-level row block, $1<x_i<2$, so the first two magnetic values
+are positive and the last two negative. Write its diagonal $J_z$ block as
+$\operatorname{diag}(D_+,-D_-)$ with positive diagonal $2\times2$ matrices.
+For the already constructed $u_i=(u_+,u_-)$, let
+$p=D_+^{1/2}u_+$ and $n=D_-^{1/2}u_-$. The zero first moment gives
+$\|p\|=\|n\|>0$. In two dimensions define
+$p^\perp=(-\overline p_2,\overline p_1)$ and likewise $n^\perp$.
+The vector
+\[
+ v_i=(D_+^{-1/2}p^\perp,D_-^{-1/2}n^\perp)
+\]
+satisfies $u_i^\dagger J_zv_i=v_i^\dagger J_zv_i=0$ and is independent
+of $u_i$. Orthogonalizing it against $u_i$ preserves all these identities.
+The planes $\operatorname{span}(u_i,v_i)$ have disjoint supports; all their
+Dicke levels have the same parity. Their direct sum is therefore a
+$2k$-dimensional first-order AC parent containing the second-order code.
+All steps involve rational operations, conjugation and square roots.
+
+\paragraph{Improvement and limits.}
+This strengthens the earlier universal four-band bound
+$\lfloor N/8\rfloor-3$ by two dimensions. Combined with the separated
+triple prescription it gives
+\[
+ K(N,2)\ge\max\left\{
+ \left\lfloor\frac{N+3}{9}\right\rfloor,
+ \left\lfloor\frac N8\right\rfloor-1\right\}\qquad(N\ge40).
+\]
+For instance, the old combined lower bound at $N=104$ was eleven;
+the present exact construction gives twelve. The slope $1/8$ is
+unchanged, and the construction does not attain the known general
+upper bound with asymptotic slope $1/5$.
+\end{document}

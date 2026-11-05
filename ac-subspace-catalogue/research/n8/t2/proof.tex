@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{margin=1in}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\HS}{\mathrm{HS}}
+\begin{document}
+\title{Eight symmetric qubits: second- and third-order anticoherent subspaces have maximum dimension one}
+\author{Exact catalogue calculation}
+\date{}
+\maketitle
+
+\paragraph{Claim.}
+For pure symmetric eight-qubit subspaces,
+\[
+ k_{\max}(8,2)=k_{\max}(8,3)=1.
+\]
+The upper bound below applies to arbitrary complex subspaces. No choice of support, symmetry, real coefficients, or Majorana multiplicities is assumed.
+
+\paragraph{1. A hypothetical two-dimensional subspace leaves a pure complement.}
+The symmetric Hilbert space is the spin-$j=4$ representation, of dimension nine. Let $P$ be the orthogonal projector onto a hypothetical two-dimensional second-order anticoherent subspace. Polarization of the anticoherence conditions gives
+\[
+ PJ_aP=0,\qquad PJ_aJ_bP=\frac{j(j+1)}3\delta_{ab}P
+ =\frac{20}{3}\delta_{ab}P,
+ \qquad a,b\in\{x,y,z\}.
+\]
+For any orthonormal basis $u_1,u_2$ of its range, the eight vectors
+\[
+ u_r,\quad \sqrt{\frac3{20}}J_xu_r,\quad
+ \sqrt{\frac3{20}}J_yu_r,\quad
+ \sqrt{\frac3{20}}J_zu_r,\qquad r=1,2,
+\]
+are mutually orthonormal. Hence, with $\Phi(X)=\sum_aJ_aXJ_a$,
+\[
+ Q=I-P-\frac3{20}\Phi(P)
+\]
+is an orthogonal rank-one projector and $PQ=0$.
+
+\paragraph{2. Recovering $P$ from the multipoles of $Q$.}
+Write $X=\sum_{L=0}^8 X_L$ for the Hilbert--Schmidt orthogonal decomposition into irreducible spin-tensor ranks. The Casimir identity gives
+\[
+ \Phi(X_L)=\left(20-\frac{L(L+1)}2\right)X_L.
+\]
+Consequently, for $L>0$,
+\[
+ Q_L=\left(\frac{3L(L+1)}{40}-4\right)P_L,
+ \qquad P_L=\beta_L Q_L,
+ \qquad \beta_L=\frac{40}{3L(L+1)-160}.
+\]
+All denominators are nonzero for $1\le L\le8$. At rank zero,
+$P_0=2I/9$ and $Q_0=I/9$, so set $\beta_0=2$.
+Since $P_1=P_2=0$, also $Q_1=Q_2=0$: the complementary pure state is second-order anticoherent.
+Define
+\[
+ a_L=\|Q_L\|_{\HS}^2\ge0,\qquad a_0=\frac19.
+\]
+Then
+\[
+ a_1=a_2=0,\qquad
+ X:=\Tr(PQ)=\sum_{L=0}^8\beta_La_L=0,\qquad
+ Y:=\Tr(P^2)=\sum_{L=0}^8\beta_L^2a_L=2.
+\]
+
+\paragraph{3. An exact two-copy identity.}
+Let $Q=|q\rangle\langle q|$ and let $p_J$ be the total-spin-$J$ probability in $|q\rangle\otimes|q\rangle$. Only $J=0,2,4,6,8$ occur, since the two copies are identical. For Hilbert--Schmidt orthonormal spin tensors,
+\[
+ a_L=\sum_{J\in\{0,2,4,6,8\}}F_{LJ}p_J,
+ \qquad
+ F_{LJ}=(2L+1)
+ \begin{Bmatrix}4&4&J\\4&4&L\end{Bmatrix},
+ \qquad \sum_Jp_J=1.
+\]
+This can equivalently be obtained by evaluating
+$\sum_M T_{LM}\otimes T_{LM}^\dagger$ on a highest-weight vector of each total-spin sector. The accompanying verifier computes all 45 coefficients by rational highest-weight sums, without invoking a Wigner or Clebsch--Gordan library.
+
+Substitution of these rational coefficients gives the following identity for every pure $Q$ and the operator $P$ reconstructed above:
+\begin{align*}
+20925216a_5={}&10544114
+ +\frac{5610400200}{121}a_1
+ -\frac{315270952920}{5041}a_2\\
+ &+25055422X-5551945Y.
+\end{align*}
+It is an identity in each of the five total-spin sectors, not a numerical inequality. The complete rational matrix and all five coefficient checks accompany this proof.
+For the hypothetical subspace, $a_1=a_2=X=0$ and $Y=2$. Dividing the resulting equality by 96 yields
+\[
+ \boxed{\quad 0=5831+217971a_5.\quad}
+\]
+The right-hand side is strictly positive because $a_5\ge0$. This contradiction excludes every two-dimensional second-order anticoherent subspace.
+
+\paragraph{4. Attainment and third order.}
+The normalized state
+\[
+ |\psi\rangle=\sqrt{\frac5{24}}
+ \bigl(|D_8^{(0)}\rangle+|D_8^{(8)}\rangle\bigr)
+ -\sqrt{\frac7{12}}|D_8^{(4)}\rangle
+\]
+is third-order anticoherent. Its Dicke support gaps are four, so all off-diagonal moments through rank three vanish. Symmetry makes the odd diagonal moments vanish, and
+$\langle J_z^2\rangle=20/3$. Alternatively, its complete two- and three-qubit reduced matrices are checked exactly by Dicke splitting in the verifier.
+Thus dimension one is attained at both orders. A third-order subspace is also second-order, so the exclusion proves both claimed maxima.
+\end{document}

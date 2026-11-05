@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "sourceSha256": "87b52ea03775ba8b7fb10465a5da33ab1060d7f0b890753cbbd76c874816ab6b",
+  "method": "Independent normalized-Dicke partial-trace splitting; all ordered basis cross matrices and all their scalar entries are checked exactly, as are basis orthogonality and rank.",
+  "subspaces": [
+    {
+      "id": "radical-n12-k2-t2",
+      "n": 12,
+      "dimension": 2,
+      "claimedOrder": 2,
+      "verifiedAchievedOrder": 2,
+      "passed": true,
+      "orthonormal": true,
+      "fullRank": true,
+      "matrixElementsChecked": 36,
+      "violations": [],
+      "firstFailedOrder": 3,
+      "failureAtNextOrder": {
+        "basisA": 0,
+        "basisB": 0,
+        "reducedRow": 0,
+        "reducedColumn": 0,
+        "value": "-9/440"
+      },
+      "rigorousMaximumDimensionUpperBound": 3,
+      "maximalDimensionProven": false
+    },
+    {
+      "id": "radical-n13-k2-t3",
+      "n": 13,
+      "dimension": 2,
+      "claimedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "passed": true,
+      "orthonormal": true,
+      "fullRank": true,
+      "matrixElementsChecked": 64,
+      "violations": [],
+      "firstFailedOrder": 4,
+      "failureAtNextOrder": {
+        "basisA": 0,
+        "basisB": 0,
+        "reducedRow": 0,
+        "reducedColumn": 0,
+        "value": "1/880"
+      },
+      "rigorousMaximumDimensionUpperBound": 2,
+      "maximalDimensionProven": true,
+      "maximalityProof": "The exact basis spans a 2-dimensional 3-AC subspace. Eq. (52) bounds any such subspace by floor((13−3+1)/(3+1))=2; the tensor-Gram bound is 3. The attained dimension equals the best bound."
+    },
+    {
+      "id": "radical-n18-k2-t3",
+      "n": 18,
+      "dimension": 2,
+      "claimedOrder": 3,
+      "verifiedAchievedOrder": 3,
+      "passed": true,
+      "orthonormal": true,
+      "fullRank": true,
+      "matrixElementsChecked": 64,
+      "violations": [],
+      "firstFailedOrder": 4,
+      "failureAtNextOrder": {
+        "basisA": 0,
+        "basisB": 0,
+        "reducedRow": 0,
+        "reducedColumn": 0,
+        "value": "7/1440"
+      },
+      "rigorousMaximumDimensionUpperBound": 4,
+      "maximalDimensionProven": false
+    }
+  ]
+}

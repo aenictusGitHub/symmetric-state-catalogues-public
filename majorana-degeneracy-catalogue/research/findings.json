@@ -1,0 +1,532 @@
+{
+  "sources": {
+    "mes-2014": {
+      "file": "PRA90_032314(2014).pdf",
+      "title": "Multiqubit symmetric states with maximally mixed one-qubit reductions",
+      "authors": [
+        "D. Baguette",
+        "T. Bastin",
+        "J. Martin"
+      ],
+      "doi": "10.1103/PhysRevA.90.032314"
+    },
+    "symmetries-2015": {
+      "file": "PRA92_052333(2015).pdf",
+      "title": "Anticoherence of spin states with point-group symmetries",
+      "authors": [
+        "D. Baguette",
+        "F. Damanet",
+        "O. Giraud",
+        "J. Martin"
+      ],
+      "doi": "10.1103/PhysRevA.92.052333"
+    },
+    "measures-2017": {
+      "file": "PRA96_032304(2017).pdf",
+      "title": "Anticoherence measures for pure spin states",
+      "authors": [
+        "D. Baguette",
+        "J. Martin"
+      ],
+      "doi": "10.1103/PhysRevA.96.032304"
+    }
+  },
+  "definitions": [
+    {
+      "id": "partition",
+      "statement": "For N Majorana points counted with repetitions, the decreasing multiplicity list lambda=(m1,...,md), sum mi=N, is the degeneracy partition; d is the number of distinct points and maximal point multiplicity g=max mi.",
+      "source": "mes-2014",
+      "pdfPage": 4,
+      "location": "SectionIII, afterEq24"
+    },
+    {
+      "id": "slocc-invariant",
+      "statement": "Invertible symmetric local filters act by a Mobius transformation on Majorana points and preserve their multiplicities. Thus a partition is constant within a symmetricSLOCCclass. It does not generally specify the class: d<=3 gives a singleclass, d>3 gives infinitelymanyclasses.",
+      "source": "mes-2014",
+      "pdfPage": 4,
+      "location": "SectionIII; also symmetries-2015p7"
+    },
+    {
+      "id": "ac-not-slocc-invariant",
+      "statement": "Containing an AC representative does not make every state in aSLOCCclass AC. AC is preserved by collective rotations; eachSLOCCclass has at most one1-AC representative up to localunitaries.",
+      "source": "symmetries-2015",
+      "pdfPage": 7,
+      "location": "SectionIV, openingparagraphs"
+    },
+    {
+      "id": "pole-conditioning",
+      "statement": "Rotate a point of multiplicityg to the southpole. In the source's increasing-m spinbasis, impose c_m=0 for m=-j,...,-j+g-1. These zeros impose multiplicity at leastg; one must check the next coefficient and all other roots before claiming the exactmaximal multiplicity.",
+      "source": "measures-2017",
+      "pdfPage": 9,
+      "location": "SectionIVB, paragraphafterFigure6"
+    },
+    {
+      "id": "convention",
+      "statement": "Catalogue normalizedDicke convention is |D_N^r>=|j,j-r>, j=N/2. Source AppendixA lists increasing spinm, so its arrays must be reversed when copied into increasingDickeindexr. Multiplicity is unchanged by reflection/rotation, but coefficients should still carry an explicit convention.",
+      "source": "measures-2017",
+      "pdfPage": 11,
+      "location": "Appendixopeningparagraph; alsoPRR2022p3Eq22"
+    }
+  ],
+  "rigorousRestrictions": [
+    {
+      "id": "half-bound",
+      "scope": "All pure symmetric states; and theirSLOCCclasses",
+      "statement": "If any Majoranapoint has multiplicitym>=N/2, theSLOCCclass contains no1-ACstate, except for partition(N/2,N/2) whenN iseven. In thatexception theACrepresentative isbalancedDicke, up torotation.",
+      "status": "publishedproof",
+      "source": "mes-2014",
+      "pdfPage": 4,
+      "location": "SectionIII, Nonexistencecriterion anditsproof"
+    },
+    {
+      "id": "higher-than-one",
+      "scope": "Any t>=2",
+      "statement": "ThebalancedDicke exception is1-AC butnot2-AC; therefore everyt>=2ACstate must have allmultiplicities strictlysmallerthanN/2.",
+      "status": "publishedstatementwithdirectproof",
+      "source": "symmetries-2015",
+      "pdfPage": 7,
+      "location": "SectionIVA"
+    },
+    {
+      "id": "cyclic-existence",
+      "scope": "SLOCCclasses containing a C_q-symmetric state, q>=2",
+      "statement": "If everymultiplicity is<N/2 and theclass contains a C_q-symmetric state, it contains aunique(up toLU)1-ACrepresentative withthesameC_qsymmetry. It isconstructed bythepositive root ofsum_k(N-2k)|d_k|^2 y^k=0. This is anexistenceclaim about aclass, not anACclaim about everyclassmember and not a theorem about higherACorders.",
+      "status": "publishedproof",
+      "source": "symmetries-2015",
+      "pdfPage": 7,
+      "location": "SectionIVA,Eqs41-42"
+    },
+    {
+      "id": "moment-reduction",
+      "scope": "A t-ACstate witha pointofmultiplicityg",
+      "statement": "Afterrotation to apole, Dickeprobabilities have truncatedsupport. DiagonalACconditions make theirfirstt moments equalto theuniformdistribution on0,...,N. This supplies rigorouslynecessary classicalmomentconstraints.",
+      "status": "directdeductionfrompublishedcharacterization",
+      "source": "symmetries-2015",
+      "pdfPage": 4,
+      "location": "Eqs16-17"
+    },
+    {
+      "id": "two-ac-bound",
+      "scope": "t>=2",
+      "statement": "g<=(N-1)/3. In apoleframe with excitationX in[0,N-g], 2ACrequires EX=N/2 andvarX=N(N+2)/12. The elementaryvariancebound varX<=(EX)(N-g-EX) gives theclaim. Equality atN=3g+1 forces a two-pointdistribution and isattainedbyEq60.",
+      "status": "independentcataloguededuction; notclaimedasaprooftheoreminPRA96",
+      "source": "measures-2017",
+      "pdfPage": 9,
+      "location": "Eq60 suppliesattainment; momentcharacterizationfromsymmetries-2015p4"
+    }
+  ],
+  "figure6": {
+    "source": "measures-2017",
+    "pdfPage": 9,
+    "location": "Figure6 and SectionIVB",
+    "nRange": [
+      2,
+      12
+    ],
+    "readingMethod": "Rendered the originalPDF at300dpi and visually inspected individual bar positions and color-coded heights.",
+    "render": "figure6.png",
+    "reportedSearchRange": {
+      "n": [
+        2,
+        20
+      ],
+      "t": [
+        1,
+        5
+      ]
+    },
+    "definition": "Largest point multiplicity among t-AC states located by the paper's numerical optimization.",
+    "threshold": "abs(A_t^R-1)<1e-10",
+    "zeroMeaning": "No convergence to an anticoherent state, not a proof of nonexistence.",
+    "maximalityStatus": "Numerical search results; a found bar alone supplies neither a rigorous upper bound on multiplicity nor an exact witness.",
+    "rows": [
+      {
+        "n": 2,
+        "reportedGmax": {
+          "1": 1,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 3,
+        "reportedGmax": {
+          "1": 1,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 4,
+        "reportedGmax": {
+          "1": 2,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 5,
+        "reportedGmax": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 6,
+        "reportedGmax": {
+          "1": 3,
+          "2": 1,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 7,
+        "reportedGmax": {
+          "1": 3,
+          "2": 2,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 8,
+        "reportedGmax": {
+          "1": 4,
+          "2": 2,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 9,
+        "reportedGmax": {
+          "1": 4,
+          "2": 2,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 10,
+        "reportedGmax": {
+          "1": 5,
+          "2": 3,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 11,
+        "reportedGmax": {
+          "1": 5,
+          "2": 3,
+          "3": 2,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "n": 12,
+        "reportedGmax": {
+          "1": 6,
+          "2": 3,
+          "3": 2,
+          "4": 1,
+          "5": 1
+        }
+      }
+    ]
+  },
+  "exactFamilies": [
+    {
+      "id": "balanced-dicke",
+      "n": "evenN>=2",
+      "t": 1,
+      "g": "N/2",
+      "partition": "(N/2,N/2)",
+      "coefficients": {
+        "N/2": "1"
+      },
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 9,
+      "location": "Eq58",
+      "notes": "Uniquenessatthehalf-bound followsfrommes-2014p4;not2AC."
+    },
+    {
+      "id": "odd-one-ac-max",
+      "n": "oddN>=3",
+      "t": 1,
+      "g": "(N-1)/2",
+      "partition": "((N-1)/2,1^((N+1)/2))",
+      "coefficients": {
+        "0": "1/sqrt(N+1)",
+        "(N+1)/2": "sqrt(N/(N+1))"
+      },
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 9,
+      "location": "Eq59",
+      "notes": "Anexactmaximalmultiplicitywitness;doNOTtreatitasauniquenessclassificationforoddN."
+    },
+    {
+      "id": "two-ac-extremal-degeneracy",
+      "n": "N=3g+1,g>=1",
+      "t": 2,
+      "g": "g",
+      "partition": "(g,1^(2g+1))",
+      "coefficients": {
+        "0": "sqrt((g+1)/(4g+2))",
+        "2g+1": "sqrt((3g+1)/(4g+2))"
+      },
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 9,
+      "location": "Eq60",
+      "notes": "Theother2g+1 roots are simple and formaregularpolygon. Thepaper describesthesizesasnumericallysmallestfound;themomentbound independentlyproves thisthresholdforgiven g."
+    },
+    {
+      "id": "octahedron",
+      "n": 6,
+      "t": 3,
+      "g": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficients": {
+        "1": "1/sqrt(2)",
+        "5": "1/sqrt(2)"
+      },
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 10,
+      "location": "Eq61"
+    },
+    {
+      "id": "n12-four-ac-family",
+      "n": 12,
+      "t": 4,
+      "g": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)*exp(I*theta)/5",
+        "11": "sqrt(7)/5"
+      },
+      "parameter": "0<=theta<pi/2",
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 10,
+      "location": "Eq62",
+      "notes": "At theta=pi/2, the endpoint becomes the5-ACicosahedralstate."
+    },
+    {
+      "id": "icosahedron",
+      "n": 12,
+      "t": 5,
+      "g": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficients": {
+        "1": "sqrt(7)/5",
+        "6": "I*sqrt(11)/5",
+        "11": "sqrt(7)/5"
+      },
+      "basis": "normalizedDicke",
+      "status": "publishedexact",
+      "source": "measures-2017",
+      "pdfPage": 10,
+      "location": "Eq62andSectionIVB5"
+    }
+  ],
+  "numericalAppendixExamples": [
+    {
+      "n": 11,
+      "t": 3,
+      "reportedG": 2,
+      "status": "publishednumericalcoefficients",
+      "source": "measures-2017",
+      "pdfPage": 11,
+      "location": "AppendixA,EqA1",
+      "originalSpinAscendingCoefficients": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0.6189711605133,
+          0.3210948626046
+        ],
+        [
+          0.0035795645781,
+          -0.005571932846
+        ],
+        [
+          5.96970141e-05,
+          0.0009612745249
+        ],
+        [
+          0.074728061421,
+          0.0848752159787
+        ],
+        [
+          -0.098250832667,
+          0.0704276863999
+        ],
+        [
+          -0.004358698832,
+          -0.006121053115
+        ],
+        [
+          0.0169591633687,
+          0.044920520687
+        ],
+        [
+          0.6727762527486,
+          -0.173404352179
+        ],
+        [
+          0.0053207161522,
+          0.0351899547234
+        ],
+        [
+          -0.001014420524,
+          -0.000272398051
+        ]
+      ],
+      "normalizedDickeCoefficients": [
+        [
+          -0.001014420524,
+          -0.000272398051
+        ],
+        [
+          0.0053207161522,
+          0.0351899547234
+        ],
+        [
+          0.6727762527486,
+          -0.173404352179
+        ],
+        [
+          0.0169591633687,
+          0.044920520687
+        ],
+        [
+          -0.004358698832,
+          -0.006121053115
+        ],
+        [
+          -0.098250832667,
+          0.0704276863999
+        ],
+        [
+          0.074728061421,
+          0.0848752159787
+        ],
+        [
+          5.96970141e-05,
+          0.0009612745249
+        ],
+        [
+          0.0035795645781,
+          -0.005571932846
+        ],
+        [
+          0.6189711605133,
+          0.3210948626046
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "notes": "Printeddecimalsonly;notanexactalgebraicwitness. Leadingtwozeros inincreasingm imposeapointofmultiplicityatleast2."
+    },
+    {
+      "n": 16,
+      "t": 3,
+      "reportedG": 3,
+      "status": "publishednumericalcoefficients",
+      "source": "measures-2017",
+      "pdfPage": 11,
+      "location": "AppendixA,EqA2",
+      "notes": "Printeddecimalsonly;sourcecallsthisthesmallestsizefoundnumerically."
+    },
+    {
+      "n": 16,
+      "t": 4,
+      "reportedG": 2,
+      "status": "publishednumericalcoefficients",
+      "source": "measures-2017",
+      "pdfPage": 11,
+      "location": "AppendixA,EqA3",
+      "notes": "Printeddecimalsonly;sourcecallsthisthesmallestsizefoundnumerically."
+    }
+  ],
+  "warnings": [
+    "Figure6 is a numericalsearchdiagram; its absenceofbars mustnotbeconvertedinto impossibilitywithoutindependentproof.",
+    "Thepolezero constraint fixesatleastg coincidentpoints. Exactmaximalmultiplicity requirescheckingotherroots andthe nextnonzero coefficient.",
+    "Sameg doesnotmeansamepartition; samepartition doesnotmeansameSLOCCclass whend>3.",
+    "Do notclaim Eq59 exhaustsallmaximal-g oddN1-ACstates: PRA92p8 givesN5,g2 examplesinbothpartitions(2,1,1,1) and(2,2,1).",
+    "A classcontaininga1-ACstate neednotcontainany2-ACstate; itsunique1-ACrepresentative determineswhetherhigherACispossible.",
+    "AppendixA1-A3 are numericalstates, not exactexpressions; rootplots andsmallpurityerrors cannotpromote them toexactexistencecertificates."
+  ]
+}

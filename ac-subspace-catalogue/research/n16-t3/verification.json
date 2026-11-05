@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "n": 16,
+  "t": 3,
+  "dimension": 2,
+  "arithmetic": "Exact rational and radical arithmetic; numerical source comparison is separate.",
+  "orthonormalityEntriesChecked": 4,
+  "fullOrderedCrossReductionEntriesChecked": 64,
+  "displayedPhaseCancellationIdentitiesChecked": 4,
+  "crossReductionIdentity": "R_3(|u_a><u_b|)=delta_ab*I_4/4",
+  "individualExactACOrders": [
+    3,
+    3
+  ],
+  "fourthReductionPurities": [
+    "3457/16562",
+    "3433/16562"
+  ],
+  "upperBound": "6*k <= N = 16",
+  "maximumDimension": 2,
+  "sourceComparison": {
+    "source": "references/ACLiege.jl, \u03a0_16_2_3 at line 901",
+    "sourceSha256": "2e1564c7df76b35e0b7418c29d10c0350bdc888caaa4eddd985cdfe0f85c370d",
+    "convention": "source_a approximately exp(i*chi_a) exp(-i*beta*J_z) u_a, J_z|D_16^r>=(8-r)|D_16^r>",
+    "betaRadians": -0.7306438994490132,
+    "chiRadians": [
+      -5.631327318166528,
+      -5.777878499186769
+    ],
+    "maximumCoefficientErrors": [
+      3.315549079595212e-10,
+      5.097346126920268e-10
+    ],
+    "scope": "Approximate comparison with the supplied numerical vectors. The exact proof uses only the radical identities."
+  },
+  "basisSha256": "4e03fabf74387aabd7983702c29718c6443c653491c2fd1f926a7235842cedc8"
+}

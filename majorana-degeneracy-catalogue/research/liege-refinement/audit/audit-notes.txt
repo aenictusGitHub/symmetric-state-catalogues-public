@@ -1,0 +1,140 @@
+Independent audit of the reported-order Liège refinements
+========================================================
+
+Scope and interpretation
+------------------------
+The primary audit covers all 144 available imported coordinate-state records,
+at each record's original reported order. It makes no higher-order search and
+does not interpret the reported order as a proven maximum. The 16 unmatched
+original Dicke-file alternatives are checked separately and receive no inferred
+Majorana partition.
+
+The high-precision coefficients are numerical vectors. A residual below 1e-60
+does not, by itself, prove that an exact anticoherent state exists nearby. Nor
+does 85-digit serialization assert 85 independently certified digits of a unique
+exact solution: phase, rotations, and other solution freedoms remain. The audit
+verifies the equations actually satisfied by the serialized numerical vector.
+
+Algorithm review
+----------------
+The refiner forms the real residual of rho_t-I/(t+1). Off-diagonal real and
+imaginary parts are weighted by sqrt(2), making its Euclidean norm exactly the
+matrix Hilbert-Schmidt/Frobenius norm. For c_r=x_r+i y_r, the off-diagonal term
+c_r conjugate(c_s) has real part x_r x_s+y_r y_s and imaginary part
+y_r x_s-x_r y_s. The analytic Jacobian in refine.py has the corresponding
+derivatives, including the correct imaginary signs.
+
+A double-precision SVD gives only an approximate inverse. Repeated corrections
+can nonetheless improve a high-precision residual far below double precision:
+the inaccurate inverse changes the convergence rate, not the residual's
+evaluation precision. Rank truncation or stagnation could prevent convergence,
+so the final test must recompute every equation from the serialized coefficients.
+The refiner does this, and this audit independently repeats the calculation at
+110 digits without importing any refiner functions.
+
+Five singular cases use a justified separate construction, not an ordinary
+minimum-norm Newton correction. With n=3g+1, order2, and a g-fold south pole,
+moment saturation forces support {g,n}. The probabilities are
+
+  |c_g|^2 = n/(4g+2),   |c_n|^2 = (g+1)/(4g+2).
+
+Their gap is 2g+1>2, so all off-diagonal entries of rho_2 vanish. The first two
+binomial moments give its three equal diagonal entries. Each retained component
+keeps its original phase, giving the nearest point in this forced two-term family
+for the fixed amplitudes. These five IDs are acs.7.2.2, acs.10.2.3, acs.13.2.4,
+acs.16.2.5, and acs.19.2.6. Their larger corrections are explicitly recorded.
+
+Independent reduced-state check
+------------------------------
+Define z_r=c_r/sqrt(binomial(n,r)). The verifier evaluates directly
+
+  (rho_t)_(a,b) = sqrt(binomial(t,a) binomial(t,b))
+                 sum_(k=0)^(n-t) binomial(n-t,k) z_(a+k) conjugate(z_(b+k)).
+
+It checks normalization separately, evaluates all matrix entries, and records
+the Frobenius residual before and after refinement. Original high-precision
+vectors must agree, up to phase, with the imported 35-digit vectors within1e-33.
+Every output coefficient is read from its decimal string. Component changes are
+reported both before and after global-phase alignment.
+
+Pole roots and the full partition
+--------------------------------
+The polynomial convention is P(z)=sum_r sqrt(binomial(n,r)) c_r z^r, arising
+from the product of the source physical spinors (a_i+b_i z). Its multiplicities
+equal those of the physical constellation. Exact leading zero coefficients
+represent a south-pole cluster; exact trailing zeros represent a north-pole
+cluster. Every repeated source pole is retained as literal decimal zeros.
+The first and last remaining coefficients are nonzero, so those multiplicities
+are exactly the specified values, rather than mere lower bounds.
+
+All remaining roots are checked against the original points, using the chart
+z=-a/b where |z|<=1 and the reciprocal chart w=-b/a otherwise. Centres are rounded
+to rational decimal values; interval arithmetic bounds the rounding difference
+from the original source point. After factoring the exact repeated-pole zeros,
+interval Horner translation gives enclosures B_k for
+
+  P(c+w) = sum_k B_k w^k.
+
+For every remaining source point, the verifier finds a rational radius R with
+
+  upper(|B_0| + sum_(k>=2)|B_k| R^k) < lower(|B_1| R).
+
+Rouche's theorem then gives exactly one root, counting multiplicity, in that
+disk. Inverse stereographic projection maps the disk inside a spherical cap
+of chord radius2R around its rational centre. The verifier also checks, with
+outward interval bounds, that every pair of centre caps is disjoint, including
+caps expressed in opposite charts and the structural poles. The number of
+disks equals the degree after removing the repeated-pole factors. Consequently
+all those remaining roots are simple, and the serialized numerical polynomial
+has the same full partition as the source record. This is a root statement
+about the serialized vector, not an exact anticoherence certificate.
+
+Implementation and portability
+------------------------------
+verify_refinement.py requires only Python's standard library and mpmath.
+verify_alternates.py imports the independent reduction and change routines from
+verify_refinement.py. No source importer or refiner module is imported. Inputs
+are supplied explicitly, and their SHA256 hashes are stored in the reports.
+
+Example commands, from an exported package containing these audit scripts:
+
+  python3 verify_refinement.py --original observations.json \
+    --refined refined.json --out verification.json
+
+  python3 verify_alternates.py --original alternate-inputs.json \
+    --refined alternate-refined.json --out alternate-verification.json
+
+The interval root checks use mpmath.iv at110 decimal digits and directed rounding.
+Printed interval endpoints and ratios are also rounded outward in decimal, using
+the exact binary endpoint numerator and denominator rather than nearest rounding.
+The inequalities have large margins; they do not rely on floating comparisons
+close to equality. Verification results and per-root disk data are retained in
+verification.json, rather than only a success flag.
+
+Results of the complete audit
+-----------------------------
+All144 primary records pass. The worst reported-order Hilbert-Schmidt residual
+decreased from9.06346774220875e-14 to5.87109350591239e-66. The largest final norm
+error is1.05156276677980e-65. The largest phase-aligned coefficient change is
+1.13580250313732e-7, in the singular two-term family correction. The frozen
+originals agree with the imported35-digit vectors to within6.545e-36.
+
+The root audit covers5,437 disjoint simple-root disks and238 structural pole
+roots, for5,675 total Majorana points. The smallest relative Rouche margin is
+greater than0.751; the smallest cap-separation ratio is greater than109,341.
+Every full source partition is preserved by the serialized numerical vector.
+The conservative maximum source-to-root spherical displacement bound is below
+2.01e-6 (approximately2e-6).
+
+All16 download-only Dicke alternates pass, with worst residual1.33308543768092e-70
+and maximum norm error1.97542612203068e-71. Their partitions remain unassigned.
+
+The separately generated75-digit sphere coordinates also pass an independent
+physical-spinor-product reconstruction in verify_points.py. All144 point sets
+reproduce their refined coefficients up to global phase with maximum component
+error1.53792098806346e-66. Their greatest point displacement from the originals
+is1.80121559924813e-7; their maximum unit-radius error is7.666e-76. This consistency
+test is numerical; the independent interval disks establish multiplicities.
+
+  python3 verify_points.py --refined refined.json \
+    --points refined-points.json --out points-verification.json

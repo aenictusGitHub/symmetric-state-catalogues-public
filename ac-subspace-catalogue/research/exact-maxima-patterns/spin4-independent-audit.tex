@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Independent audit of the fourth-order auxiliary-spin bound}
+The bound $10k\le N+10$ for an AC subspace of order at least four and
+$N\ge9$ is valid.  Here is an independent derivation of the normalized
+trace formula, using Cartesian spin contractions instead of summing
+total-spin multiplicities.
+
+Write $q=j(j+1)$ and $Q=s(s+1)$, and let $\tau$ be normalized trace on
+the physical spin-$j$ space.  Rotational covariance and the commutators
+$[J_a,J_b]=i\epsilon_{abc}J_c$ give
+\[
+ \tau(J_aJ_b)=\frac q3\delta_{ab},\qquad
+ \tau(J_aJ_bJ_c)=\frac{iq}{6}\epsilon_{abc}.
+\]
+For four factors, rotational covariance and cyclicity give
+\[
+ \tau(J_aJ_bJ_cJ_d)=
+ A(\delta_{ab}\delta_{cd}+\delta_{ad}\delta_{bc})+
+ B\delta_{ac}\delta_{bd}.
+\]
+The contractions $\sum_{a,b}\tau(J_a^2J_b^2)=q^2$ and
+$\sum_{a,b}\tau(J_aJ_bJ_aJ_b)=q(q-1)$ imply
+\[
+ 12A+3B=q^2,\qquad6A+9B=q(q-1),
+ \qquad
+ A=\frac{q(2q+1)}{30},\quad B=\frac{q(q-2)}{15}.
+\]
+The second contraction follows from
+$\sum_aJ_aJ_bJ_a=(q-1)J_b$, itself obtained by expanding the double
+commutator $\sum_a[J_a,[J_a,J_b]]=2J_b$.
+
+For $X=\sum_a J_a\otimes S_a$, the physical partial traces are scalar:
+\begin{align*}
+ (\tau\otimes\mathrm{id})(I)&=I,&
+ (\tau\otimes\mathrm{id})(X)&=0,\\
+ (\tau\otimes\mathrm{id})(X^2)&=\frac{qQ}{3}I,&
+ (\tau\otimes\mathrm{id})(X^3)&=-\frac{qQ}{6}I,\\
+ (\tau\otimes\mathrm{id})(X^4)&=
+ \frac{qQ\bigl((3q-1)Q-q+2\bigr)}{15}I.
+\end{align*}
+For example, the cubic identity uses
+$\sum_{abc}\epsilon_{abc}S_aS_bS_c=iQI$; the quartic one uses
+$\sum_{ab}S_aS_bS_aS_b=Q(Q-1)I$.
+At $s=9/2$, $Q=99/4$, these reproduce exactly the four moments in
+\texttt{spin4-proof.tex}.
+
+Put
+\[
+ x_r=jr+\frac{r(r+1)-99/4}{2},
+ \qquad r=-9/2,-7/2,\ldots,9/2,
+\]
+and
+\[
+ F(x)=(x-x_{-9/2})(x-x_{-3/2})(x-x_{-1/2})(x-x_{7/2}).
+\]
+Applying the Cartesian moment formulas to the coefficients of $F$
+gives, independently of any spectral trace sum,
+\[
+ c=(\tau\otimes\mathrm{id})(F(X))/I
+ =\frac{9(j+1)(4j^3+724j^2+2637j+6750)}{20}>0.
+\]
+The Casimir identity $2X=(J+S)^2-J^2-S^2$ gives the displayed
+eigenvalues.  They strictly increase since
+$x_{r+1}-x_r=j+r+1>0$ for $j\ge9/2$.
+The lower roots include the first node; the two middle roots are
+adjacent nodes; the last root is the penultimate node.  Hence
+$F(x_r)\le0$ for every $r<9/2$, and so $F(x_r)-c<0$ there.
+At the top node,
+\[
+ F(x_{9/2})-c=
+ \frac{9j(596j^3+4972j^2+14489j+11688)}{20}>0.
+\]
+
+Fourth-order anticoherence makes the compression of $F(X)-cI$ to
+$C\otimes V_{9/2}$ zero.  All the spectral signs above are strict.
+Projection from that $10k$-dimensional isotropic subspace onto the
+positive spectral space is injective: a nonzero kernel vector would
+lie entirely in the negative space and have strictly negative quadratic
+form.  The positive spectral space is the top spin-$j+9/2$ sector,
+of dimension $N+10$, proving $10k\le N+10$.
+
+The accompanying audit script checks the Cartesian contractions, the
+resulting trace polynomial, all spectral signs and the top eigenvalue
+symbolically.  No construction or general optimality assertion follows
+from this upper bound alone.
+\end{document}

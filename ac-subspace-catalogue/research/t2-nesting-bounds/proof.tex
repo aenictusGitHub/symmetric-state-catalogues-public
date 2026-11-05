@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Certified second-order AC subspaces from variable first-order parents}
+\author{}\date{}\maketitle
+
+\begin{theorem}
+There exist complex second-order anticoherent subspaces of dimension five
+at $N=35$ and dimension six at $N=42$. In combination with the established
+unrestricted upper bounds,
+\[
+ \boxed{5\le K(35,2)\le8,\qquad6\le K(42,2)\le9.}
+\]
+Their Dicke coefficients are specified analytically as rational combinations
+of square roots and the unique real zero of an explicit rational quadratic
+system in a certified box. Short expressions in radicals and optimality
+of either dimension are not asserted.
+\end{theorem}
+
+\section{A family of first-order parents}
+Let $j=N/2$ and use normalized Dicke states $e_r=|D_N^{(r)}\rangle$, with
+$J_ze_r=(j-r)e_r$. Restrict to the parity space
+\[
+ \mathcal H_{\mathrm{even}}=\operatorname{span}\{e_0,e_2,e_4,\ldots\}.
+\]
+Since $J_x$ and $J_y$ change excitation parity, their compressions to this
+space vanish. A subspace of this parity space is therefore first-order AC
+if and only if its $J_z$ compression vanishes.
+
+For $N=35$ the parity space has dimension eighteen and the restricted
+$J_z$ has signature $(9,9)$. For $N=42$ these numbers are twenty-two and
+$(11,11)$. In both cases there is no zero eigenvalue. Order the positive
+and negative magnetic levels so that
+\[
+ J_z|_{\mathcal H_{\mathrm{even}}}=
+ \begin{pmatrix}D_+&0\\0&-D_-\end{pmatrix},\qquad D_+,D_->0,
+\]
+where both blocks have size $d=9$ or $11$ respectively. Every unitary
+matrix $T\in U(d)$ gives a first-order parent through the graph
+\[
+ G_T=\begin{pmatrix}D_+^{-1/2}\\D_-^{-1/2}T\end{pmatrix},
+ \qquad
+ V_T=G_T(G_T^\dagger G_T)^{-1/2}.
+\]
+Indeed $V_T^\dagger V_T=I_d$ and $G_T^\dagger J_zG_T=I-T^\dagger T=0$.
+The other two first-order compressions vanish by parity.
+
+Conversely, every $J_z$-isotropic subspace of the parity space is contained
+in one of these $d$-dimensional graphs. Its projection onto the positive
+levels is injective. Multiplying its positive and negative components by
+$D_+^{1/2}$ and $D_-^{1/2}$ gives two isometric copies of the same subspace,
+since all polarized $J_z$ matrix elements vanish. The isometry between
+these copies extends to a unitary $T$ on the full $d$-dimensional spaces.
+This proves the containment claim.
+
+Thus parity-supported second-order construction is equivalent to nesting
+inside a \emph{variable} analytical first-order parent from this family.
+It does not restrict to one previously selected parent. These parents are
+maximal within the parity space; their dimensions nine and eleven are
+smaller than the unrestricted first-order maxima twelve and fifteen.
+No classification of all first-order subspaces outside this parity space
+is assumed.
+
+\section{The complete second-order polynomial system}
+Write $c=j(j+1)/3$ and let the $k$ candidate vectors be the columns of $B$.
+Their first- and second-rank spin compressions are exactly the conditions
+\[
+ B^\dagger B=I_k,\quad B^\dagger J_zB=0,\quad
+ B^\dagger(J_z^2-cI)B=0,\quad B^\dagger J_+^2B=0.
+ \tag{1}
+\]
+All operators shifting excitation by one, including $J_+$ and
+$\{J_z,J_+\}$, already have zero compression by parity. Together with
+the Casimir relation and adjoints, (1) is therefore equivalent to the
+full second-order conditions, including every cross term.
+
+Let $p=\lfloor N/2\rfloor+1$ denote the parity-space dimension, and write
+\[
+ B_{ra}=\begin{cases}
+ \displaystyle\frac{\sqrt{\binom Nr}}{2^{e_r}}z_{ra},&r\text{ even},\\
+ 0,&r\text{ odd},
+ \end{cases}
+ \qquad z_{ra}=x_{ra}+iy_{ra}.
+ \tag{2}
+\]
+The nonnegative integer exponents $e_r$ are specified in each certificate.
+All real and imaginary parts of the following matrices are rational
+quadratic polynomials in the $2pk$ real coordinates:
+\[
+ \begin{aligned}
+ G&=B^\dagger B-I_k,&
+ Z&=B^\dagger J_zB/j,\\
+ Q&=B^\dagger(J_z^2-cI)B/j^2,&
+ H&=B^\dagger J_+^2B/j^2.
+ \end{aligned}
+\]
+The denominator cancellation in the last matrix follows from
+\[
+ \sqrt{\binom Nr\binom N{r+2}}
+ \sqrt{(r+1)(r+2)(N-r)(N-r-1)}
+ =\binom Nr(N-r)(N-r-1).
+\]
+Use the real diagonals and complex upper triangles of $G,Z,Q$, and all
+ordered complex entries of $H$. This gives exactly $5k^2$ real equations.
+Multiplication by
+\[
+ L=3N^2\,2^{2\max_r e_r}
+\]
+makes every polynomial coefficient integral. The files
+\texttt{n35-k5/system.json} and \texttt{n42-k6/system.json} list every
+constant and quadratic monomial of these systems in an explicit coordinate
+order.
+
+\section{Exact rational existence certificates}
+For $N=35$, fix fifty-five of the 180 real coordinates to the rational
+values in the certificate and retain 125 unknowns. For $N=42$, fix
+eighty-four of 264 coordinates and retain 180 unknowns. These choices
+leave square polynomial systems $F:\mathbb R^m\to\mathbb R^m$:
+\[
+\begin{array}{c|ccc}
+(N,k)&\text{real unknowns }m&\text{fixed rational coordinates}&\text{equations}\\\hline
+(35,5)&125&55&125\\
+(42,6)&180&84&180.
+\end{array}
+\]
+Let $x_0$ be the rational center, $A$ the rational inverse approximation,
+and set $\rho=10^{-50}$. All these data are explicitly supplied in
+\texttt{certificate.json}; the center denominator is $10^{80}$.
+Define
+\[
+ \varepsilon=\|I-AF'(x_0)\|_\infty,\qquad
+ \eta=\|AF(x_0)\|_\infty,\qquad
+ M=\|A\|_\infty.
+\]
+If a polynomial is written $F_a=\gamma_a+\sum_{u\le v}w_{auv}x_ux_v$
+in the full coordinate list, with some coordinates fixed, take
+\[
+ H_*=\max_a 2\!\sum_{\substack{u\le v\\u,v\ \mathrm{unknown}}}|w_{auv}|.
+\]
+It bounds the Lipschitz constant of the Jacobian in the infinity norm.
+The exact integer products and rational comparisons in both certificates
+give the following convenient outward bounds:
+\[
+ \varepsilon<4\cdot10^{-13},\qquad
+ \eta<5\cdot10^{-81},\qquad
+ q:=\varepsilon+MH_*\rho<4\cdot10^{-13},
+\]
+\[
+ \eta+q\rho<4\cdot10^{-63}<\rho.
+ \tag{3}
+\]
+These displayed bounds are consequences of the exact rational quantities
+saved in the reports, not rounded residuals used as an existence test.
+
+For $\mathcal T(x)=x-AF(x)$, equations (3) show that $\mathcal T$ is a
+strict contraction mapping the closed box
+$\|x-x_0\|_\infty\le\rho$ into itself. Banach's theorem gives its unique
+fixed point. Since $\varepsilon<1$, the square matrix $AF'(x_0)$ is
+invertible and hence $A$ is invertible; therefore that fixed point is
+exactly a zero of $F$. This proves existence of the bases (2).
+The exported parameter intervals are checked to be exactly
+$[x_{0,u}-\rho,x_{0,u}+\rho]$, and each coefficient formula is associated
+with those same coordinates and fixed rational values.
+
+\section{Direct whole-subspace cross-reduction audit}
+For any Dicke vector $b$, define
+\[
+ (M_2(b))_{as}=b_{a+s}
+ \sqrt{\frac{\binom2a\binom{N-2}s}{\binom N{a+s}}},
+ \qquad0\le a\le2,\quad0\le s\le N-2.
+\]
+For basis columns $b_i,b_l$, the reduced cross operator is
+$R_{il}=M_2(b_i)M_2(b_l)^\dagger$. Direct substitution of (2) reconstructs
+all its entries as rational polynomials, apart from the harmless known
+factors $\sqrt{\binom2a\binom2b}$.
+
+For example, with $\lambda=N/[4(N-1)]$, direct binomial identities give
+\[
+\begin{aligned}
+ (R_{il})_{00}-\delta_{il}/3
+   &=\overline{G_{il}/3+Z_{il}/2+\lambda Q_{il}},\\
+ (R_{il})_{11}-\delta_{il}/3
+   &=2\overline{G_{il}/6-\lambda Q_{il}},\\
+ (R_{il})_{22}-\delta_{il}/3
+   &=\overline{G_{il}/3-Z_{il}/2+\lambda Q_{il}},\\
+ (R_{il})_{02}&=\lambda\overline{H_{il}},\qquad
+ (R_{il})_{20}=\lambda H_{li}.
+\end{aligned}
+\]
+The other four entries vanish by parity. Thus every zero of the complete
+system satisfies
+\[
+ R_{il}=\delta_{il}I_3/3.
+\]
+The independent verifier reconstructs these polynomial identities for
+all 225 ordered complex cross-reduction entries at $(35,5)$ and all 324
+at $(42,6)$. It also checks Hermitian completion of the selected moment
+equations, every exported coefficient, the isolating intervals, and all
+rational contraction inequalities without importing the constructor or
+the primary verifier.
+
+Consequently every normalized complex superposition in either span is
+second-order AC. The certified lower bounds are five and six. The separate
+known inequalities $4k\le N-2$ and $5k\le N+5$ give upper bounds eight and
+nine respectively, leaving the intervals stated in the theorem.
+
+\section{Reproducibility and scope}
+Run \texttt{verify\_parity\_certificate.py} on either certificate, and
+\texttt{verify\_parity\_independently.py} on either example directory.
+The complete basis definitions, polynomial systems, rational centers,
+inverse matrices, exact bounds and verification reports are retained.
+Numerical searches suggested the starting points; they are not used as
+existence proofs. No universal saturation family or stronger unrestricted
+upper bound follows from these two examples.
+\end{document}

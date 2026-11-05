@@ -1,0 +1,170 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\begin{document}
+\title{Fifteen symmetric qubits: the maximum third-order anticoherent subspace dimension is one}
+\author{Exact catalogue calculation}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+For complex linear subspaces of the symmetric fifteen-qubit Hilbert space,
+\[
+ \boxed{K(15,3)=1.}
+\]
+In particular, there is no two-dimensional subspace every normalized vector of which is third-order anticoherent.
+\end{theorem}
+This is a finite exact certificate proof for arbitrary complex subspaces. No reality, Dicke-support, or constellation-symmetry assumption is imposed. The accompanying \texttt{certificate.json} specifies integer highest-weight columns, 1197 necessary contraction equations, and exact dyadic coefficients of a strictly positive combination of those equations. The independent verifier reconstructs the physical equations and checks positivity using rational arithmetic. Numerical optimization was used to find the certificate, but is not a premise of its verification.
+
+\section*{1. From an AC subspace to a four-copy moment}
+Let $V=V_{15/2}$, $\dim V=16$, and suppose $P$ projects onto a two-dimensional third-order AC subspace. Polarizing the moment conditions gives
+\[
+ PT_{\ell q}P=0,\qquad 1\le\ell\le3,\quad -\ell\le q\le\ell,
+\]
+including every cross matrix element, for irreducible spin tensors $T_{\ell q}$.
+Choose arbitrary complex orthonormal $u,v\in\operatorname{Ran}P$ and set
+\[
+ w=u\wedge v=\frac{u\otimes v-v\otimes u}{\sqrt2},
+ \qquad R_w=|w\rangle\langle w|.
+\]
+Direct expansion, with $\Tr_1$ tracing the first tensor factor, yields
+\[
+ \Tr_1[(T\otimes I)R_w]
+ =\frac12\bigl(\Tr(PT)P-PTP\bigr).
+\]
+Thus this contraction vanishes for all the tensors above.
+
+The normalized vector $\omega=w\otimes w$ belongs to
+\[
+ W=\mathbb S_{(2,2)}V
+ =\Sym^2(\Lambda^2V)\ominus\Lambda^4V,
+ \qquad \dim W=\frac{16^2(16^2-1)}{12}=5440.
+\]
+Indeed it is antisymmetric in each pair, symmetric under exchange of the two pairs, and its exterior-four component vanishes because $w\wedge w=0$. Average its projector over collective rotations:
+\[
+ X=\int_{\mathrm{SU}(2)}D_{15/2}(g)^{\otimes4}
+ |\omega\rangle\langle\omega|
+ D_{15/2}(g)^{\dagger\otimes4}\,dg.
+\]
+Then $X\succeq0$, $\Tr X=1$, $\operatorname{Ran}X\subseteq W$, and $X$ is rotation invariant. Before averaging, first-leg contraction factors as the zero contraction of $R_w$ tensored with $R_w$. Rotation preserves the spaces of tensors of each rank, so
+\begin{equation}\label{eq:contraction}
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes3})X]=0,
+ \qquad\ell=1,2,3.
+\end{equation}
+Only these necessary component-zero equations will be used.
+
+\section*{2. Complete invariant coordinates}
+Decompose $W=\bigoplus_J V_J\otimes\mathbb C^{m_J}$. Its multiplicities, listed in terms of doubled spin, are
+\[
+\begin{array}{c|rrrrrrrrrrrrrr}
+2J&0&4&6&8&10&12&14&16&18&20&22&24&26&28\\\hline
+m_J&5&10&4&13&8&15&10&17&11&17&12&16&11&15
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrrrrrrrr}
+2J&30&32&34&36&38&40&42&44&46&48&50&52&56\\\hline
+m_J&9&12&7&9&5&7&3&5&2&3&1&2&1
+\end{array}
+\]
+In particular,
+\[
+ \sum_J(2J+1)m_J=5440,\quad \sum_Jm_J=230,
+ \quad \sum_J\frac{m_J(m_J+1)}2=1428.
+\]
+The independent verifier obtains the multiplicities directly from weight counts in $\Sym^2(\Lambda^2V)-\Lambda^4V$. It checks every supplied highest-weight vector and all lowering relations, so the representation is complete.
+
+The Hermitian multiplicity matrices of an invariant $X$ may initially be complex. All the chosen coupled basis vectors and the component-zero equations are real. Averaging each multiplicity matrix with its entrywise conjugate preserves positivity, the physical trace, and the equations. Therefore a hypothetical complex code supplies real symmetric positive semidefinite multiplicity matrices. This step does not assume that $u$ and $v$ have real amplitudes.
+
+\section*{3. Physical integer coordinates}
+Use magnetic labels $m=i-15/2$ and set
+$b_i=\sqrt{\binom{15}{i}}\,|i\rangle$, $0\le i\le15$.
+Canonical four-letter words are $(a,b,c,d)$ with $a<b$, $c<d$, and $(a,b)\le(c,d)$ lexicographically. The associated vector is the signed sum of distinct words under interchange within each pair and exchange of the pairs. Its squared norm is
+\[
+ \left\|E_{abcd}\right\|^2=
+ \begin{cases}4,&(a,b)=(c,d),\\8,&(a,b)\ne(c,d),\end{cases}
+ \ \binom{15}{a}\binom{15}{b}\binom{15}{c}\binom{15}{d}.
+\]
+Membership in $W$ additionally imposes the Pl\"ucker relation
+\[
+ x_{abcd}-x_{acbd}+x_{adbc}=0\qquad(a<b<c<d).
+\]
+The certificate gives an integer matrix $H_J$ whose columns are mutually orthogonal highest-weight vectors in this basis. Define
+\[
+ U_{J,M}=\frac{J_-^{J-M}}{(J-M)!}H_J.
+\]
+Every entry remains integer, and
+\[
+ U_{J,M}^\dagger U_{J,M}
+ =\binom{2J}{J-M}H_J^\dagger H_J.
+\]
+The scalar product here is the physical one with the word norms just specified. Each identity is checked independently.
+
+Let $d_J$ be the positive integer denominator scale supplied for each block. Every real invariant operator can be written uniquely as
+\[
+ X=\sum_J d_J\sum_{M=-J}^{J}
+ \frac{U_{J,M}B_JU_{J,M}^{T}}{\binom{2J}{J-M}},
+ \qquad B_J=B_J^T.
+\]
+Since the intertwiners have full column rank,
+\[
+ X\succeq0\quad\Longleftrightarrow\quad B_J\succeq0\text{ for every }J.
+\]
+The 1428 upper-triangular entries of these matrices form a vector $x$; an off-diagonal coordinate contributes both symmetric entries.
+
+For $z=2i-15$ and $v=15\cdot17=255$, component-zero spin tensors of ranks one, two and three may be scaled to the diagonal polynomials
+\[
+ f_1=z,\qquad f_2=3z^2-v,\qquad
+ f_3=z(5z^2-3v+4).
+\]
+Direct first-leg contraction in the physical word basis therefore turns selected entries of \eqref{eq:contraction} into an exact integer system
+\[
+ Ax=0,\qquad A\in\mathbb Z^{1197\times1428}.
+\]
+For definiteness, each selected row is divided by the positive greatest common divisor of its integer coefficients. The certificate records its tensor rank, output doubled magnetic weight, and two output indices. The independent checker reconstructs all rows rather than accepting a stored numerical matrix. Completeness of this selected set of equations is not required: every genuine code satisfies every selected row.
+
+\section*{4. An exact positive combination}
+The certificate supplies a dyadic rational vector $\lambda\in\mathbb Q^{1197}$.
+Form the exact row vector $\lambda^TA$, and define symmetric matrices $Z_J$ by using its diagonal coordinate as $(Z_J)_{aa}$ and half its off-diagonal coordinate as $(Z_J)_{ab}$. Thus, identically,
+\[
+ \lambda^TAx=\sum_J\Tr(Z_JB_J).
+\]
+The decisive exact certificate is
+\[
+ \boxed{Z_J\succ0\quad\text{for all 27 blocks}.}
+\]
+For each matrix the verifier computes a rational, square-root-free factorization
+\[
+ Z_J=L_JD_JL_J^T,
+\]
+checks the reconstruction, and checks that every diagonal entry of $D_J$ is strictly positive. Across all blocks this gives 230 exact positive pivots. Positive diagonal rescalings of the blocks may be used to keep intermediate coefficients smaller; they preserve positive definiteness. Rounded eigenvalues are not used in these sign decisions.
+
+A hypothetical code would consequently give
+\[
+ 0=\lambda^TAx=\sum_J\Tr(Z_JB_J),
+ \qquad Z_J\succ0,\quad B_J\succeq0.
+\]
+Each summand is nonnegative, and vanishes only if $B_J=0$. Hence every $B_J=0$, so $X=0$, contradicting $\Tr X=1$.
+This excludes dimension two. Every higher-dimensional AC subspace contains a two-dimensional one, and is excluded as well. No rank determination, numerical optimization status, or numerical kernel is needed for this final proof.
+
+\section*{5. Exact attainment of dimension one}
+In normalized Dicke notation, define
+\[
+ |\psi\rangle=\frac{3\bigl(|D_{15}^{(0)}\rangle+|D_{15}^{(15)}\rangle\bigr)
+ +\sqrt{35}\bigl(|D_{15}^{(4)}\rangle+|D_{15}^{(11)}\rangle\bigr)}{\sqrt{88}}.
+\]
+Its squared probabilities are $(9,35,35,9)/88$, so it is normalized.
+The support gaps are at least four, eliminating all nonzero magnetic
+tensor components through rank three. Reflection-symmetric probabilities give
+\[
+ \langle J_z\rangle=\langle J_z^3\rangle=0,
+ \qquad \langle J_z^2\rangle=\frac{85}{4}
+ =\frac{(15/2)(17/2)}3.
+\]
+Thus its span is third-order AC, proving the lower bound one and completing the theorem.
+
+\paragraph{Reproducibility and positive control.}
+The exact proof data are \texttt{certificate.json}; \texttt{verify\_independently.py} reconstructs the representation, physical contractions, positive row combination, and rational positivity checks. A separate positive control uses the known exact complex two-dimensional third-order AC subspace at $N=13$. Its complete compression and wedge-contraction identities hold, including after a generic collective rotation. This numerical rotation check supplements the exact proof; it is not used in the exclusion.
+\end{document}

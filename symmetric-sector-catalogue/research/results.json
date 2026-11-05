@@ -1,0 +1,837 @@
+{
+  "method": "Exact symbolic reduced purities and binomial inversion from normalized sparse Dicke amplitudes",
+  "scope": "Attainment only. Global optimality requires the separate bound certificate.",
+  "allPassed": true,
+  "verifiedCount": 27,
+  "separateSharpBoundCount": 11,
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sympy": "1.12",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "elapsedSeconds": 0.12249620794318616,
+  "inputs": {
+    "files": [
+      {
+        "path": "research/search/recovered-witnesses.json",
+        "sha256": "837b4156a224f3c37ddeb449319b5dc43c9964f8112abaadab079ce74a299385"
+      },
+      {
+        "path": "research/certificates/sharp-certificates.json",
+        "sha256": "05159fea1201604ae941abe233abbf29bb98516141ed854a32b0564a3659b43b"
+      }
+    ],
+    "exactRecoveredCount": 19,
+    "skippedNonExactIds": [
+      "n10-s4-min",
+      "n11-s4-min",
+      "n11-s6-min",
+      "n12-s6-min",
+      "n12-s8-min"
+    ],
+    "manualSource": "Exact displayed draft Appendix A states plus coherent products; separate sharp certificate targets. All exact coefficient definitions are embedded in this standalone script."
+  },
+  "results": [
+    {
+      "id": "n7-s6-max",
+      "n": 7,
+      "k": 6,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "49",
+      "expectedValue": "49",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(2)/3",
+        "3": "sqrt(14)/6",
+        "6": "sqrt(14)/6"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "3/10",
+        "3/10",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n8-s4-min",
+      "n": 8,
+      "k": 4,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "310/21",
+      "expectedValue": "310/21",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "2": "4/(3*sqrt(3))",
+        "5": "2/(3*sqrt(3))",
+        "8": "sqrt(7)/(3*sqrt(3))"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "29/98",
+        "43/147",
+        "29/98",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n8-s6-max",
+      "n": 8,
+      "k": 6,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "364/3",
+      "expectedValue": "364/3",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(30)/12",
+        "4": "sqrt(21)/6",
+        "8": "sqrt(30)/12"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "7/30",
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n8-s7-max",
+      "n": 8,
+      "k": 7,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "592/7",
+      "expectedValue": "592/7",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(7)/(3*sqrt(3))",
+        "3": "2/(3*sqrt(3))",
+        "6": "4/(3*sqrt(3))"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "29/98",
+        "43/147",
+        "29/98",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n9-s6-min",
+      "n": 9,
+      "k": 6,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "420/11",
+      "expectedValue": "420/11",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(286)/22",
+        "8": "3*sqrt(22)/22"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "65/121",
+        "111/242",
+        "107/242",
+        "105/242",
+        "105/242",
+        "107/242",
+        "111/242",
+        "65/121",
+        "1"
+      ]
+    },
+    {
+      "id": "n10-s5-max",
+      "n": 10,
+      "k": 5,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "252",
+      "expectedValue": "252",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n10-s7-max",
+      "n": 10,
+      "k": 7,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "320",
+      "expectedValue": "320",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1/2",
+        "5": "sqrt(2)/2",
+        "10": "1/2"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "73/216",
+        "37/144",
+        "2/9",
+        "649/3024",
+        "2/9",
+        "37/144",
+        "73/216",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n10-s8-max",
+      "n": 10,
+      "k": 8,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "405",
+      "expectedValue": "405",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "1": "sqrt(5)/4",
+        "5": "sqrt(6)/4",
+        "9": "sqrt(5)/4"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "3/14",
+        "17/84",
+        "3/14",
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n10-s8-min",
+      "n": 10,
+      "k": 8,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "21",
+      "expectedValue": "21",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(6)/3",
+        "9": "sqrt(3)/3"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "29/50",
+        "13/25",
+        "229/450",
+        "113/225",
+        "1/2",
+        "113/225",
+        "229/450",
+        "13/25",
+        "29/50",
+        "1"
+      ]
+    },
+    {
+      "id": "n10-s9-max",
+      "n": 10,
+      "k": 9,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "880/3",
+      "expectedValue": "880/3",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "2": "1/2",
+        "5": "sqrt(2)/2",
+        "8": "1/2"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1921/5400",
+        "129/400",
+        "166/525",
+        "953/3024",
+        "166/525",
+        "129/400",
+        "1921/5400",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s5-max",
+      "n": 11,
+      "k": 5,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "462",
+      "expectedValue": "462",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s6-max",
+      "n": 11,
+      "k": 6,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "462",
+      "expectedValue": "462",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s7-max",
+      "n": 11,
+      "k": 7,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "250060/517",
+      "expectedValue": "250060/517",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "1": "sqrt(8366)/94",
+        "8": "sqrt(470)/94"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "417833/534578",
+        "172001/267289",
+        "2628793/4811202",
+        "2326195/4811202",
+        "198107/437382",
+        "198107/437382",
+        "2326195/4811202",
+        "2628793/4811202",
+        "172001/267289",
+        "417833/534578",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s8-max",
+      "n": 11,
+      "k": 8,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "5271/11",
+      "expectedValue": "5271/11",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "2": "1"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "85/121",
+        "1621/3025",
+        "1369/3025",
+        "1261/3025",
+        "49/121",
+        "49/121",
+        "1261/3025",
+        "1369/3025",
+        "1621/3025",
+        "85/121",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s8-min",
+      "n": 11,
+      "k": 8,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "77",
+      "expectedValue": "77",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(570)/30",
+        "10": "sqrt(330)/30"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "5/9",
+        "223/450",
+        "217/450",
+        "71/150",
+        "211/450",
+        "211/450",
+        "71/150",
+        "217/450",
+        "223/450",
+        "5/9",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s9-max",
+      "n": 11,
+      "k": 9,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "134645/239",
+      "expectedValue": "134645/239",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(67159)/478",
+        "8": "15*sqrt(717)/478"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "3458341/6911641",
+        "2313001/6911641",
+        "179771/628331",
+        "14963903/55293128",
+        "14623703/55293128",
+        "14623703/55293128",
+        "14963903/55293128",
+        "179771/628331",
+        "2313001/6911641",
+        "3458341/6911641",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s10-max",
+      "n": 11,
+      "k": 10,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "19459/35",
+      "expectedValue": "19459/35",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(2282)/70",
+        "9": "sqrt(2618)/70"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "31109/61250",
+        "41443/109375",
+        "529933/1531250",
+        "514327/1531250",
+        "4073/12250",
+        "4073/12250",
+        "514327/1531250",
+        "529933/1531250",
+        "41443/109375",
+        "31109/61250",
+        "1"
+      ]
+    },
+    {
+      "id": "n11-s10-min",
+      "n": 11,
+      "k": 10,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "11",
+      "expectedValue": "11",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s4-min",
+      "n": 12,
+      "k": 4,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "99",
+      "expectedValue": "99",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "13/84",
+        "1/6",
+        "1/5",
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s5-max",
+      "n": 12,
+      "k": 5,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "792",
+      "expectedValue": "792",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s6-max",
+      "n": 12,
+      "k": 6,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "924",
+      "expectedValue": "924",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s7-max",
+      "n": 12,
+      "k": 7,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "946",
+      "expectedValue": "946",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "1": "1"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "61/72",
+        "13/18",
+        "5/8",
+        "5/9",
+        "37/72",
+        "1/2",
+        "37/72",
+        "5/9",
+        "5/8",
+        "13/18",
+        "61/72",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s8-max",
+      "n": 12,
+      "k": 8,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "15405/11",
+      "expectedValue": "15405/11",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "2": "sqrt(7)/4",
+        "6": "sqrt(2)/4",
+        "10": "sqrt(7)/4"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "155/726",
+        "97/484",
+        "1007/5082",
+        "97/484",
+        "155/726",
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s9-max",
+      "n": 12,
+      "k": 9,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "1280",
+      "expectedValue": "1280",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "1/2",
+        "6": "sqrt(2)/2",
+        "12": "-1/2"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "41/121",
+        "125/484",
+        "1931/8712",
+        "3607/17424",
+        "8245/40656",
+        "3607/17424",
+        "1931/8712",
+        "125/484",
+        "41/121",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s10-max",
+      "n": 12,
+      "k": 10,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "1606",
+      "expectedValue": "1606",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "1": "sqrt(7)/5",
+        "6": "sqrt(11)/5",
+        "11": "-sqrt(7)/5"
+      },
+      "separateSharpBoundCertificate": true,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "13/84",
+        "1/6",
+        "1/5",
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s10-min",
+      "n": 12,
+      "k": 10,
+      "mode": "min",
+      "normalization": "1",
+      "exactValue": "594/19",
+      "expectedValue": "594/19",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(247)/19",
+        "11": "sqrt(114)/19"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "425/722",
+        "195/361",
+        "383/722",
+        "189/361",
+        "375/722",
+        "187/361",
+        "375/722",
+        "189/361",
+        "383/722",
+        "195/361",
+        "425/722",
+        "1"
+      ]
+    },
+    {
+      "id": "n12-s11-max",
+      "n": 12,
+      "k": 11,
+      "mode": "max",
+      "normalization": "1",
+      "exactValue": "1270976/1191",
+      "expectedValue": "1270976/1191",
+      "attainmentVerifiedExact": true,
+      "exactCoefficients": {
+        "0": "sqrt(680458)/1191",
+        "10": "13*sqrt(4367)/1191"
+      },
+      "separateSharpBoundCertificate": false,
+      "globalOptimalityProvenByThisScript": false,
+      "exactReducedPurities": [
+        "1",
+        "116924737/229793922",
+        "89262817/229793922",
+        "9102985/25532658",
+        "39606785/114896961",
+        "78099691/229793922",
+        "2882003/8510886",
+        "78099691/229793922",
+        "39606785/114896961",
+        "9102985/25532658",
+        "89262817/229793922",
+        "116924737/229793922",
+        "1"
+      ]
+    }
+  ],
+  "scriptSHA256": "fdd982d384cce0901245dd3146ee6c41648819b84f96d1dfa547ba4759428cb1"
+}

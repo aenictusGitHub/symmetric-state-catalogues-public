@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,hyperref}
+\usepackage[margin=1in]{geometry}
+\title{An exact algebraic three-dimensional second-order anticoherent subspace at seventeen qubits}
+\date{29 October 2026}
+\begin{document}
+\maketitle
+\paragraph{Result.} There exists a three-dimensional subspace of the symmetric
+seventeen-qubit Hilbert space all of whose normalized vectors are second-order
+anticoherent. The coefficients below are specified as an isolated real algebraic
+root, with a rational contraction certificate proving existence. This is an exact
+existence result, not a conclusion from a small numerical residual. The
+auxiliary-spin inertia theorem added on 30 October 2026 gives $4k\le N-2$
+for every $N\ge8$. At $N=17$ this yields $k\le3$, so the construction is
+globally optimal: $k_{\max}(17,2)=3$. The independent general proof is supplied
+in the catalogue's \texttt{research/ancilla-inertia/proof.tex}.
+
+\section{Coefficients and rational defining equations}
+Use normalized Dicke states $|D_{17}^{(r)}\rangle$, with $r$ the excitation number,
+and put
+\[
+ s_r=\left\lfloor\sqrt{\binom{17}{r}}+\frac12\right\rfloor.
+\]
+The ordered supports of three basis vectors are
+\[
+ R_0=R_1=(2,5,8,11,14,17),\qquad R_2=(0,3,6,9,12,15).
+\]
+For $a=0,1,2$ and $\ell=0,\ldots,5$, define
+\[
+ z_{a,R_{a,\ell}}=
+ \frac{\xi_{12a+2\ell}+i\xi_{12a+2\ell+1}}{s_{R_{a,\ell}}},
+ \qquad
+ |u_a\rangle=\sum_{r=0}^{17}\sqrt{\binom{17}{r}}z_{a,r}|D_{17}^{(r)}\rangle,
+\]
+with $z_{a,r}=0$ outside $R_a$. The coordinates $\xi_i$ are real. Fix
+\[
+ \xi_1=\xi_3=\xi_{12}=\xi_{13}=\xi_{15}=\xi_{25}=0,
+ \qquad
+ \xi_9=-\frac{191}{1000},\quad
+ \xi_{22}=\frac{41}{500},\quad
+ \xi_{32}=-\frac{34}{125}.
+\]
+The remaining 27 coordinates are the unique root in the rational box specified
+in \texttt{certificate.json} of the following 27 real quadratic equations.
+Write
+\[
+ H_{ab}^{ij}=\sum_{\ell=0}^{15}\binom{15}{\ell}
+ z_{a,i+\ell}\overline{z_{b,j+\ell}}.
+\]
+Impose:
+\begin{align*}
+ H_{aa}^{ii}&=\frac{1}{3\binom2i}
+ &&(a=0,1,2;\ i=0,1,2),\\
+ H_{01}^{ii}&=0 &&(i=0,1,2),\\
+ H_{a2}^{ij}&=0
+ &&(a=0,1;\ (i,j)=(0,1),(1,2),(2,0)).
+\end{align*}
+The first line supplies nine real equations. Real and imaginary parts of the
+second and third lines supply six and twelve real equations respectively. All
+coefficients are rational because of the chosen Dicke scaling.
+
+The symmetric two-qubit reduction obeys
+\[
+ \bigl[R_2(|u_a\rangle\langle u_b|)\bigr]_{ij}
+ =\sqrt{\binom2i\binom2j}\,H_{ab}^{ij}.
+\]
+The supports and Hermitian conjugation show that every other required real or
+imaginary component is either identically zero or one of the selected equations,
+possibly with its sign reversed. The verifier reconstructs all 162 real and
+imaginary components and checks this implication exactly. Hence any real root
+of the defining system gives
+\[
+ R_2(|u_a\rangle\langle u_b|)=\delta_{ab}\frac{I_3}{3}.
+\]
+Taking traces gives $\langle u_b|u_a\rangle=\delta_{ab}$, so the three vectors are
+orthonormal and span a genuine three-dimensional subspace. Expanding any
+normalized superposition establishes the full-subspace anticoherence condition.
+
+\section{Rational certificate of a root}
+Let $F:\mathbb R^{27}\to\mathbb R^{27}$ be the selected polynomial system after
+substituting the nine fixed coordinates, in the variable order recorded in the
+certificate. The same file supplies an explicit rational center $x_0$, a rational
+matrix $A$ approximating $DF(x_0)^{-1}$, and the box radius
+\[
+ r=10^{-60}.
+\]
+Every entry is a rational number; the long lists specify the algebraic root
+unambiguously and are included in the downloadable certificate. Consider the
+map $T(x)=x-AF(x)$. In the infinity norm define
+\[
+ \eta=\|AF(x_0)\|_\infty,\quad
+ \delta=\|I-A\,DF(x_0)\|_\infty,\quad
+ H=\max_i\sum_{j,k}\left|\frac{\partial^2F_i}{\partial x_j\partial x_k}\right|,
+ \quad q=\delta+r\|A\|_\infty H.
+\]
+The Hessians are constant because the system is quadratic. Exact rational
+arithmetic proves
+\[
+ \delta<1,\qquad \eta<10^{-90},\qquad q<10^{-56},
+ \qquad \eta+qr<r.
+\]
+Therefore $T$ maps the closed box $\|x-x_0\|_\infty\le r$ into itself and is a
+strict contraction there. Banach's theorem gives a unique fixed point.
+The inequality $\delta<1$ implies that $A$ is nonsingular, so this fixed point is
+a root of $F$. Moreover $\|I-A\,DF(x)\|_\infty<1$ throughout the box, so the root's
+Jacobian is nonsingular. An isolated nonsingular solution of a rational
+polynomial system has algebraic coordinates. This justifies the exact algebraic
+interpretation of the displayed components.
+
+\section{Portable verification and provenance}
+Run \texttt{python verify.py} with SymPy available. The verifier uses no numerical
+root finder. It reconstructs the rational equations, checks their completeness,
+recomputes every contraction bound, and checks that \texttt{basis.json}'s exact
+coefficient expressions and decimal previews agree with this same definition.
+The function \texttt{verify()} also exposes the result to the catalogue audit.
+The \texttt{parameterIntervals} in the basis record include every coordinate,
+including the fixed ones, for independent interval checks of derived quantities.
+
+The source's numerical support pattern guided the choice of coordinates and the
+initial approximation. Three free coordinates were fixed rationally, so equality
+to the original decimal span is not asserted. The exact existence claim rests
+on the rational certificate above. No claim of literature priority is made.
+\end{document}

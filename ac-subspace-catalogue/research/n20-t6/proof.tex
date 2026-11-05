@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty qubits: maximum pure anticoherence order is five}
+\author{Exact three-copy certificate}
+\date{3 November 2026}
+\maketitle
+\begin{theorem}
+No pure symmetric state of twenty qubits is anticoherent of order six.
+Consequently
+\[
+ \boxed{K(20,t)=0\quad(t\ge6),\qquad t_{\max}(20)=5.}
+\]
+\end{theorem}
+\begin{proof}
+Let $V=V_{10}$ and suppose that a normalized $\psi\in V$ were sixth-order
+anticoherent. Its rotation-averaged three-copy moment
+\[
+ X=\int_{SU(2)}(U_g|\psi\rangle\langle\psi|U_g^\dagger)^{\otimes3}\,dg
+\]
+is positive, has trace one, and is invariant on
+$W=\operatorname{Sym}^3(V)$, of dimension $\binom{23}{3}=1771$.
+For every spin-tensor rank $1\le\ell\le6$,
+\[
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes2})X]=0. \tag{1}
+\]
+Indeed, the first factor contracts to the zero tensor expectation of the
+rotated state. Only necessary equations are being imposed here.
+
+The accompanying certificate gives a complete physical decomposition
+\[
+ W=\bigoplus_J V_J\otimes\mathbb C^{m_J},\qquad
+ \sum_J(2J+1)m_J=1771,
+\]
+with 29 nonempty spin sectors, $\sum_Jm_J=61$, and
+$\sum_Jm_J(m_J+1)/2=108$ real symmetric invariant coordinates.
+For clarity, use $b_i=\sqrt{\binom{20}{i}}|D_{20}^{(i)}\rangle$
+and averaged symmetric words $e_{abc}$, $a\le b\le c$. With occupancies
+$o_i$, their squared norms are
+\[
+ \|e_{abc}\|^2=\frac{\prod_i\binom{20}{i}^{o_i}o_i!}{3!}.
+\]
+The supplied mutually orthogonal integer highest-weight columns $H_J$
+are independently checked in this metric. Their descendants
+$U_{J,s}=J_-^sH_J/s!$ satisfy
+\[
+ U_{J,s}^\dagger U_{J,s}=\binom{2J}{s}H_J^\dagger H_J.
+\]
+Every real invariant operator has unique coordinates
+\[
+ X(B)=\sum_J d_J\sum_{s=0}^{2J}
+ \frac{U_{J,s}B_JU_{J,s}^T}{\binom{2J}{s}},\qquad B_J=B_J^T,
+\]
+where $d_J>0$ are the certificate's denominator scales. Positivity of $X$
+is equivalent to $B_J\succeq0$ for all blocks. The chosen bases, the
+component-zero contractions and the trace are real. Taking real parts of
+complex Hermitian multiplicity matrices preserves all these conditions
+and positivity, so this parametrization loses no hypothetical complex
+state.
+
+The diagonal tensors $T_{\ell0}$ are represented by degree-$\ell$
+polynomials in $2i-20$, orthogonal to all smaller degrees under uniform
+summation over $i=0,\ldots,20$. The certificate selects 95 physical matrix
+elements of (1); each is represented by its primitive integer coefficient
+row $R_a(B)$. Independence or completeness of the selected equations is
+not needed, since every candidate satisfies them.
+
+Positive dyadic diagonal matrices $S_J$, exact rational weights $y_a$,
+and exact rational symmetric matrices $C_J$ are supplied. Define
+\[
+ x_J=d_J(2J+1)S_JB_JS_J\succeq0.
+\]
+The independent verifier reconstructs every equation and the physical
+trace, then verifies coefficientwise the exact identity
+\[
+ \boxed{-\Tr X=\sum_{a=1}^{95}y_aR_a(B)+\sum_J\Tr(C_Jx_J).} \tag{2}
+\]
+All 29 matrices $C_J$ are strictly positive definite, as certified by all
+61 strictly positive rational LDL pivots and exact reconstruction.
+For a candidate state, (1), (2) and $\Tr X=1$ give $-1\ge0$, a
+contradiction. This excludes arbitrary complex sixth-order states;
+higher orders are excluded by nesting. No partial-transpose assumption,
+constellation symmetry or numerical infeasibility claim is used.
+
+For attainment of order five, the supplied Julia source and AC-state
+catalogue contain the normalized state
+\[
+ 75|\psi_5\rangle=
+ \sqrt{561}(|D_{20}^{(0)}\rangle+|D_{20}^{(20)}\rangle)
+ +3\sqrt{209}(|D_{20}^{(5)}\rangle-|D_{20}^{(15)}\rangle)
+ +\sqrt{741}|D_{20}^{(10)}\rangle.
+\]
+Its squared norm is $(2\cdot561+18\cdot209+741)/75^2=1$.
+Reflection-symmetric probabilities cancel odd diagonal moments, and
+\[
+ \langle J_z^2\rangle=110/3,\qquad
+ \langle J_z^4\rangle=7238/3
+\]
+are the normalized spin-ten traces. Support gaps eliminate shifts one
+through four, and the opposite signs at indices five and fifteen cancel
+the shift-five terms pairwise. Hence it is fifth-order AC and proves the
+claimed maximum order five.
+\end{proof}
+\paragraph{Exact verification.}
+\texttt{verify\_independently.py} uses Python's standard library only and
+imports no discovery matrices. It reconstructs 61 highest-weight columns,
+2902 physical Gram identities, every selected contraction equation and
+all 29 physical block traces. The certificate SHA-256 is
+\begin{center}\small\texttt{ac17153ad1fe852658626d7b19d712f49f868bdcb562115851472d310e8afa37}.\end{center}
+Known exact AC5 and AC6 states, generic complex states and generic
+collective rotations provide additional physical embedding controls.
+These diagnostics are separate from the exact proof.
+\end{document}

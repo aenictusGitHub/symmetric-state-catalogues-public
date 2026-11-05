@@ -1,0 +1,166 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Thirteen symmetric qubits cannot be fourth-order anticoherent}
+\author{Exact catalogue calculation}
+\date{31 October 2026}
+\maketitle
+
+\begin{theorem}
+There is no pure fourth-order anticoherent state in the spin-$13/2$
+representation. Consequently,
+\[
+ \boxed{K(13,t)=0\quad\text{for }t\ge4.}
+\]
+The existing exact third-order states show that the largest pure-state
+anticoherence order at thirteen qubits is exactly three.
+\end{theorem}
+
+This is a finite exact linear-algebra proof. The accompanying
+\texttt{certificate.json} specifies integer highest-weight vectors,
+320 necessary equations and an integer basis of their kernel.
+The standard-library-only \texttt{verify\_independently.py} reconstructs
+these equations and the physical trace without importing discovery code.
+No numerical feasibility or symmetry ansatz is a premise of the proof.
+
+\paragraph{1. A necessary four-copy moment.}
+Let $V=V_{13/2}$ and suppose $\psi\in V$ is normalized and fourth-order
+AC. For Hilbert--Schmidt spin tensors, this means
+\[
+ \langle\psi|T_{\ell q}|\psi\rangle=0,
+ \qquad1\le\ell\le4,\quad-\ell\le q\le\ell.
+\]
+Writing $\rho=|\psi\rangle\langle\psi|$, form the Haar average
+\[
+ X=\int_{\mathrm{SU}(2)}(U\rho U^\dagger)^{\otimes4}\,dU.
+\]
+It is supported on $\operatorname{Sym}^4(V)$, has trace one, and is
+rotation invariant. Its support dimension is $\binom{17}{4}=2380$.
+Every rotated state remains fourth-order AC, hence
+\begin{equation}\label{contractions}
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes3})X]=0,
+ \qquad\ell=1,2,3,4.
+\end{equation}
+Only these component-zero contraction equations are needed.
+
+\paragraph{2. Real invariant coordinates.}
+Decompose $\operatorname{Sym}^4(V)=\bigoplus_J V_J\otimes\mathbb C^{m_J}$.
+In increasing order of $2J$, its multiplicities are
+\[
+\begin{array}{c|rrrrrrrrrrrrr}
+2J&0&4&6&8&10&12&14&16&18&20&22&24&26\\\hline
+m_J&2&5&2&6&4&7&5&8&5&8&6&7&5
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+2J&28&30&32&34&36&38&40&42&44&46&48&52\\\hline
+m_J&7&4&5&3&4&2&3&1&2&1&1&1.
+\end{array}
+\]
+These give $\sum_J(2J+1)m_J=2380$ and
+$\sum_Jm_J(m_J+1)/2=331$ real symmetric invariant coordinates.
+The multiplicity matrices of a Hermitian $X$ are Hermitian. Taking their
+entrywise real parts preserves the real contraction equations and physical
+trace in the real bases below. Thus a complex state would still yield
+a real symmetric invariant solution of \eqref{contractions} with trace
+one. The proof does not assume real amplitudes.
+
+\paragraph{3. Rational occupation bases.}
+Choose magnetic labels $m=i-13/2$ and put
+$b_i=\sqrt{\binom{13}{i}}\,|i\rangle$, $0\le i\le13$.
+For an occupation vector $o$ with $\sum_i o_i=4$, let $E_o$ be the
+average of the distinct words containing $o_i$ copies of $b_i$. Then
+\[
+ \|E_o\|^2=\frac{\prod_i\binom{13}{i}^{o_i}o_i!}{4!}.
+\]
+The collective raising coefficient for moving $i$ to $i+1$ is
+$o_i(i+1)$; the lowering coefficient for moving $i$ to $i-1$ is
+$o_i(14-i)$. All are integers.
+For each $J$ the certificate supplies an integer highest-weight matrix
+$H_J$. The checker verifies the highest-weight equations, column
+independence, completeness of the decomposition, and the ladder relations.
+Let
+\[
+ U_{J,M}=\frac{J_-^{J-M}}{(J-M)!}H_J,
+ \qquad M=J,J-1,\ldots,-J.
+\]
+An invariant operator has coefficient matrices in the $E_o$ basis of
+the form
+\[
+ \sum_J d_J\sum_{M=-J}^{J}
+ \frac{U_{J,M}B_J U_{J,M}^{T}}{\binom{2J}{J-M}},
+\]
+where $B_J$ is real symmetric and $d_J$ is a positive integer scale
+clearing all displayed binomial denominators. The entries of all $B_J$
+form a vector $\mathbf b\in\mathbb R^{331}$.
+
+The component-zero spin tensors may be scaled to the following diagonal
+polynomials in $z=2i-13$, with $v=13\cdot15=195$:
+\[
+ f_1=z,\quad f_2=3z^2-v,\quad
+ f_3=z(5z^2-3v+4),\quad
+ f_4=35z^4-(30v-100)z^2+3v(v-8).
+\]
+The verifier also checks their trace orthogonality, including the constant.
+Contracting the first factor of $E_o$ against $\langle i|$ gives
+\[
+ \frac{o_i}{4}\sqrt{\binom{13}{i}}\,E_{o-e_i}.
+\]
+Consequently every matrix entry in \eqref{contractions} is a rational
+linear equation in $\mathbf b$. Multiplying by common denominators
+and removing row gcds produces the selected integer matrix
+$A\in\mathbb Z^{320\times331}$ stored in the certificate.
+
+\paragraph{4. Exact trace annihilation.}
+The independently reconstructed matrix has rank 320 modulo the prime
+$1000003$. Therefore it has row rank 320 over $\mathbb Q$ and $\mathbb R$.
+The certificate supplies $R\in\mathbb Z^{331\times11}$ satisfying
+\[
+ AR=0,\qquad\operatorname{rank}R=11.
+\]
+Thus $\ker A=\operatorname{im}R$ exactly.
+
+The physical trace is a rational row $\tau$, not an arbitrary
+normalization of multiplicity coordinates. Let $G_J$ be the diagonal
+Gram matrix of the highest-weight occupation basis. For the $J$ block,
+its matrix is
+\[
+ S_J=d_J(2J+1)H_J^T G_J H_J,
+ \qquad\Tr X=\sum_J\Tr(S_JB_J)=\tau\mathbf b.
+\]
+Off-diagonal coordinates therefore have coefficient $2(S_J)_{ab}$;
+diagonal ones have coefficient $(S_J)_{aa}$.
+The independent checker reconstructs the trace by summing every
+descendant word, and separately verifies this highest-weight formula.
+Its final exact identity is
+\[
+ \boxed{\tau R=0.}
+\]
+Every solution of the necessary AC equations consequently obeys
+\[
+ A\mathbf b=0\ \Longrightarrow\ \mathbf b=R\mathbf y
+ \ \Longrightarrow\ \Tr X=\tau R\mathbf y=0.
+\]
+This contradicts $\Tr X=1$, proving the theorem. The argument needs
+neither a numerical rank decision nor a numerical positivity certificate.
+
+\paragraph{Consequences and checks.}
+Higher-order AC implies fourth-order AC, so the exclusion propagates to
+every $t\ge4$. The dimension-two third-order subspace already in the
+catalogue provides exact pure third-order states, giving maximal order
+three. Both pure-state and subspace catalogues are updated consistently.
+
+As separate numerical positive controls, the known exact AC4 states at
+$N=12$ and $N=14$ give invariant moments with trace one and satisfy the
+same contraction construction. These controls supplement, but are not
+used in, the exact contradiction above.
+
+To reproduce the proof, place \texttt{certificate.json} next to
+\texttt{verify\_independently.py} and run the latter with Python 3.
+Only the standard library is required. The report records a SHA-256
+digest tying its successful checks to the exact certificate.
+\end{document}

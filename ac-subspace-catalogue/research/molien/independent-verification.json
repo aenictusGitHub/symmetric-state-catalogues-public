@@ -1,0 +1,1508 @@
+{
+  "passed": true,
+  "inputSha256": "d264cd9721b0ddcd91a96c7952048efee94cd93063f7524b1528ecef3f763dae",
+  "method": "Independent exact rational compressed spin moments J_+^q J_z^p, including every ordered pair of basis vectors; character-average dimensions, rational matrix rank, norms, and exact Dicke conversion. No import from the construction generator.",
+  "subspacesChecked": 65,
+  "groupAndSizeDimensionChecks": 168,
+  "allCatalogueSizesCovered": true,
+  "allNonzeroFamilyComponentsHaveVerifiedBases": true,
+  "exactCompressedMomentEntries": 2580,
+  "exactDickeCoefficientChecks": 3694,
+  "witnesses": [
+    {
+      "id": "molien-quaternion-n4-d2-t1",
+      "n": 4,
+      "group": "quaternion",
+      "dimension": 2,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 10,
+      "exactCompressedMomentEntries": 12,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "4"
+      }
+    },
+    {
+      "id": "molien-quaternion-n6-d1-t3",
+      "n": 6,
+      "group": "quaternion",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 7,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-4"
+      }
+    },
+    {
+      "id": "molien-quaternion-n8-d3-t1",
+      "n": 8,
+      "group": "quaternion",
+      "dimension": 3,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 27,
+      "exactCompressedMomentEntries": 27,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "128/7"
+      }
+    },
+    {
+      "id": "molien-quaternion-n10-d2-t1",
+      "n": 10,
+      "group": "quaternion",
+      "dimension": 2,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 22,
+      "exactCompressedMomentEntries": 12,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "6/5"
+      }
+    },
+    {
+      "id": "molien-quaternion-n12-d4-t1",
+      "n": 12,
+      "group": "quaternion",
+      "dimension": 4,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 4,
+      "characterAverageDimension": 4,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 52,
+      "exactCompressedMomentEntries": 48,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "480/11"
+      }
+    },
+    {
+      "id": "molien-quaternion-n14-d3-t1",
+      "n": 14,
+      "group": "quaternion",
+      "dimension": 3,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 45,
+      "exactCompressedMomentEntries": 27,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "32/13"
+      }
+    },
+    {
+      "id": "molien-quaternion-n16-d5-t1",
+      "n": 16,
+      "group": "quaternion",
+      "dimension": 5,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 5,
+      "characterAverageDimension": 5,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 85,
+      "exactCompressedMomentEntries": 75,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "6144/77"
+      }
+    },
+    {
+      "id": "molien-quaternion-n18-d4-t1",
+      "n": 18,
+      "group": "quaternion",
+      "dimension": 4,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 4,
+      "characterAverageDimension": 4,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 76,
+      "exactCompressedMomentEntries": 48,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "64/17"
+      }
+    },
+    {
+      "id": "molien-quaternion-n20-d6-t1",
+      "n": 20,
+      "group": "quaternion",
+      "dimension": 6,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 6,
+      "characterAverageDimension": 6,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 126,
+      "exactCompressedMomentEntries": 108,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "1594880/12597"
+      }
+    },
+    {
+      "id": "molien-quaternion-n22-d5-t1",
+      "n": 22,
+      "group": "quaternion",
+      "dimension": 5,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 5,
+      "characterAverageDimension": 5,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 115,
+      "exactCompressedMomentEntries": 75,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "6656/1309"
+      }
+    },
+    {
+      "id": "molien-quaternion-n24-d7-t1",
+      "n": 24,
+      "group": "quaternion",
+      "dimension": 7,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 7,
+      "characterAverageDimension": 7,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 175,
+      "exactCompressedMomentEntries": 147,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "884736/4807"
+      }
+    },
+    {
+      "id": "molien-quaternion-n42-d10-t1",
+      "n": 42,
+      "group": "quaternion",
+      "dimension": 10,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 10,
+      "characterAverageDimension": 10,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 430,
+      "exactCompressedMomentEntries": 300,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "67169746944/5726524817"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n2-d1-t1",
+      "n": 2,
+      "group": "quaternion-character",
+      "dimension": 1,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 3,
+      "exactCompressedMomentEntries": 3,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "-1/3"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n4-d1-t1",
+      "n": 4,
+      "group": "quaternion-character",
+      "dimension": 1,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 5,
+      "exactCompressedMomentEntries": 3,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "4"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n6-d2-t1",
+      "n": 6,
+      "group": "quaternion-character",
+      "dimension": 2,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 14,
+      "exactCompressedMomentEntries": 12,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          1,
+          1
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "-1/5"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n8-d2-t1",
+      "n": 8,
+      "group": "quaternion-character",
+      "dimension": 2,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 18,
+      "exactCompressedMomentEntries": 12,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "56/3"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n10-d3-t1",
+      "n": 10,
+      "group": "quaternion-character",
+      "dimension": 3,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 33,
+      "exactCompressedMomentEntries": 27,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "328/315"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n12-d3-t1",
+      "n": 12,
+      "group": "quaternion-character",
+      "dimension": 3,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 39,
+      "exactCompressedMomentEntries": 27,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "4352/99"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n14-d4-t1",
+      "n": 14,
+      "group": "quaternion-character",
+      "dimension": 4,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 4,
+      "characterAverageDimension": 4,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 60,
+      "exactCompressedMomentEntries": 48,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "640/273"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n16-d4-t1",
+      "n": 16,
+      "group": "quaternion-character",
+      "dimension": 4,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 4,
+      "characterAverageDimension": 4,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 68,
+      "exactCompressedMomentEntries": 48,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "36384/455"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n18-d5-t1",
+      "n": 18,
+      "group": "quaternion-character",
+      "dimension": 5,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 5,
+      "characterAverageDimension": 5,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 95,
+      "exactCompressedMomentEntries": 75,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "27008/7293"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n20-d5-t1",
+      "n": 20,
+      "group": "quaternion-character",
+      "dimension": 5,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 5,
+      "characterAverageDimension": 5,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 105,
+      "exactCompressedMomentEntries": 75,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "4786688/37791"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n22-d6-t1",
+      "n": 22,
+      "group": "quaternion-character",
+      "dimension": 6,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 6,
+      "characterAverageDimension": 6,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 138,
+      "exactCompressedMomentEntries": 108,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "161792/31977"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n24-d6-t1",
+      "n": 24,
+      "group": "quaternion-character",
+      "dimension": 6,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 6,
+      "characterAverageDimension": 6,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 150,
+      "exactCompressedMomentEntries": 108,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "9570304/52003"
+      }
+    },
+    {
+      "id": "molien-quaternion-character-n42-d11-t1",
+      "n": 42,
+      "group": "quaternion-character",
+      "dimension": 11,
+      "achievedOrder": 1,
+      "passed": true,
+      "exactPolynomialRank": 11,
+      "characterAverageDimension": 11,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 473,
+      "exactCompressedMomentEntries": 363,
+      "nextOrderTested": 2,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 2,
+        "unnormalizedResidual": "54110487576576/4609852477685"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n6-d1-t3",
+      "n": 6,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 7,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-4"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n8-d1-t3",
+      "n": 8,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 9,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "672/5"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n12-d2-t2",
+      "n": 12,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 26,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          1
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "-32"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n14-d1-t3",
+      "n": 14,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 15,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-2496/385"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n16-d1-t3",
+      "n": 16,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 17,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "150528/65"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n18-d2-t2",
+      "n": 18,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 38,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          1
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "-8"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n20-d2-t2",
+      "n": 20,
+      "group": "tetrahedral",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 42,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          1
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "-4608/85"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n22-d1-t3",
+      "n": 22,
+      "group": "tetrahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 23,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "102912/1463"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n24-d3-t2",
+      "n": 24,
+      "group": "tetrahedral",
+      "dimension": 3,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 75,
+      "exactCompressedMomentEntries": 54,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          2
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "98304/4807"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-n42-d4-t2",
+      "n": 42,
+      "group": "tetrahedral",
+      "dimension": 4,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 4,
+      "characterAverageDimension": 4,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 172,
+      "exactCompressedMomentEntries": 96,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          2
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "-863354880/106328047"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n4-d1-t2",
+      "n": 4,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 5,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (8)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n8-d1-t2",
+      "n": 8,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 9,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (-576/7)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n10-d1-t2",
+      "n": 10,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 11,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (36/5)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n12-d1-t2",
+      "n": 12,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 13,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (640/11)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n14-d1-t2",
+      "n": 14,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 15,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (-2880/91)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n16-d2-t2",
+      "n": 16,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 34,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (2256/1001)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n18-d1-t2",
+      "n": 18,
+      "group": "tetrahedral-character",
+      "dimension": 1,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 19,
+      "exactCompressedMomentEntries": 6,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (224/17)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n20-d2-t2",
+      "n": 20,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 42,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (2927616/20995)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n22-d2-t2",
+      "n": 22,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 46,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (4880/10659)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n24-d2-t2",
+      "n": 24,
+      "group": "tetrahedral-character",
+      "dimension": 2,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 50,
+      "exactCompressedMomentEntries": 24,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (178176/81719)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-tetrahedral-character-n42-d3-t2",
+      "n": 42,
+      "group": "tetrahedral-character",
+      "dimension": 3,
+      "achievedOrder": 2,
+      "passed": true,
+      "exactPolynomialRank": 3,
+      "characterAverageDimension": 3,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 129,
+      "exactCompressedMomentEntries": 54,
+      "nextOrderTested": 3,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 2,
+        "zPower": 1,
+        "unnormalizedResidual": "(0) + (52732231680/2109772301)*I*sqrt(3)"
+      }
+    },
+    {
+      "id": "molien-octahedral-n8-d1-t3",
+      "n": 8,
+      "group": "octahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 9,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "672/5"
+      }
+    },
+    {
+      "id": "molien-octahedral-n12-d1-t3",
+      "n": 12,
+      "group": "octahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 13,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-48/11"
+      }
+    },
+    {
+      "id": "molien-octahedral-n16-d1-t3",
+      "n": 16,
+      "group": "octahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 17,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "150528/65"
+      }
+    },
+    {
+      "id": "molien-octahedral-n18-d1-t3",
+      "n": 18,
+      "group": "octahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 19,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-272/3"
+      }
+    },
+    {
+      "id": "molien-octahedral-n20-d1-t3",
+      "n": 20,
+      "group": "octahedral",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 21,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-2304/323"
+      }
+    },
+    {
+      "id": "molien-octahedral-n24-d2-t3",
+      "n": 24,
+      "group": "octahedral",
+      "dimension": 2,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 50,
+      "exactCompressedMomentEntries": 40,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-33344/81719"
+      }
+    },
+    {
+      "id": "molien-octahedral-n42-d2-t3",
+      "n": 42,
+      "group": "octahedral",
+      "dimension": 2,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 86,
+      "exactCompressedMomentEntries": 40,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-1100429184/6911323055"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n6-d1-t3",
+      "n": 6,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 7,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-4"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n12-d1-t3",
+      "n": 12,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 13,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "2112/5"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n14-d1-t3",
+      "n": 14,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 15,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-2496/385"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n18-d1-t3",
+      "n": 18,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 19,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-372/221"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n20-d1-t3",
+      "n": 20,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 21,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "97280/17"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n22-d1-t3",
+      "n": 22,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 23,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "102912/1463"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n24-d1-t3",
+      "n": 24,
+      "group": "octahedral-sign",
+      "dimension": 1,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 25,
+      "exactCompressedMomentEntries": 10,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-799232/24035"
+      }
+    },
+    {
+      "id": "molien-octahedral-sign-n42-d2-t3",
+      "n": 42,
+      "group": "octahedral-sign",
+      "dimension": 2,
+      "achievedOrder": 3,
+      "passed": true,
+      "exactPolynomialRank": 2,
+      "characterAverageDimension": 2,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 86,
+      "exactCompressedMomentEntries": 40,
+      "nextOrderTested": 4,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 4,
+        "unnormalizedResidual": "-71008/42629217"
+      }
+    },
+    {
+      "id": "molien-icosahedral-n12-d1-t5",
+      "n": 12,
+      "group": "icosahedral",
+      "dimension": 1,
+      "achievedOrder": 5,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 13,
+      "exactCompressedMomentEntries": 21,
+      "nextOrderTested": 6,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 6,
+        "unnormalizedResidual": "-3300/7"
+      }
+    },
+    {
+      "id": "molien-icosahedral-n20-d1-t5",
+      "n": 20,
+      "group": "icosahedral",
+      "dimension": 1,
+      "achievedOrder": 5,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 21,
+      "exactCompressedMomentEntries": 21,
+      "nextOrderTested": 6,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 6,
+        "unnormalizedResidual": "25650000/119"
+      }
+    },
+    {
+      "id": "molien-icosahedral-n24-d1-t5",
+      "n": 24,
+      "group": "icosahedral",
+      "dimension": 1,
+      "achievedOrder": 5,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 25,
+      "exactCompressedMomentEntries": 21,
+      "nextOrderTested": 6,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 6,
+        "unnormalizedResidual": "-412500/437"
+      }
+    },
+    {
+      "id": "molien-icosahedral-n42-d1-t5",
+      "n": 42,
+      "group": "icosahedral",
+      "dimension": 1,
+      "achievedOrder": 5,
+      "passed": true,
+      "exactPolynomialRank": 1,
+      "characterAverageDimension": 1,
+      "orthonormal": true,
+      "exactDickeCoefficientChecks": 43,
+      "exactCompressedMomentEntries": 21,
+      "nextOrderTested": 6,
+      "nextOrderFailure": {
+        "basisPair": [
+          0,
+          0
+        ],
+        "raisingPower": 0,
+        "zPower": 6,
+        "unnormalizedResidual": "-999375000/11951"
+      }
+    }
+  ]
+}

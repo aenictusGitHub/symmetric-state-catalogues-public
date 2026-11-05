@@ -1,0 +1,7139 @@
+{
+  "sourceFile": "/Users/jmartin/Documents/scripts/Julia/ACLiege.jl",
+  "sourceSHA256": "2e1564c7df76b35e0b7418c29d10c0350bdc888caaa4eddd985cdfe0f85c370d",
+  "sourceReadOnly": true,
+  "juliaExecuted": false,
+  "states": [
+    {
+      "id": "acliege-n2-t1",
+      "n": 2,
+      "achievedOrder": 1,
+      "label": "ACLiege analytic representative at n=2",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 126,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        2
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 2,
+        "nextOrderFrobeniusDistanceSquared": "2/3",
+        "exactAchievedOrder": 1
+      },
+      "majoranaPoints": [
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8369701987210297e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 2.6106274353044314e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 2.0,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n2-t1",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n3-t1",
+      "n": 3,
+      "achievedOrder": 1,
+      "label": "ACLiege analytic representative at n=3",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 127,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 2,
+        "nextOrderFrobeniusDistanceSquared": "1/6",
+        "exactAchievedOrder": 1
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49999999999999983,
+          "y": -0.8660254037844387,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5000000000000004,
+          "y": 0.8660254037844384,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.46205952325294e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 1.732050807568877,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n3-t1",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n4-t2",
+      "n": 4,
+      "achievedOrder": 2,
+      "label": "ACLiege analytic representative at n=4",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 128,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "1/2",
+        "0",
+        "sqrt(2)*I/2",
+        "0",
+        "1/2"
+      ],
+      "coefficients": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7071067811865476
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        2,
+        4
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 3,
+        "nextOrderFrobeniusDistanceSquared": "1/4",
+        "exactAchievedOrder": 2
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.5773502691896258,
+          "y": -0.5773502691896257,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.577350269189626,
+          "y": 0.5773502691896257,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5773502691896258,
+          "y": 0.5773502691896257,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5773502691896257,
+          "y": -0.5773502691896258,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(3)*I*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.286753013537303e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 1.632993161855452,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n4-t2",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n5-t1",
+      "n": 5,
+      "achievedOrder": 1,
+      "label": "ACLiege analytic representative at n=5",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 129,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        4
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 2,
+        "nextOrderFrobeniusDistanceSquared": "1/150",
+        "exactAchievedOrder": 1
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49999999999999983,
+          "y": -0.8660254037844387,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5000000000000004,
+          "y": 0.8660254037844384,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.858393677448577e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 1.4142135623730951,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n5-t1-manuscript",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n6-t3",
+      "n": 6,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=6",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 130,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        5
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "2/15",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.810255510298438e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 1.414213562373095,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n6-t3",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n7-t2",
+      "n": 7,
+      "achievedOrder": 2,
+      "label": "ACLiege analytic representative at n=7",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 131,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "-sqrt(14)/6",
+        "0",
+        "0",
+        "-sqrt(14)/6",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6236095644623235,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.6236095644623235,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 3,
+        "nextOrderFrobeniusDistanceSquared": "17/1620",
+        "exactAchievedOrder": 2
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3975280472041896,
+          "y": -0.6885387751912951,
+          "z": -0.6065359072174495,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.795056094408379,
+          "y": -9.736629011598173e-17,
+          "z": -0.6065359072174495,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3975280472041896,
+          "y": 0.6885387751912951,
+          "z": -0.6065359072174495,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9604950569258149,
+          "y": -0.0,
+          "z": 0.2782970456563918,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4802475284629073,
+          "y": -0.8318131195071363,
+          "z": 0.2782970456563918,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.48024752846290786,
+          "y": 0.831813119507136,
+          "z": 0.2782970456563918,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - sqrt(5)*y - 2/7",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.510591864517375e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 1.2014182904747275,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n7-t2-manuscript",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n8-t3",
+      "n": 8,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=8",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 132,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(30)/12",
+        "0",
+        "0",
+        "0",
+        "-sqrt(21)/6",
+        "0",
+        "0",
+        "0",
+        "-sqrt(30)/12"
+      ],
+      "coefficients": [
+        [
+          0.45643546458763845,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7637626158259734,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.45643546458763845,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "7/360",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.5764992317085276,
+          "y": -0.5764992317085275,
+          "z": 0.5790485918115637,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5764992317085275,
+          "y": -0.5764992317085276,
+          "z": 0.5790485918115637,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5764992317085276,
+          "y": 0.5764992317085275,
+          "z": 0.5790485918115637,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5764992317085273,
+          "y": 0.5764992317085276,
+          "z": 0.5790485918115637,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8152930321798691,
+          "y": -0.0,
+          "z": -0.5790485918115639,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.992230011131084e-17,
+          "y": -0.8152930321798691,
+          "z": -0.5790485918115639,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8152930321798691,
+          "y": -9.984460022262168e-17,
+          "z": -0.5790485918115639,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.497669003339325e-16,
+          "y": 0.8152930321798691,
+          "z": -0.5790485918115639,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 14*y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.068200698672157e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 1.152998463417055,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n8-t3-manuscript",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n9-t2",
+      "n": 9,
+      "achievedOrder": 2,
+      "label": "ACLiege analytic representative at n=9",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 133,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(13)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/8",
+        "0",
+        "0",
+        "0",
+        "-sqrt(21)/8",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.45069390943299864,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6846531968814576,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.57282196186948,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 3,
+        "nextOrderFrobeniusDistanceSquared": "5/3136",
+        "exactAchievedOrder": 2
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5591630119078413,
+          "y": -0.5591630119078412,
+          "z": -0.6121057524875114,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5591630119078412,
+          "y": -0.5591630119078413,
+          "z": -0.6121057524875114,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5591630119078415,
+          "y": 0.5591630119078412,
+          "z": -0.6121057524875114,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5591630119078411,
+          "y": 0.5591630119078415,
+          "z": -0.6121057524875114,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9326846428426555,
+          "y": -0.0,
+          "z": 0.36069288460609816,
+          "multiplicity": 1
+        },
+        {
+          "x": 5.711046312355751e-17,
+          "y": -0.9326846428426555,
+          "z": 0.36069288460609816,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9326846428426555,
+          "y": -1.1422092624711503e-16,
+          "z": 0.36069288460609816,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.7133138937067254e-16,
+          "y": 0.9326846428426555,
+          "z": 0.36069288460609816,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - 2*sqrt(5)*y - sqrt(273)/63",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.351437923158062e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 1.1102230246251565e-16,
+        "minimumDistinctPointDistance": 1.1183260238156825,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n9-t2-manuscript",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n10-t3",
+      "n": 10,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=10",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 134,
+        "section": "acstateslist",
+        "attribution": "Optimal Detection of Rotations about Unknown Axes, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/4",
+        "0",
+        "0",
+        "0",
+        "-sqrt(5)/4",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6123724356957945,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "1/1120",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6453592920643391,
+          "y": -0.645359292064339,
+          "z": -0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.645359292064339,
+          "y": -0.6453592920643391,
+          "z": -0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6453592920643392,
+          "y": 0.645359292064339,
+          "z": -0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6453592920643388,
+          "y": 0.6453592920643392,
+          "z": -0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9126758634408876,
+          "y": -0.0,
+          "z": 0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": 5.588527874109649e-17,
+          "y": -0.9126758634408876,
+          "z": 0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9126758634408876,
+          "y": -1.1177055748219298e-16,
+          "z": 0.4086841913904063,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.6765583622328945e-16,
+          "y": 0.9126758634408876,
+          "z": 0.4086841913904063,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - 6*sqrt(21)*y/5 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.819523457003091e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 1.1102230246251565e-16,
+        "minimumDistinctPointDistance": 1.0751920006938385,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": [
+        {
+          "id": "ac-n10-t3-manuscript",
+          "rayError": 0.0,
+          "kind": "exact"
+        }
+      ]
+    },
+    {
+      "id": "acliege-n11-t3",
+      "n": 11,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=11",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 135,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(17)/12",
+        "0",
+        "0",
+        "sqrt(55)*I/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(55)*I/12",
+        "0",
+        "0",
+        "sqrt(17)/12"
+      ],
+      "coefficients": [
+        [
+          0.3435921354681384,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6180165405913053
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6180165405913053
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3435921354681384,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "517/116640",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5423294148613652,
+          "y": -0.31245696456820415,
+          "z": 0.7799034883041319,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8086185040158472,
+          "y": -0.5881015675784258,
+          "z": 0.016512455146700692,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.808618504015847,
+          "y": 0.5881015675784257,
+          "z": -0.016512455146700713,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5423294148613652,
+          "y": 0.3124569645682042,
+          "z": -0.779903488304132,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011136387550641066,
+          "y": 0.6251306046960147,
+          "z": 0.7805193699589512,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011136387550641066,
+          "y": -0.6251306046960147,
+          "z": -0.7805193699589513,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5404681538488301,
+          "y": 0.31266912055662754,
+          "z": -0.7811095926472691,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3097456492544011,
+          "y": -0.9507654899494002,
+          "z": -0.010129950110764722,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30974564925440107,
+          "y": 0.9507654899494,
+          "z": 0.010129950110764735,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5404681538488301,
+          "y": -0.31266912055662754,
+          "z": 0.781109592647269,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**11 - 55*sqrt(51)*I*y**8/17 + 55*sqrt(51)*I*y**3/17 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.563105130469368e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.854198861903103,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n12-t5",
+      "n": 12,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=12",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 136,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "0",
+        "sqrt(7)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(11)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(7)/5",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6633249580710799,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5291502622129182,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "1/84",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7236067977499789,
+          "y": -0.5257311121191336,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.27639320225002095,
+          "y": -0.85065080835204,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8944271909999159,
+          "y": -1.0953573965284052e-16,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2763932022500212,
+          "y": 0.85065080835204,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7236067977499788,
+          "y": 0.5257311121191338,
+          "z": 0.4472135954999579,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8944271909999159,
+          "y": -0.0,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27639320225002106,
+          "y": -0.8506508083520398,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7236067977499788,
+          "y": -0.5257311121191337,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7236067977499789,
+          "y": 0.5257311121191335,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27639320225002084,
+          "y": 0.85065080835204,
+          "z": -0.447213595499958,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 11*y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.458865921737327e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 1.051462224238267,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n13-t3",
+      "n": 13,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=13",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 137,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(15)/15",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(390)*I/30",
+        "0",
+        "0",
+        "sqrt(15)/15"
+      ],
+      "coefficients": [
+        [
+          0.2581988897471611,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6582805886043833
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2581988897471611,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        3,
+        10,
+        13
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "38/9075",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.45680747810527617,
+          "y": -0.26375351341635916,
+          "z": 0.8495651900281838,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9009769713978392,
+          "y": -0.4338187426435171,
+          "z": 0.006464947174969507,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.900976971397839,
+          "y": 0.433818742643517,
+          "z": -0.006464947174969291,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4568074781052762,
+          "y": 0.26375351341635916,
+          "z": -0.8495651900281836,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.22265372136257683,
+          "y": 0.9748838343073855,
+          "z": 0.005179765392942701,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2226537213625769,
+          "y": -0.9748838343073857,
+          "z": -0.00517976539294284,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.6986435254167725e-05,
+          "y": -0.5274637662500987,
+          "z": -0.8495775271068519,
+          "multiplicity": 1
+        },
+        {
+          "x": 2.698643525416773e-05,
+          "y": 0.5274637662500987,
+          "z": 0.8495775271068517,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": 0.2637102870268731,
+          "z": -0.8495898446830877,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": 0.781897753601443,
+          "z": -0.0028713014111677137,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234000790353043,
+          "y": -0.7818977536014429,
+          "z": 0.002871301411167811,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4567865807218629,
+          "y": -0.2637102870268732,
+          "z": 0.8495898446830877,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**13 - 13*sqrt(11)*I*y**10 + 13*sqrt(11)*I*y**3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0686612575053706e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.8677338232678895,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n15-t3",
+      "n": 15,
+      "achievedOrder": 3,
+      "label": "ACLiege analytic representative at n=15",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 157,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "3*sqrt(22)/44",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(770)/44",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(22)/44"
+      ],
+      "coefficients": [
+        [
+          0.31980107453341566,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6306562238868912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31980107453341566,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 4,
+        "nextOrderFrobeniusDistanceSquared": "1301/3680820",
+        "exactAchievedOrder": 3
+      },
+      "majoranaPoints": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.43330191882135044,
+          "z": 0.7902985554383056,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": 0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9026312974898894,
+          "y": -0.43041461498387684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": 0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43321777481754287,
+          "y": -0.4333019188213504,
+          "z": -0.7902985554383055,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": 0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.21958535947437577,
+          "y": -0.975593291235907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": 0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4333686901309568,
+          "y": -0.4332842379862334,
+          "z": -0.7902255042245018,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": 0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6221224814820768,
+          "y": -0.7829199307940646,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": 0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43336869013095675,
+          "y": -0.43328423798623333,
+          "z": 0.7902255042245017,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**15 + 35*sqrt(39)*y**11/3 - 35*sqrt(39)*y**4/3 - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3137671987015485e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8608292299677537,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n16-t5",
+      "n": 16,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=16",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 158,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(69)/32",
+        "0",
+        "17*sqrt(690)/1472 - 7*sqrt(3358)*I/1472",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-279*sqrt(46046)/210496 - sqrt(50420370)*I/210496",
+        "0",
+        "-137*sqrt(98670)/105248 + 7*sqrt(480194)*I/26312",
+        "0",
+        "279*sqrt(46046)/210496 + sqrt(50420370)*I/210496",
+        "0",
+        "-sqrt(31395)/1196 + 3*sqrt(152789)*I/4784",
+        "0",
+        "-17*sqrt(690)/1472 + 7*sqrt(3358)*I/1472",
+        "0",
+        "sqrt(69)/32"
+      ],
+      "coefficients": [
+        [
+          0.25958199571618984,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3033651278825854,
+          -0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2844174971754177,
+          -0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.4088832118823884,
+          0.18435399111693207
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2844174971754177,
+          0.03373332625863136
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.14814911587693347,
+          0.24511852126039546
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3033651278825854,
+          0.2755691368509591
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25958199571618984,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "339/286286",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 4.9995996217394874e-17,
+          "y": 0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.9995996217394874e-17,
+          "y": -0.816496580927726,
+          "z": 0.5773502691896258,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.363476901526931,
+          "y": 0.9137670951339852,
+          "z": -0.18142281528732843,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3634769015269309,
+          "y": -0.9137670951339852,
+          "z": -0.1814228152873285,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5103366953788339,
+          "y": -0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5103366953788339,
+          "y": 0.7669073012820824,
+          "z": -0.389113927520006,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14685979385190273,
+          "y": 0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14685979385190268,
+          "y": -0.4034303997551514,
+          "z": -0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.816496580927726,
+          "y": 1.4566548927776847e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.816496580927726,
+          "y": -9.999199243478976e-17,
+          "z": -0.577350269189626,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7669073012820825,
+          "y": -0.5103366953788337,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7669073012820826,
+          "y": 0.5103366953788335,
+          "z": 0.3891139275200061,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9137670951339852,
+          "y": 0.3634769015269311,
+          "z": 0.18142281528732845,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9137670951339851,
+          "y": -0.36347690152693096,
+          "z": 0.18142281528732865,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4034303997551513,
+          "y": 0.14685979385190268,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.40343039975515155,
+          "y": -0.14685979385190287,
+          "z": 0.903147891268742,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 2,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**8 + y**7*(-170*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**6*(-560/23 + 28*sqrt(1095)*I/23) + y**5*(1302*sqrt(3)/23 + 14*sqrt(365)*I/23) + y**4*(-4110/23 + 56*sqrt(1095)*I/23) + y**3*(-1302*sqrt(3)/23 - 14*sqrt(365)*I/23) + y**2*(-560/23 + 28*sqrt(1095)*I/23) + y*(170*sqrt(3)/23 - 14*sqrt(365)*I/23) + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.307363498719824e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8469436844349447,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n18-t5",
+      "n": 18,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=18",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 203,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(455)/65",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)*I/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(455)/65"
+      ],
+      "coefficients": [
+        [
+          0.3281650616569468,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6263447072560702
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3281650616569468,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        13,
+        18
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "73/59150",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": -0.6000647849232895,
+          "y": -0.19495305413198974,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.37086513006314625,
+          "y": 0.5104002516308715,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826774901703402,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6000647849232895,
+          "y": 0.1949530541319897,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3708651300631463,
+          "y": -0.5104002516308717,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030788e-17,
+          "y": 0.6308943850129586,
+          "z": -0.7758687227612162,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.863113946030787e-17,
+          "y": -0.6308943850129584,
+          "z": 0.7758687227612161,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3708651300631463,
+          "y": -0.5104002516308715,
+          "z": -0.7758547792199185,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232895,
+          "y": 0.1949530541319896,
+          "z": -0.7758321729469433,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": -0.9238818351617574,
+          "z": -0.0005414564365048165,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3826774901703403,
+          "y": 0.9238818351617574,
+          "z": 0.000541456436504837,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": 0.3826889930902286,
+          "z": -0.0013074108186627896,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238763040821744,
+          "y": -0.3826889930902286,
+          "z": 0.001307410818662675,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.37086513006314625,
+          "y": 0.5104002516308714,
+          "z": 0.7758547792199186,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6000647849232896,
+          "y": -0.19495305413198963,
+          "z": 0.7758321729469432,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**18 - 102*sqrt(3)*I*y**13 - 102*sqrt(3)*I*y**5 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.821705437899758e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7416574467027541,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    },
+    {
+      "id": "acliege-n20-t5",
+      "n": 20,
+      "achievedOrder": 5,
+      "label": "ACLiege analytic representative at n=20",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 229,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "exactCoefficients": [
+        "sqrt(561)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(741)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(561)/75"
+      ],
+      "coefficients": [
+        [
+          0.3158058475287203,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.36295086903509866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3158058475287203,
+          0.0
+        ]
+      ],
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "verification": {
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0"
+          }
+        ],
+        "nextOrder": 6,
+        "nextOrderFrobeniusDistanceSquared": "121/97104",
+        "exactAchievedOrder": 5
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.491123473188423,
+          "y": -0.3568220897730899,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507984,
+          "y": -0.5773502691896258,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6070619982066862,
+          "y": -7.434365329878145e-17,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.18759247408507998,
+          "y": 0.5773502691896257,
+          "z": 0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49112347318842287,
+          "y": 0.35682208977309,
+          "z": 0.7946544722917662,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917662,
+          "y": -0.5773502691896257,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.303530999103343,
+          "y": -0.9341723589627158,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9822469463768461,
+          "y": -1.2029055788526663e-16,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.30353099910334325,
+          "y": 0.9341723589627157,
+          "z": 0.18759247408508004,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7946544722917658,
+          "y": 0.5773502691896258,
+          "z": 0.18759247408508015,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6070619982066862,
+          "y": -0.0,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507992,
+          "y": -0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911234731884229,
+          "y": -0.35682208977309,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49112347318842303,
+          "y": 0.3568220897730899,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759247408507976,
+          "y": 0.5773502691896257,
+          "z": -0.7946544722917661,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.982246946376846,
+          "y": -0.0,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30353099910334314,
+          "y": -0.9341723589627156,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.794654472291766,
+          "y": -0.5773502691896258,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7946544722917662,
+          "y": 0.5773502691896256,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3035309991033429,
+          "y": 0.9341723589627158,
+          "z": -0.18759247408507995,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometryVerification": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 + 228*y**3 + 494*y**2 - 228*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3417348143383273e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.7136441795461796,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "sameOrientationRayMatches": []
+    }
+  ],
+  "numericalStates": [
+    {
+      "id": "acliege-n14-t4",
+      "n": 14,
+      "achievedOrder": 4,
+      "label": "ACLiege numerical representative at n=14",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 138,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "sourceDecimalCoefficients": [
+        "0",
+        "-20303603049033043367267306256931029833563650212786701607/2500000000000000000000000000000000000000000000000000000000 + 967941310213770549691561193916253764705019125369173837211*I/2000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "-67759632877979409243144954681331367099564562506484202781/2000000000000000000000000000000000000000000000000000000000 + 785473518915549109870619640175192347935703284437326377779*I/2500000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "-1455133289475043047372968327460050993117337381899529911701/10000000000000000000000000000000000000000000000000000000000 - 5572370356472811788223933716141745459319152571754528820667*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "-372653016232950294015348335429491097351084938523317995931/1250000000000000000000000000000000000000000000000000000000 - 41925367335667860278309853579187809656235300909451700387*I/400000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "2227050924289352086321708026008997774428538655487072508301/10000000000000000000000000000000000000000000000000000000000 - 4297627189720983187537104562609200149932589529328933295851*I/10000000000000000000000000000000000000000000000000000000000",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.008121441219613217,
+          0.48397065510688525
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.033879816438989706,
+          0.31418940756621966
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.1455133289475043,
+          -0.5572370356472812
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2981224129863602,
+          -0.10481341833916966
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.22270509242893521,
+          -0.42976271897209833
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "numericalResidual": 5.733169438662208e-17,
+      "evidence": "Numerical coefficients only; no exact AC certificate asserted."
+    },
+    {
+      "id": "acliege-n17-t4",
+      "n": 17,
+      "achievedOrder": 4,
+      "label": "ACLiege numerical representative at n=17",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 180,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "sourceDecimalCoefficients": [
+        "0",
+        "-986615627249081037590733940915873043254968463390665074693/2500000000000000000000000000000000000000000000000000000000 + 661110922080596744421307605217127017534315616743132463919*I/5000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "4436262866870734045612735940148288540709078852147372214679/10000000000000000000000000000000000000000000000000000000000 - 470278757615589152622424438026114605877781277455920689257*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "321386708868019935349917686348874906460365602106033651053/2000000000000000000000000000000000000000000000000000000000 - 186137988708513212830101454481076171595007258985711015341*I/5000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "2998728731897939578547709072312569311293984895225524628961/5000000000000000000000000000000000000000000000000000000000 + 51687053038927933764525233297605923562766258222891847439*I/1000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "-1740534670807755907010918257625144531272818368023548274949/10000000000000000000000000000000000000000000000000000000000 + 67591779259748652061006049950735627257075763921450053219*I/2000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "155521284291862794300857823392964778967059231749029168567/2500000000000000000000000000000000000000000000000000000000 + 4504156930858404097670548895354705227356077837430291904211*I/10000000000000000000000000000000000000000000000000000000000",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3946462508996324,
+          0.13222218441611935
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4436262866870734,
+          -0.04702787576155892
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.16069335443400998,
+          -0.037227597741702645
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5997457463795879,
+          0.051687053038927934
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.1740534670807756,
+          0.03379588962987433
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.062208513716745115,
+          0.4504156930858404
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "numericalResidual": 9.222014453874696e-17,
+      "evidence": "Numerical coefficients only; no exact AC certificate asserted."
+    },
+    {
+      "id": "acliege-n19-t4",
+      "n": 19,
+      "achievedOrder": 4,
+      "label": "ACLiege numerical representative at n=19",
+      "coefficientConvention": "Normalized Dicke basis; coefficient index r=0,...,n counts excitations; source list order is retained.",
+      "source": {
+        "file": "ACLiege.jl",
+        "line": 204,
+        "section": "acstateslist",
+        "attribution": "M. Grassl, as credited by the source comment"
+      },
+      "sourceDecimalCoefficients": [
+        "0",
+        "541270772157850035087040856889871826336050840895090529371/2000000000000000000000000000000000000000000000000000000000 - 2643527860987146580395357499532510100843571005599837807003*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "2940390641401658699019350127574411001454170147938164592661/10000000000000000000000000000000000000000000000000000000000 + 842233074204206449286692347828294768750071271826382346059*I/2500000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "3297050852686549453207340955141312862087184324742193766897/10000000000000000000000000000000000000000000000000000000000 - 347880139614969907945864889470713542914346872171717419703*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "-1829331909962639780702026144108903110539444483140780709729/10000000000000000000000000000000000000000000000000000000000 - 348461657307078723351576997752808844950347087625367427109*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "426556354321941503067736205154561150587334149019388961873/1000000000000000000000000000000000000000000000000000000000 - 862202589318618245652083166425844238813624208192345992697*I/2000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "6366921144750210172535283302532548807862585566825807853/1000000000000000000000000000000000000000000000000000000000 - 1696887342887905484488438071794941446573855104617000316151*I/10000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "2728941419524433683720918636763861184549753151895271584063/10000000000000000000000000000000000000000000000000000000000 - 2030245044955443216495332263961024527311733269139191102709*I/10000000000000000000000000000000000000000000000000000000000"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.270635386078925,
+          -0.26435278609871465
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2940390641401659,
+          0.33689322968168256
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.32970508526865494,
+          -0.03478801396149699
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.18293319099626398,
+          -0.034846165730707875
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4265563543219415,
+          -0.43110129465930913
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.00636692114475021,
+          -0.16968873428879055
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2728941419524434,
+          -0.20302450449554432
+        ]
+      ],
+      "numericalResidual": 6.291213316199567e-17,
+      "evidence": "Numerical coefficients only; no exact AC certificate asserted."
+    }
+  ],
+  "subspaces": [
+    {
+      "id": "acliege-\u03a0_4_2_1",
+      "n": 4,
+      "dimension": 2,
+      "order": 1,
+      "sourceFunction": "\u03a0_4_2_1",
+      "sourceLine": 678,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "1/2",
+            "0",
+            "sqrt(2)*I/2",
+            "0",
+            "1/2"
+          ],
+          "coefficients": [
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.7071067811865476
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "1/2",
+            "0",
+            "-sqrt(2)*I/2",
+            "0",
+            "1/2"
+          ],
+          "coefficients": [
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.7071067811865476
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            2,
+            4
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_5_2_1",
+      "n": 5,
+      "dimension": 2,
+      "order": 1,
+      "sourceFunction": "\u03a0_5_2_1",
+      "sourceLine": 686,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "sqrt(6)/4",
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/4",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.6123724356957945,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7905694150420949,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            4
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "-sqrt(10)/4",
+            "0",
+            "0",
+            "0",
+            "sqrt(6)/4"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7905694150420949,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6123724356957945,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            5
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_5_2_1b",
+      "n": 5,
+      "dimension": 2,
+      "order": 1,
+      "sourceFunction": "\u03a0_5_2_1b",
+      "sourceLine": 690,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "sqrt(20 - 5*sqrt(7))/4",
+            "0",
+            "-sqrt(-20 + 10*sqrt(7))/4",
+            "0",
+            "sqrt(16 - 5*sqrt(7))/4"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6505403256465471,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6352909328924576,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.4161763031364417,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(16 - 5*sqrt(7))/4",
+            "0",
+            "sqrt(-20 + 10*sqrt(7))/4",
+            "0",
+            "sqrt(20 - 5*sqrt(7))/4",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.4161763031364417,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6352909328924576,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6505403256465471,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            2,
+            4
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_6_3_1",
+      "n": 6,
+      "dimension": 3,
+      "order": 1,
+      "sourceFunction": "\u03a0_6_3_1",
+      "sourceLine": 700,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "sqrt(15)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/5"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7745966692414834,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6324555320336759,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            6
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(10)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(15)/5",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.6324555320336759,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7745966692414834,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            5
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            3
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_7_2_2",
+      "n": 7,
+      "dimension": 2,
+      "order": 2,
+      "sourceFunction": "\u03a0_7_2_2",
+      "sourceLine": 707,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "sqrt(70)/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(30)/10"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8366600265340756,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5477225575051661,
+              0.0
+            ]
+          ],
+          "support": [
+            2,
+            7
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "-sqrt(30)/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(70)/10",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              -0.5477225575051661,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8366600265340756,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            5
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_8_3_1",
+      "n": 8,
+      "dimension": 3,
+      "order": 1,
+      "sourceFunction": "\u03a0_8_3_1",
+      "sourceLine": 714,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "1/2",
+            "0",
+            "-1/2",
+            "0",
+            "-1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(7)*(-1/16 + 3*I/16)",
+            "0",
+            "1/8 - 3*I/8",
+            "0",
+            "sqrt(10)*(-3/8 + 9*I/8)/10",
+            "0",
+            "1/8 - 3*I/8",
+            "0",
+            "sqrt(7)*(-1/16 + 3*I/16)"
+          ],
+          "coefficients": [
+            [
+              -0.16535945694153692,
+              0.49607837082461076
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.125,
+              -0.375
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.11858541225631422,
+              0.3557562367689427
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.125,
+              -0.375
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.16535945694153692,
+              0.49607837082461076
+            ]
+          ],
+          "support": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_9_4_1",
+      "n": 9,
+      "dimension": 4,
+      "order": 1,
+      "sourceFunction": "\u03a0_9_4_1",
+      "sourceLine": 723,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/4",
+            "0",
+            "0",
+            "0",
+            "-sqrt(6)/4",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7905694150420949,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6123724356957945,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            3,
+            7
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "-sqrt(6)/4",
+            "0",
+            "0",
+            "0",
+            "-sqrt(10)/4",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6123724356957945,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7905694150420949,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            2,
+            6
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(30)/24 + sqrt(42)*I/12",
+            "0",
+            "0",
+            "0",
+            "sqrt(3)/4",
+            "0",
+            "0",
+            "0",
+            "sqrt(30)/8",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.22821773229381923,
+              0.5400617248673217
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.4330127018922193,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6846531968814576,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            4,
+            8
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "sqrt(30)/8",
+            "0",
+            "0",
+            "0",
+            "-sqrt(3)/4",
+            "0",
+            "0",
+            "0",
+            "sqrt(30)/24 + sqrt(42)*I/12"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6846531968814576,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.4330127018922193,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.22821773229381923,
+              0.5400617248673217
+            ]
+          ],
+          "support": [
+            1,
+            5,
+            9
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 3,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_10_4_1",
+      "n": 10,
+      "dimension": 4,
+      "order": 1,
+      "sourceFunction": "\u03a0_10_4_1",
+      "sourceLine": 731,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "sqrt(2)/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(2)/2"
+          ],
+          "coefficients": [
+            [
+              0.7071067811865476,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7071067811865476,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            10
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            5
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "-sqrt(15)*I/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/5",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.7745966692414834
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6324555320336759,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            3,
+            8
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "sqrt(10)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(15)*I/5",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6324555320336759,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.7745966692414834
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            2,
+            7
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 3,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_10_2_2",
+      "n": 10,
+      "dimension": 2,
+      "order": 2,
+      "sourceFunction": "\u03a0_10_2_2",
+      "sourceLine": 738,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "sqrt(35)/7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(14)/7"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8451542547285166,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5345224838248488,
+              0.0
+            ]
+          ],
+          "support": [
+            3,
+            10
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(14)/7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(35)/7",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.5345224838248488,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.8451542547285166,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            7
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    },
+    {
+      "id": "acliege-\u03a0_11_4_1",
+      "n": 11,
+      "dimension": 4,
+      "order": 1,
+      "sourceFunction": "\u03a0_11_4_1",
+      "sourceLine": 745,
+      "basis": [
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(70)/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(30)/10",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8366600265340756,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5477225575051661,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            4,
+            9
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "sqrt(39)*(12*sqrt(429)/1001 + 5*sqrt(37609)*I/1001)/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(3)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7/10",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.1550629772114213,
+              0.6049425370217656
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.34641016151377546,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            0,
+            5,
+            10
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "-7/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(3)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(39)*(12*sqrt(429)/1001 + 5*sqrt(37609)*I/1001)/10"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.34641016151377546,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.1550629772114213,
+              0.6049425370217656
+            ]
+          ],
+          "support": [
+            1,
+            6,
+            11
+          ]
+        },
+        {
+          "exactCoefficients": [
+            "0",
+            "0",
+            "sqrt(30)/10",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(70)/10",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5477225575051661,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.8366600265340756,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "support": [
+            2,
+            7
+          ]
+        }
+      ],
+      "verification": {
+        "orthonormal": true,
+        "crossReductionIdentities": [
+          {
+            "i": 0,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 0,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 1,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 2,
+            "j": 3,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 0,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 1,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 2,
+            "identityVerified": true
+          },
+          {
+            "i": 3,
+            "j": 3,
+            "identityVerified": true
+          }
+        ],
+        "formula": "Tr_(n-t)(|v_i><v_j|) = delta_ij I_(t+1)/(t+1)",
+        "conclusion": "Every normalized pure state in this subspace is t-anticoherent."
+      }
+    }
+  ],
+  "numericalSubspaces": [
+    {
+      "function": "\u03a0_11_2_2",
+      "n": 11,
+      "dimension": 2,
+      "reportedOrder": 2,
+      "sourceLine": 755
+    },
+    {
+      "function": "\u03a0_12_5_1",
+      "n": 12,
+      "dimension": 5,
+      "reportedOrder": 1,
+      "sourceLine": 766
+    },
+    {
+      "function": "\u03a0_12_2_2",
+      "n": 12,
+      "dimension": 2,
+      "reportedOrder": 2,
+      "sourceLine": 780
+    },
+    {
+      "function": "\u03a0_13_5_1",
+      "n": 13,
+      "dimension": 5,
+      "reportedOrder": 1,
+      "sourceLine": 791
+    },
+    {
+      "function": "\u03a0_13_2_3",
+      "n": 13,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 805
+    },
+    {
+      "function": "\u03a0_14_5_1",
+      "n": 14,
+      "dimension": 5,
+      "reportedOrder": 1,
+      "sourceLine": 816
+    },
+    {
+      "function": "\u03a0_14_3_2",
+      "n": 14,
+      "dimension": 3,
+      "reportedOrder": 2,
+      "sourceLine": 830
+    },
+    {
+      "function": "\u03a0_15_6_1",
+      "n": 15,
+      "dimension": 6,
+      "reportedOrder": 1,
+      "sourceLine": 847
+    },
+    {
+      "function": "\u03a0_15_3_2",
+      "n": 15,
+      "dimension": 3,
+      "reportedOrder": 2,
+      "sourceLine": 862
+    },
+    {
+      "function": "\u03a0_16_6_1",
+      "n": 16,
+      "dimension": 6,
+      "reportedOrder": 1,
+      "sourceLine": 874
+    },
+    {
+      "function": "\u03a0_16_3_2",
+      "n": 16,
+      "dimension": 3,
+      "reportedOrder": 2,
+      "sourceLine": 889
+    },
+    {
+      "function": "\u03a0_16_2_3",
+      "n": 16,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 901
+    },
+    {
+      "function": "\u03a0_17_6_1",
+      "n": 17,
+      "dimension": 6,
+      "reportedOrder": 1,
+      "sourceLine": 912
+    },
+    {
+      "function": "\u03a0_17_3_2",
+      "n": 17,
+      "dimension": 3,
+      "reportedOrder": 2,
+      "sourceLine": 927
+    },
+    {
+      "function": "\u03a0_17_2_3",
+      "n": 17,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 939
+    },
+    {
+      "function": "\u03a0_18_7_1",
+      "n": 18,
+      "dimension": 7,
+      "reportedOrder": 1,
+      "sourceLine": 950
+    },
+    {
+      "function": "\u03a0_18_4_2",
+      "n": 18,
+      "dimension": 4,
+      "reportedOrder": 2,
+      "sourceLine": 966
+    },
+    {
+      "function": "\u03a0_18_2_3",
+      "n": 18,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 979
+    },
+    {
+      "function": "\u03a0_19_7_1",
+      "n": 19,
+      "dimension": 7,
+      "reportedOrder": 1,
+      "sourceLine": 990
+    },
+    {
+      "function": "\u03a0_19_4_2",
+      "n": 19,
+      "dimension": 4,
+      "reportedOrder": 2,
+      "sourceLine": 1006
+    },
+    {
+      "function": "\u03a0_19_2_3",
+      "n": 19,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 1019
+    },
+    {
+      "function": "\u03a0_20_7_1",
+      "n": 20,
+      "dimension": 7,
+      "reportedOrder": 1,
+      "sourceLine": 1030
+    },
+    {
+      "function": "\u03a0_20_4_2",
+      "n": 20,
+      "dimension": 4,
+      "reportedOrder": 2,
+      "sourceLine": 1047
+    },
+    {
+      "function": "\u03a0_20_2_3",
+      "n": 20,
+      "dimension": 2,
+      "reportedOrder": 3,
+      "sourceLine": 1061
+    }
+  ],
+  "sourceCaveats": [
+    {
+      "function": "\u03c812",
+      "line": 631,
+      "issue": "The returned vector has14 entries, whereas an n=12 symmetric state requires13. Not imported."
+    },
+    {
+      "section": "acntlist",
+      "line": 18,
+      "issue": "Reported optimal orders are metadata, not global maximality certificates."
+    }
+  ],
+  "ancillary": {
+    "states": [
+      {
+        "id": "acliege-\u03c85",
+        "sourceFunction": "\u03c85",
+        "sourceLine": 518,
+        "n": 5,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "sqrt(6)/6",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/6",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.408248290463863,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9128709291752769,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          4
+        ],
+        "sectorVectorExact": [
+          "5/9",
+          "10/3",
+          "70/9",
+          "35/3",
+          "23/3"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n5-s2-min",
+          "n5-s4-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c85b",
+        "sourceFunction": "\u03c85b",
+        "sourceLine": 523,
+        "n": 5,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          4
+        ],
+        "sectorVectorExact": [
+          "0",
+          "18/5",
+          "32/5",
+          "57/5",
+          "48/5"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n5-s1-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c85_1AC",
+        "sourceFunction": "\u03c85_1AC",
+        "sourceLine": 533,
+        "n": 5,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(30)/6",
+          "0",
+          "0",
+          "sqrt(6)/6"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9128709291752769,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.408248290463863,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          5
+        ],
+        "sectorVectorExact": [
+          "0",
+          "5",
+          "5",
+          "10",
+          "11"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n5-s1-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c85_OSS",
+        "sourceFunction": "\u03c85_OSS",
+        "sourceLine": 538,
+        "n": 5,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(5)/3",
+          "0",
+          "0",
+          "2/3"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7453559924999299,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6666666666666666,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          5
+        ],
+        "sectorVectorExact": [
+          "5/9",
+          "10/3",
+          "70/9",
+          "35/3",
+          "23/3"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n5-s2-min",
+          "n5-s4-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c86",
+        "sourceFunction": "\u03c86",
+        "sourceLine": 545,
+        "n": 6,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "2*sqrt(105)/21",
+          "0",
+          "0",
+          "sqrt(21)/21",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9759000729485332,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.2182178902359924,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          5
+        ],
+        "sectorVectorExact": [
+          "24/49",
+          "405/49",
+          "440/49",
+          "45/7",
+          "1104/49",
+          "799/49"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n6-s4-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c86_pyramid",
+        "sourceFunction": "\u03c86_pyramid",
+        "sourceLine": 549,
+        "n": 6,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "sqrt(3)/2",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            -0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8660254037844386,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          4
+        ],
+        "sectorVectorExact": [
+          "0",
+          "27/5",
+          "8",
+          "51/5",
+          "24",
+          "77/5"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n6-s1-min",
+          "n6-s5-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c87",
+        "sourceFunction": "\u03c87",
+        "sourceLine": 556,
+        "n": 7,
+        "achievedOrder": 2,
+        "exactCoefficients": [
+          "sqrt(2)/3",
+          "0",
+          "0",
+          "sqrt(14)/6",
+          "0",
+          "0",
+          "sqrt(14)/6",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.4714045207910317,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6236095644623235,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.6236095644623235,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          3,
+          6
+        ],
+        "sectorVectorExact": [
+          "0",
+          "7",
+          "14",
+          "7",
+          "28",
+          "49",
+          "22"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n7-s1-min",
+          "n7-s2-min",
+          "n7-s4-min",
+          "n7-s6-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c87_1AC",
+        "sourceFunction": "\u03c87_1AC",
+        "sourceLine": 561,
+        "n": 7,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(14)/4",
+          "0",
+          "0",
+          "0",
+          "sqrt(2)/4"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9354143466934853,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.3535533905932738,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          7
+        ],
+        "sectorVectorExact": [
+          "0",
+          "21/2",
+          "7/2",
+          "28",
+          "21",
+          "49/2",
+          "79/2"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n7-s1-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c87_2AC",
+        "sourceFunction": "\u03c87_2AC",
+        "sourceLine": 566,
+        "n": 7,
+        "achievedOrder": 2,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(70)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/10"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8366600265340756,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5477225575051661,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          7
+        ],
+        "sectorVectorExact": [
+          "0",
+          "7",
+          "14",
+          "7",
+          "28",
+          "49",
+          "22"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n7-s1-min",
+          "n7-s2-min",
+          "n7-s4-min",
+          "n7-s6-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c88",
+        "sourceFunction": "\u03c88",
+        "sourceLine": 573,
+        "n": 8,
+        "achievedOrder": 3,
+        "exactCoefficients": [
+          "sqrt(30)/12",
+          "0",
+          "0",
+          "0",
+          "sqrt(21)/6",
+          "0",
+          "0",
+          "0",
+          "sqrt(30)/12"
+        ],
+        "coefficients": [
+          [
+            0.45643546458763845,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7637626158259734,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.45643546458763845,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          4,
+          8
+        ],
+        "sectorVectorExact": [
+          "0",
+          "28/3",
+          "0",
+          "154/3",
+          "0",
+          "364/3",
+          "0",
+          "73"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n8-s1-min",
+          "n8-s2-min",
+          "n8-s3-min",
+          "n8-s5-min",
+          "n8-s6-max",
+          "n8-s7-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c88_tetra",
+        "sourceFunction": "\u03c88_tetra",
+        "sourceLine": 578,
+        "n": 8,
+        "achievedOrder": 2,
+        "exactCoefficients": [
+          "sqrt(21)/9",
+          "0",
+          "0",
+          "2*sqrt(3)/9",
+          "0",
+          "0",
+          "4*sqrt(3)/9",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.5091750772173156,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.3849001794597505,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.769800358919501,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          3,
+          6
+        ],
+        "sectorVectorExact": [
+          "0",
+          "28/3",
+          "144/7",
+          "310/21",
+          "160/7",
+          "1396/21",
+          "592/7",
+          "255/7"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n8-s1-min",
+          "n8-s2-min",
+          "n8-s4-min",
+          "n8-s7-max"
+        ]
+      },
+      {
+        "id": "acliege-\u03c89",
+        "sourceFunction": "\u03c89",
+        "sourceLine": 586,
+        "n": 9,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "sqrt(3)/3",
+          "0",
+          "0",
+          "sqrt(6)/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.5773502691896257,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.816496580927726,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          3
+        ],
+        "sectorVectorExact": [
+          "25/9",
+          "12",
+          "3772/189",
+          "470/9",
+          "6938/63",
+          "940/9",
+          "5396/63",
+          "259/3",
+          "7085/189"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n9-s2-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c89_1AC",
+        "sourceFunction": "\u03c89_1AC",
+        "sourceLine": 591,
+        "n": 9,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "3*sqrt(10)/10",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(10)/10"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9486832980505138,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.31622776601683794,
+            0.0
+          ]
+        ],
+        "support": [
+          4,
+          9
+        ],
+        "sectorVectorExact": [
+          "0",
+          "18",
+          "30/7",
+          "72",
+          "162/7",
+          "102",
+          "594/7",
+          "63",
+          "1006/7"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n9-s1-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c810",
+        "sourceFunction": "\u03c810",
+        "sourceLine": 598,
+        "n": 10,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(2)/2",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          1,
+          7
+        ],
+        "sectorVectorExact": [
+          "2/5",
+          "15",
+          "101/15",
+          "175/3",
+          "511/5",
+          "721/5",
+          "917/5",
+          "686/5",
+          "3289/15",
+          "2344/15"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n10-s2-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c810_pyramid",
+        "sourceFunction": "\u03c810_pyramid",
+        "sourceLine": 602,
+        "n": 10,
+        "achievedOrder": 2,
+        "exactCoefficients": [
+          "sqrt(14)/7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-sqrt(35)/7",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.5345224838248488,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.8451542547285166,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          0,
+          7
+        ],
+        "sectorVectorExact": [
+          "0",
+          "15",
+          "100/3",
+          "130/3",
+          "92",
+          "90",
+          "100",
+          "265",
+          "860/3",
+          "293/3"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n10-s1-min",
+          "n10-s2-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c810_2AC",
+        "sourceFunction": "\u03c810_2AC",
+        "sourceLine": 607,
+        "n": 10,
+        "achievedOrder": 2,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "sqrt(35)/7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(14)/7"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8451542547285166,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5345224838248488,
+            0.0
+          ]
+        ],
+        "support": [
+          3,
+          10
+        ],
+        "sectorVectorExact": [
+          "0",
+          "15",
+          "100/3",
+          "130/3",
+          "92",
+          "90",
+          "100",
+          "265",
+          "860/3",
+          "293/3"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n10-s1-min",
+          "n10-s2-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c811",
+        "sourceFunction": "\u03c811",
+        "sourceLine": 614,
+        "n": 11,
+        "achievedOrder": 0,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "sqrt(34)/6",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(2)/6",
+          "0",
+          "0",
+          "0"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.97182531580755,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.23570226039551584,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "support": [
+          2,
+          8
+        ],
+        "sectorVectorExact": [
+          "361/99",
+          "55/3",
+          "12985/243",
+          "364690/2673",
+          "413126/2673",
+          "241766/891",
+          "3690/11",
+          "413695/891",
+          "91445/243",
+          "354401/2673",
+          "268879/2673"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n11-s2-min"
+        ]
+      },
+      {
+        "id": "acliege-\u03c811_1AC",
+        "sourceFunction": "\u03c811_1AC",
+        "sourceLine": 619,
+        "n": 11,
+        "achievedOrder": 1,
+        "exactCoefficients": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(33)/6",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "sqrt(3)/6"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9574271077563381,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.28867513459481287,
+            0.0
+          ]
+        ],
+        "support": [
+          5,
+          11
+        ],
+        "sectorVectorExact": [
+          "0",
+          "55/2",
+          "275/54",
+          "4565/27",
+          "781/27",
+          "2860/9",
+          "440/3",
+          "3080/9",
+          "8195/27",
+          "8987/54",
+          "29149/54"
+        ],
+        "improvesExistingEntries": [],
+        "matchesExistingExtrema": [
+          "n11-s1-min"
+        ]
+      }
+    ],
+    "skipped": []
+  },
+  "summary": {
+    "exactPureStates": 16,
+    "numericalPureStates": 3,
+    "exactSubspaces": 10,
+    "numericalSubspaces": 24,
+    "ancillaryExactStates": 18,
+    "ancillarySectorImprovements": 0
+  }
+}

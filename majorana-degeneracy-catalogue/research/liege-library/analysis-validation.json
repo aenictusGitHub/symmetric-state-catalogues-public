@@ -1,0 +1,65 @@
+{
+  "source": "Locally constructed known constellations; NOT imported source-library data",
+  "tests": [
+    {
+      "test": "tetrahedron",
+      "n": 4,
+      "t": 2,
+      "residual": {
+        "t": 2,
+        "maxEntryError": "1.328562390781254e-92",
+        "frobeniusError": "1.94515034215411065e-92",
+        "purityExcess": "3.78360985358225374e-184"
+      },
+      "partitionMatches": true
+    },
+    {
+      "test": "double tetrahedron",
+      "n": 8,
+      "t": 2,
+      "residual": {
+        "t": 2,
+        "maxEntryError": "6.13636683162215819e-92",
+        "frobeniusError": "1.15594830493653438e-91",
+        "purityExcess": "1.33621648368564708e-182"
+      },
+      "partitionMatches": true
+    },
+    {
+      "test": "octahedron",
+      "n": 6,
+      "t": 3,
+      "residual": {
+        "t": 3,
+        "maxEntryError": "0.0",
+        "frobeniusError": "0.0",
+        "purityExcess": "0.0"
+      },
+      "partitionMatches": true
+    },
+    {
+      "test": "double octahedron",
+      "n": 12,
+      "t": 3,
+      "residual": {
+        "t": 3,
+        "maxEntryError": "6.13636683162215819e-92",
+        "frobeniusError": "1.22727336632443164e-91",
+        "purityExcess": "1.50619991568930257e-182"
+      },
+      "partitionMatches": true
+    },
+    {
+      "test": "100-point regular equatorial polygon",
+      "n": 100,
+      "t": 1,
+      "residual": {
+        "t": 1,
+        "maxEntryError": "2.82272874254619277e-90",
+        "frobeniusError": "3.88248176753478643e-90",
+        "purityExcess": "1.50736646752400394e-179"
+      },
+      "partitionMatches": true
+    }
+  ]
+}

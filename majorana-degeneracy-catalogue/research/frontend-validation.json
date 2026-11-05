@@ -1,0 +1,330 @@
+{
+  "schemaVersion": "2.3",
+  "passed": true,
+  "catalogueSHA256": "9585f3d5264069634e66c94030fca89ba6350de3e9def2c2738b78c140f4392e",
+  "frontendSHA256": {
+    "index.html": "cce88411bf36eafc3142cfcfd7188e00bb16a7c50bbfb6fe1e1325cd5d9255d3",
+    "styles.css": "952bb7881f5c099d9886316c85291fe6105f2a524303fa98771b61ca40e965ca",
+    "app.js": "42fb30cfd01d2065d39f875876be70e373a0736be2d28e0ff8dc6322d3877ff5",
+    "majorana-symmetry.js": "97fca2b475eea09e99d11c4875397f5a529c2fc9ff5b4bc53cad3b31dee122bd",
+    "symmetry-groups.js": "ec8fcb7bc45d57a3da49886c7209492800e275f04062aee30153130f02ad56ff",
+    "point-groups.js": "418b29ccdedde8966b4f296de7eba1f4639707dc57cb6453acb7142f1aa8bfaf"
+  },
+  "counts": {
+    "entries": 387,
+    "completeCorePartitions": 270,
+    "sourceOnlyPartitions": 117,
+    "exactStateSelections": 53,
+    "numericalStateSelections": 144,
+    "refinedPrimaryStates": 144,
+    "downloadOnlyAlternateStates": 16,
+    "legacyLinks": 56,
+    "functionalAssertions": 10826,
+    "renderedMathExpressions": 4669,
+    "storedDataAndHTMLMathExpressions": 1721,
+    "uniqueLocalLinks": 550,
+    "localLinkOccurrences": 1491,
+    "cssAssets": 60,
+    "modalStateSelections": 197,
+    "rendererLifecycleCycles": 20,
+    "symmetryDownloadStates": 197,
+    "exactAlgebraicDefinitionsChecked": 6
+  },
+  "checks": [
+    "syntax",
+    "all records initialize and select without runtime errors",
+    "all state selections match full partitions",
+    "numerical reports never presented as exact attainment",
+    "all numerical amplitudes, residuals, clustering and source files shown",
+    "dynamic qubit filter and limited higher-n coverage",
+    "theorem-only and zero-order copy",
+    "every attached proof link displayed",
+    "n and evidence filters",
+    "legacy hash conversion",
+    "local KaTeX rendering",
+    "modal open/close and focus for every vector",
+    "no-vector availability and state-picker synchronization",
+    "20 renderer lifecycle cycles including active pointer capture",
+    "weighted D5 and octahedral symmetry axes",
+    "continuous axis and perpendicular half-turn family",
+    "all symmetry summaries render valid LaTeX",
+    "axis and continuous-plane draw paths exercised",
+    "all representative full point groups and rotational subgroups shown in card and modal",
+    "representative dropdown group labels synchronize with selected vector",
+    "table aggregates groups per representative without assigning a group to its partition",
+    "known Ih/I, D5h/D5 and Oh/O examples",
+    "same-partition representatives with different full point groups",
+    "stronger rear-point fill exercised in drawing calls",
+    "all stored data and static HTML formulae render with local KaTeX",
+    "all referenced local files and CSS assets resolve",
+    "JSON and JavaScript catalogue data are identical",
+    "all state and proof IDs resolve",
+    "static HTML IDs are unique and tags nest correctly",
+    "downloaded symmetry records match runtime classification for every current state",
+    "downloaded symmetry implementation hashes match current modules"
+  ],
+  "errors": {
+    "math": [],
+    "missingLocalLinks": [],
+    "unresolvedRecordIds": [],
+    "missingCSSAssets": [],
+    "duplicateHTMLIds": [],
+    "htmlNesting": [],
+    "groupDownload": [],
+    "renderedMath": [],
+    "viewerWarnings": []
+  },
+  "scientificDisplay": {
+    "refinedPartitionCertificates": 144,
+    "numericalExactACFlags": 0,
+    "originalChecksAndRefinementChecksSeparated": true,
+    "numericalOrderDoesNotChangeRigorousBounds": true,
+    "certificateAppliesToSavedFullPrecisionVector": true,
+    "alternateDownloadsHaveNoPartitionClaim": true,
+    "representativeGroupNotAssignedToWholePartition": true,
+    "fullPointGroupAndProperRotationalSubgroupSeparated": true
+  },
+  "scope": "Static validation and functional checks using a minimal DOM harness. Real-browser layout, rendering and pointer interaction are validated separately. This frontend audit does not reproduce the mathematical root certificates or high-precision AC calculations.",
+  "externalSources": "Live source-file byte identity remains unverified because the primary server was unreachable; matched local counterparts retain provenance.",
+  "viewer": {
+    "availableStates": 192,
+    "statesWithoutPoints": 0,
+    "entriesWithExplicitVectors": 158,
+    "entriesWithoutExplicitVectors": 229,
+    "unavailableByReason": {
+      "noPositiveAC": 112,
+      "existenceTheoremWithoutVector": 117
+    },
+    "allStateOrdersLabeledIndependentlyOfMaximum": true,
+    "cleanupIncludesPointerCaptureAndSymmetryControls": true,
+    "drawPathsExercised": [
+      "ordinary stars",
+      "continuous axis",
+      "perpendicular half-turn plane"
+    ],
+    "scope": "Functional lifecycle/drawing checks plus current native-browser group and color review; prior interaction review retained.",
+    "rearPointFill": {
+      "color": "#ddb392",
+      "alpha": 0.85,
+      "drawPathChecked": true
+    }
+  },
+  "symmetry": {
+    "coverage": {
+      "finite": 175,
+      "continuous": 17,
+      "nontrivial": 120,
+      "maxResidual": 1.0068810866857322e-15
+    },
+    "examples": [
+      {
+        "id": "ac-n10-t3",
+        "rotationCount": 10,
+        "axes": {
+          "2": 5,
+          "5": 1
+        },
+        "maxResidual": 7.631521572941402e-16
+      },
+      {
+        "id": "gmax-n12-t3",
+        "rotationCount": 24,
+        "axes": {
+          "2": 6,
+          "3": 4,
+          "4": 3
+        },
+        "maxResidual": 3.1401849173675503e-16
+      }
+    ],
+    "weightedProperRotationsOnly": true,
+    "oppositeDirectionsCountAsOneAxis": true,
+    "coordinateAxesOffByDefault": true,
+    "numericalTolerance": 1e-06,
+    "exactSymmetryClaim": false
+  },
+  "symmetryDownloadSHA256": "baa091c1223df1283d011b0748aeb83dd24e3e876cf216c955b01687688624d4",
+  "pointGroups": {
+    "states": 192,
+    "groupCardsChecked": 192,
+    "groupDropdownsChecked": 192,
+    "groupRowsChecked": 158,
+    "blankGroupRows": 229,
+    "fullGroups": {
+      "D\u221eh": 17,
+      "D3h": 4,
+      "Td": 6,
+      "D5h": 3,
+      "Oh": 4,
+      "C5v": 4,
+      "C3v": 11,
+      "D4d": 3,
+      "C4v": 4,
+      "D3": 3,
+      "Ih": 2,
+      "C6v": 2,
+      "Cs": 4,
+      "C7v": 3,
+      "C1": 68,
+      "C9v": 2,
+      "C8v": 1,
+      "C11v": 1,
+      "C10v": 1,
+      "C13v": 1,
+      "D4": 1,
+      "T": 2,
+      "C3": 2,
+      "C2": 34,
+      "O": 3,
+      "D2": 4,
+      "D6": 1,
+      "C4": 1
+    },
+    "properGroups": {
+      "D\u221e": 17,
+      "D3": 7,
+      "T": 8,
+      "D5": 3,
+      "O": 7,
+      "C5": 4,
+      "C3": 13,
+      "D4": 4,
+      "C4": 5,
+      "I": 2,
+      "C6": 2,
+      "C1": 72,
+      "C7": 3,
+      "C9": 2,
+      "C8": 1,
+      "C11": 1,
+      "C10": 1,
+      "C13": 1,
+      "C2": 34,
+      "D2": 4,
+      "D6": 1
+    },
+    "samePartitionSwitches": [
+      {
+        "n": 12,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "first": {
+          "id": "ac-n12-t5",
+          "pointGroup": "Ih"
+        },
+        "second": {
+          "id": "ac-n12-t4-family",
+          "pointGroup": "D5h"
+        }
+      },
+      {
+        "n": 8,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "first": {
+          "id": "ac-n8-t3",
+          "pointGroup": "Oh"
+        },
+        "second": {
+          "id": "ac-n8-t3-manuscript",
+          "pointGroup": "D4d"
+        }
+      }
+    ],
+    "knownExamples": [
+      {
+        "id": "ac-n12-t5",
+        "pointGroup": "Ih",
+        "rotationalSubgroup": "I",
+        "pointGroupOrder": 120
+      },
+      {
+        "id": "ac-n10-t3",
+        "pointGroup": "D5h",
+        "rotationalSubgroup": "D5",
+        "pointGroupOrder": 20
+      },
+      {
+        "id": "gmax-n12-t3",
+        "pointGroup": "Oh",
+        "rotationalSubgroup": "O",
+        "pointGroupOrder": 48
+      }
+    ],
+    "scope": "Numerical weighted-constellation groups of each attached representative; full O3 group and proper SO3 subgroup are distinct.",
+    "downloadRecordsChecked": 192,
+    "exactSymmetryClaim": false,
+    "numericalTolerance": 1e-06
+  },
+  "priorBrowserReview": {
+    "reportedBy": "parent agent",
+    "passed": true,
+    "checks": [
+      "modal open",
+      "rotation",
+      "zoom",
+      "symmetry order filter",
+      "reset",
+      "representative switch",
+      "Escape and focus restoration",
+      "continuous half-turn plane",
+      "disabled viewer for rows without attached vector"
+    ]
+  },
+  "currentBrowserReview": {
+    "passed": true,
+    "date": "2026-10-28T19:46:18.862230+00:00",
+    "checks": [
+      "New n12 (3^3,1^3) state displays proven maximum 2 and exact algebraic parameters",
+      "Weighted (2^4,1^4) tetrahedral representative displays Td / T with 24 / 12 operations",
+      "Icosahedral representative displays Ih / I with 120 / 60 operations",
+      "Switching the same all-simple n12 partition to the four-AC representative updates to D5h / D5",
+      "Rear stars have visible warm fill and dark multiplicity labels",
+      "No KaTeX errors or page-width overflow with the new algebraic disclosure open",
+      "Modal group labels and new exact-state evidence are visible"
+    ],
+    "screenshot": "../majorana-catalogue-preview.png",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scope": "Current native-browser rendering and group switching. The retained prior review covers rotation, zoom, filters and keyboard behavior."
+  },
+  "n12FourDoubleProofReview": {
+    "readableProof": "index.html",
+    "renderedFormulas": 102,
+    "mathErrors": 0,
+    "horizontalPageOverflow": false,
+    "localLinksChecked": 16,
+    "missingLocalLinks": [],
+    "catalogueRetainsRange2to3": true
+  },
+  "validatedDate": "2026-10-29",
+  "acliegeHigherSizeReview": {
+    "exactStateVerification": "acliege/verification.json",
+    "integrationAudit": "acliege/integration-audit.json",
+    "functionalReport": "acliege/functional-verification.json",
+    "staticReport": "acliege/static-verification.json",
+    "browserLayout": "No new layout code was introduced; higher-size record rendering and modal behavior were checked by the functional harness."
+  }
+}

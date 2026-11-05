@@ -1,0 +1,11 @@
+UPDATE: N=11,t=4 is also now exactly excluded by two three-copy certificates. The n=2–12 core is complete. See reported-exclusions/index.html#n11.
+
+UPDATE 28 October 2026: the reports at (9,3) and (10,4) now have independent exact proofs. See reported-exclusions/index.html. The source audit below is retained as historical provenance.
+
+The robust exclusion hierarchy is: Schmidt rank; the new odd-complement-rank deduction; the tensor Gram dimension bound; and the stronger odd tensor bound using the pinned restriction-rank lemma. The mixed-state purity certificate independently certifies N5,t2. Numerical blank cells are not proofs.
+
+The N9,t3 and N10,t4 exclusions are explicitly asserted by Quantum2020, but their proofs were not identified in this source review. Record the source statement and proof provenance honestly; do not infer open mathematical status.
+
+PRR2022 TableIV has two internal inconsistencies, independently checked from the actual PDF image and exact reduced matrices. N9 is exactly2AC, not3AC. N10 endpoints1/sqrt(11) are unnormalized; endpoints1/sqrt(5) yield exactly3AC. No primary erratum was located in the APS/arXiv search. The author-hosted PDF reproduces the table. See table-iv-audit.json for exact matrices/purities.
+
+The public spin5/2 certificate repository is pinned by PDFp24 Ref66 to455931c12d0475a3ad8e314ea9867437345bd75d. README and complete proof note were read, including the9positive-block identity. Its full verifier was not rerun in this AC task; the separate odd-complement argument already proves the required pure-state exclusion.
