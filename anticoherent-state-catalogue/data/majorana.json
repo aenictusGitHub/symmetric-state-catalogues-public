@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSHA256": "3e75431dc53d7a242f4f8957344c948f0496977f0316048698582a0705162d97",
+  "catalogueSHA256": "cf7b144a8094e43b2ef573994799e6ca90f2642d677faaf7fc0bd047f5a3162a",
   "convention": {
     "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r",
     "sphere": "(2 Re(z), -2 Im(z), |z|^2-1)/(1+|z|^2); infinity is north",
@@ -3322,13 +3322,7055 @@
         1
       ],
       "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n4-t1": {
+      "points": [
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.4551049415439774e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 1.414213562373095,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n4-t1",
+      "n": 4,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n6-t1": {
+      "points": [
+        {
+          "x": 0.8660254037844387,
+          "y": -0.49999999999999994,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844387,
+          "y": -0.49999999999999994,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844388,
+          "y": 0.4999999999999998,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8369701987210297e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8660254037844384,
+          "y": 0.5000000000000004,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.435028243237186e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 0.9999999999999997,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n6-t1",
+      "n": 6,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n6-t2": {
+      "points": [
+        {
+          "x": 0.8227655605373801,
+          "y": -0.0,
+          "z": -0.5683808867243959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4113827802686899,
+          "y": -0.7125358767843146,
+          "z": -0.5683808867243959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4113827802686904,
+          "y": 0.7125358767843144,
+          "z": -0.5683808867243959,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8227655605373801,
+          "y": -0.0,
+          "z": 0.5683808867243959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.41138278026868996,
+          "y": -0.7125358767843147,
+          "z": 0.5683808867243959,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.41138278026869046,
+          "y": 0.7125358767843144,
+          "z": 0.5683808867243959,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - 5*sqrt(2)*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.9303512426735895e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 1.1367617734487918,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n6-t2",
+      "n": 6,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n7-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234898018587336,
+          "y": -0.7818314824680298,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.22252093395631434,
+          "y": -0.9749279121818236,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9009688679024191,
+          "y": -0.4338837391175583,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9009688679024193,
+          "y": 0.43388373911755806,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2225209339563146,
+          "y": 0.9749279121818236,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6234898018587334,
+          "y": 0.7818314824680299,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 7,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.137149340306159e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.8677674782351161,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n7-t1",
+      "n": 7,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n8-t1": {
+      "points": [
+        {
+          "x": 0.9238795325112867,
+          "y": -0.3826834323650898,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.38268343236508984,
+          "y": -0.9238795325112867,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826834323650898,
+          "y": -0.9238795325112868,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238795325112867,
+          "y": -0.3826834323650899,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238795325112868,
+          "y": 0.38268343236508967,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.38268343236509034,
+          "y": 0.9238795325112865,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.38268343236509006,
+          "y": 0.9238795325112867,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238795325112865,
+          "y": 0.3826834323650904,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.627732930853952e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7653668647301788,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n8-t1",
+      "n": 8,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n8-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.9428090415820635,
+          "y": -0.0,
+          "z": -0.33333333333333326,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.47140452079103157,
+          "y": -0.8164965809277261,
+          "z": -0.33333333333333326,
+          "multiplicity": 2
+        },
+        {
+          "x": -0.4714045207910322,
+          "y": 0.8164965809277258,
+          "z": -0.33333333333333326,
+          "multiplicity": 2
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 3,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - sqrt(2)/4",
+            "multiplicity": 2
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0373939885459686e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 1.632993161855452,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n8-t2",
+      "n": 8,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n9-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7660444431189781,
+          "y": -0.6427876096865394,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.17364817766693044,
+          "y": -0.9848077530122081,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49999999999999983,
+          "y": -0.8660254037844387,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9396926207859084,
+          "y": -0.34202014332566893,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9396926207859084,
+          "y": 0.34202014332566866,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5000000000000004,
+          "y": 0.8660254037844384,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.17364817766692997,
+          "y": 0.9848077530122081,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7660444431189778,
+          "y": 0.6427876096865396,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 9,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0783668343435e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.6840402866513371,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n9-t1",
+      "n": 9,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n10-t1": {
+      "points": [
+        {
+          "x": 0.9510565162951536,
+          "y": -0.30901699437494745,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5877852522924731,
+          "y": -0.8090169943749475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5877852522924731,
+          "y": -0.8090169943749476,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9510565162951535,
+          "y": -0.3090169943749475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9510565162951538,
+          "y": 0.3090169943749469,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5877852522924732,
+          "y": 0.8090169943749473,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8369701987210297e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5877852522924729,
+          "y": 0.8090169943749476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9510565162951535,
+          "y": 0.3090169943749477,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 10,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0687253285935071e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.6180339887498945,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n10-t1",
+      "n": 10,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n10-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.7008748372020647,
+          "y": -0.7008748372020646,
+          "z": 0.13247235618784337,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7008748372020646,
+          "y": -0.7008748372020647,
+          "z": 0.13247235618784337,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7008748372020648,
+          "y": 0.7008748372020646,
+          "z": 0.13247235618784337,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7008748372020644,
+          "y": 0.7008748372020648,
+          "z": 0.13247235618784337,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5618713512026661,
+          "y": -0.561871351202666,
+          "z": -0.6071253325264733,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.561871351202666,
+          "y": -0.5618713512026661,
+          "z": -0.6071253325264733,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5618713512026662,
+          "y": 0.561871351202666,
+          "z": -0.6071253325264733,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5618713512026658,
+          "y": 0.5618713512026662,
+          "z": -0.6071253325264733,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(7)*y/3 + sqrt(21)/45",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.98781070747117e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7652768645343522,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n10-t2",
+      "n": 10,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n11-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8412535328311812,
+          "y": -0.5406408174555976,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41541501300188644,
+          "y": -0.9096319953545183,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.142314838273285,
+          "y": -0.9898214418809328,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6548607339452851,
+          "y": -0.7557495743542583,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9594929736144975,
+          "y": -0.2817325568414297,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9594929736144975,
+          "y": 0.2817325568414294,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6548607339452852,
+          "y": 0.7557495743542582,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14231483827328523,
+          "y": 0.9898214418809327,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41541501300188605,
+          "y": 0.9096319953545186,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8412535328311812,
+          "y": 0.5406408174555976,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 11,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.33165024607038e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.563465113682859,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n11-t1",
+      "n": 11,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n11-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.6969110384546985,
+          "y": -0.6969110384546984,
+          "z": -0.1692040453416755,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6969110384546984,
+          "y": -0.6969110384546985,
+          "z": -0.1692040453416755,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6969110384546985,
+          "y": 0.6969110384546982,
+          "z": -0.16920404534167532,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6969110384546983,
+          "y": 0.6969110384546986,
+          "z": -0.1692040453416755,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6027116842185719,
+          "y": -0.6027116842185718,
+          "z": -0.5229505248231664,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6027116842185718,
+          "y": -0.6027116842185719,
+          "z": -0.5229505248231664,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.602711684218572,
+          "y": 0.6027116842185718,
+          "z": -0.5229505248231664,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6027116842185717,
+          "y": 0.602711684218572,
+          "z": -0.5229505248231664,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(11)*y/11 + 7*sqrt(165)/1815",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.501381000934918e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.3779994820400623,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n11-t2",
+      "n": 11,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n12-t1": {
+      "points": [
+        {
+          "x": 0.9659258262890683,
+          "y": -0.25881904510252074,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.25881904510252074,
+          "y": -0.9659258262890683,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.25881904510252063,
+          "y": -0.9659258262890683,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9659258262890682,
+          "y": -0.258819045102521,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9659258262890683,
+          "y": 0.2588190451025208,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865479,
+          "y": 0.7071067811865471,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.25881904510252063,
+          "y": 0.9659258262890683,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2588190451025203,
+          "y": 0.9659258262890684,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9659258262890681,
+          "y": 0.25881904510252157,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 12,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.6376571542543566e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 0.5176380902050409,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n12-t1",
+      "n": 12,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n12-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.8079258715135822,
+          "y": 0.5495745491324076,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5495745491324076,
+          "y": -0.8079258715135822,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8079258715135822,
+          "y": -0.5495745491324076,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5495745491324079,
+          "y": 0.8079258715135819,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8079258715135822,
+          "y": -0.5495745491324076,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5495745491324073,
+          "y": -0.8079258715135823,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8079258715135823,
+          "y": 0.5495745491324073,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5495745491324077,
+          "y": 0.8079258715135822,
+          "z": -0.2126584140938935,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 6*sqrt(95)*y/95 + sqrt(285)/95",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.1100623061585179e-15,
+        "exactFormulaVsSavedCoefficientsError": 1.6653345369377348e-16,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.36536394396848065,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n12-t2",
+      "n": 12,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n12-t3": {
+      "points": [
+        {
+          "x": 0.5053679778039828,
+          "y": -0.5053679778039828,
+          "z": 0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5053679778039828,
+          "y": -0.5053679778039828,
+          "z": 0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5053679778039828,
+          "y": 0.5053679778039826,
+          "z": 0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5053679778039826,
+          "y": 0.5053679778039828,
+          "z": 0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5053679778039827,
+          "y": -0.5053679778039826,
+          "z": -0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5053679778039826,
+          "y": -0.5053679778039827,
+          "z": -0.6994329231746433,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5053679778039828,
+          "y": 0.5053679778039826,
+          "z": -0.6994329231746432,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5053679778039825,
+          "y": 0.5053679778039828,
+          "z": -0.6994329231746433,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + 33*y**2 + 33*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.983734689231656e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7553830178135359,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n12-t3",
+      "n": 12,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n13-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8854560256532099,
+          "y": -0.4647231720437685,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5680647467311558,
+          "y": -0.8229838658936564,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.120536680255323,
+          "y": -0.992708874098054,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3546048870425355,
+          "y": -0.9350162426854149,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7485107481711012,
+          "y": -0.6631226582407952,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9709418174260521,
+          "y": -0.2393156642875577,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9709418174260521,
+          "y": 0.23931566428755743,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7485107481711013,
+          "y": 0.663122658240795,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3546048870425359,
+          "y": 0.9350162426854147,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1205366802553232,
+          "y": 0.992708874098054,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5680647467311548,
+          "y": 0.822983865893657,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.88545602565321,
+          "y": 0.4647231720437684,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 13,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.7167146564235131e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.4786313285751142,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n13-t1",
+      "n": 13,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n13-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.7825584436119508,
+          "y": -0.0,
+          "z": -0.6225771296246283,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24182385816770183,
+          "y": -0.7442573071789393,
+          "z": -0.6225771296246283,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6331030799736772,
+          "y": -0.4599763122120557,
+          "z": -0.6225771296246283,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6331030799736772,
+          "y": 0.45997631221205554,
+          "z": -0.6225771296246283,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24182385816770166,
+          "y": 0.7442573071789393,
+          "z": -0.6225771296246283,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9969979631472756,
+          "y": -0.0,
+          "z": 0.07742778235351547,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30808931396971573,
+          "y": -0.9482014095842118,
+          "z": 0.07742778235351547,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8065882955433534,
+          "y": -0.5860206993036033,
+          "z": 0.07742778235351547,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8065882955433535,
+          "y": 0.5860206993036031,
+          "z": 0.07742778235351547,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3080893139697155,
+          "y": 0.9482014095842118,
+          "z": 0.07742778235351547,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "26*y**2 - 39*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.278202934496123e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.7321141880417765,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n13-t2",
+      "n": 13,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n14-t1": {
+      "points": [
+        {
+          "x": 0.9749279121818236,
+          "y": -0.2225209339563144,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7818314824680299,
+          "y": -0.6234898018587336,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4338837391175582,
+          "y": -0.9009688679024191,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.43388373911755806,
+          "y": -0.9009688679024191,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7818314824680295,
+          "y": -0.6234898018587339,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9749279121818237,
+          "y": -0.2225209339563141,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9749279121818237,
+          "y": 0.22252093395631384,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7818314824680296,
+          "y": 0.6234898018587338,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4338837391175583,
+          "y": 0.900968867902419,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8369701987210297e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43388373911755795,
+          "y": 0.9009688679024193,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7818314824680297,
+          "y": 0.6234898018587337,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9749279121818237,
+          "y": 0.22252093395631378,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 14,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.64754976567502e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.4450418679126279,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n14-t1",
+      "n": 14,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n14-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 4
+        },
+        {
+          "x": 0.8228864205156924,
+          "y": -0.0,
+          "z": -0.5682058948399524,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.25428588837971833,
+          "y": -0.7826114924022431,
+          "z": -0.5682058948399524,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6657290986375644,
+          "y": -0.4836805022908665,
+          "z": -0.5682058948399524,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6657290986375645,
+          "y": 0.4836805022908663,
+          "z": -0.5682058948399524,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.25428588837971816,
+          "y": 0.7826114924022433,
+          "z": -0.5682058948399524,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9901766178067778,
+          "y": -0.0,
+          "z": -0.13982226413819188,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30598140233500154,
+          "y": -0.9417139246482318,
+          "z": -0.13982226413819202,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8010697112383904,
+          "y": -0.5820112131116648,
+          "z": -0.13982226413819188,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8010697112383905,
+          "y": 0.5820112131116645,
+          "z": -0.13982226413819188,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3059814023350014,
+          "y": 0.9417139246482319,
+          "z": -0.13982226413819188,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 4,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - sqrt(14)*y/7 + sqrt(19019)/7007",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 7.013167430242574e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.4598897097815003,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n14-t2",
+      "n": 14,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n14-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.4473556678196805,
+          "y": -0.4473556678196804,
+          "z": -0.774432574817986,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4473556678196804,
+          "y": -0.4473556678196805,
+          "z": -0.774432574817986,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4473556678196805,
+          "y": 0.4473556678196804,
+          "z": -0.774432574817986,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4473556678196803,
+          "y": 0.4473556678196805,
+          "z": -0.774432574817986,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8124096434503767,
+          "y": 0.5627325465360427,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5627325465360427,
+          "y": -0.8124096434503767,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8124096434503767,
+          "y": -0.5627325465360427,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5627325465360432,
+          "y": 0.8124096434503764,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8124096434503767,
+          "y": -0.5627325465360427,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5627325465360427,
+          "y": -0.8124096434503768,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8124096434503768,
+          "y": 0.5627325465360425,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5627325465360429,
+          "y": 0.8124096434503766,
+          "z": 0.15271755726795933,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + sqrt(385)*y**2/7 + sqrt(5313)*y/21 + sqrt(11193)/1911",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 8.870053385744731e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.35309673667019237,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n14-t3",
+      "n": 14,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n15-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.913545457642601,
+          "y": -0.4067366430758002,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6691306063588582,
+          "y": -0.7431448254773942,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3090169943749475,
+          "y": -0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.10452846326765333,
+          "y": -0.9945218953682734,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49999999999999983,
+          "y": -0.8660254037844387,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8090169943749473,
+          "y": -0.5877852522924732,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9781476007338057,
+          "y": -0.20791169081775931,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9781476007338057,
+          "y": 0.20791169081775907,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8090169943749476,
+          "y": 0.5877852522924731,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5000000000000004,
+          "y": 0.8660254037844384,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.10452846326765423,
+          "y": 0.9945218953682733,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30901699437494723,
+          "y": 0.9510565162951536,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6691306063588585,
+          "y": 0.743144825477394,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.913545457642601,
+          "y": 0.4067366430758002,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 15,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.6872592700823769e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.4158233816355183,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n15-t1",
+      "n": 15,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n15-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 4
+        },
+        {
+          "x": 0.9446571558934072,
+          "y": -0.0,
+          "z": -0.3280592291330623,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.29191511502896683,
+          "y": -0.8984223437772716,
+          "z": -0.3280592291330623,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7642436929756703,
+          "y": -0.5552555447066966,
+          "z": -0.3280592291330623,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7642436929756703,
+          "y": 0.5552555447066964,
+          "z": -0.3280592291330623,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2919151150289666,
+          "y": 0.8984223437772716,
+          "z": -0.3280592291330623,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9846108060259366,
+          "y": -0.0,
+          "z": -0.17476143927352908,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30426147190722935,
+          "y": -0.9364205230855904,
+          "z": -0.17476143927352908,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7965668749201975,
+          "y": -0.5787397110298506,
+          "z": -0.17476143927352908,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7965668749201976,
+          "y": 0.5787397110298504,
+          "z": -0.17476143927352908,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30426147190722913,
+          "y": 0.9364205230855905,
+          "z": -0.17476143927352908,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 4,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - sqrt(341)*y/31 + 4*sqrt(2821)/2821",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.531137238058836e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.15841876951526346,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n15-t2",
+      "n": 15,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n16-t1": {
+      "points": [
+        {
+          "x": 0.9807852804032304,
+          "y": -0.19509032201612825,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8314696123025452,
+          "y": -0.5555702330196022,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5555702330196023,
+          "y": -0.8314696123025452,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.19509032201612833,
+          "y": -0.9807852804032304,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1950903220161282,
+          "y": -0.9807852804032304,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5555702330196021,
+          "y": -0.8314696123025455,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8314696123025453,
+          "y": -0.5555702330196022,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9807852804032304,
+          "y": -0.1950903220161286,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9807852804032304,
+          "y": 0.19509032201612836,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8314696123025455,
+          "y": 0.555570233019602,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5555702330196022,
+          "y": 0.8314696123025452,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1950903220161287,
+          "y": 0.9807852804032304,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1950903220161283,
+          "y": 0.9807852804032304,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5555702330196026,
+          "y": 0.831469612302545,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8314696123025452,
+          "y": 0.5555702330196022,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9807852804032303,
+          "y": 0.19509032201612872,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 16,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.868755861971188e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.390180644032256,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n16-t1",
+      "n": 16,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n16-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 4
+        },
+        {
+          "x": 0.8651223401716712,
+          "y": -0.49947861598007326,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.116848883025468e-17,
+          "y": -0.9989572319601467,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8651223401716712,
+          "y": -0.49947861598007326,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8651223401716713,
+          "y": 0.49947861598007315,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8350546649076405e-16,
+          "y": 0.9989572319601467,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.865122340171671,
+          "y": 0.49947861598007376,
+          "z": 0.04565576321256162,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6699307379664123,
+          "y": -0.3867846919033127,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.7367463489858714e-17,
+          "y": -0.7735693838066255,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6699307379664123,
+          "y": -0.3867846919033127,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6699307379664124,
+          "y": 0.3867846919033126,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.4210239046957613e-16,
+          "y": 0.7735693838066255,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6699307379664121,
+          "y": 0.38678469190331316,
+          "z": -0.633711612988935,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 4,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(11)*y/5 + sqrt(182)/910",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.1410988447657256e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7157790957706018,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n16-t2",
+      "n": 16,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n16-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.6518445294525529,
+          "y": -0.6518445294525528,
+          "z": 0.387553117450447,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6518445294525528,
+          "y": -0.6518445294525529,
+          "z": 0.387553117450447,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6518445294525529,
+          "y": 0.6518445294525528,
+          "z": 0.387553117450447,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6518445294525526,
+          "y": 0.6518445294525529,
+          "z": 0.387553117450447,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6518445294525529,
+          "y": -0.6518445294525529,
+          "z": -0.3875531174504469,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6518445294525529,
+          "y": -0.6518445294525529,
+          "z": -0.3875531174504469,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6518445294525531,
+          "y": 0.6518445294525529,
+          "z": -0.3875531174504469,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6518445294525528,
+          "y": 0.6518445294525531,
+          "z": -0.3875531174504469,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + sqrt(1001)*y**2/5 + sqrt(1001)*y/5 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0369698962675648e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.3953545899303341,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n16-t3",
+      "n": 16,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n16-t4": {
+      "points": [
+        {
+          "x": 0.6934094334597447,
+          "y": -0.6934094334597446,
+          "z": -0.19587423306313637,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6934094334597446,
+          "y": -0.6934094334597447,
+          "z": -0.19587423306313637,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6934094334597448,
+          "y": 0.6934094334597446,
+          "z": -0.19587423306313628,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6934094334597445,
+          "y": 0.6934094334597448,
+          "z": -0.19587423306313637,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43254067367056687,
+          "y": -0.4325406736705668,
+          "z": -0.7910860454092362,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4325406736705668,
+          "y": -0.43254067367056687,
+          "z": -0.7910860454092362,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4325406736705669,
+          "y": 0.4325406736705668,
+          "z": -0.7910860454092362,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43254067367056676,
+          "y": 0.4325406736705669,
+          "z": -0.7910860454092362,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9806290250762151,
+          "y": -0.0,
+          "z": 0.1958742330631365,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.004620983552881e-17,
+          "y": -0.9806290250762151,
+          "z": 0.1958742330631365,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9806290250762151,
+          "y": -1.2009241967105763e-16,
+          "z": 0.1958742330631365,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8013862950658644e-16,
+          "y": 0.9806290250762151,
+          "z": 0.1958742330631365,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6117048869829108,
+          "y": -0.0,
+          "z": 0.7910860454092363,
+          "multiplicity": 1
+        },
+        {
+          "x": 3.7456121593320757e-17,
+          "y": -0.6117048869829108,
+          "z": 0.7910860454092363,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6117048869829108,
+          "y": -7.491224318664151e-17,
+          "z": 0.7910860454092363,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.1236836477996228e-16,
+          "y": 0.6117048869829108,
+          "z": 0.7910860454092363,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 - 28*sqrt(65)*y**3/3 + 2*sqrt(36465)*y**2/3 + 28*sqrt(65)*y/3 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.795543515883347e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7002728905392641,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n16-t4",
+      "n": 16,
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "evidence": "Exact witness of AC order 4. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n17-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9324722294043558,
+          "y": -0.3612416661871529,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7390089172206592,
+          "y": -0.6736956436465573,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4457383557765383,
+          "y": -0.8951632913550623,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.09226835946330203,
+          "y": -0.9957341762950346,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.27366299007208295,
+          "y": -0.9618256431728192,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6026346363792563,
+          "y": -0.7980172272802396,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.850217135729614,
+          "y": -0.5264321628773561,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9829730996839018,
+          "y": -0.18374951781657037,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9829730996839018,
+          "y": 0.18374951781657012,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8502171357296141,
+          "y": 0.5264321628773558,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6026346363792572,
+          "y": 0.7980172272802389,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2736629900720831,
+          "y": 0.961825643172819,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.09226835946330245,
+          "y": 0.9957341762950346,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.44573835577653775,
+          "y": 0.8951632913550627,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7390089172206586,
+          "y": 0.6736956436465579,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9324722294043558,
+          "y": 0.36124166618715303,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 17,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.018899707137274e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.3674990356331396,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n17-t1",
+      "n": 17,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n17-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.8591524938427141,
+          "y": -0.49603192359502923,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.07463907505557e-17,
+          "y": -0.9920638471900586,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8591524938427141,
+          "y": -0.49603192359502923,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8591524938427143,
+          "y": 0.496031923595029,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.822391722516671e-16,
+          "y": 0.9920638471900586,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8591524938427139,
+          "y": 0.49603192359502973,
+          "z": -0.12573513072510928,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6972833891273373,
+          "y": -0.40257675241412266,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.9301433125509193e-17,
+          "y": -0.8051535048282455,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6972833891273373,
+          "y": -0.40257675241412266,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6972833891273374,
+          "y": 0.40257675241412255,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.4790429937652757e-16,
+          "y": 0.8051535048282455,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6972833891273371,
+          "y": 0.4025767524141231,
+          "z": -0.5930664664797635,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 5,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(17)*y/17 + sqrt(168623)/52598",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.3671304174340527e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.5033230110575508,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n17-t2",
+      "n": 17,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n17-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.6523167109893957,
+          "y": -0.0,
+          "z": -0.757946507719362,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.20157694941049434,
+          "y": -0.6203900586746872,
+          "z": -0.757946507719362,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5277353049051922,
+          "y": -0.3834221425434983,
+          "z": -0.757946507719362,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5277353049051922,
+          "y": 0.38342214254349816,
+          "z": -0.757946507719362,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.20157694941049417,
+          "y": 0.6203900586746872,
+          "z": -0.757946507719362,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9998092305823867,
+          "y": -0.0,
+          "z": -0.019532087503798437,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3089580433828979,
+          "y": -0.9508750837974226,
+          "z": -0.019532087503798437,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8088626586740911,
+          "y": -0.5876731208422117,
+          "z": -0.019532087503798437,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8088626586740912,
+          "y": 0.5876731208422115,
+          "z": -0.019532087503798437,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3089580433828977,
+          "y": 0.9508750837974227,
+          "z": -0.019532087503798437,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9182111485179856,
+          "y": -0.0,
+          "z": 0.39609126061714833,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2837428493165964,
+          "y": -0.8732706961328873,
+          "z": 0.39609126061714833,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7428484235755891,
+          "y": -0.5397109715894058,
+          "z": 0.39609126061714833,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7428484235755892,
+          "y": 0.5397109715894056,
+          "z": 0.39609126061714833,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.28374284931659627,
+          "y": 0.8732706961328875,
+          "z": 0.3960912606171482,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 - 2*sqrt(1001)*y**2/7 + sqrt(221)*y/2 - sqrt(609)/476",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.430864105432354e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.42355756928645993,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n17-t3",
+      "n": 17,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n18-t1": {
+      "points": [
+        {
+          "x": 0.9848077530122081,
+          "y": -0.17364817766693036,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8660254037844387,
+          "y": -0.49999999999999994,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6427876096865394,
+          "y": -0.766044443118978,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3420201433256689,
+          "y": -0.9396926207859084,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.34202014332566855,
+          "y": -0.9396926207859085,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6427876096865394,
+          "y": -0.766044443118978,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844385,
+          "y": -0.5000000000000003,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9848077530122081,
+          "y": -0.1736481776669303,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9848077530122081,
+          "y": 0.17364817766693003,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844386,
+          "y": 0.5000000000000001,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6427876096865395,
+          "y": 0.7660444431189779,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3420201433256686,
+          "y": 0.9396926207859085,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 7.044813998280222e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.342020143325669,
+          "y": 0.9396926207859083,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6427876096865393,
+          "y": 0.7660444431189781,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8660254037844388,
+          "y": 0.49999999999999967,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9848077530122081,
+          "y": 0.17364817766693041,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 18,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.064219531515816e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.3472963553338603,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n18-t1",
+      "n": 18,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n18-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.8604614114387255,
+          "y": -0.49678762752143335,
+          "z": -0.11317337392912835,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.083893779001309e-17,
+          "y": -0.9935752550428668,
+          "z": -0.11317337392912835,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8604614114387255,
+          "y": -0.49678762752143335,
+          "z": -0.11317337392912835,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8604614114387255,
+          "y": 0.4967876275214331,
+          "z": -0.11317337392912821,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.825168133700393e-16,
+          "y": 0.9935752550428668,
+          "z": -0.11317337392912835,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.860461411438725,
+          "y": 0.4967876275214338,
+          "z": -0.11317337392912835,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7813023745096522,
+          "y": -0.4510851362416414,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        },
+        {
+          "x": 5.52419968241274e-17,
+          "y": -0.902170272483283,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7813023745096522,
+          "y": -0.4510851362416414,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7813023745096525,
+          "y": 0.45108513624164126,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.657259904723822e-16,
+          "y": 0.902170272483283,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7813023745096519,
+          "y": 0.4510851362416419,
+          "z": -0.43138011016670524,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 5,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(2093)*y/161 + sqrt(30107)/5474",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.924053337704581e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.33107461066002725,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n18-t2",
+      "n": 18,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n18-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 3
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 3
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0.0,
+          "multiplicity": 3
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 3,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 4,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 3
+          }
+        ],
+        "projectiveDickeReconstructionError": 2.3221900620807768e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 0.0,
+        "minimumDistinctPointDistance": 1.414213562373095,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n18-t3",
+      "n": 18,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n18-t4": {
+      "points": [
+        {
+          "x": 0.6308943866031637,
+          "y": -0.0,
+          "z": -0.7758687214681476,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6308943866031635,
+          "y": -0.0,
+          "z": 0.7758687214681474,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5104002531767438,
+          "y": 0.37086512877561634,
+          "z": 0.7758547788184083,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5104002531767438,
+          "y": -0.37086512877561634,
+          "z": 0.7758547788184083,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9243814568739707,
+          "y": 0.3814694249708036,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9243814568739707,
+          "y": -0.3814694249708036,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.38218889687315594,
+          "y": 0.9240842207866554,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.38218889687315594,
+          "y": -0.9240842207866554,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5104002531767436,
+          "y": 0.37086512877561656,
+          "z": -0.7758547788184084,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5104002531767436,
+          "y": -0.37086512877561656,
+          "z": -0.7758547788184084,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.19495305488354897,
+          "y": 0.6000647833239215,
+          "z": -0.7758321739951154,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.19495305488354897,
+          "y": -0.6000647833239215,
+          "z": -0.7758321739951154,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3831896301731456,
+          "y": 0.9236696960103042,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3831896301731456,
+          "y": -0.9236696960103042,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.194953054883549,
+          "y": 0.6000647833239217,
+          "z": 0.7758321739951153,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.194953054883549,
+          "y": -0.6000647833239217,
+          "z": 0.7758321739951153,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9233809049298067,
+          "y": 0.38388501456948176,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9233809049298067,
+          "y": -0.38388501456948176,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 1,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**18 - 102*sqrt(3)*y**13 - 102*sqrt(3)*y**5 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 2.1351747927176703e-15,
+        "exactFormulaVsSavedCoefficientsError": 7.850462293418876e-17,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7416574487913126,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n18-t4",
+      "n": 18,
+      "label": "Exactly 4-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 4. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n19-t1": {
+      "points": [
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9458172417006347,
+          "y": -0.3246994692046835,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7891405093963937,
+          "y": -0.6142127126896679,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5469481581224269,
+          "y": -0.8371664782625285,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24548548714079924,
+          "y": -0.9694002659393304,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.08257934547233227,
+          "y": -0.9965844930066698,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4016954246529695,
+          "y": -0.9157733266550575,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.677281571625741,
+          "y": -0.7357239106731318,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8794737512064891,
+          "y": -0.47594739303707373,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9863613034027223,
+          "y": -0.16459459028073403,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9863613034027224,
+          "y": 0.16459459028073378,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8794737512064893,
+          "y": 0.4759473930370731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6772815716257411,
+          "y": 0.7357239106731316,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.40169542465296904,
+          "y": 0.9157733266550576,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.08257934547233274,
+          "y": 0.9965844930066698,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2454854871407988,
+          "y": 0.9694002659393305,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5469481581224266,
+          "y": 0.8371664782625288,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.789140509396394,
+          "y": 0.6142127126896675,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9458172417006346,
+          "y": 0.32469946920468373,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 19,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y - 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.739718768413274e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.3291891805614669,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n19-t1",
+      "n": 19,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n19-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.9129347529909448,
+          "y": 0.3585663153453304,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7669949145259106,
+          "y": -0.6113415304151647,
+          "z": -0.19488543886354254,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14593983846503408,
+          "y": -0.969907845760495,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9129347529909447,
+          "y": -0.35856631534533073,
+          "z": -0.19488543886354254,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7669949145259107,
+          "y": 0.6113415304151644,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14593983846503372,
+          "y": 0.969907845760495,
+          "z": -0.19488543886354245,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9129347529909448,
+          "y": -0.3585663153453304,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1459398384650342,
+          "y": -0.969907845760495,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7669949145259106,
+          "y": -0.6113415304151647,
+          "z": -0.19488543886354254,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9129347529909448,
+          "y": 0.3585663153453305,
+          "z": -0.19488543886354254,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1459398384650341,
+          "y": 0.969907845760495,
+          "z": -0.19488543886354268,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7669949145259104,
+          "y": 0.6113415304151648,
+          "z": -0.19488543886354254,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 5,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + sqrt(1157)*y/89 + sqrt(80189)/3026",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.1005370309316645e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.29187967693006783,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n19-t2",
+      "n": 19,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n19-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.7379757613012259,
+          "y": -0.0,
+          "z": -0.6748272191693782,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.22804705167886846,
+          "y": -0.7018566566534077,
+          "z": -0.6748272191693782,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5970349323294813,
+          "y": -0.4337712690421711,
+          "z": -0.674827219169378,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5970349323294815,
+          "y": 0.4337712690421709,
+          "z": -0.6748272191693782,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.22804705167886832,
+          "y": 0.7018566566534078,
+          "z": -0.674827219169378,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9705586423535384,
+          "y": 0.17710988597006136,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.46836062567683856,
+          "y": -0.8683261566203522,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6810958566930855,
+          "y": -0.7137649640820035,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.889301014709893,
+          "y": 0.42719514883882587,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13147760337260125,
+          "y": 0.9777860858934682,
+          "z": 0.1632421821850231,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9705586423535384,
+          "y": -0.17710988597006136,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13147760337260153,
+          "y": -0.9777860858934682,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8893010147098929,
+          "y": -0.42719514883882614,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6810958566930856,
+          "y": 0.7137649640820034,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4683606256768383,
+          "y": 0.8683261566203522,
+          "z": 0.16324218218502284,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 - 3*sqrt(754)*y**2/29 + 2*sqrt(5771)*y/29 - sqrt(16269)/1479",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.0074442250686685e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.3542197719401227,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n19-t3",
+      "n": 19,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n20-t1": {
+      "points": [
+        {
+          "x": 0.9876883405951378,
+          "y": -0.15643446504023087,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8910065241883679,
+          "y": -0.45399049973954675,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7071067811865476,
+          "y": -0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.45399049973954686,
+          "y": -0.8910065241883679,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15643446504023092,
+          "y": -0.9876883405951378,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1564344650402306,
+          "y": -0.9876883405951378,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.45399049973954675,
+          "y": -0.8910065241883679,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865475,
+          "y": -0.7071067811865476,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8910065241883678,
+          "y": -0.45399049973954686,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9876883405951378,
+          "y": -0.156434465040231,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9876883405951378,
+          "y": 0.15643446504023073,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8910065241883679,
+          "y": 0.4539904997395467,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7071067811865477,
+          "y": 0.7071067811865475,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.45399049973954614,
+          "y": 0.8910065241883682,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.15643446504023106,
+          "y": 0.9876883405951378,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15643446504023067,
+          "y": 0.9876883405951378,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.45399049973954664,
+          "y": 0.8910065241883679,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.707106781186548,
+          "y": 0.707106781186547,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8910065241883678,
+          "y": 0.45399049973954697,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9876883405951378,
+          "y": 0.15643446504023115,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 20,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 6.1339578287096014e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.31286893008046085,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n20-t1",
+      "n": 20,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n20-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 6
+        },
+        {
+          "x": 0.7926285258541389,
+          "y": -0.0,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49419580253237716,
+          "y": -0.6197019354149905,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.17637643985347962,
+          "y": -0.7727556738467323,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7141336256059668,
+          "y": -0.34390862852883197,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7141336256059668,
+          "y": 0.3439086285288318,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.17637643985347984,
+          "y": 0.7727556738467323,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49419580253237694,
+          "y": 0.6197019354149906,
+          "z": -0.6097048630298881,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9931688844778798,
+          "y": -0.0,
+          "z": -0.11668576136343234,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6192306709953728,
+          "y": -0.7764907012924601,
+          "z": -0.11668576136343234,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.22100086775036865,
+          "y": -0.9682680669879701,
+          "z": -0.11668576136343221,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8948142454839438,
+          "y": -0.43091982917247684,
+          "z": -0.11668576136343249,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.894814245483944,
+          "y": 0.43091982917247657,
+          "z": -0.11668576136343249,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2210008677503689,
+          "y": 0.9682680669879701,
+          "z": -0.11668576136343221,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6192306709953724,
+          "y": 0.7764907012924602,
+          "z": -0.11668576136343234,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 6,
+        "nonzeroRootStep": 7,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - sqrt(5)*y/5 + sqrt(358530)/193800",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.1537889074776738e-15,
+        "exactFormulaVsSavedCoefficientsError": 5.551115123125783e-17,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.5322445584925576,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n20-t2",
+      "n": 20,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n20-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 3
+        },
+        {
+          "x": 0.8349656492821259,
+          "y": -0.0,
+          "z": -0.5503020666133084,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.258018575347489,
+          "y": -0.7940995216323795,
+          "z": -0.5503020666133084,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.675501399988552,
+          "y": -0.49078049481884306,
+          "z": -0.5503020666133084,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.675501399988552,
+          "y": 0.4907804948188429,
+          "z": -0.5503020666133084,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.25801857534748884,
+          "y": 0.7940995216323797,
+          "z": -0.5503020666133084,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9780600005512646,
+          "y": 0.07511329364429957,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3736741490695138,
+          "y": -0.9069790526123576,
+          "z": 0.19431064932104283,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7471166757091101,
+          "y": -0.6356571752429158,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8354176482195768,
+          "y": 0.5141213131194875,
+          "z": 0.19431064932104322,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2308001743079088,
+          "y": 0.9534016210914859,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9780600005512646,
+          "y": -0.07511329364429957,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2308001743079088,
+          "y": -0.9534016210914859,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8354176482195768,
+          "y": -0.5141213131194873,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7471166757091104,
+          "y": 0.6356571752429152,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.37367414906951324,
+          "y": 0.9069790526123576,
+          "z": 0.19431064932104303,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 3,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 - 4*sqrt(31161)*y**2/141 + 2*sqrt(270861)*y/141 - sqrt(8366)/282",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.699861335580188e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.1502265872885986,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n20-t3",
+      "n": 20,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n20-t4": {
+      "points": [
+        {
+          "x": 0.6070581399550481,
+          "y": -0.0,
+          "z": -0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.18759128181975515,
+          "y": -0.5773465997742638,
+          "z": -0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911203517972791,
+          "y": -0.35681982194967743,
+          "z": -0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911203517972792,
+          "y": 0.3568198219496773,
+          "z": -0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.187591281819755,
+          "y": 0.5773465997742638,
+          "z": -0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9964880270063476,
+          "y": -0.0,
+          "z": -0.0837353690682523,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30793173503612303,
+          "y": -0.9477164314944879,
+          "z": -0.0837353690682523,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8061757485392967,
+          "y": -0.585720966360355,
+          "z": -0.0837353690682523,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.806175748539297,
+          "y": 0.5857209663603548,
+          "z": -0.0837353690682523,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3079317350361228,
+          "y": 0.947716431494488,
+          "z": -0.0837353690682523,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9964880270063478,
+          "y": -0.0,
+          "z": 0.08373536906825238,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30793173503612303,
+          "y": -0.9477164314944879,
+          "z": 0.08373536906825238,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8061757485392969,
+          "y": -0.5857209663603551,
+          "z": 0.08373536906825238,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.806175748539297,
+          "y": 0.5857209663603548,
+          "z": 0.08373536906825238,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3079317350361228,
+          "y": 0.9477164314944881,
+          "z": 0.08373536906825238,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.607058139955048,
+          "y": -0.0,
+          "z": 0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1875912818197552,
+          "y": -0.577346599774264,
+          "z": 0.7946574197189108,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4911203517972791,
+          "y": -0.35681982194967743,
+          "z": 0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49112035179727914,
+          "y": 0.3568198219496773,
+          "z": 0.7946574197189109,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.187591281819755,
+          "y": 0.5773465997742638,
+          "z": 0.7946574197189109,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 - 228*y**3 + 494*y**2 - 228*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 9.78592748553936e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.16747073813650468,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n20-t4",
+      "n": 20,
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "evidence": "Exact witness of AC order 4. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n24-t1": {
+      "points": [
+        {
+          "x": 0.9914448613738104,
+          "y": -0.13052619222005157,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238795325112867,
+          "y": -0.3826834323650898,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7933533402912352,
+          "y": -0.6087614290087207,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6087614290087207,
+          "y": -0.7933533402912352,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.38268343236508984,
+          "y": -0.9238795325112867,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1305261922200517,
+          "y": -0.9914448613738104,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1305261922200516,
+          "y": -0.9914448613738104,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826834323650895,
+          "y": -0.9238795325112868,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6087614290087207,
+          "y": -0.7933533402912352,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.793353340291235,
+          "y": -0.6087614290087209,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238795325112867,
+          "y": -0.3826834323650899,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9914448613738104,
+          "y": -0.130526192220052,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9914448613738104,
+          "y": 0.13052619222005177,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9238795325112866,
+          "y": 0.38268343236509006,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7933533402912352,
+          "y": 0.6087614290087207,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6087614290087209,
+          "y": 0.7933533402912349,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3826834323650895,
+          "y": 0.9238795325112868,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.13052619222005163,
+          "y": 0.9914448613738104,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13052619222005127,
+          "y": 0.9914448613738105,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.38268343236508917,
+          "y": 0.923879532511287,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6087614290087199,
+          "y": 0.7933533402912357,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7933533402912349,
+          "y": 0.6087614290087209,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9238795325112862,
+          "y": 0.3826834323650912,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9914448613738103,
+          "y": 0.13052619222005257,
+          "z": 0.0,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 24,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.7078035442028782e-14,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.2610523844401019,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n24-t1",
+      "n": 24,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n24-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 7
+        },
+        {
+          "x": 0.9205310421006572,
+          "y": -0.38129644222353076,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3812964422235308,
+          "y": -0.9205310421006572,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3812964422235307,
+          "y": -0.9205310421006572,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9205310421006572,
+          "y": -0.3812964422235309,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9205310421006573,
+          "y": 0.38129644222353065,
+          "z": -0.08506246926086505,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3812964422235313,
+          "y": 0.920531042100657,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.381296442223531,
+          "y": 0.9205310421006571,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.920531042100657,
+          "y": 0.3812964422235314,
+          "z": -0.08506246926086511,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7936779825648369,
+          "y": -0.32875218453527233,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3287521845352724,
+          "y": -0.7936779825648369,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.32875218453527233,
+          "y": -0.7936779825648369,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7936779825648369,
+          "y": -0.32875218453527244,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7936779825648369,
+          "y": 0.3287521845352722,
+          "z": -0.5118566802876527,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.32875218453527283,
+          "y": 0.7936779825648368,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.32875218453527255,
+          "y": 0.7936779825648369,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7936779825648368,
+          "y": 0.3287521845352729,
+          "z": -0.5118566802876531,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 7,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 + 2*sqrt(15)*y/15 + sqrt(45354045)/1225785",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.8935027991891452e-15,
+        "exactFormulaVsSavedCoefficientsError": 1.6653345369377348e-16,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.4483368112207458,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n24-t2",
+      "n": 24,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n24-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 4
+        },
+        {
+          "x": 0.6851588262175687,
+          "y": -0.3955766327543612,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": 4.844416571201166e-17,
+          "y": -0.7911532655087226,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6851588262175687,
+          "y": -0.3955766327543612,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6851588262175689,
+          "y": 0.3955766327543611,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.4533249713603497e-16,
+          "y": 0.7911532655087226,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6851588262175685,
+          "y": 0.3955766327543616,
+          "z": -0.6116179448600937,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9255345551900067,
+          "y": 0.338725565303494,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7561122220590741,
+          "y": -0.6321736542231293,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1694223331309326,
+          "y": -0.9708992195266233,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9255345551900067,
+          "y": -0.338725565303494,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7561122220590742,
+          "y": 0.6321736542231291,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1694223331309325,
+          "y": 0.9708992195266235,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9255345551900067,
+          "y": -0.338725565303494,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.16942233313093275,
+          "y": -0.9708992195266233,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7561122220590741,
+          "y": -0.6321736542231293,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9255345551900067,
+          "y": 0.33872556530349374,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.16942233313093286,
+          "y": 0.9708992195266233,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7561122220590742,
+          "y": 0.6321736542231291,
+          "z": 0.169265408631134,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 4,
+        "nonzeroRootStep": 6,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + sqrt(399)*y**2/7 + 3*sqrt(1330)*y/14 + sqrt(81158)/2618",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.125250239123559e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.33884466626186505,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n24-t3",
+      "n": 24,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n24-t4": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.8819498706403254,
+          "y": -0.0,
+          "z": -0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27253749821464707,
+          "y": -0.8387841715181492,
+          "z": -0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7135124335348096,
+          "y": -0.5183971272236378,
+          "z": -0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7135124335348098,
+          "y": 0.5183971272236376,
+          "z": -0.471343214311518,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27253749821464684,
+          "y": 0.8387841715181493,
+          "z": -0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9115922984644937,
+          "y": -0.0,
+          "z": -0.41109546504458244,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.28169751216684785,
+          "y": -0.8669757956591332,
+          "z": -0.41109546504458244,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7374936613990947,
+          "y": -0.535820509140828,
+          "z": -0.41109546504458244,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7374936613990948,
+          "y": 0.5358205091408278,
+          "z": -0.41109546504458244,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2816975121668477,
+          "y": 0.8669757956591334,
+          "z": -0.41109546504458244,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9115922984644937,
+          "y": -0.0,
+          "z": 0.41109546504458233,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2816975121668479,
+          "y": -0.8669757956591333,
+          "z": 0.41109546504458233,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7374936613990946,
+          "y": -0.535820509140828,
+          "z": 0.41109546504458233,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7374936613990948,
+          "y": 0.5358205091408278,
+          "z": 0.41109546504458233,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2816975121668477,
+          "y": 0.8669757956591333,
+          "z": 0.41109546504458233,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8819498706403253,
+          "y": -0.0,
+          "z": 0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.272537498214647,
+          "y": -0.8387841715181491,
+          "z": 0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7135124335348096,
+          "y": -0.5183971272236377,
+          "z": 0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7135124335348098,
+          "y": 0.5183971272236376,
+          "z": 0.4713432143115179,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27253749821464684,
+          "y": 0.8387841715181492,
+          "z": 0.4713432143115179,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 5,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 - 22*y**3 + 119*y**2 - 22*y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 1.2262534524868867e-15,
+        "exactFormulaVsSavedCoefficientsError": 1.1102230246251565e-16,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.0671451027182366,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n24-t4",
+      "n": 24,
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "evidence": "Exact witness of AC order 4. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t1": {
+      "points": [
+        {
+          "x": 0.9972037971811802,
+          "y": -0.07473009358642427,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9749279121818236,
+          "y": -0.2225209339563144,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9308737486442044,
+          "y": -0.36534102436639504,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8660254037844387,
+          "y": -0.49999999999999994,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7818314824680299,
+          "y": -0.6234898018587336,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6801727377709196,
+          "y": -0.7330518718298263,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5633200580636221,
+          "y": -0.826238774315995,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4338837391175582,
+          "y": -0.9009688679024191,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2947551744109041,
+          "y": -0.9555728057861408,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14904226617617464,
+          "y": -0.9888308262251285,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.123233995736766e-17,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14904226617617433,
+          "y": -0.9888308262251286,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.29475517441090426,
+          "y": -0.9555728057861408,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4338837391175585,
+          "y": -0.900968867902419,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5633200580636221,
+          "y": -0.8262387743159949,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6801727377709192,
+          "y": -0.7330518718298265,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7818314824680298,
+          "y": -0.6234898018587337,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844387,
+          "y": -0.49999999999999994,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9308737486442044,
+          "y": -0.3653410243663948,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9749279121818236,
+          "y": -0.2225209339563145,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9972037971811801,
+          "y": -0.07473009358642467,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9972037971811802,
+          "y": 0.07473009358642399,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9749279121818237,
+          "y": 0.22252093395631384,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9308737486442045,
+          "y": 0.36534102436639465,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8660254037844388,
+          "y": 0.4999999999999998,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7818314824680299,
+          "y": 0.6234898018587334,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6801727377709194,
+          "y": 0.7330518718298263,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5633200580636226,
+          "y": 0.8262387743159945,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4338837391175583,
+          "y": 0.900968867902419,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2947551744109047,
+          "y": 0.9555728057861407,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.14904226617617525,
+          "y": 0.9888308262251285,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8369701987210297e-16,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14904226617617397,
+          "y": 0.9888308262251286,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2947551744109043,
+          "y": 0.9555728057861407,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.43388373911755795,
+          "y": 0.9009688679024193,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5633200580636216,
+          "y": 0.8262387743159951,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6801727377709188,
+          "y": 0.7330518718298269,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7818314824680297,
+          "y": 0.6234898018587337,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8660254037844384,
+          "y": 0.5000000000000004,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.930873748644204,
+          "y": 0.3653410243663958,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9749279121818235,
+          "y": 0.22252093395631464,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9972037971811801,
+          "y": 0.0747300935864257,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 42,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.188866342242707e-13,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.14946018717284731,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t1",
+      "n": 42,
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "evidence": "Exact witness of AC order 1. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t2": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 11
+        },
+        {
+          "x": 0.9223114738890787,
+          "y": -0.0,
+          "z": -0.3864473381103241,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.816666252084178,
+          "y": -0.42861951375809604,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5239326338220386,
+          "y": -0.7590474623393101,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11117236322398358,
+          "y": -0.9155867848121441,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3270561560164712,
+          "y": -0.8623762089014135,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6903600513675054,
+          "y": -0.6116056362913117,
+          "z": -0.3864473381103241,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8955107786907629,
+          "y": -0.22072358305380133,
+          "z": -0.3864473381103241,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8955107786907629,
+          "y": 0.22072358305380105,
+          "z": -0.3864473381103239,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6903600513675056,
+          "y": 0.6116056362913115,
+          "z": -0.3864473381103241,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.32705615601647153,
+          "y": 0.8623762089014134,
+          "z": -0.3864473381103239,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11117236322398376,
+          "y": 0.9155867848121441,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5239326338220377,
+          "y": 0.7590474623393108,
+          "z": -0.38644733811032417,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.816666252084178,
+          "y": 0.42861951375809587,
+          "z": -0.3864473381103239,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9981412567551098,
+          "y": -0.0,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8838101902468797,
+          "y": -0.4638593709869882,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.567008860220509,
+          "y": -0.8214541501922729,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.12031263351513692,
+          "y": -0.9908636831841817,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3539457676041401,
+          "y": -0.9332782875604607,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7471194588742104,
+          "y": -0.6618900834792565,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9691370858817299,
+          "y": -0.2388708379131668,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9691370858817301,
+          "y": 0.23887083791316652,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7471194588742105,
+          "y": 0.6618900834792563,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.35394576760414054,
+          "y": 0.9332782875604606,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.12031263351513713,
+          "y": 0.9908636831841817,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.567008860220508,
+          "y": 0.8214541501922735,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8838101902468798,
+          "y": 0.4638593709869881,
+          "z": 0.06094285489973157,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 5,
+        "infinityMultiplicity": 11,
+        "nonzeroRootStep": 13,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**2 - 5*sqrt(9261498)*y/6868 + sqrt(1969399)/127058",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 5.5285463583720484e-15,
+        "exactFormulaVsSavedCoefficientsError": 1.1443916996305594e-16,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.4414471661076016,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t2",
+      "n": 42,
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "evidence": "Exact witness of AC order 2. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        11,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t3": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 7
+        },
+        {
+          "x": 0.8939956869517885,
+          "y": -0.2904768070379036,
+          "z": 0.34116702109767927,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5525197203320161,
+          "y": -0.760478153768776,
+          "z": 0.34116702109767943,
+          "multiplicity": 1
+        },
+        {
+          "x": 5.755856448689084e-17,
+          "y": -0.9400026934617451,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.552519720332016,
+          "y": -0.7604781537687761,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8939956869517884,
+          "y": -0.29047680703790363,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8939956869517885,
+          "y": 0.290476807037903,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5525197203320162,
+          "y": 0.760478153768776,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.726756934606725e-16,
+          "y": 0.9400026934617451,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5525197203320159,
+          "y": 0.7604781537687763,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8939956869517884,
+          "y": 0.29047680703790374,
+          "z": 0.3411670210976793,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9503158459342486,
+          "y": -0.3087763359862734,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5873274928349742,
+          "y": -0.8083869425337212,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": 6.118465301283996e-17,
+          "y": -0.9992212130948954,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.587327492834974,
+          "y": -0.8083869425337212,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9503158459342486,
+          "y": -0.3087763359862735,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9503158459342487,
+          "y": 0.3087763359862729,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5873274928349743,
+          "y": 0.8083869425337211,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.8355395903851983e-16,
+          "y": 0.9992212130948954,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5873274928349739,
+          "y": 0.8083869425337213,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9503158459342486,
+          "y": 0.3087763359862737,
+          "z": 0.039458424970662334,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8063073039333184,
+          "y": -0.26198512426438747,
+          "z": -0.5303134226926158,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4983253192080826,
+          "y": -0.6858859598710313,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": 5.1912880148156467e-17,
+          "y": -0.8478016712132874,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49832531920808243,
+          "y": -0.6858859598710313,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8063073039333184,
+          "y": -0.2619851242643876,
+          "z": -0.5303134226926158,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8063073039333186,
+          "y": 0.261985124264387,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49832531920808265,
+          "y": 0.6858859598710311,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.5573864044446937e-16,
+          "y": 0.8478016712132874,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4983253192080823,
+          "y": 0.6858859598710314,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8063073039333183,
+          "y": 0.2619851242643877,
+          "z": -0.5303134226926156,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 5,
+        "infinityMultiplicity": 7,
+        "nonzeroRootStep": 10,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**3 + 7*sqrt(1073406)*y**2/199 + 14*sqrt(830279541)*y/7761 + 7*sqrt(22089)/7363",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.9048570326235856e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.3074652989273378,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t3",
+      "n": 42,
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "evidence": "Exact witness of AC order 3. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        7,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t4": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 5
+        },
+        {
+          "x": 0.654396305290437,
+          "y": -0.0,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5012966532653295,
+          "y": -0.4206378368653428,
+          "z": -0.7561517543603437,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11363472588565664,
+          "y": -0.6444545549925661,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3271981526452184,
+          "y": -0.5667238245241955,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6149313791509861,
+          "y": -0.22381671812722342,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6149313791509861,
+          "y": 0.22381671812722326,
+          "z": -0.7561517543603437,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3271981526452188,
+          "y": 0.5667238245241953,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.11363472588565635,
+          "y": 0.6444545549925662,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5012966532653294,
+          "y": 0.42063783686534295,
+          "z": -0.7561517543603435,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.942234992250821,
+          "y": -0.0,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7217938799259948,
+          "y": -0.6056569784319201,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.16361738933836936,
+          "y": -0.9279203255280063,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4711174961254103,
+          "y": -0.8159994396238448,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8854112692643641,
+          "y": -0.3222633470960863,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8854112692643641,
+          "y": 0.32226334709608606,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.47111749612541093,
+          "y": 0.8159994396238445,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.16361738933836895,
+          "y": 0.9279203255280063,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7217938799259945,
+          "y": 0.6056569784319203,
+          "z": -0.33495256287733527,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9757414240910119,
+          "y": -0.0,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7474612958459178,
+          "y": -0.6271944976636014,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.16943572016753974,
+          "y": -0.9609177193800014,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4878707120455058,
+          "y": -0.8450168607876218,
+          "z": 0.2189261823374356,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9168970160134575,
+          "y": -0.3337232217164002,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9168970160134575,
+          "y": 0.33372322171639995,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4878707120455064,
+          "y": 0.8450168607876216,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1694357201675393,
+          "y": 0.9609177193800016,
+          "z": 0.21892618233743577,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7474612958459176,
+          "y": 0.6271944976636017,
+          "z": 0.2189261823374356,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8812994788597912,
+          "y": -0.0,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6751145685041944,
+          "y": -0.5664883854342779,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.1530360484828182,
+          "y": -0.8679105595067409,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44064973942989544,
+          "y": -0.7632277370345661,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8281506169870124,
+          "y": -0.3014221740724631,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8281506169870125,
+          "y": 0.3014221740724629,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44064973942989605,
+          "y": 0.7632277370345658,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15303604848281782,
+          "y": 0.867910559506741,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.675114568504194,
+          "y": 0.5664883854342782,
+          "z": 0.47255817479063933,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 5,
+        "nonzeroRootStep": 9,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**4 - sqrt(583017565130)*y**3/7007 + 60*sqrt(6951967)*y**2/209 - 17*sqrt(88319)*y/154 + 4*sqrt(779779)/779779",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.979510103279781e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.27064454292455037,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t4",
+      "n": 42,
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "evidence": "Exact witness of AC order 4. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t5": {
+      "points": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.6394826645072377,
+          "y": -0.2648823925413817,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.26488239254138174,
+          "y": -0.6394826645072377,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2648823925413817,
+          "y": -0.6394826645072377,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6394826645072377,
+          "y": -0.2648823925413818,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6394826645072377,
+          "y": 0.26488239254138163,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.264882392541382,
+          "y": 0.6394826645072373,
+          "z": 0.7217334964627021,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.26488239254138185,
+          "y": 0.6394826645072376,
+          "z": 0.721733496462702,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6394826645072373,
+          "y": 0.264882392541382,
+          "z": 0.7217334964627021,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8693860164890393,
+          "y": -0.3601114789672793,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.36011147896727935,
+          "y": -0.8693860164890393,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3601114789672793,
+          "y": -0.8693860164890393,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8693860164890393,
+          "y": -0.36011147896727946,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8693860164890395,
+          "y": 0.36011147896727924,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3601114789672799,
+          "y": 0.869386016489039,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3601114789672795,
+          "y": 0.8693860164890391,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.869386016489039,
+          "y": 0.3601114789672799,
+          "z": 0.3383602769967519,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9198357108969577,
+          "y": -0.3810084266086172,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.38100842660861733,
+          "y": -0.9198357108969577,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.38100842660861717,
+          "y": -0.9198357108969577,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9198357108969577,
+          "y": -0.3810084266086174,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9198357108969578,
+          "y": 0.3810084266086171,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3810084266086178,
+          "y": 0.9198357108969575,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3810084266086175,
+          "y": 0.9198357108969576,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9198357108969575,
+          "y": 0.38100842660861783,
+          "z": -0.09346038632444408,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8564900733655927,
+          "y": -0.3547698044259557,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.35476980442595574,
+          "y": -0.8564900733655927,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3547698044259556,
+          "y": -0.8564900733655927,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8564900733655927,
+          "y": -0.35476980442595574,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8564900733655927,
+          "y": 0.35476980442595557,
+          "z": -0.3749175110524589,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.35476980442595624,
+          "y": 0.8564900733655925,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3547698044259559,
+          "y": 0.8564900733655925,
+          "z": -0.37491751105245913,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8564900733655924,
+          "y": 0.35476980442595624,
+          "z": -0.3749175110524589,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4924948347794953,
+          "y": -0.20399803996436364,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.20399803996436364,
+          "y": -0.4924948347794953,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2039980399643636,
+          "y": -0.4924948347794953,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4924948347794953,
+          "y": -0.2039980399643637,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4924948347794954,
+          "y": 0.20399803996436358,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.20399803996436394,
+          "y": 0.4924948347794952,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.20399803996436375,
+          "y": 0.4924948347794953,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4924948347794952,
+          "y": 0.20399803996436397,
+          "z": -0.8460695227971607,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 8,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**5 + sqrt(58422857883)*y**4/163 + 10*sqrt(170078608661)*y**3/163 + 58*sqrt(1268156463)*y**2/163 + sqrt(6532145945)*y/163 + sqrt(11287587)/140343",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 3.8202204814224924e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.28968819124786716,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t5",
+      "n": 42,
+      "label": "Exactly 5-AC · 6 Dicke components",
+      "evidence": "Exact witness of AC order 5. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
+    },
+    "exact-order-n42-t6": {
+      "points": [
+        {
+          "x": 0.4971171435473692,
+          "y": -0.0,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3099474693309288,
+          "y": -0.388661833299912,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.11061897106785577,
+          "y": -0.4846533788684286,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44788707003675754,
+          "y": -0.21569104502177247,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4478870700367576,
+          "y": 0.21569104502177236,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.11061897106785588,
+          "y": 0.4846533788684286,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3099474693309287,
+          "y": 0.38866183329991205,
+          "z": -0.8676834362780613,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4971171435473692,
+          "y": -0.0,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3099474693309288,
+          "y": -0.388661833299912,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.11061897106785579,
+          "y": -0.48465337886842863,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4478870700367576,
+          "y": -0.21569104502177253,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.44788707003675765,
+          "y": 0.21569104502177242,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.1106189710678559,
+          "y": 0.4846533788684285,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3099474693309288,
+          "y": 0.38866183329991216,
+          "z": 0.8676834362780612,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9311506330150501,
+          "y": 0.11468590406420179,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6702279740718889,
+          "y": -0.6564973882102221,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09539001950652505,
+          "y": -0.9333247570561367,
+          "z": -0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7891773827947373,
+          "y": -0.5073395474833404,
+          "z": -0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.888698080553644,
+          "y": 0.30068268918516183,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3190109975185198,
+          "y": 0.8822847280881555,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4908978732864864,
+          "y": 0.7995083714121802,
+          "z": -0.34612951628638705,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9311506330150501,
+          "y": -0.11468590406420179,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49089787328648676,
+          "y": -0.7995083714121799,
+          "z": -0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.31901099751851947,
+          "y": -0.8822847280881558,
+          "z": -0.34612951628638705,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.888698080553644,
+          "y": -0.30068268918516206,
+          "z": -0.34612951628638705,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7891773827947374,
+          "y": 0.5073395474833402,
+          "z": -0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09539001950652509,
+          "y": 0.9333247570561367,
+          "z": -0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6702279740718889,
+          "y": 0.6564973882102221,
+          "z": -0.34612951628638694,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9311506330150501,
+          "y": 0.1146859040642018,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.670227974071889,
+          "y": -0.6564973882102221,
+          "z": 0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09539001950652506,
+          "y": -0.9333247570561367,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7891773827947374,
+          "y": -0.5073395474833404,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.888698080553644,
+          "y": 0.30068268918516183,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3190109975185199,
+          "y": 0.8822847280881557,
+          "z": 0.34612951628638683,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4908978732864864,
+          "y": 0.7995083714121801,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9311506330150501,
+          "y": -0.1146859040642018,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4908978732864868,
+          "y": -0.79950837141218,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.31901099751851947,
+          "y": -0.8822847280881558,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.888698080553644,
+          "y": -0.30068268918516206,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7891773827947374,
+          "y": 0.5073395474833402,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09539001950652509,
+          "y": 0.9333247570561367,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6702279740718889,
+          "y": 0.6564973882102222,
+          "z": 0.3461295162863869,
+          "multiplicity": 1
+        }
+      ],
+      "diagnostics": {
+        "coefficientSource": "saved exact Dicke coefficients",
+        "squareFreeFactorizationExact": true,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 7,
+        "reducedPolynomialFactors": [
+          {
+            "polynomial": "y**6 - 1066*sqrt(1128315)*y**5/107 + 246*sqrt(5748012715)*y**4/107 - 24518*sqrt(53387115)*y**3/107 + 246*sqrt(5748012715)*y**2/107 - 1066*sqrt(1128315)*y/107 + 1",
+            "multiplicity": 1
+          }
+        ],
+        "projectiveDickeReconstructionError": 2.5610818975693944e-15,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 3.3306690738754696e-16,
+        "minimumDistinctPointDistance": 0.2293718081284032,
+        "rootPrecisionDecimalDigits": 40
+      },
+      "id": "exact-order-n42-t6",
+      "n": 42,
+      "label": "Exactly 6-AC · 7 Dicke components",
+      "evidence": "Exact witness of AC order 6. Coordinates are a numerical rendering of its exact Dicke coefficients.",
+      "coordinateMethod": "Exact square-free factorization followed by numerical roots.",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "exact polynomial factorization"
     }
   },
   "validation": {
-    "recordCount": 29,
+    "recordCount": 78,
     "allRecordsHaveCoordinates": true,
-    "exactMultiplicityRecords": 29,
-    "maximumProjectiveDickeReconstructionError": 8.821705437899758e-15,
+    "exactMultiplicityRecords": 78,
+    "maximumProjectiveDickeReconstructionError": 5.188866342242707e-13,
     "maximumUnitSphereError": 4.440892098500626e-16,
     "noNumericalRootClustering": true
   }

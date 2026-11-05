@@ -8,6 +8,7 @@ def read(path):return json.loads((ROOT/path).read_text())
 witnesses=read('research/states.json')
 cross_witnesses=read('research/cross-catalogue/exact-states.json')
 witnesses['states'].extend(cross_witnesses['states'])
+witnesses['states'].extend(read('research/exact-orders/states.json')['states'])
 restrictions=read('research/restrictions.json')
 sector=read('research/sector-source-metadata.json')
 sources=[s for s in sector['sources'] if s.get('pdf')]
@@ -103,7 +104,7 @@ proof_by_id={p['id']:p for p in proofs}
 core=list(range(2,13));states=witnesses['states'];extended=sorted({st['n'] for st in states if st['n']>12});entries=[]
 for n in core+extended:
  for t in range(1,min(n,7)+1):
-    candidates=sorted([s for s in states if s['n']==n and s['achievedOrder']>=t],key=lambda s:(-s['achievedOrder'],s['id']))
+    candidates=sorted([s for s in states if s['n']==n and s['achievedOrder']>=t],key=lambda s:(s['achievedOrder']!=t,s['achievedOrder'],s['id']))
     proof=None
     if 2*t>n:proof='schmidt-rank'
     elif (t//2+1)**2>n+1:proof='tensor-gram-even'
@@ -127,7 +128,7 @@ for n in core+extended:
     entry={'id':f'n{n}-t{t}','n':n,'t':t,'stateIds':[s['id'] for s in candidates]}
     if candidates:
         assert not proof,(n,t,proof)
-        entry.update(status='exists',notes='An exact normalized symmetric state has rho_t = I_(t+1)/(t+1). A state of higher achieved order also witnesses this order.',references=candidates[0]['references'])
+        entry.update(status='exists',notes='The default representative has exactly the requested AC order whenever such a witness is recorded. Higher-order representatives remain available as alternatives.',references=candidates[0]['references'])
     elif proof:
         entry.update(status='impossible',proofId=proof,notes=proof_by_id[proof]['summary'],references=proof_by_id[proof]['references'])
     elif (n,t) in [(9,3),(10,4)]:
@@ -156,7 +157,7 @@ for state in states:
         if state['n']==14:state['notes']='This exact fourth-order state has globally maximum AC order four: every fifth-order state is excluded by an exact three-copy positivity certificate. A complex-conjugate representative is also given in the source catalogue.'
 
 caveats=[
- 'Order means at least t. Every t-AC state is also s-AC for s ≤ t; a witness does not prove that t is the largest possible order at that qubit number.',
+ 'The existence table means at least t. For non-maximal orders, the default example has exactly order t: the next reduced state is not maximally mixed. Higher-order examples remain available as alternatives; the order of one representative does not by itself prove the maximum possible order at that qubit number.',
  'Full anticoherence requires every multipole rank 1,…,t to vanish. Cancelling only even multipoles, or attaining an even-sector lower bound, does not suffice.',
  'The symmetric t-body identity has dimension t+1, not 2^t. These states are distinct from absolutely maximally entangled qubit states.',
  'PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2. The local 2026 manuscript independently lists nine-qubit order 2.',

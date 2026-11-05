@@ -2,13 +2,15 @@
 
 A static, offline catalogue indexed by qubit number **n** and anticoherence order **t**. Open `index.html` in a browser. KaTeX and all 12 supplied source PDFs are included locally.
 
-Each attached representative has a **View Majorana sphere** button. The interactive sphere supports dragging, keyboard rotation, zoom, multiplicity labels, symmetry axes, and geometric point-group identification. Switching the representative selects its own constellation. Excluded or unresolved cells have no plotted witness. Coordinates are included when downloading a selected record and are also available in `data/majorana.json`. The representative panel shows its full point group and proper rotational subgroup without opening the sphere. AC representative choices and construction cards also include their group labels.
+Each attached representative has a **View Majorana sphere** button. The interactive sphere supports dragging, keyboard rotation, multiplicity labels, symmetry axes, convex hulls, centre and barycentre markers, SVG export, and geometric point-group identification. Switching the representative selects its own constellation. Excluded or unresolved cells have no plotted witness. Coordinates are included when downloading a selected record and are also available in `data/majorana.json`. The representative panel shows its full point group and proper rotational subgroup without opening the sphere. AC representative choices and construction cards also include their group labels.
 
 The sphere uses the same convention as the degeneracy catalogue: the homogeneous polynomial is `P(X,Y) = Σ_r (−1)^r √binom(n,r) c_r X^(n−r)Y^r`; a root `z = Y/X` represents the spinor ratio `b/a = 1/z`. Zero and infinity map to the south and north poles. Displayed coordinates and symmetry classifications are numerical; the existing exact AC certificates remain the evidence for anticoherence.
 
-The main table covers n=2–12 and t=1–6. A toggle adds exact larger constructions at n=13, 14, 15, 16, 17, 18, 20, 24 and 42. These are selected examples, not a continuous survey of the intervening sizes.
+The main table covers n=2–12 and t=1–6. A toggle adds exact larger constructions at n=13, 14, 15, 16, 17, 18, 19, 20, 24 and 42. These are selected examples, not a continuous survey of the intervening sizes.
 
 Anticoherence means **at least** the selected order: the t-body reduced state is I/(t+1) on the symmetric subspace. Every multipole rank 1,…,t must vanish. The condition differs from maximal mixing on the full 2^t-dimensional qubit space and from cancelling only even multipoles.
+
+For each of the 71 existence cells, the default representative now has exactly the selected AC order. Higher-order states remain available as alternatives. There are 49 new analytical witnesses, each checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Read `research/exact-orders/index.html` for the construction and saved certificates.
 
 ## Evidence
 
@@ -35,10 +37,13 @@ python3 research/reported-exclusions/n10-t4/verify.py
 python3 research/reported-exclusions/n11-t4/verify.py
 python3 research/reported-exclusions/n11-t4/moment/verify.py
 python3 research/reported-exclusions/n11-t4/moment/independent_verify.py
+python3 research/exact-orders/build.py  # requires NumPy and SymPy
+python3 research/exact-orders/verify.py
+python3 research/exact-orders/build_page.py
 python3 scripts/build_data.py
 ```
 
-The first verifies all representative states in the supplied file; pass `data/catalogue.json` to include all 28 displayed states. The second independently verifies the core witnesses and both exact rational exclusion identities. The remaining proof verifiers check all new higher-copy exclusions using exact arithmetic. The last rebuilds browser data and CSV from the source records.
+The first verifies all representative states in the supplied file; pass `data/catalogue.json` to include all 78 displayed states. The second independently verifies the core witnesses and both exact rational exclusion identities. The remaining proof verifiers check all new higher-copy exclusions using exact arithmetic. The last rebuilds browser data and CSV from the source records.
 
 After changing representative data, regenerate the Majorana coordinates with `python3 scripts/build_majorana.py` (SymPy and NumPy). Independent reconstruction and viewer checks are included:
 

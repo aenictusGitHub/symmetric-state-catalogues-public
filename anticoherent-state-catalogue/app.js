@@ -120,10 +120,16 @@
       content+=`<div class="witness-metric">${math(`\\rho_{${selected.t}}=\\frac{I_{${selected.t+1}}}{${selected.t+1}}`,true)}</div>`;
       content+=`<label class="witness-label" for="witness-select">Representative <select id="witness-select">${candidates.map(st=>`<option value="${escape(st.id)}"${st.id===witness.id?' selected':''}>${escape((st.label||st.stateName||st.id)+symmetryLabel(st))}</option>`).join('')}</select></label>`;
       content+=symmetrySummary(witness);
-      content+=`<p class="witness-order">${witness.achievedOrder}-AC representative<span>Witnesses orders 1–${witness.achievedOrder}</span></p>`;
+      const nextReduction=witness.verification?.reductions?.find(r=>r.t===witness.achievedOrder+1 && r.identityVerified===false);
+      const strictOrder=!!nextReduction || !!witness.verification?.globalMaximumOrderProven;
+      content+=`<p class="witness-order">${strictOrder?'Exactly ':''}${witness.achievedOrder}-AC representative<span>${strictOrder?`Not ${witness.achievedOrder+1}-AC`:`Witnesses orders 1–${witness.achievedOrder}`}</span></p>`;
       content+=`<div class="state-formula" role="region" tabindex="0" aria-label="Exact Dicke state formula">${math(witness.stateLatex||'',true)}</div>`;
       if(majorana?.points?.length)content+='<button id="view-majorana" class="view-majorana-button" type="button" aria-haspopup="dialog" aria-controls="majorana-viewer">View Majorana sphere ↗</button>';
       content+=`<div class="verification-line"><span class="verification-dot" aria-hidden="true"></span><span>Exact reduced-state verification${math(`\\quad\\operatorname{Tr}(\\rho_{${selected.t}}^2)=\\frac1{${selected.t+1}}`)}</span></div>`;
+      if(witness.verification?.nextOrderWitness) {
+        const next=witness.verification.nextOrderWitness;
+        content+=`<details class="coefficient-details"><summary>Why the AC order is exactly ${witness.achievedOrder}</summary><p>The next reduction has a nonzero deviation from the symmetric maximally mixed state:</p>${math(`\\left(\\rho_{${next.order}}-\\frac{I_{${next.order+1}}}{${next.order+1}}\\right)_{${next.row},${next.column}}=${next.differenceLatex}\\ne0`,true)}<p class="micro-copy">Matrix indices count Dicke excitations from zero.</p></details>`;
+      }
       if(witness.provenance)content+=`<p class="provenance">${escape(witness.provenance)}</p>`;
       content+=coefficients(witness);
       if(witness.notes)content+=`<details class="coefficient-details"><summary>Construction notes</summary><p class="detail-note">${escape(witness.notes)}</p></details>`;

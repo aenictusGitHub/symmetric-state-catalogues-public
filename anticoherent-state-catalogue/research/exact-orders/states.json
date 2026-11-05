@@ -1,0 +1,7928 @@
+{
+  "states": [
+    {
+      "id": "exact-order-n4-t1",
+      "n": 4,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{4}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{4}^{(4)}\\rangle",
+      "support": [
+        0,
+        4
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n6-t1",
+      "n": 6,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{6}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{6}^{(6)}\\rangle",
+      "support": [
+        0,
+        6
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n6-t2",
+      "n": 6,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{3}|D_{6}^{(0)}\\rangle + \\frac{\\sqrt{5}}{3}|D_{6}^{(3)}\\rangle + \\frac{\\sqrt{2}}{3}|D_{6}^{(6)}\\rangle",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "sqrt(5)/3",
+        "0",
+        "0",
+        "sqrt(2)/3"
+      ],
+      "coefficients": [
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7453559924999299,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4714045207910317,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "4/81",
+            "purity": "97/324"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 3,
+          "differenceFromIdentity": "sqrt(2)/9",
+          "differenceLatex": "\\frac{\\sqrt{2}}{9}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n7-t1",
+      "n": 7,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{7}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{7}^{(7)}\\rangle",
+      "support": [
+        0,
+        7
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n8-t1",
+      "n": 8,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{8}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{8}^{(8)}\\rangle",
+      "support": [
+        0,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n8-t2",
+      "n": 8,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{21}}{9}|D_{8}^{(0)}\\rangle + \\frac{2 \\sqrt{3}}{9}|D_{8}^{(3)}\\rangle + \\frac{4 \\sqrt{3}}{9}|D_{8}^{(6)}\\rangle",
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "exactCoefficients": [
+        "sqrt(21)/9",
+        "0",
+        "0",
+        "2*sqrt(3)/9",
+        "0",
+        "0",
+        "4*sqrt(3)/9",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5091750772173156,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3849001794597505,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.769800358919501,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "9/196",
+            "purity": "29/98"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/28",
+          "differenceLatex": "\\frac{1}{28}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n9-t1",
+      "n": 9,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{9}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{9}^{(9)}\\rangle",
+      "support": [
+        0,
+        9
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n10-t1",
+      "n": 10,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{10}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{10}^{(10)}\\rangle",
+      "support": [
+        0,
+        10
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n10-t2",
+      "n": 10,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{14}}{8}|D_{10}^{(0)}\\rangle + \\frac{\\sqrt{5}}{4}|D_{10}^{(4)}\\rangle + \\frac{\\sqrt{30}}{8}|D_{10}^{(8)}\\rangle",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": [
+        "sqrt(14)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/8",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.46770717334674267,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6846531968814576,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/576",
+            "purity": "149/576"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/48",
+          "differenceLatex": "\\frac{1}{48}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n11-t1",
+      "n": 11,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{11}^{(11)}\\rangle",
+      "support": [
+        0,
+        11
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n11-t2",
+      "n": 11,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{7 \\sqrt{3}}{24}|D_{11}^{(0)}\\rangle + \\frac{\\sqrt{66}}{24}|D_{11}^{(4)}\\rangle + \\frac{11 \\sqrt{3}}{24}|D_{11}^{(8)}\\rangle",
+      "support": [
+        0,
+        4,
+        8
+      ],
+      "exactCoefficients": [
+        "7*sqrt(3)/24",
+        "0",
+        "0",
+        "0",
+        "sqrt(66)/24",
+        "0",
+        "0",
+        "0",
+        "11*sqrt(3)/24",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5051814855409226,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.338501600193165,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7938566201357354,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/45",
+            "purity": "49/180"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/30",
+          "differenceLatex": "\\frac{1}{30}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n12-t1",
+      "n": 12,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{12}^{(12)}\\rangle",
+      "support": [
+        0,
+        12
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n12-t2",
+      "n": 12,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{22}}{8}|D_{12}^{(1)}\\rangle + \\frac{1}{4}|D_{12}^{(5)}\\rangle + \\frac{\\sqrt{38}}{8}|D_{12}^{(9)}\\rangle",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(22)/8",
+        "0",
+        "0",
+        "0",
+        "1/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(38)/8",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5863019699779287,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7705517503711221,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "81/9680",
+            "purity": "2501/9680"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "9/440",
+          "differenceLatex": "\\frac{9}{440}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n12-t3",
+      "n": 12,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{10}}{8}|D_{12}^{(0)}\\rangle + \\frac{\\sqrt{22}}{8}|D_{12}^{(4)}\\rangle + \\frac{\\sqrt{22}}{8}|D_{12}^{(8)}\\rangle + \\frac{\\sqrt{10}}{8}|D_{12}^{(12)}\\rangle",
+      "support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "exactCoefficients": [
+        "sqrt(10)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(22)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(22)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(10)/8"
+      ],
+      "coefficients": [
+        [
+          0.39528470752104744,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5863019699779287,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5863019699779287,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.39528470752104744,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "17/1440",
+            "purity": "61/288"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/180",
+          "differenceLatex": "\\frac{1}{180}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n13-t1",
+      "n": 13,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{13}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{13}^{(13)}\\rangle",
+      "support": [
+        0,
+        13
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n13-t2",
+      "n": 13,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{22}}{10}|D_{13}^{(0)}\\rangle + \\frac{\\sqrt{26}}{10}|D_{13}^{(5)}\\rangle + \\frac{\\sqrt{13}}{5}|D_{13}^{(10)}\\rangle",
+      "support": [
+        0,
+        5,
+        10
+      ],
+      "exactCoefficients": [
+        "sqrt(22)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(26)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(13)/5",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.469041575982343,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5099019513592785,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7211102550927979,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/484",
+            "purity": "63/242"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/44",
+          "differenceLatex": "\\frac{1}{44}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n14-t1",
+      "n": 14,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{14}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{14}^{(14)}\\rangle",
+      "support": [
+        0,
+        14
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n14-t2",
+      "n": 14,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{57}}{15}|D_{14}^{(0)}\\rangle + \\frac{\\sqrt{21}}{15}|D_{14}^{(5)}\\rangle + \\frac{7 \\sqrt{3}}{15}|D_{14}^{(10)}\\rangle",
+      "support": [
+        0,
+        5,
+        10
+      ],
+      "exactCoefficients": [
+        "sqrt(57)/15",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(21)/15",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7*sqrt(3)/15",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5033222956847166,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.30550504633038933,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8082903768654761,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "125/6084",
+            "purity": "823/3042"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "5/156",
+          "differenceLatex": "\\frac{5}{156}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n14-t3",
+      "n": 14,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{246}}{48}|D_{14}^{(0)}\\rangle + \\frac{\\sqrt{966}}{48}|D_{14}^{(4)}\\rangle + \\frac{\\sqrt{210}}{48}|D_{14}^{(8)}\\rangle + \\frac{7 \\sqrt{2}}{16}|D_{14}^{(12)}\\rangle",
+      "support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "exactCoefficients": [
+        "sqrt(246)/48",
+        "0",
+        "0",
+        "0",
+        "sqrt(966)/48",
+        "0",
+        "0",
+        "0",
+        "sqrt(210)/48",
+        "0",
+        "0",
+        "0",
+        "7*sqrt(2)/16",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.3267580654449609,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6475112611633356,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.30190368221228,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6187184335382291,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5*sqrt(429065)/7614464 + 805*sqrt(87945)/376915968 + 875*sqrt(5313)/41879552 + 957689/342650880",
+            "purity": "5*sqrt(429065)/7614464 + 805*sqrt(87945)/376915968 + 875*sqrt(5313)/41879552 + 13897573/68530176"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-67/17160",
+          "differenceLatex": "- \\frac{67}{17160}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n15-t1",
+      "n": 15,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{15}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{15}^{(15)}\\rangle",
+      "support": [
+        0,
+        15
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n15-t2",
+      "n": 15,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{2 \\sqrt{2}}{5}|D_{15}^{(1)}\\rangle + \\frac{\\sqrt{6}}{10}|D_{15}^{(6)}\\rangle + \\frac{\\sqrt{62}}{10}|D_{15}^{(11)}\\rangle",
+      "support": [
+        1,
+        6,
+        11
+      ],
+      "exactCoefficients": [
+        "0",
+        "2*sqrt(2)/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(62)/10",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.565685424949238,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2449489742783178,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7874007874011811,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1681/165620",
+            "purity": "21543/82810"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "41/1820",
+          "differenceLatex": "\\frac{41}{1820}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n16-t1",
+      "n": 16,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{16}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{16}^{(16)}\\rangle",
+      "support": [
+        0,
+        16
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n16-t2",
+      "n": 16,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{3}|D_{16}^{(0)}\\rangle + \\frac{\\sqrt{2}}{3}|D_{16}^{(6)}\\rangle + \\frac{\\sqrt{5}}{3}|D_{16}^{(12)}\\rangle",
+      "support": [
+        0,
+        6,
+        12
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(5)/3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4714045207910317,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7453559924999299,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/441",
+            "purity": "461/1764"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/42",
+          "differenceLatex": "\\frac{1}{42}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n16-t3",
+      "n": 16,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{5}}{4}|D_{16}^{(2)}\\rangle + \\frac{\\sqrt{3}}{4}|D_{16}^{(6)}\\rangle + \\frac{\\sqrt{3}}{4}|D_{16}^{(10)}\\rangle + \\frac{\\sqrt{5}}{4}|D_{16}^{(14)}\\rangle",
+      "support": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(3)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(3)/4",
+        "0",
+        "0",
+        "0",
+        "sqrt(5)/4",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4330127018922193,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4330127018922193,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5590169943749475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "27*sqrt(1001)/302848 + 7227/1514240",
+            "purity": "27*sqrt(1001)/302848 + 62015/302848"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-9/1820",
+          "differenceLatex": "- \\frac{9}{1820}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n16-t4",
+      "n": 16,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{3 \\sqrt{3}}{16}|D_{16}^{(0)}\\rangle + \\frac{\\sqrt{21}}{8}|D_{16}^{(4)}\\rangle + \\frac{\\sqrt{34}}{16}|D_{16}^{(8)}\\rangle -  \\frac{\\sqrt{21}}{8}|D_{16}^{(12)}\\rangle + \\frac{3 \\sqrt{3}}{16}|D_{16}^{(16)}\\rangle",
+      "support": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "exactCoefficients": [
+        "3*sqrt(3)/16",
+        "0",
+        "0",
+        "0",
+        "sqrt(21)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(34)/16",
+        "0",
+        "0",
+        "0",
+        "-sqrt(21)/8",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(3)/16"
+      ],
+      "coefficients": [
+        [
+          0.3247595264191645,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.57282196186948,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3644344934278313,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.57282196186948,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3247595264191645,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Signed five-component fourth-order state",
+      "notes": "This representative is 4-AC but not 5-AC. Every reduction through order 4 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "9*sqrt(36465)/1384448 + 1929/1384448",
+            "purity": "9*sqrt(36465)/1384448 + 698011/4153344"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 4,
+          "differenceFromIdentity": "9*sqrt(13)/3328 + sqrt(2805)/3328",
+          "differenceLatex": "\\frac{9 \\sqrt{13}}{3328} + \\frac{\\sqrt{2805}}{3328}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n17-t1",
+      "n": 17,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{17}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{17}^{(17)}\\rangle",
+      "support": [
+        0,
+        17
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n17-t2",
+      "n": 17,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{327}}{36}|D_{17}^{(0)}\\rangle + \\frac{\\sqrt{102}}{36}|D_{17}^{(6)}\\rangle + \\frac{17 \\sqrt{3}}{36}|D_{17}^{(12)}\\rangle",
+      "support": [
+        0,
+        6,
+        12
+      ],
+      "exactCoefficients": [
+        "sqrt(327)/36",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(102)/36",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "17*sqrt(3)/36",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5023094811118091,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.28054180384339106,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8179128813519698,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "5/256",
+            "purity": "69/256"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/32",
+          "differenceLatex": "\\frac{1}{32}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n17-t3",
+      "n": 17,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{290}}{50}|D_{17}^{(0)}\\rangle + \\frac{17 \\sqrt{30}}{150}|D_{17}^{(5)}\\rangle + \\frac{2 \\sqrt{255}}{75}|D_{17}^{(10)}\\rangle + \\frac{\\sqrt{1785}}{75}|D_{17}^{(15)}\\rangle",
+      "support": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "exactCoefficients": [
+        "sqrt(290)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "17*sqrt(30)/150",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2*sqrt(255)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1785)/75",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.34058772731852804,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6207522318391883,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.42583251793790167,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5633234713140696,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/10080",
+            "purity": "2017/10080"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-1/840",
+          "differenceLatex": "- \\frac{1}{840}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n18-t1",
+      "n": 18,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{18}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{18}^{(18)}\\rangle",
+      "support": [
+        0,
+        18
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n18-t2",
+      "n": 18,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{11}}{6}|D_{18}^{(1)}\\rangle + \\frac{\\sqrt{2}}{6}|D_{18}^{(7)}\\rangle + \\frac{\\sqrt{23}}{6}|D_{18}^{(13)}\\rangle",
+      "support": [
+        1,
+        7,
+        13
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(11)/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(23)/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5527707983925666,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.23570226039551584,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7993052538854533,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "4205/374544",
+            "purity": "97841/374544"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "29/1224",
+          "differenceLatex": "\\frac{29}{1224}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n18-t3",
+      "n": 18,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{26}}{8}|D_{18}^{(3)}\\rangle + \\frac{\\sqrt{6}}{8}|D_{18}^{(7)}\\rangle + \\frac{\\sqrt{6}}{8}|D_{18}^{(11)}\\rangle + \\frac{\\sqrt{26}}{8}|D_{18}^{(15)}\\rangle",
+      "support": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "sqrt(26)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/8",
+        "0",
+        "0",
+        "0",
+        "sqrt(26)/8",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6373774391990981,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.30618621784789724,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.30618621784789724,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6373774391990981,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "961/138720",
+            "purity": "5741/27744"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-31/4080",
+          "differenceLatex": "- \\frac{31}{4080}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n18-t4",
+      "n": 18,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exactly 4-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{455}}{65}|D_{18}^{(0)}\\rangle + \\frac{\\sqrt{6630}}{130}|D_{18}^{(5)}\\rangle + \\frac{\\sqrt{6630}}{130}|D_{18}^{(13)}\\rangle + \\frac{\\sqrt{455}}{65}|D_{18}^{(18)}\\rangle",
+      "support": [
+        0,
+        5,
+        13,
+        18
+      ],
+      "exactCoefficients": [
+        "sqrt(455)/65",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6630)/130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(455)/65"
+      ],
+      "coefficients": [
+        [
+          0.3281650616569468,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6263447072560702,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6263447072560702,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3281650616569468,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Phase deformation of the fifth-order witness",
+      "notes": "This representative is 4-AC but not 5-AC. Every reduction through order 4 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/25350",
+            "purity": "2113/12675"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 5,
+          "differenceFromIdentity": "sqrt(3)/390",
+          "differenceLatex": "\\frac{\\sqrt{3}}{390}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n19-t1",
+      "n": 19,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{19}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{19}^{(19)}\\rangle",
+      "support": [
+        0,
+        19
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n19-t2",
+      "n": 19,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{53}}{12}|D_{19}^{(2)}\\rangle + \\frac{\\sqrt{2}}{12}|D_{19}^{(8)}\\rangle + \\frac{\\sqrt{89}}{12}|D_{19}^{(14)}\\rangle",
+      "support": [
+        2,
+        8,
+        14
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(53)/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(89)/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6066758241067098,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.11785113019775792,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7861650943380503,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "605/104329",
+            "purity": "106749/417316"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "11/646",
+          "differenceLatex": "\\frac{11}{646}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n19-t3",
+      "n": 19,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{385}}{50}|D_{19}^{(1)}\\rangle + \\frac{\\sqrt{995}}{50}|D_{19}^{(6)}\\rangle + \\frac{\\sqrt{105}}{50}|D_{19}^{(11)}\\rangle + \\frac{\\sqrt{1015}}{50}|D_{19}^{(16)}\\rangle",
+      "support": [
+        1,
+        6,
+        11,
+        16
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(385)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(995)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(105)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1015)/50",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3924283374069717,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6308724118235002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.20493901531919198,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6371812928829597,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "757687/600935040",
+            "purity": "24188939/120187008"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-329/77520",
+          "differenceLatex": "- \\frac{329}{77520}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n20-t1",
+      "n": 20,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{20}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{20}^{(20)}\\rangle",
+      "support": [
+        0,
+        20
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n20-t2",
+      "n": 20,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{111}}{21}|D_{20}^{(0)}\\rangle + \\frac{\\sqrt{30}}{21}|D_{20}^{(7)}\\rangle + \\frac{10 \\sqrt{3}}{21}|D_{20}^{(14)}\\rangle",
+      "support": [
+        0,
+        7,
+        14
+      ],
+      "exactCoefficients": [
+        "sqrt(111)/21",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/21",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10*sqrt(3)/21",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.5016977977548923,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.26082026547865056,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.8247860988423226,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "245/12996",
+            "purity": "1747/6498"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "7/228",
+          "differenceLatex": "\\frac{7}{228}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n20-t3",
+      "n": 20,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{1335}}{75}|D_{20}^{(2)}\\rangle + \\frac{\\sqrt{1695}}{75}|D_{20}^{(7)}\\rangle + \\frac{4 \\sqrt{30}}{75}|D_{20}^{(12)}\\rangle + \\frac{\\sqrt{235}}{25}|D_{20}^{(17)}\\rangle",
+      "support": [
+        2,
+        7,
+        12,
+        17
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(1335)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1695)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "4*sqrt(30)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(235)/25",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.48716869083853626,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5489383693397041,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2921186973360886,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6131883886702356,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "57344/42253245",
+            "purity": "8507993/42253245"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-64/14535",
+          "differenceLatex": "- \\frac{64}{14535}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n20-t4",
+      "n": 20,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{561}}{75}|D_{20}^{(0)}\\rangle + \\frac{\\sqrt{209}}{25}|D_{20}^{(5)}\\rangle + \\frac{\\sqrt{741}}{75}|D_{20}^{(10)}\\rangle + \\frac{\\sqrt{209}}{25}|D_{20}^{(15)}\\rangle + \\frac{\\sqrt{561}}{75}|D_{20}^{(20)}\\rangle",
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "exactCoefficients": [
+        "sqrt(561)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(741)/75",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(209)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(561)/75"
+      ],
+      "coefficients": [
+        [
+          0.3158058475287203,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.36295086903509866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5782732917920385,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3158058475287203,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 4-AC but not 5-AC. Every reduction through order 4 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "11404129/8128125000",
+            "purity": "1366091629/8128125000"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 5,
+          "differenceFromIdentity": "3377/127500",
+          "differenceLatex": "\\frac{3377}{127500}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n24-t1",
+      "n": 24,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{24}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{24}^{(24)}\\rangle",
+      "support": [
+        0,
+        24
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n24-t2",
+      "n": 24,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{74}}{16}|D_{24}^{(1)}\\rangle + \\frac{\\sqrt{3}}{8}|D_{24}^{(9)}\\rangle + \\frac{\\sqrt{170}}{16}|D_{24}^{(17)}\\rangle",
+      "support": [
+        1,
+        9,
+        17
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(74)/16",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(3)/8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(170)/16",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5376453291901642,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.21650635094610965,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.814900300650331,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "51005/4096576",
+            "purity": "1075149/4096576"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "101/4048",
+          "differenceLatex": "\\frac{101}{4048}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n24-t3",
+      "n": 24,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{62}}{18}|D_{24}^{(2)}\\rangle + \\frac{\\sqrt{30}}{9}|D_{24}^{(8)}\\rangle + \\frac{\\sqrt{6}}{18}|D_{24}^{(14)}\\rangle + \\frac{\\sqrt{34}}{9}|D_{24}^{(20)}\\rangle",
+      "support": [
+        2,
+        8,
+        14,
+        20
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(62)/18",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(30)/9",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/18",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(34)/9",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.43744488188954506,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6085806194501846,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.13608276348795434,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6478835438717001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1990921/1451724120",
+            "purity": "58467149/290344824"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-1411/318780",
+          "differenceLatex": "- \\frac{1411}{318780}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n24-t4",
+      "n": 24,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{3705}}{125}|D_{24}^{(2)}\\rangle + \\frac{\\sqrt{1430}}{125}|D_{24}^{(7)}\\rangle + \\frac{3 \\sqrt{595}}{125}|D_{24}^{(12)}\\rangle + \\frac{\\sqrt{1430}}{125}|D_{24}^{(17)}\\rangle + \\frac{\\sqrt{3705}}{125}|D_{24}^{(22)}\\rangle",
+      "support": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(3705)/125",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1430)/125",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(595)/125",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1430)/125",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(3705)/125",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.48694968939306243,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3025227264190246,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5854229240472224,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3025227264190246,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.48694968939306243,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 4-AC but not 5-AC. Every reduction through order 4 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "11512449/10332031250",
+            "purity": "2600276486/15498046875"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 5,
+          "differenceFromIdentity": "3393/143750",
+          "differenceLatex": "\\frac{3393}{143750}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t1",
+      "n": 42,
+      "achievedOrder": 1,
+      "witnessesOrders": [
+        1
+      ],
+      "label": "Exactly 1-AC · 2 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{42}^{(0)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{42}^{(42)}\\rangle",
+      "support": [
+        0,
+        42
+      ],
+      "exactCoefficients": [
+        "sqrt(2)/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(2)/2"
+      ],
+      "coefficients": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: GHZ state",
+      "notes": "This representative is 1-AC but not 2-AC. Every reduction through order 1 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1/6",
+            "purity": "1/2"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 2,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "1/6",
+          "differenceLatex": "\\frac{1}{6}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t2",
+      "n": 42,
+      "achievedOrder": 2,
+      "witnessesOrders": [
+        1,
+        2
+      ],
+      "label": "Exactly 2-AC · 3 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{62}}{13}|D_{42}^{(5)}\\rangle + \\frac{\\sqrt{6}}{13}|D_{42}^{(18)}\\rangle + \\frac{\\sqrt{101}}{13}|D_{42}^{(31)}\\rangle",
+      "support": [
+        5,
+        18,
+        31
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(62)/13",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(6)/13",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(101)/13",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6056929133855239,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1884222879063983,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7730673554708377,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 2-AC but not 3-AC. Every reduction through order 2 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "22801/6589520",
+            "purity": "1670181/6589520"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 3,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "151/11480",
+          "differenceLatex": "\\frac{151}{11480}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t3",
+      "n": 42,
+      "achievedOrder": 3,
+      "witnessesOrders": [
+        1,
+        2,
+        3
+      ],
+      "label": "Exactly 3-AC · 4 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{3 \\sqrt{70}}{50}|D_{42}^{(5)}\\rangle + \\frac{7 \\sqrt{15}}{50}|D_{42}^{(15)}\\rangle + \\frac{\\sqrt{35}}{25}|D_{42}^{(25)}\\rangle + \\frac{\\sqrt{995}}{50}|D_{42}^{(35)}\\rangle",
+      "support": [
+        5,
+        15,
+        25,
+        35
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(70)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7*sqrt(15)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(35)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(995)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5019960159204453,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5422176684690384,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.23664319132398465,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6308724118235002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 3-AC but not 4-AC. Every reduction through order 3 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "48223/45454240",
+            "purity": "9139071/45454240"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 4,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-83/21320",
+          "differenceLatex": "- \\frac{83}{21320}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t4",
+      "n": 42,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exactly 4-AC · 5 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{4 \\sqrt{462}}{243}|D_{42}^{(1)}\\rangle + \\frac{\\sqrt{11067}}{243}|D_{42}^{(10)}\\rangle + \\frac{14 \\sqrt{11}}{81}|D_{42}^{(19)}\\rangle + \\frac{\\sqrt{3399}}{243}|D_{42}^{(28)}\\rangle + \\frac{77 \\sqrt{3}}{243}|D_{42}^{(37)}\\rangle",
+      "support": [
+        1,
+        10,
+        19,
+        28,
+        37
+      ],
+      "exactCoefficients": [
+        "0",
+        "4*sqrt(462)/243",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(11067)/243",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "14*sqrt(11)/81",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(3399)/243",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "77*sqrt(3)/243",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.35381374913917163,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.43292102833645996,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5732437909256247,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.239921577730838,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5488391447851998,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 4-AC but not 5-AC. Every reduction through order 4 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1159543/3692020644",
+            "purity": "616496317/3692020644"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "407/364572",
+          "differenceLatex": "\\frac{407}{364572}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t5",
+      "n": 42,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exactly 5-AC · 6 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{18579}}{512}|D_{42}^{(0)}\\rangle + \\frac{\\sqrt{67529}}{512}|D_{42}^{(8)}\\rangle + \\frac{7 \\sqrt{638}}{512}|D_{42}^{(16)}\\rangle + \\frac{\\sqrt{58674}}{512}|D_{42}^{(24)}\\rangle + \\frac{3 \\sqrt{5383}}{512}|D_{42}^{(32)}\\rangle + \\frac{\\sqrt{37653}}{512}|D_{42}^{(40)}\\rangle",
+      "support": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "exactCoefficients": [
+        "sqrt(18579)/512",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(67529)/512",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7*sqrt(638)/512",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(58674)/512",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(5383)/512",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(37653)/512",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.26622032322504396,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5075457532581577,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3453332678992407,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4730999338018145,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.42989607863730783,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3789918154031537,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 5-AC but not 6-AC. Every reduction through order 5 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "2018545353/251595618356992",
+            "purity": "5134892819887/35942231193856"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "7821/83932576",
+          "differenceLatex": "\\frac{7821}{83932576}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "exact-order-n42-t6",
+      "n": 42,
+      "achievedOrder": 6,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "label": "Exactly 6-AC · 7 Dicke components",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{7062}}{343}|D_{42}^{(0)}\\rangle + \\frac{\\sqrt{29315}}{343}|D_{42}^{(7)}\\rangle + \\frac{3 \\sqrt{451}}{343}|D_{42}^{(14)}\\rangle + \\frac{\\sqrt{36777}}{343}|D_{42}^{(21)}\\rangle + \\frac{3 \\sqrt{451}}{343}|D_{42}^{(28)}\\rangle + \\frac{\\sqrt{29315}}{343}|D_{42}^{(35)}\\rangle + \\frac{\\sqrt{7062}}{343}|D_{42}^{(42)}\\rangle",
+      "support": [
+        0,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42
+      ],
+      "exactCoefficients": [
+        "sqrt(7062)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(29315)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(451)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(36777)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(451)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(29315)/343",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(7062)/343"
+      ],
+      "coefficients": [
+        [
+          0.24500206033999405,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.49917270422078114,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.18574426164660612,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.559105841599652,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.18574426164660612,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.49917270422078114,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.24500206033999405,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Exact-order constructions and independent verification",
+          "url": "./research/exact-orders/index.html"
+        }
+      ],
+      "provenance": "Independent exact-order construction: Positive rational moment weights on separated Dicke indices",
+      "notes": "This representative is 6-AC but not 7-AC. Every reduction through order 6 is verified exactly; a nonzero entry of the next reduced-state deviation certifies strict order.",
+      "verification": {
+        "method": "Exact reduced-state matrices in the normalized Dicke basis, including a nonzero deviation at the next order.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/7"
+          },
+          {
+            "t": 7,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "242*(sqrt(1128315) + 110*sqrt(45849) + 2070*sqrt(969))**2/61564398356871081",
+            "purity": "53240*sqrt(5748012715)/20521466118957027 + 333960*sqrt(336515)/360025721385211 + 624505200*sqrt(17081)/6840488706319009 + 2932072046926901/23453104135950888"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 7,
+          "row": 0,
+          "column": 7,
+          "differenceFromIdentity": "11*sqrt(1128315)/248121741 + 1210*sqrt(45849)/248121741 + 7590*sqrt(969)/82707247",
+          "differenceLatex": "\\frac{11 \\sqrt{1128315}}{248121741} + \\frac{1210 \\sqrt{45849}}{248121741} + \\frac{7590 \\sqrt{969}}{82707247}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    }
+  ]
+}
