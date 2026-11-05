@@ -109,7 +109,7 @@ def coordinates(record):
         assert sum(p['multiplicity'] for p in points)==n
         error=ray_error(saved,reconstruct(points,n));assert error<1e-10,(record['id'],error)
         return {'id':record['id'],'n':n,'label':record['label'],'points':points,
-          'partition':record['partition'],'multiplicityEvidence':'Imported certified partition of the saved decimal vector; AC remains numerical',
+          'partition':record['partition'],'multiplicityEvidence':'Numerical rendering of the saved decimal vector; no exact multiplicity claim is made here',
           'evidence':f"Numerical library representative, reported AC order {record['achievedOrder']}. Reduced-state residuals are checked from the saved 85-digit components. This is not an exact AC or optimality proof.",
           'coordinateMethod':'Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.',
           'diagnostics':{'coefficientSource':'Saved 85-digit numerical library state; browser coefficients rounded','squareFreeFactorizationExact':False,'projectiveDickeReconstructionError':error,'exactFormulaVsSavedCoefficientsError':0.,'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'noNumericalRootClustering':True}}
