@@ -104,6 +104,15 @@ IMPORTED_GEOMETRY=json.loads((ROOT/'research/cross-catalogue/exact-states.json')
 def coordinates(record):
     n=record['n']; exact,source=exact_coefficients(record)
     saved=[as_complex(c) for c in record['coefficients']]
+    if record.get('status')=='numerical' and record.get('majoranaPoints'):
+        points=record['majoranaPoints']
+        assert sum(p['multiplicity'] for p in points)==n
+        error=ray_error(saved,reconstruct(points,n));assert error<1e-10,(record['id'],error)
+        return {'id':record['id'],'n':n,'label':record['label'],'points':points,
+          'partition':record['partition'],'multiplicityEvidence':'Imported certified partition of the saved decimal vector; AC remains numerical',
+          'evidence':f"Numerical library representative, reported AC order {record['achievedOrder']}. Reduced-state residuals are checked from the saved 85-digit components. This is not an exact AC or optimality proof.",
+          'coordinateMethod':'Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.',
+          'diagnostics':{'coefficientSource':'Saved 85-digit numerical library state; browser coefficients rounded','squareFreeFactorizationExact':False,'projectiveDickeReconstructionError':error,'exactFormulaVsSavedCoefficientsError':0.,'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'noNumericalRootClustering':True}}
     if record['id'] in IMPORTED_GEOMETRY:
         imported=IMPORTED_GEOMETRY[record['id']]
         assert imported['exactCoefficients']==record['exactCoefficients']

@@ -5,9 +5,9 @@
   const $ = id => document.getElementById(id);
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const math = (latex, display=false, cls='') => `<span class="math ${cls}" data-tex="${escape(latex)}" data-display="${display}">${escape(latex)}</span>`;
-  const labels = {exists:'Explicit witness', impossible:'Proven impossible', reported_absent:'Reported absent', unknown:'Unresolved'};
-  const shortLabels = {exists:'exists', impossible:'impossible', reported_absent:'reported no', unknown:'unresolved'};
-  const symbols = {exists:'●', impossible:'×', reported_absent:'?', unknown:'—'};
+  const labels = {exists:'Exact witness', numerical:'Numerical witness', impossible:'Proven impossible', reported_absent:'Reported absent', unknown:'Unresolved'};
+  const shortLabels = {exists:'exists', numerical:'numerical', impossible:'impossible', reported_absent:'reported no', unknown:'unresolved'};
+  const symbols = {exists:'●', numerical:'≈', impossible:'×', reported_absent:'?', unknown:'—'};
   if (!data || !Array.isArray(data.entries)) {
     $('state-table').innerHTML = '<div class="empty-state"><span class="empty-mark" aria-hidden="true">◎</span><h3>Source records are not loaded</h3><p>The catalogue data is needed to display verified results.</p></div>';
     $('result-count').textContent = 'Source data pending';
@@ -29,8 +29,8 @@
       if (window.katex) el.innerHTML = window.katex.renderToString(el.dataset.tex, {displayMode:el.dataset.display==='true',throwOnError:false,trust:false,strict:'ignore'});
     });
   }
-  function numbers() { return [...new Set([...(data.coreNumbers || []), ...(extended ? data.extendedNumbers || [] : [])])].sort((a,b)=>a-b); }
-  function orders() { return (data.orders || [1,2,3,4,5,6,7]).filter(t=>extended || t<=6); }
+  function numbers() { return [...new Set([...(data.coreNumbers || []), ...(data.extendedNumbers || [])])].sort((a,b)=>a-b); }
+  function orders() { return data.orders || [1,2,3,4,5,6,7,8]; }
   function getEntry(n,t) { return entries.get(`${n}:${t}`) || {id:`n${n}-t${t}`,n,t,status:'unknown',stateIds:[],notes:'No existence result or exclusion is recorded for this pair.'}; }
   function matches(entry) { return filter==='all' || entry.status===filter; }
   function status(entry) { return Object.hasOwn(labels,entry.status) ? entry.status : 'unknown'; }
@@ -74,7 +74,7 @@
     syncControls(); renderMatrix(); renderDetail(); updateHash();
     if(focus) $('state-table').querySelector(`[data-n="${selected.n}"][data-t="${selected.t}"]`)?.focus({preventScroll:true});
   }
-  function syncControls() { $('status-filter').value=filter; $('extended-toggle').checked=extended; }
+  function syncControls() { $('status-filter').value=filter; if($('extended-toggle'))$('extended-toggle').checked=extended; }
   function ensureSelection() {
     const ns=numbers(),ts=orders();
     if (!ns.includes(selected.n) || !ts.includes(selected.t) || !matches(getEntry(selected.n,selected.t))) {
@@ -92,8 +92,9 @@
       matching++;
       return `<td><button class="state-cell ${s}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${shortLabels[s]}</span></button></td>`;
     }).join('')}</tr>`).join('');
-    $('state-table').innerHTML=`<table class="state-grid"><caption class="sr-only">Existence of pure anticoherent states by qubit number n and order t</caption>${head}<tbody>${body}</tbody></table>${matching ? '' : '<p class="no-matches">No cells match this evidence filter.</p>'}`;
-    $('result-count').textContent=`${matching} ${matching===1?'cell':'cells'} · ${data.validation?.exactWitnessCount || states.size} exact representatives`;
+    $('state-table').innerHTML=`<table class="state-grid" style="min-width:${Math.max(560,ts.length*68+40)}px"><caption class="sr-only">Existence of pure anticoherent states by qubit number n and order t</caption>${head}<tbody>${body}</tbody></table>${matching ? '' : '<p class="no-matches">No cells match this evidence filter.</p>'}`;
+    const exactCount=[...states.values()].filter(st=>st.status!=='numerical').length,numericalCount=states.size-exactCount;
+    $('result-count').textContent=`${matching} ${matching===1?'cell':'cells'} · ${exactCount} exact${numericalCount?` · ${numericalCount} numerical`:''} representatives`;
     typeset($('state-table'));
   }
   function decimal(c) {
@@ -104,9 +105,29 @@
     return `${f(re)} ${im<0?'−':'+'} ${f(Math.abs(im))}i`;
   }
   function exactText(expression) { return String(expression).replace(/\bI\b/g,'i').replace(/sqrt\(/g,'√(').replace(/\*\*/g,'^').replace(/\*/g,'·'); }
+  function isNumerical(state) { return state?.status==='numerical' || state?.evidenceType==='numerical'; }
+  function residual(row) {
+    if(!row)return null;
+    const number=value=>value!==undefined && value!==null && value!=='' && Number.isFinite(Number(value))?Number(value):null;
+    for(const key of ['frobeniusDistance','frobeniusResidual','residual','maxAbsDeviation','maximumResidual']) {
+      const value=number(row[key]);if(value!==null)return value;
+    }
+    const squared=number(row.frobeniusDistanceSquared);return squared===null?null:Math.sqrt(Math.max(0,squared));
+  }
+  function residualText(value) { return value===null?'—':value===0?'0':value.toExponential(3); }
+  function numericalChecks(state,order) {
+    const checks=state.verification?.reductions || state.verification?.checks || [];
+    const selected=checks.find(r=>Number(r.t ?? r.order)===order);
+    const measured=residual(selected) ?? residual(state.verification);
+    let html=`<div class="verification-line numerical"><span class="verification-dot" aria-hidden="true"></span><span>Numerical reduced-state check${measured===null?'':` · residual ≈ ${residualText(measured)}`}</span></div>`;
+    html+='<p class="micro-copy numerical-scope">Small residuals support the reported order; decimal coefficients do not certify exact anticoherence or a maximum order.</p>';
+    if(checks.length)html+=`<details class="coefficient-details"><summary>Reduced-state residuals</summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">Order</th><th scope="col">Residual</th></tr></thead><tbody>${checks.map(row=>`<tr><th scope="row">${escape(row.t ?? row.order)}</th><td class="decimal-amplitude">${residualText(residual(row))}</td></tr>`).join('')}</tbody></table></div></details>`;
+    return html;
+  }
   function coefficients(state) {
-    const support=state.support || (state.exactCoefficients||state.coefficients||[]).map((_,i)=>i).filter(i=>String(state.exactCoefficients?.[i])!=='0' && JSON.stringify(state.coefficients?.[i])!=='[0,0]');
-    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th><th scope="col">Exact amplitude</th><th scope="col">Decimal</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th><td class="exact-amplitude">${escape(state.exactCoefficients?.[r]!==undefined?exactText(state.exactCoefficients[r]):'—')}</td><td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.</p></details>`;
+    const numeric=isNumerical(state);
+    const support=state.support || (state.exactCoefficients||state.coefficients||[]).map((_,i)=>i).filter(i=>state.exactCoefficients?String(state.exactCoefficients[i])!=='0':JSON.stringify(state.coefficients?.[i])!=='[0,0]');
+    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th>${numeric?'':'<th scope="col">Exact amplitude</th>'}<th scope="col">${numeric?'Approximate amplitude':'Decimal'}</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th>${numeric?'':`<td class="exact-amplitude">${escape(state.exactCoefficients?.[r]!==undefined?exactText(state.exactCoefficients[r]):'—')}</td>`}<td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.${numeric?' Values are numerical approximations.':''}</p></details>`;
   }
   function renderDetail() {
     window.MajoranaViewer?.close();
@@ -116,17 +137,21 @@
     const majorana=witness && window.MAJORANA_DATA?.records?.[witness.id];
     selected.stateId=witness?.id||null;
     let content=`<div class="detail-heading"><p class="eyebrow">Selected pair</p>${badge(entry)}</div><h3>${selected.n} qubits <span class="detail-separator">/</span> order ${selected.t}</h3>`;
-    if(s==='exists' && witness) {
-      content+=`<div class="witness-metric">${math(`\\rho_{${selected.t}}=\\frac{I_{${selected.t+1}}}{${selected.t+1}}`,true)}</div>`;
+    if(['exists','numerical'].includes(s) && witness) {
+      const numeric=isNumerical(witness);
+      content+=`<div class="witness-metric">${math(`\\rho_{${selected.t}}${numeric?'\\simeq':'='}\\frac{I_{${selected.t+1}}}{${selected.t+1}}`,true)}</div>`;
       content+=`<label class="witness-label" for="witness-select">Representative <select id="witness-select">${candidates.map(st=>`<option value="${escape(st.id)}"${st.id===witness.id?' selected':''}>${escape((st.label||st.stateName||st.id)+symmetryLabel(st))}</option>`).join('')}</select></label>`;
       content+=symmetrySummary(witness);
       const nextReduction=witness.verification?.reductions?.find(r=>r.t===witness.achievedOrder+1 && r.identityVerified===false);
-      const strictOrder=!!nextReduction || !!witness.verification?.globalMaximumOrderProven;
-      content+=`<p class="witness-order">${strictOrder?'Exactly ':''}${witness.achievedOrder}-AC representative<span>${strictOrder?`Not ${witness.achievedOrder+1}-AC`:`Witnesses orders 1–${witness.achievedOrder}`}</span></p>`;
-      content+=`<div class="state-formula" role="region" tabindex="0" aria-label="Exact Dicke state formula">${math(witness.stateLatex||'',true)}</div>`;
+      const strictOrder=!numeric && (!!nextReduction || !!witness.verification?.globalMaximumOrderProven);
+      content+=`<p class="witness-order">${numeric?'Numerical ':strictOrder?'Exactly ':''}${witness.achievedOrder}-AC representative<span>${numeric?`Reported order ${witness.achievedOrder}`:strictOrder?`Not ${witness.achievedOrder+1}-AC`:`Witnesses orders 1–${witness.achievedOrder}`}</span></p>`;
+      if(witness.achievedOrder>selected.t && !candidates.some(st=>st.achievedOrder===selected.t))content+=`<p class="micro-copy">A representative of exactly order ${selected.t} is not yet recorded here. This state has higher ${numeric?'reported ':''}order ${witness.achievedOrder}.</p>`;
+      const formula=witness.stateLatex || (numeric?`|\\psi\\rangle\\simeq\\sum_{r=0}^{${witness.n}}c_r|D_{${witness.n}}^{(r)}\\rangle`:'');
+      if(formula)content+=`<div class="state-formula" role="region" tabindex="0" aria-label="${numeric?'Numerical':'Exact'} Dicke state formula">${math(formula,true)}${numeric?'<p class="micro-copy">Numerical coefficients are listed below.</p>':''}</div>`;
       if(majorana?.points?.length)content+='<button id="view-majorana" class="view-majorana-button" type="button" aria-haspopup="dialog" aria-controls="majorana-viewer">View Majorana sphere ↗</button>';
-      content+=`<div class="verification-line"><span class="verification-dot" aria-hidden="true"></span><span>Exact reduced-state verification${math(`\\quad\\operatorname{Tr}(\\rho_{${selected.t}}^2)=\\frac1{${selected.t+1}}`)}</span></div>`;
-      if(witness.verification?.nextOrderWitness) {
+      if(numeric)content+=numericalChecks(witness,selected.t);
+      else content+=`<div class="verification-line"><span class="verification-dot" aria-hidden="true"></span><span>Exact reduced-state verification${math(`\\quad\\operatorname{Tr}(\\rho_{${selected.t}}^2)=\\frac1{${selected.t+1}}`)}</span></div>`;
+      if(!numeric && witness.verification?.nextOrderWitness) {
         const next=witness.verification.nextOrderWitness;
         content+=`<details class="coefficient-details"><summary>Why the AC order is exactly ${witness.achievedOrder}</summary><p>The next reduction has a nonzero deviation from the symmetric maximally mixed state:</p>${math(`\\left(\\rho_{${next.order}}-\\frac{I_{${next.order+1}}}{${next.order+1}}\\right)_{${next.row},${next.column}}=${next.differenceLatex}\\ne0`,true)}<p class="micro-copy">Matrix indices count Dicke excitations from zero.</p></details>`;
       }
@@ -144,7 +169,7 @@
     } else {
       content+='<p class="result-statement">The existence record is available; its representative data is not yet attached.</p>';
     }
-    if(entry.notes && !['exists','impossible'].includes(s))content+=`<p class="detail-note">${escape(entry.notes)}</p>`;
+    if(entry.notes && !['exists','numerical','impossible'].includes(s))content+=`<p class="detail-note">${escape(entry.notes)}</p>`;
     const refs=[...(entry.references||[]),...(witness?.references||[])];
     if(refs.length)content+=`<h4 class="detail-label">Source record</h4><ul class="detail-sources">${referenceLinks(refs)}</ul>`;
     content+='<div class="detail-actions"><button type="button" id="download-record">Download record ↓</button><button type="button" id="copy-link">Copy link ↗</button></div>';
@@ -167,7 +192,7 @@
   function renderConstructions() {
     const best=new Map();
     [...states.values()].forEach(st=>{if((st.n>=11 || st.achievedOrder>=4) && (!best.has(st.n)||st.achievedOrder>best.get(st.n).achievedOrder))best.set(st.n,st);});
-    $('construction-list').innerHTML=[...best.values()].sort((a,b)=>a.n-b.n).map(st=>`<article class="construction-card"><p class="eyebrow">N = ${st.n} / order ${st.achievedOrder}</p><h3>${escape(st.label||st.stateName)}</h3>${symmetrySummary(st)}<p>${escape(st.provenance||'Exact representative with verified symmetric reductions.')}</p><button type="button" class="text-link" data-state-link="${escape(st.id)}">Inspect the state <span aria-hidden="true">↗</span></button></article>`).join('')||'<p class="muted">Source-linked constructions will appear here.</p>';
+    $('construction-list').innerHTML=[...best.values()].sort((a,b)=>a.n-b.n).map(st=>`<article class="construction-card"><p class="eyebrow">N = ${st.n} / ${isNumerical(st)?'numerical order':'order'} ${st.achievedOrder}</p><h3>${escape(st.label||st.stateName)}</h3>${symmetrySummary(st)}<p>${escape(st.provenance||(isNumerical(st)?'Numerical library representative with checked reduced-state residuals.':'Exact representative with verified symmetric reductions.'))}</p><button type="button" class="text-link" data-state-link="${escape(st.id)}">Inspect the state <span aria-hidden="true">↗</span></button></article>`).join('')||'<p class="muted">Source-linked constructions will appear here.</p>';
     $('general-constructions').innerHTML=(data.constructions||[]).map(c=>`<article class="general-construction"><h3>${escape(c.title)}</h3><p>${escape(c.text||'')}</p>${c.formulaLatex?`<div class="construction-formula">${math(c.formulaLatex,true)}</div>`:''}${c.references?.length?`<ul class="detail-sources">${referenceLinks(c.references)}</ul>`:''}</article>`).join('');
   }
   function renderSources() {
@@ -190,7 +215,8 @@
     const target=$('state-table').querySelector(`[data-n="${ns[ri]}"][data-t="${ts[ci]}"]`);target?.focus();
   });
   $('status-filter').addEventListener('change',event=>{filter=event.target.value;ensureSelection();renderMatrix();renderDetail();updateHash();});
-  $('extended-toggle').addEventListener('change',event=>{extended=event.target.checked;ensureSelection();renderMatrix();renderDetail();updateHash();});
+  $('selected-state-jump')?.addEventListener('click',()=>$('result-detail').scrollIntoView({behavior:'smooth',block:'start'}));
+  $('extended-toggle')?.addEventListener('change',event=>{extended=event.target.checked;ensureSelection();renderMatrix();renderDetail();updateHash();});
   $('construction-list').addEventListener('click',event=>{const b=event.target.closest('[data-state-link]');const st=states.get(b?.dataset.stateLink);if(st){select(st.n,st.achievedOrder,st.id);$('catalogue').scrollIntoView({behavior:'smooth',block:'start'});}});
   document.addEventListener('click',event=>{const link=event.target.closest('a[href^="#proof-"]');if(link){const p=document.getElementById(link.hash.slice(1));if(p)p.open=true;}});
   window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#n=')){readHash();select(selected.n,selected.t,selected.stateId);}else handleAnchors();});

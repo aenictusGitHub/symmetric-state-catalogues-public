@@ -45,3 +45,11 @@ body{font-size:16px}
   .proof-item>summary{font-size:15px}
 }
 @media print{body{background:#fff}main,.site-header,.site-footer{width:100%}.site-header nav,.toolbar,.download-link,.detail-actions,.toast,.site-footer a{display:none}.intro{padding:22px 0}h1{font-size:36px}.catalogue-layout{display:block}.detail-panel{position:static;margin-top:25px;break-inside:avoid}.table-scroll{overflow:visible}.state-grid{min-width:0}.state-cell{min-height:37px}.definition-grid{display:block}.definition-note{margin-top:20px}.construction-grid{grid-template-columns:repeat(2,1fr)}.reference-section{margin-top:30px}.source-item{break-inside:avoid}.site-footer{margin-top:30px}.state-formula{overflow:visible}a{color:inherit}}
+
+/* Numerical library witnesses have a separate evidence class. */
+.state-cell.numerical{background:#e4edf5;border-color:#a9c0d3;color:#345e7d}.numerical .cell-mark{font-size:22px;line-height:18px}.legend-dot.numerical{background:#c4d8e8;border-color:#86a8c1}.badge.numerical{background:#e4edf5;color:#345e7d}.verification-line.numerical{color:#345e7d}.verification-line.numerical .verification-dot{background:#527e9f}.numerical-scope{color:#526f83;margin-bottom:15px}.state-grid .corner,.state-grid tbody th{position:sticky;left:0;background:var(--paper);z-index:1}.table-scroll{scrollbar-width:thin}.state-cell{min-width:58px}.state-grid .corner{z-index:2}
+
+/* In the single-column layout, jump past the long matrix to the selected record. */
+.jump-detail{display:none}.detail-panel{scroll-margin-top:24px}
+@media(max-width:850px){.jump-detail{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border:1px solid #cbd3c5;border-radius:3px;padding:7px 10px;color:var(--ink);font-size:13px;white-space:nowrap}.jump-detail:hover{background:#eff2e9}}
+@media print{.jump-detail{display:none}}

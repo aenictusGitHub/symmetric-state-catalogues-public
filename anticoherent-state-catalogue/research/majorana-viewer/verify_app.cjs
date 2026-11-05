@@ -33,11 +33,20 @@ function session(name,withCoordinates=true){
    for(const id of cases){
     const previous=env.closes;ac?env.api.select(entry.n,entry.t,id):env.api.select(entry.n,entry.k,entry.mode);
     assert(env.closes>previous,'rerender closes viewer');
-    const button=env.elements.get('view-majorana');const allowed=!ac||entry.status==='exists'&&id;
+    const button=env.elements.get('view-majorana');const allowed=!ac||['exists','numerical'].includes(entry.status)&&id;
     if(allowed){assert(button,'viewer trigger for '+id);button.click();assert(env.opened===records[id],'trigger passes exact representative '+id);assert(env.opened.n===entry.n,'qubit count consistent');selectedCount++;}
     else{assert(!button,'no phantom trigger '+entry.id);assert(env.opened===null,'no stale viewer');emptyCount++;}
     const detail=env.elements.get('result-detail').innerHTML;
     if(allowed){
+     if(ac){
+      const st=env.data.states.find(s=>s.id===id);
+      if(st.status==='numerical'){
+       assert(detail.includes('Numerical') && detail.includes('residual'),'numerical evidence visible '+id);
+       assert(!detail.includes('Exact reduced-state verification'),'numerical witness never labelled exact '+id);
+       assert(!detail.includes('Why the AC order is exactly'),'no exact next-order claim '+id);
+       assert(!detail.includes('Exact amplitude'),'numerical coefficients not called exact '+id);
+      }
+     }
      assert(detail.includes(env.win.MajoranaViewer.groupSummary(records[id])),'matching full/proper group summary beside representative '+id);
      assert(detail.includes('Point group')&&detail.includes('Rotations'),'both group roles beside representative '+id);
      assert(detail.includes('This representative'),'group scoped to representative '+id);

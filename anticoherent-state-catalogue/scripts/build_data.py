@@ -9,6 +9,8 @@ witnesses=read('research/states.json')
 cross_witnesses=read('research/cross-catalogue/exact-states.json')
 witnesses['states'].extend(cross_witnesses['states'])
 witnesses['states'].extend(read('research/exact-orders/states.json')['states'])
+witnesses['states'].extend(read('research/library42/exact-lower-states.json')['states'])
+witnesses['states'].extend(read('research/library42/states.json')['states'])
 restrictions=read('research/restrictions.json')
 sector=read('research/sector-source-metadata.json')
 sources=[s for s in sector['sources'] if s.get('pdf') and s.get('id')!='mixed-ac-2026']
@@ -18,6 +20,7 @@ for source in sources:
     if source['filename']=='PhysRevResearch4_013178(2022).pdf':
         source['notes']='The multipole characterization is used here. Two Table IV rows on p.17 require the corrections documented above: the nine-qubit order is 2, and the ten-qubit printed coefficients are misnormalized.'
 sources.append({'id':'acliege-julia','title':'ACLiege: explicit states and anticoherent subspaces','filename':'ACLiege.jl','pdf':'references/ACLiege.jl','authors':'John Martin; credits in the source include M. Grassl','year':2026,'notes':'Supplied Julia source, read without executing it. Sixteen pure-state formulas and ten subspace bases were independently checked exactly. Decimal-only and malformed records are distinguished in the audit.'})
+sources.append({'id':'liege-library','title':'Liège library of spin anticoherent states: verified import through N=42','pdf':'./research/library42/index.html','authors':'Liège AC-state library','year':2026,'notes':'87 saved numerical representatives from the original library were independently checked at 100-digit precision. Numerical agreement does not prove exact existence or maximum order. Downloadable components retain 85 digits.'})
 by_id={s['id']:s for s in sources}
 def refs(items):
     result=[]
@@ -99,10 +102,10 @@ proofs.append({'id':'n19-t5-four-copy','title':'Nineteen qubits cannot be fifth-
  'references':[{'title':'Full proof and rational certificate','url':'../ac-subspace-catalogue/research/n19-t5/index.html'},{'title':'Independent exact verification','url':'../ac-subspace-catalogue/research/n19-t5/independent-verification.json'},{'title':'Exact fourth-order witness','url':'../ac-subspace-catalogue/research/n19-t4/index.html'}],'kind':'exact cross-catalogue theorem'})
 proofs.append({'id': 'n20-t6-three-copy', 'title': 'Twenty qubits cannot be sixth-order AC', 'summary': 'An exact three-copy matrix-positivity certificate excludes every pure sixth-order AC state.', 'formulaLatex': 'K(20,t)=0\\quad(t\\ge6),\\qquad t_{\\max}(20)=5', 'bodyHtml': '<p>A hypothetical sixth-order state supplies a positive trace-one invariant three-copy moment <span data-tex="X"></span> on <span data-tex="\\operatorname{Sym}^3(V_{10})"></span>, of dimension 1771. Its 29 spin sectors give 108 real symmetric multiplicity coordinates. Vanishing multipoles impose 95 selected physical contraction equations.</p><p>An exact rational combination gives <span data-tex="0=\\operatorname{Tr}X+\\sum_J\\operatorname{Tr}(C_Jx_J)"></span>, where <span data-tex="x_J\\succeq0"></span> are the rescaled physical moment matrices and every <span data-tex="C_J\\succ0"></span>. The right side is at least one, a contradiction. The independent verifier reconstructs the full representation, every selected equation and trace, and all 61 positive rational factorization pivots.</p><p>This covers arbitrary complex states. The existing exact fifth-order Julia-source witness therefore has globally maximum pure AC order five; all higher orders are excluded by nesting.</p>', 'references': [{'title': 'Proof and exact certificate', 'url': '../ac-subspace-catalogue/research/n20-t6/index.html'}, {'title': 'Complete LaTeX proof', 'url': '../ac-subspace-catalogue/research/n20-t6/proof.tex'}, {'title': 'Independent exact verification', 'url': '../ac-subspace-catalogue/research/n20-t6/independent-verification.json'}], 'kind': 'exact cross-catalogue theorem'})
 proof_by_id={p['id']:p for p in proofs}
-core=list(range(2,13));states=witnesses['states'];extended=sorted({st['n'] for st in states if st['n']>12});entries=[]
+core=list(range(1,43));states=witnesses['states'];extended=[];entries=[]
 for n in core+extended:
- for t in range(1,min(n,7)+1):
-    candidates=sorted([s for s in states if s['n']==n and s['achievedOrder']>=t],key=lambda s:(s['achievedOrder']!=t,s['achievedOrder'],s['id']))
+ for t in range(1,min(n,12)+1):
+    candidates=sorted([s for s in states if s['n']==n and s['achievedOrder']>=t],key=lambda s:(s['achievedOrder']!=t,s.get('status')=='numerical',s['achievedOrder'],s['id']))
     proof=None
     if 2*t>n:proof='schmidt-rank'
     elif (t//2+1)**2>n+1:proof='tensor-gram-even'
@@ -124,9 +127,13 @@ for n in core+extended:
     elif n==20 and t>=7:proof='n20-t7-rectangular-equality'
     elif (t%2==0 and n<(t//2+1)**2) or (t%2==1 and n<(t//2+1)*(t//2+2)):proof='rectangular-tensor-pure'
     entry={'id':f'n{n}-t{t}','n':n,'t':t,'stateIds':[s['id'] for s in candidates]}
-    if candidates:
+    exact_candidates=[s for s in candidates if s.get('status')!='numerical']
+    if exact_candidates:
         assert not proof,(n,t,proof)
-        entry.update(status='exists',notes='The default representative has exactly the requested AC order whenever such a witness is recorded. Higher-order representatives remain available as alternatives.',references=candidates[0]['references'])
+        entry.update(status='exists',notes='Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.',references=exact_candidates[0]['references'])
+    elif candidates:
+        assert not proof,(n,t,proof)
+        entry.update(status='numerical',notes='The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.',references=candidates[0]['references'])
     elif proof:
         entry.update(status='impossible',proofId=proof,notes=proof_by_id[proof]['summary'],references=proof_by_id[proof]['references'])
     elif (n,t) in [(9,3),(10,4)]:
@@ -140,6 +147,9 @@ for n in core+extended:
     entries.append(entry)
 
 for state in states:
+    if state.get('status')=='numerical':
+        state['verification']['globalMaximumOrderProven']=False
+        continue
     next_entry=next((e for e in entries if e['n']==state['n'] and e['t']==state['achievedOrder']+1),None)
     state['verification']['globalMaximumOrderProven']=bool(next_entry and next_entry['status']=='impossible')
     if state['verification']['globalMaximumOrderProven']:
@@ -155,7 +165,7 @@ for state in states:
         if state['n']==14:state['notes']='This exact fourth-order state has globally maximum AC order four: every fifth-order state is excluded by an exact three-copy positivity certificate. A complex-conjugate representative is also given in the source catalogue.'
 
 caveats=[
- 'The existence table means at least t. For non-maximal orders, the default example has exactly order t: the next reduced state is not maximally mixed. Higher-order examples remain available as alternatives; the order of one representative does not by itself prove the maximum possible order at that qubit number.',
+ 'The table asks for at least the selected order. Exact representatives of the requested order are preferred; when only a higher-order witness is available, its own order is shown explicitly. Blue cells are numerical evidence, not exact existence proofs or maximum-order claims.',
  'Full anticoherence requires every multipole rank 1,…,t to vanish. Cancelling only even multipoles, or attaining an even-sector lower bound, does not suffice.',
  'The symmetric t-body identity has dimension t+1, not 2^t. These states are distinct from absolutely maximally entangled qubit states.',
  'PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2.',
@@ -163,11 +173,11 @@ caveats=[
  'Blank cells in the 2017 numerical survey mean failed convergence. Restricted cyclic-construction thresholds in the 2015 paper are not universal existence thresholds.',
  'The eleven-qubit third-order representative with radical complex amplitudes is independently derived and exactly checked here; it is not attributed to the rounded numerical vector in the 2017 appendix.'
 ]
-data={'schemaVersion':'1.0','title':'Pure anticoherent symmetric states','compiledDate':'2026-11-03','scope':'Pure states in Sym^n(C²), indexed by qubit number n and anticoherence order t. Complete core n=2–12; selected exact larger constructions through n=42, including verified Julia formulas and certified fourth-order radical states at n=14, n=17 and n=19.','coreNumbers':core,'extendedNumbers':extended,'orders':list(range(1,8)),'entries':entries,'states':states,'sources':sources,'proofs':proofs,'sourceCaveats':caveats,'definition':witnesses['definition'],'definitionReferences':witnesses['definitionReferences'],'constructions':[
+data={'schemaVersion':'1.0','title':'Pure anticoherent symmetric states','compiledDate':'2026-11-05','scope':'Pure symmetric states for every qubit number n=1–42 and AC orders t=1–12. Exact witnesses, high-precision numerical library states, proved exclusions and unresolved cells are distinguished. Orders above 12 are excluded throughout this range by the displayed general bounds.','coreNumbers':core,'extendedNumbers':extended,'orders':list(range(1,13)),'entries':entries,'states':states,'sources':sources,'proofs':proofs,'sourceCaveats':caveats,'definition':witnesses['definition'],'definitionReferences':witnesses['definitionReferences'],'constructions':[
  {'title':'Order one at every size','text':'For every n ≥ 2, the GHZ / spin-cat state is first-order anticoherent.','formulaLatex':r'|\psi_n\rangle=\frac{|D_n^{(0)}\rangle+|D_n^{(n)}\rangle}{\sqrt2}'},
  {'title':'Order three for every even n ≥ 8','text':'The support gaps remove all off-diagonal moments through rank three; symmetric weights give the required diagonal moments.','formulaLatex':r'|\psi_n\rangle=\sqrt{\frac{n+2}{6n}}\bigl(|D_n^{(0)}\rangle+|D_n^{(n)}\rangle\bigr)+\sqrt{\frac{2(n-1)}{3n}}|D_n^{(n/2)}\rangle','references':[{'file':'PRA92_052333(2015).pdf','page':9,'location':'Eq. (48)'}]},
  {'title':'Every fixed order eventually occurs','text':'The constructive quadrature argument proves existence for sufficiently large n at every fixed t. Its restricted search thresholds are not minimal universal thresholds.','references':[{'file':'PRA92_052333(2015).pdf','page':10,'location':'Sec. VI; proof continues on PDF p.11'}]}
- ],'validation':{'exactWitnessCount':len(states),'coreEntryCount':sum(e['n'] in core and e['t']<=6 for e in entries),'entryCount':len(entries),'coreStatusCounts':dict(Counter(e['status'] for e in entries if e['n'] in core and e['t']<=6)),'method':'Exact symbolic normalization and every reduced matrix through the achieved order. Two-copy identities, three-copy polynomial and moment certificates, and a four-copy positivity certificate use exact arithmetic with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included; both imported radical witnesses are rechecked independently.'}}
+ ],'validation':{'exactWitnessCount':sum(s.get('status')!='numerical' for s in states),'numericalWitnessCount':sum(s.get('status')=='numerical' for s in states),'coreEntryCount':len(entries),'entryCount':len(entries),'coreStatusCounts':dict(Counter(e['status'] for e in entries)),'method':'Exact symbolic normalization and every reduced matrix through the achieved order. Two-copy identities, three-copy polynomial and moment certificates, and a four-copy positivity certificate use exact arithmetic with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical.'}}
 for e in entries:
  assert all(any(s['id']==id for s in states) for id in e['stateIds'])
 for source in sources:assert (ROOT/source['pdf']).is_file(),source
@@ -177,4 +187,4 @@ index=ROOT/'index.html'
 index.write_text(re.sub(r'src="data/catalogue\.js(?:\?v=[^"]*)?"','src="data/catalogue.js?v='+hashlib.sha256((ROOT/'data/catalogue.js').read_bytes()).hexdigest()[:12]+'"',index.read_text()))
 with (ROOT/'data/catalogue.csv').open('w',newline='') as stream:
  writer=csv.DictWriter(stream,fieldnames=['n','t','status','proofId','notes'],extrasaction='ignore');writer.writeheader();writer.writerows(entries)
-print('Built',len(entries),'entries and',len(states),'exact witnesses. Core status counts:',data['validation']['coreStatusCounts'])
+print('Built',len(entries),'entries;',data['validation']['exactWitnessCount'],'exact and',data['validation']['numericalWitnessCount'],'numerical representatives. Status counts:',data['validation']['coreStatusCounts'])

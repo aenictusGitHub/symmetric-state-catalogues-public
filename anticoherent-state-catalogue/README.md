@@ -6,25 +6,27 @@ Each attached representative has a **View Majorana sphere** button. The interact
 
 The sphere uses the same convention as the degeneracy catalogue: the homogeneous polynomial is `P(X,Y) = Σ_r (−1)^r √binom(n,r) c_r X^(n−r)Y^r`; a root `z = Y/X` represents the spinor ratio `b/a = 1/z`. Zero and infinity map to the south and north poles. Displayed coordinates and symmetry classifications are numerical; the existing exact AC certificates remain the evidence for anticoherence.
 
-The main table covers n=2–12 and t=1–6. A toggle adds exact larger constructions at n=13, 14, 15, 16, 17, 18, 19, 20, 24 and 42. These are selected examples, not a continuous survey of the intervening sizes.
+The main table covers every qubit number n=1–42 and orders t=1–12. The original Liège library supplies numerical witnesses through n=42, alongside analytical representatives and proved exclusions. Missing numerical solutions are left unresolved unless an independent proof excludes them.
 
 Anticoherence means **at least** the selected order: the t-body reduced state is I/(t+1) on the symmetric subspace. Every multipole rank 1,…,t must vanish. The condition differs from maximal mixing on the full 2^t-dimensional qubit space and from cancelling only even multipoles.
 
-For each of the 71 existence cells, the default representative now has exactly the selected AC order. Higher-order states remain available as alternatives. There are 49 new analytical witnesses, each checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Read `research/exact-orders/index.html` for the construction and saved certificates.
+Where an exact-order representative is recorded, it is the default for the selected cell. Higher-order states remain available as alternatives. The 49 original and 91 additional analytical exact-order witnesses are checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Numerical library states are labelled separately and display reduced-state residuals rather than an exact existence claim. Read `research/exact-orders/index.html` for the construction and saved certificates.
 
 A general rational construction and proof are given in [the exact-order research note](research/exact-orders/general/index.html). It guarantees exactly order t for every N ≥ 4t(t+1)^4; the bound is sufficient, not optimal. A separate three-component family gives exactly order two for every N ≥ 7.
 
 ## Evidence
 
-The 56 main-table cells comprise 26 exact existence results, 30 proved exclusions. Every main-table cell is settled; the selected larger-size extension still has unresolved cells. A failed numerical search is never treated as a proof of impossibility.
+The original core at n=2–12, t=1–6 comprises 26 exact existence results and 30 proved exclusions. The expanded table contains exact witnesses, numerical witnesses, proved exclusions and unresolved cells. A failed numerical search is never treated as a proof of impossibility.
 
-There are 28 exact representative states. Their normalization and every reduced matrix through their claimed order were checked symbolically. The dataset includes multiple representatives at some sizes and independently derived radical states at n=11, 14 and 17. A witness proves existence, not the largest achievable order.
+The analytical representatives have their normalization and every reduced matrix through the claimed order checked symbolically. The dataset includes multiple representatives at some sizes and independently derived radical states at n=11, 14 and 17. A witness proves existence, not the largest achievable order.
 
 For n=2,…,12, the highest orders witnessed here are 1,1,2,1,3,2,3,2,3,3,5. Maximality is established for every n=2–12. In particular, n=11 has maximal order 3, and n=12 is the first qubit number admitting pure fourth-order anticoherence.
 
 The previously reported exclusions (9,3) and (10,4) now have independent exact proofs: a four-copy positivity certificate and a three-copy polynomial identity, respectively. The n=11,t=4 exclusion is also now proved by both a 26-term polynomial identity and an invertible 27-by-27 matrix of necessary three-copy equations (determinant 3 modulo 37). Read `research/reported-exclusions/index.html` for the proofs, LaTeX formulas, and reproducible certificates.
 
 Two-copy exact identities exclude (8,4) and (10,5). Schmidt-rank, odd-complement, and tensor-Gram arguments establish the other exclusions. Read `research/SMALL_N_PROOFS.md` for the derivations.
+
+The expansion imports 87 refined library records, checked independently at 100-digit precision from saved 85-digit components. The catalogue contains 169 exact representatives and 87 numerical representatives. Read [the import and audit notes](research/library42/index.html) for coverage and verification, including the rejected starred N=29,t=6 candidate.
 
 ## Reproduce
 
@@ -42,6 +44,10 @@ python3 research/reported-exclusions/n11-t4/moment/independent_verify.py
 python3 research/exact-orders/build.py  # requires NumPy and SymPy
 python3 research/exact-orders/verify.py
 python3 research/exact-orders/build_page.py
+python3 research/library42/build.py
+python3 research/library42/verify_exact.py
+python3 research/library42/verify_numeric.py
+python3 research/library42/build_page.py
 python3 scripts/build_data.py
 ```
 
