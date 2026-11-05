@@ -121,6 +121,8 @@ def coordinate_fingerprint(record):
     keys=['n','status','achievedOrder','label','stateName','stateKey','exactCoefficients','coefficients','majoranaPoints','majoranaCoordinatePolicy']
     payload={k:record.get(k) for k in keys}
     payload['importedGeometry']=IMPORTED_GEOMETRY.get(record['id'])
+    if record.get('implicitAlgebraicDefinition'):
+        payload['implicitAlgebraicDefinition']=record['implicitAlgebraicDefinition']
     payload['coordinateMethodVersion']=1
     return hashlib.sha256(json.dumps(payload,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
@@ -172,15 +174,16 @@ def numerical_rendering_of_exact(record,exact,saved):
 def coordinates(record):
     n=record['n']; exact,source=exact_coefficients(record)
     saved=[as_complex(c) for c in record['coefficients']]
-    if record.get('status')=='numerical' and record.get('majoranaPoints'):
+    if (record.get('status')=='numerical' or record.get('implicitAlgebraicDefinition')) and record.get('majoranaPoints'):
+        implicit=bool(record.get('implicitAlgebraicDefinition'))
         points=record['majoranaPoints']
         assert sum(p['multiplicity'] for p in points)==n
         error=ray_error(saved,reconstruct(points,n));assert error<1e-10,(record['id'],error)
         return {'id':record['id'],'n':n,'label':record['label'],'points':points,
           'partition':record['partition'],'multiplicityEvidence':'Numerical rendering of the saved decimal vector; no exact multiplicity claim is made here',
-          'evidence':f"Numerical library representative, reported AC order {record['achievedOrder']}. Reduced-state residuals are checked from the saved 85-digit components. This is not an exact AC or optimality proof.",
+          'evidence':f"Certified algebraic witness of AC order {record['achievedOrder']}. The plotted coordinates approximate the certified state's isolating-box centre." if implicit else f"Numerical library representative, reported AC order {record['achievedOrder']}. Reduced-state residuals are checked from the saved 85-digit components. This is not an exact AC or optimality proof.",
           'coordinateMethod':'Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.',
-          'diagnostics':{'coefficientSource':'Saved 85-digit numerical library state; browser coefficients rounded','squareFreeFactorizationExact':False,'projectiveDickeReconstructionError':error,'exactFormulaVsSavedCoefficientsError':0.,'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'noNumericalRootClustering':True}}
+          'diagnostics':{'coefficientSource':'Approximation to the certified algebraic root; browser coefficients rounded' if implicit else 'Saved 85-digit numerical library state; browser coefficients rounded','squareFreeFactorizationExact':False,'projectiveDickeReconstructionError':error,'exactFormulaVsSavedCoefficientsError':0.,'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'noNumericalRootClustering':True}}
     if record.get('majoranaCoordinatePolicy')=='numeric-roots-retain-explicit-poles':
         assert exact is not None
         return numerical_rendering_of_exact(record,exact,saved)

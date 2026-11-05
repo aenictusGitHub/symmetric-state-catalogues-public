@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "compiledDate": "2026-11-03",
+  "compiledDate": "2026-11-05",
   "title": "Anticoherent subspaces",
-  "scope": "Qubit numbers N=1–24, with selected constructions at N=35,42; orders t=1–7. Rigorous dimension intervals use exact witnesses and proved upper bounds. The paper’s proposed maxima are labelled as conjectures; numerical reports do not establish existence or maximality.",
+  "scope": "Qubit numbers N=1–26, with selected constructions at N=35,42; orders t=1–7. Rigorous dimension intervals use exact witnesses and proved upper bounds. The paper’s proposed maxima are labelled as conjectures; numerical reports do not establish existence or maximality.",
   "numbers": [
     1,
     2,
@@ -28,6 +28,8 @@
     22,
     23,
     24,
+    25,
+    26,
     35,
     42
   ],
@@ -6489,6 +6491,7 @@
       "status": "proven",
       "subspaceIds": [
         "reflection-pairs-n23-k8-t1",
+        "line-certified-algebraic-n23-t5",
         "numerical-n23-k4-t2",
         "numerical-search-n23-k2-t3",
         "numerical-survey-n23-k1-t5"
@@ -6534,7 +6537,7 @@
       "id": "n23-t2",
       "n": 23,
       "t": 2,
-      "lower": 0,
+      "lower": 1,
       "upper": 5,
       "reportedDimension": 4,
       "conjecturedDimension": null,
@@ -6542,6 +6545,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-certified-algebraic-n23-t5",
         "numerical-n23-k4-t2",
         "numerical-search-n23-k2-t3",
         "numerical-survey-n23-k1-t5"
@@ -6627,7 +6631,7 @@
       "id": "n23-t3",
       "n": 23,
       "t": 3,
-      "lower": 0,
+      "lower": 1,
       "upper": 3,
       "reportedDimension": 2,
       "conjecturedDimension": null,
@@ -6635,6 +6639,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-certified-algebraic-n23-t5",
         "numerical-search-n23-k2-t3",
         "numerical-survey-n23-k1-t5"
       ],
@@ -6728,7 +6733,7 @@
       "id": "n23-t4",
       "n": 23,
       "t": 4,
-      "lower": 0,
+      "lower": 1,
       "upper": 2,
       "reportedDimension": 1,
       "conjecturedDimension": null,
@@ -6736,6 +6741,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-certified-algebraic-n23-t5",
         "numerical-survey-n23-k1-t5"
       ],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
@@ -6806,17 +6812,18 @@
       "id": "n23-t5",
       "n": 23,
       "t": 5,
-      "lower": 0,
+      "lower": 1,
       "upper": 1,
       "reportedDimension": 1,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "proven",
       "subspaceIds": [
+        "line-certified-algebraic-n23-t5",
         "numerical-survey-n23-k1-t5"
       ],
-      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 1.",
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 1. This settles the maximum.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
@@ -6880,18 +6887,19 @@
       "n": 23,
       "t": 6,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n23-t6-four-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -6918,7 +6926,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 500,
         "failedLargerDimensions": [
@@ -6953,18 +6961,19 @@
       "n": 23,
       "t": 7,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n23-t6-four-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -6991,7 +7000,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 160,
         "failedLargerDimensions": [
@@ -7037,6 +7046,7 @@
         "algebraic-n24-k5-t2",
         "molien-tetrahedral-n24-d3-t2",
         "molien-octahedral-n24-d2-t3",
+        "line-octahedral-n24-t7",
         "line-ac-n24-t5",
         "numerical-search-n24-k3-t3",
         "numerical-survey-n24-k1-t7"
@@ -7101,6 +7111,7 @@
         "algebraic-n24-k5-t2",
         "molien-tetrahedral-n24-d3-t2",
         "molien-octahedral-n24-d2-t3",
+        "line-octahedral-n24-t7",
         "line-ac-n24-t5",
         "numerical-search-n24-k3-t3",
         "numerical-survey-n24-k1-t7"
@@ -7158,6 +7169,7 @@
       "status": "range",
       "subspaceIds": [
         "molien-octahedral-n24-d2-t3",
+        "line-octahedral-n24-t7",
         "line-ac-n24-t5",
         "numerical-search-n24-k3-t3",
         "numerical-survey-n24-k1-t7"
@@ -7241,6 +7253,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-octahedral-n24-t7",
         "line-ac-n24-t5",
         "numerical-survey-n24-k1-t7"
       ],
@@ -7320,6 +7333,7 @@
       "conjectureReferences": [],
       "status": "proven",
       "subspaceIds": [
+        "line-octahedral-n24-t7",
         "line-ac-n24-t5",
         "numerical-survey-n24-k1-t7"
       ],
@@ -7372,14 +7386,15 @@
       "id": "n24-t6",
       "n": 24,
       "t": 6,
-      "lower": 0,
+      "lower": 1,
       "upper": 1,
       "reportedDimension": 1,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "proven",
       "subspaceIds": [
+        "line-octahedral-n24-t7",
         "numerical-survey-n24-k1-t7"
       ],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
@@ -7427,14 +7442,15 @@
       "id": "n24-t7",
       "n": 24,
       "t": 7,
-      "lower": 0,
+      "lower": 1,
       "upper": 1,
       "reportedDimension": 1,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "proven",
       "subspaceIds": [
+        "line-octahedral-n24-t7",
         "numerical-survey-n24-k1-t7"
       ],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
@@ -7495,6 +7511,581 @@
         ],
         "interpretation": "Search failures are not exclusions. A numerical candidate matching a rigorous upper bound still needs an exact existence certificate to prove equality."
       }
+    },
+    {
+      "id": "n25-t1",
+      "n": 25,
+      "t": 1,
+      "lower": 9,
+      "upper": 9,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "proven",
+      "subspaceIds": [
+        "central-three-n25-k9-t1",
+        "line-radical-n25-t5"
+      ],
+      "notes": "The auxiliary spin-1 inertia bound gives 3k≤N+3 for every first-order AC subspace. The exact analytical construction of dimension floor(N/3)+1 attains this bound for every N≥4, proving the maximum.",
+      "proofIds": [
+        "first-order-optimality",
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "first-order-analytic-family"
+      ],
+      "generalBound": {
+        "packingUpper": 12,
+        "upper": 12,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": null,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": null,
+      "spin3InertiaUpper": null,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": null,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t2",
+      "n": 25,
+      "t": 2,
+      "lower": 1,
+      "upper": 5,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-radical-n25-t5"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 6,
+        "upper": 6,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": null,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": null,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t3",
+      "n": 25,
+      "t": 3,
+      "lower": 1,
+      "upper": 3,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-radical-n25-t5"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 4.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "third-order-spin5half-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 4,
+        "upper": 4,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t4",
+      "n": 25,
+      "t": 4,
+      "lower": 1,
+      "upper": 2,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-radical-n25-t5"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 2,
+        "upper": 2,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 2,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t5",
+      "n": 25,
+      "t": 5,
+      "lower": 1,
+      "upper": 2,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-radical-n25-t5"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 2,
+        "upper": 2,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 2,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t6",
+      "n": 25,
+      "t": 6,
+      "lower": 0,
+      "upper": 1,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 1,
+        "upper": 1,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 2,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n25-t7",
+      "n": 25,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "impossible",
+      "subspaceIds": [],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "pure-n25-t7-ppt",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 1,
+        "upper": 1,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 5,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 2,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t1",
+      "n": 26,
+      "t": 1,
+      "lower": 9,
+      "upper": 9,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "proven",
+      "subspaceIds": [
+        "reflection-pairs-n26-k9-t1",
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The auxiliary spin-1 inertia bound gives 3k≤N+3 for every first-order AC subspace. The exact analytical construction of dimension floor(N/3)+1 attains this bound for every N≥4, proving the maximum.",
+      "proofIds": [
+        "first-order-optimality",
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "first-order-saturation-obstruction",
+        "rectangular-tensor-bound",
+        "tensor-packing-saturation",
+        "first-order-analytic-family"
+      ],
+      "generalBound": {
+        "packingUpper": 13,
+        "upper": 12,
+        "saturationTested": true,
+        "saturationExcluded": true,
+        "saturatingDimension": 13,
+        "channelRoots": [],
+        "exclusionReason": "top-rank-projector-obstruction"
+      },
+      "ancillaInertiaUpper": null,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": null,
+      "spin3InertiaUpper": null,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": null,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t2",
+      "n": 26,
+      "t": 2,
+      "lower": 1,
+      "upper": 6,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 6,
+        "upper": 6,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": null,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": null,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t3",
+      "n": 26,
+      "t": 3,
+      "lower": 1,
+      "upper": 3,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 4.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "third-order-spin5half-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 4,
+        "upper": 4,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": null,
+      "fourthOrderSpin3InertiaUpper": null,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t4",
+      "n": 26,
+      "t": 4,
+      "lower": 1,
+      "upper": 2,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound and its exact equality obstruction improves the upper bound to 2.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "tensor-packing-saturation",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 3,
+        "upper": 2,
+        "saturationTested": true,
+        "saturationExcluded": true,
+        "saturatingDimension": 3,
+        "channelRoots": [],
+        "exclusionReason": "no-nonscalar-channel-root"
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 3,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t5",
+      "n": 26,
+      "t": 5,
+      "lower": 1,
+      "upper": 2,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "range",
+      "subspaceIds": [
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 2.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 2,
+        "upper": 2,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 3,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t6",
+      "n": 26,
+      "t": 6,
+      "lower": 1,
+      "upper": 1,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "proven",
+      "subspaceIds": [
+        "line-certified-algebraic-n26-t6"
+      ],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 1,
+        "upper": 1,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 3,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
+    },
+    {
+      "id": "n26-t7",
+      "n": 26,
+      "t": 7,
+      "lower": 0,
+      "upper": 0,
+      "reportedDimension": null,
+      "conjecturedDimension": null,
+      "conjectureStatus": null,
+      "conjectureReferences": [],
+      "status": "impossible",
+      "subspaceIds": [],
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
+      "proofIds": [
+        "cross-condition",
+        "paper-schmidt-bound",
+        "tensor-gram-bound",
+        "pure-n26-t7-ppt",
+        "rectangular-tensor-bound",
+        "ancilla-inertia-bound",
+        "second-order-spin2-inertia",
+        "third-order-spin3-inertia",
+        "fourth-order-spin9half-inertia",
+        "third-order-spin5half-inertia",
+        "fourth-order-spin3-inertia"
+      ],
+      "generalBound": {
+        "packingUpper": 1,
+        "upper": 1,
+        "saturationTested": false,
+        "saturationExcluded": false
+      },
+      "ancillaInertiaUpper": 6,
+      "firstOrderInertiaUpper": 9,
+      "spin2InertiaUpper": 6,
+      "spin3InertiaUpper": 4,
+      "spin9HalfInertiaUpper": 3,
+      "fourthOrderSpin3InertiaUpper": 3,
+      "thirdOrderSpin5HalfInertiaUpper": 3,
+      "reportedReferences": []
     },
     {
       "id": "n35-t1",
@@ -38306,6 +38897,1424 @@
       ]
     },
     {
+      "id": "line-octahedral-n24-t7",
+      "n": 24,
+      "t": 7,
+      "dimension": 1,
+      "label": "One-dimensional span: Exact octahedral state · order 7",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Pure-state catalogue · Exact octahedral state · order 7",
+          "url": "../anticoherent-state-catalogue/index.html#n=24&t=7&state=octahedral-n24-t7"
+        }
+      ],
+      "notes": "A pure t-AC state is a one-dimensional t-AC subspace.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 1.1111791834022011e-16,
+        "crossReductionError": 3.562495870420551e-17
+      },
+      "basis": [
+        {
+          "id": "line-octahedral-n24-t7-basis-1",
+          "n": 24,
+          "label": "One-dimensional span: Exact octahedral state · order 7 · basis vector 1",
+          "coefficients": [
+            [
+              0.2627370581375037,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3113056378571354,
+              0.3794500685542988
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.08285577300942161,
+              -0.18243861066194622
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.5286638321026182,
+              0.14271674131500717
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.08285577300942161,
+              -0.18243861066194622
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.3113056378571354,
+              0.3794500685542988
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.2627370581375037,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "sqrt(1131)/128",
+            "0",
+            "0",
+            "0",
+            "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+            "0",
+            "0",
+            "0",
+            "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+            "0",
+            "0",
+            "0",
+            "149*sqrt(4524261)/599488 + 33*sqrt(42010995)*I/1498720",
+            "0",
+            "0",
+            "0",
+            "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+            "0",
+            "0",
+            "0",
+            "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+            "0",
+            "0",
+            "0",
+            "sqrt(1131)/128"
+          ],
+          "stateLatex": "|u_{1}\\rangle=(\\frac{\\sqrt{1131}}{128})|D_{24}^{(0)}\\rangle+(\\frac{\\sqrt{1335334}}{3712} + \\frac{13 \\sqrt{73370} i}{9280})|D_{24}^{(4)}\\rangle+(\\frac{31 \\sqrt{92424189}}{3596928} - \\frac{13 \\sqrt{248834355} i}{1124040})|D_{24}^{(8)}\\rangle+(\\frac{149 \\sqrt{4524261}}{599488} + \\frac{33 \\sqrt{42010995} i}{1498720})|D_{24}^{(12)}\\rangle+(\\frac{31 \\sqrt{92424189}}{3596928} - \\frac{13 \\sqrt{248834355} i}{1124040})|D_{24}^{(16)}\\rangle+(\\frac{\\sqrt{1335334}}{3712} + \\frac{13 \\sqrt{73370} i}{9280})|D_{24}^{(20)}\\rangle+(\\frac{\\sqrt{1131}}{128})|D_{24}^{(24)}\\rangle",
+          "points": [
+            {
+              "x": 0.42184583573918494,
+              "y": -0.26658830454037313,
+              "z": -0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.26658830454037313,
+              "y": -0.42184583573918494,
+              "z": -0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.42184583573918494,
+              "y": 0.26658830454037313,
+              "z": -0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.26658830454037313,
+              "y": 0.42184583573918494,
+              "z": -0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8665891568395013,
+              "y": 0.2665883045403731,
+              "z": -0.42184583573918505,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.2665883045403731,
+              "y": -0.8665891568395013,
+              "z": -0.42184583573918505,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8665891568395013,
+              "y": -0.2665883045403731,
+              "z": -0.42184583573918505,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2665883045403731,
+              "y": 0.8665891568395013,
+              "z": -0.42184583573918505,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8665891568395014,
+              "y": -0.421845835739185,
+              "z": -0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.421845835739185,
+              "y": -0.8665891568395014,
+              "z": -0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8665891568395014,
+              "y": 0.421845835739185,
+              "z": -0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.421845835739185,
+              "y": 0.8665891568395014,
+              "z": -0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8665891568395014,
+              "y": 0.421845835739185,
+              "z": 0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.421845835739185,
+              "y": -0.8665891568395014,
+              "z": 0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8665891568395014,
+              "y": -0.421845835739185,
+              "z": 0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.421845835739185,
+              "y": 0.8665891568395014,
+              "z": 0.2665883045403731,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8665891568395013,
+              "y": -0.26658830454037313,
+              "z": 0.42184583573918494,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.26658830454037313,
+              "y": -0.8665891568395013,
+              "z": 0.42184583573918494,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8665891568395013,
+              "y": 0.26658830454037313,
+              "z": 0.42184583573918494,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.26658830454037313,
+              "y": 0.8665891568395013,
+              "z": 0.42184583573918494,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4218458357391849,
+              "y": 0.2665883045403731,
+              "z": 0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.2665883045403731,
+              "y": -0.4218458357391849,
+              "z": 0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4218458357391849,
+              "y": -0.2665883045403731,
+              "z": 0.8665891568395013,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2665883045403731,
+              "y": 0.4218458357391849,
+              "z": 0.8665891568395013,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Saved exact Dicke amplitudes",
+            "squareFreeFactorizationExact": false,
+            "zeroMultiplicity": 0,
+            "infinityMultiplicity": 0,
+            "nonzeroRootStep": 4,
+            "projectiveDickeReconstructionError": 3.0909428776376e-16,
+            "exactFormulaVsSavedCoefficientsError": 7.852329760680394e-17,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.7057240724932118,
+            "rootPrecisionDecimalDigits": 100,
+            "relativeReducedPolynomialReconstructionError": 2.1343827525542666e-102,
+            "inputFingerprint": "c2f2e53d39733c5537785b198cd3ee9eb72f86d1c8b83a3529f1cf4cb634edb2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "line-certified-algebraic-n26-t6",
+      "n": 26,
+      "t": 6,
+      "dimension": 1,
+      "label": "Certified algebraic AC line",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Certified algebraic state and exact existence proof",
+          "url": "../anticoherent-state-catalogue/research/n24-n26/index.html#n26"
+        }
+      ],
+      "notes": "The line is defined by the unique algebraic root in the exact certificate. Decimal components approximate that root; they are not a closed-form radical basis.",
+      "verification": {
+        "exact": true,
+        "method": "Exact rational reduced-state equations, independently reconstructed Jacobian and strict Banach contraction bounds.",
+        "orthogonalityError": 1.110265771355506e-16,
+        "crossReductionError": 1.316240926572037e-16
+      },
+      "basis": [
+        {
+          "id": "line-certified-algebraic-n26-t6-basis-1",
+          "n": 26,
+          "label": "Certified algebraic basis vector",
+          "coefficients": [
+            [
+              1.9253642593105573e-13,
+              6.95565361529758e-13
+            ],
+            [
+              0.3551756146198975,
+              0.0802484965264744
+            ],
+            [
+              -0.024667679070144062,
+              -0.010397701246684586
+            ],
+            [
+              -0.01444952499646474,
+              -0.03791787207340028
+            ],
+            [
+              0.034313928699663106,
+              -0.01630357118625484
+            ],
+            [
+              0.18286041476865686,
+              0.048146167771660066
+            ],
+            [
+              0.3660395723923132,
+              5.794991947041231e-13
+            ],
+            [
+              -0.16376729875211662,
+              0.0517640082825078
+            ],
+            [
+              0.14193782211197492,
+              -0.03738055921941737
+            ],
+            [
+              -0.0595016425979208,
+              0.0018752502341910704
+            ],
+            [
+              -0.1642863580707092,
+              -0.04070784755421269
+            ],
+            [
+              -0.06292611885129828,
+              0.040505460007777265
+            ],
+            [
+              0.2020145516653019,
+              0.17684489348329482
+            ],
+            [
+              0.18986331369537202,
+              0.1595166475773739
+            ],
+            [
+              -0.2405075257433348,
+              0.08352985769650255
+            ],
+            [
+              0.1315163350167868,
+              0.1050663704475024
+            ],
+            [
+              -0.16424942967167988,
+              0.06581784026172584
+            ],
+            [
+              -0.034700627484719214,
+              0.08831655463340836
+            ],
+            [
+              0.05950215906668384,
+              0.08581112943462728
+            ],
+            [
+              0.20120369254637557,
+              0.015483366425478498
+            ],
+            [
+              0.12089811885330648,
+              0.027305688110802633
+            ],
+            [
+              -0.3615123678999955,
+              -0.025058963101525927
+            ],
+            [
+              0.05543540438305755,
+              -0.06557111898455963
+            ],
+            [
+              -0.10063268139499337,
+              -0.1434640073761349
+            ],
+            [
+              -0.14453806623499404,
+              -0.08573834430354434
+            ],
+            [
+              -0.10360361106658866,
+              -0.12174502724269112
+            ],
+            [
+              0.13635336419416383,
+              0.17088367190945214
+            ]
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "implicitAlgebraicDefinition": {
+            "certificateUrl": "./research/n24-n26/n26-t6/certificate.json",
+            "proofUrl": "./research/n24-n26/n26-t6/proof.tex",
+            "equations": "49 real rational quadratics equivalent to rho_6=I_7/7 after the stated binomial scaling.",
+            "variableConvention": "c_r=sqrt(binomial(N,r))/scaleFactors[r]*(x_r+i*x_(N+1+r))",
+            "activeVariables": [
+              1,
+              53,
+              22,
+              47,
+              31,
+              6,
+              7,
+              29,
+              19,
+              3,
+              23,
+              49,
+              9,
+              44,
+              45,
+              2,
+              35,
+              36,
+              21,
+              41,
+              52,
+              38,
+              12,
+              20,
+              14,
+              40,
+              4,
+              17,
+              16,
+              37,
+              33,
+              24,
+              15,
+              43,
+              39,
+              46,
+              10,
+              18,
+              50,
+              51,
+              27,
+              30,
+              0,
+              8,
+              5,
+              34,
+              25,
+              26,
+              32
+            ],
+            "fixedVariables": [
+              11,
+              13,
+              28,
+              42,
+              48
+            ],
+            "radius": "1/100000000000000000000000000000000000000000000000000000000000000000",
+            "rootDefinition": "Unique real zero in the active-coordinate infinity-norm box around the saved rational center, with the five fixed coordinates equal to their saved rational values.",
+            "centerCoefficientErrorBound": "2e-65 per real or imaginary Dicke component, relative to the exact rational-center conversion; ordinary floating values have additional rounding.",
+            "closedFormRadicalsClaimed": false
+          },
+          "stateLatex": "|\\psi\\rangle=\\sum_{r=0}^{26}\\frac{\\sqrt{\\binom{26}{r}}}{d_r}\\bigl(x_r^*+ix_{27+r}^*\\bigr)|D_{26}^{(r)}\\rangle",
+          "points": [
+            {
+              "x": 3.6742082152022255e-13,
+              "y": -6.851208313366336e-13,
+              "z": -1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2896155175082535,
+              "y": -0.020295931107765564,
+              "z": 0.9569278589313279,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8505333071663799,
+              "y": 0.07636829374810872,
+              "z": 0.5203469776126532,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7763996604274437,
+              "y": -0.516630684829064,
+              "z": 0.3609657917049793,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.31576479092128906,
+              "y": 0.6407115454522789,
+              "z": 0.6998437770949935,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7791417342464576,
+              "y": 0.6167827446183779,
+              "z": 0.1118803105843171,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9285382450322551,
+              "y": 0.1910167435596339,
+              "z": -0.31832268406805825,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8352066231906455,
+              "y": -0.48316571979923134,
+              "z": -0.2626419307524404,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.13115835556457406,
+              "y": -0.6052895218292058,
+              "z": 0.7851255189645591,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.49732274993472264,
+              "y": 0.42607776771506967,
+              "z": -0.7557299903115586,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.47923749895385354,
+              "y": -0.38481070676476103,
+              "z": -0.7888296010899061,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.19510117773589475,
+              "y": -0.9585067561183261,
+              "z": 0.2078468881691293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.20646849302599996,
+              "y": 0.8880515267025456,
+              "z": -0.41077396133256855,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.15315839279340232,
+              "y": -0.9188014464722578,
+              "z": -0.36379445938253174,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.09228356518416878,
+              "y": 0.9812532420653306,
+              "z": 0.16919166212664585,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.30911529047640185,
+              "y": -0.6363114904831049,
+              "z": -0.7067923487650805,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.35031878626360974,
+              "y": 0.5737323185955946,
+              "z": -0.7403431465136383,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.694096293765933,
+              "y": -0.05662500803015025,
+              "z": -0.717651686715764,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6479966466984813,
+              "y": 0.7287501343115641,
+              "z": -0.2214127087779759,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7151050178596532,
+              "y": -0.6824552511639883,
+              "z": -0.15126018508068392,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5229812150174886,
+              "y": -0.7863967112657793,
+              "z": 0.3287413287817611,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9868174116644658,
+              "y": 0.04371494626551555,
+              "z": -0.1558216913938729,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5676643179705672,
+              "y": 0.7360608191740347,
+              "z": 0.3687433966593297,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9130078806750199,
+              "y": 0.021938851721919818,
+              "z": 0.40735156389835075,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3240713779790943,
+              "y": 0.3988951081383667,
+              "z": 0.8578230788909865,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5033261427131145,
+              "y": -0.27800587745403393,
+              "z": 0.8181537301525614,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Approximation to the certified algebraic root; browser coefficients rounded",
+            "squareFreeFactorizationExact": false,
+            "projectiveDickeReconstructionError": 2.473890941080238e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "noNumericalRootClustering": true,
+            "inputFingerprint": "e72b1ad49a1f77de34eaf87480e052ab944a6e7223b72f33ab290e19b495299b"
+          },
+          "evidence": "Exact algebraic basis vector defined by a rational contraction certificate. Coordinates approximate the isolating-box centre."
+        }
+      ]
+    },
+    {
+      "id": "line-certified-algebraic-n23-t5",
+      "n": 23,
+      "t": 5,
+      "dimension": 1,
+      "label": "Certified algebraic AC line",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Certified algebraic state and exact existence proof",
+          "url": "../anticoherent-state-catalogue/research/n23-n25/index.html#n23"
+        }
+      ],
+      "notes": "The line is defined by the unique algebraic root in the exact certificate. Decimal components approximate that root; they are not a closed-form radical basis.",
+      "verification": {
+        "exact": true,
+        "method": "Exact rational reduced-state equations, independently reconstructed Jacobian and strict Banach contraction bounds.",
+        "orthogonalityError": 1.0408340855860843e-17,
+        "crossReductionError": 1.122188822568294e-16
+      },
+      "basis": [
+        {
+          "id": "line-certified-algebraic-n23-t5-basis-1",
+          "n": 23,
+          "label": "Certified algebraic basis vector",
+          "coefficients": [
+            [
+              2.5785502769954777e-15,
+              1.576497464505391e-14
+            ],
+            [
+              0.24288833128726603,
+              -0.2688465902530047
+            ],
+            [
+              -0.08377489480597788,
+              0.0240999955807291
+            ],
+            [
+              -0.004587037853716364,
+              0.1002747672659123
+            ],
+            [
+              -0.15170701382467558,
+              0.2254411016656987
+            ],
+            [
+              -0.20424793360258417,
+              -0.04687858532000613
+            ],
+            [
+              -0.043343030628348524,
+              0.09485181245547665
+            ],
+            [
+              -0.010496739601001401,
+              0.21067987628387821
+            ],
+            [
+              0.13637310730984917,
+              -0.20972915213491936
+            ],
+            [
+              -0.08642683189567466,
+              0.11118135601812561
+            ],
+            [
+              0.03616336578315712,
+              0.0726457236389589
+            ],
+            [
+              -0.0024014898052669284,
+              -0.12230246441234821
+            ],
+            [
+              0.4313513672748696,
+              1.0404252475401038e-14
+            ],
+            [
+              0.1514501583566455,
+              -0.06042125394395289
+            ],
+            [
+              0.02366728827542785,
+              0.01570097887264213
+            ],
+            [
+              -0.18419701145165543,
+              0.09696854442735643
+            ],
+            [
+              0.1621958434966056,
+              -0.005501285225773163
+            ],
+            [
+              -0.02279150964534599,
+              0.11161457354249874
+            ],
+            [
+              -0.21488615509609635,
+              0.12301796036550483
+            ],
+            [
+              0.13324142299160863,
+              0.1978932599741253
+            ],
+            [
+              -0.14355714756082644,
+              0.02676289952639837
+            ],
+            [
+              0.13371036050835874,
+              -0.03623904934956315
+            ],
+            [
+              0.24122660176273153,
+              -0.23584325757145103
+            ],
+            [
+              0.01561622639361509,
+              0.07113685200542834
+            ]
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "implicitAlgebraicDefinition": {
+            "certificateUrl": "./research/n23-n25/n23-t5/certificate.json",
+            "proofUrl": "./research/n23-n25/n23-t5/proof.tex",
+            "equations": "36 real rational quadratics equivalent to rho_5=I_6/6 after the stated binomial scaling.",
+            "variableConvention": "c_r=sqrt(binomial(N,r))/scaleFactors[r]*(x_r+i*x_(N+1+r))",
+            "activeVariables": [
+              25,
+              22,
+              2,
+              45,
+              26,
+              20,
+              40,
+              31,
+              16,
+              7,
+              29,
+              14,
+              42,
+              9,
+              5,
+              27,
+              38,
+              32,
+              12,
+              19,
+              21,
+              33,
+              39,
+              41,
+              4,
+              13,
+              43,
+              23,
+              35,
+              8,
+              30,
+              47,
+              6,
+              18,
+              11,
+              3
+            ],
+            "fixedVariables": [
+              0,
+              1,
+              10,
+              15,
+              17,
+              24,
+              28,
+              34,
+              36,
+              37,
+              44,
+              46
+            ],
+            "radius": "1/100000000000000000000000000000000000000000000000000000000000000000",
+            "rootDefinition": "Unique real zero in the active-coordinate infinity-norm box around the saved rational center, with twelve coordinates fixed to their saved rational values.",
+            "centerCoefficientErrorBound": "2e-65 per real or imaginary Dicke component, relative to the exact rational-center conversion; ordinary floating values have additional rounding.",
+            "closedFormRadicalsClaimed": false
+          },
+          "stateLatex": "|\\psi\\rangle=\\sum_{r=0}^{23}\\frac{\\sqrt{\\binom{23}{r}}}{d_r}\\bigl(x_r^*+ix_{24+r}^*\\bigr)|D_{23}^{(r)}\\rangle",
+          "points": [
+            {
+              "x": -1.1474792710530294e-14,
+              "y": -1.4366643259049787e-14,
+              "z": -1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.046731990797510885,
+              "y": 0.07159416555891823,
+              "z": 0.9963384949373498,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6491395489669095,
+              "y": -0.1340327942775155,
+              "z": 0.7487676916275157,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9223522158475169,
+              "y": 0.21987617905212153,
+              "z": 0.3176804303173472,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5605304213604747,
+              "y": -0.7268597103371282,
+              "z": 0.3968382645588437,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9500610446507041,
+              "y": -0.12342177796365668,
+              "z": -0.2866200902963761,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4105104172025358,
+              "y": 0.8042498191632051,
+              "z": 0.4297248256083792,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6614593406644181,
+              "y": 0.7051810601528569,
+              "z": -0.25532569993928583,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6219119300668573,
+              "y": -0.7217131398702349,
+              "z": -0.3039007979245255,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5662721047840794,
+              "y": -0.01086028339391402,
+              "z": -0.8241468058471212,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.20032592087617795,
+              "y": 0.7562908485217538,
+              "z": -0.622811109299888,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.01236580251995071,
+              "y": -0.9169562841577912,
+              "z": -0.3987960128581699,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.042614375275967196,
+              "y": -0.808099550706517,
+              "z": 0.5875024520525548,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.27041418033143283,
+              "y": -0.5679855004380874,
+              "z": -0.7773471826460651,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.2697307813010618,
+              "y": 0.9612965565208071,
+              "z": -0.056162585766303424,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5313890138782755,
+              "y": 0.5351683675143849,
+              "z": -0.6566738416759588,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.09568633150692055,
+              "y": 0.6859660032606035,
+              "z": 0.7213146112019507,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.832020088770124,
+              "y": 0.05161365181281047,
+              "z": -0.5523392099330816,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5261426666046088,
+              "y": -0.8325743431126147,
+              "z": 0.1731873481776008,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8924978853074654,
+              "y": -0.4266032467890209,
+              "z": -0.14648274489088495,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7626922179228539,
+              "y": 0.6040325827875974,
+              "z": 0.23118222174480055,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8933600678863026,
+              "y": 0.10012644819902536,
+              "z": 0.43804392870718883,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.49038389589984016,
+              "y": -0.23268093154459565,
+              "z": 0.8398709536218252,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Approximation to the certified algebraic root; browser coefficients rounded",
+            "squareFreeFactorizationExact": false,
+            "projectiveDickeReconstructionError": 3.665897210668628e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "noNumericalRootClustering": true,
+            "inputFingerprint": "37b7c71672c66434debd55b3a3611e1cc20471d4d988a6f3fcc8cb6c550349f1"
+          },
+          "evidence": "Exact algebraic basis vector defined by a rational contraction certificate. Coordinates approximate the isolating-box centre."
+        }
+      ]
+    },
+    {
+      "id": "line-radical-n25-t5",
+      "n": 25,
+      "t": 5,
+      "dimension": 1,
+      "label": "One-dimensional span: Exact dihedral state · order 5",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Pure-state catalogue · Exact dihedral state · order 5",
+          "url": "../anticoherent-state-catalogue/index.html#n=25&t=5&state=radical-n25-t5"
+        }
+      ],
+      "notes": "A pure t-AC state is a one-dimensional t-AC subspace.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 0.0,
+        "crossReductionError": 5.582953279021704e-17
+      },
+      "basis": [
+        {
+          "id": "line-radical-n25-t5-basis-1",
+          "n": 25,
+          "label": "One-dimensional span: Exact dihedral state · order 5 · basis vector 1",
+          "coefficients": [
+            [
+              0.28982753492378877,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.4979959839195493
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.31988913173382144,
+              -0.25626342579186334
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.31988913173382144,
+              0.25626342579186334
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.4979959839195493
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.28982753492378877,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "sqrt(210)/50",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(155)*I/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(1051365)*I*(-1001 + sqrt(1561327)*I)/4005200",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(1641524561355)/4005200 + 1001*sqrt(1051365)*I/4005200",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(155)*I/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(210)/50"
+          ],
+          "stateLatex": "|u_{1}\\rangle=(\\frac{\\sqrt{210}}{50})|D_{25}^{(0)}\\rangle+(- \\frac{\\sqrt{155} i}{25})|D_{25}^{(5)}\\rangle+(\\frac{\\sqrt{1051365} i \\left(-1001 + \\sqrt{1561327} i\\right)}{4005200})|D_{25}^{(10)}\\rangle+(\\frac{\\sqrt{1641524561355}}{4005200} + \\frac{1001 \\sqrt{1051365} i}{4005200})|D_{25}^{(15)}\\rangle+(\\frac{\\sqrt{155} i}{25})|D_{25}^{(20)}\\rangle+(- \\frac{\\sqrt{210}}{50})|D_{25}^{(25)}\\rangle",
+          "points": [
+            {
+              "x": 0.8090169943749475,
+              "y": -0.5877852522924731,
+              "z": 0.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3090169943749475,
+              "y": -0.9510565162951536,
+              "z": -1.1102230246251568e-16,
+              "multiplicity": 1
+            },
+            {
+              "x": -1.0,
+              "y": -2.8688928017596374e-102,
+              "z": 0.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3090169943749475,
+              "y": 0.9510565162951536,
+              "z": -1.1102230246251568e-16,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8090169943749475,
+              "y": 0.5877852522924731,
+              "z": 0.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5276275476300074,
+              "y": -0.17267713803661944,
+              "z": -0.8317402100304078,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.0011798384268753594,
+              "y": -0.5551637875436941,
+              "z": -0.8317402100304078,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5283567278790494,
+              "y": -0.17043295198850897,
+              "z": -0.8317402100304077,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.32536257758705645,
+              "y": 0.44983043041181653,
+              "z": -0.8317402100304078,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.327271596262974,
+              "y": 0.44844344715700596,
+              "z": -0.8317402100304078,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9149698941571472,
+              "y": -0.14661122622829226,
+              "z": -0.3759457954677712,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.14330568456956516,
+              "y": -0.9154934405227342,
+              "z": -0.3759457954677712,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8264021103120848,
+              "y": -0.4191948364923378,
+              "z": -0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6540502771170735,
+              "y": 0.6564167836620147,
+              "z": -0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4221768087024457,
+              "y": 0.8248827195813496,
+              "z": -0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9149698941571472,
+              "y": 0.14661122622829223,
+              "z": 0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4221768087024457,
+              "y": -0.8248827195813495,
+              "z": 0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6540502771170734,
+              "y": -0.6564167836620147,
+              "z": 0.3759457954677711,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8264021103120847,
+              "y": 0.41919483649233774,
+              "z": 0.3759457954677712,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.14330568456956513,
+              "y": 0.9154934405227342,
+              "z": 0.3759457954677712,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5276275476300073,
+              "y": 0.17267713803661944,
+              "z": 0.8317402100304077,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3272715962629739,
+              "y": -0.44844344715700596,
+              "z": 0.8317402100304077,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3253625775870564,
+              "y": -0.4498304304118166,
+              "z": 0.8317402100304077,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5283567278790495,
+              "y": 0.17043295198850897,
+              "z": 0.8317402100304077,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.0011798384268753594,
+              "y": 0.5551637875436941,
+              "z": 0.8317402100304077,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Saved exact Dicke amplitudes",
+            "squareFreeFactorizationExact": false,
+            "zeroMultiplicity": 0,
+            "infinityMultiplicity": 0,
+            "nonzeroRootStep": 5,
+            "projectiveDickeReconstructionError": 3.592023665244204e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.5892332130623923,
+            "rootPrecisionDecimalDigits": 100,
+            "relativeReducedPolynomialReconstructionError": 5.721961007394982e-102,
+            "inputFingerprint": "d16a614d8b8298786f42f073e8e1007d27a6a96f75949f5b8fb3bd714e2b1053"
+          }
+        }
+      ]
+    },
+    {
       "id": "cyclic-radical-n7-k3-t1",
       "n": 7,
       "t": 1,
@@ -56435,6 +58444,4612 @@
             "exactFormulaVsSavedCoefficientsError": 0.0,
             "maxUnitSphereError": 3.3306690738754696e-16,
             "minimumDistinctPointDistance": 0.27164871215471487,
+            "rootPrecisionDecimalDigits": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "central-three-n25-k9-t1",
+      "n": 25,
+      "t": 1,
+      "dimension": 9,
+      "label": "Central cyclic block with reflected outer pairs",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Analytical constructions and proofs",
+          "url": "research/analytical-constructions/index.html"
+        },
+        {
+          "label": "Exact whole-subspace verification",
+          "url": "research/analytical-constructions/t1-verification.json"
+        }
+      ],
+      "notes": "General central-block construction; independently verified here by every reduced cross matrix.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 2.937883209757988e-16,
+        "crossReductionError": 1.5700924586837752e-16
+      },
+      "basis": [
+        {
+          "id": "central-three-n25-k9-t1-basis-1",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 1",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.31567282769381905,
+              0.3534141537338045
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6198641277942673,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6254738722522784,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-143*sqrt(5010)/32064 + 19*sqrt(355710)*I/32064",
+            "0",
+            "0",
+            "-sqrt(385770)/1002",
+            "0",
+            "0",
+            "14*sqrt(501)/501",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{1}\\rangle=(- \\frac{143 \\sqrt{5010}}{32064} + \\frac{19 \\sqrt{355710} i}{32064})|D_{25}^{(9)}\\rangle+(- \\frac{\\sqrt{385770}}{1002})|D_{25}^{(12)}\\rangle+(\\frac{14 \\sqrt{501}}{501})|D_{25}^{(15)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 9
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 10
+            },
+            {
+              "x": 0.5382071961879751,
+              "y": -0.8296814323055306,
+              "z": 0.14819492183918306,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9876287955188361,
+              "y": -0.05126038824561674,
+              "z": 0.14819492183918306,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4494215993308605,
+              "y": 0.8809418205511473,
+              "z": 0.14819492183918326,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9260875984577407,
+              "y": 0.2155930503574548,
+              "z": -0.3096472131641783,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.27633474073993675,
+              "y": -0.9098119115728535,
+              "z": -0.3096472131641783,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6497528577178041,
+              "y": 0.6942188612153986,
+              "z": -0.3096472131641783,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 9,
+            "infinityMultiplicity": 10,
+            "nonzeroRootStep": 3,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y**2 + 5*y/4 - 4700365/5879936 + 20736000/(321559*(5182 + 5434*sqrt(71)*I)) + 41472000*I/(321559*(19*sqrt(71) + 143*I))",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.1358692452030337e-15,
+            "exactFormulaVsSavedCoefficientsError": 5.4950529606303e-19,
+            "maxUnitSphereError": 3.3306690738754696e-16,
+            "minimumDistinctPointDistance": 0.9378266797795429,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-2",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 2",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6254738722522784,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.6198641277942673,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.31567282769381905,
+              0.3534141537338045
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "14*sqrt(501)/501",
+            "0",
+            "0",
+            "-sqrt(385770)/1002",
+            "0",
+            "0",
+            "-143*sqrt(5010)/32064 + 19*sqrt(355710)*I/32064",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{2}\\rangle=(\\frac{14 \\sqrt{501}}{501})|D_{25}^{(10)}\\rangle+(- \\frac{\\sqrt{385770}}{1002})|D_{25}^{(13)}\\rangle+(- \\frac{143 \\sqrt{5010}}{32064} + \\frac{19 \\sqrt{355710} i}{32064})|D_{25}^{(16)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 10
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 9
+            },
+            {
+              "x": 0.5382071961879751,
+              "y": 0.8296814323055307,
+              "z": -0.14819492183918298,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4494215993308611,
+              "y": -0.8809418205511471,
+              "z": -0.14819492183918298,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9876287955188362,
+              "y": 0.05126038824561651,
+              "z": -0.14819492183918298,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9260875984577408,
+              "y": -0.21559305035745482,
+              "z": 0.3096472131641784,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6497528577178039,
+              "y": -0.6942188612153988,
+              "z": 0.3096472131641784,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.27633474073993675,
+              "y": 0.9098119115728536,
+              "z": 0.3096472131641784,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 10,
+            "infinityMultiplicity": 9,
+            "nonzeroRootStep": 3,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y**2 + y*(-1001/720 - 133*sqrt(71)*I/720) - 1001/900 - 133*sqrt(71)*I/900",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 5.171651337302981e-16,
+            "exactFormulaVsSavedCoefficientsError": 3.4057569715221084e-18,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.937826679779543,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-3",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 3",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7071067811865476,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7071067811865476,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(2)/2",
+            "0",
+            "0",
+            "sqrt(2)/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{3}\\rangle=(\\frac{\\sqrt{2}}{2})|D_{25}^{(11)}\\rangle+(\\frac{\\sqrt{2}}{2})|D_{25}^{(14)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 11
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 11
+            },
+            {
+              "x": 1.0,
+              "y": -0.0,
+              "z": 0.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.49999999999999983,
+              "y": -0.8660254037844387,
+              "z": 0.0,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5000000000000004,
+              "y": 0.8660254037844384,
+              "z": 0.0,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 11,
+            "infinityMultiplicity": 11,
+            "nonzeroRootStep": 3,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - 1",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 6.811775532410933e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 0.0,
+            "minimumDistinctPointDistance": 1.4142135623730951,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-4",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 4",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7359800721939872,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.67700320038633,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(78)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(66)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{4}\\rangle=(\\frac{\\sqrt{78}}{12})|D_{25}^{(7)}\\rangle+(\\frac{\\sqrt{66}}{12})|D_{25}^{(19)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 7
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 6
+            },
+            {
+              "x": 0.9647878033085843,
+              "y": -0.258514112763932,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7062736905446523,
+              "y": -0.7062736905446522,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.258514112763932,
+              "y": -0.9647878033085843,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2585141127639319,
+              "y": -0.9647878033085843,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7062736905446522,
+              "y": -0.7062736905446523,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.964787803308584,
+              "y": -0.2585141127639322,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9647878033085843,
+              "y": 0.258514112763932,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7062736905446526,
+              "y": 0.7062736905446518,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2585141127639319,
+              "y": 0.9647878033085843,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.25851411276393155,
+              "y": 0.9647878033085843,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.706273690544652,
+              "y": 0.7062736905446524,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.964787803308584,
+              "y": 0.2585141127639328,
+              "z": 0.04852780737756293,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 7,
+            "infinityMultiplicity": 6,
+            "nonzeroRootStep": 12,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + sqrt(19019)/77",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 5.8195784583844145e-15,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.5170282255278634,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-5",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 5",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.67700320038633,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7359800721939872,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(66)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(78)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{5}\\rangle=(\\frac{\\sqrt{66}}{12})|D_{25}^{(6)}\\rangle+(- \\frac{\\sqrt{78}}{12})|D_{25}^{(18)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 6
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 7
+            },
+            {
+              "x": 0.9988218319155455,
+              "y": -0.0,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8650050802933731,
+              "y": -0.4994109159577727,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4994109159577728,
+              "y": -0.8650050802933729,
+              "z": -0.04852780737756283,
+              "multiplicity": 1
+            },
+            {
+              "x": 6.116019796869343e-17,
+              "y": -0.9988218319155455,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.49941091595777254,
+              "y": -0.8650050802933731,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8650050802933731,
+              "y": -0.4994109159577727,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9988218319155455,
+              "y": -1.2232039593738686e-16,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8650050802933731,
+              "y": 0.4994109159577724,
+              "z": -0.04852780737756283,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4994109159577732,
+              "y": 0.8650050802933728,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": -1.8348059390608026e-16,
+              "y": 0.9988218319155455,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4994109159577728,
+              "y": 0.8650050802933729,
+              "z": -0.04852780737756283,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8650050802933728,
+              "y": 0.4994109159577732,
+              "z": -0.048527807377562945,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 6,
+            "infinityMultiplicity": 7,
+            "nonzeroRootStep": 12,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - sqrt(19019)/247",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 8.141301531146538e-15,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.5170282255278633,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-6",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 6",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7264831572567789,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6871842709362768,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(19)/6",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(17)/6",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{6}\\rangle=(\\frac{\\sqrt{19}}{6})|D_{25}^{(4)}\\rangle+(\\frac{\\sqrt{17}}{6})|D_{25}^{(22)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 4
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 3
+            },
+            {
+              "x": 0.9835561247499628,
+              "y": -0.17342748183447926,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8649247403626861,
+              "y": -0.4993645316771638,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6419706673580048,
+              "y": -0.7650708491640046,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3415854573919582,
+              "y": -0.9384983309984838,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 6.115451753261558e-17,
+              "y": -0.9987290633543279,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.34158545739195784,
+              "y": -0.9384983309984839,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6419706673580048,
+              "y": -0.7650708491640046,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8649247403626859,
+              "y": -0.4993645316771642,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9835561247499628,
+              "y": -0.17342748183447917,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9835561247499628,
+              "y": 0.17342748183447892,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.864924740362686,
+              "y": 0.49936453167716405,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6419706673580049,
+              "y": 0.7650708491640045,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3415854573919579,
+              "y": 0.9384983309984839,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 7.0358604860078635e-16,
+              "y": 0.9987290633543279,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3415854573919584,
+              "y": 0.9384983309984838,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6419706673580047,
+              "y": 0.7650708491640047,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8649247403626862,
+              "y": 0.4993645316771636,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9835561247499628,
+              "y": 0.1734274818344793,
+              "z": 0.05040097232580862,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 4,
+            "infinityMultiplicity": 3,
+            "nonzeroRootStep": 18,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + sqrt(7106)/34",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.3364239173712105e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.34685496366895807,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-7",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 7",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6871842709362768,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7264831572567789,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "sqrt(17)/6",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(19)/6",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{7}\\rangle=(\\frac{\\sqrt{17}}{6})|D_{25}^{(3)}\\rangle+(- \\frac{\\sqrt{19}}{6})|D_{25}^{(21)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 3
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 4
+            },
+            {
+              "x": 0.9987290633543279,
+              "y": -0.0,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9384983309984839,
+              "y": -0.34158545739195806,
+              "z": -0.05040097232580857,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7650708491640047,
+              "y": -0.6419706673580047,
+              "z": -0.05040097232580881,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.49936453167716405,
+              "y": -0.864924740362686,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.1734274818344793,
+              "y": -0.9835561247499628,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.1734274818344792,
+              "y": -0.9835561247499628,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.49936453167716377,
+              "y": -0.8649247403626861,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7650708491640046,
+              "y": -0.6419706673580049,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9384983309984839,
+              "y": -0.3415854573919582,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9987290633543279,
+              "y": -1.223090350652312e-16,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9384983309984839,
+              "y": 0.341585457391958,
+              "z": -0.05040097232580857,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.765070849164005,
+              "y": 0.6419706673580043,
+              "z": -0.05040097232580881,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.49936453167716444,
+              "y": 0.8649247403626857,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.17342748183447923,
+              "y": 0.9835561247499628,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.1734274818344789,
+              "y": 0.9835561247499629,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4993645316771633,
+              "y": 0.8649247403626864,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7650708491640045,
+              "y": 0.641970667358005,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.938498330998484,
+              "y": 0.341585457391958,
+              "z": -0.05040097232580869,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 3,
+            "infinityMultiplicity": 4,
+            "nonzeroRootStep": 18,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - sqrt(7106)/209",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.919250774811019e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.3468549636689581,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-8",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 8",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7216878364870322,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6922186552431729,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "5*sqrt(3)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(69)/12"
+          ],
+          "stateLatex": "|u_{8}\\rangle=(\\frac{5 \\sqrt{3}}{12})|D_{25}^{(1)}\\rangle+(\\frac{\\sqrt{69}}{12})|D_{25}^{(25)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9891032097650008,
+              "y": -0.13021790793727225,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9216974605898552,
+              "y": -0.38177958858115935,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.791479552652583,
+              "y": -0.6073236211838415,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6073236211838415,
+              "y": -0.791479552652583,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3817795885811594,
+              "y": -0.9216974605898552,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.1302179079372724,
+              "y": -0.9891032097650008,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.13021790793727228,
+              "y": -0.9891032097650008,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.381779588581159,
+              "y": -0.9216974605898554,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6073236211838415,
+              "y": -0.791479552652583,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7914795526525829,
+              "y": -0.6073236211838416,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9216974605898552,
+              "y": -0.38177958858115946,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9891032097650008,
+              "y": -0.13021790793727267,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9891032097650008,
+              "y": 0.13021790793727242,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9216974605898551,
+              "y": 0.38177958858115957,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.791479552652583,
+              "y": 0.6073236211838415,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6073236211838416,
+              "y": 0.7914795526525829,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.381779588581159,
+              "y": 0.9216974605898554,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.1302179079372723,
+              "y": 0.9891032097650008,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.1302179079372719,
+              "y": 0.9891032097650005,
+              "z": 0.06868869546740032,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.38177958858115874,
+              "y": 0.9216974605898555,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6073236211838406,
+              "y": 0.7914795526525835,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7914795526525829,
+              "y": 0.6073236211838416,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9216974605898546,
+              "y": 0.3817795885811608,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9891032097650008,
+              "y": 0.13021790793727323,
+              "z": 0.06868869546740014,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 1,
+            "infinityMultiplicity": 0,
+            "nonzeroRootStep": 24,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + 25*sqrt(23)/23",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.3629440180229818e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 6.661338147750939e-16,
+            "minimumDistinctPointDistance": 0.2604358158745431,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "central-three-n25-k9-t1-basis-9",
+          "n": 25,
+          "label": "Central cyclic block with reflected outer pairs · basis vector 9",
+          "coefficients": [
+            [
+              0.6922186552431729,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7216878364870322,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "sqrt(69)/12",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-5*sqrt(3)/12",
+            "0"
+          ],
+          "stateLatex": "|u_{9}\\rangle=(\\frac{\\sqrt{69}}{12})|D_{25}^{(0)}\\rangle+(- \\frac{5 \\sqrt{3}}{12})|D_{25}^{(24)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9976381423717653,
+              "y": -0.0,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9636444470079386,
+              "y": -0.25820775136651297,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8639799750782655,
+              "y": -0.4988190711858826,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7054366956414257,
+              "y": -0.7054366956414256,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.49881907118588276,
+              "y": -0.8639799750782653,
+              "z": -0.06868869546739995,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.25820775136651297,
+              "y": -0.9636444470079386,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 6.10877178881447e-17,
+              "y": -0.9976381423717653,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2582077513665128,
+              "y": -0.9636444470079386,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4988190711858825,
+              "y": -0.8639799750782655,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7054366956414256,
+              "y": -0.7054366956414257,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8639799750782655,
+              "y": -0.4988190711858826,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9636444470079385,
+              "y": -0.2582077513665132,
+              "z": -0.06868869546739995,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9976381423717653,
+              "y": -1.221754357762894e-16,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9636444470079386,
+              "y": 0.258207751366513,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8639799750782655,
+              "y": 0.49881907118588237,
+              "z": -0.06868869546739995,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7054366956414261,
+              "y": 0.7054366956414252,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4988190711858831,
+              "y": 0.8639799750782651,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2582077513665128,
+              "y": 0.9636444470079386,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": -1.8326315366443408e-16,
+              "y": 0.9976381423717653,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.2582077513665125,
+              "y": 0.9636444470079387,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.49881907118588276,
+              "y": 0.8639799750782653,
+              "z": -0.06868869546739995,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7054366956414254,
+              "y": 0.7054366956414259,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8639799750782651,
+              "y": 0.4988190711858831,
+              "z": -0.06868869546740007,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9636444470079383,
+              "y": 0.25820775136651375,
+              "z": -0.06868869546739995,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 0,
+            "infinityMultiplicity": 1,
+            "nonzeroRootStep": 24,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - sqrt(23)/25",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.4115755052861594e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 3.3306690738754696e-16,
+            "minimumDistinctPointDistance": 0.26043581587454406,
+            "rootPrecisionDecimalDigits": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "reflection-pairs-n26-k9-t1",
+      "n": 26,
+      "t": 1,
+      "dimension": 9,
+      "label": "Separated reflection-pair construction",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Analytical constructions and proofs",
+          "url": "research/analytical-constructions/index.html"
+        },
+        {
+          "label": "Exact whole-subspace verification",
+          "url": "research/analytical-constructions/t1-verification.json"
+        }
+      ],
+      "notes": "Independent analytic construction from reflected adjacent magnetic levels.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 1.5700924586837752e-16,
+        "crossReductionError": 1.7554167342883506e-16
+      },
+      "basis": [
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-1",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 1",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{1}\\rangle=(1)|D_{26}^{(13)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 13
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 13
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 13,
+            "infinityMultiplicity": 13,
+            "nonzeroRootStep": 1,
+            "reducedPolynomialFactors": [],
+            "projectiveDickeReconstructionError": 0.0,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 0.0,
+            "minimumDistinctPointDistance": 2.0,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-2",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 2",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7745966692414834,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6324555320336759,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(15)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{2}\\rangle=(\\frac{\\sqrt{15}}{5})|D_{26}^{(11)}\\rangle+(\\frac{\\sqrt{10}}{5})|D_{26}^{(16)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 11
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 10
+            },
+            {
+              "x": 0.9969644618119711,
+              "y": -0.0,
+              "z": 0.07785795966994558,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.30807896148777236,
+              "y": -0.9481695479209659,
+              "z": 0.07785795966994558,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8065611923937578,
+              "y": -0.5860010077127792,
+              "z": 0.07785795966994558,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8065611923937579,
+              "y": 0.586001007712779,
+              "z": 0.07785795966994558,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.30807896148777214,
+              "y": 0.9481695479209659,
+              "z": 0.07785795966994558,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 11,
+            "infinityMultiplicity": 10,
+            "nonzeroRootStep": 5,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - 2*sqrt(66)/11",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 5.214317537788411e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 1.1720020154255582,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-3",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 3",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6324555320336759,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7745966692414834,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(10)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(15)/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{3}\\rangle=(\\frac{\\sqrt{10}}{5})|D_{26}^{(10)}\\rangle+(- \\frac{\\sqrt{15}}{5})|D_{26}^{(15)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 10
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 11
+            },
+            {
+              "x": 0.8065611923937578,
+              "y": -0.5860010077127791,
+              "z": -0.07785795966994548,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.30807896148777225,
+              "y": -0.9481695479209659,
+              "z": -0.0778579596699456,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9969644618119711,
+              "y": -1.220929337021694e-16,
+              "z": -0.0778579596699456,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3080789614877725,
+              "y": 0.9481695479209657,
+              "z": -0.07785795966994548,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8065611923937577,
+              "y": 0.5860010077127793,
+              "z": -0.07785795966994548,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 10,
+            "infinityMultiplicity": 11,
+            "nonzeroRootStep": 5,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + sqrt(66)/12",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 8.485365840686189e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 1.1102230246251565e-16,
+            "minimumDistinctPointDistance": 1.172002015425558,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-4",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 4",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7385489458759964,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.674199862463242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(66)/11",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(55)/11",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{4}\\rangle=(\\frac{\\sqrt{66}}{11})|D_{26}^{(8)}\\rangle+(\\frac{\\sqrt{55}}{11})|D_{26}^{(19)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 8
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 7
+            },
+            {
+              "x": 0.9988679315402406,
+              "y": -0.0,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8403011762400018,
+              "y": -0.5400287750380974,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.41494473476795646,
+              "y": -0.9086022296625894,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.14215372813352004,
+              "y": -0.9887008962457857,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6541193867628508,
+              "y": -0.7548940140976551,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9584067618817076,
+              "y": -0.2814136162997421,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9584067618817076,
+              "y": 0.2814136162997418,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6541193867628509,
+              "y": 0.754894014097655,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.14215372813352029,
+              "y": 0.9887008962457857,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.41494473476795607,
+              "y": 0.9086022296625896,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8403011762400018,
+              "y": 0.5400287750380974,
+              "z": 0.047569479086083215,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 8,
+            "infinityMultiplicity": 7,
+            "nonzeroRootStep": 11,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - sqrt(285)/10",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 4.3517674359104344e-15,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.5628272325994839,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-5",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 5",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.674199862463242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7385489458759964,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(55)/11",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(66)/11",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{5}\\rangle=(\\frac{\\sqrt{55}}{11})|D_{26}^{(7)}\\rangle+(- \\frac{\\sqrt{66}}{11})|D_{26}^{(18)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 7
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 8
+            },
+            {
+              "x": 0.9584067618817076,
+              "y": -0.2814136162997421,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6541193867628508,
+              "y": -0.7548940140976551,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.14215372813352017,
+              "y": -0.9887008962457856,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.41494473476795635,
+              "y": -0.9086022296625895,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8403011762400018,
+              "y": -0.5400287750380978,
+              "z": -0.047569479086083444,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9988679315402406,
+              "y": -5.659125119754411e-16,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8403011762400018,
+              "y": 0.5400287750380974,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4149447347679571,
+              "y": 0.908602229662589,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.1421537281335199,
+              "y": 0.9887008962457857,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6541193867628502,
+              "y": 0.7548940140976556,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9584067618817076,
+              "y": 0.2814136162997422,
+              "z": -0.04756947908608332,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 7,
+            "infinityMultiplicity": 8,
+            "nonzeroRootStep": 11,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + 2*sqrt(285)/57",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 3.116148679584517e-15,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 3.3306690738754696e-16,
+            "minimumDistinctPointDistance": 0.5628272325994835,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-6",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 6",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7276068751089989,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6859943405700354,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(17)/17",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2*sqrt(34)/17",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{6}\\rangle=(\\frac{3 \\sqrt{17}}{17})|D_{26}^{(5)}\\rangle+(\\frac{2 \\sqrt{34}}{17})|D_{26}^{(22)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 5
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 4
+            },
+            {
+              "x": 0.9988946002652267,
+              "y": -0.0,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9314414748492887,
+              "y": -0.36084234974516055,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7381920169595683,
+              "y": -0.6729509406607525,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4452456367162846,
+              "y": -0.8941737780902196,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.09216636604322331,
+              "y": -0.9946334920006532,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2733604830754399,
+              "y": -0.9607624413619578,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6019684842120375,
+              "y": -0.7971350992488595,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8492773059332788,
+              "y": -0.5258502449041353,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9818865214802219,
+              "y": -0.18354640114831122,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9818865214802219,
+              "y": 0.18354640114831094,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8492773059332789,
+              "y": 0.5258502449041351,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6019684842120383,
+              "y": 0.7971350992488588,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.27336048307544014,
+              "y": 0.9607624413619578,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.09216636604322373,
+              "y": 0.9946334920006532,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.44524563671628403,
+              "y": 0.8941737780902198,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7381920169595677,
+              "y": 0.6729509406607529,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9314414748492887,
+              "y": 0.36084234974516066,
+              "z": 0.047006143864108264,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 5,
+            "infinityMultiplicity": 4,
+            "nonzeroRootStep": 17,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - 3*sqrt(55)/10",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 3.033942105250792e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 6.661338147750939e-16,
+            "minimumDistinctPointDistance": 0.36709280229662133,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-7",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 7",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6859943405700354,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7276068751089989,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "2*sqrt(34)/17",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-3*sqrt(17)/17",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{7}\\rangle=(\\frac{2 \\sqrt{34}}{17})|D_{26}^{(4)}\\rangle+(- \\frac{3 \\sqrt{17}}{17})|D_{26}^{(21)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 4
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 5
+            },
+            {
+              "x": 0.9818865214802217,
+              "y": -0.18354640114831117,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8492773059332788,
+              "y": -0.5258502449041349,
+              "z": -0.04700614386410817,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6019684842120375,
+              "y": -0.7971350992488593,
+              "z": -0.04700614386410841,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.27336048307544003,
+              "y": -0.9607624413619574,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.09216636604322317,
+              "y": -0.9946334920006531,
+              "z": -0.04700614386410817,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.44524563671628403,
+              "y": -0.8941737780902197,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7381920169595683,
+              "y": -0.6729509406607521,
+              "z": -0.04700614386410817,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9314414748492884,
+              "y": -0.3608423497451609,
+              "z": -0.04700614386410817,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9988946002652266,
+              "y": -1.2232930749003847e-16,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9314414748492887,
+              "y": 0.3608423497451603,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7381920169595683,
+              "y": 0.6729509406607523,
+              "z": -0.04700614386410841,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4452456367162851,
+              "y": 0.8941737780902193,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.0921663660432232,
+              "y": 0.9946334920006531,
+              "z": -0.04700614386410817,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.27336048307544064,
+              "y": 0.9607624413619573,
+              "z": -0.04700614386410841,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6019684842120373,
+              "y": 0.7971350992488595,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8492773059332785,
+              "y": 0.5258502449041353,
+              "z": -0.04700614386410829,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9818865214802218,
+              "y": 0.1835464011483109,
+              "z": -0.04700614386410841,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 4,
+            "infinityMultiplicity": 5,
+            "nonzeroRootStep": 17,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + 2*sqrt(55)/33",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 1.923167003837691e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 1.1102230246251565e-16,
+            "minimumDistinctPointDistance": 0.3670928022966213,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-8",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 8",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.7223151185146152,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6915640748081247,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "0",
+            "2*sqrt(69)/23",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(253)/23",
+            "0"
+          ],
+          "stateLatex": "|u_{8}\\rangle=(\\frac{2 \\sqrt{69}}{23})|D_{26}^{(2)}\\rangle+(\\frac{\\sqrt{253}}{23})|D_{26}^{(25)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 2
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9983891194832203,
+              "y": -0.0,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9613661426503404,
+              "y": -0.26936216079487735,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8530430369745461,
+              "y": -0.51874696237349,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6814536316585764,
+              "y": -0.7296586748623065,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.4593239279254196,
+              "y": -0.886454941402914,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.20312826972518558,
+              "y": -0.9775069002011865,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.06813248299056374,
+              "y": -0.9960616440080509,
+              "z": 0.0567376955605351,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.33434016112827314,
+              "y": -0.9407430523576563,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.575751359019562,
+              "y": -0.8156538521269959,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7744617124995778,
+              "y": -0.6300713370521636,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9157337836900877,
+              "y": -0.3977593132927443,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9890900693476136,
+              "y": -0.13594730089418283,
+              "z": 0.0567376955605351,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9890900693476133,
+              "y": 0.13594730089418208,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9157337836900876,
+              "y": 0.39775931329274444,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.774461712499578,
+              "y": 0.6300713370521633,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5757513590195621,
+              "y": 0.8156538521269958,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.33434016112827336,
+              "y": 0.9407430523576562,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.06813248299056328,
+              "y": 0.9960616440080506,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.20312826972518513,
+              "y": 0.9775069002011865,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.45932392792541893,
+              "y": 0.8864549414029144,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6814536316585765,
+              "y": 0.7296586748623065,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.8530430369745461,
+              "y": 0.51874696237349,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9613661426503399,
+              "y": 0.2693621607948783,
+              "z": 0.05673769556053529,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 2,
+            "infinityMultiplicity": 1,
+            "nonzeroRootStep": 23,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y - 5*sqrt(66)/11",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 5.724817588081674e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 4.440892098500626e-16,
+            "minimumDistinctPointDistance": 0.2718946017883635,
+            "rootPrecisionDecimalDigits": 40
+          }
+        },
+        {
+          "id": "reflection-pairs-n26-k9-t1-basis-9",
+          "n": 26,
+          "label": "Separated reflection-pair construction · basis vector 9",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.6915640748081247,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.7223151185146152,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "sqrt(253)/23",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-2*sqrt(69)/23",
+            "0",
+            "0"
+          ],
+          "stateLatex": "|u_{9}\\rangle=(\\frac{\\sqrt{253}}{23})|D_{26}^{(1)}\\rangle+(- \\frac{2 \\sqrt{69}}{23})|D_{26}^{(24)}\\rangle",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 2
+            },
+            {
+              "x": 0.9890900693476135,
+              "y": -0.13594730089418228,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9157337836900877,
+              "y": -0.3977593132927443,
+              "z": -0.056737695560535296,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7744617124995781,
+              "y": -0.6300713370521634,
+              "z": -0.056737695560535296,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5757513590195621,
+              "y": -0.815653852126996,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.33434016112827336,
+              "y": -0.9407430523576564,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.06813248299056407,
+              "y": -0.9960616440080506,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.2031282697251857,
+              "y": -0.9775069002011864,
+              "z": -0.056737695560535296,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4593239279254195,
+              "y": -0.8864549414029141,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6814536316585766,
+              "y": -0.7296586748623064,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.853043036974546,
+              "y": -0.5187469623734904,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9613661426503405,
+              "y": -0.2693621607948774,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9983891194832204,
+              "y": -1.22267403947867e-16,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9613661426503404,
+              "y": 0.2693621607948775,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8530430369745459,
+              "y": 0.5187469623734905,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6814536316585765,
+              "y": 0.7296586748623066,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.4593239279254201,
+              "y": 0.8864549414029139,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.20312826972518552,
+              "y": 0.9775069002011865,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.06813248299056383,
+              "y": 0.9960616440080506,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3343401611282731,
+              "y": 0.9407430523576565,
+              "z": -0.05673769556053554,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5757513590195619,
+              "y": 0.815653852126996,
+              "z": -0.056737695560535296,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7744617124995778,
+              "y": 0.6300713370521637,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9157337836900876,
+              "y": 0.3977593132927448,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9890900693476132,
+              "y": 0.13594730089418378,
+              "z": -0.056737695560535414,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "saved exact Dicke coefficients",
+            "squareFreeFactorizationExact": true,
+            "zeroMultiplicity": 1,
+            "infinityMultiplicity": 2,
+            "nonzeroRootStep": 23,
+            "reducedPolynomialFactors": [
+              {
+                "polynomial": "y + sqrt(66)/30",
+                "multiplicity": 1
+              }
+            ],
+            "projectiveDickeReconstructionError": 4.112110032829381e-14,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.2718946017883635,
             "rootPrecisionDecimalDigits": 40
           }
         }
@@ -124267,6 +130882,58 @@
       ]
     },
     {
+      "id": "pure-n23-t6-four-copy",
+      "title": "Twenty-three qubits: maximum pure AC order is five",
+      "summary": "Certified algebraic fifth-order attainment and an exact four-copy sixth-order exclusion prove the maximum.",
+      "formulaLatex": "t_{\\max}(23)=5",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n23-t6-four-copy"
+        }
+      ]
+    },
+    {
+      "id": "pure-n25-t7-ppt",
+      "title": "Twenty-five qubits cannot be seventh-order AC",
+      "summary": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "formulaLatex": "t_{\\max}(25)\\le6",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n25-t7-ppt"
+        }
+      ]
+    },
+    {
+      "id": "pure-n24-t8-rectangular",
+      "title": "Twenty-four qubits: maximum pure AC order is seven",
+      "summary": "An exact octahedral seventh-order state attains the maximum; rectangular tensor images exclude eighth order.",
+      "formulaLatex": "t_{\\max}(24)=7",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n24-t8-rectangular"
+        }
+      ]
+    },
+    {
+      "id": "pure-n26-t7-ppt",
+      "title": "Twenty-six qubits: maximum pure AC order is six",
+      "summary": "A certified algebraic sixth-order state attains the maximum; an exact three-copy partial-transpose certificate excludes seventh order.",
+      "formulaLatex": "t_{\\max}(26)=6",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n26-t7-ppt"
+        }
+      ]
+    },
+    {
       "id": "molien-constructions",
       "title": "Molien series give analytical AC subspaces",
       "summary": "Exact single-character spaces of the binary polyhedral groups provide polynomial bases. Their full spans obey the AC conditions, and higher AC orders are checked separately.",
@@ -125026,12 +131693,12 @@
     "A Majorana constellation and its symmetry label belong to an individual basis vector. They are not invariants of the subspace or of a change of basis."
   ],
   "validation": {
-    "exactSubspaces": 140,
+    "exactSubspaces": 146,
     "numericalSubspaces": 38,
-    "entries": 161,
-    "exactMaxima": 68,
-    "provedEmpty": 64,
-    "ranges": 29,
+    "entries": 175,
+    "exactMaxima": 74,
+    "provedEmpty": 68,
+    "ranges": 33,
     "molienSubspaces": 5,
     "paperConjectures": 33,
     "conjectureStatuses": {

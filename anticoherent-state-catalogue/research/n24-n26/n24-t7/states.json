@@ -1,0 +1,218 @@
+{
+  "states": [
+    {
+      "id": "octahedral-n24-t7",
+      "n": 24,
+      "achievedOrder": 7,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "label": "Exact octahedral state · order 7",
+      "status": "proven-existence",
+      "stateLatex": "\\alpha\\bigl(|D_{24}^{(0)}\\rangle+|D_{24}^{(24)}\\rangle\\bigr)+\\frac{42\\alpha+\\beta}{\\sqrt{10626}}\\bigl(|D_{24}^{(4)}\\rangle+|D_{24}^{(20)}\\rangle\\bigr)+\\frac{591\\alpha-4\\beta}{\\sqrt{735471}}\\bigl(|D_{24}^{(8)}\\rangle+|D_{24}^{(16)}\\rangle\\bigr)+\\frac{2828\\alpha+6\\beta}{\\sqrt{2704156}}|D_{24}^{(12)}\\rangle",
+      "parametersLatex": "\\alpha=\\frac{\\sqrt{1131}}{128},\\quad\\beta=\\frac{581\\sqrt{1131}}{928}+i\\frac{3289\\sqrt{3045}}{4640}",
+      "support": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "exactCoefficients": [
+        "sqrt(1131)/128",
+        "0",
+        "0",
+        "0",
+        "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+        "0",
+        "0",
+        "0",
+        "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+        "0",
+        "0",
+        "0",
+        "149*sqrt(4524261)/599488 + 33*sqrt(42010995)*I/1498720",
+        "0",
+        "0",
+        "0",
+        "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+        "0",
+        "0",
+        "0",
+        "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+        "0",
+        "0",
+        "0",
+        "sqrt(1131)/128"
+      ],
+      "coefficients": [
+        [
+          0.2627370581375037,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3113056378571354,
+          0.3794500685542988
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.08285577300942161,
+          -0.18243861066194622
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5286638321026182,
+          0.14271674131500717
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.08285577300942161,
+          -0.18243861066194622
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3113056378571354,
+          0.3794500685542988
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2627370581375037,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Exact octahedral binary forms with rational second-, fourth-, and sixth-moment matching.",
+      "notes": "Exactly seventh-order anticoherent, not eighth-order. The global exclusion of eighth order is a separate bound.",
+      "verification": {
+        "method": "Exact Schmidt reductions through order eight.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "reductions": [
+          {
+            "order": 1,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 2,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 3,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 4,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 5,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 6,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 7,
+            "equalsSymmetricIdentity": true,
+            "squaredFrobeniusDefect": "0"
+          },
+          {
+            "order": 8,
+            "equalsSymmetricIdentity": false,
+            "squaredFrobeniusDefect": "2197/12519480"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 8,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "13/155040"
+        },
+        "globalMaximumOrderProven": false
+      }
+    }
+  ]
+}

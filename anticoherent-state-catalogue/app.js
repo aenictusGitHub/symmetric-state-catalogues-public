@@ -138,8 +138,10 @@
   }
   function coefficients(state) {
     const numeric=isNumerical(state);
+    const implicit=!!state.implicitAlgebraicDefinition;
+    const approximate=numeric||implicit;
     const support=state.support || (state.exactCoefficients||state.coefficients||[]).map((_,i)=>i).filter(i=>state.exactCoefficients?String(state.exactCoefficients[i])!=='0':JSON.stringify(state.coefficients?.[i])!=='[0,0]');
-    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th>${numeric?'':'<th scope="col">Exact amplitude</th>'}<th scope="col">${numeric?'Approximate amplitude':'Decimal'}</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th>${numeric?'':`<td class="exact-amplitude">${escape(state.exactCoefficients?.[r]!==undefined?exactText(state.exactCoefficients[r]):'—')}</td>`}<td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.${numeric?' Values are numerical approximations.':''}</p></details>`;
+    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th>${approximate?'':'<th scope="col">Exact amplitude</th>'}<th scope="col">${approximate?'Approximate amplitude':'Decimal'}</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th>${approximate?'':`<td class="exact-amplitude">${escape(state.exactCoefficients?.[r]!==undefined?exactText(state.exactCoefficients[r]):'—')}</td>`}<td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.${implicit?' Decimal components approximate the algebraic state defined by the linked exact certificate.':numeric?' Values are numerical approximations.':''}</p></details>`;
   }
   function renderDetail() {
     window.MajoranaViewer?.close();
@@ -163,7 +165,7 @@
       if(formula)content+=`<div class="state-formula" role="region" tabindex="0" aria-label="${numeric?'Numerical':'Exact'} Dicke state formula">${math(formula,true)}${numeric?'<p class="micro-copy">Numerical coefficients are listed below.</p>':''}</div>`;
       if(majorana?.points?.length)content+='<button id="view-majorana" class="view-majorana-button" type="button" aria-haspopup="dialog" aria-controls="majorana-viewer">View Majorana sphere ↗</button>';
       if(numeric)content+=numericalChecks(witness,selected.t);
-      else content+=`<div class="verification-line"><span class="verification-dot" aria-hidden="true"></span><span>Exact reduced-state verification${math(`\\quad\\operatorname{Tr}(\\rho_{${selected.t}}^2)=\\frac1{${selected.t+1}}`)}</span></div>`;
+      else content+=`<div class="verification-line"><span class="verification-dot" aria-hidden="true"></span><span>${witness.implicitAlgebraicDefinition?'Certified exact existence':'Exact reduced-state verification'}${math(`\\quad\\operatorname{Tr}(\\rho_{${selected.t}}^2)=\\frac1{${selected.t+1}}`)}</span></div>`;
       if(!numeric && witness.verification?.nextOrderWitness) {
         const next=witness.verification.nextOrderWitness;
         content+=`<details class="coefficient-details"><summary>Why the AC order is exactly ${witness.achievedOrder}</summary><p>The next reduction has a nonzero deviation from the symmetric maximally mixed state:</p>${math(`\\left(\\rho_{${next.order}}-\\frac{I_{${next.order+1}}}{${next.order+1}}\\right)_{${next.row},${next.column}}=${next.differenceLatex}\\ne0`,true)}<p class="micro-copy">Matrix indices count Dicke excitations from zero.</p></details>`;

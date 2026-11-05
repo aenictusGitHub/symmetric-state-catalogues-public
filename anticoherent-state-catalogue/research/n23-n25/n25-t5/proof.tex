@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{An explicit exactly fifth-order AC state on twenty-five qubits}
+\author{Rational moments and a phase-triangle cancellation}\date{5 November 2026}\maketitle
+\begin{theorem}
+Let $|D_{25}^{(r)}\rangle$ denote normalized Dicke states, and put
+\[
+ w=\frac{1001-i\sqrt{1561327}}{16\sqrt{10013}},\qquad |w|=1.
+\]
+Then
+\[
+\begin{aligned}
+|\psi\rangle={}&\sqrt{\frac{21}{250}}\bigl(|D_{25}^{(0)}\rangle-|D_{25}^{(25)}\rangle\bigr)\\
+&-i\sqrt{\frac{31}{125}}\bigl(|D_{25}^{(5)}\rangle-|D_{25}^{(20)}\rangle\bigr)\\
+&-iw\sqrt{\frac{21}{125}}\bigl(|D_{25}^{(10)}\rangle-|D_{25}^{(15)}\rangle\bigr)
+\end{aligned}
+\]
+is exactly fifth-order anticoherent.
+\end{theorem}
+\begin{proof}
+The squared amplitudes at indices $(0,5,10,15,20,25)$ are
+$(21,62,42,42,62,21)/250$, which sum to one.
+For $m=r-25/2$, reflection makes all odd moments vanish, while
+\[
+\langle m^2\rangle=\frac{225}{4},\qquad
+\langle m^4\rangle=\frac{90945}{16}.
+\]
+These are the uniform spin-$25/2$ moments. Thus all five-qubit diagonal
+reduction entries are $1/6$. Gaps of five in the Dicke support eliminate
+all off-diagonal shifts from one through four.
+
+For shift five, the five adjacent contributions have magnitudes
+\[
+ A=\frac{\sqrt{39215}}{316250},\qquad
+ B=\frac{12\sqrt{10013}}{158125},\qquad
+ C=\frac{273}{28750},\qquad B,\quad A.
+\]
+Their phases give the sum
+\[
+ iA+B\overline w-C+Bw-iA=2B\operatorname{Re}w-C=0.
+\]
+The last equality follows from $\operatorname{Re}w=1001/(16\sqrt{10013})$.
+This proves $\rho_5=I_6/6$.
+The next reduction has
+\[
+ (\rho_6)_{00}-\frac17=\frac{13}{35420}\ne0,
+\]
+so the order is exactly five.
+\end{proof}
+\paragraph{Scope and verification.}
+This is an attainment result; global maximum order requires a separate
+nonexistence argument. The state has proper dihedral $D_5$ symmetry.
+The portable SymPy construction uses exact Schmidt matrices; the separate
+verifier imports no construction code and uses direct partial-trace sums.
+It also checks that all 25 Majorana roots are distinct using an exact
+reciprocal-polynomial discriminant calculation. Run \texttt{python3 build\_witness.py} and
+\texttt{python3 verify\_witness.py}.
+\end{document}

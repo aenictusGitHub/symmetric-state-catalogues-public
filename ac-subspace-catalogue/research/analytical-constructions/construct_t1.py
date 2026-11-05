@@ -140,7 +140,7 @@ def verify_general_blocks():
  return records
 
 def main():
- rows=[reflection_pairs(n)for n in list(range(2,21,2))+[5,11,17,22,23,24,35,42]]+[n7()]+[central_odd(n)for n in [9,13,15,19,21]]
+ rows=[reflection_pairs(n)for n in list(range(2,21,2))+[5,11,17,22,23,24,26,35,42]]+[n7()]+[central_odd(n)for n in [9,13,15,19,21,25]]
  rows.sort(key=lambda r:(r['n'],r['id']))
  for row in rows:print(row['id'],'verified',flush=True)
  data={'schemaVersion':1,'subspaces':rows,

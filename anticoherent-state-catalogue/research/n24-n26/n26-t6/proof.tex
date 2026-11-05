@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty-six qubits: certified exact sixth-order anticoherent state}
+\author{Rational polynomial equations and an exact contraction certificate}
+\date{5 November 2026}\maketitle
+\begin{theorem}
+An exactly defined algebraic pure symmetric twenty-six-qubit state is sixth-order
+anticoherent. Together with the independent seventh-order exclusion in
+\texttt{../n26-t7/proof.tex}, this proves
+\[\boxed{t_{\max}(26)=6.}\]
+\end{theorem}
+\begin{proof}
+This is an exact implicit algebraic construction. Its Dicke coefficients are
+defined by a unique root of rational quadratic equations in a specified rational
+box. The displayed decimal components are approximations to that state; no
+closed-form radical expressions for its components are claimed.
+
+\paragraph{Rational reduced-state equations.}
+Write $n=26$, $t=6$, and let the 27 positive integer scales $d_r$ be the powers
+of two recorded in \texttt{certificate.json}. For 54 real variables $x_0,\ldots,x_{53}$,
+put
+\[
+z_r=x_r+ix_{27+r},\qquad
+c_r=\frac{\sqrt{\binom{26}{r}}}{d_r}z_r,\qquad
+|\psi(x)\rangle=\sum_{r=0}^{26}c_r|D_{26}^{(r)}\rangle.
+\]
+The Dicke states are normalized. The Schmidt matrix for the six-qubit reduction is
+\[
+M_{a\ell}=\frac{\sqrt{\binom6a\binom{20}\ell}}{d_{a+\ell}}z_{a+\ell},
+\qquad0\le a\le6,\quad0\le\ell\le20.
+\]
+Consequently $\rho_6=MM^\dagger=I_7/7$ is equivalent to 49 real rational
+quadratic equations $F(x)=0$. The seven diagonal equations are
+\[
+F_{aa}=\sum_{\ell=0}^{20}\frac{\binom{20}\ell}{d_{a+\ell}^2}
+\bigl(x_{a+\ell}^2+x_{27+a+\ell}^2\bigr)
+-\frac1{7\binom6a}=0.
+\]
+For $0\le a<b\le6$, the other 42 equations are the real and imaginary parts of
+\[
+F_{ab}=\sum_{\ell=0}^{20}\frac{\binom{20}\ell}{d_{a+\ell}d_{b+\ell}}
+z_{a+\ell}\overline{z_{b+\ell}}=0.
+\]
+The equation ordering is seven diagonal entries, followed by real and imaginary
+parts of the upper entries in lexicographic order. Taking the trace of
+$\rho_6=I_7/7$ proves $\sum_r|c_r|^2=1$, so no separate normalization premise is needed.
+
+\paragraph{An exact isolating box.}
+Let $x^0\in\mathbb Q^{54}$ be the center in the certificate. Fix coordinates
+$\{11,13,28,42,48\}$ to their rational central values, and let $y\in\mathbb R^{49}$
+contain the other coordinates in the recorded order. This restriction is a
+construction choice, not a condition imposed on arbitrary AC states.
+The certificate supplies a rational $49\times49$ matrix $A$, whose entries
+are integers divided by $2^{256}$, and radius
+\[r=10^{-65}.
+\]
+For the square Jacobian $J_0=DF(y^0)$, exact rational arithmetic verifies
+\[
+\eta=\|AF(y^0)\|_\infty<10^{-67},\qquad
+\beta=\|I-AJ_0\|_\infty<10^{-76},\qquad
+\|A\|_\infty<17000.
+\]
+All equations are quadratic. Each contains two quadratic monomials per
+$\ell$, and each monomial contributes at most twice its absolute coefficient
+to the sum of absolute Hessian entries. Since $d_r\ge1$, the universal bound
+\[
+H\le4\sum_{\ell=0}^{20}\binom{20}\ell=2^{22}
+\]
+implies $\|DF(y)-J_0\|_\infty\le H\|y-y^0\|_\infty$.
+Thus on the closed box $B=\{y:\|y-y^0\|_\infty\le r\}$, the map
+\[T(y)=y-AF(y)
+\]
+has Lipschitz constant at most
+\[
+q=\beta+\|A\|_\infty H r<10^{-54}<1.
+\]
+Moreover $\|T(y)-y^0\|_\infty\le\eta+qr<r$, as the verifier checks using
+the full rational bounds, not their rounded displays. Banach's theorem yields
+a unique fixed point $y^*\in B$.
+
+Because $\beta<1$, the matrix $AJ_0$ is invertible, and hence $A$ is invertible.
+Therefore $AF(y^*)=0$ implies $F(y^*)=0$. The same derivative bound makes
+$DF(y^*)$ invertible. The root is thus an isolated nonsingular zero of a square
+rational polynomial system, so its coordinates are real algebraic numbers.
+Together with the five fixed rational coordinates, it defines a precise exact
+state $|\psi(x^*)\rangle$ satisfying $\rho_6=I_7/7$.
+
+\paragraph{Meaning of the decimal components.}
+The scales satisfy $d_r^2\le\binom{26}{r}<4d_r^2$.
+Each real or imaginary Dicke component of the exact state is therefore within
+$2\cdot10^{-65}$ of the exact center conversion
+$\sqrt{\binom{26}{r}}(x_r^0+ix_{27+r}^0)/d_r$.
+Binary floating-point components and plotted Majorana coordinates are numerical
+renderings. The exact state is specified by the rational equations, fixed
+coordinates and isolating box, rather than by those floating values.
+
+\paragraph{Maximum order.}
+The separate exact three-copy partial-transpose certificate excludes every
+seventh-order pure symmetric twenty-six-qubit state. Nesting excludes all
+higher orders. The certified sixth-order state therefore has exactly order six
+and attains the global maximum.
+\end{proof}
+\paragraph{Independent reproduction.}
+Run \texttt{python3 verify\_independently.py}; only Python's standard library is
+needed. It reconstructs the reduced-state equations, obtains the Jacobian by
+exact central differences of the quadratic equations, and verifies every
+rational contraction inequality. No discovery library, numerical convergence
+claim or floating-point tolerance is a premise. \texttt{build.py} is optional
+discovery code and accepts \texttt{--source}; it is not imported by the verifier.
+\end{document}

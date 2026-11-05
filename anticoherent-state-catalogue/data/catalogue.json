@@ -5082,6 +5082,7 @@
         "exact-order-n23-t2",
         "exact-order-n23-t3",
         "exact-order-n23-t4",
+        "certified-algebraic-n23-t5",
         "liege-acs.23.5"
       ],
       "status": "exists",
@@ -5105,6 +5106,7 @@
         "exact-order-n23-t2",
         "exact-order-n23-t3",
         "exact-order-n23-t4",
+        "certified-algebraic-n23-t5",
         "liege-acs.23.5"
       ],
       "status": "exists",
@@ -5127,6 +5129,7 @@
       "stateIds": [
         "exact-order-n23-t3",
         "exact-order-n23-t4",
+        "certified-algebraic-n23-t5",
         "liege-acs.23.5"
       ],
       "status": "exists",
@@ -5148,6 +5151,7 @@
       "t": 4,
       "stateIds": [
         "exact-order-n23-t4",
+        "certified-algebraic-n23-t5",
         "liege-acs.23.5"
       ],
       "status": "exists",
@@ -5168,24 +5172,37 @@
       "n": 23,
       "t": 5,
       "stateIds": [
+        "certified-algebraic-n23-t5",
         "liege-acs.23.5"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-three qubits: certified maximum order five",
+          "url": "./research/n23-n25/index.html#n23"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Exact algebraic existence proof",
+          "url": "./research/n23-n25/n23-t5/proof.tex"
+        },
+        {
+          "title": "Rational root certificate",
+          "url": "./research/n23-n25/n23-t5/certificate.json"
+        },
+        {
+          "title": "Independent rational verification",
+          "url": "./research/n23-n25/n23-t5/independent-verification.json"
+        },
+        {
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n23-t6/proof.tex"
         }
       ],
       "maximumACOrder": {
         "n": 23,
         "order": 5,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
@@ -5193,28 +5210,65 @@
         "sourceStateIds": [
           "liege-acs.23.5"
         ],
-        "exactAttainmentProven": false,
-        "upperBoundProven": false
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n23-t6-four-copy"
       },
-      "maximumOrderStatus": "conjectured"
+      "maximumOrderStatus": "proven"
     },
     {
       "id": "n23-t6",
       "n": 23,
       "t": 6,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n23-t6-four-copy",
+      "notes": "Certified algebraic fifth-order attainment and an exact four-copy sixth-order exclusion prove the maximum.",
+      "references": [
+        {
+          "title": "Exact existence and maximum-order proof",
+          "url": "./research/n23-n25/index.html#n23"
+        },
+        {
+          "title": "Certified algebraic existence",
+          "url": "./research/n23-n25/n23-t5/proof.tex"
+        },
+        {
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n23-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n23-t6/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n23-t7",
       "n": 23,
       "t": 7,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n23-t6-four-copy",
+      "notes": "Certified algebraic fifth-order attainment and an exact four-copy sixth-order exclusion prove the maximum.",
+      "references": [
+        {
+          "title": "Exact existence and maximum-order proof",
+          "url": "./research/n23-n25/index.html#n23"
+        },
+        {
+          "title": "Certified algebraic existence",
+          "url": "./research/n23-n25/n23-t5/proof.tex"
+        },
+        {
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n23-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n23-t6/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n23-t8",
@@ -5363,6 +5417,7 @@
         "exact-order-n24-t3",
         "exact-order-n24-t4",
         "ac-n24-t5",
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
       "status": "exists",
@@ -5383,6 +5438,7 @@
         "exact-order-n24-t3",
         "exact-order-n24-t4",
         "ac-n24-t5",
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
       "status": "exists",
@@ -5402,6 +5458,7 @@
         "exact-order-n24-t3",
         "exact-order-n24-t4",
         "ac-n24-t5",
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
       "status": "exists",
@@ -5420,6 +5477,7 @@
       "stateIds": [
         "exact-order-n24-t4",
         "ac-n24-t5",
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
       "status": "exists",
@@ -5437,6 +5495,7 @@
       "t": 5,
       "stateIds": [
         "ac-n24-t5",
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
       "status": "exists",
@@ -5454,18 +5513,23 @@
       "n": 24,
       "t": 6,
       "stateIds": [
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-four qubits: exact maximum order seven",
+          "url": "./research/n24-n26/index.html#n24"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Analytical construction and universal upper-bound proof",
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
         }
       ]
     },
@@ -5474,24 +5538,29 @@
       "n": 24,
       "t": 7,
       "stateIds": [
+        "octahedral-n24-t7",
         "liege-acs.24.7"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-four qubits: exact maximum order seven",
+          "url": "./research/n24-n26/index.html#n24"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Analytical construction and universal upper-bound proof",
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
         }
       ],
       "maximumACOrder": {
         "n": 24,
         "order": 7,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
@@ -5499,11 +5568,11 @@
         "sourceStateIds": [
           "liege-acs.24.7"
         ],
-        "exactAttainmentProven": false,
+        "exactAttainmentProven": true,
         "upperBoundProven": true,
-        "upperBoundProofId": "rectangular-tensor-pure"
+        "upperBoundProofId": "n24-t8-rectangular"
       },
-      "maximumOrderStatus": "conjectured"
+      "maximumOrderStatus": "proven"
     },
     {
       "id": "n24-t8",
@@ -5511,16 +5580,20 @@
       "t": 8,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "rectangular-tensor-pure",
-      "notes": "Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7).",
+      "proofId": "n24-t8-rectangular",
+      "notes": "An exact octahedral seventh-order state attains the maximum; rectangular tensor images exclude eighth order.",
       "references": [
         {
-          "title": "General bound and proof in the AC-subspace catalogue",
-          "url": "../ac-subspace-catalogue/research/general-bounds/index.html"
+          "title": "Analytical state and complete maximum-order proof",
+          "url": "./research/n24-n26/index.html#n24"
         },
         {
           "title": "Complete LaTeX proof",
-          "url": "../ac-subspace-catalogue/research/general-bounds/proof.tex"
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact state verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
         }
       ]
     },
@@ -5530,16 +5603,20 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "rectangular-tensor-pure",
-      "notes": "Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7).",
+      "proofId": "n24-t8-rectangular",
+      "notes": "An exact octahedral seventh-order state attains the maximum; rectangular tensor images exclude eighth order.",
       "references": [
         {
-          "title": "General bound and proof in the AC-subspace catalogue",
-          "url": "../ac-subspace-catalogue/research/general-bounds/index.html"
+          "title": "Analytical state and complete maximum-order proof",
+          "url": "./research/n24-n26/index.html#n24"
         },
         {
           "title": "Complete LaTeX proof",
-          "url": "../ac-subspace-catalogue/research/general-bounds/proof.tex"
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact state verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
         }
       ]
     },
@@ -5649,6 +5726,7 @@
         "exact-order-n25-t2",
         "exact-order-n25-t3",
         "exact-order-n25-t4",
+        "radical-n25-t5",
         "liege-acs.25.5"
       ],
       "status": "exists",
@@ -5672,6 +5750,7 @@
         "exact-order-n25-t2",
         "exact-order-n25-t3",
         "exact-order-n25-t4",
+        "radical-n25-t5",
         "liege-acs.25.5"
       ],
       "status": "exists",
@@ -5694,6 +5773,7 @@
       "stateIds": [
         "exact-order-n25-t3",
         "exact-order-n25-t4",
+        "radical-n25-t5",
         "liege-acs.25.5"
       ],
       "status": "exists",
@@ -5715,6 +5795,7 @@
       "t": 4,
       "stateIds": [
         "exact-order-n25-t4",
+        "radical-n25-t5",
         "liege-acs.25.5"
       ],
       "status": "exists",
@@ -5735,18 +5816,27 @@
       "n": 25,
       "t": 5,
       "stateIds": [
+        "radical-n25-t5",
         "liege-acs.25.5"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-five qubits: exact order five and rigorous bounds",
+          "url": "./research/n23-n25/index.html#n25"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Analytical radical construction",
+          "url": "./research/n23-n25/n25-t5/proof.tex"
+        },
+        {
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/n23-n25/n25-t5/independent-verification.json"
+        },
+        {
+          "title": "Universal seventh-order exclusion",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
         }
       ],
       "maximumACOrder": {
@@ -5760,7 +5850,7 @@
         "sourceStateIds": [
           "liege-acs.25.5"
         ],
-        "exactAttainmentProven": false,
+        "exactAttainmentProven": true,
         "upperBoundProven": false
       },
       "maximumOrderStatus": "conjectured"
@@ -5779,18 +5869,46 @@
       "n": 25,
       "t": 7,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n25-t7-ppt",
+      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "references": [
+        {
+          "title": "Radical witness, rigorous bounds and remaining gap",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Complete upper-bound proof",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n25-t8",
       "n": 25,
       "t": 8,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n25-t7-ppt",
+      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "references": [
+        {
+          "title": "Radical witness, rigorous bounds and remaining gap",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Complete upper-bound proof",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n25-t9",
@@ -5798,16 +5916,20 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "rectangular-tensor-pure",
-      "notes": "Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7).",
+      "proofId": "n25-t7-ppt",
+      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
       "references": [
         {
-          "title": "General bound and proof in the AC-subspace catalogue",
-          "url": "../ac-subspace-catalogue/research/general-bounds/index.html"
+          "title": "Radical witness, rigorous bounds and remaining gap",
+          "url": "./research/n23-n25/index.html#n25"
         },
         {
-          "title": "Complete LaTeX proof",
-          "url": "../ac-subspace-catalogue/research/general-bounds/proof.tex"
+          "title": "Complete upper-bound proof",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n25-t7/independent-verification.json"
         }
       ]
     },
@@ -5917,6 +6039,7 @@
         "exact-order-n26-t2",
         "exact-order-n26-t3",
         "exact-order-n26-t4",
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
       "status": "exists",
@@ -5940,6 +6063,7 @@
         "exact-order-n26-t2",
         "exact-order-n26-t3",
         "exact-order-n26-t4",
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
       "status": "exists",
@@ -5962,6 +6086,7 @@
       "stateIds": [
         "exact-order-n26-t3",
         "exact-order-n26-t4",
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
       "status": "exists",
@@ -5983,6 +6108,7 @@
       "t": 4,
       "stateIds": [
         "exact-order-n26-t4",
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
       "status": "exists",
@@ -6003,18 +6129,31 @@
       "n": 26,
       "t": 5,
       "stateIds": [
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-six qubits: certified maximum order six",
+          "url": "./research/n24-n26/index.html#n26"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Exact algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Rational root certificate",
+          "url": "./research/n24-n26/n26-t6/certificate.json"
+        },
+        {
+          "title": "Independent rational verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Universal exclusion of seventh order",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
         }
       ]
     },
@@ -6023,24 +6162,37 @@
       "n": 26,
       "t": 6,
       "stateIds": [
+        "certified-algebraic-n26-t6",
         "liege-acs.26.6"
       ],
-      "status": "numerical",
-      "notes": "The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only.",
+      "status": "exists",
+      "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Liège AC-state library",
-          "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+          "title": "Twenty-six qubits: certified maximum order six",
+          "url": "./research/n24-n26/index.html#n26"
         },
         {
-          "title": "Independent high-precision checks and import notes",
-          "url": "./research/library42/index.html"
+          "title": "Exact algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Rational root certificate",
+          "url": "./research/n24-n26/n26-t6/certificate.json"
+        },
+        {
+          "title": "Independent rational verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Universal exclusion of seventh order",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
         }
       ],
       "maximumACOrder": {
         "n": 26,
         "order": 6,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
@@ -6048,28 +6200,73 @@
         "sourceStateIds": [
           "liege-acs.26.6"
         ],
-        "exactAttainmentProven": false,
-        "upperBoundProven": false
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n26-t7-ppt"
       },
-      "maximumOrderStatus": "conjectured"
+      "maximumOrderStatus": "proven"
     },
     {
       "id": "n26-t7",
       "n": 26,
       "t": 7,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n26-t7-ppt",
+      "notes": "A certified algebraic sixth-order state attains the maximum; an exact three-copy partial-transpose certificate excludes seventh order.",
+      "references": [
+        {
+          "title": "Exact existence and exclusion proofs",
+          "url": "./research/n24-n26/index.html#n26"
+        },
+        {
+          "title": "Algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact existence verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Seventh-order exclusion proof",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n24-n26/n26-t7/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n26-t8",
       "n": 26,
       "t": 8,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n26-t7-ppt",
+      "notes": "A certified algebraic sixth-order state attains the maximum; an exact three-copy partial-transpose certificate excludes seventh order.",
+      "references": [
+        {
+          "title": "Exact existence and exclusion proofs",
+          "url": "./research/n24-n26/index.html#n26"
+        },
+        {
+          "title": "Algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact existence verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Seventh-order exclusion proof",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n24-n26/n26-t7/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n26-t9",
@@ -6077,16 +6274,28 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "rectangular-tensor-pure",
-      "notes": "Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7).",
+      "proofId": "n26-t7-ppt",
+      "notes": "A certified algebraic sixth-order state attains the maximum; an exact three-copy partial-transpose certificate excludes seventh order.",
       "references": [
         {
-          "title": "General bound and proof in the AC-subspace catalogue",
-          "url": "../ac-subspace-catalogue/research/general-bounds/index.html"
+          "title": "Exact existence and exclusion proofs",
+          "url": "./research/n24-n26/index.html#n26"
         },
         {
-          "title": "Complete LaTeX proof",
-          "url": "../ac-subspace-catalogue/research/general-bounds/proof.tex"
+          "title": "Algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact existence verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Seventh-order exclusion proof",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n24-n26/n26-t7/independent-verification.json"
         }
       ]
     },
@@ -6329,9 +6538,19 @@
       "n": 27,
       "t": 8,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n27-t8-three-copy",
+      "notes": "An exact three-copy matrix-positivity certificate excludes every pure eighth-order AC state.",
+      "references": [
+        {
+          "title": "Proof and exact certificate",
+          "url": "./research/n27-t8/index.html"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n27-t8/reports/independent-verification.json"
+        }
+      ]
     },
     {
       "id": "n27-t9",
@@ -6339,16 +6558,16 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "rectangular-tensor-pure",
-      "notes": "Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7).",
+      "proofId": "n27-t8-three-copy",
+      "notes": "An exact three-copy matrix-positivity certificate excludes every pure eighth-order AC state.",
       "references": [
         {
-          "title": "General bound and proof in the AC-subspace catalogue",
-          "url": "../ac-subspace-catalogue/research/general-bounds/index.html"
+          "title": "Proof and exact certificate",
+          "url": "./research/n27-t8/index.html"
         },
         {
-          "title": "Complete LaTeX proof",
-          "url": "../ac-subspace-catalogue/research/general-bounds/proof.tex"
+          "title": "Independent exact verification",
+          "url": "./research/n27-t8/reports/independent-verification.json"
         }
       ]
     },
@@ -109148,13 +109367,14 @@
       "maximumACOrder": {
         "n": 23,
         "order": 5,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
-        "exactAttainmentProven": false,
-        "upperBoundProven": false,
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n23-t6-four-copy",
         "isPrimaryLibraryRepresentative": true
       }
     },
@@ -109688,14 +109908,14 @@
       "maximumACOrder": {
         "n": 24,
         "order": 7,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
-        "exactAttainmentProven": false,
+        "exactAttainmentProven": true,
         "upperBoundProven": true,
-        "upperBoundProofId": "rectangular-tensor-pure",
+        "upperBoundProofId": "n24-t8-rectangular",
         "isPrimaryLibraryRepresentative": true
       }
     },
@@ -110228,7 +110448,7 @@
         "sourceKinds": [
           "website"
         ],
-        "exactAttainmentProven": false,
+        "exactAttainmentProven": true,
         "upperBoundProven": false,
         "isPrimaryLibraryRepresentative": true
       }
@@ -110784,13 +111004,14 @@
       "maximumACOrder": {
         "n": 26,
         "order": 6,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
-        "exactAttainmentProven": false,
-        "upperBoundProven": false,
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n26-t7-ppt",
         "isPrimaryLibraryRepresentative": true
       }
     },
@@ -143252,6 +143473,1665 @@
         "upperBoundProofId": "n22-t6-four-copy",
         "isPrimaryLibraryRepresentative": false
       }
+    },
+    {
+      "id": "octahedral-n24-t7",
+      "n": 24,
+      "achievedOrder": 7,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "label": "Exact octahedral state · order 7",
+      "status": "proven-existence",
+      "stateLatex": "\\begin{gathered}\\alpha\\bigl(|D_{24}^{(0)}\\rangle+|D_{24}^{(24)}\\rangle\\bigr)+\\frac{42\\alpha+\\beta}{\\sqrt{10626}}\\bigl(|D_{24}^{(4)}\\rangle+|D_{24}^{(20)}\\rangle\\bigr)+\\frac{591\\alpha-4\\beta}{\\sqrt{735471}}\\bigl(|D_{24}^{(8)}\\rangle+|D_{24}^{(16)}\\rangle\\bigr)+\\frac{2828\\alpha+6\\beta}{\\sqrt{2704156}}|D_{24}^{(12)}\\rangle\\\\[6pt]\\alpha=\\frac{\\sqrt{1131}}{128},\\quad\\beta=\\frac{581\\sqrt{1131}}{928}+i\\frac{3289\\sqrt{3045}}{4640}\\end{gathered}",
+      "parametersLatex": "\\alpha=\\frac{\\sqrt{1131}}{128},\\quad\\beta=\\frac{581\\sqrt{1131}}{928}+i\\frac{3289\\sqrt{3045}}{4640}",
+      "support": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "exactCoefficients": [
+        "sqrt(1131)/128",
+        "0",
+        "0",
+        "0",
+        "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+        "0",
+        "0",
+        "0",
+        "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+        "0",
+        "0",
+        "0",
+        "149*sqrt(4524261)/599488 + 33*sqrt(42010995)*I/1498720",
+        "0",
+        "0",
+        "0",
+        "31*sqrt(92424189)/3596928 - 13*sqrt(248834355)*I/1124040",
+        "0",
+        "0",
+        "0",
+        "sqrt(1335334)/3712 + 13*sqrt(73370)*I/9280",
+        "0",
+        "0",
+        "0",
+        "sqrt(1131)/128"
+      ],
+      "coefficients": [
+        [
+          0.2627370581375037,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3113056378571354,
+          0.3794500685542988
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.08285577300942161,
+          -0.18243861066194622
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5286638321026182,
+          0.14271674131500717
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.08285577300942161,
+          -0.18243861066194622
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3113056378571354,
+          0.3794500685542988
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2627370581375037,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Exact octahedral binary forms with rational second-, fourth-, and sixth-moment matching.",
+      "notes": "Exactly seventh-order AC. The rectangular spin-tensor argument excludes order eight for every pure symmetric N=24 state, proving the global maximum seven.",
+      "verification": {
+        "method": "Exact Schmidt reductions through order eight.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/7"
+          },
+          {
+            "t": 7,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/8"
+          },
+          {
+            "t": 8,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "2197/12519480",
+            "purity": "4179751/37558440"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 8,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "13/155040",
+          "differenceLatex": "\\frac{13}{155040}"
+        },
+        "globalMaximumOrderProven": true,
+        "maximumOrderUpperBound": 7,
+        "maximumOrderProofId": "n24-t8-rectangular"
+      },
+      "references": [
+        {
+          "title": "Twenty-four qubits: exact maximum order seven",
+          "url": "./research/n24-n26/index.html#n24"
+        },
+        {
+          "title": "Analytical construction and universal upper-bound proof",
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
+        }
+      ],
+      "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
+      "maximumACOrder": {
+        "n": 24,
+        "order": 7,
+        "status": "proven",
+        "scope": "maximum AC order at this qubit number",
+        "sourceKinds": [
+          "website"
+        ],
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n24-t8-rectangular",
+        "isPrimaryLibraryRepresentative": false
+      }
+    },
+    {
+      "id": "certified-algebraic-n26-t6",
+      "n": 26,
+      "achievedOrder": 6,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "label": "Certified algebraic state · order 6",
+      "status": "proven-existence",
+      "coefficientEvidence": "implicit-algebraic",
+      "stateLatex": "|\\psi\\rangle=\\sum_{r=0}^{26}\\frac{\\sqrt{\\binom{26}{r}}}{d_r}\\bigl(x_r^*+ix_{27+r}^*\\bigr)|D_{26}^{(r)}\\rangle",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "coefficients": [
+        [
+          1.9253642593105573e-13,
+          6.95565361529758e-13
+        ],
+        [
+          0.3551756146198975,
+          0.0802484965264744
+        ],
+        [
+          -0.024667679070144062,
+          -0.010397701246684586
+        ],
+        [
+          -0.01444952499646474,
+          -0.03791787207340028
+        ],
+        [
+          0.034313928699663106,
+          -0.01630357118625484
+        ],
+        [
+          0.18286041476865686,
+          0.048146167771660066
+        ],
+        [
+          0.3660395723923132,
+          5.794991947041231e-13
+        ],
+        [
+          -0.16376729875211662,
+          0.0517640082825078
+        ],
+        [
+          0.14193782211197492,
+          -0.03738055921941737
+        ],
+        [
+          -0.0595016425979208,
+          0.0018752502341910704
+        ],
+        [
+          -0.1642863580707092,
+          -0.04070784755421269
+        ],
+        [
+          -0.06292611885129828,
+          0.040505460007777265
+        ],
+        [
+          0.2020145516653019,
+          0.17684489348329482
+        ],
+        [
+          0.18986331369537202,
+          0.1595166475773739
+        ],
+        [
+          -0.2405075257433348,
+          0.08352985769650255
+        ],
+        [
+          0.1315163350167868,
+          0.1050663704475024
+        ],
+        [
+          -0.16424942967167988,
+          0.06581784026172584
+        ],
+        [
+          -0.034700627484719214,
+          0.08831655463340836
+        ],
+        [
+          0.05950215906668384,
+          0.08581112943462728
+        ],
+        [
+          0.20120369254637557,
+          0.015483366425478498
+        ],
+        [
+          0.12089811885330648,
+          0.027305688110802633
+        ],
+        [
+          -0.3615123678999955,
+          -0.025058963101525927
+        ],
+        [
+          0.05543540438305755,
+          -0.06557111898455963
+        ],
+        [
+          -0.10063268139499337,
+          -0.1434640073761349
+        ],
+        [
+          -0.14453806623499404,
+          -0.08573834430354434
+        ],
+        [
+          -0.10360361106658866,
+          -0.12174502724269112
+        ],
+        [
+          0.13635336419416383,
+          0.17088367190945214
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "0.0000000000001925364259310557289826410270279224536809624217683450364198318395253631604507295260291",
+          "0.0000000000006955653615297579940522134990122318929669541217786253560599962921184399819932987112396"
+        ],
+        [
+          "0.3551756146198974775327358990197283115887351655986818774541038309797015327607794020892",
+          "0.08024849652647439495579576429073172695181896837885125741694800533450870859982193685014"
+        ],
+        [
+          "-0.02466767907014406072574229475608225420145364977551717054455594624787523005131637597884",
+          "-0.01039770124668458676604068752404568609459947327204346707400708292821864030141483610955"
+        ],
+        [
+          "-0.01444952499646474126222281742874451479222890064489940977175261373432169961002469243244",
+          "-0.03791787207340027733471555653637914979210273027926048752523748605599234601459063537097"
+        ],
+        [
+          "0.03431392869966310861033033358854112693857046699686284231339796292961440007803521175861",
+          "-0.01630357118625483976709893284946641421503900557448515182405003365242641374288069231189"
+        ],
+        [
+          "0.18286041476865686860099566245956966620801333766102003379531583426783787907238203606",
+          "0.04814616777166006602194915366018758993964916948528212525685066578425770991547917443087"
+        ],
+        [
+          "0.3660395723923132222054266429264597841661438044291641256169178054427634592720046048662999999999999999",
+          "0.0000000000005794991947041230954105458292595242542705646223360602000847824479245309676384117774239"
+        ],
+        [
+          "-0.1637672987521166131017138130866703181563078183398752376570652594374130127885114143154000000000000001",
+          "0.05176400828250780427692951478901070718416627227852225427008926302599589945246103973736"
+        ],
+        [
+          "0.1419378221119749193277433072028386062058081508732593779561680912920409048992380808487",
+          "-0.03738055921941736470757872305776689848540454962057681731487641016271028489069717040733"
+        ],
+        [
+          "-0.05950164259792079353025498263433957371856721197670302082674625427068837310859017605218000000000000001",
+          "0.001875250234191070436409068905192263057137904706737009113092135736406601626958739822534"
+        ],
+        [
+          "-0.1642863580707092202777565635954226621931913973064562622528735094068002911764287886918",
+          "-0.04070784755421269081807556753942520140083478496032266759634405207420881596151201027742"
+        ],
+        [
+          "-0.06292611885129828869862061116660100017618986536398783587496497986115526721836128346932",
+          "0.04050546000777726841944133635127504406344859781946598122499245656204374596735628764406"
+        ],
+        [
+          "0.2020145516653018988955369218481931737065465864991344538359305995141696878180020639357000000000000001",
+          "0.1768448934832948107631005043729820023827166713321142438684769908114859770677370205628"
+        ],
+        [
+          "0.1898633136953720059355918531928543473751457605779263209473552381449863419811470583847000000000000001",
+          "0.1595166475773739033895161400354838100810401089287015382589402764976772631935656392527"
+        ],
+        [
+          "-0.2405075257433347995663286863612866184207946020417894427129132086267027242794616561423",
+          "0.08352985769650255098300809373220889077589514768735124412074391354166399011206365284792000000000000001"
+        ],
+        [
+          "0.1315163350167867940975470221095325404822938163486406223452134753004591765727826048747",
+          "0.1050663704475023988150351432101180330793378045854245188762729714763524844737908283785"
+        ],
+        [
+          "-0.1642494296716798873218039527606344457103608794946782671056246722672993169213275903831",
+          "0.06581784026172583517262565318004812867300492378283901927077790709054640255759207355073"
+        ],
+        [
+          "-0.03470062748471921657475608342626868046814188596560820097153322557056638823778600247818999999999999999",
+          "0.08831655463340836489492531351390278127933697042236333238094728757900110076993846542369000000000000001"
+        ],
+        [
+          "0.05950215906668383532098454850094946660473426403916918228420863780627614053449006436091",
+          "0.08581112943462727806529076611970867133893044757292776365226515089198969192942638131589"
+        ],
+        [
+          "0.2012036925463755603769380673268634332464894002304576618039088012545014588056146785058999999999999999",
+          "0.01548336642547849876053717301900124351042476885275820521965822593123576173523847920772"
+        ],
+        [
+          "0.1208981188533064768901632195296611254725512244225716113104476083876096635502820896239",
+          "0.02730568811080263334192794771592344257631392553736751427112910812098202571131160655390999999999999999"
+        ],
+        [
+          "-0.3615123678999955311566828757186922486365647870691229803912126539478196575185484920697",
+          "-0.02505896310152592509676412795001616434969167985365597134919679035899206406560448735775"
+        ],
+        [
+          "0.05543540438305755366018334621985265036651106921787326713820009542040406800843749042959000000000000001",
+          "-0.06557111898455962789086489912955174182022767260604078104770824091525520741623324092637000000000000001"
+        ],
+        [
+          "-0.1006326813949933760922636336481615698146390502367355521794388476972784977293664741477",
+          "-0.1434640073761349019238801236891231640575848658029730515906727585662664469023874283586"
+        ],
+        [
+          "-0.1445380662349940358363806228004299737742789307878341252230476634940507768354797947197",
+          "-0.08573834430354433445531412576510757019503065284114579624828672221041281755350965808903"
+        ],
+        [
+          "-0.103603611066588659308048522639154739247852978759164141936544440308959699635395073825",
+          "-0.1217450272426911261638984245316198048877716353064083096709819419426919003257741605122"
+        ],
+        [
+          "0.1363533641941638320517149323625077085297585328559321404675378656775626462272651263211",
+          "0.1708836719094521423468661292438639633927969858328442958473791257169931685849361454476"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": 3.6742082152022255e-13,
+          "y": -6.851208313366336e-13,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2896155175082535,
+          "y": -0.020295931107765564,
+          "z": 0.9569278589313279,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8505333071663799,
+          "y": 0.07636829374810872,
+          "z": 0.5203469776126532,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7763996604274437,
+          "y": -0.516630684829064,
+          "z": 0.3609657917049793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.31576479092128906,
+          "y": 0.6407115454522789,
+          "z": 0.6998437770949935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7791417342464576,
+          "y": 0.6167827446183779,
+          "z": 0.1118803105843171,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9285382450322551,
+          "y": 0.1910167435596339,
+          "z": -0.31832268406805825,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8352066231906455,
+          "y": -0.48316571979923134,
+          "z": -0.2626419307524404,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.13115835556457406,
+          "y": -0.6052895218292058,
+          "z": 0.7851255189645591,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49732274993472264,
+          "y": 0.42607776771506967,
+          "z": -0.7557299903115586,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.47923749895385354,
+          "y": -0.38481070676476103,
+          "z": -0.7888296010899061,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.19510117773589475,
+          "y": -0.9585067561183261,
+          "z": 0.2078468881691293,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.20646849302599996,
+          "y": 0.8880515267025456,
+          "z": -0.41077396133256855,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.15315839279340232,
+          "y": -0.9188014464722578,
+          "z": -0.36379445938253174,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09228356518416878,
+          "y": 0.9812532420653306,
+          "z": 0.16919166212664585,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30911529047640185,
+          "y": -0.6363114904831049,
+          "z": -0.7067923487650805,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.35031878626360974,
+          "y": 0.5737323185955946,
+          "z": -0.7403431465136383,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.694096293765933,
+          "y": -0.05662500803015025,
+          "z": -0.717651686715764,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6479966466984813,
+          "y": 0.7287501343115641,
+          "z": -0.2214127087779759,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7151050178596532,
+          "y": -0.6824552511639883,
+          "z": -0.15126018508068392,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5229812150174886,
+          "y": -0.7863967112657793,
+          "z": 0.3287413287817611,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9868174116644658,
+          "y": 0.04371494626551555,
+          "z": -0.1558216913938729,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5676643179705672,
+          "y": 0.7360608191740347,
+          "z": 0.3687433966593297,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9130078806750199,
+          "y": 0.021938851721919818,
+          "z": 0.40735156389835075,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3240713779790943,
+          "y": 0.3988951081383667,
+          "z": 0.8578230788909865,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5033261427131145,
+          "y": -0.27800587745403393,
+          "z": 0.8181537301525614,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaCoordinatePolicy": "Numeric rendering copied from the nearby refined Liège state; the exact state is defined by the certified polynomial root.",
+      "normalization": "Exact rho_6 = I_7/7 implies sum_r |c_r|^2 = 1.",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations. Floating components render the rational certificate center.",
+      "implicitAlgebraicDefinition": {
+        "certificateUrl": "./research/n24-n26/n26-t6/certificate.json",
+        "proofUrl": "./research/n24-n26/n26-t6/proof.tex",
+        "equations": "49 real rational quadratics equivalent to rho_6=I_7/7 after the stated binomial scaling.",
+        "variableConvention": "c_r=sqrt(binomial(N,r))/scaleFactors[r]*(x_r+i*x_(N+1+r))",
+        "activeVariables": [
+          1,
+          53,
+          22,
+          47,
+          31,
+          6,
+          7,
+          29,
+          19,
+          3,
+          23,
+          49,
+          9,
+          44,
+          45,
+          2,
+          35,
+          36,
+          21,
+          41,
+          52,
+          38,
+          12,
+          20,
+          14,
+          40,
+          4,
+          17,
+          16,
+          37,
+          33,
+          24,
+          15,
+          43,
+          39,
+          46,
+          10,
+          18,
+          50,
+          51,
+          27,
+          30,
+          0,
+          8,
+          5,
+          34,
+          25,
+          26,
+          32
+        ],
+        "fixedVariables": [
+          11,
+          13,
+          28,
+          42,
+          48
+        ],
+        "radius": "1/100000000000000000000000000000000000000000000000000000000000000000",
+        "rootDefinition": "Unique real zero in the active-coordinate infinity-norm box around the saved rational center, with the five fixed coordinates equal to their saved rational values.",
+        "centerCoefficientErrorBound": "2e-65 per real or imaginary Dicke component, relative to the exact rational-center conversion; ordinary floating values have additional rounding.",
+        "closedFormRadicalsClaimed": false
+      },
+      "references": [
+        {
+          "title": "Twenty-six qubits: certified maximum order six",
+          "url": "./research/n24-n26/index.html#n26"
+        },
+        {
+          "title": "Exact algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Rational root certificate",
+          "url": "./research/n24-n26/n26-t6/certificate.json"
+        },
+        {
+          "title": "Independent rational verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Universal exclusion of seventh order",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
+        }
+      ],
+      "provenance": "Certified exact algebraic zero near the refined Liège acs.26.6 numerical state; exact rational Banach contraction certificate.",
+      "derivedFromStateId": "liege-acs.26.6",
+      "sourceLibraryRecordId": "acs.26.6",
+      "notes": "Exact sixth-order existence is proved by an isolating rational contraction certificate. The decimal components and Majorana points are numerical renderings. Closed-form radical components are not claimed. A separate universal seventh-order exclusion proves maximum order six.",
+      "verification": {
+        "method": "Exact rational reduced-state equations, independently reconstructed Jacobian and strict Banach contraction bounds.",
+        "exactExistenceMethod": "rational-contraction",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": true,
+        "maximumOrderUpperBound": 6,
+        "existenceCertificate": "./research/n24-n26/n26-t6/certificate.json",
+        "exclusionCertificate": "./research/n24-n26/n26-t7/certificate.json",
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "purity": "1/2",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "purity": "1/3",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "purity": "1/4",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "purity": "1/5",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "purity": "1/6",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          },
+          {
+            "t": 6,
+            "identityVerified": true,
+            "purity": "1/7",
+            "evidence": "Certified rho_6=I_7/7, followed by partial trace."
+          }
+        ],
+        "maximumOrderProofId": "n26-t7-ppt"
+      },
+      "maximumACOrder": {
+        "n": 26,
+        "order": 6,
+        "status": "proven",
+        "scope": "maximum AC order at this qubit number",
+        "sourceKinds": [
+          "website"
+        ],
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n26-t7-ppt",
+        "isPrimaryLibraryRepresentative": false
+      }
+    },
+    {
+      "id": "certified-algebraic-n23-t5",
+      "n": 23,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Certified algebraic state · order 5",
+      "status": "proven-existence",
+      "coefficientEvidence": "implicit-algebraic",
+      "stateLatex": "|\\psi\\rangle=\\sum_{r=0}^{23}\\frac{\\sqrt{\\binom{23}{r}}}{d_r}\\bigl(x_r^*+ix_{24+r}^*\\bigr)|D_{23}^{(r)}\\rangle",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "coefficients": [
+        [
+          2.5785502769954777e-15,
+          1.576497464505391e-14
+        ],
+        [
+          0.24288833128726603,
+          -0.2688465902530047
+        ],
+        [
+          -0.08377489480597788,
+          0.0240999955807291
+        ],
+        [
+          -0.004587037853716364,
+          0.1002747672659123
+        ],
+        [
+          -0.15170701382467558,
+          0.2254411016656987
+        ],
+        [
+          -0.20424793360258417,
+          -0.04687858532000613
+        ],
+        [
+          -0.043343030628348524,
+          0.09485181245547665
+        ],
+        [
+          -0.010496739601001401,
+          0.21067987628387821
+        ],
+        [
+          0.13637310730984917,
+          -0.20972915213491936
+        ],
+        [
+          -0.08642683189567466,
+          0.11118135601812561
+        ],
+        [
+          0.03616336578315712,
+          0.0726457236389589
+        ],
+        [
+          -0.0024014898052669284,
+          -0.12230246441234821
+        ],
+        [
+          0.4313513672748696,
+          1.0404252475401038e-14
+        ],
+        [
+          0.1514501583566455,
+          -0.06042125394395289
+        ],
+        [
+          0.02366728827542785,
+          0.01570097887264213
+        ],
+        [
+          -0.18419701145165543,
+          0.09696854442735643
+        ],
+        [
+          0.1621958434966056,
+          -0.005501285225773163
+        ],
+        [
+          -0.02279150964534599,
+          0.11161457354249874
+        ],
+        [
+          -0.21488615509609635,
+          0.12301796036550483
+        ],
+        [
+          0.13324142299160863,
+          0.1978932599741253
+        ],
+        [
+          -0.14355714756082644,
+          0.02676289952639837
+        ],
+        [
+          0.13371036050835874,
+          -0.03623904934956315
+        ],
+        [
+          0.24122660176273153,
+          -0.23584325757145103
+        ],
+        [
+          0.01561622639361509,
+          0.07113685200542834
+        ]
+      ],
+      "highPrecisionCoefficients": [
+        [
+          "0.000000000000002578550276995477638746011126750930148670842882197328302127669367183699470621820171955",
+          "0.00000000000001576497464505391064737766062061926775062693729849175560473842434930713260536909477688"
+        ],
+        [
+          "0.2428883312872660392379660282023890802312910579002100594479980935593749002816790231052",
+          "-0.2688465902530047405916780258553277483173107298781894890681511554175380239947433205752"
+        ],
+        [
+          "-0.08377489480597787907676439313365320755718625251453133868606375710409442565204157442802",
+          "0.02409999558072910009647850959989577186274558380933577948089128464943382664407897531883000000000000001"
+        ],
+        [
+          "-0.004587037853716363512889772467020852777627673204818793115031971815157902679477319823856",
+          "0.1002747672659123040686982730096484322394873387518315602552038458941337810807704756153"
+        ],
+        [
+          "-0.1517070138246755825846466268569913748107712759048171134926861364496986605094315009272",
+          "0.2254411016656986834764300239935237157549598502681511102779113361958758751953893768579999999999999999"
+        ],
+        [
+          "-0.2042479336025841685137252768158124284915976439448102036039139558685189098334286035560000000000000001",
+          "-0.04687858532000613476768694221684173066858035802802591110262279136109444247030961936646"
+        ],
+        [
+          "-0.04334303062834852685767046997282267540408981388975505082239333029755687469943296524844",
+          "0.09485181245547665215254611287045017446842527258897401355257678851245009038631013227889"
+        ],
+        [
+          "-0.01049673960100140098164012612490257761317078751121265802304791638718722114434620708004",
+          "0.2106798762838782061104460682592090905951858431113909027769635577089327766485812293536"
+        ],
+        [
+          "0.1363731073098491783502535505464843589577052410759948484259672812461359330196600429719",
+          "-0.2097291521349193615947681353378959143834708116624832498506110998674805641779948314284"
+        ],
+        [
+          "-0.08642683189567465327093327176849317338582387988123995369409571050187626437930331951265",
+          "0.1111813560181256032999673492132422746411495795018673730311904394969958926988931217987"
+        ],
+        [
+          "0.03616336578315712019334330921175769099400060325071851176317363038145140364682924834066",
+          "0.0726457236389588912348254954572302652053522859399489645030890895652579807974354446157"
+        ],
+        [
+          "-0.002401489805266928551194128456132128169130019618590050241329631216434761093492699979827",
+          "-0.1223024644123482062192579980579500910200827809765150762269374371981857587027815718787"
+        ],
+        [
+          "0.4313513672748695894058503063916247798354229798641056640185450103539433922112987303788",
+          "0.00000000000001040425247540103784941466566789974258183147124138530980778016170316575036075550407321"
+        ],
+        [
+          "0.1514501583566454926020686201995230508421271257484803731933150836066475617670013403131",
+          "-0.06042125394395289229649662392268335078946533554946853171132537220686504348703564625927"
+        ],
+        [
+          "0.02366728827542784844420260730435857016686612287951956136874919330348792504353705239922",
+          "0.01570097887264212949876482371769176810907634301174366581455108250340306836286762242101"
+        ],
+        [
+          "-0.184197011451655426004931105995624846353579924949312726535522148553017841328391863498",
+          "0.09696854442735642831818906034313008895448506231009784410149909434595253029706717966442"
+        ],
+        [
+          "0.1621958434966055845902044625187539983712513029237430866009725302196576090733227606652",
+          "-0.005501285225773162726880863603843144018546066799663331778456505560107317638466169210458"
+        ],
+        [
+          "-0.02279150964534599115119180359844994030800321981936773501801551654486135749943905440183",
+          "0.1116145735424987311429861587549759437091282959690353045711965963393339929181880111151"
+        ],
+        [
+          "-0.2148861550960963477556532355641000236088866794727221689283682090191647165764652871836",
+          "0.1230179603655048313477977171442820014291951780678616078761084752011361724009966378317"
+        ],
+        [
+          "0.1332414229916086184876621638903762234952841080076807943358062537222085189084838348075",
+          "0.1978932599741253054274637992626405395807531829254028615812687139132834408974770125804"
+        ],
+        [
+          "-0.1435571475608264322166434431194754080896157325975296598153029483992938628558497265342",
+          "0.02676289952639836769624608556016061676670731663848454908490269361834207751933726595787"
+        ],
+        [
+          "0.1337103605083587539081965087459406889046254296949752636079381230454246564895668682169",
+          "-0.03623904934956315234981837364147286349383847282315285737537882814083255366919126494371000000000000001"
+        ],
+        [
+          "0.2412266017627315161290540820630339651519793070264965640526884952249368233452759795478000000000000001",
+          "-0.2358432575714510326902119101864905975929640600625587210694565966738253203083864635404"
+        ],
+        [
+          "0.01561622639361509054572245402140871442811665280217234351636177754292457028188801308096",
+          "0.07113685200542833284461136962617559771658961523047408164885179989723055944045109165243"
+        ]
+      ],
+      "majoranaPoints": [
+        {
+          "x": -1.1474792710530294e-14,
+          "y": -1.4366643259049787e-14,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.046731990797510885,
+          "y": 0.07159416555891823,
+          "z": 0.9963384949373498,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6491395489669095,
+          "y": -0.1340327942775155,
+          "z": 0.7487676916275157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9223522158475169,
+          "y": 0.21987617905212153,
+          "z": 0.3176804303173472,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5605304213604747,
+          "y": -0.7268597103371282,
+          "z": 0.3968382645588437,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9500610446507041,
+          "y": -0.12342177796365668,
+          "z": -0.2866200902963761,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4105104172025358,
+          "y": 0.8042498191632051,
+          "z": 0.4297248256083792,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6614593406644181,
+          "y": 0.7051810601528569,
+          "z": -0.25532569993928583,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6219119300668573,
+          "y": -0.7217131398702349,
+          "z": -0.3039007979245255,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5662721047840794,
+          "y": -0.01086028339391402,
+          "z": -0.8241468058471212,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.20032592087617795,
+          "y": 0.7562908485217538,
+          "z": -0.622811109299888,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.01236580251995071,
+          "y": -0.9169562841577912,
+          "z": -0.3987960128581699,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.042614375275967196,
+          "y": -0.808099550706517,
+          "z": 0.5875024520525548,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27041418033143283,
+          "y": -0.5679855004380874,
+          "z": -0.7773471826460651,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2697307813010618,
+          "y": 0.9612965565208071,
+          "z": -0.056162585766303424,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5313890138782755,
+          "y": 0.5351683675143849,
+          "z": -0.6566738416759588,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.09568633150692055,
+          "y": 0.6859660032606035,
+          "z": 0.7213146112019507,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.832020088770124,
+          "y": 0.05161365181281047,
+          "z": -0.5523392099330816,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5261426666046088,
+          "y": -0.8325743431126147,
+          "z": 0.1731873481776008,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8924978853074654,
+          "y": -0.4266032467890209,
+          "z": -0.14648274489088495,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7626922179228539,
+          "y": 0.6040325827875974,
+          "z": 0.23118222174480055,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8933600678863026,
+          "y": 0.10012644819902536,
+          "z": 0.43804392870718883,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49038389589984016,
+          "y": -0.23268093154459565,
+          "z": 0.8398709536218252,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaCoordinatePolicy": "Numeric rendering copied from the nearby refined Liège state; the exact state is defined by the certified polynomial root.",
+      "normalization": "Exact rho_5 = I_6/6 implies sum_r |c_r|^2 = 1.",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations. Floating components render the rational certificate center.",
+      "implicitAlgebraicDefinition": {
+        "certificateUrl": "./research/n23-n25/n23-t5/certificate.json",
+        "proofUrl": "./research/n23-n25/n23-t5/proof.tex",
+        "equations": "36 real rational quadratics equivalent to rho_5=I_6/6 after the stated binomial scaling.",
+        "variableConvention": "c_r=sqrt(binomial(N,r))/scaleFactors[r]*(x_r+i*x_(N+1+r))",
+        "activeVariables": [
+          25,
+          22,
+          2,
+          45,
+          26,
+          20,
+          40,
+          31,
+          16,
+          7,
+          29,
+          14,
+          42,
+          9,
+          5,
+          27,
+          38,
+          32,
+          12,
+          19,
+          21,
+          33,
+          39,
+          41,
+          4,
+          13,
+          43,
+          23,
+          35,
+          8,
+          30,
+          47,
+          6,
+          18,
+          11,
+          3
+        ],
+        "fixedVariables": [
+          0,
+          1,
+          10,
+          15,
+          17,
+          24,
+          28,
+          34,
+          36,
+          37,
+          44,
+          46
+        ],
+        "radius": "1/100000000000000000000000000000000000000000000000000000000000000000",
+        "rootDefinition": "Unique real zero in the active-coordinate infinity-norm box around the saved rational center, with twelve coordinates fixed to their saved rational values.",
+        "centerCoefficientErrorBound": "2e-65 per real or imaginary Dicke component, relative to the exact rational-center conversion; ordinary floating values have additional rounding.",
+        "closedFormRadicalsClaimed": false
+      },
+      "derivedFromStateId": "liege-acs.23.5",
+      "sourceLibraryRecordId": "acs.23.5",
+      "references": [
+        {
+          "title": "Twenty-three qubits: certified maximum order five",
+          "url": "./research/n23-n25/index.html#n23"
+        },
+        {
+          "title": "Exact algebraic existence proof",
+          "url": "./research/n23-n25/n23-t5/proof.tex"
+        },
+        {
+          "title": "Rational root certificate",
+          "url": "./research/n23-n25/n23-t5/certificate.json"
+        },
+        {
+          "title": "Independent rational verification",
+          "url": "./research/n23-n25/n23-t5/independent-verification.json"
+        },
+        {
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n23-t6/proof.tex"
+        }
+      ],
+      "provenance": "Certified exact algebraic zero near refined Liège acs.23.5; exact rational Banach contraction certificate.",
+      "notes": "Exact fifth-order existence is proved by an isolating rational contraction certificate. Decimal components and Majorana points are numerical renderings. Closed-form radical components are not claimed. A separate universal sixth-order exclusion proves maximum order five.",
+      "verification": {
+        "method": "Exact rational reduced-state equations, independently reconstructed Jacobian and strict Banach contraction bounds.",
+        "exactExistenceMethod": "rational-contraction",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": true,
+        "maximumOrderUpperBound": 5,
+        "existenceCertificate": "./research/n23-n25/n23-t5/certificate.json",
+        "exclusionCertificate": "./research/n23-n25/n23-t6/certificate.json",
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "purity": "1/2",
+            "evidence": "Certified rho_5=I_6/6, followed by partial trace."
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "purity": "1/3",
+            "evidence": "Certified rho_5=I_6/6, followed by partial trace."
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "purity": "1/4",
+            "evidence": "Certified rho_5=I_6/6, followed by partial trace."
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "purity": "1/5",
+            "evidence": "Certified rho_5=I_6/6, followed by partial trace."
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "purity": "1/6",
+            "evidence": "Certified rho_5=I_6/6, followed by partial trace."
+          }
+        ],
+        "maximumOrderProofId": "n23-t6-four-copy"
+      },
+      "maximumACOrder": {
+        "n": 23,
+        "order": 5,
+        "status": "proven",
+        "scope": "maximum AC order at this qubit number",
+        "sourceKinds": [
+          "website"
+        ],
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n23-t6-four-copy",
+        "isPrimaryLibraryRepresentative": false
+      }
+    },
+    {
+      "id": "radical-n25-t5",
+      "n": 25,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact dihedral state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\begin{gathered}\\sqrt{\\frac{21}{250}}\\bigl(|D_{25}^{(0)}\\rangle-|D_{25}^{(25)}\\rangle\\bigr)-i\\sqrt{\\frac{31}{125}}\\bigl(|D_{25}^{(5)}\\rangle-|D_{25}^{(20)}\\rangle\\bigr)-iw\\sqrt{\\frac{21}{125}}\\bigl(|D_{25}^{(10)}\\rangle-|D_{25}^{(15)}\\rangle\\bigr)\\\\[6pt]w=\\frac{1001-i\\sqrt{1561327}}{16\\sqrt{10013}},\\quad|w|=1\\end{gathered}",
+      "parametersLatex": "w=\\frac{1001-i\\sqrt{1561327}}{16\\sqrt{10013}},\\quad|w|=1",
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "exactCoefficients": [
+        "sqrt(210)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(155)*I/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1051365)*I*(-1001 + sqrt(1561327)*I)/4005200",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1641524561355)/4005200 + 1001*sqrt(1051365)*I/4005200",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(155)*I/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(210)/50"
+      ],
+      "coefficients": [
+        [
+          0.28982753492378877,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.4979959839195493
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.31988913173382144,
+          -0.25626342579186334
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31988913173382144,
+          0.25626342579186334
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.4979959839195493
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.28982753492378877,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Rational moment matching on six C5-separated Dicke indices with an exact phase-triangle cancellation.",
+      "notes": "Exactly fifth-order AC. A universal seventh-order exclusion gives maximum order at most six. Sixth-order existence at N=25 remains unresolved; no maximum-five claim is made.",
+      "verification": {
+        "method": "Exact Schmidt matrices through order six.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": false,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "9*sqrt(61227438305)/25003515625 + 482548293/1400196875000",
+            "purity": "9*sqrt(61227438305)/25003515625 + 28644381899/200028125000"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "13/35420",
+          "differenceLatex": "\\frac{13}{35420}"
+        },
+        "maximumOrderUpperBound": 6
+      },
+      "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
+      "references": [
+        {
+          "title": "Twenty-five qubits: exact order five and rigorous bounds",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Analytical radical construction",
+          "url": "./research/n23-n25/n25-t5/proof.tex"
+        },
+        {
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/n23-n25/n25-t5/independent-verification.json"
+        },
+        {
+          "title": "Universal seventh-order exclusion",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
+        }
+      ],
+      "maximumACOrder": {
+        "n": 25,
+        "order": 5,
+        "status": "conjectured",
+        "scope": "maximum AC order at this qubit number",
+        "sourceKinds": [
+          "website"
+        ],
+        "exactAttainmentProven": true,
+        "upperBoundProven": false,
+        "isPrimaryLibraryRepresentative": false
+      }
     }
   ],
   "rowMaximumOrders": [
@@ -143586,7 +145466,7 @@
     {
       "n": 23,
       "order": 5,
-      "status": "conjectured",
+      "status": "proven",
       "scope": "maximum AC order at this qubit number",
       "sourceKinds": [
         "website"
@@ -143594,13 +145474,14 @@
       "sourceStateIds": [
         "liege-acs.23.5"
       ],
-      "exactAttainmentProven": false,
-      "upperBoundProven": false
+      "exactAttainmentProven": true,
+      "upperBoundProven": true,
+      "upperBoundProofId": "n23-t6-four-copy"
     },
     {
       "n": 24,
       "order": 7,
-      "status": "conjectured",
+      "status": "proven",
       "scope": "maximum AC order at this qubit number",
       "sourceKinds": [
         "website"
@@ -143608,9 +145489,9 @@
       "sourceStateIds": [
         "liege-acs.24.7"
       ],
-      "exactAttainmentProven": false,
+      "exactAttainmentProven": true,
       "upperBoundProven": true,
-      "upperBoundProofId": "rectangular-tensor-pure"
+      "upperBoundProofId": "n24-t8-rectangular"
     },
     {
       "n": 25,
@@ -143623,13 +145504,13 @@
       "sourceStateIds": [
         "liege-acs.25.5"
       ],
-      "exactAttainmentProven": false,
+      "exactAttainmentProven": true,
       "upperBoundProven": false
     },
     {
       "n": 26,
       "order": 6,
-      "status": "conjectured",
+      "status": "proven",
       "scope": "maximum AC order at this qubit number",
       "sourceKinds": [
         "website"
@@ -143637,8 +145518,9 @@
       "sourceStateIds": [
         "liege-acs.26.6"
       ],
-      "exactAttainmentProven": false,
-      "upperBoundProven": false
+      "exactAttainmentProven": true,
+      "upperBoundProven": true,
+      "upperBoundProofId": "n26-t7-ppt"
     },
     {
       "n": 27,
@@ -144730,6 +146612,124 @@
       "kind": "exact cross-catalogue theorem"
     },
     {
+      "id": "n23-t6-four-copy",
+      "title": "Twenty-three qubits: maximum pure AC order is five",
+      "summary": "Certified algebraic fifth-order attainment and an exact four-copy sixth-order exclusion prove the maximum.",
+      "formulaLatex": "t_{\\max}(23)=5",
+      "bodyHtml": "<p>A rational contraction certificate defines a unique exact algebraic state satisfying <span class=\"math\" data-tex=\"\\rho_5=I_6/6\" data-display=\"false\">\\rho_5=I_6/6</span>. Its decimal components are approximations to that exactly defined root.</p><p>Independently, a hypothetical sixth-order state produces a positive, trace-one four-copy moment. Its vanishing low multipoles impose exact equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of the vanishing equations and nonnegative matrix traces, a contradiction.</p><p>The existence and exclusion certificates are independently verified with exact arithmetic. They prove that the globally maximum pure AC order is five, without restricting the support or symmetry of competing states.</p>",
+      "references": [
+        {
+          "title": "Exact existence and maximum-order proof",
+          "url": "./research/n23-n25/index.html#n23"
+        },
+        {
+          "title": "Certified algebraic existence",
+          "url": "./research/n23-n25/n23-t5/proof.tex"
+        },
+        {
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n23-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n23-t6/independent-verification.json"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n25-t7-ppt",
+      "title": "Twenty-five qubits cannot be seventh-order AC",
+      "summary": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "formulaLatex": "t_{\\max}(25)\\le6",
+      "bodyHtml": "<p>A hypothetical seventh-order state produces a positive, trace-one three-copy moment and a positive partial time reversal. Its vanishing low multipoles impose exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction.</p><p>The independent verifier reconstructs every selected physical equation and the partial-transpose map, and verifies the rational positive certificate matrices. The proof covers arbitrary complex symmetric states.</p><p>A new radical fifth-order state has <span class=\"math\" data-tex=\"\\rho_5=I_6/6\" data-display=\"false\">\\rho_5=I_6/6</span>. Thus <span class=\"math\" data-tex=\"5\\le t_{\\max}(25)\\le6\" data-display=\"false\">5\\le t_{\\max}(25)\\le6</span>; sixth-order existence remains unresolved here.</p>",
+      "references": [
+        {
+          "title": "Radical witness, rigorous bounds and remaining gap",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Complete upper-bound proof",
+          "url": "./research/n23-n25/n25-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n27-t8-three-copy",
+      "title": "Twenty-seven qubits cannot be eighth-order AC",
+      "summary": "An exact three-copy matrix-positivity certificate excludes every pure eighth-order AC state.",
+      "formulaLatex": "t_{\\max}(27)\\le7",
+      "bodyHtml": "<p>A hypothetical eighth-order state gives a positive, trace-one rotationally averaged three-copy moment. Vanishing low multipoles imply exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction.</p><p>The independent exact verifier reconstructs the physical representation, every selected equation and trace factor, and all positive certificate matrices. The argument covers arbitrary complex states. It supplies an upper bound; it does not prove that the reported fifth-order library state is optimal.</p>",
+      "references": [
+        {
+          "title": "Proof and exact certificate",
+          "url": "./research/n27-t8/index.html"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n27-t8/reports/independent-verification.json"
+        }
+      ],
+      "kind": "exact catalogue certificate"
+    },
+    {
+      "id": "n24-t8-rectangular",
+      "title": "Twenty-four qubits: maximum pure AC order is seven",
+      "summary": "An exact octahedral seventh-order state attains the maximum; rectangular tensor images exclude eighth order.",
+      "formulaLatex": "t_{\\max}(24)=7",
+      "bodyHtml": "<p>An eighth-order AC state would send the Hilbert–Schmidt orthonormal rectangular spin tensors of ranks one through four, from spin twelve to spin eleven, to mutually orthogonal nonzero vectors. There are <span class=\"math\" data-tex=\"3+5+7+9=24\" data-display=\"false\">3+5+7+9=24</span> such images, but the output space has dimension <span class=\"math\" data-tex=\"23\" data-display=\"false\">23</span>, a contradiction.</p><p>An explicit seven-component radical state has <span class=\"math\" data-tex=\"\\rho_7=I_8/8\" data-display=\"false\">\\rho_7=I_8/8</span>, verified exactly. Thus the globally maximum pure AC order at twenty-four qubits is seven. Every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Analytical state and complete maximum-order proof",
+          "url": "./research/n24-n26/index.html#n24"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n24-n26/n24-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact state verification",
+          "url": "./research/n24-n26/n24-t7/independent-verification.json"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n26-t7-ppt",
+      "title": "Twenty-six qubits: maximum pure AC order is six",
+      "summary": "A certified algebraic sixth-order state attains the maximum; an exact three-copy partial-transpose certificate excludes seventh order.",
+      "formulaLatex": "t_{\\max}(26)=6",
+      "bodyHtml": "<p>A hypothetical seventh-order state produces a positive, trace-one rotation-averaged three-copy moment and a positive partial time reversal. Vanishing low multipoles impose exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction. The independent verifier reconstructs the physical equations and the complete partial-transpose map.</p><p>Sixth-order existence is proved separately by a rational contraction certificate for the reduced-state equations. It defines a unique exact algebraic state in an isolating box. This is an exact existence proof, rather than a closed-form radical expression or a claim that saved decimal amplitudes are exact. Together these results prove that the maximum pure AC order is six.</p>",
+      "references": [
+        {
+          "title": "Exact existence and exclusion proofs",
+          "url": "./research/n24-n26/index.html#n26"
+        },
+        {
+          "title": "Algebraic existence proof",
+          "url": "./research/n24-n26/n26-t6/proof.tex"
+        },
+        {
+          "title": "Independent exact existence verification",
+          "url": "./research/n24-n26/n26-t6/independent-verification.json"
+        },
+        {
+          "title": "Seventh-order exclusion proof",
+          "url": "./research/n24-n26/n26-t7/proof.tex"
+        },
+        {
+          "title": "Independent exact exclusion verification",
+          "url": "./research/n24-n26/n26-t7/independent-verification.json"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    },
+    {
       "id": "n22-t6-four-copy",
       "title": "Twenty-two qubits: maximum pure AC order is five",
       "summary": "An exact four-copy matrix-positivity certificate excludes every pure sixth-order AC state; an analytical fifth-order state attains the maximum.",
@@ -144862,16 +146862,16 @@
     }
   ],
   "validation": {
-    "exactWitnessCount": 284,
+    "exactWitnessCount": 288,
     "numericalWitnessCount": 107,
     "coreEntryCount": 749,
     "entryCount": 749,
     "coreStatusCounts": {
-      "impossible": 286,
-      "exists": 277,
-      "unknown": 111,
-      "numerical": 75
+      "impossible": 293,
+      "exists": 283,
+      "unknown": 104,
+      "numerical": 69
     },
-    "method": "Exact symbolic normalization and every reduced matrix through the achieved order. Two-copy identities, three-copy polynomial and moment certificates, and a four-copy positivity certificate use exact arithmetic with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical."
+    "method": "Exact constructions use symbolic reduced-state checks or rational contraction certificates for their algebraic defining equations. Two-copy identities, three-copy polynomial and moment certificates, and a four-copy positivity certificate use exact arithmetic with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical."
   }
 }

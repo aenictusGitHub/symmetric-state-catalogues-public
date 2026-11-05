@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An exact three-copy certificate excludes eighth-order pure anticoherence for 27 symmetric qubits.">
+  <title>27 qubits · Eighth-order AC exclusion</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+  <script src="../../vendor/katex/katex.min.js" defer></script>
+  <style>
+    main{max-width:960px;padding-block:40px}h1{font-size:clamp(32px,5vw,48px)}h2{margin-top:36px}
+    .display{display:block;overflow-x:auto;padding:12px 0}.links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-block:20px}
+    .claim,pre{padding:18px 22px;background:var(--paper-alt,#f0efe9)}.claim{border-left:3px solid var(--accent,#5e4b7c)}
+    pre{overflow-x:auto}details{margin-block:24px}summary{cursor:pointer}code{overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+<main>
+  <a href="../../index.html#n=27&amp;t=8">← Pure AC-state catalogue</a>
+  <p class="eyebrow">Universal exclusion · Exact certificate</p>
+  <h1>27 qubits: order eight is impossible</h1>
+  <p class="claim">No pure symmetric 27-qubit state is eighth-order anticoherent. Consequently, the maximum pure AC order is at most seven.</p>
+  <span class="math display" data-tex="t_{\max}(27)\le7,\qquad K(27,t)=0\quad(t\ge8).">tmax(27) ≤ 7; K(27,t) = 0 for t ≥ 8.</span>
+  <p>This result does not settle whether sixth- or seventh-order states exist. It does not prove that the reported fifth-order value is optimal, or certify an exact fifth-order state.</p>
+
+  <h2>The proof</h2>
+  <p>A hypothetical eighth-order state would give a positive, trace-one, rotation-invariant three-copy moment on the 4,060-dimensional symmetric tensor space. Its spin multipoles through rank eight vanish, forcing necessary linear contraction equations on this moment.</p>
+  <p>The supplied rational certificate expresses minus its trace as a linear combination of those zero contractions plus positive matrix terms:</p>
+  <span class="math display" data-tex="-\operatorname{Tr}X=\sum_{a=1}^{200}y_aR_a(B)+\sum_J\operatorname{Tr}(C_Jx_J),\qquad C_J\succ0,\quad x_J\succeq0.">−Tr X = Σa ya Ra(B) + ΣJ Tr(CJ xJ), with CJ positive definite and xJ positive semidefinite.</span>
+  <p>The hypothetical state would make the left side equal to −1 and the right side nonnegative. This contradiction excludes every complex pure symmetric state, without assuming a constellation symmetry.</p>
+  <div class="links">
+    <a href="proof.tex" download>Complete LaTeX proof ↓</a>
+    <a href="certificate.json" download>Exact rational certificate ↓</a>
+    <a href="verify_independently.py" download>Portable independent verifier ↓</a>
+    <a href="reports/independent-verification.json" download>Independent verification report ↓</a>
+  </div>
+
+  <h2>Reproduce the result offline</h2>
+  <p>Save the certificate and verifier in the same folder, then run:</p>
+  <pre><code>python3 verify_independently.py</code></pre>
+  <p>The verifier uses only Python’s standard library. It reconstructs the physical representation and contractions, checks the complete rational separating identity, and proves positivity by exact matrix factorizations. No numerical solver is needed.</p>
+  <details>
+    <summary>Certificate checks and provenance</summary>
+    <p>The independent verification checks 225 invariant coordinates, 200 necessary contraction rows, 105 highest-weight vectors, 8,085 physical cross-Gram identities, and 39 positive definite blocks with 105 positive rational LDL pivots. It also reconstructs the trace from every magnetic descendant.</p>
+    <p>Certificate SHA-256: <code>3da19b5d52a1ec3a9500d1eec8ed9a8ced2efbc90ce08b2482985adeaaf5f215</code></p>
+    <p><a href="reports/exact-verification.json" download>Exact reconstruction report ↓</a></p>
+  </details>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  if(!window.katex)return;
+  for(const el of document.querySelectorAll("[data-tex]")){
+    katex.render(el.dataset.tex,el,{displayMode:el.classList.contains("display"),throwOnError:true});
+  }
+});
+</script>
+</body>
+</html>

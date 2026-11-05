@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty-four symmetric qubits: maximum pure anticoherence order seven}
+\author{Exact analytical construction and tensor-dimension bound}
+\date{5 November 2026}\maketitle
+\begin{theorem}
+The largest anticoherence order of a pure symmetric twenty-four-qubit state is
+\[\boxed{t_{\max}(24)=7.}\]
+An explicit attaining state is given below in normalized Dicke coordinates.
+\end{theorem}
+\begin{proof}
+Put
+\[
+\alpha=\frac{\sqrt{1131}}{128},\qquad
+\beta=\frac{581\sqrt{1131}}{928}
++i\frac{3289\sqrt{3045}}{4640}.
+\]
+Define the seven nonzero Dicke coefficients by
+\[
+\begin{aligned}
+c_0=c_{24}&=\alpha,\\
+c_4=c_{20}&=\frac{42\alpha+\beta}{\sqrt{10626}},\\
+c_8=c_{16}&=\frac{591\alpha-4\beta}{\sqrt{735471}},\\
+c_{12}&=\frac{2828\alpha+6\beta}{\sqrt{2704156}}.
+\end{aligned}
+\]
+Then $|\psi\rangle=\sum_{r=0}^{24}c_r|D_{24}^{(r)}\rangle$ is the promised state.
+Equivalently, its coefficient-generating polynomial is
+\[
+\sum_r\sqrt{\binom{24}{r}}c_r z^r
+=\alpha(1+14z^4+z^8)^3+\beta z^4(1-z^4)^4.
+\]
+These are two octahedral binary forms. Their mixture provides a compact
+way to construct the state, but the following verification does not assume
+any constellation symmetry.
+
+\paragraph{Exact attainment.}
+For normalized Dicke coordinates the $t$-qubit reduction is $\rho_t=M_tM_t^\dagger$,
+where
+\[
+(M_t)_{ab}=c_{a+b}
+\sqrt{\frac{\binom ta\binom{24-t}b}{\binom{24}{a+b}}},\qquad
+0\le a\le t,\quad0\le b\le24-t.
+\]
+Substitution of the seven displayed coefficients gives, in exact radical arithmetic,
+\[
+\sum_r|c_r|^2=1,\qquad \rho_7=\frac{I_8}{8},\qquad
+(\rho_8)_{00}-\frac19=\frac{13}{155040}\ne0.
+\]
+Thus the state has exactly order seven. The independently checked squared
+Frobenius defect at the next order is
+\[
+\left\|\rho_8-\frac{I_9}{9}\right\|_F^2=\frac{2197}{12519480}.
+\]
+The construction can be recovered using only rational linear equations:
+if $f_r$ and $g_r$ are the coefficients of the two polynomial forms divided by
+$\sqrt{\binom{24}{r}}$, write
+$|c_r|^2=p f_r^2+q g_r^2+2h f_rg_r$.
+Normalization and matching the uniform spin moments of orders two, four and six give
+\[
+p=\frac{1131}{16384},\qquad q=\frac{631449}{320},\qquad
+h=\frac{22659}{4096}.
+\]
+Their determinant $pq-h^2=8859549699/83886080$ is positive.
+Taking $\alpha=\sqrt p$ and
+$\beta=h/\sqrt p+i\sqrt{q-h^2/p}$ yields the coefficients above.
+The portable construction and independent direct partial-trace verifier
+check every reduction entry through order eight, without numerical tolerances.
+
+\paragraph{Universal exclusion of order eight.}
+Let $\mathcal H_j$ be the spin-$j$ representation and suppose an eighth-order
+AC unit vector $\phi\in\mathcal H_{12}$ existed.
+Under rotations,
+\[
+\operatorname{Hom}(\mathcal H_{12},\mathcal H_{11})
+\cong\bigoplus_{L=1}^{23}\mathcal H_L.
+\]
+Choose Hilbert--Schmidt orthonormal irreducible tensor maps
+$T_{Lm}:\mathcal H_{12}\to\mathcal H_{11}$ for $1\le L\le4$.
+There are $3+5+7+9=24$ such maps.
+Each product $T_{Lm}^\dagger T_{L'm'}$ contains only spin-tensor ranks at most
+$L+L'\le8$. Eighth-order anticoherence therefore implies
+\[
+\langle T_{Lm}\phi,T_{L'm'}\phi\rangle
+=\langle\phi|T_{Lm}^\dagger T_{L'm'}|\phi\rangle
+=\frac{\Tr(T_{Lm}^\dagger T_{L'm'})}{25}
+=\frac{\delta_{LL'}\delta_{mm'}}{25}.
+\]
+These would be 24 nonzero orthogonal vectors in $\mathcal H_{11}$, whose
+dimension is 23, a contradiction. Thus order eight is impossible for every
+pure symmetric twenty-four-qubit state. Nesting excludes every higher order;
+the explicit seventh-order state proves the maximum.
+\end{proof}
+\paragraph{Reproduction.}
+Run \texttt{python3 build\_witness.py} and \texttt{python3 verify\_witness.py}.
+Both require SymPy only and use relative file paths. The first script constructs
+the coefficients and uses Schmidt matrices; the second imports no construction
+code and verifies saved coefficients using direct partial-trace sums.
+\end{document}

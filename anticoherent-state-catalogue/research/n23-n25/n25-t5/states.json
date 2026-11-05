@@ -1,0 +1,217 @@
+{
+  "states": [
+    {
+      "id": "radical-n25-t5",
+      "n": 25,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact dihedral state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\sqrt{\\frac{21}{250}}\\bigl(|D_{25}^{(0)}\\rangle-|D_{25}^{(25)}\\rangle\\bigr)-i\\sqrt{\\frac{31}{125}}\\bigl(|D_{25}^{(5)}\\rangle-|D_{25}^{(20)}\\rangle\\bigr)-iw\\sqrt{\\frac{21}{125}}\\bigl(|D_{25}^{(10)}\\rangle-|D_{25}^{(15)}\\rangle\\bigr)",
+      "parametersLatex": "w=\\frac{1001-i\\sqrt{1561327}}{16\\sqrt{10013}},\\quad|w|=1",
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "exactCoefficients": [
+        "sqrt(210)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(155)*I/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1051365)*I*(-1001 + sqrt(1561327)*I)/4005200",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(1641524561355)/4005200 + 1001*sqrt(1051365)*I/4005200",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(155)*I/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(210)/50"
+      ],
+      "coefficients": [
+        [
+          0.28982753492378877,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.4979959839195493
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.31988913173382144,
+          -0.25626342579186334
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31988913173382144,
+          0.25626342579186334
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.4979959839195493
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.28982753492378877,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Rational moment matching on six C5-separated Dicke indices with an exact phase-triangle cancellation.",
+      "notes": "Exactly fifth-order AC, not sixth-order. Global maximum order requires a separate nonexistence theorem.",
+      "verification": {
+        "method": "Exact Schmidt matrices through order six.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": false,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "9*sqrt(61227438305)/25003515625 + 482548293/1400196875000",
+            "purity": "9*sqrt(61227438305)/25003515625 + 28644381899/200028125000"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "13/35420",
+          "differenceLatex": "\\frac{13}{35420}"
+        }
+      }
+    }
+  ]
+}

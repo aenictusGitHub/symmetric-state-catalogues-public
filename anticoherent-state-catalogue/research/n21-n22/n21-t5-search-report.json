@@ -1,7 +1,7 @@
 {
   "n": 21,
   "targetOrder": 5,
-  "scientificConclusion": "Unresolved. The separate exact certificate excludes order six and higher. The recorded numerical relaxations did not yield an exclusion of order five. A feasible relaxed moment operator is not a pure AC state.",
+  "scientificConclusion": "For N=21, a pure fifth-order anticoherent state remains unresolved. The exact sixth-order exclusion and the exact fourth-order witness give 4 <= t_max(21) <= 5. No numerical relaxation tested here supplies an existence or nonexistence proof at order five.",
   "threeCopyPSD": {
     "status": "Solved",
     "epsilon": 0.0021069257237393505,
@@ -60,7 +60,7 @@
     "certificate": "n21-t6/certificate.json",
     "independentVerifier": "n21-t6/verify_independently.py",
     "independentVerificationPassed": true,
-    "conclusion": "No pure sixth-order or higher AC state on 21 qubits exists."
+    "conclusion": "No pure sixth-order or higher AC state on21qubits exists."
   },
   "fourCopyPPTPrimalDirectCheck": {
     "n": 21,
@@ -102,5 +102,90 @@
     "seconds": 35.339844942092896,
     "scope": "Numerical selected-block relaxation only. Any purportedexclusionrequiresindependentmapand exactcertificate verification.",
     "interpretation": "The selected low-spin2|2compressions togetherwithall1|3compressions didnot yield an exclusion. Thisisnot a proof ofpurestateexistence, andthe2|2recouplingmaps havenotbeenindependentlyrationallyverified."
-  }
+  },
+  "fourCopyAllTwoTwoPPT": {
+    "n": 21,
+    "t": 5,
+    "copies": 4,
+    "split": [
+      2,
+      2
+    ],
+    "selectedOutputDoubledSpins": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84
+    ],
+    "additionallyIncludesAllOneThreePPTBlocks": true,
+    "status": "AlmostSolved",
+    "epsilon": 5.552352790995565e-05,
+    "seconds": 80.50193285942078,
+    "scope": "All output spinblocks of the four-copy2|2PPT relaxation, togetherwithall1|3PPTblocks. Numericdiscoveryonly; an exclusionrequiresindependentmapand exactcertificate verification.",
+    "scientificScope": "All four-copy 2|2 PPT output spin blocks, combined with all 1|3 PPT blocks and the selected four-copy AC5 contraction system. Positive numerical feasibility is not a pure-state existence proof."
+  },
+  "fiveCopy500RowBasicPSD": {
+    "n": 21,
+    "t": 5,
+    "copies": 5,
+    "momentDimension": 65780,
+    "highestColumns": 1651,
+    "momentVariables": 39611,
+    "selectedPhysicalContractionRows": 500,
+    "selectedRowNumericalRank": 501,
+    "maximumBasisCovarianceError": 1.9532986339498848e-15,
+    "minimumMomentEigenvalue": 2.512677883975825e-05,
+    "maximumNormalizedConstraintResidual": 2.0721814021629203e-17,
+    "trace": 0.9999999999999999,
+    "numericalPSDPointFound": true,
+    "projectionHistory": [
+      [
+        0,
+        2.512677883975825e-05,
+        2.0721814021629203e-17
+      ]
+    ],
+    "seconds": 8.596322059631348,
+    "scope": "Bounded numerical five-copy basic PSD test with 500 selected physical AC5 contraction rows and trace. It does not include all five-copy contraction constraints or any five-copy PPT constraints. The positive numerical moment is only feasible for this selected outer relaxation; it does not establish a pure AC5 state or exclude one."
+  },
+  "publicationArtifacts": "This compact report only. Large basis, recoupling maps, and primal moment arrays are discovery files and are not needed for publication or for the independently verified order-six exclusion."
 }

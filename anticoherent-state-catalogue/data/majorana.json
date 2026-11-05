@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSHA256": "368489c4396eb29a689b6e6230c4c22239b14caeb36e34794526f3f688fbecdd",
+  "catalogueSHA256": "63bcdaeff52c939df8fb44abb4a68181be320f6caeab121d4b2ff1732afd1a3c",
   "convention": {
     "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r",
     "sphere": "(2 Re(z), -2 Im(z), |z|^2-1)/(1+|z|^2); infinity is north",
@@ -88031,10 +88031,790 @@
         "relativeReducedPolynomialReconstructionError": 9.315138168780354e-102,
         "inputFingerprint": "cd44ef1ec55be2939fb9273aeacb675daefaea4b7aa3a40cfd512fe6ae995393"
       }
+    },
+    "octahedral-n24-t7": {
+      "id": "octahedral-n24-t7",
+      "n": 24,
+      "label": "Exact octahedral state · order 7",
+      "points": [
+        {
+          "x": 0.42184583573918494,
+          "y": -0.26658830454037313,
+          "z": -0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.26658830454037313,
+          "y": -0.42184583573918494,
+          "z": -0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.42184583573918494,
+          "y": 0.26658830454037313,
+          "z": -0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.26658830454037313,
+          "y": 0.42184583573918494,
+          "z": -0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8665891568395013,
+          "y": 0.2665883045403731,
+          "z": -0.42184583573918505,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2665883045403731,
+          "y": -0.8665891568395013,
+          "z": -0.42184583573918505,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8665891568395013,
+          "y": -0.2665883045403731,
+          "z": -0.42184583573918505,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2665883045403731,
+          "y": 0.8665891568395013,
+          "z": -0.42184583573918505,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8665891568395014,
+          "y": -0.421845835739185,
+          "z": -0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.421845835739185,
+          "y": -0.8665891568395014,
+          "z": -0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8665891568395014,
+          "y": 0.421845835739185,
+          "z": -0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.421845835739185,
+          "y": 0.8665891568395014,
+          "z": -0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8665891568395014,
+          "y": 0.421845835739185,
+          "z": 0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.421845835739185,
+          "y": -0.8665891568395014,
+          "z": 0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8665891568395014,
+          "y": -0.421845835739185,
+          "z": 0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.421845835739185,
+          "y": 0.8665891568395014,
+          "z": 0.2665883045403731,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8665891568395013,
+          "y": -0.26658830454037313,
+          "z": 0.42184583573918494,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.26658830454037313,
+          "y": -0.8665891568395013,
+          "z": 0.42184583573918494,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8665891568395013,
+          "y": 0.26658830454037313,
+          "z": 0.42184583573918494,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.26658830454037313,
+          "y": 0.8665891568395013,
+          "z": 0.42184583573918494,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4218458357391849,
+          "y": 0.2665883045403731,
+          "z": 0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2665883045403731,
+          "y": -0.4218458357391849,
+          "z": 0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4218458357391849,
+          "y": -0.2665883045403731,
+          "z": 0.8665891568395013,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2665883045403731,
+          "y": 0.4218458357391849,
+          "z": 0.8665891568395013,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.",
+      "evidence": "Exact witness of AC order 7.",
+      "coordinateMethod": "100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.",
+      "diagnostics": {
+        "coefficientSource": "Saved exact Dicke amplitudes",
+        "squareFreeFactorizationExact": false,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 4,
+        "projectiveDickeReconstructionError": 3.0909428776376e-16,
+        "exactFormulaVsSavedCoefficientsError": 7.852329760680394e-17,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.7057240724932118,
+        "rootPrecisionDecimalDigits": 100,
+        "relativeReducedPolynomialReconstructionError": 2.1343827525542666e-102,
+        "inputFingerprint": "c2f2e53d39733c5537785b198cd3ee9eb72f86d1c8b83a3529f1cf4cb634edb2"
+      }
+    },
+    "certified-algebraic-n26-t6": {
+      "id": "certified-algebraic-n26-t6",
+      "n": 26,
+      "label": "Certified algebraic state · order 6",
+      "points": [
+        {
+          "x": 3.6742082152022255e-13,
+          "y": -6.851208313366336e-13,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2896155175082535,
+          "y": -0.020295931107765564,
+          "z": 0.9569278589313279,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8505333071663799,
+          "y": 0.07636829374810872,
+          "z": 0.5203469776126532,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7763996604274437,
+          "y": -0.516630684829064,
+          "z": 0.3609657917049793,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.31576479092128906,
+          "y": 0.6407115454522789,
+          "z": 0.6998437770949935,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7791417342464576,
+          "y": 0.6167827446183779,
+          "z": 0.1118803105843171,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9285382450322551,
+          "y": 0.1910167435596339,
+          "z": -0.31832268406805825,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8352066231906455,
+          "y": -0.48316571979923134,
+          "z": -0.2626419307524404,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.13115835556457406,
+          "y": -0.6052895218292058,
+          "z": 0.7851255189645591,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.49732274993472264,
+          "y": 0.42607776771506967,
+          "z": -0.7557299903115586,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.47923749895385354,
+          "y": -0.38481070676476103,
+          "z": -0.7888296010899061,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.19510117773589475,
+          "y": -0.9585067561183261,
+          "z": 0.2078468881691293,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.20646849302599996,
+          "y": 0.8880515267025456,
+          "z": -0.41077396133256855,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.15315839279340232,
+          "y": -0.9188014464722578,
+          "z": -0.36379445938253174,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.09228356518416878,
+          "y": 0.9812532420653306,
+          "z": 0.16919166212664585,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.30911529047640185,
+          "y": -0.6363114904831049,
+          "z": -0.7067923487650805,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.35031878626360974,
+          "y": 0.5737323185955946,
+          "z": -0.7403431465136383,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.694096293765933,
+          "y": -0.05662500803015025,
+          "z": -0.717651686715764,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6479966466984813,
+          "y": 0.7287501343115641,
+          "z": -0.2214127087779759,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7151050178596532,
+          "y": -0.6824552511639883,
+          "z": -0.15126018508068392,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5229812150174886,
+          "y": -0.7863967112657793,
+          "z": 0.3287413287817611,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9868174116644658,
+          "y": 0.04371494626551555,
+          "z": -0.1558216913938729,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5676643179705672,
+          "y": 0.7360608191740347,
+          "z": 0.3687433966593297,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9130078806750199,
+          "y": 0.021938851721919818,
+          "z": 0.40735156389835075,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3240713779790943,
+          "y": 0.3988951081383667,
+          "z": 0.8578230788909865,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5033261427131145,
+          "y": -0.27800587745403393,
+          "z": 0.8181537301525614,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Numerical rendering of the saved decimal vector; no exact multiplicity claim is made here",
+      "evidence": "Certified algebraic witness of AC order 6. The plotted coordinates approximate the certified state's isolating-box centre.",
+      "coordinateMethod": "Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.",
+      "diagnostics": {
+        "coefficientSource": "Approximation to the certified algebraic root; browser coefficients rounded",
+        "squareFreeFactorizationExact": false,
+        "projectiveDickeReconstructionError": 2.473890941080238e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "noNumericalRootClustering": true,
+        "inputFingerprint": "e72b1ad49a1f77de34eaf87480e052ab944a6e7223b72f33ab290e19b495299b"
+      }
+    },
+    "certified-algebraic-n23-t5": {
+      "id": "certified-algebraic-n23-t5",
+      "n": 23,
+      "label": "Certified algebraic state · order 5",
+      "points": [
+        {
+          "x": -1.1474792710530294e-14,
+          "y": -1.4366643259049787e-14,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.046731990797510885,
+          "y": 0.07159416555891823,
+          "z": 0.9963384949373498,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6491395489669095,
+          "y": -0.1340327942775155,
+          "z": 0.7487676916275157,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9223522158475169,
+          "y": 0.21987617905212153,
+          "z": 0.3176804303173472,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5605304213604747,
+          "y": -0.7268597103371282,
+          "z": 0.3968382645588437,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9500610446507041,
+          "y": -0.12342177796365668,
+          "z": -0.2866200902963761,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4105104172025358,
+          "y": 0.8042498191632051,
+          "z": 0.4297248256083792,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6614593406644181,
+          "y": 0.7051810601528569,
+          "z": -0.25532569993928583,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6219119300668573,
+          "y": -0.7217131398702349,
+          "z": -0.3039007979245255,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5662721047840794,
+          "y": -0.01086028339391402,
+          "z": -0.8241468058471212,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.20032592087617795,
+          "y": 0.7562908485217538,
+          "z": -0.622811109299888,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.01236580251995071,
+          "y": -0.9169562841577912,
+          "z": -0.3987960128581699,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.042614375275967196,
+          "y": -0.808099550706517,
+          "z": 0.5875024520525548,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.27041418033143283,
+          "y": -0.5679855004380874,
+          "z": -0.7773471826460651,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2697307813010618,
+          "y": 0.9612965565208071,
+          "z": -0.056162585766303424,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5313890138782755,
+          "y": 0.5351683675143849,
+          "z": -0.6566738416759588,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.09568633150692055,
+          "y": 0.6859660032606035,
+          "z": 0.7213146112019507,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.832020088770124,
+          "y": 0.05161365181281047,
+          "z": -0.5523392099330816,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5261426666046088,
+          "y": -0.8325743431126147,
+          "z": 0.1731873481776008,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8924978853074654,
+          "y": -0.4266032467890209,
+          "z": -0.14648274489088495,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7626922179228539,
+          "y": 0.6040325827875974,
+          "z": 0.23118222174480055,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8933600678863026,
+          "y": 0.10012644819902536,
+          "z": 0.43804392870718883,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.49038389589984016,
+          "y": -0.23268093154459565,
+          "z": 0.8398709536218252,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Numerical rendering of the saved decimal vector; no exact multiplicity claim is made here",
+      "evidence": "Certified algebraic witness of AC order 5. The plotted coordinates approximate the certified state's isolating-box centre.",
+      "coordinateMethod": "Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.",
+      "diagnostics": {
+        "coefficientSource": "Approximation to the certified algebraic root; browser coefficients rounded",
+        "squareFreeFactorizationExact": false,
+        "projectiveDickeReconstructionError": 3.665897210668628e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "noNumericalRootClustering": true,
+        "inputFingerprint": "37b7c71672c66434debd55b3a3611e1cc20471d4d988a6f3fcc8cb6c550349f1"
+      }
+    },
+    "radical-n25-t5": {
+      "id": "radical-n25-t5",
+      "n": 25,
+      "label": "Exact dihedral state · order 5",
+      "points": [
+        {
+          "x": 0.8090169943749475,
+          "y": -0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": -0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.0,
+          "y": -2.8688928017596374e-102,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": 0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": 0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5276275476300074,
+          "y": -0.17267713803661944,
+          "z": -0.8317402100304078,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011798384268753594,
+          "y": -0.5551637875436941,
+          "z": -0.8317402100304078,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5283567278790494,
+          "y": -0.17043295198850897,
+          "z": -0.8317402100304077,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.32536257758705645,
+          "y": 0.44983043041181653,
+          "z": -0.8317402100304078,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.327271596262974,
+          "y": 0.44844344715700596,
+          "z": -0.8317402100304078,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9149698941571472,
+          "y": -0.14661122622829226,
+          "z": -0.3759457954677712,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14330568456956516,
+          "y": -0.9154934405227342,
+          "z": -0.3759457954677712,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8264021103120848,
+          "y": -0.4191948364923378,
+          "z": -0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6540502771170735,
+          "y": 0.6564167836620147,
+          "z": -0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4221768087024457,
+          "y": 0.8248827195813496,
+          "z": -0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9149698941571472,
+          "y": 0.14661122622829223,
+          "z": 0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4221768087024457,
+          "y": -0.8248827195813495,
+          "z": 0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6540502771170734,
+          "y": -0.6564167836620147,
+          "z": 0.3759457954677711,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8264021103120847,
+          "y": 0.41919483649233774,
+          "z": 0.3759457954677712,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.14330568456956513,
+          "y": 0.9154934405227342,
+          "z": 0.3759457954677712,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5276275476300073,
+          "y": 0.17267713803661944,
+          "z": 0.8317402100304077,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3272715962629739,
+          "y": -0.44844344715700596,
+          "z": 0.8317402100304077,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3253625775870564,
+          "y": -0.4498304304118166,
+          "z": 0.8317402100304077,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5283567278790495,
+          "y": 0.17043295198850897,
+          "z": 0.8317402100304077,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0011798384268753594,
+          "y": 0.5551637875436941,
+          "z": 0.8317402100304077,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.",
+      "evidence": "Exact witness of AC order 5.",
+      "coordinateMethod": "100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.",
+      "diagnostics": {
+        "coefficientSource": "Saved exact Dicke amplitudes",
+        "squareFreeFactorizationExact": false,
+        "zeroMultiplicity": 0,
+        "infinityMultiplicity": 0,
+        "nonzeroRootStep": 5,
+        "projectiveDickeReconstructionError": 3.592023665244204e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.5892332130623923,
+        "rootPrecisionDecimalDigits": 100,
+        "relativeReducedPolynomialReconstructionError": 5.721961007394982e-102,
+        "inputFingerprint": "d16a614d8b8298786f42f073e8e1007d27a6a96f75949f5b8fb3bd714e2b1053"
+      }
     }
   },
   "validation": {
-    "recordCount": 391,
+    "recordCount": 395,
     "allRecordsHaveCoordinates": true,
     "exactMultiplicityRecords": 169,
     "maximumProjectiveDickeReconstructionError": 1.7049310896958016e-11,

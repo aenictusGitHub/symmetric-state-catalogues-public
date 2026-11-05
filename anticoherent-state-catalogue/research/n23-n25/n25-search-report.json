@@ -1,0 +1,746 @@
+{
+  "n": 25,
+  "targetOrder": 6,
+  "scientificConclusion": "The exact three-copy 1|2 PPT certificate excludes pure seventh-order AC states for N=25, so the maximum order is at most six. The reported fifth-order witness gives a lower bound of five once independently verified. Order six remains unresolved; the numerical outer relaxations below do not establish existence or nonexistence.",
+  "threeCopyPSD": {
+    "status": "Solved",
+    "epsilon": 0.001532167511159957,
+    "trace": 0.9999999999999998,
+    "minimumEigenvalue": 0.001532167510930337,
+    "kernelDimensions": [
+      185,
+      52
+    ]
+  },
+  "threeCopyPPT": {
+    "status": "Solved",
+    "epsilon": 0.0004842888578879647,
+    "minimumEigenvalue": 0.0004842888578095309,
+    "Xminimum": 0.0005922700459637521,
+    "Yminimum": 0.0004842888578095309,
+    "seconds": 5.756170988082886
+  },
+  "fourCopySelectedPSD": {
+    "n": 25,
+    "t": 6,
+    "copies": 4,
+    "status": "AlmostSolved",
+    "epsilon": 0.00011789567620673016,
+    "minimumEigenvalue": 0.00011789567608424445,
+    "trace": 1.0000000000000007,
+    "variables": 4955,
+    "rank": 4226,
+    "kernelDimension": 729,
+    "selectedPhysicalRows": 10000,
+    "maximumKernelResidual": 6.0923488476305465e-15,
+    "seconds": 79.7916910648346,
+    "scope": "Numerical outer relaxation with 10000 selected contraction rows; no PPT constraints. Feasibility does not establish pure state existence."
+  },
+  "fourCopySelectedPPT": {
+    "n": 25,
+    "t": 6,
+    "copies": 4,
+    "constraints": 4226,
+    "variables": 4955,
+    "freeParameters": 729,
+    "status": "AlmostSolved",
+    "epsilon": 7.986490370889218e-05,
+    "seconds": 19.142147064208984,
+    "selectedOutputDoubledSpins": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12
+    ],
+    "scope": "Ten thousand selected physical contraction rows (numerical rank 4226) and the 1|3 PPT output doubled-spin blocks 0, 2, 4, 6, 8, 12. The positive numerical margin shows feasibility only for this selected outer relaxation; all four-copy contraction rows and output PPT blocks have not been certified covered."
+  },
+  "exactSeventhOrderExclusion": {
+    "certificate": "t7/certificate.json",
+    "verifier": "t7/verify_independently.py",
+    "proof": "t7/proof.tex",
+    "report": "t7/independent-verification.json",
+    "passed": true,
+    "sha256": "326cd73b52ae63a1b29555003cfa41d8bcd81001a74d39e8be3d1342a171f3ac"
+  },
+  "publicationScope": "Only the compact report and portable exact order-seven proof package are needed. Large arrays and discovery scripts are not required.",
+  "fourCopyAllOneThreePPT": {
+    "n": 25,
+    "t": 6,
+    "copies": 4,
+    "constraints": 4226,
+    "variables": 4955,
+    "freeParameters": 729,
+    "status": "AlmostSolved",
+    "epsilon": 4.445296191963603e-06,
+    "seconds": 98.49123001098633,
+    "outputDoubledSpins": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100
+    ],
+    "blockChecks": [
+      {
+        "kind": "X",
+        "spinOrIndex": 0,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 1,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 2,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 3,
+        "fullDimension": 2,
+        "retainedDimension": 2
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 4,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 5,
+        "fullDimension": 3,
+        "retainedDimension": 3
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 6,
+        "fullDimension": 2,
+        "retainedDimension": 2
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 7,
+        "fullDimension": 4,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 8,
+        "fullDimension": 3,
+        "retainedDimension": 3
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 9,
+        "fullDimension": 5,
+        "retainedDimension": 5
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 10,
+        "fullDimension": 4,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 11,
+        "fullDimension": 7,
+        "retainedDimension": 7
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 12,
+        "fullDimension": 5,
+        "retainedDimension": 5
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 13,
+        "fullDimension": 8,
+        "retainedDimension": 8
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 14,
+        "fullDimension": 7,
+        "retainedDimension": 7
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 15,
+        "fullDimension": 10,
+        "retainedDimension": 10
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 16,
+        "fullDimension": 8,
+        "retainedDimension": 8
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 17,
+        "fullDimension": 12,
+        "retainedDimension": 12
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 18,
+        "fullDimension": 10,
+        "retainedDimension": 10
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 19,
+        "fullDimension": 14,
+        "retainedDimension": 14
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 20,
+        "fullDimension": 12,
+        "retainedDimension": 12
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 21,
+        "fullDimension": 16,
+        "retainedDimension": 16
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 22,
+        "fullDimension": 14,
+        "retainedDimension": 14
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 23,
+        "fullDimension": 19,
+        "retainedDimension": 19
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 24,
+        "fullDimension": 16,
+        "retainedDimension": 16
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 25,
+        "fullDimension": 20,
+        "retainedDimension": 20
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 26,
+        "fullDimension": 18,
+        "retainedDimension": 18
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 27,
+        "fullDimension": 22,
+        "retainedDimension": 22
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 28,
+        "fullDimension": 18,
+        "retainedDimension": 18
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 29,
+        "fullDimension": 23,
+        "retainedDimension": 23
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 30,
+        "fullDimension": 19,
+        "retainedDimension": 19
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 31,
+        "fullDimension": 23,
+        "retainedDimension": 23
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 32,
+        "fullDimension": 19,
+        "retainedDimension": 19
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 33,
+        "fullDimension": 23,
+        "retainedDimension": 23
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 34,
+        "fullDimension": 18,
+        "retainedDimension": 18
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 35,
+        "fullDimension": 23,
+        "retainedDimension": 23
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 36,
+        "fullDimension": 17,
+        "retainedDimension": 17
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 37,
+        "fullDimension": 21,
+        "retainedDimension": 21
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 38,
+        "fullDimension": 16,
+        "retainedDimension": 16
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 39,
+        "fullDimension": 20,
+        "retainedDimension": 20
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 40,
+        "fullDimension": 13,
+        "retainedDimension": 13
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 41,
+        "fullDimension": 18,
+        "retainedDimension": 18
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 42,
+        "fullDimension": 11,
+        "retainedDimension": 11
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 43,
+        "fullDimension": 15,
+        "retainedDimension": 15
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 44,
+        "fullDimension": 8,
+        "retainedDimension": 8
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 45,
+        "fullDimension": 12,
+        "retainedDimension": 12
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 46,
+        "fullDimension": 4,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 47,
+        "fullDimension": 9,
+        "retainedDimension": 9
+      },
+      {
+        "kind": "X",
+        "spinOrIndex": 48,
+        "fullDimension": 4,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 0,
+        "fullDimension": 4,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 2,
+        "fullDimension": 13,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 4,
+        "fullDimension": 21,
+        "retainedDimension": 7
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 6,
+        "fullDimension": 28,
+        "retainedDimension": 10
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 8,
+        "fullDimension": 35,
+        "retainedDimension": 14
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 10,
+        "fullDimension": 42,
+        "retainedDimension": 19
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 12,
+        "fullDimension": 47,
+        "retainedDimension": 23
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 14,
+        "fullDimension": 53,
+        "retainedDimension": 29
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 16,
+        "fullDimension": 58,
+        "retainedDimension": 34
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 18,
+        "fullDimension": 62,
+        "retainedDimension": 38
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 20,
+        "fullDimension": 66,
+        "retainedDimension": 42
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 22,
+        "fullDimension": 70,
+        "retainedDimension": 46
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 24,
+        "fullDimension": 72,
+        "retainedDimension": 48
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 26,
+        "fullDimension": 75,
+        "retainedDimension": 51
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 28,
+        "fullDimension": 77,
+        "retainedDimension": 53
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 30,
+        "fullDimension": 78,
+        "retainedDimension": 54
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 32,
+        "fullDimension": 79,
+        "retainedDimension": 55
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 34,
+        "fullDimension": 80,
+        "retainedDimension": 56
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 36,
+        "fullDimension": 79,
+        "retainedDimension": 55
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 38,
+        "fullDimension": 79,
+        "retainedDimension": 55
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 40,
+        "fullDimension": 78,
+        "retainedDimension": 54
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 42,
+        "fullDimension": 76,
+        "retainedDimension": 53
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 44,
+        "fullDimension": 74,
+        "retainedDimension": 52
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 46,
+        "fullDimension": 72,
+        "retainedDimension": 52
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 48,
+        "fullDimension": 68,
+        "retainedDimension": 50
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 50,
+        "fullDimension": 65,
+        "retainedDimension": 50
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 52,
+        "fullDimension": 61,
+        "retainedDimension": 49
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 54,
+        "fullDimension": 56,
+        "retainedDimension": 47
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 56,
+        "fullDimension": 52,
+        "retainedDimension": 46
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 58,
+        "fullDimension": 48,
+        "retainedDimension": 44
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 60,
+        "fullDimension": 44,
+        "retainedDimension": 42
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 62,
+        "fullDimension": 40,
+        "retainedDimension": 39
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 64,
+        "fullDimension": 37,
+        "retainedDimension": 37
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 66,
+        "fullDimension": 33,
+        "retainedDimension": 33
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 68,
+        "fullDimension": 30,
+        "retainedDimension": 30
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 70,
+        "fullDimension": 27,
+        "retainedDimension": 27
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 72,
+        "fullDimension": 24,
+        "retainedDimension": 24
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 74,
+        "fullDimension": 21,
+        "retainedDimension": 21
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 76,
+        "fullDimension": 19,
+        "retainedDimension": 19
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 78,
+        "fullDimension": 16,
+        "retainedDimension": 16
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 80,
+        "fullDimension": 14,
+        "retainedDimension": 14
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 82,
+        "fullDimension": 12,
+        "retainedDimension": 12
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 84,
+        "fullDimension": 10,
+        "retainedDimension": 10
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 86,
+        "fullDimension": 8,
+        "retainedDimension": 8
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 88,
+        "fullDimension": 7,
+        "retainedDimension": 7
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 90,
+        "fullDimension": 5,
+        "retainedDimension": 5
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 92,
+        "fullDimension": 4,
+        "retainedDimension": 4
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 94,
+        "fullDimension": 3,
+        "retainedDimension": 3
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 96,
+        "fullDimension": 2,
+        "retainedDimension": 2
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 98,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      },
+      {
+        "kind": "Y",
+        "spinOrIndex": 100,
+        "fullDimension": 1,
+        "retainedDimension": 1
+      }
+    ],
+    "scope": "All 51 four-copy 1|3 PPT output spin blocks, doubled spins 0,2,...,100, with the same 10000 selected physical AC6 contraction rows of numerical rank 4226. Positive numerical feasibility is only an outer-relaxation result; complete four-copy contraction coverage is not certified, and no 2|2 PPT or five-copy condition is included."
+  },
+  "fourCopyAllOneThreePPTPrimalCheck": {
+    "n": 25,
+    "t": 6,
+    "trace": 0.9999999999999999,
+    "selectedRowMaximumResidual": 3.073713158996405e-16,
+    "solverMargin": 4.445296191963603e-06,
+    "inputMinimumEigenvalue": 4.445343012502754e-06,
+    "fullPPTMinimumEigenvalue": -6.971380691244578e-16,
+    "seconds": 0.6791331768035889,
+    "scope": "Direct floating-point primal check. Structural zero PPT directions are retained. This is numerical outer-relaxation feasibility only."
+  }
+}

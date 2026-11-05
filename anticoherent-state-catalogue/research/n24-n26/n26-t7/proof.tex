@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}\newtheorem{theorem}{Theorem}\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty-six qubits: exact exclusion of seventh-order pure anticoherence}
+\author{Three-copy partial-transpose certificate}\date{5 November 2026}\maketitle
+\begin{theorem}
+No pure symmetric twenty-six-qubit state is seventh-order anticoherent. Consequently
+\[
+\boxed{K(26,t)=0\quad(t\ge7),\qquad t_{\max}(26)\le6.}
+\]
+\end{theorem}
+\begin{proof}
+Let $V=V_{13}$. A hypothetical normalized seventh-order AC vector gives a rotation-averaged three-copy moment
+\[
+ X=\int_{SU(2)}(U_g|\psi\rangle\langle\psi|U_g^\dagger)^{\otimes3}\,dg.
+\]
+This moment is positive, invariant, supported on $\operatorname{Sym}^3(V)$, has trace one, and is separable between the first copy and the other two. Anticoherence of every rotated vector implies the necessary equations
+\[
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes2})X]=0\qquad(1\le\ell\le7). \tag{1}
+\]
+The diagonal rank-$\ell$ tensor is represented by the nonzero degree-$\ell$ polynomial in $2i-26$ orthogonal to every lower degree under uniform summation over $i=0,\ldots,26$. These tensors and all representation data below are real. Averaging $X$ with its complex conjugate preserves trace, invariance, positivity, the partial-transpose positivity condition and (1). Thus the ensuing real-coordinate proof covers arbitrary complex $\psi$.
+
+Use $b_i=\sqrt{\binom{26}{i}}|D_{26}^{(i)}\rangle$, and let $E_w$ be the average of all permutations of a word in this basis. If $c_i(w)$ are its occupancies, the physical metric is
+\[
+ g_r(w)=\frac1{r!}\prod_{i=0}^{26}\binom{26}{i}^{c_i(w)}c_i(w)!.
+\]
+The supplied complete highest-weight matrices $H_J$ decompose the 3654-dimensional space $\operatorname{Sym}^3(V)$ into 37 nonempty spin sectors, with 98 highest-weight columns and 206 real symmetric invariant coordinates. Here $J$ denotes twice the spin. For $U_{J,q}=J_-^qH_J/q!$ and the supplied positive denominator scales $d_J$, every real invariant operator is represented by
+\[
+ X_{\rm coeff}(B)=\sum_Jd_J\sum_{q=0}^{J}\frac{U_{J,q}B_JU_{J,q}^T}{\binom Jq},\qquad B_J=B_J^T.
+\]
+Its positivity is equivalent to $B_J\succeq0$ in every block. Positive dyadic diagonal matrices $S_J$ define congruent positive coordinates $x_J=d_J(J+1)S_JB_JS_J$.
+The certificate selects 163 physical matrix entries from (1). Their primitive integer coefficient rows are denoted $R_a(B)$. Each is necessary; completeness or independence of this selection is not needed for the proof.
+
+Set $F|i\rangle=(-1)^i|26-i\rangle$ and apply partial time reversal to the first copy:
+\[
+ Y=(F\otimes I)X^{T_1}(F^\dagger\otimes I)\succeq0.
+\]
+Positivity follows from first-copy separability of $X$. Time reversal restores ordinary simultaneous rotation covariance, so the output belongs to the invariant product space $V\otimes\operatorname{Sym}^2(V)$ of dimension $27\binom{28}{2}=10206$.
+
+In the rational product basis $b_i\otimes E_a$ for sorted two-letter words $a$, put
+$o=\operatorname{sort}(a,26-j)$ and $p=\operatorname{sort}(b,26-i)$. The direct embedding and partial-transpose calculation is
+\[
+Y_{{\rm coeff},(i,a),(j,b)}=
+\frac{(-1)^{i+j}}9[c_{26-j}(a)+1][c_{26-i}(b)+1]X_{{\rm coeff},o,p}. \tag{2}
+\]
+Both symmetric-tensor embedding factors are included. The certificate supplies 39 complete output highest-weight blocks, with 280 columns in total, scaled rationally as $W_L$. In doubled-spin weight $L$, let
+\[
+ Y_L=(L+1)W_L^TG_LY_{{\rm coeff},L}G_LW_L\succeq0,
+\]
+where $G_{(i,a)}=\binom{26}{i}g_2(a)$ is the physical product metric.
+
+The saved rational weights $y_a$ and rational matrices $C_J,Q_L$ obey, identically in all 206 real symmetric entries of $B$,
+\[
+\boxed{-\Tr X=\sum_{a=1}^{163}y_aR_a(B)+\sum_J\Tr(C_Jx_J)+\sum_L\Tr(Q_LY_L).} \tag{3}
+\]
+Every $C_J$ and $Q_L$ is strictly positive definite: exact rational LDL factorizations reconstruct all 37 input and 39 output matrices, with 98 and 280 positive pivots respectively. The independent verifier reconstructs every necessary row, all metrics, the full rational pullback (2), and every coefficient of (3). Substituting (1), positivity and $\Tr X=1$ gives $-1\ge0$, a contradiction. Nesting excludes all higher orders as well.
+\end{proof}
+\paragraph{Scope.}
+This certificate proves the upper bound six on the maximum pure AC order. An existence proof for sixth-order states is a separate attainment result; numerical near-zero residuals alone do not establish that lower bound.
+\paragraph{Independent verification.}
+The portable \texttt{verify\_independently.py} uses Python's standard library only. It checks 98 input highest-weight columns, 7106 physical input Gram identities, all 163 selected contraction rows, all 206 PPT-functional coordinates, 280 output highest-weight columns, 1141 output Gram identities, the separating identity, and all 378 positive rational LDL pivots with exact reconstruction. No discovery matrices or numerical feasibility result are proof premises. A separate exact physical control evaluates (2) on a generic complex pure product moment: all 5625 nonzero matrix entries match a direct rank-one partial-time-reversal factorization; all 10206 output rows have the expected support, and both traces equal one.
+
+Certificate SHA-256:
+\begin{center}\small\texttt{dc1aacec5827b892ec13e0d5cfc52539a135977703865599ba5203936d2b407a}.\end{center}
+\end{document}

@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Twenty-three qubits: certified exact fifth-order anticoherence}
+\author{Rational reduced-state equations and an isolating contraction}
+\date{5 November 2026}\maketitle
+\begin{theorem}
+An exactly defined algebraic pure symmetric twenty-three-qubit state is
+fifth-order anticoherent. Together with the independent universal sixth-order
+exclusion in \texttt{../n23-t6/proof.tex}, this proves
+\[\boxed{t_{\max}(23)=5.}\]
+\end{theorem}
+\begin{proof}
+The state is defined by an isolated root of rational quadratic equations.
+The recorded decimal Dicke components are approximations; closed-form radical
+expressions are not claimed.
+
+Let $d_r$ be the 24 positive integer scales in \texttt{certificate.json}.
+For $x\in\mathbb R^{48}$ put
+\[
+z_r=x_r+ix_{24+r},\qquad
+c_r=\frac{\sqrt{\binom{23}{r}}}{d_r}z_r,\qquad
+|\psi(x)\rangle=\sum_{r=0}^{23}c_r|D_{23}^{(r)}\rangle.
+\]
+The Dicke kets are normalized. For $0\le a\le5$ and $0\le\ell\le18$, the
+five-qubit Schmidt matrix is
+\[
+M_{a\ell}=\frac{\sqrt{\binom5a\binom{18}\ell}}{d_{a+\ell}}z_{a+\ell}.
+\]
+The identity $MM^\dagger=I_6/6$ is equivalent to the following 36 real
+rational quadratic equations $F(x)=0$: six diagonal equations
+\[
+\sum_{\ell=0}^{18}\frac{\binom{18}\ell}{d_{a+\ell}^2}
+\bigl(x_{a+\ell}^2+x_{24+a+\ell}^2\bigr)
+-\frac1{6\binom5a}=0,
+\]
+and the real and imaginary parts of 15 upper entries
+\[
+\sum_{\ell=0}^{18}\frac{\binom{18}\ell}{d_{a+\ell}d_{b+\ell}}
+z_{a+\ell}\overline{z_{b+\ell}}=0\qquad(0\le a<b\le5).
+\]
+Their order is the six diagonal equations, followed by real and imaginary
+parts of upper entries in lexicographic order.
+
+The certificate records a rational center $x^0$, 36 active coordinates and
+12 fixed coordinates. Fix the latter to their rational central values and
+write $y\in\mathbb R^{36}$ for the former. This is a construction choice,
+not a restriction imposed on every AC state.
+A rational $36\times36$ matrix $A$, whose denominator is $2^{256}$, satisfies
+the following exactly checked bounds at $J_0=DF(y^0)$:
+\[
+\eta=\|AF(y^0)\|_\infty<4\cdot10^{-66},\qquad
+\beta=\|I-AJ_0\|_\infty<10^{-76},\qquad
+\|A\|_\infty<1600.
+\]
+Take $r=10^{-65}$. Each equation has two quadratic monomials per $\ell$.
+The sum of absolute Hessian entries is bounded by
+\[
+H\le4\sum_{\ell=0}^{18}\binom{18}\ell=2^{20},
+\]
+since all scales are at least one. Thus the map $T(y)=y-AF(y)$ on the closed
+infinity-norm radius-$r$ box satisfies
+\[
+\|DT(y)\|_\infty\le q=\beta+\|A\|_\infty Hr<10^{-55}<1,
+\qquad \|T(y)-y^0\|_\infty\le\eta+qr<r.
+\]
+The full rational inequalities are verified directly; their displayed
+decimals are not proof premises. Banach's theorem supplies a unique fixed point
+$y^*$ in the box. Since $\beta<1$, the square matrix $AJ_0$ and hence $A$ are
+invertible. Therefore $F(y^*)=0$. The derivative bound also makes
+$DF(y^*)$ invertible, so this is an isolated nonsingular zero of a rational
+polynomial system. Its coordinates are real algebraic numbers.
+
+The exact root, together with the 12 fixed rational coordinates, specifies
+the state precisely. Its reduction is $\rho_5=I_6/6$; tracing this identity
+proves exact normalization. Because
+$d_r^2\le\binom{23}{r}<4d_r^2$, each real or imaginary Dicke component is
+within $2\cdot10^{-65}$ of the exact rational-center conversion.
+Binary floating values and plotted Majorana points are numerical renderings.
+
+The separate exact four-copy positivity certificate excludes every
+sixth-order pure symmetric state on 23 qubits. By nesting it excludes all
+higher orders. Thus the certified state has exactly order five and attains
+the global maximum.
+\end{proof}
+\paragraph{Independent reproduction.}
+Run \texttt{python3 verify\_independently.py}; only the Python standard library
+is needed. It reconstructs the rational reduced-state equations, obtains the
+Jacobian by exact central differences of the quadratic equations, and checks
+the contraction and strict self-mapping bounds using fractions. No numerical
+solver or discovery code is imported. The optional \texttt{build.py} accepts
+\texttt{--source} to reproduce the numerical discovery of the certificate.
+\end{document}
