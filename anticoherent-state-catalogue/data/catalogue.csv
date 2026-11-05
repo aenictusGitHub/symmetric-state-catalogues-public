@@ -276,11 +276,11 @@ n,t,status,maximumOrderStatus,proofId,notes
 27,2,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 27,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 27,4,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-27,5,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
+27,5,exists,conjectured,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 27,6,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-27,7,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-27,8,impossible,,n27-t8-three-copy,An exact three-copy matrix-positivity certificate excludes every pure eighth-order AC state.
-27,9,impossible,,n27-t8-three-copy,An exact three-copy matrix-positivity certificate excludes every pure eighth-order AC state.
+27,7,impossible,,n27-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
+27,8,impossible,,n27-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
+27,9,impossible,,n27-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
 27,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 27,11,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 27,12,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
@@ -290,11 +290,11 @@ n,t,status,maximumOrderStatus,proofId,notes
 28,2,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 28,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 28,4,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-28,5,numerical,,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
-28,6,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
-28,7,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-28,8,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-28,9,impossible,,rectangular-tensor-pure,"Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7)."
+28,5,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
+28,6,exists,proven,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
+28,7,impossible,,n28-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
+28,8,impossible,,n28-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
+28,9,impossible,,n28-t7-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.
 28,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 28,11,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 28,12,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
@@ -304,11 +304,11 @@ n,t,status,maximumOrderStatus,proofId,notes
 29,2,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 29,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 29,4,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-29,5,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
+29,5,exists,conjectured,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 29,6,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
 29,7,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-29,8,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-29,9,impossible,,rectangular-tensor-pure,"Orthogonal rectangular spin-tensor images strengthen the necessary qubit count, excluding (N,t)=(15,6),(16,7),(17,7),(18,7)."
+29,8,impossible,,n29-t8-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.
+29,9,impossible,,n29-t8-four-copy,A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.
 29,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 29,11,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 29,12,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
@@ -319,10 +319,10 @@ n,t,status,maximumOrderStatus,proofId,notes
 30,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 30,4,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 30,5,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-30,6,numerical,,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
-30,7,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
-30,8,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-30,9,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
+30,6,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
+30,7,exists,proven,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
+30,8,impossible,,n30-t8-three-copy,An exact rational three-copy positivity certificate excludes every pure order-8 AC state.
+30,9,impossible,,n30-t8-three-copy,An exact rational three-copy positivity certificate excludes every pure order-8 AC state.
 30,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 30,11,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 30,12,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.

@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "statesSHA256": "0e7c59da98ea33b61e5c1351092b239e6e537d16ef70ce151669444647fb3234",
+  "method": "Independent exact direct partial traces; next-order diagonal witnesses; algebraic root multiplicity checks.",
+  "states": [
+    {
+      "n": 27,
+      "t": 5,
+      "passed": true,
+      "normalization": "1",
+      "partialTraceChecks": [
+        {
+          "t": 5,
+          "identityVerified": true,
+          "nonzeroUpperEntries": 0
+        },
+        {
+          "t": 6,
+          "identityVerified": false,
+          "nonzeroUpperEntries": 9
+        }
+      ],
+      "nextOrderWitness": {
+        "order": 6,
+        "row": 0,
+        "column": 0,
+        "differenceFromIdentity": "17/1593900",
+        "differenceLatex": "\\frac{17}{1593900}"
+      },
+      "majoranaPartition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaProof": "Reciprocal quintic factors into q+1 and a reciprocal quartic. The reduced quadratic discriminant and its values at u=+/-2 are nonzero; every q root is nonzero, hence all25 lifted finite roots are simple."
+    },
+    {
+      "n": 29,
+      "t": 5,
+      "passed": true,
+      "normalization": "1",
+      "partialTraceChecks": [
+        {
+          "t": 5,
+          "identityVerified": true,
+          "nonzeroUpperEntries": 0
+        },
+        {
+          "t": 6,
+          "identityVerified": false,
+          "nonzeroUpperEntries": 9
+        }
+      ],
+      "nextOrderWitness": {
+        "order": 6,
+        "row": 0,
+        "column": 0,
+        "differenceFromIdentity": "-578/1781325",
+        "differenceLatex": "- \\frac{578}{1781325}"
+      },
+      "majoranaPartition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaProof": "Reciprocal quintic factors into q+1 and a reciprocal quartic. The reduced quadratic discriminant and its values at u=+/-2 are nonzero; every q root is nonzero, hence all25 lifted finite roots are simple."
+    },
+    {
+      "n": 30,
+      "t": 7,
+      "passed": true,
+      "normalization": "1",
+      "partialTraceChecks": [
+        {
+          "t": 7,
+          "identityVerified": true,
+          "nonzeroUpperEntries": 0
+        },
+        {
+          "t": 8,
+          "identityVerified": false,
+          "nonzeroUpperEntries": 15
+        }
+      ],
+      "nextOrderWitness": {
+        "order": 8,
+        "row": 0,
+        "column": 0,
+        "differenceFromIdentity": "-11/538200",
+        "differenceLatex": "- \\frac{11}{538200}"
+      },
+      "majoranaPartition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaProof": "After extracting z(1-z^4), the degree6 polynomial in q=z^4 is coprime to its derivative, has nonzero constant and leading coefficients and is nonzero at q=1. Its24 lifted roots and the six octahedral projective roots are distinct."
+    }
+  ],
+  "elapsedSeconds": 2.330752749927342
+}

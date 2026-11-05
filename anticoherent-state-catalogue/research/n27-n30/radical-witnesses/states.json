@@ -1,0 +1,732 @@
+{
+  "states": [
+    {
+      "id": "dihedral-n27-t5",
+      "n": 27,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact dihedral state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\sqrt{\\frac{327}{2500}}\\bigl(|D_{27}^{(1)}\\rangle-|D_{27}^{(26)}\\rangle\\bigr)-i\\sqrt{\\frac{494}{2500}}\\bigl(|D_{27}^{(6)}\\rangle-|D_{27}^{(21)}\\rangle\\bigr)-iw\\sqrt{\\frac{429}{2500}}\\bigl(|D_{27}^{(11)}\\rangle-|D_{27}^{(16)}\\rangle\\bigr)",
+      "parametersLatex": "w=\\frac{52-i\\sqrt{3433}}{\\sqrt{6137}}",
+      "support": [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(327)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(494)*I/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(7293)*I*(-52 + sqrt(3433)*I)/16150",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(25036869)/16150 + 26*sqrt(7293)*I/8075",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(494)*I/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(327)/50",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3616628264005025,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.44452221541785736
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3098257301348764,
+          -0.27496911998693735
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3098257301348764,
+          0.27496911998693735
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.44452221541785736
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3616628264005025,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Independent analytical construction by C5 phase-triangle.",
+      "construction": {
+        "family": "C5 phase-triangle",
+        "wRealNumerator": 52,
+        "wImaginaryRadicand": 3433,
+        "wDenominatorRadicand": 6137
+      },
+      "notes": "Exactly order 5, not order 6. Global maximum order requires a separate exclusion theorem.",
+      "verification": {
+        "method": "Exact Schmidt matrices through the next order.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": false,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "28*sqrt(8993824895)/20457421875 + 95559449/572807812500",
+            "purity": "28*sqrt(8993824895)/20457421875 + 11703606707/81829687500"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "17/1593900",
+          "differenceLatex": "\\frac{17}{1593900}"
+        }
+      }
+    },
+    {
+      "id": "dihedral-n29-t5",
+      "n": 29,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact dihedral state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\sqrt{\\frac{3598}{18750}}\\bigl(|D_{29}^{(2)}\\rangle-|D_{29}^{(27)}\\rangle\\bigr)-i\\sqrt{\\frac{2081}{18750}}\\bigl(|D_{29}^{(7)}\\rangle-|D_{29}^{(22)}\\rangle\\bigr)-iw\\sqrt{\\frac{3696}{18750}}\\bigl(|D_{29}^{(12)}\\rangle-|D_{29}^{(17)}\\rangle\\bigr)",
+      "parametersLatex": "w=\\frac{3094-i\\sqrt{2170247}}{\\sqrt{11743083}}",
+      "support": [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ],
+      "exactCoefficients": [
+        "0",
+        "0",
+        "sqrt(26985)/375",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(62430)*I/750",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2*sqrt(8303190)*I*(-3094 + sqrt(2170247)*I)/44481375",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2*sqrt(18019973187930)/44481375 + 6188*sqrt(8303190)*I/44481375",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(62430)*I/750",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(26985)/375",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.43805631297052816,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.33314661437071014
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.19086612755465848,
+          -0.40086172348116356
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.19086612755465848,
+          0.40086172348116356
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.33314661437071014
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.43805631297052816,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Independent analytical construction by C5 phase-triangle.",
+      "construction": {
+        "family": "C5 phase-triangle",
+        "wRealNumerator": 3094,
+        "wImaginaryRadicand": 2170247,
+        "wDenominatorRadicand": 11743083
+      },
+      "notes": "Exactly order 5, not order 6. Global maximum order requires a separate exclusion theorem.",
+      "verification": {
+        "method": "Exact Schmidt matrices through the next order.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": false,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "176*sqrt(1735224059749505)/112426259765625 + 129749534326/786983818359375",
+            "purity": "176*sqrt(1735224059749505)/112426259765625 + 16079429899993/112426259765625"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-578/1781325",
+          "differenceLatex": "- \\frac{578}{1781325}"
+        }
+      }
+    },
+    {
+      "id": "octahedral-n30-t7",
+      "n": 30,
+      "achievedOrder": 7,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "label": "Exact octahedral state · order 7",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\beta}{\\sqrt{30}}\\bigl(|D_{30}^{(1)}\\rangle-|D_{30}^{(29)}\\rangle\\bigr)+\\frac{\\alpha+41\\beta}{\\sqrt{142506}}\\bigl(|D_{30}^{(5)}\\rangle-|D_{30}^{(25)}\\rangle\\bigr)+\\frac{-5\\alpha+549\\beta}{\\sqrt{14307150}}\\bigl(|D_{30}^{(9)}\\rangle-|D_{30}^{(21)}\\rangle\\bigr)+\\frac{10\\alpha+2237\\beta}{\\sqrt{119759850}}\\bigl(|D_{30}^{(13)}\\rangle-|D_{30}^{(17)}\\rangle\\bigr)",
+      "parametersLatex": "\\alpha=\\frac{\\sqrt{326271}}4,\\quad\\beta=\\frac{-118635+14355i\\sqrt{287}}{256\\sqrt{326271}}",
+      "support": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+      ],
+      "exactCoefficients": [
+        "0",
+        "-719*sqrt(1087570)/5062144 + 87*sqrt(312132590)*I/5062144",
+        "0",
+        "0",
+        "0",
+        "797*sqrt(574019446)/65807872 + 205*sqrt(3362113898)*I/65807872",
+        "0",
+        "0",
+        "0",
+        "-35431*sqrt(171460354)/1513581056 + 1647*sqrt(49209121598)*I/1513581056",
+        "0",
+        "0",
+        "0",
+        "-563*sqrt(19295884454)/2212156928 + 2237*sqrt(113018751802)*I/2212156928",
+        "0",
+        "0",
+        "0",
+        "563*sqrt(19295884454)/2212156928 - 2237*sqrt(113018751802)*I/2212156928",
+        "0",
+        "0",
+        "0",
+        "35431*sqrt(171460354)/1513581056 - 1647*sqrt(49209121598)*I/1513581056",
+        "0",
+        "0",
+        "0",
+        "-797*sqrt(574019446)/65807872 - 205*sqrt(3362113898)*I/65807872",
+        "0",
+        "0",
+        "0",
+        "719*sqrt(1087570)/5062144 - 87*sqrt(312132590)*I/5062144",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.1481231724038344,
+          0.30363673688228826
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2901641650674629,
+          0.1806268152108156
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.30652054180501476,
+          0.24138524631605013
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.03535288069849396,
+          0.33995803106974554
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.03535288069849396,
+          -0.33995803106974554
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.30652054180501476,
+          -0.24138524631605013
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.2901641650674629,
+          -0.1806268152108156
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1481231724038344,
+          -0.30363673688228826
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Independent analytical construction by Octahedral binary forms.",
+      "construction": {
+        "family": "Octahedral binary forms",
+        "polynomial": "alpha*(z*(1-z**4))**5+beta*z*(1-z**4)*(1+14*z**4+z**8)**3",
+        "alpha": "sqrt(326271)/4",
+        "beta": "sqrt(326271)*(-118635 + 14355*sqrt(287)*I)/83525376"
+      },
+      "notes": "Exactly order 7, not order 8. Global maximum order requires a separate exclusion theorem.",
+      "verification": {
+        "method": "Exact Schmidt matrices through the next order.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": false,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/7"
+          },
+          {
+            "t": 7,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/8"
+          },
+          {
+            "t": 8,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "242/23209875",
+            "purity": "2579117/23209875"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 8,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-11/538200",
+          "differenceLatex": "- \\frac{11}{538200}"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{No pure order-7 anticoherent state on 28 symmetric qubits}
+\author{A validated four-copy separation certificate}\date{November 2026}\maketitle
+\begin{theorem}No pure order-7 anticoherent state exists in $V=\operatorname{Sym}^{28}(\mathbb C^2)$. Hence the maximum pure-state AC order is at most 6.\end{theorem}
+For a hypothetical normalized state, form the rotation average $X$ of $(|\psi\rangle\langle\psi|)^{\otimes4}$. This is positive, has trace one, and is supported on $\operatorname{Sym}^4(V)$. In doubled total-spin labels, write its physical multiplicity block as $I_{J+1}\otimes B_J/(J+1)$ and put $C_J=B_J/\sqrt{J+1}$. Thus $C_J\succeq0$ and $\sum_J\sqrt{J+1}\Tr C_J=1$. Equivalently, if the unscaled physical block is $B_J^{\rm phys}$, then $C_J=\sqrt{J+1}B_J^{\rm phys}$.
+
+Let $f_\ell(i)$ be the Frobenius-normalized zero component of the rank-$\ell$ tensor on $V$. It is obtained by exact Gram--Schmidt from $(2i-28)^\ell$. Anticoherence imposes $\Tr_1[(\operatorname{diag}f_\ell\otimes I)X]=0$ for $1\le\ell\le 7$. Let $E_{J,S}$ denote normalized coefficients of fractional parentage into $V\otimes\operatorname{Sym}^3(V)$, with three-copy doubled spin $S$. Rotation covariance reduces the contractions to
+\[
+ R_{\ell,S,T}(C)=\sum_Jc_{\ell,J,S,T}E_{J,S}C_JE_{J,T}^T=0.
+\]
+For $S\le T$, the verifier evaluates the coefficient directly:
+\[
+ c_{\ell,J,S,T}=\frac{\sum_{i=0}^{28}f_\ell(i)
+ \langle j,m_i;S/2,S/2|J/2,S/2+m_i\rangle
+ \langle j,m_i;T/2,S/2|J/2,S/2+m_i\rangle}
+ {\sqrt{J+1}\,|\langle S/2,S/2;T/2,-S/2|\ell,0\rangle|},
+ \quad j=\frac{28}{2},\quad m_i=i-j.
+\]
+The denominator fixes the output tensor to be positive at its upper common weight. Forbidden components are zero. Direct exact-factorial CG sums remove any reliance on a source-spin-dependent sign convention. The corresponding compact expression is
+\[
+ c_{\ell,J,S,T}=(-1)^{(28+T+J)/2}\sqrt{J+1}
+ \begin{Bmatrix}j&j&\ell\\T/2&S/2&J/2\end{Bmatrix}.
+\]
+
+The dyadic matrices $D_{\ell,S,T}$ in the certificate pair with these equations. Set $(H_J)_{S,T}=\sum_\ell c_{\ell,J,S,T}D_{\ell,S,T}$, with transpose blocks below the diagonal, and $G_J=E_J^TH_JE_J$. Then $0=\sum_J\Tr(G_JC_J)$. The verifier proves $G_J\succ0$ in every source sector. All $C_J$ must vanish, contradicting trace one. Real symmetric certificate matrices also cover arbitrary complex Hermitian source moments: imaginary antisymmetric parts have zero trace pairing.
+
+\paragraph{Validated representation and positivity.}
+All stored floating arrays encode exact binary rationals. Starting with exact symmetric-pair CFP signs, the verifier constructs exact nearby CFPs recursively. The exact symmetric projector at level $r$ is $(I+(r-1)\Pi\operatorname{Swap}_{12}\Pi)/r$. Its coupled-basis entries are exact Racah coefficients. Every sector and multiplicity is independently checked against the symmetric-power character. If previous CFPs are within operator norm $\delta$ of their dyadic approximants, the projector perturbation is at most $(r-1)(2\delta+\delta^2)/r$.
+
+Arb enclosures bound the projector residual $\varepsilon$ and Gram residual $\zeta$. Projection onto the exact range and polar normalization give an exact isometry $E$ with
+\[
+ \|E-A\|_2\le\varepsilon+\frac{\eta}{1+\sqrt{1-\eta}},\qquad\eta=\zeta+\varepsilon^2<1.
+\]
+Let $\delta_4$ be the resulting fourth-copy bound. For every source block the verifier checks, with outward-rounded balls,
+\[
+ \|I-Z_J(A_J^TH_JA_J)Z_J^T\|_F+
+ \|Z_J\|_F^2(2\delta_4+\delta_4^2)\|H_J\|_F<1,
+\]
+where $Z_J$ is an exact dyadic approximate inverse Cholesky factor. This proves positive definiteness of $G_J$ without trusting any numerical eigensolver or optimizer.
+
+\paragraph{Reproduction.}Install NumPy and python-flint (Arb), then run \texttt{python3 verify\_certificate.py}. The independent report gives exact rational bounds, all representation checks and input hashes. Discovery scripts are not required.\end{document}

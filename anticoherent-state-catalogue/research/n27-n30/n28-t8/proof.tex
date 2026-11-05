@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty-eight qubits: exclusion of eighth-order pure anticoherence}
+\author{Exact three-copy certificate}\date{5 November 2026}\maketitle
+\begin{theorem}
+No pure symmetric twenty-eight-qubit state is eighth-order anticoherent.
+Consequently $K(28,t)=0$ for every $t\ge8$, and the maximum pure AC order is at most seven.
+\end{theorem}
+\begin{proof}
+Let $V=V_{14}$. A hypothetical normalized eighth-order AC vector $\psi\in V$ has a rotation-averaged three-copy moment
+\[
+X=\int_{SU(2)}(U_g|\psi\rangle\langle\psi|U_g^\dagger)^{\otimes3}\,dg
+\]
+on $W=\operatorname{Sym}^3(V)$, of dimension $\binom{31}{3}=4495$.
+It is positive, invariant, and has trace one. For each spin-tensor rank $1\le\ell\le8$, anticoherence implies the necessary first-leg contraction equations
+\[
+\Tr_1[(T_{\ell0}\otimes I^{\otimes2})X]=0. \tag{1}
+\]
+The certificate supplies a complete physical decomposition
+\[
+W=\bigoplus_J V_J\otimes\mathbb C^{m_J},\qquad
+\sum_J(2J+1)m_J=4495,
+\]
+with 41 nonempty sectors, $\sum_Jm_J=113$, and 249 real symmetric invariant coordinates. Integer highest-weight columns $H_J$ are given in the binomial basis $b_i=\sqrt{\binom{28}{i}}|D_{28}^{(i)}\rangle$ and averaged symmetric words $e_{abc}$. Their squared norms are $\prod_i\binom{28}{i}^{o_i}o_i!/3!$, with $o_i$ the word occupancies. Their descendants $U_{J,s}=J_-^sH_J/s!$ obey
+\[
+U_{J,s}^\dagger U_{J,s}=\binom{2J}{s}H_J^\dagger H_J.
+\]
+Thus every real invariant operator has unique block coordinates
+\[
+X(B)=\sum_Jd_J\sum_{s=0}^{2J}\frac{U_{J,s}B_JU_{J,s}^T}{\binom{2J}{s}},\qquad B_J=B_J^T,
+\]
+where $d_J>0$ are the saved denominator scales. Positivity is equivalent to $B_J\succeq0$ in every sector. Taking real parts of complex Hermitian multiplicity matrices preserves positivity, the real contraction equations, and trace; hence this reduction covers arbitrary complex $\psi$.
+
+The diagonal tensors are represented by the degree-$\ell$ polynomial in $2i-28$ orthogonal to all lower degrees under uniform summation over $i=0,\ldots,28$. The certificate selects 212 physical matrix entries of (1), with primitive integer rows $R_a(B)$. Every hypothetical moment satisfies those rows, regardless of whether they form a complete constraint set.
+
+For supplied positive dyadic diagonal matrices $S_J$, put
+\[
+x_J=d_J(2J+1)S_JB_JS_J\succeq0.
+\]
+The exact rational certificate consists of rational row weights $y_a$ and rational symmetric matrices $C_J$ satisfying coefficientwise
+\[
+\boxed{-\Tr X=\sum_{a=1}^{212}y_aR_a(B)+\sum_J\Tr(C_Jx_J).} \tag{2}
+\]
+All 41 matrices $C_J$ are positive definite: their 113 rational LDL pivots are strictly positive, and their exact reconstructions are checked. Substituting (1) and $\Tr X=1$ into (2) yields $-1\ge0$, a contradiction. Higher orders are excluded by nesting. No numerical infeasibility, constellation symmetry, or partial-transpose assumption is used in the proof.
+\end{proof}
+\paragraph{Independent verification.}
+The portable \texttt{verify\_independently.py} uses only Python's standard library. It reconstructs the 113 highest-weight columns, checks 9204 physical cross-Gram identities, reconstructs every selected contraction row and all 41 physical block traces, and verifies the full rational separating identity and all positive LDL factorizations. Certificate SHA-256:
+\begin{center}\small\texttt{74f1f3d198bca7922f171ac43ad328c3f084e545832e43a3afd9698a1d9d717c}.\end{center}
+This auxiliary upper bound leaves seventh-order existence unresolved; sixth-order attainment is a separate result.
+\end{document}

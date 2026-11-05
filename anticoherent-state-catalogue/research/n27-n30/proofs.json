@@ -1,0 +1,156 @@
+{
+  "proofs": [
+    {
+      "id": "n27-t7-four-copy",
+      "title": "27 qubits cannot be order-7 AC",
+      "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.",
+      "formulaLatex": "t_{\\max}(27)\\le6",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5\u20136; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "references": [
+        {
+          "title": "Exact states and universal upper bounds",
+          "url": "./research/n27-n30/index.html#n27"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n27-t7/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n27-t7/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n27-t7/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
+    },
+    {
+      "id": "n28-t7-four-copy",
+      "title": "28 qubits: maximum pure AC order is 6",
+      "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.",
+      "formulaLatex": "t_{\\max}(28)=6",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The independently verified order-6 state attains this universal upper bound, proving the maximum 6. Every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Exact states and universal upper bounds",
+          "url": "./research/n27-n30/index.html#n28"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n28-t7/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n28-t7/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n28-t7/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
+    },
+    {
+      "id": "n29-t8-four-copy",
+      "title": "29 qubits cannot be order-8 AC",
+      "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.",
+      "formulaLatex": "t_{\\max}(29)\\le7",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5\u20137; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "references": [
+        {
+          "title": "Exact states and universal upper bounds",
+          "url": "./research/n27-n30/index.html#n29"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n29-t8/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n29-t8/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n29-t8/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
+    },
+    {
+      "id": "n28-t8-three-copy",
+      "title": "28 qubits cannot be order-8 AC",
+      "summary": "An exact rational three-copy positivity certificate excludes every pure order-8 AC state.",
+      "formulaLatex": "t_{\\max}(28)\\le7",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>An exact rational identity expresses the negative trace as a sum of those vanishing equations and nonnegative matrix traces. The independent standard-library verifier reconstructs all physical contraction rows, trace factors, and positive matrices. The contradiction covers arbitrary complex symmetric states.</p><p>This is an auxiliary certificate. The stronger seventh-order exclusion proves that the maximum pure AC order at 28 qubits is six.</p>",
+      "references": [
+        {
+          "title": "Exact states and universal upper bounds",
+          "url": "./research/n27-n30/index.html#n28"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n28-t8/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n28-t8/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n28-t8/certificate-bundle.zip"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n30-t8-three-copy",
+      "title": "30 qubits: maximum pure AC order is 7",
+      "summary": "An exact rational three-copy positivity certificate excludes every pure order-8 AC state.",
+      "formulaLatex": "t_{\\max}(30)=7",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>An exact rational identity expresses the negative trace as a sum of those vanishing equations and nonnegative matrix traces. The independent standard-library verifier reconstructs all physical contraction rows, trace factors, and positive matrices. The contradiction covers arbitrary complex symmetric states.</p><p>The independently verified order-7 state attains this universal upper bound, proving the maximum 7. Every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Exact states and universal upper bounds",
+          "url": "./research/n27-n30/index.html#n30"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n30-t8/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n30-t8/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n30-t8/certificate-bundle.zip"
+        }
+      ],
+      "kind": "exact catalogue theorem"
+    }
+  ],
+  "upperBounds": [
+    {
+      "n": 27,
+      "excludedOrder": 7,
+      "proofId": "n27-t7-four-copy"
+    },
+    {
+      "n": 28,
+      "excludedOrder": 7,
+      "proofId": "n28-t7-four-copy"
+    },
+    {
+      "n": 29,
+      "excludedOrder": 8,
+      "proofId": "n29-t8-four-copy"
+    },
+    {
+      "n": 30,
+      "excludedOrder": 8,
+      "proofId": "n30-t8-three-copy"
+    }
+  ]
+}

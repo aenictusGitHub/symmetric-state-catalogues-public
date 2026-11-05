@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSHA256": "eaf1324d975e8e0e20bc0cfe4630b45aa09e3b78a1f0120b2d91d7f364959785",
+  "catalogueSHA256": "450eb078de83967aa99fcfd8a8121bdac468a5fa289ab04b284a5842593489fa",
   "convention": {
     "polynomial": "P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r",
     "sphere": "(2 Re(z), -2 Im(z), |z|^2-1)/(1+|z|^2); infinity is north",
@@ -88811,10 +88811,893 @@
         "relativeReducedPolynomialReconstructionError": 5.721961007394982e-102,
         "inputFingerprint": "d16a614d8b8298786f42f073e8e1007d27a6a96f75949f5b8fb3bd714e2b1053"
       }
+    },
+    "dihedral-n27-t5": {
+      "id": "dihedral-n27-t5",
+      "n": 27,
+      "label": "Exact dihedral state · order 5",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": -0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": -0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.0,
+          "y": -2.8688928017596374e-102,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": 0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": 0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6316394108516183,
+          "y": -0.21026173372148113,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.00478347971320138,
+          "y": -0.665699226625941,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6345957638988724,
+          "y": -0.20116301461786942,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3874182714930053,
+          "y": 0.5413736463127058,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3951581042534607,
+          "y": 0.5357503286525858,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9179205365030404,
+          "y": -0.13320094500387036,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15697141854260546,
+          "y": -0.9141556633553586,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8209068645814247,
+          "y": -0.43177832595794796,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6643197624520332,
+          "y": 0.6473019823078158,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41033467198781204,
+          "y": 0.8318329520093611,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9179205365030403,
+          "y": 0.13320094500387036,
+          "z": 0.37373706922921957,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41033467198781204,
+          "y": -0.8318329520093612,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6643197624520332,
+          "y": -0.6473019823078158,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8209068645814247,
+          "y": 0.43177832595794796,
+          "z": 0.37373706922921957,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15697141854260552,
+          "y": 0.9141556633553588,
+          "z": 0.3737370692292193,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6316394108516185,
+          "y": 0.2102617337214811,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3951581042534607,
+          "y": -0.5357503286525858,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3874182714930053,
+          "y": -0.5413736463127058,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6345957638988724,
+          "y": 0.20116301461786942,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.004783479713201381,
+          "y": 0.665699226625941,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.",
+      "evidence": "Exact witness of AC order 5.",
+      "coordinateMethod": "100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.",
+      "diagnostics": {
+        "coefficientSource": "Saved exact Dicke amplitudes",
+        "squareFreeFactorizationExact": false,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 5,
+        "projectiveDickeReconstructionError": 4.920575756574591e-16,
+        "exactFormulaVsSavedCoefficientsError": 4.226186311239765e-18,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.4760540785514387,
+        "rootPrecisionDecimalDigits": 100,
+        "relativeReducedPolynomialReconstructionError": 9.1906194998828e-102,
+        "inputFingerprint": "ecdfc5b8a810358c778a4363a6a6508095c44742328528c6bfcee846b23392af"
+      }
+    },
+    "certified-algebraic-n28-t6": {
+      "id": "certified-algebraic-n28-t6",
+      "n": 28,
+      "label": "Certified algebraic state · order 6",
+      "points": [
+        {
+          "x": -1.0110888151384806e-12,
+          "y": -2.0976967573086137e-13,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.481925864389457,
+          "y": -0.0888400662789785,
+          "z": 0.8716965663899459,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6037050169270199,
+          "y": 0.4721069834282983,
+          "z": 0.6423824785401443,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.9705699144978418,
+          "y": -0.01270352534848719,
+          "z": 0.2404842230071912,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5163777364497235,
+          "y": -0.6257149014828194,
+          "z": 0.5846664821600478,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8634561753901535,
+          "y": -0.5032738331902044,
+          "z": -0.03404235606779885,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8694885599941315,
+          "y": 0.4872086420831612,
+          "z": -0.08134729939471577,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7182320818654176,
+          "y": 0.22827603335266464,
+          "z": -0.6572919664624247,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6897176801181243,
+          "y": -0.31769081959389606,
+          "z": -0.6506627889146815,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2636154308535147,
+          "y": 0.9057272583192575,
+          "z": 0.33191119015995346,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3328942155549325,
+          "y": -0.94261969677558,
+          "z": -0.02548624140158216,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.38305994103925667,
+          "y": 0.8759345183617887,
+          "z": -0.29326404674508344,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.2209269722168302,
+          "y": -0.7225982981762488,
+          "z": -0.6550137192608205,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.10362653310380546,
+          "y": 0.5422928077396078,
+          "z": -0.8337745812333084,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.33829234927532364,
+          "y": -0.4337750053990157,
+          "z": -0.8351033056531786,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2906641095576949,
+          "y": 0.9085596187601593,
+          "z": -0.30005631900266017,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.12073518595001745,
+          "y": -0.8318603955298761,
+          "z": 0.5416929916682446,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3113880521665519,
+          "y": -0.9333542128761539,
+          "z": -0.17857041825077238,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6034586451167866,
+          "y": 0.46606326193337005,
+          "z": -0.647010586860709,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8358943794609627,
+          "y": -0.011769764147573154,
+          "z": -0.5487641196702666,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.08456194555566236,
+          "y": 0.5196740654135652,
+          "z": 0.8501694790454305,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7662293792542895,
+          "y": -0.5985887929675826,
+          "z": -0.2336321795070165,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4368213289538512,
+          "y": 0.8338864602383145,
+          "z": 0.33737293608439517,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8722737864723438,
+          "y": 0.48210114156372535,
+          "z": 0.08195688339702112,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9702381690081309,
+          "y": -0.09068180032107351,
+          "z": 0.22453219477455486,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6388897320161102,
+          "y": -0.5647672689488549,
+          "z": 0.5223579637072978,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.608572826141266,
+          "y": 0.18055497797313613,
+          "z": 0.7726829978791773,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.13702651426183673,
+          "y": -0.22557333074694297,
+          "z": 0.9645415526792928,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Numerical rendering of the saved decimal vector; no exact multiplicity claim is made here",
+      "evidence": "Certified algebraic witness of AC order 6. The plotted coordinates approximate the certified state's isolating-box centre.",
+      "coordinateMethod": "Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.",
+      "diagnostics": {
+        "coefficientSource": "Approximation to the certified algebraic root; browser coefficients rounded",
+        "squareFreeFactorizationExact": false,
+        "projectiveDickeReconstructionError": 3.783894994869728e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "noNumericalRootClustering": true,
+        "inputFingerprint": "e0a532cd1c678622815d6acb95f8ff4b3fa840e915f1e00d6d7a21af3cb858fd"
+      }
+    },
+    "dihedral-n29-t5": {
+      "id": "dihedral-n29-t5",
+      "n": 29,
+      "label": "Exact dihedral state · order 5",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 2
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": -0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": -0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.0,
+          "y": -2.8688928017596374e-102,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3090169943749475,
+          "y": 0.9510565162951536,
+          "z": -1.1102230246251568e-16,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": 0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7193172467363613,
+          "y": -0.2606406474905548,
+          "z": -0.6439325674504475,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0256027326187474,
+          "y": -0.7646537442915767,
+          "z": -0.6439325674504475,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7351406056996229,
+          "y": -0.21194135610651044,
+          "z": -0.6439325674504475,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.42873914821380416,
+          "y": 0.6336667825960082,
+          "z": -0.6439325674504475,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.4701652397958131,
+          "y": 0.6035689652926338,
+          "z": -0.6439325674504475,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9116429079309599,
+          "y": -0.04287066278006305,
+          "z": -0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24094072815719111,
+          "y": -0.8802716914811592,
+          "z": -0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7627333486556671,
+          "y": -0.5011671618896547,
+          "z": -0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7123358619794173,
+          "y": 0.5705333513880317,
+          "z": -0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3224855745469333,
+          "y": 0.8537761647628451,
+          "z": -0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9116429079309599,
+          "y": 0.04287066278006305,
+          "z": 0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3224855745469332,
+          "y": -0.8537761647628452,
+          "z": 0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7123358619794172,
+          "y": -0.5705333513880316,
+          "z": 0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.762733348655667,
+          "y": 0.5011671618896546,
+          "z": 0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.2409407281571911,
+          "y": 0.8802716914811591,
+          "z": 0.40874113408364143,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7193172467363614,
+          "y": 0.2606406474905549,
+          "z": 0.6439325674504474,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.47016523979581315,
+          "y": -0.6035689652926339,
+          "z": 0.6439325674504474,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.4287391482138042,
+          "y": -0.6336667825960082,
+          "z": 0.6439325674504474,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7351406056996229,
+          "y": 0.2119413561065105,
+          "z": 0.6439325674504474,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.0256027326187474,
+          "y": 0.7646537442915767,
+          "z": 0.6439325674504474,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.",
+      "evidence": "Exact witness of AC order 5.",
+      "coordinateMethod": "100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.",
+      "diagnostics": {
+        "coefficientSource": "Saved exact Dicke amplitudes",
+        "squareFreeFactorizationExact": false,
+        "zeroMultiplicity": 2,
+        "infinityMultiplicity": 2,
+        "nonzeroRootStep": 5,
+        "projectiveDickeReconstructionError": 4.0989663877580283e-16,
+        "exactFormulaVsSavedCoefficientsError": 4.154637616244904e-17,
+        "maxUnitSphereError": 2.220446049250313e-16,
+        "minimumDistinctPointDistance": 0.3738020017654801,
+        "rootPrecisionDecimalDigits": 100,
+        "relativeReducedPolynomialReconstructionError": 1.0093745779383247e-101,
+        "inputFingerprint": "2c5644b0c691af4d93cd26a54da45d7714c4314afc4943001a41974179d9c8c5"
+      }
+    },
+    "octahedral-n30-t7": {
+      "id": "octahedral-n30-t7",
+      "n": 30,
+      "label": "Exact octahedral state · order 7",
+      "points": [
+        {
+          "x": 0.0,
+          "y": -0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 1.0,
+          "y": -0.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 1.4344464008798187e-102,
+          "y": -1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.0,
+          "y": -2.8688928017596374e-102,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 9.984003188388981e-102,
+          "y": 1.0,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5489806909936653,
+          "y": 0.24816200139422878,
+          "z": -0.7981452386502902,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24816200139422878,
+          "y": -0.5489806909936653,
+          "z": -0.7981452386502902,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5489806909936653,
+          "y": -0.24816200139422878,
+          "z": -0.7981452386502902,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.24816200139422878,
+          "y": 0.5489806909936653,
+          "z": -0.7981452386502902,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7981452386502902,
+          "y": -0.24816200139422878,
+          "z": -0.5489806909936654,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.24816200139422878,
+          "y": -0.7981452386502902,
+          "z": -0.5489806909936654,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7981452386502902,
+          "y": 0.24816200139422878,
+          "z": -0.5489806909936654,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24816200139422878,
+          "y": 0.7981452386502902,
+          "z": -0.5489806909936654,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7981452386502902,
+          "y": 0.5489806909936653,
+          "z": -0.2481620013942288,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5489806909936653,
+          "y": -0.7981452386502902,
+          "z": -0.2481620013942288,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7981452386502902,
+          "y": -0.5489806909936653,
+          "z": -0.2481620013942288,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5489806909936653,
+          "y": 0.7981452386502902,
+          "z": -0.2481620013942288,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7981452386502902,
+          "y": -0.5489806909936653,
+          "z": 0.2481620013942287,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5489806909936653,
+          "y": -0.7981452386502902,
+          "z": 0.2481620013942287,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7981452386502902,
+          "y": 0.5489806909936653,
+          "z": 0.2481620013942287,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5489806909936653,
+          "y": 0.7981452386502902,
+          "z": 0.2481620013942287,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.7981452386502903,
+          "y": 0.24816200139422884,
+          "z": 0.5489806909936653,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24816200139422884,
+          "y": -0.7981452386502903,
+          "z": 0.5489806909936653,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.7981452386502903,
+          "y": -0.24816200139422884,
+          "z": 0.5489806909936653,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.24816200139422884,
+          "y": 0.7981452386502903,
+          "z": 0.5489806909936653,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.5489806909936653,
+          "y": -0.24816200139422878,
+          "z": 0.7981452386502901,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.24816200139422878,
+          "y": -0.5489806909936653,
+          "z": 0.7981452386502901,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.5489806909936653,
+          "y": 0.24816200139422878,
+          "z": 0.7981452386502901,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.24816200139422878,
+          "y": 0.5489806909936653,
+          "z": 0.7981452386502901,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplicityEvidence": "Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.",
+      "evidence": "Exact witness of AC order 7.",
+      "coordinateMethod": "100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.",
+      "diagnostics": {
+        "coefficientSource": "Saved exact Dicke amplitudes",
+        "squareFreeFactorizationExact": false,
+        "zeroMultiplicity": 1,
+        "infinityMultiplicity": 1,
+        "nonzeroRootStep": 4,
+        "projectiveDickeReconstructionError": 5.909477533302039e-16,
+        "exactFormulaVsSavedCoefficientsError": 0.0,
+        "maxUnitSphereError": 4.440892098500626e-16,
+        "minimumDistinctPointDistance": 0.6086899533932014,
+        "rootPrecisionDecimalDigits": 100,
+        "relativeReducedPolynomialReconstructionError": 1.4921095721272425e-101,
+        "inputFingerprint": "9fdcfcad36909db9b74f8081ae2d7c6ef1f794682341e3c853d637b5659327a4"
+      }
     }
   },
   "validation": {
-    "recordCount": 395,
+    "recordCount": 399,
     "allRecordsHaveCoordinates": true,
     "exactMultiplicityRecords": 169,
     "maximumProjectiveDickeReconstructionError": 1.7049310896958016e-11,

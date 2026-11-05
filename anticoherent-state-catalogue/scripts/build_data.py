@@ -14,6 +14,9 @@ witnesses['states'].extend(read('research/library42/states.json')['states'])
 witnesses['states'].extend(read('research/n21-n22/states.json')['states'])
 witnesses['states'].extend(read('research/n24-n26/states.json')['states'])
 witnesses['states'].extend(read('research/n23-n25/states.json')['states'])
+witnesses['states'].extend(read('research/n27-n30/states.json')['states'])
+next_batch=read('research/n27-n30/proofs.json')
+next_batch_bounds={row['n']:row for row in next_batch['upperBounds']}
 restrictions=read('research/restrictions.json')
 sector=read('research/sector-source-metadata.json')
 sources=[s for s in sector['sources'] if s.get('pdf') and s.get('id')!='mixed-ac-2026']
@@ -131,6 +134,7 @@ proofs.extend([
   'references':[{'title':'Exact states and proved maximum orders','url':'./research/n21-n22/index.html'},{'title':'Complete proof','url':'./research/n21-n22/n22-t7/proof.tex'},{'title':'Exact certificate','url':'./research/n21-n22/n22-t7/certificate.json'},{'title':'Independent verification','url':'./research/n21-n22/n22-t7/independent-verification.json'}],'kind':'exact catalogue certificate'}
 ])
 proofs.extend([{'id': 'n21-t5-six-copy', 'title': 'Twenty-one qubits: maximum pure AC order is four', 'summary': 'A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.', 'formulaLatex': 't_{\\max}(21)=4', 'bodyHtml': '<p>A hypothetical fifth-order state gives a positive, trace-one rotationally averaged six-copy moment. Vanishing multipoles through rank five impose linear contraction equations.</p><p>A strictly positive combination of these equations is certified using exact factorial Clebsch–Gordan sums and outward-rounded interval arithmetic. Rigorous projection and polar-normalization bounds control the complete symmetric representation. The positive certificate matrices contradict trace one.</p><p>The proof covers arbitrary complex symmetric states. The independently checked fourth-order radical state attains the maximum, and every higher order is excluded by nesting.</p>', 'references': [{'title': 'Analytical attaining state and maximum-order proof', 'url': './research/n21-n22/index.html#n21'}, {'title': 'Complete LaTeX proof', 'url': './research/n21-n22/n21-t5/proof.tex'}, {'title': 'Independent validated verification', 'url': './research/n21-n22/n21-t5/independent-verification.json'}, {'title': 'Complete certificate and verifier bundle', 'url': './research/n21-n22/n21-t5/certificate-bundle.zip'}], 'kind': 'validated catalogue theorem'}, {'id': 'n25-t6-four-copy-ppt', 'title': 'Twenty-five qubits: maximum pure AC order is five', 'summary': 'An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.', 'formulaLatex': 't_{\\max}(25)=5', 'bodyHtml': '<p>A hypothetical sixth-order state gives a positive, trace-one four-copy moment with positive partial transposes across the one–three and two–two splits. Vanishing multipoles through rank six impose exact contraction equations.</p><p>A rational separating identity expresses the negative trace as a sum of those vanishing equations and nonnegative matrix and vector expectations. The independently reconstructed physical representation, both partial-transpose maps and all positive certificate factors give a contradiction.</p><p>This excludes arbitrary complex symmetric states without a support or constellation-symmetry restriction. The exact fifth-order radical state attains the maximum; every higher order is excluded by nesting.</p>', 'references': [{'title': 'Exact attaining state and maximum-order proof', 'url': './research/n23-n25/index.html#n25'}, {'title': 'Complete LaTeX proof', 'url': './research/n23-n25/n25-t6/proof.tex'}, {'title': 'Exact rational separating identity', 'url': './research/n23-n25/n25-t6/source-identity.json'}, {'title': 'Independent exact verification', 'url': './research/n23-n25/n25-t6/independent-verification.json'}, {'title': 'Complete certificate and verifier bundle', 'url': './research/n23-n25/n25-t6/certificate-bundle.zip'}], 'kind': 'exact catalogue theorem'}])
+proofs.extend(next_batch['proofs'])
 proof_by_id={p['id']:p for p in proofs}
 MAX_N=read('research/library42/config.json')['maxQubits']
 MAX_ORDER=next(t for t in range(1,MAX_N+2) if ((t//2+1)**2 if t%2==0 else (t//2+1)*(t//2+2))>MAX_N)
@@ -156,6 +160,7 @@ for n in core+extended:
     elif n==24 and t>=8:proof='n24-t8-rectangular'
     elif n==25 and t>=6:proof='n25-t6-four-copy-ppt'
     elif n==26 and t>=7:proof='n26-t7-ppt'
+    elif n in next_batch_bounds and t>=next_batch_bounds[n]['excludedOrder']:proof=next_batch_bounds[n]['proofId']
     elif n==27 and t>=8:proof='n27-t8-three-copy'
     elif n==19 and t>=6:proof='n19-t6-three-copy'
     elif n==19 and t>=5:proof='n19-t5-four-copy'
@@ -193,6 +198,8 @@ for state in states:
     state['verification']['globalMaximumOrderProven']=bool(next_entry and next_entry['status']=='impossible')
     if state['verification']['globalMaximumOrderProven']:
         state['verification']['maximumOrderProofId']=next_entry['proofId']
+        if state['n']==28:state['notes']='This exact algebraic state has globally maximum AC order six. A rigorous four-copy positivity certificate excludes every seventh-order pure symmetric state, for arbitrary complex amplitudes. Its components are defined by a certified isolated polynomial root; the displayed decimals and Majorana coordinates render that exact state.'
+        if state['n']==30:state['notes']='This explicit octahedral radical state has globally maximum AC order seven. An independently reconstructed exact rational three-copy positivity certificate excludes every eighth-order pure symmetric state, for arbitrary complex amplitudes.'
         if state['n']==21:state['notes']='This exact radical state has globally maximum AC order four. A rigorously validated six-copy positivity certificate excludes every fifth-order pure symmetric state, for arbitrary complex amplitudes.'
         if state['n']==25:state['notes']='This exact radical state has globally maximum AC order five. An independently reconstructed exact four-copy partial-transpose positivity certificate excludes every sixth-order pure symmetric state, for arbitrary complex amplitudes.'
         if state['n']==15:state['notes']='This exact third-order formula from the supplied Julia source has globally maximum AC order three. An exact four-copy partial-transpose positivity certificate excludes every fourth-order state, for arbitrary complex amplitudes.'

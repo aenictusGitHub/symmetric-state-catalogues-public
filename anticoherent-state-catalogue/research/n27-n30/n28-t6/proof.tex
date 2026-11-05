@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,hyperref}
+\begin{document}
+\title{An exact algebraic sixth-order anticoherent state at $N=28$}
+\author{}\date{}\maketitle
+\section*{Exact definition}
+The certificate defines a state by an isolated real algebraic root;
+closed-form radical Dicke components are not asserted. Let $d_r$ be the
+positive powers of two in \texttt{certificate.json}, and define
+\[
+c_r=\frac{\sqrt{\binom{28}r}}{d_r}(x_r+i x_{29+r}),\qquad0\le r\le28.
+\]
+There are58 real variables. Nine are fixed to the saved rational center
+values. The49 active variables solve the following rational quadratic
+system $F(x)=0$:
+\begin{align*}
+F_{aa}&=\sum_{\ell=0}^{22}\frac{\binom{22}\ell}{d_{a+\ell}^2}
+(x_{a+\ell}^2+x_{29+a+\ell}^2)-\frac1{7\binom6a},\\
+F_{ab}^{\rm R}&=\sum_{\ell=0}^{22}\frac{\binom{22}\ell}{d_{a+\ell}d_{b+\ell}}
+(x_{a+\ell}x_{b+\ell}+x_{29+a+\ell}x_{29+b+\ell}),\\
+F_{ab}^{\rm I}&=\sum_{\ell=0}^{22}\frac{\binom{22}\ell}{d_{a+\ell}d_{b+\ell}}
+(x_{29+a+\ell}x_{b+\ell}-x_{a+\ell}x_{29+b+\ell}),\qquad a<b.
+\end{align*}
+These are the entries of $\rho_6-I_7/7$, divided by
+$\sqrt{\binom6a\binom6b}$. Hence a zero is normalized and exactly6-AC.
+
+\section*{Rational contraction proof}
+Let $x^0$ denote the rational center restricted to the active coordinates,
+$J_0$ its square Jacobian and $A$ the saved dyadic approximate inverse.
+Every computation in the independent verifier is over $\mathbb Q$.
+For $r=10^{-65}$ it verifies
+\[
+\eta=\|AF(x^0)\|_\infty<10^{-66},\quad
+\beta=\|I-AJ_0\|_\infty<10^{-76},\quad
+\|A\|_\infty<24000.
+\]
+Each equation's Hessian has entrywise absolute sum bounded by
+$H=4\sum_{\ell=0}^{22}\binom{22}\ell=2^{24}$, uniformly in all variables.
+Thus $T(x)=x-AF(x)$ on the closed active-coordinate infinity-norm ball
+has Lipschitz constant
+\[
+q\le\beta+\|A\|_\infty Hr<10^{-53}<1.
+\]
+The verifier also checks the strict self-mapping condition
+$\eta+qr<r$ using the full exact rationals, not the displayed coarse bounds.
+Banach's theorem supplies a unique fixed point in the ball. Because
+$\beta<1$, $AJ_0$ and consequently $A$ are invertible; its fixed point
+therefore satisfies $F=0$. The same estimate makes the root nonsingular.
+An isolated nonsingular zero of a rational polynomial system has real
+algebraic coordinates, which supplies the exact algebraic definition.
+The variables fixed to rational values are part of this definition.
+The scale factors satisfy $\binom{28}r<4d_r^2$, so every displayed
+rational-center real or imaginary Dicke component is within $2\cdot10^{-65}$
+of the corresponding exact component, before decimal rounding.
+
+\section*{The order is not seven}
+For the next reduction, the saved rational center gives
+$(\rho_7)_{00}-1/8\approx-2.67693\cdot10^{-5}$.
+All center variables have absolute value less than one. On the certified
+ball, the absolute gradient sum of this scaled diagonal reduction entry
+is bounded by $8\sum_{\ell=0}^{21}\binom{21}\ell=2^{24}$.
+Its variation is therefore at most $2^{24}10^{-65}$.
+The independent verifier checks, with exact rationals, that the entry
+cannot vanish throughout the isolating ball. Hence this exact state is
+sixth-order AC and not seventh-order AC. This construction alone is no
+universal upper bound for other28-qubit states.
+
+\section*{Reproduction and scope}
+Run \texttt{verify\_independently.py} with ordinary Python3; only the standard
+library is used. It reconstructs all49 equations, the exact Jacobian by
+central differences (exact for quadratics), the inverse defect and the
+universal Hessian bound; it checks the next-order interval independently.
+The optional \texttt{build.py} discovers the certificate from a numerical
+Li\`ege library seed and requires NumPy, SciPy and mpmath. Discovery is not
+a proof premise. Numerical coefficients and Majorana coordinates merely
+render the certified nearby root.
+\end{document}

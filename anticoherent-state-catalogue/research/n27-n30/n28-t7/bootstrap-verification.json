@@ -1,0 +1,1968 @@
+{
+  "passed": true,
+  "n": 28,
+  "copies": 4,
+  "precisionBits": 128,
+  "maximumExactInputCFPDistance": {
+    "upperRational": "102999904347755578722395305648632909725/11972621413014756705924586149611790497021399392059392",
+    "diagnosticApproximation": 8.602953421361026e-15
+  },
+  "stages": [
+    {
+      "copies": 3,
+      "previousIsometryDistance": {
+        "upperRational": "0",
+        "diagnosticApproximation": 0.0
+      },
+      "projectorPerturbation": {
+        "upperRational": "0",
+        "diagnosticApproximation": 0.0
+      },
+      "maximumIsometryDistance": {
+        "upperRational": "28311710903274977877605403298222350289/23945242826029513411849172299223580994042798784118784",
+        "diagnosticApproximation": 1.1823522153844657e-15
+      },
+      "checks": [
+        {
+          "J": 84,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "46607873356793839884460313409556753067/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+            "diagnosticApproximation": 1.2880430409720547e-38
+          },
+          "pointGramResidual": {
+            "upperRational": "0",
+            "diagnosticApproximation": 0.0
+          },
+          "exactRangeResidual": {
+            "upperRational": "46607873356793839884460313409556753067/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+            "diagnosticApproximation": 1.2880430409720547e-38
+          },
+          "polarDistanceBound": {
+            "upperRational": "186431493427175359537841253638227012271/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+            "diagnosticApproximation": 1.2880430409720547e-38
+          }
+        },
+        {
+          "J": 80,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "288328119124520659836628189158069215493/6129982163463555433433388108601236734474956488734408704",
+            "diagnosticApproximation": 4.703571909932114e-17
+          },
+          "pointGramResidual": {
+            "upperRational": "161010778978955/81129638414606681695789005144064",
+            "diagnosticApproximation": 1.9846110758699797e-18
+          },
+          "exactRangeResidual": {
+            "upperRational": "288328119124520659836628189158069215493/6129982163463555433433388108601236734474956488734408704",
+            "diagnosticApproximation": 4.703571909932114e-17
+          },
+          "polarDistanceBound": {
+            "upperRational": "294410934372768262849936986540177336123/6129982163463555433433388108601236734474956488734408704",
+            "diagnosticApproximation": 4.802802463725613e-17
+          }
+        },
+        {
+          "J": 78,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "335556397179460876451757655035012913165/24519928653854221733733552434404946937899825954937634816",
+            "diagnosticApproximation": 1.3685047861128897e-17
+          },
+          "pointGramResidual": {
+            "upperRational": "10853522969793215/81129638414606681695789005144064",
+            "diagnosticApproximation": 1.3377999929356439e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "335556397179460876451757655035012913165/24519928653854221733733552434404946937899825954937634816",
+            "diagnosticApproximation": 1.3685047861128897e-17
+          },
+          "polarDistanceBound": {
+            "upperRational": "123480901010930890929018920550008753291/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 8.057504750791109e-17
+          }
+        },
+        {
+          "J": 76,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "134055188491774687931077283674139581863/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 4.3737546021188085e-17
+          },
+          "pointGramResidual": {
+            "upperRational": "6404620267402653/81129638414606681695789005144064",
+            "diagnosticApproximation": 7.894303971468899e-17
+          },
+          "exactRangeResidual": {
+            "upperRational": "134055188491774687931077283674139581863/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 4.3737546021188085e-17
+          },
+          "polarDistanceBound": {
+            "upperRational": "255035044836934345594984608050735599767/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 8.320906587853258e-17
+          }
+        },
+        {
+          "J": 74,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "326200502423220132401443756886830056061/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 1.064278797962801e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "7497608983220337/324518553658426726783156020576256",
+            "diagnosticApproximation": 2.3103791443345254e-17
+          },
+          "exactRangeResidual": {
+            "upperRational": "326200502423220132401443756886830056061/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 1.064278797962801e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "180803479893621114800164836249643279993/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.1797977551795272e-16
+          }
+        },
+        {
+          "J": 72,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "229034857771718756136094031910226720549/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.494522180745203e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "234283783654723726909394694881299891135/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.0575460405235367e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "229034857771718756136094031910226720549/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.494522180745203e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "115829660356610629517177214695923548919/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.0232952010069717e-16
+          }
+        },
+        {
+          "J": 70,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "89803477129895513364517148896794063459/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.171990061115021e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "78640110509076643/162259276829213363391578010288128",
+            "diagnosticApproximation": 4.846570997099266e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "89803477129895513364517148896794063459/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.171990061115021e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "275487188168509786815699964499586662531/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.5952755596646544e-16
+          }
+        },
+        {
+          "J": 68,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "49469587160279538921400308681245024733/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 1.291216472508058e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "121699959455302554530173065480853877195/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 6.3530343135114e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "49469587160279538921400308681245024733/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 1.291216472508058e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "85584773307791057987235562475246182333/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 4.467733629263759e-16
+          }
+        },
+        {
+          "J": 66,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "260440291097146711264024612004954142601/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.6994521951430478e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "318936439688571257806552358099626097467/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.1623147498147517e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "260440291097146711264024612004954142601/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.6994521951430478e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "289688365392859012194357184885094448823/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.780609570050424e-16
+          }
+        },
+        {
+          "J": 64,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "160761622693026144444242422071163869685/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.098037069682993e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "258340319981949553749861491005723989673/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.371498488484768e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "160761622693026144444242422071163869685/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.098037069682993e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "289931782684000949070790336364683911183/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.7837863139253775e-16
+          }
+        },
+        {
+          "J": 62,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "11785432242636751337885377475890673147/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.2304565387227434e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "55213500582629387464541327771525919841/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 5.764558432730731e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "11785432242636751337885377475890673147/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.2304565387227434e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "4924022816743931221718409924401099441/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 4.112735755088109e-16
+          }
+        },
+        {
+          "J": 60,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "293565568736855434228105718154456870599/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.8312094346582615e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "63005487559295349365013596675331774325/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 6.578079831665527e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "293565568736855434228105718154456870599/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.8312094346582615e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "68198439871754616171153954554269726163/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 7.120249350491026e-16
+          }
+        },
+        {
+          "J": 58,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "245614387461408410243301075978624738067/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.6027086599066492e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "62268869102978088834404190478775242911/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 3.2505866381990254e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "245614387461408410243301075978624738067/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.6027086599066492e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "247344931936660402752184257593760750919/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.228001979006162e-16
+          }
+        },
+        {
+          "J": 56,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "146585660569482709028359739627915906969/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.9130321317171214e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "184964314658184832469598480627783362235/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.655587750874707e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "146585660569482709028359739627915906969/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.9130321317171214e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "129128572471463119321417296232189512633/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 6.740826007154477e-16
+          }
+        },
+        {
+          "J": 54,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "105021947564496214374064217033541709475/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.370600367361028e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "58836400015571953281887579037347771553/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.2285613564881924e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "105021947564496214374064217033541709475/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.370600367361028e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "71964143461133999049321959125229921945/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 7.513407149801992e-16
+          }
+        },
+        {
+          "J": 52,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "316204710710823779693933991218490031963/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 2.0633320116035193e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "263869512409317154859273791796948424517/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 6.887315633172437e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "316204710710823779693933991218490031963/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 2.0633320116035193e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "105492966941182276612734695375000049039/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 5.506989828189739e-16
+          }
+        },
+        {
+          "J": 50,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "117657555310290403949776059104426142953/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.071005485440086e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "284727362406452563171991916668344485203/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 7.43173092028904e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "117657555310290403949776059104426142953/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.071005485440086e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "130010618256758365026168096805965943423/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 6.786870945584608e-16
+          }
+        },
+        {
+          "J": 48,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "131792025625061514722338530025726549255/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.4399323746311597e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "75087910920743157413439294483445205903/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 7.839543689980808e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "131792025625061514722338530025726549255/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.4399323746311597e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "70491961866636970412436953728428973605/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 7.359704219621565e-16
+          }
+        },
+        {
+          "J": 46,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "154208827029735469182087234502001809201/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.012519096043889e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "199323028601540284877037409100058811533/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 5.202573796434514e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "154208827029735469182087234502001809201/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.012519096043889e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "176765927815637897750677121552085620081/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 4.613805994261146e-16
+          }
+        },
+        {
+          "J": 44,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "13226960278265445529565633200747593055/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.7619181760577444e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "103271357915786884441040239538279992549/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.0782032851586544e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "13226960278265445529565633200747593055/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.7619181760577444e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "312358398057697403405077031094943244663/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 8.152934601851018e-16
+          }
+        },
+        {
+          "J": 42,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "119203180326150594687758951694638541273/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.111348180727457e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "52829388984874305319007308235541999103/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.1031291135508235e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "119203180326150594687758951694638541273/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.111348180727457e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "330520736265647892785555137187663507663/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 8.626993748481577e-16
+          }
+        },
+        {
+          "J": 40,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "92123393605899036038840211121607333309/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.4045327676150386e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "182873523241994054427931673661706861967/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.546443346316928e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "92123393605899036038840211121607333309/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.4045327676150386e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "137498458423946572593625521762069107433/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 7.177754440773504e-16
+          }
+        },
+        {
+          "J": 38,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "232387645092415496354891241131080241027/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.0328002776583884e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "291386682246924530193256130082890246689/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.5211094556648984e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "232387645092415496354891241131080241027/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.0328002776583884e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "203790252396566203399047009909983710393/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.0638347555982884e-15
+          }
+        },
+        {
+          "J": 36,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "36084624368584481482464770154682468549/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.767410569893964e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "181133954176202657417533579314478198305/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.455633603937723e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "36084624368584481482464770154682468549/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.767410569893964e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "162736225825270326677459654685184710461/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 8.495227371862827e-16
+          }
+        },
+        {
+          "J": 34,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "269556894479859770660706318304286434783/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.5178816158584716e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "291165500148356278567421614703471055417/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.5199548312360755e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "269556894479859770660706318304286434783/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.5178816158584716e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "212971973694143149122054010880660842691/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.1117655772038852e-15
+          }
+        },
+        {
+          "J": 32,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "161101087586449193884273731441361728943/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 4.204934586509114e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "90234761232674610357577864424229655663/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 9.420948650245628e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "161101087586449193884273731441361728943/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 4.204934586509114e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "85392652512949622743814704531172165767/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 8.915408911631929e-16
+          }
+        },
+        {
+          "J": 30,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "325632816022592048077718384127885517321/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.249706538638323e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "146332480201208591466020459417389041957/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 7.638911894962016e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "325632816022592048077718384127885517321/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.249706538638323e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "77287222053126169511625107087373388527/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 8.069162486119333e-16
+          }
+        },
+        {
+          "J": 28,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "22606488780943544000261321003866091205/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.720455111937581e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "199061898360151739754963886462727826865/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.039151595822213e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "22606488780943544000261321003866091205/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.720455111937581e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "189956904303850093078046501583617692393/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.91621309104865e-16
+          }
+        },
+        {
+          "J": 26,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "330216593825564512343120563204697827865/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.30952763019442e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "101642837404091132664111146774104084815/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.0612007376847414e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "330216593825564512343120563204697827865/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.30952763019442e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "92098492930241152752111991986359231979/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 9.61553131861813e-16
+          }
+        },
+        {
+          "J": 24,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "324742625949569949166483499976235192405/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.2380890161166046e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "145308030738807263414402822912251067889/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.5170866275456096e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "324742625949569949166483499976235192405/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.2380890161166046e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "28311710903274977877605403298222350289/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.1823522153844657e-15
+          }
+        },
+        {
+          "J": 22,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "142027973304439955049107662927572869393/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.707103075136949e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "111860080797150122769715064415781494705/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 5.839368680130558e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "142027973304439955049107662927572869393/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.707103075136949e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "253888054101590120474245866055058400193/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 6.626787415202228e-16
+          }
+        },
+        {
+          "J": 20,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "84817285384763396714048734233283033927/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 4.4276688902776203e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "194450574402168617591900637199512929747/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.0150793615610802e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "84817285384763396714048734233283033927/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 4.4276688902776203e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "182042572585847748959987460546173969489/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.503065698083023e-16
+          }
+        },
+        {
+          "J": 18,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "330245606764596863044943397392251591375/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.3099062667158153e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "236398437990712858961685016336394901705/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 6.170287134594683e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "330245606764596863044943397392251591375/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 4.3099062667158153e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "283322022377654914819582467771593096085/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 7.395049834013159e-16
+          }
+        },
+        {
+          "J": 16,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "269288322030248248725466079365717428119/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.5143765818476087e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "45755797216553920628945531005559205589/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 9.55425625644844e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "269288322030248248725466079365717428119/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.5143765818476087e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "158833674940669937127145331956659157273/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 8.291504710071831e-16
+          }
+        },
+        {
+          "J": 14,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "114528005136777612559628544176771426873/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.9893204145198915e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "147443425814008181270531712235671428197/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 7.696905961929253e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "114528005136777612559628544176771426873/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.9893204145198915e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "16373214434424114957478751610668942107/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.837773395484519e-16
+          }
+        },
+        {
+          "J": 12,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "121875175401156423364071414708950002819/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.1810905063330797e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "212910963864834305609075983977446288257/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.1114470910344606e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "121875175401156423364071414708950002819/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.1810905063330797e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "334786139265990807517763429229627350029/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 8.738325961505384e-16
+          }
+        },
+        {
+          "J": 10,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "103440489801342241877490908500584215977/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.6999227610906173e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "97691255840982675/324518553658426726783156020576256",
+            "diagnosticApproximation": 3.010344238863088e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "103440489801342241877490908500584215977/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 2.6999227610906173e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "20138403604119345638696388458893664831/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.205094880522162e-16
+          }
+        },
+        {
+          "J": 8,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "271542327715166798612864388583639234497/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.543792728580995e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "85090537554900942436806491833858994499/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 8.883866638262263e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "271542327715166798612864388583639234497/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.543792728580995e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "305952238967385346033937730223036125757/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 7.985726047712128e-16
+          }
+        },
+        {
+          "J": 6,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "220056979779769342981552004280774031275/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.43593879337119e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "91732016247376053/324518553658426726783156020576256",
+            "diagnosticApproximation": 2.8267109911974075e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "220056979779769342981552004280774031275/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 1.43593879337119e-16
+          },
+          "polarDistanceBound": {
+            "upperRational": "218326539623050287545884499639328683253/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.8492942889698937e-16
+          }
+        },
+        {
+          "J": 4,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "104258704757311065651447289627577123891/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 3.4015989599031046e-17
+          },
+          "pointGramResidual": {
+            "upperRational": "144699802763658327/324518553658426726783156020576256",
+            "diagnosticApproximation": 4.458906929431304e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "104258704757311065651447289627577123891/3064991081731777716716694054300618367237478244367204352",
+            "diagnosticApproximation": 3.4015989599031046e-17
+          },
+          "polarDistanceBound": {
+            "upperRational": "196896050851564921404491283420812434375/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.5696133607059626e-16
+          }
+        },
+        {
+          "J": 0,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "79878472870971570284524949024130378411/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+            "diagnosticApproximation": 1.1037503290195989e-38
+          },
+          "pointGramResidual": {
+            "upperRational": "0",
+            "diagnosticApproximation": 0.0
+          },
+          "exactRangeResidual": {
+            "upperRational": "79878472870971570284524949024130378411/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+            "diagnosticApproximation": 1.1037503290195989e-38
+          },
+          "polarDistanceBound": {
+            "upperRational": "319513891483886281138099796096521513647/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+            "diagnosticApproximation": 1.1037503290195989e-38
+          }
+        }
+      ]
+    },
+    {
+      "copies": 4,
+      "previousIsometryDistance": {
+        "upperRational": "28311710903274977877605403298222350289/23945242826029513411849172299223580994042798784118784",
+        "diagnosticApproximation": 1.1823522153844657e-15
+      },
+      "projectorPerturbation": {
+        "upperRational": "169870265419649967688874743224436558115/95780971304118053647396689196894323976171195136475136",
+        "diagnosticApproximation": 1.7735283230766995e-15
+      },
+      "maximumIsometryDistance": {
+        "upperRational": "102999904347755578722395305648632909725/11972621413014756705924586149611790497021399392059392",
+        "diagnosticApproximation": 8.602953421361026e-15
+      },
+      "checks": [
+        {
+          "J": 112,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "646277787/91343852333181432387730302044767688728495783936",
+            "diagnosticApproximation": 7.075219300393291e-39
+          },
+          "pointGramResidual": {
+            "upperRational": "0",
+            "diagnosticApproximation": 0.0
+          },
+          "exactRangeResidual": {
+            "upperRational": "169870265419649967688875420895813339427/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.7735283230766995e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "21233783177456264790467363256080640933/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 1.773528323076701e-15
+          }
+        },
+        {
+          "J": 108,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "62412087515433900280038980033938402333/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 4.0725787352157573e-17
+          },
+          "pointGramResidual": {
+            "upperRational": "3799484898364515/20282409603651670423947251286016",
+            "diagnosticApproximation": 1.873290685185872e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "173771020889364602367196474510659025597/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.8142541104288574e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "11421393809841733967188493867078825973/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 1.9079186446881525e-15
+          }
+        },
+        {
+          "J": 106,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "52045946961610686771724858541262778413/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 1.3584626009992497e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "17992000002928313/81129638414606681695789005144064",
+            "diagnosticApproximation": 2.2176852201635118e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "182881752160052658217744806180283096811/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.9093745831766246e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "193502354381755236382379507616675864139/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.0202588441848022e-15
+          }
+        },
+        {
+          "J": 104,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "40953406173517488725094286163643586633/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 2.1378675542704962e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "126001375207733031223555614214143325075/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 1.6443946732339577e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "95173484253204363009054933075903341849/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.987315078503749e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "6194439201777882185407067402444954003/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 2.069534812165449e-15
+          }
+        },
+        {
+          "J": 102,
+          "multiplicity": 1,
+          "pointProjectorResidual": {
+            "upperRational": "338174779001206038810163941107032745963/1532495540865888858358347027150309183618739122183602176",
+            "diagnosticApproximation": 2.2066933963809834e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "37942675292611117/1298074214633706907132624082305024",
+            "diagnosticApproximation": 2.922997380648059e-17
+          },
+          "exactRangeResidual": {
+            "upperRational": "191006189107225347597161693901763186607/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.9941976627147977e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "192406026748414857959004729206678224909/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.00881264961804e-15
+          }
+        },
+        {
+          "J": 100,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "150583758985469164237307271739707735467/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.93041950126358e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "281492107531920296006949675358227163891/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 7.347286827937442e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "12969762822876082572029983747557756739/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 2.166570273203058e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "242702718607507589415704277923379192149/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.533934614599933e-15
+          }
+        },
+        {
+          "J": 98,
+          "multiplicity": 2,
+          "pointProjectorResidual": {
+            "upperRational": "252323606541276572914914008998787427963/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 3.2929767142905873e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "124953092842483705770327228653094486097/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 3.2614279000611737e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "50352679059327391751055036467860373165/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.1028259945057584e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "1695545725332970650506820975449852505/748288838313422294120286634350736906063837462003712",
+            "diagnosticApproximation": 2.2658973895088194e-15
+          }
+        },
+        {
+          "J": 96,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "47102605034978774614852060063379410341/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 4.917741425425869e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "161492795506267419005432920345196620123/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 4.2151586402664755e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "27121608806828597263154081710957914519/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 2.265302465619287e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "29644933736614056670342993926270893585/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 2.4760603976326132e-15
+          }
+        },
+        {
+          "J": 94,
+          "multiplicity": 3,
+          "pointProjectorResidual": {
+            "upperRational": "196281810735083030841287509362818473743/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 5.123194306305913e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "27522066899586643877503692215304554583/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.746875715469665e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "218940718103420774210361776593772958429/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.285847753707291e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "246462785003007672274587252311124711477/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.5731915394807773e-15
+          }
+        },
+        {
+          "J": 92,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "194960171498365229662398862880567937753/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 5.088697912640164e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "245666315867094397118342088891578641311/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 6.412190034257151e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "218610308294241329566495610969407515341/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.2823981143407167e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "249318597777628383606850780051910087745/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.6030076160535767e-15
+          }
+        },
+        {
+          "J": 90,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "172767078165161074402661578578292429367/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 4.509431148296704e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "337000873669364341065025181034196982599/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 8.796133226696438e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "53265508740235077749903608036323190557/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.224471437906371e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "255187144169611099871400035899904490693/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.664278099241195e-15
+          }
+        },
+        {
+          "J": 88,
+          "multiplicity": 7,
+          "pointProjectorResidual": {
+            "upperRational": "38113309302047654162298767053966844315/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 7.958430319323561e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "61251959921703684089021472267688547155/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 6.395003004012153e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "61524221005936332582378789970633028467/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.569371355009056e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "276722863984597493427498926076612465543/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.889121505209667e-15
+          }
+        },
+        {
+          "J": 86,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "237479970917379990098349565342008184901/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 6.198516461149357e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "29496478574691835616162083832537622785/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.1591521098771e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "229240258148995017526302317800937293341/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.393379969191636e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "258736736723687132013817850877171948961/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.7013375746854937e-15
+          }
+        },
+        {
+          "J": 84,
+          "multiplicity": 8,
+          "pointProjectorResidual": {
+            "upperRational": "210652299759859401031634431001336476981/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.09965631425374e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "28685906458040046712890636738453808907/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.1979793509071132e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "275196415299579769955227111650731754933/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.8731846373304405e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "332568228215660275908626528100588787355/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.4721743127840015e-15
+          }
+        },
+        {
+          "J": 82,
+          "multiplicity": 7,
+          "pointProjectorResidual": {
+            "upperRational": "98314639105526250649577310153639221927/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.0264527261199246e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "49118197540678705928006292806440068613/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.0256358203911196e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "268184904525176305450966570248024447855/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.7999810491966252e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "317303102065855399429643746296370163493/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.312798959392189e-15
+          }
+        },
+        {
+          "J": 80,
+          "multiplicity": 10,
+          "pointProjectorResidual": {
+            "upperRational": "109029908497554442346031956584115647973/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.1383253585032997e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "190070955976584952011132600218054883797/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 9.922166866166085e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "278900173917204494308962654493002624335/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.91185368158e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "163208956455675575078484148337989918295/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.4079620248883086e-15
+          }
+        },
+        {
+          "J": 78,
+          "multiplicity": 8,
+          "pointProjectorResidual": {
+            "upperRational": "56122235239058120637417084734437464801/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.1718869515503686e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "230606119580409174135898159549031254337/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.203820113956677e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "282114735897766311210330050360261039429/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.9454152746270693e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "339766265792869037567348567603708539607/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.547325331605412e-15
+          }
+        },
+        {
+          "J": 76,
+          "multiplicity": 12,
+          "pointProjectorResidual": {
+            "upperRational": "301213783643791088208287891850669308703/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.5724093185868566e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "43807738391336946888311591432390624215/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 9.147482593852847e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "320477157241545589487283496120318401735/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.345937641663557e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "45535611954110385317768756466537070577/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 3.803311771356205e-15
+          }
+        },
+        {
+          "J": 74,
+          "multiplicity": 10,
+          "pointProjectorResidual": {
+            "upperRational": "242395855242508939122556621677169267659/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.2653654057906137e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "70400336766782178909841227806779725431/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 7.350138112846153e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "291068193040904499678648659076065116931/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.0388937288673138e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "163134180712148018932187502843226266849/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.406400634509626e-15
+          }
+        },
+        {
+          "J": 72,
+          "multiplicity": 14,
+          "pointProjectorResidual": {
+            "upperRational": "44780925543448268788242771857502268441/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.8701387105905423e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "6863998168787921236275809087682804467/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 1.146615754729613e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "174496983796721570114903562895121454081/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.643667033667243e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "25244122058984197604353613406774795057/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 4.216974911032056e-15
+          }
+        },
+        {
+          "J": 70,
+          "multiplicity": 12,
+          "pointProjectorResidual": {
+            "upperRational": "89416396264129539818859626511406878425/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.8671014721748832e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "150955083766220487943270843392541584211/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.576044612106896e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "174351528973954590594076141075530313425/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.6406297952515845e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "53022574978877511206019029885493413913/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 4.428652101305039e-15
+          }
+        },
+        {
+          "J": 68,
+          "multiplicity": 16,
+          "pointProjectorResidual": {
+            "upperRational": "196192934110282126531837829782078883567/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.0483498072633026e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "213713857909071651671206443123699166365/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.1156383935098136e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "183031599764966094488803790969229483389/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.821878130340003e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "104872916001800204080397266216742019497/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.3796973270949174e-15
+          }
+        },
+        {
+          "J": 66,
+          "multiplicity": 14,
+          "pointProjectorResidual": {
+            "upperRational": "339798148878296632496691163104074143507/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.7738291032745415e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "121351434962010295543320038052950667609/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.266968097209021e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "42471167482349798943415475042385134257/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 3.547357426351242e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "200222528669902080589589448787519062751/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.180841474955759e-15
+          }
+        },
+        {
+          "J": 64,
+          "multiplicity": 19,
+          "pointProjectorResidual": {
+            "upperRational": "113725906214303888802759804156492341783/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.3747077246316105e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "20249225603369072753273431944561672917/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 1.6912942374806314e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "198661038924128944472347431658520879733/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.1482360477083114e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "119579745065433759574517526943776382191/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.9938831664486366e-15
+          }
+        },
+        {
+          "J": 62,
+          "multiplicity": 16,
+          "pointProjectorResidual": {
+            "upperRational": "121092686300311453654633888613746352051/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.5285332702635713e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "299596317924013842704772805378512092805/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.5639657535563792e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "51506954752534125979222669048047194391/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 4.302061593340272e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "243477358750638692069620348597740339655/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.0840444701184716e-15
+          }
+        },
+        {
+          "J": 60,
+          "multiplicity": 21,
+          "pointProjectorResidual": {
+            "upperRational": "338352300703177731123805914128247429633/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.5325628472576417e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "90519310018452506110068437875196969633/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.8901313859313654e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "127055641530706964837810190109641635579/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.306091170334343e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "149685469035320439143072939374125041945/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.2511568633000404e-15
+          }
+        },
+        {
+          "J": 58,
+          "multiplicity": 19,
+          "pointProjectorResidual": {
+            "upperRational": "158862169246809368841712710458487115687/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.3171968729028576e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "207128821406042751157161756397762590589/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.162525798035391e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "121898650978317222261678952174350426177/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.090725195979559e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "295579507308145780860270972638669751963/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.171988094997268e-15
+          }
+        },
+        {
+          "J": 56,
+          "multiplicity": 24,
+          "pointProjectorResidual": {
+            "upperRational": "156220976773610137818568366996951308199/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.2620462007549822e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "48610453579135235839158778869854469805/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.0300672635607426e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "241156109483435207875021958810586129071/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.0355745238316835e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "289766563062571075564583947716773096667/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.050608155612068e-15
+          }
+        },
+        {
+          "J": 54,
+          "multiplicity": 20,
+          "pointProjectorResidual": {
+            "upperRational": "77495957437909143767308916102595420755/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 3.236382190857037e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "528699345298879837199956896242278165/374144419156711147060143317175368453031918731001856",
+            "diagnosticApproximation": 1.4130889523636941e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "239927047585643331389504053716349142701/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.009910513933738e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "68440951421193063482601924173473487867/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 5.716454990115597e-15
+          }
+        },
+        {
+          "J": 52,
+          "multiplicity": 26,
+          "pointProjectorResidual": {
+            "upperRational": "50726731029162639418345743403129212213/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 4.236894267283896e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "102795424887252333591525216932516767837/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.146468624981102e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "287842056826475632673119105347412909397/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.010422590360597e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "339239769270102692075976405679667562783/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 7.083656902851167e-15
+          }
+        },
+        {
+          "J": 50,
+          "multiplicity": 22,
+          "pointProjectorResidual": {
+            "upperRational": "155304595035950679974030588191057451237/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.2429112572441293e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "267654413644530242461049922357728476289/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.3972212329873427e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "240239727745775723155053384185879985555/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.0164395803208305e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "17106033090708913607710160743871647975/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 5.7150501968145146e-15
+          }
+        },
+        {
+          "J": 48,
+          "multiplicity": 27,
+          "pointProjectorResidual": {
+            "upperRational": "205550450955357190124905179529295227317/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.2920936832579325e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "188807771861338307080209384512162150119/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.971245115711419e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "145242791832591128841662652206658473097/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.065622006334633e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "337687526630517738702901932413376281729/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 7.051244564190362e-15
+          }
+        },
+        {
+          "J": 46,
+          "multiplicity": 23,
+          "pointProjectorResidual": {
+            "upperRational": "210553654921613115823075157638836912229/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.396565456682949e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "21996027843616772017461985059745387471/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 1.8371939682070078e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "147744393815719088844334640463554038637/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.17009377975965e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "169740421659336326762921683589500700595/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.088690763863174e-15
+          }
+        },
+        {
+          "J": 44,
+          "multiplicity": 28,
+          "pointProjectorResidual": {
+            "upperRational": "105524729803806149541508354614060396737/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.4069183415879255e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "115018370288299243298323726154945820913/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.401695633741273e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "295984592317437384921622771051395564077/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.180446664664627e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "176746888730793977879583769761645790325/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.381294481535284e-15
+          }
+        },
+        {
+          "J": 42,
+          "multiplicity": 23,
+          "pointProjectorResidual": {
+            "upperRational": "12080035253063937879372321847279394743/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 4.035886490132368e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "195226674362901581924783112401314315937/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.0382615847883757e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "139107848379424038237201810919037885085/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.8094148132090686e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "327022365349574304960983826499647601209/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.8285456056032736e-15
+          }
+        },
+        {
+          "J": 40,
+          "multiplicity": 29,
+          "pointProjectorResidual": {
+            "upperRational": "112759799109289268844613752860863208181/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.709068934006152e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "29133932867408299400340464683062263819/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 2.433379613568876e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "155227365464201812436687541630721712335/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.482597257082854e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "23045162291451329087344296648690384847/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 7.699287063867314e-15
+          }
+        },
+        {
+          "J": 38,
+          "multiplicity": 23,
+          "pointProjectorResidual": {
+            "upperRational": "12973647395819545630579696109333614435/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 4.3344383650907496e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "25194639705287910177351074713772963481/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 2.1043544964931614e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "146256745521468901650263361721652490157/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 6.107966688167451e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "171451385226757271747892556730884999697/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.16014393641405e-15
+          }
+        },
+        {
+          "J": 36,
+          "multiplicity": 28,
+          "pointProjectorResidual": {
+            "upperRational": "232820131491862559000980389923001785053/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.861511181644335e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "42916883637770348949723871143940127777/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.79229268834634e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "79438816050421904739931607826969021883/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 6.635039504721037e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "180336073919729520649359947866559283617/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.531185848894228e-15
+          }
+        },
+        {
+          "J": 34,
+          "multiplicity": 23,
+          "pointProjectorResidual": {
+            "upperRational": "196992492897473755193294265965618092483/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.1133951810113696e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "216588076418420909959663856014418229263/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.2612850284293245e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "140963812803649417534501814885151144389/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.886923504088071e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "168037322355952461506281661139880711515/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.017566018302752e-15
+          }
+        },
+        {
+          "J": 32,
+          "multiplicity": 28,
+          "pointProjectorResidual": {
+            "upperRational": "11990243869909570185856369127817438679/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 4.005887585111697e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "241592790707190221238510307756938202217/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.5223464266205774e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "69194758657094553484013380060751461297/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 5.779415908188399e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "337177232305176607142553510420098481689/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 7.040589121498705e-15
+          }
+        },
+        {
+          "J": 30,
+          "multiplicity": 21,
+          "pointProjectorResidual": {
+            "upperRational": "12515282828392218184770110072095317379/2993155353253689176481146537402947624255349848014848",
+            "diagnosticApproximation": 4.181300785068695e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "85211199037787478216708310673545853829/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.779292856975316e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "285179657964100550362996601186758040017/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.954829108145397e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "327785257482995157521374627090964600637/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.8444755366330726e-15
+          }
+        },
+        {
+          "J": 28,
+          "multiplicity": 27,
+          "pointProjectorResidual": {
+            "upperRational": "8565417091928013332662271569862851125/1496577676626844588240573268701473812127674924007424",
+            "diagnosticApproximation": 5.723336132631429e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "52971137739499435364818755066098692577/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.212177931305734e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "179514239825760752217721574223541010853/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 7.49686445570813e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "102999904347755578722395305648632909725/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 8.602953421361026e-15
+          }
+        },
+        {
+          "J": 26,
+          "multiplicity": 20,
+          "pointProjectorResidual": {
+            "upperRational": "289341959588362548374357138845182028733/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 3.0208710106902252e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "32062466657172702108018458564904219751/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.3389910843718576e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "229606112504006314895308665232883845063/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.794399333766926e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "261668579161179578147862782040052888477/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.463894875952866e-15
+          }
+        },
+        {
+          "J": 24,
+          "multiplicity": 25,
+          "pointProjectorResidual": {
+            "upperRational": "196001942949775304869494856593497274111/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.092711533012994e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "199467723586605281496874338847902195705/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.082540204705872e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "140468537829800188577173279162670461059/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.866239856089696e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "330804006556252547513172406246677007439/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.907509958442649e-15
+          }
+        },
+        {
+          "J": 22,
+          "multiplicity": 18,
+          "pointProjectorResidual": {
+            "upperRational": "19508741288637282086643972551095563005/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 3.258892203411767e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "46394087230335684756363531688272310393/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.9375074860340656e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "60251265754730830704704219578077032191/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 5.032420526488468e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "287399150249259636466816301162687749505/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 6.001174269505514e-15
+          }
+        },
+        {
+          "J": 20,
+          "multiplicity": 23,
+          "pointProjectorResidual": {
+            "upperRational": "184159057065268494183345485026467946889/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.845420537249254e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "188989752897457359009753136460649154603/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.973145086380345e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "134547094887546780911226370182742599625/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.618948860325955e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "79085406999864670223662286786588773217/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 6.605521403516144e-15
+          }
+        },
+        {
+          "J": 18,
+          "multiplicity": 15,
+          "pointProjectorResidual": {
+            "upperRational": "145270591322976731983623547029816469315/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.0333914836115448e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "131138508653630514785994627434859965607/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 1.3691499143107174e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "230205724032801773972525754455158182151/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.806919806688246e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "262990351196209967181019012327904937089/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 5.491494763843616e-15
+          }
+        },
+        {
+          "J": 16,
+          "multiplicity": 21,
+          "pointProjectorResidual": {
+            "upperRational": "151073756869437922060476499201274193499/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.1545672342318913e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "53297868741982719610904129715392752809/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.225822854635896e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "118004444789631500215096822172046193335/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.9280955573085925e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "9040836197538947851130670994768991989/1496577676626844588240573268701473812127674924007424",
+            "diagnosticApproximation": 6.041006984626554e-15
+          }
+        },
+        {
+          "J": 14,
+          "multiplicity": 12,
+          "pointProjectorResidual": {
+            "upperRational": "12200403926152626784925135682107678073/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 2.038050566418188e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "253176817094135275046973256802069910983/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.3216446526224049e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "182538364119046054250870439926311637643/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.811578889494889e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "107092733127906660983992762041844222959/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 4.472401215806099e-15
+          }
+        },
+        {
+          "J": 12,
+          "multiplicity": 17,
+          "pointProjectorResidual": {
+            "upperRational": "61583777071190229504516356416860163651/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 2.5718585323447212e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "326536581108584422729875355450072722167/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.704600489338247e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "208102686852205515243704474034208509505/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 4.345386855421422e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "124459879745389518811239702229802065959/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 5.197687100090556e-15
+          }
+        },
+        {
+          "J": 10,
+          "multiplicity": 9,
+          "pointProjectorResidual": {
+            "upperRational": "37943337066230828327285839630072160757/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 1.5845876920899203e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "197820130689111933499418960703671012547/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.0326692661165713e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "160821806842286684353959632356629743731/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 3.3581160151666206e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "23193665397303244056795763991768573741/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 3.874450648224912e-15
+          }
+        },
+        {
+          "J": 8,
+          "multiplicity": 14,
+          "pointProjectorResidual": {
+            "upperRational": "22980190088537388465406188411140426109/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 1.9193950343704118e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "287960694218363356225607115422136468733/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.5032249636728347e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "88427946531987300772184008196890586541/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 3.692923357447113e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "53212744960317590289344089545556323189/11972621413014756705924586149611790497021399392059392",
+            "diagnosticApproximation": 4.444535839283537e-15
+          }
+        },
+        {
+          "J": 6,
+          "multiplicity": 4,
+          "pointProjectorResidual": {
+            "upperRational": "171825851025571976928555039281858104623/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 8.96972794731851e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "192725060893677381863533032299001427995/766247770432944429179173513575154591809369561091801088",
+            "diagnosticApproximation": 2.5151794018896016e-16
+          },
+          "exactRangeResidual": {
+            "upperRational": "255783190932435977515861891716517078053/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.670501117808551e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "267828507238291156174384643632633476739/95780971304118053647396689196894323976171195136475136",
+            "diagnosticApproximation": 2.7962600879030343e-15
+          }
+        },
+        {
+          "J": 4,
+          "multiplicity": 10,
+          "pointProjectorResidual": {
+            "upperRational": "283977357897234662635682826400798543707/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.4824309778377931e-15
+          },
+          "pointGramResidual": {
+            "upperRational": "56693009373109746229772184112708601639/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 1.1838052715732329e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "19491184023016712472085875005483831793/5986310706507378352962293074805895248510699696029696",
+            "diagnosticApproximation": 3.2559593009144936e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "92137988435344417565383067032054055089/23945242826029513411849172299223580994042798784118784",
+            "diagnosticApproximation": 3.847861936701115e-15
+          }
+        },
+        {
+          "J": 0,
+          "multiplicity": 5,
+          "pointProjectorResidual": {
+            "upperRational": "298592847540227671548464377488534259105/383123885216472214589586756787577295904684780545900544",
+            "diagnosticApproximation": 7.7936369686666e-16
+          },
+          "pointGramResidual": {
+            "upperRational": "337583041724848478960114073111936529105/191561942608236107294793378393788647952342390272950272",
+            "diagnosticApproximation": 1.762265704390149e-15
+          },
+          "exactRangeResidual": {
+            "upperRational": "122259238652353517627131154973502370023/47890485652059026823698344598447161988085597568237568",
+            "diagnosticApproximation": 2.552892019943361e-15
+          },
+          "polarDistanceBound": {
+            "upperRational": "5139284964623742254544751548946519831/1496577676626844588240573268701473812127674924007424",
+            "diagnosticApproximation": 3.434024872138439e-15
+          }
+        }
+      ]
+    }
+  ],
+  "seconds": 0.7995519638061523,
+  "method": "Exact dyadic CFP inputs; exact-integer Racah coefficients enclosed by Arb; validated projector and Gram residuals; spectral-gap-one projection and polar-normalization perturbation bounds. No floating residual is used as a proof bound."
+}

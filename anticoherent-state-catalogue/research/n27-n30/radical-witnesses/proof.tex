@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,hyperref}
+\begin{document}
+\title{Exact pure anticoherent states at $N=27,29,30$}\author{}\date{}\maketitle
+Throughout, $D_N^r$ denotes the normalized Dicke vector with $r$ excitations.
+Anticoherence of order $t$ means $\rho_t=I_{\mathrm{sym},t}/(t+1)$.
+The constructions below establish exact attainment. A separate universal
+exclusion theorem is needed whenever a global maximum order is claimed.
+
+\section*{Two fifth-order constructions}
+Define
+\begin{align*}
+w_{27}&=\frac{52-i\sqrt{3433}}{19\sqrt{17}},\\
+|\psi_{27}\rangle&=\frac{\sqrt{327}(D_{27}^1-D_{27}^{26})
+-i\sqrt{494}(D_{27}^6-D_{27}^{21})
+-iw_{27}\sqrt{429}(D_{27}^{11}-D_{27}^{16})}{50},\\
+w_{29}&=\frac{3094-i\sqrt{2170247}}{\sqrt{11743083}},\\
+|\psi_{29}\rangle&=\frac{\sqrt{3598}(D_{29}^2-D_{29}^{27})
+-i\sqrt{2081}(D_{29}^7-D_{29}^{22})
+-4iw_{29}\sqrt{231}(D_{29}^{12}-D_{29}^{17})}{25\sqrt{30}}.
+\end{align*}
+Both phase parameters have modulus one. Their probabilities are respectively
+\[
+\frac{(327,494,429,429,494,327)}{2500},\qquad
+\frac{(3598,2081,3696,3696,2081,3598)}{18750}.
+\]
+They are normalized and symmetric about $r=N/2$. The diagonal moment
+identities are
+\[
+\sum_r |c_r|^2 (r)_q=\frac{(N)_q}{q+1},\qquad 0\le q\le5,
+\]
+where $(r)_q$ is the falling factorial. These are equivalent to the six
+uniform diagonal entries of $\rho_5$. Excitation indices differ by multiples
+of five, so its only possible off-diagonal entries are $(0,5)$ and $(5,0)$.
+Substituting the displayed phases into
+\[
+(\rho_5)_{05}=\sum_{r=0}^{N-5}\binom{N-5}{r}
+\frac{c_r\overline{c_{r+5}}}{\sqrt{\binom Nr\binom N{r+5}}}
+\]
+gives zero exactly. Thus both states are fifth-order anticoherent.
+They are not sixth-order:
+\[
+(\rho_6^{27})_{00}-\frac17=\frac{17}{1593900},\qquad
+(\rho_6^{29})_{00}-\frac17=-\frac{578}{1781325}.
+\]
+The projective Majorana multiplicities are $1^{27}$ and $(2^2,1^{25})$.
+The independent verifier proves simplicity of the remaining roots using a
+reciprocal quintic in $z^5$, with nonzero quadratic discriminant and no
+branch point at $z^5=\pm1$.
+
+\section*{A seventh-order octahedral construction}
+Set
+\[
+F_6(z)=z(1-z^4),\quad F_8(z)=1+14z^4+z^8,\quad
+\alpha=\frac{\sqrt{326271}}4,\quad
+\beta=\frac{-118635+14355i\sqrt{287}}{256\sqrt{326271}}.
+\]
+Write $P(z)=\alpha F_6(z)^5+\beta F_6(z)F_8(z)^3$
+and define $c_r=[z^r]P(z)/\sqrt{\binom{30}r}$.
+Equivalently,
+\begin{align*}
+|\psi_{30}\rangle={}&\frac{\beta}{\sqrt{30}}(D_{30}^1-D_{30}^{29})
++\frac{\alpha+41\beta}{\sqrt{142506}}(D_{30}^5-D_{30}^{25})\\
+&+\frac{-5\alpha+549\beta}{\sqrt{14307150}}(D_{30}^9-D_{30}^{21})
++\frac{10\alpha+2237\beta}{\sqrt{119759850}}(D_{30}^{13}-D_{30}^{17}).
+\end{align*}
+The polynomial definition is sufficient without any group-theoretic
+assumption: direct exact substitution into the partial-trace formula below
+proves normalization and $\rho_7=I_8/8$. In deriving the coefficients,
+the octahedral binary forms leave two moment conditions after normalization;
+the relevant Gram entries are
+\[
+|\alpha|^2=\frac{326271}{16},\quad
+|\beta|^2=\frac{14025}{4096},\quad
+\operatorname{Re}(\alpha\overline\beta)=-\frac{118635}{1024}.
+\]
+Their determinant is $59140949175/1048576>0$, giving the stated nonreal
+relative phase. Moreover
+\[
+(\rho_8)_{00}-\frac19=-\frac{11}{538200}\ne0.
+\]
+Thus the order is exactly seven. All30 projective Majorana roots are simple.
+After extracting $F_6$, the remaining degree-six polynomial in $q=z^4$
+is coprime to its derivative over $\mathbb Q(i\sqrt{287})$ and is nonzero
+at $q=0,1$.
+
+\section*{Independent reproduction}
+For any normalized Dicke vector the reduction is
+\[
+(\rho_q)_{ab}=\sum_{\ell=0}^{N-q}c_{a+\ell}\overline{c_{b+\ell}}
+\sqrt{\frac{\binom qa\binom qb\binom{N-q}{\ell}^2}
+{\binom N{a+\ell}\binom N{b+\ell}}}.
+\]
+\texttt{build\_witnesses.py} writes the explicit radical vectors and checks
+Schmidt matrices. Independently, \texttt{verify\_witnesses.py} reads the saved
+vectors, evaluates the direct formula for orders $t,t+1$ using exact SymPy
+arithmetic and verifies the stated root multiplicities. Lower orders follow
+by partial trace. Decimal coefficients and sphere coordinates are renderings
+of these exact vectors and are not proof premises.
+\end{document}
