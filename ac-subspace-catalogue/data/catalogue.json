@@ -5408,6 +5408,7 @@
       "status": "proven",
       "subspaceIds": [
         "central-four-n21-k8-t1",
+        "line-radical-n21-t4",
         "numerical-n21-k4-t2",
         "numerical-search-n21-k2-t3",
         "numerical-survey-n21-k1-t4"
@@ -5453,7 +5454,7 @@
       "id": "n21-t2",
       "n": 21,
       "t": 2,
-      "lower": 0,
+      "lower": 1,
       "upper": 4,
       "reportedDimension": 4,
       "conjecturedDimension": null,
@@ -5461,6 +5462,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-radical-n21-t4",
         "numerical-n21-k4-t2",
         "numerical-search-n21-k2-t3",
         "numerical-survey-n21-k1-t4"
@@ -5523,7 +5525,7 @@
       "id": "n21-t3",
       "n": 21,
       "t": 3,
-      "lower": 0,
+      "lower": 1,
       "upper": 2,
       "reportedDimension": 2,
       "conjecturedDimension": null,
@@ -5531,6 +5533,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-radical-n21-t4",
         "numerical-search-n21-k2-t3",
         "numerical-survey-n21-k1-t4"
       ],
@@ -5600,7 +5603,7 @@
       "id": "n21-t4",
       "n": 21,
       "t": 4,
-      "lower": 0,
+      "lower": 1,
       "upper": 2,
       "reportedDimension": 1,
       "conjecturedDimension": null,
@@ -5608,6 +5611,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-radical-n21-t4",
         "numerical-survey-n21-k1-t4"
       ],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
@@ -5769,18 +5773,19 @@
       "n": 21,
       "t": 6,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n21-t6-ppt",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -5807,7 +5812,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 160,
         "failedLargerDimensions": [
@@ -5842,18 +5847,19 @@
       "n": 21,
       "t": 7,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n21-t6-ppt",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -5880,7 +5886,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 160,
         "failedLargerDimensions": [
@@ -5926,7 +5932,7 @@
         "adjacent-triples-n22-k3-t2",
         "moment-partition-n22-k3-t2",
         "family51-n22",
-        "molien-octahedral-sign-n22-d1-t3",
+        "line-radical-n22-t5",
         "numerical-n22-k4-t2",
         "numerical-search-n22-k2-t3",
         "numerical-survey-n22-k1-t5"
@@ -5941,7 +5947,6 @@
         "rectangular-tensor-bound",
         "tensor-packing-saturation",
         "first-order-analytic-family",
-        "molien-constructions",
         "general-second-order-constructions",
         "prescribed-moment-constructions"
       ],
@@ -5991,7 +5996,7 @@
         "adjacent-triples-n22-k3-t2",
         "moment-partition-n22-k3-t2",
         "family51-n22",
-        "molien-octahedral-sign-n22-d1-t3",
+        "line-radical-n22-t5",
         "numerical-n22-k4-t2",
         "numerical-search-n22-k2-t3",
         "numerical-survey-n22-k1-t5"
@@ -6004,7 +6009,6 @@
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
-        "molien-constructions",
         "general-second-order-constructions",
         "prescribed-moment-constructions"
       ],
@@ -6083,11 +6087,11 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
-        "molien-octahedral-sign-n22-d1-t3",
+        "line-radical-n22-t5",
         "numerical-search-n22-k2-t3",
         "numerical-survey-n22-k1-t5"
       ],
-      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 3. An exactly verified Molien construction raises the rigorous lower bound from 0 to 1.",
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 3.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
@@ -6096,8 +6100,7 @@
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
         "third-order-spin3-inertia",
-        "third-order-spin5half-inertia",
-        "molien-constructions"
+        "third-order-spin5half-inertia"
       ],
       "generalBound": {
         "packingUpper": 3,
@@ -6176,7 +6179,7 @@
       "id": "n22-t4",
       "n": 22,
       "t": 4,
-      "lower": 0,
+      "lower": 1,
       "upper": 2,
       "reportedDimension": 1,
       "conjecturedDimension": null,
@@ -6184,6 +6187,7 @@
       "conjectureReferences": [],
       "status": "range",
       "subspaceIds": [
+        "line-radical-n22-t5",
         "numerical-survey-n22-k1-t5"
       ],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
@@ -6254,17 +6258,18 @@
       "id": "n22-t5",
       "n": 22,
       "t": 5,
-      "lower": 0,
+      "lower": 1,
       "upper": 1,
       "reportedDimension": 1,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "proven",
       "subspaceIds": [
+        "line-radical-n22-t5",
         "numerical-survey-n22-k1-t5"
       ],
-      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 1.",
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 1. This settles the maximum.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
@@ -6328,18 +6333,19 @@
       "n": 22,
       "t": 6,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n22-t6-four-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -6366,7 +6372,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 500,
         "failedLargerDimensions": [
@@ -6401,18 +6407,19 @@
       "n": 22,
       "t": 7,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n22-t6-four-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -6439,7 +6446,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 160,
         "failedLargerDimensions": [
@@ -32997,11 +33004,11 @@
       "n": 5,
       "t": 1,
       "dimension": 1,
-      "label": "One-dimensional span: Local AC manuscript representative",
+      "label": "One-dimensional span: Alternative exact representative",
       "evidence": "exact",
       "references": [
         {
-          "label": "Pure-state catalogue · Local AC manuscript representative",
+          "label": "Pure-state catalogue · Alternative exact representative",
           "url": "../anticoherent-state-catalogue/index.html#n=5&t=1&state=ac-n5-t1-manuscript"
         }
       ],
@@ -33016,7 +33023,7 @@
         {
           "id": "line-ac-n5-t1-manuscript-basis-1",
           "n": 5,
-          "label": "One-dimensional span: Local AC manuscript representative · basis vector 1",
+          "label": "One-dimensional span: Alternative exact representative · basis vector 1",
           "coefficients": [
             [
               0.0,
@@ -33366,11 +33373,11 @@
       "n": 7,
       "t": 2,
       "dimension": 1,
-      "label": "One-dimensional span: Local AC manuscript representative",
+      "label": "One-dimensional span: Alternative exact representative",
       "evidence": "exact",
       "references": [
         {
-          "label": "Pure-state catalogue · Local AC manuscript representative",
+          "label": "Pure-state catalogue · Alternative exact representative",
           "url": "../anticoherent-state-catalogue/index.html#n=7&t=2&state=ac-n7-t2-manuscript"
         }
       ],
@@ -33385,7 +33392,7 @@
         {
           "id": "line-ac-n7-t2-manuscript-basis-1",
           "n": 7,
-          "label": "One-dimensional span: Local AC manuscript representative · basis vector 1",
+          "label": "One-dimensional span: Alternative exact representative · basis vector 1",
           "coefficients": [
             [
               0.4714045207910317,
@@ -33649,11 +33656,11 @@
       "n": 8,
       "t": 3,
       "dimension": 1,
-      "label": "One-dimensional span: Local AC manuscript representative",
+      "label": "One-dimensional span: Alternative exact representative",
       "evidence": "exact",
       "references": [
         {
-          "label": "Pure-state catalogue · Local AC manuscript representative",
+          "label": "Pure-state catalogue · Alternative exact representative",
           "url": "../anticoherent-state-catalogue/index.html#n=8&t=3&state=ac-n8-t3-manuscript"
         }
       ],
@@ -33668,7 +33675,7 @@
         {
           "id": "line-ac-n8-t3-manuscript-basis-1",
           "n": 8,
-          "label": "One-dimensional span: Local AC manuscript representative · basis vector 1",
+          "label": "One-dimensional span: Alternative exact representative · basis vector 1",
           "coefficients": [
             [
               0.45643546458763845,
@@ -33954,11 +33961,11 @@
       "n": 9,
       "t": 2,
       "dimension": 1,
-      "label": "One-dimensional span: Local AC manuscript representative",
+      "label": "One-dimensional span: Alternative exact representative",
       "evidence": "exact",
       "references": [
         {
-          "label": "Pure-state catalogue · Local AC manuscript representative",
+          "label": "Pure-state catalogue · Alternative exact representative",
           "url": "../anticoherent-state-catalogue/index.html#n=9&t=2&state=ac-n9-t2-manuscript"
         }
       ],
@@ -33973,7 +33980,7 @@
         {
           "id": "line-ac-n9-t2-manuscript-basis-1",
           "n": 9,
-          "label": "One-dimensional span: Local AC manuscript representative · basis vector 1",
+          "label": "One-dimensional span: Alternative exact representative · basis vector 1",
           "coefficients": [
             [
               0.45069390943299864,
@@ -34281,11 +34288,11 @@
       "n": 10,
       "t": 3,
       "dimension": 1,
-      "label": "One-dimensional span: Local AC manuscript representative",
+      "label": "One-dimensional span: Alternative exact representative",
       "evidence": "exact",
       "references": [
         {
-          "label": "Pure-state catalogue · Local AC manuscript representative",
+          "label": "Pure-state catalogue · Alternative exact representative",
           "url": "../anticoherent-state-catalogue/index.html#n=10&t=3&state=ac-n10-t3-manuscript"
         }
       ],
@@ -34300,7 +34307,7 @@
         {
           "id": "line-ac-n10-t3-manuscript-basis-1",
           "n": 10,
-          "label": "One-dimensional span: Local AC manuscript representative · basis vector 1",
+          "label": "One-dimensional span: Alternative exact representative · basis vector 1",
           "coefficients": [
             [
               0.0,
@@ -37706,6 +37713,597 @@
       ],
       "derivationLatex": "(p_0,p_6,p_{10},p_{14},p_{18})=\\left(\\frac{97}{800},\\frac{1083}{2560},\\frac{133}{12800},\\frac{741}{2560},\\frac{399}{2560}\\right)",
       "exactCertificate": "research/n19-t4/basis.json"
+    },
+    {
+      "id": "line-radical-n21-t4",
+      "n": 21,
+      "t": 4,
+      "dimension": 1,
+      "label": "One-dimensional span: Exact signed radical state · order 4",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Pure-state catalogue · Exact signed radical state · order 4",
+          "url": "../anticoherent-state-catalogue/index.html#n=21&t=4&state=radical-n21-t4"
+        },
+        {
+          "label": "Exact construction and independent verification",
+          "url": "../anticoherent-state-catalogue/research/n21-n22/index.html"
+        }
+      ],
+      "notes": "A pure t-AC state is a one-dimensional t-AC subspace.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 0.0,
+        "crossReductionError": 3.9272909960391875e-17
+      },
+      "basis": [
+        {
+          "id": "line-radical-n21-t4-basis-1",
+          "n": 21,
+          "label": "One-dimensional span: Exact signed radical state · order 4 · basis vector 1",
+          "coefficients": [
+            [
+              0.29369313255266505,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.47227027821605977,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.43669798282695127,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.43669798282695127,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.47227027821605977,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.29369313255266505,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "sqrt(67405)/884",
+            "0",
+            "0",
+            "0",
+            "sqrt(9282)/204",
+            "0",
+            "0",
+            "0",
+            "sqrt(4641)/156",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(4641)/156",
+            "0",
+            "0",
+            "0",
+            "-sqrt(9282)/204",
+            "0",
+            "0",
+            "0",
+            "sqrt(67405)/884"
+          ],
+          "stateLatex": "\\frac{\\sqrt{915}\\bigl(|D_{21}^{(0)}\\rangle+|D_{21}^{(21)}\\rangle\\bigr)+13\\sqrt{14}\\bigl(|D_{21}^{(4)}\\rangle-|D_{21}^{(17)}\\rangle\\bigr)+17\\sqrt7\\bigl(|D_{21}^{(8)}\\rangle+|D_{21}^{(13)}\\rangle\\bigr)}{4\\sqrt{663}}",
+          "points": [
+            {
+              "x": -0.5549453395376005,
+              "y": -1.5920786899694802e-102,
+              "z": 0.8318868132898233,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9032397004193635,
+              "y": -2.591297874796643e-102,
+              "z": 0.429136392754493,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9964482052725298,
+              "y": -0.0,
+              "z": 0.08420792248449288,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9280316401088161,
+              "y": -0.0,
+              "z": 0.372501375778588,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5549158906787837,
+              "y": -0.0,
+              "z": 0.8319064576454328,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.392396680235585,
+              "y": 0.39237898968394846,
+              "z": -0.8319035844343359,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.392396680235585,
+              "y": -0.39237898968394846,
+              "z": -0.8319035844343359,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3923937048286176,
+              "y": -0.3924114139378965,
+              "z": -0.8318896937828553,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.3923937048286176,
+              "y": 0.3924114139378965,
+              "z": -0.8318896937828553,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6506271208882092,
+              "y": 0.629250649071364,
+              "z": -0.42512112416108744,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.6506271208882092,
+              "y": -0.629250649071364,
+              "z": -0.42512112416108744,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6310210550762406,
+              "y": -0.6698444708866612,
+              "z": -0.3913065459113061,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.6310210550762406,
+              "y": 0.6698444708866612,
+              "z": -0.3913065459113061,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8184444477192865,
+              "y": -0.5716535946545938,
+              "z": -0.05797287051676307,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.8184444477192865,
+              "y": 0.5716535946545938,
+              "z": -0.05797287051676307,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.31716707686460444,
+              "y": 0.9481758484332021,
+              "z": 0.019173048822225047,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.31716707686460444,
+              "y": -0.9481758484332021,
+              "z": 0.019173048822225047,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.02664353241840373,
+              "y": 0.9104829928263338,
+              "z": 0.4126873416453087,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.02664353241840373,
+              "y": -0.9104829928263338,
+              "z": 0.4126873416453087,
+              "multiplicity": 1
+            },
+            {
+              "x": 1.769982334379559e-05,
+              "y": -0.5549306041918491,
+              "z": 0.8318966427495579,
+              "multiplicity": 1
+            },
+            {
+              "x": 1.769982334379559e-05,
+              "y": 0.5549306041918491,
+              "z": 0.8318966427495579,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Saved exact Dicke amplitudes",
+            "squareFreeFactorizationExact": false,
+            "zeroMultiplicity": 0,
+            "infinityMultiplicity": 0,
+            "nonzeroRootStep": 1,
+            "projectiveDickeReconstructionError": 3.476617437713753e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 2.220446049250313e-16,
+            "minimumDistinctPointDistance": 0.2963004245711357,
+            "rootPrecisionDecimalDigits": 100,
+            "relativeReducedPolynomialReconstructionError": 8.607688847449348e-101,
+            "inputFingerprint": "80ab372fcde1ccfc819b2748fb65fb2a16c11f83fcfdd597be2e5cdeadbe35f4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "line-radical-n22-t5",
+      "n": 22,
+      "t": 5,
+      "dimension": 1,
+      "label": "One-dimensional span: Exact signed radical state · order 5",
+      "evidence": "exact",
+      "references": [
+        {
+          "label": "Pure-state catalogue · Exact signed radical state · order 5",
+          "url": "../anticoherent-state-catalogue/index.html#n=22&t=5&state=radical-n22-t5"
+        },
+        {
+          "label": "Exact construction and independent verification",
+          "url": "../anticoherent-state-catalogue/research/n21-n22/index.html"
+        }
+      ],
+      "notes": "A pure t-AC state is a one-dimensional t-AC subspace.",
+      "verification": {
+        "exact": true,
+        "method": "Exact orthonormality and every ordered cross reduced matrix.",
+        "orthogonalityError": 0.0,
+        "crossReductionError": 5.551146012877011e-17
+      },
+      "basis": [
+        {
+          "id": "line-radical-n22-t5-basis-1",
+          "n": 22,
+          "label": "One-dimensional span: Exact signed radical state · order 5 · basis vector 1",
+          "coefficients": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.397994974842648,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.4963869458396343,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.4363484845854286,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.4963869458396343,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.397994974842648,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
+          "exactCoefficients": [
+            "0",
+            "3*sqrt(11)/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(154)/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "sqrt(119)/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-sqrt(154)/25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3*sqrt(11)/25",
+            "0"
+          ],
+          "stateLatex": "\\frac{3\\sqrt{11}\\bigl(|D_{22}^{(1)}\\rangle+|D_{22}^{(21)}\\rangle\\bigr)+\\sqrt{154}\\bigl(|D_{22}^{(6)}\\rangle-|D_{22}^{(16)}\\rangle\\bigr)+\\sqrt{119}|D_{22}^{(11)}\\rangle}{25}",
+          "points": [
+            {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5850933996912444,
+              "y": -0.4250952377309277,
+              "z": 0.6906227280478306,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.22348579208882813,
+              "y": -0.6878185431043577,
+              "z": 0.6906227280478306,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7232152152048325,
+              "y": -2.074826925024191e-102,
+              "z": 0.6906227280478306,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.22348579208882813,
+              "y": 0.6878185431043577,
+              "z": 0.6906227280478306,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.5850933996912444,
+              "y": 0.4250952377309277,
+              "z": 0.6906227280478306,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7880794711715857,
+              "y": -0.5725732512541318,
+              "z": 0.22603234075279316,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3010195721515027,
+              "y": -0.9264429815782184,
+              "z": 0.22603234075279335,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.9741197980401656,
+              "y": -2.7946452766489823e-102,
+              "z": 0.22603234075279335,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.3010195721515027,
+              "y": 0.9264429815782184,
+              "z": 0.22603234075279335,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7880794711715857,
+              "y": 0.5725732512541318,
+              "z": 0.22603234075279316,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.7232152152048325,
+              "y": -0.0,
+              "z": -0.6906227280478305,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.22348579208882813,
+              "y": -0.6878185431043579,
+              "z": -0.6906227280478305,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5850933996912443,
+              "y": -0.4250952377309277,
+              "z": -0.6906227280478305,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.5850933996912443,
+              "y": 0.4250952377309277,
+              "z": -0.6906227280478305,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.22348579208882813,
+              "y": 0.6878185431043579,
+              "z": -0.6906227280478305,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.9741197980401656,
+              "y": -0.0,
+              "z": -0.22603234075279324,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.30101957215150277,
+              "y": -0.9264429815782185,
+              "z": -0.22603234075279324,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7880794711715855,
+              "y": -0.5725732512541317,
+              "z": -0.22603234075279324,
+              "multiplicity": 1
+            },
+            {
+              "x": -0.7880794711715855,
+              "y": 0.5725732512541317,
+              "z": -0.22603234075279324,
+              "multiplicity": 1
+            },
+            {
+              "x": 0.30101957215150277,
+              "y": 0.9264429815782185,
+              "z": -0.22603234075279324,
+              "multiplicity": 1
+            }
+          ],
+          "geometryVerification": {
+            "coefficientSource": "Saved exact Dicke amplitudes",
+            "squareFreeFactorizationExact": false,
+            "zeroMultiplicity": 1,
+            "infinityMultiplicity": 1,
+            "nonzeroRootStep": 5,
+            "projectiveDickeReconstructionError": 5.122862191353071e-16,
+            "exactFormulaVsSavedCoefficientsError": 0.0,
+            "maxUnitSphereError": 3.3306690738754696e-16,
+            "minimumDistinctPointDistance": 0.528012630203791,
+            "rootPrecisionDecimalDigits": 100,
+            "relativeReducedPolynomialReconstructionError": 9.315138168780354e-102,
+            "inputFingerprint": "cd44ef1ec55be2939fb9273aeacb675daefaea4b7aa3a40cfd512fe6ae995393"
+          }
+        }
+      ]
     },
     {
       "id": "cyclic-radical-n7-k3-t1",
@@ -70183,303 +70781,6 @@
         "character": "trivial",
         "guaranteedOrder": 2,
         "verifiedAchievedOrder": 2
-      }
-    },
-    {
-      "id": "molien-octahedral-sign-n22-d1-t3",
-      "n": 22,
-      "t": 3,
-      "dimension": 1,
-      "label": "Binary octahedral sign subspace · Molien construction",
-      "evidence": "exact",
-      "references": [
-        {
-          "label": "Molien constructions, analytical bases and proof",
-          "url": "research/molien/index.html"
-        },
-        {
-          "label": "Exact polynomial and normalized Dicke bases",
-          "url": "research/molien/bases.json"
-        },
-        {
-          "label": "Independent full-subspace verification",
-          "url": "research/molien/independent-verification.json"
-        }
-      ],
-      "notes": "An exact single-character symmetry subspace. Every normalized superposition is anticoherent to the stated order. Its dimension is a constructive lower bound; global optimality follows only if it matches the separate upper bound.",
-      "verification": {
-        "exact": true,
-        "method": "Exact polynomial construction, weighted orthonormalization and every ordered cross-reduction identity; independently verified.",
-        "orthogonalityError": 2.220446049250313e-16,
-        "crossReductionError": 0.0
-      },
-      "basis": [
-        {
-          "id": "molien-octahedral-sign-n22-d1-t3-basis-1",
-          "n": 22,
-          "label": "Binary octahedral sign subspace · Molien construction · basis vector 1",
-          "coefficients": [
-            [
-              0.0,
-              0.0
-            ],
-            [
-              -0.4161455074049621,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              -0.3247595264191645,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              -0.47048290794317565,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.47048290794317565,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.3247595264191645,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.0,
-              0.0
-            ],
-            [
-              0.4161455074049621,
-              -0.0
-            ],
-            [
-              0.0,
-              0.0
-            ]
-          ],
-          "evidence": "Exact basis vector of an exactly verified subspace. Its constellation and symmetry group describe this vector, not the whole subspace.",
-          "exactCoefficients": [
-            "0",
-            "-sqrt(399)/48",
-            "0",
-            "0",
-            "0",
-            "-3*sqrt(3)/16",
-            "0",
-            "0",
-            "0",
-            "-sqrt(510)/48",
-            "0",
-            "0",
-            "0",
-            "sqrt(510)/48",
-            "0",
-            "0",
-            "0",
-            "3*sqrt(3)/16",
-            "0",
-            "0",
-            "0",
-            "sqrt(399)/48",
-            "0"
-          ],
-          "stateLatex": "\\begin{aligned}|u_{1}\\rangle&=(- \\frac{\\sqrt{399}}{48})|D_{22}^{(1)}\\rangle+(- \\frac{3 \\sqrt{3}}{16})|D_{22}^{(5)}\\rangle\\\\&\\quad+(- \\frac{\\sqrt{510}}{48})|D_{22}^{(9)}\\rangle+(\\frac{\\sqrt{510}}{48})|D_{22}^{(13)}\\rangle\\\\&\\quad+(\\frac{3 \\sqrt{3}}{16})|D_{22}^{(17)}\\rangle+(\\frac{\\sqrt{399}}{48})|D_{22}^{(21)}\\rangle\\end{aligned}",
-          "points": [
-            {
-              "x": 0.0,
-              "y": -0.0,
-              "z": -1.0,
-              "multiplicity": 1
-            },
-            {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 1.0,
-              "multiplicity": 1
-            },
-            {
-              "x": 1.0,
-              "y": -0.0,
-              "z": 0.0,
-              "multiplicity": 1
-            },
-            {
-              "x": 6.123233995736766e-17,
-              "y": -1.0,
-              "z": 0.0,
-              "multiplicity": 1
-            },
-            {
-              "x": -1.0,
-              "y": -1.2246467991473532e-16,
-              "z": 0.0,
-              "multiplicity": 1
-            },
-            {
-              "x": -1.8369701987210297e-16,
-              "y": 1.0,
-              "z": 0.0,
-              "multiplicity": 1
-            },
-            {
-              "x": 0.5773502691896258,
-              "y": -0.5773502691896257,
-              "z": 0.5773502691896258,
-              "multiplicity": 2
-            },
-            {
-              "x": -0.5773502691896257,
-              "y": -0.5773502691896258,
-              "z": 0.5773502691896258,
-              "multiplicity": 2
-            },
-            {
-              "x": -0.5773502691896257,
-              "y": 0.5773502691896256,
-              "z": 0.5773502691896258,
-              "multiplicity": 2
-            },
-            {
-              "x": 0.5773502691896256,
-              "y": 0.5773502691896258,
-              "z": 0.5773502691896258,
-              "multiplicity": 2
-            },
-            {
-              "x": 0.5773502691896258,
-              "y": -0.5773502691896257,
-              "z": -0.577350269189626,
-              "multiplicity": 2
-            },
-            {
-              "x": -0.5773502691896257,
-              "y": -0.5773502691896258,
-              "z": -0.577350269189626,
-              "multiplicity": 2
-            },
-            {
-              "x": -0.577350269189626,
-              "y": 0.5773502691896257,
-              "z": -0.577350269189626,
-              "multiplicity": 2
-            },
-            {
-              "x": 0.5773502691896256,
-              "y": 0.577350269189626,
-              "z": -0.577350269189626,
-              "multiplicity": 2
-            }
-          ],
-          "geometryVerification": {
-            "coefficientSource": "saved exact Dicke coefficients",
-            "squareFreeFactorizationExact": true,
-            "zeroMultiplicity": 1,
-            "infinityMultiplicity": 1,
-            "nonzeroRootStep": 4,
-            "reducedPolynomialFactors": [
-              {
-                "polynomial": "y - 1",
-                "multiplicity": 1
-              },
-              {
-                "polynomial": "y**2 + 14*y + 1",
-                "multiplicity": 2
-              }
-            ],
-            "projectiveDickeReconstructionError": 2.247868958398169e-15,
-            "exactFormulaVsSavedCoefficientsError": 1.3597399555105182e-16,
-            "maxUnitSphereError": 4.440892098500626e-16,
-            "minimumDistinctPointDistance": 0.919401686761966,
-            "rootPrecisionDecimalDigits": 40
-          },
-          "polynomialCoefficients": [
-            "0",
-            "1",
-            "0",
-            "0",
-            "0",
-            "27",
-            "0",
-            "0",
-            "0",
-            "170",
-            "0",
-            "0",
-            "0",
-            "-170",
-            "0",
-            "0",
-            "0",
-            "-27",
-            "0",
-            "0",
-            "0",
-            "-1",
-            "0"
-          ],
-          "normSquared": "384/1463"
-        }
-      ],
-      "molienConstruction": {
-        "group": "octahedral-sign",
-        "character": "sign",
-        "guaranteedOrder": 3,
-        "verifiedAchievedOrder": 3
       }
     },
     {
@@ -123927,6 +124228,45 @@
       ]
     },
     {
+      "id": "pure-n22-t6-four-copy",
+      "title": "Twenty-two qubits: maximum pure AC order is five",
+      "summary": "An exact four-copy matrix-positivity certificate excludes every pure sixth-order AC state; an analytical fifth-order state attains the maximum.",
+      "formulaLatex": "t_{\\max}(22)=5",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n22-t6-four-copy"
+        }
+      ]
+    },
+    {
+      "id": "pure-n21-t6-ppt",
+      "title": "Twenty-one qubits cannot be sixth-order AC",
+      "summary": "An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.",
+      "formulaLatex": "t_{\\max}(21)\\le5",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n21-t6-ppt"
+        }
+      ]
+    },
+    {
+      "id": "pure-n22-t7-three-copy",
+      "title": "Twenty-two qubits cannot be seventh-order AC",
+      "summary": "An exact three-copy matrix-positivity certificate excludes every pure seventh-order AC state.",
+      "formulaLatex": "t_{\\max}(22)\\le6",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n22-t7-three-copy"
+        }
+      ]
+    },
+    {
       "id": "molien-constructions",
       "title": "Molien series give analytical AC subspaces",
       "summary": "Exact single-character spaces of the binary polyhedral groups provide polynomial bases. Their full spans obey the AC conditions, and higher AC orders are checked separately.",
@@ -124686,13 +125026,13 @@
     "A Majorana constellation and its symmetry label belong to an individual basis vector. They are not invariants of the subspace or of a change of basis."
   ],
   "validation": {
-    "exactSubspaces": 139,
+    "exactSubspaces": 140,
     "numericalSubspaces": 38,
     "entries": 161,
-    "exactMaxima": 67,
-    "provedEmpty": 60,
-    "ranges": 34,
-    "molienSubspaces": 6,
+    "exactMaxima": 68,
+    "provedEmpty": 64,
+    "ranges": 29,
+    "molienSubspaces": 5,
     "paperConjectures": 33,
     "conjectureStatuses": {
       "confirmed": 33,

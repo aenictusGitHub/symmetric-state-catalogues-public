@@ -1,0 +1,106 @@
+{
+  "n": 21,
+  "targetOrder": 5,
+  "scientificConclusion": "Unresolved. The separate exact certificate excludes order six and higher. The recorded numerical relaxations did not yield an exclusion of order five. A feasible relaxed moment operator is not a pure AC state.",
+  "threeCopyPSD": {
+    "status": "Solved",
+    "epsilon": 0.0021069257237393505,
+    "trace": 0.9999999999999998,
+    "minimumEigenvalue": 0.0021069257230138553,
+    "kernelDimensions": [
+      120,
+      36
+    ]
+  },
+  "threeCopyPPT": {
+    "status": "Solved",
+    "epsilon": 0.001254464767011508,
+    "minimumEigenvalue": 0.0012544647669326696,
+    "Xminimum": 0.0024359646608783105,
+    "Yminimum": 0.0012544647669326696,
+    "seconds": 1.6506388187408447
+  },
+  "fourCopyPSD": {
+    "status": "AlmostSolved",
+    "epsilon": 0.00017067472001535726,
+    "trace": 0.9999999999999993,
+    "minimumEigenvalue": 0.00017067471941291439,
+    "kernelDimensions": [
+      2326,
+      362
+    ]
+  },
+  "fourCopyPPT": {
+    "n": 21,
+    "t": 5,
+    "copies": 4,
+    "constraints": 1964,
+    "variables": 2326,
+    "freeParameters": 362,
+    "status": "AlmostSolved",
+    "epsilon": 9.982715774997204e-05,
+    "seconds": 23.227735996246338
+  },
+  "fourCopySampledConstraintCoverage": {
+    "firstSeed": 2145,
+    "firstRowCount": 5000,
+    "secondSeed": 2146,
+    "secondRowCount": 5000,
+    "selectedIndependentConstraintCount": 1964,
+    "realMomentCoordinates": 2326,
+    "kernelDimension": 362,
+    "maximumNormalizedSecondBatchResidualOnKernel": 4.240558642079617e-15,
+    "status": "Numerical coverage check only; no claim that sampling proves all possible constraints were included."
+  },
+  "recouplingConventionControl": {
+    "threeCopyMaximumBasisTransformedMapError": 2.757939709940871e-12,
+    "method": "Direct CG recoupling transfer of partialtime reversal comparedwithfullword-basis maps;70digitCGtable generation in thefinalrun."
+  },
+  "exactOrderSixExclusion": {
+    "certificate": "n21-t6/certificate.json",
+    "independentVerifier": "n21-t6/verify_independently.py",
+    "independentVerificationPassed": true,
+    "conclusion": "No pure sixth-order or higher AC state on 21 qubits exists."
+  },
+  "fourCopyPPTPrimalDirectCheck": {
+    "n": 21,
+    "t": 5,
+    "copies": 4,
+    "split": [
+      1,
+      3
+    ],
+    "status": "AlmostSolved",
+    "epsilon": 9.982715774997204e-05,
+    "trace": 1.0,
+    "traceError": 0.0,
+    "maximumSelectedNormalizedConstraintResidual": 4.847902832583316e-18,
+    "minimumInputEigenvalue": 9.98271577652382e-05,
+    "minimumFullOutputEigenvalue": -5.715133833852591e-17,
+    "meaning": "Numerical relaxed-moment feasibility only; neither a pure-state existence certificate nor a nonexistence proof.",
+    "numericalFeasibilityDirectlyChecked": true
+  },
+  "fourCopySelectedTwoTwoPPT": {
+    "n": 21,
+    "t": 5,
+    "copies": 4,
+    "split": [
+      2,
+      2
+    ],
+    "selectedOutputDoubledSpins": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12
+    ],
+    "additionallyIncludesAllOneThreePPTBlocks": true,
+    "status": "AlmostSolved",
+    "epsilon": 6.046259582868746e-05,
+    "seconds": 35.339844942092896,
+    "scope": "Numerical selected-block relaxation only. Any purportedexclusionrequiresindependentmapand exactcertificate verification.",
+    "interpretation": "The selected low-spin2|2compressions togetherwithall1|3compressions didnot yield an exclusion. Thisisnot a proof ofpurestateexistence, andthe2|2recouplingmaps havenotbeenindependentlyrationallyverified."
+  }
+}

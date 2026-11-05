@@ -1,0 +1,407 @@
+{
+  "states": [
+    {
+      "id": "radical-n21-t4",
+      "n": 21,
+      "achievedOrder": 4,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Exact signed radical state · order 4",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{\\sqrt{915}\\bigl(|D_{21}^{(0)}\\rangle+|D_{21}^{(21)}\\rangle\\bigr)+13\\sqrt{14}\\bigl(|D_{21}^{(4)}\\rangle-|D_{21}^{(17)}\\rangle\\bigr)+17\\sqrt7\\bigl(|D_{21}^{(8)}\\rangle+|D_{21}^{(13)}\\rangle\\bigr)}{4\\sqrt{663}}",
+      "support": [
+        0,
+        4,
+        8,
+        13,
+        17,
+        21
+      ],
+      "exactCoefficients": [
+        "sqrt(67405)/884",
+        "0",
+        "0",
+        "0",
+        "sqrt(9282)/204",
+        "0",
+        "0",
+        "0",
+        "sqrt(4641)/156",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(4641)/156",
+        "0",
+        "0",
+        "0",
+        "-sqrt(9282)/204",
+        "0",
+        "0",
+        "0",
+        "sqrt(67405)/884"
+      ],
+      "coefficients": [
+        [
+          0.29369313255266505,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.47227027821605977,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.43669798282695127,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.43669798282695127,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.47227027821605977,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29369313255266505,
+          0.0
+        ]
+      ],
+      "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Twenty-one and twenty-two qubits: exact states and rigorous bounds",
+          "url": "./research/n21-n22/index.html"
+        },
+        {
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/n21-n22/independent-verification.json"
+        }
+      ],
+      "provenance": "Independent analytical construction by rational moment matching and signed coherence cancellation.",
+      "notes": "This state is exactly 4-AC and is not 5-AC. Optimality is recorded separately from exact attainment.",
+      "verification": {
+        "method": "Exact Dicke-basis partial traces through the next order, independently cross-checked using a Schmidt matrix.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "35*sqrt(118218)/22535064 + 527927/360561024",
+            "purity": "35*sqrt(118218)/22535064 + 60621431/360561024"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 5,
+          "row": 0,
+          "column": 5,
+          "differenceFromIdentity": "11/912",
+          "differenceLatex": "\\frac{11}{912}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    },
+    {
+      "id": "radical-n22-t5",
+      "n": 22,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact signed radical state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\frac{3\\sqrt{11}\\bigl(|D_{22}^{(1)}\\rangle+|D_{22}^{(21)}\\rangle\\bigr)+\\sqrt{154}\\bigl(|D_{22}^{(6)}\\rangle-|D_{22}^{(16)}\\rangle\\bigr)+\\sqrt{119}|D_{22}^{(11)}\\rangle}{25}",
+      "support": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "exactCoefficients": [
+        "0",
+        "3*sqrt(11)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(154)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(119)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(154)/25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3*sqrt(11)/25",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.397994974842648,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4963869458396343,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4363484845854286,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.4963869458396343,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.397994974842648,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "references": [
+        {
+          "title": "Twenty-one and twenty-two qubits: exact states and rigorous bounds",
+          "url": "./research/n21-n22/index.html"
+        },
+        {
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/n21-n22/independent-verification.json"
+        }
+      ],
+      "provenance": "Independent analytical construction by rational moment matching and signed coherence cancellation.",
+      "notes": "This state is exactly 5-AC and is not 6-AC. Optimality is recorded separately from exact attainment.",
+      "verification": {
+        "method": "Exact Dicke-basis partial traces through the next order, independently cross-checked using a Schmidt matrix.",
+        "exactNormalization": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "1344*sqrt(741)/95890625 + 4708556/11410984375",
+            "purity": "1344*sqrt(741)/95890625 + 233549883/1630140625"
+          }
+        ],
+        "exactOrderVerified": true,
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "-1/33915",
+          "differenceLatex": "- \\frac{1}{33915}"
+        },
+        "globalMaximumOrderProven": false
+      }
+    }
+  ]
+}

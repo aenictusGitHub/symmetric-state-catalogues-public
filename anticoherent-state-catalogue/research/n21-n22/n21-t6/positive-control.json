@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "exactN21OrderFourChecks": [
+    {
+      "t": 1,
+      "maximallyMixedVerifiedExactly": true
+    },
+    {
+      "t": 2,
+      "maximallyMixedVerifiedExactly": true
+    },
+    {
+      "t": 3,
+      "maximallyMixedVerifiedExactly": true
+    },
+    {
+      "t": 4,
+      "maximallyMixedVerifiedExactly": true
+    }
+  ],
+  "controls": [
+    {
+      "label": "generic complex non-AC state",
+      "n": 2,
+      "copies": 3,
+      "symmetricInputDimension": 10,
+      "outputDimension": 18,
+      "weightBlocks": 7,
+      "sameWeightMatrixEntriesChecked": 58,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 8.777083671441753e-17,
+      "maximumSameWeightMapError": 2.809277043726393e-17,
+      "maximumCrossWeightMapError": 5.561946577567963e-17,
+      "outputTrace": 1.0,
+      "outputEqualsPositiveRankOneProjector": true
+    },
+    {
+      "label": "generic complex non-AC state",
+      "n": 21,
+      "copies": 3,
+      "symmetricInputDimension": 2024,
+      "outputDimension": 5566,
+      "weightBlocks": 64,
+      "sameWeightMatrixEntriesChecked": 764126,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 2.874608258176309e-17,
+      "maximumSameWeightMapError": 5.212207405644229e-18,
+      "maximumCrossWeightMapError": 1.5636586103463754e-18,
+      "outputTrace": 1.0,
+      "outputEqualsPositiveRankOneProjector": true
+    },
+    {
+      "label": "generic rotation of the exact N21 order-four witness",
+      "n": 21,
+      "copies": 3,
+      "symmetricInputDimension": 2024,
+      "outputDimension": 5566,
+      "weightBlocks": 64,
+      "sameWeightMatrixEntriesChecked": 764126,
+      "crossWeightMatrixEntriesChecked": 10000,
+      "maximumEmbeddingError": 2.964296775167217e-17,
+      "maximumSameWeightMapError": 4.338814294983179e-18,
+      "maximumCrossWeightMapError": 1.6935779332544402e-18,
+      "outputTrace": 0.9999999999999994,
+      "outputEqualsPositiveRankOneProjector": true
+    }
+  ],
+  "algebraicIdentity": "For every pure product moment rho^tensor3, first-leg transpose followed by F|i>=(-1)^i|N-i> gives the positive rank-one projector on Theta(psi) tensor psi^tensor2. The symmetric embedding and all same-weight entries plus random cross-weight entries are independently checked.",
+  "scope": "Positive-map convention controls and exact lower-order witness check; this control is not a premise of the exact AC6 exclusion."
+}

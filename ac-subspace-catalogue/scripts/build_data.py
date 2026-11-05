@@ -71,6 +71,10 @@ for st in pure['states']:
  if st['id'] in {'certified-n14-t4','certified-n17-t4'}:continue  # Dedicated exact representatives are imported below.
  add('radical-n19-k1-t4' if st['id']=='certified-n19-t4' else 'line-'+st['id'],st['n'],st['achievedOrder'],1,'One-dimensional span: '+st['label'],[st['coefficients']],[st['exactCoefficients']],[{'label':'Pure-state catalogue · '+st['label'],'url':'../anticoherent-state-catalogue/index.html#n='+str(st['n'])+'&t='+str(st['achievedOrder'])+'&state='+st['id']}],notes='A pure t-AC state is a one-dimensional t-AC subspace.',known=[pure_points[st['id']]])
 for st in spaces:
+ if st['id'] in {'line-radical-n21-t4','line-radical-n22-t5'}:
+  source=next(p for p in pure['states'] if 'line-'+p['id']==st['id'])
+  st['basis'][0]['stateLatex']=source['stateLatex']
+  st['references'].append({'label':'Exact construction and independent verification','url':'../anticoherent-state-catalogue/research/n21-n22/index.html'})
  if st['id']=='radical-n19-k1-t4':
   source=read('research/n19-t4/basis.json');st['label']=source['label'];st['notes']=source['notes'];st['references']+=source['references'];st['derivationLatex']=source['derivationLatex'];st['exactCertificate']='research/n19-t4/basis.json'
   st['basis'][0]['stateLatex']=source['basis'][0]['stateLatex'];st['basis'][0]['coefficientDefinitionLatex']=source['basis'][0]['coefficientDefinitionLatex']

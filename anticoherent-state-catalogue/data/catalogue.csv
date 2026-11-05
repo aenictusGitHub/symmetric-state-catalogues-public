@@ -191,10 +191,10 @@ n,t,status,maximumOrderStatus,proofId,notes
 21,1,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 21,2,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 21,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-21,4,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
+21,4,exists,conjectured,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 21,5,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-21,6,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-21,7,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
+21,6,impossible,,n21-t6-ppt,An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.
+21,7,impossible,,n21-t6-ppt,An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.
 21,8,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 21,9,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 21,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
@@ -206,9 +206,9 @@ n,t,status,maximumOrderStatus,proofId,notes
 22,2,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 22,3,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
 22,4,exists,,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
-22,5,numerical,conjectured,,"The saved library state agrees numerically with this AC order. No exact existence proof or optimality claim is made. If its reported order is higher than this cell, it serves as a higher-order witness only."
-22,6,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
-22,7,unknown,,,"Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open."
+22,5,exists,proven,,Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.
+22,6,impossible,,n22-t6-four-copy,An exact four-copy matrix-positivity certificate excludes every pure sixth-order AC state; an analytical fifth-order state attains the maximum.
+22,7,impossible,,n22-t6-four-copy,An exact four-copy matrix-positivity certificate excludes every pure sixth-order AC state; an analytical fifth-order state attains the maximum.
 22,8,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 22,9,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.
 22,10,impossible,,tensor-gram-even,The spin-tensor Gram matrix gives a quadratic necessary condition on the number of qubits.

@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{No pure sixth-order anticoherent state on twenty-one symmetric qubits}
+\author{Exact catalogue calculation}
+\date{5 November 2026}
+\maketitle
+\begin{theorem}
+There is no pure sixth-order anticoherent state in $V=\operatorname{Sym}^{21}(\mathbb C^2)$. Thus $K(21,t)=0$ for every $t\ge6$, and the largest possible pure-state AC order is at most five.
+\end{theorem}
+This is a computer-assisted exact proof. The self-contained rational data are in \texttt{certificate.json}. The standard-library program \texttt{verify\_independently.py} reconstructs every necessary constraint and the separating identity, and verifies all positive definiteness claims with rational arithmetic. Numerical optimization is used only to discover the certificate.
+
+\paragraph{Moment and partial-transpose positivity.}
+For a hypothetical normalized sixth-order AC vector $\psi\in V$, form
+\[
+X=\int_{\mathrm{SU}(2)}(U|\psi\rangle\langle\psi|U^\dagger)^{\otimes3}\,dU.
+\]
+Then $X\succeq0$, $\Tr X=1$, and $X$ is invariant and supported on the $\binom{24}{3}=2024$-dimensional space $\operatorname{Sym}^{3}(V)$. It is separable across the split $1|2$ of its three copies. Let $F|i\rangle=(-1)^i|21-i\rangle$ in the Dicke basis. Therefore
+\[
+Y=(F\otimes I)X^{T_1}(F^\dagger\otimes I)\succeq0.
+\]
+This partial time reversal restores ordinary rotation covariance, so invariant blocks of both $X$ and $Y$ may be used.
+
+\paragraph{Necessary linear equations.}
+For $z_i=2i-21$, let $f_\ell(i)$ be the primitive integer-scaled polynomials obtained by Gram--Schmidt orthogonalization of $1,z,z^2,\ldots,z^6$ on the uniform set $i=0,\ldots,21$. The matrices $T_\ell=\operatorname{diag}(f_\ell(i))$ are nonzero multiples of the zero components of rank-$\ell$ spin tensors. Anticoherence of every rotated $\psi$ gives
+\[
+\Tr_1[(T_\ell\otimes I^{\otimes2})X]=0,\qquad1\le\ell\le6.
+\]
+Real symmetric invariant coordinates suffice: replacing $X$ by $(X+\overline X)/2$ preserves all these real equations, trace, positivity, separability and rotation invariance. Thus arbitrary complex amplitudes are covered.
+
+\paragraph{Complete rational parametrization.}
+Use $b_i=\sqrt{\binom{21}{i}}|i\rangle$ and the averaged symmetric word basis $E_w$. Its metric on words of length $r$ is
+\[
+g_r(w)=\frac1{r!}\prod_{i=0}^{21}\binom{21}{i}^{c_i(w)}c_i(w)!.
+\]
+The certificate supplies all highest-weight columns for the 30 irreducible input sectors, 66 columns in total. Raising equations, independence, physical Gram matrices, descendants and the full representation character are independently checked. Their dimensions sum to 2024. With $J$ denoting doubled spin, set
+\[
+U_{J,q}=\frac{J_-^q}{q!}H_J,\qquad d_J=\operatorname{lcm}_{0\le q\le J}\binom Jq,
+\qquad
+X_{\mathrm{coeff}}=\sum_Jd_J\sum_{q=0}^J\frac{U_{J,q}B_JU_{J,q}^T}{\binom Jq}.
+\]
+The real symmetric matrices $B_J$ contain 120 independent coordinates; $X\succeq0$ is equivalent to $B_J\succeq0$. The certificate uses positive dyadic diagonal scalings $S_J$ and $x_J=d_J(J+1)S_JB_JS_J\succeq0$. It selects 103 necessary matrix equations $R_i(B)=0$ from the contractions above. Each selected row is divided by its positive integer coefficient gcd. The verifier reconstructs all selected rows; completeness of the constraints is not required.
+
+\paragraph{Exact partial time reversal.}
+The product basis $b_i\otimes E_a$, with $a$ a sorted two-letter word, has metric $G_{(i,a)}=\binom{21}{i}g_2(a)$. For $o=\operatorname{sort}(a,21-j)$ and $p=\operatorname{sort}(b,21-i)$, direct symmetric embedding and first-leg transpose give
+\[
+Y_{\mathrm{coeff},(i,a),(j,b)}=
+\frac{(-1)^{i+j}}9[c_{21-j}(a)+1][c_{21-i}(b)+1]X_{\mathrm{coeff},o,p}.
+\]
+The rational output highest-weight columns $W_L$ occupy 32 sectors, with 187 columns in total, in the $22\binom{23}{2}=5566$-dimensional space $V\otimes\operatorname{Sym}^{2}(V)$. The verifier reconstructs and checks this complete product representation. Every compression
+\[
+Y_L=(L+1)W_L^TG_LY_{\mathrm{coeff},L}G_LW_L
+\]
+is positive semidefinite.
+
+\paragraph{Separating identity and contradiction.}
+The certificate gives explicit rational weights $y_i$, matrices $C_J\succ0$, and matrices $Q_L\succ0$ satisfying the coefficientwise identity
+\[
+\boxed{-\Tr X=\sum_{i=1}^{103}y_iR_i(B)+\sum_J\Tr(C_Jx_J)+\sum_L\Tr(Q_LY_L).}
+\]
+All 120 coefficients are independently reconstructed from the physical representation and checked exactly. Positive definiteness is verified by 66 strictly positive rational $LDL^T$ pivots for the 30 source matrices and 187 strictly positive pivots for the 32 output matrices, including exact reconstruction of each factorization.
+For a hypothetical state, the constraints vanish and every trace pairing on the right is nonnegative. The left side is $-1$, a contradiction. Nesting excludes every order at least six. This proof does not exclude order five.
+
+\paragraph{Reproduction.}
+Run \texttt{python3 verify\_independently.py}. Only Python standard-library modules are required. The report records the certificate SHA-256, each reconstructed constraint, the complete representation checks and exact positivity pivots.
+\end{document}

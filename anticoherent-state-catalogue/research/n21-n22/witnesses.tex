@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{margin=1in}
+\begin{document}
+\title{Exact fourth- and fifth-order anticoherent witnesses at 21 and 22 qubits}
+\author{Independent catalogue construction}
+\date{5 November 2026}
+\maketitle
+Write $D_r=|D_N^{(r)}\rangle$ for the normalized Dicke basis.
+The following normalized states have strictly the indicated AC orders:
+\begin{align*}
+|\psi_{21}\rangle&=\frac{\sqrt{915}(D_0+D_{21})+
+ 13\sqrt{14}(D_4-D_{17})+17\sqrt7(D_8+D_{13})}{4\sqrt{663}},\\
+|\psi_{22}\rangle&=\frac{3\sqrt{11}(D_1+D_{21})+
+ \sqrt{154}(D_6-D_{16})+\sqrt{119}D_{11}}{25}.
+\end{align*}
+
+\paragraph{Diagonal moments.}
+The Dicke-index probability distributions are invariant under $r\mapsto N-r$,
+so every odd moment of $m=r-N/2$ vanishes. At $N=21$, direct rational arithmetic
+gives $\langle m^2\rangle=161/4$ and
+$\langle m^4\rangle=46529/16$. At $N=22$, it gives
+$\langle m^2\rangle=44$ and $\langle m^4\rangle=3476$.
+These are the moments of the uniform spin distributions at the corresponding
+spins: in general they equal $j(j+1)/3$ and
+$j(j+1)(3j^2+3j-1)/15$, respectively. Together with normalization and the odd
+moments, this matches all diagonal moments through orders four and five.
+The diagonal entries of the $q$-body reduction are expectations of
+hypergeometric probabilities, which are polynomials of degree $q$ in $r$.
+Matching these moments therefore gives every diagonal entry $1/(q+1)$.
+
+\paragraph{Off-diagonal cancellation.}
+For amplitudes $c_r$ the general reduced-state entry is
+\[
+(\rho_q)_{ab}=\sum_l c_{a+l}\overline{c_{b+l}}
+ \binom{N-q}{l}
+ \sqrt{\frac{\binom qa\binom qb}
+ {\binom N{a+l}\binom N{b+l}}}.
+\]
+At $N=21$, support differences one, two and three are absent.
+At order four the only potentially nonzero off-diagonal entries are $(0,4)$
+and its conjugate. The contributions from pairs $(0,4)$ and $(17,21)$ cancel,
+as do those from $(4,8)$ and $(13,17)$. Reflection makes their binomial
+prefactors equal and the sign at index 17 makes them opposite.
+Thus $\rho_4=I_5/5$.
+At $N=22$, support differences one through four are absent. At order five,
+the pairs $(1,6)$ and $(16,21)$ cancel, as do $(6,11)$ and $(11,16)$.
+Thus $\rho_5=I_6/6$.
+
+\paragraph{Strict order.}
+The next reductions have the exact defects
+\[
+(\rho_5^{\psi_{21}})_{0,5}=\frac{11}{912}\ne0,
+\qquad
+(\rho_6^{\psi_{22}})_{0,0}-\frac17=-\frac1{33915}\ne0.
+\]
+Hence these states are not fifth- and sixth-order AC, respectively.
+These observations establish exact attainment by particular states, without
+asserting that their AC orders are globally maximal.
+The accompanying independent verifier reconstructs every reduction through
+the next order directly from the saved coefficients.
+\end{document}
