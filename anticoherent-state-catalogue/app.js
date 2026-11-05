@@ -35,6 +35,16 @@
   function matches(entry) { return filter==='all' || entry.status===filter; }
   function status(entry) { return Object.hasOwn(labels,entry.status) ? entry.status : 'unknown'; }
   function badge(entry) { const s=status(entry); return `<span class="badge ${s}">${labels[s]}</span>`; }
+  function maximumOrderTag(stateOrEntry) {
+    const maximum=stateOrEntry?.maximumACOrder;
+    if(!maximum)return '';
+    const proven=maximum.status==='proven';
+    return `<p class="maximum-order-tag ${proven?'proven':'conjectured'}">${proven?'Proved':'Conjectured'} maximum AC order: <strong>${maximum.order}</strong></p>`;
+  }
+  function maximumOrderOption(state) {
+    const maximum=state?.maximumACOrder;
+    return maximum?` · ${maximum.status==='proven'?'Proved max':'Conj. max'}`:'';
+  }
   function sourceUrl(ref) {
     if (ref.file || ref.filename) return `references/${encodeURIComponent(ref.file || ref.filename)}${ref.page ? '#page='+Number(ref.page) : ''}`;
     if (ref.pdf) return `${ref.pdf.includes('/') ? ref.pdf : 'references/'+encodeURIComponent(ref.pdf)}${ref.page ? '#page='+Number(ref.page) : ''}`;
@@ -90,7 +100,9 @@
       const entry=getEntry(n,t),s=status(entry),isSelected=n===selected.n&&t===selected.t;
       if(!matches(entry))return '<td class="filtered-cell" aria-label="Hidden by evidence filter">·</td>';
       matching++;
-      return `<td><button class="state-cell ${s}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${shortLabels[s]}</span></button></td>`;
+      const maximum=entry.maximumACOrder;
+      const maximumText=maximum?(maximum.status==='proven'?'Proved max':'Conj. max'):null;
+      return `<td><button class="state-cell ${s}${maximum?' maximum-order-cell':''}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}${maximumText?', '+maximumText+'imum AC order':''}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${maximumText||shortLabels[s]}</span></button></td>`;
     }).join('')}</tr>`).join('');
     $('state-table').innerHTML=`<table class="state-grid" style="min-width:${Math.max(560,ts.length*68+40)}px"><caption class="sr-only">Existence of pure anticoherent states by qubit number n and order t</caption>${head}<tbody>${body}</tbody></table>${matching ? '' : '<p class="no-matches">No cells match this evidence filter.</p>'}`;
     const exactCount=[...states.values()].filter(st=>st.status!=='numerical').length,numericalCount=states.size-exactCount;
@@ -140,8 +152,9 @@
     if(['exists','numerical'].includes(s) && witness) {
       const numeric=isNumerical(witness);
       content+=`<div class="witness-metric">${math(`\\rho_{${selected.t}}${numeric?'\\simeq':'='}\\frac{I_{${selected.t+1}}}{${selected.t+1}}`,true)}</div>`;
-      content+=`<label class="witness-label" for="witness-select">Representative <select id="witness-select">${candidates.map(st=>`<option value="${escape(st.id)}"${st.id===witness.id?' selected':''}>${escape((st.label||st.stateName||st.id)+symmetryLabel(st))}</option>`).join('')}</select></label>`;
+      content+=`<label class="witness-label" for="witness-select">Representative <select id="witness-select">${candidates.map(st=>`<option value="${escape(st.id)}"${st.id===witness.id?' selected':''}>${escape((st.label||st.stateName||st.id)+maximumOrderOption(st)+symmetryLabel(st))}</option>`).join('')}</select></label>`;
       content+=symmetrySummary(witness);
+      content+=maximumOrderTag(witness);
       const nextReduction=witness.verification?.reductions?.find(r=>r.t===witness.achievedOrder+1 && r.identityVerified===false);
       const strictOrder=!numeric && (!!nextReduction || !!witness.verification?.globalMaximumOrderProven);
       content+=`<p class="witness-order">${numeric?'Numerical ':strictOrder?'Exactly ':''}${witness.achievedOrder}-AC representative<span>${numeric?`Reported order ${witness.achievedOrder}`:strictOrder?`Not ${witness.achievedOrder+1}-AC`:`Witnesses orders 1–${witness.achievedOrder}`}</span></p>`;
@@ -192,7 +205,7 @@
   function renderConstructions() {
     const best=new Map();
     [...states.values()].forEach(st=>{if((st.n>=11 || st.achievedOrder>=4) && (!best.has(st.n)||st.achievedOrder>best.get(st.n).achievedOrder))best.set(st.n,st);});
-    $('construction-list').innerHTML=[...best.values()].sort((a,b)=>a.n-b.n).map(st=>`<article class="construction-card"><p class="eyebrow">N = ${st.n} / ${isNumerical(st)?'numerical order':'order'} ${st.achievedOrder}</p><h3>${escape(st.label||st.stateName)}</h3>${symmetrySummary(st)}<p>${escape(st.provenance||(isNumerical(st)?'Numerical library representative with checked reduced-state residuals.':'Exact representative with verified symmetric reductions.'))}</p><button type="button" class="text-link" data-state-link="${escape(st.id)}">Inspect the state <span aria-hidden="true">↗</span></button></article>`).join('')||'<p class="muted">Source-linked constructions will appear here.</p>';
+    $('construction-list').innerHTML=[...best.values()].sort((a,b)=>a.n-b.n).map(st=>`<article class="construction-card"><p class="eyebrow">N = ${st.n} / ${isNumerical(st)?'numerical order':'order'} ${st.achievedOrder}</p><h3>${escape(st.label||st.stateName)}</h3>${symmetrySummary(st)}${maximumOrderTag(st)}<p>${escape(st.provenance||(isNumerical(st)?'Numerical library representative with checked reduced-state residuals.':'Exact representative with verified symmetric reductions.'))}</p><button type="button" class="text-link" data-state-link="${escape(st.id)}">Inspect the state <span aria-hidden="true">↗</span></button></article>`).join('')||'<p class="muted">Source-linked constructions will appear here.</p>';
     $('general-constructions').innerHTML=(data.constructions||[]).map(c=>`<article class="general-construction"><h3>${escape(c.title)}</h3><p>${escape(c.text||'')}</p>${c.formulaLatex?`<div class="construction-formula">${math(c.formulaLatex,true)}</div>`:''}${c.references?.length?`<ul class="detail-sources">${referenceLinks(c.references)}</ul>`:''}</article>`).join('');
   }
   function renderSources() {

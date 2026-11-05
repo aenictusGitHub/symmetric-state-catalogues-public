@@ -53,3 +53,6 @@ body{font-size:16px}
 .jump-detail{display:none}.detail-panel{scroll-margin-top:24px}
 @media(max-width:850px){.jump-detail{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border:1px solid #cbd3c5;border-radius:3px;padding:7px 10px;color:var(--ink);font-size:13px;white-space:nowrap}.jump-detail:hover{background:#eff2e9}}
 @media print{.jump-detail{display:none}}
+
+/* Maximum-order status is separate from the exact/numerical state evidence. */
+.maximum-order-tag{display:inline-block;margin:10px 0 15px;padding:7px 10px;border:1px solid #d8c299;border-radius:3px;background:#f3ead9;color:#805b20;font-size:13px;line-height:1.45}.maximum-order-tag.proven{background:#e2eee5;border-color:#acc4b2;color:#205b49}.maximum-order-cell .cell-label{font-weight:650}.construction-card .maximum-order-tag{margin-top:12px;margin-bottom:10px}

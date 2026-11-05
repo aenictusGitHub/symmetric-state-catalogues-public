@@ -166,7 +166,43 @@ for state in states:
         if state['n']==17:state['notes']='This exact fourth-order radical state has globally maximum AC order four: an independently verified three-copy partial-transpose positivity certificate excludes every pure fifth-order state. A complex-conjugate representative is also given in the source catalogue.'
         if state['n']==14:state['notes']='This exact fourth-order state has globally maximum AC order four: every fifth-order state is excluded by an exact three-copy positivity certificate. A complex-conjugate representative is also given in the source catalogue.'
 
+
+# A proposed maximum is a statement about the qubit number, independent of
+# whether one displayed representative is exact or numerical. Use primary web
+# records, not degeneracy-specific or superseded lower-order source examples.
+def proposal_sources(state):
+    result=[]
+    if re.fullmatch(r'acs\.\d+\.\d+',state.get('sourceRecordId','')):result.append('website')
+    if state['id'].startswith('acliege-') or any((r.get('file') or r.get('filename'))=='ACLiege.jl' for r in state.get('references',[])):result.append('julia')
+    return result
+
+row_maximum_orders=[]
+for n in core:
+    candidates=[st for st in states if st['n']==n and proposal_sources(st)]
+    if not candidates:continue
+    proposed=max(st['achievedOrder'] for st in candidates)
+    highest=max(st['achievedOrder'] for st in states if st['n']==n)
+    if proposed<highest:continue  # A superseded source proposal is not a current maximum.
+    source_states=[st for st in candidates if st['achievedOrder']==proposed]
+    exact_attainment=any(st['n']==n and st['achievedOrder']>=proposed and st.get('status')!='numerical' for st in states)
+    next_entry=next((e for e in entries if e['n']==n and e['t']==proposed+1),None)
+    upper_bound=bool(next_entry and next_entry['status']=='impossible')
+    proven=exact_attainment and upper_bound
+    maximum={'n':n,'order':proposed,'status':'proven' if proven else 'conjectured','scope':'maximum AC order at this qubit number','sourceKinds':sorted({kind for st in source_states for kind in proposal_sources(st)}),'sourceStateIds':[st['id'] for st in source_states],'exactAttainmentProven':exact_attainment,'upperBoundProven':upper_bound}
+    if upper_bound:maximum['upperBoundProofId']=next_entry['proofId']
+    row_maximum_orders.append(maximum)
+    for entry in entries:
+        if entry['n']==n and entry['t']==proposed:
+            entry['maximumACOrder']=dict(maximum)
+            entry['maximumOrderStatus']=maximum['status']
+    for state in states:
+        if state['n']==n and state['achievedOrder']==proposed:
+            state['maximumACOrder']={key:value for key,value in maximum.items() if key!='sourceStateIds'}
+            state['maximumACOrder']['isPrimaryLibraryRepresentative']=state['id'] in maximum['sourceStateIds']
+
+
 caveats=[
+ 'Conj. max marks the highest currently proposed AC order in the Julia or primary website library at that qubit number. Lower-order library states are not proposed global maxima. Proved max requires both an exact attaining state and a proved exclusion of the next order; coefficient evidence remains separately exact or numerical.',
  'The table asks for at least the selected order. Exact representatives of the requested order are preferred; when only a higher-order witness is available, its own order is shown explicitly. Blue cells are numerical evidence, not exact existence proofs or maximum-order claims.',
  'Full anticoherence requires every multipole rank 1,…,t to vanish. Cancelling only even multipoles, or attaining an even-sector lower bound, does not suffice.',
  'The symmetric t-body identity has dimension t+1, not 2^t. These states are distinct from absolutely maximally entangled qubit states.',
@@ -175,7 +211,7 @@ caveats=[
  'Blank cells in the 2017 numerical survey mean failed convergence. Restricted cyclic-construction thresholds in the 2015 paper are not universal existence thresholds.',
  'The eleven-qubit third-order representative with radical complex amplitudes is independently derived and exactly checked here; it is not attributed to the rounded numerical vector in the 2017 appendix.'
 ]
-data={'schemaVersion':'1.0','title':'Pure anticoherent symmetric states','compiledDate':'2026-11-05','scope':f'Pure symmetric states for every qubit number n=1–{MAX_N} and AC orders t=1–{MAX_ORDER}. Exact witnesses, high-precision numerical library states, proved exclusions and unresolved cells are distinguished. Orders above {MAX_ORDER} are excluded throughout this range by the displayed general bounds.','coreNumbers':core,'extendedNumbers':extended,'orders':list(range(1,MAX_ORDER+1)),'entries':entries,'states':states,'sources':sources,'proofs':proofs,'sourceCaveats':caveats,'definition':witnesses['definition'],'definitionReferences':witnesses['definitionReferences'],'constructions':[
+data={'schemaVersion':'1.0','title':'Pure anticoherent symmetric states','compiledDate':'2026-11-05','scope':f'Pure symmetric states for every qubit number n=1–{MAX_N} and AC orders t=1–{MAX_ORDER}. Exact witnesses, high-precision numerical library states, proved exclusions and unresolved cells are distinguished. Orders above {MAX_ORDER} are excluded throughout this range by the displayed general bounds.','coreNumbers':core,'extendedNumbers':extended,'orders':list(range(1,MAX_ORDER+1)),'entries':entries,'states':states,'rowMaximumOrders':row_maximum_orders,'sources':sources,'proofs':proofs,'sourceCaveats':caveats,'definition':witnesses['definition'],'definitionReferences':witnesses['definitionReferences'],'constructions':[
  {'title':'Order one at every size','text':'For every n ≥ 2, the GHZ / spin-cat state is first-order anticoherent.','formulaLatex':r'|\psi_n\rangle=\frac{|D_n^{(0)}\rangle+|D_n^{(n)}\rangle}{\sqrt2}'},
  {'title':'Order three for every even n ≥ 8','text':'The support gaps remove all off-diagonal moments through rank three; symmetric weights give the required diagonal moments.','formulaLatex':r'|\psi_n\rangle=\sqrt{\frac{n+2}{6n}}\bigl(|D_n^{(0)}\rangle+|D_n^{(n)}\rangle\bigr)+\sqrt{\frac{2(n-1)}{3n}}|D_n^{(n/2)}\rangle','references':[{'file':'PRA92_052333(2015).pdf','page':9,'location':'Eq. (48)'}]},
  {'title':'Every fixed order eventually occurs','text':'The constructive quadrature argument proves existence for sufficiently large n at every fixed t. Its restricted search thresholds are not minimal universal thresholds.','references':[{'file':'PRA92_052333(2015).pdf','page':10,'location':'Sec. VI; proof continues on PDF p.11'}]}
@@ -188,5 +224,5 @@ for source in sources:assert (ROOT/source['pdf']).is_file(),source
 index=ROOT/'index.html'
 index.write_text(re.sub(r'src="data/catalogue\.js(?:\?v=[^"]*)?"','src="data/catalogue.js?v='+hashlib.sha256((ROOT/'data/catalogue.js').read_bytes()).hexdigest()[:12]+'"',index.read_text()))
 with (ROOT/'data/catalogue.csv').open('w',newline='') as stream:
- writer=csv.DictWriter(stream,fieldnames=['n','t','status','proofId','notes'],extrasaction='ignore');writer.writeheader();writer.writerows(entries)
+ writer=csv.DictWriter(stream,fieldnames=['n','t','status','maximumOrderStatus','proofId','notes'],extrasaction='ignore');writer.writeheader();writer.writerows(entries)
 print('Built',len(entries),'entries;',data['validation']['exactWitnessCount'],'exact and',data['validation']['numericalWitnessCount'],'numerical representatives. Status counts:',data['validation']['coreStatusCounts'])

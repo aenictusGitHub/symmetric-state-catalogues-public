@@ -40,6 +40,10 @@ function session(name,withCoordinates=true){
     if(allowed){
      if(ac){
       const st=env.data.states.find(s=>s.id===id);
+      const maximum=st.maximumACOrder;
+      if(maximum){
+       assert(detail.includes(`${maximum.status==='proven'?'Proved':'Conjectured'} maximum AC order: <strong>${maximum.order}</strong>`),'maximum order status shown '+id);
+      }else assert(!detail.includes('<p class="maximum-order-tag'),'no maximum badge on lower/superseded state '+id);
       if(st.status==='numerical'){
        assert(detail.includes('Numerical') && detail.includes('residual'),'numerical evidence visible '+id);
        assert(!detail.includes('Exact reduced-state verification'),'numerical witness never labelled exact '+id);

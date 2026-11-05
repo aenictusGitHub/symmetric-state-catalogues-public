@@ -26,7 +26,7 @@
           <label><input type="checkbox" id="mv-hull">Convex hull</label>
           <label><input type="checkbox" id="mv-axes">Coordinate axes</label>
         </div><div id="mv-groups" class="mv-groups"></div><div id="mv-symmetry-summary" class="mv-symmetry-summary" aria-live="polite"></div>
-        <div class="mv-legend"><span><i class="mv-dot" aria-hidden="true"></i>Front hemisphere</span><span><i class="mv-dot mv-back" aria-hidden="true"></i>Back hemisphere</span><span><b class="mv-centre-key" aria-hidden="true">+</b>Sphere centre</span><span><b class="mv-barycentre-key" aria-hidden="true">◇</b>Barycentre (with multiplicities)</span><span>Numbers beside points = multiplicities · Unlabelled = 1</span></div>
+        <div class="mv-legend"><span><i class="mv-dot" aria-hidden="true"></i>Front hemisphere</span><span><i class="mv-dot mv-back" aria-hidden="true"></i>Back hemisphere</span><span><b class="mv-centre-key" aria-hidden="true">+</b>Sphere centre</span><span><b class="mv-barycentre-key" aria-hidden="true">◇</b><span id="mv-barycentre-label">Barycentre</span></span><span id="mv-multiplicity-note" hidden style="display:none">Numbers beside points = multiplicities · Unlabelled = 1</span></div>
       </div></div>
       <details class="mv-method"><summary>How to use the viewer</summary><p id="mv-help" class="mv-help">Drag the sphere or use the rotation buttons. With the sphere focused, arrow keys rotate and Home resets. Escape closes. Alignment chooses a displayed coordinate frame with the highest-order symmetry axis along z. Reset restores the default aligned view. Saved coordinates and state coefficients are unchanged.</p></details>
       <details class="mv-method"><summary>About the representation and symmetry</summary><p id="mv-method-copy" class="mv-note"></p><p id="mv-coordinate-note" class="mv-note" hidden></p></details>`;
@@ -89,6 +89,10 @@
     $('title').textContent=`${state.n} qubits · Majorana sphere`;
     $('label').textContent=state.label||'Selected representative';
     $('summary').textContent=`${state.n} points · ${points.length} distinct ${points.length===1?'position':'positions'}`;
+    const repeated=points.some(point=>point.multiplicity>1);
+    $('multiplicity-note').hidden=!repeated;
+    $('multiplicity-note').setAttribute('style',repeated?'':'display:none');
+    $('barycentre-label').textContent=repeated?'Barycentre (with multiplicities)':'Barycentre';
     let caption=state.evidence||'Numerical coordinates of the selected representative.';
     const coordinateNotes=[];
     for(const note of ['Coordinates are a numerical rendering of the saved state.','Coordinates use the saved decimal coefficients; coincident finite roots are not inferred by clustering.']){

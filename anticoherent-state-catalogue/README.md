@@ -14,6 +14,8 @@ Where an exact-order representative is recorded, it is the default for the selec
 
 A general rational construction and proof are given in [the exact-order research note](research/exact-orders/general/index.html). It guarantees exactly order t for every N ≥ 4t(t+1)^4; the bound is sufficient, not optimal. A separate three-component family gives exactly order two for every N ≥ 7.
 
+The highest primary Julia/website order at each size is labelled **Conj. max** unless exact attainment and a global upper bound establish **Proved max**. These labels concern the maximum order at the qubit number; each representative retains its own exact or numerical evidence. Lower-order and superseded library states are not marked as current global maxima.
+
 ## Evidence
 
 The original core at n=2–12, t=1–6 comprises 26 exact existence results and 30 proved exclusions. The expanded table contains exact witnesses, numerical witnesses, proved exclusions and unresolved cells. A failed numerical search is never treated as a proof of impossibility.

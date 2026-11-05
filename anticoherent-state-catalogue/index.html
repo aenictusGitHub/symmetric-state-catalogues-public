@@ -6,19 +6,19 @@
   <meta name="theme-color" content="#f5f4ee">
   <meta name="description" content="A source-linked catalogue of pure anticoherent symmetric multiqubit states, exact and numerical representatives through 60 qubits, and existence results.">
   <title>Anticoherent symmetric states · A research catalogue</title>
-  <link rel="stylesheet" href="styles.css?v=d885a74d2ef5">
+  <link rel="stylesheet" href="styles.css?v=c9e65463a126">
   <link rel="stylesheet" href="majorana-viewer.css?v=611ee25c74b5">
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
   <script src="vendor/katex/katex.min.js" defer></script>
-  <script src="data/catalogue.js?v=53ec86633a3c" defer></script>
-  <script src="data/majorana.js?v=cd6731a4e90e" defer></script>
+  <script src="data/catalogue.js?v=c8dd26313037" defer></script>
+  <script src="data/majorana.js?v=131fb03ea3b6" defer></script>
   <script src="majorana-symmetry.js" defer></script>
   <script src="symmetry-groups.js" defer></script>
   <script src="point-groups.js" defer></script>
   <script src="majorana-hull.js?v=487d893d323f" defer></script>
   <script src="majorana-svg.js?v=f2d76493f567" defer></script>
-  <script src="majorana-viewer.js?v=46c597bb3c19" defer></script>
-  <script src="app.js?v=4b3e1f237d55" defer></script>
+  <script src="majorana-viewer.js?v=47eeddf9a127" defer></script>
+  <script src="app.js?v=11dff9f5520d" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#catalogue">Skip to catalogue</a>
@@ -44,7 +44,7 @@
         <div class="matrix-panel">
           <div class="matrix-heading"><span>Qubit number <i>n</i> / Anticoherence order <i>t</i></span><span class="matrix-instruction">Select a cell for the state and evidence</span></div>
           <div id="state-table" class="table-scroll" role="region" aria-label="Anticoherence existence table" tabindex="0"><div class="empty-state"><span class="empty-mark" aria-hidden="true">◎</span><h3>Loading the catalogue</h3><p>Representatives and source references will appear here.</p></div></div>
-          <div class="legend" aria-label="Evidence legend"><span><i class="legend-dot exists" aria-hidden="true"></i>Exact witness</span><span><i class="legend-dot numerical" aria-hidden="true"></i>Numerical witness</span><span><i class="legend-dot impossible" aria-hidden="true"></i>Proven impossible</span><span><i class="legend-dot reported_absent" aria-hidden="true"></i>Reported absent</span><span><i class="legend-dot unknown" aria-hidden="true"></i>Unresolved</span></div>
+          <div class="legend" aria-label="Evidence legend"><span><i class="legend-dot exists" aria-hidden="true"></i>Exact witness</span><span><i class="legend-dot numerical" aria-hidden="true"></i>Numerical witness</span><span><i class="legend-dot impossible" aria-hidden="true"></i>Proven impossible</span><span><i class="legend-dot reported_absent" aria-hidden="true"></i>Reported absent</span><span><i class="legend-dot unknown" aria-hidden="true"></i>Unresolved</span></div><p class="micro-copy maximum-order-help">Conj. max = proposed maximum AC order from the Julia or website library. Proved max = an attained maximum supported by an exclusion proof. State evidence remains separately exact or numerical.</p>
           <p id="coverage-note" class="coverage-note">“Reported absent” records a source's conclusion. “Unresolved” makes no claim about existence. A witness of order t also establishes every lower order.</p>
         </div>
         <aside id="result-detail" class="detail-panel" aria-label="Selected result" aria-live="polite"><p class="eyebrow">Selected result</p><div class="empty-state"><h3>A state for each cell.</h3><p>Select a parameter pair to inspect its evidence.</p></div></aside>
