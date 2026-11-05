@@ -6,11 +6,11 @@ Each attached representative has a **View Majorana sphere** button. The interact
 
 The sphere uses the same convention as the degeneracy catalogue: the homogeneous polynomial is `P(X,Y) = Σ_r (−1)^r √binom(n,r) c_r X^(n−r)Y^r`; a root `z = Y/X` represents the spinor ratio `b/a = 1/z`. Zero and infinity map to the south and north poles. Displayed coordinates and symmetry classifications are numerical; the existing exact AC certificates remain the evidence for anticoherence.
 
-The main table covers every qubit number n=1–42 and orders t=1–12. The original Liège library supplies numerical witnesses through n=42, alongside analytical representatives and proved exclusions. Missing numerical solutions are left unresolved unless an independent proof excludes them.
+The main table covers every qubit number n=1–60 and orders t=1–14. The original Liège library supplies numerical witnesses through n=60, alongside analytical representatives and proved exclusions. Missing numerical solutions are left unresolved unless an independent proof excludes them.
 
 Anticoherence means **at least** the selected order: the t-body reduced state is I/(t+1) on the symmetric subspace. Every multipole rank 1,…,t must vanish. The condition differs from maximal mixing on the full 2^t-dimensional qubit space and from cancelling only even multipoles.
 
-Where an exact-order representative is recorded, it is the default for the selected cell. Higher-order states remain available as alternatives. The 49 original and 91 additional analytical exact-order witnesses are checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Numerical library states are labelled separately and display reduced-state residuals rather than an exact existence claim. Read `research/exact-orders/index.html` for the construction and saved certificates.
+Where an exact-order representative is recorded, it is the default for the selected cell. Higher-order states remain available as alternatives. Analytical exact-order witnesses are checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Numerical library states are labelled separately and display reduced-state residuals rather than an exact existence claim. Read `research/exact-orders/index.html` for the construction and saved certificates.
 
 A general rational construction and proof are given in [the exact-order research note](research/exact-orders/general/index.html). It guarantees exactly order t for every N ≥ 4t(t+1)^4; the bound is sufficient, not optimal. A separate three-component family gives exactly order two for every N ≥ 7.
 
@@ -26,7 +26,7 @@ The previously reported exclusions (9,3) and (10,4) now have independent exact p
 
 Two-copy exact identities exclude (8,4) and (10,5). Schmidt-rank, odd-complement, and tensor-Gram arguments establish the other exclusions. Read `research/SMALL_N_PROOFS.md` for the derivations.
 
-The expansion imports 87 refined library records, checked independently at 100-digit precision from saved 85-digit components. The catalogue contains 169 exact representatives and 87 numerical representatives. Read [the import and audit notes](research/library42/index.html) for coverage and verification, including the rejected starred N=29,t=6 candidate.
+The expansion imports the audited library representatives through n=60, with independently checked high-precision partial traces. The current dataset and [import and audit notes](research/library42/index.html) give representative counts, residuals and rejected source candidates, including the starred N=29,t=6 candidate and the mislabelled acs.48.8.txt file. The research folder retains its original name to keep existing links valid.
 
 ## Reproduce
 
@@ -51,7 +51,7 @@ python3 research/library42/build_page.py
 python3 scripts/build_data.py
 ```
 
-The first verifies all representative states in the supplied file; pass `data/catalogue.json` to include all 78 displayed states. The second independently verifies the core witnesses and both exact rational exclusion identities. The remaining proof verifiers check all new higher-copy exclusions using exact arithmetic. The last rebuilds browser data and CSV from the source records.
+The first verifies all representative states in the supplied file; pass `data/catalogue.json` to include every representative in the rebuilt dataset. The second independently verifies the core witnesses and both exact rational exclusion identities. The remaining proof verifiers check all new higher-copy exclusions using exact arithmetic. The last rebuilds browser data and CSV from the source records.
 
 After changing representative data, regenerate the Majorana coordinates with `python3 scripts/build_majorana.py` (SymPy and NumPy). Independent reconstruction and viewer checks are included:
 

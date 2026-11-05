@@ -21,6 +21,7 @@ import math
 import re
 import numpy as np
 import sympy as s
+import mpmath as mp
 
 ROOT = Path(__file__).resolve().parents[1]
 y = s.Symbol('y')
@@ -92,15 +93,82 @@ def point(root,m):
     return {'x':2*root.real/q,'y':-2*root.imag/q,'z':(abs(root)**2-1)/q,'multiplicity':int(m)}
 
 def reconstruct(points,n):
-    poly=np.array([1.+0j])
-    for p in points:
-        z=p['z']; a=math.sqrt(max(0.,(1+z)/2))
-        b=(p['x']+1j*p['y'])/(2*a) if a>1e-10 else 1.+0j
-        for _ in range(p['multiplicity']):poly=np.convolve(poly,[a,-b])
-    return np.array([(-1)**r*poly[r]/math.sqrt(comb(n,r)) for r in range(n+1)])
+    # Polynomial multiplication can lose digits through cancellation at larger N.
+    # Reconstruct at high precision even though displayed coordinates are doubles.
+    with mp.workdps(100):
+        poly=[mp.mpc(1)]
+        for p in points:
+            z=mp.mpf(str(p['z']));xy=mp.mpc(str(p['x']),str(p['y']))
+            # Choose the stable spinor chart. A near-pole star must never be
+            # replaced by the pole merely because its z coordinate rounded to ±1.
+            if z>=0:
+                a=mp.sqrt((1+z)/2);b=xy/(2*a)
+            else:
+                b=mp.sqrt((1-z)/2);a=mp.conj(xy)/(2*b)
+            for _ in range(p['multiplicity']):
+                out=[mp.mpc(0)]*(len(poly)+1)
+                for j,c in enumerate(poly):out[j]+=a*c;out[j+1]-=b*c
+                poly=out
+        values=[(-1)**r*poly[r]/mp.sqrt(mp.binomial(n,r)) for r in range(n+1)]
+        norm=mp.sqrt(sum(abs(x)**2 for x in values))
+        return np.array([complex(x/norm) for x in values])
 
 CACHE={}
 IMPORTED_GEOMETRY=json.loads((ROOT/'research/cross-catalogue/exact-states.json').read_text()).get('geometryImports',{})
+def coordinate_fingerprint(record):
+    # Only mathematical/coordinate inputs affect cached geometry. Include the
+    # imported exact geometry itself, so changed source certificates invalidate it.
+    keys=['n','status','achievedOrder','label','stateName','stateKey','exactCoefficients','coefficients','majoranaPoints','majoranaCoordinatePolicy']
+    payload={k:record.get(k) for k in keys}
+    payload['importedGeometry']=IMPORTED_GEOMETRY.get(record['id'])
+    payload['coordinateMethodVersion']=1
+    return hashlib.sha256(json.dumps(payload,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+def numerical_rendering_of_exact(record,exact,saved):
+    n=record['n'];support=[i for i,c in enumerate(exact) if c!=0]
+    low,high=min(support),max(support);step=reduce(gcd,(r-low for r in support),0) or 1
+    degree=(high-low)//step
+    with mp.workdps(100):
+        values=[mp.mpc(0) for _ in range(degree+1)]
+        for r in support:
+            z=s.N((-1)**r*s.sqrt(s.binomial(n,r))*exact[r],100)
+            values[(r-low)//step]=mp.mpc(str(s.re(z)),str(s.im(z)))
+        values=[v/values[-1] for v in values]
+        try:roots=mp.polyroots(list(reversed(values)),maxsteps=1000,extraprec=100)
+        except (mp.libmp.libhyper.NoConvergence,ValueError,ZeroDivisionError):
+            guesses=np.roots(np.array([complex(v) for v in reversed(values)]))
+            roots=[];derivative=[j*values[j] for j in range(1,len(values))]
+            for guess in guesses:
+                root=mp.mpc(complex(guess))
+                for _ in range(100):
+                    correction=mp.polyval(list(reversed(values)),root)/mp.polyval(list(reversed(derivative)),root)
+                    root-=correction
+                    if abs(correction)<mp.mpf('1e-85'):break
+                roots.append(root)
+        # Independently reconstruct the reduced polynomial to check all roots,
+        # including completeness. No proximity clustering or repeated-root claim.
+        rebuilt=[mp.mpc(1)]
+        for root in roots:
+            new=[mp.mpc(0)]*(len(rebuilt)+1)
+            for j,c in enumerate(rebuilt):new[j]-=root*c;new[j+1]+=c
+            rebuilt=new
+        error=max(abs(a-b) for a,b in zip(values,rebuilt))/max(abs(a) for a in values)
+        assert len(roots)==degree and error<mp.mpf('1e-65'),(record['id'],error)
+        points=[]
+        if low:points.append(point(0j,low))
+        if high<n:points.append(point(None,n-high))
+        for root in roots:
+            radius=mp.root(abs(root),step);angle=mp.arg(root)
+            for k in range(step):points.append(point(complex(radius*mp.exp(1j*(angle+2*mp.pi*k)/step)),1))
+    reconstruction=ray_error(saved,reconstruct(points,n));assert reconstruction<1e-10,(record['id'],reconstruction)
+    separation=min((math.sqrt(sum((a[k]-b[k])**2 for k in ['x','y','z'])) for i,a in enumerate(points) for b in points[i+1:]),default=None)
+    assert separation is None or separation>1e-7,(record['id'],'unresolved close roots')
+    return {'id':record['id'],'n':n,'label':record['label'],'points':points,'partition':sorted([p['multiplicity'] for p in points],reverse=True),
+      'multiplicityEvidence':'Explicit pole multiplicities are exact; finite roots are numerically rendered without clustering.',
+      'evidence':f"Exact witness of AC order {record['achievedOrder']}.",
+      'coordinateMethod':'100-digit roots of the exact Dicke polynomial; polynomial reconstruction checked. Finite repeated-root multiplicities are not certified by this numerical rendering.',
+      'diagnostics':{'coefficientSource':'Saved exact Dicke amplitudes','squareFreeFactorizationExact':False,'zeroMultiplicity':low,'infinityMultiplicity':n-high,'nonzeroRootStep':step,'projectiveDickeReconstructionError':reconstruction,'exactFormulaVsSavedCoefficientsError':ray_error(saved,[complex(s.N(c,40)) for c in exact]),'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'minimumDistinctPointDistance':separation,'rootPrecisionDecimalDigits':100,'relativeReducedPolynomialReconstructionError':float(error)}}
+
 def coordinates(record):
     n=record['n']; exact,source=exact_coefficients(record)
     saved=[as_complex(c) for c in record['coefficients']]
@@ -113,6 +181,9 @@ def coordinates(record):
           'evidence':f"Numerical library representative, reported AC order {record['achievedOrder']}. Reduced-state residuals are checked from the saved 85-digit components. This is not an exact AC or optimality proof.",
           'coordinateMethod':'Imported audited refined Majorana points, independently reconstructed against the displayed Dicke vector.',
           'diagnostics':{'coefficientSource':'Saved 85-digit numerical library state; browser coefficients rounded','squareFreeFactorizationExact':False,'projectiveDickeReconstructionError':error,'exactFormulaVsSavedCoefficientsError':0.,'maxUnitSphereError':max(abs(sum(p[k]**2 for k in ['x','y','z'])-1) for p in points),'noNumericalRootClustering':True}}
+    if record.get('majoranaCoordinatePolicy')=='numeric-roots-retain-explicit-poles':
+        assert exact is not None
+        return numerical_rendering_of_exact(record,exact,saved)
     if record['id'] in IMPORTED_GEOMETRY:
         imported=IMPORTED_GEOMETRY[record['id']]
         assert imported['exactCoefficients']==record['exactCoefficients']
@@ -195,10 +266,18 @@ def coordinates(record):
 def main():
     raw=(ROOT/'data/catalogue.json').read_bytes(); data=json.loads(raw)
     inputs=data.get('states',data['entries'])
+    cache_path=ROOT/'data/majorana.json'
+    cached=json.loads(cache_path.read_text()).get('records',{}) if cache_path.exists() else {}
     records={}
     for st in inputs:
-        print(st['id'],flush=True)
-        records[st['id']]=coordinates(st)
+        fingerprint=coordinate_fingerprint(st)
+        cache=cached.get(st['id'])
+        if cache and cache.get('diagnostics',{}).get('inputFingerprint')==fingerprint:
+            records[st['id']]=cache
+        else:
+            print(st['id'],flush=True)
+            records[st['id']]=coordinates(st)
+        records[st['id']]['diagnostics']['inputFingerprint']=fingerprint
     output={'schemaVersion':1,'catalogueSHA256':hashlib.sha256(raw).hexdigest(),
         'convention':{'polynomial':'P(z)=sum_r (-1)^r sqrt(binomial(n,r)) c_r z^r',
                       'sphere':'(2 Re(z), -2 Im(z), |z|^2-1)/(1+|z|^2); infinity is north',
