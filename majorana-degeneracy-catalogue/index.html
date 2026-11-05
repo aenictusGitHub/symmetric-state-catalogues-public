@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
   <link rel="stylesheet" href="styles.css?v=23ded05faae8">
   <script src="vendor/katex/katex.min.js" defer></script>
-  <script src="data/catalogue.js" defer></script>
+  <script src="data/catalogue.js?v=4355a5f72b5d" defer></script>
   <script src="majorana-symmetry.js" defer></script>
   <script src="symmetry-groups.js" defer></script>
   <script src="point-groups.js" defer></script>
@@ -30,7 +30,7 @@
     </section>
 
     <section id="catalogue" class="catalogue-section" aria-labelledby="catalogue-title">
-      <div class="section-heading"><div><p class="eyebrow">01 / The catalogue</p><h2 id="catalogue-title">Highest anticoherence order</h2></div><a class="download-link" href="data/catalogue.json" download>Download catalogue ↓</a></div>
+      <div class="section-heading"><div><p class="eyebrow">01 / The catalogue</p><h2 id="catalogue-title">Highest anticoherence order</h2></div><a class="download-link" href="data/catalogue.js?v=4355a5f72b5d" download>Download catalogue ↓</a></div>
       <div class="toolbar"><div class="filter-controls"><label for="n-filter">Qubits <select id="n-filter"><option value="12" selected>12</option></select></label><label for="status-filter">Evidence <select id="status-filter"><option value="all">All results</option><option value="proven">Proven maxima</option><option value="bounded">Bounds only</option><option value="no_ac">No positive AC order</option></select></label></div><div class="viewer-launch"><button id="view-majorana" class="view-majorana-button" type="button" aria-haspopup="dialog" aria-controls="majorana-viewer" aria-describedby="majorana-availability" disabled>View Majorana sphere ↗</button><span id="majorana-availability" class="micro-copy" hidden></span></div><p id="result-count" class="result-count" aria-live="polite">Loading source records…</p></div>
       <div id="library-scope" class="library-scope" hidden></div>
       <div class="catalogue-layout">
@@ -54,7 +54,7 @@
     <section id="proofs" class="reference-section" aria-labelledby="proofs-title"><div class="section-heading"><div><p class="eyebrow">03 / Why the maximum is sharp</p><h2 id="proofs-title">Bounds and proofs</h2></div></div><p class="section-intro">An explicit state or an existence theorem supplies a lower bound. A proven maximum also requires an upper bound valid for every pure symmetric state with exactly the same multiplicity partition.</p><div id="proof-list" class="proof-list"></div></section>
     <section id="sources" class="reference-section" aria-labelledby="sources-title"><div class="section-heading"><div><p class="eyebrow">04 / The source record</p><h2 id="sources-title">References</h2></div></div><p class="section-intro">Numerical searches in a source are distinguished from exact witnesses and exclusion proofs.</p><div id="source-list" class="source-list"></div></section>
   </main>
-  <footer class="site-footer"><p>Majorana degeneracy <span aria-hidden="true">/</span> A research catalogue</p><p id="compiled-date"></p><a href="data/catalogue.json" download>Download data ↓</a><a href="../index.html">All catalogues ↗</a></footer>
+  <footer class="site-footer"><p>Majorana degeneracy <span aria-hidden="true">/</span> A research catalogue</p><p id="compiled-date"></p><a href="data/catalogue.js?v=4355a5f72b5d" download>Download data ↓</a><a href="../index.html">All catalogues ↗</a></footer>
   <dialog id="majorana-viewer" class="majorana-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-help">
     <div class="viewer-heading"><div><p class="eyebrow">Majorana representation</p><h2 id="viewer-title">State constellation</h2></div><button id="close-majorana" type="button" class="viewer-close" aria-label="Close Majorana viewer">Close ×</button></div>
     <div id="viewer-summary" class="viewer-summary"></div>

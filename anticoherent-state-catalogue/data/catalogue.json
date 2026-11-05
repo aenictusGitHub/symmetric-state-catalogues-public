@@ -169,11 +169,6 @@
       "notes": "The default representative has exactly the requested AC order whenever such a witness is recorded. Higher-order representatives remain available as alternatives.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C2)"
-        },
-        {
           "file": "PRA96_032304(2017).pdf",
           "page": 2,
           "location": "Eq. (2)"
@@ -380,11 +375,6 @@
       "status": "exists",
       "notes": "The default representative has exactly the requested AC order whenever such a witness is recorded. Higher-order representatives remain available as alternatives.",
       "references": [
-        {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C4)"
-        },
         {
           "file": "PRA96_032304(2017).pdf",
           "page": 10,
@@ -2773,11 +2763,6 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C2)"
-        },
-        {
           "file": "PRA96_032304(2017).pdf",
           "page": 2,
           "location": "Eq. (2)"
@@ -2898,7 +2883,7 @@
       "witnessesOrders": [
         1
       ],
-      "label": "Local AC manuscript representative",
+      "label": "Alternative exact representative",
       "status": "proven-existence",
       "stateLatex": "\\frac{\\sqrt{2}}{2}|D_{5}^{(1)}\\rangle + \\frac{\\sqrt{2}}{2}|D_{5}^{(4)}\\rangle",
       "support": [
@@ -2943,13 +2928,13 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C3)"
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/states.json",
+          "location": "ac-n5-t1-manuscript"
         }
       ],
-      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
-      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "provenance": "Normalization and anticoherence are verified independently from the saved coefficients.",
+      "notes": "The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.",
       "verification": {
         "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
         "exactNormalization": true,
@@ -2969,7 +2954,8 @@
         ],
         "globalMaximumOrderProven": true,
         "maximumOrderProofId": "odd-complement-rank"
-      }
+      },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
     },
     {
       "id": "ac-n6-t3",
@@ -3029,11 +3015,6 @@
       "normalization": "sum_r |c_r|^2 = 1, verified exactly",
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
-        {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C4)"
-        },
         {
           "file": "PRA96_032304(2017).pdf",
           "page": 10,
@@ -3179,7 +3160,7 @@
         1,
         2
       ],
-      "label": "Local AC manuscript representative",
+      "label": "Alternative exact representative",
       "status": "proven-existence",
       "stateLatex": "\\frac{\\sqrt{2}}{3}|D_{7}^{(0)}\\rangle -  \\frac{\\sqrt{14}}{6}|D_{7}^{(3)}\\rangle -  \\frac{\\sqrt{14}}{6}|D_{7}^{(6)}\\rangle",
       "support": [
@@ -3235,13 +3216,13 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C5)"
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/states.json",
+          "location": "ac-n7-t2-manuscript"
         }
       ],
-      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
-      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "provenance": "Normalization and anticoherence are verified independently from the saved coefficients.",
+      "notes": "The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.",
       "verification": {
         "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
         "exactNormalization": true,
@@ -3267,7 +3248,8 @@
         ],
         "globalMaximumOrderProven": true,
         "maximumOrderProofId": "odd-complement-rank"
-      }
+      },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
     },
     {
       "id": "ac-n8-t3",
@@ -3388,7 +3370,7 @@
         2,
         3
       ],
-      "label": "Local AC manuscript representative",
+      "label": "Alternative exact representative",
       "status": "proven-existence",
       "stateLatex": "\\frac{\\sqrt{30}}{12}|D_{8}^{(0)}\\rangle -  \\frac{\\sqrt{21}}{6}|D_{8}^{(4)}\\rangle -  \\frac{\\sqrt{30}}{12}|D_{8}^{(8)}\\rangle",
       "support": [
@@ -3449,13 +3431,13 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C6)"
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/states.json",
+          "location": "ac-n8-t3-manuscript"
         }
       ],
-      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
-      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "provenance": "Normalization and anticoherence are verified independently from the saved coefficients.",
+      "notes": "The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.",
       "verification": {
         "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
         "exactNormalization": true,
@@ -3487,7 +3469,8 @@
         ],
         "globalMaximumOrderProven": true,
         "maximumOrderProofId": "n8-t4-certificate"
-      }
+      },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
     },
     {
       "id": "ac-n9-t2",
@@ -3605,7 +3588,7 @@
         1,
         2
       ],
-      "label": "Local AC manuscript representative",
+      "label": "Alternative exact representative",
       "status": "proven-existence",
       "stateLatex": "\\frac{\\sqrt{13}}{8}|D_{9}^{(0)}\\rangle + \\frac{\\sqrt{30}}{8}|D_{9}^{(4)}\\rangle -  \\frac{\\sqrt{21}}{8}|D_{9}^{(8)}\\rangle",
       "support": [
@@ -3671,13 +3654,13 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C7)"
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/states.json",
+          "location": "ac-n9-t2-manuscript"
         }
       ],
-      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
-      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "provenance": "Normalization and anticoherence are verified independently from the saved coefficients.",
+      "notes": "The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.",
       "verification": {
         "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
         "exactNormalization": true,
@@ -3703,7 +3686,8 @@
         ],
         "globalMaximumOrderProven": true,
         "maximumOrderProofId": "n9-t3-four-copy"
-      }
+      },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
     },
     {
       "id": "ac-n10-t3",
@@ -3834,7 +3818,7 @@
         2,
         3
       ],
-      "label": "Local AC manuscript representative",
+      "label": "Alternative exact representative",
       "status": "proven-existence",
       "stateLatex": "\\frac{\\sqrt{5}}{4}|D_{10}^{(1)}\\rangle + \\frac{\\sqrt{6}}{4}|D_{10}^{(5)}\\rangle -  \\frac{\\sqrt{5}}{4}|D_{10}^{(9)}\\rangle",
       "support": [
@@ -3905,13 +3889,13 @@
       "coefficientConvention": "Normalized Dicke basis |D_n^(r)>; r counts excitations. Source spin states are mapped with r=j-m.",
       "references": [
         {
-          "file": "2605.29436.pdf",
-          "page": 22,
-          "location": "Appendix C.2, Eq. (C8)"
+          "title": "Independent exact reduced-state verification",
+          "url": "./research/states.json",
+          "location": "ac-n10-t3-manuscript"
         }
       ],
-      "provenance": "Exact construction explicitly listed in the supplied local manuscript",
-      "notes": "The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.",
+      "provenance": "Normalization and anticoherence are verified independently from the saved coefficients.",
+      "notes": "The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.",
       "verification": {
         "method": "Exact SymPy evaluation of each t-body reduced matrix in Sym^t(C^2); rho_t=I_(t+1)/(t+1).",
         "exactNormalization": true,
@@ -3943,7 +3927,8 @@
         ],
         "globalMaximumOrderProven": true,
         "maximumOrderProofId": "n10-t4-cubic"
-      }
+      },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
     },
     {
       "id": "ac-n11-t3",
@@ -15464,36 +15449,6 @@
       "sha256": "63ad5b7eab22b1d684cb8c7841d4a218a827d89df7e7a72c5e2279b4c22b140c"
     },
     {
-      "id": "mixed-ac-2026",
-      "filename": "2605.29436.pdf",
-      "title": "Total, quantum, and classical measures of anticoherence for mixed spin states",
-      "authors": "Jérôme Denis, Tara Lacaille, John Martin, Eduardo Serrano-Ensástiga",
-      "year": 2026,
-      "doi": "10.48550/arXiv.2605.29436",
-      "url": "https://arxiv.org/abs/2605.29436",
-      "citation": "Local manuscript dated 1 October 2026; related arXiv:2605.29436",
-      "role": "Scope and normalization of anticoherence",
-      "summary": "Separates reduced-state isotropy into quantum and classical contributions for mixed states, with the pure-state purity measure as a common starting point.",
-      "pages": 24,
-      "relevantPages": [
-        2,
-        3,
-        5,
-        6,
-        9,
-        10,
-        11,
-        14,
-        15
-      ],
-      "notes": "The supplied 24-page local manuscript, dated 1 October 2026, gives the full-AC definition on p.2 and explicit pure-state witnesses in Appendix C.2 on p.22. Its mixed-state purity bound also excludes a pure five-qubit 2-AC state. The local version is distinguished from the related public arXiv version.",
-      "localManuscript": true,
-      "localDate": "2026-10-01",
-      "pdf": "references/2605.29436.pdf",
-      "sha256": "5a8d5a9c22d954e2a800bb83e4d5f3063137031db51a13289fcf9bbaea154c89",
-      "draft": true
-    },
-    {
       "id": "acliege-julia",
       "title": "ACLiege: explicit states and anticoherent subspaces",
       "filename": "ACLiege.jl",
@@ -15862,18 +15817,13 @@
     "The existence table means at least t. For non-maximal orders, the default example has exactly order t: the next reduced state is not maximally mixed. Higher-order examples remain available as alternatives; the order of one representative does not by itself prove the maximum possible order at that qubit number.",
     "Full anticoherence requires every multipole rank 1,…,t to vanish. Cancelling only even multipoles, or attaining an even-sector lower bound, does not suffice.",
     "The symmetric t-body identity has dimension t+1, not 2^t. These states are distinct from absolutely maximally entangled qubit states.",
-    "PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2. The local 2026 manuscript independently lists nine-qubit order 2.",
+    "PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2.",
     "The same 2022 table prints ten-qubit coefficients with squared norm 43/55. Replacing the two endpoint amplitudes 1/√11 by 1/√5 gives a normalized third-order state; this is an independently checked correction, not a published erratum.",
     "Blank cells in the 2017 numerical survey mean failed convergence. Restricted cyclic-construction thresholds in the 2015 paper are not universal existence thresholds.",
     "The eleven-qubit third-order representative with radical complex amplitudes is independently derived and exactly checked here; it is not attributed to the rounded numerical vector in the 2017 appendix."
   ],
   "definition": "A pure symmetric N-qubit state is t-anticoherent iff rho_t is the maximally mixed state I_(t+1)/(t+1) on the symmetric t-qubit subspace. Equivalently all spin moments through order t are independent of direction. This requires every multipole rank1,...,t to vanish, not only the even ranks.",
   "definitionReferences": [
-    {
-      "file": "2605.29436.pdf",
-      "page": 2,
-      "location": "Definition 1, Eqs. (3)–(4)"
-    },
     {
       "file": "PRA92_052333(2015).pdf",
       "page": 3,

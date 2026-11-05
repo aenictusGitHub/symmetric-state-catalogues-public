@@ -1,6 +1,6 @@
 # Pure anticoherent symmetric states
 
-A static, offline catalogue indexed by qubit number **n** and anticoherence order **t**. Open `index.html` in a browser. KaTeX and all 12 supplied source PDFs are included locally.
+A static, offline catalogue indexed by qubit number **n** and anticoherence order **t**. Open `index.html` in a browser. KaTeX and the cited published source PDFs are included locally.
 
 Each attached representative has a **View Majorana sphere** button. The interactive sphere supports dragging, keyboard rotation, multiplicity labels, symmetry axes, convex hulls, centre and barycentre markers, SVG export, and geometric point-group identification. Switching the representative selects its own constellation. Excluded or unresolved cells have no plotted witness. Coordinates are included when downloading a selected record and are also available in `data/majorana.json`. The representative panel shows its full point group and proper rotational subgroup without opening the sphere. AC representative choices and construction cards also include their group labels.
 
@@ -11,6 +11,8 @@ The main table covers n=2–12 and t=1–6. A toggle adds exact larger construct
 Anticoherence means **at least** the selected order: the t-body reduced state is I/(t+1) on the symmetric subspace. Every multipole rank 1,…,t must vanish. The condition differs from maximal mixing on the full 2^t-dimensional qubit space and from cancelling only even multipoles.
 
 For each of the 71 existence cells, the default representative now has exactly the selected AC order. Higher-order states remain available as alternatives. There are 49 new analytical witnesses, each checked by two exact reduced-state calculations, including a nonzero deviation at the next order. Read `research/exact-orders/index.html` for the construction and saved certificates.
+
+A general rational construction and proof are given in [the exact-order research note](research/exact-orders/general/index.html). It guarantees exactly order t for every N ≥ 4t(t+1)^4; the bound is sufficient, not optimal. A separate three-component family gives exactly order two for every N ≥ 7.
 
 ## Evidence
 

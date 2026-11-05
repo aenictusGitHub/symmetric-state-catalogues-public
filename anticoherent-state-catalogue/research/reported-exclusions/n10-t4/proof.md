@@ -69,4 +69,4 @@ Run `python3 verify.py` in this directory (Python 3 and SymPy are the only depen
 
 The independent expansion checks 430,712 contributions over 3,790 monomial slots, with zero nonzero residual coefficients. The exact identity was also separately obtained by rational highest-weight block algebra on Sym³(C¹¹), but that decomposition is not needed to trust this verifier.
 
-This is an independently derived certificate for this catalogue. Prior published numerical/nonexistence reports motivated the question but are not used as proof. The standard equivalence between t-anticoherence and vanishing multipoles of ranks 1,…,t is stated in the supplied manuscript 2605.29436.pdf, Definition 1, Eqs. (3)–(4), PDF page 2; the reduced-state characterization is also given in PRA 92, 052333 (2015), Eqs. (10), (16)–(17), PDF pages 3–4.
+This is an independently derived certificate for this catalogue. Prior published numerical/nonexistence reports motivated the question but are not used as proof. The standard multipole and reduced-state characterizations of t-anticoherence are given in PRA 92, 052333 (2015), Eqs. (10), (16)–(17), PDF pages 3–4.

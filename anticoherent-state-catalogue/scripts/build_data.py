@@ -11,12 +11,10 @@ witnesses['states'].extend(cross_witnesses['states'])
 witnesses['states'].extend(read('research/exact-orders/states.json')['states'])
 restrictions=read('research/restrictions.json')
 sector=read('research/sector-source-metadata.json')
-sources=[s for s in sector['sources'] if s.get('pdf')]
+sources=[s for s in sector['sources'] if s.get('pdf') and s.get('id')!='mixed-ac-2026']
 coverage={row['filename']:row['restrictionContribution'] for row in restrictions['sourceCoverage']}
 for source in sources:
     source['notes']=coverage.get(source['filename'],'Reviewed as background for the pure anticoherence catalogue.')
-    if source['filename']=='2605.29436.pdf':
-        source['notes']='The supplied 24-page local manuscript, dated 1 October 2026, gives the full-AC definition on p.2 and explicit pure-state witnesses in Appendix C.2 on p.22. Its mixed-state purity bound also excludes a pure five-qubit 2-AC state. The local version is distinguished from the related public arXiv version.'
     if source['filename']=='PhysRevResearch4_013178(2022).pdf':
         source['notes']='The multipole characterization is used here. Two Table IV rows on p.17 require the corrections documented above: the nine-qubit order is 2, and the ten-qubit printed coefficients are misnormalized.'
 sources.append({'id':'acliege-julia','title':'ACLiege: explicit states and anticoherent subspaces','filename':'ACLiege.jl','pdf':'references/ACLiege.jl','authors':'John Martin; credits in the source include M. Grassl','year':2026,'notes':'Supplied Julia source, read without executing it. Sixteen pure-state formulas and ten subspace bases were independently checked exactly. Decimal-only and malformed records are distinguished in the audit.'})
@@ -160,7 +158,7 @@ caveats=[
  'The existence table means at least t. For non-maximal orders, the default example has exactly order t: the next reduced state is not maximally mixed. Higher-order examples remain available as alternatives; the order of one representative does not by itself prove the maximum possible order at that qubit number.',
  'Full anticoherence requires every multipole rank 1,…,t to vanish. Cancelling only even multipoles, or attaining an even-sector lower bound, does not suffice.',
  'The symmetric t-body identity has dimension t+1, not 2^t. These states are distinct from absolutely maximally entangled qubit states.',
- 'PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2. The local 2026 manuscript independently lists nine-qubit order 2.',
+ 'PRResearch 4, 013178 (2022), PDF p.17 Table IV labels a nine-qubit state order 3 although its rank-three multipole and reduced matrix are nonzero. Its verified order is 2.',
  'The same 2022 table prints ten-qubit coefficients with squared norm 43/55. Replacing the two endpoint amplitudes 1/√11 by 1/√5 gives a normalized third-order state; this is an independently checked correction, not a published erratum.',
  'Blank cells in the 2017 numerical survey mean failed convergence. Restricted cyclic-construction thresholds in the 2015 paper are not universal existence thresholds.',
  'The eleven-qubit third-order representative with radical complex amplitudes is independently derived and exactly checked here; it is not attributed to the rounded numerical vector in the 2017 appendix.'

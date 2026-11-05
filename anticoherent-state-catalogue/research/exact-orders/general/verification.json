@@ -1,0 +1,183 @@
+{
+  "smallExactChecks": [
+    {
+      "n": 2,
+      "t": 1,
+      "reductions": [
+        {
+          "q": 1,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 2,
+          "maximallyMixed": false,
+          "endpointCoherence": "1/2"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "t": 1,
+      "reductions": [
+        {
+          "q": 1,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 2,
+          "maximallyMixed": false,
+          "endpointCoherence": "1/4"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "t": 2,
+      "reductions": [
+        {
+          "q": 2,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 3,
+          "maximallyMixed": false,
+          "endpointCoherence": "sqrt(2)/9"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "t": 2,
+      "reductions": [
+        {
+          "q": 2,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 3,
+          "maximallyMixed": false,
+          "endpointCoherence": "sqrt(2)/14"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "t": 3,
+      "reductions": [
+        {
+          "q": 3,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 4,
+          "maximallyMixed": false,
+          "endpointCoherence": "5/72"
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "t": 4,
+      "reductions": [
+        {
+          "q": 4,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 5,
+          "maximallyMixed": false,
+          "endpointCoherence": "3377/127500"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "t": 5,
+      "reductions": [
+        {
+          "q": 5,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 6,
+          "maximallyMixed": false,
+          "endpointCoherence": "sqrt(5019339)/6065280 + 3077/583200 + 11*sqrt(28316726)/7581600"
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "t": 6,
+      "reductions": [
+        {
+          "q": 6,
+          "maximallyMixed": true,
+          "endpointCoherence": "0"
+        },
+        {
+          "q": 7,
+          "maximallyMixed": false,
+          "endpointCoherence": "11*sqrt(1128315)/248121741 + 1210*sqrt(45849)/248121741 + 7590*sqrt(969)/82707247"
+        }
+      ]
+    }
+  ],
+  "thresholdChecks": [
+    {
+      "n": 64,
+      "t": 1,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "11115/11627"
+    },
+    {
+      "n": 648,
+      "t": 2,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "118106952073/119196668017"
+    },
+    {
+      "n": 3072,
+      "t": 3,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "18910363524293934705/19286403328935700529"
+    },
+    {
+      "n": 10000,
+      "t": 4,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "93543069319237410393473764636784893/94015546136342389728558335725429365"
+    },
+    {
+      "n": 25920,
+      "t": 5,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "3173363003136473437209339403430085327077459/3238883846387659011501296691554019173860330"
+    },
+    {
+      "n": 57624,
+      "t": 6,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "16850997380851357821392402839222528575023107788771547790846275/16937609272011270392265515110609386970172582317797567087470179"
+    },
+    {
+      "n": 114688,
+      "t": 7,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "8370836053157112825432044327763983695089974856794361260716230329389267811/8636473017499297801338757514717865015461961928164269114826956142675899520"
+    },
+    {
+      "n": 209952,
+      "t": 8,
+      "allBernsteinCoefficientsPositive": true,
+      "minimumBernsteinCoefficient": "482209638083077453214185969462117072347581549866288743511106044507788924349724144890783861/486202361870026263202369504440534125959107857548885688130193380474035452578399430488859845"
+    }
+  ],
+  "threeTermOrderTwoSymbolicIdentities": true
+}

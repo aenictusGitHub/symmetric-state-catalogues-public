@@ -144,7 +144,7 @@ for a in ac['entries']:
                      notes='The maximum is attained by a verified state and matched by a rigorous upper bound.' if lower==upper else 'The catalogue supplies a verified lower bound and a rigorous upper bound.',
                      momentCertificate=bounds[n,t]['nextMultiplicityExclusion'])
     entries.append(entry)
-sources=ac['sources']
+sources=[source for source in ac['sources'] if source.get('id')!='mixed-ac-2026']
 for source in sources:
     if source['filename']=='PRA96_032304(2017).pdf':source['notes']='Primary numerical degeneracy diagram (Fig. 6), exact families, and the numerical seed used for the certified eleven-qubit double-point state.'
     elif source['filename']=='PRA90_032314(2014).pdf':source['notes']='Majorana multiplicities, SLOCC degeneracy partitions, and the half-size nonexistence criterion.'

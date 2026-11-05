@@ -61,10 +61,11 @@ def main():
   10:(3,{1:s.sqrt(5),5:s.sqrt(6),9:-s.sqrt(5)},'C8')}
  for n,(t,un,equation) in local.items():
   if n in (4,6):
-   next(e for e in states if e['n']==n)['references'].insert(0,ref('2605.29436.pdf',22,f'Appendix C.2, Eq. ({equation})'))
    continue
   norm=s.sqrt(sum(v*s.conjugate(v) for v in un.values()));c={r:s.simplify(v/norm) for r,v in un.items()}
-  states.append(state(n,t,'Local AC manuscript representative',c,[ref('2605.29436.pdf',22,f'Appendix C.2, Eq. ({equation})')],provenance='Exact construction explicitly listed in the supplied local manuscript',id=f'ac-n{n}-t{t}-manuscript',notes='The manuscript lists an unnormalized vector; the amplitudes here are divided by its exact norm. The achieved order is checked independently.'))
+  states.append(state(n,t,'Alternative exact representative',c,[{'title':'Independent exact reduced-state verification','url':'./research/states.json','location':f'ac-n{n}-t{t}-manuscript'}],provenance='Normalization and anticoherence are verified independently from the saved coefficients.',id=f'ac-n{n}-t{t}-manuscript',notes='The saved coefficients are divided by their exact norm; every reduction through the achieved AC order is checked independently.'))
+ for st in states:
+  if st['id'].endswith('-manuscript'):st['internalProvenance']='Exact construction explicitly listed in the supplied local manuscript'
  # Two exact larger source constructions make the source's arbitrary-order
  # existence discussion concrete without claiming an exhaustive larger table.
  n=24
@@ -74,7 +75,7 @@ def main():
  c={0:s.sqrt(7062)/343,7:s.sqrt(29315)/343,14:3*s.sqrt(451)/343,21:s.sqrt(36777)/343,28:-3*s.sqrt(451)/343,35:s.sqrt(29315)/343,42:-s.sqrt(7062)/343}
  states.append(state(42,7,'Seven-anticoherent D7d construction',c,[ref(paper15,10,'Figure 5 caption')]))
  states.sort(key=lambda e:(e['n'],e['achievedOrder']))
- output={'definition':'A pure symmetric N-qubit state is t-anticoherent iff rho_t is the maximally mixed state I_(t+1)/(t+1) on the symmetric t-qubit subspace. Equivalently all spin moments through order t are independent of direction. This requires every multipole rank1,...,t to vanish, not only the even ranks.','definitionReferences':[ref('2605.29436.pdf',2,'Definition 1, Eqs. (3)–(4)'),ref(paper15,3,'Eq. (10) and anticoherence definition'),ref(paper17,3,'Sec. II.B.2, Eq. (13)')],'states':states,'sourceCaveats':[{'file':'PhysRevResearch4_013178(2022).pdf','page':17,'location':'Table IV, j=9/2 row','issue':'The printed q=3 label conflicts with both the listed nonzero rank3 multipole and the explicit state. The normalized printed state has achieved order2, not3: rho_3[0,3]=(10-sqrt(42))/126 is nonzero.'},{'file':'PhysRevResearch4_013178(2022).pdf','page':17,'location':'Table IV, j=5 row','issue':'Printed endpoint amplitudes1/sqrt(11) with middle amplitude sqrt(3/5) have norm squared43/55. Use the normalized exact construction from PRA92(2015) Eq48; do not silently quote the erroneous row.'}]}
+ output={'definition':'A pure symmetric N-qubit state is t-anticoherent iff rho_t is the maximally mixed state I_(t+1)/(t+1) on the symmetric t-qubit subspace. Equivalently all spin moments through order t are independent of direction. This requires every multipole rank1,...,t to vanish, not only the even ranks.','definitionReferences':[ref(paper15,3,'Eq. (10) and anticoherence definition'),ref(paper17,3,'Sec. II.B.2, Eq. (13)')],'states':states,'sourceCaveats':[{'file':'PhysRevResearch4_013178(2022).pdf','page':17,'location':'Table IV, j=9/2 row','issue':'The printed q=3 label conflicts with both the listed nonzero rank3 multipole and the explicit state. The normalized printed state has achieved order2, not3: rho_3[0,3]=(10-sqrt(42))/126 is nonzero.'},{'file':'PhysRevResearch4_013178(2022).pdf','page':17,'location':'Table IV, j=5 row','issue':'Printed endpoint amplitudes1/sqrt(11) with middle amplitude sqrt(3/5) have norm squared43/55. Use the normalized exact construction from PRA92(2015) Eq48; do not silently quote the erroneous row.'}]}
  (R/'states.json').write_text(json.dumps(output,indent=2)+'\n')
  print('Wrote',len(states),'exactly verified witnesses.',flush=True)
 
