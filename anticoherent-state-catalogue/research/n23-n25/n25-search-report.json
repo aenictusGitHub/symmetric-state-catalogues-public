@@ -1,7 +1,7 @@
 {
   "n": 25,
   "targetOrder": 6,
-  "scientificConclusion": "The exact three-copy 1|2 PPT certificate excludes pure seventh-order AC states for N=25, so the maximum order is at most six. The reported fifth-order witness gives a lower bound of five once independently verified. Order six remains unresolved; the numerical outer relaxations below do not establish existence or nonexistence.",
+  "scientificConclusion": "An exact full four-copy 1|3 and 2|2 partial-transpose certificate now excludes every pure sixth-order state at N=25. The exact fifth-order radical state therefore attains t_max(25)=5. The numerical searches below are retained as historical discovery records; they are superseded by the independently verified exclusion.",
   "threeCopyPSD": {
     "status": "Solved",
     "epsilon": 0.001532167511159957,
@@ -742,5 +742,11 @@
     "fullPPTMinimumEigenvalue": -6.971380691244578e-16,
     "seconds": 0.6791331768035889,
     "scope": "Direct floating-point primal check. Structural zero PPT directions are retained. This is numerical outer-relaxation feasibility only."
+  },
+  "historicalScope": true,
+  "historicalConclusion": "The exact three-copy 1|2 PPT certificate excludes pure seventh-order AC states for N=25, so the maximum order is at most six. The reported fifth-order witness gives a lower bound of five once independently verified. Order six remains unresolved; the numerical outer relaxations below do not establish existence or nonexistence.",
+  "supersededBy": {
+    "proof": "n25-t6/proof.tex",
+    "independentVerification": "n25-t6/independent-verification.json"
   }
 }

@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "n": 25,
+  "copies": 4,
+  "splits": [
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "controls": [
+    {
+      "split": [
+        1,
+        3
+      ],
+      "embeddingDenominator": 4,
+      "densityKernelDenominator": 16,
+      "outputProductDimension": 85176,
+      "outputNonzeroCoordinates": 175,
+      "allNonzeroEntriesCompared": 30625,
+      "allOutputRowsSupportChecked": 85176,
+      "offSupportZeroEquivalenceProved": true,
+      "inputTraceExact": "1",
+      "outputTraceExact": "1",
+      "outputPositiveByExactRankOneFactorization": true
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "embeddingDenominator": 6,
+      "densityKernelDenominator": 36,
+      "outputProductDimension": 123201,
+      "outputNonzeroCoordinates": 225,
+      "allNonzeroEntriesCompared": 50625,
+      "allOutputRowsSupportChecked": 123201,
+      "offSupportZeroEquivalenceProved": true,
+      "inputTraceExact": "1",
+      "outputTraceExact": "1",
+      "outputPositiveByExactRankOneFactorization": true
+    }
+  ],
+  "method": "Generic Gaussian-rational pure state in the binomial basis. Every nonzero partial-time-reversal image entry is compared with direct product-state conjugation; support equivalence proves all other entries vanish.",
+  "stateBinomialBasisCoefficients": {
+    "0": [
+      "2",
+      "1"
+    ],
+    "3": [
+      "-3",
+      "2"
+    ],
+    "11": [
+      "1",
+      "-4"
+    ],
+    "20": [
+      "2",
+      "-3"
+    ],
+    "25": [
+      "-1",
+      "-2"
+    ]
+  },
+  "sourceNonzeroOccupationWords": 70,
+  "scope": "Convention and positivity control only; this non-anticoherent generic state is not an AC existence witness.",
+  "seconds": 1.2806968688964844
+}

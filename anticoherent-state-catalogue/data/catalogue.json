@@ -4532,7 +4532,7 @@
       "maximumACOrder": {
         "n": 21,
         "order": 4,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
@@ -4541,18 +4541,37 @@
           "liege-acs.21.4"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false
+        "upperBoundProven": true,
+        "upperBoundProofId": "n21-t5-six-copy"
       },
-      "maximumOrderStatus": "conjectured"
+      "maximumOrderStatus": "proven"
     },
     {
       "id": "n21-t5",
       "n": 21,
       "t": 5,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n21-t5-six-copy",
+      "notes": "A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.",
+      "references": [
+        {
+          "title": "Analytical attaining state and maximum-order proof",
+          "url": "./research/n21-n22/index.html#n21"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n21-n22/n21-t5/proof.tex"
+        },
+        {
+          "title": "Independent validated verification",
+          "url": "./research/n21-n22/n21-t5/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n21-n22/n21-t5/certificate-bundle.zip"
+        }
+      ]
     },
     {
       "id": "n21-t6",
@@ -4560,24 +4579,24 @@
       "t": 6,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n21-t6-ppt",
-      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.",
+      "proofId": "n21-t5-six-copy",
+      "notes": "A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.",
       "references": [
         {
-          "title": "Exact states, rigorous bounds and remaining gaps",
-          "url": "./research/n21-n22/index.html"
+          "title": "Analytical attaining state and maximum-order proof",
+          "url": "./research/n21-n22/index.html#n21"
         },
         {
-          "title": "Complete proof",
-          "url": "./research/n21-n22/n21-t6/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n21-n22/n21-t5/proof.tex"
         },
         {
-          "title": "Exact certificate",
-          "url": "./research/n21-n22/n21-t6/certificate.json"
+          "title": "Independent validated verification",
+          "url": "./research/n21-n22/n21-t5/independent-verification.json"
         },
         {
-          "title": "Independent verification",
-          "url": "./research/n21-n22/n21-t6/independent-verification.json"
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n21-n22/n21-t5/certificate-bundle.zip"
         }
       ]
     },
@@ -4587,24 +4606,24 @@
       "t": 7,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n21-t6-ppt",
-      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.",
+      "proofId": "n21-t5-six-copy",
+      "notes": "A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.",
       "references": [
         {
-          "title": "Exact states, rigorous bounds and remaining gaps",
-          "url": "./research/n21-n22/index.html"
+          "title": "Analytical attaining state and maximum-order proof",
+          "url": "./research/n21-n22/index.html#n21"
         },
         {
-          "title": "Complete proof",
-          "url": "./research/n21-n22/n21-t6/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n21-n22/n21-t5/proof.tex"
         },
         {
-          "title": "Exact certificate",
-          "url": "./research/n21-n22/n21-t6/certificate.json"
+          "title": "Independent validated verification",
+          "url": "./research/n21-n22/n21-t5/independent-verification.json"
         },
         {
-          "title": "Independent verification",
-          "url": "./research/n21-n22/n21-t6/independent-verification.json"
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n21-n22/n21-t5/certificate-bundle.zip"
         }
       ]
     },
@@ -5823,7 +5842,7 @@
       "notes": "Exact existence is certified. The default representative matches the requested order when available; higher-order alternatives are explicitly labelled.",
       "references": [
         {
-          "title": "Twenty-five qubits: exact order five and rigorous bounds",
+          "title": "Twenty-five qubits: proved maximum order five",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
@@ -5835,14 +5854,14 @@
           "url": "./research/n23-n25/n25-t5/independent-verification.json"
         },
         {
-          "title": "Universal seventh-order exclusion",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         }
       ],
       "maximumACOrder": {
         "n": 25,
         "order": 5,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
@@ -5851,18 +5870,41 @@
           "liege-acs.25.5"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false
+        "upperBoundProven": true,
+        "upperBoundProofId": "n25-t6-four-copy-ppt"
       },
-      "maximumOrderStatus": "conjectured"
+      "maximumOrderStatus": "proven"
     },
     {
       "id": "n25-t6",
       "n": 25,
       "t": 6,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n25-t6-four-copy-ppt",
+      "notes": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
+      "references": [
+        {
+          "title": "Exact attaining state and maximum-order proof",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
+        },
+        {
+          "title": "Exact rational separating identity",
+          "url": "./research/n23-n25/n25-t6/source-identity.json"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n23-n25/n25-t6/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n23-n25/n25-t6/certificate-bundle.zip"
+        }
+      ]
     },
     {
       "id": "n25-t7",
@@ -5870,20 +5912,28 @@
       "t": 7,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n25-t7-ppt",
-      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "proofId": "n25-t6-four-copy-ppt",
+      "notes": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
       "references": [
         {
-          "title": "Radical witness, rigorous bounds and remaining gap",
+          "title": "Exact attaining state and maximum-order proof",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
-          "title": "Complete upper-bound proof",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         },
         {
-          "title": "Independent exact exclusion verification",
-          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+          "title": "Exact rational separating identity",
+          "url": "./research/n23-n25/n25-t6/source-identity.json"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n23-n25/n25-t6/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n23-n25/n25-t6/certificate-bundle.zip"
         }
       ]
     },
@@ -5893,20 +5943,28 @@
       "t": 8,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n25-t7-ppt",
-      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "proofId": "n25-t6-four-copy-ppt",
+      "notes": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
       "references": [
         {
-          "title": "Radical witness, rigorous bounds and remaining gap",
+          "title": "Exact attaining state and maximum-order proof",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
-          "title": "Complete upper-bound proof",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         },
         {
-          "title": "Independent exact exclusion verification",
-          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+          "title": "Exact rational separating identity",
+          "url": "./research/n23-n25/n25-t6/source-identity.json"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n23-n25/n25-t6/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n23-n25/n25-t6/certificate-bundle.zip"
         }
       ]
     },
@@ -5916,20 +5974,28 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n25-t7-ppt",
-      "notes": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
+      "proofId": "n25-t6-four-copy-ppt",
+      "notes": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
       "references": [
         {
-          "title": "Radical witness, rigorous bounds and remaining gap",
+          "title": "Exact attaining state and maximum-order proof",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
-          "title": "Complete upper-bound proof",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         },
         {
-          "title": "Independent exact exclusion verification",
-          "url": "./research/n23-n25/n25-t7/independent-verification.json"
+          "title": "Exact rational separating identity",
+          "url": "./research/n23-n25/n25-t6/source-identity.json"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n23-n25/n25-t6/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n23-n25/n25-t6/certificate-bundle.zip"
         }
       ]
     },
@@ -108378,13 +108444,14 @@
       "maximumACOrder": {
         "n": 21,
         "order": 4,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n21-t5-six-copy",
         "isPrimaryLibraryRepresentative": true
       }
     },
@@ -110443,13 +110510,14 @@
       "maximumACOrder": {
         "n": 25,
         "order": 5,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n25-t6-four-copy-ppt",
         "isPrimaryLibraryRepresentative": true
       }
     },
@@ -143194,7 +143262,7 @@
         }
       ],
       "provenance": "Independent analytical construction by rational moment matching and signed coherence cancellation.",
-      "notes": "This state is exactly 4-AC and is not 5-AC. Optimality is recorded separately from exact attainment.",
+      "notes": "This exact radical state has globally maximum AC order four. A rigorously validated six-copy positivity certificate excludes every fifth-order pure symmetric state, for arbitrary complex amplitudes.",
       "verification": {
         "method": "Exact Dicke-basis partial traces through the next order, independently cross-checked using a Schmidt matrix.",
         "exactNormalization": true,
@@ -143238,18 +143306,20 @@
           "differenceFromIdentity": "11/912",
           "differenceLatex": "\\frac{11}{912}"
         },
-        "globalMaximumOrderProven": false
+        "globalMaximumOrderProven": true,
+        "maximumOrderProofId": "n21-t5-six-copy"
       },
       "maximumACOrder": {
         "n": 21,
         "order": 4,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n21-t5-six-copy",
         "isPrimaryLibraryRepresentative": false
       }
     },
@@ -145048,12 +145118,12 @@
       "normalization": "sum_r |c_r|^2 = 1, verified exactly",
       "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
       "provenance": "Rational moment matching on six C5-separated Dicke indices with an exact phase-triangle cancellation.",
-      "notes": "Exactly fifth-order AC. A universal seventh-order exclusion gives maximum order at most six. Sixth-order existence at N=25 remains unresolved; no maximum-five claim is made.",
+      "notes": "This exact radical state has globally maximum AC order five. An independently reconstructed exact four-copy partial-transpose positivity certificate excludes every sixth-order pure symmetric state, for arbitrary complex amplitudes.",
       "verification": {
         "method": "Exact Schmidt matrices through order six.",
         "exactNormalization": true,
         "exactOrderVerified": true,
-        "globalMaximumOrderProven": false,
+        "globalMaximumOrderProven": true,
         "reductions": [
           {
             "t": 1,
@@ -145099,12 +145169,14 @@
           "differenceFromIdentity": "13/35420",
           "differenceLatex": "\\frac{13}{35420}"
         },
-        "maximumOrderUpperBound": 6
+        "maximumOrderUpperBound": 5,
+        "exclusionCertificate": "./research/n23-n25/n25-t6/source-identity.json",
+        "maximumOrderProofId": "n25-t6-four-copy-ppt"
       },
       "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
       "references": [
         {
-          "title": "Twenty-five qubits: exact order five and rigorous bounds",
+          "title": "Twenty-five qubits: proved maximum order five",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
@@ -145116,20 +145188,21 @@
           "url": "./research/n23-n25/n25-t5/independent-verification.json"
         },
         {
-          "title": "Universal seventh-order exclusion",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         }
       ],
       "maximumACOrder": {
         "n": 25,
         "order": 5,
-        "status": "conjectured",
+        "status": "proven",
         "scope": "maximum AC order at this qubit number",
         "sourceKinds": [
           "website"
         ],
         "exactAttainmentProven": true,
-        "upperBoundProven": false,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n25-t6-four-copy-ppt",
         "isPrimaryLibraryRepresentative": false
       }
     }
@@ -145437,7 +145510,7 @@
     {
       "n": 21,
       "order": 4,
-      "status": "conjectured",
+      "status": "proven",
       "scope": "maximum AC order at this qubit number",
       "sourceKinds": [
         "website"
@@ -145446,7 +145519,8 @@
         "liege-acs.21.4"
       ],
       "exactAttainmentProven": true,
-      "upperBoundProven": false
+      "upperBoundProven": true,
+      "upperBoundProofId": "n21-t5-six-copy"
     },
     {
       "n": 22,
@@ -145496,7 +145570,7 @@
     {
       "n": 25,
       "order": 5,
-      "status": "conjectured",
+      "status": "proven",
       "scope": "maximum AC order at this qubit number",
       "sourceKinds": [
         "website"
@@ -145505,7 +145579,8 @@
         "liege-acs.25.5"
       ],
       "exactAttainmentProven": true,
-      "upperBoundProven": false
+      "upperBoundProven": true,
+      "upperBoundProofId": "n25-t6-four-copy-ppt"
     },
     {
       "n": 26,
@@ -146642,10 +146717,10 @@
       "title": "Twenty-five qubits cannot be seventh-order AC",
       "summary": "An exact three-copy partial-transpose positivity certificate excludes every pure seventh-order AC state.",
       "formulaLatex": "t_{\\max}(25)\\le6",
-      "bodyHtml": "<p>A hypothetical seventh-order state produces a positive, trace-one three-copy moment and a positive partial time reversal. Its vanishing low multipoles impose exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction.</p><p>The independent verifier reconstructs every selected physical equation and the partial-transpose map, and verifies the rational positive certificate matrices. The proof covers arbitrary complex symmetric states.</p><p>A new radical fifth-order state has <span class=\"math\" data-tex=\"\\rho_5=I_6/6\" data-display=\"false\">\\rho_5=I_6/6</span>. Thus <span class=\"math\" data-tex=\"5\\le t_{\\max}(25)\\le6\" data-display=\"false\">5\\le t_{\\max}(25)\\le6</span>; sixth-order existence remains unresolved here.</p>",
+      "bodyHtml": "<p>A hypothetical seventh-order state produces a positive, trace-one three-copy moment and a positive partial time reversal. Its vanishing low multipoles impose exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction.</p><p>The independent verifier reconstructs every selected physical equation and the partial-transpose map, and verifies the rational positive certificate matrices. The proof covers arbitrary complex symmetric states.</p><p>A new radical fifth-order state has <span class=\"math\" data-tex=\"\\rho_5=I_6/6\" data-display=\"false\">\\rho_5=I_6/6</span>. The stronger four-copy sixth-order exclusion proves <span class=\"math\" data-tex=\"t_{\\max}(25)=5\" data-display=\"false\">t_{\\max}(25)=5</span>. This seventh-order certificate is retained as an auxiliary result.</p>",
       "references": [
         {
-          "title": "Radical witness, rigorous bounds and remaining gap",
+          "title": "Radical attaining state and proved maximum",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
@@ -146760,10 +146835,10 @@
       "title": "Twenty-one qubits cannot be sixth-order AC",
       "summary": "An exact three-copy partial-transpose positivity certificate excludes every pure sixth-order AC state.",
       "formulaLatex": "t_{\\max}(21)\\le5",
-      "bodyHtml": "<p>A hypothetical sixth-order state gives a positive, trace-one rotationally averaged three-copy moment <span class=\"math\" data-tex=\"X\" data-display=\"false\">X</span>. Since this moment is an average of tensor powers of pure-state projectors, its partial transpose is also positive. Vanishing multipoles through rank six impose exact linear equations.</p><p>A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces. This contradicts <span class=\"math\" data-tex=\"\\operatorname{Tr}X=1\" data-display=\"false\">\\operatorname{Tr}X=1</span>. An independent exact verifier reconstructs the physical equations and the partial-transpose map, and verifies the positive certificate matrices. The proof covers arbitrary complex states.</p><p>The new analytical fourth-order state proves <span class=\"math\" data-tex=\"4\\le t_{\\max}(21)\\le5\" data-display=\"false\">4\\le t_{\\max}(21)\\le5</span>. Fifth-order existence remains unresolved here.</p>",
+      "bodyHtml": "<p>A hypothetical sixth-order state gives a positive, trace-one rotationally averaged three-copy moment <span class=\"math\" data-tex=\"X\" data-display=\"false\">X</span>. Since this moment is an average of tensor powers of pure-state projectors, its partial transpose is also positive. Vanishing multipoles through rank six impose exact linear equations.</p><p>A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces. This contradicts <span class=\"math\" data-tex=\"\\operatorname{Tr}X=1\" data-display=\"false\">\\operatorname{Tr}X=1</span>. An independent exact verifier reconstructs the physical equations and the partial-transpose map, and verifies the positive certificate matrices. The proof covers arbitrary complex states.</p><p>The stronger six-copy fifth-order exclusion proves <span class=\"math\" data-tex=\"t_{\\max}(21)=4\" data-display=\"false\">t_{\\max}(21)=4</span>. This three-copy sixth-order certificate is retained as an auxiliary result.</p>",
       "references": [
         {
-          "title": "Exact states, rigorous bounds and remaining gaps",
+          "title": "Exact states and proved maximum orders",
           "url": "./research/n21-n22/index.html"
         },
         {
@@ -146789,7 +146864,7 @@
       "bodyHtml": "<p>A hypothetical seventh-order state gives a positive, trace-one rotationally averaged three-copy moment <span class=\"math\" data-tex=\"X\" data-display=\"false\">X</span>. Vanishing multipoles through rank seven imply exact contraction equations. A rational separating identity expresses <span class=\"math\" data-tex=\"-\\operatorname{Tr}X\" data-display=\"false\">-\\operatorname{Tr}X</span> as a sum of those vanishing equations and nonnegative matrix traces, a contradiction.</p><p>An independent verifier reconstructs the physical equations, trace factors and complete invariant representation, and checks the positive certificate matrices with exact arithmetic. The argument covers arbitrary complex states.</p><p>This is an additional seventh-order exclusion. The stronger four-copy sixth-order exclusion proves that the maximum pure AC order at twenty-two qubits is five.</p>",
       "references": [
         {
-          "title": "Exact states, rigorous bounds and remaining gaps",
+          "title": "Exact states and proved maximum orders",
           "url": "./research/n21-n22/index.html"
         },
         {
@@ -146806,6 +146881,62 @@
         }
       ],
       "kind": "exact catalogue certificate"
+    },
+    {
+      "id": "n21-t5-six-copy",
+      "title": "Twenty-one qubits: maximum pure AC order is four",
+      "summary": "A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.",
+      "formulaLatex": "t_{\\max}(21)=4",
+      "bodyHtml": "<p>A hypothetical fifth-order state gives a positive, trace-one rotationally averaged six-copy moment. Vanishing multipoles through rank five impose linear contraction equations.</p><p>A strictly positive combination of these equations is certified using exact factorial Clebsch–Gordan sums and outward-rounded interval arithmetic. Rigorous projection and polar-normalization bounds control the complete symmetric representation. The positive certificate matrices contradict trace one.</p><p>The proof covers arbitrary complex symmetric states. The independently checked fourth-order radical state attains the maximum, and every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Analytical attaining state and maximum-order proof",
+          "url": "./research/n21-n22/index.html#n21"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n21-n22/n21-t5/proof.tex"
+        },
+        {
+          "title": "Independent validated verification",
+          "url": "./research/n21-n22/n21-t5/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n21-n22/n21-t5/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
+    },
+    {
+      "id": "n25-t6-four-copy-ppt",
+      "title": "Twenty-five qubits: maximum pure AC order is five",
+      "summary": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
+      "formulaLatex": "t_{\\max}(25)=5",
+      "bodyHtml": "<p>A hypothetical sixth-order state gives a positive, trace-one four-copy moment with positive partial transposes across the one–three and two–two splits. Vanishing multipoles through rank six impose exact contraction equations.</p><p>A rational separating identity expresses the negative trace as a sum of those vanishing equations and nonnegative matrix and vector expectations. The independently reconstructed physical representation, both partial-transpose maps and all positive certificate factors give a contradiction.</p><p>This excludes arbitrary complex symmetric states without a support or constellation-symmetry restriction. The exact fifth-order radical state attains the maximum; every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Exact attaining state and maximum-order proof",
+          "url": "./research/n23-n25/index.html#n25"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
+        },
+        {
+          "title": "Exact rational separating identity",
+          "url": "./research/n23-n25/n25-t6/source-identity.json"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "./research/n23-n25/n25-t6/independent-verification.json"
+        },
+        {
+          "title": "Complete certificate and verifier bundle",
+          "url": "./research/n23-n25/n25-t6/certificate-bundle.zip"
+        }
+      ],
+      "kind": "exact catalogue theorem"
     }
   ],
   "sourceCaveats": [
@@ -146867,11 +146998,11 @@
     "coreEntryCount": 749,
     "entryCount": 749,
     "coreStatusCounts": {
-      "impossible": 293,
+      "impossible": 295,
       "exists": 283,
-      "unknown": 104,
-      "numerical": 69
+      "numerical": 69,
+      "unknown": 102
     },
-    "method": "Exact constructions use symbolic reduced-state checks or rational contraction certificates for their algebraic defining equations. Two-copy identities, three-copy polynomial and moment certificates, and a four-copy positivity certificate use exact arithmetic with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical."
+    "method": "Exact constructions use symbolic reduced-state checks or rational contraction certificates for their algebraic defining equations. Two- through six-copy positivity certificates use exact rational arithmetic or validated outward-rounded interval bounds with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical."
   }
 }

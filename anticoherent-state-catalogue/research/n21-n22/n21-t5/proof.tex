@@ -1,0 +1,124 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\begin{document}
+\title{The maximum pure-state anticoherence order for twenty-one qubits is four}
+\author{A validated six-copy separation certificate}
+\date{5 November 2026}
+\maketitle
+\begin{theorem}
+No pure fifth-order anticoherent state exists in $V=\Sym^{21}(\mathbb C^2)$. The maximum pure-state anticoherence order for $N=21$ is exactly four.
+\end{theorem}
+This is a computer-assisted proof with outward-rounded enclosures. The certificate inputs are exact binary rational matrices, stored in numerical archives; their floating-point storage is only an encoding of those rationals. The verifier recomputes the representation, contraction and positivity bounds using exact integer factorial sums and Arb ball arithmetic. No floating-point eigenvalue or residual is accepted as a proof bound.
+
+\paragraph{An exact fourth-order state.}
+Writing $D^{(r)}=D_{21}^{(r)}$, consider
+\[
+ |\psi_4\rangle=
+ \frac{\sqrt{915}(|D^{(0)}\rangle+|D^{(21)}\rangle)
+ +13\sqrt{14}(|D^{(4)}\rangle-|D^{(17)}\rangle)
+ +17\sqrt7(|D^{(8)}\rangle+|D^{(13)}\rangle)}{4\sqrt{663}}.
+\]
+Its squared numerator coefficients are $(915,2366,2023,2023,2366,915)$, summing to $10608=16\cdot663$. The moments of $z=2r-21$ through degree four are $(1,0,161,0,46529)$, exactly those of the uniform distribution on $r=0,\ldots,21$. There are no excitation differences one, two or three. The rank-four coherence cancels in the reflected pairs $(0,4)$ versus $(17,21)$ and $(4,8)$ versus $(13,17)$: the ladder factors have equal magnitude and the amplitude products opposite sign. These are precisely the diagonal and off-diagonal spin-tensor conditions through rank four. The sole difference-five pair $(8,13)$ gives a nonzero fifth-rank coherence, so this state has exactly order four. The verifier checks all of these statements with rational and integer arithmetic.
+
+\paragraph{Six-copy moment and normalization.}
+A hypothetical fifth-order AC state $\psi$ gives the invariant positive operator
+\[
+ X=\int_{\mathrm{SU}(2)}(U|\psi\rangle\langle\psi|U^\dagger)^{\otimes6}\,dU,
+ \qquad X\succeq0,\quad\Tr X=1,
+\]
+with support on $\Sym^6(V)$, of dimension $\binom{27}{6}=296010$. Decompose into total-spin sectors, using doubled spin labels $J$. If $B_J$ is the multiplicity block with physical operator $I_{J+1}\otimes B_J/(J+1)$, set
+\[
+ C_J=\frac{B_J}{\sqrt{J+1}},\qquad
+ C_J\succeq0,\qquad\sum_J\sqrt{J+1}\Tr C_J=1.
+\]
+Equivalently, if $X=\sum_{J,M}E_{JM}B^{\mathrm{phys}}_JE_{JM}^{\dagger}$ uses unscaled physical multiplicity blocks, then $B_J=(J+1)B^{\mathrm{phys}}_J$ and $C_J=\sqrt{J+1}B^{\mathrm{phys}}_J$. This positive source rescaling explains the factor $1/\sqrt{J+1}$ in the contraction formula below. There are 63 sectors, 6698 highest-weight columns, and 576871 real symmetric multiplicity coordinates. The proof also covers complex Hermitian blocks: all certificate matrices are real symmetric, so imaginary antisymmetric parts have zero trace pairing.
+
+\paragraph{Necessary contraction equations.}
+Let $f_\ell(i)$ be the Frobenius-normalized diagonal rank-$\ell$ tensor on the spin-$21/2$ space. The verifier obtains it by exact rational Gram--Schmidt orthogonalization of $1,z,\ldots,z^5$, with $z=2i-21$, followed by a positive square-root normalization. For $1\le\ell\le5$,
+\[
+ \Tr_1[(\operatorname{diag}(f_\ell)\otimes I)X]=0.
+\]
+Let $E_{J,S}$ be the coefficient-of-fractional-parentage block embedding the six-copy spin-$J/2$ sector into $V\otimes\Sym^5(V)$ with five-copy spin $S/2$. For $S\le T$, choose the zero component of the rank-$\ell$ tensor from spin $T/2$ to spin $S/2$ to be positive at the upper common magnetic weight $m=S$. Write its value there as
+\[
+ q_{\ell,S,T}=
+ \left|\langle S/2,S/2;T/2,-S/2\mid\ell,0\rangle\right|>0.
+\]
+The reduced contraction equation is
+\[
+ R_{\ell,S,T}(C)=\sum_J c_{\ell,J,S,T}\,E_{J,S}C_JE_{J,T}^{T}=0,
+\]
+where the verifier uses the explicit finite sum
+\[
+ c_{\ell,J,S,T}=
+ \frac{\displaystyle\sum_{i=0}^{21} f_\ell(i)
+ \langle j,m_i;S/2,S/2\mid J/2,(S+2m_i)/2\rangle
+ \langle j,m_i;T/2,S/2\mid J/2,(S+2m_i)/2\rangle}
+ {\sqrt{J+1}\,q_{\ell,S,T}},
+ \quad j=\frac{21}{2},\quad m_i=i-\frac{21}{2}.
+\]
+Terms with forbidden magnetic weights are zero. These equations follow directly by inserting the coupled basis into the first-leg contraction, at the upper common magnetic weight. Rotation covariance supplies the remaining magnetic components. The symmetric convention interchanges $S,T$ without changing $c$.
+
+The Wigner--Eckart reduction of this same finite sum gives the compact expression
+\[
+ c_{\ell,J,S,T}=(-1)^{(21+T+J)/2}\sqrt{J+1}
+ \begin{Bmatrix}21/2&21/2&\ell\\ T/2&S/2&J/2\end{Bmatrix}
+ \qquad(S\le T).
+\]
+The verifier does not assume this shortcut: it evaluates the direct factorial Clebsch--Gordan sums with enclosures. In particular, the source-spin-dependent sign is included explicitly. The normalization $C_J=B_J/\sqrt{J+1}$ is the only source-block rescaling used.
+
+\paragraph{The separating functional.}
+The archive \texttt{dual.npz} gives exact dyadic matrices $D_{\ell,S,T}$. Pairing each reduced equation with its dual matrix, using both off-diagonal spin blocks, gives
+\[
+ 0=\sum_J\Tr(G_J C_J),\qquad
+ G_J=E_J^T H_J E_J,
+\]
+where the $(S,T)$ block of the real symmetric ambient matrix $H_J$ is
+\[
+ (H_J)_{S,T}=\sum_{\ell=1}^{5}c_{\ell,J,S,T}D_{\ell,S,T},
+ \qquad(H_J)_{T,S}=(H_J)_{S,T}^T.
+\]
+The verified conclusion is $G_J\succ0$ for every sector. Therefore all $C_J$ must vanish, contradicting trace one. This proves the exclusion; nesting excludes every higher order as well.
+
+\paragraph{Validated representation bootstrap.}
+No approximate representation basis is treated as exact. Start with exact two-copy CFP signs in the symmetric pair sectors. Recursively, on $V\otimes\Sym^{r-1}(V)$ the exact symmetric projector is
+\[
+ P_r=\frac{I+(r-1)\,\Pi\,\mathrm{Swap}_{12}\,\Pi}{r},
+\]
+where $\Pi$ projects the last $r-1$ factors onto their symmetric subspace. Its coupled-basis matrix uses the standard Racah coefficient
+\[
+ (-1)^{21+(S+K)/2}\sqrt{(S+1)(K+1)}
+ \begin{Bmatrix}21/2&L/2&S/2\\21/2&J/2&K/2\end{Bmatrix}.
+\]
+The verifier computes these coefficients by exact integer Racah sums and outward-rounded square roots, checks all sector multiplicities independently from the symmetric-power character, and checks every dimension and offset.
+
+Suppose the previous exact CFP family is within operator norm $\delta$ of the dyadic family. Compression of the unitary swap then bounds the projector perturbation by
+\[
+ \beta=\frac{r-1}{r}(2\delta+\delta^2).
+\]
+For each dyadic candidate isometry $A$, the verifier encloses its projector residual and Gram residual $\zeta=\|A^TA-I\|_2$ using Frobenius upper bounds. This gives an exact range-residual bound $\varepsilon$. With $\eta=\zeta+\varepsilon^2<1$, projecting $A$ onto the exact range and taking its polar normalization yields a genuine orthonormal CFP matrix $E$ satisfying
+\[
+ \|E-A\|_2\le\varepsilon+
+ \frac{\eta}{1+\sqrt{1-\eta}}.
+\]
+The recursive bound is computed with Arb enclosures, not naked numerical residuals. The sixth-copy operator-norm distance is bounded by approximately $1.266\cdot10^{-13}$.
+
+\paragraph{Validated positivity.}
+For each source sector, let $A_J$ be the exact dyadic approximate CFP matrix and $E_J$ the exact nearby isometry proved to exist above. The verifier encloses $A_J^T H_J A_J$ directly. The representation error is bounded by
+\[
+ \|E_J^TH_JE_J-A_J^TH_JA_J\|_2
+ \le(2\delta_6+\delta_6^2)\|H_J\|_F.
+\]
+The archive \texttt{congruences.npz} supplies arbitrary exact dyadic square matrices $Z_J$ chosen as approximate inverse Cholesky factors. The verifier proves
+\[
+ \|I-Z_J(A_J^TH_JA_J)Z_J^T\|_F
+ +\|Z_J\|_F^2(2\delta_6+\delta_6^2)\|H_J\|_F<1.
+\]
+Consequently $Z_JG_JZ_J^T$ is positive definite. This also proves $Z_J$ invertible, hence $G_J\succ0$. All 63 inequalities are checked with outward-rounded balls. This final verification does not require trusting the numerical optimization, eigensolvers or Cholesky calculations that discovered the data.
+
+\paragraph{Reproduction.}
+Install NumPy and python-flint, then run \texttt{python3 verify\_certificate.py}. The independent report records the exact rational upper bounds, positive lower bounds, complete representation checks and SHA-256 hashes of every input. Large exploratory moment matrices are not needed.
+\end{document}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "n": 25,
+  "t": 6,
+  "copies": 4,
+  "globalPureStateExclusionProven": true,
+  "arbitraryComplexStatesCovered": true,
+  "statement": "No pure symmetric 25-qubit state is sixth-order anticoherent. K(25,t)=0 for every t>=6, and the maximum pure AC order is at most five.",
+  "attainmentScope": "This verifier checks the upper bound only. Exact fifth-order attainment is certified separately.",
+  "method": "Independent exact reconstruction of the physical source trace and all necessary contraction rows; positive source Gram factorizations; independent physical partial-time-reversal functional reconstruction; coefficientwise rational separating identity.",
+  "sourceReport": "source-identity-independent.json",
+  "pptReport": "ppt-independent-verification.json",
+  "pptSummary": {
+    "positiveDyadicRankOneCuts": 81,
+    "cutCountsBySplit": {
+      "13": 31,
+      "22": 50
+    },
+    "parentHighestColumnsReconstructed": 104,
+    "parentDescendantNormsChecked": 3627,
+    "sourceEmbeddingGramEntriesChecked": 9910,
+    "rawSourceFunctionalCoordinatesVerified": 4955
+  },
+  "sourceSummary": {
+    "momentDimension": 23751,
+    "variables": 4955,
+    "highestWeightVectorsChecked": 579,
+    "physicalCrossGramChecks": 185134,
+    "contractionRowsReconstructed": 4226,
+    "positiveSourceBlocks": 49,
+    "positiveRationalLDLPivots": 579,
+    "coherentStateControl": {
+      "passed": true,
+      "closedVandermondeRowsChecked": 4226,
+      "nonzeroRowsConfirmNonAnticoherence": 4226,
+      "allOrderedDescendantAmplitudesConstant": true,
+      "normalizedHighestSpinProjectorTrace": "1"
+    }
+  },
+  "sha256": {
+    "source-identity.json": "d9a73394825d5668434c58a5c188541d7ac33e954c028bfc32b09db1e8c1aaa8",
+    "rational-cuts.json": "04c282b3af60b7281ed75e84e2d78d2c0b42d7a5875b110d6ba4c89b4787ac39"
+  },
+  "elapsedSeconds": 218.2274732501246
+}

@@ -3,25 +3,30 @@
   "records": [
     {
       "n": 21,
-      "maximumACOrderLower": 4,
-      "maximumACOrderUpper": 5,
-      "provedMaximum": false
+      "maximumACOrder": 4,
+      "provedMaximum": true,
+      "exactAttainmentAndNextOrderExclusion": true
     },
     {
       "n": 22,
-      "maximumACOrderLower": 5,
-      "maximumACOrderUpper": 5,
-      "provedMaximum": true
+      "maximumACOrder": 5,
+      "provedMaximum": true,
+      "exactAttainmentAndNextOrderExclusion": true
+    },
+    {
+      "n": 25,
+      "maximumACOrder": 5,
+      "provedMaximum": true,
+      "exactAttainmentAndNextOrderExclusion": true
     }
   ],
-  "subspaceConsequence": {
+  "subspaceConsequences": [
+    "K(21,t)=0 for t>=5",
+    "K(25,t)=0 for t>=6"
+  ],
+  "additionalExactMaximum": {
     "n": 22,
     "t": 5,
-    "exactMaximumDimension": 1
-  },
-  "remainingPureStateQuestion": {
-    "n": 21,
-    "t": 5,
-    "status": "unresolved"
+    "dimension": 1
   }
 }

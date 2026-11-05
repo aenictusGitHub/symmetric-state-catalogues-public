@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=25mm}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\begin{document}
+\title{Twenty-five qubits: exclusion of sixth-order pure anticoherence}
+\author{Four-copy positivity certificate}\date{5 November 2026}\maketitle
+\begin{theorem}
+No pure symmetric twenty-five-qubit state is sixth-order anticoherent. In conjunction with the independently verified fifth-order radical state,
+\[
+\boxed{t_{\max}(25)=5,\qquad K(25,t)=0\quad(t\ge6).}
+\]
+\end{theorem}
+\begin{proof}
+Put $V=V_{25/2}$. If a normalized vector $\psi\in V$ were sixth-order AC, its rotationally averaged four-copy moment
+\[
+ X=\int_{SU(2)}\bigl(U_g|\psi\rangle\langle\psi|U_g^\dagger\bigr)^{\otimes4}\,dg
+\]
+would be positive and invariant, supported on $W=\operatorname{Sym}^4(V)$, and have trace one. Here $\dim W=\binom{29}{4}=23751$. For every tensor rank $1\le\ell\le6$, anticoherence implies
+\[
+ \Tr_1[(T_{\ell0}\otimes I^{\otimes3})X]=0.\tag{1}
+\]
+Indeed the contraction vanishes in every rotated product projector before averaging.
+
+There is a further necessary positivity condition. Regard $X$ as an operator on $V^{\otimes4}$, extended by zero outside $W$. For $s=1,2$, let
+\[
+ Y_s=(F^{\otimes s}\otimes I^{\otimes(4-s)})X^{\Gamma_s}
+ (F^{\dagger\otimes s}\otimes I^{\otimes(4-s)}),
+\]
+where $\Gamma_s$ is transposition on the first $s$ factors in the Dicke basis and $F|D_{25}^{(i)}\rangle=(-1)^i|D_{25}^{(25-i)}\rangle$ is the unitary spin-flip matrix. Each product projector in the integral has positive partial transpose; therefore $Y_1,Y_2\succeq0$.
+
+The certificate uses a complete physical decomposition
+\[
+ W=\bigoplus_J V_J\otimes\mathbb C^{m_J},\qquad
+ \sum_J(2J+1)m_J=23751,
+\]
+with 49 nonempty sectors, $\sum_Jm_J=579$, and 4955 real symmetric invariant coordinates. The supplied integer highest-weight columns $H_J$ are expressed in averaged symmetric words in the binomial basis $b_i=\sqrt{\binom{25}{i}}|D_{25}^{(i)}\rangle$. A word of occupancies $o_i$ has squared norm
+\[
+ \|e_w\|^2=\frac{\prod_i\binom{25}{i}^{o_i}o_i!}{4!}.
+\]
+With divided-power descendants $U_{J,r}=J_-^rH_J/r!$, every real invariant operator has coordinates
+\[
+ X(B)=\sum_J d_J\sum_{r=0}^{2J}\frac{U_{J,r}B_JU_{J,r}^T}{\binom{2J}{r}},\qquad B_J=B_J^T.
+\]
+Here $d_J>0$ are the supplied denominator scales; $X\succeq0$ is equivalent to all $B_J\succeq0$. Positive dyadic diagonal scales $S_J$ define $x_J=d_J(2J+1)S_JB_JS_J\succeq0$.
+
+Taking the real part of a Hermitian moment preserves positivity, trace and the real equations (1). Partial time reversal is a real linear map, so its positivity is preserved as well. This reduction therefore covers arbitrary complex amplitudes.
+
+Let $R_a(B)$ be the 4226 selected physical entries of (1), normalized to primitive integer rows. For each supplied exact vector $q_\alpha$ of doubled highest weight $L_\alpha$, define the unnormalized magnetic sum
+\[
+ Q_\alpha=\sum_{u=0}^{L_\alpha}
+ \frac{|J_-^uq_\alpha/u!\rangle\langle J_-^uq_\alpha/u!|}{\binom{L_\alpha}{u}}\succeq0.
+\]
+Because $Y_s$ is invariant, its trace pairing with this sum is $(L_\alpha+1)q_\alpha^\dagger Y_s q_\alpha$. Set
+\[
+ p_\alpha(B)=\Tr\bigl(Q_\alpha Y_{s_\alpha}(B)\bigr)\ge0,
+ \qquad s_\alpha\in\{1,2\}.
+\]
+The rational certificate specifies row weights $y_a$, nonnegative weights $w_\alpha$, and positive-definite matrices $C_J$ for the coefficientwise identity
+\[
+ \boxed{-\Tr X=\sum_{a=1}^{4226}y_aR_a(B)
+ +\sum_J\Tr(C_Jx_J)+\sum_{\alpha=1}^{81}w_\alpha p_\alpha(B).}\tag{2}
+\]
+Exact reconstruction verifies (2) on all 4955 invariant coordinates, and exact positive factorizations verify $C_J\succ0$. The right side is nonnegative for a hypothetical AC6 moment, while the left side is $-1$. This contradiction excludes every sixth-order state, without restricting support or constellation symmetry. Higher orders are excluded by nesting.
+\end{proof}
+\paragraph{Attainment.}
+The separate six-component radical state in \texttt{../n25-t5/} has $\rho_5=I_6/6$ and $(\rho_6)_{00}-1/7=13/35420\ne0$. Its independently verified existence makes the upper bound tight.
+\paragraph{Reproducibility.}
+The certificate and its independent verifier reconstruct the physical input representation, the selected contraction rows, both partial time-reversal maps, the separating identity and its positivity. Numerical infeasibility or failure of a state search is not used as a proof.
+\end{document}

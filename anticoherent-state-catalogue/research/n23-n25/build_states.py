@@ -53,13 +53,15 @@ def main():
     n25=copy.deepcopy(json.loads((HERE/'n25-t5/states.json').read_text())['states'][0])
     n25['stateLatex']=r'\begin{gathered}'+n25['stateLatex']+r'\\[6pt]'+n25['parametersLatex']+r'\end{gathered}'
     n25['majoranaCoordinatePolicy']='numeric-roots-retain-explicit-poles'
-    n25['references']=[{'title':'Twenty-five qubits: exact order five and rigorous bounds','url':'./research/n23-n25/index.html#n25'},
+    n25['references']=[{'title':'Twenty-five qubits: proved maximum order five','url':'./research/n23-n25/index.html#n25'},
         {'title':'Analytical radical construction','url':'./research/n23-n25/n25-t5/proof.tex'},
         {'title':'Independent exact reduced-state verification','url':'./research/n23-n25/n25-t5/independent-verification.json'},
-        {'title':'Universal seventh-order exclusion','url':'./research/n23-n25/n25-t7/proof.tex'}]
-    n25['verification']['maximumOrderUpperBound']=6
-    n25['notes']='Exactly fifth-order AC. A universal seventh-order exclusion gives maximum order at most six. Sixth-order existence at N=25 remains unresolved; no maximum-five claim is made.'
+        {'title':'Universal sixth-order exclusion','url':'./research/n23-n25/n25-t6/proof.tex'}]
+    n25['verification']['maximumOrderUpperBound']=5
+    n25['verification']['globalMaximumOrderProven']=True
+    n25['verification']['exclusionCertificate']='./research/n23-n25/n25-t6/source-identity.json'
+    n25['notes']='Exactly fifth-order AC and globally optimal. An independently reconstructed exact four-copy partial-transpose certificate excludes every pure sixth-order state, proving maximum order five.'
     (HERE/'states.json').write_text(json.dumps({'states':[n23,n25]},indent=2,ensure_ascii=False)+'\n')
-    print('Built certified maximum-five N23 and exact fifth-order N25 records; N25 remains 5–6.')
+    print('Built certified maximum-five records at N23 and N25.')
 
 if __name__=='__main__':main()

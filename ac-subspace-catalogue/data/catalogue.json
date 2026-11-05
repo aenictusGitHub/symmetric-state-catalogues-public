@@ -5702,18 +5702,19 @@
       "n": 21,
       "t": 5,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
-      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately. The general rectangular-tensor bound improves the upper bound to 1.",
+      "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n21-t5-six-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -5740,7 +5741,7 @@
         "surveyDate": "2026-11-03",
         "bestKnownDimension": 0,
         "bestNumericalDimension": 0,
-        "matchesRigorousUpper": false,
+        "matchesRigorousUpper": true,
         "targetCount": 1,
         "attemptCount": 500,
         "failedLargerDimensions": [
@@ -5787,7 +5788,7 @@
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
-        "pure-n21-t6-ppt",
+        "pure-n21-t5-six-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -5861,7 +5862,7 @@
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
-        "pure-n21-t6-ppt",
+        "pure-n21-t5-six-copy",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -7718,18 +7719,19 @@
       "n": 25,
       "t": 6,
       "lower": 0,
-      "upper": 1,
+      "upper": 0,
       "reportedDimension": null,
       "conjecturedDimension": null,
       "conjectureStatus": null,
       "conjectureReferences": [],
-      "status": "range",
+      "status": "impossible",
       "subspaceIds": [],
       "notes": "The lower bound uses exact whole-subspace witnesses. Numerical examples are reported separately.",
       "proofIds": [
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
+        "pure-n25-t6-four-copy-ppt",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -7770,7 +7772,7 @@
         "cross-condition",
         "paper-schmidt-bound",
         "tensor-gram-bound",
-        "pure-n25-t7-ppt",
+        "pure-n25-t6-four-copy-ppt",
         "rectangular-tensor-bound",
         "ancilla-inertia-bound",
         "second-order-spin2-inertia",
@@ -130934,6 +130936,32 @@
       ]
     },
     {
+      "id": "pure-n21-t5-six-copy",
+      "title": "Twenty-one qubits: maximum pure AC order is four",
+      "summary": "A rigorous six-copy positivity certificate excludes every fifth-order state; an exact fourth-order radical state attains the maximum.",
+      "formulaLatex": "t_{\\max}(21)=4",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n21-t5-six-copy"
+        }
+      ]
+    },
+    {
+      "id": "pure-n25-t6-four-copy-ppt",
+      "title": "Twenty-five qubits: maximum pure AC order is five",
+      "summary": "An exact four-copy partial-transpose certificate excludes every sixth-order state; an exact fifth-order radical state attains the maximum.",
+      "formulaLatex": "t_{\\max}(25)=5",
+      "bodyHtml": "<p>If no pure state at this size has the required order, no positive-dimensional subspace can have it.</p>",
+      "references": [
+        {
+          "label": "Exact pure-state exclusion and certificate",
+          "url": "../anticoherent-state-catalogue/index.html#proof-n25-t6-four-copy-ppt"
+        }
+      ]
+    },
+    {
       "id": "molien-constructions",
       "title": "Molien series give analytical AC subspaces",
       "summary": "Exact single-character spaces of the binary polyhedral groups provide polynomial bases. Their full spans obey the AC conditions, and higher AC orders are checked separately.",
@@ -131697,8 +131725,8 @@
     "numericalSubspaces": 38,
     "entries": 175,
     "exactMaxima": 74,
-    "provedEmpty": 68,
-    "ranges": 33,
+    "provedEmpty": 70,
+    "ranges": 31,
     "molienSubspaces": 5,
     "paperConjectures": 33,
     "conjectureStatuses": {

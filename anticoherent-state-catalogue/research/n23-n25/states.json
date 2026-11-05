@@ -696,12 +696,12 @@
       "normalization": "sum_r |c_r|^2 = 1, verified exactly",
       "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
       "provenance": "Rational moment matching on six C5-separated Dicke indices with an exact phase-triangle cancellation.",
-      "notes": "Exactly fifth-order AC. A universal seventh-order exclusion gives maximum order at most six. Sixth-order existence at N=25 remains unresolved; no maximum-five claim is made.",
+      "notes": "Exactly fifth-order AC and globally optimal. An independently reconstructed exact four-copy partial-transpose certificate excludes every pure sixth-order state, proving maximum order five.",
       "verification": {
         "method": "Exact Schmidt matrices through order six.",
         "exactNormalization": true,
         "exactOrderVerified": true,
-        "globalMaximumOrderProven": false,
+        "globalMaximumOrderProven": true,
         "reductions": [
           {
             "t": 1,
@@ -747,12 +747,13 @@
           "differenceFromIdentity": "13/35420",
           "differenceLatex": "\\frac{13}{35420}"
         },
-        "maximumOrderUpperBound": 6
+        "maximumOrderUpperBound": 5,
+        "exclusionCertificate": "./research/n23-n25/n25-t6/source-identity.json"
       },
       "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
       "references": [
         {
-          "title": "Twenty-five qubits: exact order five and rigorous bounds",
+          "title": "Twenty-five qubits: proved maximum order five",
           "url": "./research/n23-n25/index.html#n25"
         },
         {
@@ -764,8 +765,8 @@
           "url": "./research/n23-n25/n25-t5/independent-verification.json"
         },
         {
-          "title": "Universal seventh-order exclusion",
-          "url": "./research/n23-n25/n25-t7/proof.tex"
+          "title": "Universal sixth-order exclusion",
+          "url": "./research/n23-n25/n25-t6/proof.tex"
         }
       ]
     }

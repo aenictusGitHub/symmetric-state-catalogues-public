@@ -1,7 +1,7 @@
 {
   "n": 21,
   "targetOrder": 5,
-  "scientificConclusion": "For N=21, a pure fifth-order anticoherent state remains unresolved. The exact sixth-order exclusion and the exact fourth-order witness give 4 <= t_max(21) <= 5. No numerical relaxation tested here supplies an existence or nonexistence proof at order five.",
+  "scientificConclusion": "A validated six-copy certificate now excludes every pure fifth-order state at N=21. The exact fourth-order state therefore attains t_max(21)=4. The numerical searches below are retained as historical discovery records; they are superseded by the independently verified exclusion.",
   "threeCopyPSD": {
     "status": "Solved",
     "epsilon": 0.0021069257237393505,
@@ -187,5 +187,11 @@
     "seconds": 8.596322059631348,
     "scope": "Bounded numerical five-copy basic PSD test with 500 selected physical AC5 contraction rows and trace. It does not include all five-copy contraction constraints or any five-copy PPT constraints. The positive numerical moment is only feasible for this selected outer relaxation; it does not establish a pure AC5 state or exclude one."
   },
-  "publicationArtifacts": "This compact report only. Large basis, recoupling maps, and primal moment arrays are discovery files and are not needed for publication or for the independently verified order-six exclusion."
+  "publicationArtifacts": "This compact report only. Large basis, recoupling maps, and primal moment arrays are discovery files and are not needed for publication or for the independently verified order-six exclusion.",
+  "historicalScope": true,
+  "historicalConclusion": "For N=21, a pure fifth-order anticoherent state remains unresolved. The exact sixth-order exclusion and the exact fourth-order witness give 4 <= t_max(21) <= 5. No numerical relaxation tested here supplies an existence or nonexistence proof at order five.",
+  "supersededBy": {
+    "proof": "n21-t5/proof.tex",
+    "independentVerification": "n21-t5/independent-verification.json"
+  }
 }
