@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checkedDate": "2026-11-06",
+  "comparedQubitNumbers": 100,
+  "matchingRecordedOrders": 97,
+  "mismatchNumbers": [
+    29,
+    87,
+    94
+  ],
+  "mismatches": [
+    {
+      "n": 29,
+      "acOrder": 5,
+      "acMaximumStatus": "conjectured",
+      "acExactAttainmentProven": true,
+      "acRigorousLower": 5,
+      "acRigorousUpper": 6,
+      "designOrder": 6,
+      "designConstructionEvidenceCode": "V3",
+      "designConstructionEvidence": "numerical-construction",
+      "ordersMatch": false,
+      "difference": 1
+    },
+    {
+      "n": 87,
+      "acOrder": 11,
+      "acMaximumStatus": "conjectured",
+      "acExactAttainmentProven": false,
+      "acRigorousLower": 7,
+      "acRigorousUpper": 16,
+      "designOrder": 12,
+      "designConstructionEvidenceCode": "V3",
+      "designConstructionEvidence": "numerical-construction",
+      "ordersMatch": false,
+      "difference": 1
+    },
+    {
+      "n": 94,
+      "acOrder": 12,
+      "acMaximumStatus": "conjectured",
+      "acExactAttainmentProven": false,
+      "acRigorousLower": 9,
+      "acRigorousUpper": 17,
+      "designOrder": 13,
+      "designConstructionEvidenceCode": "V3",
+      "designConstructionEvidence": "numerical-construction",
+      "ordersMatch": false,
+      "difference": 1
+    }
+  ],
+  "comparisonMeaning": "Different published orders; no unequal true maxima are proved by this comparison.",
+  "evidenceCaution": "All three AC maxima are conjectured. All three design entries are V3 numerical constructions; no design existence or optimality theorem is inferred.",
+  "noDesignBasedACBoundsIntroduced": true,
+  "pureScientificRecordsUnchanged": true,
+  "catalogueSHA256": "186edd629cf52ca9f868a950a4110bf5343953c25be469f0ce0486e150832418",
+  "benchmarkSHA256": "f56aa2939a7562bff14586325eab7f49ff79359414ab6e08f58d2474a80e290a"
+}

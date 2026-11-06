@@ -1,0 +1,844 @@
+{
+  "schemaVersion": 1,
+  "retrievedDate": "2026-11-06",
+  "ambientDimension": 3,
+  "sphereDimension": 2,
+  "pointConvention": "Exactly N distinct points on S^2 with equal weights.",
+  "source": {
+    "title": "Hardin–Sloane: N-point spherical designs in three dimensions",
+    "authors": [
+      "R. H. Hardin",
+      "N. J. A. Sloane"
+    ],
+    "url": "https://neilsloane.com/sphdesigns/index.html",
+    "paperUrl": "https://doi.org/10.1007/BF02711518",
+    "tableLastModified": "2002-10-02",
+    "retrievedDate": "2026-11-06",
+    "sourceHTMLSHA256": "82b11c30e4c8c3c6cdfe7c490a14fb9dcda5e3d95b4283ff67718671a6907aff",
+    "status": "Published putatively optimal strengths, not a complete table of proved maxima.",
+    "evidenceCodes": {
+      "V1": "Algebraic existence proof of the construction.",
+      "V2": "Interval existence proof of the construction.",
+      "V3": "Numerical construction with source-reported discrepancy at most 1e-26.",
+      "reference": "Existence construction credited to the cited literature; not independently re-proved here."
+    }
+  },
+  "scope": "A reference comparison of reported orders. These strengths are not used as AC existence proofs or AC upper bounds. Construction evidence does not imply optimality.",
+  "rows": [
+    {
+      "n": 1,
+      "order": 0,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.1.0"
+    },
+    {
+      "n": 2,
+      "order": 1,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.2.1"
+    },
+    {
+      "n": 3,
+      "order": 1,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.3.1"
+    },
+    {
+      "n": 4,
+      "order": 2,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.4.2"
+    },
+    {
+      "n": 5,
+      "order": 1,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.5.1"
+    },
+    {
+      "n": 6,
+      "order": 3,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.6.3"
+    },
+    {
+      "n": 7,
+      "order": 2,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.7.2",
+      "constructionReference": "Mimura 1990"
+    },
+    {
+      "n": 8,
+      "order": 3,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.8.3"
+    },
+    {
+      "n": 9,
+      "order": 2,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.9.2",
+      "constructionReference": "Mimura 1990"
+    },
+    {
+      "n": 10,
+      "order": 3,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.10.3",
+      "constructionReference": "Bajnok 1993"
+    },
+    {
+      "n": 11,
+      "order": 3,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.11.3",
+      "constructionReference": "Bajnok 1993"
+    },
+    {
+      "n": 12,
+      "order": 5,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.12.5"
+    },
+    {
+      "n": 13,
+      "order": 3,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.13.3",
+      "constructionReference": "Bajnok 1993"
+    },
+    {
+      "n": 14,
+      "order": 4,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.14.4",
+      "constructionReference": "Hardin-Sloane 1992"
+    },
+    {
+      "n": 15,
+      "order": 3,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.15.3",
+      "constructionReference": "Bajnok 1993"
+    },
+    {
+      "n": 16,
+      "order": 5,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.16.5",
+      "constructionReference": "Hardin-Sloane 1992"
+    },
+    {
+      "n": 17,
+      "order": 4,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.17.4",
+      "constructionReference": "Hardin-Sloane 1992"
+    },
+    {
+      "n": 18,
+      "order": 5,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.18.5",
+      "constructionReference": "Reznick 1995"
+    },
+    {
+      "n": 19,
+      "order": 4,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.19.4",
+      "constructionReference": "Hardin-Sloane 1992"
+    },
+    {
+      "n": 20,
+      "order": 5,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.20.5"
+    },
+    {
+      "n": 21,
+      "order": 4,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.21.4",
+      "constructionReference": "Hardin-Sloane 1992"
+    },
+    {
+      "n": 22,
+      "order": 5,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.22.5",
+      "constructionReference": "Reznick 1995"
+    },
+    {
+      "n": 23,
+      "order": 5,
+      "constructionEvidenceCode": "V2",
+      "constructionEvidence": "validated-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.23.5"
+    },
+    {
+      "n": 24,
+      "order": 7,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.24.7",
+      "constructionReference": "McLaren 1963"
+    },
+    {
+      "n": 25,
+      "order": 5,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.25.5"
+    },
+    {
+      "n": 26,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.26.6"
+    },
+    {
+      "n": 27,
+      "order": 5,
+      "constructionEvidenceCode": "reference",
+      "constructionEvidence": "literature-construction-cited",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.27.5",
+      "constructionReference": "Reznick 1995"
+    },
+    {
+      "n": 28,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.28.6"
+    },
+    {
+      "n": 29,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.29.6"
+    },
+    {
+      "n": 30,
+      "order": 7,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.30.7"
+    },
+    {
+      "n": 31,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.31.6"
+    },
+    {
+      "n": 32,
+      "order": 7,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.32.7"
+    },
+    {
+      "n": 33,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.33.6"
+    },
+    {
+      "n": 34,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.34.7"
+    },
+    {
+      "n": 35,
+      "order": 6,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.35.6"
+    },
+    {
+      "n": 36,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.36.8"
+    },
+    {
+      "n": 37,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.37.7"
+    },
+    {
+      "n": 38,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.38.7"
+    },
+    {
+      "n": 39,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.39.7"
+    },
+    {
+      "n": 40,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.40.8"
+    },
+    {
+      "n": 41,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.41.7"
+    },
+    {
+      "n": 42,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.42.8"
+    },
+    {
+      "n": 43,
+      "order": 7,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.43.7"
+    },
+    {
+      "n": 44,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.44.8"
+    },
+    {
+      "n": 45,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.45.8"
+    },
+    {
+      "n": 46,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.46.8"
+    },
+    {
+      "n": 47,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.47.8"
+    },
+    {
+      "n": 48,
+      "order": 9,
+      "constructionEvidenceCode": "V1",
+      "constructionEvidence": "algebraic-existence",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.48.9"
+    },
+    {
+      "n": 49,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.49.8"
+    },
+    {
+      "n": 50,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.50.9"
+    },
+    {
+      "n": 51,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.51.8"
+    },
+    {
+      "n": 52,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.52.9"
+    },
+    {
+      "n": 53,
+      "order": 8,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.53.8"
+    },
+    {
+      "n": 54,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.54.9"
+    },
+    {
+      "n": 55,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.55.9"
+    },
+    {
+      "n": 56,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.56.9"
+    },
+    {
+      "n": 57,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.57.9"
+    },
+    {
+      "n": 58,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.58.9"
+    },
+    {
+      "n": 59,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.59.9"
+    },
+    {
+      "n": 60,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.60.10"
+    },
+    {
+      "n": 61,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.61.9"
+    },
+    {
+      "n": 62,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.62.10"
+    },
+    {
+      "n": 63,
+      "order": 9,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.63.9"
+    },
+    {
+      "n": 64,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.64.10"
+    },
+    {
+      "n": 65,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.65.10"
+    },
+    {
+      "n": 66,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.66.10"
+    },
+    {
+      "n": 67,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.67.10"
+    },
+    {
+      "n": 68,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.68.10"
+    },
+    {
+      "n": 69,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.69.10"
+    },
+    {
+      "n": 70,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.70.11"
+    },
+    {
+      "n": 71,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.71.10"
+    },
+    {
+      "n": 72,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.72.11"
+    },
+    {
+      "n": 73,
+      "order": 10,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.73.10"
+    },
+    {
+      "n": 74,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.74.11"
+    },
+    {
+      "n": 75,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.75.11"
+    },
+    {
+      "n": 76,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.76.11"
+    },
+    {
+      "n": 77,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.77.11"
+    },
+    {
+      "n": 78,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.78.11"
+    },
+    {
+      "n": 79,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.79.11"
+    },
+    {
+      "n": 80,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.80.11"
+    },
+    {
+      "n": 81,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.81.11"
+    },
+    {
+      "n": 82,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.82.11"
+    },
+    {
+      "n": 83,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.83.11"
+    },
+    {
+      "n": 84,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.84.12"
+    },
+    {
+      "n": 85,
+      "order": 11,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.85.11"
+    },
+    {
+      "n": 86,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.86.12"
+    },
+    {
+      "n": 87,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.87.12"
+    },
+    {
+      "n": 88,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.88.12"
+    },
+    {
+      "n": 89,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.89.12"
+    },
+    {
+      "n": 90,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.90.12"
+    },
+    {
+      "n": 91,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.91.12"
+    },
+    {
+      "n": 92,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.92.12"
+    },
+    {
+      "n": 93,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.93.12"
+    },
+    {
+      "n": 94,
+      "order": 13,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.94.13"
+    },
+    {
+      "n": 95,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.95.12"
+    },
+    {
+      "n": 96,
+      "order": 13,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.96.13"
+    },
+    {
+      "n": 97,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.97.12"
+    },
+    {
+      "n": 98,
+      "order": 13,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.98.13"
+    },
+    {
+      "n": 99,
+      "order": 12,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.99.12"
+    },
+    {
+      "n": 100,
+      "order": 13,
+      "constructionEvidenceCode": "V3",
+      "constructionEvidence": "numerical-construction",
+      "optimality": "putative; not inferred from construction evidence",
+      "coordinateUrl": "https://neilsloane.com/sphdesigns/dim3/des.3.100.13"
+    }
+  ]
+}

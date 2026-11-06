@@ -19,6 +19,8 @@
   const symmetryLabel = state => {const label=window.MajoranaViewer?.groupLabel?.(constellation(state));return label?` · ${label}`:'';};
   const entries = new Map(data.entries.map(e => [`${e.n}:${e.t}`,e]));
   const proofs = new Map((data.proofs || []).map(p => [p.id,p]));
+  const designComparison = data.sphericalDesignComparison;
+  const designRows = new Map((designComparison?.rows || []).map(row => [row.n,row]));
   let selected = {n:12,t:5,stateId:null};
   let filter = 'all';
   let extended = false;
@@ -44,6 +46,32 @@
   function maximumOrderOption(state) {
     const maximum=state?.maximumACOrder;
     return maximum?` · ${maximum.status==='proven'?'Proved max':'Conj. max'}`:'';
+  }
+  function designGap(n,t,maximum) {
+    const row=designRows.get(n);
+    return maximum && row && !row.ordersMatch && row.acOrder===t ? row : null;
+  }
+  function designGapTooltip(row) {
+    const status=row.acMaximumStatus==='proven'?'proved':'conjectured';
+    return `Published spherical-design order ${row.designOrder} for ${row.n} points; catalogue AC maximum ${row.acOrder} is ${status}. This is not the design order of this state's constellation.`;
+  }
+  function renderDesignComparison() {
+    const panel=$('design-comparison'),body=$('design-comparison-body');
+    if(!panel || !body)return;
+    const gaps=(designComparison?.rows || []).filter(row=>!row.ordersMatch);
+    panel.hidden=!gaps.length;
+    if(!gaps.length)return;
+    if($('design-comparison-count'))$('design-comparison-count').textContent=`${gaps.length} differences in reported orders`;
+    const source=designComparison.source || {};
+    const evidence={V1:'Algebraic existence proof',V2:'Interval existence proof',V3:'Numerical construction',reference:'Published construction'};
+    const rows=gaps.map(row=>{
+      const bounds=row.acRigorousLower===row.acRigorousUpper?String(row.acRigorousLower):`${row.acRigorousLower}–${row.acRigorousUpper}`;
+      const acEvidence=row.acMaximumStatus==='proven'?'Proved maximum':row.acExactAttainmentProven?`Exact state; maximum ${bounds}`:`Numerical record; rigorous bounds ${bounds}`;
+      const code=row.designConstructionEvidenceCode;
+      const designEvidence=evidence[code] || 'Published construction';
+      return `<tr><th scope="row"><a href="#n=${row.n}&amp;t=${row.acOrder}" aria-label="Select ${row.n} qubits, AC order ${row.acOrder}">${row.n}</a></th><td><strong>${row.acOrder}</strong><span class="comparison-evidence">${escape(acEvidence)}</span></td><td><strong>${row.designOrder}</strong><span class="comparison-evidence">${escape(code)} · ${escape(designEvidence)}</span></td></tr>`;
+    }).join('');
+    body.innerHTML=`<p>S² refers to equally weighted points on the ordinary unit sphere. This compares published records at the same point count, not the design order of a representative’s Majorana stars.</p><div class="comparison-table-scroll"><table class="comparison-table"><caption class="sr-only">Reported AC and spherical-design orders that differ at the same qubit or point count</caption><thead><tr><th scope="col">n</th><th scope="col">AC record</th><th scope="col">S² design record</th></tr></thead><tbody>${rows}</tbody></table></div><p>The spherical-design table reports putatively optimal strengths; V3 denotes a numerical construction. The true maxima are not proved to differ. <a href="${escape(safeUrl(source.url || '#sources'))}" target="_blank" rel="noopener">${escape(source.title || 'Published spherical-design table')} ↗</a></p>`;
   }
   function sourceUrl(ref) {
     if (ref.file || ref.filename) return `references/${encodeURIComponent(ref.file || ref.filename)}${ref.page ? '#page='+Number(ref.page) : ''}`;
@@ -102,7 +130,8 @@
       matching++;
       const maximum=entry.maximumACOrder;
       const maximumText=maximum?(maximum.status==='proven'?'Proved max':'Conj. max'):null;
-      return `<td><button class="state-cell ${s}${maximum?' maximum-order-cell':''}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}${maximumText?', '+maximumText+'imum AC order':''}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${maximumText||shortLabels[s]}</span></button></td>`;
+      const gap=designGap(n,t,maximum),gapText=gap?designGapTooltip(gap):'';
+      return `<td><button class="state-cell ${s}${maximum?' maximum-order-cell':''}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}${maximumText?', '+maximumText+'imum AC order':''}${gap?', '+escape(gapText):''}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${maximumText||shortLabels[s]}</span>${gap?`<span class="design-gap-badge" aria-hidden="true" title="${escape(gapText)}">S²: ${gap.designOrder}</span>`:''}</button></td>`;
     }).join('')}</tr>`).join('');
     $('state-table').innerHTML=`<table class="state-grid" style="min-width:${Math.max(560,ts.length*68+40)}px"><caption class="sr-only">Existence of pure anticoherent states by qubit number n and order t</caption>${head}<tbody>${body}</tbody></table>${matching ? '' : '<p class="no-matches">No cells match this evidence filter.</p>'}`;
     const exactCount=[...states.values()].filter(st=>st.status!=='numerical').length,numericalCount=states.size-exactCount;
@@ -236,7 +265,7 @@
   document.addEventListener('click',event=>{const link=event.target.closest('a[href^="#proof-"]');if(link){const p=document.getElementById(link.hash.slice(1));if(p)p.open=true;}});
   window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#n=')){readHash();select(selected.n,selected.t,selected.stateId);}else handleAnchors();});
   if(typeof data.scope==='string')$('coverage-note').textContent=data.scope+' An unresolved cell makes no claim about existence.';
-  readHash();syncControls();ensureSelection();renderMatrix();renderDetail();renderProofs();renderConstructions();renderSources();typeset();handleAnchors();
+  readHash();syncControls();ensureSelection();renderMatrix();renderDesignComparison();renderDetail();renderProofs();renderConstructions();renderSources();typeset();handleAnchors();
   // Keep direct section anchors intact on first load.
   if(!location.hash || location.hash.startsWith('#n='))updateHash();
 })();

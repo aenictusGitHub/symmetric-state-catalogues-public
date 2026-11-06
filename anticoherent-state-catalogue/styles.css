@@ -53,6 +53,19 @@ body{font-size:16px}
 .jump-detail{display:none}.detail-panel{scroll-margin-top:24px}
 @media(max-width:850px){.jump-detail{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border:1px solid #cbd3c5;border-radius:3px;padding:7px 10px;color:var(--ink);font-size:13px;white-space:nowrap}.jump-detail:hover{background:#eff2e9}}
 @media print{.jump-detail{display:none}}
+.design-gap-badge{display:inline-block;padding:2px 4px;border:1px solid #cbb786;border-radius:3px;background:#f5edda;color:#725319;font-size:11px;font-weight:650;line-height:1.2;white-space:nowrap}
+.design-comparison{margin:-10px 0 25px;border:1px solid var(--line);border-radius:4px;background:var(--surface);font-size:13px}
+.design-comparison>summary{padding:10px 14px;cursor:pointer;font-weight:600;color:var(--ink)}
+#design-comparison-count{color:var(--muted);font-size:12px;margin-left:5px}
+#design-comparison-body{padding:0 14px 13px;max-width:900px;color:var(--muted);line-height:1.7}
+#design-comparison-body>p{margin:8px 0 12px}
+#design-comparison-body>p:last-child{margin-bottom:0}
+.comparison-table-scroll{overflow-x:auto}
+.comparison-table{width:100%;min-width:360px;border-collapse:collapse;font-size:13px;color:var(--ink)}
+.comparison-table th,.comparison-table td{padding:8px 14px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.comparison-table thead th{font-size:12px;font-weight:500;color:var(--muted)}
+.comparison-table tbody th{width:45px;font-weight:600}
+.comparison-evidence{display:block;font-size:11px;line-height:1.6;color:var(--muted);margin-top:2px}
 
 /* Maximum-order status is separate from the exact/numerical state evidence. */
 .maximum-order-tag{display:inline-block;margin:10px 0 15px;padding:7px 10px;border:1px solid #d8c299;border-radius:3px;background:#f3ead9;color:#805b20;font-size:13px;line-height:1.45}.maximum-order-tag.proven{background:#e2eee5;border-color:#acc4b2;color:#205b49}.maximum-order-cell .cell-label{font-weight:650}.construction-card .maximum-order-tag{margin-top:12px;margin-bottom:10px}

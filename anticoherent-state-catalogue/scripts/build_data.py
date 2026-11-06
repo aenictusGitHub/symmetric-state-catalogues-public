@@ -266,6 +266,39 @@ data={'schemaVersion':'1.0','title':'Pure anticoherent symmetric states','compil
  {'title':'Order three for every even n ≥ 8','text':'The support gaps remove all off-diagonal moments through rank three; symmetric weights give the required diagonal moments.','formulaLatex':r'|\psi_n\rangle=\sqrt{\frac{n+2}{6n}}\bigl(|D_n^{(0)}\rangle+|D_n^{(n)}\rangle\bigr)+\sqrt{\frac{2(n-1)}{3n}}|D_n^{(n/2)}\rangle','references':[{'file':'PRA92_052333(2015).pdf','page':9,'location':'Eq. (48)'}]},
  {'title':'Every fixed order eventually occurs','text':'The constructive quadrature argument proves existence for sufficiently large n at every fixed t. Its restricted search thresholds are not minimal universal thresholds.','references':[{'file':'PRA92_052333(2015).pdf','page':10,'location':'Sec. VI; proof continues on PDF p.11'}]}
  ],'validation':{'exactWitnessCount':sum(s.get('status')!='numerical' for s in states),'numericalWitnessCount':sum(s.get('status')=='numerical' for s in states),'coreEntryCount':len(entries),'entryCount':len(entries),'coreStatusCounts':dict(Counter(e['status'] for e in entries)),'method':'Exact constructions use symbolic reduced-state checks or rational contraction certificates for their algebraic defining equations. Two- through six-copy positivity certificates use exact rational arithmetic or validated outward-rounded interval bounds with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical.'}}
+
+# Compare published record strengths at fixed cardinality. This metadata is
+# separate from all AC witnesses, exclusions, and proposed-maximum records.
+design_benchmark=read('research/spherical-designs/benchmark.json')
+design_by_n={row['n']:row for row in design_benchmark['rows']}
+assert len(design_by_n)==len(design_benchmark['rows'])
+assert set(core)<=set(design_by_n)
+maximum_by_n={row['n']:row for row in row_maximum_orders}
+comparison_rows=[]
+for n in core:
+    if n==1:
+        assert next(e for e in entries if e['n']==1 and e['t']==1)['status']=='impossible'
+        maximum={'order':0,'status':'proven','exactAttainmentProven':True}
+    else:maximum=maximum_by_n[n]
+    candidate=max((st['achievedOrder'] for st in states if st['n']==n),default=0)
+    assert maximum['order']==candidate,(n,maximum['order'],candidate)
+    lower=max((e['t'] for e in entries if e['n']==n and e['status']=='exists'),default=0)
+    upper=min(e['t']-1 for e in entries if e['n']==n and e['status']=='impossible')
+    if maximum['status']=='proven':assert lower==upper==candidate
+    design=design_by_n[n]
+    comparison_rows.append({'n':n,'acOrder':candidate,
+        'acMaximumStatus':maximum['status'],
+        'acExactAttainmentProven':maximum['exactAttainmentProven'],
+        'acRigorousLower':lower,'acRigorousUpper':upper,
+        'designOrder':design['order'],
+        'designConstructionEvidenceCode':design['constructionEvidenceCode'],
+        'designConstructionEvidence':design['constructionEvidence'],
+        'ordersMatch':candidate==design['order'],
+        'difference':design['order']-candidate})
+data['sphericalDesignComparison']={
+    'source':design_benchmark['source'],'rows':comparison_rows,
+    'mismatchNumbers':[row['n'] for row in comparison_rows if not row['ordersMatch']],
+    'scope':'published-record comparison; no equality/inequality theorem inferred; not the design strength of a selected Majorana constellation'}
 for e in entries:
  assert all(any(s['id']==id for s in states) for id in e['stateIds'])
 for source in sources:assert (ROOT/source['pdf']).is_file(),source

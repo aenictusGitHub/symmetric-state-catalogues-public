@@ -6,19 +6,19 @@
   <meta name="theme-color" content="#f5f4ee">
   <meta name="description" content="A source-linked catalogue of pure anticoherent symmetric multiqubit states, exact and numerical representatives through 100 qubits, and existence results.">
   <title>Anticoherent symmetric states · A research catalogue</title>
-  <link rel="stylesheet" href="styles.css?v=c9e65463a126">
+  <link rel="stylesheet" href="styles.css?v=5b42624d23ef">
   <link rel="stylesheet" href="majorana-viewer.css?v=611ee25c74b5">
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
   <script src="vendor/katex/katex.min.js" defer></script>
-  <script src="data/catalogue.js?v=660da2ba3cc3" defer></script>
-  <script src="data/majorana.js?v=1ca6cddb74db" defer></script>
+  <script src="data/catalogue.js?v=64de66f8ead4" defer></script>
+  <script src="data/majorana.js?v=34dfe539ca3d" defer></script>
   <script src="majorana-symmetry.js" defer></script>
   <script src="symmetry-groups.js" defer></script>
   <script src="point-groups.js" defer></script>
   <script src="majorana-hull.js?v=487d893d323f" defer></script>
   <script src="majorana-svg.js?v=f2d76493f567" defer></script>
   <script src="majorana-viewer.js?v=225006b26547" defer></script>
-  <script src="app.js?v=0e0750cad18a" defer></script>
+  <script src="app.js?v=8312b0170b6b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#catalogue">Skip to catalogue</a>
@@ -40,6 +40,10 @@
         <button id="selected-state-jump" class="jump-detail" type="button" aria-controls="result-detail">Selected state <span aria-hidden="true">↓</span></button>
         <p id="result-count" class="result-count" aria-live="polite">Loading source records…</p>
       </div>
+      <details id="design-comparison" class="design-comparison" hidden>
+        <summary>AC and spherical designs <span id="design-comparison-count"></span></summary>
+        <div id="design-comparison-body"></div>
+      </details>
       <div class="catalogue-layout">
         <div class="matrix-panel">
           <div class="matrix-heading"><span>Qubit number <i>n</i> / Anticoherence order <i>t</i></span><span class="matrix-instruction">Select a cell for the state and evidence</span></div>
