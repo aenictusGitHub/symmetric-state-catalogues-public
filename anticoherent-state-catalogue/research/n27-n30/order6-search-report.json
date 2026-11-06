@@ -1,0 +1,463 @@
+{
+  "recordedDate": "2026-11-06",
+  "scientificConclusion": "For N=27 and N=29, exact fifth-order states and independently verified universal seventh-order exclusions prove 5 <= t_max <= 6. Sixth-order existence is not settled by the numerical tests recorded here.",
+  "proofScope": "This is a compact discovery report, not an existence, relaxed-feasibility or nonexistence certificate. The rigorous proof bundles are separate.",
+  "fourCopyMomentTests": {
+    "task": "Order6 upper-exclusion discovery for N27,N29",
+    "scope": "Scoped numerical discovery summary only; no new theorem at order6.",
+    "rigorousStatus": "Exact fifth-order witnesses and independently verified seventh-order exclusions give5<=t_max<=6 for both sizes.",
+    "cases": [
+      {
+        "n": 27,
+        "targetOrder": 6,
+        "rigorousKnownMaximumOrderInterval": [
+          5,
+          6
+        ],
+        "fourCopyMomentDimension": 31465,
+        "realInvariantMomentVariables": 6964,
+        "completeNecessaryReducedACContractionEquations": 8245,
+        "sourcePSDSpinBlocks": 53,
+        "numericalPoint": {
+          "physicalACContractionResidualNorm": 4.0715320286626356e-10,
+          "minimumInputMomentEigenvalue": 1.032240334881617e-05,
+          "trace": 0.9999999999999988,
+          "completePPT22OutputBlockCount": 55,
+          "completePPT13OutputBlockCount": 55,
+          "worstCompletePPT22Eigenvalue": -1.9143816434195974e-11,
+          "worstCompletePPT13Eigenvalue": -2.033039139248122e-11,
+          "completePPTNegativeFrobeniusNorm": 8.191570105642019e-11,
+          "minimumWeightedDualSeparatorEigenvalue": -3.3794217685129324e-11
+        },
+        "optimizedPPTOutputSpins": {
+          "22": [
+            0,
+            2,
+            4,
+            8,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            48,
+            52
+          ],
+          "13": [
+            2,
+            6,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            50,
+            52
+          ]
+        },
+        "worstCompleteOutputBlocks": [
+          {
+            "split": "13",
+            "doubledSpin": 40,
+            "dimension": 91,
+            "minimumEigenvalue": -2.033039139248122e-11,
+            "negativeFrobeniusNorm": 2.2179941960955508e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 18,
+            "dimension": 96,
+            "minimumEigenvalue": -1.9143816434195974e-11,
+            "negativeFrobeniusNorm": 2.192525203079417e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 40,
+            "dimension": 139,
+            "minimumEigenvalue": -1.5903610739880902e-11,
+            "negativeFrobeniusNorm": 1.8164720771441392e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 30,
+            "dimension": 126,
+            "minimumEigenvalue": -1.4677613498930517e-11,
+            "negativeFrobeniusNorm": 1.750851038408891e-11
+          },
+          {
+            "split": "13",
+            "doubledSpin": 34,
+            "dimension": 91,
+            "minimumEigenvalue": -1.3838810979427945e-11,
+            "negativeFrobeniusNorm": 1.626367203918541e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 32,
+            "dimension": 138,
+            "minimumEigenvalue": -1.3452367286350779e-11,
+            "negativeFrobeniusNorm": 1.6461058946807964e-11
+          }
+        ],
+        "snapshotSHA256": "2892bb28d44d95b9c8574786c695a8a6f196aa6c78fd9599ecd08a58c9c2df70",
+        "scientificConclusion": "The complete four-copy AC6 contraction map and both complete partial-time-reversal output spectra admit a nearly feasible numerical moment. No positive separating dual was found. This is neither a pure sixth-order AC witness nor a certified feasible moment, and it does not prove nonexistence.",
+        "scope": "All AC contraction equations were imposed. Optimization used the listed active1|3and2|2PPT cones selected from full scans; the frozen numerical point was then independently rescanned against every output spin block of both splits. Residuals above refer to the same point. No elapsed wall time is used, since it included machine sleep.",
+        "mainCatalogueEdits": false
+      },
+      {
+        "n": 29,
+        "targetOrder": 6,
+        "rigorousKnownMaximumOrderInterval": [
+          5,
+          6
+        ],
+        "fourCopyMomentDimension": 40920,
+        "realInvariantMomentVariables": 9581,
+        "completeNecessaryReducedACContractionEquations": 10076,
+        "sourcePSDSpinBlocks": 57,
+        "numericalPoint": {
+          "physicalACContractionResidualNorm": 8.977416318789163e-10,
+          "minimumInputMomentEigenvalue": 7.728797325699525e-06,
+          "trace": 1.0000000000000002,
+          "completePPT22OutputBlockCount": 59,
+          "completePPT13OutputBlockCount": 59,
+          "worstCompletePPT22Eigenvalue": -3.155769396081128e-11,
+          "worstCompletePPT13Eigenvalue": -3.1658418046707996e-11,
+          "completePPTNegativeFrobeniusNorm": 1.4297626789433548e-10,
+          "minimumWeightedDualSeparatorEigenvalue": -8.891839391228386e-11
+        },
+        "optimizedPPTOutputSpins": {
+          "22": [
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            56
+          ],
+          "13": [
+            4,
+            6,
+            8,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48,
+            54,
+            56
+          ]
+        },
+        "worstCompleteOutputBlocks": [
+          {
+            "split": "13",
+            "doubledSpin": 44,
+            "dimension": 104,
+            "minimumEigenvalue": -3.1658418046707996e-11,
+            "negativeFrobeniusNorm": 3.584253670994142e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 18,
+            "dimension": 105,
+            "minimumEigenvalue": -3.155769396081128e-11,
+            "negativeFrobeniusNorm": 3.906135159206205e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 20,
+            "dimension": 125,
+            "minimumEigenvalue": -2.6025472343976456e-11,
+            "negativeFrobeniusNorm": 3.5306638222656874e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 32,
+            "dimension": 155,
+            "minimumEigenvalue": -2.0921421019006856e-11,
+            "negativeFrobeniusNorm": 2.790514566509968e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 40,
+            "dimension": 160,
+            "minimumEigenvalue": -2.0159305958741325e-11,
+            "negativeFrobeniusNorm": 2.477052347725369e-11
+          },
+          {
+            "split": "22",
+            "doubledSpin": 12,
+            "dimension": 90,
+            "minimumEigenvalue": -1.9238606483889413e-11,
+            "negativeFrobeniusNorm": 2.2494532596928705e-11
+          }
+        ],
+        "snapshotSHA256": "bb61c5f7718c3db8006523455fd3b514c45338a67802135306d0283ae1f6a7c7",
+        "scientificConclusion": "The complete four-copy AC6 contraction map and both complete partial-time-reversal output spectra admit a nearly feasible numerical moment. No positive separating dual was found. This is neither a pure sixth-order AC witness nor a certified feasible moment, and it does not prove nonexistence.",
+        "scope": "All AC contraction equations were imposed. Optimization used the listed active1|3and2|2PPT cones selected from full scans; the frozen numerical point was then independently rescanned against every output spin block of both splits. Residuals above refer to the same point. No elapsed wall time is used, since it included machine sleep.",
+        "mainCatalogueEdits": false
+      }
+    ],
+    "largeArraysIncluded": false,
+    "mainCatalogueEdits": false
+  },
+  "fiveCopyBasicPSDTests": {
+    "cases": [
+      {
+        "n": 27,
+        "t": 6,
+        "copies": 5,
+        "momentDimension": 201376,
+        "realInvariantVariables": 186808,
+        "fullReducedScalarContractions": 307404,
+        "allReducedContractionsIncluded": true,
+        "basicPSDOnly": true,
+        "numericalSeparatorFound": false,
+        "seed": "positive symmetrized extension from previous moment",
+        "seconds": 141.9262659549713,
+        "last": {
+          "iteration": 1000,
+          "weightedResidual": 1.9001001358073522e-06,
+          "physicalResidual": 9.969611226999551e-07,
+          "separatorMinimumWeightedEigenvalue": -1.5152612521278027e-08,
+          "averagedSeparatorMinimumWeightedEigenvalue": -4.985492920768209e-09,
+          "dualGradientNorm": 1.8595240995308364e-06,
+          "inputMinimumEigenvalue": -3.8356369818945413e-20,
+          "trace": 0.9999999999999983,
+          "seconds": 141.91816401481628
+        },
+        "scope": "Complete five-copy basic-PSD outer-relaxation search only. No strict separating certificate was found in1000 iterations. These approximate moments are not pure-state witnesses, and the residuals do not certify even exact relaxed feasibility."
+      },
+      {
+        "n": 29,
+        "t": 6,
+        "copies": 5,
+        "momentDimension": 278256,
+        "realInvariantVariables": 292888,
+        "fullReducedScalarContractions": 427220,
+        "allReducedContractionsIncluded": true,
+        "basicPSDOnly": true,
+        "numericalSeparatorFound": false,
+        "seed": "positive symmetrized extension from previous moment",
+        "seconds": 235.93113708496094,
+        "last": {
+          "iteration": 1000,
+          "weightedResidual": 9.923023383802494e-07,
+          "physicalResidual": 5.292858422345977e-07,
+          "separatorMinimumWeightedEigenvalue": -7.248398153433183e-09,
+          "averagedSeparatorMinimumWeightedEigenvalue": -2.163897970430283e-09,
+          "dualGradientNorm": 1.0399249302413148e-06,
+          "inputMinimumEigenvalue": 1.7632745619989427e-06,
+          "trace": 1.0000000000000004,
+          "seconds": 235.92217826843262
+        },
+        "scope": "Complete five-copy basic-PSD outer-relaxation search only. No strict separating certificate was found in1000 iterations. These approximate moments are not pure-state witnesses, and the residuals do not certify even exact relaxed feasibility."
+      }
+    ],
+    "scientificConclusion": "The order-six pure-state questions at N27 andN29 are not resolved by these basic-PSD tests. Higher positivity constraints or a state construction remain necessary."
+  },
+  "fiveCopyPartialTransposeTests": {
+    "methodStatus": "Numerical research only; no new universal exclusion theorem from these tests.",
+    "backend": "Matrix-free five-copy first-leg partial-time-reversal prototype, validated numerically by adjoint, direct-CG and pure-state controls.",
+    "recouplingCoefficient": "(-1)^n*sqrt((J2+1)(L2+1))*sixj(n,S2,J2;n,T2,L2), doubled parent spins even",
+    "controls": {
+      "directCGNumericalCases": 1483,
+      "directCGExactSymbolicCases": 130,
+      "tracePreservationChannels": 2823,
+      "actualExactAC5TensorPowerControlsPassed": true,
+      "genericComplexTensorPowerControlsPassed": true,
+      "adjointRelativeErrors": {
+        "27": 7.85e-15,
+        "29": 1.52e-16
+      }
+    },
+    "runs": [
+      {
+        "n": 27,
+        "testedACOrder": 6,
+        "momentCopies": 5,
+        "method": "Matrix-free primal-dual outer relaxation with complete AC6 contraction map, positive source moment, trace one and selected 1|4 partial-time-reversal positivity.",
+        "fullReducedScalarACContractions": 307404,
+        "allAC6ContractionsIncluded": true,
+        "sourceRealInvariantVariables": 186808,
+        "momentDimension": 201376,
+        "sourcePSDIncluded": true,
+        "selectedPPTSplit": "1|4",
+        "selectedDoubledOutputSpins": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "allPPTSpinsIncluded": false,
+        "iterations": 600,
+        "finalPhysicalACResidual": 3.0503355863730877e-07,
+        "finalSelectedPPTNegativeFrobeniusNorm": 2.579170101022184e-07,
+        "finalSourceMargin": -4.966808687587469e-09,
+        "finalAverageSourceMargin": -6.030059706669439e-09,
+        "separatorFound": false,
+        "intermediateFinalScan": {
+          "doubledOutputSpins": [
+            17,
+            19,
+            21,
+            23,
+            25,
+            27,
+            29,
+            31,
+            33,
+            35
+          ],
+          "worstEigenvalue": -8.885923236403116e-06,
+          "worstSelectedLowEigenvalue": -6.571241076933729e-08,
+          "ratio": 135.2244291811839
+        },
+        "scope": "UNRESOLVED: no separating certificate found. These residuals are not certified feasibility and establish neither pure-state existence nor nonexistence.",
+        "expandedPPTProbe": {
+          "complete": true,
+          "iterations": 300,
+          "selectedDoubledOutputSpins": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            21,
+            31,
+            35
+          ],
+          "finalPhysicalACResidual": 3.028762126711177e-07,
+          "finalPPTNegativeFrobeniusNorm": 3.074728270220131e-07,
+          "finalSourceMargin": -3.512278020138312e-09,
+          "finalAverageSourceMargin": -6.634872267753353e-09,
+          "separatorFound": false
+        }
+      },
+      {
+        "n": 29,
+        "testedACOrder": 6,
+        "momentCopies": 5,
+        "method": "Matrix-free primal-dual outer relaxation with complete AC6 contraction map, positive source moment, trace one and selected 1|4 partial-time-reversal positivity.",
+        "fullReducedScalarACContractions": 427220,
+        "allAC6ContractionsIncluded": true,
+        "sourceRealInvariantVariables": 292888,
+        "momentDimension": 278256,
+        "sourcePSDIncluded": true,
+        "selectedPPTSplit": "1|4",
+        "selectedDoubledOutputSpins": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "allPPTSpinsIncluded": false,
+        "iterations": 600,
+        "finalPhysicalACResidual": 2.92827613014414e-07,
+        "finalSelectedPPTNegativeFrobeniusNorm": 4.4894011290746916e-08,
+        "finalSourceMargin": -3.691353267022507e-09,
+        "finalAverageSourceMargin": -5.28266692376435e-10,
+        "separatorFound": false,
+        "intermediateFinalScan": {
+          "doubledOutputSpins": [
+            17,
+            19,
+            21,
+            23,
+            25,
+            27,
+            29,
+            31,
+            33,
+            35
+          ],
+          "worstEigenvalue": -5.786992681136173e-08,
+          "worstSelectedLowEigenvalue": -1.1677068445255843e-08,
+          "ratio": 4.9558608894575
+        },
+        "scope": "UNRESOLVED: no separating certificate found. These residuals are not certified feasibility and establish neither pure-state existence nor nonexistence."
+      }
+    ],
+    "interpretation": "The existence of order-six pure states at N=27 and 29 remains unresolved by these tests. Independently proved order-seven exclusions and exact order-five witnesses give 5≤tmax≤6 for both."
+  },
+  "pureStateSearches": [
+    {
+      "n": 27,
+      "targetOrder": 6,
+      "starts": 60,
+      "bestEuclideanConstraintResidual": 0.0018250926203755805,
+      "constraintConvention": "Real diagonal and real/imaginary upper-triangular entries of rho_6-I_7/7; off-diagonal components are not doubled.",
+      "method": "Full complex Dicke coefficients; analytic-Jacobian least-squares; starts from the refined fifth-order source with perturbations and random complex states.",
+      "scope": "Finite numerical search only. Failure to find a root does not prove nonexistence."
+    },
+    {
+      "n": 29,
+      "targetOrder": 6,
+      "starts": 60,
+      "bestEuclideanConstraintResidual": 0.00015511322851634673,
+      "constraintConvention": "Real diagonal and real/imaginary upper-triangular entries of rho_6-I_7/7; off-diagonal components are not doubled.",
+      "method": "Full complex Dicke coefficients; analytic-Jacobian least-squares; starts from the refined fifth-order source with perturbations and random complex states.",
+      "scope": "Finite numerical search only. Failure to find a root does not prove nonexistence."
+    }
+  ]
+}

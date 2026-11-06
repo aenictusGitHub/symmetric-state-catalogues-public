@@ -185,6 +185,9 @@ for n in core+extended:
         entry.update(status='reported_absent',notes='The cited paper states nonexistence. A general exclusion proof was not identified or verified in this catalogue; this is kept separate from proved impossibility.',references=refs(claim['references']))
     else:
         entry.update(status='unknown',notes='Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.',references=[])
+        if (n,t) in {(27,6),(29,6)}:
+            entry['notes']='An exact fifth-order state exists and every seventh-order pure state is excluded. Sixth-order existence remains unresolved in this catalogue.'
+            entry['references']=[{'title':'Exact fifth-order state and rigorous bounds','url':f'./research/n27-n30/index.html#n{n}'},{'title':'Universal seventh-order exclusion','url':f'./research/n27-n30/n{n}-t7/proof.tex'},{'title':'Scoped numerical research report','url':'./research/n27-n30/order6-search-report.json'}]
         if (n,t)==(11,4):
             claim=next(r for r in restrictions['reportedExclusionsWithoutLocatedProof'] if r['N']==n and r['t']==t)
             entry['notes']+=' The numerical survey explicitly distinguishes failed convergence from nonexistence.';entry['references']=refs(claim['references'])
