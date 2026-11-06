@@ -1,0 +1,4899 @@
+{
+  "passed": true,
+  "patches": [
+    {
+      "patchIndex": 0,
+      "kind": "base",
+      "surface": "upper",
+      "triangles": 29497,
+      "positions": 15591,
+      "maxStoredNormalLengthError": 7.473854202189045e-9,
+      "maxAreaWeightedNormalError": 4.9999781578772846e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.570480602045777,
+      "worldArea": 0.7422739588111729,
+      "opposedTriangleCount": 4,
+      "opposedTriangleArea": 0.000006306025931761935,
+      "opposedAreaFraction": 0.000008495550540209813
+    },
+    {
+      "patchIndex": 1,
+      "kind": "spectral",
+      "surface": "upper",
+      "triangles": 4586,
+      "positions": 2650,
+      "maxStoredNormalLengthError": 7.67780639066018e-9,
+      "maxAreaWeightedNormalError": 4.999871183741789e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.649064142209934,
+      "worldArea": 0.07931703434103811,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 2,
+      "kind": "paired",
+      "surface": "upper",
+      "triangles": 8747,
+      "positions": 4623,
+      "maxStoredNormalLengthError": 6.9941878955148695e-9,
+      "maxAreaWeightedNormalError": 4.992716184926138e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.7400302719226359,
+      "worldArea": 0.13002959756550928,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 3,
+      "kind": "orange",
+      "surface": "upper",
+      "triangles": 7123,
+      "positions": 4185,
+      "maxStoredNormalLengthError": 7.568637050425764e-9,
+      "maxAreaWeightedNormalError": 4.99867602865578e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.6179373701266713,
+      "worldArea": 0.6890360386906741,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 4,
+      "kind": "sharp",
+      "surface": "upper",
+      "triangles": 1574,
+      "positions": 976,
+      "maxStoredNormalLengthError": 6.696214249757304e-9,
+      "maxAreaWeightedNormalError": 4.9985091621351785e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.8544120479552851,
+      "worldArea": 0.000005168426882206903,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 5,
+      "kind": "compatibility_cap",
+      "surface": "upper",
+      "triangles": 2588,
+      "positions": 1451,
+      "maxStoredNormalLengthError": 7.880585739528101e-9,
+      "maxAreaWeightedNormalError": 4.998165104019847e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.5756453826318155,
+      "worldArea": 0.0003081760213573734,
+      "opposedTriangleCount": 193,
+      "opposedTriangleArea": 1.4999337303462969e-7,
+      "opposedAreaFraction": 0.00048671331524749385
+    },
+    {
+      "patchIndex": 6,
+      "kind": "rank4_plane",
+      "surface": "upper",
+      "triangles": 487,
+      "positions": 288,
+      "maxStoredNormalLengthError": 7.083577946431774e-9,
+      "maxAreaWeightedNormalError": 4.998671032652169e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.8720688900422955,
+      "worldArea": 0.10644768657323538,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 7,
+      "kind": "flow_cap",
+      "surface": "upper",
+      "triangles": 4248,
+      "positions": 2744,
+      "maxStoredNormalLengthError": 5.019181958942909e-9,
+      "maxAreaWeightedNormalError": 4.999785759832089e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.761853689674844,
+      "worldArea": 0.0001697353496106983,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 8,
+      "kind": "null_upper_1",
+      "surface": "upper",
+      "triangles": 1870,
+      "positions": 1163,
+      "maxStoredNormalLengthError": 6.547066666584556e-9,
+      "maxAreaWeightedNormalError": 4.998314873105869e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.9989368738518705,
+      "worldArea": 0.00012714411410528448,
+      "opposedTriangleCount": 10,
+      "opposedTriangleArea": 0.0000014248515342624263,
+      "opposedAreaFraction": 0.011206586669694726
+    },
+    {
+      "patchIndex": 9,
+      "kind": "null_upper_2",
+      "surface": "upper",
+      "triangles": 756,
+      "positions": 469,
+      "maxStoredNormalLengthError": 6.867255430975661e-9,
+      "maxAreaWeightedNormalError": 4.990520996450698e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.8994836666059113,
+      "worldArea": 0.00009937041764197323,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 10,
+      "kind": "null_upper_3",
+      "surface": "upper",
+      "triangles": 153,
+      "positions": 95,
+      "maxStoredNormalLengthError": 6.969328003592068e-9,
+      "maxAreaWeightedNormalError": 4.995391489348577e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.901802133332917,
+      "worldArea": 0.00003855342103292812,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 11,
+      "kind": "null_lower_1",
+      "surface": "upper",
+      "triangles": 72,
+      "positions": 52,
+      "maxStoredNormalLengthError": 5.09434894269134e-9,
+      "maxAreaWeightedNormalError": 4.940072188125422e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.9996881075886966,
+      "worldArea": 2.4747329360301447e-7,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 12,
+      "kind": "compatibility_lower",
+      "surface": "lower",
+      "triangles": 24245,
+      "positions": 12476,
+      "maxStoredNormalLengthError": 6.956846432260022e-9,
+      "maxAreaWeightedNormalError": 4.9999169804415544e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.9768968134827163,
+      "worldArea": 1.4906722421416452,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 13,
+      "kind": "fourcopy_lower",
+      "surface": "lower",
+      "triangles": 4680,
+      "positions": 2572,
+      "maxStoredNormalLengthError": 7.613191521649298e-9,
+      "maxAreaWeightedNormalError": 4.9994429152100395e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.9999972040360203,
+      "worldArea": 0.06770439144189785,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 14,
+      "kind": "p2_lower",
+      "surface": "lower",
+      "triangles": 46677,
+      "positions": 23802,
+      "maxStoredNormalLengthError": 6.665694107788056e-9,
+      "maxAreaWeightedNormalError": 4.99997721004064e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 0.9736644046360524,
+      "worldArea": 0.4669453413136085,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 15,
+      "kind": "base",
+      "surface": "x0",
+      "triangles": 9552,
+      "positions": 4901,
+      "maxStoredNormalLengthError": 0,
+      "maxAreaWeightedNormalError": 0,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 1,
+      "worldArea": 0.4766907243968424,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    },
+    {
+      "patchIndex": 16,
+      "kind": "base",
+      "surface": "y5",
+      "triangles": 10055,
+      "positions": 5176,
+      "maxStoredNormalLengthError": 0,
+      "maxAreaWeightedNormalError": 0,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": 1,
+      "worldArea": 0.20595935667282908,
+      "opposedTriangleCount": 0,
+      "opposedTriangleArea": 0,
+      "opposedAreaFraction": 0
+    }
+  ],
+  "triangles": 156910,
+  "expandedVertexCount": 470730,
+  "sharedEdgeWindingErrors": 0,
+  "nonmanifoldEdges": 0,
+  "warnings": [
+    {
+      "patchIndex": 0,
+      "kind": "base",
+      "surface": "upper",
+      "triangles": 29497,
+      "positions": 15591,
+      "maxStoredNormalLengthError": 7.473854202189045e-9,
+      "maxAreaWeightedNormalError": 4.9999781578772846e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.570480602045777,
+      "worldArea": 0.7422739588111729,
+      "opposedTriangleCount": 4,
+      "opposedTriangleArea": 0.000006306025931761935,
+      "opposedAreaFraction": 0.000008495550540209813,
+      "opposedTriangles": [
+        {
+          "triangle": 23119,
+          "worldArea": 1.5428141793031736e-7,
+          "minimumNormalDot": -0.19128819482265186,
+          "sectorVertices": [
+            [
+              0.06441004513730353,
+              7.192304001510142,
+              8.128820090274607
+            ],
+            [
+              0.06370506715774535,
+              7.197374999999999,
+              8.121150335788728
+            ],
+            [
+              0.06365832694180493,
+              7.189893216669558,
+              8.127316653883609
+            ]
+          ]
+        },
+        {
+          "triangle": 23122,
+          "worldArea": 1.7988649081052882e-7,
+          "minimumNormalDot": -0.05995434131391622,
+          "sectorVertices": [
+            [
+              0.06370506715774535,
+              7.197374999999999,
+              8.121150335788728
+            ],
+            [
+              0.06441004513730353,
+              7.192304001510142,
+              8.128820090274607
+            ],
+            [
+              0.06376739752290654,
+              7.207352324187756,
+              8.111484663426777
+            ]
+          ]
+        },
+        {
+          "triangle": 23123,
+          "worldArea": 0.0000059421511983976,
+          "minimumNormalDot": -0.36471199052628267,
+          "sectorVertices": [
+            [
+              0.06441004513730353,
+              7.192304001510142,
+              8.128820090274607
+            ],
+            [
+              0.0750179443359375,
+              7.116,
+              8.150035888671875
+            ],
+            [
+              0.06377769088745117,
+              7.209,
+              8.109888454437256
+            ]
+          ]
+        },
+        {
+          "triangle": 23124,
+          "worldArea": 2.970682462348911e-8,
+          "minimumNormalDot": -0.0599543413110562,
+          "sectorVertices": [
+            [
+              0.06441004513730353,
+              7.192304001510142,
+              8.128820090274607
+            ],
+            [
+              0.06377769088745117,
+              7.209,
+              8.109888454437256
+            ],
+            [
+              0.06376739752290654,
+              7.207352324187756,
+              8.111484663426777
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "patchIndex": 5,
+      "kind": "compatibility_cap",
+      "surface": "upper",
+      "triangles": 2588,
+      "positions": 1451,
+      "maxStoredNormalLengthError": 7.880585739528101e-9,
+      "maxAreaWeightedNormalError": 4.998165104019847e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.5756453826318155,
+      "worldArea": 0.0003081760213573734,
+      "opposedTriangleCount": 193,
+      "opposedTriangleArea": 1.4999337303462969e-7,
+      "opposedAreaFraction": 0.00048671331524749385,
+      "opposedTriangles": [
+        {
+          "triangle": 8,
+          "worldArea": 3.395226639476898e-11,
+          "minimumNormalDot": -0.005315573249793388,
+          "sectorVertices": [
+            [
+              0.0000012715657552083333,
+              5,
+              7.901237864553192
+            ],
+            [
+              1.9999788491986692e-8,
+              5.000125000000001,
+              7.908094933323747
+            ],
+            [
+              1.9999788491986692e-8,
+              5.000123033940793,
+              7.9080417354114
+            ]
+          ]
+        },
+        {
+          "triangle": 207,
+          "worldArea": 7.180723104795027e-12,
+          "minimumNormalDot": -0.082972026550327,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.001,
+              7.920003239093596
+            ],
+            [
+              1.9997437220808937e-8,
+              5.0013749999999995,
+              7.923039140943517
+            ],
+            [
+              1.9999862843178563e-8,
+              5.001369102537632,
+              7.922995239411408
+            ]
+          ]
+        },
+        {
+          "triangle": 219,
+          "worldArea": 3.4922656419031478e-12,
+          "minimumNormalDot": -0.08351205146859333,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0017499999999995,
+              7.925640269721977
+            ],
+            [
+              1.9998650031993748e-8,
+              5.0021249999999995,
+              7.927930677144875
+            ],
+            [
+              1.9999862843178563e-8,
+              5.002119102537631,
+              7.927896517244635
+            ]
+          ]
+        },
+        {
+          "triangle": 224,
+          "worldArea": 4.801364096235932e-12,
+          "minimumNormalDot": -0.08454332550782868,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0013749999999995,
+              7.923042318957444
+            ],
+            [
+              2.0001075654363378e-8,
+              5.0017499999999995,
+              7.925637100624286
+            ],
+            [
+              1.9999862843178563e-8,
+              5.001744102537631,
+              7.92559885787261
+            ]
+          ]
+        },
+        {
+          "triangle": 237,
+          "worldArea": 2.140455865776304e-12,
+          "minimumNormalDot": -0.07581409495264962,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0024999999999995,
+              7.930001008069277
+            ],
+            [
+              1.9998650031993748e-8,
+              5.0028749999999995,
+              7.931888099573938
+            ],
+            [
+              1.9999862843178563e-8,
+              5.002869102537632,
+              7.931859554662008
+            ]
+          ]
+        },
+        {
+          "triangle": 249,
+          "worldArea": 1.4744344947893516e-12,
+          "minimumNormalDot": -0.062450107199488014,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0032499999999995,
+              7.933638264685492
+            ],
+            [
+              2.0001075654363378e-8,
+              5.0036249999999995,
+              7.935263127143561
+            ],
+            [
+              1.9999862843178563e-8,
+              5.003619102537631,
+              7.935238346760864
+            ]
+          ]
+        },
+        {
+          "triangle": 254,
+          "worldArea": 1.7571746992861506e-12,
+          "minimumNormalDot": -0.06976263111342809,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0028749999999995,
+              7.931891246284791
+            ],
+            [
+              1.9998650031993748e-8,
+              5.0032499999999995,
+              7.933635124495935
+            ],
+            [
+              1.9999862843178563e-8,
+              5.003244102537631,
+              7.933608625116049
+            ]
+          ]
+        },
+        {
+          "triangle": 258,
+          "worldArea": 1.1243049390359004e-10,
+          "minimumNormalDot": -0.043851979304982414,
+          "sectorVertices": [
+            [
+              0.000005086898803710938,
+              5.0017499999999995,
+              7.925649928928981
+            ],
+            [
+              0.000005086898803710938,
+              5.0024999999999995,
+              7.930010620122177
+            ],
+            [
+              0.000002543449401855469,
+              5.0024999999999995,
+              7.930004212087212
+            ]
+          ]
+        },
+        {
+          "triangle": 262,
+          "worldArea": 2.6822946490110556e-12,
+          "minimumNormalDot": -0.08047497907400042,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0021249999999995,
+              7.9279338381959095
+            ],
+            [
+              1.9998650031993748e-8,
+              5.0024999999999995,
+              7.929997854436195
+            ],
+            [
+              1.9999862843178563e-8,
+              5.002494102537631,
+              7.929966818996649
+            ]
+          ]
+        },
+        {
+          "triangle": 266,
+          "worldArea": 5.888496540208405e-11,
+          "minimumNormalDot": -0.03499727829916563,
+          "sectorVertices": [
+            [
+              0.000005086898803710938,
+              5.0017499999999995,
+              7.925649928928981
+            ],
+            [
+              0.000002543449401855469,
+              5.0021249999999995,
+              7.927937049750339
+            ],
+            [
+              0.000002543449401855469,
+              5.0017499999999995,
+              7.92564348945789
+            ]
+          ]
+        },
+        {
+          "triangle": 269,
+          "worldArea": 9.56466213546007e-11,
+          "minimumNormalDot": -0.004465930438508042,
+          "sectorVertices": [
+            [
+              0.000005086898803710938,
+              5.0024999999999995,
+              7.930010620122177
+            ],
+            [
+              0.000005087852478027344,
+              5.0032499999999995,
+              7.933647838155632
+            ],
+            [
+              0.000002543449401855469,
+              5.0032499999999995,
+              7.933641455045067
+            ]
+          ]
+        },
+        {
+          "triangle": 274,
+          "worldArea": 1.2589366652234673e-12,
+          "minimumNormalDot": -0.05402178850381151,
+          "sectorVertices": [
+            [
+              0.0000012717247009277345,
+              5.0036249999999995,
+              7.93526626113866
+            ],
+            [
+              2.0002508790639693e-8,
+              5.004,
+              7.9367901734435655
+            ],
+            [
+              1.9999862843178563e-8,
+              5.003994102537631,
+              7.936766864079134
+            ]
+          ]
+        },
+        {
+          "triangle": 280,
+          "worldArea": 1.9134399732157058e-10,
+          "minimumNormalDot": -0.00549682412061786,
+          "sectorVertices": [
+            [
+              0.000010175704956054687,
+              5.0024999999999995,
+              7.930023440993927
+            ],
+            [
+              0.000005087852478027344,
+              5.0032499999999995,
+              7.933647838155632
+            ],
+            [
+              0.000005086898803710938,
+              5.0024999999999995,
+              7.930010620122177
+            ]
+          ]
+        },
+        {
+          "triangle": 370,
+          "worldArea": 4.878170647534456e-12,
+          "minimumNormalDot": -0.2159105473461669,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.004,
+              7.936793302720472
+            ],
+            [
+              2.000129552470753e-8,
+              5.004625,
+              7.939147335104181
+            ],
+            [
+              2.000008225877536e-8,
+              5.004615174472332,
+              7.939111891608127
+            ]
+          ]
+        },
+        {
+          "triangle": 382,
+          "worldArea": 3.315546419943948e-12,
+          "minimumNormalDot": -0.23091832045311078,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.00525,
+              7.941312550453089
+            ],
+            [
+              2.000129552470753e-8,
+              5.005875,
+              7.943310467906413
+            ],
+            [
+              2.000008225877536e-8,
+              5.005865174472332,
+              7.943280118801914
+            ]
+          ]
+        },
+        {
+          "triangle": 387,
+          "worldArea": 3.975377422590887e-12,
+          "minimumNormalDot": -0.2242931940904785,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.004625,
+              7.939150455061448
+            ],
+            [
+              2.000129552470753e-8,
+              5.00525,
+              7.941309439274426
+            ],
+            [
+              2.000008225877536e-8,
+              5.005240174472332,
+              7.941276770954274
+            ]
+          ]
+        },
+        {
+          "triangle": 390,
+          "worldArea": 2.4926840054414594e-10,
+          "minimumNormalDot": -0.14144768811745292,
+          "sectorVertices": [
+            [
+              0.0000050888061523437494,
+              5.004,
+              7.93680284050914
+            ],
+            [
+              0.000010177612304687499,
+              5.004,
+              7.936815557555133
+            ],
+            [
+              0.0000050888061523437494,
+              5.00525,
+              7.941322033070109
+            ]
+          ]
+        },
+        {
+          "triangle": 400,
+          "worldArea": 2.4274688802303916e-12,
+          "minimumNormalDot": -0.23960136088930772,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.0065,
+              7.945178645700091
+            ],
+            [
+              2.0002508790639693e-8,
+              5.007125,
+              7.946923892535607
+            ],
+            [
+              2.000008225877536e-8,
+              5.007115174472332,
+              7.946897228856752
+            ]
+          ]
+        },
+        {
+          "triangle": 402,
+          "worldArea": 5.13468584991887e-11,
+          "minimumNormalDot": -0.11247698448094151,
+          "sectorVertices": [
+            [
+              0.0000025444030761718747,
+              5.0065,
+              7.945181790030827
+            ],
+            [
+              0.0000050888061523437494,
+              5.0065,
+              7.94518807869069
+            ],
+            [
+              0.0000025444030761718747,
+              5.007125,
+              7.946930116382611
+            ]
+          ]
+        },
+        {
+          "triangle": 412,
+          "worldArea": 1.8670538072250825e-12,
+          "minimumNormalDot": -0.24301720514613734,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.00775,
+              7.948573641343846
+            ],
+            [
+              2.000129552470753e-8,
+              5.008375,
+              7.950127638725405
+            ],
+            [
+              2.000008225877536e-8,
+              5.008365174472332,
+              7.950103800414354
+            ]
+          ]
+        },
+        {
+          "triangle": 417,
+          "worldArea": 2.118056151430985e-12,
+          "minimumNormalDot": -0.24191881677222976,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.007125,
+              7.946926979801544
+            ],
+            [
+              2.0002508790639693e-8,
+              5.00775,
+              7.9485705614238364
+            ],
+            [
+              2.000008225877536e-8,
+              5.007740174472332,
+              7.9485453959842784
+            ]
+          ]
+        },
+        {
+          "triangle": 420,
+          "worldArea": 1.2456200103110715e-10,
+          "minimumNormalDot": -0.13972555292003078,
+          "sectorVertices": [
+            [
+              0.0000050888061523437494,
+              5.004,
+              7.93680284050914
+            ],
+            [
+              0.0000050888061523437494,
+              5.00525,
+              7.941322033070109
+            ],
+            [
+              0.0000025444030761718747,
+              5.00525,
+              7.941315711325898
+            ]
+          ]
+        },
+        {
+          "triangle": 421,
+          "worldArea": 1.1040687174888e-10,
+          "minimumNormalDot": -0.18009181213741826,
+          "sectorVertices": [
+            [
+              0.0000050888061523437494,
+              5.00525,
+              7.941322033070109
+            ],
+            [
+              0.0000050888061523437494,
+              5.0065,
+              7.94518807869069
+            ],
+            [
+              0.0000025444030761718747,
+              5.0065,
+              7.945181790030827
+            ]
+          ]
+        },
+        {
+          "triangle": 425,
+          "worldArea": 2.8161301017412423e-12,
+          "minimumNormalDot": -0.2359683036181326,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.005875,
+              7.943313570755084
+            ],
+            [
+              2.0002508790639693e-8,
+              5.0065,
+              7.945175550806361
+            ],
+            [
+              2.000008225877536e-8,
+              5.006490174472332,
+              7.945147177530591
+            ]
+          ]
+        },
+        {
+          "triangle": 429,
+          "worldArea": 5.668412782386839e-11,
+          "minimumNormalDot": -0.17224719175120595,
+          "sectorVertices": [
+            [
+              0.0000050888061523437494,
+              5.00525,
+              7.941322033070109
+            ],
+            [
+              0.0000025444030761718747,
+              5.005875,
+              7.943316723164812
+            ],
+            [
+              0.0000025444030761718747,
+              5.00525,
+              7.941315711325898
+            ]
+          ]
+        },
+        {
+          "triangle": 430,
+          "worldArea": 4.698433531226196e-10,
+          "minimumNormalDot": -0.06171803067915596,
+          "sectorVertices": [
+            [
+              0.000010177612304687499,
+              5.004,
+              7.936815557555133
+            ],
+            [
+              0.00001018079121907552,
+              5.0065,
+              7.945200663860859
+            ],
+            [
+              0.0000050888061523437494,
+              5.0065,
+              7.94518807869069
+            ]
+          ]
+        },
+        {
+          "triangle": 432,
+          "worldArea": 1.0059978123602665e-10,
+          "minimumNormalDot": -0.12469938565347852,
+          "sectorVertices": [
+            [
+              0.0000050888061523437494,
+              5.0065,
+              7.94518807869069
+            ],
+            [
+              0.00000509039560953776,
+              5.00775,
+              7.948583032604778
+            ],
+            [
+              0.0000025444030761718747,
+              5.00775,
+              7.94857677046161
+            ]
+          ]
+        },
+        {
+          "triangle": 433,
+          "worldArea": 9.329415957946266e-11,
+          "minimumNormalDot": -0.15535119311291323,
+          "sectorVertices": [
+            [
+              0.00000509039560953776,
+              5.00775,
+              7.948583032604778
+            ],
+            [
+              0.000005091985066731771,
+              5.009,
+              7.951617405729229
+            ],
+            [
+              0.0000025459925333658854,
+              5.009,
+              7.951611172001745
+            ]
+          ]
+        },
+        {
+          "triangle": 437,
+          "worldArea": 1.6601644337621901e-12,
+          "minimumNormalDot": -0.24293944259829858,
+          "sectorVertices": [
+            [
+              0.0000012722015380859374,
+              5.008375,
+              7.950130711550443
+            ],
+            [
+              2.0001649848685095e-8,
+              5.009,
+              7.951604987244615
+            ],
+            [
+              2.000008225877536e-8,
+              5.0089901744723315,
+              7.951582335217697
+            ]
+          ]
+        },
+        {
+          "triangle": 441,
+          "worldArea": 4.7471661098338056e-11,
+          "minimumNormalDot": -0.1495075546446022,
+          "sectorVertices": [
+            [
+              0.00000509039560953776,
+              5.00775,
+              7.948583032604778
+            ],
+            [
+              0.00000254519780476888,
+              5.008375,
+              7.950133835407063
+            ],
+            [
+              0.0000025444030761718747,
+              5.00775,
+              7.94857677046161
+            ]
+          ]
+        },
+        {
+          "triangle": 443,
+          "worldArea": 2.013460734391434e-10,
+          "minimumNormalDot": -0.12641774397103392,
+          "sectorVertices": [
+            [
+              0.00001018079121907552,
+              5.0065,
+              7.945200663860859
+            ],
+            [
+              0.00000509039560953776,
+              5.00775,
+              7.948583032604778
+            ],
+            [
+              0.0000050888061523437494,
+              5.0065,
+              7.94518807869069
+            ]
+          ]
+        },
+        {
+          "triangle": 526,
+          "worldArea": 4.103255769451e-12,
+          "minimumNormalDot": -0.34326243942716,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.009,
+              7.951608055137007
+            ],
+            [
+              1.9999221800996263e-8,
+              5.009875,
+              7.95355464185543
+            ],
+            [
+              2.0000435824840678e-8,
+              5.009861252605915,
+              7.953524997218552
+            ]
+          ]
+        },
+        {
+          "triangle": 528,
+          "worldArea": 6.192661266945084e-11,
+          "minimumNormalDot": -0.04287058025519691,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.009,
+              7.951611172001745
+            ],
+            [
+              0.000005091985066731771,
+              5.009,
+              7.951617405729229
+            ],
+            [
+              0.0000025459925333658854,
+              5.009875,
+              7.953560807855181
+            ]
+          ]
+        },
+        {
+          "triangle": 538,
+          "worldArea": 3.1509292631493054e-12,
+          "minimumNormalDot": -0.35608822979160354,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.01075,
+              7.955385207177349
+            ],
+            [
+              1.9999221800996263e-8,
+              5.011625,
+              7.957102180373819
+            ],
+            [
+              2.0000435824840678e-8,
+              5.011611252605915,
+              7.95707592373988
+            ]
+          ]
+        },
+        {
+          "triangle": 540,
+          "worldArea": 3.0945336597526016e-11,
+          "minimumNormalDot": -0.04167723581981009,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.009,
+              7.951611172001745
+            ],
+            [
+              0.0000025459925333658854,
+              5.009875,
+              7.953560807855181
+            ],
+            [
+              0.0000012729962666829427,
+              5.009875,
+              7.953557700446405
+            ]
+          ]
+        },
+        {
+          "triangle": 541,
+          "worldArea": 2.9778441580976233e-11,
+          "minimumNormalDot": -0.059249997880766236,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.009875,
+              7.953560807855181
+            ],
+            [
+              0.0000025459925333658854,
+              5.01075,
+              7.955388305471955
+            ],
+            [
+              0.0000012729962666829427,
+              5.01075,
+              7.955385207177349
+            ]
+          ]
+        },
+        {
+          "triangle": 543,
+          "worldArea": 3.5770965126389403e-12,
+          "minimumNormalDot": -0.3504270096181004,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.009875,
+              7.953557700446405
+            ],
+            [
+              1.9998007777151846e-8,
+              5.01075,
+              7.955382157554362
+            ],
+            [
+              2.0000435824840678e-8,
+              5.010736252605915,
+              7.9553543104727
+            ]
+          ]
+        },
+        {
+          "triangle": 545,
+          "worldArea": 2.97964730500261e-11,
+          "minimumNormalDot": -0.06043246994792417,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.009875,
+              7.953560807855181
+            ],
+            [
+              0.0000012729962666829427,
+              5.01075,
+              7.955385207177349
+            ],
+            [
+              0.0000012729962666829427,
+              5.009875,
+              7.953557700446405
+            ]
+          ]
+        },
+        {
+          "triangle": 546,
+          "worldArea": 2.430811248314641e-10,
+          "minimumNormalDot": -0.2703066583013391,
+          "sectorVertices": [
+            [
+              0.000005091985066731771,
+              5.009,
+              7.951617405729229
+            ],
+            [
+              0.000010183970133463542,
+              5.009,
+              7.951629873176228
+            ],
+            [
+              0.000005091985066731771,
+              5.01075,
+              7.955394502058923
+            ]
+          ]
+        },
+        {
+          "triangle": 556,
+          "worldArea": 2.507305666681921e-12,
+          "minimumNormalDot": -0.36338682469322947,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.0125,
+              7.958729676606182
+            ],
+            [
+              2.0000435824840678e-8,
+              5.013375,
+              7.960265425254338
+            ],
+            [
+              2.0000435824840678e-8,
+              5.0133612526059155,
+              7.960241867359496
+            ]
+          ]
+        },
+        {
+          "triangle": 558,
+          "worldArea": 5.432102244191522e-11,
+          "minimumNormalDot": -0.21337868877160568,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.0125,
+              7.958732757538788
+            ],
+            [
+              0.000005091985066731771,
+              5.0125,
+              7.95873891940151
+            ],
+            [
+              0.0000025459925333658854,
+              5.013375,
+              7.960271522225735
+            ]
+          ]
+        },
+        {
+          "triangle": 568,
+          "worldArea": 2.0488346381309632e-12,
+          "minimumNormalDot": -0.3658747700530028,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.0142500000000005,
+              7.96172982438281
+            ],
+            [
+              2.0001649848685095e-8,
+              5.015125,
+              7.963117821785077
+            ],
+            [
+              2.0000435824840678e-8,
+              5.015111252605916,
+              7.963096479285025
+            ]
+          ]
+        },
+        {
+          "triangle": 573,
+          "worldArea": 2.259956283508883e-12,
+          "minimumNormalDot": -0.3651918661792305,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.013375,
+              7.960268449603001
+            ],
+            [
+              2.0001649848685095e-8,
+              5.0142500000000005,
+              7.961726808005203
+            ],
+            [
+              2.0000435824840678e-8,
+              5.014236252605915,
+              7.961704408863462
+            ]
+          ]
+        },
+        {
+          "triangle": 576,
+          "worldArea": 1.213968834386072e-10,
+          "minimumNormalDot": -0.2680136874547974,
+          "sectorVertices": [
+            [
+              0.000005091985066731771,
+              5.009,
+              7.951617405729229
+            ],
+            [
+              0.000005091985066731771,
+              5.01075,
+              7.955394502058923
+            ],
+            [
+              0.0000025459925333658854,
+              5.01075,
+              7.955388305471955
+            ]
+          ]
+        },
+        {
+          "triangle": 577,
+          "worldArea": 1.133146701942649e-10,
+          "minimumNormalDot": -0.2992709207916545,
+          "sectorVertices": [
+            [
+              0.000005091985066731771,
+              5.01075,
+              7.955394502058923
+            ],
+            [
+              0.000005091985066731771,
+              5.0125,
+              7.95873891940151
+            ],
+            [
+              0.0000025459925333658854,
+              5.0125,
+              7.958732757538788
+            ]
+          ]
+        },
+        {
+          "triangle": 579,
+          "worldArea": 2.790509361414463e-11,
+          "minimumNormalDot": -0.003828158333011311,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.011625,
+              7.957108310798826
+            ],
+            [
+              0.0000025459925333658854,
+              5.0125,
+              7.958732757538788
+            ],
+            [
+              0.0000012729962666829427,
+              5.0125,
+              7.958729676606182
+            ]
+          ]
+        },
+        {
+          "triangle": 581,
+          "worldArea": 2.8001232715173005e-12,
+          "minimumNormalDot": -0.3603815297083223,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.011625,
+              7.957105221318291
+            ],
+            [
+              1.9999221800996263e-8,
+              5.0125,
+              7.958726644075306
+            ],
+            [
+              2.0000435824840678e-8,
+              5.012486252605915,
+              7.958701807729649
+            ]
+          ]
+        },
+        {
+          "triangle": 583,
+          "worldArea": 2.7923028255506555e-11,
+          "minimumNormalDot": -0.004994242502347257,
+          "sectorVertices": [
+            [
+              0.0000025459925333658854,
+              5.011625,
+              7.957108310798826
+            ],
+            [
+              0.0000012729962666829427,
+              5.0125,
+              7.958729676606182
+            ],
+            [
+              0.0000012729962666829427,
+              5.011625,
+              7.957105221318291
+            ]
+          ]
+        },
+        {
+          "triangle": 585,
+          "worldArea": 5.758711746652458e-11,
+          "minimumNormalDot": -0.29380615948393685,
+          "sectorVertices": [
+            [
+              0.000005091985066731771,
+              5.01075,
+              7.955394502058923
+            ],
+            [
+              0.0000025459925333658854,
+              5.011625,
+              7.957108310798826
+            ],
+            [
+              0.0000025459925333658854,
+              5.01075,
+              7.955388305471955
+            ]
+          ]
+        },
+        {
+          "triangle": 586,
+          "worldArea": 4.693465160371899e-10,
+          "minimumNormalDot": -0.17309735798921128,
+          "sectorVertices": [
+            [
+              0.000010183970133463542,
+              5.009,
+              7.951629873176228
+            ],
+            [
+              0.000010188420613606771,
+              5.0125,
+              7.9587512538881295
+            ],
+            [
+              0.000005091985066731771,
+              5.0125,
+              7.95873891940151
+            ]
+          ]
+        },
+        {
+          "triangle": 587,
+          "worldArea": 4.1908761311488953e-10,
+          "minimumNormalDot": -0.10402079805236825,
+          "sectorVertices": [
+            [
+              0.000010188420613606771,
+              5.0125,
+              7.9587512538881295
+            ],
+            [
+              0.00001019287109375,
+              5.016,
+              7.9644688569682325
+            ],
+            [
+              0.000005096435546875,
+              5.016,
+              7.964456650714255
+            ]
+          ]
+        },
+        {
+          "triangle": 588,
+          "worldArea": 1.0727501527573783e-10,
+          "minimumNormalDot": -0.2570503096284829,
+          "sectorVertices": [
+            [
+              0.000005091985066731771,
+              5.0125,
+              7.95873891940151
+            ],
+            [
+              0.0000050942103068033855,
+              5.0142500000000005,
+              7.961739023319095
+            ],
+            [
+              0.0000025459925333658854,
+              5.0142500000000005,
+              7.961732888910183
+            ]
+          ]
+        },
+        {
+          "triangle": 589,
+          "worldArea": 1.024692856463242e-10,
+          "minimumNormalDot": -0.28012590185556346,
+          "sectorVertices": [
+            [
+              0.0000050942103068033855,
+              5.0142500000000005,
+              7.961739023319095
+            ],
+            [
+              0.000005096435546875,
+              5.016,
+              7.964456650714255
+            ],
+            [
+              0.0000025482177734375,
+              5.016,
+              7.964450547581331
+            ]
+          ]
+        },
+        {
+          "triangle": 593,
+          "worldArea": 1.8669847093592038e-12,
+          "minimumNormalDot": -0.36550218526062583,
+          "sectorVertices": [
+            [
+              0.0000012729962666829427,
+              5.015125,
+              7.963120830386039
+            ],
+            [
+              1.99996902665589e-8,
+              5.016,
+              7.964444492344937
+            ],
+            [
+              2.0000435824840678e-8,
+              5.015986252605915,
+              7.964424118544406
+            ]
+          ]
+        },
+        {
+          "triangle": 597,
+          "worldArea": 5.1825424424626516e-11,
+          "minimumNormalDot": -0.2764073759775192,
+          "sectorVertices": [
+            [
+              0.0000050942103068033855,
+              5.0142500000000005,
+              7.961739023319095
+            ],
+            [
+              0.0000025471051534016928,
+              5.015125,
+              7.963123889684133
+            ],
+            [
+              0.0000025459925333658854,
+              5.0142500000000005,
+              7.961732888910183
+            ]
+          ]
+        },
+        {
+          "triangle": 599,
+          "worldArea": 2.148345480271712e-10,
+          "minimumNormalDot": -0.2592781905582623,
+          "sectorVertices": [
+            [
+              0.000010188420613606771,
+              5.0125,
+              7.9587512538881295
+            ],
+            [
+              0.0000050942103068033855,
+              5.0142500000000005,
+              7.961739023319095
+            ],
+            [
+              0.000005091985066731771,
+              5.0125,
+              7.95873891940151
+            ]
+          ]
+        },
+        {
+          "triangle": 601,
+          "worldArea": 2.1967387610824252e-8,
+          "minimumNormalDot": -0.026234581315320277,
+          "sectorVertices": [
+            [
+              0.000010188420613606771,
+              5.0125,
+              7.9587512538881295
+            ],
+            [
+              0.00008147176106770833,
+              5.009,
+              7.951804416318246
+            ],
+            [
+              0.00001019287109375,
+              5.016,
+              7.9644688569682325
+            ]
+          ]
+        },
+        {
+          "triangle": 733,
+          "worldArea": 3.7004681666353635e-12,
+          "minimumNormalDot": -0.4370298975957561,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.016,
+              7.964447496013382
+            ],
+            [
+              1.9998475181637332e-8,
+              5.017125,
+              7.966063975435417
+            ],
+            [
+              1.99996902665589e-8,
+              5.017107340872288,
+              7.966039259434974
+            ]
+          ]
+        },
+        {
+          "triangle": 735,
+          "worldArea": 6.386643097857859e-11,
+          "minimumNormalDot": -0.13604121553961843,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.016,
+              7.964450547581331
+            ],
+            [
+              0.000005096435546875,
+              5.016,
+              7.964456650714255
+            ],
+            [
+              0.0000025482177734375,
+              5.017125,
+              7.966070011424198
+            ]
+          ]
+        },
+        {
+          "triangle": 745,
+          "worldArea": 3.0249126975685234e-12,
+          "minimumNormalDot": -0.441857706945044,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.01825,
+              7.967598131127667
+            ],
+            [
+              1.9998475181637332e-8,
+              5.019375,
+              7.969046056645191
+            ],
+            [
+              1.99996902665589e-8,
+              5.019357340872288,
+              7.9690238651834715
+            ]
+          ]
+        },
+        {
+          "triangle": 747,
+          "worldArea": 3.190428281643629e-11,
+          "minimumNormalDot": -0.10146081327379725,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.016,
+              7.964450547581331
+            ],
+            [
+              0.0000025482177734375,
+              5.017125,
+              7.966070011424198
+            ],
+            [
+              0.00000127410888671875,
+              5.017125,
+              7.966066969557673
+            ]
+          ]
+        },
+        {
+          "triangle": 748,
+          "worldArea": 3.120774513503713e-11,
+          "minimumNormalDot": -0.11347450504021617,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.017125,
+              7.966070011424198
+            ],
+            [
+              0.0000025482177734375,
+              5.01825,
+              7.9676011635350585
+            ],
+            [
+              0.00000127410888671875,
+              5.01825,
+              7.967598131127667
+            ]
+          ]
+        },
+        {
+          "triangle": 750,
+          "worldArea": 3.335942512074139e-12,
+          "minimumNormalDot": -0.44004067176743666,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.017125,
+              7.966066969557673
+            ],
+            [
+              1.9998475181637332e-8,
+              5.01825,
+              7.967595146316024
+            ],
+            [
+              1.99996902665589e-8,
+              5.018232340872288,
+              7.9675717509947175
+            ]
+          ]
+        },
+        {
+          "triangle": 752,
+          "worldArea": 3.123656861994583e-11,
+          "minimumNormalDot": -0.1148850297364871,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.017125,
+              7.966070011424198
+            ],
+            [
+              0.00000127410888671875,
+              5.01825,
+              7.967598131127667
+            ],
+            [
+              0.00000127410888671875,
+              5.017125,
+              7.966066969557673
+            ]
+          ]
+        },
+        {
+          "triangle": 753,
+          "worldArea": 2.527725116178208e-10,
+          "minimumNormalDot": -0.36069347485555403,
+          "sectorVertices": [
+            [
+              0.000005096435546875,
+              5.016,
+              7.964456650714255
+            ],
+            [
+              0.00001019287109375,
+              5.016,
+              7.9644688569682325
+            ],
+            [
+              0.000005096435546875,
+              5.01825,
+              7.967607228346572
+            ]
+          ]
+        },
+        {
+          "triangle": 763,
+          "worldArea": 2.5245005953464167e-12,
+          "minimumNormalDot": -0.44223835877393725,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.0205,
+              7.9704265710489555
+            ],
+            [
+              1.9997260096715764e-8,
+              5.021625,
+              7.971733752045764
+            ],
+            [
+              1.99996902665589e-8,
+              5.021607340872288,
+              7.971713679904035
+            ]
+          ]
+        },
+        {
+          "triangle": 765,
+          "worldArea": 5.91710442307812e-11,
+          "minimumNormalDot": -0.2716832697180922,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.0205,
+              7.970429585176846
+            ],
+            [
+              0.000005096435546875,
+              5.0205,
+              7.97043561342906
+            ],
+            [
+              0.0000025482177734375,
+              5.021625,
+              7.9717397154210765
+            ]
+          ]
+        },
+        {
+          "triangle": 775,
+          "worldArea": 2.1420086561571222e-12,
+          "minimumNormalDot": -0.4386831056943847,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.02275,
+              7.972984646106435
+            ],
+            [
+              1.9997260096715764e-8,
+              5.023875,
+              7.974171998925857
+            ],
+            [
+              1.99996902665589e-8,
+              5.023857340872288,
+              7.974153738844135
+            ]
+          ]
+        },
+        {
+          "triangle": 780,
+          "worldArea": 2.3210870658240843e-12,
+          "minimumNormalDot": -0.4409248235401342,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.021625,
+              7.971736710150017
+            ],
+            [
+              1.9997260096715764e-8,
+              5.02275,
+              7.9729816965543385
+            ],
+            [
+              1.99996902665589e-8,
+              5.022732340872288,
+              7.972962564067004
+            ]
+          ]
+        },
+        {
+          "triangle": 783,
+          "worldArea": 1.2615550074659564e-10,
+          "minimumNormalDot": -0.3580262569984886,
+          "sectorVertices": [
+            [
+              0.000005096435546875,
+              5.016,
+              7.964456650714255
+            ],
+            [
+              0.000005096435546875,
+              5.01825,
+              7.967607228346572
+            ],
+            [
+              0.0000025482177734375,
+              5.01825,
+              7.9676011635350585
+            ]
+          ]
+        },
+        {
+          "triangle": 784,
+          "worldArea": 1.2121155760104337e-10,
+          "minimumNormalDot": -0.3785955150705605,
+          "sectorVertices": [
+            [
+              0.000005096435546875,
+              5.01825,
+              7.967607228346572
+            ],
+            [
+              0.000005096435546875,
+              5.0205,
+              7.97043561342906
+            ],
+            [
+              0.0000025482177734375,
+              5.0205,
+              7.970429585176846
+            ]
+          ]
+        },
+        {
+          "triangle": 785,
+          "worldArea": 3.059256519516384e-11,
+          "minimumNormalDot": -0.04232966012030076,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.01825,
+              7.9676011635350585
+            ],
+            [
+              0.0000025482177734375,
+              5.019375,
+              7.969052055529919
+            ],
+            [
+              0.00000127410888671875,
+              5.019375,
+              7.969049032362218
+            ]
+          ]
+        },
+        {
+          "triangle": 786,
+          "worldArea": 3.004587731294193e-11,
+          "minimumNormalDot": -0.0523733770184428,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.019375,
+              7.969052055529919
+            ],
+            [
+              0.0000025482177734375,
+              5.0205,
+              7.970429585176846
+            ],
+            [
+              0.00000127410888671875,
+              5.0205,
+              7.9704265710489555
+            ]
+          ]
+        },
+        {
+          "triangle": 788,
+          "worldArea": 2.75708345603729e-12,
+          "minimumNormalDot": -0.4425802389547615,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.019375,
+              7.969049032362218
+            ],
+            [
+              1.9996045011794196e-8,
+              5.0205,
+              7.970423604224052
+            ],
+            [
+              1.99996902665589e-8,
+              5.020482340872287,
+              7.970402516073156
+            ]
+          ]
+        },
+        {
+          "triangle": 790,
+          "worldArea": 3.007430717891737e-11,
+          "minimumNormalDot": -0.053761172553936115,
+          "sectorVertices": [
+            [
+              0.0000025482177734375,
+              5.019375,
+              7.969052055529919
+            ],
+            [
+              0.00000127410888671875,
+              5.0205,
+              7.9704265710489555
+            ],
+            [
+              0.00000127410888671875,
+              5.019375,
+              7.969049032362218
+            ]
+          ]
+        },
+        {
+          "triangle": 792,
+          "worldArea": 6.124224546255461e-11,
+          "minimumNormalDot": -0.3758406557380492,
+          "sectorVertices": [
+            [
+              0.000005096435546875,
+              5.01825,
+              7.967607228346572
+            ],
+            [
+              0.0000025482177734375,
+              5.019375,
+              7.969052055529919
+            ],
+            [
+              0.0000025482177734375,
+              5.01825,
+              7.9676011635350585
+            ]
+          ]
+        },
+        {
+          "triangle": 793,
+          "worldArea": 4.946815940105061e-10,
+          "minimumNormalDot": -0.24386980865897376,
+          "sectorVertices": [
+            [
+              0.00001019287109375,
+              5.016,
+              7.9644688569682325
+            ],
+            [
+              0.000010198593139648438,
+              5.0205,
+              7.970447683455698
+            ],
+            [
+              0.000005096435546875,
+              5.0205,
+              7.97043561342906
+            ]
+          ]
+        },
+        {
+          "triangle": 794,
+          "worldArea": 4.6278709153082214e-10,
+          "minimumNormalDot": -0.16352720707493593,
+          "sectorVertices": [
+            [
+              0.000010198593139648438,
+              5.0205,
+              7.970447683455698
+            ],
+            [
+              0.000010204315185546876,
+              5.025,
+              7.9753325059907505
+            ],
+            [
+              0.000005102157592773438,
+              5.025,
+              7.975320573994131
+            ]
+          ]
+        },
+        {
+          "triangle": 795,
+          "worldArea": 1.1742091062834985e-10,
+          "minimumNormalDot": -0.3345538540409403,
+          "sectorVertices": [
+            [
+              0.000005096435546875,
+              5.0205,
+              7.97043561342906
+            ],
+            [
+              0.000005099296569824219,
+              5.02275,
+              7.972993642578881
+            ],
+            [
+              0.0000025482177734375,
+              5.02275,
+              7.972987642688922
+            ]
+          ]
+        },
+        {
+          "triangle": 796,
+          "worldArea": 1.1424163908772957e-10,
+          "minimumNormalDot": -0.34900968089080875,
+          "sectorVertices": [
+            [
+              0.000005099296569824219,
+              5.02275,
+              7.972993642578881
+            ],
+            [
+              0.000005102157592773438,
+              5.025,
+              7.975320573994131
+            ],
+            [
+              0.000002551078796386719,
+              5.025,
+              7.975314607987496
+            ]
+          ]
+        },
+        {
+          "triangle": 800,
+          "worldArea": 1.9834076779698282e-12,
+          "minimumNormalDot": -0.4355415638073486,
+          "sectorVertices": [
+            [
+              0.00000127410888671875,
+              5.023875,
+              7.974174940078705
+            ],
+            [
+              1.9999032474515844e-8,
+              5.025,
+              7.975308688745534
+            ],
+            [
+              1.99996902665589e-8,
+              5.024982340872288,
+              7.975291241473258
+            ]
+          ]
+        },
+        {
+          "triangle": 804,
+          "worldArea": 5.756573510857295e-11,
+          "minimumNormalDot": -0.3475640369292035,
+          "sectorVertices": [
+            [
+              0.000005099296569824219,
+              5.02275,
+              7.972993642578881
+            ],
+            [
+              0.0000025496482849121096,
+              5.023875,
+              7.974177931482808
+            ],
+            [
+              0.0000025482177734375,
+              5.02275,
+              7.972987642688922
+            ]
+          ]
+        },
+        {
+          "triangle": 806,
+          "worldArea": 2.352913629471417e-10,
+          "minimumNormalDot": -0.3371342403349362,
+          "sectorVertices": [
+            [
+              0.000010198593139648438,
+              5.0205,
+              7.970447683455698
+            ],
+            [
+              0.000005099296569824219,
+              5.02275,
+              7.972993642578881
+            ],
+            [
+              0.000005096435546875,
+              5.0205,
+              7.97043561342906
+            ]
+          ]
+        },
+        {
+          "triangle": 807,
+          "worldArea": 6.94344422300933e-9,
+          "minimumNormalDot": -0.0011721711148203473,
+          "sectorVertices": [
+            [
+              0.00001019287109375,
+              5.016,
+              7.9644688569682325
+            ],
+            [
+              0.00008154296875,
+              5.016,
+              7.964639742860652
+            ],
+            [
+              0.000010198593139648438,
+              5.0205,
+              7.970447683455698
+            ]
+          ]
+        },
+        {
+          "triangle": 808,
+          "worldArea": 2.1307753014297723e-8,
+          "minimumNormalDot": -0.13782091017299108,
+          "sectorVertices": [
+            [
+              0.000010198593139648438,
+              5.0205,
+              7.970447683455698
+            ],
+            [
+              0.00008154296875,
+              5.016,
+              7.964639742860652
+            ],
+            [
+              0.000010204315185546876,
+              5.025,
+              7.9753325059907505
+            ]
+          ]
+        },
+        {
+          "triangle": 938,
+          "worldArea": 3.4450181508780005e-12,
+          "minimumNormalDot": -0.4911197805218479,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.025,
+              7.975311624982098
+            ],
+            [
+              2.000146537284309e-8,
+              5.026375,
+              7.97663036061371
+            ],
+            [
+              2.0000248923679466e-8,
+              5.026353440225124,
+              7.976610183482968
+            ]
+          ]
+        },
+        {
+          "triangle": 940,
+          "worldArea": 6.860582872959706e-11,
+          "minimumNormalDot": -0.18482927048883513,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.025,
+              7.975314607987496
+            ],
+            [
+              0.000005102157592773438,
+              5.025,
+              7.975320573994131
+            ],
+            [
+              0.000002551078796386719,
+              5.026375,
+              7.976636259840003
+            ]
+          ]
+        },
+        {
+          "triangle": 950,
+          "worldArea": 2.9253828190930405e-12,
+          "minimumNormalDot": -0.48768680298951844,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.02775,
+              7.977885963050762
+            ],
+            [
+              2.0000248923679466e-8,
+              5.0291250000000005,
+              7.9790718149240485
+            ],
+            [
+              2.0000248923679466e-8,
+              5.029103440225124,
+              7.97905364493885
+            ]
+          ]
+        },
+        {
+          "triangle": 952,
+          "worldArea": 3.4262032814806485e-11,
+          "minimumNormalDot": -0.10798390396342186,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.025,
+              7.975314607987496
+            ],
+            [
+              0.000002551078796386719,
+              5.026375,
+              7.976636259840003
+            ],
+            [
+              0.0000012755393981933595,
+              5.026375,
+              7.976633286918687
+            ]
+          ]
+        },
+        {
+          "triangle": 953,
+          "worldArea": 3.382559249048847e-11,
+          "minimumNormalDot": -0.11495605174583412,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.026375,
+              7.976636259840003
+            ],
+            [
+              0.000002551078796386719,
+              5.02775,
+              7.97788892607184
+            ],
+            [
+              0.0000012755393981933595,
+              5.02775,
+              7.977885963050762
+            ]
+          ]
+        },
+        {
+          "triangle": 955,
+          "worldArea": 3.168687547632383e-12,
+          "minimumNormalDot": -0.48985871344789644,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.026375,
+              7.976633286918687
+            ],
+            [
+              1.9999032474515844e-8,
+              5.02775,
+              7.97788304648507
+            ],
+            [
+              2.0000248923679466e-8,
+              5.0277284402251246,
+              7.9778639102502815
+            ]
+          ]
+        },
+        {
+          "triangle": 957,
+          "worldArea": 3.386617409139571e-11,
+          "minimumNormalDot": -0.11654414655609205,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.026375,
+              7.976636259840003
+            ],
+            [
+              0.0000012755393981933595,
+              5.02775,
+              7.977885963050762
+            ],
+            [
+              0.0000012755393981933595,
+              5.026375,
+              7.976633286918687
+            ]
+          ]
+        },
+        {
+          "triangle": 958,
+          "worldArea": 2.728239053393178e-10,
+          "minimumNormalDot": -0.40714252517037713,
+          "sectorVertices": [
+            [
+              0.000005102157592773438,
+              5.025,
+              7.975320573994131
+            ],
+            [
+              0.000010204315185546876,
+              5.025,
+              7.9753325059907505
+            ],
+            [
+              0.000005102157592773438,
+              5.02775,
+              7.977894852109472
+            ]
+          ]
+        },
+        {
+          "triangle": 968,
+          "worldArea": 2.518114492386565e-12,
+          "minimumNormalDot": -0.48089716424783147,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.0305,
+              7.980204040184155
+            ],
+            [
+              2.0000248923679466e-8,
+              5.031874999999999,
+              7.98127500690437
+            ],
+            [
+              2.0000248923679466e-8,
+              5.031853440225124,
+              7.981258578264933
+            ]
+          ]
+        },
+        {
+          "triangle": 970,
+          "worldArea": 6.559450839137142e-11,
+          "minimumNormalDot": -0.28378269747881035,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.0305,
+              7.980206983900634
+            ],
+            [
+              0.000005102157592773438,
+              5.0305,
+              7.9802128713287095
+            ],
+            [
+              0.000002551078796386719,
+              5.031874999999999,
+              7.981280829473327
+            ]
+          ]
+        },
+        {
+          "triangle": 980,
+          "worldArea": 2.1922624721076758e-12,
+          "minimumNormalDot": -0.471084136707856,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.03325,
+              7.982299839512598
+            ],
+            [
+              2.000146537284309e-8,
+              5.034625,
+              7.983270191855292
+            ],
+            [
+              2.0000248923679466e-8,
+              5.0346034402251245,
+              7.9832552926815135
+            ]
+          ]
+        },
+        {
+          "triangle": 985,
+          "worldArea": 2.3465131753381328e-12,
+          "minimumNormalDot": -0.47636554443875295,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.031874999999999,
+              7.9812778951850945
+            ],
+            [
+              1.9999032474515844e-8,
+              5.03325,
+              7.982296960375971
+            ],
+            [
+              2.0000248923679466e-8,
+              5.033228440225124,
+              7.98228132020373
+            ]
+          ]
+        },
+        {
+          "triangle": 988,
+          "worldArea": 1.3608632681499953e-10,
+          "minimumNormalDot": -0.40420206815309295,
+          "sectorVertices": [
+            [
+              0.000005102157592773438,
+              5.025,
+              7.975320573994131
+            ],
+            [
+              0.000005102157592773438,
+              5.02775,
+              7.977894852109472
+            ],
+            [
+              0.000002551078796386719,
+              5.02775,
+              7.97788892607184
+            ]
+          ]
+        },
+        {
+          "triangle": 989,
+          "worldArea": 1.3293858165952013e-10,
+          "minimumNormalDot": -0.41571584290963837,
+          "sectorVertices": [
+            [
+              0.000005102157592773438,
+              5.02775,
+              7.977894852109472
+            ],
+            [
+              0.000005102157592773438,
+              5.0305,
+              7.9802128713287095
+            ],
+            [
+              0.000002551078796386719,
+              5.0305,
+              7.980206983900634
+            ]
+          ]
+        },
+        {
+          "triangle": 990,
+          "worldArea": 3.343325243136721e-11,
+          "minimumNormalDot": -0.03787294551673068,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.02775,
+              7.97788892607184
+            ],
+            [
+              0.000002551078796386719,
+              5.0291250000000005,
+              7.9790776751991705
+            ],
+            [
+              0.0000012755393981933595,
+              5.0291250000000005,
+              7.979074721908822
+            ]
+          ]
+        },
+        {
+          "triangle": 991,
+          "worldArea": 3.3078990741237725e-11,
+          "minimumNormalDot": -0.04348965675726921,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.0291250000000005,
+              7.9790776751991705
+            ],
+            [
+              0.000002551078796386719,
+              5.0305,
+              7.980206983900634
+            ],
+            [
+              0.0000012755393981933595,
+              5.0305,
+              7.980204040184155
+            ]
+          ]
+        },
+        {
+          "triangle": 993,
+          "worldArea": 2.7099192467994546e-12,
+          "minimumNormalDot": -0.4846783201381815,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.0291250000000005,
+              7.979074721908822
+            ],
+            [
+              2.000146537284309e-8,
+              5.0305,
+              7.9802011426258845
+            ],
+            [
+              2.0000248923679466e-8,
+              5.030478440225124,
+              7.98018387276615
+            ]
+          ]
+        },
+        {
+          "triangle": 995,
+          "worldArea": 3.311885189400877e-11,
+          "minimumNormalDot": -0.04505498362729923,
+          "sectorVertices": [
+            [
+              0.000002551078796386719,
+              5.0291250000000005,
+              7.9790776751991705
+            ],
+            [
+              0.0000012755393981933595,
+              5.0305,
+              7.980204040184155
+            ],
+            [
+              0.0000012755393981933595,
+              5.0291250000000005,
+              7.979074721908822
+            ]
+          ]
+        },
+        {
+          "triangle": 997,
+          "worldArea": 6.694681854028573e-11,
+          "minimumNormalDot": -0.41525477705416386,
+          "sectorVertices": [
+            [
+              0.000005102157592773438,
+              5.02775,
+              7.977894852109472
+            ],
+            [
+              0.000002551078796386719,
+              5.0291250000000005,
+              7.9790776751991705
+            ],
+            [
+              0.000002551078796386719,
+              5.02775,
+              7.97788892607184
+            ]
+          ]
+        },
+        {
+          "triangle": 998,
+          "worldArea": 5.380373789843763e-10,
+          "minimumNormalDot": -0.26651133804842686,
+          "sectorVertices": [
+            [
+              0.000010204315185546876,
+              5.025,
+              7.9753325059907505
+            ],
+            [
+              0.000010211308797200522,
+              5.0305,
+              7.98022466230527
+            ],
+            [
+              0.000005102157592773438,
+              5.0305,
+              7.9802128713287095
+            ]
+          ]
+        },
+        {
+          "triangle": 999,
+          "worldArea": 5.171928975019248e-10,
+          "minimumNormalDot": -0.16904954540570777,
+          "sectorVertices": [
+            [
+              0.000010211308797200522,
+              5.0305,
+              7.98022466230527
+            ],
+            [
+              0.000010218302408854166,
+              5.036,
+              7.984220816957389
+            ],
+            [
+              0.000005109151204427083,
+              5.036,
+              7.984209173925796
+            ]
+          ]
+        },
+        {
+          "triangle": 1000,
+          "worldArea": 1.3054193969181298e-10,
+          "minimumNormalDot": -0.3650924193792699,
+          "sectorVertices": [
+            [
+              0.000005102157592773438,
+              5.0305,
+              7.9802128713287095
+            ],
+            [
+              0.000005105654398600261,
+              5.03325,
+              7.982308622512767
+            ],
+            [
+              0.000002551078796386719,
+              5.03325,
+              7.98230276450818
+            ]
+          ]
+        },
+        {
+          "triangle": 1001,
+          "worldArea": 1.283994917669108e-10,
+          "minimumNormalDot": -0.372562207273194,
+          "sectorVertices": [
+            [
+              0.000005105654398600261,
+              5.03325,
+              7.982308622512767
+            ],
+            [
+              0.000005109151204427083,
+              5.036,
+              7.984209173925796
+            ],
+            [
+              0.0000025545756022135415,
+              5.036,
+              7.984203352398748
+            ]
+          ]
+        },
+        {
+          "triangle": 1005,
+          "worldArea": 2.0531578755686015e-12,
+          "minimumNormalDot": -0.4651717779779267,
+          "sectorVertices": [
+            [
+              0.0000012755393981933595,
+              5.034625,
+              7.983273061964079
+            ],
+            [
+              1.9997210680836964e-8,
+              5.036,
+              7.984197576435183
+            ],
+            [
+              2.0000248923679466e-8,
+              5.035978440225124,
+              7.984183375392694
+            ]
+          ]
+        },
+        {
+          "triangle": 1009,
+          "worldArea": 6.456297307691822e-11,
+          "minimumNormalDot": -0.3729766501585241,
+          "sectorVertices": [
+            [
+              0.000005105654398600261,
+              5.03325,
+              7.982308622512767
+            ],
+            [
+              0.0000025528271993001305,
+              5.034625,
+              7.983275981790382
+            ],
+            [
+              0.000002551078796386719,
+              5.03325,
+              7.98230276450818
+            ]
+          ]
+        },
+        {
+          "triangle": 1011,
+          "worldArea": 2.617132826684147e-10,
+          "minimumNormalDot": -0.36796913237240825,
+          "sectorVertices": [
+            [
+              0.000010211308797200522,
+              5.0305,
+              7.98022466230527
+            ],
+            [
+              0.000005105654398600261,
+              5.03325,
+              7.982308622512767
+            ],
+            [
+              0.000005102157592773438,
+              5.0305,
+              7.9802128713287095
+            ]
+          ]
+        },
+        {
+          "triangle": 1013,
+          "worldArea": 2.072128566167784e-8,
+          "minimumNormalDot": -0.204942134006455,
+          "sectorVertices": [
+            [
+              0.000010211308797200522,
+              5.0305,
+              7.98022466230527
+            ],
+            [
+              0.00008163452148437501,
+              5.025,
+              7.9754995516110405
+            ],
+            [
+              0.000010218302408854166,
+              5.036,
+              7.984220816957389
+            ]
+          ]
+        },
+        {
+          "triangle": 1140,
+          "worldArea": 3.264014446843245e-12,
+          "minimumNormalDot": -0.5120597428237995,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.036,
+              7.984200441632409
+            ],
+            [
+              1.999842879740754e-8,
+              5.037625,
+              7.9852380122862385
+            ],
+            [
+              1.9999646913978114e-8,
+              5.037599555909633,
+              7.985222166490974
+            ]
+          ]
+        },
+        {
+          "triangle": 1142,
+          "worldArea": 7.515129056020126e-11,
+          "minimumNormalDot": -0.18183563837242925,
+          "sectorVertices": [
+            [
+              0.0000025545756022135415,
+              5.036,
+              7.984203352398748
+            ],
+            [
+              0.000005109151204427083,
+              5.036,
+              7.984209173925796
+            ],
+            [
+              0.0000025545756022135415,
+              5.037625,
+              7.985243767283985
+            ]
+          ]
+        },
+        {
+          "triangle": 1152,
+          "worldArea": 2.844078376141611e-12,
+          "minimumNormalDot": -0.5020330579321395,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.03925,
+              7.986224757301852
+            ],
+            [
+              2.0000865030548688e-8,
+              5.040875,
+              7.987152754744443
+            ],
+            [
+              1.9999646913978114e-8,
+              5.040849555909634,
+              7.987138572214243
+            ]
+          ]
+        },
+        {
+          "triangle": 1154,
+          "worldArea": 3.7522363565403026e-11,
+          "minimumNormalDot": -0.06462577895172418,
+          "sectorVertices": [
+            [
+              0.0000025545756022135415,
+              5.036,
+              7.984203352398748
+            ],
+            [
+              0.0000025545756022135415,
+              5.037625,
+              7.985243767283985
+            ],
+            [
+              0.0000012772878011067708,
+              5.037625,
+              7.985240867081905
+            ]
+          ]
+        },
+        {
+          "triangle": 1155,
+          "worldArea": 3.723660466417339e-11,
+          "minimumNormalDot": -0.06784643339086506,
+          "sectorVertices": [
+            [
+              0.0000025545756022135415,
+              5.037625,
+              7.985243767283985
+            ],
+            [
+              0.0000025545756022135415,
+              5.03925,
+              7.986227647084237
+            ],
+            [
+              0.0000012772878011067708,
+              5.03925,
+              7.986224757301852
+            ]
+          ]
+        },
+        {
+          "triangle": 1157,
+          "worldArea": 3.0428475678535544e-12,
+          "minimumNormalDot": -0.50737384644271,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.037625,
+              7.985240867081905
+            ],
+            [
+              1.9999646913978114e-8,
+              5.03925,
+              7.9862219127654255
+            ],
+            [
+              1.9999646913978114e-8,
+              5.039224555909634,
+              7.986206924438746
+            ]
+          ]
+        },
+        {
+          "triangle": 1159,
+          "worldArea": 3.7289425341808916e-11,
+          "minimumNormalDot": -0.06959966152134497,
+          "sectorVertices": [
+            [
+              0.0000025545756022135415,
+              5.037625,
+              7.985243767283985
+            ],
+            [
+              0.0000012772878011067708,
+              5.03925,
+              7.986224757301852
+            ],
+            [
+              0.0000012772878011067708,
+              5.037625,
+              7.985240867081905
+            ]
+          ]
+        },
+        {
+          "triangle": 1160,
+          "worldArea": 2.996621023977519e-10,
+          "minimumNormalDot": -0.4164966016936689,
+          "sectorVertices": [
+            [
+              0.000005109151204427083,
+              5.036,
+              7.984209173925796
+            ],
+            [
+              0.000010218302408854166,
+              5.036,
+              7.984220816957389
+            ],
+            [
+              0.000005109151204427083,
+              5.03925,
+              7.9862334266429436
+            ]
+          ]
+        },
+        {
+          "triangle": 1170,
+          "worldArea": 2.502284463071074e-12,
+          "minimumNormalDot": -0.48953158889705073,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.0425,
+              7.9880364970977045
+            ],
+            [
+              1.9999646913978114e-8,
+              5.044125,
+              7.988867504085085
+            ],
+            [
+              1.9999646913978114e-8,
+              5.044099555909634,
+              7.988854797448485
+            ]
+          ]
+        },
+        {
+          "triangle": 1172,
+          "worldArea": 7.313941117461963e-11,
+          "minimumNormalDot": -0.25701199671812536,
+          "sectorVertices": [
+            [
+              0.0000025545756022135415,
+              5.0425,
+              7.988039366436155
+            ],
+            [
+              0.000005109151204427083,
+              5.0425,
+              7.9880451051065515
+            ],
+            [
+              0.0000025545756022135415,
+              5.044125,
+              7.9888731779114455
+            ]
+          ]
+        },
+        {
+          "triangle": 1182,
+          "worldArea": 2.2200221645531044e-12,
+          "minimumNormalDot": -0.47473016526938816,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.04575,
+              7.9896596321690065
+            ],
+            [
+              1.9997210680836964e-8,
+              5.047375000000001,
+              7.990403994065137
+            ],
+            [
+              1.9999646913978114e-8,
+              5.0473495559096335,
+              7.990392608676758
+            ]
+          ]
+        },
+        {
+          "triangle": 1187,
+          "worldArea": 2.3546253025213444e-12,
+          "minimumNormalDot": -0.48239894216425117,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.044125,
+              7.988870318614059
+            ],
+            [
+              1.9999646913978114e-8,
+              5.04575,
+              7.989656827414854
+            ],
+            [
+              1.9999646913978114e-8,
+              5.045724555909634,
+              7.989644799005391
+            ]
+          ]
+        },
+        {
+          "triangle": 1190,
+          "worldArea": 1.494068402034641e-10,
+          "minimumNormalDot": -0.4132836911653748,
+          "sectorVertices": [
+            [
+              0.000005109151204427083,
+              5.036,
+              7.984209173925796
+            ],
+            [
+              0.000005109151204427083,
+              5.03925,
+              7.9862334266429436
+            ],
+            [
+              0.0000025545756022135415,
+              5.03925,
+              7.986227647084237
+            ]
+          ]
+        },
+        {
+          "triangle": 1191,
+          "worldArea": 1.4731880529064088e-10,
+          "minimumNormalDot": -0.4183650798450251,
+          "sectorVertices": [
+            [
+              0.000005109151204427083,
+              5.03925,
+              7.9862334266429436
+            ],
+            [
+              0.000005109151204427083,
+              5.0425,
+              7.9880451051065515
+            ],
+            [
+              0.0000025545756022135415,
+              5.0425,
+              7.988039366436155
+            ]
+          ]
+        },
+        {
+          "triangle": 1195,
+          "worldArea": 2.664741531247738e-12,
+          "minimumNormalDot": -0.49608642574289763,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.040875,
+              7.987155589154304
+            ],
+            [
+              1.9999646913978114e-8,
+              5.0425,
+              7.988033672684961
+            ],
+            [
+              1.9999646913978114e-8,
+              5.042474555909634,
+              7.98802024927417
+            ]
+          ]
+        },
+        {
+          "triangle": 1199,
+          "worldArea": 7.405650368459647e-11,
+          "minimumNormalDot": -0.41960854918108464,
+          "sectorVertices": [
+            [
+              0.000005109151204427083,
+              5.03925,
+              7.9862334266429436
+            ],
+            [
+              0.0000025545756022135415,
+              5.040875,
+              7.9871584686517565
+            ],
+            [
+              0.0000025545756022135415,
+              5.03925,
+              7.986227647084237
+            ]
+          ]
+        },
+        {
+          "triangle": 1200,
+          "worldArea": 5.935000889085049e-10,
+          "minimumNormalDot": -0.24715200347889893,
+          "sectorVertices": [
+            [
+              0.000010218302408854166,
+              5.036,
+              7.984220816957389
+            ],
+            [
+              0.00001022656758626302,
+              5.0425,
+              7.988056600988398
+            ],
+            [
+              0.000005109151204427083,
+              5.0425,
+              7.9880451051065515
+            ]
+          ]
+        },
+        {
+          "triangle": 1201,
+          "worldArea": 5.793531048717119e-10,
+          "minimumNormalDot": -0.13376442178309725,
+          "sectorVertices": [
+            [
+              0.00001022656758626302,
+              5.0425,
+              7.988056600988398
+            ],
+            [
+              0.000010234832763671874,
+              5.049,
+              7.991133786183339
+            ],
+            [
+              0.000005117416381835937,
+              5.049,
+              7.991122448667014
+            ]
+          ]
+        },
+        {
+          "triangle": 1202,
+          "worldArea": 1.4580006418053112e-10,
+          "minimumNormalDot": -0.360340289528565,
+          "sectorVertices": [
+            [
+              0.000005109151204427083,
+              5.0425,
+              7.9880451051065515
+            ],
+            [
+              0.00000511328379313151,
+              5.04575,
+              7.9896681894820025
+            ],
+            [
+              0.0000025545756022135415,
+              5.04575,
+              7.989662481536008
+            ]
+          ]
+        },
+        {
+          "triangle": 1203,
+          "worldArea": 1.4430493334056658e-10,
+          "minimumNormalDot": -0.36293029770401,
+          "sectorVertices": [
+            [
+              0.00000511328379313151,
+              5.04575,
+              7.9896681894820025
+            ],
+            [
+              0.000005117416381835937,
+              5.049,
+              7.991122448667014
+            ],
+            [
+              0.0000025587081909179686,
+              5.049,
+              7.991116779894009
+            ]
+          ]
+        },
+        {
+          "triangle": 1207,
+          "worldArea": 2.096846638739561e-12,
+          "minimumNormalDot": -0.4664502788356571,
+          "sectorVertices": [
+            [
+              0.0000012772878011067708,
+              5.047375000000001,
+              7.990406789152317
+            ],
+            [
+              2.00014985693997e-8,
+              5.049,
+              7.9911111554241945
+            ],
+            [
+              1.9999646913978114e-8,
+              5.048974555909634,
+              7.9911003807755
+            ]
+          ]
+        },
+        {
+          "triangle": 1211,
+          "worldArea": 7.247810114105063e-11,
+          "minimumNormalDot": -0.36473402224279,
+          "sectorVertices": [
+            [
+              0.00000511328379313151,
+              5.04575,
+              7.9896681894820025
+            ],
+            [
+              0.000002556641896565755,
+              5.047375000000001,
+              7.990409633286578
+            ],
+            [
+              0.0000025545756022135415,
+              5.04575,
+              7.989662481536008
+            ]
+          ]
+        },
+        {
+          "triangle": 1213,
+          "worldArea": 2.9241852038789816e-10,
+          "minimumNormalDot": -0.36353081244414465,
+          "sectorVertices": [
+            [
+              0.00001022656758626302,
+              5.0425,
+              7.988056600988398
+            ],
+            [
+              0.00000511328379313151,
+              5.04575,
+              7.9896681894820025
+            ],
+            [
+              0.000005109151204427083,
+              5.0425,
+              7.9880451051065515
+            ]
+          ]
+        },
+        {
+          "triangle": 1215,
+          "worldArea": 2.0234416507797127e-8,
+          "minimumNormalDot": -0.19465405762205124,
+          "sectorVertices": [
+            [
+              0.00001022656758626302,
+              5.0425,
+              7.988056600988398
+            ],
+            [
+              0.00008174641927083333,
+              5.036,
+              7.984383816248031
+            ],
+            [
+              0.000010234832763671874,
+              5.049,
+              7.991133786183339
+            ]
+          ]
+        },
+        {
+          "triangle": 1362,
+          "worldArea": 3.1276246453160876e-12,
+          "minimumNormalDot": -0.5090634884015762,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.049,
+              7.9911139455037965
+            ],
+            [
+              2.0000278482257272e-8,
+              5.050875,
+              7.99187997122468
+            ],
+            [
+              2.0000278482257272e-8,
+              5.050845687925815,
+              7.991868327421317
+            ]
+          ]
+        },
+        {
+          "triangle": 1364,
+          "worldArea": 8.283754741243791e-11,
+          "minimumNormalDot": -0.14077774060371545,
+          "sectorVertices": [
+            [
+              0.0000025587081909179686,
+              5.049,
+              7.991116779894009
+            ],
+            [
+              0.000005117416381835937,
+              5.049,
+              7.991122448667014
+            ],
+            [
+              0.0000025587081909179686,
+              5.050875,
+              7.991885573614488
+            ]
+          ]
+        },
+        {
+          "triangle": 1374,
+          "worldArea": 2.7770289283286072e-12,
+          "minimumNormalDot": -0.4941976630892309,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.05275,
+              7.992603691721565
+            ],
+            [
+              2.0002718656542126e-8,
+              5.054625,
+              7.993276542555611
+            ],
+            [
+              2.0000278482257272e-8,
+              5.054595687925815,
+              7.993266317293029
+            ]
+          ]
+        },
+        {
+          "triangle": 1379,
+          "worldArea": 2.9442721941459265e-12,
+          "minimumNormalDot": -0.5018910671279897,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.050875,
+              7.991882750352659
+            ],
+            [
+              2.0000278482257272e-8,
+              5.05275,
+              7.992600923434214
+            ],
+            [
+              2.0000278482257272e-8,
+              5.052720687925816,
+              7.992590007820007
+            ]
+          ]
+        },
+        {
+          "triangle": 1382,
+          "worldArea": 3.308143971986572e-10,
+          "minimumNormalDot": -0.3984231381714708,
+          "sectorVertices": [
+            [
+              0.000005117416381835937,
+              5.049,
+              7.991122448667014
+            ],
+            [
+              0.000010234832763671874,
+              5.049,
+              7.991133786183339
+            ],
+            [
+              0.000005117416381835937,
+              5.05275,
+              7.992612128460467
+            ]
+          ]
+        },
+        {
+          "triangle": 1392,
+          "worldArea": 2.4838404644324602e-12,
+          "minimumNormalDot": -0.4774078630536424,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.0565,
+              7.993911890577964
+            ],
+            [
+              2.0002718656542126e-8,
+              5.058375,
+              7.994500851264665
+            ],
+            [
+              2.0000278482257272e-8,
+              5.058345687925815,
+              7.994491905525927
+            ]
+          ]
+        },
+        {
+          "triangle": 1394,
+          "worldArea": 8.14196515344646e-11,
+          "minimumNormalDot": -0.2011609515133564,
+          "sectorVertices": [
+            [
+              0.0000025587081909179686,
+              5.0565,
+              7.9939146811197865
+            ],
+            [
+              0.000005117416381835937,
+              5.0565,
+              7.993920262194946
+            ],
+            [
+              0.0000025587081909179686,
+              5.058375,
+              7.99450636747493
+            ]
+          ]
+        },
+        {
+          "triangle": 1404,
+          "worldArea": 2.23605987677107e-12,
+          "minimumNormalDot": -0.45879761469284086,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.06025,
+              7.995056346468768
+            ],
+            [
+              2.0000278482257272e-8,
+              5.062125,
+              7.9955692556744316
+            ],
+            [
+              2.0000278482257272e-8,
+              5.062095687925816,
+              7.995561471760936
+            ]
+          ]
+        },
+        {
+          "triangle": 1409,
+          "worldArea": 2.3548790161326263e-12,
+          "minimumNormalDot": -0.46831541737545695,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.058375,
+              7.994503587639844
+            ],
+            [
+              2.0002718656542126e-8,
+              5.06025,
+              7.995053620543855
+            ],
+            [
+              2.0000278482257272e-8,
+              5.060220687925815,
+              7.99504526927836
+            ]
+          ]
+        },
+        {
+          "triangle": 1412,
+          "worldArea": 1.6488165629135354e-10,
+          "minimumNormalDot": -0.39488914381694906,
+          "sectorVertices": [
+            [
+              0.000005117416381835937,
+              5.049,
+              7.991122448667014
+            ],
+            [
+              0.000005117416381835937,
+              5.05275,
+              7.992612128460467
+            ],
+            [
+              0.0000025587081909179686,
+              5.05275,
+              7.992606503970515
+            ]
+          ]
+        },
+        {
+          "triangle": 1413,
+          "worldArea": 1.6342158960101064e-10,
+          "minimumNormalDot": -0.3957392956451512,
+          "sectorVertices": [
+            [
+              0.000005117416381835937,
+              5.05275,
+              7.992612128460467
+            ],
+            [
+              0.000005117416381835937,
+              5.0565,
+              7.993920262194946
+            ],
+            [
+              0.0000025587081909179686,
+              5.0565,
+              7.9939146811197865
+            ]
+          ]
+        },
+        {
+          "triangle": 1417,
+          "worldArea": 2.624079777229101e-12,
+          "minimumNormalDot": -0.4860277320703986,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.054625,
+              7.99327930010368
+            ],
+            [
+              2.0003938743684557e-8,
+              5.0565,
+              7.993909143666199
+            ],
+            [
+              2.0000278482257272e-8,
+              5.056470687925816,
+              7.993899574092117
+            ]
+          ]
+        },
+        {
+          "triangle": 1421,
+          "worldArea": 8.207544688097205e-11,
+          "minimumNormalDot": -0.3982232579647893,
+          "sectorVertices": [
+            [
+              0.000005117416381835937,
+              5.05275,
+              7.992612128460467
+            ],
+            [
+              0.0000025587081909179686,
+              5.054625,
+              7.993282101448132
+            ],
+            [
+              0.0000025587081909179686,
+              5.05275,
+              7.992606503970515
+            ]
+          ]
+        },
+        {
+          "triangle": 1422,
+          "worldArea": 6.56740710703769e-10,
+          "minimumNormalDot": -0.1960309393700727,
+          "sectorVertices": [
+            [
+              0.000010234832763671874,
+              5.049,
+              7.991133786183339
+            ],
+            [
+              0.000010244369506835938,
+              5.0565,
+              7.993931445112828
+            ],
+            [
+              0.000005117416381835937,
+              5.0565,
+              7.993920262194946
+            ]
+          ]
+        },
+        {
+          "triangle": 1423,
+          "worldArea": 6.466169306736919e-10,
+          "minimumNormalDot": -0.0708045097690327,
+          "sectorVertices": [
+            [
+              0.000010244369506835938,
+              5.0565,
+              7.993931445112828
+            ],
+            [
+              0.00001025390625,
+              5.064,
+              7.996071409523088
+            ],
+            [
+              0.000005126953125,
+              5.064,
+              7.99606039614524
+            ]
+          ]
+        },
+        {
+          "triangle": 1424,
+          "worldArea": 1.6246425875126882e-10,
+          "minimumNormalDot": -0.33082351705811036,
+          "sectorVertices": [
+            [
+              0.000005117416381835937,
+              5.0565,
+              7.993920262194946
+            ],
+            [
+              0.000005122184753417969,
+              5.06025,
+              7.995064664437291
+            ],
+            [
+              0.0000025587081909179686,
+              5.06025,
+              7.995059115687512
+            ]
+          ]
+        },
+        {
+          "triangle": 1425,
+          "worldArea": 1.6136317612567432e-10,
+          "minimumNormalDot": -0.33018159932267555,
+          "sectorVertices": [
+            [
+              0.000005122184753417969,
+              5.06025,
+              7.995064664437291
+            ],
+            [
+              0.000005126953125,
+              5.064,
+              7.99606039614524
+            ],
+            [
+              0.0000025634765625,
+              5.064,
+              7.996054889437063
+            ]
+          ]
+        },
+        {
+          "triangle": 1429,
+          "worldArea": 2.1263069380960304e-12,
+          "minimumNormalDot": -0.4488319560081018,
+          "sectorVertices": [
+            [
+              0.0000012793540954589843,
+              5.062125,
+              7.995571971238329
+            ],
+            [
+              1.9998435163870456e-8,
+              5.064,
+              7.99604942567565
+            ],
+            [
+              2.0000278482257272e-8,
+              5.063970687925815,
+              7.996042183988518
+            ]
+          ]
+        },
+        {
+          "triangle": 1433,
+          "worldArea": 8.099938874873e-11,
+          "minimumNormalDot": -0.33303012031741824,
+          "sectorVertices": [
+            [
+              0.000005122184753417969,
+              5.06025,
+              7.995064664437291
+            ],
+            [
+              0.0000025610923767089846,
+              5.062125,
+              7.995574735067101
+            ],
+            [
+              0.0000025587081909179686,
+              5.06025,
+              7.995059115687512
+            ]
+          ]
+        },
+        {
+          "triangle": 1435,
+          "worldArea": 3.259437583328608e-10,
+          "minimumNormalDot": -0.3343756958344705,
+          "sectorVertices": [
+            [
+              0.000010244369506835938,
+              5.0565,
+              7.993931445112828
+            ],
+            [
+              0.000005122184753417969,
+              5.06025,
+              7.995064664437291
+            ],
+            [
+              0.000005117416381835937,
+              5.0565,
+              7.993920262194946
+            ]
+          ]
+        },
+        {
+          "triangle": 1437,
+          "worldArea": 1.9862913689647002e-8,
+          "minimumNormalDot": -0.18593678285114018,
+          "sectorVertices": [
+            [
+              0.000010244369506835938,
+              5.0565,
+              7.993931445112828
+            ],
+            [
+              0.000081878662109375,
+              5.049,
+              7.991292507254994
+            ],
+            [
+              0.00001025390625,
+              5.064,
+              7.996071409523088
+            ]
+          ]
+        },
+        {
+          "triangle": 1537,
+          "worldArea": 3.020993542236947e-12,
+          "minimumNormalDot": -0.4896633766750511,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.064,
+              7.996052136078159
+            ],
+            [
+              1.9998435163870456e-8,
+              5.0661249999999995,
+              7.996552694304699
+            ],
+            [
+              1.9999657524749636e-8,
+              5.066091842472553,
+              7.996545165336905
+            ]
+          ]
+        },
+        {
+          "triangle": 1539,
+          "worldArea": 9.122045465735653e-11,
+          "minimumNormalDot": -0.07421435411038976,
+          "sectorVertices": [
+            [
+              0.0000025634765625,
+              5.064,
+              7.996054889437063
+            ],
+            [
+              0.000005126953125,
+              5.064,
+              7.99606039614524
+            ],
+            [
+              0.0000025634765625,
+              5.0661249999999995,
+              7.9965581347025525
+            ]
+          ]
+        },
+        {
+          "triangle": 1549,
+          "worldArea": 2.721584396214771e-12,
+          "minimumNormalDot": -0.4712173923069662,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.06825,
+              7.997017165876232
+            ],
+            [
+              2.000087988562882e-8,
+              5.070375,
+              7.997436701534597
+            ],
+            [
+              1.9999657524749636e-8,
+              5.070341842472554,
+              7.997430407978966
+            ]
+          ]
+        },
+        {
+          "triangle": 1554,
+          "worldArea": 2.865197612676793e-12,
+          "minimumNormalDot": -0.4806430789681246,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.0661249999999995,
+              7.996555393117331
+            ],
+            [
+              1.9999657524749636e-8,
+              5.06825,
+              7.997014478565221
+            ],
+            [
+              1.9999657524749636e-8,
+              5.068216842472553,
+              7.997007581732976
+            ]
+          ]
+        },
+        {
+          "triangle": 1557,
+          "worldArea": 3.6460589045164934e-10,
+          "minimumNormalDot": -0.3609935486406011,
+          "sectorVertices": [
+            [
+              0.000005126953125,
+              5.064,
+              7.99606039614524
+            ],
+            [
+              0.00001025390625,
+              5.064,
+              7.996071409523088
+            ],
+            [
+              0.000005126953125,
+              5.06825,
+              7.997025355577474
+            ]
+          ]
+        },
+        {
+          "triangle": 1567,
+          "worldArea": 2.466104284034669e-12,
+          "minimumNormalDot": -0.45119244490128063,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.0725,
+              7.997823806710738
+            ],
+            [
+              2.0002102246508004e-8,
+              5.074625,
+              7.9981694498962
+            ],
+            [
+              1.9999657524749636e-8,
+              5.074591842472554,
+              7.998164284629749
+            ]
+          ]
+        },
+        {
+          "triangle": 1569,
+          "worldArea": 9.014899512277939e-11,
+          "minimumNormalDot": -0.1253704866833018,
+          "sectorVertices": [
+            [
+              0.0000025634765625,
+              5.0725,
+              7.997826513507449
+            ],
+            [
+              0.000005126953125,
+              5.0725,
+              7.997831927089936
+            ],
+            [
+              0.0000025634765625,
+              5.074625,
+              7.9981747985601555
+            ]
+          ]
+        },
+        {
+          "triangle": 1579,
+          "worldArea": 2.2463668515479183e-12,
+          "minimumNormalDot": -0.4296426399393671,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.0767500000000005,
+              7.998485799735367
+            ],
+            [
+              2.0002102246508004e-8,
+              5.078875,
+              7.9987636927541095
+            ],
+            [
+              1.9999657524749636e-8,
+              5.078841842472554,
+              7.998759563291356
+            ]
+          ]
+        },
+        {
+          "triangle": 1584,
+          "worldArea": 2.352220198364916e-12,
+          "minimumNormalDot": -0.44062143107184387,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.074625,
+              7.998172103198849
+            ],
+            [
+              2.000087988562882e-8,
+              5.0767500000000005,
+              7.998483157615233
+            ],
+            [
+              1.9999657524749636e-8,
+              5.076716842472553,
+              7.998478521010849
+            ]
+          ]
+        },
+        {
+          "triangle": 1587,
+          "worldArea": 1.8167286568392492e-10,
+          "minimumNormalDot": -0.3570757308874312,
+          "sectorVertices": [
+            [
+              0.000005126953125,
+              5.064,
+              7.99606039614524
+            ],
+            [
+              0.000005126953125,
+              5.06825,
+              7.997025355577474
+            ],
+            [
+              0.0000025634765625,
+              5.06825,
+              7.99701989578007
+            ]
+          ]
+        },
+        {
+          "triangle": 1588,
+          "worldArea": 1.8057906178730922e-10,
+          "minimumNormalDot": -0.3551773376510599,
+          "sectorVertices": [
+            [
+              0.000005126953125,
+              5.06825,
+              7.997025355577474
+            ],
+            [
+              0.000005126953125,
+              5.0725,
+              7.997831927089936
+            ],
+            [
+              0.0000025634765625,
+              5.0725,
+              7.997826513507449
+            ]
+          ]
+        },
+        {
+          "triangle": 1592,
+          "worldArea": 2.5889475969060263e-12,
+          "minimumNormalDot": -0.4614195979894305,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.070375,
+              7.997439377429537
+            ],
+            [
+              1.9999657524749636e-8,
+              5.0725,
+              7.997821142146087
+            ],
+            [
+              1.9999657524749636e-8,
+              5.0724668424725525,
+              7.997815425144342
+            ]
+          ]
+        },
+        {
+          "triangle": 1596,
+          "worldArea": 9.065210321953948e-11,
+          "minimumNormalDot": -0.35860905681627986,
+          "sectorVertices": [
+            [
+              0.000005126953125,
+              5.06825,
+              7.997025355577474
+            ],
+            [
+              0.0000025634765625,
+              5.070375,
+              7.997442095738877
+            ],
+            [
+              0.0000025634765625,
+              5.06825,
+              7.99701989578007
+            ]
+          ]
+        },
+        {
+          "triangle": 1597,
+          "worldArea": 7.247486214841102e-10,
+          "minimumNormalDot": -0.1231029171316027,
+          "sectorVertices": [
+            [
+              0.00001025390625,
+              5.064,
+              7.996071409523088
+            ],
+            [
+              0.000010264714558919271,
+              5.0725,
+              7.99784277703615
+            ],
+            [
+              0.000005126953125,
+              5.0725,
+              7.997831927089936
+            ]
+          ]
+        },
+        {
+          "triangle": 1599,
+          "worldArea": 1.7998724991034827e-10,
+          "minimumNormalDot": -0.28435478494956723,
+          "sectorVertices": [
+            [
+              0.000005126953125,
+              5.0725,
+              7.997831927089936
+            ],
+            [
+              0.0000051323572794596356,
+              5.0767500000000005,
+              7.998493863036602
+            ],
+            [
+              0.0000025634765625,
+              5.0767500000000005,
+              7.9984884837341745
+            ]
+          ]
+        },
+        {
+          "triangle": 1600,
+          "worldArea": 1.7911534542219972e-10,
+          "minimumNormalDot": -0.28156460733345784,
+          "sectorVertices": [
+            [
+              0.0000051323572794596356,
+              5.0767500000000005,
+              7.998493863036602
+            ],
+            [
+              0.000005137761433919271,
+              5.081,
+              7.999023014020484
+            ],
+            [
+              0.0000025688807169596354,
+              5.081,
+              7.99901767985798
+            ]
+          ]
+        },
+        {
+          "triangle": 1604,
+          "worldArea": 2.1479094436961745e-12,
+          "minimumNormalDot": -0.41834590646508196,
+          "sectorVertices": [
+            [
+              0.00000128173828125,
+              5.078875,
+              7.998766323754418
+            ],
+            [
+              1.9998946678848976e-8,
+              5.081,
+              7.999012387206095
+            ],
+            [
+              1.9999657524749636e-8,
+              5.080966842472554,
+              7.999008744799637
+            ]
+          ]
+        },
+        {
+          "triangle": 1608,
+          "worldArea": 8.988797799869088e-11,
+          "minimumNormalDot": -0.28524803579707503,
+          "sectorVertices": [
+            [
+              0.0000051323572794596356,
+              5.0767500000000005,
+              7.998493863036602
+            ],
+            [
+              0.0000025661786397298178,
+              5.078875,
+              7.998769002094022
+            ],
+            [
+              0.0000025634765625,
+              5.0767500000000005,
+              7.9984884837341745
+            ]
+          ]
+        },
+        {
+          "triangle": 1610,
+          "worldArea": 3.61195066868997e-10,
+          "minimumNormalDot": -0.28832364491424484,
+          "sectorVertices": [
+            [
+              0.000010264714558919271,
+              5.0725,
+              7.99784277703615
+            ],
+            [
+              0.0000051323572794596356,
+              5.0767500000000005,
+              7.998493863036602
+            ],
+            [
+              0.000005126953125,
+              5.0725,
+              7.997831927089936
+            ]
+          ]
+        },
+        {
+          "triangle": 1612,
+          "worldArea": 1.961790748516189e-8,
+          "minimumNormalDot": -0.15302315893354052,
+          "sectorVertices": [
+            [
+              0.000010264714558919271,
+              5.0725,
+              7.99784277703615
+            ],
+            [
+              0.00008203125,
+              5.064,
+              7.99622559141957
+            ],
+            [
+              0.000010275522867838542,
+              5.081,
+              7.999033682296095
+            ]
+          ]
+        },
+        {
+          "triangle": 1755,
+          "worldArea": 3.154512131482738e-12,
+          "minimumNormalDot": -0.4583638203145294,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.081,
+              7.999015012770554
+            ],
+            [
+              2.156686703832141e-8,
+              5.083375,
+              7.999254191414852
+            ],
+            [
+              2.151541965152622e-8,
+              5.08333521682024,
+              7.99925044670184
+            ]
+          ]
+        },
+        {
+          "triangle": 1767,
+          "worldArea": 4.019798969873407e-12,
+          "minimumNormalDot": -0.4365916252410912,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.085750000000001,
+              7.999461992059005
+            ],
+            [
+              3.0440316322710713e-8,
+              5.088125000000001,
+              7.999629527564026
+            ],
+            [
+              3.029577366457185e-8,
+              5.088068981468678,
+              7.999625907973064
+            ]
+          ]
+        },
+        {
+          "triangle": 1772,
+          "worldArea": 3.5123783602136686e-12,
+          "minimumNormalDot": -0.44772245669218963,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.083375,
+              7.9992568014305965
+            ],
+            [
+              2.5266179136451684e-8,
+              5.085750000000001,
+              7.999459401874603
+            ],
+            [
+              2.518288336735471e-8,
+              5.085703435480596,
+              7.999455720460262
+            ]
+          ]
+        },
+        {
+          "triangle": 1775,
+          "worldArea": 3.9991282022714e-10,
+          "minimumNormalDot": -0.31002541937876954,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.081,
+              7.999023014020484
+            ],
+            [
+              0.000010275522867838542,
+              5.081,
+              7.999033682296095
+            ],
+            [
+              0.000005137761433919271,
+              5.085750000000001,
+              7.9994699185074545
+            ]
+          ]
+        },
+        {
+          "triangle": 1785,
+          "worldArea": 6.027796383073008e-12,
+          "minimumNormalDot": -0.4117936767170494,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.0905000000000005,
+              7.999768519626072
+            ],
+            [
+              5.112461568993846e-8,
+              5.092875,
+              7.99987008164696
+            ],
+            [
+              5.0457024599381836e-8,
+              5.09278170222044,
+              7.999866587058704
+            ]
+          ]
+        },
+        {
+          "triangle": 1787,
+          "worldArea": 9.912409545739153e-11,
+          "minimumNormalDot": -0.23786765025379855,
+          "sectorVertices": [
+            [
+              0.0000025688807169596354,
+              5.0905000000000005,
+              7.999771137119687
+            ],
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ],
+            [
+              0.0000025688807169596354,
+              5.092875,
+              7.999875188466676
+            ]
+          ]
+        },
+        {
+          "triangle": 1797,
+          "worldArea": 1.4051251676628982e-11,
+          "minimumNormalDot": -0.3599225048799389,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.09525,
+              7.999945519460313
+            ],
+            [
+              1.5449344020150116e-7,
+              5.097625,
+              7.999986215084963
+            ],
+            [
+              1.3931891097248202e-7,
+              5.097367391765117,
+              7.999982938402354
+            ]
+          ]
+        },
+        {
+          "triangle": 1802,
+          "worldArea": 8.379450857272956e-12,
+          "minimumNormalDot": -0.3955194718171971,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.092875,
+              7.9998725832105295
+            ],
+            [
+              7.696712805227435e-8,
+              5.09525,
+              7.999943081764203
+            ],
+            [
+              7.477693930013629e-8,
+              5.095111733376981,
+              7.999939662962553
+            ]
+          ]
+        },
+        {
+          "triangle": 1805,
+          "worldArea": 1.9921779281269614e-10,
+          "minimumNormalDot": -0.3056605285106695,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.081,
+              7.999023014020484
+            ],
+            [
+              0.000005137761433919271,
+              5.085750000000001,
+              7.9994699185074545
+            ],
+            [
+              0.0000025688807169596354,
+              5.085750000000001,
+              7.999464634212869
+            ]
+          ]
+        },
+        {
+          "triangle": 1806,
+          "worldArea": 1.9832680367312474e-10,
+          "minimumNormalDot": -0.30192131396502286,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.085750000000001,
+              7.9994699185074545
+            ],
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ],
+            [
+              0.0000025688807169596354,
+              5.0905000000000005,
+              7.999771137119687
+            ]
+          ]
+        },
+        {
+          "triangle": 1810,
+          "worldArea": 4.781184717066554e-12,
+          "minimumNormalDot": -0.4247728716791315,
+          "sectorVertices": [
+            [
+              0.0000012844403584798177,
+              5.088125000000001,
+              7.999632095035812
+            ],
+            [
+              3.8200297164318426e-8,
+              5.0905000000000005,
+              7.999765979974393
+            ],
+            [
+              3.7914886661383206e-8,
+              5.090429893314839,
+              7.999762421770143
+            ]
+          ]
+        },
+        {
+          "triangle": 1814,
+          "worldArea": 9.954393703670097e-11,
+          "minimumNormalDot": -0.3061390883912416,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.085750000000001,
+              7.9994699185074545
+            ],
+            [
+              0.0000025688807169596354,
+              5.088125000000001,
+              7.99963472482742
+            ],
+            [
+              0.0000025688807169596354,
+              5.085750000000001,
+              7.999464634212869
+            ]
+          ]
+        },
+        {
+          "triangle": 1816,
+          "worldArea": 3.9773477133901385e-10,
+          "minimumNormalDot": -0.2372929783393777,
+          "sectorVertices": [
+            [
+              0.000010275522867838542,
+              5.081,
+              7.999033682296095
+            ],
+            [
+              0.000007712682088216146,
+              5.0905000000000005,
+              7.999781619356006
+            ],
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ]
+          ]
+        },
+        {
+          "triangle": 1845,
+          "worldArea": 9.898872363590719e-11,
+          "minimumNormalDot": -0.2335269146457512,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ],
+            [
+              0.00000514380137125651,
+              5.09525,
+              7.999953310866215
+            ],
+            [
+              0.000003856341044108073,
+              5.09525,
+              7.9999507117035895
+            ]
+          ]
+        },
+        {
+          "triangle": 1846,
+          "worldArea": 9.898879605575178e-11,
+          "minimumNormalDot": -0.23352781592445457,
+          "sectorVertices": [
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ],
+            [
+              0.000003856341044108073,
+              5.09525,
+              7.9999507117035895
+            ],
+            [
+              0.0000025688807169596354,
+              5.09525,
+              7.999948112536013
+            ]
+          ]
+        },
+        {
+          "triangle": 1880,
+          "worldArea": 1.9869534124262419e-10,
+          "minimumNormalDot": -0.2379604965538126,
+          "sectorVertices": [
+            [
+              0.000007712682088216146,
+              5.0905000000000005,
+              7.999781619356006
+            ],
+            [
+              0.00000514380137125651,
+              5.09525,
+              7.999953310866215
+            ],
+            [
+              0.000005137761433919271,
+              5.0905000000000005,
+              7.999776372092963
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "patchIndex": 8,
+      "kind": "null_upper_1",
+      "surface": "upper",
+      "triangles": 1870,
+      "positions": 1163,
+      "maxStoredNormalLengthError": 6.547066666584556e-9,
+      "maxAreaWeightedNormalError": 4.998314873105869e-9,
+      "sharedEdgeWindingErrors": 0,
+      "nonmanifoldEdges": 0,
+      "minimumAdjacentFaceDot": -0.9989368738518705,
+      "worldArea": 0.00012714411410528448,
+      "opposedTriangleCount": 10,
+      "opposedTriangleArea": 0.0000014248515342624263,
+      "opposedAreaFraction": 0.011206586669694726,
+      "opposedTriangles": [
+        {
+          "triangle": 820,
+          "worldArea": 1.8469267679754142e-10,
+          "minimumNormalDot": -0.9553818551724248,
+          "sectorVertices": [
+            [
+              0.000012577722370672941,
+              6.891523359413062,
+              7.995156880116591
+            ],
+            [
+              0.000006289699059045328,
+              6.892841220806271,
+              7.9947955006881894
+            ],
+            [
+              0.0000062888611853364705,
+              6.892182290109666,
+              7.995003156682014
+            ]
+          ]
+        },
+        {
+          "triangle": 1844,
+          "worldArea": 9.79061022682649e-9,
+          "minimumNormalDot": -0.7909739431544404,
+          "sectorVertices": [
+            [
+              0.0000128631591796875,
+              7.116,
+              7.876125023293854
+            ],
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ],
+            [
+              0.00000643157958984375,
+              7.1625,
+              7.835733869643593
+            ]
+          ]
+        },
+        {
+          "triangle": 1845,
+          "worldArea": 8.875701104652711e-9,
+          "minimumNormalDot": -0.8003223987356081,
+          "sectorVertices": [
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ],
+            [
+              0.000012981414794921875,
+              7.209,
+              7.7910649070739755
+            ],
+            [
+              0.0000064907073974609375,
+              7.209,
+              7.791032453536987
+            ]
+          ]
+        },
+        {
+          "triangle": 1847,
+          "worldArea": 2.224088402235529e-9,
+          "minimumNormalDot": -0.7981258155336679,
+          "sectorVertices": [
+            [
+              0.000006461143493652344,
+              7.18575,
+              7.813901576487665
+            ],
+            [
+              0.0000064907073974609375,
+              7.209,
+              7.791032453536987
+            ],
+            [
+              0.0000032453536987304688,
+              7.209,
+              7.791016226768495
+            ]
+          ]
+        },
+        {
+          "triangle": 1854,
+          "worldArea": 1.3278013837650819e-8,
+          "minimumNormalDot": -0.998918510800811,
+          "sectorVertices": [
+            [
+              0.000006461143493652344,
+              7.18575,
+              7.813901576487665
+            ],
+            [
+              0.0000032453536987304688,
+              7.209,
+              7.791016226768495
+            ],
+            [
+              0.000003230571746826172,
+              7.197374999999999,
+              7.802573717303801
+            ]
+          ]
+        },
+        {
+          "triangle": 1856,
+          "worldArea": 1.1548435135460328e-7,
+          "minimumNormalDot": -0.9985763641944929,
+          "sectorVertices": [
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ],
+            [
+              0.0000064907073974609375,
+              7.209,
+              7.791032453536987
+            ],
+            [
+              0.000006461143493652344,
+              7.18575,
+              7.813901576487665
+            ]
+          ]
+        },
+        {
+          "triangle": 1857,
+          "worldArea": 4.923161022366458e-9,
+          "minimumNormalDot": -0.7844564111609071,
+          "sectorVertices": [
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ],
+            [
+              0.000006461143493652344,
+              7.18575,
+              7.813901576487665
+            ],
+            [
+              0.00000643157958984375,
+              7.1625,
+              7.835733869643593
+            ]
+          ]
+        },
+        {
+          "triangle": 1858,
+          "worldArea": 1.4693125252491581e-7,
+          "minimumNormalDot": -0.814668239616362,
+          "sectorVertices": [
+            [
+              0.0000128631591796875,
+              7.116,
+              7.876125023293854
+            ],
+            [
+              0.0001029052734375,
+              7.116,
+              7.876698040356348
+            ],
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ]
+          ]
+        },
+        {
+          "triangle": 1859,
+          "worldArea": 8.757880113411178e-7,
+          "minimumNormalDot": -0.7627064234471739,
+          "sectorVertices": [
+            [
+              0.000012922286987304688,
+              7.1625,
+              7.835771291525411
+            ],
+            [
+              0.0001029052734375,
+              7.116,
+              7.876698040356348
+            ],
+            [
+              0.000012981414794921875,
+              7.209,
+              7.7910649070739755
+            ]
+          ]
+        },
+        {
+          "triangle": 1860,
+          "worldArea": 2.473716517712598e-7,
+          "minimumNormalDot": -0.6561384183731017,
+          "sectorVertices": [
+            [
+              0.0001029052734375,
+              7.116,
+              7.876698040356348
+            ],
+            [
+              0.000103851318359375,
+              7.209,
+              7.791519256591798
+            ],
+            [
+              0.000012981414794921875,
+              7.209,
+              7.7910649070739755
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "originalManuscriptNodes": 27,
+    "renderedMarkers": 27,
+    "violet": 16,
+    "gray": 11,
+    "allOriginalTuplesRepresentedExactlyOnce": true
+  },
+  "warningInterpretation": "Opposed fan normals are flagged, not suppressed. Shared-edge index winding is consistent; some thin clipped geometric triangles bend sharply relative to their area-weighted vertex fan. Large patch creases are intentionally kept separate."
+}

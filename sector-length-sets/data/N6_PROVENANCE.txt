@@ -1,0 +1,60 @@
+N=6 interactive atlas data — exported 2026-11-06
+
+Files: n6.json, n6.js (globalThis.SECTOR_N6_DATA).
+Reproduce: julia --threads=1 scripts/export_n6.jl (from this project directory).
+Audit: python3 scripts/audit_n6.py.
+
+The geometry is sampled directly from the current analytical upper/lower
+graphs in Julia/N6_multipole_compatibility.jl and the refined 64/81 four-copy
+bound. It is the proved necessary outer region, NOT the exact achievable set.
+No convex hull has been substituted for a pure-state image.
+
+There are 15 display patches, 15644 triangles, and 49 true-edge runs.
+Triangle attainment colors use exactly the established renderer's constructive
+membership test at the triangle center, projected to the analytical graph.
+Display triangles approximate a curved mathematical boundary. Their planar
+interiors are not asserted to be exact pure-state sector images. The refined
+four-copy cap is entirely gray (its only attained point, product, is separately
+represented). Gray means excluded OR not certified; it is not a universal
+exclusion flag. Gray junctions have no fabricated state coefficients.
+
+Hoverable actual states: 4787 witnesses, including 18 named entries. Every
+record is a single normalized pure symmetric state with explicit complex
+Dicke coefficients c_0,...,c_6, all six sector lengths, and source family.
+Every witness lies on one of the current outer boundary sheets. Family grids
+are samples of explicit analytical constructions, never mixtures of vertices.
+The two inequivalent states psi6/chi6 deliberately share one sector point;
+both records must remain inspectable. Other repeated sector points are
+deduplicated only for the unlabelled sample grids.
+
+A second independent whole-body graph audit recomputed both current graphs
+and the projection-domain guards for every saved point. All 4787 satisfy the
+outer system and lie on an active sheet within 1.25e-13. The saved
+onOuterBoundary flag is computed (never hardcoded), with threshold 1e-7;
+boundaryResidual records the actual minimum active-sheet residual. See
+scripts/audit_n6_boundary.jl and n6_boundary_audit_rows.csv for this audit.
+
+State families include C3 spectral and zero-dipole side, C4/C5/C6 two-level
+curves, complete paired-purity face reconstructions, the sharp paired-null
+rim, the full rank-four equality segment and exceptional E*, the filtered
+octahedral lower-plane image, the constructive C2 null-roof band, four/seven
+level null states, and octa/product, GHZ/product, rotated-W superpositions.
+Their coefficients are evaluated by the existing audited state constructors.
+
+Independent verification:
+- Export generator evaluates S1...S6 from all reduced-marginal purities.
+- Python audit independently evaluates dipole, quadrupole and spin-flip
+  bilinear form in the spin-three representation, then checks complementary
+  sector identities and the new four-copy refinement for every witness.
+- Max norm error: 4.45e-16; max multipole-versus-marginal error: 1.39e-13;
+  max complementary-sector error: 3.34e-13. All checks PASS.
+
+Scientific normalization:
+S_k = sum of squared Pauli correlations over all weight-k Pauli strings.
+S_0=1 and sum_{k=1}^6 S_k=63 for pure six-qubit states.
+Coordinate order in the 3D body is (S1,S2,S3).
+Normalized Dicke level k has k qubits in |1>.
+
+Main proof source: output/pdf/N6_proven_outer_region_20261015.tex (current
+stand-alone manuscript, including 6 November coherent-only four-copy equality
+classification and 64/81 refinement). The new website data do not alter it.

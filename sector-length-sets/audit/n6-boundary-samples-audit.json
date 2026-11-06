@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "sampleCount": 15,
+  "foCount": 8,
+  "rank4Count": 7,
+  "maximumNormError": 8.881784197001252e-16,
+  "maximumSectorTargetError": 8.881784197001252e-14,
+  "maximumBoundaryEquationError": 3.069544618483633e-12,
+  "allExactExpressionsPresent": true,
+  "sampleChecks": [
+    {
+      "id": "n6-fo-c3-1",
+      "normError": 0.0,
+      "sectorTargetError": 5.10702591327572e-14,
+      "boundaryEquationError": 2.398081733190338e-14,
+      "nearestOriginalNodeDistance": 2.9452373311642,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-2",
+      "normError": 0.0,
+      "sectorTargetError": 1.865174681370263e-14,
+      "boundaryEquationError": 7.993605777301127e-15,
+      "nearestOriginalNodeDistance": 2.6530159167612384,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-3",
+      "normError": 0.0,
+      "sectorTargetError": 2.842170943040401e-14,
+      "boundaryEquationError": 0.0,
+      "nearestOriginalNodeDistance": 1.9825052506199674,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-4",
+      "normError": 0.0,
+      "sectorTargetError": 1.2434497875801753e-14,
+      "boundaryEquationError": 1.7763568394002505e-14,
+      "nearestOriginalNodeDistance": 2.729878250442647,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-5",
+      "normError": 0.0,
+      "sectorTargetError": 4.973799150320701e-14,
+      "boundaryEquationError": 3.552713678800501e-14,
+      "nearestOriginalNodeDistance": 1.6387555249497618,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-6",
+      "normError": 0.0,
+      "sectorTargetError": 5.861977570020827e-14,
+      "boundaryEquationError": 3.019806626980426e-14,
+      "nearestOriginalNodeDistance": 3.086740588287525,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-7",
+      "normError": 2.220446049250313e-16,
+      "sectorTargetError": 3.552713678800501e-15,
+      "boundaryEquationError": 8.881784197001252e-15,
+      "nearestOriginalNodeDistance": 5.34267332348334,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-fo-c3-8",
+      "normError": 1.1102230246251565e-16,
+      "sectorTargetError": 6.750155989720952e-14,
+      "boundaryEquationError": 4.263256414560601e-14,
+      "nearestOriginalNodeDistance": 2.7178694487838335,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-1",
+      "normError": 4.440892098500626e-16,
+      "sectorTargetError": 6.394884621840902e-14,
+      "boundaryEquationError": 1.4779288903810084e-12,
+      "nearestOriginalNodeDistance": 0.0464329954072934,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-2",
+      "normError": 8.881784197001252e-16,
+      "sectorTargetError": 7.815970093361102e-14,
+      "boundaryEquationError": 4.547473508864641e-13,
+      "nearestOriginalNodeDistance": 0.2047397922308883,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-3",
+      "normError": 4.440892098500626e-16,
+      "sectorTargetError": 7.460698725481052e-14,
+      "boundaryEquationError": 1.7053025658242404e-12,
+      "nearestOriginalNodeDistance": 0.5100068790659247,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-4",
+      "normError": 6.661338147750939e-16,
+      "sectorTargetError": 2.4868995751603507e-14,
+      "boundaryEquationError": 1.1368683772161603e-13,
+      "nearestOriginalNodeDistance": 1.0085962043216372,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-5",
+      "normError": 1.1102230246251565e-16,
+      "sectorTargetError": 3.907985046680551e-14,
+      "boundaryEquationError": 2.5011104298755527e-12,
+      "nearestOriginalNodeDistance": 1.7623891917422712,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-6",
+      "normError": 8.881784197001252e-16,
+      "sectorTargetError": 8.881784197001252e-14,
+      "boundaryEquationError": 3.069544618483633e-12,
+      "nearestOriginalNodeDistance": 2.0503594430944934,
+      "exactExpressionsPresent": true
+    },
+    {
+      "id": "n6-rank4-segment-7",
+      "normError": 4.440892098500626e-16,
+      "sectorTargetError": 1.3322676295501878e-14,
+      "boundaryEquationError": 9.094947017729282e-13,
+      "nearestOriginalNodeDistance": 0.5047960044147346,
+      "exactExpressionsPresent": true
+    }
+  ],
+  "proofNote": "audit/N6_boundary_sample_proofs.txt",
+  "retainedCreaseProofAudit": "audit/n6-retained-crease-proof-audit.json"
+}

@@ -1,0 +1,85 @@
+Symmetric sector atlas — state and constellation conventions
+===========================================================
+
+1. State coefficients
+
+All state records use the normalized Dicke basis:
+  |psi> = sum(k=0..N) c_k |D_N^(k)>.
+Here |D_N^(k)> is the equally weighted, normalized superposition of all
+computational basis strings containing exactly k occurrences of |1>.
+The JSON representation of c_k is [real part, imaginary part].
+There is no hidden binomial weight in the norm: sum_k |c_k|^2=1.
+An overall phase is physically irrelevant. The library normalizes its input.
+
+2. Sector lengths without constructing a 2^N x 2^N density matrix
+
+For an s-qubit reduction, form the (s+1) x (N-s+1) matrix
+  B[a,b] = c_(a+b) sqrt(C(s,a) C(N-s,b) / C(N,a+b)).
+The reduced density matrix in the normalized s-qubit Dicke basis is B B^dagger.
+This follows directly by splitting every Dicke state between the two groups of
+qubits. Its purity is P_s=sum_(a,a') |(B B^dagger)[a,a']|^2.
+
+Permutation symmetry and Pauli orthogonality imply
+  2^s P_s = sum(k=0..s) C(s,k) S_k/C(N,k),  S_0=1.
+Indeed, each k-body Pauli correlation contributes to C(N-k,s-k) identical
+s-qubit reductions out of C(N,s). Inverting this triangular identity gives
+all sectors, in the manuscript normalization. sectorLengths returns S_1..S_N.
+For pure states sum_k S_k=2^N-1, excluding S_0.
+
+3. Majorana constellation and its direction
+
+The displayed points are the Bloch vectors of the constituent states in a
+symmetrized product, not the antipodal dual constellation. If
+  |v_i> = a_i |0> + b_i |1>,
+then their symmetrized product has Dicke amplitudes proportional to
+  c_k = e_k(a_1,b_1;...;a_N,b_N)/sqrt(C(N,k)),
+where e_k is the coefficient of t^k in product_i (a_i+b_i t).
+
+Consequently the roots of
+  M(z) = sum(k=0..N) (-1)^k sqrt(C(N,k)) c_k z^(N-k)
+are z_i=b_i/a_i. The Bloch vector of the corresponding constituent is
+  (2 Re z_i, 2 Im z_i, 1-|z_i|^2)/(1+|z_i|^2).
+The root zero is the north pole |0>; an infinite root is the south pole |1>.
+Multiplicities are retained. A coherent state has N coincident stars.
+A Dicke state |D_N^(k)> has N-k stars at the north pole and k at the south pole.
+
+4. Numerical safeguards and independent audit
+
+The browser library is dependency-free. It removes exact/tiny pole factors,
+recognizes coherent states from their one-qubit purity, and uses square-free
+polynomial factors plus a centered and scaled Aberth root iteration. A proposed
+square-free factorization is accepted only after reconstructing the quantum
+state independently from its spinors. Otherwise a direct root solve is used.
+If an affine root chart is poorly conditioned, a collective SU(2) rotation
+chooses a better polynomial chart. The resulting stars are rotated back before
+display, so this internal numerical choice does not change their orientation.
+Near a pole, the larger spinor component fixes the gauge to avoid cancellation.
+
+Every constellation reports reconstruction fidelity, homogeneous polynomial
+residual, and a reliability flag. These numerical diagnostics do not turn a
+sampled state family or a rendered mesh into an exact boundary proof.
+
+The reproducible test test_majorana_math.cjs checks 455 states (2,054 stars):
+every Dicke state for N=3..6, GHZ states, the six-star octahedron, arbitrary
+complex states, known spinor constellations with repeated/polar stars, and
+ill-conditioned affine charts with leading amplitudes from 10^-2 to 10^-14.
+For 39 states an independent full tensor-product Pauli enumeration checks every
+sector, rather than repeating the reduced-purity implementation.
+
+Recorded audit:
+  minimum reconstruction fidelity: 0.9999999999999993
+  maximum homogeneous polynomial residual: 7.21e-11
+  maximum sector error against full Pauli oracle: 1.57e-13
+  maximum known-star matching error: 1.14e-12
+
+The audit JSON contains the exact observed values for this implementation.
+
+The separate audit-atlas.cjs independently recomputes all 12,481 state records
+in small-n.json and n6.json using this browser implementation. It checks 948
+stratified Majorana constellations (including every named state), all stored
+sector tuples, the refined four-copy bound on N=6 witnesses, and every N=5
+boundary branch and junction against its explicit state family. The recorded
+atlas audit has no failures; its maximum stored-sector error is 1.85e-12 and
+its minimum constellation reconstruction fidelity is 0.9999999999999994.
+This consistency audit does not re-prove the N=5 global minimization theorem:
+that claim is sourced to the dedicated completed five-qubit proof.

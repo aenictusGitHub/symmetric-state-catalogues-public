@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "sampleCount": 16,
+  "linearSamples": 6,
+  "ellipseSamples": 10,
+  "pathPoints": 841,
+  "maximumNormError": 2.220446049250313e-16,
+  "maximumSectorError": 1.7763568394002505e-13,
+  "allStatesOnTrace": true,
+  "allPreviousNodesDistinct": true,
+  "checks": [
+    {
+      "id": "n6-paired-linear-1",
+      "parameter": "1/10",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 1.4921397450962104e-13,
+      "nearestPreviousNodeDistance": 0.1203698005684515,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 1.043182361375767e-90,
+      "chartInterval": [
+        0.02872891360464559,
+        0.02872891360464559
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-linear-2",
+      "parameter": "1/5",
+      "normError": 1.1102230246251565e-16,
+      "sectorError": 1.3145040611561853e-13,
+      "nearestPreviousNodeDistance": 0.48147920227380847,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 2.4545467326488633e-91,
+      "chartInterval": [
+        0.01974262930143928,
+        0.01974262930143928
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-linear-3",
+      "parameter": "3/10",
+      "normError": 0.0,
+      "sectorError": 8.881784197001252e-14,
+      "nearestPreviousNodeDistance": 1.083328205116068,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 1.5647735420636503e-90,
+      "chartInterval": [
+        0.011974005917549789,
+        0.011974005917549789
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-linear-4",
+      "parameter": "2/5",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 1.7763568394002505e-13,
+      "nearestPreviousNodeDistance": 1.9177284891749777,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 9.818186930595453e-91,
+      "chartInterval": [
+        0.00594314901543853,
+        0.00594314901543853
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-linear-5",
+      "parameter": "9/20",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 1.0658141036401503e-13,
+      "nearestPreviousNodeDistance": 1.5870055939506014,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 1.626137210379872e-90,
+      "chartInterval": [
+        0.003560719771812094,
+        0.003560719771812094
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-linear-6",
+      "parameter": "19/40",
+      "normError": 0.0,
+      "sectorError": 1.2434497875801753e-14,
+      "nearestPreviousNodeDistance": 1.35238165442371,
+      "cofactorChart": 2,
+      "unitEigenvectorResidual": 3.0068197474948575e-90,
+      "chartInterval": [
+        0.002503126755189905,
+        0.002503126755189905
+      ],
+      "intervalPrecisionDigits": 45
+    },
+    {
+      "id": "n6-paired-ellipse-1",
+      "parameter": "-1",
+      "normError": 0.0,
+      "sectorError": 4.618527782440651e-14,
+      "nearestPreviousNodeDistance": 1.1268368463107863
+    },
+    {
+      "id": "n6-paired-ellipse-2",
+      "parameter": "-3/4",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 5.3290705182007514e-14,
+      "nearestPreviousNodeDistance": 0.9035909564723646
+    },
+    {
+      "id": "n6-paired-ellipse-3",
+      "parameter": "-1/2",
+      "normError": 0.0,
+      "sectorError": 3.197442310920451e-14,
+      "nearestPreviousNodeDistance": 0.6286962068972891
+    },
+    {
+      "id": "n6-paired-ellipse-4",
+      "parameter": "-1/4",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 9.237055564881302e-14,
+      "nearestPreviousNodeDistance": 0.4646773436563099
+    },
+    {
+      "id": "n6-paired-ellipse-5",
+      "parameter": "0",
+      "normError": 0.0,
+      "sectorError": 5.3290705182007514e-14,
+      "nearestPreviousNodeDistance": 0.31868871959954903
+    },
+    {
+      "id": "n6-paired-ellipse-6",
+      "parameter": "1/2",
+      "normError": 0.0,
+      "sectorError": 3.552713678800501e-14,
+      "nearestPreviousNodeDistance": 0.5150223680034225
+    },
+    {
+      "id": "n6-paired-ellipse-7",
+      "parameter": "1",
+      "normError": 0.0,
+      "sectorError": 1.1546319456101628e-14,
+      "nearestPreviousNodeDistance": 0.6155699861280659
+    },
+    {
+      "id": "n6-paired-ellipse-8",
+      "parameter": "3/2",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 1.0658141036401503e-13,
+      "nearestPreviousNodeDistance": 1.6728853097348872
+    },
+    {
+      "id": "n6-paired-ellipse-9",
+      "parameter": "2",
+      "normError": 0.0,
+      "sectorError": 9.237055564881302e-14,
+      "nearestPreviousNodeDistance": 2.618709393745111
+    },
+    {
+      "id": "n6-paired-ellipse-10",
+      "parameter": "5/2",
+      "normError": 2.220446049250313e-16,
+      "sectorError": 8.881784197001252e-14,
+      "nearestPreviousNodeDistance": 1.3560083630109203
+    }
+  ],
+  "proofNote": "audit/N6_paired_boundary_sample_proof.txt"
+}

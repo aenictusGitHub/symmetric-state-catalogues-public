@@ -1,4 +1,4 @@
-"""Build the four public catalogues, retaining large certificate downloads on GitHub."""
+"""Build the public catalogues and sector-length atlas, retaining large certificate downloads on GitHub."""
 from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 import os
@@ -7,7 +7,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "_site"
-CATALOGUES = ("symmetric-sector-catalogue", "anticoherent-state-catalogue", "ac-subspace-catalogue", "majorana-degeneracy-catalogue")
+CATALOGUES = ("symmetric-sector-catalogue", "anticoherent-state-catalogue", "ac-subspace-catalogue", "majorana-degeneracy-catalogue", "sector-length-sets")
 REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "aenictusGitHub/symmetric-state-catalogues-public")
 REVISION = os.environ.get("GITHUB_SHA", "main")
 LIMIT = 10 * 1024**2
@@ -18,7 +18,9 @@ DEST.mkdir()
 files = [ROOT / name for name in ("index.html", "styles.css", ".nojekyll")]
 for name in CATALOGUES:
     files.extend(f for f in (ROOT / name).rglob("*") if f.is_file() and not any(x in f.parts for x in ("__pycache__", "node_modules", ".git")) and f.name != ".DS_Store")
-large = {f.resolve() for f in files if f.stat().st_size > LIMIT}
+# The analytical atlas mesh is a runtime script; keep it on Pages.
+large = {f.resolve() for f in files if f.stat().st_size > LIMIT
+         and not (f.is_relative_to(ROOT / "sector-length-sets") and f.suffix in {".js", ".css"})}
 
 def rewrite_link(match, source):
     url = match.group(2)
@@ -44,4 +46,4 @@ for source in files:
 size = sum(f.stat().st_size for f in DEST.rglob("*") if f.is_file())
 assert size < 1024**3, "Published site exceeds GitHub Pages size limit"
 assert not any("slocc-state-catalogue" in str(f.relative_to(DEST)) for f in DEST.rglob("*"))
-print(f"Built four catalogues: {size / 1024**2:.1f} MiB; {len(large)} large certificate files linked to GitHub.")
+print(f"Built catalogues and sector-length atlas: {size / 1024**2:.1f} MiB; {len(large)} large certificate files linked to GitHub.")

@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "issues": [],
+  "triangles": 156910,
+  "patches": 17,
+  "edgePaths": 55,
+  "edgePoints": 26463,
+  "maximumUnitNormalError": 7.880585739528101e-09,
+  "facesOpposedToInterpolatedNormal": 91,
+  "maxGraphError": 0.0,
+  "maxLinearViolation": 2.2737367544323206e-13,
+  "maxSideViolation": 1.7763568394002505e-15,
+  "nodeChanges": 0,
+  "inequalityChanges": 0,
+  "notes": [
+    "Geometry coordinates retain full Float64 precision; exact graph audit is performed inside the Julia exporter.",
+    "Color classification uses existing constructive witness membership with bisection-clipped transitions; no hull or new attainment claim.",
+    "Each analytic patch retains a separate smooth normal field, preserving actual facet creases.",
+    "The existing 27 manuscript nodes are loaded separately and are not replaced by this geometry file."
+  ]
+}

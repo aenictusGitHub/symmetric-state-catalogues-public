@@ -1,0 +1,37 @@
+Proper rotational axes of the Majorana multiset
+==============================================
+
+Directions returned by symmetry-axes.js use the original Bloch coordinates.
+The current viewer maps them to its world frame by (x,y,z) -> (x,z,-y).
+This is a proper orthogonal change of frame and preserves the axis orders.
+
+For any non-axial constellation choose two non-collinear star directions a,b.
+A proper rotation is uniquely determined by the ordered images a',b'. It must
+preserve their dot product and their multiplicities. For every admissible image
+pair, construct the unique orientation-preserving rotation using orthonormal
+frames. Keep it only if every star maps to a star of the SAME multiplicity.
+This enumerates the complete finite rotational group, up to the stated numeric
+tolerance. It is stronger than guessing axes from individual star directions or
+face normals, which can miss valid twofold axes in generic orientations.
+
+For each nonidentity rotation recover its unoriented axis and finite order.
+The order is the least k<=N for which k times its angle is a multiple of 2pi.
+This handles rotations of angle 4pi/5 correctly. A non-axial N-star multiset has
+an off-axis orbit of the full rotational order, so that order cannot exceed N.
+Merge collinear unoriented axes and retain only the maximal order on each axis.
+Thus an octahedron has 3 C4, 4 C3, and 6 C2 axes; its C4 axes are not listed a
+second time as C2 axes. Reflections are excluded from this proper-rotation list.
+
+One occupied direction and two antipodal occupied directions have continuous
+rotations about their principal axis, denoted C_infinity. If the antipodal
+multiplicities agree, there is also a continuous family of transverse pi
+rotations. The interface should describe this family rather than draw an
+arbitrary finite subset as if it were the full set of C2 axes.
+
+Axis detection is numerical geometry of the displayed representative, not a
+new equality classification or a claim about every state at its sector tuple.
+The default positional tolerance is 2e-6. The result includes the tolerance,
+verified maximum permutation error, and a reliability flag. Nearly collinear
+unresolved configurations are reported without inventing an axis catalogue.
+
+Reproduction: node audit/symmetry-axes-regression.cjs

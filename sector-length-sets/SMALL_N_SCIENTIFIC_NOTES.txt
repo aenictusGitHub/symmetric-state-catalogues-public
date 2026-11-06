@@ -1,0 +1,72 @@
+Pure symmetric sector-length atlas: N=3,4,5 data
+================================================
+
+Normalization: S_k is the sum of squared expectations of all weight-k Pauli
+strings, S_0=1. Dicke coefficients are ordered k=0,...,N, with k excitations
+and J_z=N/2-k. The JSON omits S_0, so sectors[0] is S_1.
+
+Every hoverable point in small-n.js has an explicit normalized Dicke state.
+No state is assigned to an interpolated point or a convex-hull vertex.
+Haar and sparse clouds are actual pure-state samples, not completeness claims.
+
+N=3
+---
+Exact image: 0 <= S_1 <= 3; S_2=3; S_3=4-S_1.
+The full interval is attained by cos(phi/2) D_0 + sin(phi/2) D_3,
+0 <= phi <= pi/2, with S_1=3 cos^2(phi).
+
+N=4
+---
+Exact image: 0 <= S_1 <= S_2-2 <= 4.
+Identities: S_3=12+S_1-2S_2, S_4=3-2S_1+S_2.
+The entire triangle has an explicit witness from PRA113_012415(2026),
+Eqs.(47)-(50):
+ psi=cos(theta/2)[cos(phi/2) D_0+sin(phi/2) D_4]+i sin(theta/2) D_2.
+Writing x=S_1 and Y=3-S_2/2 gives x=(1+u)^2(1-v^2),
+Y=(1+v)(1-u^2), u=cos(theta), v=sin(phi). For Y>0,
+ u=[x+Y sqrt(4-x-2Y)]/(x+2Y),
+ v=1-x(1-u)/[Y(1+u)].
+For Y=0 choose u=1, v=sqrt(1-x/4).
+The data contain a deterministic exactly inverted grid of this entire set.
+
+GHZ(4) and D_4^(2) have the same sector tuple (0,6,0,9), but distinct
+Majorana constellations. Both known states must remain individually selectable.
+
+N=5
+---
+Pure-state identities:
+ S_3=10+2S_1-S_2; S_4=15-S_2; S_5=6-3S_1+S_2.
+Exact image in the dedicated completed proof:
+ 0 <= x <= 5, b(x) <= y <= 10.
+Set pc=2-3/sqrt(5), p0=sqrt(5)/3, and
+ xc=(22805-9840 sqrt(5))/11881 approximately 0.06751040328.
+The lower boundary is
+ - a short algebraic C2 arc for 0<=x<=xc;
+ - (3x-2sqrt(5x)+15)/4 for xc<=x<=9/5;
+ - 2x for 9/5<=x<=5.
+The actual state families for all three pieces and both remaining edges are
+included as coefficients at every sample in the JSON, with formulas and
+parameters. Their exact expressions are implemented in generate_small_n.py.
+
+Important provenance distinction: arxiv-161026.tex has older text treating the
+exceptional symmetry-reduction branches as open. The later dedicated sources
+arxiv-161026proofN5.tex and
+output/pdf/N5_symmetric_S1S2_boundary_compact_proof.tex contain the completed
+reduction, finite spin certificates, both-orientation comparison, and
+connected-fiber argument for full interior coverage. Use the dedicated proof
+as provenance when describing the exact N=5 region. The numerical witness
+data independently establish attainment of every exported marked point, but
+do not by themselves prove global optimality of the displayed lower curve.
+
+Validation and reproduction
+---------------------------
+Run: python3 generate_small_n.py
+Outputs: data/small-n.json, data/small-n.js, data/small-n-audit.json.
+State normalization, all named rational tuples, total purity and the stated
+pure-state identities are checked for every witness. Sector evaluation uses
+an independent Dicke bipartition matrix and binomial inversion of reduced
+purities, rather than importing the figure's Pauli evaluator.
+
+The polygon array for N=5 is a tessellated exact boundary from explicit
+families, not a convex hull. It is for drawing the proven set only; arbitrary
+fill pixels do not acquire a state witness from interpolation.

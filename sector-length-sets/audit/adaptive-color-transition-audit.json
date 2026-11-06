@@ -1,0 +1,71 @@
+{
+  "method": "Shared color-transition edge lengths in final indexed world geometry, coordinates merged at 1e-9 sector units. Scientific masks unchanged.",
+  "before": {
+    "totalTriangles": 99381,
+    "transitionSegments": 1144,
+    "base": {
+      "segments": 285,
+      "maximumWorldChord": 0.038522159657008094,
+      "p95WorldChord": 0.01924346830128663
+    },
+    "spectral": {
+      "segments": 94,
+      "maximumWorldChord": 0.024657967727411478,
+      "p95WorldChord": 0.018092275088111766
+    },
+    "orange": {
+      "segments": 39,
+      "maximumWorldChord": 0.03631773994703001,
+      "p95WorldChord": 0.03555320962897093
+    },
+    "p2_lower": {
+      "segments": 502,
+      "maximumWorldChord": 0.029505883204499185,
+      "p95WorldChord": 0.017758532117476293
+    },
+    "compatibility_cap": {
+      "segments": 55,
+      "maximumWorldChord": 0.0035882657807868746,
+      "p95WorldChord": 0.003424663559973954
+    }
+  },
+  "after": {
+    "totalTriangles": 156910,
+    "transitionSegments": 9420,
+    "base": {
+      "segments": 2372,
+      "maximumWorldChord": 0.004442980128793596,
+      "p95WorldChord": 0.0023153661268459753
+    },
+    "spectral": {
+      "segments": 786,
+      "maximumWorldChord": 0.003178507705688516,
+      "p95WorldChord": 0.002072594316917383
+    },
+    "orange": {
+      "segments": 568,
+      "maximumWorldChord": 0.012640802695323984,
+      "p95WorldChord": 0.004408661037874552
+    },
+    "p2_lower": {
+      "segments": 3959,
+      "maximumWorldChord": 0.0073360541422943714,
+      "p95WorldChord": 0.002248873527835848
+    },
+    "compatibility_cap": {
+      "segments": 431,
+      "maximumWorldChord": 0.000592094593233692,
+      "p95WorldChord": 0.00036395496842841026
+    }
+  },
+  "metadataAudit": {
+    "maxGraphError": 0.0,
+    "maxLinearViolation": 2.2737367544323206e-13,
+    "maxSideViolation": 1.7763568394002505e-15,
+    "nodeChanges": 0,
+    "inequalityChanges": 0
+  },
+  "localRefinementLevels": 3,
+  "unchangedSurfaceMasks": true,
+  "assetBytes": 11457955
+}

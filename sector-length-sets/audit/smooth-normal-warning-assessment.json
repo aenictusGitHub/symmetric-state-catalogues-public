@@ -1,0 +1,20 @@
+{
+  "recommendation": "Retain current final indexed area-weighted world normals and unchanged geometry.",
+  "reason": "Consistent winding, manifold topology and exact analytical graph checks pass. Opposed shared-fan samples occur on tiny nonlinear graph-clipping slivers and singular joins; no topology inversion was found.",
+  "sharedEdgeWindingErrors": 0,
+  "nonmanifoldEdges": 0,
+  "totalWorldSurfaceArea": 4.456027263406784,
+  "allWarnedTriangleWorldArea": 3.5231284250656814e-05,
+  "warnedAreaFraction": 7.906433728531836e-06,
+  "largestWarnedTriangleWorldArea": 1.1280440675978627e-05,
+  "defaultViewBound": {
+    "orthographicHalfHeight": 1.55,
+    "heightCSSPixels": 700,
+    "largestPossibleProjectedCSSPixelArea": 0.5751733539260695,
+    "note": "Orthographic projected area is at most triangle world area times the squared display scale; zoom increases this bound."
+  },
+  "changesMade": false,
+  "whyNotAnalyticalNormals": "A new gradient field can smooth across genuine analytical creases and cannot remove the underlying tiny nonlinear polygon chords. The current final indexed field already passes visual browser verification by the parent agent.",
+  "geometryVersion": "Historical 99,381-triangle mesh, before adaptive color-transition refinement",
+  "supersededBy": "audit/smooth-normals-marker-regression.json"
+}

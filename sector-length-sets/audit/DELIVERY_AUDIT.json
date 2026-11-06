@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "visible_N6_nodes": 58,
+  "attained_N6_positions": 47,
+  "excluded_N6_nodes": 11,
+  "N5_named_boundary_states": 6,
+  "N5_boundary_samples": 41,
+  "exact_formula_representatives": 103,
+  "generic_cloud_points_plotted": 0,
+  "local_asset_links": "all resolved",
+  "math_and_majorana": "see exact-visible-audit.json and visible_point_audit.json",
+  "browser_checks": [
+    "N3 W state: 3 stars at 2 positions",
+    "N4 GHZ versus balanced Dicke: same sectors, different constellations",
+    "N5 mouse click on product vertex updates state and 5-fold star",
+    "N5 sampled boundary deep link survives reload",
+    "N6 main/alternative/rear presets and exact E*/omega readouts",
+    "390px and 320px: no document horizontal overflow; no KaTeX errors",
+    "1280px: coordinated plot and sphere visible; no browser errors"
+  ],
+  "verification_limit": "Direct file:// navigation is blocked by the in-app browser; local HTTP preview was verified.",
+  "marker_update": {
+    "status": "PASS",
+    "style": "Catalogue-style antialiased vector circles with thin darker outlines",
+    "N6_sector_marker_count": 27,
+    "N6_violet_count": 16,
+    "N6_gray_count": 11,
+    "N5_sector_marker_count": 47,
+    "N5_boundary_sample_count": 41,
+    "octahedral_star_marker_count": 6,
+    "duplicate_WebGL_point_glyphs": 0,
+    "node_click_selection": "PASS: product point selects product and a six-fold Majorana pole",
+    "browser_errors": [],
+    "data_and_analytical_expressions": "unchanged",
+    "screenshot": "audit/preview-catalogue-markers.jpg"
+  },
+  "interaction_update": {
+    "hull": "PASS: annotated pentagon has 5 true edges, no triangulation diagonals",
+    "symmetry_axes": "PASS: 30 synthetic cases and all 72 displayed state representatives",
+    "alignment": "PASS: 64 alignable representatives; 8 C1 states correctly disable alignment; display rotation preserves geometry and coefficients",
+    "selector": "PASS: closed label uses KaTeX; native menu remains accessible",
+    "N3_labels": "PASS: GHZ label and zero tick bounding boxes do not overlap",
+    "panning": "PASS: N4 browser drag moves projected markers by exactly (40,30) pixels; reset restores framing; N6 uses Shift/right-drag",
+    "SVG": "PASS: serializer XML/geometry tests; actual Majorana download opened successfully as a standalone SVG with embedded fonts and no raster image; sector button invoked without script errors",
+    "SVG_save_observation": "Native save of the second sector SVG was not observed; its serializer and XML geometry were tested independently",
+    "browser": "PASS: no JavaScript or KaTeX errors in the completed UI",
+    "screenshot": "audit/preview-hull-axes-alignment.jpg"
+  },
+  "analytical_smooth_label_update": {
+    "status": "PASS",
+    "exact_sector_records": 73,
+    "displayed_representatives_covered": 72,
+    "exact_entries_typeset": 371,
+    "maximum_exact_tuple_error": 5.062616992290714e-13,
+    "mesh_triangles": 99381,
+    "analytical_sheets": 17,
+    "true_edge_paths": 55,
+    "smooth_normals": "Shared indexed world-space normals; genuine sheet creases preserved",
+    "attainment_transitions": "Bisection-clipped to analytical graphs, 20 iterations; no new attainment claim",
+    "surface_coordinates_graph_error": 0.0,
+    "maximum_linear_roundoff": 2.2737367544323206e-13,
+    "default_N6_labels": "Product, GHZ, W, octa and focused selected/hovered state",
+    "label_options": "Key states / All states / None; hidden labels have no leaders",
+    "original_scientific_data_hashes": "unchanged",
+    "marker_count": "27 = 16 violet + 11 gray",
+    "browser_checks": [
+      "C4 sectors are (0,27/5,8,51/5,24,77/5)",
+      "All labels mode restores 20 annotations; None hides all labels and leaders",
+      "E* radical tuple fits responsive two-column readout with no overflow",
+      "N5 boundary sample phi=7pi/20 exact definitions displayed; 47 markers retained",
+      "N6 main, alternative and rear presets verified"
+    ],
+    "screenshot": "audit/preview-exact-smooth-key-labels.jpg",
+    "tests": [
+      "audit/exact-sector-values-audit.json",
+      "audit/exact-sector-typesetting-audit.json",
+      "audit/smooth-mesh-validation.json",
+      "audit/smooth-normals-marker-regression.json",
+      "audit/static-occlusion-regression.json"
+    ]
+  },
+  "deep_zoom_annotation_update": {
+    "status": "PASS",
+    "sector_maximum_zoom": 80,
+    "pointer_centered_zoom": true,
+    "majorana_zoom_range": "unchanged",
+    "removed_text": "Four-copy cap and 27-node sentences removed from the N6 geometry note",
+    "state_evidence_math": "Spectral S_4 equality state is typeset with KaTeX",
+    "browser_checks": [
+      "Deep N5 lower-arc zoom extends past former 3.5x limit",
+      "Deep N6 zoom verified; focused label and readout preserved",
+      "Correct S_4 annotation and shortened geometry note verified",
+      "No browser script errors"
+    ],
+    "screenshots": [
+      "audit/preview-deep-zoom-N5.jpg",
+      "audit/preview-deep-zoom-N6.jpg"
+    ]
+  },
+  "manuscript_N6_nodes": 27,
+  "N6_boundary_samples": 31,
+  "N6_curve_sample_update": {
+    "status": "PASS",
+    "new_samples": 15,
+    "filtered_octa_C3_seam_samples": 8,
+    "attained_C5_omega_segment_samples": 7,
+    "exact_state_formulas_and_sector_tuples": true,
+    "maximum_normalization_error": 8.881784197001252e-16,
+    "maximum_exact_sector_error": 1.6342482922482304e-13,
+    "minimum_majorana_fidelity": 0.9999999999999996,
+    "browser_checks": [
+      "42 visible markers at normal framing: 27 original plus15samples",
+      "All15 newstates selectable from native state menu",
+      "Clicking actual new curve marker selects F_(8/9)",
+      "Exact fractions and analytical state formulas render correctly",
+      "Expanded rank-four state definitions show all auxiliaries",
+      "Rear samples remain lighter",
+      "No browser script or KaTeX errors; no horizontal overflow"
+    ],
+    "excluded_curve": "Open retained spectral/rank-four crease has no pure-state witness; left gray. Samples instead follow the nearby proved attained straight segment.",
+    "retained_curve_exclusion_proof": "audit/N6_boundary_sample_proofs.txt",
+    "proof_audit": "audit/n6-retained-crease-proof-audit.json",
+    "original_manuscript_nodes_and_geometry": "unchanged",
+    "screenshot": "audit/preview-N6-boundary-samples.jpg"
+  },
+  "attained_trace_and_definition_defaults": {
+    "status": "PASS",
+    "trace": "Proved attained straight C5-to-omega segment through all seven R_t samples",
+    "trace_points": 257,
+    "style": "Violet; rear portions lighter and dashed; existing nodes and other edges preserved",
+    "long_definitions": "Collapsed on initial entry or a different state; manually expandable",
+    "browser_checks": [
+      "Manual expansion works",
+      "Switching to another long-formula state collapses definitions",
+      "Violet trace visibly connects sampled R_t points",
+      "No browser script errors"
+    ],
+    "all_state_coefficients_and_sector_values": "unchanged",
+    "screenshot": "audit/preview-violet-equality-trace.jpg"
+  },
+  "N6_display_triangles": 156910,
+  "C3_display_refinement_update": {
+    "status": "PASS",
+    "C3_curve_points": 721,
+    "C3_curve_passes_displayed_states": 8,
+    "rear_style": "Lighter dashed; nominal six-pixel dashes and five-pixel gaps across zoom levels",
+    "depth_fix": "Line layers no longer overwrite opaque face depth",
+    "SVG": "Rear dashes use the same fixed screen spacing",
+    "adaptive_surface_triangles": 156910,
+    "analytical_sheets": 17,
+    "typical_transition_chord_improvement": "about8x finer",
+    "maximum_analytical_graph_error": 0.0,
+    "maximum_linear_constraint_roundoff": 2.2737367544323206e-13,
+    "state_coefficients_sector_values_and_proved_bounds": "unchanged",
+    "N5_note": "Removed from explorer",
+    "shaded_legends": {
+      "4": "Attained region",
+      "5": "Attained region",
+      "6": "Attained surface"
+    },
+    "browser_checks": [
+      "N5 proof paragraph hidden and region swatch visible",
+      "N4 region swatch visible",
+      "N6 surface swatch visible with 42 original plus sampled nodes",
+      "C3 trace visible through F_t samples",
+      "Highzoom D2 transition refined and rear dashes remain short",
+      "No JavaScript or KaTeX errors"
+    ],
+    "genuine_gray_tongue": "Retained: it is a proved excluded part of the small-dipole paired face, not a rendering artifact",
+    "screenshots": [
+      "audit/preview-C3-trace-and-surface-legend.jpg",
+      "audit/preview-N5-attained-region-legend.jpg",
+      "audit/preview-N4-region-legend.jpg",
+      "audit/preview-N6-refined-closeup.jpg"
+    ],
+    "audits": [
+      "audit/adaptive-color-transition-audit.json",
+      "audit/smooth-mesh-validation.json",
+      "audit/line-depth-dash-regression.json",
+      "audit/n6-edge-display-diagnosis.json"
+    ]
+  },
+  "paired_border_and_parameter_layout_update": {
+    "status": "PASS",
+    "added_boundary_states": 16,
+    "straight_branch_states": 6,
+    "elliptic_branch_states": 10,
+    "new_attained_trace_points": 841,
+    "state_construction": "Explicit real-Hodge cofactor states and odd-C2 three-Dicke states; no interpolation of state coefficients",
+    "maximum_norm_error": 2.220446049250313e-16,
+    "maximum_sector_error": 1.7763568394002505e-13,
+    "minimum_majorana_fidelity": 0.9999999999999998,
+    "exact_sector_values": "All six values rational for each new sample",
+    "layout_fix": "Leading parameter t=9/8 is on its own line above the tall aligned definitions; applies to all seven rank-four samples",
+    "browser_checks": [
+      "58 markers = 27 manuscript nodes + 31 boundary samples",
+      "New L_(19/40) and P_0 states selectable with exact tuples",
+      "L states have closed definitions by default; P states show short inline parameters",
+      "t=9/8 displays in its own 44px-high block; no displaced fraction",
+      "No JavaScript or KaTeX errors or horizontal document overflow"
+    ],
+    "bounds_and_original_state_data": "unchanged",
+    "screenshots": [
+      "audit/preview-paired-face-boundary-samples.jpg",
+      "audit/preview-parameter-prefix-fix.jpg"
+    ],
+    "proof_note": "audit/N6_paired_boundary_sample_proof.txt",
+    "audits": [
+      "audit/n6-paired-boundary-samples-audit.json",
+      "audit/n6-paired-boundary-typesetting-audit.json",
+      "audit/new-paired-boundary-independent-audit.json"
+    ]
+  },
+  "sector_value_relations_update": {
+    "status": "PASS",
+    "exact_values": "Each sector label now includes an equals sign before its exact value or formula.",
+    "approximate_values": "Unknown noninteger values retain an approximation sign without a preceding equals sign.",
+    "browser_check": "N5 n5-line-18: all five equals signs rendered; responsive two-column readout has no overflow; no browser errors.",
+    "screenshot": "audit/preview-sector-equalities.jpg",
+    "scientific_data": "unchanged"
+  },
+  "typeset_state_menu_update": {
+    "status": "PASS",
+    "display": "Closed selection and open options use local KaTeX/Latin Modern typography, including psi, subscripts, superscripts and C_n.",
+    "interaction": "Mouse selection, Arrow/Home/End/Enter, multi-letter typeahead, and Escape cancellation verified in browser.",
+    "accessibility": "Single focusable combobox, active-descendant navigation and committed-selection checkmark; native select preserved as hidden data interface.",
+    "N5_menu_choices": 47,
+    "N6_menu_choices": 48,
+    "browser_errors": [],
+    "math_errors": 0,
+    "horizontal_menu_overflow": false,
+    "scientific_data": "All 31 manifest-listed data files unchanged.",
+    "screenshot": "audit/preview-typeset-state-menu.jpg"
+  },
+  "state_menu_font_size_update": {
+    "status": "PASS",
+    "entry_font_px": 15,
+    "previous_entry_font_px": 13,
+    "math_root_font_px": 15,
+    "sampled_entry_font_px": 15,
+    "browser_check": "Named mathematics and sampled descriptions both compute to 15px; no horizontal menu overflow.",
+    "screenshot": "audit/preview-larger-consistent-state-menu.jpg"
+  },
+  "intro_subtitle_update": {
+    "status": "PASS",
+    "text": "Achievable sector-length tuples for pure symmetric states.",
+    "browser_verified": true,
+    "screenshot": "audit/preview-achievable-tuples-subtitle.jpg"
+  },
+  "unobstructed_vertex_selection_update": {
+    "status": "PASS",
+    "plot_popup": "Removed; state details remain in the side panel.",
+    "selected_vertex_hover": "Hovering the clicked state keeps Selected status.",
+    "browser_check": "Clicked N6 psi6 vertex and moved the pointer within it: popup element absent, side-panel Selected status retained, no script errors.",
+    "screenshot": "audit/preview-unobstructed-vertex-selection.jpg"
+  },
+  "xi_parameter_notation_update": {
+    "status": "PASS",
+    "change": "u_* := replaced by u_* = in the displayed exact parameter.",
+    "source_fields": "data/exact-n6.js and data/exact-n6.json: n6-xi parameterLatex only.",
+    "browser_verified": true,
+    "screenshot": "audit/preview-xi-parameter-equality.jpg"
+  },
+  "N5_nonconvexity_note_update": {
+    "status": "PASS",
+    "text": "The achievable set is not convex.",
+    "scope": "N=5 plot only.",
+    "verified_against": "N5_symmetric_S1S2_boundary_compact_proof.tex, nonconvexity proposition; strict concavity of the small C2 lower arc.",
+    "browser_verified": true,
+    "screenshot": "audit/preview-N5-nonconvexity-note.jpg"
+  }
+}

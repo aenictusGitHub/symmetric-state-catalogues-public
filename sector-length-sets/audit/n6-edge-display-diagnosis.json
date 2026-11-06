@@ -1,0 +1,562 @@
+{
+  "status": "DIAGNOSED",
+  "pathCount": 55,
+  "legacyWorldDash": 0.045,
+  "legacyWorldGap": 0.035,
+  "representativeViewport": {
+    "width": 460,
+    "height": 520,
+    "halfSpan": 2.0347826086956524
+  },
+  "legacyDashScaling": [
+    {
+      "zoom": 1,
+      "dashPixels": 5.749999999999999,
+      "gapPixels": 4.472222222222222
+    },
+    {
+      "zoom": 3.5,
+      "dashPixels": 20.124999999999996,
+      "gapPixels": 15.652777777777779
+    },
+    {
+      "zoom": 10,
+      "dashPixels": 57.49999999999999,
+      "gapPixels": 44.72222222222222
+    },
+    {
+      "zoom": 80,
+      "dashPixels": 459.99999999999994,
+      "gapPixels": 357.77777777777777
+    }
+  ],
+  "shortNontrivialGrayArcs": [
+    {
+      "edgeIndex": 3,
+      "kind": "paired",
+      "attained": false,
+      "worldArcLength": 0.00510736369511619,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 10,
+      "kind": "sharp",
+      "attained": false,
+      "worldArcLength": 0.006857057060382793,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 11,
+      "kind": "sharp",
+      "attained": false,
+      "worldArcLength": 0.0022534685851313364,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 18,
+      "kind": "flow_cap",
+      "attained": false,
+      "worldArcLength": 0.04361473234108719,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 19,
+      "kind": "flow_cap",
+      "attained": false,
+      "worldArcLength": 0.042209539389682804,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 22,
+      "kind": "null_upper_1",
+      "attained": false,
+      "worldArcLength": 0.03848688201991411,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 23,
+      "kind": "null_upper_2",
+      "attained": false,
+      "worldArcLength": 0.02221334243125578,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 25,
+      "kind": "null_upper_2",
+      "attained": false,
+      "worldArcLength": 0.013737900518305528,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 26,
+      "kind": "null_upper_3",
+      "attained": false,
+      "worldArcLength": 0.010816470591571748,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 28,
+      "kind": "null_upper_3",
+      "attained": false,
+      "worldArcLength": 0.008458753268801479,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 29,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015069774816870978,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 30,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015072855421350503,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 32,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015077350279635162,
+      "wholeArcFitsOneLegacyDash": true
+    }
+  ],
+  "depthWriteCounterexample": {
+    "opaqueFaceDepth": 5.0,
+    "hiddenLineDepth": 6.0,
+    "laterRearSolidLineDepth": 5.8,
+    "laterSolidPassesAfterHiddenDepthWrite": true,
+    "laterSolidPassesWithReadOnlyDepth": false
+  },
+  "recommendations": [
+    "Set depthWrite=false on both solid and dashed edge materials so opaque faces remain the authoritative depth buffer.",
+    "Set dashed line dashSize/gapSize from current camera world units per CSS pixel on every render/resize/zoom. Six-pixel dashes and five-pixel gaps avoid high-zoom solid-looking hidden cap curves.",
+    "The short null_upper/null_lower/flow paths are explicitly intended analytical envelope creases in compatibility_null_envelope_seams, compatibility_tiny_cap_seams, compatibility_research_internal_rims. Do not delete them merely for being short.",
+    "Duplicate full body traces can be deduplicated for stroke consistency, but are distinct from the high-zoom solid rear-fan bug."
+  ],
+  "knownDuplicateCoverage": [
+    {
+      "primary": [
+        0,
+        8
+      ],
+      "duplicate": 44,
+      "description": "C5 locus re-emits spectral then orange exposed rim"
+    },
+    {
+      "primary": 37,
+      "duplicate": 47,
+      "description": "octa-GHZ straight edge"
+    },
+    {
+      "primary": 38,
+      "duplicate": 50,
+      "description": "W-product straight edge"
+    },
+    {
+      "primary": 39,
+      "duplicate": 49,
+      "description": "GHZ-product straight edge"
+    },
+    {
+      "primary": 40,
+      "duplicate": 48,
+      "description": "octa-W straight edge"
+    },
+    {
+      "primary": 4,
+      "duplicate": 52,
+      "description": "paired-null attained rim, apart from endpoint tolerance"
+    }
+  ],
+  "pathMeasurements": [
+    {
+      "edgeIndex": 0,
+      "kind": "spectral",
+      "attained": true,
+      "worldArcLength": 0.467745957034264,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 1,
+      "kind": "spectral",
+      "attained": false,
+      "worldArcLength": 1.2858569237087885,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 2,
+      "kind": "spectral",
+      "attained": true,
+      "worldArcLength": 0.04304987125705277,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 3,
+      "kind": "paired",
+      "attained": false,
+      "worldArcLength": 0.00510736369511619,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 4,
+      "kind": "paired",
+      "attained": true,
+      "worldArcLength": 0.04113536158747563,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 5,
+      "kind": "paired",
+      "attained": true,
+      "worldArcLength": 1.1419960737869774,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 6,
+      "kind": "orange",
+      "attained": false,
+      "worldArcLength": 0.5211673639998471,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 7,
+      "kind": "orange",
+      "attained": true,
+      "worldArcLength": 0.00039663228072948974,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 8,
+      "kind": "orange",
+      "attained": true,
+      "worldArcLength": 1.398083666367355,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 9,
+      "kind": "sharp",
+      "attained": true,
+      "worldArcLength": 2.4685714361538658e-08,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 10,
+      "kind": "sharp",
+      "attained": false,
+      "worldArcLength": 0.006857057060382793,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 11,
+      "kind": "sharp",
+      "attained": false,
+      "worldArcLength": 0.0022534685851313364,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 12,
+      "kind": "sharp",
+      "attained": true,
+      "worldArcLength": 0.026235589062803624,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 13,
+      "kind": "rank4_plane",
+      "attained": false,
+      "worldArcLength": 0.6514356411414477,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 14,
+      "kind": "rank4_plane",
+      "attained": false,
+      "worldArcLength": 0.11750647343828029,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 15,
+      "kind": "rank4_plane",
+      "attained": false,
+      "worldArcLength": 0.6093786941718262,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 16,
+      "kind": "rank4_plane",
+      "attained": true,
+      "worldArcLength": 6.60826403848604e-08,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 17,
+      "kind": "rank4_plane",
+      "attained": false,
+      "worldArcLength": 0.10305883720262528,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 18,
+      "kind": "flow_cap",
+      "attained": false,
+      "worldArcLength": 0.04361473234108719,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 19,
+      "kind": "flow_cap",
+      "attained": false,
+      "worldArcLength": 0.042209539389682804,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 20,
+      "kind": "flow_cap",
+      "attained": true,
+      "worldArcLength": 3.210767078776453e-05,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 21,
+      "kind": "null_upper_1",
+      "attained": true,
+      "worldArcLength": 2.2742856486956953e-09,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 22,
+      "kind": "null_upper_1",
+      "attained": false,
+      "worldArcLength": 0.03848688201991411,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 23,
+      "kind": "null_upper_2",
+      "attained": false,
+      "worldArcLength": 0.02221334243125578,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 24,
+      "kind": "null_upper_2",
+      "attained": true,
+      "worldArcLength": 2.2857145065557916e-09,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 25,
+      "kind": "null_upper_2",
+      "attained": false,
+      "worldArcLength": 0.013737900518305528,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 26,
+      "kind": "null_upper_3",
+      "attained": false,
+      "worldArcLength": 0.010816470591571748,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 27,
+      "kind": "null_upper_3",
+      "attained": true,
+      "worldArcLength": 2.2857142845111866e-09,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 28,
+      "kind": "null_upper_3",
+      "attained": false,
+      "worldArcLength": 0.008458753268801479,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 29,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015069774816870978,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 30,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015072855421350503,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 31,
+      "kind": "null_lower_1",
+      "attained": true,
+      "worldArcLength": 2.2742857597179977e-09,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 32,
+      "kind": "null_lower_1",
+      "attained": false,
+      "worldArcLength": 0.015077350279635162,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 33,
+      "kind": "compatibility_lower",
+      "attained": true,
+      "worldArcLength": 3.684135717928111e-05,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 34,
+      "kind": "compatibility_lower",
+      "attained": false,
+      "worldArcLength": 1.3658883963100386,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 35,
+      "kind": "fourcopy_lower",
+      "attained": false,
+      "worldArcLength": 1.1378405316784896,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 36,
+      "kind": "fourcopy_lower",
+      "attained": false,
+      "worldArcLength": 1.1564073632506477,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 37,
+      "kind": "base",
+      "attained": true,
+      "worldArcLength": 1.1428571428571428,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 38,
+      "kind": "base",
+      "attained": true,
+      "worldArcLength": 1.4801632160329563,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 39,
+      "kind": "base",
+      "attained": true,
+      "worldArcLength": 2.191427034369368,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 40,
+      "kind": "base",
+      "attained": true,
+      "worldArcLength": 1.302083480167571,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 41,
+      "kind": "base",
+      "attained": true,
+      "worldArcLength": 0.75822209022732,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 42,
+      "kind": "c3",
+      "attained": true,
+      "worldArcLength": 0.01631030572824538,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 43,
+      "kind": "c4",
+      "attained": true,
+      "worldArcLength": 0.020857773723742336,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 44,
+      "kind": "c5",
+      "attained": true,
+      "worldArcLength": 1.8658295992462564,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 45,
+      "kind": "psi0_xi",
+      "attained": true,
+      "worldArcLength": 0.19465447384000012,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 46,
+      "kind": "octa_ac2",
+      "attained": true,
+      "worldArcLength": 0.6870638754695653,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 47,
+      "kind": "octa_ghz",
+      "attained": true,
+      "worldArcLength": 1.1428571428571428,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 48,
+      "kind": "octa_w",
+      "attained": true,
+      "worldArcLength": 1.3020834801675714,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 49,
+      "kind": "ghz_product",
+      "attained": true,
+      "worldArcLength": 2.1914270343693683,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 50,
+      "kind": "w_product",
+      "attained": true,
+      "worldArcLength": 1.4801632160329572,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 51,
+      "kind": "sevenlevel_edge",
+      "attained": true,
+      "worldArcLength": 0.7054628921019482,
+      "wholeArcFitsOneLegacyDash": false
+    },
+    {
+      "edgeIndex": 52,
+      "kind": "global_paired_rim",
+      "attained": true,
+      "worldArcLength": 0.04111564489316562,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 53,
+      "kind": "F0_side_low",
+      "attained": true,
+      "worldArcLength": 0.009669663075400318,
+      "wholeArcFitsOneLegacyDash": true
+    },
+    {
+      "edgeIndex": 54,
+      "kind": "F0_side_large",
+      "attained": true,
+      "worldArcLength": 1.1585622163375093,
+      "wholeArcFitsOneLegacyDash": false
+    }
+  ],
+  "scientificDataChanges": 0
+}

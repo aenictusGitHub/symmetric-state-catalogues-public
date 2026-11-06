@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "unitCases": 15,
+  "cutoff": "strict, in world units",
+  "originHit": "included, matching THREE.Ray.intersectTriangle",
+  "comparisons": [
+    {
+      "file": "n6.json",
+      "triangles": 15644,
+      "rays": 331,
+      "hits": 72,
+      "allMatched": true,
+      "inputArraysUnchanged": true
+    },
+    {
+      "file": "n6-smooth-geometry.json",
+      "triangles": 99381,
+      "rays": 331,
+      "hits": 72,
+      "allMatched": true,
+      "inputArraysUnchanged": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "triangles": 15644,
+      "nodes": 3929,
+      "leafSize": 12,
+      "buildMilliseconds": 13.210541999999997,
+      "file": "n6.json",
+      "queries": 5000,
+      "bvhMilliseconds": 3.519874999999999,
+      "meanBvhMicroseconds": 0.7039749999999998,
+      "bruteQueries": 331,
+      "bruteMilliseconds": 66.559291,
+      "meanBruteMicroseconds": 201.08547129909365
+    },
+    {
+      "triangles": 99381,
+      "nodes": 25145,
+      "leafSize": 12,
+      "buildMilliseconds": 34.56866600000001,
+      "file": "n6-smooth-geometry.json",
+      "queries": 5000,
+      "bvhMilliseconds": 2.458500000000072,
+      "meanBvhMicroseconds": 0.49170000000001435,
+      "bruteQueries": 331,
+      "bruteMilliseconds": 372.83354099999997,
+      "meanBruteMicroseconds": 1126.3853202416917
+    }
+  ]
+}

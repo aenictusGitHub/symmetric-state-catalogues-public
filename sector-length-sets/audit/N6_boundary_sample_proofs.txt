@@ -1,0 +1,86 @@
+SELECTABLE N6 BOUNDARY SAMPLES: ATTAINMENT AND THE EXCLUDED CURVED CREASE
+
+Conventions
+-----------
+D_k = |D_6^(k)> is the normalized symmetric Dicke vector, k excitations.
+x=S1, y=S2, z=S3; Theta=sum_{k=0}^6 (-1)^k c_k c_{6-k}.
+For a pure symmetric six-qubit state:
+x=(2/3)|<J>|^2,
+y=5+(4/15)||Q||_F^2, Q_ab=<(JaJb+JbJa)/2>-4 delta_ab,
+z=8+2x-8|Theta|^2.
+
+1. Filtered-octahedral C3 seam: eight actual states
+------------------------------------------------
+For 0<=t<=1 define
+ A=(4+5t+3 sqrt(t(t+8)))/18,
+ B=5(1-t)/9,
+ C=(4+5t-3 sqrt(t(t+8)))/18,
+ |F_t> = sqrt(A) D0 + sqrt(B) D3 - sqrt(C) D6.
+A,B,C are nonnegative and sum to1. Furthermore AC=4(1-t)^2/81,
+Theta=-2sqrt(AC)-B=-(1-t), <Jz>=3(A-C)=sqrt(t(t+8)),
+and <Jx>=<Jy>=0. The quadrupole is axial, with eigenvalues
+(-5t/2,-5t/2,5t), hence ||Q||^2=75t^2/2.
+Therefore
+ (x,y,z)=(2t(t+8)/3, 5+10t^2, 20t(4-t)/3).
+In particular z=5x+5-y, the p2=0 supporting plane. This is the exact
+C3 boundary of the already proved filtered-octa patch. It is a color seam
+inside a flat body face, not a new geometric ridge.
+The new sample parameters are t=j/9, j=1,...,8.
+Source: Julia/N6_filtered_octa_attainment.jl, n6fo_c3_state/point.
+
+2. The attained C5-to-omega straight segment: seven actual states
+---------------------------------------------------------------
+The explicit seven-Dicke-level radical family R_t is provided in the
+sample metadata, including every auxiliary variable. Its source is
+Julia/N6_rankfour_equality_segment.jl, n6rank4_equality_state.
+For 1<=t<=sqrt(7/5),
+ q=|Theta|^2=[13(t^2-1)/(4(5-2t^2))]^2,
+ (x,y,z)=(3/2-474q/169, 99/10+3234q/845, 11-2300q/169),
+ 0<=q<=169/484.
+Every point satisfies 65y+63z-217x=1011. The endpoints are the C5
+junction and omega. The complete equality-state theorem proves that
+this straight segment is the FULL attainable sector image on that
+supporting plane (including the exceptional C2 orbit at an interior
+sector point). The new samples use t=(40+j)/40, j=1,...,7.
+These are actual normalized state vectors, not superpositions inferred
+from line interpolation. All six sectors are independently recomputed
+from Dicke marginal purities in build_n6_boundary_samples.py.
+
+3. Why no violet states can be put on the annotated curved crease
+----------------------------------------------------------------
+The first annotated curve is the rank-four-plane / retained paired-
+spectral crease. Its equation is retained paired margin=0, in addition
+to the supporting-plane equality. The existing complete equality theorem
+restricts any attaining pure state to the straight segment in section2.
+Here is a direct exact check that its open portion misses that crease.
+
+Put Delta=15+5x-y-z, v=sqrt(Delta/40). Along the segment,
+ 3/55<=v<=1/5,
+ q=169(1-25v^2)/448,
+ g=37+3x-5y+48q+sqrt(40Delta)
+  =(2/7)(1-5v)(135v-1).
+The retained paired bound is g>=max(R1,R2), where
+ a=1/4+v/2, h=1/4+v+5v^2,
+ k=1+(2sqrt(2)-8)a+(22-4sqrt(2))a^2,
+ R1=4Delta q/k,
+ R2=16Delta q/[sqrt(h+4a sqrt(q))+sqrt(h)]^2.
+On this interval
+ k-h=(2v+1)[1+2sqrt(2)+(2-4sqrt(2))v]/8>0,
+so R1<=4Delta q/h. The squared denominator of R2 is >=4h,
+so R2<=4Delta q/h as well. The exact factorization
+ g h-4Delta q=(5v-1)^2(305v^2+126v-1)/14
+is strictly positive for 3/55<=v<1/5. Indeed the final polynomial
+is increasing there and has value4102/605>0 at3/55. Consequently
+ g>max(R1,R2)
+for every segment point except the C5 junction, where v=1/5,q=0.
+Thus the curved crease itself has no attaining states except that
+junction. Omega lies inside the plane face, away from the curved crease.
+The new selectable R_t points show the actual nearby attainable locus,
+without falsely certifying the gray outer crease.
+
+Scope
+-----
+All 27 original manuscript markers and analytical body geometry are
+unchanged. The requested15 additional violet points are explicit state
+samples on the two proved loci above. Neither a convex hull nor failure
+of numerical fitting is used to make an attainment/exclusion claim.

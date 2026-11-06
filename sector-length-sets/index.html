@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore sector-length sets of pure symmetric three-, four-, five- and six-qubit states, with explicit Dicke states and interactive Majorana constellations.">
+  <meta name="theme-color" content="#faf9f5">
+  <title>Sector-length geometry · Symmetric states</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="state-picker.css?v=80162afbaeaf">
+  <script defer src="vendor/three.min.js"></script>
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="vendor/katex/auto-render.min.js"></script>
+  <script defer src="math-labels.js"></script>
+  <script defer src="state-picker.js?v=80162afbaeaf"></script>
+  <script defer src="majorana-math.js"></script>
+  <script defer src="data/small-n-display.js"></script>
+  <script defer src="data/small-n-constructors.js"></script>
+  <script defer src="data/n6-display.js"></script>
+  <script defer src="data/n6-smooth-geometry.js"></script>
+  <script defer src="data/n6-manuscript-nodes.js"></script>
+  <script defer src="data/n6-boundary-samples.js"></script>
+  <script defer src="data/n6-paired-boundary-samples.js"></script>
+  <script defer src="data/exact-small-n-display.js"></script>
+  <script defer src="data/exact-n6.js?v=ee2c66d81ec4"></script>
+  <script defer src="data/exact-sector-values.js"></script>
+  <script defer src="symmetry-axes.js"></script>
+  <script defer src="data/export-fonts.js"></script>
+  <script defer src="svg-export.js"></script>
+  <script defer src="static-occlusion.js"></script>
+  <script defer src="viewer.js"></script>
+  <script defer src="app.js?v=47b9753932d6"></script>
+</head>
+<body>
+  <a class="skip" href="#explorer">Skip to explorer</a>
+  <header class="site-header">
+    <a class="wordmark" href="#n=6">Symmetric states <span>/ sector geometry</span></a>
+    <nav aria-label="Main navigation">
+      <a href="https://aenictusgithub.github.io/symmetric-state-catalogues-public/symmetric-sector-catalogue/index.html">Extremal-state catalogue ↗</a>
+      <a href="notes.html">Definitions &amp; evidence</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THE GEOMETRY OF SYMMETRIC PURE STATES</p>
+      <h1 id="page-title">Sector-length <em>sets</em></h1>
+      <p>Achievable sector-length tuples for pure symmetric states.</p>
+    </section>
+    <section id="explorer" aria-label="Interactive sector-length atlas">
+      <div class="explorer-bar">
+        <div class="n-tabs" role="group" aria-label="Number of qubits">
+          <button type="button" data-n="3" aria-label="N equals 3 qubits" aria-pressed="false">$N = 3$</button>
+          <button type="button" data-n="4" aria-label="N equals 4 qubits" aria-pressed="false">$N = 4$</button>
+          <button type="button" data-n="5" aria-label="N equals 5 qubits" aria-pressed="false">$N = 5$</button>
+          <button type="button" data-n="6" aria-label="N equals 6 qubits" aria-pressed="true">$N = 6$</button>
+        </div>
+        <p id="set-status" class="set-status"></p>
+      </div>
+      <div class="workspace">
+        <section class="geometry-panel" aria-labelledby="geometry-title">
+          <div class="panel-heading">
+            <div><p class="eyebrow">SECTOR-LENGTH SPACE</p><h2 id="geometry-title">Six-qubit geometry</h2></div>
+            <div class="plot-actions"><button id="reset-sector-view" class="quiet-button" type="button">Reset view</button><button id="export-plot" class="quiet-button" type="button">Export SVG ↓</button></div>
+          </div>
+          <div id="sector-view" class="sector-view" role="group" aria-label="Rotatable sector-length set. Select a named state below, or hover and click a violet node.">
+            <canvas id="sector-canvas" role="img" aria-label="Sector-length geometry. Hover or click a violet node; use the named state selector for keyboard access.">The plot requires a browser with WebGL. Every named state remains available in the state selector.</canvas>
+            <div id="sector-labels" class="plot-labels" aria-hidden="true"></div>
+            <div class="view-presets" id="view-presets" role="group" aria-label="View direction">
+              <button data-view="main" type="button" aria-pressed="true">Main</button>
+              <button data-view="alternative" type="button" aria-pressed="false">Alternative</button>
+              <button data-view="rear" type="button" aria-pressed="false">Rear</button>
+            </div>
+            <p class="plot-gesture" id="plot-gesture">Drag to rotate · Scroll to zoom</p>
+          </div>
+          <div class="plot-controls">
+            <label><input id="show-outer" type="checkbox" checked> <span id="outer-label">Proved outer region</span></label>
+            <label class="label-mode" for="show-labels">Labels <select id="show-labels" aria-label="State labels"><option value="key">Key states</option><option value="all">All states</option><option value="none">None</option></select></label>
+          </div>
+          <div class="legend" aria-label="Plot legend">
+            <span><i class="legend-dot violet"></i> Attained state</span>
+              <span id="attained-region-key" hidden><i class="legend-area violet-region"></i> <span id="attained-region-label">Attained region</span></span>
+            <span id="gray-key"><i class="legend-dot gray"></i> Excluded or not certified</span>
+          </div>
+          <p id="geometry-note" class="geometry-note"></p>
+          <p class="interaction-note">Hover a violet point to preview · Click to select</p>
+        </section>
+        <aside class="state-panel" aria-labelledby="state-title">
+          <div class="panel-heading"><div><p class="eyebrow">THE SELECTED STATE</p><h2 id="state-title">Octahedral state</h2></div><span id="selection-mode" class="selection-mode">Selected</span></div>
+          <label class="select-label" for="state-select">Named state</label>
+          <select id="state-select" aria-label="Named state"></select>
+          <p id="state-evidence" class="state-evidence"></p>
+          <div id="state-formula" class="state-formula" aria-label="State in the normalized Dicke basis"></div>
+          <div id="parameter-inline" class="parameter-inline" hidden></div>
+          <p id="dicke-shorthand" class="basis-note" hidden></p>
+          <details id="analytical-details" class="analytical-details" hidden><summary>Exact parameters &amp; definitions</summary><div id="analytical-parameters"></div></details>
+          <p id="no-state" class="no-state" hidden>No pure-state representative is assigned to this gray outer-region node.</p>
+          <section class="majorana-section" aria-labelledby="majorana-title">
+            <div class="majorana-heading"><h3 id="majorana-title">Majorana representation</h3><div class="majorana-quick"><span id="star-count"></span><button id="export-majorana-svg" type="button" class="quiet-button">Export SVG ↓</button></div></div>
+            <div id="majorana-view" class="majorana-view" role="group" aria-label="Rotatable Majorana constellation of the selected state">
+              <canvas id="majorana-canvas" role="img" aria-label="Majorana sphere">Majorana sphere</canvas>
+              <div id="majorana-labels" class="plot-labels" aria-hidden="true"></div>
+            </div>
+            <div class="symmetry-controls"><label><input id="show-symmetry" type="checkbox" checked> $C_n$ symmetry axes</label><label class="symmetry-order-label" for="symmetry-order">Show <select id="symmetry-order"><option value="highest">Highest order</option><option value="all">All orders</option></select></label></div><p id="symmetry-summary" class="symmetry-summary"></p><div class="alignment-controls"><button id="align-symmetry" type="button" class="quiet-button" aria-label="Align highest rotational symmetry axis with z">Align highest $C_n$ with $z$</button><span id="alignment-note" hidden>Display frame aligned with $z$</span></div>
+            <div class="sphere-controls">
+              <label><input id="show-hull" type="checkbox" checked> Constellation hull</label>
+              <div class="rotation-buttons" role="group" aria-label="Rotate Majorana sphere"><button type="button" data-sphere-turn="left" aria-label="Rotate constellation left">←</button><button type="button" data-sphere-turn="up" aria-label="Rotate constellation up">↑</button><button type="button" data-sphere-turn="down" aria-label="Rotate constellation down">↓</button><button type="button" data-sphere-turn="right" aria-label="Rotate constellation right">→</button><button id="reset-sphere" type="button" class="quiet-button">Reset</button></div>
+            </div>
+            <p class="sphere-key"><span class="front-star">●</span> Front <span class="rear-star">●</span> Back · Numbers indicate multiplicity</p>
+          </section>
+          <div id="sector-values" class="sector-values" aria-label="Full sector-length tuple"></div>
+          <details id="sector-definitions" class="analytical-details" hidden><summary>Exact sector definitions</summary><div id="sector-definition-equations"></div></details>
+          <div class="state-actions"><button id="download-state" type="button">Download state ↓</button><button id="copy-link" type="button" class="quiet-button">Copy link ↗</button></div>
+          <details id="numeric-details"><summary>Dicke coefficients &amp; verification</summary><div id="coefficients"></div><p id="verification" class="verification"></p><p class="basis-note">|D<sub>N</sub><sup>(k)</sup>⟩ is normalized; k counts excitations. Global phase and collective orientation do not affect the sector lengths.</p></details>
+          <div id="family-control" class="family-control" hidden><label for="family-slider" id="family-label">Explore this family</label><input id="family-slider" type="range" min="0" max="100" step="1" value="0"><p id="family-value"></p></div>
+        </aside>
+      </div>
+      <div id="notification" role="status" aria-live="polite"></div>
+    </section>
+    <section class="reading-note"><p><strong>A set, rather than a convex hull.</strong> For $N=6$, the manuscript’s gray and violet nodes are supplemented by selected attained boundary states; $N=5$ also includes boundary samples. Violet nodes have explicit normalized pure-state representatives. No line or interpolated volume is declared achievable merely because its endpoints are. For $N=6$, the gray body is a necessary outer region; the full achievable set remains incompletely characterized.</p><a href="notes.html">Read the conventions, bounds and data provenance →</a></section>
+  </main>
+  <footer><span>Pure symmetric multiqubit states · N = 3–6</span><span>Reproducible states · Local computation · No external services</span></footer>
+  <noscript>This atlas needs JavaScript. The data files include all named states and their sector lengths.</noscript>
+</body>
+</html>
