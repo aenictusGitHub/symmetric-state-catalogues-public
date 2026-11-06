@@ -30,3 +30,6 @@ the global maximum. The combined-state builder reads proofs.json when available 
 global maximum only when its exact attaining order meets a proved upper bound.
 
 proof.tex in each subfolder states the construction and proof scope.
+
+Updated universal bounds: t_max(27) and t_max(29) are both in[5,6].
+N28 has proved maximum6, and N30 has proved maximum7.

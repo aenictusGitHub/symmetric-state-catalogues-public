@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "title": "Pure anticoherent symmetric states",
-  "compiledDate": "2026-11-05",
+  "compiledDate": "2026-11-06",
   "scope": "Pure symmetric states for every qubit number n=1–60 and AC orders t=1–14. Exact witnesses, high-precision numerical library states, proved exclusions and unresolved cells are distinguished. Orders above 14 are excluded throughout this range by the displayed general bounds.",
   "coreNumbers": [
     1,
@@ -7261,9 +7261,27 @@
       "n": 29,
       "t": 7,
       "stateIds": [],
-      "status": "unknown",
-      "notes": "Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.",
-      "references": []
+      "status": "impossible",
+      "proofId": "n29-t7-four-copy-ppt",
+      "notes": "A rigorously validated four-copy partial-transpose certificate excludes every pure seventh-order AC state.",
+      "references": [
+        {
+          "title": "Exact state and rigorous maximum-order range",
+          "url": "./research/n27-n30/index.html#n29"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n27-n30/n29-t7/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n29-t7/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n29-t7/certificate-bundle.zip"
+        }
+      ]
     },
     {
       "id": "n29-t8",
@@ -7271,24 +7289,24 @@
       "t": 8,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n29-t8-four-copy",
-      "notes": "A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.",
+      "proofId": "n29-t7-four-copy-ppt",
+      "notes": "A rigorously validated four-copy partial-transpose certificate excludes every pure seventh-order AC state.",
       "references": [
         {
-          "title": "Exact states and universal upper bounds",
+          "title": "Exact state and rigorous maximum-order range",
           "url": "./research/n27-n30/index.html#n29"
         },
         {
-          "title": "Complete LaTeX exclusion proof",
-          "url": "./research/n27-n30/n29-t8/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n27-n30/n29-t7/proof.tex"
         },
         {
           "title": "Independent rigorous verification",
-          "url": "./research/n27-n30/n29-t8/independent-verification.json"
+          "url": "./research/n27-n30/n29-t7/independent-verification.json"
         },
         {
           "title": "Portable certificate bundle",
-          "url": "./research/n27-n30/n29-t8/certificate-bundle.zip"
+          "url": "./research/n27-n30/n29-t7/certificate-bundle.zip"
         }
       ]
     },
@@ -7298,24 +7316,24 @@
       "t": 9,
       "stateIds": [],
       "status": "impossible",
-      "proofId": "n29-t8-four-copy",
-      "notes": "A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.",
+      "proofId": "n29-t7-four-copy-ppt",
+      "notes": "A rigorously validated four-copy partial-transpose certificate excludes every pure seventh-order AC state.",
       "references": [
         {
-          "title": "Exact states and universal upper bounds",
+          "title": "Exact state and rigorous maximum-order range",
           "url": "./research/n27-n30/index.html#n29"
         },
         {
-          "title": "Complete LaTeX exclusion proof",
-          "url": "./research/n27-n30/n29-t8/proof.tex"
+          "title": "Complete LaTeX proof",
+          "url": "./research/n27-n30/n29-t7/proof.tex"
         },
         {
           "title": "Independent rigorous verification",
-          "url": "./research/n27-n30/n29-t8/independent-verification.json"
+          "url": "./research/n27-n30/n29-t7/independent-verification.json"
         },
         {
           "title": "Portable certificate bundle",
-          "url": "./research/n27-n30/n29-t8/certificate-bundle.zip"
+          "url": "./research/n27-n30/n29-t7/certificate-bundle.zip"
         }
       ]
     },
@@ -149294,7 +149312,7 @@
       "title": "29 qubits cannot be order-8 AC",
       "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.",
       "formulaLatex": "t_{\\max}(29)\\le7",
-      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5–7; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>A stronger fourth-copy partial-transpose certificate now excludes seventh order and improves the maximum-order interval to 5–6. This eighth-order exclusion is retained as an auxiliary result.</p>",
       "references": [
         {
           "title": "Exact states and universal upper bounds",
@@ -149366,6 +149384,32 @@
         }
       ],
       "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n29-t7-four-copy-ppt",
+      "title": "29 qubits cannot be seventh-order AC",
+      "summary": "A rigorously validated four-copy partial-transpose certificate excludes every pure seventh-order AC state.",
+      "formulaLatex": "t_{\\max}(29)\\le6",
+      "bodyHtml": "<p>A hypothetical seventh-order state supplies a positive, trace-one four-copy moment with positive partial time reversal across the two–two split. Its low-multipole contractions vanish.</p><p>A separating identity combines those equations with positive partial-transpose expectations. Exact factorial contractions and Racah recoupling, positive dyadic Gram factors, and outward-rounded bounds on the representation and certificate errors give a contradiction for arbitrary complex symmetric states.</p><p>The explicit fifth-order radical state therefore gives the rigorous interval 5–6. Sixth-order existence remains unresolved.</p>",
+      "references": [
+        {
+          "title": "Exact state and rigorous maximum-order range",
+          "url": "./research/n27-n30/index.html#n29"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n27-n30/n29-t7/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n29-t7/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n29-t7/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
     }
   ],
   "sourceCaveats": [
@@ -149427,9 +149471,9 @@
     "coreEntryCount": 749,
     "entryCount": 749,
     "coreStatusCounts": {
-      "impossible": 301,
+      "impossible": 302,
       "exists": 289,
-      "unknown": 96,
+      "unknown": 95,
       "numerical": 63
     },
     "method": "Exact constructions use symbolic reduced-state checks or rational contraction certificates for their algebraic defining equations. Two- through six-copy positivity certificates use exact rational arithmetic or validated outward-rounded interval bounds with independent verification. Cross-catalogue rectangular-tensor theorems and the sixteen-qubit equality obstruction are included. Library coefficients are independently checked at 100-digit precision from saved 85-digit components; their AC evidence remains numerical."

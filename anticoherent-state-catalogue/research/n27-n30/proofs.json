@@ -5,7 +5,7 @@
       "title": "27 qubits cannot be order-7 AC",
       "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.",
       "formulaLatex": "t_{\\max}(27)\\le6",
-      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5\u20136; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5–6; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
       "references": [
         {
           "title": "Exact states and universal upper bounds",
@@ -31,7 +31,7 @@
       "title": "28 qubits: maximum pure AC order is 6",
       "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.",
       "formulaLatex": "t_{\\max}(28)=6",
-      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The independently verified order-6 state attains this universal upper bound, proving the maximum 6. Every higher order is excluded by nesting.</p>",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The independently verified order-6 state attains this universal upper bound, proving the maximum 6. Every higher order is excluded by nesting.</p>",
       "references": [
         {
           "title": "Exact states and universal upper bounds",
@@ -57,7 +57,7 @@
       "title": "29 qubits cannot be order-8 AC",
       "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-8 AC state.",
       "formulaLatex": "t_{\\max}(29)\\le7",
-      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch\u2013Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5\u20137; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>A stronger fourth-copy partial-transpose certificate now excludes seventh order and improves the maximum-order interval to 5–6. This eighth-order exclusion is retained as an auxiliary result.</p>",
       "references": [
         {
           "title": "Exact states and universal upper bounds",
@@ -129,6 +129,32 @@
         }
       ],
       "kind": "exact catalogue theorem"
+    },
+    {
+      "id": "n29-t7-four-copy-ppt",
+      "title": "29 qubits cannot be seventh-order AC",
+      "summary": "A rigorously validated four-copy partial-transpose certificate excludes every pure seventh-order AC state.",
+      "formulaLatex": "t_{\\max}(29)\\le6",
+      "bodyHtml": "<p>A hypothetical seventh-order state supplies a positive, trace-one four-copy moment with positive partial time reversal across the two–two split. Its low-multipole contractions vanish.</p><p>A separating identity combines those equations with positive partial-transpose expectations. Exact factorial contractions and Racah recoupling, positive dyadic Gram factors, and outward-rounded bounds on the representation and certificate errors give a contradiction for arbitrary complex symmetric states.</p><p>The explicit fifth-order radical state therefore gives the rigorous interval 5–6. Sixth-order existence remains unresolved.</p>",
+      "references": [
+        {
+          "title": "Exact state and rigorous maximum-order range",
+          "url": "./research/n27-n30/index.html#n29"
+        },
+        {
+          "title": "Complete LaTeX proof",
+          "url": "./research/n27-n30/n29-t7/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n29-t7/independent-verification.json"
+        },
+        {
+          "title": "Portable certificate bundle",
+          "url": "./research/n27-n30/n29-t7/certificate-bundle.zip"
+        }
+      ],
+      "kind": "validated catalogue theorem"
     }
   ],
   "upperBounds": [
@@ -144,8 +170,8 @@
     },
     {
       "n": 29,
-      "excludedOrder": 8,
-      "proofId": "n29-t8-four-copy"
+      "excludedOrder": 7,
+      "proofId": "n29-t7-four-copy-ppt"
     },
     {
       "n": 30,
