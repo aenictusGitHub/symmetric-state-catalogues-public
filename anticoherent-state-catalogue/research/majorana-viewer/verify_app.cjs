@@ -16,6 +16,7 @@ function session(name,withCoordinates=true){
  const hashListeners=[],loc={hash:'',href:'file:///offline/'+name+'/index.html'},win={katex:require(path.join(root,'vendor/katex/katex.min.js')),addEventListener(type,listener){if(type==='hashchange')hashListeners.push(listener);},MajoranaViewer:{open(r){opened=r;return true;},close(){opened=null;closes++;}}};
  const ctx={window:win,document:doc,location:loc,history:{replaceState(a,b,h){loc.hash=h;}},URLSearchParams,URL:FakeURL,Blob,console,setTimeout:()=>0,clearTimeout(){},navigator:{},matchMedia:()=>({matches:false})};
  vm.runInNewContext(fs.readFileSync(path.join(root,'data/catalogue.js'),'utf8'),ctx);
+ if(isAC)vm.runInNewContext(fs.readFileSync(path.join(root,'data/coefficient-latex.js'),'utf8'),ctx);
  if(withCoordinates)vm.runInNewContext(fs.readFileSync(path.join(root,'data/majorana.js'),'utf8'),ctx);
  const modalInterceptors=win.MajoranaViewer;
  for(const file of ['majorana-symmetry.js','symmetry-groups.js','point-groups.js','majorana-viewer.js'])vm.runInNewContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});

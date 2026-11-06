@@ -153,6 +153,11 @@
     return `${f(re)} ${im<0?'−':'+'} ${f(Math.abs(im))}i`;
   }
   function exactText(expression) { return String(expression).replace(/\bI\b/g,'i').replace(/sqrt\(/g,'√(').replace(/\*\*/g,'^').replace(/\*/g,'·'); }
+  function exactAmplitude(expression) {
+    if(expression===undefined)return '—';
+    const latex=window.AC_COEFFICIENT_LATEX?.[String(expression)];
+    return typeof latex==='string'?math('\\displaystyle '+latex,false,'coefficient-math'):escape(exactText(expression));
+  }
   function isNumerical(state) { return state?.status==='numerical' || state?.evidenceType==='numerical'; }
   function residual(row) {
     if(!row)return null;
@@ -177,7 +182,7 @@
     const implicit=!!state.implicitAlgebraicDefinition;
     const approximate=numeric||implicit;
     const support=state.support || (state.exactCoefficients||state.coefficients||[]).map((_,i)=>i).filter(i=>state.exactCoefficients?String(state.exactCoefficients[i])!=='0':JSON.stringify(state.coefficients?.[i])!=='[0,0]');
-    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th>${approximate?'':'<th scope="col">Exact amplitude</th>'}<th scope="col">${approximate?'Approximate amplitude':'Decimal'}</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th>${approximate?'':`<td class="exact-amplitude">${escape(state.exactCoefficients?.[r]!==undefined?exactText(state.exactCoefficients[r]):'—')}</td>`}<td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.${implicit?' Decimal components approximate the algebraic state defined by the linked exact certificate.':numeric?' Values are numerical approximations.':''}</p></details>`;
+    return `<details class="coefficient-disclosure"><summary>Dicke coefficients <span>${support.length} nonzero</span></summary><div class="coefficient-scroll"><table class="coefficient-table"><thead><tr><th scope="col">r</th>${approximate?'':'<th scope="col">Exact amplitude</th>'}<th scope="col">${approximate?'Approximate amplitude':'Decimal'}</th></tr></thead><tbody>${support.map(r=>`<tr><th scope="row">${r}</th>${approximate?'':`<td class="exact-amplitude">${exactAmplitude(state.exactCoefficients?.[r])}</td>`}<td class="decimal-amplitude">${escape(state.coefficients?.[r]!==undefined?decimal(state.coefficients[r]):'—')}</td></tr>`).join('')}</tbody></table></div><p class="micro-copy">Amplitudes are ordered by excitation number. i denotes the imaginary unit; omitted amplitudes are zero.${implicit?' Decimal components approximate the algebraic state defined by the linked exact certificate.':numeric?' Values are numerical approximations.':''}</p></details>`;
   }
   function renderDetail() {
     window.MajoranaViewer?.close();

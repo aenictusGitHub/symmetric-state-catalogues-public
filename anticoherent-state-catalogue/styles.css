@@ -70,6 +70,8 @@ body{font-size:16px}
 .comparison-table thead th{font-size:12px;font-weight:500;color:var(--muted)}
 .comparison-table tbody th{width:45px;font-weight:600}
 .comparison-evidence{display:block;font-size:11px;line-height:1.6;color:var(--muted);margin-top:2px}
+.exact-amplitude .coefficient-math{display:inline-block;padding:4px 0}
+.exact-amplitude .katex{font-size:1.05em}
 
 /* Maximum-order status is separate from the exact/numerical state evidence. */
 .maximum-order-tag{display:inline-block;margin:10px 0 15px;padding:7px 10px;border:1px solid #d8c299;border-radius:3px;background:#f3ead9;color:#805b20;font-size:13px;line-height:1.45}.maximum-order-tag.proven{background:#e2eee5;border-color:#acc4b2;color:#205b49}.maximum-order-cell .cell-label{font-weight:650}.construction-card .maximum-order-tag{margin-top:12px;margin-bottom:10px}
