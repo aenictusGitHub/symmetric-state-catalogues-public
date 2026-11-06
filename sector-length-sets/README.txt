@@ -183,3 +183,10 @@ additional explicit pure-state samples. The elliptic arc uses a three-Dicke
 C2 family; the straight part uses the general real-Hodge construction.
 Long parameter lists keep the selected parameter on its own line above the
 definitions, so a fraction cannot drift beside the tall aligned block.
+
+Concise N=6 results
+-------------------
+references/N6-concise-results.pdf is a seven-page, lightweight overview of the
+principal bounds, current figure, explicit states and known boundary coverage.
+It credits J. Martin, O. Giraud and E. Serrano-Ensástiga and includes an AI-use
+acknowledgement. The complete 153-page proof supplement is retained separately.
