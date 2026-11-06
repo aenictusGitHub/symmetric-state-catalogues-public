@@ -6,6 +6,7 @@ import sympy as s
 from partition_catalogue import reindex
 from liege_library import attach_library
 from acliege_exact import attach_acliege_exact
+from pure_ac_updates import attach_pure_ac_updates
 
 ROOT=Path(__file__).resolve().parents[1]
 def read(path):return json.loads((ROOT/path).read_text())
@@ -161,6 +162,7 @@ assert all(sum(st['partition'])==st['n'] and sum(p['multiplicity'] for p in st['
 data=reindex(data)
 data=attach_library(data,ROOT)
 data=attach_acliege_exact(data,ROOT)
+data=attach_pure_ac_updates(data,ROOT)
 for name,value in [('catalogue.json',json.dumps(data,ensure_ascii=False,indent=2)+'\n'),('catalogue.js','window.MAJORANA_CATALOGUE='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n')]:
     (ROOT/'data'/name).write_text(value)
 with (ROOT/'data/catalogue.csv').open('w',newline='') as f:

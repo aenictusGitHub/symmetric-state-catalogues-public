@@ -5,7 +5,7 @@
       "title": "27 qubits cannot be order-7 AC",
       "summary": "A rigorously validated four-copy positivity certificate excludes every pure order-7 AC state.",
       "formulaLatex": "t_{\\max}(27)\\le6",
-      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>The currently proved interval for the maximum order is 5–6; failure to find an intermediate-order state is not used as an exclusion proof.</p>",
+      "bodyHtml": "<p>A hypothetical state gives a positive, trace-one rotationally averaged tensor-power moment. Vanishing spin multipoles through the specified order impose linear first-leg contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions and outward-rounded interval arithmetic certify a strictly positive separating combination. Recursive projection and polar-normalization bounds validate the complete symmetric representation. This contradicts trace one for arbitrary complex symmetric states.</p><p>This seventh-order certificate is retained as an auxiliary result. The stronger six-copy sixth-order exclusion proves that the maximum pure AC order is five.</p>",
       "references": [
         {
           "title": "Exact states and universal upper bounds",
@@ -155,13 +155,39 @@
         }
       ],
       "kind": "validated catalogue theorem"
+    },
+    {
+      "id": "n27-t6-six-copy-ppt",
+      "title": "Twenty-seven qubits: maximum pure AC order is five",
+      "summary": "A rigorously validated six-copy partial-transpose certificate excludes every pure sixth-order state; an exact fifth-order radical state attains the maximum.",
+      "formulaLatex": "t_{\\max}(27)=5",
+      "bodyHtml": "<p>A hypothetical sixth-order state gives a positive, trace-one rotationally averaged six-copy moment. It also has positive partial time reversal across one copy and the other five. Vanishing spin multipoles through rank six impose linear contraction equations.</p><p>Exact factorial Clebsch–Gordan contractions, positive binary Gram factors and outward-rounded interval bounds certify a strictly positive separating combination on the complete symmetric representation. The resulting contradiction covers arbitrary complex symmetric states, without a support or constellation-symmetry assumption.</p><p>The independently checked fifth-order radical state attains the maximum. Every higher order is excluded by nesting.</p>",
+      "references": [
+        {
+          "title": "Exact attaining state and maximum-order proof",
+          "url": "./research/n27-n30/index.html#n27"
+        },
+        {
+          "title": "Complete LaTeX exclusion proof",
+          "url": "./research/n27-n30/n27-t6/proof.tex"
+        },
+        {
+          "title": "Independent rigorous verification",
+          "url": "./research/n27-n30/n27-t6/independent-verification.json"
+        },
+        {
+          "title": "Certificate and download instructions",
+          "url": "./research/n27-n30/n27-t6/DOWNLOAD.txt"
+        }
+      ],
+      "kind": "validated catalogue theorem"
     }
   ],
   "upperBounds": [
     {
       "n": 27,
-      "excludedOrder": 7,
-      "proofId": "n27-t7-four-copy"
+      "excludedOrder": 6,
+      "proofId": "n27-t6-six-copy-ppt"
     },
     {
       "n": 28,

@@ -1,0 +1,515 @@
+{
+  "recordedDate": "2026-11-06",
+  "scientificConclusion": "The maximum pure AC order at N=27 is five. A separately verified six-copy partial-transpose certificate excludes order six; the exact radical fifth-order state attains the maximum.",
+  "universalProof": "../n27-t6/proof.tex",
+  "independentUniversalVerification": "../n27-t6/independent-verification.json",
+  "auxiliaryScope": "The symmetry proof and conditional time-reversal inequalities are exact partial results. Historical unsuccessful searches are not nonexistence proofs. No relaxed moment point is claimed to be feasible from small residuals.",
+  "earlierLocalizersAndControls": {
+    "n": 27,
+    "targetACOrder": 6,
+    "globalCaseSettled": false,
+    "rigorousMaximumOrderInterval": [
+      5,
+      6
+    ],
+    "exactSubclassExclusion": {
+      "properRotationOrdersAtLeast4": true,
+      "independentCases": 400,
+      "audit": "symmetry-independent-summary.json",
+      "possibleProperRotationalGroups": [
+        "C1",
+        "C2",
+        "C3",
+        "D3"
+      ],
+      "scope": "Symmetry subclass only; does not exclude every pure state."
+    },
+    "newNecessaryMapCuts": true,
+    "maps": [
+      {
+        "map": "ordinary-BH",
+        "requiredACOrder": 0,
+        "allOutputBlocks": 68,
+        "mostNegative": {
+          "L": 71,
+          "dimension": 335,
+          "minimumEigenvalue": -5.005535528152165e-19,
+          "negativeFrobeniusNorm": 5.005535528152165e-19
+        },
+        "adjointRelativeError": 1.1551301199157887e-14,
+        "sourceSHA256": "ed543dc49f03624e9c8203c1c442ea9cf1896654f3c9737d423fc1414bcb652d",
+        "report": "bh-full-scan.json"
+      },
+      {
+        "map": "even-ranks0,2",
+        "requiredACOrder": 4,
+        "allOutputBlocks": 68,
+        "mostNegative": {
+          "L": 47,
+          "dimension": 548,
+          "minimumEigenvalue": -9.33463112378116e-08,
+          "negativeFrobeniusNorm": 9.827607152799331e-08
+        },
+        "adjointRelativeError": 4.454896341986354e-16,
+        "sourceSHA256": "ed543dc49f03624e9c8203c1c442ea9cf1896654f3c9737d423fc1414bcb652d",
+        "report": "conditional-bh-full-scan.json"
+      },
+      {
+        "map": "strong-rank4",
+        "requiredACOrder": 6,
+        "allOutputBlocks": 68,
+        "mostNegative": {
+          "L": 47,
+          "dimension": 548,
+          "minimumEigenvalue": -7.004821075981348e-08,
+          "negativeFrobeniusNorm": 7.405729869643943e-08
+        },
+        "adjointRelativeError": 1.6322191570860765e-15,
+        "sourceSHA256": "ff01b5fc2d9a30c7901e01820daf637742237b508a04266322fdfef92a806afc",
+        "report": "strong4-full-scan.json"
+      },
+      {
+        "map": "safe-rank6",
+        "requiredACOrder": 6,
+        "allOutputBlocks": 68,
+        "mostNegative": {
+          "L": 45,
+          "dimension": 555,
+          "minimumEigenvalue": -1.102363704142594e-09,
+          "negativeFrobeniusNorm": 1.191092203079763e-09
+        },
+        "adjointRelativeError": 9.57333633144615e-16,
+        "sourceSHA256": "ff01b5fc2d9a30c7901e01820daf637742237b508a04266322fdfef92a806afc",
+        "report": "safe6-full-scan.json"
+      }
+    ],
+    "positiveControls": {
+      "ordinaryBH": "Generic complex Kramers pure projector plus independently assembled exactAC5 five-copy twirl.",
+      "evenRanks0and2": "Independently assembled N27 AC5 five-copy twirl (AC4 suffices).",
+      "strongRank4andSafeRank6": {
+        "passed": true,
+        "n": 49,
+        "exactACOrderAtLeast": 6,
+        "support": [
+          0,
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49
+        ],
+        "rationalProbabilities": [
+          "8937/168070",
+          "16931/84035",
+          "6431/84035",
+          "14187/84035",
+          "14187/84035",
+          "6431/84035",
+          "16931/84035",
+          "8937/168070"
+        ],
+        "exactDiagonalMomentsThrough6Verified": true,
+        "offdiagonalMomentsVanishBySupportGap7": true,
+        "oddKramersParity": true,
+        "rank0and2PlusStateFrameGramError": 2.220446049250313e-16,
+        "rank4CrossFrameError": 1.0280199263338657e-16,
+        "rank4NormalizedGramSixBodyReductionError": 2.7755575615628914e-17,
+        "rank4NormalizedGramMaximumEigenvalue": 0.17457783645317082,
+        "rank4StrongMapMinimumEigenvalue": -1.1115418691280452e-15,
+        "rank6SafeMapMinimumEigenvalue": -8.586900966352549e-17,
+        "scope": "Exact rational quadrature proves the AC6 control state. Floating matrix calculations control map implementation; they are not an N27 exclusion certificate."
+      },
+      "warning": "N27 AC5 is not a valid PSD control for the rank4 or rank6 extensions, which requireAC6. EvenN24 is not a valid Kramers control because Theta^2=+I."
+    },
+    "deliveredCutPackages": [
+      {
+        "map": "even-ranks0,2",
+        "rows": 21,
+        "modeRows": 20,
+        "aggregateRows": 1,
+        "layout": "conditional-bh-cut-layout.json",
+        "unitRows": "conditional-bh-unit-rows.npy",
+        "rawNorms": "conditional-bh-raw-row-norms.npy",
+        "positiveFactorFiles": [
+          "conditional-bh-aggregate-factors.npz",
+          "conditional-bh-cut-factors.npz"
+        ],
+        "originSHA256": "ff01b5fc2d9a30c7901e01820daf637742237b508a04266322fdfef92a806afc"
+      },
+      {
+        "map": "strong-rank4",
+        "rows": 21,
+        "modeRows": 20,
+        "aggregateRows": 1,
+        "layout": "strong4-cut-layout.json",
+        "unitRows": "strong4-unit-rows.npy",
+        "rawNorms": "strong4-raw-row-norms.npy",
+        "positiveFactorFiles": [
+          "strong4-aggregate-factors.npz",
+          "strong4-cut-factors.npz"
+        ],
+        "originSHA256": "ff01b5fc2d9a30c7901e01820daf637742237b508a04266322fdfef92a806afc"
+      },
+      {
+        "map": "safe-rank6",
+        "rows": 7,
+        "modeRows": 6,
+        "aggregateRows": 1,
+        "layout": "safe6-cut-layout.json",
+        "unitRows": "safe6-unit-rows.npy",
+        "rawNorms": "safe6-raw-row-norms.npy",
+        "positiveFactorFiles": [
+          "safe6-aggregate-factors.npz",
+          "safe6-cut-factors.npz"
+        ],
+        "originSHA256": "ff01b5fc2d9a30c7901e01820daf637742237b508a04266322fdfef92a806afc"
+      }
+    ],
+    "totalDeliveredRows": 49,
+    "normalization": "Stored rows have unit source-Hilbert-Schmidt norm. Positive factors for a unit row are storedF/sqrt(rawNorm). A candidate dual must be re-evaluated with its exact dyadic positive factors.",
+    "proofTools": {
+      "nativeConditionalArbModule": "/private/tmp/ac27-ac29-exclusion/certificate_tools/conditional_bh_term.py",
+      "control": "conditional-bh-support-control.json",
+      "nativeFirstPPTChunkedBuilder": "/private/tmp/ac27-ac29-exclusion/make_ppt_first_certificate.py",
+      "balancedPPTArbModule": "/private/tmp/ac27-ac29-exclusion/certificate_tools/ppt23_term.py",
+      "chunkedArchiveBuilder": "/private/tmp/ac27-ac29-exclusion/make_certificate_chunked_r.py",
+      "scope": "Support modules have independent controls; no complete N27 AC6 exclusion certificate exists yet."
+    },
+    "otherBoundedSearches": {
+      "singleAuxiliarySpin": {
+        "maximumSpin": 40,
+        "strictSignLPs": 1652,
+        "zeroAllowedLPs": 1652,
+        "separatorFound": false
+      },
+      "twoAuxiliarySpins": {
+        "adjacentPairs": 18,
+        "SOCPs": 246332,
+        "separatorFound": false,
+        "samplingScope": "Some pairs fully enumerated; large angle grids bounded to20k cases."
+      },
+      "threeAuxiliarySpins": {
+        "spins2": [
+          15,
+          17,
+          19
+        ],
+        "gridSDPs": 21010,
+        "continuousRestarts": 261,
+        "continuousSDPs": 4428,
+        "separatorFound": false
+      },
+      "continuousNConstruction": {
+        "rootCharts": 29,
+        "localStationaryNValues": [
+          27.34977300935788,
+          27.350170161216855
+        ],
+        "target27RootFound": false,
+        "scope": "Artificial noninteger-N continuation; local barriers do not prove a global lower bound."
+      }
+    },
+    "ownedNumericalJobsFinished": true,
+    "scope": "All new map violations are cuts of numerical moment relaxations. No numerical infeasibility or failed search is promoted to a global nonexistence proof. The exact high-rotation exclusion is stated separately."
+  },
+  "fiveCopySearch": {
+    "schema": "pure-ac-scoped-numerical-probe-v1",
+    "n": 27,
+    "t": 6,
+    "copies": 5,
+    "conclusion": "This five-copy search did not find a separating certificate. Its nonzero residuals do not certify feasibility, a pure-state witness, or nonexistence.",
+    "source": {
+      "physicalSymmetricMomentDimension": 201376,
+      "nonemptySpinBlocks": 67,
+      "highestWeightColumns": 4035,
+      "realSymmetricInvariantCoordinates": 186808,
+      "sourcePSDImposed": true,
+      "traceOneImposed": true
+    },
+    "anticoherence": {
+      "allRanksThrough": 6,
+      "completeReducedScalarEntries": 307404,
+      "entriesClaimedIndependent": false
+    },
+    "additionalNecessaryConditions": {
+      "oneFourPPTOutputSpinsScanned": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127,
+        129,
+        131,
+        133,
+        135
+      ],
+      "twoThreePPTOutputSpinsScanned": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127,
+        129,
+        131,
+        133,
+        135
+      ],
+      "coneEnforcedBy": "Selected exact positive-dual-factor scalar cuts, refreshed from the streamed output spectra; a full output PSD cone was not solved directly.",
+      "retainedPPTCuts": 675,
+      "additionalConditionalKramersCuts": 49,
+      "totalScalarCuts": 724,
+      "conditionalCutPackages": [
+        {
+          "map": "conditional-bh",
+          "rows": 21,
+          "minimumUnitConstraintAtFinalPoint": -1.6465715953442862e-07,
+          "negativeRows": 21
+        },
+        {
+          "map": "strong4",
+          "rows": 21,
+          "minimumUnitConstraintAtFinalPoint": -1.264883911126574e-07,
+          "negativeRows": 21
+        },
+        {
+          "map": "safe6",
+          "rows": 7,
+          "minimumUnitConstraintAtFinalPoint": -2.3520018955835442e-08,
+          "negativeRows": 7
+        }
+      ],
+      "conditionalMaps": [
+        {
+          "tensorRanks": [
+            0,
+            2
+          ],
+          "coefficients": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "tensorRanks": [
+            0,
+            2,
+            4
+          ],
+          "coefficients": [
+            "1",
+            "1",
+            "7/27"
+          ]
+        },
+        {
+          "tensorRanks": [
+            0,
+            6
+          ],
+          "coefficients": [
+            "1",
+            "1/13"
+          ]
+        }
+      ],
+      "conditionalMapScope": "Odd-qubit pure AC6 states. Analytic Kramers and mixed-AC reduction bounds justify the maps; their sampled cuts alone did not produce a separator."
+    },
+    "finalBoundedContinuation": {
+      "iterations": 2000,
+      "projectedGradientTailIterations": 500,
+      "numericalSeparatorFound": false,
+      "final": {
+        "iteration": 2000,
+        "objective": 2.741448118162115e-13,
+        "physicalACResidual": 3.937781417909804e-07,
+        "scaledACResidual": 7.384908655186245e-07,
+        "scaledCutNegativeNorm": 5.4045029169904444e-08,
+        "minSourceWeightedEigenvalue": -7.701420307873544e-13,
+        "gradientNorm": 4.745327074621254e-10,
+        "normalizedSourceGap": -0.0016229482576789987,
+        "L": 0.5,
+        "trace": 1.0000000000000002
+      }
+    },
+    "dualAveragingDiagnostic": {
+      "snapshots": 48,
+      "numericalSeparatorFound": false,
+      "best": {
+        "snapshotCount": 21,
+        "emaFraction": 0.75,
+        "sourceWeightedMargin": -5.808515055185013e-13,
+        "normalizedSourceGap": -0.0010990374102632038,
+        "gradientNorm": 5.285093119618154e-10
+      },
+      "last": {
+        "snapshotCount": 48,
+        "emaFraction": 0.0,
+        "sourceWeightedMargin": -7.511308902507621e-13,
+        "normalizedSourceGap": -0.0015339356914378483,
+        "gradientNorm": 4.896756066394693e-10
+      }
+    },
+    "unrelatedSixCopyProof": "The six-copy candidate and its rigorous verification are separate. No five-copy numerical result here is used as an exclusion proof.",
+    "inputSHA256": {
+      "final-report.json": "ceb8914ad1b010986f702ada3d9ba81a0e096b6cbf86e5ebf75e87ec06e8a90c",
+      "final-merge-report.json": "30e50a6c04c90d1c276dcbc9b7f2270aad4e5eed38189cb4adf30a9ea641a826",
+      "dual-average-report.json": "acf28454b838451cdc333fcab04ced31e3b7e10d3bce683dee547c3f8725262d",
+      "final-cut-definitions.json": "60a4f65bcfef24bfb34dfd4059d561a5105d84fccf63e01d232f0c9d91aa1561"
+    }
+  },
+  "sixCopyOutcome": {
+    "passed": true,
+    "n": 27,
+    "t": 6,
+    "copies": 6,
+    "spinBlocks": 81,
+    "inputMomentDimension": 1107568,
+    "realInvariantVariables": 4129515,
+    "allSourceBlocksStrictlyPositive": true,
+    "PPTDualPositiveByExactGramFactors": true,
+    "PPTSplit": [
+      1,
+      5
+    ],
+    "PPTOutputSpins": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "minimumCertifiedSourceEigenvalue": {
+      "lowerRational": "124690308292443421456646117192972577409/5846006549323611672814739330865132078623730171904",
+      "diagnosticApproximation": 2.132914276445178e-11
+    },
+    "precisionBits": 128,
+    "arbitraryComplexPureStatesCovered": true,
+    "certificateMetadataSHA256": "ca3b31ae137c1034edf1553a110fcdfb09b0b021d71a23333ac5acf2118e6f3e"
+  }
+}

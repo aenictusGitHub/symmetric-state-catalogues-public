@@ -1,19 +1,15 @@
 {
   "recordedDate": "2026-11-06",
-  "scientificConclusion": "For N=27 and N=29, exact fifth-order states and independently verified universal seventh-order exclusions prove 5 <= t_max <= 6. Sixth-order existence is not settled by the numerical tests recorded here.",
+  "scientificConclusion": "The numerical tests recorded here did not settle sixth-order existence. A later rigorous six-copy partial-transpose certificate now proves t_max(27)=5. At N=29, the rigorous interval remains 5–6.",
   "proofScope": "This is a compact discovery report, not an existence, relaxed-feasibility or nonexistence certificate. The rigorous proof bundles are separate.",
   "fourCopyMomentTests": {
     "task": "Order6 upper-exclusion discovery for N27,N29",
     "scope": "Scoped numerical discovery summary only; no new theorem at order6.",
-    "rigorousStatus": "Exact fifth-order witnesses and independently verified seventh-order exclusions give5<=t_max<=6 for both sizes.",
+    "rigorousStatus": "At the time of these tests, fifth-order witnesses and seventh-order exclusions gave 5<=t_max<=6 for both sizes. N=27 is now settled by the separate six-copy certificate.",
     "cases": [
       {
         "n": 27,
         "targetOrder": 6,
-        "rigorousKnownMaximumOrderInterval": [
-          5,
-          6
-        ],
         "fourCopyMomentDimension": 31465,
         "realInvariantMomentVariables": 6964,
         "completeNecessaryReducedACContractionEquations": 8245,
@@ -124,15 +120,15 @@
         "snapshotSHA256": "2892bb28d44d95b9c8574786c695a8a6f196aa6c78fd9599ecd08a58c9c2df70",
         "scientificConclusion": "The complete four-copy AC6 contraction map and both complete partial-time-reversal output spectra admit a nearly feasible numerical moment. No positive separating dual was found. This is neither a pure sixth-order AC witness nor a certified feasible moment, and it does not prove nonexistence.",
         "scope": "All AC contraction equations were imposed. Optimization used the listed active1|3and2|2PPT cones selected from full scans; the frozen numerical point was then independently rescanned against every output spin block of both splits. Residuals above refer to the same point. No elapsed wall time is used, since it included machine sleep.",
-        "mainCatalogueEdits": false
+        "mainCatalogueEdits": false,
+        "rigorousMaximumOrderIntervalAtTestTime": [
+          5,
+          6
+        ]
       },
       {
         "n": 29,
         "targetOrder": 6,
-        "rigorousKnownMaximumOrderInterval": [
-          5,
-          6
-        ],
         "fourCopyMomentDimension": 40920,
         "realInvariantMomentVariables": 9581,
         "completeNecessaryReducedACContractionEquations": 10076,
@@ -243,7 +239,11 @@
         "snapshotSHA256": "bb61c5f7718c3db8006523455fd3b514c45338a67802135306d0283ae1f6a7c7",
         "scientificConclusion": "The complete four-copy AC6 contraction map and both complete partial-time-reversal output spectra admit a nearly feasible numerical moment. No positive separating dual was found. This is neither a pure sixth-order AC witness nor a certified feasible moment, and it does not prove nonexistence.",
         "scope": "All AC contraction equations were imposed. Optimization used the listed active1|3and2|2PPT cones selected from full scans; the frozen numerical point was then independently rescanned against every output spin block of both splits. Residuals above refer to the same point. No elapsed wall time is used, since it included machine sleep.",
-        "mainCatalogueEdits": false
+        "mainCatalogueEdits": false,
+        "rigorousMaximumOrderIntervalAtTestTime": [
+          5,
+          6
+        ]
       }
     ],
     "largeArraysIncluded": false,
@@ -459,5 +459,11 @@
       "method": "Full complex Dicke coefficients; analytic-Jacobian least-squares; starts from the refined fifth-order source with perturbations and random complex states.",
       "scope": "Finite numerical search only. Failure to find a root does not prove nonexistence."
     }
-  ]
+  ],
+  "recordStatus": "Historical discovery tests, superseded for N=27 by the independently validated six-copy sixth-order exclusion.",
+  "supersedingProof": {
+    "n": 27,
+    "maximumOrder": 5,
+    "url": "./n27-t6/independent-verification.json"
+  }
 }

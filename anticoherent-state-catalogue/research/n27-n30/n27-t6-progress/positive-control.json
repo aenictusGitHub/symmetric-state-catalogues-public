@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "n": 49,
+  "exactACOrderAtLeast": 6,
+  "support": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49
+  ],
+  "rationalProbabilities": [
+    "8937/168070",
+    "16931/84035",
+    "6431/84035",
+    "14187/84035",
+    "14187/84035",
+    "6431/84035",
+    "16931/84035",
+    "8937/168070"
+  ],
+  "exactDiagonalMomentsThrough6Verified": true,
+  "offdiagonalMomentsVanishBySupportGap7": true,
+  "oddKramersParity": true,
+  "rank0and2PlusStateFrameGramError": 2.220446049250313e-16,
+  "rank4CrossFrameError": 1.0280199263338657e-16,
+  "rank4NormalizedGramSixBodyReductionError": 2.7755575615628914e-17,
+  "rank4NormalizedGramMaximumEigenvalue": 0.17457783645317082,
+  "rank4StrongMapMinimumEigenvalue": -1.1115418691280452e-15,
+  "rank6SafeMapMinimumEigenvalue": -8.586900966352549e-17,
+  "scope": "Exact rational quadrature proves the AC6 control state. Floating matrix calculations control map implementation; they are not an N27 exclusion certificate."
+}

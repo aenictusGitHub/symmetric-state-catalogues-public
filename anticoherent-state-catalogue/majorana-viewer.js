@@ -140,6 +140,13 @@
     const principal=principalAxis(controls.symmetry);
     const initial=principal?axis(1,0,0,-Math.PI/2+.28):multiply(axis(1,0,0,-.28),axis(0,1,0,.42));
     const initialFrame=principal?axisToZ(principal.direction):[1,0,0,0];
+    // Choose one end in the aligned state frame, independent of the camera.
+    const axisDirections=new Map();
+    for(const a of controls.symmetry?.axes||[]){
+      const v=multiply(multiply(initialFrame,[0,...a.direction]),[initialFrame[0],-initialFrame[1],-initialFrame[2],-initialFrame[3]]);
+      const sign=[v[3],v[2],v[1]].find(x=>Math.abs(x)>1e-12)<0?-1:1;
+      axisDirections.set(a.direction,a.direction.map(x=>sign*x));
+    }
     let orientation=[...initial],coordinateFrame=[...initialFrame],drag=null,frame=0,disposed=false;
     const listeners=[];
     const listen=(element,event,handler)=>{if(element){element.addEventListener(event,handler);listeners.push(()=>element.removeEventListener(event,handler));}};
@@ -183,19 +190,23 @@
       }
       const axisLabels=[];
       function axisLine(vector,label,color,unoriented=true){
-        let endpoint=rotate({x:vector[0],y:vector[1],z:vector[2]},unoriented);
-        if(unoriented&&endpoint.z<0)endpoint={x:-endpoint.x,y:-endpoint.y,z:-endpoint.z};
+        // Keep the saved end of an axis: changing its sign with the viewing
+        // depth makes the label jump to the opposite end during rotation.
+        const direction=unoriented?(axisDirections.get(vector)||vector):vector;
+        const endpoint=rotate({x:direction[0],y:direction[1],z:direction[2]},unoriented);
         const p=project(endpoint),dx=p.x-cx,dy=p.y-cy,length=Math.hypot(dx,dy);
-        // Symmetry axes are lines: extend their projected ends past the limb,
-        // including foreshortened axes. Keep end-on axes as central markers.
-        const extent=unoriented&&length>=4?radius*1.08:length*1.05;
-        const scale=length>0?extent/length:1;
+        // Extend in 3D, then project. An axis pointing towards the camera
+        // must foreshorten with the constellation, not span a full diameter.
+        const scale=unoriented?1.08:1.05,extent=length*scale;
         context.save();context.strokeStyle=color;context.lineWidth=unoriented?1.8:1;context.globalAlpha=.8;
         for(const sign of [-1,1]){context.setLineDash(sign*endpoint.z<0?[4,4]:[]);context.beginPath();context.moveTo(cx,cy);context.lineTo(cx+sign*dx*scale,cy+sign*dy*scale);context.stroke();}
-        if(length<4){context.setLineDash([]);context.beginPath();context.arc(cx,cy,4,0,2*Math.PI);context.stroke();}
+        const endOn=unoriented?Math.max(0,1-length/10):0;
+        if(endOn>0){context.globalAlpha=.8*endOn;context.setLineDash([]);context.beginPath();context.arc(cx,cy,4,0,2*Math.PI);context.stroke();}
         context.restore();
-        const labelDistance=unoriented?extent+12:length+38;
-        axisLabels.push({label,color,x:Math.max(24,Math.min(width-24,length>=4?cx+dx/length*labelDistance:p.x+16)),y:Math.max(13,Math.min(height-13,length>=4?cy+dy/length*labelDistance:p.y-16))});
+        // A continuous screen-space offset stays readable near an end-on
+        // axis without dividing by its almost-zero projected length.
+        const padding=unoriented?12:28,offset=padding/(extent+padding);
+        axisLabels.push({label,color,x:Math.max(24,Math.min(width-24,cx+dx*scale*(1+offset))),y:Math.max(13,Math.min(height-13,cy+dy*scale*(1+offset)-padding*offset))});
       }
       if(controls.axes?.checked)for(const [name,vector,color] of [['x',[1,0,0],'#a15435'],['y',[0,1,0],'#41776e'],['z',[0,0,1],'#76648a']])axisLine(vector,name,color,false);
       if(controls.symmetryToggle?controls.symmetryToggle.checked:Boolean(controls.symmetry?.axes?.length)){

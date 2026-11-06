@@ -1,0 +1,3917 @@
+{
+  "n": 27,
+  "order": 6,
+  "arithmetic": "Exact Python integer and Fraction arithmetic",
+  "provenClaim": "No pure 27-qubit sixth-order anticoherent state has a proper rotational symmetry of order four or higher.",
+  "scope": "Symmetry subclass only. This argument alone does not exclude unrestricted sixth-order existence.",
+  "fourthOrderCases": [
+    {
+      "rotationOrder": 4,
+      "residue": 0,
+      "support": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "cardinalIndex": 3,
+      "uniformMean": "-180963/229376",
+      "reason": "The required squared Dicke amplitude is negative."
+    },
+    {
+      "rotationOrder": 4,
+      "residue": 1,
+      "support": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25
+      ],
+      "cardinalIndex": 3,
+      "uniformMean": "-51855/229376",
+      "reason": "The required squared Dicke amplitude is negative."
+    },
+    {
+      "rotationOrder": 4,
+      "residue": 2,
+      "support": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26
+      ],
+      "cardinalIndex": 3,
+      "uniformMean": "-51855/229376",
+      "reason": "The required squared Dicke amplitude is negative."
+    },
+    {
+      "rotationOrder": 4,
+      "residue": 3,
+      "support": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27
+      ],
+      "cardinalIndex": 3,
+      "uniformMean": "-180963/229376",
+      "reason": "The required squared Dicke amplitude is negative."
+    }
+  ],
+  "higherOrderCases": [
+    {
+      "rotationOrder": 5,
+      "residue": 0,
+      "support": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "annihilatorDegree": 6,
+      "uniformMean": "264060/7"
+    },
+    {
+      "rotationOrder": 5,
+      "residue": 1,
+      "support": [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ],
+      "annihilatorDegree": 6,
+      "uniformMean": "-15912/7"
+    },
+    {
+      "rotationOrder": 5,
+      "residue": 2,
+      "support": [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ],
+      "annihilatorDegree": 6,
+      "uniformMean": "264060/7"
+    },
+    {
+      "rotationOrder": 5,
+      "residue": 3,
+      "support": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "8208"
+    },
+    {
+      "rotationOrder": 5,
+      "residue": 4,
+      "support": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "-8208"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 0,
+      "support": [
+        0,
+        6,
+        12,
+        18,
+        24
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "13905"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 1,
+      "support": [
+        1,
+        7,
+        13,
+        19,
+        25
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "4160"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 2,
+      "support": [
+        2,
+        8,
+        14,
+        20,
+        26
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "-4160"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 3,
+      "support": [
+        3,
+        9,
+        15,
+        21,
+        27
+      ],
+      "annihilatorDegree": 5,
+      "uniformMean": "-13905"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 4,
+      "support": [
+        4,
+        10,
+        16,
+        22
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "5165/2"
+    },
+    {
+      "rotationOrder": 6,
+      "residue": 5,
+      "support": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "5165/2"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 0,
+      "support": [
+        0,
+        7,
+        14,
+        21
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "3510"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 1,
+      "support": [
+        1,
+        8,
+        15,
+        22
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "2100"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 2,
+      "support": [
+        2,
+        9,
+        16,
+        23
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "1278"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 3,
+      "support": [
+        3,
+        10,
+        17,
+        24
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "1008"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 4,
+      "support": [
+        4,
+        11,
+        18,
+        25
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "1278"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 5,
+      "support": [
+        5,
+        12,
+        19,
+        26
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "2100"
+    },
+    {
+      "rotationOrder": 7,
+      "residue": 6,
+      "support": [
+        6,
+        13,
+        20,
+        27
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "3510"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 0,
+      "support": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "81/2"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 1,
+      "support": [
+        1,
+        9,
+        17,
+        25
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "-855/2"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 2,
+      "support": [
+        2,
+        10,
+        18,
+        26
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "-855/2"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 3,
+      "support": [
+        3,
+        11,
+        19,
+        27
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "81/2"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 4,
+      "support": [
+        4,
+        12,
+        20
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "201"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 5,
+      "support": [
+        5,
+        13,
+        21
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "66"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 6,
+      "support": [
+        6,
+        14,
+        22
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-66"
+    },
+    {
+      "rotationOrder": 8,
+      "residue": 7,
+      "support": [
+        7,
+        15,
+        23
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-201"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 0,
+      "support": [
+        0,
+        9,
+        18,
+        27
+      ],
+      "annihilatorDegree": 4,
+      "uniformMean": "-1872"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 1,
+      "support": [
+        1,
+        10,
+        19
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "889/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 2,
+      "support": [
+        2,
+        11,
+        20
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "605/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 3,
+      "support": [
+        3,
+        12,
+        21
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "351/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 4,
+      "support": [
+        4,
+        13,
+        22
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "115/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 5,
+      "support": [
+        5,
+        14,
+        23
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-115/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 6,
+      "support": [
+        6,
+        15,
+        24
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-351/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 7,
+      "support": [
+        7,
+        16,
+        25
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-605/2"
+    },
+    {
+      "rotationOrder": 9,
+      "residue": 8,
+      "support": [
+        8,
+        17,
+        26
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-889/2"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 0,
+      "support": [
+        0,
+        10,
+        20
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "378"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 1,
+      "support": [
+        1,
+        11,
+        21
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "255"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 2,
+      "support": [
+        2,
+        12,
+        22
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "147"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 3,
+      "support": [
+        3,
+        13,
+        23
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "48"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 4,
+      "support": [
+        4,
+        14,
+        24
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-48"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 5,
+      "support": [
+        5,
+        15,
+        25
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-147"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 6,
+      "support": [
+        6,
+        16,
+        26
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-255"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 7,
+      "support": [
+        7,
+        17,
+        27
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-378"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 8,
+      "support": [
+        8,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "81/2"
+    },
+    {
+      "rotationOrder": 10,
+      "residue": 9,
+      "support": [
+        9,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "81/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 0,
+      "support": [
+        0,
+        11,
+        22
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "405/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 1,
+      "support": [
+        1,
+        12,
+        23
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "231/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 2,
+      "support": [
+        2,
+        13,
+        24
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "75/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 3,
+      "support": [
+        3,
+        14,
+        25
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-75/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 4,
+      "support": [
+        4,
+        15,
+        26
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-231/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 5,
+      "support": [
+        5,
+        16,
+        27
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-405/2"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 6,
+      "support": [
+        6,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "39"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 7,
+      "support": [
+        7,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "36"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 8,
+      "support": [
+        8,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "35"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 9,
+      "support": [
+        9,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "36"
+    },
+    {
+      "rotationOrder": 11,
+      "residue": 10,
+      "support": [
+        10,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "39"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 0,
+      "support": [
+        0,
+        12,
+        24
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "81"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 1,
+      "support": [
+        1,
+        13,
+        25
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "26"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 2,
+      "support": [
+        2,
+        14,
+        26
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-26"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 3,
+      "support": [
+        3,
+        15,
+        27
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-81"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 4,
+      "support": [
+        4,
+        16
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "83/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 5,
+      "support": [
+        5,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "71/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 6,
+      "support": [
+        6,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "63/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 7,
+      "support": [
+        7,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "59/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 8,
+      "support": [
+        8,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "59/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 9,
+      "support": [
+        9,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "63/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 10,
+      "support": [
+        10,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "71/2"
+    },
+    {
+      "rotationOrder": 12,
+      "residue": 11,
+      "support": [
+        11,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "83/2"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 0,
+      "support": [
+        0,
+        13,
+        26
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "27/2"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 1,
+      "support": [
+        1,
+        14,
+        27
+      ],
+      "annihilatorDegree": 3,
+      "uniformMean": "-27/2"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 2,
+      "support": [
+        2,
+        15
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "48"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 3,
+      "support": [
+        3,
+        16
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "39"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 4,
+      "support": [
+        4,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "32"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 5,
+      "support": [
+        5,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "27"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 6,
+      "support": [
+        6,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "24"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 7,
+      "support": [
+        7,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "23"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 8,
+      "support": [
+        8,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "24"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 9,
+      "support": [
+        9,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "27"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 10,
+      "support": [
+        10,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "32"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 11,
+      "support": [
+        11,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "39"
+    },
+    {
+      "rotationOrder": 13,
+      "residue": 12,
+      "support": [
+        12,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "48"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 0,
+      "support": [
+        0,
+        14
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "117/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 1,
+      "support": [
+        1,
+        15
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "93/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 2,
+      "support": [
+        2,
+        16
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "73/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 3,
+      "support": [
+        3,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "57/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 4,
+      "support": [
+        4,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "45/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 5,
+      "support": [
+        5,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "37/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 6,
+      "support": [
+        6,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "33/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 7,
+      "support": [
+        7,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "33/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 8,
+      "support": [
+        8,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "37/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 9,
+      "support": [
+        9,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "45/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 10,
+      "support": [
+        10,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "57/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 11,
+      "support": [
+        11,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "73/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 12,
+      "support": [
+        12,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "93/2"
+    },
+    {
+      "rotationOrder": 14,
+      "residue": 13,
+      "support": [
+        13,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "117/2"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 0,
+      "support": [
+        0,
+        15
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "45"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 1,
+      "support": [
+        1,
+        16
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "34"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 2,
+      "support": [
+        2,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "25"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 3,
+      "support": [
+        3,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "18"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 4,
+      "support": [
+        4,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "13"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 5,
+      "support": [
+        5,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "10"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 6,
+      "support": [
+        6,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "9"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 7,
+      "support": [
+        7,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "10"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 8,
+      "support": [
+        8,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "13"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 9,
+      "support": [
+        9,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "18"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 10,
+      "support": [
+        10,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "25"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 11,
+      "support": [
+        11,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "34"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 12,
+      "support": [
+        12,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "45"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 15,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 0,
+      "support": [
+        0,
+        16
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "63/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 1,
+      "support": [
+        1,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "43/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 2,
+      "support": [
+        2,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "27/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 3,
+      "support": [
+        3,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 4,
+      "support": [
+        4,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 5,
+      "support": [
+        5,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 6,
+      "support": [
+        6,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 7,
+      "support": [
+        7,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 8,
+      "support": [
+        8,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 9,
+      "support": [
+        9,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "27/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 10,
+      "support": [
+        10,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "43/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 11,
+      "support": [
+        11,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "63/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 16,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 0,
+      "support": [
+        0,
+        17
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "18"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 1,
+      "support": [
+        1,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "9"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 2,
+      "support": [
+        2,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 3,
+      "support": [
+        3,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-3"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 4,
+      "support": [
+        4,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-6"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 5,
+      "support": [
+        5,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-7"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 6,
+      "support": [
+        6,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-6"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 7,
+      "support": [
+        7,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-3"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 8,
+      "support": [
+        8,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 9,
+      "support": [
+        9,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "9"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 10,
+      "support": [
+        10,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "18"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 17,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 0,
+      "support": [
+        0,
+        18
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 1,
+      "support": [
+        1,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 2,
+      "support": [
+        2,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 3,
+      "support": [
+        3,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-27/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 4,
+      "support": [
+        4,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-31/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 5,
+      "support": [
+        5,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-31/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 6,
+      "support": [
+        6,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-27/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 7,
+      "support": [
+        7,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 8,
+      "support": [
+        8,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 9,
+      "support": [
+        9,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 18,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 0,
+      "support": [
+        0,
+        19
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-9"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 1,
+      "support": [
+        1,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-16"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 2,
+      "support": [
+        2,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-21"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 3,
+      "support": [
+        3,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-24"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 4,
+      "support": [
+        4,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-25"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 5,
+      "support": [
+        5,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-24"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 6,
+      "support": [
+        6,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-21"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 7,
+      "support": [
+        7,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-16"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 8,
+      "support": [
+        8,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-9"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 19,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 0,
+      "support": [
+        0,
+        20
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-45/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 1,
+      "support": [
+        1,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-57/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 2,
+      "support": [
+        2,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-65/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 3,
+      "support": [
+        3,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-69/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 4,
+      "support": [
+        4,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-69/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 5,
+      "support": [
+        5,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-65/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 6,
+      "support": [
+        6,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-57/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 7,
+      "support": [
+        7,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-45/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 20,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 0,
+      "support": [
+        0,
+        21
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-36"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 1,
+      "support": [
+        1,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-41"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 2,
+      "support": [
+        2,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-44"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 3,
+      "support": [
+        3,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-45"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 4,
+      "support": [
+        4,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-44"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 5,
+      "support": [
+        5,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-41"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 6,
+      "support": [
+        6,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-36"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 21,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 0,
+      "support": [
+        0,
+        22
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-99/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 1,
+      "support": [
+        1,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-107/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 2,
+      "support": [
+        2,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-111/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 3,
+      "support": [
+        3,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-111/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 4,
+      "support": [
+        4,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-107/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 5,
+      "support": [
+        5,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-99/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 22,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 0,
+      "support": [
+        0,
+        23
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-63"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 1,
+      "support": [
+        1,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-66"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 2,
+      "support": [
+        2,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-67"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 3,
+      "support": [
+        3,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-66"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 4,
+      "support": [
+        4,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-63"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 23,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 0,
+      "support": [
+        0,
+        24
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-153/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 1,
+      "support": [
+        1,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-157/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 2,
+      "support": [
+        2,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-157/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 3,
+      "support": [
+        3,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-153/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 4,
+      "support": [
+        4
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "19/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 24,
+      "residue": 23,
+      "support": [
+        23
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 0,
+      "support": [
+        0,
+        25
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-90"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 1,
+      "support": [
+        1,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-91"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 2,
+      "support": [
+        2,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-90"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 3,
+      "support": [
+        3
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "21/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 4,
+      "support": [
+        4
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "19/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 23,
+      "support": [
+        23
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 25,
+      "residue": 24,
+      "support": [
+        24
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-21/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 0,
+      "support": [
+        0,
+        26
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-207/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 1,
+      "support": [
+        1,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-207/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 2,
+      "support": [
+        2
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "23/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 3,
+      "support": [
+        3
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "21/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 4,
+      "support": [
+        4
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "19/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 23,
+      "support": [
+        23
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 24,
+      "support": [
+        24
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-21/2"
+    },
+    {
+      "rotationOrder": 26,
+      "residue": 25,
+      "support": [
+        25
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-23/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 0,
+      "support": [
+        0,
+        27
+      ],
+      "annihilatorDegree": 2,
+      "uniformMean": "-117"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 1,
+      "support": [
+        1
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "25/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 2,
+      "support": [
+        2
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "23/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 3,
+      "support": [
+        3
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "21/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 4,
+      "support": [
+        4
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "19/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 23,
+      "support": [
+        23
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 24,
+      "support": [
+        24
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-21/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 25,
+      "support": [
+        25
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-23/2"
+    },
+    {
+      "rotationOrder": 27,
+      "residue": 26,
+      "support": [
+        26
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-25/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 0,
+      "support": [
+        0
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "27/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 1,
+      "support": [
+        1
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "25/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 2,
+      "support": [
+        2
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "23/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 3,
+      "support": [
+        3
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "21/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 4,
+      "support": [
+        4
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "19/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 5,
+      "support": [
+        5
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "17/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 6,
+      "support": [
+        6
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "15/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 7,
+      "support": [
+        7
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "13/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 8,
+      "support": [
+        8
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "11/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 9,
+      "support": [
+        9
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "9/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 10,
+      "support": [
+        10
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "7/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 11,
+      "support": [
+        11
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "5/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 12,
+      "support": [
+        12
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "3/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 13,
+      "support": [
+        13
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "1/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 14,
+      "support": [
+        14
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-1/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 15,
+      "support": [
+        15
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-3/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 16,
+      "support": [
+        16
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-5/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 17,
+      "support": [
+        17
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-7/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 18,
+      "support": [
+        18
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-9/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 19,
+      "support": [
+        19
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-11/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 20,
+      "support": [
+        20
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-13/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 21,
+      "support": [
+        21
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-15/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 22,
+      "support": [
+        22
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-17/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 23,
+      "support": [
+        23
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-19/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 24,
+      "support": [
+        24
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-21/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 25,
+      "support": [
+        25
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-23/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 26,
+      "support": [
+        26
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-25/2"
+    },
+    {
+      "rotationOrder": 28,
+      "residue": 27,
+      "support": [
+        27
+      ],
+      "annihilatorDegree": 1,
+      "uniformMean": "-27/2"
+    }
+  ],
+  "finiteCasesChecked": 400,
+  "passed": true
+}

@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{A symmetry obstruction for $N=27$, $t=6$}
+This is a partial exclusion. It does not prove nonexistence of an arbitrary
+sixth-order anticoherent state. The universal sixth-order exclusion, and hence
+$t_{\max}(27)=5$, is proved separately by the six-copy certificate in
+\texttt{../n27-t6/}.
+
+\paragraph{Claim.}
+A pure symmetric $27$-qubit sixth-order anticoherent state cannot have a
+proper rotational symmetry of order $m\ge4$ in its Majorana constellation.
+
+\paragraph{Reduction to moments.}
+Rotate the symmetry axis to $z$, which preserves anticoherence. Invariance
+of the constellation under a rotation by $2\pi/m$ means that its state ray
+is an eigenvector of that rotation. Consequently the Dicke amplitudes
+can be supported only on one residue class
+\[
+ A_{m,a}=\{a,a+m,\ldots\}\cap\{0,\ldots,27\},\qquad0\le a<m.
+\]
+Write $p_r=|c_r|^2$. Sixth-order anticoherence implies
+\[
+ \sum_{r=0}^{27}p_r f(r)=\frac1{28}\sum_{r=0}^{27}f(r)
+ \qquad(\deg f\le6),
+\]
+because every polynomial of degree at most six in
+$J_z=r-27/2$ decomposes into spin tensors of ranks at most six, whose
+non-scalar expectations vanish.
+
+\paragraph{Order four: a closed rational contradiction.}
+For $m=4$, every residue class has seven nodes $a+4i$, $i=0,\ldots,6$,
+with $a=0,1,2,3$. Its middle-node cardinal polynomial is
+\[
+ L_a(r)=-\frac{\displaystyle\prod_{h\in\{4,8,12\}}
+                   \bigl((r-a-12)^2-h^2\bigr)}{147456}.
+\]
+It equals one at $r=a+12$ and zero at the other six nodes. Thus
+\[
+ p_{a+12}=\frac1{28}\sum_{r=0}^{27}L_a(r)=
+ \begin{cases}
+  -180963/229376,&a=0,3,\\
+  -51855/229376,&a=1,2.
+ \end{cases}
+\]
+Every value is negative, contradicting $p_r\ge0$.
+
+\paragraph{Orders five through twenty-seven: exact finite arithmetic.}
+For $5\le m\le27$, each nonempty residue class has at most six nodes.
+Define its annihilator
+\[
+ q_{m,a}(r)=\prod_{x\in A_{m,a}}(r-x).
+\]
+The left-hand moment expectation is zero and $\deg q_{m,a}\le6$.
+However,
+\[
+ \frac1{28}\sum_{r=0}^{27}q_{m,a}(r)\ne0
+ \qquad(5\le m\le27,\ 0\le a<m).
+\]
+The supplied self-contained checker verifies each of these finitely many
+rational inequalities with exact integer and rational arithmetic and
+records every value in \texttt{symmetry-verification.json}. No numerical
+thresholds or floating-point eigenvalues enter this check.
+For $m\ge28$, each residue has at most one node. A single Dicke state
+would have $\langle r\rangle=r\in\mathbb Z$, whereas first-order
+anticoherence requires $\langle r\rangle=27/2$. This is impossible.
+Together these arguments prove the claim.
+
+\paragraph{Scope.}
+A hypothetical sixth-order state could still have only rotations of
+orders two or three, or have no nontrivial rotational symmetry. Nothing
+in this argument excludes these possibilities. Failed numerical searches
+in those classes are not substituted for a global exclusion proof.
+\end{document}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "n": 27,
+  "t": 6,
+  "independentMethod": "SymPy exact integer polynomial/rational evaluation, independently implemented from the Fraction checker.",
+  "order4Cases": 4,
+  "order4ForcedMiddleProbabilities": [
+    {
+      "residue": 0,
+      "forcedMiddleProbability": "-180963/229376"
+    },
+    {
+      "residue": 1,
+      "forcedMiddleProbability": "-51855/229376"
+    },
+    {
+      "residue": 2,
+      "forcedMiddleProbability": "-51855/229376"
+    },
+    {
+      "residue": 3,
+      "forcedMiddleProbability": "-180963/229376"
+    }
+  ],
+  "orders5Through28Cases": 396,
+  "allSupportPolynomialMeansNonzero": true,
+  "totalCases": 400,
+  "conclusion": "No pure N27 order6 AC state can have a proper rotational symmetry of order>=4. Orders>28 reduce to singleton Dicke support, already excluded.",
+  "scope": "A rotational-symmetry subclass exclusion; not a global nonexistence theorem."
+}

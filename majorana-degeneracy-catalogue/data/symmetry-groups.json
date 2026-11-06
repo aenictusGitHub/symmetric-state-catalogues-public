@@ -3,13 +3,13 @@
   "method": "Numerical geometric classification of each weighted constellation, with permutation closure and improper-coset checks.",
   "scope": "Groups belong to individual representatives, not to whole multiplicity partitions. Full point groups include improper symmetries; rotational subgroups contain only proper rotations. These checks do not certify exact algebraic symmetry or anticoherence.",
   "coordinateTolerance": 0.000001,
-  "constellationInputsSHA256": "71a31700f83c5858a2aa2bf8b2984fcf0c598ac12e76c502a1f2623945937170",
+  "constellationInputsSHA256": "09bdb78104e59a39b7332a23dd57f5ca9b1ae421b1875b2abe45e4e36a8b0f11",
   "implementationSHA256": {
     "majorana-symmetry.js": "97fca2b475eea09e99d11c4875397f5a529c2fc9ff5b4bc53cad3b31dee122bd",
     "symmetry-groups.js": "ec8fcb7bc45d57a3da49886c7209492800e275f04062aee30153130f02ad56ff",
     "point-groups.js": "418b29ccdedde8966b4f296de7eba1f4639707dc57cb6453acb7142f1aa8bfaf"
   },
-  "stateCount": 197,
+  "stateCount": 198,
   "states": [
     {
       "id": "ac-n2-t1",
@@ -4228,6 +4228,91 @@
         "tolerance": 0.000001,
         "notes": [
           "The full finite permutation action contains identity and is closed under composition.",
+          "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
+        ]
+      }
+    },
+    {
+      "id": "dihedral-n27-t5",
+      "n": 27,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achievedOrder": 5,
+      "pointGroup": {
+        "numerical": true,
+        "properRotationsOnly": false,
+        "rotationalSymbol": "D_{5}",
+        "rotationalOrder": 10,
+        "tolerance": 0.000001,
+        "notes": [
+          "No orientation-reversing weighted symmetry was found; the full group equals its proper-rotation subgroup.",
+          "Numerical classification of the full weighted geometric point group in O(3). Improper operations are not spin rotations. This is not an exact symmetry or anticoherence proof."
+        ],
+        "status": "classified",
+        "kind": "dihedral",
+        "symbol": "D_{5}",
+        "label": "D5",
+        "name": "Dihedral point group",
+        "degree": 5,
+        "order": 10,
+        "continuous": false,
+        "includesImproper": false,
+        "improperOperationCount": 0,
+        "maxResidual": 4.965068306494546e-16,
+        "closureVerified": true
+      },
+      "rotationalGroup": {
+        "status": "classified",
+        "kind": "dihedral",
+        "symbol": "D_{5}",
+        "label": "D5",
+        "name": "Dihedral rotational group",
+        "degree": 5,
+        "order": 10,
+        "continuous": false,
+        "numerical": true,
+        "properRotationsOnly": true,
+        "closureVerified": true,
+        "axisSignature": {
+          "2": 5,
+          "5": 1
+        },
+        "elementOrderSignature": {
+          "1": 1,
+          "2": 5,
+          "5": 4
+        },
+        "tolerance": 0.000001,
+        "notes": [
+          "The full finite permutation action contains identity and is closed under composition.",
+          "The notation D5 denotes a proper rotation group of order 10.",
           "Numerical classification of proper rotations only; reflections and inversion are excluded. This is not an exact symmetry proof."
         ]
       }

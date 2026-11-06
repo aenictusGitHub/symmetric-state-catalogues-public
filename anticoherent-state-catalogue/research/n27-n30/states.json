@@ -176,12 +176,12 @@
         "wImaginaryRadicand": 3433,
         "wDenominatorRadicand": 6137
       },
-      "notes": "Exactly order 5, not order 6. Global maximum order requires a separate exclusion theorem.",
+      "notes": "Exactly order 5, not order 6. A separate universal exclusion of the next order proves this is the globally maximum pure AC order at N=27.",
       "verification": {
         "method": "Exact Schmidt matrices through the next order.",
         "exactNormalization": true,
         "exactOrderVerified": true,
-        "globalMaximumOrderProven": false,
+        "globalMaximumOrderProven": true,
         "reductions": [
           {
             "t": 1,
@@ -228,7 +228,9 @@
           "differenceLatex": "\\frac{17}{1593900}"
         },
         "majoranaMultiplicityProof": "Exact reciprocal-polynomial / polynomial-gcd checks in the independent verifier.",
-        "majoranaRootReconstructionRelativeError": "9.190619499882799935447356778410891799558955184669123206743356985229920358327940705566604534284700009e-102"
+        "majoranaRootReconstructionRelativeError": "9.190619499882799935447356778410891799558955184669123206743356985229920358327940705566604534284700009e-102",
+        "maximumOrderUpperBound": 5,
+        "maximumOrderProofId": "n27-t6-six-copy-ppt"
       },
       "majoranaPoints": [
         {
@@ -436,6 +438,10 @@
         {
           "title": "Independent exact verification",
           "url": "./research/n27-n30/radical-witnesses/independent-verification.json"
+        },
+        {
+          "title": "Universal next-order exclusion proof",
+          "url": "./research/n27-n30/n27-t6/proof.tex"
         }
       ]
     },

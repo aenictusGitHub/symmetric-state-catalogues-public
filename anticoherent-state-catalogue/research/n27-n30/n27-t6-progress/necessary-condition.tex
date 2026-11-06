@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\paragraph{A conditional positive map for half-integer-spin anticoherent states.}
+Let $j=N/2$ with $N$ odd, $d=N+1$, and let
+$\Theta=U K$ be spin time reversal, with $U^T=-U$.
+Use Hilbert--Schmidt orthonormal irreducible tensors $T_{\ell q}$,
+$\operatorname{tr}(T_{\ell q}^\dagger T_{\ell' q'})=
+\delta_{\ell\ell'}\delta_{qq'}$, so $T_{00}=I/\sqrt d$.
+In the Condon--Shortley convention,
+\[
+  (T_{\ell q}U)^T=(-1)^{\ell+1}T_{\ell q}U.
+\]
+Suppose $|\psi\rangle$ is $2s$-anticoherent and $2s\le N$.
+Set $\rho=|\psi\rangle\langle\psi|$ and
+\[
+ E_s=\{(\ell,q):0\le\ell\le s,\quad\ell\text{ even},
+              \quad-\ell\le q\le\ell\}.
+\]
+Then
+\[
+ \boxed{\quad R_s(\rho)=I-\rho-
+   d\sum_{(\ell,q)\in E_s}
+    T_{\ell q}U\rho^T U^\dagger T_{\ell q}^\dagger
+    \succeq0.\quad}
+\]
+Indeed, time reversal preserves anticoherence. Since
+$T_{\ell q}^\dagger T_{\ell' q'}$ contains only ranks at most $2s$,
+its expectation in $\Theta\psi$ equals its normalized trace.
+Thus $v_{\ell q}=\sqrt d\,T_{\ell q}\Theta\psi$ form an orthonormal set.
+For even $\ell$, the skew symmetry above also gives
+$\langle\psi|v_{\ell q}\rangle=
+\sqrt d\,(\psi^*)^T T_{\ell q}U\psi^*=0$.
+Consequently $\rho+\sum|v_{\ell q}\rangle\langle v_{\ell q}|$
+is an orthogonal projector, proving the claim. In particular,
+$R_s$ is an orthogonal projector of rank
+$d-1-|E_s|$.
+
+For $N=27$ and $t=6$, take $s=3$, so $E_s$ consists of ranks zero and two,
+$|E_s|=6$, and $R_3(\rho)$ would have rank $21$.
+The same set $E_s$ occurs for $s=2$, so this particular inequality already
+holds for every fourth-order anticoherent state. The exact fifth-order
+$N=27$ witness is therefore a valid positivity control. This is a necessary
+condition; the inequality alone is not an exclusion.
+
+\paragraph{Moment localizer.}
+For every such pure state, every integer $r\ge1$ satisfies
+$R_s(\rho)\otimes\rho^{\otimes(r-1)}\succeq0$.
+After rotational averaging, write
+$X_r=\int(g\rho g^\dagger)^{\otimes r}\,dg$ and let
+$X_{r-1}=\operatorname{Tr}_1X_r$.
+The resulting linear condition on the moment matrix is
+\[
+ I\otimes X_{r-1}-X_r-d\sum_{(\ell,q)\in E_s}
+ (T_{\ell q}U\otimes I)X_r^{T_1}
+ (U^\dagger T_{\ell q}^\dagger\otimes I)\succeq0.
+\]
+The rank-zero term alone recovers the time-reversal form of the
+Breuer--Hall positive-map condition. The larger even-rank sum
+uses the assumed anticoherence and must not be asserted for arbitrary states.
+
+\paragraph{A rank-four strengthening under sixth-order anticoherence.}
+For $N=27$ define
+\[
+ Q=I-\rho-28\sum_{\ell\in\{0,2\}}\sum_q
+                  T_{\ell q}U\rho^TU^\dagger T_{\ell q}^\dagger,
+ \qquad
+ B_4=28\sum_{q=-4}^4 T_{4q}U\rho^TU^\dagger T_{4q}^\dagger.
+\]
+Every column $v_{4q}=\sqrt{28}\,T_{4q}\Theta\psi$ is orthogonal to $\psi$.
+It is also orthogonal to the rank-zero and rank-two columns: their
+products with $T_{4q}$ have ranks at most six and zero Hilbert--Schmidt
+inner product. Hence $B_4$ is supported in the range of $Q$ and
+$\operatorname{tr}B_4=9$.
+
+Let $G_{qq'}=\langle v_{4q}|v_{4q'}\rangle$. The equivariant map
+$\rho\mapsto G^T/9$ gives a normalized spin-four mixed state $\tau$.
+The multipole of each rank at most six is proportional to the same-rank
+multipole of $\Theta\rho\Theta^{-1}$, because the products
+$T_{4q}^\dagger T_{4q'}$ decompose into those irreducible ranks.
+Thus $\tau$ is sixth-order anticoherent:
+its six-qubit reduction is $I_7/7$.
+If $\lambda$ is an eigenvalue of $\tau$ with normalized eigenvector $w$,
+positivity of the other spectral components implies
+\[
+ I_7/7\succeq\lambda\,\rho_{w,6}.
+\]
+The vector $w$ is a symmetric eight-qubit state. Its six-qubit reduction
+has Schmidt rank at most three across $6|2$, so
+$\lambda_{\max}(\rho_{w,6})\ge1/3$. Therefore $\lambda\le3/7$.
+Since $G$ and $B_4$ have the same nonzero eigenvalues,
+$\|B_4\|\le27/7$. Consequently
+\[
+ \boxed{\quad Q-\frac7{27}B_4\succeq0.\quad}
+\]
+The weaker coefficient $1/9$ follows from $\|B_4\|\le\operatorname{tr}B_4=9$.
+Both strengthenings require sixth-order anticoherence; the fifth-order
+$N=27$ state is not a positivity control for these strengthened maps.
+Tensoring with further copies of $\rho$ and averaging gives additional
+linear necessary moment conditions. These inequalities alone do not
+prove that a sixth-order state does not exist.
+\end{document}

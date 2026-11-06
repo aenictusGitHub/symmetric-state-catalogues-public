@@ -1,1231 +1,3500 @@
 {
-  "method": "Independent Schmidt-matrix partial trace, exact SymPy arithmetic",
+  "method": "Independent sparse Schmidt-matrix partial trace, exact SymPy arithmetic",
   "passed": true,
-  "statesVerified": 204,
+  "statesVerified": 499,
   "checks": [
     {
       "id": "exact-order-n21-t1",
       "n": 21,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "5aa63a6fdce01f46a0c60dbbd0d3db8d7489681865db0c23cfc43d11dc0f9ff7"
     },
     {
       "id": "exact-order-n21-t2",
       "n": 21,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f26dddc379f5ca2d59caa144b439437e3927120556d606649e9b78915e21b677"
     },
     {
       "id": "exact-order-n21-t3",
       "n": 21,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3bbe745759c1fdfffe7c43b8526afcc2ed724167aeebade6701741165dd4ebf9"
     },
     {
       "id": "exact-order-n22-t1",
       "n": 22,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e1ccf10248e060cfaa23cc0d189a730b1a4f9c0b4766ebb332bd9a80cfa5fc06"
     },
     {
       "id": "exact-order-n22-t2",
       "n": 22,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0b27dc42cfefb26eb2b8514aa7bc1380cc4e5db128036889e85a21b87bf75649"
     },
     {
       "id": "exact-order-n22-t3",
       "n": 22,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "687ccff88daaeec0b1e65e1b0e53bb6aec4e71af95dc472abc2a7ab4f6002075"
     },
     {
       "id": "exact-order-n22-t4",
       "n": 22,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "eeb738d840433b657e934f3469fcd90bef48e68b1c179ab1aac39bf4fdffb942"
     },
     {
       "id": "exact-order-n23-t1",
       "n": 23,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8f88c2a6d1c47b1a6fbdaa57becdd6f6fd64579ecc55c98d08db2205c7e8633d"
     },
     {
       "id": "exact-order-n23-t2",
       "n": 23,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e888f1e209d52b8219ad135e8df6d82b55f3667e820e6adf53c4e0954dd0495b"
     },
     {
       "id": "exact-order-n23-t3",
       "n": 23,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3b8a0aa2c75dfe6c8dd95ceb977d32d2e748f11aa1b13487869707381b00a8a5"
     },
     {
       "id": "exact-order-n23-t4",
       "n": 23,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "54c16a13cbbdea743147ff9ee77e63a38a03a94590dc4af6f19992b5a8f3d47f"
     },
     {
       "id": "exact-order-n25-t1",
       "n": 25,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a680fb14be63dd2b13f59ff6d45307a1c76ecf4fca62218b6c0969c953aecc12"
     },
     {
       "id": "exact-order-n25-t2",
       "n": 25,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b81ba0362dab3c60e17fb55dfc0c7bdf7fa0727eab3a64f94092baa5658baa2d"
     },
     {
       "id": "exact-order-n25-t3",
       "n": 25,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4caedba7e4ae53145f0c26561ff6174871427e2d2265c152c053883ac2b154ed"
     },
     {
       "id": "exact-order-n25-t4",
       "n": 25,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d0921a418765ae32b6b8e51429290a3a46defca02487d6e1e4aada746b4c9e6e"
     },
     {
       "id": "exact-order-n26-t1",
       "n": 26,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7f455b8b185029b089adbdfeba6f90e0491bcbe41b8f763408eb8d10022b2999"
     },
     {
       "id": "exact-order-n26-t2",
       "n": 26,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ef682da961a1253ad0a41def1b66d2a2a2e6621ffa6ab99599eb0bfff8930b99"
     },
     {
       "id": "exact-order-n26-t3",
       "n": 26,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "1e3a5985708fc205a09f12bac5408b122f624136785f30ea300075c55fe92629"
     },
     {
       "id": "exact-order-n26-t4",
       "n": 26,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "69b1a96a9f41f268877e600fb5edeb694f6cac46a39886808dded2dc729dbce6"
     },
     {
       "id": "exact-order-n27-t1",
       "n": 27,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "90058a4759cfd63cb888ac6f11c74fd4fb4802308387f6e4d63d3406ce7b338f"
     },
     {
       "id": "exact-order-n27-t2",
       "n": 27,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a20d2337216ce04826dbb4071890e116fcfdf23b6072a72cee4d3cd8e4333882"
     },
     {
       "id": "exact-order-n27-t3",
       "n": 27,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9544b5f643d69f80635bb72f726868253d72fc700a7209b5cae26385fc9a31bc"
     },
     {
       "id": "exact-order-n27-t4",
       "n": 27,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "58f5b2e39c67562d595331b0fdbfc0155433c5c01994e292f2a74ba8e2db5399"
     },
     {
       "id": "exact-order-n28-t1",
       "n": 28,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "80a8575258f57094f33eb13dab96be5f47149e70e0437bee2d1639a6ec48f364"
     },
     {
       "id": "exact-order-n28-t2",
       "n": 28,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "58ad354f8e2e6106474ba4a149f0b427bdf9a558077b2b42fddd9b17cec6c95b"
     },
     {
       "id": "exact-order-n28-t3",
       "n": 28,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2d6ec6d87dd504e2815a7f109471a675164d57bbb531c17e45b43379ab3e7329"
     },
     {
       "id": "exact-order-n28-t4",
       "n": 28,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4dfe29415b479f993297cccab1228fe551807f2cb01180fd5badf27c6766c2c5"
     },
     {
       "id": "exact-order-n29-t1",
       "n": 29,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ba13128aa71d95c3c365238a7ee4213f2c8be121d2a60b0f6853f60a4d42b204"
     },
     {
       "id": "exact-order-n29-t2",
       "n": 29,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "00ba08c4e8e6bbaab3e7dd49f1675c7f779299771dd7147517301424f10be0ed"
     },
     {
       "id": "exact-order-n29-t3",
       "n": 29,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a4ad0a7ff50b0955bd9caf1162be25c48c8b901c6744f0e31feb1eabc7d0557f"
     },
     {
       "id": "exact-order-n29-t4",
       "n": 29,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e106289cae5d2d98a3c3b788a0b2c577654a0bdbe45230daf0d1723f2ecfe0e5"
     },
     {
       "id": "exact-order-n30-t1",
       "n": 30,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4ccfe96afe86ffdf72b273cf9628b61f0290035fae6ef1d6efadd341c58283a3"
     },
     {
       "id": "exact-order-n30-t2",
       "n": 30,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ab4683df5fb38e2b8c204cb903d4bb900ebe22d34ed2e3b5182ac4e1dfab6ca1"
     },
     {
       "id": "exact-order-n30-t3",
       "n": 30,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "39839a4819baf59d85493324d5afc8a8dbc6fd2bebfe73276ecaf2759ef77eea"
     },
     {
       "id": "exact-order-n30-t4",
       "n": 30,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a015324bdb9149e5b2b3514bde71a0f6719fa4bc79a0d6aedfca17e0cce6df3a"
     },
     {
       "id": "exact-order-n30-t5",
       "n": 30,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b5f206c87e732cc378db72cae4a1eaaca1d3d85e385e243f6e7e029c4688bab0"
     },
     {
       "id": "exact-order-n31-t1",
       "n": 31,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cc7a6dc461f094e9add98706e878ece07d7c2cac9daf6792b132262221633b0e"
     },
     {
       "id": "exact-order-n31-t2",
       "n": 31,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "39cf411acc5932f3a1dd382015edbba737fe07d3f702cc7d8d3ffa951aba8d7a"
     },
     {
       "id": "exact-order-n31-t3",
       "n": 31,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a7c2e9ba83207f9f2375d9fd8e4c40b59c35c19425ff1243f92813518d801ffe"
     },
     {
       "id": "exact-order-n31-t4",
       "n": 31,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "539961940e2aee544662e5d6f68087ae45808dcbdb65495ccc1d293ce130f2ed"
     },
     {
       "id": "exact-order-n31-t5",
       "n": 31,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2b321ea4b78cae1868922395f92bcc5a6ad7c3f29f7f2b81c3fb12740198c7b2"
     },
     {
       "id": "exact-order-n32-t1",
       "n": 32,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "801a615f623dc858396ecc4d475ffe44f6773a30c2dbd27e86c916c4ffb60ccd"
     },
     {
       "id": "exact-order-n32-t2",
       "n": 32,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e1aa84e38078622b7d3ca43b86e7a8e4fa3ff2d560a6b563e4fcdca725e4a8f7"
     },
     {
       "id": "exact-order-n32-t3",
       "n": 32,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d836e45235d914bfa6d45262fee7da03a3f7bf98a21bbb6d2cc60e15ecf24e21"
     },
     {
       "id": "exact-order-n32-t4",
       "n": 32,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b7749dd600bd846c6d95bcabd7cdddad26463dfbb1a0f51606c5771438b34178"
     },
     {
       "id": "exact-order-n32-t5",
       "n": 32,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ab25805741a8bc0130ec24b92d267cda25c41921cfc42ad38bc945357d18187f"
     },
     {
       "id": "exact-order-n33-t1",
       "n": 33,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8543c240f937a05adb964c1aa6571c13188faad7a77660b134ba319ef83c7a87"
     },
     {
       "id": "exact-order-n33-t2",
       "n": 33,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7f810a702412daf4cef2508504344cac252ae4cd8a6083ddb82de81b662c1689"
     },
     {
       "id": "exact-order-n33-t3",
       "n": 33,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d40306119e780c9db248fe7a39a8e8b5c4bc2adb9f33f972965ff322dad882c8"
     },
     {
       "id": "exact-order-n33-t4",
       "n": 33,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9604f30c4c90d72fc9aeaf78ef626d59a700bc66266aa06cb583ae4f9259c58e"
     },
     {
       "id": "exact-order-n33-t5",
       "n": 33,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f00038d5d34f8f7fd9f7623e8a8a4d082aaead48b30504a111b075d44f43c408"
     },
     {
       "id": "exact-order-n34-t1",
       "n": 34,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "5f908020f7d7fdc96d45a1bc88b6b24b731eb05dc60b56aa08fadec17b21ac07"
     },
     {
       "id": "exact-order-n34-t2",
       "n": 34,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "00aacf3b9ccbe1fff9c298db0c71f74b0020e4c50b8b080b4a4419867baa0e65"
     },
     {
       "id": "exact-order-n34-t3",
       "n": 34,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "470644355b2cda07c5e0f59d2801fb5f239d70d4d0051212034cd13ce2801ebc"
     },
     {
       "id": "exact-order-n34-t4",
       "n": 34,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "96ab064cd86fccec919d5903f898643a1e2a6fcba01f074a27de198842eb9928"
     },
     {
       "id": "exact-order-n34-t5",
       "n": 34,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2b14fcf0a94d863395a1ef9d9bde144c6b7312106c2fc0e2633caf0a6a13dd7e"
     },
     {
       "id": "exact-order-n35-t1",
       "n": 35,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f1f0eb657852de878dcec55cb477f32ce87617889b6546f000e4c2fca6a04880"
     },
     {
       "id": "exact-order-n35-t2",
       "n": 35,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "186e1bd8d9c8d81cb61631154b6b2e5b5de527614165d2df73b4ea95a0673d44"
     },
     {
       "id": "exact-order-n35-t3",
       "n": 35,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ef99be0e2e4ea08e72af5f18e645fd1cb83def089bd182dd6ab1368c564ba8d3"
     },
     {
       "id": "exact-order-n35-t4",
       "n": 35,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b08985316ebbdc96df619a0fcab923af8a0d5a5a1e6b7ce3a30785ce31bd24c6"
     },
     {
       "id": "exact-order-n35-t5",
       "n": 35,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "34d2f8399f62edb67aa475cd343b6a09d28258246e191754f7694c2700083aa4"
     },
     {
       "id": "exact-order-n36-t1",
       "n": 36,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "81b5dcdb33ccab79241b2473e19631d4a52d43ded7a4c705773eaa53a4dee5b4"
     },
     {
       "id": "exact-order-n36-t2",
       "n": 36,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cafc99a3191d3501c41eb2c3d55e396495e1f998f77edd43638a36f2d674aa8d"
     },
     {
       "id": "exact-order-n36-t3",
       "n": 36,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "1123eff08f7be016beecc010da8ced822c4887099a5b88ce12f110d26ac64577"
     },
     {
       "id": "exact-order-n36-t4",
       "n": 36,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "fc32342d2a85c8ce17973450bb61942adb368205aeeafe784b0607f5e4478155"
     },
     {
       "id": "exact-order-n36-t5",
       "n": 36,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f111f6eb13a6294d10e68a60f8ffd428a6f76b24111648847349bd99588e3023"
     },
     {
       "id": "exact-order-n37-t1",
       "n": 37,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "88d7740163d48248052ed0269c77dc15ce83d03344ec6404664d310804db0c53"
     },
     {
       "id": "exact-order-n37-t2",
       "n": 37,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "dc820899b7ea52805a7e77aa505d319294394dfda5ed68a27d8e6c3bf5de008b"
     },
     {
       "id": "exact-order-n37-t3",
       "n": 37,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "eabb79fbca4887f85cfb670db557dfe0a2914b2c2f4d0839c761efd1500cad20"
     },
     {
       "id": "exact-order-n37-t4",
       "n": 37,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "464229162d4380742ef7f8447ec924f8ef8a651e09c5b3bcca8f31d07f6144fc"
     },
     {
       "id": "exact-order-n37-t5",
       "n": 37,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "32c255e4b4f294cc87c23476bfe1f1835c1f205913fb6526b026c2738f15b21a"
     },
     {
       "id": "exact-order-n38-t1",
       "n": 38,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "893219de2ed73968b052ed1616ccead70d34e993de27a801006b766772b8353e"
     },
     {
       "id": "exact-order-n38-t2",
       "n": 38,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a58542da49aafcb6f5dcad45ba5d4252b5e70f23bd55748e7eebc8072d77a9ee"
     },
     {
       "id": "exact-order-n38-t3",
       "n": 38,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4595e506cc7591766764dcb58d726264755e5ded96c0c476d95a2874e979e38a"
     },
     {
       "id": "exact-order-n38-t4",
       "n": 38,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "558b82e6f70e007b99730d51b238850c66ca459a40c7cde5181c2b90ecd98527"
     },
     {
       "id": "exact-order-n38-t5",
       "n": 38,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "01301f499bb7d9d53ca5b624c98de2cb47495e434c5ea67f065bcee883ec5073"
     },
     {
       "id": "exact-order-n39-t1",
       "n": 39,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "525ca5a18ebeb16d592e15ea139c414aa95bf0259dab83415d7a0b7fdd230ad3"
     },
     {
       "id": "exact-order-n39-t2",
       "n": 39,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "5a8455a72937d47bca08e3ceb1be7cf2925fc22c086e920b1221752925cb92f0"
     },
     {
       "id": "exact-order-n39-t3",
       "n": 39,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0d8cd6cbe89a12626559eb24255bbae48f3a00de2c94a57fa4fab1dc921e2fb5"
     },
     {
       "id": "exact-order-n39-t4",
       "n": 39,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "beb219d4d2eeb1209e3b8935a569205713869e0e1a9ed50e8e66430a9431d6e2"
     },
     {
       "id": "exact-order-n39-t5",
       "n": 39,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "dd584197870e6943bc641ea9f541a84734f23cff949d1d3632debecb89b708a3"
     },
     {
       "id": "exact-order-n40-t1",
       "n": 40,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "6bd4714eaeea8a5ac6de68f6e1f93f45971d045d08e8b02f53794115ccb75708"
     },
     {
       "id": "exact-order-n40-t2",
       "n": 40,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3c9347e0da463de9ed21c485c708776bcae4021624e6c7cd54147bf13ab66d7a"
     },
     {
       "id": "exact-order-n40-t3",
       "n": 40,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "6bb27d1aa2270b71ea86cf6a502fe8273e9840a9eb4d82f60e2b0f20b508f010"
     },
     {
       "id": "exact-order-n40-t4",
       "n": 40,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e40366d5e94b8fabce86e821d69a3a4184583f27c4434b42d84dbe8598212298"
     },
     {
       "id": "exact-order-n40-t5",
       "n": 40,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ca9730a82b6753e146ad12061ea521d4c88945758f842f7458e8b397f9cd3b80"
     },
     {
       "id": "exact-order-n41-t1",
       "n": 41,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ea9251e9a0e0c49be04257ade84217a8a7c2200c14a7873c2b277c68e8b8f2e9"
     },
     {
       "id": "exact-order-n41-t2",
       "n": 41,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a2479b6c71a538fe65d683107064e7a3a982e558cb6ae98b9165b56a72c213b4"
     },
     {
       "id": "exact-order-n41-t3",
       "n": 41,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "db99c6b71242961b07c538241fd7a8ff5e99b6301f256b4dc1d3c2a5575bfa59"
     },
     {
       "id": "exact-order-n41-t4",
       "n": 41,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0f0869ee74d5a56b4120cd4c13cfb025c5541dba46e23ea1e44e95273053a8b7"
     },
     {
       "id": "exact-order-n41-t5",
       "n": 41,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b6795990c582ef7c20b8a81d8f864a35b4d65547aae8f4b77ce4be5bfa1795cf"
     },
     {
       "id": "exact-order-n43-t1",
       "n": 43,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3082f3be6ba4d95e51a794ca18348126a35349bc8be4df49c6413f641276c598"
     },
     {
       "id": "exact-order-n43-t2",
       "n": 43,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3a489e35ef807bc7339cedcec5440d8397f96ea6f1d63fce0279dd0d9b14eca5"
     },
     {
       "id": "exact-order-n43-t3",
       "n": 43,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0eb7d027c0ae077f787d342f40fb8f9ef26994797f449226a3ad9e3aaa6b97e8"
     },
     {
       "id": "exact-order-n43-t4",
       "n": 43,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "16eaef8b81da2329e668eaee69f0f1d9bf776c5711056b8369f187328299f162"
     },
     {
       "id": "exact-order-n43-t5",
       "n": 43,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9300b79b4986c60ff8b3a18104d00473fbcd7fc0b9d9d87702383c1748451f0c"
     },
     {
       "id": "exact-order-n43-t6",
       "n": 43,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "1ec4b8a655b54cd2d1bd3dd34581ec94f4c229c6e428ad62ed7bc0987039dd9e"
     },
     {
       "id": "exact-order-n44-t1",
       "n": 44,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "13c054a8f84ca2809cbf962af9179b4e8e8d3bce93d7c29b80e66936160fcf7b"
     },
     {
       "id": "exact-order-n44-t2",
       "n": 44,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "eec79bb34623e7fad4fe5c23e1d26cad77f46bd00d9f1f9f80384194f5fe3692"
     },
     {
       "id": "exact-order-n44-t3",
       "n": 44,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ed49bc7ee4325f89bb031ab01b17bebdf8c7b1d73062f8db01d979f5eb5acb6e"
     },
     {
       "id": "exact-order-n44-t4",
       "n": 44,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7022793e47487a2944461570ea4691ed60d7ecd52e2c96f8f631eb9408a0825d"
     },
     {
       "id": "exact-order-n44-t5",
       "n": 44,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9591967e4eed259a49a0e6714e3defefa133b91b9f188f7cc3970c0d8da4c30f"
     },
     {
       "id": "exact-order-n44-t6",
       "n": 44,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "26d37d773c5a37fbf5a92d3f479fcd59a0e06f71853a2d83ab18d826fc5c8a07"
     },
     {
       "id": "exact-order-n45-t1",
       "n": 45,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3a9389ba8d9c2bbf9c2e8f614a09019c3eeaa8e8c6db4cf04b82ee5e36deeaea"
     },
     {
       "id": "exact-order-n45-t2",
       "n": 45,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "44e2c6ea22f4ef9cae26022d19fa271a4a78e98e9fb5ef30730d1713e62da121"
     },
     {
       "id": "exact-order-n45-t3",
       "n": 45,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cdacff17f1204ca22edb51982bc3717445f9922912dea0a78ad5dfb5c913d912"
     },
     {
       "id": "exact-order-n45-t4",
       "n": 45,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8025d7eaaff9f28764ceb50414c102dc67e559e9d46db2cc53cbb0a5794a6da7"
     },
     {
       "id": "exact-order-n45-t5",
       "n": 45,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d1d0a907b1d794c6a60c3d4fcb2d0d37f9fdef411355b4d140c2f5546141587e"
     },
     {
       "id": "exact-order-n45-t6",
       "n": 45,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e9535f0e808da9f58c4c2180e00d29d81e97f64ca3a337108b208f7fb9b18d09"
     },
     {
       "id": "exact-order-n46-t1",
       "n": 46,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0091e839cf3c25ee84778b065bd9514389194587c62700d6d0b97c8a86dbed5d"
     },
     {
       "id": "exact-order-n46-t2",
       "n": 46,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "650a54649cadde5e91351e7276a082e9826e3a79e7b46167b4df799274ab1c46"
     },
     {
       "id": "exact-order-n46-t3",
       "n": 46,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2c7dcc9fb80c2234b07657565df7c512095116b1bc5384400b67f7710d52b1f1"
     },
     {
       "id": "exact-order-n46-t4",
       "n": 46,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "38a0768a70bec563b4f732473619544c2bc5b25e518c8f49dfb4a9e5d3341d54"
     },
     {
       "id": "exact-order-n46-t5",
       "n": 46,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "07300aca4cddd11181975ce2ed7d343c09af8a0ea93d9d14bd974c99917fac9b"
     },
     {
       "id": "exact-order-n46-t6",
       "n": 46,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8718ab7af919f19f70eb70468396dfb30f6b8d7f2d0dfbfeaf2668cfdca8ceff"
     },
     {
       "id": "exact-order-n47-t1",
       "n": 47,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "6a6f42eef63bf0c574f2f541985287f6d7342eb5113f51f0506be2603def7947"
     },
     {
       "id": "exact-order-n47-t2",
       "n": 47,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d80b77021da59f841332489a83a53431a1ea0a7670d407d96d892907912bbecd"
     },
     {
       "id": "exact-order-n47-t3",
       "n": 47,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "92a7abcad640d8194025fb291289f1fe7053acf61e98e03895f6d692d7dd180c"
     },
     {
       "id": "exact-order-n47-t4",
       "n": 47,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ca20633b15017348230c0420606e1db20f9eb470116460248778121e652b5be9"
     },
     {
       "id": "exact-order-n47-t5",
       "n": 47,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "af807a51b8f8af1121504b0131623376993bef8506790a4411e169c6562f7c48"
     },
     {
       "id": "exact-order-n47-t6",
       "n": 47,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b6762a2c63b875f487d91c690fdb25f8a277f306fed34212f9d544b7e174e4e0"
     },
     {
       "id": "exact-order-n48-t1",
       "n": 48,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d7081d6f0d137c6ff998331faf00b809af3af9c94418caf759a961624d7780f6"
     },
     {
       "id": "exact-order-n48-t2",
       "n": 48,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "fb1ebe21efcbab7923477d9ec3893a0e8d3b46660e158b9fa1c775bbf9604f11"
     },
     {
       "id": "exact-order-n48-t3",
       "n": 48,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7e31096462111f410f6f0e7722fa46f60d0da1a2a314341b3f6066459f1b9874"
     },
     {
       "id": "exact-order-n48-t4",
       "n": 48,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4ec24c37d27ca2688a71627c6106f5f95ab2ac085cb22f6f3751ba6b8e3ea135"
     },
     {
       "id": "exact-order-n48-t5",
       "n": 48,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "66b4db68b26f3bbda6bf773a8d1124730f3f90f3c599fd1722dc17571d43ca79"
     },
     {
       "id": "exact-order-n48-t6",
       "n": 48,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "17d89950a3ec6b7390958d0b056b50fadf8bd73f1e7b6203a120c961f7e8d9be"
     },
     {
       "id": "exact-order-n49-t1",
       "n": 49,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "28b34b12681def895101b74379577d2211309e99f82c1df16eadb9c2a97308df"
     },
     {
       "id": "exact-order-n49-t2",
       "n": 49,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cb57fe7eb873aab486968c9ee14930a8ef0d9e9c274a6964d06d5ca10a9183f0"
     },
     {
       "id": "exact-order-n49-t3",
       "n": 49,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0394cbaaca8bf3cd8caca4ebedecdc30d8120cbe3dbb93c44d9c8861bb75ffc9"
     },
     {
       "id": "exact-order-n49-t4",
       "n": 49,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2f153989a8cd4e739072e3899198edd558b02933db2f71c217f6723565877cbb"
     },
     {
       "id": "exact-order-n49-t5",
       "n": 49,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d08f8a8cc3719bc989e8c1f007f20a3c2b276af8800c3044729e6a38deda4f36"
     },
     {
       "id": "exact-order-n49-t6",
       "n": 49,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "387d585dec9f79e667a2739f0e03db0ec5cc2bd0fcfdc8d030b77775e8804030"
     },
     {
       "id": "exact-order-n50-t1",
       "n": 50,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d8cf381d7bcb3f5c5788e14acfb9d09d9a0e86e6cf1497d46e5f80a8c00fc19b"
     },
     {
       "id": "exact-order-n50-t2",
       "n": 50,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "10051b568955fd7332410abaa26fc82861d4bd804bbbd6b63e0152e6e0cc20c5"
     },
     {
       "id": "exact-order-n50-t3",
       "n": 50,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4f692084437cd48554643aa91773267f6edfa205ef3b1d9421c7fe4d9b429278"
     },
     {
       "id": "exact-order-n50-t4",
       "n": 50,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "308f039bcef54c011c9c2f6c8ebb70c4707b33436200417b480b6361909fb790"
     },
     {
       "id": "exact-order-n50-t5",
       "n": 50,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2b519678893cf737e213decf345658e3db7af4030be7f8b5b15a94ab775c5a9f"
     },
     {
       "id": "exact-order-n50-t6",
       "n": 50,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a57cf87ed1cdc22269499ea742ed19f7f1619bce9e30e1d12f0678abdc0da574"
     },
     {
       "id": "exact-order-n51-t1",
       "n": 51,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "55b7b4a1e7e748828e86b7e829a523cf56fe48368c79192d8325295cf455bc21"
     },
     {
       "id": "exact-order-n51-t2",
       "n": 51,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cb72c2c809dda4c0c6d44a04c5017b8b86eebcc22743ef169667058323d82ff4"
     },
     {
       "id": "exact-order-n51-t3",
       "n": 51,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "a84af10d5f45a8aaf02d34b21eb718c0654626683b592905a1555b16ec2bd393"
     },
     {
       "id": "exact-order-n51-t4",
       "n": 51,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8d759cc21efe0147dda6ad51736241bde72397dd85582af6e448ac78927f92cb"
     },
     {
       "id": "exact-order-n51-t5",
       "n": 51,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "688f4046fa9ec3e4c0e00b20a8fe1a17563d1c6d718d632d62a3fb41446be3a5"
     },
     {
       "id": "exact-order-n51-t6",
       "n": 51,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "3330f27c1591b5ba3ebce66392b11c172c97bbe5876b02852ac155e5d851b58c"
     },
     {
       "id": "exact-order-n52-t1",
       "n": 52,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b1304fd5137a6a0e7757e832f0fa052e8da4c6488c02e4988e0bec154ef915c7"
     },
     {
       "id": "exact-order-n52-t2",
       "n": 52,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f10001797e2a0ee6543017e02bacf52bf8066140fe9198824af0adc4c5d0791e"
     },
     {
       "id": "exact-order-n52-t3",
       "n": 52,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "cc51b8b53eb6ef8536c851feb3e401606e89d0fbd6a9f3c48fa86de966508ad4"
     },
     {
       "id": "exact-order-n52-t4",
       "n": 52,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "bc8b834d53f5ffa208c0801cd6824e1bb732e05d892f10bc4b903f2e447c7172"
     },
     {
       "id": "exact-order-n52-t5",
       "n": 52,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "5cf80d565f20b514d8863ee2309f25d111a618d75b2406b1a2fbfc8e215ff5e8"
     },
     {
       "id": "exact-order-n52-t6",
       "n": 52,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f0d352aa3ae3314b3d217aca6c9520d4d493fd4b9ed95d5282d42c96a61e77b2"
     },
     {
       "id": "exact-order-n53-t1",
       "n": 53,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7d26f9a03755fcbf18c48cde343f644d111ce007c317c6db26b63dcea3ec8e32"
     },
     {
       "id": "exact-order-n53-t2",
       "n": 53,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "65a329c337463d162f34545cb606835f6fda77bee9da0d1bff5fdbbcd4a7cc6c"
     },
     {
       "id": "exact-order-n53-t3",
       "n": 53,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "70c5f640e1ea93f65fb664c0d30cc1a36fd61d090e8b3c740c32eac809950c5c"
     },
     {
       "id": "exact-order-n53-t4",
       "n": 53,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8c7a552b37ae60d0e5bfd58a90d0d1d50678882027390d51fdb028e5d530a193"
     },
     {
       "id": "exact-order-n53-t5",
       "n": 53,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "257ade481a70915ce51c1c0fb86a8bc6fd7d558293eb54bf12c7fbd1efecb85c"
     },
     {
       "id": "exact-order-n53-t6",
       "n": 53,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "215e97ed068b240f309ca5bba1bdae47bfbaa1ef4e53b35c7448061694116562"
     },
     {
       "id": "exact-order-n54-t1",
       "n": 54,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "ac285be7b353bcaabc348af49f9359ba238155ebb03044d13f6bbf59392577af"
     },
     {
       "id": "exact-order-n54-t2",
       "n": 54,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b96b496e58df5602bc6de9f62de44c7b402d43d279d14b0e26357aac6724934b"
     },
     {
       "id": "exact-order-n54-t3",
       "n": 54,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "58b82e6da0e69a0662942938b3ac0b893c917da1c8b4e19b66fb051312b48d02"
     },
     {
       "id": "exact-order-n54-t4",
       "n": 54,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "c5504b6e067fdc000d63cc26d2e2816ee1fb7e25deb73463828eb3262ebc1cec"
     },
     {
       "id": "exact-order-n54-t5",
       "n": 54,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4bbead0e18c698de8b81df4be8dbdb83a75ecb909e5423b08c7a86555a2dd912"
     },
     {
       "id": "exact-order-n54-t6",
       "n": 54,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9eb91221d371c54352a78267f9aaf1b4836d420633e64b76491d7c5dd1f4986b"
     },
     {
       "id": "exact-order-n55-t1",
       "n": 55,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "de0344d7b71ba81cc446a1fc40accede0d1eb9b59c48ae7ab91751d0d7036d9b"
     },
     {
       "id": "exact-order-n55-t2",
       "n": 55,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "6e3fcfd4675ff2f6873af4e6107ad6651caeedc5a616388685c87cb0821b4075"
     },
     {
       "id": "exact-order-n55-t3",
       "n": 55,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2e5e8265f97c2e6f94aba332cc2f295ed6a3ec11971efc4b6c17de0173fb13d8"
     },
     {
       "id": "exact-order-n55-t4",
       "n": 55,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d3acd8ea3dc48589eb008038386ef12730c388105bc964d136ec2ff43e261177"
     },
     {
       "id": "exact-order-n55-t5",
       "n": 55,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d5af82eb6231dcbec8a0313636a917d3e68d17ae0d8414f84ee19c1f1c32e297"
     },
     {
       "id": "exact-order-n55-t6",
       "n": 55,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "9851b19337c13962cee625f53caaa2104ad88ac37497077fc2dc859f2e978096"
     },
     {
       "id": "exact-order-n56-t1",
       "n": 56,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "f88619b69b0165e14b46a75e9f861df36e65b32fc296b00da22797757a6cd184"
     },
     {
       "id": "exact-order-n56-t2",
       "n": 56,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e3ea2555f0c938904213e8338278825e58d6e66048fa456fa1dcf892aa9c6489"
     },
     {
       "id": "exact-order-n56-t3",
       "n": 56,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "740edb99789417b684240c321b76289c89c28ad35251db921b15acdb497e9c76"
     },
     {
       "id": "exact-order-n56-t4",
       "n": 56,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0cbb85bfcfd4fd0e7511ae4b8b30580ff7bee91a9ccc8be67cbf3a003a39622e"
     },
     {
       "id": "exact-order-n56-t5",
       "n": 56,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d31fc14379cdc8b562b655963245710f97132d19123b2a1d66278435081719ff"
     },
     {
       "id": "exact-order-n56-t6",
       "n": 56,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "c1a039f8807ad986e311ca125c904cfbf74329c3afb579f58d65886624853657"
     },
     {
       "id": "exact-order-n56-t7",
       "n": 56,
       "exactOrder": 7,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2e189d93f7bddd1622745c8d8b9a38c45fce2532123e032d76d0db73d64a3337"
     },
     {
       "id": "exact-order-n57-t1",
       "n": 57,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8d4100a0cbfa36adefa2f91b6314ed34e7f423cfc554d5fce18c5768c9f02e61"
     },
     {
       "id": "exact-order-n57-t2",
       "n": 57,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "fcabffa381086d7ddf8f9ee62d2ba019641a3f1029aaca023e6b81199b41874d"
     },
     {
       "id": "exact-order-n57-t3",
       "n": 57,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "249af0269ed29aa995e2de5995eef877f017c9980e6e88ebebf92a247e1ead09"
     },
     {
       "id": "exact-order-n57-t4",
       "n": 57,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "49c6d7a450bcfe59142ec7c2b7d4df4087093e59f028a777033eb0f8f6c7bc7b"
     },
     {
       "id": "exact-order-n57-t5",
       "n": 57,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "1be595e253e695d2934a37f1aa87fcc22482d3bb20855f78c001c17643bc04a3"
     },
     {
       "id": "exact-order-n57-t6",
       "n": 57,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "87c055acaf44d1686a1e077fce78752d4fc4421cd4ddb459772594440fd5bc50"
     },
     {
       "id": "exact-order-n57-t7",
       "n": 57,
       "exactOrder": 7,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "e125016f426cc2789d7a2761167eefee7afe001778c4c59375b1f7ea30a254b9"
     },
     {
       "id": "exact-order-n58-t1",
       "n": 58,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d80d0c72b42b326a9b3981cb8778c89d0e18f3cc1002b60c522852bf328045f6"
     },
     {
       "id": "exact-order-n58-t2",
       "n": 58,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "bb2153c1e20dd9eeb504a33b1e51c1f46c8905771797f855d1639619b684635f"
     },
     {
       "id": "exact-order-n58-t3",
       "n": 58,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b8a486371d5611cbef53fc2090574f6aa54e43a34fbe6238e6e7a343ead5ca69"
     },
     {
       "id": "exact-order-n58-t4",
       "n": 58,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "4bbbdf6667c58d7ade5a305c1d1943a6a80c9e63b2ece8a6071eafcf1ef1bfcf"
     },
     {
       "id": "exact-order-n58-t5",
       "n": 58,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "62a483915cc848faed5173132665e617c2da227ac7a870f6184c5544ba7e225c"
     },
     {
       "id": "exact-order-n58-t6",
       "n": 58,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7207e97f69f36189f85504ed3cd9d94581da6458f48f3ffb5f2e91aea75b8136"
     },
     {
       "id": "exact-order-n58-t7",
       "n": 58,
       "exactOrder": 7,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "2e63887c8eae40cb14339e3240c8b2b36640b12ebdb16c6c5cd486e8b84a7522"
     },
     {
       "id": "exact-order-n59-t1",
       "n": 59,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d9dd678e284d1f20fa1a4d7ca5a438f8b95adea9ae9623bc93a346b5244579e7"
     },
     {
       "id": "exact-order-n59-t2",
       "n": 59,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "65596b2e1ff260ba63c77a4143d1b793aa7c9e92c85a4ebf54e0d1a92d3358ab"
     },
     {
       "id": "exact-order-n59-t3",
       "n": 59,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b3fd030781a8a7211de78cbc842a17945e859ac5dcc366a8bb2055461cde2c75"
     },
     {
       "id": "exact-order-n59-t4",
       "n": 59,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8e85b5442313ed8993d2108a192e0a535b4ded419ce8a0ecee4aa6ecc7e615e0"
     },
     {
       "id": "exact-order-n59-t5",
       "n": 59,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "031cc243e2c049586b6949c4c26df74447fe483dd8dcf4c5d0464f8b4c16be75"
     },
     {
       "id": "exact-order-n59-t6",
       "n": 59,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "b98d62514a31e6de7283832684ed8d86861ad1ad6b9f48ee08ee0d2e34a407c1"
     },
     {
       "id": "exact-order-n59-t7",
       "n": 59,
       "exactOrder": 7,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "7d9fc3812330cc98df09b74f43292c4d33cf8e0ac3f3b28fee5f77af8b9ef85d"
     },
     {
       "id": "exact-order-n60-t1",
       "n": 60,
       "exactOrder": 1,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "780423b866f68045869862e9bae5baf764cd7f40cfe70606922e8f34907dd083"
     },
     {
       "id": "exact-order-n60-t2",
       "n": 60,
       "exactOrder": 2,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0aa71abaa014fd247f39cc24f8b6fbb06b39984bb8305b159d15811876ebc458"
     },
     {
       "id": "exact-order-n60-t3",
       "n": 60,
       "exactOrder": 3,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "0487f39ddd6127562b783f5b33ec6de17e0c93842a3540780ccad68705c227f6"
     },
     {
       "id": "exact-order-n60-t4",
       "n": 60,
       "exactOrder": 4,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d8fb8c3146a3b690efdaa0373c6e7f94a21b18901f8029278816d525ccb4f6b2"
     },
     {
       "id": "exact-order-n60-t5",
       "n": 60,
       "exactOrder": 5,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "8b89d10e3e0c81770f0910b93669e0a1d0de2a1b014b9e0939a34030e73620ec"
     },
     {
       "id": "exact-order-n60-t6",
       "n": 60,
       "exactOrder": 6,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "68d8747786b27b2e892f2162a7efaafa2b08352e092b15006d5589f7f8bff8ef"
     },
     {
       "id": "exact-order-n60-t7",
       "n": 60,
       "exactOrder": 7,
-      "passed": true
+      "passed": true,
+      "exactCoefficientSHA256": "d5e67e1607bb0cabbd500a85a34efc76e30aa2aeab6f14dc50ebf7bb0b6152b4"
+    },
+    {
+      "id": "exact-order-n61-t1",
+      "n": 61,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "9ccdabf14113d31906a633582cc6ab040ba490dc7ceb75f88b75a479d4555886"
+    },
+    {
+      "id": "exact-order-n61-t2",
+      "n": 61,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "21bfc05dd15b8cc329f7f59a8ccb96da3662ec1030308eb1ef22bfd863c44d02"
+    },
+    {
+      "id": "exact-order-n61-t3",
+      "n": 61,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "72dc44b33e043f15a8ca88c5d5349bda2f0d77838d95b1b04d8e0182c541bc32"
+    },
+    {
+      "id": "exact-order-n61-t4",
+      "n": 61,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "af838f773fcafad9b2c6b2c248c09cbf08571c0ed4aec9c64b74b047ca7a46eb"
+    },
+    {
+      "id": "exact-order-n61-t5",
+      "n": 61,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "cec304a839ae612f40cfa2d095565f649f0e866aaf8e062e82c2bf01829be5ab"
+    },
+    {
+      "id": "exact-order-n61-t6",
+      "n": 61,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "86b274b10d16ba6ca3f261dbe0a961d1e0b01d81811892659cb07a144a63b168"
+    },
+    {
+      "id": "exact-order-n62-t1",
+      "n": 62,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "a9ea9f950b5135ce93e3dc89ccc242febc919446f2709e8bbf1f1a75f5970cac"
+    },
+    {
+      "id": "exact-order-n62-t2",
+      "n": 62,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "f843a2ffce58662db5a52cebd1a63541b9f5d15e8dffe20b2ee60d2b3a1c151b"
+    },
+    {
+      "id": "exact-order-n62-t3",
+      "n": 62,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "00bd9ab56da0e71dd4d16339e5b48ef6f859de6b41b89ea5374645d0f0a799a4"
+    },
+    {
+      "id": "exact-order-n62-t4",
+      "n": 62,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "fd8695c492e7c2346e7e8adf1cde9aaf35d4244118f86585e85da9b9aa3587c4"
+    },
+    {
+      "id": "exact-order-n62-t5",
+      "n": 62,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "9cb6bb483a4a5f46554e5ed0fbab6e6bd1f21ce0903eaaf8dd4585cd0a2d147d"
+    },
+    {
+      "id": "exact-order-n62-t6",
+      "n": 62,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "570b9f70677cd9b51228701abb8f81494024d26e761332c255bf40e8b2aedef9"
+    },
+    {
+      "id": "exact-order-n62-t7",
+      "n": 62,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "6f4c1d706151d20180e412358f61826c6fb0dc42379bf709c3413c542bfee99f"
+    },
+    {
+      "id": "exact-order-n63-t1",
+      "n": 63,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "448e51710c131e1520cb6fbcc362e6bde0c5ea18f5072d1568371ad5a82b5c3b"
+    },
+    {
+      "id": "exact-order-n63-t2",
+      "n": 63,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "f59d9d9fd382cf49c37b589a45189411849af59f84300c50f307db6d037ad652"
+    },
+    {
+      "id": "exact-order-n63-t3",
+      "n": 63,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "6be5689f5c84947ccfdd006979e43e2453d54e25d9b800f9b17db3a071c0e0ea"
+    },
+    {
+      "id": "exact-order-n63-t4",
+      "n": 63,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "225f4e055d423a8c1823d134346121531f1662f9823b777136fdf186e3d79d70"
+    },
+    {
+      "id": "exact-order-n63-t5",
+      "n": 63,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "9c6f3f7aa769e80a1ab6bfe1007f60a3b5072790c80039f5029a1bbb0feb3cff"
+    },
+    {
+      "id": "exact-order-n63-t6",
+      "n": 63,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "e0e59f6ef047d9cf3ca0a0fe9118ea975aa124a6e155682af6f627bc582f0b2c"
+    },
+    {
+      "id": "exact-order-n63-t7",
+      "n": 63,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "6c97c104e3cd7b05986f97ae62aef65f9651c96e275a37550091bf973a2bf019"
+    },
+    {
+      "id": "exact-order-n64-t1",
+      "n": 64,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "01f33d6a2d91922b347dfad052e18b02e33ca8572462e929a8b31d48099397f4"
+    },
+    {
+      "id": "exact-order-n64-t2",
+      "n": 64,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "a591fa9d6440040bde5a8e3443b65f1f01908235282bb7eac2ce1bddd94f5b65"
+    },
+    {
+      "id": "exact-order-n64-t3",
+      "n": 64,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "8fbc7a5f9eebb96de68449a9bcb2f0e1baab8793b75d5bc9dc983f9cf0ca7e13"
+    },
+    {
+      "id": "exact-order-n64-t4",
+      "n": 64,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "de19b7a49ffc91453b32af5361a241ec68d0cdbca6ae1b82b2d8243cd95f7d79"
+    },
+    {
+      "id": "exact-order-n64-t5",
+      "n": 64,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "6ca19634a5ec4977aca188dc430b6b41ca8a13743cf074c768f37cdde9e52713"
+    },
+    {
+      "id": "exact-order-n64-t6",
+      "n": 64,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "38f8806a65f0aa2f810e9a93e83e40b4c44bb843e91fb31f31526fd7fc8a2ec4"
+    },
+    {
+      "id": "exact-order-n64-t7",
+      "n": 64,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "44ebe7fbc4b2f3cef6baca667be296616f0a442cb66fba8dcc30347aca90cb3a"
+    },
+    {
+      "id": "exact-order-n65-t1",
+      "n": 65,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "31fb0ce48788a8b4eae6292f800c7334888bdc9ff35673feb505c46745cd5a6e"
+    },
+    {
+      "id": "exact-order-n65-t2",
+      "n": 65,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "be2dae950a207762f06ca14156eb40431b71c5ff7b319c4ce9e46a8789e9704e"
+    },
+    {
+      "id": "exact-order-n65-t3",
+      "n": 65,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "698a59ff986f174a6c7dec96ffa8b4fb677edd2ca133d848c3d132aa9742c86e"
+    },
+    {
+      "id": "exact-order-n65-t4",
+      "n": 65,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "fb88b2d584e7047047f7cb7e9c622491e56308a73524328e436140dc455f1365"
+    },
+    {
+      "id": "exact-order-n65-t5",
+      "n": 65,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "ff5443c3cd83fabaa805aeba242ab6308e0d02473a5bf05a3d6c6062b46f55be"
+    },
+    {
+      "id": "exact-order-n65-t6",
+      "n": 65,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "bca70419317671863258d300c0c3f4f7d9e3c073dc1335639ef32a6742739d8c"
+    },
+    {
+      "id": "exact-order-n65-t7",
+      "n": 65,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "9d315112d28639fa3a210b931d3ceab1d56a1c245936d0abbaf9ef2461eb2636"
+    },
+    {
+      "id": "exact-order-n66-t1",
+      "n": 66,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "0352584aac67b84e7a754836e899a656a566e30cbda7f55f21c5a56f9b30369c"
+    },
+    {
+      "id": "exact-order-n66-t2",
+      "n": 66,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "ce616e0ac714aa8d24b32123b662a3b5c05f0e2ff39be1004b8170487450510c"
+    },
+    {
+      "id": "exact-order-n66-t3",
+      "n": 66,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "1dad0d810efb499217b10a00226f26a50a129395434e7dfc52d4ef7fa9c4624c"
+    },
+    {
+      "id": "exact-order-n66-t4",
+      "n": 66,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "89637f74053ad1b31569582896e18db4d81bf9409d0e68943ea8418bb17c4f60"
+    },
+    {
+      "id": "exact-order-n66-t5",
+      "n": 66,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "170b4fd9ae5bed8e682305851bbd6c1904aaca709eb11ff9c1540ec97348dfba"
+    },
+    {
+      "id": "exact-order-n66-t6",
+      "n": 66,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "38cd1cca432139b4490d54517e3919ec1194d2e36fe51739acc3d92de01f01c9"
+    },
+    {
+      "id": "exact-order-n66-t7",
+      "n": 66,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "d4fdda4be8a305bf01bda7168a087cff96a69eccff7c28154947553a6a756824"
+    },
+    {
+      "id": "exact-order-n67-t1",
+      "n": 67,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "a5805cacae7d1a8b7c2f0e322058dbdd35af0e07fb6cd588c8f8ba9f6004167f"
+    },
+    {
+      "id": "exact-order-n67-t2",
+      "n": 67,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "a3dc1969e43da864d3aec35be008468839db6df801ce5099a7c597db7addabad"
+    },
+    {
+      "id": "exact-order-n67-t3",
+      "n": 67,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "a8d864d0ac6892b589822b1ab2bea5582915830a15e3c7b43956ca9340a109ff"
+    },
+    {
+      "id": "exact-order-n67-t4",
+      "n": 67,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "a895aca1c861c83784769c2bf078a1baf5092d880879d5e809803e11b8e6a178"
+    },
+    {
+      "id": "exact-order-n67-t5",
+      "n": 67,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "26c7fd30200aa7aee732f15b32ea9e4a0fd56dd4141d63ee592df79eaa14fdd5"
+    },
+    {
+      "id": "exact-order-n67-t6",
+      "n": 67,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "39add5742a50d91f743aee71d09cebce316fb2e9a7246c61ef86761f7e17c8c3"
+    },
+    {
+      "id": "exact-order-n67-t7",
+      "n": 67,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "87e2410a8c6e26e54041d0d9d04ee76fe1573467053b994e27a3adc78335c3fb"
+    },
+    {
+      "id": "exact-order-n68-t1",
+      "n": 68,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "58250a545a6afd56b80d1f1225c6c17c29f4b673d4b76755710ef3519474c40b"
+    },
+    {
+      "id": "exact-order-n68-t2",
+      "n": 68,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "f3a8c21702675bb99a29e4b49bba8eb6b94766469191be2ff7874b75872f215e"
+    },
+    {
+      "id": "exact-order-n68-t3",
+      "n": 68,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "7587fd8cb4c4c1dd8711d66f4c58718ef6676bf24e7ef2733d2c8c8361f8a7f9"
+    },
+    {
+      "id": "exact-order-n68-t4",
+      "n": 68,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "11702a1d2afe059091fb1c5e04f1dd2268d1b2b4625edb87c0d4a1a558a6782f"
+    },
+    {
+      "id": "exact-order-n68-t5",
+      "n": 68,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "4122fde3e36e8d5558845b71155f53d9902729f8019adb6d255385081b527cb3"
+    },
+    {
+      "id": "exact-order-n68-t6",
+      "n": 68,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "5e6aa82107d37335b4893653021aa04d39d25cce6005195c83414fa45c3a2f90"
+    },
+    {
+      "id": "exact-order-n68-t7",
+      "n": 68,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "04c314cf7599a99297950307d19499a7178e2d318bd0e17f4173d423dbc1b1ca"
+    },
+    {
+      "id": "exact-order-n69-t1",
+      "n": 69,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "315f48ecc852b72af2e572c5932b0af6dbd38c52e20087e3dad70a2528421cf2"
+    },
+    {
+      "id": "exact-order-n69-t2",
+      "n": 69,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "b757b511add1c56fa2e070eee67471ab218de6b4324d2902ede51d1e176e81ce"
+    },
+    {
+      "id": "exact-order-n69-t3",
+      "n": 69,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "8ba5b920bde718c2786cad2b0ec2416c059ceb255ddc34d09927b8e8e7462464"
+    },
+    {
+      "id": "exact-order-n69-t4",
+      "n": 69,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "7fa22d8e6908509fd986f6bc8526e7d94ea508112122d4fad277823a143bdc45"
+    },
+    {
+      "id": "exact-order-n69-t5",
+      "n": 69,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "dbe0cf1eb6679f9c05d0b0a3f476302a942413b1153dfbf4e2355f6415a1113b"
+    },
+    {
+      "id": "exact-order-n69-t6",
+      "n": 69,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "80394c0b95b0b505c144dae412829d08abd827423fd8e921b3994e1d8507bc04"
+    },
+    {
+      "id": "exact-order-n69-t7",
+      "n": 69,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "e0a47fcb78ce84590fb85da3fb660999a0a7c2b85527a170255520a14499fe1a"
+    },
+    {
+      "id": "exact-order-n70-t1",
+      "n": 70,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "134d1ef21ea01d1352fe7343ae9ed7ae4f3b0c639ce39fb1d3367d6aae17321b"
+    },
+    {
+      "id": "exact-order-n70-t2",
+      "n": 70,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "01cd641e65b61925f5a5522b8013b7ecda833e48ddacb1430829b80221b1c3b6"
+    },
+    {
+      "id": "exact-order-n70-t3",
+      "n": 70,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "44f95a8c85a9f72849dfd97a87ef559e7243735358749af2130221056503c24e"
+    },
+    {
+      "id": "exact-order-n70-t4",
+      "n": 70,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "ea638b0ce204fdfe5492a679955739a386f5ec096b5d0d1536f122851857565d"
+    },
+    {
+      "id": "exact-order-n70-t5",
+      "n": 70,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "ded4fe87c2b68e2737ae70b644784b332826a29d283673e5dd4053c3aa0cbe0e"
+    },
+    {
+      "id": "exact-order-n70-t6",
+      "n": 70,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "8679290e37680e2ddac282a85f48dc52240f7284d05d45e7c2a7c7b67f1063e9"
+    },
+    {
+      "id": "exact-order-n70-t7",
+      "n": 70,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "63c0f68ddeff2740ed81d9c5089a42dbefbae997b5d95260bf06c2fd038cb92a"
+    },
+    {
+      "id": "exact-order-n71-t1",
+      "n": 71,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "dd1de6c06a99ba2f239a2622fee31000058e5ab0f4afb70e3b2ebf110dae3376"
+    },
+    {
+      "id": "exact-order-n71-t2",
+      "n": 71,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "47b0582b51e7d2cca39bbfd2e04faceea541cc6e53b96366b8add461eaa8fd7e"
+    },
+    {
+      "id": "exact-order-n71-t3",
+      "n": 71,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "699c97fc4b965eda49612426868e32f01df4dc7fb5ebe747ea0984d4a86b34af"
+    },
+    {
+      "id": "exact-order-n71-t4",
+      "n": 71,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "32fb637e1186d11c91a9b251989ce2b77e650f6a47f88bc06bb47e6ce90cfa64"
+    },
+    {
+      "id": "exact-order-n71-t5",
+      "n": 71,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "bcbc8b28cb09cc99516f3911a82d8dc4b1a187ad6bc75c23a864aa675151ab9b"
+    },
+    {
+      "id": "exact-order-n71-t6",
+      "n": 71,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "ecce70cf008c3069aaa524ec1fe98b7a3e9df227fb0b0a44a39f91d0364a0a96"
+    },
+    {
+      "id": "exact-order-n71-t7",
+      "n": 71,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "6a6c4a49f0762371ffcb23bba658bc479668f76b6e14c70d3c17d39fee2ab78c"
+    },
+    {
+      "id": "exact-order-n72-t1",
+      "n": 72,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "ba724d3f4ef5fd0a883dcd7565ae4d901331846191cceecf448c2fdb8ab2295d"
+    },
+    {
+      "id": "exact-order-n72-t2",
+      "n": 72,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "8559bfae6b3a2d947c9ffe197ba2cb7512e048abfe6ef3fc9596ce70739dd22a"
+    },
+    {
+      "id": "exact-order-n72-t3",
+      "n": 72,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "abb07b02ab154440394e435e4642c8324e7321b5cdf4e39b3056c4f47a42858d"
+    },
+    {
+      "id": "exact-order-n72-t4",
+      "n": 72,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "70dbb9883aaa9802b053526d87e03cde7614500a64393a70746b253dfe02c1c0"
+    },
+    {
+      "id": "exact-order-n72-t5",
+      "n": 72,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "27f2baa586948f519b615341fb9db728627c0aa6f329361533aa438ba9ba29bb"
+    },
+    {
+      "id": "exact-order-n72-t6",
+      "n": 72,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "cddc16db9b5355fc251f881b750ee06bb0ba5d2ec6478f38f6278661de4bfd9c"
+    },
+    {
+      "id": "exact-order-n72-t7",
+      "n": 72,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "8c6c8d3ad0a71d0dd98ea2b65a1e90e18b40c0595c901c8da501aea68fb86c35"
+    },
+    {
+      "id": "exact-order-n73-t1",
+      "n": 73,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "17cef1be424b1251e8e5f6ea15bed3c3328ad00602d5ef82fb1eebdd456ecb3c"
+    },
+    {
+      "id": "exact-order-n73-t2",
+      "n": 73,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "853e5e42dddbf622c4100781774e988cdd1985e6e9a53e5897ae45d1a910aa95"
+    },
+    {
+      "id": "exact-order-n73-t3",
+      "n": 73,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "7f1c60696e7eea3c03ec32e419d9fc56ce5bd98fbb42e11da055b946bbdb55af"
+    },
+    {
+      "id": "exact-order-n73-t4",
+      "n": 73,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "1e6789c2c5bfe4978cc3278fa920c77f4ea130638b13065dbd07f87f4a41d392"
+    },
+    {
+      "id": "exact-order-n73-t5",
+      "n": 73,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "3bdbcea7f805adcab62a8e8ec7461bbff54a475beba0f229d44aa559114fbabb"
+    },
+    {
+      "id": "exact-order-n73-t6",
+      "n": 73,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "3675e150610a22c6b5143b530b5b1c88d13eeb40014ba3f2738a7e5338b25eff"
+    },
+    {
+      "id": "exact-order-n73-t7",
+      "n": 73,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "6364363b9bcffac5ae8432b4b16519e76c262f006824c41e06f1f5716df0f929"
+    },
+    {
+      "id": "exact-order-n74-t1",
+      "n": 74,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "d161b9fe7e5b5b48025fa8c7e11da21d304f4225d4cf27b8b95ad9d27d15ddba"
+    },
+    {
+      "id": "exact-order-n74-t2",
+      "n": 74,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "020efbbd65ba8ab270b70c14cfb61be7d4296bddc3ea9422f60887cf6d4fdb7d"
+    },
+    {
+      "id": "exact-order-n74-t3",
+      "n": 74,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "9eac7360bf812df965da2a575e3eccbe8d00dbab658864bc4564fca80b1646dc"
+    },
+    {
+      "id": "exact-order-n74-t4",
+      "n": 74,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "902874dd33203c7e8263f315222fdc588a62c07ad8c2643f9dedd17cd34fb462"
+    },
+    {
+      "id": "exact-order-n74-t5",
+      "n": 74,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "40175b00be0f3dc2e90e80e0d72ce7ffa8c350bb7dfdc2e15cf0ee22f68df018"
+    },
+    {
+      "id": "exact-order-n74-t6",
+      "n": 74,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "15d662d5a95732ed1bd3ec16a1c825bc13db7866043ecf2ddfc613d80c6ce299"
+    },
+    {
+      "id": "exact-order-n74-t7",
+      "n": 74,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "fd695d14b37531e9d4efc0f7e4c3bbfff0f00ca71d833be5eebef5c56aaf3375"
+    },
+    {
+      "id": "exact-order-n75-t1",
+      "n": 75,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "837a3447850fa4e23a00744fc66d65fc0c7c6f8eff98f6648de23d9bb8ca428c"
+    },
+    {
+      "id": "exact-order-n75-t2",
+      "n": 75,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "bb52c4503685b1faa0083f40aad7d2f25d26a03a56ba5f409422af2876680d56"
+    },
+    {
+      "id": "exact-order-n75-t3",
+      "n": 75,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "99702584035c46eeb927bc9bbbbacd631548ceb1fbc27d4512a20e29c4805660"
+    },
+    {
+      "id": "exact-order-n75-t4",
+      "n": 75,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "9f006595225fd3383916a9193a142392924150f933da9c66de71bbc439fc3730"
+    },
+    {
+      "id": "exact-order-n75-t5",
+      "n": 75,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "6281278364a6604cd6e340c4f041b5f6f52fe2ebff30e8c0b5827ed91a9a72b3"
+    },
+    {
+      "id": "exact-order-n75-t6",
+      "n": 75,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "322f474349d4b32fe0822f4d566adcd99fa252b41500e6dfad0cfe74f19fac72"
+    },
+    {
+      "id": "exact-order-n75-t7",
+      "n": 75,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "f153bc270fa17e2bb4a1b750798000f4dd042d1b45e71bd1c82d1a4218d17373"
+    },
+    {
+      "id": "exact-order-n75-t8",
+      "n": 75,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "4dee8576a40bc083dffb9bd3e0847bd7d878a565ca17226edb81c1291d8b601b"
+    },
+    {
+      "id": "exact-order-n76-t1",
+      "n": 76,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "f56e04b0d646ba13fd6f204886478ee677910730c3baa5f57ed773cc14fc8e1b"
+    },
+    {
+      "id": "exact-order-n76-t2",
+      "n": 76,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "0cbffc23357b64d87e4f892d0ddec2b16f4612fd1d5a30d7eff2c7620b769e5b"
+    },
+    {
+      "id": "exact-order-n76-t3",
+      "n": 76,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "3c599f1d518d1f0f1c7ae049b791ce0cd482c1b3f729d5df0744207280ba0c30"
+    },
+    {
+      "id": "exact-order-n76-t4",
+      "n": 76,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "c1a6b15521e5c41e394feaca14fa0556bc1f154b82120cc05de124956b1e20d2"
+    },
+    {
+      "id": "exact-order-n76-t5",
+      "n": 76,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "29e54c82b15a0728f2492413776dbd143d26b360d52004b8b661bea178961e90"
+    },
+    {
+      "id": "exact-order-n76-t6",
+      "n": 76,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "7bc4ea2a40e258894d3277679dc7315665ff460b1725e379d575c32d13bab167"
+    },
+    {
+      "id": "exact-order-n76-t7",
+      "n": 76,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "0d446f133f9ac0abe92213310b577c61c921444b15653ce90649b10fcb071b12"
+    },
+    {
+      "id": "exact-order-n76-t8",
+      "n": 76,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "e54a98742f338a8a9ee472783d8b496e7d2eb292e496055f769df97a675971f2"
+    },
+    {
+      "id": "exact-order-n77-t1",
+      "n": 77,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "65d6197f0d699f37083dac1eea15045746e0da716dc68aa8576fbf60c70990af"
+    },
+    {
+      "id": "exact-order-n77-t2",
+      "n": 77,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "171b0607a357d5460e2c70cf9e5f4e06b1edc5ec224b560c6d85fc4660bb1582"
+    },
+    {
+      "id": "exact-order-n77-t3",
+      "n": 77,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "80778c9f0378e288777dc8a1b8970e2f5d01dfe265accb64dc8c05577c0a11be"
+    },
+    {
+      "id": "exact-order-n77-t4",
+      "n": 77,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "422008566053ceb33943b7c39124ba6d02c4142f526784710c38cb6fe51dc6c3"
+    },
+    {
+      "id": "exact-order-n77-t5",
+      "n": 77,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "0684ec0385d742306a9a7290fd0ab71085c9ac54568cc95950a7fb519d6a585a"
+    },
+    {
+      "id": "exact-order-n77-t6",
+      "n": 77,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "aee8667a4e2bf2ed08df3d6071111dbd81fb9283118175361be227942718965d"
+    },
+    {
+      "id": "exact-order-n77-t7",
+      "n": 77,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "2ccbc592caf154a4096c0f7370d09bf239c6dcd2fd5a458dd608fd5b5fcb1462"
+    },
+    {
+      "id": "exact-order-n78-t1",
+      "n": 78,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "379a85ec289c3e72cdd96fc62d0f4383b46c321aa7908bc6629c8be7ae93afc0"
+    },
+    {
+      "id": "exact-order-n78-t2",
+      "n": 78,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "6410aa3a10f1b61493cd855f085d4977d1267027878081c671d870630a728adf"
+    },
+    {
+      "id": "exact-order-n78-t3",
+      "n": 78,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "a8eef9e093dec3d0e22e1950fde91e5e42052b27f96477a0ca75a624f5a27980"
+    },
+    {
+      "id": "exact-order-n78-t4",
+      "n": 78,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "ffa5fe4b5db26900de107f89e6cbe2bc4c52f25aaa66c2fd92330266de1fcbd4"
+    },
+    {
+      "id": "exact-order-n78-t5",
+      "n": 78,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "e69a17efbdf9ea84ccb1fabb074c42e11cfe7b02632b903ef6ea7acec10fc9e7"
+    },
+    {
+      "id": "exact-order-n78-t6",
+      "n": 78,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "70efa3819c17f6f7113296d964f9387e2d88748dd492a916cea01b4bc11b170f"
+    },
+    {
+      "id": "exact-order-n78-t7",
+      "n": 78,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "bc55c4d112f6664763f9a5db4b8cf691c99c950e53914b2cceaeb68c5b0d5abd"
+    },
+    {
+      "id": "exact-order-n79-t1",
+      "n": 79,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "d72adde3ed7e8c3cfe2dc6b9ff86898f2c8e708c27a35bf4399af4622ad2e760"
+    },
+    {
+      "id": "exact-order-n79-t2",
+      "n": 79,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "3a385b5f358ce6de0e79dbf7d85328c4ee0aeb9514f1261d20ba84cc107f9ddd"
+    },
+    {
+      "id": "exact-order-n79-t3",
+      "n": 79,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "fba21657d9feb1ee4b8615244cef5b7957fa6c3354cccb540c62c94a44d91df0"
+    },
+    {
+      "id": "exact-order-n79-t4",
+      "n": 79,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "64117a77a4db5851fd0dbd4363d24757e040650316e00affb937876531846800"
+    },
+    {
+      "id": "exact-order-n79-t5",
+      "n": 79,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "2ddabebd5a2334aa11e3f4f0d6baa6bab65d6a49e3d898d8bbb09ccee4c9184a"
+    },
+    {
+      "id": "exact-order-n79-t6",
+      "n": 79,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "86507240adf293d3eeee14b2e0ca098c9cc656929211f4da185421b14b503e79"
+    },
+    {
+      "id": "exact-order-n79-t7",
+      "n": 79,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "1a655d29527c1c3bc07f9f4b11b6529d8c87cd1b8abc8153cab8809e48f339c2"
+    },
+    {
+      "id": "exact-order-n80-t1",
+      "n": 80,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "8f6c715e02f4d2916f453b373137e2ca2f1bac29986175aef8c087ffdd7c1678"
+    },
+    {
+      "id": "exact-order-n80-t2",
+      "n": 80,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "13102654af69f2c6091d3cc43bf52a1626464706ddb7690fad76a760dded5636"
+    },
+    {
+      "id": "exact-order-n80-t3",
+      "n": 80,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "3459fed3536efe08d0cf6634ee942531b4ffda1b3161252c90a917bea73a98d2"
+    },
+    {
+      "id": "exact-order-n80-t4",
+      "n": 80,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "fc3b3e4382f6ef162ab1f168e9d799833869b500bf2fa83a885ccc76c6a1a3e7"
+    },
+    {
+      "id": "exact-order-n80-t5",
+      "n": 80,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "30506b1b2d170dc0437663b8c199a1b6b4994d2f14a86de68bb79e5bef15d4be"
+    },
+    {
+      "id": "exact-order-n80-t6",
+      "n": 80,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "bd5807eed37a693627d3b54e3453b9cac4ab74ee8ab22fa5221bcbf325cc5a2d"
+    },
+    {
+      "id": "exact-order-n80-t7",
+      "n": 80,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "1a2c7a02f6d4fe274d6e982b4c9c149a732294eacc242036cd42350fef020645"
+    },
+    {
+      "id": "exact-order-n81-t1",
+      "n": 81,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "537aa289b03a89452667dfba709cf8804ded55efa546c9f923516d4f64e86ba2"
+    },
+    {
+      "id": "exact-order-n81-t2",
+      "n": 81,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "6ea58a3d451c89282bcef68ea15da85db8fe81f1f890091168ca72b1f0a30141"
+    },
+    {
+      "id": "exact-order-n81-t3",
+      "n": 81,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "8988cee8cfcb9c25701a293b0307c40d09af6008f7dac3adb40a54b5af416279"
+    },
+    {
+      "id": "exact-order-n81-t4",
+      "n": 81,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "62e5acbcb8b5fdef03c5157a2e492ea854ce13a6162534d5f5e3e8f4ffac3607"
+    },
+    {
+      "id": "exact-order-n81-t5",
+      "n": 81,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "f25714561ed66d2403ed75132b80b00e339219520ed0a8bc366341e636c5485e"
+    },
+    {
+      "id": "exact-order-n81-t6",
+      "n": 81,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "da2e895bf0763e639ec62e25dc82095dca32edfff86576a0530c2180d074efba"
+    },
+    {
+      "id": "exact-order-n81-t7",
+      "n": 81,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "e0326b82530736255588d831ede2a9447d6772d15693e8dbe21ce9bdffa2923a"
+    },
+    {
+      "id": "exact-order-n82-t1",
+      "n": 82,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "c053be15912995928b94ec54b8d0e6cdd6988bf326d2c4c3b25cdbfe1e96b08c"
+    },
+    {
+      "id": "exact-order-n82-t2",
+      "n": 82,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "6715c4befefacf97428d56854a0a3b29d14603f824120ca3193fa414d1204b8d"
+    },
+    {
+      "id": "exact-order-n82-t3",
+      "n": 82,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "946cf492fb5e6bbec6bf311a7a340b985b3d39c9df69c56f843403a66d0f4516"
+    },
+    {
+      "id": "exact-order-n82-t4",
+      "n": 82,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "27043b1fb143c667484d8d57d2a00b26476de08e47fb6a5a645ccc74b5a08bee"
+    },
+    {
+      "id": "exact-order-n82-t5",
+      "n": 82,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "f7a4293ec5a61af976718090a1b3008ee7c2401307f59085ba377e3939183723"
+    },
+    {
+      "id": "exact-order-n82-t6",
+      "n": 82,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "0b32cf9deb4e17e9e8ef6af4529523779964dcbbacbdea4e28e924256295dfb8"
+    },
+    {
+      "id": "exact-order-n82-t7",
+      "n": 82,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "fe8121894dea17e4096aa3eab174c5e102be9c014a7cae461c064460949d6361"
+    },
+    {
+      "id": "exact-order-n83-t1",
+      "n": 83,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "5bea7b082a9a88187dc828f407925a6c24ef96417998f24cacfd77fd4d25f8ac"
+    },
+    {
+      "id": "exact-order-n83-t2",
+      "n": 83,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "09c05e3032372ce36b28890aa6b9c678a235f40c09e14aa84211d2c94ebe5103"
+    },
+    {
+      "id": "exact-order-n83-t3",
+      "n": 83,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "3b239069db291e8469d29d8e7fedacc2b9f5732da4bcd7ac300651c07de983fa"
+    },
+    {
+      "id": "exact-order-n83-t4",
+      "n": 83,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "70ef249b87fd4e7ad7bed10ee64311e1addd93294c9dc700a0d01be9b33ebe35"
+    },
+    {
+      "id": "exact-order-n83-t5",
+      "n": 83,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "1d50b7593580051107fffbdb384d48a89f3a7463238a05330d3e201adf08bb65"
+    },
+    {
+      "id": "exact-order-n83-t6",
+      "n": 83,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "d155d81a6437f99d3726739689bdda680e75d584d5870632bbc73e1ddc900776"
+    },
+    {
+      "id": "exact-order-n83-t7",
+      "n": 83,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "775d9115ac2f862ace0f6535f20e46212ed37e141ebbef8bb10adac0af6c0bcc"
+    },
+    {
+      "id": "exact-order-n83-t8",
+      "n": 83,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "e548bface941efe3ab50fee1e41b5053bcf433224366c8542ae9149e268b6152"
+    },
+    {
+      "id": "exact-order-n84-t1",
+      "n": 84,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "bc86e87ffb998b73b8d5c250605ad6e6b9234714ceaa1b3357f305070bf94517"
+    },
+    {
+      "id": "exact-order-n84-t2",
+      "n": 84,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "df2c61e94d4fc949de3f4a1201eef888a1718d164ba7d016ace866539e7a29a1"
+    },
+    {
+      "id": "exact-order-n84-t3",
+      "n": 84,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "d9a9719c942beafe3f92b4dc6e0b48c3381b9800d39a5d9c172b019ae41c54b5"
+    },
+    {
+      "id": "exact-order-n84-t4",
+      "n": 84,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "708729a668f995f97cf0eb296d255e1cb0100e77f63c2608fb7f3e1c8a8db7f3"
+    },
+    {
+      "id": "exact-order-n84-t5",
+      "n": 84,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "fd5eca34aacb386ee919f729c8ef4423959a38552066f01ce08c286ef95c245e"
+    },
+    {
+      "id": "exact-order-n84-t6",
+      "n": 84,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "e98c9502b2d34f238c67e7266645281c4257a608643fde05a9a65648cd5576b3"
+    },
+    {
+      "id": "exact-order-n84-t7",
+      "n": 84,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "fafb326f1e9059a3d44912f6295844f966185cef47718d8c99783482ed819d1d"
+    },
+    {
+      "id": "exact-order-n84-t8",
+      "n": 84,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "2e30571138f21c76e785131072e5ac14fa183838a67553af9837d792dcbc827d"
+    },
+    {
+      "id": "exact-order-n85-t1",
+      "n": 85,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "94e8c6370aff93df71a99d07fc32632781fa8fd561e76367e2d2b9f02219fd22"
+    },
+    {
+      "id": "exact-order-n85-t2",
+      "n": 85,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "76f681f19438f663c0616c2a0d3ba4927307abc0c7d3b91192a2187e8b0adcfc"
+    },
+    {
+      "id": "exact-order-n85-t3",
+      "n": 85,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "5c29e347bbdf0257105aa01c0d567eecf2d3c9a7ef4a39d83540d20337f781a8"
+    },
+    {
+      "id": "exact-order-n85-t4",
+      "n": 85,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "df3299921fe527f50146335fc70658ce24bcfb6a2cf4182acdf1282739fe43cc"
+    },
+    {
+      "id": "exact-order-n85-t5",
+      "n": 85,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "e6c6241b4024c7285c7f9db7c455da5af1204a2cd3bb2e0dc8874c369f7ff283"
+    },
+    {
+      "id": "exact-order-n85-t6",
+      "n": 85,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "6d1ffed0c1b10487b9486850cf263ea05b6cc8d0e16f410f60a8c0a324cfe89c"
+    },
+    {
+      "id": "exact-order-n85-t7",
+      "n": 85,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "08a8d106b8973f12a9c76c6c80280b8fdc432343a49b3741f6b466c8dc6484b9"
+    },
+    {
+      "id": "exact-order-n85-t8",
+      "n": 85,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "52fb7f697c0c8d2640e93659dd8352b36f0b010f663ebf4601c5282528b78891"
+    },
+    {
+      "id": "exact-order-n86-t1",
+      "n": 86,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "4deaaeee085dc586abc4a765ef576d733c24d05013259842c98eaec76c2ed243"
+    },
+    {
+      "id": "exact-order-n86-t2",
+      "n": 86,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "8bdb874dd75130be20c128ff5454a10378b0409cf22949d8c316432e5e85c8e7"
+    },
+    {
+      "id": "exact-order-n86-t3",
+      "n": 86,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "4bf13ee7a64164c344e3ae187392321b4b8a9cf16cd269ea22b42106f0e6a5ff"
+    },
+    {
+      "id": "exact-order-n86-t4",
+      "n": 86,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "6b40fcaee83e4c63697ee1b4be24e98e6b57fefe5a92c187a0a43ac30c6fc944"
+    },
+    {
+      "id": "exact-order-n86-t5",
+      "n": 86,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "128deced781990ed28ed42b4252d10d9a28be9ed2122bd21a54646dc08128063"
+    },
+    {
+      "id": "exact-order-n86-t6",
+      "n": 86,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "1be70316abcd000e7e6d603cbbe987cda6b210960f1679188fe025d2ebbfd73e"
+    },
+    {
+      "id": "exact-order-n86-t7",
+      "n": 86,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "49be5b1aead8a40d610680c0d6ee3afcafacbb0ca0a74c1e8d842afe9704e595"
+    },
+    {
+      "id": "exact-order-n87-t1",
+      "n": 87,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "369e5945e7f5a2d08d328f59704fd5e9cd92c4693cf0180f6d53317e523bb207"
+    },
+    {
+      "id": "exact-order-n87-t2",
+      "n": 87,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "0e08e3510713dc721b26203ce1897e38d9cd9fafc31fe516bc2d03b9898c7475"
+    },
+    {
+      "id": "exact-order-n87-t3",
+      "n": 87,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "ba75501384dab8d1caffec890ab3d1e5b0ad29d1186049dc8cd8c2bd5070f86c"
+    },
+    {
+      "id": "exact-order-n87-t4",
+      "n": 87,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "e9b4d30dc778b333e380467a7dec669490dc022f08d8a325ddc15ff526ba1fac"
+    },
+    {
+      "id": "exact-order-n87-t5",
+      "n": 87,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "3a0c9ba9f668d6141c5bb4ff1b226b9fa3acdcf83845db0514ee3990342b553f"
+    },
+    {
+      "id": "exact-order-n87-t6",
+      "n": 87,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "bc08ea18c6b322c6881f7ea21a658586998fc779a98c963176b227b86fffe605"
+    },
+    {
+      "id": "exact-order-n87-t7",
+      "n": 87,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "a7d5e4529bf6942fec006e7a320cf492928415aa5b3d7cef02c3b71ed42d7c90"
+    },
+    {
+      "id": "exact-order-n88-t1",
+      "n": 88,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "e59af97f7251010c413b4504a454948b7bf6374d510ee496cef634fc59d05074"
+    },
+    {
+      "id": "exact-order-n88-t2",
+      "n": 88,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "773b2e1598722620230f4475082a4140e35f49cc6c493330f5cb23458e2fda30"
+    },
+    {
+      "id": "exact-order-n88-t3",
+      "n": 88,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "22c12bd52921154eb72c04c0361c741ab3492b49e300b3a95030051da078bacd"
+    },
+    {
+      "id": "exact-order-n88-t4",
+      "n": 88,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "08883aa247ed3d2531859aa27550d7ce69fd12d13fc9e7e965018ce67636a4d3"
+    },
+    {
+      "id": "exact-order-n88-t5",
+      "n": 88,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "d61e3430adac67acefa3a30845bfeae54d5bb18362c4b06cdf91bbb0b11bd8df"
+    },
+    {
+      "id": "exact-order-n88-t6",
+      "n": 88,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "fe1e428ffe1dc97a243528720f6e4002b00a6fbd1f76af2749ec7dd1c44676d0"
+    },
+    {
+      "id": "exact-order-n88-t7",
+      "n": 88,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "93645af317a77c1e9dc9e2ce4968419461713b31d574241c0b7d4cc788720a62"
+    },
+    {
+      "id": "exact-order-n89-t1",
+      "n": 89,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "32c40355eceddd99f2a74ffb909a2a727a24cbb94b06d740fcd4661f8d92abe0"
+    },
+    {
+      "id": "exact-order-n89-t2",
+      "n": 89,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "4937ce5a96bcd22e50a57ea42de56355045f3f362ca33c486798f33f9174753f"
+    },
+    {
+      "id": "exact-order-n89-t3",
+      "n": 89,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "aeaf0f5680fa06fa2d436d96a227c783ecb26f6a683a14e768603698e496125f"
+    },
+    {
+      "id": "exact-order-n89-t4",
+      "n": 89,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "3bc9d5b2dbb30ea7bce30df8a8346dc9e3032c0a19c04fc176f13f8db6ca8b9d"
+    },
+    {
+      "id": "exact-order-n89-t5",
+      "n": 89,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "f279b653689d9134eac9cd2cdde34142b56b8324aa39aab676f6854b1052e22b"
+    },
+    {
+      "id": "exact-order-n89-t6",
+      "n": 89,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "3674819be74a66972e35e16da99954d6a8b2d3a56d307f7518009cc281107e2c"
+    },
+    {
+      "id": "exact-order-n89-t7",
+      "n": 89,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "079a56b1618cc16a3e0fac85a410cc6fa6875dabcdab95e9d0ae98c27e81461c"
+    },
+    {
+      "id": "exact-order-n90-t1",
+      "n": 90,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "9d561018b784f1a52c817450adf2777e35c08f166070fdd453e40d2f6e8642bf"
+    },
+    {
+      "id": "exact-order-n90-t2",
+      "n": 90,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "7c5cf12495898d85560ab2d73b1ee3332fbffc547ee1f90a19448d6124f27b78"
+    },
+    {
+      "id": "exact-order-n90-t3",
+      "n": 90,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "e025ad7dac3857b03d6af5131171deed051e6eeeab15147f287f3a1d13c51abd"
+    },
+    {
+      "id": "exact-order-n90-t4",
+      "n": 90,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "14a87041d92c0f84c9d5302b1c0517d7fe59a50fc687d266eb28b4b66a0984a7"
+    },
+    {
+      "id": "exact-order-n90-t5",
+      "n": 90,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "6bf944cd69e0bfba12d7fbbea47a296619dcf1810f39a78226e5bcac94cdbb23"
+    },
+    {
+      "id": "exact-order-n90-t6",
+      "n": 90,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "c039d1d64a94d199b6b692a7ea470cfa225ab1d78875e1a0fd21245953252731"
+    },
+    {
+      "id": "exact-order-n90-t7",
+      "n": 90,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "3357eb03cb203da92776621ad8e411b57cce49b430ca85c35e241750e8ecab36"
+    },
+    {
+      "id": "exact-order-n90-t9",
+      "n": 90,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "b5e7599aa16011de335163784fba97c3df3ffd103e14a711886ad3f58841c003"
+    },
+    {
+      "id": "exact-order-n91-t1",
+      "n": 91,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "1ac0b96b387aa55c7a22901ca821d3d2a88afa7065c239019a9892756927cd3d"
+    },
+    {
+      "id": "exact-order-n91-t2",
+      "n": 91,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "90f3ef7d127c011214ac53d9c7bb18668a3e7496c2dc9b6f9cf2ab947717bd0e"
+    },
+    {
+      "id": "exact-order-n91-t3",
+      "n": 91,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "64a5f847e234350c7991868a64e9a94259c295a7a9e63b9559d5ad482bbb2887"
+    },
+    {
+      "id": "exact-order-n91-t4",
+      "n": 91,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "34dd74651db1853a300dc5bad427223b102089660888617503e5b94cff4a8752"
+    },
+    {
+      "id": "exact-order-n91-t5",
+      "n": 91,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "5832622b68f0e09b4e369a2fcae69574d424d3bad22a4c7b62f11bc7971b9f97"
+    },
+    {
+      "id": "exact-order-n91-t6",
+      "n": 91,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "ffc392c57bc00c513ba8721a78dcd7ad645927efa19e7f3534174a1cc6ab25e0"
+    },
+    {
+      "id": "exact-order-n91-t7",
+      "n": 91,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "932418b655faee6c747ad7dbf9e41257bb0b2055561d042c9383f8c7f22bc04d"
+    },
+    {
+      "id": "exact-order-n91-t8",
+      "n": 91,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "3228c21f3d17537a5ec884670e15d646c9c07410051b98f7ad62764ab64dfa6d"
+    },
+    {
+      "id": "exact-order-n91-t9",
+      "n": 91,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "f827589ea7ce68bdee1979d4ed17d59dc9a2b7f56b66887a2b6719e49b344f40"
+    },
+    {
+      "id": "exact-order-n92-t1",
+      "n": 92,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "2290db784551537e27640a5abdfd9d166bd671c839356378245c56d5b1392020"
+    },
+    {
+      "id": "exact-order-n92-t2",
+      "n": 92,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "0ae53815f44cc3bf758d2734e02aaa7137bc0559ecef47476ed53430ffa4e262"
+    },
+    {
+      "id": "exact-order-n92-t3",
+      "n": 92,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "b35b46a887ab0b4508e0ee660b2e868bb1cf9626109b682eb9a48935b95d6fc6"
+    },
+    {
+      "id": "exact-order-n92-t4",
+      "n": 92,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "469008f63049fb4694e304f6239496beb14c07030d38754667cb6c0b5a948626"
+    },
+    {
+      "id": "exact-order-n92-t5",
+      "n": 92,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "7ed1d95f4b48dd7b494a9f7304e1dbbffe65c3face076ca3545e54ee9bb67a16"
+    },
+    {
+      "id": "exact-order-n92-t6",
+      "n": 92,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "bea562ba620bf5ebc032080e4006dce25da9cf7d3b023c89bc67136e60a1ff3f"
+    },
+    {
+      "id": "exact-order-n92-t7",
+      "n": 92,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "22e86c153c32673890af8c9c5fd7ce5fa1104c5c2633f87164a6a5d3bc922029"
+    },
+    {
+      "id": "exact-order-n92-t8",
+      "n": 92,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "91b44b63ee95ed723b1a0d25a2458de0fe36a5554605c6448c2144f37e25406c"
+    },
+    {
+      "id": "exact-order-n92-t9",
+      "n": 92,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "0c662fa89f1c0a9dd53eda56f477625ef5b66784ffe06e7fa5edc21fb0f64243"
+    },
+    {
+      "id": "exact-order-n93-t1",
+      "n": 93,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "5a7038e6ce3f0b75484a3a51b00773705efa2f5d6adcd9497eb7712c660ea6fa"
+    },
+    {
+      "id": "exact-order-n93-t2",
+      "n": 93,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "3fab9f671fcbdebf260513b6ec96113d0444d75e36e03d73a54f7690493b13fa"
+    },
+    {
+      "id": "exact-order-n93-t3",
+      "n": 93,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "36358627a78c01df8696ff1234bd57ebcebf1085700e7fce906d4cf18577c977"
+    },
+    {
+      "id": "exact-order-n93-t4",
+      "n": 93,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "d249ef5fba2e7670940a270127d1984e63efe3c4d728675dfee62495d8e8336f"
+    },
+    {
+      "id": "exact-order-n93-t5",
+      "n": 93,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "deb7e8133b597cbd37ce3fc74224f4d57774a6e1adfb52bd069eeb19dd3d2d89"
+    },
+    {
+      "id": "exact-order-n93-t6",
+      "n": 93,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "358c288893db7098562fc602f0b8af3eee3027b464ae72e33ddb2ee61555a9e6"
+    },
+    {
+      "id": "exact-order-n93-t7",
+      "n": 93,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "e90f370a647228568785c257eb6da67e98f0f9d330ac6fb55384b1384a6dc069"
+    },
+    {
+      "id": "exact-order-n93-t8",
+      "n": 93,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "119ca48aa9d023ce2734461dce98ee98beaa0f5f751ee21aa5b0796b5239407b"
+    },
+    {
+      "id": "exact-order-n94-t1",
+      "n": 94,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "e3fd8b1e9edff0a7c977dd44d0af2244fddd6715f2592b5d1e9e9a7f19ca574f"
+    },
+    {
+      "id": "exact-order-n94-t2",
+      "n": 94,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "95d65b4c440271623ff95d932942491cf04fc286892678e6032ee4235f7a1708"
+    },
+    {
+      "id": "exact-order-n94-t3",
+      "n": 94,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "c91bd539515ce8e17f90738ea6869a80df8058ec3836ef052e16daddefbd4889"
+    },
+    {
+      "id": "exact-order-n94-t4",
+      "n": 94,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "6945189a59e986aede77c65f0c5fbd885c0a74f0c0872f03ffdeb327c6c72262"
+    },
+    {
+      "id": "exact-order-n94-t5",
+      "n": 94,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "d07a310686d5b954dbfb0ef23ebc9ba088a6dd5fcc76d44addbf156a948408cb"
+    },
+    {
+      "id": "exact-order-n94-t6",
+      "n": 94,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "939e73a0bef73048ae10a7ba8d22ff1ac68ca7934537b36c5196af5be8085aca"
+    },
+    {
+      "id": "exact-order-n94-t7",
+      "n": 94,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "f5d854fae8d26d8bcca0ebd73285489fbeeb95b93e870a03534d6490c4e8a6d3"
+    },
+    {
+      "id": "exact-order-n94-t9",
+      "n": 94,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "6f2107a908a2d1da3e6ab514089dd1470bc8591f846389b9a39a9f913c9b8354"
+    },
+    {
+      "id": "exact-order-n95-t1",
+      "n": 95,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "217f1fcb97bfe89a8172e11d8c13d529e32771527abbe3cd856e4fa3eea1d624"
+    },
+    {
+      "id": "exact-order-n95-t2",
+      "n": 95,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "de06de2605de2077c7595319cda86994a30630454634aa01e10928049bb1baf1"
+    },
+    {
+      "id": "exact-order-n95-t3",
+      "n": 95,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "0563974961472e9bfcf4e8c575a3adc4e366e035b35bcc8d1c7401df99238158"
+    },
+    {
+      "id": "exact-order-n95-t4",
+      "n": 95,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "221766767fd1c4cd947587453d6f8d7c96d8c016d1d61d092d51973ed2c91134"
+    },
+    {
+      "id": "exact-order-n95-t5",
+      "n": 95,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "6d621d0db8c4368933fd29a9946dd694a20f7e4971bd194d42d787165d0bcb15"
+    },
+    {
+      "id": "exact-order-n95-t6",
+      "n": 95,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "04c9ffd3facc2310e6ac9c1bb54b1615f1b8b102b48fd0584f9ffb19ea4e0ab2"
+    },
+    {
+      "id": "exact-order-n95-t7",
+      "n": 95,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "a9dbd5d57438f8ba8bef1844b23a5bf7889755e4c81815e204df77102468720f"
+    },
+    {
+      "id": "exact-order-n96-t1",
+      "n": 96,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "eb3ab60881ad793103553008a68535816d5a7a2da5f11952816a2950eaa9f9af"
+    },
+    {
+      "id": "exact-order-n96-t2",
+      "n": 96,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "e3c3fbb8ccc662339133ec410556ca475c07ea44be50ecd7997722110e5ac76e"
+    },
+    {
+      "id": "exact-order-n96-t3",
+      "n": 96,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "5f609684996b265baf2c31ffdaef418509923cd1b21215664a6fb331de4f9856"
+    },
+    {
+      "id": "exact-order-n96-t4",
+      "n": 96,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "34e14c444bae824b5173f98b64ec925c37ce644c5a0111f87f6919a93317055d"
+    },
+    {
+      "id": "exact-order-n96-t5",
+      "n": 96,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "ad6f91e59886c76b490b46a30bb7d91e63231960fb8687043384ced192a71165"
+    },
+    {
+      "id": "exact-order-n96-t6",
+      "n": 96,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "ae266a6f5d9a5cb80626def1c62bc845ed460d35103ad5adfdc69185fc03789f"
+    },
+    {
+      "id": "exact-order-n96-t7",
+      "n": 96,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "f29944fcc25eae7b10c2f836bbbf0003ce0ea09209aee613f7a036709cf82cb1"
+    },
+    {
+      "id": "exact-order-n96-t9",
+      "n": 96,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "c978ec38188fe3565cd88a76b4841b6851c44e2eb57c933f8ed956ede2d03c6d"
+    },
+    {
+      "id": "exact-order-n97-t1",
+      "n": 97,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "582975bfe8cc700f9118ce13049ef21dab4cbffd20d875a0f754eef4686da424"
+    },
+    {
+      "id": "exact-order-n97-t2",
+      "n": 97,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "45eed904e3ce4d93028d1fb270d52a30a4f7015e8f2e553bd9c64d2a63334fe0"
+    },
+    {
+      "id": "exact-order-n97-t3",
+      "n": 97,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "d7af1c1e10be4659a14679a987da91a90e8f7fb2bc9cd695492c2a41e3d027a8"
+    },
+    {
+      "id": "exact-order-n97-t4",
+      "n": 97,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "84acd308223a1c9a474f81cb7e088ec676742e43968ea428f8713014abadb371"
+    },
+    {
+      "id": "exact-order-n97-t5",
+      "n": 97,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "b32cad9ffc08bfe28aff3c56b09746bcdb7a19f937b7888b2a256b7ad5cd2828"
+    },
+    {
+      "id": "exact-order-n97-t6",
+      "n": 97,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "6dea6653ce3135a1806bf07717dfd8fb240d6ab3344f4ef843f091241d7399c2"
+    },
+    {
+      "id": "exact-order-n97-t7",
+      "n": 97,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "7d2e02f017a9495ba1c7c6aad46581ba8dddaba940ccb49102834d3763f06fe1"
+    },
+    {
+      "id": "exact-order-n98-t1",
+      "n": 98,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "9063c587f755d211b5d77bbd024510ffa6d311518a493ad62266ae84916514cd"
+    },
+    {
+      "id": "exact-order-n98-t2",
+      "n": 98,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "516b98a4a18f13caf0e0b6bac95e93ba95f33595b629311bb3b0ca78c2a4982a"
+    },
+    {
+      "id": "exact-order-n98-t3",
+      "n": 98,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "1c8d203571a7b3462d06e8f30cb2ba36ee396fc6020318d9adaabc3c89411227"
+    },
+    {
+      "id": "exact-order-n98-t4",
+      "n": 98,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "5798fc072f7b442a76c8c216c2112f26c8c992b9aeb6484ab1c7579cadf4c0fa"
+    },
+    {
+      "id": "exact-order-n98-t5",
+      "n": 98,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "f76a0a726a6c3f4d2ab28b3ef0b7d649350f9c82f5ebae89f885a7764541fad7"
+    },
+    {
+      "id": "exact-order-n98-t6",
+      "n": 98,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "b4bba90b03032daa0a09854a2943746fabb9eb4466518fdcf3326a2763683341"
+    },
+    {
+      "id": "exact-order-n98-t7",
+      "n": 98,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "8073a8bdfa80b447fa75f2b57d8b892b1405de190bb9d76e8d2a6fd6619043b9"
+    },
+    {
+      "id": "exact-order-n99-t1",
+      "n": 99,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "6c6aa68ebfb8cd7ffc8544e8acfb737a5cd7cf160b545ff3d94f381d44dfd7e9"
+    },
+    {
+      "id": "exact-order-n99-t2",
+      "n": 99,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "625df9d89734be66bf78e53628bb65c9476574df9ef21bff3148b558679946c5"
+    },
+    {
+      "id": "exact-order-n99-t3",
+      "n": 99,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "e6095726ead9e0dd2b1f43c4a8acdac5fd771914395908da06f726defa86df0b"
+    },
+    {
+      "id": "exact-order-n99-t4",
+      "n": 99,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "2497070d34a5428b447fa930e5112c9e673b9acc5afeaef32d48eedfba6ff520"
+    },
+    {
+      "id": "exact-order-n99-t5",
+      "n": 99,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "f6ea3b1a462374e870c495ea5bb07f3291c2e63bfed22a7e03e89cbfd247d187"
+    },
+    {
+      "id": "exact-order-n99-t6",
+      "n": 99,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "6dfa9e1bd980b996e51124eb1f0ec23b0550c936fbdaec4b168c821de285bd53"
+    },
+    {
+      "id": "exact-order-n99-t7",
+      "n": 99,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "3612780bcfbbe68c07dec88ab7cb1d22091a365031cc33f3e316c9a333ef75ba"
+    },
+    {
+      "id": "exact-order-n99-t9",
+      "n": 99,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "d13af389285508aa2b9bdf7489623af87978ee935eb671a422d9e202c3737a43"
+    },
+    {
+      "id": "exact-order-n100-t1",
+      "n": 100,
+      "exactOrder": 1,
+      "passed": true,
+      "exactCoefficientSHA256": "700f54dd27f6d2053e7a73b6de8d939eb3bc7dde7bb9943bd5e739db88924122"
+    },
+    {
+      "id": "exact-order-n100-t2",
+      "n": 100,
+      "exactOrder": 2,
+      "passed": true,
+      "exactCoefficientSHA256": "18b6e3959c97a7d8500d47100db2d421f9ac392fed1ae9bccacbb1130b3cbd7a"
+    },
+    {
+      "id": "exact-order-n100-t3",
+      "n": 100,
+      "exactOrder": 3,
+      "passed": true,
+      "exactCoefficientSHA256": "3543a67906c73ce174c73ad552fa1479ba2c8032598c00670589709a43830778"
+    },
+    {
+      "id": "exact-order-n100-t4",
+      "n": 100,
+      "exactOrder": 4,
+      "passed": true,
+      "exactCoefficientSHA256": "e5114cc518c695a886354b47b7d957626fdb054b3ba48f8594480f3c023016d3"
+    },
+    {
+      "id": "exact-order-n100-t5",
+      "n": 100,
+      "exactOrder": 5,
+      "passed": true,
+      "exactCoefficientSHA256": "a669e593816c995477496bf44d1131dc1265520bffad3ca24015feae0fac6a11"
+    },
+    {
+      "id": "exact-order-n100-t6",
+      "n": 100,
+      "exactOrder": 6,
+      "passed": true,
+      "exactCoefficientSHA256": "b644c006c8a3843085a7bd47a84357f986efb16f93d7d0c81ef4a996c1a1a9db"
+    },
+    {
+      "id": "exact-order-n100-t7",
+      "n": 100,
+      "exactOrder": 7,
+      "passed": true,
+      "exactCoefficientSHA256": "fdccefddd8634eca5a75b02f81a558d152d36a1ef6c18f46c38b58b5acb1e7fb"
+    },
+    {
+      "id": "exact-order-n100-t8",
+      "n": 100,
+      "exactOrder": 8,
+      "passed": true,
+      "exactCoefficientSHA256": "e507d6efb31b4cd766c634d31f1e34836c6891c27e8e72483cbf6c181de86644"
+    },
+    {
+      "id": "exact-order-n100-t9",
+      "n": 100,
+      "exactOrder": 9,
+      "passed": true,
+      "exactCoefficientSHA256": "83d3c44e48bc3edf4a758f81e257a4de9eaa2c3a503c23944352a351376a5c18"
     }
   ]
 }

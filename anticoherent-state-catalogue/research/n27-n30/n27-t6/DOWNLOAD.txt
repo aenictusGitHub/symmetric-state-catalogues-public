@@ -1,0 +1,24 @@
+N27 order-6 exclusion: downloading the complete portable proof
+
+The complete validated input is about 471 MB. Its arrays are split into files
+below GitHub's individual-file limit. The code-only ZIP contains the scripts,
+metadata, mathematical proof, hashes, and reference reports; it omits NPZ arrays.
+
+1. Download verification-code.zip and extract it into an empty folder.
+2. Run: python3 download_inputs.py
+   This obtains each missing input and checks its frozen SHA256 hash. It uses
+   only the Python standard library. You may give a different base URL as its
+   first argument; the fixed hashes still have to match.
+3. Install NumPy and python-flint (Arb), then run:
+       python3 verify_certificate.py
+   SciPy is not needed. Keep all downloaded files beside the scripts.
+
+You may instead download the files listed in MANIFEST.txt individually. For
+large arrays, use GitHub's raw-file download. SHA256SUMS records the immutable
+input hashes. The reference reports are generated outputs and are not hashed
+as immutable inputs, because a rerun updates timing fields.
+
+A successful complete run reconstructs the physical representation and proves
+strict positivity in all 81 source spin sectors. A numerical candidate alone
+is not the proof. See proof.tex and independent-verification.json for the
+mathematical argument and the already completed rigorous verification.

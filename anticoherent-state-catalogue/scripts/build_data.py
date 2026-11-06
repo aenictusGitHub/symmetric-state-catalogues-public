@@ -185,7 +185,7 @@ for n in core+extended:
         entry.update(status='reported_absent',notes='The cited paper states nonexistence. A general exclusion proof was not identified or verified in this catalogue; this is kept separate from proved impossibility.',references=refs(claim['references']))
     else:
         entry.update(status='unknown',notes='Neither an exact witness nor a general exclusion proof is established by this catalogue for this cell. This is an evidence gap here, not a claim that the problem is open.',references=[])
-        if (n,t) in {(27,6),(29,6)}:
+        if (n,t)==(29,6):
             entry['notes']='An exact fifth-order state exists and every seventh-order pure state is excluded. Sixth-order existence remains unresolved in this catalogue.'
             entry['references']=[{'title':'Exact fifth-order state and rigorous bounds','url':f'./research/n27-n30/index.html#n{n}'},{'title':'Universal seventh-order exclusion','url':f'./research/n27-n30/n{n}-t7/proof.tex'},{'title':'Scoped numerical research report','url':'./research/n27-n30/order6-search-report.json'}]
         if (n,t)==(11,4):
@@ -201,6 +201,7 @@ for state in states:
     state['verification']['globalMaximumOrderProven']=bool(next_entry and next_entry['status']=='impossible')
     if state['verification']['globalMaximumOrderProven']:
         state['verification']['maximumOrderProofId']=next_entry['proofId']
+        if state['n']==27:state['notes']='This exact radical state has globally maximum AC order five. An independently validated six-copy partial-transpose positivity certificate excludes every sixth-order pure symmetric state, for arbitrary complex amplitudes.'
         if state['n']==28:state['notes']='This exact algebraic state has globally maximum AC order six. A rigorous four-copy positivity certificate excludes every seventh-order pure symmetric state, for arbitrary complex amplitudes. Its components are defined by a certified isolated polynomial root; the displayed decimals and Majorana coordinates render that exact state.'
         if state['n']==30:state['notes']='This explicit octahedral radical state has globally maximum AC order seven. An independently reconstructed exact rational three-copy positivity certificate excludes every eighth-order pure symmetric state, for arbitrary complex amplitudes.'
         if state['n']==21:state['notes']='This exact radical state has globally maximum AC order four. A rigorously validated six-copy positivity certificate excludes every fifth-order pure symmetric state, for arbitrary complex amplitudes.'

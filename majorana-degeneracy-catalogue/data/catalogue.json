@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "2.3",
+  "schemaVersion": "2.4",
   "title": "Anticoherence by full Majorana multiplicity partition",
-  "compiledDate": "2026-10-29",
+  "compiledDate": "2026-11-06",
   "numbers": [
     2,
     3,
@@ -15818,35 +15818,42 @@
       "partitionLatex": "(1^{27})",
       "maxMultiplicity": 1,
       "distinctPoints": 27,
-      "status": "bounded",
-      "value": null,
-      "lower": 1,
-      "upper": 9,
-      "stateIds": [],
+      "status": "proven",
+      "value": 5,
+      "lower": 5,
+      "upper": 5,
+      "stateIds": [
+        "dihedral-n27-t5"
+      ],
       "numericalStateIds": [
         "liege-acs.27.5"
       ],
       "reportedOrder": 5,
       "coverage": "source-library",
-      "proofId": "library-rigorous-bounds",
+      "proofId": "pure-ac-n27-maximum",
       "proofIds": [
         "library-rigorous-bounds",
-        "partition-filtering-existence"
+        "partition-filtering-existence",
+        "pure-ac-n27-maximum"
       ],
-      "boundLatex": "1\\le t_{\\max}(27,\\lambda)\\le9",
-      "notes": "This size lists partitions observed in the source library, rather than every partition. The rigorous bounds follow from separate analytic arguments. The reported numerical order is displayed independently and does not raise the guaranteed lower bound.",
+      "boundLatex": "t_{\\max}(27,(1^{27}))=5",
+      "notes": "An exactly verified state with 27 simple points attains order five. A rigorous six-copy certificate excludes order six for every pure symmetric 27-qubit state, proving this partition maximum. The source numerical representative is retained separately.",
       "references": [
         {
           "title": "Liège AC-state library",
           "url": "http://www.oq.ulg.ac.be/libspinACstates.html"
+        },
+        {
+          "title": "Exact order-5 witness and rigorous global sixth-order exclusion",
+          "url": "../anticoherent-state-catalogue/research/n27-n30/index.html#n27"
         }
       ],
-      "attainment": "existence-theorem",
+      "attainment": "explicit",
       "upperReasons": [
         {
-          "order": 10,
-          "proofId": "library-rigorous-bounds",
-          "reason": "Established dimension and moment inequalities exclude orders above the displayed upper bound."
+          "order": 6,
+          "proofId": "pure-ac-n27-maximum",
+          "reason": "A validated six-copy separation excludes all pure order-6 AC states at N=27, including this full partition."
         }
       ]
     },
@@ -24017,6 +24024,7 @@
         "certificatePath": "./research/multiplicities.json",
         "acCertificatePath": "./research/states-verification.json"
       },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript",
       "partition": [
         1,
         1,
@@ -24066,8 +24074,7 @@
         "0",
         "\\frac{\\sqrt{2}}{2}",
         "0"
-      ],
-      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
+      ]
     },
     {
       "id": "ac-n6-t3",
@@ -24421,6 +24428,7 @@
         "certificatePath": "./research/multiplicities.json",
         "acCertificatePath": "./research/states-verification.json"
       },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript",
       "partition": [
         1,
         1,
@@ -24486,8 +24494,7 @@
         "0",
         "- \\frac{\\sqrt{14}}{6}",
         "0"
-      ],
-      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
+      ]
     },
     {
       "id": "ac-n8-t3",
@@ -24732,6 +24739,7 @@
         "certificatePath": "./research/multiplicities.json",
         "acCertificatePath": "./research/states-verification.json"
       },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript",
       "partition": [
         1,
         1,
@@ -24805,8 +24813,7 @@
         "0",
         "0",
         "- \\frac{\\sqrt{30}}{12}"
-      ],
-      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
+      ]
     },
     {
       "id": "ac-n9-t2",
@@ -25067,6 +25074,7 @@
         "certificatePath": "./research/multiplicities.json",
         "acCertificatePath": "./research/states-verification.json"
       },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript",
       "partition": [
         1,
         1,
@@ -25148,8 +25156,7 @@
         "0",
         "- \\frac{\\sqrt{21}}{8}",
         "0"
-      ],
-      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
+      ]
     },
     {
       "id": "ac-n10-t3",
@@ -25430,6 +25437,7 @@
         "certificatePath": "./research/multiplicities.json",
         "acCertificatePath": "./research/states-verification.json"
       },
+      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript",
       "partition": [
         1,
         1,
@@ -25519,8 +25527,7 @@
         "0",
         "- \\frac{\\sqrt{5}}{4}",
         "0"
-      ],
-      "internalProvenance": "Exact construction explicitly listed in the supplied local manuscript"
+      ]
     },
     {
       "id": "ac-n11-t3",
@@ -32607,9 +32614,513 @@
         "0",
         "\\frac{\\sqrt{561}}{75}"
       ]
+    },
+    {
+      "id": "dihedral-n27-t5",
+      "n": 27,
+      "achievedOrder": 5,
+      "witnessesOrders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "Exact dihedral state · order 5",
+      "status": "proven-existence",
+      "stateLatex": "\\begin{gathered}\\sqrt{\\frac{327}{2500}}\\bigl(|D_{27}^{(1)}\\rangle-|D_{27}^{(26)}\\rangle\\bigr)-i\\sqrt{\\frac{494}{2500}}\\bigl(|D_{27}^{(6)}\\rangle-|D_{27}^{(21)}\\rangle\\bigr)-iw\\sqrt{\\frac{429}{2500}}\\bigl(|D_{27}^{(11)}\\rangle-|D_{27}^{(16)}\\rangle\\bigr)\\\\[6pt]w=\\frac{52-i\\sqrt{3433}}{\\sqrt{6137}}\\end{gathered}",
+      "parametersLatex": "w=\\frac{52-i\\sqrt{3433}}{\\sqrt{6137}}",
+      "support": [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ],
+      "exactCoefficients": [
+        "0",
+        "sqrt(327)/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(494)*I/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(7293)*I*(-52 + sqrt(3433)*I)/16150",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(25036869)/16150 + 26*sqrt(7293)*I/8075",
+        "0",
+        "0",
+        "0",
+        "0",
+        "sqrt(494)*I/50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-sqrt(327)/50",
+        "0"
+      ],
+      "coefficients": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3616628264005025,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.44452221541785736
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3098257301348764,
+          -0.27496911998693735
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3098257301348764,
+          0.27496911998693735
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.44452221541785736
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.3616628264005025,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "normalization": "sum_r |c_r|^2 = 1, verified exactly",
+      "coefficientConvention": "Normalized Dicke basis; r counts excitations.",
+      "provenance": "Independent analytical construction by C5 phase-triangle.",
+      "construction": {
+        "family": "C5 phase-triangle",
+        "wRealNumerator": 52,
+        "wImaginaryRadicand": 3433,
+        "wDenominatorRadicand": 6137
+      },
+      "notes": "This exact order-5 state has 27 simple Majorana points. Exact reduced matrices and polynomial checks certify attainment. The global sixth-order exclusion proves maximum order five. The numerical library representative is retained separately.",
+      "verification": {
+        "method": "Exact symbolic Dicke partial traces and algebraic root-multiplicity checks, combined with the independently validated global sixth-order exclusion.",
+        "exactNormalization": true,
+        "exactOrderVerified": true,
+        "globalMaximumOrderProven": true,
+        "reductions": [
+          {
+            "t": 1,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/2"
+          },
+          {
+            "t": 2,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/3"
+          },
+          {
+            "t": 3,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/4"
+          },
+          {
+            "t": 4,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/5"
+          },
+          {
+            "t": 5,
+            "identityVerified": true,
+            "frobeniusDistanceSquared": "0",
+            "purity": "1/6"
+          },
+          {
+            "t": 6,
+            "identityVerified": false,
+            "frobeniusDistanceSquared": "28*sqrt(8993824895)/20457421875 + 95559449/572807812500",
+            "purity": "28*sqrt(8993824895)/20457421875 + 11703606707/81829687500"
+          }
+        ],
+        "nextOrderWitness": {
+          "order": 6,
+          "row": 0,
+          "column": 0,
+          "differenceFromIdentity": "17/1593900",
+          "differenceLatex": "\\frac{17}{1593900}"
+        },
+        "majoranaMultiplicityProof": "Exact reciprocal-polynomial / polynomial-gcd checks in the independent verifier.",
+        "majoranaRootReconstructionRelativeError": "9.190619499882799935447356778410891799558955184669123206743356985229920358327940705566604534284700009e-102",
+        "maximumOrderUpperBound": 5,
+        "maximumOrderProofId": "n27-t6-six-copy-ppt",
+        "exactAC": true,
+        "exactMultiplicity": true,
+        "certificatePath": "../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/states.json",
+        "acCertificatePath": "../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/independent-verification.json"
+      },
+      "majoranaPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": -0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.30901699437494745,
+          "y": -0.9510565162951535,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -1.0,
+          "y": -2.8688928017596374e-102,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.30901699437494745,
+          "y": 0.9510565162951535,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.8090169943749475,
+          "y": 0.5877852522924731,
+          "z": 0.0,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6316394108516183,
+          "y": -0.2102617337214811,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.004783479713201381,
+          "y": -0.665699226625941,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6345957638988724,
+          "y": -0.20116301461786942,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3874182714930053,
+          "y": 0.5413736463127058,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3951581042534607,
+          "y": 0.5357503286525858,
+          "z": -0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9179205365030404,
+          "y": -0.13320094500387036,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15697141854260546,
+          "y": -0.9141556633553586,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8209068645814247,
+          "y": -0.431778325957948,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6643197624520332,
+          "y": 0.6473019823078158,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41033467198781204,
+          "y": 0.8318329520093612,
+          "z": -0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.9179205365030404,
+          "y": 0.13320094500387036,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.41033467198781204,
+          "y": -0.8318329520093612,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6643197624520332,
+          "y": -0.6473019823078158,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.8209068645814247,
+          "y": 0.431778325957948,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.15697141854260546,
+          "y": 0.9141556633553586,
+          "z": 0.37373706922921945,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.6316394108516183,
+          "y": 0.2102617337214811,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": 0.3951581042534607,
+          "y": -0.5357503286525858,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.3874182714930053,
+          "y": -0.5413736463127058,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.6345957638988724,
+          "y": 0.20116301461786942,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        },
+        {
+          "x": -0.004783479713201381,
+          "y": 0.665699226625941,
+          "z": 0.7462048364835606,
+          "multiplicity": 1
+        }
+      ],
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "majoranaCoordinatePolicy": "numeric-roots-retain-explicit-poles",
+      "references": [
+        {
+          "title": "Exact analytical order-5 state at N=27",
+          "url": "../anticoherent-state-catalogue/research/n27-n30/index.html#n27"
+        },
+        {
+          "title": "Radical constructions and exact reduction proof",
+          "url": "../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/proof.tex"
+        },
+        {
+          "title": "Independent exact verification",
+          "url": "../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/independent-verification.json"
+        },
+        {
+          "title": "Universal next-order exclusion proof",
+          "url": "../anticoherent-state-catalogue/research/n27-n30/n27-t6/proof.tex"
+        }
+      ],
+      "maximumACOrder": {
+        "n": 27,
+        "order": 5,
+        "status": "proven",
+        "scope": "maximum AC order at this qubit number",
+        "sourceKinds": [
+          "website"
+        ],
+        "exactAttainmentProven": true,
+        "upperBoundProven": true,
+        "upperBoundProofId": "n27-t6-six-copy-ppt",
+        "isPrimaryLibraryRepresentative": false
+      },
+      "maxMultiplicity": 1,
+      "distinctPoints": 27,
+      "partitionKey": "1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+      "constructionProofId": "pure-ac-n27-maximum",
+      "coefficientLatex": [
+        "0",
+        "\\frac{\\sqrt{327}}{50}",
+        "0",
+        "0",
+        "0",
+        "0",
+        "- \\frac{\\sqrt{494} i}{50}",
+        "0",
+        "0",
+        "0",
+        "0",
+        "\\frac{\\sqrt{7293} i \\left(-52 + \\sqrt{3433} i\\right)}{16150}",
+        "0",
+        "0",
+        "0",
+        "0",
+        "\\frac{\\sqrt{25036869}}{16150} + \\frac{26 \\sqrt{7293} i}{8075}",
+        "0",
+        "0",
+        "0",
+        "0",
+        "\\frac{\\sqrt{494} i}{50}",
+        "0",
+        "0",
+        "0",
+        "0",
+        "- \\frac{\\sqrt{327}}{50}",
+        "0"
+      ]
     }
   ],
   "proofs": [
+    {
+      "id": "pure-ac-n27-maximum",
+      "title": "27 qubits: maximum order five with 27 simple points",
+      "summary": "An exact analytical state attains fifth order. A rigorous six-copy certificate excludes sixth order for arbitrary complex pure symmetric states.",
+      "formulaLatex": "t_{\\max}(27,(1^{27}))=5",
+      "bodyHtml": "<p>The exact dihedral witness has <span class=\"math\" data-tex=\"\\rho_5=I_6/6\" data-display=\"false\">\\rho_5=I_6/6</span>. Independent algebraic root checks prove that all 27 Majorana points are simple. Its next-order defect is nonzero.</p><p>The upper bound is global: a six-copy rotation-averaged moment of a hypothetical sixth-order state would obey the AC contraction equations and positive first-leg partial-time-reversal constraints. Exact binary-rational dual factors, outward-rounded Arb bounds, and a validated recursive physical representation prove that all 81 source blocks of the separating operator are strictly positive. This contradicts trace one. Arbitrary complex pure states are covered; no constellation symmetry is assumed.</p><p><a href=\"../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/states.json\">Exact Dicke coefficients</a> · <a href=\"../anticoherent-state-catalogue/research/n27-n30/radical-witnesses/independent-verification.json\">Exact attainment and simple-point verification</a> · <a href=\"../anticoherent-state-catalogue/research/n27-n30/n27-t6/proof.tex\">Global upper-bound proof</a> · <a href=\"../anticoherent-state-catalogue/research/n27-n30/n27-t6/independent-verification.json\">Full rigorous verification</a></p>",
+      "references": []
+    },
     {
       "id": "acliege-exact-higher-orders",
       "title": "Five exact larger-size witnesses from the supplied Julia formulas",
@@ -33215,20 +33726,20 @@
       "existenceTheoremPartitions": 118
     },
     "partitionCount": 387,
-    "provenPartitions": 137,
+    "provenPartitions": 138,
     "excludedPartitions": 112,
-    "boundedPartitions": 138,
-    "exactPartitions": 249,
-    "stateCount": 197,
-    "radicalStateCount": 46,
+    "boundedPartitions": 137,
+    "exactPartitions": 250,
+    "stateCount": 198,
+    "radicalStateCount": 47,
     "certifiedImplicitStateCount": 7,
-    "explicitWitnessPartitions": 45,
-    "existenceTheoremPartitions": 230,
+    "explicitWitnessPartitions": 46,
+    "existenceTheoremPartitions": 229,
     "totalPartitionCount": 387,
     "corePartitionCount": 270,
     "libraryPartitionCount": 117,
     "numericalStateCount": 144,
-    "explicitStateCount": 53
+    "explicitStateCount": 54
   },
   "legacyEntries": [
     {
@@ -177284,5 +177795,49 @@
     ],
     "numericalStatesPreserved": true,
     "upperBoundsUnchanged": true
+  },
+  "companionPureACUpdate": {
+    "n": 27,
+    "partition": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "previous": {
+      "lower": 1,
+      "upper": 9,
+      "status": "bounded"
+    },
+    "lower": 5,
+    "upper": 5,
+    "stateId": "dihedral-n27-t5",
+    "pureExclusionProofId": "n27-t6-six-copy-ppt",
+    "numericalStatesPreserved": true,
+    "exclusionCertificateMetadataSHA256": "ca3b31ae137c1034edf1553a110fcdfb09b0b021d71a23333ac5acf2118e6f3e",
+    "attainmentStatesSHA256": "0e7c59da98ea33b61e5c1351092b239e6e537d16ef70ce151669444647fb3234"
   }
 }

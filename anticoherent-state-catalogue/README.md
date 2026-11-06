@@ -6,7 +6,7 @@ Each attached representative has a **View Majorana sphere** button. The interact
 
 The sphere uses the same convention as the degeneracy catalogue: the homogeneous polynomial is `P(X,Y) = Σ_r (−1)^r √binom(n,r) c_r X^(n−r)Y^r`; a root `z = Y/X` represents the spinor ratio `b/a = 1/z`. Zero and infinity map to the south and north poles. Displayed coordinates and symmetry classifications are numerical; the existing exact AC certificates remain the evidence for anticoherence.
 
-The main table covers every qubit number n=1–60 and orders t=1–14. The original Liège library supplies numerical witnesses through n=60, alongside analytical representatives and proved exclusions. Missing numerical solutions are left unresolved unless an independent proof excludes them.
+The main table covers every qubit number n=1–100 and orders t=1–19. The original Liège library supplies numerical witnesses through n=100, alongside analytical representatives and proved exclusions. The order range includes the first general exclusion at n=100. Missing numerical solutions are left unresolved unless an independent proof excludes them.
 
 Anticoherence means **at least** the selected order: the t-body reduced state is I/(t+1) on the symmetric subspace. Every multipole rank 1,…,t must vanish. The condition differs from maximal mixing on the full 2^t-dimensional qubit space and from cancelling only even multipoles.
 
@@ -28,7 +28,7 @@ The previously reported exclusions (9,3) and (10,4) now have independent exact p
 
 Two-copy exact identities exclude (8,4) and (10,5). Schmidt-rank, odd-complement, and tensor-Gram arguments establish the other exclusions. Read `research/SMALL_N_PROOFS.md` for the derivations.
 
-The expansion imports the audited library representatives through n=60, with independently checked high-precision partial traces. The current dataset and [import and audit notes](research/library42/index.html) give representative counts, residuals and rejected source candidates, including the starred N=29,t=6 candidate and the mislabelled acs.48.8.txt file. The research folder retains its original name to keep existing links valid.
+The expansion imports the audited library representatives through n=100, with independently checked high-precision partial traces. Additional local files supply distinct numerical states at n=65,70,72,75,84,96. The current dataset and [import and audit notes](research/library42/index.html) give representative counts, residuals and rejected source candidates, including the starred N=29,t=6 candidate and the mislabelled acs.48.8.txt file. The research folder retains its original name to keep existing links valid.
 
 ## Reproduce
 
@@ -46,6 +46,7 @@ python3 research/reported-exclusions/n11-t4/moment/independent_verify.py
 python3 research/exact-orders/build.py  # requires NumPy and SymPy
 python3 research/exact-orders/verify.py
 python3 research/exact-orders/build_page.py
+python3 research/library42/audit_import.py
 python3 research/library42/build.py
 python3 research/library42/verify_exact.py
 python3 research/library42/verify_numeric.py
@@ -64,6 +65,8 @@ node research/majorana-viewer/verify_app.cjs
 ```
 
 The coordinate verifier uses mpmath; the JavaScript checks use the locally bundled KaTeX. Saved reports are in `research/majorana-viewer/`.
+
+The additional local-source import is reproducible with `python3 research/library42/import_extra100.py /path/to/ACstates` (NumPy, SciPy, SymPy and mpmath). It refines only each source-reported order and independently checks the next reduction. The original source files are unchanged. Exact lower-order additions use positive rational weights on separated uniform Dicke grids; a grid that was not found is a construction gap, not a nonexistence result.
 
 `data/catalogue.json` is the complete distributable dataset; `data/catalogue.js` is its offline browser version. `research/states.json` and `research/restrictions.json` preserve witness definitions and source audits. Downloads contain complex amplitudes as [real, imaginary] pairs and exact symbolic coefficients separately.
 

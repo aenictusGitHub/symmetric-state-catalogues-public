@@ -1,0 +1,228 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Span}{\operatorname{span}}
+\begin{document}
+\title{A six-copy exclusion of pure order-6 anticoherence\protect\\on 27 symmetric qubits}
+\author{Portable validated certificate}\date{November 2026}\maketitle
+
+\begin{theorem}
+There is no normalized pure state of 27 symmetric qubits that is
+anticoherent through order 6. Consequently the maximum pure-state
+anticoherence order on 27 qubits is 5, using the exact order-5 witness
+recorded at the end of this proof.
+\end{theorem}
+
+The exclusion is a finite separating identity, with positivity proved by
+outward-rounded interval arithmetic. The optimizer used to discover its
+coefficients is not a premise of the proof. A successful run of the
+supplied \texttt{verify\_certificate.py} checks every representation and
+positivity assertion used below. Until that complete run succeeds, the
+stored numerical candidate alone does not establish this theorem.
+
+\paragraph{The physical moment and its normalization.}
+Put $j=27/2$ and $V=\Sym^{27}(\mathbb C^2)$, so $\dim V=28$.
+For a hypothetical pure order-6 AC state $\rho=|\psi\rangle\langle\psi|$,
+form the normalized Haar average
+\[
+ X=\int_{\mathrm{SU}(2)}(U_g\rho U_g^\dagger)^{\otimes6}\,dg.
+\]
+It has trace one, is positive, and is supported on $\Sym^6(V)$.
+Throughout this certificate, capital spin labels $J,S,T,L$ are
+\emph{doubled} spins: a spin-$J/2$ irrep has dimension $J+1$.
+In orthonormal multiplicity coordinates, write
+\[
+ X=\bigoplus_J I_{J+1}\otimes\frac{C_J}{\sqrt{J+1}},
+ \qquad C_J\succeq0,
+ \qquad\sum_J\sqrt{J+1}\Tr C_J=1.                 \tag{1}
+\]
+There are 81 nonempty source sectors and 20,076 highest-weight columns.
+Their dimensions sum to
+$\dim\Sym^6(V)=\binom{33}{6}=1,107,568$.
+
+Let $E_J$ be the isometric coefficients of fractional parentage (CFPs)
+from the source multiplicity space into the coupled basis of
+$V\otimes\Sym^5(V)$. Its row blocks $E_{J,S}$ are indexed by the
+five-copy spin $S$ and its multiplicity. The admissible rows obey
+$|27-S|\le J\le27+S$. All these bases can be chosen real.
+
+\paragraph{Anticoherence equations.}
+For $1\le\ell\le6$, let $f_\ell(i)$, $0\le i\le27$, be the diagonal
+entries of the Frobenius-normalized rank-$\ell$, component-zero spin
+tensor. They are constructed by exact Gram--Schmidt from
+$(2i-27)^0,\ldots,(2i-27)^\ell$, with positive leading coefficient.
+Anticoherence implies
+\[
+ \Tr_1[(\operatorname{diag}f_\ell\otimes I)X]=0.       \tag{2}
+\]
+Indeed the integrand factors into the vanishing rank-$\ell$ expectation
+of $U_g\rho U_g^\dagger$ times its five-copy tensor power.
+Rotation covariance reduces (2) to multiplicity matrices
+\[
+ R_{\ell,S,T}(C)
+ =\sum_J c_{\ell,J,S,T}E_{J,S}C_JE_{J,T}^{T}=0.       \tag{3}
+\]
+For $S\le T$, the verifier evaluates the scalar directly as
+\[
+ c_{\ell,J,S,T}=
+ \frac{\displaystyle\sum_{i=0}^{27}f_\ell(i)
+ \langle j,m_i;S/2,S/2\mid J/2,S/2+m_i\rangle
+ \langle j,m_i;T/2,S/2\mid J/2,S/2+m_i\rangle}
+ {\sqrt{J+1}\,
+  |\langle S/2,S/2;T/2,-S/2\mid\ell,0\rangle|},
+ \quad m_i=i-j.                                     \tag{4}
+\]
+Forbidden triangles contribute zero. The absolute value in (4) fixes the
+output tensor phase at its upper common weight. Exact factorial
+Clebsch--Gordan sums, enclosed by Arb, avoid assuming an inferred phase
+or a floating recoupling identity. The certificate pairs real dyadic
+matrices with these equations; off-diagonal $(S,T)$ blocks are included
+with their transpose. The 8,750,229 reduced scalar entries are not
+claimed to be linearly independent. Only their necessary vanishing is
+used.
+
+\paragraph{A positive partial-time-reversal constraint.}
+Define $F_j|j,m\rangle=(-1)^{j-m}|j,-m\rangle$ and
+$\Theta=F_jK$, with $K$ complex conjugation in this basis. Partial
+transpose on the first copy, followed by this unitary, gives
+\[
+ \tau_1(X)=(F_j\otimes I)X^{\Gamma_1}(F_j^\dagger\otimes I)
+ =\int\Theta\rho_g\Theta^{-1}\otimes\rho_g^{\otimes5}\,dg\succeq0,
+ \quad\rho_g=U_g\rho U_g^\dagger.                    \tag{5}
+\]
+This operator is supported on $V\otimes\Sym^5(V)$; it need not be
+supported on $\Sym^6(V)$. Time reversal makes it rotation invariant.
+Define its normalized output multiplicity blocks by
+\[
+ \tau_1(X)=\bigoplus_L I_{L+1}\otimes
+                  \frac{Y_L}{\sqrt{L+1}},\qquad Y_L\succeq0.
+\]
+In the same first-spin/parent coupled convention as the source CFPs,
+\[
+ (Y_L)_{S\alpha,T\beta}
+ =\sum_J\kappa_{L,J,S,T}
+       (E_{J,S}C_JE_{J,T}^{T})_{\alpha\beta},\qquad
+ \kappa_{L,J,S,T}
+ =\sqrt{(J+1)(L+1)}
+ \begin{Bmatrix}27/2&S/2&J/2\\27/2&T/2&L/2\end{Bmatrix}.           \tag{6}
+\]
+The partial-time-reversal recoupling phase is
+$(-1)^{6\cdot27}=+1$ in this gauge. The Wigner $6j$ symbol is evaluated
+from exact integer factorial sums with outward interval rounding.
+The certificate uses only $L=0,2,\ldots,20$; unused output sectors need
+not be tested.
+
+\paragraph{The separating identity.}
+For each used output spin, the saved binary matrix $F_L$ defines the
+\emph{exact} positive dual
+$Q_L=sF_LF_L^T\succeq0$, where $s>0$ is the rational scale in the
+metadata (here $s=1$). Thus positivity of these duals does not depend on
+a numerical eigenvalue tolerance. The remaining saved arrays are real
+dyadic AC duals. Let $H_J^{\rm AC}$ denote their ambient contraction
+adjoint, built using (4), and define
+\[
+ (H_J^{\rm PT})_{S,T}
+      =\sum_L\kappa_{L,J,S,T}(Q_L)_{S,T},\qquad
+ H_J=H_J^{\rm AC}-H_J^{\rm PT},\qquad G_J=E_J^TH_JE_J.
+\]
+Pairing (3) with the AC duals and using (6) yields the exact identity
+\[
+ 0=\sum_J\Tr(G_JC_J)+\sum_L\Tr(Q_LY_L).              \tag{7}
+\]
+The verifier proves \emph{every} $G_J$ positive definite. Then (1)
+makes the first sum strictly positive, while (5) makes the second
+nonnegative, a contradiction. This argument applies to arbitrary
+complex pure states: real symmetric positive duals pair nonnegatively
+with complex Hermitian positive moments, and the complex equations (3)
+still vanish. No reality or discrete symmetry of $|\psi\rangle$ is
+assumed.
+
+\paragraph{Validated physical representation.}
+Every finite floating number in a saved archive is read as its exact
+binary rational value. Let $A_{r,J}$ be a stored CFP approximation.
+The verifier constructs nearby \emph{exact physical} CFPs recursively,
+starting with exact symmetric-pair CFP signs. At level $r$, in
+$V\otimes\Sym^{r-1}(V)$, the exact orthogonal projector onto
+$\Sym^r(V)$ is
+\[
+ P_r=\frac{I+(r-1)\Pi\operatorname{Swap}_{12}\Pi}{r},             \tag{8}
+\]
+where $\Pi$ is projection onto this first-spin/parent space.
+Its coupled entries are Racah recouplings of the exact previous CFPs.
+Each source spin and multiplicity is independently checked from the
+symmetric-power character. Hence its range has exactly the number of
+columns supplied in every sector.
+
+Suppose the previous exact CFP family lies within operator norm
+$\delta$ of the stored family, block by block. The resulting projector
+perturbation is at most
+$\beta=(r-1)(2\delta+\delta^2)/r$: recoupling and swap are unitary, and
+$\|E^TUE-A^TUA\|_2\le2\delta+\delta^2$.
+Arb bounds the residual of the stored projector and the Gram residual
+$\zeta=\|A^TA-I\|_F$. Including the projector perturbation gives a bound
+$\varepsilon\ge\|(I-P_r)A\|_2$.
+For $W=P_rA$,
+\[
+ \|W^TW-I\|_2\le\zeta+\varepsilon^2=\eta<1.
+\]
+Projection followed by polar normalization therefore produces an exact
+range isometry $E=W(W^TW)^{-1/2}$, with
+\[
+ \|E-A\|_2\le
+ \varepsilon+\frac{\eta}{1+\sqrt{1-\eta}}.                        \tag{9}
+\]
+Full column rank and the verified multiplicity make it a complete
+physical basis, rather than a merely abstract approximate embedding.
+The recursion gives the certified sixth-copy distance $\delta_6$.
+
+The ambient AC and partial-time-reversal formulas use the \emph{same}
+recursively chosen exact parent family. They contain no additional
+approximate parent isometry: its discrepancy has already entered the
+recursive projector bounds. Therefore no second parent-distance term
+is omitted when the final source CFPs are perturbed.
+
+\paragraph{Validated strict positivity.}
+For each source sector, the verifier rebuilds $H_J$ in Arb, forms
+$\widetilde G_J=A_{6,J}^TH_JA_{6,J}$, and reads a dyadic congruence
+matrix $Z_J$. It checks
+\[
+ \underbrace{\|I-Z_J\widetilde G_JZ_J^T\|_F}_{\text{interval bound}}
+ +\|Z_J\|_F^2(2\delta_6+\delta_6^2)\|H_J\|_F<1.                \tag{10}
+\]
+The second term bounds the change from $A_{6,J}$ to the exact $E_J$.
+Thus $\|I-Z_JG_JZ_J^T\|_2<1$, which proves $Z_JG_JZ_J^T\succ0$.
+This also implies $Z_J$ is nonsingular, and hence $G_J\succ0$.
+All bounds in (8)--(10), angular coefficients, and matrix products are
+outward-rounded Arb enclosures. No optimizer stopping condition,
+numerical eigenvalue, or numerical infeasibility declaration is used.
+The independent report records all 81 checks, rational bounds and input
+hashes.
+
+\paragraph{Exact attainment of order 5.}
+Using normalized Dicke states $|D_{27}^{(r)}\rangle$, put
+\[
+ w=\frac{52-i\sqrt{3433}}{19\sqrt{17}},\qquad
+ |\psi_5\rangle=\frac{1}{50}\left[
+ \sqrt{327}\bigl(|D_{27}^{(1)}\rangle-|D_{27}^{(26)}\rangle\bigr)
+ -i\sqrt{494}\bigl(|D_{27}^{(6)}\rangle-|D_{27}^{(21)}\rangle\bigr)
+ -iw\sqrt{429}\bigl(|D_{27}^{(11)}\rangle-|D_{27}^{(16)}\rangle\bigr)
+ \right].
+\]
+Here $|w|=1$ and $2(327+494+429)=2500$. The separate radical-witness
+verifier in the catalogue's \texttt{research/n27-n30} folder checks
+exactly that $\rho_5=I_6/6$ and
+$\langle D_6^{(0)}|\rho_6|D_6^{(0)}\rangle-1/7=17/1593900\ne0$.
+Together with the exclusion this establishes maximum order 5.
+
+\paragraph{Reproduction.}
+Install Python 3, NumPy, and \texttt{python-flint} (Arb); SciPy is not
+required. Keep all manifest inputs together and run
+\texttt{python3 verify\_certificate.py}. The run writes
+\texttt{bootstrap-verification.json} and, only after every source check
+passes, \texttt{independent-verification.json}. The certificate's
+partitioned archives avoid any single file above GitHub's file limit.
+Discovery code is not required to reproduce the proof.
+\end{document}
