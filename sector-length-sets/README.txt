@@ -46,7 +46,7 @@ All mathematical labels use $...$ notation and local KaTeX typesetting.
 Text uses the LaTeX Latin Modern Roman fonts, also included locally.
 
 The original manuscripts and figures in the research workspace are unchanged.
-The references/ directory contains copies of the supporting N5 and N6 PDFs.
+The references/ directory contains the supporting N5 proof and the concise N6 results PDF. The long N6 supplement is not included in the public package.
 
 Scientific scope
 ----------------
@@ -189,4 +189,4 @@ Concise N=6 results
 references/N6-concise-results.pdf is a seven-page, lightweight overview of the
 principal bounds, current figure, explicit states and known boundary coverage.
 It credits J. Martin, O. Giraud and E. Serrano-Ensástiga and includes an AI-use
-acknowledgement. The complete 153-page proof supplement is retained separately.
+acknowledgement. The complete 153-page proof supplement remains in the research workspace and is not published with this package.
