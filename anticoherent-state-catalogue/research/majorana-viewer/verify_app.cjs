@@ -37,7 +37,7 @@ function session(name,withCoordinates=true){
    assert(JSON.stringify(badges.map(m=>`${m[1]}:${m[2]}`))==='["29:5","87:11","94:12"]','comparison badges occur only on differing row maxima');
    for(const badge of badges){
     const row=comparison.rows.find(row=>row.n===Number(badge[1]));
-    assert(badge[3].includes(`S²: ${row.designOrder}`),'badge gives design reference order');
+    assert(badge[3].includes(`Design order ${row.designOrder}`),'badge names the design reference order in plain language');
     assert(badge[0].includes(`for ${row.n} points`),'badge description identifies the point count');
     assert(badge[0].includes('not the design order of this state'),'badge distinguishes the selected constellation');
     assert(badge[0].includes('is conjectured'),'badge preserves maximum uncertainty');
@@ -54,7 +54,12 @@ function session(name,withCoordinates=true){
     assert(body.includes(`href="#n=${row.n}&amp;t=${row.acOrder}"`),'comparison links row maximum');
     env.changeHash(`#n=${row.n}&t=${row.acOrder}`);
     assert(env.api.getSelected().n===row.n && env.api.getSelected().t===row.acOrder,'comparison hash selects correct AC cell');
+    const detail=env.elements.get('result-detail').innerHTML;
+    assert(detail.includes(`With ${row.n} points on the sphere`)&&detail.includes(`order ${row.designOrder}</strong>`),'selected result explains the design badge');
+    assert(detail.includes('numerical construction')&&detail.includes('independent benchmark'),'selected result scopes the numerical design record');
    }
+   env.changeHash('#design-comparison');
+   assert(env.elements.get('design-comparison').open===true,'detail comparison link opens its explanation');
   }
   for(const entry of env.data.entries){
    const candidateIds=ac?entry.stateIds||[]:[entry.id],cases=candidateIds.length?candidateIds:[null];

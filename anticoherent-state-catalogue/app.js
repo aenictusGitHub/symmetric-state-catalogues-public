@@ -55,6 +55,13 @@
     const status=row.acMaximumStatus==='proven'?'proved':'conjectured';
     return `Published spherical-design order ${row.designOrder} for ${row.n} points; catalogue AC maximum ${row.acOrder} is ${status}. This is not the design order of this state's constellation.`;
   }
+  function designComparisonNote(entry) {
+    const row=designGap(entry.n,entry.t,entry.maximumACOrder);
+    if(!row)return '';
+    const bounds=row.acRigorousLower===row.acRigorousUpper?String(row.acRigorousLower):`${row.acRigorousLower}–${row.acRigorousUpper}`;
+    const evidence=row.designConstructionEvidenceCode==='V3'?' (numerical construction)':'';
+    return `<aside class="design-comparison-note" aria-label="Spherical-design comparison"><h4>Spherical-design comparison</h4><p>With ${row.n} points on the sphere, the published spherical-design record is <strong>order ${row.designOrder}</strong>${evidence}. It is an independent benchmark for point sets. The rigorous bounds for the AC maximum are <strong>${bounds}</strong>.</p><a href="#design-comparison">Compare records and source ↑</a></aside>`;
+  }
   function renderDesignComparison() {
     const panel=$('design-comparison'),body=$('design-comparison-body');
     if(!panel || !body)return;
@@ -71,7 +78,7 @@
       const designEvidence=evidence[code] || 'Published construction';
       return `<tr><th scope="row"><a href="#n=${row.n}&amp;t=${row.acOrder}" aria-label="Select ${row.n} qubits, AC order ${row.acOrder}">${row.n}</a></th><td><strong>${row.acOrder}</strong><span class="comparison-evidence">${escape(acEvidence)}</span></td><td><strong>${row.designOrder}</strong><span class="comparison-evidence">${escape(code)} · ${escape(designEvidence)}</span></td></tr>`;
     }).join('');
-    body.innerHTML=`<p>S² refers to equally weighted points on the ordinary unit sphere. This compares published records at the same point count, not the design order of a representative’s Majorana stars.</p><div class="comparison-table-scroll"><table class="comparison-table"><caption class="sr-only">Reported AC and spherical-design orders that differ at the same qubit or point count</caption><thead><tr><th scope="col">n</th><th scope="col">AC record</th><th scope="col">S² design record</th></tr></thead><tbody>${rows}</tbody></table></div><p>The spherical-design table reports putatively optimal strengths; V3 denotes a numerical construction. The true maxima are not proved to differ. <a href="${escape(safeUrl(source.url || '#sources'))}" target="_blank" rel="noopener">${escape(source.title || 'Published spherical-design table')} ↗</a></p>`;
+    body.innerHTML=`<p>A spherical design of order t is an equally weighted point set that reproduces averages over the sphere for every polynomial through degree t. The “Design order” badges compare published records at the same point count. This benchmark is independent of the displayed Majorana constellation.</p><div class="comparison-table-scroll"><table class="comparison-table"><caption class="sr-only">Reported AC and spherical-design orders that differ at the same qubit or point count</caption><thead><tr><th scope="col">n</th><th scope="col">AC record</th><th scope="col">Spherical-design record</th></tr></thead><tbody>${rows}</tbody></table></div><p>The spherical-design table reports putatively optimal strengths; V3 denotes a numerical construction. The true maxima are not proved to differ. <a href="${escape(safeUrl(source.url || '#sources'))}" target="_blank" rel="noopener">${escape(source.title || 'Published spherical-design table')} ↗</a></p>`;
   }
   function sourceUrl(ref) {
     if (ref.file || ref.filename) return `references/${encodeURIComponent(ref.file || ref.filename)}${ref.page ? '#page='+Number(ref.page) : ''}`;
@@ -131,7 +138,7 @@
       const maximum=entry.maximumACOrder;
       const maximumText=maximum?(maximum.status==='proven'?'Proved max':'Conj. max'):null;
       const gap=designGap(n,t,maximum),gapText=gap?designGapTooltip(gap):'';
-      return `<td><button class="state-cell ${s}${maximum?' maximum-order-cell':''}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}${maximumText?', '+maximumText+'imum AC order':''}${gap?', '+escape(gapText):''}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${maximumText||shortLabels[s]}</span>${gap?`<span class="design-gap-badge" aria-hidden="true" title="${escape(gapText)}">S²: ${gap.designOrder}</span>`:''}</button></td>`;
+      return `<td><button class="state-cell ${s}${maximum?' maximum-order-cell':''}${isSelected?' selected':''}" type="button" data-n="${n}" data-t="${t}" aria-pressed="${isSelected}" aria-label="${n} qubits, order ${t}: ${labels[s]}${maximumText?', '+maximumText+'imum AC order':''}${gap?', '+escape(gapText):''}"><span class="cell-mark" aria-hidden="true">${symbols[s]}</span><span class="cell-label">${maximumText||shortLabels[s]}</span>${gap?`<span class="design-gap-badge" aria-hidden="true" title="${escape(gapText)}">Design order ${gap.designOrder}</span>`:''}</button></td>`;
     }).join('')}</tr>`).join('');
     $('state-table').innerHTML=`<table class="state-grid" style="min-width:${Math.max(560,ts.length*68+40)}px"><caption class="sr-only">Existence of pure anticoherent states by qubit number n and order t</caption>${head}<tbody>${body}</tbody></table>${matching ? '' : '<p class="no-matches">No cells match this evidence filter.</p>'}`;
     const exactCount=[...states.values()].filter(st=>st.status!=='numerical').length,numericalCount=states.size-exactCount;
@@ -186,6 +193,7 @@
       content+=`<label class="witness-label" for="witness-select">Representative <select id="witness-select">${candidates.map(st=>`<option value="${escape(st.id)}"${st.id===witness.id?' selected':''}>${escape((st.label||st.stateName||st.id)+maximumOrderOption(st)+symmetryLabel(st))}</option>`).join('')}</select></label>`;
       content+=symmetrySummary(witness);
       content+=maximumOrderTag(witness);
+      content+=designComparisonNote(entry);
       const nextReduction=witness.verification?.reductions?.find(r=>r.t===witness.achievedOrder+1 && r.identityVerified===false);
       const strictOrder=!numeric && (!!nextReduction || !!witness.verification?.globalMaximumOrderProven);
       content+=`<p class="witness-order">${numeric?'Numerical ':strictOrder?'Exactly ':''}${witness.achievedOrder}-AC representative<span>${numeric?`Reported order ${witness.achievedOrder}`:strictOrder?`Not ${witness.achievedOrder+1}-AC`:`Witnesses orders 1–${witness.achievedOrder}`}</span></p>`;
@@ -248,6 +256,7 @@
   }
   function handleAnchors() {
     if(location.hash.startsWith('#proof-')){ const proof=document.getElementById(location.hash.slice(1));if(proof?.tagName==='DETAILS')proof.open=true; }
+    if(location.hash==='#design-comparison' && $('design-comparison'))$('design-comparison').open=true;
   }
   $('state-table').addEventListener('click',event=>{const b=event.target.closest('button[data-n]');if(b)select(b.dataset.n,b.dataset.t,null,{focus:true});});
   $('state-table').addEventListener('keydown',event=>{

@@ -53,7 +53,11 @@ body{font-size:16px}
 .jump-detail{display:none}.detail-panel{scroll-margin-top:24px}
 @media(max-width:850px){.jump-detail{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border:1px solid #cbd3c5;border-radius:3px;padding:7px 10px;color:var(--ink);font-size:13px;white-space:nowrap}.jump-detail:hover{background:#eff2e9}}
 @media print{.jump-detail{display:none}}
-.design-gap-badge{display:inline-block;padding:2px 4px;border:1px solid #cbb786;border-radius:3px;background:#f5edda;color:#725319;font-size:11px;font-weight:650;line-height:1.2;white-space:nowrap}
+.design-gap-badge{display:inline-block;max-width:100%;padding:2px 4px;border:1px solid #cbb786;border-radius:3px;background:#f5edda;color:#725319;font-size:11px;font-weight:650;line-height:1.2;white-space:normal;text-wrap:balance}
+.design-comparison-note{margin:0 0 17px;padding:12px;border:1px solid #dfcfad;border-radius:3px;background:#faf5e9;font-size:13px;line-height:1.65;color:var(--ink)}
+.design-comparison-note h4{margin:0 0 6px;font-size:13px;font-weight:650}
+.design-comparison-note p{margin:0 0 7px}
+.design-comparison-note a{font-size:12px}
 .design-comparison{margin:-10px 0 25px;border:1px solid var(--line);border-radius:4px;background:var(--surface);font-size:13px}
 .design-comparison>summary{padding:10px 14px;cursor:pointer;font-weight:600;color:var(--ink)}
 #design-comparison-count{color:var(--muted);font-size:12px;margin-left:5px}
