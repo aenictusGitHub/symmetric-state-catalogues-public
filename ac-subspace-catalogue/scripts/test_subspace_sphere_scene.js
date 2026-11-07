@@ -161,4 +161,64 @@ for(const expected of expectedRadial)assert.ok(radialPaths[0].points.some(actual
 const radialSvg=continuous.exportSvg();assert.equal((radialSvg.match(/stroke-linejoin="round"/g)||[]).length,radialPaths.length);
 assert.ok(!/NaN|Infinity/.test(radialSvg));continuous.dispose();
 
-console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior, joined contour paths, horizon clipping and surface-matched radial contours.');
+// Scalar axes retain their front/back style, but portions hidden by the
+// opaque body are faint. Check the actual rendered sections and SVG opacities.
+get('contours').checked=false;get('axes').checked=true;get('coordinate').checked=false;get('shape').value='sphere';get('order').value='highest';
+const sphereAxes=window.RendererForTest(model,{...mesh,colorMax:1},{axes:[{axis:[0,0,1],order:4}]});
+const axisLines=objects=>objects.filter(o=>o.type==='line'&&typeof o.axisOccluded==='boolean');
+const cssScale=Math.min(486*.39,437*.40);
+const physicalRadius=p=>Math.hypot((p.x-486/2)/cssScale,(p.y-437/2)/cssScale,p.z);
+function checkOpacitySections(lines){
+ assert.ok(lines.some(o=>o.axisOccluded),'An axis must visibly pass inside/behind the body');
+ assert.ok(lines.some(o=>!o.axisOccluded),'The exposed axis ends must retain their original opacity');
+ for(const line of lines){
+  assert.ok(line.dash.length===0||line.dash.join(',')==='5,5','Rear dashes must be preserved');
+  const base=line.dash.length?.45:.95;
+  near(line.opacity,base*(line.axisOccluded?.22:1));
+ }
+}
+sphereAxes.set('husimi',2,null);
+const sphereSections=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(sphereSections);
+const frontExposed=sphereSections.find(o=>!o.axisOccluded&&!o.dash.length),rearExposed=sphereSections.find(o=>!o.axisOccluded&&o.dash.length);
+assert.ok(frontExposed&&rearExposed,'Both tilted axis ends extend beyond the sphere silhouette');
+near(Math.min(physicalRadius(frontExposed.a),physicalRadius(frontExposed.b)),1,1e-9,'The front axis must emerge at the unit-sphere surface');
+const defaultAxisDepth=projectDefault([0,0,1]).z,rearEmergence=1/Math.sqrt(1-defaultAxisDepth**2);
+near(Math.min(physicalRadius(rearExposed.a),physicalRadius(rearExposed.b)),rearEmergence,1e-9);
+assert.ok(rearEmergence>1,'A rear segment outside the physical sphere can still lie behind its silhouette');
+assert.ok(rearExposed.dashOffset<0,'Splitting a rear guide must continue its original dash phase');
+const axisSvg=sphereAxes.exportSvg(),svgAxisPaths=[...axisSvg.matchAll(/<path\b[^>]*stroke="#a45635"[^>]*>/g)].map(m=>m[0]);
+assert.equal(svgAxisPaths.length,sphereSections.length,'Canvas and SVG must draw the same exposed/hidden sections');
+for(const line of sphereSections){
+ const matching=svgAxisPaths.find(path=>Math.abs(Number(path.match(/opacity="([^"]+)"/)[1])-line.opacity)<1e-12&&path.includes(`stroke-dasharray="${line.dash.join(' ')}"`));
+ assert.ok(matching,'SVG must preserve each axis section opacity and rear dash style');
+}
+sphereAxes.set('wigner',2,null,{...mesh,colorMax:1});checkOpacitySections(axisLines(sphereAxes.sceneForTest(486,437,true)));
+// Translucent operator shells keep their previous guides, not scalar-body
+// occlusion. This also protects the separate clickable sphere gallery.
+sphereAxes.set('operator',4,records[1]);
+const operatorGuide=sphereAxes.sceneForTest(486,437,true).filter(o=>o.type==='line'&&o.color==='#a45635');
+assert.ok(operatorGuide.length>0);assert.ok(operatorGuide.every(o=>o.axisOccluded!==true));for(const line of operatorGuide)near(line.opacity,line.dash.length?.45:.95);sphereAxes.dispose();
+
+// A prolate radial surface has a much narrower waist than a unit sphere.
+// Exposed portions must follow that shape even when contour lines are off.
+const bodyVertices=[],bodyFaces=[],bodyRows=24,bodyCols=48;
+for(let i=0;i<=bodyRows;i++)for(let j=0;j<=bodyCols;j++){
+ const theta=Math.PI*i/bodyRows,phi=2*Math.PI*j/bodyCols,n=[Math.sin(theta)*Math.cos(phi),Math.sin(theta)*Math.sin(phi),Math.cos(theta)];
+ bodyVertices.push({n,q:.4+.6*n[2]**2});
+}
+for(let i=0;i<bodyRows;i++)for(let j=0;j<bodyCols;j++){const a=i*(bodyCols+1)+j,b=a+bodyCols+1;bodyFaces.push([a,a+1,b+1,b]);}
+const bodyMesh={qMin:.4,qMax:1,colorMax:1,vertices:bodyVertices,faces:bodyFaces,contours:{segments:[]}};
+const bodyAxes=window.RendererForTest(model,bodyMesh,{axes:[{axis:[1,0,0],order:2}]});get('shape').value='radial';
+bodyAxes.set('husimi',2,null,bodyMesh);
+const radialSections=axisLines(bodyAxes.sceneForTest(486,437,true));checkOpacitySections(radialSections);
+assert.ok(radialSections.filter(o=>!o.axisOccluded).some(o=>Math.min(physicalRadius(o.a),physicalRadius(o.b))<.8),'Radial guides must emerge at the actual waist rather than a unit-sphere cutoff');
+assert.equal(get('contours').checked,false,'Axis occlusion must not depend on the contour checkbox');
+const beforeRotation=radialSections.map(o=>[o.a.x,o.a.y,o.b.x,o.b.y]);
+get('right').handlers.get('click')();
+const afterRotation=axisLines(bodyAxes.sceneForTest(486,437,true));checkOpacitySections(afterRotation);
+assert.notDeepEqual(afterRotation.map(o=>[o.a.x,o.a.y,o.b.x,o.b.y]),beforeRotation,'Axis visibility must be recomputed during camera rotation');
+const radialAxisSvg=bodyAxes.exportSvg();assert.ok(!/NaN|Infinity/.test(radialAxisSvg));
+assert.ok(radialAxisSvg.includes('opacity="0.209"')||radialAxisSvg.includes('opacity="0.099"'),'SVG must carry the faded radial sections');
+get('axes').checked=false;assert.equal(axisLines(bodyAxes.sceneForTest(486,437,true)).length,0);bodyAxes.dispose();
+
+console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior, joined contour paths, horizon clipping, surface-matched radial contours and depth-aware scalar axis transparency.');

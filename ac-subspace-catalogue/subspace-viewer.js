@@ -121,14 +121,16 @@
       const cx=cellView?.cx??width/2,cy=cellView?.cy??height/2,scale=cellView?.scale??Math.min(width*.39,height*.40)*zoom,objects=[],markerLayer=[],labelLayer=[];
       const projectReference=a=>{const v=apply(R,a);return {x:cx+v[0]*scale,y:cy-v[2]*scale,z:v[1]};};
       const project=a=>projectReference(apply(alignment,a));
-      const line=(a,b,color,width=1,dash=[],opacity=1)=>objects.push({type:'line',a:project(a),b:project(b),color,width,dash,opacity});
+      const line=(a,b,color,width=1,dash=[],opacity=1,extra={})=>objects.push({type:'line',a:project(a),b:project(b),color,width,dash,opacity,...extra});
       const circle=(p,r,fill,stroke,opacity=1)=>markerLayer.push({type:'circle',p:project(p),r,fill,stroke,opacity});
       const text=(p,content,color='#3f4241',size=12,offset=[6,-6])=>objects.push({type:'text',p:project(p),content,color,size,offset});
-      if(mode==='husimi'||mode==='wigner'){
+      let axisDepthBuffer=null;const scalarView=mode==='husimi'||mode==='wigner';
+      if(scalarView){
         const radial=ui('shape').value==='radial';let surfaceDepth=null;
         if(!radial&&!vectorExport)objects.push(heatmap(width,height,cx,cy,scale));
         else{const max=(mode==='wigner'?mesh.colorMax:mesh.qMax)||1,magnitude=q=>mode==='wigner'?Math.abs(q):q,verts=mesh.vertices.map(v=>({p:project(v.n.map(x=>x*(radial?magnitude(v.q)/max:1))),q:v.q}));
-          if(radial&&ui('contours').checked)surfaceDepth=window.SubspaceRenderGeometry.surfaceDepth(verts,mesh.faces,width,height);
+          if(radial&&(ui('contours').checked||ui('axes').checked))surfaceDepth=window.SubspaceRenderGeometry.surfaceDepth(verts,mesh.faces,width,height);
+          axisDepthBuffer=surfaceDepth;
           const faces=mesh.faces.map(ids=>({ids,z:ids.reduce((s,i)=>s+verts[i].p.z,0)/ids.length})).sort((a,b)=>a.z-b.z);
           for(const f of faces){const vs=f.ids.map(i=>verts[i]),avg=vs.reduce((s,v)=>s+v.q,0)/4;objects.push({type:'poly',points:vs.map(v=>v.p),fill:scalarColor(avg),opacity:1});}
         }
@@ -176,8 +178,26 @@
       for(const a of displayedAxes()){
         const color=axisColor(a.order==null?'continuous':a.order),guide=window.SubspaceRenderGeometry.axisGuide(a.axis||a.direction,project);
         for(const half of guide.halves){
-          if(half.dashedOpacity>1e-4)line(half.a,half.b,color,1.15,[5,5],half.dashedOpacity);
-          if(half.solidOpacity>1e-4)line(half.a,half.b,color,1.25,[],half.solidOpacity);
+          let visible=[[0,1]];
+          if(scalarView){
+            if(axisDepthBuffer)visible=window.SubspaceRenderGeometry.visibleIntervals(project(half.a),project(half.b),axisDepthBuffer,{tolerance:1e-4,pixelStep:.5});
+            else{
+              // An axis half is a ray from the origin. A rear ray remains
+              // occluded until its projection clears the sphere silhouette.
+              const length=Math.hypot(...half.b),depth=project(half.b).z/length;
+              const boundary=(depth>=0?1:1/Math.sqrt(Math.max(1e-30,1-depth*depth)))/length;
+              visible=boundary<1?[[Math.max(0,boundary),1]]:[];
+            }
+          }
+          const cuts=[...new Set([0,1,...visible.flat()])].sort((x,y)=>x-y),origin=project(half.a);
+          for(let i=1;i<cuts.length;i++){
+            const lo=cuts[i-1],hi=cuts[i];if(hi-lo<1e-10)continue;
+            const midpoint=(lo+hi)/2,exposed=visible.some(([a,b])=>midpoint>=a&&midpoint<=b),fade=exposed?1:.22;
+            const start=half.a.map((x,k)=>x+lo*(half.b[k]-x)),end=half.a.map((x,k)=>x+hi*(half.b[k]-x)),p=project(start);
+            const extra={axisOccluded:!exposed,dashOffset:-Math.hypot(p.x-origin.x,p.y-origin.y)};
+            if(half.dashedOpacity>1e-4)line(start,end,color,1.15,[5,5],half.dashedOpacity*fade,extra);
+            if(half.solidOpacity>1e-4)line(start,end,color,1.25,[],half.solidOpacity*fade,extra);
+          }
         }
         if(guide.label.opacity>1e-4&&!cellView?.separate){
           const p=project(guide.label.point),[dx,dy]=guide.label.radialOffset;
@@ -238,7 +258,7 @@
   }
   function paintCanvas(objects,ctx,width,height){
     for(const o of objects){
-      ctx.globalAlpha=o.opacity??1;ctx.setLineDash(o.dash||[]);
+      ctx.globalAlpha=o.opacity??1;ctx.setLineDash(o.dash||[]);ctx.lineDashOffset=o.dashOffset||0;
       if(o.type==='clip-start'){ctx.save();ctx.beginPath();ctx.rect(o.x,o.y,o.width,o.height);ctx.clip();}
       else if(o.type==='clip-end')ctx.restore();
       else if(o.type==='bitmap')ctx.drawImage(o.canvas,o.x,o.y);
@@ -271,7 +291,7 @@
       if(o.type==='shell')return `<circle cx="${n(o.cx)}" cy="${n(o.cy)}" r="${n(o.r)}" fill="url(#${gradientIds.get(o)})" ${style}/>`;
       if(o.type==='curve')return `<polyline points="${o.points.map(p=>n(p.x)+','+n(p.y)).join(' ')}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;
       if(o.type==='path')return `<path d="${o.points.map((p,i)=>(i?'L':'M')+n(p.x)+' '+n(p.y)).join('')}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-linejoin="round" ${style}/>`;
-      if(o.type==='line')return `<path d="M${n(o.a.x)} ${n(o.a.y)}L${n(o.b.x)} ${n(o.b.y)}" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;
+      if(o.type==='line')return `<path d="M${n(o.a.x)} ${n(o.a.y)}L${n(o.b.x)} ${n(o.b.y)}" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" stroke-dashoffset="${n(o.dashOffset||0)}" ${style}/>`;
       if(o.type==='circle')return `<circle cx="${n(o.p.x)}" cy="${n(o.p.y)}" r="${o.r}" fill="${o.fill}" stroke="${o.stroke}" ${style}/>`;
       if(o.type==='ring')return `<circle cx="${n(o.cx)}" cy="${n(o.cy)}" r="${n(o.r)}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;
       if(o.type==='text'&&o.tex)return `<g ${style}>${window.SubspaceSvgExport.mathLabel(o.tex,o.p.x+o.offset[0],o.p.y+o.offset[1]+(o.textAnchor==='middle'?o.size*.35:0),o.size,o.color,o.textAnchor||'start')}</g>`;
