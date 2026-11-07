@@ -126,4 +126,39 @@ assert.ok(patchColors.includes('#b1411c'),'Positive Wigner value must be orange'
 const signedSvg=signed.exportSvg();assert.ok(signedSvg.includes('data-tex="C_{4}"'),'Cn guide must be LaTeX in exports');
 assert.ok(!signedSvg.includes('<image'),'Wigner export must remain vector geometry');
 signed.dispose();
-console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior.');
+
+// Refined sphere contours form one continuous visible path. The rear half of
+// a closed level loop must be removed rather than connected across the sphere.
+const level=.5,loop=[[-.8,.6,0],[0,1,0],[.8,.6,0],[.8,-.6,0],[0,-1,0],[-.8,-.6,0]];
+const loopSegments=loop.map((a,i)=>({a,b:loop[(i+1)%loop.length],level}));
+const radialA=[-.15,Math.sqrt(1-.15**2-.1**2),.1],radialB=[.15,Math.sqrt(1-.15**2-.1**2),.1];
+const cap=[[-.5,Math.SQRT1_2,-.5],[.5,Math.SQRT1_2,-.5],[.5,Math.SQRT1_2,.5],[-.5,Math.SQRT1_2,.5]];
+const refinedMesh={qMin:-1,qMax:1,colorMax:1,vertices:cap.map(n=>({n,q:level})),faces:[[0,1,2,3]],
+ contours:{levels:[level],segments:loopSegments},radialContours:{levels:[level],segments:[{a:radialA,b:radialB,level}]}};
+get('contours').checked=true;get('axes').checked=false;get('shape').value='sphere';
+const continuous=window.RendererForTest(model,refinedMesh,{axes:[]});continuous.set('wigner',2,null,refinedMesh);
+const contourPaths=continuous.sceneForTest(486,437,true).filter(o=>o.type==='path');
+assert.equal(contourPaths.length,1,'The visible half-loop should be one joined path');
+assert.ok(contourPaths[0].points.length>=5,'Joining must preserve the visible contour vertices');
+assert.ok(contourPaths[0].points.every(p=>p.z>=-1e-12),'Sphere contours must never reconnect through the hidden hemisphere');
+near(contourPaths[0].points[0].z,0);near(contourPaths[0].points.at(-1).z,0);
+assert.equal(contourPaths[0].width,1);assert.equal(contourPaths[0].opacity,1);
+assert.ok(!['#fff','#ffffff','#faf8f1'].includes(contourPaths[0].color),'Contours must use a single stroke without a white halo');
+const continuousSvg=continuous.exportSvg();
+assert.equal((continuousSvg.match(/stroke-linejoin="round"/g)||[]).length,1,'SVG and canvas must contain the same joined contour path');
+assert.ok(!continuousSvg.includes('<image'),'Joined contours must remain vector paths in SVG');
+// Radial clipping uses the contour geometry matched to the rendered coarse
+// surface, not the separately refined colored-sphere geometry.
+get('shape').value='radial';
+const radialPaths=continuous.sceneForTest(486,437,true).filter(o=>o.type==='path');
+assert.equal(radialPaths.length,1);assert.equal(radialPaths[0].points.length,2);
+function projectDefault(v){
+ const [x,y,z]=v,cx=Math.cos(-.45),sx=Math.sin(-.45),cy=Math.cos(-.25),sy=Math.sin(-.25),rx=cx*x+sx*z,rz=-sx*x+cx*z,scale=Math.min(486*.39,437*.40);
+ return {x:486/2+scale*rx,y:437/2-scale*(sy*y+cy*rz),z:cy*y-sy*rz};
+}
+const expectedRadial=[radialA,radialB].map(v=>projectDefault(v.map(x=>x*level)));
+for(const expected of expectedRadial)assert.ok(radialPaths[0].points.some(actual=>Math.hypot(actual.x-expected.x,actual.y-expected.y,actual.z-expected.z)<1e-9),'Radial mode must select the original surface-matched contour');
+const radialSvg=continuous.exportSvg();assert.equal((radialSvg.match(/stroke-linejoin="round"/g)||[]).length,radialPaths.length);
+assert.ok(!/NaN|Infinity/.test(radialSvg));continuous.dispose();
+
+console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior, joined contour paths, horizon clipping and surface-matched radial contours.');

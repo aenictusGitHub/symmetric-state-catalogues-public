@@ -32,7 +32,8 @@
   function contours(mesh,requestedLevels){
     const vertices=mesh?.vertices||[],faces=mesh?.faces||[];
     const levels=(Array.isArray(requestedLevels)?requestedLevels:defaultLevels(mesh)).filter(Number.isFinite).sort((a,b)=>a-b);
-    if(!vertices.length||!faces.length||!levels.length)return{segments:[],levels:[]};
+    const regular=mesh?.values&&Number.isInteger(mesh.rows)&&Number.isInteger(mesh.cols)&&mesh.rows>0&&mesh.cols>0&&mesh.values.length===(mesh.rows+1)*(mesh.cols+1);
+    if((!regular&&(!vertices.length||!faces.length))||!levels.length)return{segments:[],levels:[]};
     const range=mesh.qMax-mesh.qMin;
     if(!(range>1e-12*Math.max(1,Math.abs(mesh.qMin),Math.abs(mesh.qMax))))return{segments:[],levels:[]};
     const segments=[],seen=new Set(),epsilon=1e-10;
@@ -54,14 +55,13 @@
     // Four triangles around the bilinear center avoid choosing one persistent
     // diagonal through every cell. They also resolve four-edge saddle cases
     // into a deterministic contour topology without connecting across a face.
-    for(const ids of faces){
-      const corners=ids.map(i=>vertices[i]);
-      if(corners.length<3||corners.some(v=>!v?.n||!Number.isFinite(v.q)))continue;
+    function cell(corners){
+      if(corners.length<3||corners.some(v=>!v?.n||!Number.isFinite(v.q)))return;
       const low=Math.min(...corners.map(v=>v.q)),high=Math.max(...corners.map(v=>v.q));
-      if(low===high)continue;
-      if(corners.length===3){for(const level of levels)if(level>=low&&level<=high)triangle(...corners,level,(level-mesh.qMin)/range);continue;}
+      if(low===high)return;
+      if(corners.length===3){for(const level of levels)if(level>=low&&level<=high)triangle(...corners,level,(level-mesh.qMin)/range);return;}
       const centerN=normalize([0,1,2].map(k=>corners.reduce((s,v)=>s+v.n[k],0)/corners.length));
-      if(!centerN)continue;
+      if(!centerN)return;
       const center={n:centerN,q:corners.reduce((s,v)=>s+v.q,0)/corners.length};
       for(const level of levels){
         if(level<low||level>high)continue;
@@ -69,9 +69,50 @@
         for(let k=0;k<corners.length;k++)triangle(corners[k],corners[(k+1)%corners.length],center,level,t);
       }
     }
+    if(regular){
+      // Keep only two rows of directions: a fine contour field does not need
+      // hundreds of thousands of retained surface vertices and face objects.
+      const {rows,cols,values}=mesh,stride=cols+1;
+      const azimuth=Array.from({length:cols},(_,j)=>[Math.cos(2*Math.PI*j/cols),Math.sin(2*Math.PI*j/cols)]);
+      const row=i=>{const theta=Math.PI*i/rows,z=Math.cos(theta),r=i===0||i===rows?0:Math.sin(theta);return Array.from({length:cols+1},(_,j)=>{const [x,y]=azimuth[j===cols?0:j];return {n:[r*x,r*y,z],q:values[i*stride+j]};});};
+      let upper=row(0);
+      for(let i=0;i<rows;i++){const lower=row(i+1);for(let j=0;j<cols;j++)cell([upper[j],upper[j+1],lower[j+1],lower[j]]);upper=lower;}
+    }else for(const ids of faces)cell(ids.map(i=>vertices[i]));
     return{segments,levels};
   }
-  const api={color,rgb,gradient,paletteStops,palettes,defaultLevels,contours,version:'1.1.0'};
+  // Join only degree-two vertices. Saddles and other junctions remain separate;
+  // simplification selects existing points and has a bounded chord deviation.
+  function contourPaths(result,options={}){
+    const epsilon=options.epsilon??1e-9,tolerance=options.tolerance??0;
+    const byLevel=new Map(),paths=[];
+    const key=p=>p.map(v=>Math.round(v/epsilon)).join(',');
+    for(const s of result?.segments||[]){
+      let graph=byLevel.get(s.level);if(!graph){graph={nodes:new Map(),edges:[]};byLevel.set(s.level,graph);}
+      const ids=[s.a,s.b].map(p=>{const id=key(p);if(!graph.nodes.has(id))graph.nodes.set(id,{p,edges:[]});return id;});
+      if(ids[0]===ids[1])continue;
+      const edge={ids,used:false,t:s.t};const index=graph.edges.push(edge)-1;
+      for(const id of ids)graph.nodes.get(id).edges.push(index);
+    }
+    const simplify=points=>{
+      if(!(tolerance>0)||points.length<3)return points;
+      const keep=new Uint8Array(points.length);keep[0]=keep[points.length-1]=1;const stack=[[0,points.length-1]],threshold=tolerance*tolerance;
+      while(stack.length){const [lo,hi]=stack.pop(),a=points[lo],b=points[hi],ab=b.map((v,k)=>v-a[k]),length=ab.reduce((sum,v)=>sum+v*v,0);let maximum=threshold,index=-1;
+        for(let i=lo+1;i<hi;i++){const ap=points[i].map((v,k)=>v-a[k]),u=length?clamp(ap.reduce((sum,v,k)=>sum+v*ab[k],0)/length):0;const distance=ap.reduce((sum,v,k)=>sum+(v-u*ab[k])**2,0);if(distance>maximum){maximum=distance;index=i;}}
+        if(index>=0){keep[index]=1;stack.push([lo,index],[index,hi]);}
+      }
+      return points.filter((_,i)=>keep[i]);
+    };
+    for(const [level,graph]of byLevel){
+      function walk(start,index){const points=[graph.nodes.get(start).p],first=graph.edges[index];let current=start;
+        while(index!=null){const edge=graph.edges[index];if(edge.used)break;edge.used=true;current=edge.ids[0]===current?edge.ids[1]:edge.ids[0];const node=graph.nodes.get(current);points.push(node.p);if(current===start||node.edges.length!==2)break;index=node.edges.find(i=>!graph.edges[i].used);}
+        if(points.length>1)paths.push({points:simplify(points),level,t:first.t,closed:current===start});
+      }
+      for(const [id,node]of graph.nodes)if(node.edges.length!==2)for(const index of node.edges)if(!graph.edges[index].used)walk(id,index);
+      for(let i=0;i<graph.edges.length;i++)if(!graph.edges[i].used)walk(graph.edges[i].ids[0],i);
+    }
+    return paths;
+  }
+  const api={color,rgb,gradient,paletteStops,palettes,defaultLevels,contours,contourPaths,version:'1.1.0'};
   root.HusimiRendering=api;
   if(typeof module==='object'&&module.exports)module.exports=api;
 })(typeof window==='object'?window:globalThis);

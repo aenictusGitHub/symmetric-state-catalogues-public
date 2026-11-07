@@ -61,10 +61,17 @@
   }
   function buildWignerMesh(model){
     if(wignerMeshes.has(model))return wignerMeshes.get(model);
-    const mesh=window.SpinWigner.prepare(model).grid(128,256);mesh.colorMax=Math.max(Math.abs(mesh.qMin),Math.abs(mesh.qMax),1e-15);
+    const evaluator=window.SpinWigner.prepare(model),mesh=evaluator.grid(128,256);mesh.colorMax=Math.max(Math.abs(mesh.qMin),Math.abs(mesh.qMax),1e-15);
     const levels=window.HusimiRendering.defaultLevels(mesh);
     if(mesh.qMin<0&&mesh.qMax>0&&!levels.some(x=>Math.abs(x)<1e-14))levels.push(0);
-    mesh.contours=window.HusimiRendering.contours(mesh,levels);wignerMeshes.set(model,mesh);return mesh;
+    // Radial clipping must use the same mesh as its opaque surface. The sphere
+    // can use a denser scalar field without retaining a dense surface mesh.
+    mesh.radialContours=window.HusimiRendering.contours(mesh,levels);
+    const fine=evaluator.grid(512,1024,{geometry:false}),contours=window.HusimiRendering.contours(fine,levels);
+    mesh.textureGrid=fine;
+    const paths=window.HusimiRendering.contourPaths(contours,{tolerance:2e-5});
+    mesh.contours={levels:contours.levels,segments:paths.flatMap(path=>path.points.slice(1).map((b,i)=>({a:path.points[i],b,level:path.level,t:path.t})))};
+    wignerMeshes.set(model,mesh);return mesh;
   }
   function direction(p){return Array.isArray(p)?p.slice(0,3):[p.x,p.y,p.z];}
   function makeRenderer(model,mesh,symmetry,ui=$,onOpenRank=null){
@@ -82,12 +89,12 @@
       return contrast(dark)>=contrast(light)?dark:light;
     }
     function heatmap(width,height,cx,cy,scale){
-      const x0=Math.max(0,Math.floor(cx-scale)),y0=Math.max(0,Math.floor(cy-scale)),x1=Math.min(Math.ceil(width),Math.ceil(cx+scale)),y1=Math.min(Math.ceil(height),Math.ceil(cy+scale)),w=Math.max(1,x1-x0),h=Math.max(1,y1-y0),image=textureContext.createImageData(w,h),pixels=image.data,M=mul(R,alignment),bounds=colorBounds(),range=Math.max(bounds[1]-bounds[0],1e-14),stride=mesh.cols+1;
+      const x0=Math.max(0,Math.floor(cx-scale)),y0=Math.max(0,Math.floor(cy-scale)),x1=Math.min(Math.ceil(width),Math.ceil(cx+scale)),y1=Math.min(Math.ceil(height),Math.ceil(cy+scale)),w=Math.max(1,x1-x0),h=Math.max(1,y1-y0),image=textureContext.createImageData(w,h),pixels=image.data,M=mul(R,alignment),bounds=colorBounds(),range=Math.max(bounds[1]-bounds[0],1e-14),field=mesh.textureGrid||mesh,values=field.values,stride=field.cols+1;
       for(let y=0;y<h;y++)for(let x=0;x<w;x++){
         const vx=(x+x0+.5-cx)/scale,vz=(cy-y-y0-.5)/scale,r2=vx*vx+vz*vz;if(r2>1)continue;const vy=Math.sqrt(Math.max(0,1-r2));
         const nx=M[0][0]*vx+M[1][0]*vy+M[2][0]*vz,ny=M[0][1]*vx+M[1][1]*vy+M[2][1]*vz,nz=M[0][2]*vx+M[1][2]*vy+M[2][2]*vz;
-        const row=Math.acos(Math.max(-1,Math.min(1,nz)))*mesh.rows/Math.PI,col=((Math.atan2(ny,nx)/(2*Math.PI)+1)%1)*mesh.cols,i=Math.min(mesh.rows-1,Math.floor(row)),j=Math.floor(col),a=row-i,b=col-j,k=i*stride+j;
-        const q=(1-a)*((1-b)*mesh.vertices[k].q+b*mesh.vertices[k+1].q)+a*((1-b)*mesh.vertices[k+stride].q+b*mesh.vertices[k+stride+1].q),t=Math.max(0,Math.min(1,(q-bounds[0])/range)),o=4*(y*w+x);
+        const row=Math.acos(Math.max(-1,Math.min(1,nz)))*field.rows/Math.PI,col=((Math.atan2(ny,nx)/(2*Math.PI)+1)%1)*field.cols,i=Math.min(field.rows-1,Math.floor(row)),j=Math.floor(col),a=row-i,b=col-j,k=i*stride+j;
+        const q=(1-a)*((1-b)*(values?values[k]:field.vertices[k].q)+b*(values?values[k+1]:field.vertices[k+1].q))+a*((1-b)*(values?values[k+stride]:field.vertices[k+stride].q)+b*(values?values[k+stride+1]:field.vertices[k+stride+1].q)),t=Math.max(0,Math.min(1,(q-bounds[0])/range)),o=4*(y*w+x);
         const color=window.HusimiRendering.rgb(t,scalarPalette());
         pixels[o]=color[0];pixels[o+1]=color[1];pixels[o+2]=color[2];pixels[o+3]=255*Math.min(1,(1-Math.sqrt(r2))*scale);
       }
@@ -127,7 +134,7 @@
         }
         if(ui('contours').checked){
           const radiusFor=level=>radial?(mode==='wigner'?Math.abs(level)/mesh.colorMax:level/(mesh.qMax||1)):1,visibleContours=[];
-          for(const segment of mesh.contours.segments){
+          for(const segment of (radial?(mesh.radialContours||mesh.contours):mesh.contours).segments){
             let a=segment.a.map(x=>x*radiusFor(segment.level)),b=segment.b.map(x=>x*radiusFor(segment.level));
             if(radial&&surfaceDepth){
               for(const [t0,t1]of window.SubspaceRenderGeometry.visibleIntervals(project(a),project(b),surfaceDepth))visibleContours.push([a.map((x,k)=>x+t0*(b[k]-x)),a.map((x,k)=>x+t1*(b[k]-x)),segment.level]);
@@ -139,10 +146,10 @@
             }
           }
           // One solid stroke per contour; the level fixes its background color.
-          const contourColors=new Map();
-          for(const [a,b,level] of visibleContours){
-            if(!contourColors.has(level))contourColors.set(level,contourColor(level));
-            line(a,b,contourColors.get(level),mode==='wigner'&&Math.abs(level)<1e-14?1.35:1,[],1);
+          const contourColors=new Map(),paths=window.HusimiRendering.contourPaths({segments:visibleContours.map(([a,b,level])=>({a,b,level}))});
+          for(const path of paths){
+            const level=path.level;if(!contourColors.has(level))contourColors.set(level,contourColor(level));
+            objects.push({type:'path',points:path.points.map(project),color:contourColors.get(level),width:mode==='wigner'&&Math.abs(level)<1e-14?1.35:1,dash:[],opacity:1});
           }
         }
       }else{
@@ -242,6 +249,7 @@
         ctx.beginPath();ctx.arc(o.cx,o.cy,o.r,0,2*Math.PI);ctx.fillStyle=gradient;ctx.fill();
       }
       else if(o.type==='curve'){ctx.beginPath();o.points.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.stroke();}
+      else if(o.type==='path'){ctx.beginPath();for(let i=0;i<o.points.length;i++){const p=o.points[i];if(i)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);}ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.lineJoin='round';ctx.stroke();}
       else if(o.type==='line'){ctx.beginPath();ctx.moveTo(o.a.x,o.a.y);ctx.lineTo(o.b.x,o.b.y);ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.stroke();}
       else if(o.type==='circle'){ctx.beginPath();ctx.arc(o.p.x,o.p.y,o.r,0,2*Math.PI);ctx.fillStyle=o.fill;ctx.fill();ctx.strokeStyle=o.stroke;ctx.lineWidth=1;ctx.stroke();}
       else if(o.type==='ring'){ctx.beginPath();ctx.arc(o.cx,o.cy,o.r,0,2*Math.PI);ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.stroke();}
@@ -262,6 +270,7 @@
       if(o.type==='poly')return `<polygon points="${o.points.map(p=>n(p.x)+','+n(p.y)).join(' ')}" fill="${o.fill}" stroke="${o.fill}" stroke-width=".7" ${style}/>`;
       if(o.type==='shell')return `<circle cx="${n(o.cx)}" cy="${n(o.cy)}" r="${n(o.r)}" fill="url(#${gradientIds.get(o)})" ${style}/>`;
       if(o.type==='curve')return `<polyline points="${o.points.map(p=>n(p.x)+','+n(p.y)).join(' ')}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;
+      if(o.type==='path')return `<path d="${o.points.map((p,i)=>(i?'L':'M')+n(p.x)+' '+n(p.y)).join('')}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-linejoin="round" ${style}/>`;
       if(o.type==='line')return `<path d="M${n(o.a.x)} ${n(o.a.y)}L${n(o.b.x)} ${n(o.b.y)}" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;
       if(o.type==='circle')return `<circle cx="${n(o.p.x)}" cy="${n(o.p.y)}" r="${o.r}" fill="${o.fill}" stroke="${o.stroke}" ${style}/>`;
       if(o.type==='ring')return `<circle cx="${n(o.cx)}" cy="${n(o.cy)}" r="${n(o.r)}" fill="none" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;

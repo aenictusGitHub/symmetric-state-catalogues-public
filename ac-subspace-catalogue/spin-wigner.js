@@ -71,7 +71,7 @@
       if(!(length>0)||![x,y,z].every(Number.isFinite))throw new Error('A nonzero finite spatial direction is required.');
       return azimuth(fourier(Math.max(-1,Math.min(1,z/length))),Math.atan2(y,x));
     }
-    function grid(rows=128,cols=256){
+    function grid(rows=128,cols=256,options={}){
       rows=Number(rows);cols=Number(cols);
       if(!Number.isInteger(rows)||!Number.isInteger(cols)||rows<1||cols<1)throw new Error('Positive integer grid dimensions are required.');
       const values=new Float64Array((rows+1)*(cols+1)),cosines=Array.from({length:cols},()=>new Float64Array(n+1)),sines=Array.from({length:cols},()=>new Float64Array(n+1));
@@ -88,6 +88,7 @@
         }
         values[offset+cols]=values[offset];
       }
+      if(options.geometry===false)return {rows,cols,values,min,max,qMin:min,qMax:max};
       const vertices=[],faces=[],directions=Array.from({length:cols},(_,j)=>[Math.cos(2*Math.PI*j/cols),Math.sin(2*Math.PI*j/cols)]);
       for(let i=0;i<=rows;i++){
         const theta=Math.PI*i/rows,z=Math.cos(theta),radius=i===0||i===rows?0:Math.sin(theta);
