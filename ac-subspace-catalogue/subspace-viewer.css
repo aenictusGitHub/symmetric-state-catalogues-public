@@ -28,11 +28,11 @@ body.sv-open{overflow:hidden}
 .sv-turn{display:flex;gap:4px;flex-wrap:wrap}
 .sv-turn button{min-width:32px;padding:5px 8px}
 .sv-turn button:last-child{font-size:11px}
-.sv-mode-control[hidden]{display:none!important}
+.sv-mode-control[hidden],#sv-contour-control[hidden]{display:none!important}
 .sv-readout{font-size:12px;border-top:1px solid var(--line,#d6dacf);padding-top:13px;margin-top:16px;line-height:1.7;overflow-wrap:anywhere}
 .sv-readout p{margin:0 0 8px}
 .sv-color-key{display:flex;gap:8px;align-items:center;margin-top:9px;font-size:10px;font-variant-numeric:tabular-nums}
-.sv-color-ramp{display:block;width:110px;height:10px;border:1px solid #718775;border-radius:2px;background:linear-gradient(90deg,#440154 0%,#3b528b 25%,#21918c 50%,#5ec962 75%,#fde725 100%)}
+.sv-color-ramp{display:block;width:110px;height:10px;border:1px solid #718775;border-radius:2px;background:linear-gradient(90deg,#122355 0%,#2463b0 20%,#38b7c4 40%,#f3e8a2 60%,#f19452 80%,#be363d 100%)}
 .sv-axis-key{display:flex;align-items:center;gap:7px;font-size:11px;margin:3px 0}
 .sv-axis-key i{width:18px;height:2px;display:inline-block}
 .sv-multipole-bar{display:flex;align-items:flex-end;gap:3px;width:100%;height:62px;margin:12px 0 4px;padding:0;border-bottom:1px solid var(--line,#d6dacf)}
@@ -49,7 +49,7 @@ body.sv-open{overflow:hidden}
 .sv-note{font-size:11px;line-height:1.7;color:var(--muted,#68736d);margin:10px 0 0}
 .sv-sign-key{display:flex;gap:8px;align-items:center;margin:6px 0;font-size:11px}
 .sv-sign-key i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#78518f;border:1px solid #4b2d61}
-.sv-sign-key i.opposite{background:#f5eee0;border-color:#aa7846}
+.sv-sign-key i.opposite{background:#b0733d;border-color:#77502e}
 .sv-downloads{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
 .sv-downloads button{font-size:11px}
 .view-subspace-button{border:1px solid var(--purple,var(--teal,#675283));border-radius:4px;background:var(--surface,#fffef9);color:var(--purple,var(--teal,#675283));padding:9px 13px;font:500 12px/1.5 var(--sans,system-ui,sans-serif);cursor:pointer}
