@@ -62,3 +62,11 @@ body.sv-open{overflow:hidden}
 .sv-math-label{position:absolute;display:block;line-height:1;white-space:nowrap}
 .sv-math-label .katex{font-size:1em}
 .sv-rank-badge{padding:5px 8px;background:#faf8f1e8;border:1px solid #ded5e3;border-radius:5px;margin-left:-8px}
+
+/* Separate operator spheres keep a shared scale and a scrollable gallery. */
+.sv-frame.sv-separated{max-height:clamp(340px,55dvh,570px);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
+.sv-separated .sv-frame-help{background:#faf8f1dc;padding:2px 5px;border-radius:3px}
+
+.sv-math-cell{position:absolute;overflow:hidden;pointer-events:none}
+
+.sv-separated .sv-canvas{touch-action:pan-y}
