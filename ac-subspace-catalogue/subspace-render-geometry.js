@@ -62,7 +62,7 @@
     const radialLength = Math.hypot(dx, dy);
     const radialOffset = radialLength > 1e-9 ? [offset * dx / radialLength, offset * dy / radialLength] : [0, 0];
     const projectedFraction = Math.sqrt(Math.max(0, 1 - depth * depth));
-    const faceOn = smoothstep(0.08, 0.22, projectedFraction);
+    const faceOn = smoothstep(0.25, 0.55, projectedFraction);
     return {
       direction,
       halves,
