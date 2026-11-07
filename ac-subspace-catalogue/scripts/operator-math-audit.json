@@ -1,0 +1,39 @@
+{
+  "method": "Normalized projector P/d; exact-integer Hahn sums for tensor operators; numerical roots and signed-subconstellation reconstruction.",
+  "fixtures": {
+    "signedRankOne": "PASS",
+    "N7": {
+      "weights": [
+        0.35355339059327373,
+        1.3877787807814457e-17,
+        2.7755575615628914e-17,
+        0,
+        2.7755575615628914e-17,
+        6.938893903907228e-18,
+        0.6123724356957945,
+        0
+      ],
+      "axisCounts": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "rootResidual": 2.7113422525778213e-17,
+      "signReconstructionResidual": 1.1353160581401364e-15
+    },
+    "basisInvariance": "PASS",
+    "rotationCovariance": "PASS"
+  },
+  "catalogue": {
+    "subspaces": 184,
+    "maximumN": 42,
+    "populatedBlocks": 2097,
+    "availableBlocks": 2097,
+    "unresolvedBlocks": [],
+    "maxPurityResidual": 1.1102230246251565e-15,
+    "maxProjectorResidual": 5.067202092376332e-16,
+    "maxGramResidual": 1.1300168387714833e-9,
+    "maxRootResidual": 4.1646857160055986e-9,
+    "maxSignResidual": 0.000018130045460441192
+  }
+}

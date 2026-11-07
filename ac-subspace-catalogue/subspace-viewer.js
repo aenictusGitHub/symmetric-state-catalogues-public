@@ -1,0 +1,160 @@
+/* Basis-independent projector Husimi and Hermitian-operator stellar viewer.
+ * API: SubspaceViewer.open(catalogueSubspace), SubspaceViewer.close().
+ * Numeric construction and signed symmetry verification: OperatorMath. */
+(() => {
+  'use strict';
+  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const math=tex=>{try{return window.katex.renderToString(tex,{throwOnError:false,trust:false,strict:'ignore'});}catch{return esc(tex);}};
+  const fmt=x=>!Number.isFinite(x)?'—':Math.abs(x)>0&&Math.abs(x)<1e-4?x.toExponential(3):Number(x.toPrecision(6)).toString();
+  const dot=(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0),cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+  const unit=a=>a.map(x=>x/Math.hypot(...a));
+  const ident=()=>[[1,0,0],[0,1,0],[0,0,1]];
+  const apply=(R,a)=>R.map(row=>dot(row,a));
+  const mul=(A,B)=>A.map(row=>[0,1,2].map(j=>row.reduce((s,x,i)=>s+x*B[i][j],0)));
+  function rotation(axis,angle){const [x,y,z]=unit(axis),c=Math.cos(angle),s=Math.sin(angle),v=1-c;return [[c+x*x*v,x*y*v-z*s,x*z*v+y*s],[y*x*v+z*s,c+y*y*v,y*z*v-x*s],[z*x*v-y*s,z*y*v+x*s,c+z*z*v]];}
+  const axisColor=order=>({2:'#34786d',3:'#82609b',4:'#a45635',5:'#b38b23',continuous:'#356f94'}[order]||'#526b9b');
+  const rankColor=rank=>['#a87038','#34786d','#82609b','#52799a','#a45668','#5c6850'][rank%6];
+  const subscript=n=>String(n).replace(/\d/g,d=>'₀₁₂₃₄₅₆₇₈₉'[Number(d)]);
+  let dialog=null,returnFocus=null,cleanup=()=>{},current=null,serial=0;
+  // Keep only a few sampled meshes: catalogue records live for the whole page.
+  const cache=new Map();
+  const $=id=>dialog.querySelector('#sv-'+id);
+  function ensure(){
+    if(dialog)return;
+    dialog=document.createElement('dialog');dialog.id='subspace-viewer';dialog.className='sv-dialog';dialog.setAttribute('aria-labelledby','sv-title');dialog.setAttribute('aria-describedby','sv-definition');
+    dialog.innerHTML=`<div class="sv-heading"><div><p class="sv-eyebrow">Whole subspace</p><h2 id="sv-title">Husimi & operator constellations</h2></div><button type="button" id="sv-close" aria-label="Close whole-subspace viewer">Close ×</button></div>
+      <p id="sv-label" class="sv-label"></p><p id="sv-definition" class="sv-definition"></p>
+      <div class="sv-tabs" role="group" aria-label="Whole-subspace representation"><button type="button" id="sv-husimi" aria-pressed="true">Husimi function</button><button type="button" id="sv-operator" aria-pressed="false">Operator Majorana</button></div>
+      <div class="sv-workspace"><div class="sv-frame"><canvas id="sv-canvas" class="sv-canvas" tabindex="0" role="img" aria-label="Whole-subspace Husimi sphere"></canvas><span class="sv-frame-help">Drag to rotate · Scroll to zoom · Arrow keys rotate</span><div id="sv-status" class="sv-status" role="status">Computing the subspace projector…</div></div>
+      <aside><div class="sv-controls"><div class="sv-turn" role="group" aria-label="Rotate whole-subspace view"><button type="button" id="sv-left" aria-label="Rotate left">←</button><button type="button" id="sv-up" aria-label="Rotate up">↑</button><button type="button" id="sv-down" aria-label="Rotate down">↓</button><button type="button" id="sv-right" aria-label="Rotate right">→</button><button type="button" id="sv-reset">Reset view</button></div>
+      <label class="sv-mode-control" id="sv-shape-control">Display <select id="sv-shape"><option value="sphere">Colored sphere</option><option value="radial">Radial surface</option></select></label>
+      <label class="sv-mode-control" id="sv-rank-control" hidden>Multipole <select id="sv-rank" aria-label="Operator multipole rank"></select></label>
+      <label><input id="sv-axes" type="checkbox" checked> ${math('C_n')} symmetry axes</label><label>Show <select id="sv-order"><option value="highest">Highest order</option><option value="all">All axes</option></select></label>
+      <button id="sv-align" type="button">Align highest ${math('C_n')} with ${math('z')}</button>
+      <label><input type="checkbox" id="sv-coordinate">Coordinate axes</label>
+      </div><div id="sv-readout" class="sv-readout" aria-live="polite"></div><div id="sv-symmetry" class="sv-readout"></div><div class="sv-downloads"><button id="sv-svg" type="button">Export SVG ↓</button><button id="sv-json" type="button">Download operator ↓</button></div></aside></div>
+      <details class="sv-method"><summary>What these pictures represent</summary><div id="sv-method"></div></details>
+      <details class="sv-method"><summary>Multipoles & numerical verification</summary><div id="sv-verification"></div></details>`;
+    document.body.append(dialog);$('close').addEventListener('click',close);dialog.addEventListener('close',()=>finish());
+    dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)close();});
+  }
+  function finish(){serial++;cleanup();cleanup=()=>{};document.body.classList.remove('sv-open');if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});returnFocus=null;current=null;}
+  function close(){if(dialog?.open)dialog.close();else finish();}
+  function message(text){$('status').textContent=text;$('status').hidden=!text;}
+  function buildMesh(model){
+    const rows=64,cols=128,vertices=[],faces=[];let qMin=Infinity,qMax=0;
+    for(let i=0;i<=rows;i++){const t=Math.PI*i/rows,s=Math.sin(t),z=Math.cos(t);for(let j=0;j<=cols;j++){const p=2*Math.PI*j/cols,n=[s*Math.cos(p),s*Math.sin(p),z],q=window.OperatorMath.husimi(model,n);vertices.push({n,q});qMin=Math.min(qMin,q);qMax=Math.max(qMax,q);}}
+    for(let i=0;i<rows;i++)for(let j=0;j<cols;j++){const a=i*(cols+1)+j,b=a+cols+1;faces.push([a,b,b+1,a+1]);}
+    return {vertices,faces,qMin,qMax,rows,cols};
+  }
+  const qPalette=[[68,1,84],[59,82,139],[33,145,140],[94,201,98],[253,231,37]];
+  const qColor=t=>{const u=4*Math.max(0,Math.min(1,t)),index=Math.min(3,Math.floor(u)),a=qPalette[index],b=qPalette[index+1],f=u-index;return '#'+a.map((v,i)=>Math.round(v+(b[i]-v)*f).toString(16).padStart(2,'0')).join('');};
+  function direction(p){return Array.isArray(p)?p.slice(0,3):[p.x,p.y,p.z];}
+  function makeRenderer(model,mesh,symmetry){
+    const canvas=$('canvas'),ctx=canvas.getContext('2d'),texture=document.createElement('canvas'),textureContext=texture.getContext('2d');let R=mul(rotation([1,0,0],-.25),rotation([0,1,0],-.45)),alignment=ident(),zoom=1,mode='husimi',rank=1,record=null,drag=null,frame=0;
+    const maxWeight=Math.max(...model.multipoles.filter(m=>m.rank>0).map(m=>m.weight),1e-15);
+    function redraw(){if(frame)return;frame=requestAnimationFrame(()=>{frame=0;render();});}
+    const displayedAxes=()=>{if(!$('axes').checked)return[];const axes=symmetry.axes||[],v=$('order').value;if(v==='all')return axes;if(v==='highest'){const highest=Math.max(...axes.map(a=>a.order==null?Infinity:a.order));return axes.filter(a=>(a.order==null?Infinity:a.order)===highest);}return axes.filter(a=>String(a.order==null?'continuous':a.order)===v);};
+    function heatmap(width,height,cx,cy,scale){
+      const x0=Math.max(0,Math.floor(cx-scale)),y0=Math.max(0,Math.floor(cy-scale)),x1=Math.min(Math.ceil(width),Math.ceil(cx+scale)),y1=Math.min(Math.ceil(height),Math.ceil(cy+scale)),w=Math.max(1,x1-x0),h=Math.max(1,y1-y0),image=textureContext.createImageData(w,h),pixels=image.data,M=mul(R,alignment),range=Math.max(mesh.qMax-mesh.qMin,1e-14),stride=mesh.cols+1;
+      for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+        const vx=(x+x0+.5-cx)/scale,vz=(cy-y-y0-.5)/scale,r2=vx*vx+vz*vz;if(r2>1)continue;const vy=Math.sqrt(Math.max(0,1-r2));
+        const nx=M[0][0]*vx+M[1][0]*vy+M[2][0]*vz,ny=M[0][1]*vx+M[1][1]*vy+M[2][1]*vz,nz=M[0][2]*vx+M[1][2]*vy+M[2][2]*vz;
+        const row=Math.acos(Math.max(-1,Math.min(1,nz)))*mesh.rows/Math.PI,col=((Math.atan2(ny,nx)/(2*Math.PI)+1)%1)*mesh.cols,i=Math.min(mesh.rows-1,Math.floor(row)),j=Math.floor(col),a=row-i,b=col-j,k=i*stride+j;
+        const q=(1-a)*((1-b)*mesh.vertices[k].q+b*mesh.vertices[k+1].q)+a*((1-b)*mesh.vertices[k+stride].q+b*mesh.vertices[k+stride+1].q),t=Math.max(0,Math.min(1,(q-mesh.qMin)/range)),o=4*(y*w+x);
+        const colorPosition=4*t,colorIndex=Math.min(3,Math.floor(colorPosition)),colorA=qPalette[colorIndex],colorB=qPalette[colorIndex+1],colorFraction=colorPosition-colorIndex;
+        pixels[o]=colorA[0]+(colorB[0]-colorA[0])*colorFraction;pixels[o+1]=colorA[1]+(colorB[1]-colorA[1])*colorFraction;pixels[o+2]=colorA[2]+(colorB[2]-colorA[2])*colorFraction;pixels[o+3]=255*Math.min(1,(1-Math.sqrt(r2))*scale);
+      }
+      texture.width=w;texture.height=h;textureContext.putImageData(image,0,0);return {type:'bitmap',canvas:texture,x:x0,y:y0};
+    }
+    function scene(width,height,vectorExport=false){
+      const cx=width/2,cy=height/2,scale=Math.min(width*.39,height*.40)*zoom,objects=[];
+      const projectReference=a=>{const v=apply(R,a);return {x:cx+v[0]*scale,y:cy-v[2]*scale,z:v[1]};};
+      const project=a=>projectReference(apply(alignment,a));
+      const line=(a,b,color,width=1,dash=[],opacity=1)=>objects.push({type:'line',a:project(a),b:project(b),color,width,dash,opacity});
+      const circle=(p,r,fill,stroke,opacity=1)=>objects.push({type:'circle',p:project(p),r,fill,stroke,opacity});
+      const text=(p,content,color='#3f4241',size=12,offset=[6,-6])=>objects.push({type:'text',p:project(p),content,color,size,offset});
+      if(mode==='husimi'){
+        const radial=$('shape').value==='radial';
+        if(!radial&&!vectorExport)objects.push(heatmap(width,height,cx,cy,scale));
+        else{const max=mesh.qMax||1,verts=mesh.vertices.map(v=>({p:project(v.n.map(x=>x*(radial?v.q/max:1))),q:v.q}));
+          const faces=mesh.faces.map(ids=>({ids,z:ids.reduce((s,i)=>s+verts[i].p.z,0)/ids.length})).sort((a,b)=>a.z-b.z);
+          for(const f of faces){const vs=f.ids.map(i=>verts[i]),avg=vs.reduce((s,v)=>s+v.q,0)/4;objects.push({type:'poly',points:vs.map(v=>v.p),fill:qColor((avg-mesh.qMin)/Math.max(mesh.qMax-mesh.qMin,1e-14)),opacity:1});}
+        }
+      }else{
+        const records=record?.all?record.records:record?[record]:[],radii=records.filter(r=>r.available).map(r=>r.weight/maxWeight);
+        // The faint outer sphere is the scale reference max_l w_l; the inner
+        // shell is the selected multipole's true relative norm radius.
+        for(const rad of [...new Set([1,...radii])]){objects.push({type:'ring',cx,cy,r:scale*rad,color:rad===1?'#ddd5c8':'#ad98ba',width:rad===1?.8:1,opacity:1});
+          for(const lat of [-Math.PI/3,-Math.PI/6,0,Math.PI/6,Math.PI/3])for(let i=0;i<120;i++){const a=2*Math.PI*i/120,b=2*Math.PI*(i+1)/120;const p=[rad*Math.cos(lat)*Math.cos(a),rad*Math.cos(lat)*Math.sin(a),rad*Math.sin(lat)],q=[rad*Math.cos(lat)*Math.cos(b),rad*Math.cos(lat)*Math.sin(b),rad*Math.sin(lat)];const front=(project(p).z+project(q).z)>=0;line(p,q,'#b8ad9c',.65,front?[]:[2,4],front?.55:.25);}
+        }
+        const points=[];
+        for(const r of records.filter(x=>x.available)){let chosen=r.selectedPoints||[],other=r.oppositePoints||[];if(!chosen.length&&!other.length)chosen=r.points||[];const radius=r.weight/maxWeight,color=record?.all?rankColor(r.rank):'#78518f';points.push(...[...chosen.map(p=>({p,chosen:true})),...other.map(p=>({p,chosen:false}))].map(x=>({...x,radius,color,depth:project(direction(x.p).map(v=>v*radius)).z})));}
+        points.sort((a,b)=>a.depth-b.depth);
+        for(const {p,chosen,depth,radius,color} of points){const n=direction(p).map(v=>v*radius),front=depth>=0;circle(n,5.2,chosen?color:'#f8f3e8',chosen?color:'#aa7846',front?1:.48);if(p.multiplicity>1)text(n,String(p.multiplicity),'#3d3445',11,[7,-8]);}
+      }
+      for(const a of displayedAxes()){
+        const v=unit(a.axis||a.direction),color=axisColor(a.order==null?'continuous':a.order),pa=project(v),pb=project(v.map(x=>-x)),front=pa.z>=pb.z?v:v.map(x=>-x),rear=front.map(x=>-x);
+        line([0,0,0],rear.map(x=>x*1.13),color,1.2,[5,5],.45);line([0,0,0],front.map(x=>x*1.13),color,1.3,[],.95);
+        text(front.map(x=>x*1.17),'C'+(a.order==null?'∞':subscript(a.order)),color,12,[4,-4]);
+      }
+      if($('coordinate').checked)for(const [v,label]of [[[1,0,0],'x'],[[0,1,0],'y'],[[0,0,1],'z']]){objects.push({type:'line',a:projectReference([0,0,0]),b:projectReference(v.map(x=>x*1.2)),color:'#8e8f89',width:.8,dash:[],opacity:.7});objects.push({type:'text',p:projectReference(v.map(x=>x*1.24)),content:label,color:'#62655f',size:12,offset:[6,-6]});}
+      if(mode==='operator'&&(!record?.available&&!record?.all||record?.zero))objects.push({type:'message',text:record?.zero?'This multipole vanishes.':record?.error||'Choose a nonzero multipole rank.'});
+      return objects;
+    }
+    function render(){const b=canvas.getBoundingClientRect();if(!b.width||!b.height)return;const dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(b.width*dpr);canvas.height=Math.round(b.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,b.width,b.height);paintCanvas(scene(b.width,b.height),ctx,b.width,b.height);}
+    function rotate(dx,dy){R=mul(rotation([0,0,1],dx),mul(rotation([1,0,0],dy),R));redraw();}
+    function reset(){R=mul(rotation([1,0,0],-.25),rotation([0,1,0],-.45));alignment=ident();zoom=1;redraw();}
+    function align(){const axes=symmetry.axes||[],a=axes.slice().sort((x,y)=>(y.order??Infinity)-(x.order??Infinity))[0];if(!a)return;const v=unit(a.axis||a.direction),target=[0,0,1],c=Math.max(-1,Math.min(1,dot(v,target)));alignment=c>1-1e-12?ident():c< -1+1e-12?rotation([1,0,0],Math.PI):rotation(cross(v,target),Math.acos(c));R=rotation([1,0,0],-.20);redraw();}
+    const onDown=e=>{drag={x:e.clientX,y:e.clientY};canvas.setPointerCapture?.(e.pointerId);canvas.classList.add('dragging');};
+    const onMove=e=>{if(!drag)return;rotate((e.clientX-drag.x)*.008,(e.clientY-drag.y)*.008);drag={x:e.clientX,y:e.clientY};};
+    const onUp=()=>{drag=null;canvas.classList.remove('dragging');};
+    const onWheel=e=>{e.preventDefault();zoom=Math.max(.35,Math.min(5,zoom*Math.exp(-e.deltaY*.001)));redraw();};
+    const onKey=e=>{const actions={ArrowLeft:()=>rotate(-.14,0),ArrowRight:()=>rotate(.14,0),ArrowUp:()=>rotate(0,-.14),ArrowDown:()=>rotate(0,.14),Home:reset,'+':()=>{zoom=Math.min(5,zoom*1.15);redraw();},'-':()=>{zoom=Math.max(.35,zoom/1.15);redraw();}};if(actions[e.key]){e.preventDefault();actions[e.key]();}};
+    canvas.addEventListener('pointerdown',onDown);canvas.addEventListener('pointermove',onMove);canvas.addEventListener('pointerup',onUp);canvas.addEventListener('pointercancel',onUp);canvas.addEventListener('wheel',onWheel,{passive:false});canvas.addEventListener('keydown',onKey);
+    const handlers={left:()=>rotate(-.14,0),right:()=>rotate(.14,0),up:()=>rotate(0,-.14),down:()=>rotate(0,.14),reset,align,shape:redraw,axes:redraw,order:redraw,coordinate:redraw};
+    for(const [id,fn]of Object.entries(handlers))$(id).addEventListener(['shape','axes','order','coordinate'].includes(id)?'change':'click',fn);
+    const observer=new ResizeObserver(redraw);observer.observe(canvas);
+    return {set(next,r,c){mode=next;rank=r;record=c;canvas.setAttribute('aria-label',mode==='husimi'?'Whole-subspace Husimi sphere':(rank==='all'?'All nonzero ranks': 'Rank '+rank)+' operator Majorana constellation');redraw();},exportSvg(){const b=canvas.getBoundingClientRect();return sceneSvg(scene(b.width,b.height,true),b.width,b.height);},dispose(){observer.disconnect();cancelAnimationFrame(frame);for(const [id,fn]of Object.entries(handlers))$(id).removeEventListener(['shape','axes','order','coordinate'].includes(id)?'change':'click',fn);canvas.removeEventListener('pointerdown',onDown);canvas.removeEventListener('pointermove',onMove);canvas.removeEventListener('pointerup',onUp);canvas.removeEventListener('pointercancel',onUp);canvas.removeEventListener('wheel',onWheel);canvas.removeEventListener('keydown',onKey);},redraw};
+  }
+  function paintCanvas(objects,ctx,width,height){for(const o of objects){ctx.globalAlpha=o.opacity??1;ctx.setLineDash(o.dash||[]);if(o.type==='bitmap')ctx.drawImage(o.canvas,o.x,o.y);else if(o.type==='poly'){ctx.beginPath();o.points.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.closePath();ctx.fillStyle=o.fill;ctx.fill();ctx.strokeStyle=o.fill;ctx.lineWidth=.7;ctx.stroke();}else if(o.type==='line'){ctx.beginPath();ctx.moveTo(o.a.x,o.a.y);ctx.lineTo(o.b.x,o.b.y);ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.stroke();}else if(o.type==='circle'){ctx.beginPath();ctx.arc(o.p.x,o.p.y,o.r,0,2*Math.PI);ctx.fillStyle=o.fill;ctx.fill();ctx.strokeStyle=o.stroke;ctx.lineWidth=1;ctx.stroke();}else if(o.type==='ring'){ctx.beginPath();ctx.arc(o.cx,o.cy,o.r,0,2*Math.PI);ctx.strokeStyle=o.color;ctx.lineWidth=o.width;ctx.stroke();}else if(o.type==='text'){ctx.fillStyle=o.color;ctx.font=`${o.size}px "Latin Modern Roman", Georgia, serif`;ctx.fillText(o.content,o.p.x+o.offset[0],o.p.y+o.offset[1]);}else if(o.type==='message'){ctx.fillStyle='#6a5d70';ctx.font='13px "Latin Modern Roman", Georgia, serif';ctx.textAlign='center';const words=o.text.split(' ');let line='',row=0;for(const word of words){if(ctx.measureText(line+' '+word).width>width-65&&line){ctx.fillText(line,width/2,height/2+row*20);line=word;row++;}else line+=(line?' ':'')+word;}ctx.fillText(line,width/2,height/2+row*20);ctx.textAlign='left';}}ctx.globalAlpha=1;ctx.setLineDash([]);}
+  function sceneSvg(objects,width,height){const n=x=>Number(x.toFixed(3));return `<svg xmlns="http://www.w3.org/2000/svg" width="${n(width)}" height="${n(height)}" viewBox="0 0 ${n(width)} ${n(height)}"><title>Whole-subspace visualization</title><rect width="100%" height="100%" fill="#faf8f1"/>`+objects.map(o=>{const style=`opacity="${o.opacity??1}"`;if(o.type==='poly')return `<polygon points="${o.points.map(p=>n(p.x)+','+n(p.y)).join(' ')}" fill="${o.fill}" stroke="${o.fill}" stroke-width=".7" ${style}/>`;if(o.type==='line')return `<path d="M${n(o.a.x)} ${n(o.a.y)}L${n(o.b.x)} ${n(o.b.y)}" stroke="${o.color}" stroke-width="${o.width}" stroke-dasharray="${(o.dash||[]).join(' ')}" ${style}/>`;if(o.type==='circle')return `<circle cx="${n(o.p.x)}" cy="${n(o.p.y)}" r="${o.r}" fill="${o.fill}" stroke="${o.stroke}" ${style}/>`;if(o.type==='ring')return `<circle cx="${n(o.cx)}" cy="${n(o.cy)}" r="${n(o.r)}" fill="none" stroke="${o.color}" stroke-width="${o.width}" ${style}/>`;if(o.type==='text')return `<text x="${n(o.p.x+o.offset[0])}" y="${n(o.p.y+o.offset[1])}" font-family="Latin Modern Roman,Georgia,serif" font-size="${o.size}" fill="${o.color}">${esc(o.content)}</text>`;return '';}).join('')+'</svg>';}
+  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  function method(model){return `<p>${math('P_V=\\sum_{a=1}^{d}|u_a\\rangle\\langle u_a|')} and ${math('\\rho_V=P_V/d')} describe the whole subspace independently of its orthonormal basis. The plotted function is ${math('Q_V(\\mathbf n)=\\langle\\mathbf n^{\\otimes N}|\\rho_V|\\mathbf n^{\\otimes N}\\rangle')}. Its spherical mean is ${math('1/(N+1)')}; the projector overlap is ${math('dQ_V')}. The color scale uses this subspace’s sampled minimum and maximum. Radial mode uses radius ${math('Q_V/\\max Q_V')}.</p><p>The operator view follows <a href="https://doi.org/10.1103/PhysRevA.101.022332" target="_blank" rel="noopener">Serrano-Ensástiga and Braun, <em>Majorana representation for mixed states</em></a>. A nonzero rank-${math('\\ell')} multipole gives ${math('2\\ell')} antipodally paired stars with norm ${math('w_\\ell')}. The shell radius is ${math('w_\\ell/\\max_{k\\ge1}w_k')}. Zero multipoles have no constellation. Filled stars choose a signed subconstellation. Swapping an even number of selected stars with their antipodal partners preserves the signed block; an odd number reverses its sign. Signed tensor coefficients are also retained in the operator download.</p><p>Symmetry axes are tested against the complete signed operator, rather than one basis vector or an unsigned constellation. Detection uses numerical tolerances, and is not an exact proof. Low multipoles vanishing in ${math('\\rho_V')} are a consequence of AC; the whole-subspace condition also involves off-diagonal basis transitions.</p>`;}
+  async function open(subspace){
+    ensure();if(dialog.open){cleanup();cleanup=()=>{};}returnFocus=document.activeElement;current=subspace;const ticket=++serial;
+    $('label').textContent=subspace.label||subspace.id||'Anticoherent subspace';$('definition').innerHTML=math('\\rho_V=P_V/d')+' · Basis-independent whole-subspace view';$('readout').innerHTML='';$('symmetry').innerHTML='';$('method').innerHTML='';$('verification').innerHTML='';$('husimi').setAttribute('aria-pressed','true');$('operator').setAttribute('aria-pressed','false');$('shape-control').hidden=false;$('rank-control').hidden=true;$('shape').value='sphere';$('axes').checked=true;$('coordinate').checked=false;
+    if(!dialog.open)dialog.showModal();document.body.classList.add('sv-open');message('Computing the subspace projector…');
+    await new Promise(resolve=>requestAnimationFrame(()=>setTimeout(resolve,0)));if(ticket!==serial)return;
+    let model,mesh,symmetry;
+    try{let saved=cache.get(subspace);if(!saved){model=window.OperatorMath.fromBasis(subspace);mesh=buildMesh(model);symmetry=window.OperatorMath.symmetry(model);saved={model,mesh,symmetry};}cache.delete(subspace);cache.set(subspace,saved);while(cache.size>4)cache.delete(cache.keys().next().value);({model,mesh,symmetry}=saved);}catch(e){message('The whole-subspace view is unavailable: '+e.message);return;}
+    if(ticket!==serial)return;
+    $('definition').innerHTML=math(`N=${model.n},\\quad d=${model.dimension},\\quad\\rho_V=P_V/${model.dimension}`);
+    const ranks=model.multipoles.filter(m=>m.rank>0),first=ranks.find(m=>!m.zero)?.rank||1;let rank=first,mode='husimi',activeRecord=null;
+    $('rank').innerHTML='<option value="all">All nonzero ranks</option>'+ranks.map(m=>`<option value="${m.rank}">${m.rank}${m.zero?' — vanishes':''}</option>`).join('');$('rank').value=String(rank);
+    const axes=symmetry.axes||[],orders=[...new Set(axes.map(a=>a.order==null?'continuous':String(a.order)))].sort((a,b)=>a==='continuous'?-1:b==='continuous'?1:Number(b)-Number(a));
+    $('order').innerHTML='<option value="highest">Highest order</option><option value="all">All axes</option>'+orders.map(o=>`<option value="${esc(o)}">${o==='continuous'?'Continuous':o+'-fold'}</option>`).join('');$('order').value='highest';$('axes').disabled=!axes.length;$('order').disabled=!axes.length;$('align').disabled=!axes.length;
+    const counts=orders.map(o=>{const count=axes.filter(a=>(a.order==null?'continuous':String(a.order))===o).length;return `<span class="sv-axis-key"><i style="background:${axisColor(o)}"></i>${math('C_{'+(o==='continuous'?'\\infty':o)+'}')} : ${count} ${count===1?'axis':'axes'}</span>`;}).join('');
+    $('symmetry').innerHTML=symmetry.isotropic?'<p>Rotationally invariant operator: every spatial axis.</p>':counts||'<p>No nontrivial rotational symmetry detected.</p>';
+    if(symmetry.perpendicularHalfTurns)$('symmetry').innerHTML+='<p class="sv-note">Every axis perpendicular to '+math('C_\\infty')+' is also a '+math('C_2')+' axis.</p>';
+    $('symmetry').innerHTML+=`<p class="sv-note">Whole-projector rotations · numerical tolerance ${esc(fmt(symmetry.tolerance||1e-6))}</p>`;
+    $('method').innerHTML=method(model);
+    const low=model.multipoles.filter(m=>m.rank>0&&m.rank<=(subspace.t||0)).reduce((s,m)=>s+m.weight*m.weight,0);
+    $('verification').innerHTML=`<p>${math('\\operatorname{Tr}\\rho_V^2=1/d')} (a normalized rank-${model.dimension} projector). Multipole ranks run from ${math('0')} to ${math(String(model.n))}; the scalar rank ${math('0')} is fixed by the trace.</p><p>Reported AC order ${esc(subspace.t??'—')}; low-rank squared weight ${esc(fmt(low))}. Coefficient diagnostics: ${esc(JSON.stringify(model.diagnostics||{}))}.</p><div id="sv-bars" class="sv-multipole-bar" aria-label="Multipole norms"></div><p class="sv-bar-label">Multipole norms, rank 1 → ${model.n}; select a bar to inspect its constellation.</p><div id="sv-tensor" class="sv-tensor-values"></div>`;
+    const max=Math.max(...ranks.map(m=>m.weight),1e-15);$('bars').innerHTML=ranks.map(m=>`<button type="button" data-rank="${m.rank}" style="height:${Math.max(2,58*m.weight/max)}px" title="Rank ${m.rank}: ${esc(fmt(m.weight))}" aria-label="Rank ${m.rank}, norm ${esc(fmt(m.weight))}" aria-pressed="false"${m.zero?' disabled':''}></button>`).join('');
+    const renderer=makeRenderer(model,mesh,symmetry);
+    function info(){
+      if(mode==='husimi')$('readout').innerHTML=`<p>${math('Q_V=\\langle\\mathbf n^{\\otimes N}|\\rho_V|\\mathbf n^{\\otimes N}\\rangle')}</p><div class="sv-color-key"><span>${fmt(mesh.qMin)}</span><i class="sv-color-ramp" aria-hidden="true"></i><span>${fmt(mesh.qMax)}</span></div><p class="sv-note">Sampled angular range · ${$('shape').value==='radial'?'Radius proportional to Q':'Color represents Q'}</p>`;
+      else if(rank==='all'){$('readout').innerHTML=(activeRecord?.records||[]).map(r=>`<span class="sv-axis-key"><i style="background:${rankColor(r.rank)}"></i>${math('\\ell='+r.rank+',\\ w_\\ell='+fmt(r.weight))}${r.available?'':' — roots unavailable'}</span>`).join('')+'<p class="sv-note">Shell radius follows multipole norm. Filled stars mark the signed subconstellation; hollow stars are its antipodal partners. Signed coefficients remain in the operator download. Maximum signed-block reconstruction residual '+fmt(Math.max(0,...(activeRecord?.records||[]).filter(r=>r.available).map(r=>r.reconstructionResidual||0)))+'.</p>';}
+      else{const m=ranks.find(x=>x.rank===rank);$('readout').innerHTML=`<p>${math('\\ell='+rank+',\\quad w_\\ell='+fmt(m?.weight||0))}</p>`+(m?.zero?'<p>This multipole vanishes; it has no stars.</p>':activeRecord?.available?`<p>${2*rank} stars, counted with multiplicity.</p><span class="sv-sign-key"><i></i>Selected subconstellation</span><span class="sv-sign-key"><i class="opposite"></i>Antipodal partners</span><p class="sv-note">${activeRecord.signReliable?'The marked subconstellation retains the signed block.':'Signed coefficients are retained below and in the download.'} Root residual ${fmt(activeRecord.rootResidual)}; signed-block reconstruction residual ${fmt(activeRecord.reconstructionResidual)}.</p>`:`<p>${esc(activeRecord?.error||'Constellation unavailable at this rank.')}</p><p class="sv-note">The signed coefficients remain available below and in the download.</p>`);}
+      const inspected=rank==='all'?ranks.filter(m=>!m.zero):ranks.filter(m=>m.rank===rank);$('tensor').textContent=inspected.map(m=>`Rank ${m.rank}, m=${m.rank}…${-m.rank}: `+(m.coefficients||[]).map(v=>Array.isArray(v)?fmt(v[0])+(v[1]<0?' − ':' + ')+fmt(Math.abs(v[1]))+'i':String(v)).join('; ')).join('\n\n');
+      $('bars').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(mode==='operator'&&(rank==='all'&&!b.disabled||Number(b.dataset.rank)===rank))));
+    }
+    function change(next){mode=next;$('husimi').setAttribute('aria-pressed',String(mode==='husimi'));$('operator').setAttribute('aria-pressed',String(mode==='operator'));$('shape-control').hidden=mode!=='husimi';$('rank-control').hidden=mode!=='operator';if(mode==='operator'){if(rank==='all'){activeRecord={all:true,records:ranks.filter(m=>!m.zero).map(m=>{try{return window.OperatorMath.constellation(model,m.rank);}catch(e){return {rank:m.rank,weight:m.weight,available:false,error:e.message};}})};}else{const m=ranks.find(x=>x.rank===rank);try{activeRecord=m?.zero?{zero:true}:window.OperatorMath.constellation(model,rank);}catch(e){activeRecord={available:false,error:e.message};}}}renderer.set(mode,rank,activeRecord);info();}
+    const onH=()=>change('husimi'),onO=()=>change('operator'),onRank=()=>{rank=$('rank').value==='all'?'all':Number($('rank').value);change('operator');},onShape=()=>info(),onBars=e=>{const b=e.target.closest('[data-rank]');if(b){rank=Number(b.dataset.rank);$('rank').value=String(rank);change('operator');}},onSvg=()=>download((subspace.id||'subspace')+'-'+mode+'.svg',renderer.exportSvg(),'image/svg+xml'),onJson=()=>download((subspace.id||'subspace')+'-operator.json',JSON.stringify({subspace:subspace.id,n:model.n,dimension:model.dimension,normalization:'rho=P_V/d',rho:model.rho,multipoles:model.multipoles,constellations:mode==='operator'?(activeRecord?.all?activeRecord.records:[activeRecord]):[],symmetry,diagnostics:model.diagnostics,reference:'E. Serrano-Ensástiga and D. Braun, Phys. Rev. A 101, 022332 (2020), doi:10.1103/PhysRevA.101.022332'},null,2),'application/json');
+    $('husimi').addEventListener('click',onH);$('operator').addEventListener('click',onO);$('rank').addEventListener('change',onRank);$('shape').addEventListener('change',onShape);$('bars').addEventListener('click',onBars);$('svg').addEventListener('click',onSvg);$('json').addEventListener('click',onJson);
+    cleanup=()=>{renderer.dispose();$('husimi').removeEventListener('click',onH);$('operator').removeEventListener('click',onO);$('rank').removeEventListener('change',onRank);$('shape').removeEventListener('change',onShape);$('bars').removeEventListener('click',onBars);$('svg').removeEventListener('click',onSvg);$('json').removeEventListener('click',onJson);};
+    message('');change('husimi');renderer.redraw();
+  }
+  window.SubspaceViewer={open,close};
+})();

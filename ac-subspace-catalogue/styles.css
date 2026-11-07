@@ -112,3 +112,5 @@ body{font-size:16px}
 .conjectured-dimension .detail-sources li,.reported-dimension .detail-sources li{margin-bottom:2px}
 .conjectured-dimension .detail-sources a,.reported-dimension .detail-sources a{font-size:10px}
 @media(max-width:520px){.state-cell .conjecture-cell{font-size:9px;padding:1px 3px}.state-cell .numeric-cell{padding:1px 3px}.toolbar .filter-label select{max-width:215px}}
+
+.whole-subspace-entry{margin:20px 0;padding:16px;border:1px solid var(--line);border-left:3px solid var(--purple);background:var(--purple-soft)}.whole-subspace-entry .eyebrow{color:var(--purple);margin-bottom:8px}.whole-subspace-entry p:not(.eyebrow){font-size:12px;line-height:1.75;margin-bottom:12px}

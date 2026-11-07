@@ -507,3 +507,14 @@ The numerical candidates appear as `Num. k` and never raise rigorous lower bound
 Fifteen candidates are defined by isolated simple Wronskian roots, independently certified with exact rational interval arithmetic. The N6 candidate uses an explicit radical-parameter double-root construction. Independent 110-digit checks reconstruct all 19 states and constellations. Global displacement optimality is not proved for N>=5.
 
 Reproduce the exported data and certificates with `research/t1-barycenter-survey/assemble.py`, `verify_independently.py` and `certify_roots.py`; the grouped search scripts and raw logs are included.
+
+
+## Whole-subspace visualization
+
+The selected representative now has a **View whole subspace** entry. It constructs the orthogonal projector onto the saved Dicke span and uses the trace-one operator `rho_V=P_V/d`, where `d` is the span dimension. Numerical orthonormalization changes only the coordinates used to describe that span; it does not modify the source data or upgrade a numerical AC construction to a proof.
+
+The Husimi view displays `<n^N|rho_V|n^N>` on the physical sphere, with a colored unit-sphere view and a radial option. Its angular mean is `1/(N+1)`, and its operator purity is `1/d`. Camera rotations and axis alignment affect only the display frame.
+
+The operator-constellation view implements the orthonormal spin-tensor decomposition and rank-by-rank Majorana polynomials of E. Serrano-Ensástiga and D. Braun, *Majorana representation for mixed states*, Physical Review A **101**, 022332 (2020), https://doi.org/10.1103/PhysRevA.101.022332 (arXiv:1909.07740, Section III). A nonzero rank `l` has `2l` antipodal stars and physical radius `w_l=||rho_l||`. The signed multipole coefficients and an oriented representative of the subconstellation class preserve the information lost by displaying only unsigned antipodal axes. The scalar rank zero has no stars. A vanished rank has no constellation.
+
+Symmetry axes are tested against the complete operator, including its signed blocks. A symmetry of a single unsigned rank constellation need not be a symmetry of the subspace. The displayed numerical axes and root diagnostics are separate from the catalogue's exact whole-subspace AC proofs. Small low-order multipoles of the projector alone are not a whole-subspace AC certificate; all compressed tensors `P_V T_lm P_V` must vanish at ranks `1,...,t`.
