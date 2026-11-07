@@ -73,3 +73,12 @@ body.sv-open{overflow:hidden}
 
 .sv-sphere-open{padding:5px 8px!important;pointer-events:auto;cursor:zoom-in!important;min-height:0!important;font-family:inherit!important;line-height:1!important}
 .sv-sphere-open:hover{background:#eae2f2!important}
+
+/* One shared key stays outside the scrollable sphere gallery. */
+.sv-gallery-axis-legend{display:flex;flex-wrap:wrap;align-items:center;gap:7px 16px;margin:0 0 12px;padding:8px 12px;border:1px solid var(--line,#d6dacf);border-radius:5px;background:#faf8f1;font-size:13px;line-height:1.5}
+.sv-gallery-axis-legend[hidden]{display:none!important}
+.sv-gallery-axis-label{color:var(--muted,#68736d);font-size:12px}
+.sv-gallery-axis-item{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.sv-gallery-axis-item i{display:inline-block;width:22px;height:2px;flex-shrink:0}
+.sv-gallery-axis-item .katex{font-size:1.1em}
+.sv-gallery-axis-count{font-size:11px;color:var(--muted,#68736d)}
