@@ -28,6 +28,8 @@
  const scaleDoc=parse(scale);assert(!scaleDoc.querySelector('parsererror'),'Invalid scale SVG');
  assert(scaleDoc.querySelectorAll('linearGradient stop').length===2,'Color gradient missing');
  assert(scaleDoc.documentElement.textContent.includes('0.0552991')&&scaleDoc.documentElement.textContent.includes('0.0861388'),'Color range missing');
+ const wigner=SubspaceSvgExport.compose(view,{title:'Wigner function',colorScale:{title:'Wigner color scale',label:'W_V',stops:[{t:0,rgb:[43,88,149]},{t:.5,rgb:[251,250,244]},{t:1,rgb:[177,65,28]}],min:'-0.5',mid:'0',max:'0.5'}});
+ const wd=parse(wigner);assert(!wd.querySelector('parsererror'),'Invalid Wigner legend');assert(wd.documentElement.textContent.includes('WIGNER COLOR SCALE'),'Wrong phase-space legend title');assert(!wd.documentElement.textContent.includes('HUSIMI COLOR SCALE'),'Husimi legend leaked into Wigner export');assert([...wd.querySelectorAll('text')].some(e=>e.textContent==='0'),'Zero scale midpoint missing');
  const many=SubspaceSvgExport.compose(view,{title:'All ranks',formulaRows:Array.from({length:42},(_,i)=>({tex:String.raw`\ell=${i+1},\quad w_\ell=\sqrt{\frac{1234567}{9876543}}`}))});
  const manyDoc=parse(many);assert(Number(manyDoc.documentElement.getAttribute('height'))>1200,'Long legends must extend export height');
  const totalHeight=Number(manyDoc.documentElement.getAttribute('height'));

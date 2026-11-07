@@ -29,8 +29,8 @@ const window={
 };
 const document={createElement:tag=>{const e=element();if(tag==='canvas')e.getContext=()=>context;return e;}};
 const sourcePath=path.join(__dirname,'../subspace-viewer.js');let source=fs.readFileSync(sourcePath,'utf8');
-const hook='return {align,set(next,r,c)';assert.equal(source.split(hook).length,2,'Renderer API changed; review the test hook.');
-source=source.replace(hook,'return {sceneForTest:scene,renderForTest:render,align,set(next,r,c)');
+const hook='return {align,set(next,r,c,nextMesh)';assert.equal(source.split(hook).length,2,'Renderer API changed; review the test hook.');
+source=source.replace(hook,'return {sceneForTest:scene,renderForTest:render,align,set(next,r,c,nextMesh)');
 const publicHook='window.SubspaceViewer={open,close};';assert.equal(source.split(publicHook).length,2);
 source=source.replace(publicHook,publicHook+'window.RendererForTest=makeRenderer;window.DialogForTest=d=>dialog=d;');
 let frameId=0;
@@ -103,4 +103,27 @@ for(const c of overlays){
 }
 many.set('operator',7,manyRecords[6]);many.renderForTest();assert.equal(canvas.style.height,'');assert.equal(frame.classList.contains('sv-separated'),false);
 many.dispose();
+
+// A signed field must use a neutral zero, and negative radial lobes must
+// remain in their original directions when magnitude display is selected.
+const dirs=[[0,0,-1],[.1,0,-Math.sqrt(.99)],[0,.1,-Math.sqrt(.99)],[-.1,0,-Math.sqrt(.99)]];
+const signedMesh={...mesh,qMin:-.2,qMax:1,colorMax:1,vertices:dirs.map(n=>({n,q:-.2})),faces:[[0,1,2,3]],contours:{segments:[]}};
+const positiveMesh={...signedMesh,qMin:.2,qMax:1,vertices:dirs.map(n=>({n,q:.2}))};
+const signed=window.RendererForTest(model,signedMesh,{axes:[{axis:[0,0,1],order:4}]});
+get('separate').checked=false;get('coordinate').checked=false;get('shape').value='radial';
+signed.set('wigner',2,null,signedMesh);
+const negativeGeometry=signed.sceneForTest(486,437,true).filter(o=>o.type==='poly');
+signed.set('husimi',2,null,positiveMesh);
+const positiveGeometry=signed.sceneForTest(486,437,true).filter(o=>o.type==='poly');
+assert.deepEqual(negativeGeometry.map(o=>o.points),positiveGeometry.map(o=>o.points),'Negative Wigner magnitudes must not flip to the antipode');
+get('shape').value='sphere';get('axes').checked=true;
+const patches={...signedMesh,qMin:-1,vertices:[...dirs.map(n=>({n,q:-1})),...dirs.map(n=>({n,q:0})),...dirs.map(n=>({n,q:1}))],faces:[[0,1,2,3],[4,5,6,7],[8,9,10,11]]};
+signed.set('wigner',2,null,patches);
+const patchColors=signed.sceneForTest(486,437,true).filter(o=>o.type==='poly').map(o=>o.fill);
+assert.ok(patchColors.includes('#fbfaf4'),'Zero Wigner value must be neutral white');
+assert.ok(patchColors.includes('#2b5895'),'Negative Wigner value must be blue');
+assert.ok(patchColors.includes('#b1411c'),'Positive Wigner value must be orange');
+const signedSvg=signed.exportSvg();assert.ok(signedSvg.includes('data-tex="C_{4}"'),'Cn guide must be LaTeX in exports');
+assert.ok(!signedSvg.includes('<image'),'Wigner export must remain vector geometry');
+signed.dispose();
 console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior.');

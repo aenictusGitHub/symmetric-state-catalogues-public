@@ -80,9 +80,10 @@
     if(options.formulaRows?.length){heading('Multipole weights');rows(options.formulaRows);y+=5;}
     if(options.colorScale){
       const scale=options.colorScale,id='sv-export-scale-'+(++sequence),stops=stopsFor(scale.stops);
-      heading('Husimi color scale');
+      heading(scale.title||'Husimi color scale');
       if(scale.label)add(mathHtml(scale.label),14,7);
       parts.push(`<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="0">${stops.map(stop=>`<stop offset="${stop.offset}" stop-color="${stop.color}"/>`).join('')}</linearGradient></defs><rect x="${panelX}" y="${number(y)}" width="${panelWidth}" height="13" rx="2" fill="url(#${id})" stroke="#b7b7ad" stroke-width=".6"/><text x="${panelX}" y="${number(y+32)}" font-size="12" fill="#343c39" font-family="Latin Modern Roman,Georgia,serif">${escape(scale.min)}</text><text x="${panelX+panelWidth}" y="${number(y+32)}" text-anchor="end" font-size="12" fill="#343c39" font-family="Latin Modern Roman,Georgia,serif">${escape(scale.max)}</text>`);
+      if(scale.mid!=null)parts.push(`<text x="${panelX+panelWidth/2}" y="${number(y+32)}" text-anchor="middle" font-size="12" fill="#343c39" font-family="Latin Modern Roman,Georgia,serif">${escape(scale.mid)}</text>`);
       y+=43;if(scale.note)add(`<div style="color:#68716b;">${escape(scale.note)}</div>`,12,14);
     }
     if(options.symmetryRows?.length){heading('Symmetry axes');rows(options.symmetryRows);}
