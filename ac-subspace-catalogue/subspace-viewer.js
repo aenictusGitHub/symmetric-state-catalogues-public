@@ -70,6 +70,12 @@
     const colorBounds=()=>mode==='wigner'?[-mesh.colorMax,mesh.colorMax]:[mesh.qMin,mesh.qMax];
     const scalarPalette=()=>mode==='wigner'?'wigner':palettePreference;
     const scalarColor=q=>{const [lo,hi]=colorBounds();return window.HusimiRendering.color((q-lo)/Math.max(hi-lo,1e-14),scalarPalette());};
+    function contourColor(level){
+      const luminance=hex=>{const c=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2];};
+      const background=luminance(scalarColor(level)),dark='#172a39',light='#cbd4d9';
+      const contrast=ink=>{const l=luminance(ink);return (Math.max(background,l)+.05)/(Math.min(background,l)+.05);};
+      return contrast(dark)>=contrast(light)?dark:light;
+    }
     function heatmap(width,height,cx,cy,scale){
       const x0=Math.max(0,Math.floor(cx-scale)),y0=Math.max(0,Math.floor(cy-scale)),x1=Math.min(Math.ceil(width),Math.ceil(cx+scale)),y1=Math.min(Math.ceil(height),Math.ceil(cy+scale)),w=Math.max(1,x1-x0),h=Math.max(1,y1-y0),image=textureContext.createImageData(w,h),pixels=image.data,M=mul(R,alignment),bounds=colorBounds(),range=Math.max(bounds[1]-bounds[0],1e-14),stride=mesh.cols+1;
       for(let y=0;y<h;y++)for(let x=0;x<w;x++){
@@ -127,9 +133,12 @@
               visibleContours.push([a,b,segment.level]);
             }
           }
-          // All halos precede all contour strokes, so segment ends never erase a neighboring line.
-          for(const [a,b] of visibleContours)line(a,b,'#fffdf2',1.8,[],.5);
-          for(const [a,b,level] of visibleContours)line(a,b,'#172a39',mode==='wigner'&&Math.abs(level)<1e-14?1.35:.72,[],.72);
+          // One solid stroke per contour; the level fixes its background color.
+          const contourColors=new Map();
+          for(const [a,b,level] of visibleContours){
+            if(!contourColors.has(level))contourColors.set(level,contourColor(level));
+            line(a,b,contourColors.get(level),mode==='wigner'&&Math.abs(level)<1e-14?1.35:1,[],1);
+          }
         }
       }else{
         const records=displayRecord?.all?displayRecord.records:displayRecord?[displayRecord]:[],radiusOf=r=>!cellView?.separate&&ui('fit').checked&&!displayRecord?.all?1:r.weight/maxWeight,active=records.filter(r=>r.available).map(r=>({record:r,radius:radiusOf(r),color:displayRecord?.all||cellView?.separate?rankColor(r.rank):'#78518f'})).sort((a,b)=>b.radius-a.radius),outerRadius=active[0]?.radius||0;
