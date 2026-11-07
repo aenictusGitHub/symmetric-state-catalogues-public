@@ -193,11 +193,62 @@ for(const line of sphereSections){
  assert.ok(matching,'SVG must preserve each axis section opacity and rear dash style');
 }
 sphereAxes.set('wigner',2,null,{...mesh,colorMax:1});checkOpacitySections(axisLines(sphereAxes.sceneForTest(486,437,true)));
-// Translucent operator shells keep their previous guides, not scalar-body
-// occlusion. This also protects the separate clickable sphere gallery.
-sphereAxes.set('operator',4,records[1]);
-const operatorGuide=sphereAxes.sceneForTest(486,437,true).filter(o=>o.type==='line'&&o.color==='#a45635');
-assert.ok(operatorGuide.length>0);assert.ok(operatorGuide.every(o=>o.axisOccluded!==true));for(const line of operatorGuide)near(line.opacity,line.dash.length?.45:.95);sphereAxes.dispose();
+// The selected-rank renderer is also used by the enlarged sphere dialog.
+// A fitted sphere has radius one; an unfitted one keeps its true norm radius.
+sphereAxes.set('operator',4,records[1]);get('fit').checked=true;
+const fittedOperator=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(fittedOperator);
+const operatorFront=lines=>lines.find(o=>!o.axisOccluded&&!o.dash.length);
+near(Math.min(physicalRadius(operatorFront(fittedOperator).a),physicalRadius(operatorFront(fittedOperator).b)),1,1e-9);
+get('fit').checked=false;
+const unfittedOperator=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(unfittedOperator);
+near(Math.min(physicalRadius(operatorFront(unfittedOperator).a),physicalRadius(operatorFront(unfittedOperator).b)),.5,1e-9,'Unfitted/enlarged axes must emerge at the displayed shell, not the unit reference circle');
+const smallOperatorSvg=sphereAxes.exportSvg();
+assert.ok(smallOperatorSvg.includes('opacity="0.209"')&&smallOperatorSvg.includes('opacity="0.099"'),'Selected and enlarged SVG must include faded front and rear sections');
+assert.ok(smallOperatorSvg.includes('stroke-dashoffset="-'),'Split rear dashes must keep their phase in the operator SVG');
+// Nested shells use their largest actually drawn sphere as the outer body.
+get('fit').checked=true;sphereAxes.set('operator','all',{all:true,records});
+const nestedOperator=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(nestedOperator);
+near(Math.min(physicalRadius(operatorFront(nestedOperator).a),physicalRadius(operatorFront(nestedOperator).b)),1,1e-9);
+const partiallyAvailable=records.map(r=>({...r,available:r.rank!==2}));
+sphereAxes.set('operator','all',{all:true,records:partiallyAvailable});
+const availableOperator=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(availableOperator);
+near(Math.min(physicalRadius(operatorFront(availableOperator).a),physicalRadius(operatorFront(availableOperator).b)),.5,1e-9,'An unavailable outer rank must not create an invisible occluding shell');
+// Each separate sphere uses its own physical radius on the common norm scale.
+get('separate').checked=true;sphereAxes.set('operator','all',{all:true,records});
+const separatedOperator=sphereAxes.sceneForTest(486,437,true),layout=window.SubspaceSphereLayout.layout(486,437,records,1);
+let card=-1;const cardAxes=records.map(()=>[]),cardShells=records.map(()=>[]),cardReferences=records.map(()=>[]);
+for(const object of separatedOperator){
+ if(object.type==='clip-start')card++;
+ else if(object.type==='line'&&typeof object.axisOccluded==='boolean')cardAxes[card].push(object);
+ else if(object.type==='shell')cardShells[card].push(object);
+ else if(object.type==='ring'&&object.dash?.length)cardReferences[card].push(object);
+}
+for(let i=0;i<records.length;i++){
+ checkOpacitySections(cardAxes[i]);assert.equal(cardShells[i].length,1);
+ const cell=layout.cells[i],line=operatorFront(cardAxes[i]);
+ const radius=p=>Math.hypot((p.x-cell.cx)/layout.maxDisplayRadius,(p.y-cell.cy)/layout.maxDisplayRadius,p.z);
+ near(Math.min(radius(line.a),radius(line.b)),records[i].weight,1e-9,'Separate axes must emerge at the rank-specific radius');
+ if(i)assert.ok(cardReferences[i].some(r=>r.r>cardShells[i][0].r),'The maximum-norm guide is not the sphere body');
+}
+const galleryAxisSvg=sphereAxes.exportSvg();
+assert.equal((galleryAxisSvg.match(/opacity="0.209"/g)||[]).length,records.length,'Every separate sphere exports its own faded front axis');
+assert.ok(!/NaN|Infinity/.test(galleryAxisSvg));
+// Independent/enlarged cameras recompute the same rank-specific boundary.
+get('separate').checked=false;get('fit').checked=false;sphereAxes.set('operator',6,records[2]);
+const beforeOperatorRotation=axisLines(sphereAxes.sceneForTest(486,437,true));
+get('right').handlers.get('click')();
+const afterOperatorRotation=axisLines(sphereAxes.sceneForTest(486,437,true));checkOpacitySections(afterOperatorRotation);
+assert.notDeepEqual(afterOperatorRotation.map(o=>[o.a.x,o.a.y,o.b.x,o.b.y]),beforeOperatorRotation.map(o=>[o.a.x,o.a.y,o.b.x,o.b.y]),'Operator axis sections must follow their renderer camera');
+near(Math.min(physicalRadius(operatorFront(afterOperatorRotation).a),physicalRadius(operatorFront(afterOperatorRotation).b)),.1,1e-9);
+// A zero or unavailable multipole has no body to attenuate an axis.
+
+for(const absent of [{zero:true},{available:false,error:'test-only unavailable block'}]){
+ sphereAxes.set('operator',4,absent);
+ const lines=axisLines(sphereAxes.sceneForTest(486,437,true));
+ assert.ok(lines.length>0&&lines.every(o=>!o.axisOccluded),'No shell means no hidden axis sections');
+ for(const line of lines)near(line.opacity,line.dash.length?.45:.95);
+}
+sphereAxes.dispose();
 
 // A prolate radial surface has a much narrower waist than a unit sphere.
 // Exposed portions must follow that shape even when contour lines are off.
@@ -221,4 +272,4 @@ const radialAxisSvg=bodyAxes.exportSvg();assert.ok(!/NaN|Infinity/.test(radialAx
 assert.ok(radialAxisSvg.includes('opacity="0.209"')||radialAxisSvg.includes('opacity="0.099"'),'SVG must carry the faded radial sections');
 get('axes').checked=false;assert.equal(axisLines(bodyAxes.sceneForTest(486,437,true)).length,0);bodyAxes.dispose();
 
-console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior, joined contour paths, horizon clipping, surface-matched radial contours and depth-aware scalar axis transparency.');
+console.log('PASS: actual nested/separate scenes, norm-radius ratios, per-card labels/SVG/DOM clipping, tall gallery scrolling, normal-view restoration and fit behavior, joined contour paths, horizon clipping, surface-matched radial contours and depth-aware scalar/operator axis transparency at the actual nested, selected and separate sphere radii.');

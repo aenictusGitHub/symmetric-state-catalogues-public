@@ -124,9 +124,9 @@
       const line=(a,b,color,width=1,dash=[],opacity=1,extra={})=>objects.push({type:'line',a:project(a),b:project(b),color,width,dash,opacity,...extra});
       const circle=(p,r,fill,stroke,opacity=1)=>markerLayer.push({type:'circle',p:project(p),r,fill,stroke,opacity});
       const text=(p,content,color='#3f4241',size=12,offset=[6,-6])=>objects.push({type:'text',p:project(p),content,color,size,offset});
-      let axisDepthBuffer=null;const scalarView=mode==='husimi'||mode==='wigner';
+      let axisDepthBuffer=null,axisSphereRadius=0;const scalarView=mode==='husimi'||mode==='wigner';
       if(scalarView){
-        const radial=ui('shape').value==='radial';let surfaceDepth=null;
+        const radial=ui('shape').value==='radial';let surfaceDepth=null;axisSphereRadius=radial?0:1;
         if(!radial&&!vectorExport)objects.push(heatmap(width,height,cx,cy,scale));
         else{const max=(mode==='wigner'?mesh.colorMax:mesh.qMax)||1,magnitude=q=>mode==='wigner'?Math.abs(q):q,verts=mesh.vertices.map(v=>({p:project(v.n.map(x=>x*(radial?magnitude(v.q)/max:1))),q:v.q}));
           if(radial&&(ui('contours').checked||ui('axes').checked))surfaceDepth=window.SubspaceRenderGeometry.surfaceDepth(verts,mesh.faces,width,height);
@@ -156,6 +156,7 @@
         }
       }else{
         const records=displayRecord?.all?displayRecord.records:displayRecord?[displayRecord]:[],radiusOf=r=>!cellView?.separate&&ui('fit').checked&&!displayRecord?.all?1:r.weight/maxWeight,active=records.filter(r=>r.available).map(r=>({record:r,radius:radiusOf(r),color:displayRecord?.all||cellView?.separate?rankColor(r.rank):'#78518f'})).sort((a,b)=>b.radius-a.radius),outerRadius=active[0]?.radius||0;
+        axisSphereRadius=outerRadius;
         // The dotted circle is only a scale reference. Active multipoles alone
         // receive a shaded spherical shell and their true norm radius is kept.
         if(outerRadius<1-1e-8)objects.push({type:'ring',cx,cy,r:scale,color:'#b8b6ad',width:.75,dash:[1,5],opacity:.5});
@@ -179,13 +180,13 @@
         const color=axisColor(a.order==null?'continuous':a.order),guide=window.SubspaceRenderGeometry.axisGuide(a.axis||a.direction,project);
         for(const half of guide.halves){
           let visible=[[0,1]];
-          if(scalarView){
+          if(axisDepthBuffer||axisSphereRadius>1e-12){
             if(axisDepthBuffer)visible=window.SubspaceRenderGeometry.visibleIntervals(project(half.a),project(half.b),axisDepthBuffer,{tolerance:1e-4,pixelStep:.5});
             else{
               // An axis half is a ray from the origin. A rear ray remains
               // occluded until its projection clears the sphere silhouette.
               const length=Math.hypot(...half.b),depth=project(half.b).z/length;
-              const boundary=(depth>=0?1:1/Math.sqrt(Math.max(1e-30,1-depth*depth)))/length;
+              const boundary=axisSphereRadius*(depth>=0?1:1/Math.sqrt(Math.max(1e-30,1-depth*depth)))/length;
               visible=boundary<1?[[Math.max(0,boundary),1]]:[];
             }
           }
