@@ -133,7 +133,7 @@
         }
         if(guide.label.opacity>1e-4)labelLayer.push({type:'text',p:project(guide.label.point),content:'C'+(a.order==null?'∞':subscript(a.order)),color,size:12,offset:guide.label.radialOffset,opacity:guide.label.opacity,textAnchor:guide.label.textAnchor});
       }
-      if($('coordinate').checked)for(const [v,label]of [[[1,0,0],'x'],[[0,1,0],'y'],[[0,0,1],'z']]){objects.push({type:'line',a:projectReference([0,0,0]),b:projectReference(v.map(x=>x*1.2)),color:'#8e8f89',width:.8,dash:[],opacity:.7});const p=projectReference(v.map(x=>x*1.24));p.x=Math.max(8,Math.min(width-24,p.x));p.y=Math.max(25,Math.min(height-18,p.y));objects.push({type:'text',p,content:label,tex:label,color:'#62655f',size:14,offset:[6,-6]});}
+      if($('coordinate').checked)for(const [v,label]of [[[1,0,0],'x'],[[0,1,0],'y'],[[0,0,1],'z']]){objects.push({type:'line',a:projectReference([0,0,0]),b:projectReference(v.map(x=>x*1.2)),color:'#8e8f89',width:.8,dash:[],opacity:.7});const p=projectReference(v.map(x=>x*1.24));p.x=Math.max(8,Math.min(width-24,p.x));p.y=Math.max(25,Math.min(height-18,p.y));objects.push({type:'text',p,content:label,tex:label,color:'#62655f',size:14,offset:[label==='z'?24:6,-6]});}
       if(mode==='operator'&&(!record?.available&&!record?.all||record?.zero))objects.push({type:'message',text:record?.zero?'This multipole vanishes.':record?.error||'Choose a nonzero multipole rank.'});
       if(mode==='operator'){
         const values=rank==='all'?model.multipoles.filter(m=>m.rank>0&&!m.zero).map(m=>m.rank):[rank];
