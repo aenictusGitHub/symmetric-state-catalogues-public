@@ -8,18 +8,18 @@
     ocean:[{t:0,rgb:[18,35,85]},{t:.22,rgb:[36,99,176]},{t:.44,rgb:[56,183,196]},{t:.66,rgb:[243,232,162]},{t:.84,rgb:[241,148,82]},{t:1,rgb:[190,54,61]}],
     viridis:[{t:0,rgb:[68,1,84]},{t:.25,rgb:[59,82,139]},{t:.5,rgb:[33,145,140]},{t:.75,rgb:[94,201,98]},{t:1,rgb:[253,231,37]}]
   };
-  const paletteStops=palettes.plum;
+  const paletteStops=palettes.viridis;
   const stopsFor=name=>palettes[name]||paletteStops;
   const clamp=x=>Math.max(0,Math.min(1,Number.isFinite(x)?x:0));
   const hex=a=>'#'+a.map(x=>Math.round(x).toString(16).padStart(2,'0')).join('');
-  function rgb(t,palette='plum'){
+  function rgb(t,palette='viridis'){
     const stops=stopsFor(palette),u=clamp(t);let k=0;
     while(k<stops.length-2&&u>stops[k+1].t)k++;
     const a=stops[k],b=stops[k+1],f=(u-a.t)/(b.t-a.t);
     return a.rgb.map((v,i)=>v+(b.rgb[i]-v)*f);
   }
-  const color=(t,palette='plum')=>hex(rgb(t,palette));
-  const gradient=(palette='plum')=>`linear-gradient(90deg,${stopsFor(palette).map(s=>hex(s.rgb)+' '+100*s.t+'%').join(',')})`;
+  const color=(t,palette='viridis')=>hex(rgb(t,palette));
+  const gradient=(palette='viridis')=>`linear-gradient(90deg,${stopsFor(palette).map(s=>hex(s.rgb)+' '+100*s.t+'%').join(',')})`;
   const norm=v=>Math.hypot(...v);
   const normalize=v=>{const n=norm(v);return n>1e-14?v.map(x=>x/n):null;};
   function defaultLevels(mesh,count=8){
