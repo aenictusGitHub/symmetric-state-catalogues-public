@@ -8,7 +8,7 @@ const source=fs.readFileSync(sourcePath,'utf8');
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fixture=(id,n,active)=>({id,n,dimension:2,t:1,label:id,active});
 const first=fixture('selection-fixture-a',6,[4,6]),second=fixture('selection-fixture-b',8,[3,5,8]);
-function createWorld(store=new Map()){
+function createWorld(store=new Map(),axes=[]){
  let document,sequence=0;const frames=new Map(),timers=[],details=[];
  class Element{
   constructor(tag='div'){
@@ -65,7 +65,7 @@ function createWorld(store=new Map()){
   SubspaceSvgExport:{mathLabel:()=>''},SubspaceSphereDetail:{open:options=>details.push(options),close(){}},
   OperatorMath:{
    fromBasis:s=>({id:s.id,n:s.n,dimension:s.dimension,diagnostics:{},multipoles:Array.from({length:s.n+1},(_,rank)=>({rank,weight:s.active.includes(rank)?.1+rank/20:0,zero:!s.active.includes(rank),coefficients:Array.from({length:2*rank+1},()=>[0,0])}))}),
-   husimi:model=>1/(model.n+1),symmetry:()=>({axes:[],tolerance:1e-6}),
+   husimi:model=>1/(model.n+1),symmetry:()=>({axes,tolerance:1e-6}),
    constellation:(model,rank)=>({rank,weight:model.multipoles[rank].weight,available:true,selectedPoints:[[1,0,0]],oppositePoints:[[-1,0,0]],rootResidual:0,reconstructionResidual:0,signReliable:true})
   },
   SpinWigner:{prepare:()=>({grid:()=>({rows:1,cols:1,qMin:-.1,qMax:.2,vertices:[{n:[1,0,0],q:-.1},{n:[0,1,0],q:0},{n:[0,0,1],q:.2},{n:[-1,0,0],q:0}],faces:[[0,1,2,3]]})})}
@@ -107,5 +107,50 @@ function createWorld(store=new Map()){
  // A fresh VM is a full page reload; only storage is carried between pages.
  const reloaded=createWorld(store);await reloaded.open(first);assert.equal(reloaded.active('spheres'),true,'A stored gallery preference must survive a page reload');assert.equal(reloaded.cells().length,2);
  await reloaded.click('husimi');reloaded.window.SubspaceViewer.close();await reloaded.open(second);assert.equal(reloaded.active('husimi'),true,'Explicitly switching away from the gallery must also persist');assert.equal(reloaded.cells().length,0);assert.equal(reloaded.ui('spheres').hidden,false);
- console.log('PASS: permanent gallery access, every nonzero multipole, clickable rank enlargement, distinct active states, subspace/page-reload persistence, individual/nested access and listener cleanup.');
+ // The Operator Majorana entry is an overview of every nonzero rank,
+ // including first use on N=20; individual selection remains an explicit choice.
+ const twenty=fixture('selection-fixture-n20',20,[4,6,8,10,12,14,16,18,20]);
+ const operatorStore=new Map(),operatorWorld=createWorld(operatorStore);
+ const assertAllNested=(w,f,context)=>{
+  assert.equal(w.ui('rank').value,'all',context+': all ranks must be selected');
+  assert.equal(w.ui('separate').checked,false,context+': the Operator overview must remain nested');
+  assert.equal(w.active('operator'),true,context+': Operator button must be active');
+  assert.equal(w.active('spheres'),false,context+': separate gallery must remain distinct');
+  assert.equal(w.cells().length,0,context+': overview must not be separate cards');
+  assert.ok(w.ui('canvas').getAttribute('aria-label').includes('All nonzero ranks'),context+': canvas must announce the complete overview');
+  for(const rank of f.active)assert.ok(w.ui('readout').innerHTML.includes('\\ell='+rank+','),context+': missing nonzero rank '+rank);
+ };
+ await operatorWorld.open(twenty);assert.equal(operatorWorld.active('husimi'),true);
+ await operatorWorld.click('operator');assertAllNested(operatorWorld,twenty,'First Operator click at N=20');
+ await operatorWorld.choose(8);assert.equal(operatorWorld.ui('rank').value,'8');assert.equal(operatorWorld.active('operator'),true);assert.equal(operatorWorld.ui('separate').checked,false,'Individual multipole selection must still work');
+ await operatorWorld.click('operator');assertAllNested(operatorWorld,twenty,'Returning to the Operator tab after an individual rank');
+ await operatorWorld.choose(6);operatorWorld.window.SubspaceViewer.close();
+ await operatorWorld.open(second);assertAllNested(operatorWorld,second,'Reopening with the saved Operator preference');
+ assert.equal(operatorStore.get('ac-subspace-representation'),'operator');
+ const operatorReload=createWorld(operatorStore);await operatorReload.open(twenty);assertAllNested(operatorReload,twenty,'Reloading the page with the saved Operator preference');
+ operatorWorld.window.SubspaceViewer.close();operatorReload.window.SubspaceViewer.close();
+ // Wigner entry uses the same canonical physical-axis alignment as Reset,
+ // even after another representation has been rotated by the user.
+ const tilted=[1,2,3].map(x=>x/Math.sqrt(14));
+ const orientation=createWorld(new Map(),[{axis:tilted,order:4}]);await orientation.open(first);
+ orientation.ui('coordinate').checked=true;orientation.ui('coordinate').dispatch('change');await orientation.settle();
+ await orientation.click('reset');
+ const coordinatePose=()=>orientation.ui('math-labels').children.filter(e=>/^<span>[xyz]<\/span>$/.test(e.innerHTML)).map(e=>e.style.cssText);
+ const alignedPose=coordinatePose();assert.equal(alignedPose.length,3);
+ await orientation.click('right');await orientation.click('up');
+ assert.notDeepEqual(coordinatePose(),alignedPose,'Husimi rotation fixture must move the camera');
+ await orientation.click('wigner');
+ assert.deepEqual(coordinatePose(),alignedPose,'Entering Wigner must restore the default highest-Cn-to-z alignment');
+ const cn=orientation.ui('math-labels').children.find(e=>e.innerHTML==='<span>C_{4}</span>');
+ assert.ok(cn,'A canonical symmetry-axis label is required');
+ const centerX=Number(cn.style.cssText.match(/left:([\d.-]+)px/)[1]);assert.ok(Math.abs(centerX-243)<1e-8,'The aligned Cn axis must project vertically through the view center');
+ await orientation.click('right');const manualWignerPose=coordinatePose();assert.notDeepEqual(manualWignerPose,alignedPose);
+ orientation.ui('shape').value='radial';orientation.ui('shape').dispatch('change');await orientation.settle();
+ assert.deepEqual(coordinatePose(),manualWignerPose,'Changing Wigner display shape must preserve manual rotation');
+ orientation.ui('contours').checked=false;orientation.ui('contours').dispatch('change');await orientation.settle();
+ assert.deepEqual(coordinatePose(),manualWignerPose,'Toggling Wigner contours must preserve manual rotation');
+ await orientation.click('husimi');await orientation.click('left');await orientation.click('wigner');
+ assert.deepEqual(coordinatePose(),alignedPose,'Reentering Wigner must align its axis again');
+ orientation.window.SubspaceViewer.close();
+ console.log('PASS: permanent gallery access, every nonzero multipole, clickable rank enlargement, distinct active states, subspace/page-reload persistence, all-rank Operator defaults, individual/nested access, listener cleanup, and default Wigner alignment without disturbing manual rotations.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
