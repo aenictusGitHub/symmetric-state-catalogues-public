@@ -56,3 +56,9 @@ body.sv-open{overflow:hidden}
 @media(max-width:760px){.sv-workspace{grid-template-columns:1fr;gap:15px}.sv-canvas{height:clamp(300px,45dvh,430px)}.sv-controls{flex-direction:row;flex-wrap:wrap;gap:10px 16px;align-items:center}.sv-readout{margin-top:12px}.sv-color-ramp{width:145px}.sv-multipole-bar{max-width:430px}}
 @media(max-width:480px){.sv-dialog{padding:18px 15px;width:calc(100vw - 14px);max-height:calc(100dvh - 14px);border-radius:8px}.sv-heading h2{font-size:23px}.sv-label{font-size:12px}.sv-definition{font-size:12px}.sv-canvas{height:310px}.sv-controls{gap:9px 12px}.sv-controls button,.sv-controls select{font-size:11px}.sv-frame-help{font-size:9px}}
 @media print{.sv-dialog,.view-subspace-button{display:none!important}}
+
+/* KaTeX labels share the export's mathematical notation. */
+.sv-math-labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.sv-math-label{position:absolute;display:block;line-height:1;white-space:nowrap}
+.sv-math-label .katex{font-size:1em}
+.sv-rank-badge{padding:5px 8px;background:#faf8f1e8;border:1px solid #ded5e3;border-radius:5px;margin-left:-8px}

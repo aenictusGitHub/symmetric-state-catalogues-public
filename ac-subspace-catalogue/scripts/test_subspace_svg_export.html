@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Whole-subspace SVG export checks</title>
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script src="../vendor/katex/katex.min.js"></script>
+<script src="../../sector-length-sets/data/export-fonts.js"></script>
+<script src="../subspace-svg-export.js"></script>
+<style>body{font:16px Georgia,serif;margin:30px;color:#243b34}pre{white-space:pre-wrap}#preview{max-width:1000px}#preview>object{display:block;width:100%;border:1px solid #d7d8ce;}</style>
+<h1>Whole-subspace SVG export checks</h1><pre id="result">Running…</pre><div id="preview"></div>
+<script>
+'use strict';
+(async()=>{
+ await document.fonts.ready;
+ const assert=(condition,message)=>{if(!condition)throw new Error(message);};
+ const view='<svg xmlns="http://www.w3.org/2000/svg" width="640" height="600" viewBox="0 0 640 600"><title>View</title><circle cx="320" cy="300" r="210" fill="#e4dced"/><text x="24" y="32">Operator view</text></svg>';
+ const exact=String.raw`\ell=8,\quad w_\ell=\sqrt{\frac{1365}{13376}}`;
+ const options={title:'Operator Majorana',subtitle:'N = 13 · d = 2',formulaRows:[{tex:exact}],symmetryRows:[{tex:String.raw`C_4:\;3\text{ axes}`,color:'#a45635'},{tex:String.raw`C_3:\;4\text{ axes}`,color:'#82609b'}],notes:['Highest-order axis aligned with z.']};
+ const parse=svg=>new DOMParser().parseFromString(svg,'image/svg+xml');
+ const exported=SubspaceSvgExport.compose(view,options),doc=parse(exported);
+ assert(!doc.querySelector('parsererror'),'Invalid XML');
+ assert(doc.querySelector('foreignObject .katex'),'Exact math missing');
+ assert([...doc.querySelectorAll('[data-tex]')].some(e=>e.getAttribute('data-tex')===exact),'Exact expression changed');
+ assert(exported.includes('data:font/'),'Fonts were not embedded');
+ assert(!doc.querySelector('image'),'Raster image in vector export');
+ assert(!doc.querySelector('script'),'Script in SVG');
+ assert(doc.querySelector('[data-layer="view"]').getAttribute('overflow')==='hidden','Plot must clip to original bounds');
+ assert(Number(doc.documentElement.getAttribute('height'))>=600,'Plot was cropped');
+ const scale=SubspaceSvgExport.compose(view,{title:'Husimi function',colorScale:{label:'Q_V',stops:[{t:0,rgb:[68,1,84]},{t:1,rgb:[253,231,37]}],min:'0.0552991',max:'0.0861388',note:'Eight equally spaced contours.'},symmetryRows:options.symmetryRows});
+ const scaleDoc=parse(scale);assert(!scaleDoc.querySelector('parsererror'),'Invalid scale SVG');
+ assert(scaleDoc.querySelectorAll('linearGradient stop').length===2,'Color gradient missing');
+ assert(scaleDoc.documentElement.textContent.includes('0.0552991')&&scaleDoc.documentElement.textContent.includes('0.0861388'),'Color range missing');
+ const many=SubspaceSvgExport.compose(view,{title:'All ranks',formulaRows:Array.from({length:42},(_,i)=>({tex:String.raw`\ell=${i+1},\quad w_\ell=\sqrt{\frac{1234567}{9876543}}`}))});
+ const manyDoc=parse(many);assert(Number(manyDoc.documentElement.getAttribute('height'))>1200,'Long legends must extend export height');
+ const totalHeight=Number(manyDoc.documentElement.getAttribute('height'));
+ for(const box of manyDoc.querySelectorAll('foreignObject'))assert(Number(box.getAttribute('y'))+Number(box.getAttribute('height'))<=totalHeight,'Legend clipped');
+ const label=SubspaceSvgExport.mathLabel('x',100,120,14,'#62655f','middle'),labelDoc=parse('<svg xmlns="http://www.w3.org/2000/svg">'+label+'</svg>');
+ assert(!labelDoc.querySelector('parsererror')&&labelDoc.querySelector('[data-tex="x"]'),'Coordinate math label missing');
+ assert(!doc.querySelector('.katex-error')&&!scaleDoc.querySelector('.katex-error')&&!manyDoc.querySelector('.katex-error'),'LaTeX rendering error');
+ document.getElementById('result').textContent='PASS: exact math, embedded fonts, native color scale, symmetry legends, original plot clipping, growing all-rank layout and math coordinates.';
+ const preview=document.createElement('object');preview.type='image/svg+xml';preview.setAttribute('aria-label','Self-contained SVG export preview');const viewBox=doc.documentElement.getAttribute('viewBox').split(/\s+/).map(Number);preview.style.aspectRatio=viewBox[2]+'/'+viewBox[3];preview.data=URL.createObjectURL(new Blob([exported],{type:'image/svg+xml'}));document.getElementById('preview').replaceChildren(preview);
+})().catch(error=>{document.getElementById('result').textContent='FAIL: '+error.message;console.error(error);});
+</script></html>
