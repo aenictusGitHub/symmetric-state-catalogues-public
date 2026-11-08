@@ -104,6 +104,8 @@
     setSelected(state){
       if(!this.selection)return;
       this.selection.position.copy(v3(this.map(state.sectors)));this.selection.visible=false;this.selectedWorld=this.map(state.sectors);this.focusedStateId=state.id;
+      this.markers=this.markers.filter(m=>m.kind!=='selected-point');
+      if(state.interactivePoint)this.markers.push({world:this.selectedWorld,radius:4.6,fill:'#7946b0',stroke:'#4d2676',kind:'selected-point'});
       for(const l of this.labels.filter(l=>l.focusOnly))l.el.remove();this.labels=this.labels.filter(l=>!l.focusOnly);
       if(state.id&&!this.namedWorld.some(p=>p.aliases.some(s=>s.id===state.id)))this.addLabel(AtlasMath.state(state.id,state.mathLabel||state.label||state.family),this.selectedWorld,'plot-label',{avoid:true,named:true,focusOnly:true,stateIds:[state.id]});
       this.updateLabelVisibility();this.render();
@@ -111,8 +113,20 @@
     render(){if(this.selection)this.selection.quaternion.copy(this.camera.quaternion);if(this.namedWorld){this.namedProjections=this.namedWorld.map(p=>this.project(p.world)).concat((this.grayPoints||[]).map(p=>this.project(p.world)));for(const p of this.namedWorld){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#7946b0';p.marker.stroke=rear?'#8c72a4':'#4d2676';p.label&&(p.label.el.style.opacity=rear?'.65':'1');}for(const p of this.allPoints){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#8854ba';p.marker.stroke=rear?'#8c72a4':'#64368e';}for(const p of this.grayPoints){const rear=this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#bec1c3':'#989b9f';p.marker.stroke=rear?'#a0a4a8':'#686c70';}this.projected=this.allPoints.map(p=>({...this.project(p.world),point:p}));}super.render();}
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
+    triangleCoordinates(x,y){
+      if(this.n!==4)return null;
+      this.raycaster.setFromCamera(new T.Vector2(2*x/this.width-1,1-2*y/this.height),this.camera);
+      const p=this.raycaster.ray.intersectPlane(new T.Plane(new T.Vector3(0,0,1),0),new T.Vector3());
+      if(!p)return null;
+      const sx=(p.x/2.65+.5)*4,sy=(p.y/2+.5)*4+2,tol=1e-10;
+      if(sx < -tol || sx > 4+tol || sy < sx+2-tol || sy > 6+tol)return null;
+      const a=Math.max(0,Math.min(4,sx));return [a,Math.max(a+2,Math.min(6,sy))];
+    }
     pick(event,select){if(!this.data)return;const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top;let best=null,dist=13*13;for(let i=0;i<this.namedWorld.length;i++){const p=this.namedProjections[i],d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=this.namedWorld[i].state;}}if(this.projected.length){for(const p of this.projected){const d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=p.point.state;}}}if(!best){for(const p of this.grayPoints||[]){const q=this.project(p.world),d=(q.x-x)**2+(q.y-y)**2;if(d<dist){dist=d;best=p.state;}}}
-      this.canvas.style.cursor=best?'pointer':this.rotatable?'grab':'default';(select?this.selectCallback:this.hoverCallback)(best,{x,y});}
+      const coordinates=best?null:this.triangleCoordinates(x,y);
+      this.canvas.style.cursor=best||coordinates?'pointer':this.rotatable?'grab':'default';
+      if(select&&coordinates)this.coordinateCallback?.(coordinates);
+      else (select?this.selectCallback:this.hoverCallback)(best,{x,y});}
   }
   // Keep polygon facet boundaries separate from the triangulation used for fill.
   function hullTopology(points){

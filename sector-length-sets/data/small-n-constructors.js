@@ -25,23 +25,17 @@
     x = clamp(x, 0, 4);
     y = clamp(y, x + 2, 6);
     const Y = 3 - y / 2;
-    let u, v;
-    if (Y < 1e-12) {
-      u = 1;
-      v = Math.sqrt(Math.max(0, 1 - x / 4));
-    } else {
-      u = (x + Y * Math.sqrt(Math.max(0, 4 - x - 2 * Y))) / (x + 2 * Y);
-      v = 1 - x * (1 - u) / (Y * (1 + u));
-    }
-    u = clamp(u, 0, 1);
-    v = clamp(v, -1, 1);
-    const A = Math.sqrt((1 + u) / 2), B = Math.sqrt((1 - u) / 2);
-    const cosPhi = Math.sqrt(Math.max(0, 1 - v * v));
+    // Rationalizing the inverse removes 0/0 at GHZ and cancellation near y=6.
+    const t = Math.sqrt(Math.max(0, y - x - 2));
+    const B2 = Y / (2 * (2 + t));
+    const A = Math.sqrt(1 - B2), B = Math.sqrt(B2);
+    const q = clamp(x / (4 + 2 * t - Y), 0, 1), v = 1 - q;
+    const cosPhi = Math.sqrt(q * (2 - q));
     const cosHalfPhi = Math.sqrt((1 + cosPhi) / 2);
     const sinHalfPhi = v / (2 * cosHalfPhi);
     const c = [[A * cosHalfPhi, 0], [0, 0], [0, B], [0, 0], [A * sinHalfPhi, 0]];
     return record(c, [x, y, 12 + x - 2 * y, 3 - 2 * x + y], 'Four-qubit exact-set state',
-      { S1: x, S2: y, theta: Math.acos(u), phi: Math.asin(v) }, 'PRA 113, 012415 (2026), Eqs.(47)–(50)');
+      { S1: x, S2: y, theta: 2 * Math.atan2(B, A), phi: Math.atan2(v, cosPhi) }, 'PRA 113, 012415 (2026), Eqs.(47)–(50)');
   }
   function n5Sectors(x, y) { return [x, y, 10 + 2 * x - y, 15 - y, 6 - 3 * x + y]; }
   function n5U(p) {
