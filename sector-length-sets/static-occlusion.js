@@ -84,6 +84,40 @@
         buildMilliseconds: (typeof performance === 'object' ? performance.now() : Date.now()) - started};
     }
 
+    /** Closest visible skin triangle, including its original source and face.
+     * Gray triangles participate in depth testing exactly like violet ones.
+     */
+    closestHit(ray, maxDistance = Infinity) {
+      if (!this.nodes.length || !(maxDistance > 0)) return null;
+      const {x: ox, y: oy, z: oz} = ray.origin, {x: dx, y: dy, z: dz} = ray.direction;
+      const length = Math.hypot(dx, dy, dz);
+      if (!length || ![ox, oy, oz, dx, dy, dz].every(Number.isFinite)) return null;
+      let distance = maxDistance, result = null;
+      const stack = this._stack; stack.length = 0; stack.push(0);
+      while (stack.length) {
+        const node = this.nodes[stack.pop()];
+        if (entry(node, ox, oy, oz, dx, dy, dz, distance / length) === Infinity) continue;
+        if (node.left >= 0) {
+          const left = entry(this.nodes[node.left], ox, oy, oz, dx, dy, dz, distance / length);
+          const right = entry(this.nodes[node.right], ox, oy, oz, dx, dy, dz, distance / length);
+          if (left <= right) { if (right !== Infinity) stack.push(node.right); if (left !== Infinity) stack.push(node.left); }
+          else { if (left !== Infinity) stack.push(node.left); if (right !== Infinity) stack.push(node.right); }
+          continue;
+        }
+        for (let i = node.start; i < node.end; i++) {
+          const id = this.ids[i], source = this.sources[id], array = this.arrays[source], offset = this.offsets[id];
+          this._a.fromArray(array, offset); this._b.fromArray(array, offset + 3); this._c.fromArray(array, offset + 6);
+          if (!ray.intersectTriangle(this._a, this._b, this._c, false, this._hit)) continue;
+          const found = this._hit.distanceTo(ray.origin);
+          if (found < distance) {
+            distance = found;
+            result = {source, faceIndex: offset / 9, distance, point: this._hit.clone()};
+          }
+        }
+      }
+      return result;
+    }
+
     /** A hit at the ray origin is counted, as in THREE.Ray.intersectTriangle.
      * maxDistance is a world-space distance, even for a non-unit ray direction.
      */

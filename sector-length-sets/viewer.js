@@ -91,7 +91,7 @@
         for(const j of patch.triangles[i]){pos.push(...mapped[j]);col.push(c.r,c.g,c.b);normal.push(...normals[j]);}
       }
       const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(pos,3));g.setAttribute('color',new T.Float32BufferAttribute(col,3));g.setAttribute('normal',new T.Float32BufferAttribute(normal,3));
-      const mesh=new T.Mesh(g,new T.MeshLambertMaterial({vertexColors:true,side:T.DoubleSide,polygonOffset:true,polygonOffsetFactor:1,polygonOffsetUnits:1}));mesh.userData.kind=patch.kind;this.surface.add(mesh);
+      const mesh=new T.Mesh(g,new T.MeshLambertMaterial({vertexColors:true,side:T.DoubleSide,polygonOffset:true,polygonOffsetFactor:1,polygonOffsetUnits:1}));mesh.userData.kind=patch.kind;mesh.userData.patch=patch;this.surface.add(mesh);
     }
     drawAxes(){if(this.axisGroup){this.content.remove(this.axisGroup);disposeGroup(this.axisGroup);}this.axisGroup=new T.Group();this.content.add(this.axisGroup);const add=(p,c=colors.grid)=>this.axisGroup.add(line(p,c));if(this.n===6){for(const a of [0,1,2])for(const b of [-1,1])for(const c of [-1,1]){const p=[0,0,0],q=[0,0,0];p[a]=-1.04;q[a]=1.04;p[(a+1)%3]=q[(a+1)%3]=b*1.04;p[(a+2)%3]=q[(a+2)%3]=c*1.04;add([p,q]);}const axes=[{a:0,values:[0,2,4,6,8],limits:[-1,8],name:'S₁',point:v=>[v,-1.04,1.04]},{a:2,values:[0,4,8,12,16],limits:[-1.5,16],name:'S₂',point:v=>[-1.04,-1.04,v]},{a:1,values:[0,8,16,22],limits:[-1,22],name:'S₃',point:v=>[-1.04,v,-1.04]}];for(const ax of axes){const [lo,hi]=ax.limits;for(const val of ax.values){const p=ax.point(2*(val-lo)/(hi-lo)-1);this.addLabel(String(val),p,'plot-label axis-tick',{offset:ax.a===1?[-14,0]:[0,14]});}const p=ax.point(1.25);this.addLabel(ax.name,p,'plot-label axis-label',{offset:[10,0]});}}else{const xlo=this.ranges[0][0],xhi=this.ranges[0][1],ylo=this.ranges[1][0],yhi=this.ranges[1][1];if(this.dimension===2){for(let x=xlo;x<=xhi;x++){const p=this.map([x,ylo]),q=this.map([x,yhi]);p[2]=q[2]=-.03;add([p,q]);this.addLabel(String(x),p,'plot-label axis-tick',{offset:[0,17]});}const step=this.n===5?2:1;for(let y=ylo;y<=yhi;y+=step){const p=this.map([xlo,y]),q=this.map([xhi,y]);p[2]=q[2]=-.03;add([p,q]);this.addLabel(String(y),p,'plot-label axis-tick',{offset:[-18,0]});}this.addLabel('S₂',[-1.48,1.15,0],'plot-label axis-label');}else{add([[-1.325,0,0],[1.325,0,0]],colors.edge);for(let x=xlo;x<=xhi;x++){const p=this.map([x]);this.addLabel(String(x),p,'plot-label axis-tick',{offset:[0,25]});}}this.addLabel('S₁',[1.52,this.dimension===2?-1:0,0],'plot-label axis-label');}}
     updateLabelVisibility(){
@@ -110,7 +110,7 @@
       if(state.id&&!this.namedWorld.some(p=>p.aliases.some(s=>s.id===state.id)))this.addLabel(AtlasMath.state(state.id,state.mathLabel||state.label||state.family),this.selectedWorld,'plot-label',{avoid:true,named:true,focusOnly:true,stateIds:[state.id]});
       this.updateLabelVisibility();this.render();
     }
-    render(){if(this.selection)this.selection.quaternion.copy(this.camera.quaternion);if(this.namedWorld){this.namedProjections=this.namedWorld.map(p=>this.project(p.world)).concat((this.grayPoints||[]).map(p=>this.project(p.world)));for(const p of this.namedWorld){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#7946b0';p.marker.stroke=rear?'#8c72a4':'#4d2676';p.label&&(p.label.el.style.opacity=rear?'.65':'1');}for(const p of this.allPoints){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#8854ba';p.marker.stroke=rear?'#8c72a4':'#64368e';}for(const p of this.grayPoints){const rear=this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#bec1c3':'#989b9f';p.marker.stroke=rear?'#a0a4a8':'#686c70';}this.projected=this.allPoints.map(p=>({...this.project(p.world),point:p}));}super.render();}
+    render(){if(this.selection)this.selection.quaternion.copy(this.camera.quaternion);if(this.namedWorld){this.namedProjections=this.namedWorld.map(p=>this.project(p.world)).concat((this.grayPoints||[]).map(p=>this.project(p.world)));for(const p of this.namedWorld){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#7946b0';p.marker.stroke=rear?'#8c72a4':'#4d2676';p.label&&(p.label.el.style.opacity=rear?'.65':'1');}for(const p of this.allPoints){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#8854ba';p.marker.stroke=rear?'#8c72a4':'#64368e';}for(const p of this.grayPoints){const rear=this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#bec1c3':'#989b9f';p.marker.stroke=rear?'#a0a4a8':'#686c70';}for(const marker of this.markers.filter(m=>m.kind==='selected-point')){const rear=this.n===6&&this.occluded(marker.world);marker.rear=rear;marker.fill=rear?'#b49acb':'#7946b0';marker.stroke=rear?'#8c72a4':'#4d2676';this.labels.filter(l=>l.focusOnly).forEach(l=>l.el.style.opacity=rear?'.65':'1');}this.projected=this.allPoints.map(p=>({...this.project(p.world),point:p}));}super.render();}
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
     regionCoordinates(x,y){
@@ -127,10 +127,31 @@
       return [a,Math.max(bottom,Math.min(ymax,sy))];
     }
     triangleCoordinates(x,y){return this.n===4?this.regionCoordinates(x,y):null;}
+    attainedSurfaceAt(x,y){
+      if(this.n!==6||!this.surface.visible)return null;
+      this.raycaster.setFromCamera(new T.Vector2(2*x/this.width-1,1-2*y/this.height),this.camera);
+      let hit,mesh;
+      if(this.occlusionIndex?.closestHit){hit=this.occlusionIndex.closestHit(this.raycaster.ray);mesh=hit&&this.surface.children[hit.source];}
+      else{hit=this.raycaster.intersectObjects(this.surface.children,false)[0];mesh=hit?.object;}
+      if(!hit||!mesh)return null;
+      const patch=mesh.userData.patch,face=hit.faceIndex;
+      // The first hit occludes all rear faces, including when it is gray.
+      if(!patch?.attained[face])return null;
+      const attr=mesh.geometry.getAttribute('position'),offset=face*3;
+      const a=new T.Vector3().fromBufferAttribute(attr,offset),b=new T.Vector3().fromBufferAttribute(attr,offset+1),c=new T.Vector3().fromBufferAttribute(attr,offset+2);
+      const weights=T.Triangle.getBarycoord(hit.point,a,b,c,new T.Vector3());
+      if(!weights)return null;
+      const indices=patch.triangles[face],w=[weights.x,weights.y,weights.z];
+      const point=[0,1,2].map(k=>indices.reduce((sum,j,i)=>sum+w[i]*patch.positions[j][k],0));
+      const anchorPoint=[0,1,2].map(k=>indices.reduce((sum,j)=>sum+patch.positions[j][k],0)/3);
+      return {point,anchorPoint,surface:patch.surface,kind:patch.kind,faceIndex:face};
+    }
     pick(event,select){if(!this.data)return;const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top;let best=null,dist=13*13;for(let i=0;i<this.namedWorld.length;i++){const p=this.namedProjections[i],d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=this.namedWorld[i].state;}}if(this.projected.length){for(const p of this.projected){const d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=p.point.state;}}}if(!best){for(const p of this.grayPoints||[]){const q=this.project(p.world),d=(q.x-x)**2+(q.y-y)**2;if(d<dist){dist=d;best=p.state;}}}
       const coordinates=best?null:this.regionCoordinates(x,y);
-      this.canvas.style.cursor=best||coordinates?'pointer':this.rotatable?'grab':'default';
-      if(select&&coordinates)this.coordinateCallback?.(coordinates);
+      const surface=best||coordinates?null:this.attainedSurfaceAt(x,y);
+      this.canvas.style.cursor=best||coordinates||surface?'pointer':this.rotatable?'grab':'default';
+      if(select&&surface)this.surfaceCallback?.(surface.point,surface);
+      else if(select&&coordinates)this.coordinateCallback?.(coordinates);
       else (select?this.selectCallback:this.hoverCallback)(best,{x,y});}
   }
   // Keep polygon facet boundaries separate from the triangulation used for fill.
