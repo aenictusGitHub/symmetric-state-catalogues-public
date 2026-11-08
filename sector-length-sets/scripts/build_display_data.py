@@ -1,5 +1,7 @@
 """Keep research data intact; export lightweight, cloud-free browser data."""
 from pathlib import Path
+from fractions import Fraction
+from math import sqrt
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +19,54 @@ def write_global(filename, name, value):
 
 small = json.loads((DATA / "small-n.json").read_text())
 display = {k: {a: b for a, b in v.items() if a != "cloud"} for k, v in small.items()}
+
+# Two intermediate generalized GHZ states on the exact N=3 interval.
+# phi = pi/8 and pi/4 give distinct points away from the named W state.
+n3_curve = next(c for c in small["3"]["curves"] if c["id"] == "n3-entire-interval")
+n3_choices = [
+    (50, [r"\frac{3(2+\sqrt2)}4", "3", r"\frac{10-3\sqrt2}4"],
+     [3 * (2 + sqrt(2)) / 4, 3, (10 - 3 * sqrt(2)) / 4]),
+    (100, ["3/2", "3", "5/2"], [1.5, 3, 2.5]),
+]
+n3_samples = []
+for index, values, numeric_values in n3_choices:
+    point = n3_curve["points"][index]
+    assert max(abs(v - x) for v, x in zip(numeric_values, point["sectors"])) < 1e-10
+    n3_samples.append({**point, "family": n3_curve["label"],
+                       "curveId": n3_curve["id"],
+                       "label": "Generalized GHZ interval state",
+                       "mathLabel": r"$|\mathrm{GHZ}(3,\phi)\rangle$",
+                       "status": "attained",
+                       "source": "Analytically attained three-qubit interval",
+                       "exactSectorValues": {"values": values}})
+assert len(n3_samples) == 2
+display["3"]["boundarySamples"] = n3_samples
+
+# Two existing, analytically attained witnesses on each edge of the N=4 triangle.
+# These exact tuples follow the generator grid and the N=4 purity identities;
+# they are not inferred by fitting rounded numerical sector values.
+n4_choices = {
+    "n4-lower": [(50, ["4/3", "10/3", "20/3", "11/3"]),
+                 (100, ["8/3", "14/3", "16/3", "7/3"])],
+    "n4-left": [(40, ["0", "10/3", "16/3", "19/3"]),
+                (80, ["0", "14/3", "8/3", "23/3"])],
+    "n4-top": [(50, ["3", "6", "3", "3"]),
+               (100, ["1", "6", "1", "7"])],
+}
+n4_samples = []
+for curve in small["4"]["curves"]:
+    for index, values in n4_choices.get(curve["id"], []):
+        point = curve["points"][index]
+        assert max(abs(float(Fraction(v)) - x)
+                   for v, x in zip(values, point["sectors"])) < 1e-10
+        n4_samples.append({**point, "family": curve["label"],
+                           "curveId": curve["id"],
+                           "label": curve["label"] + " state",
+                           "status": "attained",
+                           "source": "Analytically attained boundary: " + curve["label"],
+                           "exactSectorValues": {"values": values}})
+assert len(n4_samples) == 6
+display["4"]["boundarySamples"] = n4_samples
 write_global("small-n-display.js", "SECTOR_SMALL_DATA", display)
 n6 = json.loads((DATA / "n6.json").read_text())
 write_global("n6-display.js", "SECTOR_N6_DATA", {k: v for k, v in n6.items() if k != "witnesses"})
@@ -35,8 +85,10 @@ for curve in n5["curves"]:
             chosen.append(p)
 ids = {p["id"] for d in small.values() for p in d["knownStates"]}
 ids.update(p["id"] for p in chosen)
+ids.update(p["id"] for p in n3_samples)
+ids.update(p["id"] for p in n4_samples)
 exact = json.loads((DATA / "exact-small-n.json").read_text())
 write_global("exact-small-n-display.js", "EXACT_SMALL_EXPRESSIONS",
              {k: v for k, v in exact["states"].items() if k in ids})
 assert len(chosen) == 41
-print("Browser data: no clouds; 41 explicit N5 boundary samples; exact formulas retained.")
+print("Browser data: no clouds; 2 N3 interval samples, 6 N4 edge samples and 41 N5 boundary samples; exact formulas retained.")
