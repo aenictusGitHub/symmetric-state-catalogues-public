@@ -400,7 +400,7 @@
         context.restore();
       }
       const axisLabels=[];
-      function axisLine(vector,label,color,unoriented=true){
+      function axisLine(vector,label,color,unoriented=true,order=null){
         // Keep the saved end of an axis: changing its sign with the viewing
         // depth makes the label jump to the opposite end during rotation.
         const direction=unoriented?(axisDirections.get(vector)||vector):vector;
@@ -428,12 +428,12 @@
         // A continuous screen-space offset stays readable near an end-on
         // axis without dividing by its almost-zero projected length.
         const padding=unoriented?12:28,offset=padding/(extent+padding);
-        axisLabels.push({label,color,x:Math.max(24,Math.min(width-24,cx+dx*scale*(1+offset))),y:Math.max(13,Math.min(height-13,cy+dy*scale*(1+offset)-padding*offset))});
+        axisLabels.push({label,color,order,x:Math.max(24,Math.min(width-24,cx+dx*scale*(1+offset))),y:Math.max(13,Math.min(height-13,cy+dy*scale*(1+offset)-padding*offset))});
       }
       if(controls.axes?.checked)for(const [name,vector,color] of [['x',[1,0,0],'#a15435'],['y',[0,1,0],'#41776e'],['z',[0,0,1],'#76648a']])axisLine(vector,name,color,false);
       if(controls.symmetryToggle?controls.symmetryToggle.checked:Boolean(controls.symmetry?.axes?.length)){
         const order=controls.symmetryOrder?.value||'all';
-        for(const a of controls.symmetry.axes){const key=a.order==null?'continuous':String(a.order);if(order!=='all'&&order!==key)continue;const label=key==='continuous'?'C∞':'C'+key.replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[Number(n)]);axisLine(a.direction,label,symmetryColor(key));}
+        for(const a of controls.symmetry.axes){const key=a.order==null?'continuous':String(a.order);if(order!=='all'&&order!==key)continue;const label=key==='continuous'?'C∞':'C'+key.replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[Number(n)]);axisLine(a.direction,label,symmetryColor(key),true,key);}
         if(controls.symmetry.continuousFamilies?.length&&(order==='all'||order==='2')){
           const normal=controls.symmetry.axes.find(a=>a.order==null)?.direction;
           if(normal){
@@ -454,7 +454,7 @@
         context.beginPath();context.arc(p.x,p.y,nodeRadius,0,Math.PI*2);context.fill();context.stroke();context.shadowBlur=0;context.shadowOffsetY=0;context.setLineDash([]);
         if(labelled){const text=String(point.multiplicity),x=p.x+nodeRadius+5,y=p.y-nodeRadius-3;context.textAlign='left';context.textBaseline='middle';context.font='600 12px system-ui,-apple-system,sans-serif';context.lineJoin='round';context.lineWidth=2.5;context.strokeStyle='rgba(255,253,247,.85)';context.strokeText(text,x,y);context.fillStyle=front?'#703b20':'#744b33';context.fillText(text,x,y);}context.restore();
       }
-      for(const label of axisLabels){context.save();context.font='600 13px system-ui,-apple-system,sans-serif';context.textAlign='center';context.textBaseline='middle';context.lineJoin='round';context.lineWidth=3;context.strokeStyle='rgba(255,253,247,.82)';context.strokeText(label.label,label.x,label.y);context.fillStyle=label.color;context.fillText(label.label,label.x,label.y);context.restore();}
+      for(const label of axisLabels){if(label.order!=null&&window.MajoranaLatex){window.MajoranaLatex.draw(context,label.order,label.x,label.y,16,label.color);continue;}context.save();context.font='600 13px system-ui,-apple-system,sans-serif';context.textAlign='center';context.textBaseline='middle';context.lineJoin='round';context.lineWidth=3;context.strokeStyle='rgba(255,253,247,.82)';context.strokeText(label.label,label.x,label.y);context.fillStyle=label.color;context.fillText(label.label,label.x,label.y);context.restore();}
       // Draw both markers on top of the translucent geometry. The cross
       // remains visible inside the diamond when their projections coincide.
       context.save();context.globalAlpha=1;context.shadowBlur=0;context.setLineDash([]);context.lineJoin='round';

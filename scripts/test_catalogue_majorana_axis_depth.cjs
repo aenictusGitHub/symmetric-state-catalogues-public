@@ -4,7 +4,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const root=path.resolve(__dirname,'..'),catalogues=['symmetric-sector-catalogue','anticoherent-state-catalogue','ac-subspace-catalogue'];
 const radius=180,cx=300,cy=225,width=600,height=450,near=(a,b,e=1e-9)=>assert.ok(Math.abs(a-b)<=e,`${a} != ${b}`);
 function sourceFor(name){
- const source=fs.readFileSync(path.join(root,name,'majorana-viewer.js'),'utf8'),start=source.indexOf('      function axisLine(vector,label,color,unoriented=true){'),end=source.indexOf('      if(controls.axes?.checked)',start);
+ const source=fs.readFileSync(path.join(root,name,'majorana-viewer.js'),'utf8'),start=source.indexOf('      function axisLine('),end=source.indexOf('      if(controls.axes?.checked)',start);
  assert.ok(start>=0&&end>start);return source.slice(start,end);
 }
 function draw(source,angle,{coordinate=false,context:provided}={}){
@@ -12,7 +12,7 @@ function draw(source,angle,{coordinate=false,context:provided}={}){
  const context=provided||{globalAlpha:1,lineDashOffset:0,dash:[],setLineDash(v){this.dash=v;},save(){stack.push({alpha:this.globalAlpha,dash:this.dash,offset:this.lineDashOffset});},restore(){const s=stack.pop();this.globalAlpha=s.alpha;this.dash=s.dash;this.lineDashOffset=s.offset;},beginPath(){current=[];},moveTo(x,y){current.push([x,y]);},lineTo(x,y){current.push([x,y]);},stroke(){if(current.length===2)strokes.push({points:current,alpha:this.globalAlpha,dash:this.dash.slice(),offset:this.lineDashOffset});},arc(x,y,r){markers.push({x,y,r,alpha:this.globalAlpha});}};
  const rotate=p=>({x:p.x,y:p.y*Math.cos(angle)-p.z*Math.sin(angle),z:p.y*Math.sin(angle)+p.z*Math.cos(angle)}),project=p=>({x:cx+radius*p.x,y:cy-radius*p.y,z:p.z});
  const fn=new Function('rotate','project','context','radius','cx','cy','width','height','axisLabels','axisDirections',source+';return axisLine;')(rotate,project,context,radius,cx,cy,width,height,labels,new Map());
- fn([0,0,1],coordinate?'z':'C₄','#a45635',!coordinate);return {labels,strokes,markers};
+ fn([0,0,1],coordinate?'z':'C₄','#a45635',!coordinate,coordinate?null:'4');assert.ok(labels.every(label=>label.order===(coordinate?null:'4')),'Math order travels with the unchanged axis geometry');return {labels,strokes,markers};
 }
 const report=[];
 for(const name of catalogues){

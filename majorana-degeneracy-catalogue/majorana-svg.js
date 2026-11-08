@@ -62,6 +62,10 @@
     }
     fillText(...args){this.text(...args,false);}
     strokeText(...args){this.text(...args,true);}
+    mathAxisLabel(order,x,y,size=16,color='#3f4241'){
+      if(!window.MajoranaLatex)throw new Error('The LaTeX axis renderer has not loaded.');
+      this.elements.push(`<g transform="matrix(${this.state.transform.map(number).join(' ')})" opacity="${number(this.state.globalAlpha)}">${window.MajoranaLatex.toSVG(order,x,y,size,color)}</g>`);
+    }
     toSVG(width,height,title,description){
       return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="${number(width)}" height="${number(height)}" viewBox="0 0 ${number(width)} ${number(height)}" role="img" aria-labelledby="title description"><title id="title">${xml(title)}</title><desc id="description">${xml(description)}</desc><defs>${this.defs.map(d=>typeof d==='function'?d():d).join('')}</defs>${this.elements.join('')}</svg>\n`;
     }
