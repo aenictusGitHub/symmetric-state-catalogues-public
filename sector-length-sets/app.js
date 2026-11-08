@@ -7,7 +7,7 @@
   const fmt=(v,d=6)=>Math.abs(v)<1e-10?'0':Math.abs(v-Math.round(v))<1e-9?String(Math.round(v)):Number(v.toFixed(d)).toString();
   const title=s=>s.label||((s.family||'Pure symmetric')+' state');
   function complex(c){const [r,i]=c;return Math.abs(i)<1e-10?fmt(r):Math.abs(r)<1e-10?(Math.abs(i-1)<1e-9?'i':Math.abs(i+1)<1e-9?'−i':fmt(i)+'i'):`${fmt(r)} ${i<0?'−':'+'} ${fmt(Math.abs(i))}i`;}
-  function formula(c){const terms=[];c.forEach((a,k)=>{if(Math.hypot(...a)<1e-9)return;let x=complex(a).replace(/−/g,'-');const one=Math.abs(a[0]-1)<1e-10&&Math.abs(a[1])<1e-10;terms.push((one?'':(Math.abs(a[0])>1e-9&&Math.abs(a[1])>1e-9?'('+x+')':x))+`\\,|D_{${n}}^{(${k})}\\rangle`);});return terms.map((t,i)=>'<span class="term">'+tex((i&&t[0]!=='-'?'+ ':'')+t)+'</span>').join('');}
+  function formula(c){const terms=[];c.forEach((a,k)=>{if(Math.hypot(...a)<1e-9)return;let x=complex(a).replace(/−/g,'-');const coefficient=x==='1'?'':x==='-1'?'-':(Math.abs(a[0])>1e-9&&Math.abs(a[1])>1e-9?'('+x+')':x);terms.push(coefficient+`\\,|D_{${n}}^{(${k})}\\rangle`);});return terms.map((t,i)=>'<span class="term">'+tex((i&&t[0]!=='-'?'+ ':'')+t)+'</span>').join('');}
   function parameterBlocks(source){
     const at=source.indexOf('\\begin{aligned}');
     if(at<0)return source.split(/,?\\qquad\s*|,\\quad\s*/);

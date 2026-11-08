@@ -15,12 +15,15 @@ paper=read('research/paper/findings.json');julia=read('research/acliege/pure-sta
 cache_path=ROOT/'research/geometry-cache.json';cache=json.loads(cache_path.read_text()) if cache_path.is_file() else {}
 
 def plain_math(tex):return '<span data-tex="'+html.escape(tex,quote=True)+'"></span>'
+def dicke_term(n,r,c):
+ coefficient=s.sympify(c);ket=r'|D_{'+str(n)+r'}^{('+str(r)+r')}\rangle'
+ if coefficient==1:return ket
+ if coefficient==-1:return '-'+ket
+ return '('+s.latex(coefficient)+')'+ket
+def join_state_terms(terms):
+ return ''.join(('' if i==0 or term.startswith('-') else '+')+term for i,term in enumerate(terms))
 def formula(n,cs):
- terms=[]
- for r,c in enumerate(cs):
-  if str(c)=='0':continue
-  tex=s.latex(s.sympify(c));terms.append('('+tex+r')|D_{'+str(n)+r'}^{('+str(r)+r')}\rangle')
- return '+'.join(terms)
+ return join_state_terms([dicke_term(n,r,c) for r,c in enumerate(cs) if str(c)!='0'])
 def ref(page,eq=None):return {'label':'PRA 111, 022435 (2025) · p. '+str(page)+((' · '+eq if eq.startswith('Figure') else ' · Eq. '+eq) if eq else ''),'url':'references/PRA111_022435(2025).pdf#page='+str(page)}
 def juliaref(st):return {'label':st.get('sourceFunction','ACLiege.jl')+' · line '+str(st.get('sourceLine',st.get('source',{}).get('line',''))),'url':'references/ACLiege.jl'}
 def reduced(c,n,t):
@@ -159,9 +162,10 @@ for st in sorted(molien['subspaces'],key=lambda st:(st['n'],-st['t'],-st['dimens
   # Keep each displayed line short while preserving the exact coefficient list.
   terms=[]
   for r,c in enumerate(source['exactCoefficients']):
-   if c!='0':terms.append('('+s.latex(s.sympify(c))+r')|D_{'+str(n)+r'}^{('+str(r)+r')}\rangle')
-  lines=['+'.join(terms[i:i+2]) for i in range(0,len(terms),2)]
-  dest['stateLatex']=r'\begin{aligned}|u_{'+str(index)+r'}\rangle&='+r'\\&\quad+'.join(lines)+r'\end{aligned}'
+   if c!='0':terms.append(dicke_term(n,r,c))
+  lines=[join_state_terms(terms[i:i+2]) for i in range(0,len(terms),2)]
+  wrapped=lines[0]+''.join(r'\\&\quad'+('' if line.startswith('-') else '+')+line for line in lines[1:])
+  dest['stateLatex']=r'\begin{aligned}|u_{'+str(index)+r'}\rangle&='+wrapped+r'\end{aligned}'
  molien_ids.add(st['id'])
 # Preserve the earlier Molien representatives when a new certified code improves them.
 n20_space=read('research/n20-t2/basis.json')
