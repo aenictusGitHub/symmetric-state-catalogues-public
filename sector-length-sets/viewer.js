@@ -29,6 +29,7 @@
       canvas.addEventListener('pointerleave',()=>{if(!this.drag)this.onLeave?.();});
       canvas.addEventListener('wheel',e=>{
         e.preventDefault();
+        if(this.n===6&&this.drag?.point)return;
         // Keep the pointed-at part of a sector set fixed while magnifying it.
         const rect=canvas.getBoundingClientRect(),ndc=new T.Vector3(2*(e.clientX-rect.left)/rect.width-1,1-2*(e.clientY-rect.top)/rect.height,0);
         const anchor=this.panAllowed?ndc.clone().unproject(this.camera):null;
@@ -164,35 +165,90 @@
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
     selectedPointAt(x,y){
-      if(![3,4,5].includes(this.n)||!this.selectedWorld||typeof this.pointDragCallback!=='function')return false;
-      const p=this.project(this.selectedWorld);return p.z>=-1&&p.z<=1&&Math.hypot(p.x-x,p.y-y)<=13;
+      if(![3,4,5,6].includes(this.n)||!this.selectedWorld)return false;
+      const callback=this.n===6?this.surfaceDragCallback:this.pointDragCallback;
+      if(typeof callback!=='function')return false;
+      const p=this.project(this.selectedWorld);
+      if(p.z < -1||p.z>1||Math.hypot(p.x-x,p.y-y)>13)return false;
+      if(this.n!==6)return true;
+      // A rear marker is still selectable, but cannot drag through the front
+      // body. At a visible selected point its own first face must be violet.
+      if(!this.surface?.visible||this.occluded(this.selectedWorld))return false;
+      const hit=this.attainedSurfaceAt(p.x,p.y);if(!hit)return false;
+      const separation=v3(this.map(hit.point)).distanceTo(v3(this.selectedWorld));
+      // This allowance is only for analytical-graph/triangle chord error;
+      // unlike the 13px grab target it must not grow when zooming out.
+      return separation<=.002;
     }
     beginPointDrag(event){
       const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top;
       if(!this.selectedPointAt(x,y))return null;
-      const p=this.project(this.selectedWorld),coordinates=this.regionCoordinates(p.x,p.y,{clampToSet:true});
+      const p=this.project(this.selectedWorld);
+      if(this.n===6){
+        const hit=this.attainedSurfaceAt(p.x,p.y);if(!hit)return null;
+        const [wx,wy,wz]=this.selectedWorld,coordinates=[4.5*(wx+1)-1,8.75*(wz+1)-1.5,11.5*(wy+1)-1];
+        return {n:6,offset:[p.x-x,p.y-y],initial:coordinates,lastCoordinates:coordinates.slice(),
+          initialMeta:hit,lastMeta:hit,acceptedScreen:[p.x,p.y],acceptedWorld:this.selectedWorld.slice(),
+          started:false,latest:null,frame:null};
+      }
+      const coordinates=this.regionCoordinates(p.x,p.y,{clampToSet:true});
       return coordinates?{n:this.n,offset:[p.x-x,p.y-y],initial:coordinates,lastCoordinates:coordinates.slice(),started:false,latest:null,frame:null}:null;
+    }
+    emitPointDrag(point,coordinates,phase,meta){
+      const callback=point.n===6?this.surfaceDragCallback:this.pointDragCallback;
+      return callback?.call(this,coordinates,{...meta,phase});
     }
     updatePointDrag(event,drag){
       const point=drag.point;
-      if(!point.started){point.started=true;this.pointDragCallback(point.initial.slice(),{phase:'start'});}
+      if(!point.started){point.started=true;this.emitPointDrag(point,point.initial.slice(),'start',point.initialMeta);}
       if(this.drag!==drag)return;
       point.latest={clientX:event.clientX,clientY:event.clientY};
       if(point.frame===null)point.frame=requestAnimationFrame(()=>{point.frame=null;if(this.drag===drag)this.flushPointDrag(drag);});
     }
+    traceSurfaceDrag(point,x,y){
+      // Preserve the latest valid connected screen path. A fast pointer move
+      // must not skip a gray stripe to land on an unrelated violet patch.
+      const start=point.acceptedScreen,end=[Math.max(0,Math.min(this.width,x)),Math.max(0,Math.min(this.height,y))];
+      const dx=end[0]-start[0],dy=end[1]-start[1],distance=Math.hypot(dx,dy);
+      if(distance<1e-8)return null;
+      const steps=Math.min(1024,Math.ceil(distance/2)),pixel=(this.camera.top-this.camera.bottom)/(this.camera.zoom*this.height);
+      let previous=point.acceptedWorld,previousScreen=start,last=null;
+      for(let i=1;i<=steps;i++){
+        const fraction=Math.min(1,2*i/distance),screen=[start[0]+fraction*dx,start[1]+fraction*dy];
+        const hit=this.attainedSurfaceAt(screen[0],screen[1]);if(!hit)break;
+        const world=this.map(hit.point),screenStep=Math.hypot(screen[0]-previousScreen[0],screen[1]-previousScreen[1]);
+        // Adjacent facets can meet at a crease. A large depth discontinuity
+        // instead exposes a different front sheet and ends this drag path.
+        if(v3(world).distanceTo(v3(previous))>Math.max(.025,12*pixel*Math.max(1,screenStep)))break;
+        last={hit,screen,world};previous=world;previousScreen=screen;
+      }
+      return last;
+    }
     flushPointDrag(drag){
       const point=drag.point,event=point.latest;point.latest=null;
       if(!event||point.n!==this.n)return;
-      const rect=this.canvas.getBoundingClientRect(),coordinates=this.regionCoordinates(event.clientX-rect.left+point.offset[0],event.clientY-rect.top+point.offset[1],{clampToSet:true});
-      if(coordinates){point.lastCoordinates=coordinates.slice();this.pointDragCallback(coordinates,{phase:'move'});}
+      const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left+point.offset[0],y=event.clientY-rect.top+point.offset[1];
+      if(point.n===6){
+        const result=this.traceSurfaceDrag(point,x,y);if(!result)return;
+        const coordinates=result.hit.point.slice();
+        // The app owns the physical inverse. A failed state reconstruction
+        // never advances this accepted position, even on a violet mesh cell.
+        if(this.emitPointDrag(point,coordinates,'move',result.hit)===true){
+          point.lastCoordinates=coordinates;point.lastMeta=result.hit;
+          point.acceptedScreen=result.screen;point.acceptedWorld=result.world;
+        }
+        return;
+      }
+      const coordinates=this.regionCoordinates(x,y,{clampToSet:true});
+      if(coordinates){point.lastCoordinates=coordinates.slice();this.emitPointDrag(point,coordinates,'move');}
     }
     finishPointDrag(event,drag,cancel){
       const point=drag.point;
       if(point.frame!==null){cancelAnimationFrame(point.frame);point.frame=null;}
-      if(cancel){point.latest=null;if(point.started)this.pointDragCallback(point.lastCoordinates.slice(),{phase:'cancel'});return;}
-      if(!point.started){point.started=true;this.pointDragCallback(point.initial.slice(),{phase:'start'});}
+      if(cancel){point.latest=null;if(point.started)this.emitPointDrag(point,point.lastCoordinates.slice(),'cancel',point.lastMeta);return;}
+      if(!point.started){point.started=true;this.emitPointDrag(point,point.initial.slice(),'start',point.initialMeta);}
       point.latest={clientX:event.clientX,clientY:event.clientY};this.flushPointDrag(drag);
-      this.pointDragCallback(point.lastCoordinates.slice(),{phase:'end'});
+      this.emitPointDrag(point,point.lastCoordinates.slice(),'end',point.lastMeta);
     }
     regionCoordinates(x,y,{clampToSet=false}={}){
       if(this.n!==3&&this.n!==4&&this.n!==5)return null;
