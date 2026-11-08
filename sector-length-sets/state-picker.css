@@ -11,5 +11,5 @@
 .state-picker-option{position:relative;display:block;min-height:38px;padding:8px 28px 8px 13px;line-height:1.7;cursor:pointer;overflow-wrap:anywhere;color:var(--ink)}
 .state-picker-option.is-active{background:#e6eeea;color:var(--green)}
 .state-picker-option[aria-selected=true]::after{content:"✓";position:absolute;right:11px;top:8px;color:var(--green)}
-.state-picker-group{padding:11px 13px 5px;margin-top:3px;border-top:1px solid var(--line);font-size:11px;font-weight:700;color:var(--muted)}
+.state-picker-group{padding:11px 13px 5px;margin-top:3px;border-top:1px solid var(--line);font-size:14px;font-weight:700;color:var(--muted)}
 @media(pointer:coarse){.state-picker-option{min-height:44px}.state-picker-trigger{min-height:44px}}

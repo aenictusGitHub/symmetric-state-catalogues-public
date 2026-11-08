@@ -41,3 +41,52 @@
 .notes .katex{font-size:1em}.notes .equation{overflow-x:auto;overflow-y:hidden;padding:12px 0;line-height:2.2}.notes .katex-display{overflow-x:auto;overflow-y:hidden;padding:.25em 0}.notes-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}.notes-table-scroll table{min-width:600px}
 
 .notes .intro .author-credit{font-size:14px;color:var(--green);margin-top:16px}.notes .intro .summary-download{font-size:13px;line-height:1.7;margin-top:9px}
+
+/* Readable supporting text, including the narrow-screen controls. */
+.set-status{font-size:16px;line-height:1.5;max-width:460px;text-wrap:balance}
+.intro>p:last-child{font-size:16px;line-height:1.6}
+.eyebrow{font-size:12px}
+.site-header nav,.wordmark span{font-size:14px}
+.n-tabs button{font-size:15px}
+.quiet-button,.plot-actions button,.view-presets button,
+.majorana-quick button,.state-actions button,.label-mode select,
+.symmetry-order-label select,.alignment-controls button{font-size:14px}
+.quiet-button,.majorana-quick button,.view-presets button,
+.alignment-controls button,.label-mode select,
+.symmetry-order-label select{min-height:36px}
+.plot-controls,.legend,.geometry-note,.interaction-note,
+.select-label,.selection-mode,.majorana-heading h3,.majorana-heading span,
+.sphere-controls,.sphere-key,.symmetry-controls,.symmetry-summary,
+.alignment-controls span,.verification,.basis-note,.family-control,
+.state-panel details,.analytical-details,.analytical-details summary,
+.reading-note>a,footer{font-size:14px}
+.state-evidence{font-size:15px;line-height:1.6}
+.state-panel summary{font-size:14px;line-height:1.6}
+#notification,.plot-tip,.error{font-size:14px}
+#coefficients th,#coefficients td{font-size:14px}
+#coefficients{overflow-x:auto}
+.sector-value{font-size:16px}
+.parameter-equation,.parameter-inline{font-size:15px}
+.parameter-inline{min-width:0;overflow-x:auto;overflow-y:hidden;padding:4px 0 8px}
+.reading-note{font-size:15px}
+.rotation-buttons button{font-size:16px;min-height:36px;min-width:30px}
+.plot-gesture{font-size:13px;line-height:1.5;left:12px;right:12px}
+.plot-label{font-size:15px}.axis-tick{font-size:13px}
+.axis-label{font-size:20px}.axis-symmetry-label{font-size:14px}
+.site-header,.explorer-bar,.panel-heading,.majorana-heading{flex-wrap:wrap}
+.explorer-bar{row-gap:12px}.n-tabs{flex-shrink:0}
+.panel-heading{align-items:flex-start;row-gap:8px}
+.panel-heading>div,.plot-actions{min-width:0;max-width:100%}
+.plot-actions{margin-left:auto}
+.majorana-heading h3{flex:1 1 140px;min-width:0}
+.majorana-quick{min-width:0;max-width:50%}
+.notes p,.notes li{font-size:16px}
+.notes{position:relative;overflow-x:clip}
+.notes code,.notes table{font-size:14px}
+.notes .intro .summary-download{font-size:14px}
+@media(max-width:760px){.set-status{flex-basis:100%;text-align:left;max-width:none}}
+@media(max-width:500px){
+ .set-status{font-size:15px}
+ .notes table{font-size:13px}
+ .view-presets button,.rotation-buttons button{min-height:40px}
+}
