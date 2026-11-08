@@ -114,12 +114,19 @@
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
     regionCoordinates(x,y){
-      if(this.n!==4&&this.n!==5)return null;
+      if(this.n!==3&&this.n!==4&&this.n!==5)return null;
       this.raycaster.setFromCamera(new T.Vector2(2*x/this.width-1,1-2*y/this.height),this.camera);
       const p=this.raycaster.ray.intersectPlane(new T.Plane(new T.Vector3(0,0,1),0),new T.Vector3());
       if(!p)return null;
-      const [xmin,xmax]=this.ranges[0],[ymin,ymax]=this.ranges[1],tol=1e-10;
-      const sx=(p.x/2.65+.5)*(xmax-xmin)+xmin,sy=(p.y/2+.5)*(ymax-ymin)+ymin;
+      const [xmin,xmax]=this.ranges[0],tol=1e-10;
+      const sx=(p.x/2.65+.5)*(xmax-xmin)+xmin;
+      if(this.n===3){
+        // A pixel-sized hit band stays easy to select at every zoom level.
+        const linePoint=this.project([p.x,0,0]);
+        if(Math.abs(linePoint.y-y)>10||sx<xmin-tol||sx>xmax+tol)return null;
+        return [Math.max(xmin,Math.min(xmax,sx))];
+      }
+      const [ymin,ymax]=this.ranges[1],sy=(p.y/2+.5)*(ymax-ymin)+ymin;
       if(sx < xmin-tol || sx > xmax+tol || sy > ymax+tol)return null;
       const a=Math.max(xmin,Math.min(xmax,sx));
       const bottom=this.n===4?a+2:window.SectorConstructors?.n5Lower(a)?.sectors[1];
