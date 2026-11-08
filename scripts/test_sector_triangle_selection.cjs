@@ -47,7 +47,7 @@ for (const e of [0, 1e-15, 1e-13, 2.1e-12, 1e-10, 1e-7]) {
 for (const p of [[0,2],[0,6],[4,6],[1.25,4.5]]) check(...p,true);
 for (const p of [[-1,4],[2,3],[1,7],[NaN,4],[1,Infinity]]) assert.equal(C.n4(...p),null);
 
-const context = {window:{THREE:T}};
+const context = {window:{THREE:T,SectorConstructors:C}};
 vm.runInNewContext(fs.readFileSync(path.join(root, 'viewer.js'),'utf8'),context);
 const View = context.window.SectorView;
 const view = Object.create(View.prototype);
@@ -72,6 +72,16 @@ view.pick({clientX:point.x+5,clientY:point.y+7},true);assert.ok(coordinates);clo
 const named={id:'known'};view.namedWorld=[{state:named}];view.namedProjections=[point];coordinates=null;
 view.pick({clientX:point.x+5,clientY:point.y+7},true);assert.equal(selected,named);assert.equal(coordinates,null);
 for (const n of [3,5,6]) {view.n=n;assert.equal(view.triangleCoordinates(point.x,point.y),null);}
+view.n=5;view.ranges=[[0,5],[3,10]];
+for (const [tx,ty,zoom] of [[0,0,1],[.4,-.3,2],[-.7,.8,80]]) {
+  view.camera.zoom=zoom;view.camera.position.set(tx,ty,7);view.camera.lookAt(tx,ty,0);view.camera.updateProjectionMatrix();view.camera.updateMatrixWorld();
+  for (const xy of [[0,3.6],[5,10],[1,6],[.01,C.n5Lower(.01).sectors[1]+.0001]]) {
+    const p=view.project(view.map(xy)),got=view.regionCoordinates(p.x,p.y);assert.ok(got);close(got[0],xy[0]);close(got[1],xy[1]);
+  }
+  for (const xy of [[-1,4],[2,3],[2,11],[.01,C.n5Lower(.01).sectors[1]-.001]]) {
+    const p=view.project(view.map(xy));assert.equal(view.regionCoordinates(p.x,p.y),null);
+  }
+}
 view.n=4;view.namedWorld=[];view.labels=[];view.markers=[];view.selection={position:new T.Vector3()};
 view.updateLabelVisibility=()=>{};view.render=()=>{};view.addLabel=()=>{};
 view.setSelected({sectors:[1,4],interactivePoint:true});view.setSelected({sectors:[2,5],interactivePoint:true});
@@ -84,5 +94,11 @@ vm.runInNewContext(app.slice(app.indexOf('  function triangleState('),app.indexO
 const state=helpers.triangleState(1.25,4.5), restored=helpers.triangleStateFromId(state.id);
 assert.equal(restored.id,state.id);assert.equal(JSON.stringify(restored.coefficients),JSON.stringify(state.coefficients));
 for (const source of [state.mathLabel.slice(1,-1),state.analyticalExpression.latex,state.analyticalExpression.parameterLatex]) katex.renderToString(source,{throwOnError:true});
+for (const xy of [[.2,3.4],[.2,6],[.1,9.5],[1,6],[4,9]]) {
+  const state=helpers.fiveQubitState(...xy),restored=helpers.fiveQubitStateFromId(state.id);
+  assert.equal(restored.id,state.id);assert.equal(JSON.stringify(restored.coefficients),JSON.stringify(state.coefficients));
+  for (const source of [state.mathLabel.slice(1,-1),state.analyticalExpression.latex,state.analyticalExpression.parameterLatex]) katex.renderToString(source,{throwOnError:true});
+}
+for (const id of ['n5-point:foo:4','n5-point:1:Infinity','n5-point:3:2','bad']) assert.equal(helpers.fiveQubitStateFromId(id),null);
 for (const id of ['n4-point:foo:4','n4-point:1:Infinity','n4-point:3:2','bad']) assert.equal(helpers.triangleStateFromId(id),null);
-console.log(`PASS: ${checked} N=4 witnesses; max sector error ${maximumError.toExponential(2)}; camera/pan/zoom, hit priority, marker lifecycle, share links and LaTeX.`);
+console.log(`PASS: ${checked} N=4 witnesses; max sector error ${maximumError.toExponential(2)}; N=4,5 camera/pan/zoom, hit priority, marker lifecycle, share links and LaTeX.`);

@@ -1,6 +1,6 @@
-/* Exact state witnesses for continuous inspection of N=3,4 sets and N=5 boundary.
+/* Constructive state witnesses for continuous inspection of the N=3,4,5 sets.
  * Dicke order k=0,...,N. See SMALL_N_SCIENTIFIC_NOTES.txt for provenance.
- * No N=5 interior inverse is asserted: its coverage proof uses connected fibers.
+ * N=5 interior coverage uses three bracketed, analytically verified paths.
  */
 (function (global) {
   'use strict';
@@ -112,6 +112,72 @@
     const lower = n5Lower(x);
     return lower && Math.abs(y - lower.sectors[1]) <= tolerance ? lower : null;
   }
-  global.SectorConstructors = Object.freeze({ n3, n4, n5Lower, n5Upper, n5Zero, n5Boundary,
-    n5JunctionX: xc, supportsInterior: Object.freeze({ 3: true, 4: true, 5: false }) });
+  function bracketRoot(fn, target, lo, hi) {
+    let flo = fn(lo) - target, fhi = fn(hi) - target;
+    if (Math.abs(flo) < 1e-12) return lo;
+    if (Math.abs(fhi) < 1e-12) return hi;
+    if (Math.sign(flo) === Math.sign(fhi)) throw new Error('Unbracketed state construction');
+    for (let i = 0; i < 64; i++) {
+      const mid = (lo + hi) / 2, fmid = fn(mid) - target;
+      if (Math.sign(fmid) === Math.sign(flo)) { lo = mid; flo = fmid; }
+      else hi = mid;
+    }
+    return (lo + hi) / 2;
+  }
+  function parityAmplitudes(R, t, sign) {
+    return [sign * Math.sqrt(Math.max(0, (R - t) / 2)), Math.sqrt(t),
+            Math.sqrt(Math.max(0, (2 - R - t) / 2))];
+  }
+  function paritySector2(R, t, sign) {
+    const [a, b, c] = parityAmplitudes(R, t, sign);
+    const q = 2 * R - 2 / 3 - 4 * t, zeta = 2 * Math.sqrt(10) * a * b + 6 * Math.sqrt(2) * b * c;
+    return 10 / 3 + 3 * q * q / 5 + zeta * zeta / 5;
+  }
+  function n5(x, y) {
+    if (!nearRange(x, 0, 5) || !Number.isFinite(y)) return null;
+    x = clamp(x, 0, 5);
+    const lower = n5Lower(x);
+    if (!nearRange(y, lower.sectors[1], 10)) return null;
+    y = clamp(y, lower.sectors[1], 10);
+    let coefficients, parameter;
+    if (x <= 2 / 5 && y <= 18 / 5) {
+      const R = (3 - Math.sqrt(5 * x)) / 4;
+      const t0 = lower.coefficients[2].reduce((s, v) => s + v * v, 0);
+      const t = bracketRoot(t => paritySector2(R, t, -1), y, t0, R);
+      const [a, b, c] = parityAmplitudes(R, t, -1);
+      coefficients = [[a, 0], [0, 0], [b, 0], [0, 0], [c, 0], [0, 0]];
+      parameter = { branch: 'parity', R, t };
+    } else if (x <= 2 / 5) {
+      const sign = y <= 177 / 20 ? -1 : 1;
+      const t = bracketRoot(t => paritySector2(3 / 4, t, sign), y,
+                           sign < 0 ? 1 / 8 : 5 / 8, 3 / 4);
+      const [a, b, c] = parityAmplitudes(3 / 4, t, sign);
+      const kx = Math.sqrt(5) * a * c + 2 * Math.sqrt(2) * b * c + 3 * t / 2;
+      const ky = Math.sqrt(5) * a * c - 2 * Math.sqrt(2) * b * c + 3 * t / 2;
+      const axis = Math.abs(kx) >= Math.abs(ky) ? 'x' : 'y';
+      const kappa = Math.max(Math.abs(kx), Math.abs(ky));
+      const alpha = Math.asin(clamp(Math.sqrt(5 * x) / (2 * kappa), 0, 1)) / 2;
+      const ca = Math.cos(alpha), sa = Math.sin(alpha);
+      const odd = value => axis === 'x' ? [sa * value, 0] : [0, sa * value];
+      coefficients = [[ca * a, 0], odd(c), [ca * b, 0], odd(b), [ca * c, 0], odd(a)];
+      parameter = { branch: 'kramers', sign, t, alpha, delta: axis === 'x' ? 0 : Math.PI / 2, axis, kappa };
+    } else {
+      const u = Math.sqrt(5 * x);
+      const end = x <= 9 / 5 ? (5 + u) / 8 : Math.sqrt(5 * (5 - x)) / 4;
+      function probabilities(b) {
+        const d = Math.sqrt(Math.max(0, 17 * b * b - 10 * b + 5 * x));
+        // Rationalization avoids cancellation near the product--W edge.
+        const c = Math.max(0, (5 * (5 - x) - 16 * b * b) / (10 * (5 - b + d)));
+        return [Math.max(0, 1 - b - c), b, c];
+      }
+      const b = bracketRoot(b => { const c = probabilities(b)[2]; return 10 - 32 * b * b / 5 - 16 * b * c; }, y, 0, end);
+      const [p0, p1, p5] = probabilities(b);
+      coefficients = [[Math.sqrt(p0), 0], [Math.sqrt(p1), 0], [0, 0], [0, 0], [0, 0], [Math.sqrt(p5), 0]];
+      parameter = { branch: 'cat', b, c: p5 };
+    }
+    return record(coefficients, n5Sectors(x, y), 'Five-qubit exact-set state', parameter,
+                  'Constructive inverse of the exact five-qubit range; see Definitions & evidence');
+  }
+  global.SectorConstructors = Object.freeze({ n3, n4, n5, n5Lower, n5Upper, n5Zero, n5Boundary,
+    n5JunctionX: xc, supportsInterior: Object.freeze({ 3: true, 4: true, 5: true }) });
 })(globalThis);
