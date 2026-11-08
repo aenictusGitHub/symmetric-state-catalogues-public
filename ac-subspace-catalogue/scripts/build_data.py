@@ -17,9 +17,13 @@ cache_path=ROOT/'research/geometry-cache.json';cache=json.loads(cache_path.read_
 def plain_math(tex):return '<span data-tex="'+html.escape(tex,quote=True)+'"></span>'
 def dicke_term(n,r,c):
  coefficient=s.sympify(c);ket=r'|D_{'+str(n)+r'}^{('+str(r)+r')}\rangle'
- if coefficient==1:return ket
- if coefficient==-1:return '-'+ket
- return '('+s.latex(coefficient)+')'+ket
+ sign='-' if coefficient.could_extract_minus_sign() else ''
+ if sign:coefficient=-coefficient
+ if coefficient==1:return sign+ket
+ tex=s.latex(coefficient)
+ # Only a sum needs outer grouping; SymPy already groups factors and fractions.
+ if coefficient.is_Add:tex=r'\left('+tex+r'\right)'
+ return sign+tex+ket
 def join_state_terms(terms):
  return ''.join(('' if i==0 or term.startswith('-') else '+')+term for i,term in enumerate(terms))
 def formula(n,cs):
