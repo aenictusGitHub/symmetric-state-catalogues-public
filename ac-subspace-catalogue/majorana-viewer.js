@@ -195,9 +195,21 @@
         // must foreshorten with the constellation, not span a full diameter.
         const scale=unoriented?1.08:1.05,extent=length*scale;
         context.save();context.strokeStyle=color;context.lineWidth=unoriented?1.8:1;context.globalAlpha=.8;
-        for(const sign of [-1,1]){context.setLineDash(sign*endpoint.z<0?[4,4]:[]);context.beginPath();context.moveTo(cx,cy);context.lineTo(cx+sign*dx*scale,cy+sign*dy*scale);context.stroke();}
+        for(const sign of [-1,1]){
+          const depth=sign*endpoint.z,rear=depth<0;
+          context.setLineDash(rear?[4,4]:[]);
+          // A rear ray stays behind the sphere until it clears the silhouette.
+          // Coordinate guides keep their original uninterrupted appearance.
+          const boundary=unoriented?(rear?1/Math.sqrt(Math.max(1e-30,1-depth*depth)):1):0;
+          const cut=Math.min(scale,boundary),spans=unoriented?[[0,cut,.22],[cut,scale,1]]:[[0,scale,1]];
+          for(const [lo,hi,fade]of spans){
+            if(hi-lo<1e-12)continue;
+            context.globalAlpha=.8*fade;context.lineDashOffset=-length*lo;
+            context.beginPath();context.moveTo(cx+sign*dx*lo,cy+sign*dy*lo);context.lineTo(cx+sign*dx*hi,cy+sign*dy*hi);context.stroke();
+          }
+        }
         const endOn=unoriented?Math.max(0,1-length/10):0;
-        if(endOn>0){context.globalAlpha=.8*endOn;context.setLineDash([]);context.beginPath();context.arc(cx,cy,4,0,2*Math.PI);context.stroke();}
+        if(endOn>0){context.globalAlpha=.8*.22*endOn;context.setLineDash([]);context.lineDashOffset=0;context.beginPath();context.arc(cx,cy,4,0,2*Math.PI);context.stroke();}
         context.restore();
         // A continuous screen-space offset stays readable near an end-on
         // axis without dividing by its almost-zero projected length.
@@ -215,7 +227,7 @@
             const u=[normal[1]*helper[2]-normal[2]*helper[1],normal[2]*helper[0]-normal[0]*helper[2],normal[0]*helper[1]-normal[1]*helper[0]],length=Math.hypot(...u);for(let i=0;i<3;i++)u[i]/=length;
             const v=[normal[1]*u[2]-normal[2]*u[1],normal[2]*u[0]-normal[0]*u[2],normal[0]*u[1]-normal[1]*u[0]];
             context.save();context.strokeStyle=symmetryColor('2');context.lineWidth=2.2;
-            for(let i=0;i<180;i++){const point=angle=>rotate({x:u[0]*Math.cos(angle)+v[0]*Math.sin(angle),y:u[1]*Math.cos(angle)+v[1]*Math.sin(angle),z:u[2]*Math.cos(angle)+v[2]*Math.sin(angle)}),a=point(i*Math.PI/90),b=point((i+1)*Math.PI/90),pa=project(a),pb=project(b);context.setLineDash(a.z<0?[3,4]:[]);context.beginPath();context.moveTo(pa.x,pa.y);context.lineTo(pb.x,pb.y);context.stroke();}context.restore();
+            for(let i=0;i<180;i++){const point=angle=>rotate({x:u[0]*Math.cos(angle)+v[0]*Math.sin(angle),y:u[1]*Math.cos(angle)+v[1]*Math.sin(angle),z:u[2]*Math.cos(angle)+v[2]*Math.sin(angle)}),a=point(i*Math.PI/90),b=point((i+1)*Math.PI/90),pa=project(a),pb=project(b);context.globalAlpha=a.z<0?.22:1;context.setLineDash(a.z<0?[3,4]:[]);context.beginPath();context.moveTo(pa.x,pa.y);context.lineTo(pb.x,pb.y);context.stroke();}context.restore();
           }
         }
       }

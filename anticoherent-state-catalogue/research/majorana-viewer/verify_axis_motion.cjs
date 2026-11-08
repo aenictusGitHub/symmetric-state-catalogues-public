@@ -12,8 +12,8 @@ function drawAxis(source,angle,directions=new Map()){
  const project=p=>({x:cx+radius*p.x,y:cy-radius*p.y,z:p.z});
  const axisLine=new Function('rotate','project','context','radius','cx','cy','width','height','axisLabels','axisDirections',source+';return axisLine;')(rotate,project,context,radius,cx,cy,width,height,labels,directions);
  axisLine([0,0,1],'C₈','#526b9b');
- assert(lines.length===2,'axis has two projected halves');
- const distance=Math.hypot(lines[0][1][0]-cx,lines[0][1][1]-cy);
+ assert(lines.length>=2&&lines.length<=4,'axis halves split only at sphere visibility boundaries');
+ const distance=Math.max(...lines.flat().map(p=>Math.hypot(p[0]-cx,p[1]-cy)));
  assert(Math.abs(distance-radius*1.08*Math.abs(Math.sin(angle)))<1e-10,'axis foreshortens with its 3D projection');
  assert([...lines.flat(2),labels[0].x,labels[0].y].every(Number.isFinite),'finite draw coordinates');
  return {label:labels[0],distance,markers};

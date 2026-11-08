@@ -67,10 +67,12 @@
         if(points.length<2||!points.every(finite))return;
         const bodyEdge=!!view.edges&&inside(object,view.edges);
         const grid=!!view.axisGroup&&inside(object,view.axisGroup)||!!view.sphere&&inside(object,view.sphere);
-        const pixelsPerWorld=height*camera.zoom/(camera.top-camera.bottom);
-        lines.push({points,color:colorHex(material.color||new T.Color(0x777777)),opacity:material.opacity??1,
+        const pixelsPerWorld=height*camera.zoom/(camera.top-camera.bottom),axis=!!object.userData?.symmetryAxis,distances=geometry.getAttribute('lineDistance');
+        const distanceStart=distances?.getX(0)||0,distanceEnd=distances?.getX(count-1)||0;
+        const axisScale=axis&&distanceEnd>distanceStart?Math.hypot(points.at(-1).x-points[0].x,points.at(-1).y-points[0].y)/(distanceEnd-distanceStart):pixelsPerWorld;
+        lines.push({points,axis,dashOffset:axis?-distanceStart*axisScale:0,color:colorHex(material.color||new T.Color(0x777777)),opacity:material.opacity??1,
           width:material.linewidth||1,dashed:material.isLineDashedMaterial||material.type==='LineDashedMaterial',
-          dash:bodyEdge?[6,5]:[(material.dashSize||6/pixelsPerWorld)*pixelsPerWorld/(material.scale||1),(material.gapSize||5/pixelsPerWorld)*pixelsPerWorld/(material.scale||1)],
+          dash:bodyEdge?[6,5]:[(material.dashSize||6/pixelsPerWorld)*axisScale/(material.scale||1),(material.gapSize||5/pixelsPerWorld)*axisScale/(material.scale||1)],
           bodyEdge,grid,segments:!!object.isLineSegments,loop:!!object.isLineLoop,
           priority:grid?0:bodyEdge?2:1});
       }
@@ -141,7 +143,7 @@
     }
     return parts.map(part=>{
       const dashed=part.hidden||line.dashed;
-      return `<path d="${pathPoints(part.points)}" fill="none" stroke="${line.color}" stroke-width="${number(line.width)}" stroke-linecap="round" stroke-linejoin="round" opacity="${number(part.hidden?Math.min(line.opacity,.38):line.opacity)}"${dashed?' stroke-dasharray="'+line.dash.map(number).join(' ')+'"':''}/>`;
+      return `<path d="${pathPoints(part.points)}" fill="none" stroke="${line.color}" stroke-width="${number(line.width)}" stroke-linecap="round" stroke-linejoin="round" opacity="${number(part.hidden?Math.min(line.opacity,.38):line.opacity)}"${dashed?' stroke-dasharray="'+line.dash.map(number).join(' ')+'"'+(line.axis?' stroke-dashoffset="'+number(line.dashOffset)+'"':''):''}/>`;
     }).join('');
   }
   function labelSVG(view){

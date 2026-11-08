@@ -16,7 +16,7 @@
   class Context {
     constructor(){
       this.elements=[];this.defs=[];this.stack=[];this.path=[];
-      this.state={fillStyle:'#000',strokeStyle:'#000',globalAlpha:1,lineWidth:1,lineJoin:'miter',font:'12px sans-serif',textAlign:'left',textBaseline:'alphabetic',shadowColor:'transparent',shadowBlur:0,shadowOffsetX:0,shadowOffsetY:0,dash:[],transform:[1,0,0,1,0,0]};
+      this.state={fillStyle:'#000',strokeStyle:'#000',globalAlpha:1,lineWidth:1,lineJoin:'miter',font:'12px sans-serif',textAlign:'left',textBaseline:'alphabetic',shadowColor:'transparent',shadowBlur:0,shadowOffsetX:0,shadowOffsetY:0,lineDashOffset:0,dash:[],transform:[1,0,0,1,0,0]};
       for(const key of Object.keys(this.state))Object.defineProperty(this,key,{get:()=>this.state[key],set:value=>{this.state[key]=value;}});
     }
     save(){this.stack.push({...this.state});}
@@ -46,7 +46,7 @@
     attributes(stroke){
       const s=this.state;
       let attrs=`transform="matrix(${s.transform.map(number).join(' ')})" opacity="${number(s.globalAlpha)}"`;
-      attrs+=stroke?` fill="none" ${paint(s.strokeStyle,'stroke')} stroke-width="${number(s.lineWidth)}" stroke-linejoin="${xml(s.lineJoin)}"${s.dash.length?` stroke-dasharray="${s.dash.map(number).join(' ')}"`:''}`:` ${paint(s.fillStyle,'fill')} stroke="none"`;
+      attrs+=stroke?` fill="none" ${paint(s.strokeStyle,'stroke')} stroke-width="${number(s.lineWidth)}" stroke-linejoin="${xml(s.lineJoin)}"${s.dash.length?` stroke-dasharray="${s.dash.map(number).join(' ')}" stroke-dashoffset="${number(s.lineDashOffset)}"`:''}`:` ${paint(s.fillStyle,'fill')} stroke="none"`;
       if(s.shadowBlur>0){
         const id=`shadow-${this.defs.length}`;
         this.defs.push(`<filter id="${id}" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="${number(s.shadowBlur/2)}" result="blur"/><feOffset in="blur" dx="${number(s.shadowOffsetX)}" dy="${number(s.shadowOffsetY)}" result="offset"/><feFlood ${paint(s.shadowColor,'flood-color','flood-opacity')} result="color"/><feComposite in="color" in2="offset" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>`);

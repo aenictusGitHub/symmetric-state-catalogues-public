@@ -144,7 +144,11 @@
       const colors={2:'#789080',3:'#8d77aa',4:'#b17d5c',5:'#657d9c',6:'#a86d4f',infinity:'#9c7555'};
       for(const axis of this.symmetry.axes){
         const d=[axis.direction[0],axis.direction[2],-axis.direction[1]],color=colors[axis.order]||'#7c8490';
-        for(const sign of [-1,1]){const segment=[[0,0,0],d.map(v=>v*sign*1.12)],solid=line(segment,color),dashed=line(segment,color,true,false);solid.material.opacity=.75;dashed.material.opacity=.45;solid.renderOrder=dashed.renderOrder=5;this.symmetryAxesGroup.add(solid,dashed);this.axisSegments.push({direction:d,order:axis.order,sign,solid,dashed});}
+        for(const sign of [-1,1]){
+          const segment=[[0,0,0],d.map(v=>v*sign*1.12)],solid=line(segment,color),dashed=line(segment,color,true,false),occludedSolid=line(segment,color),occludedDashed=line(segment,color,true,false);
+          for(const [object,base,occluded]of [[solid,.75,false],[dashed,.45,false],[occludedSolid,.75,true],[occludedDashed,.45,true]]){object.material.opacity=base*(occluded?.22:1);object.renderOrder=5;object.userData.symmetryAxis=true;object.userData.axisOccluded=occluded;this.symmetryAxesGroup.add(object);}
+          this.axisSegments.push({direction:d,order:axis.order,sign,solid,dashed,occludedSolid,occludedDashed});
+        }
         const tex=axis.order==='infinity'?'C_{\\infty}':'C_{'+axis.order+'}';const label=this.addLabel('$'+tex+'$',d.map(v=>v*1.18),'plot-label axis-symmetry-label',{offset:[7,-5]});label.el.style.color=color;this.symmetryAxisLabels.push({direction:d,order:axis.order,label,tex});
       }
       const select=document.getElementById('symmetry-order'),previous=select.value;select.replaceChildren();
@@ -154,7 +158,18 @@
       const summary=document.getElementById('symmetry-summary');const counts=orders.map(order=>{const count=this.symmetry.axes.filter(a=>a.order===order).length;return '$C_{'+(order==='infinity'?'\\infty':order)+'}$: '+count+' '+(count===1?'axis':'axes');});let text=counts.join(' · ')||'$C_1$: no nontrivial rotational axis';if(this.symmetry.continuous?.transverseC2)text+=' · Continuous transverse $C_2$ axes';summary.innerHTML=AtlasMath.html(text);
     }
     updateSymmetry(){if(!this.axisSegments)return;const enabled=document.getElementById('show-symmetry').checked,filter=document.getElementById('symmetry-order').value;const visible=order=>enabled&&(filter==='all'||String(order)===filter||(filter==='highest'&&order===this.highestAxisOrder));this.symmetryAxesGroup.visible=enabled;
-      for(const part of this.axisSegments){const front=v3(part.direction).applyQuaternion(this.displayRotation).dot(this.camera.position)*part.sign>=0,on=visible(part.order);part.solid.visible=on&&front;part.dashed.visible=on&&!front;}
+      const cameraDirection=this.camera.position.clone().sub(this.target).normalize(),extent=1.12;
+      const section=(object,part,lo,hi,on)=>{
+        object.visible=on&&hi-lo>1e-10;if(!object.visible)return;
+        const position=object.geometry.getAttribute('position'),distance=object.geometry.getAttribute('lineDistance');
+        for(const [i,r]of [[0,lo],[1,hi]]){position.setXYZ(i,...part.direction.map(v=>v*part.sign*r));distance.setX(i,r);}position.needsUpdate=distance.needsUpdate=true;object.frustumCulled=false;
+      };
+      for(const part of this.axisSegments){
+        const depth=v3(part.direction).applyQuaternion(this.displayRotation).dot(cameraDirection)*part.sign,front=depth>=0,on=visible(part.order);
+        const boundary=Math.min(extent,front?1:1/Math.sqrt(Math.max(1e-30,1-depth*depth)));
+        section(part.occludedSolid,part,0,boundary,on&&front);section(part.occludedDashed,part,0,boundary,on&&!front);
+        section(part.solid,part,boundary,extent,on&&front);section(part.dashed,part,boundary,extent,on&&!front);
+      }
       for(const a of this.symmetryAxisLabels){const direction=v3(a.direction).applyQuaternion(this.displayRotation),sign=direction.dot(this.camera.position)>=0?1:-1;a.label.position=direction.multiplyScalar(sign*1.18).toArray();a.label.el.hidden=!visible(a.order);const aligned=this.aligned&&Math.abs(v3(a.direction).applyQuaternion(this.displayRotation).y)>1-1e-8;a.label.el.innerHTML=AtlasMath.html('$'+a.tex+(aligned?'\\parallel z':'')+'$');}
     }
     alignHighest(){const axis=this.symmetry?.axes.find(a=>a.order===this.highestAxisOrder);if(!axis)return;const direction=new T.Vector3(axis.direction[0],axis.direction[2],-axis.direction[1]);this.displayRotation.setFromUnitVectors(direction.normalize(),new T.Vector3(0,1,0));this.hull.quaternion.copy(this.displayRotation);this.symmetryAxesGroup.quaternion.copy(this.displayRotation);this.aligned=true;document.getElementById('alignment-note').hidden=false;this.yaw=.55;this.pitch=.25;this.zoom=1;this.resize();}
