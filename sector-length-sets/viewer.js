@@ -20,11 +20,13 @@
       this.content=new T.Group();this.scene.add(this.content);this.svg=document.createElementNS(svgNS,'svg');this.overlay.append(this.svg);this.markerSvg=document.createElementNS(svgNS,'svg');this.markerSvg.classList.add('screen-markers');this.markerSvg.setAttribute('aria-hidden','true');this.overlay.append(this.markerSvg);
       this._resize=new ResizeObserver(()=>this.resize());this._resize.observe(this.container);
       this.drag=null;this.moved=false;
-      canvas.addEventListener('pointerdown',e=>{if(![0,1,2].includes(e.button)||(!this.panAllowed&&e.button!==0))return;const pan=this.panAllowed&&(!this.rotatable||e.shiftKey||e.button!==0);this.drag={x:e.clientX,y:e.clientY,yaw:this.yaw,pitch:this.pitch,pan,target:this.target.clone(),right:new T.Vector3().setFromMatrixColumn(this.camera.matrixWorld,0),up:new T.Vector3().setFromMatrixColumn(this.camera.matrixWorld,1)};this.moved=false;canvas.setPointerCapture(e.pointerId);});
-      canvas.addEventListener('pointermove',e=>{if(this.drag){const dx=e.clientX-this.drag.x,dy=e.clientY-this.drag.y;if(Math.hypot(dx,dy)>4)this.moved=true;if(this.moved&&this.drag.pan){const sx=(this.camera.right-this.camera.left)/(this.camera.zoom*this.width),sy=(this.camera.top-this.camera.bottom)/(this.camera.zoom*this.height);this.target.copy(this.drag.target).addScaledVector(this.drag.right,-dx*sx).addScaledVector(this.drag.up,dy*sy);this.updateCamera();this.render();}else if(this.rotatable&&this.moved){this.yaw=this.drag.yaw-dx*.008;this.pitch=Math.max(-1.3,Math.min(1.3,this.drag.pitch+dy*.008));this.updateCamera();this.render();}}else this.onHover?.(e);});
-      canvas.addEventListener('pointerup',e=>{const moved=this.moved;this.drag=null;if(!moved&&e.button===0)this.onClick?.(e);});
+      canvas.addEventListener('pointerdown',e=>this.beginPointerGesture(e));
+      canvas.addEventListener('pointermove',e=>this.updatePointerGesture(e));
+      canvas.addEventListener('pointerup',e=>this.endPointerGesture(e));
       canvas.addEventListener('contextmenu',e=>{if(this.panAllowed)e.preventDefault();});
-      canvas.addEventListener('pointercancel',()=>this.drag=null);canvas.addEventListener('pointerleave',()=>{if(!this.drag)this.onLeave?.();});
+      canvas.addEventListener('pointercancel',e=>this.cancelPointerGesture(e));
+      canvas.addEventListener('lostpointercapture',e=>this.cancelPointerGesture(e));
+      canvas.addEventListener('pointerleave',()=>{if(!this.drag)this.onLeave?.();});
       canvas.addEventListener('wheel',e=>{
         e.preventDefault();
         // Keep the pointed-at part of a sector set fixed while magnifying it.
@@ -36,6 +38,54 @@
         this.resize();
       },{passive:false});
       this.resize();
+    }
+    beginPointerGesture(event){
+      if(this.drag||![0,1,2].includes(event.button)||(!this.panAllowed&&event.button!==0))return false;
+      const point=event.button===0&&!event.shiftKey?this.beginPointDrag?.(event):null;
+      const pan=!point&&this.panAllowed&&(!this.rotatable||event.shiftKey||event.button!==0);
+      this.drag={x:event.clientX,y:event.clientY,pointerId:event.pointerId,yaw:this.yaw,pitch:this.pitch,
+        pan,point,target:this.target.clone(),right:new T.Vector3().setFromMatrixColumn(this.camera.matrixWorld,0),up:new T.Vector3().setFromMatrixColumn(this.camera.matrixWorld,1)};
+      this.moved=false;if(point)this.canvas.style.cursor='grabbing';
+      try{this.canvas.setPointerCapture?.(event.pointerId);}catch{}
+      return true;
+    }
+    updatePointerGesture(event){
+      const drag=this.drag;
+      if(!drag){this.onHover?.(event);return false;}
+      if(drag.pointerId!==undefined&&event.pointerId!==undefined&&drag.pointerId!==event.pointerId)return false;
+      const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
+      if(Math.hypot(dx,dy)>4)this.moved=true;
+      if(!this.moved)return true;
+      if(drag.point){this.updatePointDrag(event,drag);return true;}
+      if(drag.pan){
+        const sx=(this.camera.right-this.camera.left)/(this.camera.zoom*this.width),sy=(this.camera.top-this.camera.bottom)/(this.camera.zoom*this.height);
+        this.target.copy(drag.target).addScaledVector(drag.right,-dx*sx).addScaledVector(drag.up,dy*sy);this.updateCamera();this.render();
+      }else if(this.rotatable){
+        this.yaw=drag.yaw-dx*.008;this.pitch=Math.max(-1.3,Math.min(1.3,drag.pitch+dy*.008));this.updateCamera();this.render();
+      }
+      return true;
+    }
+    releaseGestureCapture(pointerId){
+      try{if(!this.canvas.hasPointerCapture||this.canvas.hasPointerCapture(pointerId))this.canvas.releasePointerCapture?.(pointerId);}catch{}
+    }
+    endPointerGesture(event){
+      const drag=this.drag;if(!drag)return false;
+      if(drag.pointerId!==undefined&&event.pointerId!==undefined&&drag.pointerId!==event.pointerId)return false;
+      if(Math.hypot(event.clientX-drag.x,event.clientY-drag.y)>4)this.moved=true;
+      const moved=this.moved;
+      if(drag.point&&moved)this.finishPointDrag(event,drag,false);
+      this.drag=null;this.moved=false;this.releaseGestureCapture(drag.pointerId);
+      if(drag.point)this.canvas.style.cursor='grab';
+      if(!moved&&event.button===0)this.onClick?.(event);
+      return true;
+    }
+    cancelPointerGesture(event){
+      const drag=this.drag;if(!drag)return false;
+      if(event?.pointerId!==undefined&&drag.pointerId!==undefined&&event.pointerId!==drag.pointerId)return false;
+      if(drag.point)this.finishPointDrag(null,drag,true);
+      this.drag=null;this.moved=false;this.releaseGestureCapture(drag.pointerId);
+      if(drag.point)this.canvas.style.cursor='grab';
+      return true;
     }
     resize(){const r=this.container.getBoundingClientRect();this.width=Math.max(1,r.width);this.height=Math.max(1,r.height);this.renderer.setSize(this.width,this.height,false);const aspect=this.width/this.height,span=Math.max(this.span||1.55,(this.minHalfWidth||0)/aspect);this.camera.left=-span*aspect;this.camera.right=span*aspect;this.camera.top=span;this.camera.bottom=-span;this.camera.zoom=this.zoom;this.camera.updateProjectionMatrix();this.svg.setAttribute('viewBox',`0 0 ${this.width} ${this.height}`);this.markerSvg.setAttribute('viewBox',`0 0 ${this.width} ${this.height}`);this.updateCamera();this.render();}
     updateCamera(){const r=7;this.camera.position.set(r*Math.cos(this.pitch)*Math.sin(this.yaw),r*Math.sin(this.pitch),r*Math.cos(this.pitch)*Math.cos(this.yaw)).add(this.target);this.camera.lookAt(this.target);this.camera.updateMatrixWorld();}
@@ -70,7 +120,7 @@
   class SectorView extends BaseView {
     constructor(canvas,overlay){super(canvas,overlay);this.panAllowed=true;this.maxZoom=80;this.surface=new T.Group();this.samples=new T.Group();this.edges=new T.Group();this.nodes=new T.Group();this.content.add(this.surface,this.samples,this.edges,this.nodes);this.raycaster=new T.Raycaster();this.hoverCallback=()=>{};this.selectCallback=()=>{};this.onHover=e=>this.pick(e,false);this.onClick=e=>this.pick(e,true);this.onLeave=()=>this.hoverCallback(null);}
     map(p){if(this.n===6)return [2*(p[0]+1)/9-1,2*(p[2]+1)/23-1,2*(p[1]+1.5)/17.5-1];const xr=this.ranges[0],yr=this.ranges[1];return [((p[0]-xr[0])/(xr[1]-xr[0])-.5)*2.65,this.dimension===1?0:((p[1]-yr[0])/(yr[1]-yr[0])-.5)*2,0];}
-    setData(d){this.data=d;this.n=d.n||d.N;this.dimension=d.dimension;this.ranges=this.n===3?[[0,3],[0,1]]:this.n===4?[[0,4],[2,6]]:[[0,5],[3,10]];this.clearLabels();this.occlusionIndex=null;this.focusedStateId=null;[this.surface,this.samples,this.edges,this.nodes].forEach(disposeGroup);this.witnesses=d.boundarySamples||[];this.named=d.states||d.knownStates;this.grayPoints=[];this.allPoints=this.witnesses.map(s=>({state:s,world:this.map(s.sectors)}));this.rotatable=this.n===6;this.zoom=1;this.span=this.n===6?1.72:1.5;this.minHalfWidth=this.n===6?1.8:1.67;this.yaw=this.n===6?-1.04:0;this.pitch=this.n===6?.22:0;this.target.set(0,0,0);
+    setData(d){this.cancelPointerGesture();this.data=d;this.n=d.n||d.N;this.dimension=d.dimension;this.ranges=this.n===3?[[0,3],[0,1]]:this.n===4?[[0,4],[2,6]]:[[0,5],[3,10]];this.clearLabels();this.occlusionIndex=null;this.focusedStateId=null;[this.surface,this.samples,this.edges,this.nodes].forEach(disposeGroup);this.witnesses=d.boundarySamples||[];this.named=d.states||d.knownStates;this.grayPoints=[];this.allPoints=this.witnesses.map(s=>({state:s,world:this.map(s.sectors)}));this.rotatable=this.n===6;this.zoom=1;this.span=this.n===6?1.72:1.5;this.minHalfWidth=this.n===6?1.8:1.67;this.yaw=this.n===6?-1.04:0;this.pitch=this.n===6?.22:0;this.target.set(0,0,0);
       if(this.n===6){for(const patch of d.outer.patches)this.addPatch(patch);for(const edge of d.outer.edges){const p=edge.points.map(x=>this.map(x));const c=edge.attained?colors.violet:colors.edge;this.edges.add(line(p,c),line(p,c,true,true));}for(const path of d.attainedPaths||[]){const p=path.points.map(x=>this.map(x));const front=line(p,colors.violet),rear=line(p,colors.violet,true,true);front.userData.kind=rear.userData.kind='attained-state-locus';front.userData.pathId=rear.userData.pathId=path.id;this.edges.add(front,rear);}for(const node of (d.plotNodes||d.outer.nodes).filter(p=>!p.attained)){const gray={state:{...node,outerOnly:true,sectors:node.point,label:node.label||'Outer-region junction'},world:this.map(node.point)};this.grayPoints.push(gray);gray.marker={world:gray.world,radius:4.6,fill:'#989b9f',stroke:'#686c70',kind:'sector-gray'};this.markers.push(gray.marker);}}
       else{if(this.dimension===2){const shape=new T.Shape(d.polygon.map(p=>{const q=this.map(p);return new T.Vector2(q[0],q[1]);}));const geom=new T.ShapeGeometry(shape);const mesh=new T.Mesh(geom,new T.MeshBasicMaterial({color:0xdac7eb,side:T.DoubleSide}));mesh.position.z=-.02;this.surface.add(mesh);}for(const c of d.curves||[])this.edges.add(line(c.points.map(p=>this.map(p.sectors)),colors.violet));}
       // Manuscript nodes and the requested explicit boundary samples are plotted.
@@ -113,7 +163,38 @@
     render(){if(this.selection)this.selection.quaternion.copy(this.camera.quaternion);if(this.namedWorld){this.namedProjections=this.namedWorld.map(p=>this.project(p.world)).concat((this.grayPoints||[]).map(p=>this.project(p.world)));for(const p of this.namedWorld){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#7946b0';p.marker.stroke=rear?'#8c72a4':'#4d2676';p.label&&(p.label.el.style.opacity=rear?'.65':'1');}for(const p of this.allPoints){const rear=this.n===6&&this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#b49acb':'#8854ba';p.marker.stroke=rear?'#8c72a4':'#64368e';}for(const p of this.grayPoints){const rear=this.occluded(p.world);p.marker.rear=rear;p.marker.fill=rear?'#bec1c3':'#989b9f';p.marker.stroke=rear?'#a0a4a8':'#686c70';}for(const marker of this.markers.filter(m=>m.kind==='selected-point')){const rear=this.n===6&&this.occluded(marker.world);marker.rear=rear;marker.fill=rear?'#b49acb':'#7946b0';marker.stroke=rear?'#8c72a4':'#4d2676';this.labels.filter(l=>l.focusOnly).forEach(l=>l.el.style.opacity=rear?'.65':'1');}this.projected=this.allPoints.map(p=>({...this.project(p.world),point:p}));}super.render();}
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
-    regionCoordinates(x,y){
+    selectedPointAt(x,y){
+      if(![3,4,5].includes(this.n)||!this.selectedWorld||typeof this.pointDragCallback!=='function')return false;
+      const p=this.project(this.selectedWorld);return p.z>=-1&&p.z<=1&&Math.hypot(p.x-x,p.y-y)<=13;
+    }
+    beginPointDrag(event){
+      const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top;
+      if(!this.selectedPointAt(x,y))return null;
+      const p=this.project(this.selectedWorld),coordinates=this.regionCoordinates(p.x,p.y,{clampToSet:true});
+      return coordinates?{n:this.n,offset:[p.x-x,p.y-y],initial:coordinates,lastCoordinates:coordinates.slice(),started:false,latest:null,frame:null}:null;
+    }
+    updatePointDrag(event,drag){
+      const point=drag.point;
+      if(!point.started){point.started=true;this.pointDragCallback(point.initial.slice(),{phase:'start'});}
+      if(this.drag!==drag)return;
+      point.latest={clientX:event.clientX,clientY:event.clientY};
+      if(point.frame===null)point.frame=requestAnimationFrame(()=>{point.frame=null;if(this.drag===drag)this.flushPointDrag(drag);});
+    }
+    flushPointDrag(drag){
+      const point=drag.point,event=point.latest;point.latest=null;
+      if(!event||point.n!==this.n)return;
+      const rect=this.canvas.getBoundingClientRect(),coordinates=this.regionCoordinates(event.clientX-rect.left+point.offset[0],event.clientY-rect.top+point.offset[1],{clampToSet:true});
+      if(coordinates){point.lastCoordinates=coordinates.slice();this.pointDragCallback(coordinates,{phase:'move'});}
+    }
+    finishPointDrag(event,drag,cancel){
+      const point=drag.point;
+      if(point.frame!==null){cancelAnimationFrame(point.frame);point.frame=null;}
+      if(cancel){point.latest=null;if(point.started)this.pointDragCallback(point.lastCoordinates.slice(),{phase:'cancel'});return;}
+      if(!point.started){point.started=true;this.pointDragCallback(point.initial.slice(),{phase:'start'});}
+      point.latest={clientX:event.clientX,clientY:event.clientY};this.flushPointDrag(drag);
+      this.pointDragCallback(point.lastCoordinates.slice(),{phase:'end'});
+    }
+    regionCoordinates(x,y,{clampToSet=false}={}){
       if(this.n!==3&&this.n!==4&&this.n!==5)return null;
       this.raycaster.setFromCamera(new T.Vector2(2*x/this.width-1,1-2*y/this.height),this.camera);
       const p=this.raycaster.ray.intersectPlane(new T.Plane(new T.Vector3(0,0,1),0),new T.Vector3());
@@ -123,14 +204,14 @@
       if(this.n===3){
         // A pixel-sized hit band stays easy to select at every zoom level.
         const linePoint=this.project([p.x,0,0]);
-        if(Math.abs(linePoint.y-y)>10||sx<xmin-tol||sx>xmax+tol)return null;
+        if(!clampToSet&&(Math.abs(linePoint.y-y)>10||sx<xmin-tol||sx>xmax+tol))return null;
         return [Math.max(xmin,Math.min(xmax,sx))];
       }
       const [ymin,ymax]=this.ranges[1],sy=(p.y/2+.5)*(ymax-ymin)+ymin;
-      if(sx < xmin-tol || sx > xmax+tol || sy > ymax+tol)return null;
+      if(!clampToSet&&(sx < xmin-tol || sx > xmax+tol || sy > ymax+tol))return null;
       const a=Math.max(xmin,Math.min(xmax,sx));
       const bottom=this.n===4?a+2:window.SectorConstructors?.n5Lower(a)?.sectors[1];
-      if(bottom===undefined||sy < bottom-tol)return null;
+      if(bottom===undefined||(!clampToSet&&sy < bottom-tol))return null;
       return [a,Math.max(bottom,Math.min(ymax,sy))];
     }
     triangleCoordinates(x,y){return this.n===4?this.regionCoordinates(x,y):null;}
@@ -156,7 +237,7 @@
     pick(event,select){if(!this.data)return;const rect=this.canvas.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top;let best=null,dist=13*13;for(let i=0;i<this.namedWorld.length;i++){const p=this.namedProjections[i],d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=this.namedWorld[i].state;}}if(this.projected.length){for(const p of this.projected){const d=(p.x-x)**2+(p.y-y)**2;if(d<dist){dist=d;best=p.point.state;}}}if(!best){for(const p of this.grayPoints||[]){const q=this.project(p.world),d=(q.x-x)**2+(q.y-y)**2;if(d<dist){dist=d;best=p.state;}}}
       const coordinates=best?null:this.regionCoordinates(x,y);
       const surface=best||coordinates?null:this.attainedSurfaceAt(x,y);
-      this.canvas.style.cursor=best||coordinates||surface?'pointer':this.rotatable?'grab':'default';
+      this.canvas.style.cursor=this.selectedPointAt(x,y)?'grab':best||coordinates||surface?'pointer':this.rotatable?'grab':'default';
       if(select&&surface)this.surfaceCallback?.(surface.point,surface);
       else if(select&&coordinates)this.coordinateCallback?.(coordinates);
       else (select?this.selectCallback:this.hoverCallback)(best,{x,y});}
@@ -183,7 +264,7 @@
   }
   class MajoranaView extends BaseView {
     constructor(canvas,overlay){super(canvas,overlay);this.displayRotation=new T.Quaternion();this.span=1.3;this.yaw=.55;this.pitch=.25;this.sphere=new T.Group();this.hull=new T.Group();this.stars=new T.Group();this.symmetryAxesGroup=new T.Group();this.content.add(this.sphere,this.hull,this.stars,this.symmetryAxesGroup);const sphere=new T.Mesh(new T.SphereGeometry(1,48,32),new T.MeshBasicMaterial({color:0xe5ddc9,transparent:true,opacity:.18,depthWrite:false}));this.sphere.add(sphere);for(const lat of [-Math.PI/3,-Math.PI/6,0,Math.PI/6,Math.PI/3]){const points=[];for(let t=0;t<=128;t++){const a=t*Math.PI/64;points.push([Math.cos(lat)*Math.cos(a),Math.sin(lat),Math.cos(lat)*Math.sin(a)]);}this.sphere.add(line(points,0xd5d0c2));}for(let phi=0;phi<Math.PI;phi+=Math.PI/4){const points=[];for(let t=0;t<=128;t++){const a=t*Math.PI/64;points.push([Math.cos(a)*Math.cos(phi),Math.sin(a),Math.cos(a)*Math.sin(phi)]);}this.sphere.add(line(points,0xd5d0c2));}this.resize();}
-    setState(coefficients){const data=SectorMath.majoranaStars(coefficients);this.majorana=data;this.clearLabels();this.displayRotation.identity();this.aligned=false;this.starLabelMarkers=[];this.hull.quaternion.identity();this.symmetryAxesGroup.quaternion.identity();document.getElementById('alignment-note').hidden=true;disposeGroup(this.stars);disposeGroup(this.hull);this.groups=data.groups;const points=data.groups.map(p=>[p.x,p.z,-p.y]);this.starMarkers=points.map((world,i)=>{const marker={world,baseWorld:world.slice(),radius:4.8,fill:'#ad7549',stroke:'#7f5233',kind:'majorana'};this.markers.push(marker);if(data.groups[i].multiplicity>1){const label=this.addLabel(String(data.groups[i].multiplicity),world,'plot-label',{offset:[12,-10]});this.starLabelMarkers.push({label,baseWorld:world.slice()});}return marker;});if(points.length>=2){const topology=hullTopology(points),array=[];topology.triangles.forEach(f=>f.forEach(i=>array.push(...points[i])));if(array.length){const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(array,3));g.computeVertexNormals();this.hull.add(new T.Mesh(g,new T.MeshBasicMaterial({color:0x5f9588,transparent:true,opacity:.16,side:T.DoubleSide,depthWrite:false})));}for(const[a,b]of topology.edges)this.hull.add(line([points[a],points[b]],0x75978e));}
+    setState(coefficients,{preserveOrientation=false}={}){const data=SectorMath.majoranaStars(coefficients);this.majorana=data;this.clearLabels();if(!preserveOrientation)this.displayRotation.identity();this.aligned=false;this.starLabelMarkers=[];this.hull.quaternion.copy(this.displayRotation);this.symmetryAxesGroup.quaternion.copy(this.displayRotation);document.getElementById('alignment-note').hidden=true;disposeGroup(this.stars);disposeGroup(this.hull);this.groups=data.groups;const points=data.groups.map(p=>[p.x,p.z,-p.y]);this.starMarkers=points.map((world,i)=>{const marker={world,baseWorld:world.slice(),radius:4.8,fill:'#ad7549',stroke:'#7f5233',kind:'majorana'};this.markers.push(marker);if(data.groups[i].multiplicity>1){const label=this.addLabel(String(data.groups[i].multiplicity),world,'plot-label',{offset:[12,-10]});this.starLabelMarkers.push({label,baseWorld:world.slice()});}return marker;});if(points.length>=2){const topology=hullTopology(points),array=[];topology.triangles.forEach(f=>f.forEach(i=>array.push(...points[i])));if(array.length){const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(array,3));g.computeVertexNormals();this.hull.add(new T.Mesh(g,new T.MeshBasicMaterial({color:0x5f9588,transparent:true,opacity:.16,side:T.DoubleSide,depthWrite:false})));}for(const[a,b]of topology.edges)this.hull.add(line([points[a],points[b]],0x75978e));}
 
       this.setupSymmetry(data.groups);this.hull.visible=document.getElementById('show-hull').checked;this.resize();return data;}
     setupSymmetry(groups){

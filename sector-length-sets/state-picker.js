@@ -190,11 +190,19 @@
     if (isOpen()) setActive(Math.max(0, options.findIndex(option => option.value === select.value)));
   }
 
+  // During a point drag, update the visible selection without rebuilding
+  // every mathematical option in the closed menu. Commit its data on release.
+  function updateLive(state) {
+    if (!init()) return;
+    close(); currentState = state;
+    display.innerHTML = typeset(state.id, state.mathLabel || state.label || emptyText);
+  }
+
   function clear(text = 'Explore a point on the plot') {
     if (!init()) return;
     currentState = null; emptyText = text; close(); paint();
   }
 
-  window.StatePicker = {update, clear};
+  window.StatePicker = {update, updateLive, clear};
   init();
 })();
