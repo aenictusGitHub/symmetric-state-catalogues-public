@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nine-qubit reduced purities</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script defer src="../vendor/katex/katex.min.js"></script>
+<style>main{max-width:1050px;margin:auto;padding:35px}p{line-height:1.7}.equation{overflow-x:auto;padding:12px 0}</style>
+</head>
+<body><main>
+<a href="../index.html#n=9&amp;k=3&amp;mode=min">Local catalogue</a>
+<h1>Nine-qubit reduced purities</h1>
+<p>For pure symmetric nine-qubit states, write <span data-tex="P_t=\operatorname{tr}(\rho_t^2)"></span>. Complementarity gives <span data-tex="P_t=P_{9-t}"></span>. Both exact attained candidates below lie in the family</p>
+<div class="equation" data-tex="|\psi(r)\rangle=\frac{\sqrt{21}r(|D_9^{(0)}\rangle-|D_9^{(9)}\rangle)+|D_9^{(3)}\rangle-|D_9^{(6)}\rangle}{\sqrt{2+42r^2}},\qquad r\ge0."></div>
+<p>In the normalized Dicke basis the bipartition matrix has entries <span data-tex="A_{ab}=c_{a+b}\sqrt{\binom ta\binom{9-t}b/\binom9{a+b}}"></span>. Taking the trace of <span data-tex="(AA^\dagger)^2"></span> gives the following rational functions.</p>
+<h2 id="t3">Three- and six-body reductions</h2>
+<div class="equation" data-tex="P_3(\psi(r))=\frac{1555848r^4+40572r^2-1680r+2405}{7056(21r^2+1)^2}."></div>
+<div class="equation" data-tex="\frac{d}{dr}P_3(\psi(r))=\frac{53802r^3+1260r^2-1439r-20}{84(21r^2+1)^3}."></div>
+<p>The derivative numerator has exactly one positive root by Descartes’ rule and its opposite signs at zero and large positive r. The derivative changes from negative to positive there. At that root the purity is approximately 0.251436283174. The double-copy linear relaxation gives</p>
+<div class="equation" data-tex="P_3=\frac14+\frac{S_1}{24}+\frac{S_3}{672}+\frac{11a_2}{12}\ge\frac14."></div>
+<p>Here <span data-tex="S_k"></span> is the unnormalized Pauli sector length and <span data-tex="a_k"></span> is the squared Hilbert–Schmidt norm of the spin multipole of rank k. The relaxation attains its lower endpoint at the following probabilities in total spin order 1, 3, 5, 7, 9.</p>
+<div class="equation" data-tex="(p_1,p_3,p_5,p_7,p_9)=\left(\frac3{22},0,\frac{18}{65},\frac{309}{884},\frac{887}{3740}\right)."></div>
+<h3>Sharp degree-eight certificate</h3>
+<p>Let <span data-tex="\alpha"></span> be the unique positive root of the displayed derivative numerator and set <span data-tex="\beta=P_3(\psi(\alpha))"></span>. In rescaled Dicke coordinates <span data-tex="c_k=\sqrt{\binom9k}\,z_k"></span>, write <span data-tex="n=\sum_k|c_k|^2"></span> and <span data-tex="F_3=\operatorname{tr}((AA^\dagger)^2)"></span> for the unnormalized three-body purity polynomial. The exact certificate is</p>
+<div class="equation" data-tex="n^2(F_3-\beta n^2)=\sum_{\chi,J}\sum_{s=0}^{2J}\frac{f_{\chi,J,s}^{\dagger}G_{\chi,J}f_{\chi,J,s}}{\binom{2J}{s}}."></div>
+<p>The vectors f consist of quartic covariants of phase charges 0, 2 and 4. They come from highest-weight polynomials and their normalized lowering sequences. The basis is restricted to combinations that vanish on the rescaled candidate <span data-tex="(z_0,z_3,z_6,z_9)=(42\alpha,1,-1,-42\alpha)"></span>, with all other coordinates zero. The 36 Gram matrices have entries in <span data-tex="\mathbb Q(\alpha)"></span>. The positive root specifies the real embedding.</p>
+<p>The verifier checks the highest-weight and lowering relations. Both sides are then spin invariants of bidegree (4,4) with real coefficients, fixed by formal conjugation. The holomorphic quartic spin basis has dimension 715. In a spin of multiplicity m, a real invariant is specified by a real symmetric m by m matrix on the multiplicity space. Summing these dimensions gives 88.</p>
+<p>Both sides vanish at the Dicke candidate and have zero derivative along the normalized Dicke family. For the Gram side this follows from vanishing of the quartics. For the target it follows from the formula for <span data-tex="P_3"></span>. These are two independent linear conditions, as witnessed by the constant <span data-tex="n^4"></span> and by <span data-tex="n^2F_4"></span>, whose derivative on the normalized family is nonzero at the candidate. The resulting invariant subspace has dimension 86.</p>
+<p>The supplied rational Gram seed is corrected in 86 selected entries. The verifier evaluates the resulting 86-column map B at 86 Gaussian-integer points. With a rational approximate inverse C it encloses <span data-tex="\lVert I-CB\rVert_\infty&lt;1"></span>, which proves invertibility and hence injectivity on the 86-dimensional invariant subspace. For the exact evaluation residual e of the seed, it bounds the exact correction by</p>
+<div class="equation" data-tex="\lVert B^{-1}e\rVert_\infty\le\frac{\lVert Ce\rVert_\infty}{1-\lVert I-CB\rVert_\infty}."></div>
+<p>The computed upper bounds are <span data-tex="7.50\times10^{-13}"></span> for the inverse residual and <span data-tex="2.83\times10^{-14}"></span> for each entry of the Gram correction. Matching the evaluations gives an exact polynomial identity. The correction bound also proves that every corrected Gram block is positive definite. The verifier subtracts a diagonal shift covering the worst possible correction in each block and checks all pivots by outward-rounded interval elimination. The exact Gram correction is defined by the linear system.</p>
+<p>Dividing by <span data-tex="n^4"></span> gives the global lower bound on normalized states. Exact substitution of the Dicke candidate verifies attainment. The complementary reductions share their nonzero spectrum, so</p>
+<div class="equation" data-tex="\boxed{\min P_3=\min P_6=P_3(\psi(\alpha))=0.251436283174\ldots}."></div>
+<p><a href="verify_interval.py">Exact verifier</a> · <a href="interval_certificate_t3.json">Gram seed and interpolation pivots</a> · <a href="quartic_input.json.gz">Covariant basis and interpolation points</a></p>
+<h2 id="t4">Four- and five-body reductions</h2>
+<div class="equation" data-tex="P_4(\psi(r))=\frac{777924r^4+12348r^2-1680r+1159}{3528(21r^2+1)^2}."></div>
+<div class="equation" data-tex="\frac{d}{dr}P_4(\psi(r))=\frac{5(6174r^3+252r^2-173r-4)}{42(21r^2+1)^3}."></div>
+<p>The same sign argument proves that the unique positive root minimizes the family. The purity there is approximately 0.205747376506. In particular the rational choice <span data-tex="r=159842895/10^9"></span> gives a purity strictly below 0.205747377. The linear relaxation yields</p>
+<div class="equation" data-tex="P_4=\frac{47}{231}+\frac{977S_1}{20790}+\frac{137a_2}{126}+\frac{403a_3}{1078}+\frac{442a_7}{6237}\ge\frac{47}{231}."></div>
+<h3>Sharp global certificate</h3>
+<p>Let <span data-tex="\alpha"></span> denote the positive root of <span data-tex="6174r^3+252r^2-173r-4"></span> and let <span data-tex="\beta=P_4(\psi(\alpha))"></span>. Set <span data-tex="c_k=\sqrt{\binom9k}\,z_k"></span>, <span data-tex="n=\sum_k|c_k|^2"></span>, and <span data-tex="F_4=\operatorname{tr}((AA^\dagger)^2)"></span> for the unnormalized bipartition matrix.</p>
+<p>At the proposed minimizer the rescaled Dicke coordinates on levels 0, 3, 6 and 9 are proportional to <span data-tex="(42\alpha,1,-1,-42\alpha)"></span>. In each spin block we restrict the cubic covariants to combinations that vanish at these coordinates. This fixes the subspace in which to search for a positive Gram matrix. The retained blocks have phase charge 1 and twice-spin labels 1, 3, 5, 7, 9, 11, 13 and 15. Their reduced sizes are 1, 1, 2, 3, 3, 3, 2 and 1.</p>
+<p>The resulting identity is</p>
+<div class="equation" data-tex="n(F_4-\beta n^2)=\sum_J\sum_{s=0}^{2J}\frac{f_{J,s}^{\dagger}G_J f_{J,s}}{\binom{2J}{s}}."></div>
+<p>Here each vector f consists of the retained cubic combinations. The supplied kernel rows specify those combinations in the supplied covariant basis. All matrix entries lie in <span data-tex="\mathbb Q(\alpha)"></span>. The solver-free verifier expands the full polynomial identity over that field and checks every leading principal minor using rational interval arithmetic around the positive root. All eight Gram matrices are positive definite. Dividing by <span data-tex="n^3"></span> therefore proves</p>
+<div class="equation" data-tex="\boxed{\min P_4=\min P_5=P_4(\psi(\alpha))=0.205747376506\ldots}."></div>
+<p>The independent Dicke-matrix calculation verifies attainment.</p>
+<p><a href="verify_sharp.py">Solver-free sharp verifier</a> · <a href="sharp_certificate_t4.json">Exact kernel rows and Gram matrices</a> · <a href="cubic_covariants.json">Cubic basis</a> · <a href="sharp_face.py">Certificate construction</a> · <a href="lp.py">Double-copy recoupling</a></p>
+</main>
+<script>addEventListener('DOMContentLoaded',()=>document.querySelectorAll('[data-tex]').forEach(element=>katex.render(element.dataset.tex,element,{displayMode:element.classList.contains('equation'),throwOnError:true})));</script>
+</body></html>

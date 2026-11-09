@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sharp ten-qubit reduced-purity minima</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script defer src="../vendor/katex/katex.min.js"></script>
+<style>main{max-width:1050px;margin:auto;padding:35px}p{line-height:1.7}.equation{overflow-x:auto;padding:12px 0}table{border-collapse:collapse}th,td{padding:.4em .8em;border-bottom:1px solid #ccd3c8;text-align:left}</style>
+</head><body><main>
+<a href="../index.html#n=10&amp;k=4&amp;mode=min">Local catalogue</a>
+<h1>Sharp ten-qubit reduced-purity minima</h1>
+<p>For normalized pure symmetric ten-qubit states, write P<sub>t</sub> for the purity of the t-body reduction. The sharp minima are</p>
+<div class="equation" data-tex="\boxed{\min P_4=\min P_6=\frac{423}{2107},\qquad \min P_5=\frac{29}{158}.}"></div>
+<h2>Attaining states</h2>
+<p>Both minima are attained within the following three-level Dicke family.</p>
+<div class="equation" data-tex="|\psi(p)\rangle=\sqrt p\bigl(|D_{10}^{(1)}\rangle-|D_{10}^{(9)}\rangle\bigr)+\sqrt{1-2p}\,|D_{10}^{(5)}\rangle,\quad 0\le p\le\tfrac12."></div>
+<p>For Dicke coefficients c, the t versus 10−t bipartition matrix A has entries</p>
+<div class="equation" data-tex="A_{ij}=c_{i+j}\sqrt{\frac{\binom ti\binom{10-t}j}{\binom{10}{i+j}}}."></div>
+<p>Taking the squared Frobenius norm of the marginal gives</p>
+<div class="equation" data-tex="P_4(\psi(p))=\frac{4816p^2-2920p+1075}{3150},\qquad P_5(\psi(p))=\frac{1264p^2-760p+253}{756}."></div>
+<p>The minima on this family occur at p = 365/1204 and p = 95/316, respectively. Complementary reduced density operators have identical nonzero spectra, so the four-body minimum also gives the six-body minimum.</p>
+<h2>Global spin-covariant certificates</h2>
+<p>Use rescaled Dicke coordinates and the unnormalized purity polynomial</p>
+<div class="equation" data-tex="c_k=\sqrt{\binom{10}{k}}\,z_k,\qquad n=\sum_{k=0}^{10}|c_k|^2,\qquad F_t=\operatorname{tr}((AA^\dagger)^2)."></div>
+<p>The global lower bound β for each reduction follows from the exact identity</p>
+<div class="equation" data-tex="n^2(F_t-\beta n^2)=\sum_{\chi,J}\sum_{s=0}^{2J}\frac{f_{\chi,J,s}^{\dagger}G_{\chi,J}f_{\chi,J,s}}{\binom{2J}{s}}."></div>
+<p>The f vectors are quartic spin covariants with phase charges 0, 2 and 4. Each is formed from highest-weight polynomials and their normalized lowering sequences. The verifier checks these relations and verifies that the selected linear combinations vanish at the corresponding attaining state. In z coordinates that state is proportional to (1, α, −1) on levels 1, 5 and 9, with all other levels zero.</p>
+<div class="equation" data-tex="\alpha_4^2=\frac{79}{1533},\qquad \alpha_5^2=\frac1{19},\qquad \alpha_t&gt;0."></div>
+<p>The complete holomorphic quartic basis has dimension 1001. The verifier checks its independence modulo a prime, weight by weight. For a spin of multiplicity m, Schur's lemma gives m(m+1)/2 real symmetric invariant contractions. The resulting real invariant space of bidegree (4,4), fixed by formal conjugation, has dimension 130.</p>
+<p>Both sides of the identity vanish at the attaining state, and both derivatives vanish along the normalized Dicke family. Vanishing of the quartic covariants gives these conditions on the right. Exact substitution and differentiation give them on the left. These are independent linear conditions because n⁴ is constant on the normalized family and the purity of the other reduction has nonzero derivative there. The constrained invariant space therefore has dimension 128.</p>
+<p>The verifier evaluates 128 selected Gram coordinates at 128 Gaussian-integer states, dividing each evaluation by n⁴. The resulting square map B is invertible because a supplied rational approximate inverse C satisfies the rigorous bound below. The exact correction to the rational Gram seed is determined by its exact evaluation residual e.</p>
+<div class="equation" data-tex="\lVert I-CB\rVert_\infty&lt;1,\qquad \lVert B^{-1}e\rVert_\infty\le\frac{\lVert Ce\rVert_\infty}{1-\lVert I-CB\rVert_\infty}."></div>
+<p>Invertibility gives injectivity on the 128-dimensional constrained invariant space, so the correction proves the full polynomial identity. To check positivity, the verifier subtracts from each seed block a diagonal shift equal to its size times the bound on the entrywise correction. Outward-rounded interval elimination certifies positive pivots in every shifted block. Each exact corrected Gram matrix is therefore positive definite. Dividing the identity by n⁴ proves the claimed global bounds.</p>
+<p>The verification uses SageMath exact arithmetic and rigorous real intervals. Run <code>sage -python verify_interval.py 4</code> or <code>sage -python verify_interval.py 5</code> in this directory. <a href="verify_interval.py">Verifier</a></p>
+<h3 id="t4">Certificate for t = 4</h3>
+<p>The verifier checked 44 Gram blocks. Its outward-rounded inverse residual and Gram-entry correction bounds are recorded below.</p>
+<table><tr><th>Quantity</th><th>Upper bound</th></tr>
+<tr><td>Inverse residual</td><td><code>2.5578054820333316113748884594778475150082252280e-10</code></td></tr>
+<tr><td>Gram-entry correction</td><td><code>5.4058637695386702786430328642425224150552262093e-12</code></td></tr></table>
+<p><a href="quartic_input_t4.json.gz">Covariants and evaluation points</a> · <a href="interval_certificate_t4.json">Gram seed and approximate inverse</a> · <a href="verify_t4.log">Verification log</a></p>
+<h3 id="t5">Certificate for t = 5</h3>
+<p>The verifier checked 44 Gram blocks. Its outward-rounded inverse residual and Gram-entry correction bounds are recorded below.</p>
+<table><tr><th>Quantity</th><th>Upper bound</th></tr>
+<tr><td>Inverse residual</td><td><code>2.3690108796360006387854015180804769283505839697e-10</code></td></tr>
+<tr><td>Gram-entry correction</td><td><code>8.0742177957891501790095230822524517906229216522e-12</code></td></tr></table>
+<p><a href="quartic_input_t5.json.gz">Covariants and evaluation points</a> · <a href="interval_certificate_t5.json">Gram seed and approximate inverse</a> · <a href="verify_t5.log">Verification log</a></p>
+</main><script>
+addEventListener('DOMContentLoaded',()=>document.querySelectorAll('[data-tex]').forEach(e=>katex.render(e.dataset.tex,e,{displayMode:true,throwOnError:true})));
+</script></body></html>

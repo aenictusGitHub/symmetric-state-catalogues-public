@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The twelve-qubit half-system purity minimum</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script defer src="../vendor/katex/katex.min.js"></script>
+<style>
+main{max-width:1000px;margin:auto;padding:35px}
+p{line-height:1.7}
+.equation{overflow-x:auto;padding:8px 0}
+</style>
+</head>
+<body>
+<main>
+<a href="../index.html#n=12&amp;k=6&amp;mode=min">Local catalogue</a>
+<h1>The twelve-qubit half-system purity minimum</h1>
+<p>For every normalized pure symmetric twelve-qubit state, $P_6=\operatorname{tr}(\rho_6^2)\ge13/84$. The icosahedral state attains equality.</p>
+<h2>Quartic spin-covariant certificate</h2>
+<p>Write $\rho=|\psi\rangle\langle\psi|$ on the spin-6 space. Let $a_\ell=\sum_{m=-\ell}^\ell|\operatorname{tr}(T_{\ell m}^\dagger\rho)|^2$, where the irreducible spin tensors are orthonormal for the Hilbert–Schmidt inner product. Let $p_J=\|\Pi_J(\psi\otimes\psi)\|^2$ be the probability of total spin $J$ in two copies of the state.</p>
+<div class="equation" data-tex="\boxed{P_6-\frac{13}{84}=\frac{13}{7}a_1+\frac{7319}{5929}a_2+\frac{390}{539}a_3+\frac{884}{4851}a_4+\frac{247}{5082}a_8+\frac{13}{154}p_2.}"></div>
+<p>Each term on the right is a nonnegative squared norm. The identity is homogeneous of degree four in the state amplitudes when the constant is multiplied by $\|\psi\|^4$.</p>
+<h2>Verification of the identity</h2>
+<p>For the spin $s/2$ reduction, use the same Hilbert–Schmidt normalization for the tensors. The adjoint of partial trace is an intertwiner, so it acts by a scalar on each rank $\ell\le s$. To obtain the scalar, use the highest-weight operator $J_+^\ell$. Its expectation in a coherent product of $m$ qubits scales as $m!/(m-\ell)!$ at fixed direction. Its squared Hilbert–Schmidt norm is $(\ell!)^2\binom{m+\ell+1}{2\ell+1}$, from summing the squared raising matrix elements in the Dicke basis. Taking the ratio of coherent expectations of the normalized tensors gives the following squared reduction factors.</p>
+<div class="equation" data-tex="P_s=\sum_{\ell=0}^s R_{s\ell}a_\ell,\qquad R_{s\ell}=\frac{(s!)^2(12-\ell)!(13+\ell)!}{(12!)^2(s-\ell)!(s+\ell+1)!}."></div>
+<p>The swap trick expresses $P_s$ as the expectation of the swap of $s$ corresponding qubits across two copies. Compress the swap to the tensor product of the two symmetric spaces. It commutes with collective rotations, and the tensor product of two spin-6 spaces is multiplicity-free. The compressed swap therefore has one scalar $M_{sJ}$ per total spin. Only even $J$ occur in $\psi\otimes\psi$, because this vector is symmetric under interchange of the full copies. Thus $P_s=\sum_{J\text{ even}}M_{sJ}p_J$ and $\sum_{J\text{ even}}p_J=1$.</p>
+<p>To compute $M_{sJ}$, set $r=12-J$ and use the unnormalized highest-weight vector below. Its coefficients follow from the raising-operator recurrence. Equivalently, its binary polynomial is proportional to $(x_1y_2-y_1x_2)^r x_1^{12-r}x_2^{12-r}$.</p>
+<div class="equation" data-tex="v_J=\sum_{k=0}^r c_k\sqrt{\binom{12}{k}\binom{12}{r-k}}\,|D_{12}^{(k)}\rangle|D_{12}^{(r-k)}\rangle,\qquad c_k=\frac{(-1)^k\binom{r}{k}}{\binom{12}{k}\binom{12}{r-k}}."></div>
+<p>A computational basis string in the two copies has excitation counts $(a,i)$ and $(b,j)$ in the swapped and unswapped blocks, respectively. Its coefficient in $v_J$ is $c_{a+i}$ when $a+b+i+j=r$. After the swap the coefficient is $c_{b+i}$. Counting strings gives</p>
+<div class="equation" data-tex="M_{sJ}=\frac{1}{\|v_J\|^2}\sum_{a+b+i+j=r}\binom{s}{a}\binom{s}{b}\binom{12-s}{i}\binom{12-s}{j}\,c_{a+i}c_{b+i}."></div>
+<p>For each of the seven even-spin channels, substitute $P_s=M_{sJ}$ in the triangular system and solve for $a_0,\ldots,a_8$. The resulting coefficient of that channel on the right of the boxed identity is $M_{6J}-13/84$. The verifier checks these seven equalities with rational arithmetic. By linearity the identity holds for the actual spin probabilities of every normalized pure symmetric state.</p>
+<h2>Attainment</h2>
+<div class="equation" data-tex="|\mathrm{ico}\rangle=\frac{\sqrt{7}\,|D_{12}^{(1)}\rangle+\sqrt{11}\,|D_{12}^{(6)}\rangle-\sqrt{7}\,|D_{12}^{(11)}\rangle}{5}."></div>
+<p>The known icosahedral representative has rescaled Dicke coordinates proportional to $z_1=1$, $z_6=1/7$, and $z_{11}=-1$, with all others zero. With $c_k^{\rm Dicke}=\sqrt{\binom{12}{k}}z_k/\sqrt{n}$ and $n=\sum_k\binom{12}{k}|z_k|^2$, the bipartition coefficient matrix at $s=6$ is</p>
+<div class="equation" data-tex="A_{ij}=\sqrt{\binom{6}{i}\binom{6}{j}}\,z_{i+j}/\sqrt{n},\qquad P_6=\operatorname{tr}\bigl((AA^\dagger)^2\bigr)=\frac{13}{84}."></div>
+<p>The last evaluation is rational because the binomial square roots cancel in the trace. The representative was given by Baguette, Damanet, Giraud and Martin. <a href="https://doi.org/10.1103/PhysRevA.92.052333">Reference for the icosahedral state</a></p>
+<p><a href="verify.py">Exact verifier</a> · <a href="verify.log">Verification log</a>. Run <code>python3 verify.py</code> with the standard library.</p>
+</main>
+<script>
+addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-tex]').forEach(e=>katex.render(e.dataset.tex,e,{displayMode:true,throwOnError:true}));
+  document.querySelectorAll('main p').forEach(p=>{
+    for(const node of Array.from(p.childNodes)){
+      if(node.nodeType!==Node.TEXT_NODE || !node.data.includes('$'))continue;
+      const pieces=node.data.split('$');
+      const frag=document.createDocumentFragment();
+      for(const [i,piece] of pieces.entries()){
+        if(i%2===0){frag.append(piece);continue;}
+        const span=document.createElement('span');
+        katex.render(piece,span,{throwOnError:true});
+        frag.append(span);
+      }
+      node.replaceWith(frag);
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -7,7 +7,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "_site"
-CATALOGUES = ("symmetric-sector-catalogue", "anticoherent-state-catalogue", "ac-subspace-catalogue", "majorana-degeneracy-catalogue", "sector-length-sets")
+CATALOGUES = ("symmetric-sector-catalogue", "anticoherent-state-catalogue", "ac-subspace-catalogue", "majorana-degeneracy-catalogue", "sector-length-sets", "reduced-purity-catalogue")
 REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "aenictusGitHub/symmetric-state-catalogues-public")
 REVISION = os.environ.get("GITHUB_SHA", "main")
 LIMIT = 10 * 1024**2

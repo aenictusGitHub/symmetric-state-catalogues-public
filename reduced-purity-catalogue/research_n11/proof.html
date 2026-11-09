@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eleven-qubit reduced-purity certificates</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script defer src="../vendor/katex/katex.min.js"></script>
+<style>main{max-width:1050px;margin:auto;padding:35px}p{line-height:1.7}.equation{overflow-x:auto;padding:12px 0}</style>
+</head><body><main>
+<a href="../index.html#n=11&amp;k=5&amp;mode=min">Local catalogue</a>
+<h1>Eleven-qubit reduced-purity certificates</h1>
+<p>For normalized pure symmetric eleven-qubit states, the five- and six-body minima are proved globally. The four- and seven-body minima are also proved globally.</p>
+<div class="equation" data-tex="\min P_5=\min P_6\approx0.17709847041834607,\qquad \min P_4=\min P_7\approx0.201809908079738719."></div>
+<h2>Purity polynomial and spin covariants</h2>
+<p>Set the Dicke coefficients c in terms of rescaled coordinates z. The unnormalized purity polynomial follows from the coefficient matrix A of the bipartition.</p>
+<div class="equation" data-tex="c_k=\sqrt{\binom{11}{k}}\,z_k,\qquad A_{ij}=\sqrt{\binom ti\binom{11-t}j}\,z_{i+j},\qquad n=\sum_k |c_k|^2,\qquad F_t=\operatorname{tr}((AA^\dagger)^2)."></div>
+<p>The degree-eight certificates establish the identity below. The f vectors are quartic spin covariants of phase charges 0, 2 and 4. The inverse binomial factors are the spin-invariant norm weights for the normalized lowering sequences.</p>
+<div class="equation" data-tex="n^2(F_t-\beta n^2)=\sum_{\chi,J}\sum_{s=0}^{2J}\frac{f_{\chi,J,s}^{\dagger}G_{\chi,J}f_{\chi,J,s}}{\binom{2J}{s}}."></div>
+<p>The verifier checks the highest-weight and lowering relations. In the complete holomorphic quartic basis, a spin of multiplicity m contributes m(m+1)/2 real symmetric invariant contractions. The space of real conjugation-even invariants of bidegree (4,4) has dimension 177.</p>
+<p>In each interpolation problem B is the square map from the chosen Gram-entry corrections to evaluations on Gaussian-integer states, normalized by n⁴. For the rational approximate inverse C and seed residual e, the interval checks certify</p>
+<div class="equation" data-tex="\lVert I-CB\rVert_\infty&lt;1,\qquad \lVert B^{-1}e\rVert_\infty\le\frac{\lVert Ce\rVert_\infty}{1-\lVert I-CB\rVert_\infty}."></div>
+<p>For the four-body bound, the verifier first uses the approximate inverse to recenter the rational Gram seed. It then bounds the residual correction using the same interval check. Matching all evaluations gives an exact invariant identity by injectivity on the relevant space. A block of size m changes in operator norm by at most m times the entrywise correction bound. Outward-rounded interval elimination proves positivity after shifting each rational seed block by that bound. Dividing the resulting nonnegative identity by n⁴ proves the global lower bound.</p>
+<h2 id="t5">Five- and six-body global minimum</h2>
+<p>The exact attaining state is specified by a unique solution of five polynomial equations in a certified box. Use real rescaled coordinates z₀ = 1 and z₂,z₄,z₆,z₈,z₁₀ as the five variables, with all odd coordinates zero. Normalize the resulting Dicke coefficients. The box is centered at the five exact decimal coordinates in the witness file and has radius 10⁻³⁶ in each coordinate. Its equations are</p>
+<div class="equation" data-tex="n\,\partial_{z_k}F_5-2F_5\,\partial_{z_k}n=0,\qquad k\in\{2,4,6,8,10\}."></div>
+<p>The verifier constructs a preconditioned fixed-point map for this polynomial system. An interval Jacobian bound proves contraction and the center residual proves that the map sends the closed box into itself. This establishes existence and uniqueness in the box. The exact global minimum is β = F₅/n² at that root.</p>
+<p>For each retained covariant block, the verifier solves all structurally nonzero evaluation rows at the root. The other rows vanish by parity. The resulting covariants vanish at the root, so the Gram side has zero value and zero first derivatives in the five chart variables. The target shares these conditions by construction of β and stationarity. Interval inversion of a six-column minor verifies that these six conditions are independent on the invariant space. The interpolation therefore uses 171 evaluations and corrections. The resulting identity applies to arbitrary complex Dicke coefficients.</p>
+<p><code>sage -python verify_sharp_t5.py</code> checks the isolated state, polynomial identity and positive Gram blocks. <a href="verify_sharp_t5.py">Verifier</a> · <a href="witness_t5.json">Box center</a> · <a href="sharp_input_t5.json.gz">Covariants and evaluation points</a> · <a href="sharp_certificate_t5.json">Gram seed and interpolation data</a> · <a href="sharp_verify_t5.log">Verification log</a></p>
+<h2 id="t4">Four- and seven-body global minimum</h2>
+<p>Let β be the purity at the isolated stationary state below. A degree-ten identity proves the sharp bound for arbitrary complex Dicke coefficients. In the notation of the degree-eight identity, replace its left side by the polynomial below and take the f vectors to be quintic covariants of phase charge 3.</p>
+<div class="equation" data-tex="n^3(F_4-\beta n^2)."></div>
+<p>Most of the quintic covariants are chosen from kernels of the complex evaluation at the stationary root. Parity removes the structurally zero rows and interval matrix inversion constructs the exact kernel of the remaining real and imaginary rows. The two exceptional spins are obtained directly from the cubic gradient</p>
+<div class="equation" data-tex="g_k=\binom{11}{k}^{-1}\frac{\partial}{\partial\bar z_k}(F_4-\beta n^2)."></div>
+<p>The cubic gradient transforms as a spin-11/2 vector and vanishes at the stationary state. Full stationarity follows from the chart equations, parity, rotation and phase invariance, and homogeneity at the attaining value. Coupling the gradient with two copies of the original spin vector gives highest-weight quintics</p>
+<div class="equation" data-tex="f_{33/2,0}=z_0^2g_0,\qquad f_{31/2,0}=z_0^2g_1-z_0z_1g_0."></div>
+<p>The complete multiplets vanish at the root because each component is linear in the vanishing gradient. The verifier checks the highest-weight and lowering relations with coefficients affine in β. This handles the two rank drops without inferring any exact dependence from numerical singular values.</p>
+<p>The real conjugation-even invariant space of bidegree (5,5) has dimension 992. The verifier counts the spin multiplicities of the holomorphic quintics from the weight counts of the degree-five monomials. It certifies independence of the value and nine chart derivatives at the root by enclosing a nonzero determinant. The difference between the target and Gram sides therefore lies in a 982-dimensional invariant space, and the 982 evaluation constraints give an exact identity by the interval inverse check. The final interval positivity checks bound the effect of the exact correction on every Gram block.</p>
+<p><code>python verify_sharp_t4.py sharp_input_t4.json.gz /path/to/sage-python</code> checks the proof using python-flint and Sage. <a href="verify_sharp_t4.py">Verifier</a> · <a href="quintic_gradient.py">Gradient covariants</a> · <a href="sharp_input_t4.json.gz">Certificate data</a> · <a href="sharp_verify_t4.log">Verification log</a></p>
+<p>The earlier degree-eight bracket remains independently reproducible. <a href="verify_interval.py">Lower-bound verifier</a> · <a href="quartic_input_t4.json.gz">Covariants and evaluation points</a> · <a href="interval_certificate_t4.json">Gram seed and interpolation data</a> · <a href="verify_t4.log">Verification log</a></p>
+<p><a href="witness_t4.json">Center of the isolating box</a></p>
+<h3>Isolated stationary state and strict local minimality</h3>
+<p>Fix the projective chart by setting z₀ = 1, z₁ = 0 and taking z₂ real. Near the candidate, collective rotations provide the three real conditions z₁ = 0 and Im z₂ = 0. The transverse infinitesimal rotations act on z₁ with factors proportional to 1 ± 10z₂, and the longitudinal rotation changes Im z₂ with nonzero derivative. Thus this chart is locally transverse to the rotation orbit.</p>
+<p>Set the odd coordinates to zero and solve the nine real stationarity equations for the even coordinates in a box of radius 10⁻³⁶ around the witness. With n and F₄ as above, these equations are n ∂ᵢF₄ − 2F₄ ∂ᵢn = 0. The preconditioned map has contraction constant below 3.2 × 10⁻¹² and sends the box into itself. The ten remaining derivatives in the chart vanish by parity.</p>
+<div class="equation" data-tex="H_{ij}=\partial_i\partial_jF_4-2\beta(\partial_i n\,\partial_j n+n\,\partial_i\partial_j n),\qquad \beta=F_4/n^2."></div>
+
+<p>At the root, the Hessian of the normalized purity is H/n². Interval elimination certifies positive pivots for H on all 19 real chart directions, including the odd Dicke perturbations. The stationary state therefore minimizes the purity strictly on the local slice.</p>
+<p><code>sage -python verify_stationary_t4.py</code> checks the box and Hessian. <a href="verify_stationary_t4.py">Stationarity and Hessian verifier</a> · <a href="stationary_t4.log">Verification log</a></p>
+</main><script>
+addEventListener('DOMContentLoaded',()=>document.querySelectorAll('[data-tex]').forEach(e=>katex.render(e.dataset.tex,e,{displayMode:true,throwOnError:true})));
+</script></body></html>
