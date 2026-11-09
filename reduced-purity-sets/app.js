@@ -22,10 +22,12 @@
     const need=Math.max(0,...entries.map(el=>(el.querySelector('.sector-symbol')?.getBoundingClientRect().width||0)+(el.querySelector('.sector-number>.katex')?.getBoundingClientRect().width||0)+12));
     if(need>(width-14)/3)grid.classList.add(need>(width-7)/2?'exact-1':'exact-2');
   }
-  function renderPurityValues(purities){
+  function renderPurityValues(state){
+    const {purities}=state;
+    const exact=PurityCoordinates.exactPurityLabels(n,state.exactSectors);
     $('sector-values').innerHTML=purities.map((v,k)=>{
-      const relation=v===1?'=':'\\approx';
-      return '<div class="sector-value"><span class="sector-symbol">'+tex('P_{'+(k+1)+'}'+relation)+'</span><span class="sector-number">'+tex(fmt(v))+'</span></div>';
+      const relation=exact[k]?'=':'\\approx';
+      return '<div class="sector-value"><span class="sector-symbol">'+tex('P_{'+(k+1)+'}'+relation)+'</span><span class="sector-number">'+tex(exact[k]??fmt(v))+'</span></div>';
     }).join('');
     requestAnimationFrame(fitSectorValues);
   }
@@ -94,7 +96,7 @@
     return m?fiveQubitState(Number(m[1]),Number(m[2])):null;
   }
   function notify(text){$('notification').textContent=text;clearTimeout(notify.timer);notify.timer=setTimeout(()=>$('notification').textContent='',4500);}
-  function showState(s,preview=false,{live=false}={}){if(!s)return;previewing=preview;document.querySelector('.majorana-section').hidden=false;$('no-state').hidden=true;$('state-formula').hidden=false;document.querySelector('.state-actions').hidden=false;$('numeric-details').hidden=false;current=stateData(s);const calc=sphere.setState(current.coefficients,{preserveOrientation:pointDragging});sector.setSelected(current);paintMath($('state-title'),AtlasMath.state(s.id,s.mathLabel||title(s)));$('selection-mode').textContent=preview?'Preview':'Selected';$('state-evidence').innerHTML=AtlasMath.html((s.proofOrigin||s.source||(s.status==='attained'?'Explicit normalized pure-state witness':'Explicit representative state')).replace(/\bS([1-6])\b/g,'$S_$1$'));showExpression(s,current.coefficients,{live});$('star-count').textContent=`${n} points · ${calc.groups.length} distinct`;const tuple=current.sectors;renderPurityValues(current.purities);$('coefficients').innerHTML=`<table><thead><tr><th>k</th><th>c<sub>k</sub></th></tr></thead><tbody>${current.coefficients.map((c,k)=>`<tr><td>${k}</td><td>${esc(complex(c))}</td></tr>`).join('')}</tbody></table>`;const norm=current.coefficients.reduce((a,c)=>a+c[0]**2+c[1]**2,0),error=Math.max(...tuple.map((v,k)=>Math.abs(v-(s.sectors?.[k]??v))));$('verification').textContent=`Norm: ${fmt(norm,10)} · Sector check: ${error.toExponential(1)} · Constellation reconstruction fidelity: ${fmt(calc.fidelity,12)}${calc.reliable?'':' · Numerical constellation may be ill-conditioned'}.`;$('majorana-view').setAttribute('aria-label',`Majorana sphere for ${title(s)}: ${n} points, ${calc.groups.length} distinct positions. Drag to rotate.`);if(live)window.StatePicker?.updateLive?.(s);else{$('state-select').value=s.id||'';window.StatePicker?.update(s,n);}if(!preview&&!live)updateFamily(s);}
+  function showState(s,preview=false,{live=false}={}){if(!s)return;previewing=preview;document.querySelector('.majorana-section').hidden=false;$('no-state').hidden=true;$('state-formula').hidden=false;document.querySelector('.state-actions').hidden=false;$('numeric-details').hidden=false;current=stateData(s);const calc=sphere.setState(current.coefficients,{preserveOrientation:pointDragging});sector.setSelected(current);paintMath($('state-title'),AtlasMath.state(s.id,s.mathLabel||title(s)));$('selection-mode').textContent=preview?'Preview':'Selected';$('state-evidence').innerHTML=AtlasMath.html((s.proofOrigin||s.source||(s.status==='attained'?'Explicit normalized pure-state witness':'Explicit representative state')).replace(/\bS([1-6])\b/g,'$S_$1$'));showExpression(s,current.coefficients,{live});$('star-count').textContent=`${n} points · ${calc.groups.length} distinct`;const tuple=current.sectors;renderPurityValues(current);$('coefficients').innerHTML=`<table><thead><tr><th>k</th><th>c<sub>k</sub></th></tr></thead><tbody>${current.coefficients.map((c,k)=>`<tr><td>${k}</td><td>${esc(complex(c))}</td></tr>`).join('')}</tbody></table>`;const norm=current.coefficients.reduce((a,c)=>a+c[0]**2+c[1]**2,0),error=Math.max(...tuple.map((v,k)=>Math.abs(v-(s.sectors?.[k]??v))));$('verification').textContent=`Norm: ${fmt(norm,10)} · Sector check: ${error.toExponential(1)} · Constellation reconstruction fidelity: ${fmt(calc.fidelity,12)}${calc.reliable?'':' · Numerical constellation may be ill-conditioned'}.`;$('majorana-view').setAttribute('aria-label',`Majorana sphere for ${title(s)}: ${n} points, ${calc.groups.length} distinct positions. Drag to rotate.`);if(live)window.StatePicker?.updateLive?.(s);else{$('state-select').value=s.id||'';window.StatePicker?.update(s,n);}if(!preview&&!live)updateFamily(s);}
   function syncCompanionExplorer(state){
     const link=$('companion-explorer');
     link.hash=new URLSearchParams({n,state:state.id||''}).toString();
@@ -106,8 +108,8 @@
   function getData(k){
     if(k!==2)return window.SECTOR_SMALL_DATA[String(k)];
     const knownStates=[
-      {...intervalState(0,2),interactivePoint:false,id:'n2-ghz',label:'Bell state'},
-      {...intervalState(2,2),interactivePoint:false,id:'n2-product',label:'Product state'}
+      {...intervalState(0,2),interactivePoint:false,id:'n2-ghz',exactSectors:['0','3'],label:'Bell state'},
+      {...intervalState(2,2),interactivePoint:false,id:'n2-product',exactSectors:['2','1'],label:'Product state'}
     ];
     return {n:2,dimension:1,knownStates,curves:[]};
   }
