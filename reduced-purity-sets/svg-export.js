@@ -146,14 +146,37 @@
       return `<path d="${pathPoints(part.points)}" fill="none" stroke="${line.color}" stroke-width="${number(line.width)}" stroke-linecap="round" stroke-linejoin="round" opacity="${number(part.hidden?Math.min(line.opacity,.38):line.opacity)}"${dashed?' stroke-dasharray="'+line.dash.map(number).join(' ')+'"'+(line.axis?' stroke-dashoffset="'+number(line.dashOffset)+'"':''):''}/>`;
     }).join('');
   }
+  function symmetryLabelSVG(order,tex,x,y,size,color,opacity){
+    const math=global.MajoranaLatex;
+    const axis=math.layout(order,size);
+    if(!tex.includes('\\parallel')){
+      return '<g opacity="'+escape(opacity)+'">'+math.toSVG(order,x,y,size,color)+'</g>';
+    }
+    const z=math.layout('z',size),gap=size*.55;
+    const left=x-(axis.width+gap+z.width)/2, mid=left+axis.width+gap/2;
+    const baseline=y+axis.baselineOffset;
+    const marks=[mid-size*.06,mid+size*.06].map(px=>
+      'M'+number(px)+' '+number(baseline-size*.7)+'v'+number(size*.87)).join('');
+    return '<g opacity="'+escape(opacity)+'" aria-label="'+escape(tex)+'">'+
+      math.toSVG(order,left+axis.width/2,y,size,color)+
+      '<path d="'+marks+'" fill="none" stroke="'+escape(color)+'" stroke-width="'+number(size*.05)+'"/>'+
+      math.toSVG('z',left+axis.width+gap+z.width/2,baseline-z.baselineOffset,size,color)+'</g>';
+  }
   function labelSVG(view){
     const serializer=new XMLSerializer(),output=[];
+    const axes=new Map((view.symmetryAxisLabels||[]).map(axis=>[axis.label,axis]));
     for(const label of view.labels||[]){
       const element=label.el,style=getComputedStyle(element);
       if(element.hidden||style.display==='none'||style.visibility==='hidden')continue;
       const left=parseFloat(element.style.left),top=parseFloat(element.style.top);
       const width=element.offsetWidth||element.getBoundingClientRect().width,height=element.offsetHeight||element.getBoundingClientRect().height;
       if(![left,top,width,height].every(Number.isFinite)||width<=0||height<=0)continue;
+      const axis=axes.get(label);
+      if(axis&&global.MajoranaLatex){
+        const tex=element.querySelector('annotation[encoding="application/x-tex"]')?.textContent||axis.tex;
+        output.push(symmetryLabelSVG(axis.order,tex,left,top,parseFloat(style.fontSize),style.color,style.opacity));
+        continue;
+      }
       const wrapper=document.createElementNS(XHTML,'div'),clone=element.cloneNode(true);
       wrapper.setAttribute('style','margin:0;padding:3px;white-space:nowrap;overflow:visible;');
       for(const property of ['font-family','font-size','font-weight','font-style','line-height','color','opacity','text-shadow'])clone.style.setProperty(property,style.getPropertyValue(property));
