@@ -177,6 +177,10 @@
         output.push(symmetryLabelSVG(axis.order,tex,left,top,parseFloat(style.fontSize),style.color,style.opacity));
         continue;
       }
+      if((label.named||element.classList.contains('axis-label'))&&global.AtlasLabelVector){
+        const outlines=global.AtlasLabelVector.toSVG(element,left,top);
+        if(outlines){output.push(outlines);continue;}
+      }
       const wrapper=document.createElementNS(XHTML,'div'),clone=element.cloneNode(true);
       wrapper.setAttribute('style','margin:0;padding:3px;white-space:nowrap;overflow:visible;');
       for(const property of ['font-family','font-size','font-weight','font-style','line-height','color','opacity','text-shadow'])clone.style.setProperty(property,style.getPropertyValue(property));
