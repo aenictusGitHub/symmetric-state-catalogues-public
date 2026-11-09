@@ -1,6 +1,7 @@
 /* Inline mathematics is authored in $...$ and typeset locally with KaTeX. */
 (function(){
   const stateTex={
+    'n2-product':'|00\\rangle','n2-ghz':'|\\Phi^+\\rangle',
     'n3-product':String.raw`|0\rangle^{\otimes3}`,'n3-ghz':String.raw`|\mathrm{GHZ}(3)\rangle`,'n3-w':String.raw`|W(3)\rangle`,
     'n4-product':String.raw`|0\rangle^{\otimes4}`,'n4-ghz':String.raw`|\mathrm{GHZ}(4)\rangle`,'n4-tetra':String.raw`|\mathrm{tetra}\rangle`,'n4-w':String.raw`|W(4)\rangle`,'n4-dicke2':String.raw`|D_4^{(2)}\rangle`,
     'n5-product':String.raw`|0\rangle^{\otimes5}`,'n5-ghz':String.raw`|\mathrm{GHZ}(5)\rangle`,'n5-w':String.raw`|W(5)\rangle`,'n5-dicke2':String.raw`|D_5^{(2)}\rangle`,'n5-psia':String.raw`|\psi_5^{(a)}\rangle`,'n5-psib':String.raw`|\psi_5^{(b)}\rangle`,'n5-psic':String.raw`|\psi_5^{(c)}\rangle`,

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Explore sector-length sets of pure symmetric three-, four-, five- and six-qubit states, with explicit Dicke states and interactive Majorana constellations.">
+  <meta name="description" content="Explore sector-length sets of pure symmetric two-, three-, four-, five- and six-qubit states, with explicit Dicke states and interactive Majorana constellations.">
   <meta name="theme-color" content="#faf9f5">
   <title>Sector-length geometry · Symmetric states</title>
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
@@ -16,7 +16,7 @@
   <script defer src="state-picker.js?v=3605d6799c9e"></script>
   <script defer src="majorana-math.js"></script>
   <script defer src="data/small-n-display.js?v=9d809c271f3b"></script>
-  <script defer src="data/small-n-constructors.js?v=725d4e72cebb"></script>
+  <script defer src="data/small-n-constructors.js?v=n2-interval"></script>
   <script defer src="data/n6-display.js"></script>
   <script defer src="data/n6-smooth-geometry.js"></script>
   <script defer src="data/n6-manuscript-nodes.js"></script>
@@ -34,14 +34,16 @@
   <script defer src="data/export-fonts.js"></script>
   <script defer src="svg-export.js?v=6ece22f43596"></script>
   <script defer src="static-occlusion.js?v=1bfdfa2a637d"></script>
-  <script defer src="viewer.js?v=6030946ded44"></script>
-  <script defer src="app.js?v=07d91705222b"></script>
+  <script defer src="viewer.js?v=n2-interval"></script>
+  <script defer src="app.js?v=companion-explorer"></script>
 </head>
 <body>
   <a class="skip" href="#explorer">Skip to explorer</a>
   <header class="site-header">
     <a class="wordmark" href="#n=6">Symmetric states <span>/ sector geometry</span></a>
     <nav aria-label="Main navigation">
+      <a id="companion-explorer" href="../reduced-purity-sets/index.html#n=3&amp;state=n3-ghz">Reduced-purity geometry ↗</a>
+      <span id="companion-unavailable" hidden>Reduced-purity geometry ($N=2$–$5$)</span>
       <a href="https://aenictusgithub.github.io/symmetric-state-catalogues-public/symmetric-sector-catalogue/index.html">Extremal-state catalogue ↗</a>
       <a href="notes.html">Definitions &amp; evidence</a>
     </nav>
@@ -55,6 +57,7 @@
     <section id="explorer" aria-label="Interactive sector-length atlas">
       <div class="explorer-bar">
         <div class="n-tabs" role="group" aria-label="Number of qubits">
+          <button type="button" data-n="2" aria-label="N equals 2 qubits" aria-pressed="false">$N = 2$</button>
           <button type="button" data-n="3" aria-label="N equals 3 qubits" aria-pressed="false">$N = 3$</button>
           <button type="button" data-n="4" aria-label="N equals 4 qubits" aria-pressed="false">$N = 4$</button>
           <button type="button" data-n="5" aria-label="N equals 5 qubits" aria-pressed="false">$N = 5$</button>
@@ -122,9 +125,9 @@
       </div>
       <div id="notification" role="status" aria-live="polite"></div>
     </section>
-    <section class="reading-note"><p><strong>A set, rather than a convex hull.</strong> For $N=6$, the manuscript’s gray and violet nodes are supplemented by selected attained boundary states; $N=3,4,5$ also include selected boundary samples. Violet nodes have explicit normalized pure-state representatives. No line or interpolated volume is declared achievable merely because its endpoints are. For $N=6$, the gray body is a necessary outer region; the full achievable set remains incompletely characterized.</p><a href="notes.html">Read the conventions, bounds and data provenance →</a></section>
+    <section class="reading-note"><p><strong>A set, rather than a convex hull.</strong> For $N=6$, the manuscript’s gray and violet nodes are supplemented by selected attained boundary states; $N=2,3,4,5$ also include selected boundary samples. Violet nodes have explicit normalized pure-state representatives. No line or interpolated volume is declared achievable merely because its endpoints are. For $N=6$, the gray body is a necessary outer region; the full achievable set remains incompletely characterized.</p><a href="notes.html">Read the conventions, bounds and data provenance →</a></section>
   </main>
-  <footer><span>Pure symmetric multiqubit states · N = 3–6</span><a href="notes.html#credits">Authors &amp; AI acknowledgement</a></footer>
+  <footer><span>Pure symmetric multiqubit states · N = 2–6</span><a href="notes.html#credits">Authors &amp; AI acknowledgement</a></footer>
   <noscript>This atlas needs JavaScript. The data files include all named states and their sector lengths.</noscript>
 </body>
 </html>

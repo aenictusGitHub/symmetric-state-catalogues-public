@@ -1,0 +1,15 @@
+/* Both the closed value and open choices use the same local LaTeX fonts. */
+.state-picker{--state-picker-font-size:15px;position:relative;width:100%;min-width:0;grid-column:1;isolation:isolate;z-index:6}
+.state-picker-trigger{display:flex;align-items:center;width:100%;min-width:0;text-align:left;padding:9px 35px 9px 13px;position:relative;font-size:var(--state-picker-font-size);line-height:1.6;min-height:39px}
+.state-picker-display{display:block;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--ink)}
+.state-picker-display .katex,.state-picker-option .katex{font-size:1em}
+.state-picker-trigger::after{content:"";position:absolute;top:50%;right:14px;width:6px;height:6px;border-right:1px solid var(--muted);border-bottom:1px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.state-picker-trigger[aria-expanded=true]::after{transform:translateY(-20%) rotate(225deg)}
+.state-picker-trigger:disabled{opacity:.55;cursor:default}
+.state-picker-options{position:absolute;top:calc(100% + 5px);left:0;right:0;max-height:420px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;background:var(--surface);border:1px solid var(--line);border-radius:5px;box-shadow:0 5px 18px #202c2626;padding:5px 0;font-size:var(--state-picker-font-size);z-index:20}
+.state-picker.opens-up .state-picker-options{top:auto;bottom:calc(100% + 5px)}
+.state-picker-option{position:relative;display:block;min-height:38px;padding:8px 28px 8px 13px;line-height:1.7;cursor:pointer;overflow-wrap:anywhere;color:var(--ink)}
+.state-picker-option.is-active{background:#e6eeea;color:var(--green)}
+.state-picker-option[aria-selected=true]::after{content:"✓";position:absolute;right:11px;top:8px;color:var(--green)}
+.state-picker-group{padding:11px 13px 5px;margin-top:3px;border-top:1px solid var(--line);font-size:14px;font-weight:700;color:var(--muted)}
+@media(pointer:coarse){.state-picker-option{min-height:44px}.state-picker-trigger{min-height:44px}}

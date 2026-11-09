@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore reduced-purity sets of pure symmetric two-, three-, four- and five-qubit states, with explicit Dicke states and interactive Majorana constellations.">
+  <meta name="theme-color" content="#faf9f5">
+  <title>Reduced-purity geometry · Symmetric states</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="styles.css?v=362ff7277a82">
+  <link rel="stylesheet" href="state-picker.css?v=05f247e3bfaf">
+  <script defer src="vendor/three.min.js"></script>
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="vendor/katex/auto-render.min.js"></script>
+  <script defer src="math-labels.js"></script>
+  <script defer src="state-picker.js?v=3605d6799c9e"></script>
+  <script defer src="majorana-math.js"></script>
+  <script defer src="data/small-n-display.js?v=9d809c271f3b"></script>
+  <script defer src="data/small-n-constructors.js?v=725d4e72cebb"></script>
+  <script defer src="data/exact-small-n-display.js?v=1ba6127422c6"></script>
+  <script defer src="symmetry-axes.js"></script>
+  <script defer src="data/export-fonts.js"></script>
+  <script defer src="svg-export.js?v=6ece22f43596"></script>
+  <script defer src="purity-coordinates.js"></script>
+  <script defer src="viewer.js"></script>
+  <script defer src="app.js?v=companion-explorer"></script>
+</head>
+<body>
+  <a class="skip" href="#explorer">Skip to explorer</a>
+  <header class="site-header">
+    <a class="wordmark" href="#n=3">Symmetric states <span>/ purity geometry</span></a>
+    <nav aria-label="Main navigation">
+      <a id="companion-explorer" href="../sector-length-sets/index.html#n=3&amp;state=n3-ghz">Sector-length geometry ↗</a>
+      <a href="../reduced-purity-catalogue/index.html">Reduced-purity catalogue ↗</a>
+      <a href="#exact-inequalities">Exact inequalities</a>
+      <a href="#conventions">Definitions &amp; evidence</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THE GEOMETRY OF SYMMETRIC PURE STATES</p>
+      <h1 id="page-title">Reduced-purity <em>sets</em></h1>
+      <p>Achievable reduced-purity tuples for pure symmetric states.</p>
+    </section>
+    <section id="explorer" aria-label="Interactive reduced-purity atlas">
+      <div class="explorer-bar">
+        <div class="n-tabs" role="group" aria-label="Number of qubits">
+          <button type="button" data-n="2" aria-label="N equals 2 qubits" aria-pressed="false">$N = 2$</button>
+          <button type="button" data-n="3" aria-label="N equals 3 qubits" aria-pressed="false">$N = 3$</button>
+          <button type="button" data-n="4" aria-label="N equals 4 qubits" aria-pressed="false">$N = 4$</button>
+          <button type="button" data-n="5" aria-label="N equals 5 qubits" aria-pressed="false">$N = 5$</button>
+        </div>
+        <p id="set-status" class="set-status"></p>
+      </div>
+      <div class="workspace">
+        <section class="geometry-panel" aria-labelledby="geometry-title">
+          <div class="panel-heading">
+            <div><p class="eyebrow">REDUCED-PURITY SPACE</p><h2 id="geometry-title">Three-qubit geometry</h2></div>
+            <div class="plot-actions"><button id="reset-sector-view" class="quiet-button" type="button">Reset view</button><button id="export-plot" class="quiet-button" type="button">Export SVG ↓</button></div>
+          </div>
+          <div id="sector-view" class="sector-view" role="group" aria-label="Rotatable reduced-purity set. Select a named state below, or hover and click a violet node.">
+            <canvas id="sector-canvas" role="img" aria-label="Reduced-purity geometry. Hover or click a violet node; use the named state selector for keyboard access.">The plot requires a browser with WebGL. Every named state remains available in the state selector.</canvas>
+            <div id="sector-labels" class="plot-labels" aria-hidden="true"></div>
+            <p class="plot-gesture" id="plot-gesture">Drag to rotate · Scroll to zoom</p>
+          </div>
+          <div class="plot-controls">
+            <label><input id="show-outer" type="checkbox" checked> <span id="outer-label">Proved outer region</span></label>
+            <label class="label-mode" for="show-labels">Labels <select id="show-labels" aria-label="State labels"><option value="key">Key states</option><option value="all">All states</option><option value="none">None</option></select></label>
+          </div>
+          <div class="legend" aria-label="Plot legend">
+            <span><i class="legend-dot violet"></i> Attained state</span>
+              <span id="attained-region-key" hidden><i class="legend-area violet-region"></i> <span id="attained-region-label">Attained region</span></span>
+          </div>
+          <p id="geometry-note" class="geometry-note"></p>
+          <p class="interaction-note" id="interaction-note">Hover a violet point to preview · Click to select</p>
+        </section>
+        <aside class="state-panel" aria-labelledby="state-title">
+          <div class="panel-heading"><div><p class="eyebrow">THE SELECTED STATE</p><h2 id="state-title">Octahedral state</h2></div><span id="selection-mode" class="selection-mode">Selected</span></div>
+          <label class="select-label" for="state-select">Named state</label>
+          <select id="state-select" aria-label="Named state"></select>
+          <p id="state-evidence" class="state-evidence"></p>
+          <div id="state-formula" class="state-formula" aria-label="State in the normalized Dicke basis"></div>
+          <div id="parameter-inline" class="parameter-inline" hidden></div>
+          <p id="dicke-shorthand" class="basis-note" hidden></p>
+          <details id="analytical-details" class="analytical-details" hidden><summary>Exact parameters &amp; definitions</summary><div id="analytical-parameters"></div></details>
+          <p id="no-state" class="no-state" hidden>No pure-state representative is assigned to this gray outer-region node.</p>
+          <section class="majorana-section" aria-labelledby="majorana-title">
+            <div class="majorana-heading"><h3 id="majorana-title">Majorana representation</h3><div class="majorana-quick"><span id="star-count"></span><button id="export-majorana-svg" type="button" class="quiet-button">Export SVG ↓</button></div></div>
+            <div id="majorana-view" class="majorana-view" role="group" aria-label="Rotatable Majorana constellation of the selected state">
+              <canvas id="majorana-canvas" role="img" aria-label="Majorana sphere">Majorana sphere</canvas>
+              <div id="majorana-labels" class="plot-labels" aria-hidden="true"></div>
+            </div>
+            <div class="symmetry-controls"><label><input id="show-symmetry" type="checkbox" checked> $C_n$ symmetry axes</label><label class="symmetry-order-label" for="symmetry-order">Show <select id="symmetry-order"><option value="highest">Highest order</option><option value="all">All orders</option></select></label></div><p id="symmetry-summary" class="symmetry-summary"></p><div class="alignment-controls"><button id="align-symmetry" type="button" class="quiet-button" aria-label="Align highest rotational symmetry axis with z">Align highest $C_n$ with $z$</button><span id="alignment-note" hidden>Display frame aligned with $z$</span></div>
+            <div class="sphere-controls">
+              <label><input id="show-hull" type="checkbox" checked> Constellation hull</label>
+              <div class="rotation-buttons" role="group" aria-label="Rotate Majorana sphere"><button type="button" data-sphere-turn="left" aria-label="Rotate constellation left">←</button><button type="button" data-sphere-turn="up" aria-label="Rotate constellation up">↑</button><button type="button" data-sphere-turn="down" aria-label="Rotate constellation down">↓</button><button type="button" data-sphere-turn="right" aria-label="Rotate constellation right">→</button><button id="reset-sphere" type="button" class="quiet-button">Reset</button></div>
+            </div>
+            <p class="sphere-key"><span class="front-star">●</span> Front <span class="rear-star">●</span> Back · Numbers indicate multiplicity</p>
+          </section>
+          <div id="sector-values" class="sector-values" aria-label="Full reduced-purity tuple"></div>
+          <div class="state-actions"><button id="download-state" type="button">Download state ↓</button><button id="copy-link" type="button" class="quiet-button">Copy link ↗</button></div>
+          <details id="numeric-details"><summary>Dicke coefficients &amp; verification</summary><div id="coefficients"></div><p id="verification" class="verification"></p><p class="basis-note">$|D_N^{(k)}\rangle$ is normalized; $k$ counts excitations. Global phase and collective orientation do not affect the reduced purities.</p></details>
+          <div id="family-control" class="family-control" hidden><label for="family-slider" id="family-label">Explore this family</label><input id="family-slider" type="range" min="0" max="100" step="1" value="0"><p id="family-value"></p></div>
+        </aside>
+      </div>
+      <div id="notification" role="status" aria-live="polite"></div>
+    </section>
+    <section class="exact-inequalities" id="exact-inequalities" aria-labelledby="inequalities-title">
+      <h2 id="inequalities-title">Exact achievable purity inequalities</h2>
+      <p>For each size, every pair satisfying the stated conditions is attained by a pure symmetric state.</p>
+      <h3>Two qubits</h3>
+      <div class="purity-equation">$$\frac12\le P_1\le1,\qquad P_2=1.$$</div>
+      <p>The one-qubit density matrix has purity at least $1/2$. The symmetric family $\sqrt{\lambda}|00\rangle+\sqrt{1-\lambda}|11\rangle$ spans the interval because $P_1=\lambda^2+(1-\lambda)^2$ for $1/2\le\lambda\le1$.</p>
+      <h3>Three qubits</h3>
+      <div class="purity-equation">$$\frac12\le P_1\le1,\qquad P_2=P_1.$$</div>
+      <h3>Four qubits</h3>
+      <div class="purity-equation">$$\frac12\le P_1\le1,\qquad \frac{4P_1-1}{3}\le P_2\le P_1.$$</div>
+      <h3>Five qubits</h3>
+      <div class="purity-equation">$$\frac12\le P_1\le1,\qquad L(P_1)\le P_2\le P_1.$$</div>
+      <p>Writing $u=P_1$ and $u_c=(8221-984\sqrt5)/11881$, the lower boundary is</p>
+      <div class="purity-equation">$$
+        L(u)=
+        \begin{cases}
+          u-\dfrac14+\dfrac{\Phi(p)}{40}, & \dfrac12\le u\le u_c,\quad U(p)=5\sqrt{2u-1},\\[2mm]
+          \dfrac{19u-4-\sqrt{2u-1}}{16}, & u_c\le u\le\dfrac{17}{25},\\[2mm]
+          \dfrac{3u-1}{2}, & \dfrac{17}{25}\le u\le1.
+        \end{cases}
+      $$</div>
+      <p>On the first branch, $p$ is the unique solution of the displayed equation in $[2-3/\sqrt5,\sqrt5/3]$. The function $U$ decreases on this interval. Equivalently, the branch is parametrized by $P_1=\tfrac12+U(p)^2/50$ and $P_2=P_1-\tfrac14+\Phi(p)/40$, with</p>
+      <div class="purity-equation">$$
+        U(p)=-\frac{15\sqrt5\,p^4+20p^3+18\sqrt5\,p^2-28p-9\sqrt5}
+                     {3\sqrt5\,p^4+12p^3+18\sqrt5\,p^2-20p+3\sqrt5},
+        \qquad
+        r(p)=\frac{2p(5p^2+6\sqrt5\,p-11)}{3\sqrt5\,p^2+2p+3\sqrt5}.
+      $$</div>
+      <div class="purity-equation">$$
+        \Phi(p)=\frac{2(25p^4+10p^2r+10p^2-24\sqrt5\,pr+19r^2+58r+9)}
+                       {5(1+p^2+r)^2},
+        \qquad r=r(p).
+      $$</div>
+      <p>The three branches follow from $S_1=10u-5$ and $P_2=u-\tfrac14+S_2/40$ in the exact five-qubit sector-length region.</p>
+    </section>
+    <section class="reading-note" id="conventions">
+      <div>
+        <p><strong>From sector lengths to reduced purities.</strong> We use $P_t=\operatorname{tr}(\rho_t^2)$. Permutation symmetry gives $P_1=(1+S_1/N)/2$ and $P_2=(1+2S_1/N+S_2/\binom{N}{2})/4$. For pure states, $P_t=P_{N-t}$ and $P_N=1$.</p>
+        <p>The plots apply this invertible affine coordinate change to the exact sector-length sets. This transports every attainable point and preserves the curved, nonconvex boundary for $N=5$. Click inside an attained region, or drag the selected point, to recover a state via the inverse map.</p>
+      </div>
+      <a href="../sector-length-sets/notes.html">Sector-length proofs and conventions →</a>
+    </section>
+  </main>
+  <footer><span>Pure symmetric multiqubit states · N = 2–5</span><a href="../sector-length-sets/notes.html#credits">Authors &amp; AI acknowledgement</a></footer>
+  <noscript>This atlas needs JavaScript. The data files include all named states and their reduced purities.</noscript>
+</body>
+</html>

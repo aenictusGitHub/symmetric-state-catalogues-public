@@ -121,7 +121,7 @@
   class SectorView extends BaseView {
     constructor(canvas,overlay){super(canvas,overlay);this.panAllowed=true;this.maxZoom=80;this.surface=new T.Group();this.samples=new T.Group();this.edges=new T.Group();this.nodes=new T.Group();this.content.add(this.surface,this.samples,this.edges,this.nodes);this.raycaster=new T.Raycaster();this.hoverCallback=()=>{};this.selectCallback=()=>{};this.onHover=e=>this.pick(e,false);this.onClick=e=>this.pick(e,true);this.onLeave=()=>this.hoverCallback(null);}
     map(p){if(this.n===6)return [2*(p[0]+1)/9-1,2*(p[2]+1)/23-1,2*(p[1]+1.5)/17.5-1];const xr=this.ranges[0],yr=this.ranges[1];return [((p[0]-xr[0])/(xr[1]-xr[0])-.5)*2.65,this.dimension===1?0:((p[1]-yr[0])/(yr[1]-yr[0])-.5)*2,0];}
-    setData(d){this.cancelPointerGesture();this.data=d;this.n=d.n||d.N;this.dimension=d.dimension;this.ranges=this.n===3?[[0,3],[0,1]]:this.n===4?[[0,4],[2,6]]:[[0,5],[3,10]];this.clearLabels();this.occlusionIndex=null;this.focusedStateId=null;[this.surface,this.samples,this.edges,this.nodes].forEach(disposeGroup);this.witnesses=d.boundarySamples||[];this.named=d.states||d.knownStates;this.grayPoints=[];this.allPoints=this.witnesses.map(s=>({state:s,world:this.map(s.sectors)}));this.rotatable=this.n===6;this.zoom=1;this.span=this.n===6?1.72:1.5;this.minHalfWidth=this.n===6?1.8:1.67;this.yaw=this.n===6?-1.04:0;this.pitch=this.n===6?.22:0;this.target.set(0,0,0);
+    setData(d){this.cancelPointerGesture();this.data=d;this.n=d.n||d.N;this.dimension=d.dimension;this.ranges=this.n<=3?[[0,this.n],[0,1]]:this.n===4?[[0,4],[2,6]]:[[0,5],[3,10]];this.clearLabels();this.occlusionIndex=null;this.focusedStateId=null;[this.surface,this.samples,this.edges,this.nodes].forEach(disposeGroup);this.witnesses=d.boundarySamples||[];this.named=d.states||d.knownStates;this.grayPoints=[];this.allPoints=this.witnesses.map(s=>({state:s,world:this.map(s.sectors)}));this.rotatable=this.n===6;this.zoom=1;this.span=this.n===6?1.72:1.5;this.minHalfWidth=this.n===6?1.8:1.67;this.yaw=this.n===6?-1.04:0;this.pitch=this.n===6?.22:0;this.target.set(0,0,0);
       if(this.n===6){for(const patch of d.outer.patches)this.addPatch(patch);for(const edge of d.outer.edges){const p=edge.points.map(x=>this.map(x));const c=edge.attained?colors.violet:colors.edge;this.edges.add(line(p,c),line(p,c,true,true));}for(const path of d.attainedPaths||[]){const p=path.points.map(x=>this.map(x));const front=line(p,colors.violet),rear=line(p,colors.violet,true,true);front.userData.kind=rear.userData.kind='attained-state-locus';front.userData.pathId=rear.userData.pathId=path.id;this.edges.add(front,rear);}for(const node of (d.plotNodes||d.outer.nodes).filter(p=>!p.attained)){const gray={state:{...node,outerOnly:true,sectors:node.point,label:node.label||'Outer-region junction'},world:this.map(node.point)};this.grayPoints.push(gray);gray.marker={world:gray.world,radius:4.6,fill:'#989b9f',stroke:'#686c70',kind:'sector-gray'};this.markers.push(gray.marker);}}
       else{if(this.dimension===2){const shape=new T.Shape(d.polygon.map(p=>{const q=this.map(p);return new T.Vector2(q[0],q[1]);}));const geom=new T.ShapeGeometry(shape);const mesh=new T.Mesh(geom,new T.MeshBasicMaterial({color:0xdac7eb,side:T.DoubleSide}));mesh.position.z=-.02;this.surface.add(mesh);}for(const c of d.curves||[])this.edges.add(line(c.points.map(p=>this.map(p.sectors)),colors.violet));}
       // Manuscript nodes and the requested explicit boundary samples are plotted.
@@ -165,7 +165,7 @@
     occluded(world){if(!this.surface.visible||this.n!==6)return false;const q=v3(world).project(this.camera);this.raycaster.setFromCamera(new T.Vector2(q.x,q.y),this.camera);const distance=v3(world).sub(this.raycaster.ray.origin).dot(this.raycaster.ray.direction);if(this.occlusionIndex)return this.occlusionIndex.occludes(this.raycaster.ray,distance-.025);const hits=this.raycaster.intersectObjects(this.surface.children,false);return hits.length>0&&hits[0].distance<distance-.025;}
 
     selectedPointAt(x,y){
-      if(![3,4,5,6].includes(this.n)||!this.selectedWorld)return false;
+      if(![2,3,4,5,6].includes(this.n)||!this.selectedWorld)return false;
       const callback=this.n===6?this.surfaceDragCallback:this.pointDragCallback;
       if(typeof callback!=='function')return false;
       const p=this.project(this.selectedWorld);
@@ -251,13 +251,13 @@
       this.emitPointDrag(point,point.lastCoordinates.slice(),'end',point.lastMeta);
     }
     regionCoordinates(x,y,{clampToSet=false}={}){
-      if(this.n!==3&&this.n!==4&&this.n!==5)return null;
+      if(this.n===6)return null;
       this.raycaster.setFromCamera(new T.Vector2(2*x/this.width-1,1-2*y/this.height),this.camera);
       const p=this.raycaster.ray.intersectPlane(new T.Plane(new T.Vector3(0,0,1),0),new T.Vector3());
       if(!p)return null;
       const [xmin,xmax]=this.ranges[0],tol=1e-10;
       const sx=(p.x/2.65+.5)*(xmax-xmin)+xmin;
-      if(this.n===3){
+      if(this.dimension===1){
         // A pixel-sized hit band stays easy to select at every zoom level.
         const linePoint=this.project([p.x,0,0]);
         if(!clampToSet&&(Math.abs(linePoint.y-y)>10||sx<xmin-tol||sx>xmax+tol))return null;

@@ -1,4 +1,4 @@
-/* Constructive state witnesses for continuous inspection of the N=3,4,5 sets.
+/* Constructive state witnesses for continuous inspection of the N=2,3,4,5 sets.
  * Dicke order k=0,...,N. See SMALL_N_SCIENTIFIC_NOTES.txt for provenance.
  * N=5 interior coverage uses three bracketed, analytically verified paths.
  */
@@ -12,6 +12,13 @@
   const nearRange = (value, low, high) => Number.isFinite(value) && value >= low - 1e-10 && value <= high + 1e-10;
   function record(coefficients, sectors, label, parameter, source) {
     return { coefficients, sectors, label, parameter, status: 'attained', source };
+  }
+  function n2(x) {
+    if (!nearRange(x, 0, 2)) return null;
+    x = clamp(x, 0, 2);
+    const r = Math.sqrt(x / 2);
+    return record([[Math.sqrt((1 + r) / 2), 0], [0, 0], [Math.sqrt((1 - r) / 2), 0]],
+      [x, 3 - x], 'Two-qubit interval state', { S1: x }, 'Exact symmetric two-qubit sector-length interval');
   }
   function n3(x) {
     if (!nearRange(x, 0, 3)) return null;
@@ -178,6 +185,6 @@
     return record(coefficients, n5Sectors(x, y), 'Five-qubit exact-set state', parameter,
                   'Constructive inverse of the exact five-qubit range; see Definitions & evidence');
   }
-  global.SectorConstructors = Object.freeze({ n3, n4, n5, n5Lower, n5Upper, n5Zero, n5Boundary,
-    n5JunctionX: xc, supportsInterior: Object.freeze({ 3: true, 4: true, 5: true }) });
+  global.SectorConstructors = Object.freeze({ n2, n3, n4, n5, n5Lower, n5Upper, n5Zero, n5Boundary,
+    n5JunctionX: xc, supportsInterior: Object.freeze({ 2: true, 3: true, 4: true, 5: true }) });
 })(globalThis);
