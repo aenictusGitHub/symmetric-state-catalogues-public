@@ -1,7 +1,7 @@
 /* Real font-outline, renderer and standalone SVG regressions. No browser required. */
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const root=path.resolve(__dirname,'..'),folders=['symmetric-sector-catalogue','anticoherent-state-catalogue','ac-subspace-catalogue','majorana-degeneracy-catalogue'];
+const root=path.resolve(__dirname,'..'),folders=['reduced-purity-catalogue','symmetric-sector-catalogue','anticoherent-state-catalogue','ac-subspace-catalogue','majorana-degeneracy-catalogue'];
 const near=(a,b,eps=1e-9)=>assert.ok(Math.abs(a-b)<=eps,`${a} != ${b}`);
 class Outline {constructor(d){this.d=d;}}
 function element(){const handlers=new Map();return {checked:false,value:'all',handlers,classList:{add(){},remove(){}},addEventListener:(name,fn)=>handlers.set(name,fn),removeEventListener:(name,fn)=>{if(handlers.get(name)===fn)handlers.delete(name);},dispatch(name,event={}){handlers.get(name)?.({preventDefault(){},...event});},getBoundingClientRect:()=>({width:500,height:440}),focus(){}};}

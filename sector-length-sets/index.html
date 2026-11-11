@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#faf9f5">
   <title>Sector-length geometry · Symmetric states</title>
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
-  <link rel="stylesheet" href="styles.css?v=362ff7277a82">
+  <link rel="stylesheet" href="styles.css?v=point-representatives">
   <link rel="stylesheet" href="state-picker.css?v=05f247e3bfaf">
   <script defer src="vendor/three.min.js"></script>
   <script defer src="vendor/katex/katex.min.js"></script>
@@ -38,7 +38,7 @@
   <script defer src="svg-export.js?v=vector-plot-labels"></script>
   <script defer src="static-occlusion.js?v=1bfdfa2a637d"></script>
   <script defer src="viewer.js?v=n2-interval"></script>
-  <script defer src="app.js?v=companion-explorer"></script>
+  <script defer src="app.js?v=point-representatives"></script>
 </head>
 <body>
   <a class="skip" href="#explorer">Skip to explorer</a>
@@ -100,6 +100,10 @@
           <div class="panel-heading"><div><p class="eyebrow">THE SELECTED STATE</p><h2 id="state-title">Octahedral state</h2></div><span id="selection-mode" class="selection-mode">Selected</span></div>
           <label class="select-label" for="state-select">Named state</label>
           <select id="state-select" aria-label="Named state"></select>
+          <section id="point-representatives" class="point-representatives" aria-labelledby="point-representatives-title" hidden>
+            <h3 id="point-representatives-title">Known states at this point</h3>
+            <div id="point-representative-options" role="group" aria-label="Choose a representative of the selected point"></div>
+          </section>
           <p id="state-evidence" class="state-evidence"></p>
           <div id="state-formula" class="state-formula" aria-label="State in the normalized Dicke basis"></div>
           <div id="parameter-inline" class="parameter-inline" hidden></div>

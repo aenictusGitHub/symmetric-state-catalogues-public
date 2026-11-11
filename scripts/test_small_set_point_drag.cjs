@@ -200,7 +200,7 @@ assert.equal(six.callbacks.length, 0); assert.equal(frames.size, 0);
 // selectState/showState functions. Only external DOM/rendering boundaries are
 // mocked, so a wiring change that updates only on release cannot pass.
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
-const buildersStart = appSource.indexOf('  function threeQubitState(');
+const buildersStart = appSource.indexOf('  function intervalState(');
 const buildersEnd = appSource.indexOf('  function notify(', buildersStart);
 const displayStart = appSource.indexOf('  function showState(');
 const displayEnd = appSource.indexOf('  function updateFamily(', displayStart);
@@ -226,7 +226,7 @@ function makeApp(n) {
     if (this.parent) this.parent.children.splice(this.parent.children.indexOf(this), 1);
     calls.removedOptions++;
   }}; }};
-  const app = {n, selected: null, current: null, previewing: true, pointDragging: false,
+  const app = {n, names:{3:'Three',4:'Four',5:'Five'}, data:{dimension:n===3?1:2}, named:[], URLSearchParams, selected: null, current: null, previewing: true, pointDragging: false,
     previewTimer: 123, interactiveState: null, SectorConstructors: C, SectorMath: M,
     document, $: element, window: {StatePicker: {
       updateLive(state) { calls.pickerLive.push(state); }, update(state) { calls.pickerFull.push(state); }
@@ -254,7 +254,7 @@ function makeApp(n) {
   return app;
 }
 function appState(app, coordinates) {
-  return app.n === 3 ? app.threeQubitState(coordinates[0]) :
+  return app.n === 3 ? app.intervalState(coordinates[0]) :
     app.n === 4 ? app.triangleState(...coordinates) : app.fiveQubitState(...coordinates);
 }
 for (const n of [3, 4, 5]) for (const ending of ['end', 'cancel']) {

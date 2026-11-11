@@ -244,7 +244,7 @@ for (const phase of ['end', 'cancel']) {
   const calls = {select: [], sphere: [], live: 0, full: 0, history: 0, options: 0, notify: 0, sectors: 0}, elements = new Map();
   const el = id => { if (!elements.has(id)) elements.set(id, {dataset: {}, innerHTML: '', textContent: '', hidden: false,
     children: [], setAttribute() {}, querySelectorAll() { return this.children; }, append(o) { this.children.push(o); calls.options++; }}); return elements.get(id); };
-  const app = {n: 6, pointDragging: false, previewing: true, previewTimer: 123, selected: {...f.state, id: 'stale'}, current: f.state,
+  const app = {n: 6, data:{dimension:3}, named:[], URLSearchParams, pointDragging: false, previewing: true, previewTimer: 123, selected: {...f.state, id: 'stale'}, current: f.state,
     document: {querySelector: el, createElement: () => ({dataset: {}, remove() {}})}, $: el,
     SectorMath: M, clearTimeout() {}, notify() { calls.notify++; }, fmt: x => String(x),
     title: s => s.label || 'State', complex: z => z.join(','), esc: String, paintMath(e, s) { e.innerHTML = s; },
